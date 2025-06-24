@@ -63,7 +63,7 @@ export default function ContactForm() {
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Request more information from AirFresh</h2>
         </div>
-        <CardContent>
+        <div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField
@@ -185,7 +185,8 @@ export default function ContactForm() {
             </div>
           </form>
         </Form>
-      </CardContent>
-    </Card>
+        </div>
+      </div>
+    </div>
   );
 }
