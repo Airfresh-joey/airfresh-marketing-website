@@ -55,14 +55,15 @@ export default function ContactForm() {
   };
 
   return (
-    <Card className="max-w-4xl mx-auto">
-      <CardHeader className="text-center">
-        <CardTitle className="text-4xl font-bold mb-4">Get In Touch</CardTitle>
-        <p className="text-xl text-muted-foreground">
-          Ready to create unforgettable brand experiences? Let's start the conversation.
-        </p>
-      </CardHeader>
-      <CardContent>
+    <div className="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
+      <div className="bg-white p-8 rounded-lg shadow-sm">
+        <div className="text-center mb-8">
+          <div className="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-4">
+            <span className="text-white font-bold text-xl">A</span>
+          </div>
+          <h2 className="text-2xl font-bold text-gray-900 mb-2">Request more information from AirFresh</h2>
+        </div>
+        <CardContent>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField

@@ -2,7 +2,7 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake } from "lucide-react";
+import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play } from "lucide-react";
 
 export default function Home() {
   const services = [
@@ -83,6 +83,22 @@ export default function Home() {
     <div className="pt-16">
       <Hero />
 
+      {/* Video Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
+            <div className="aspect-video bg-gray-900 flex items-center justify-center">
+              <div className="text-center text-white">
+                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-white/30 transition-colors cursor-pointer">
+                  <Play className="h-8 w-8 ml-1" />
+                </div>
+                <p className="text-sm opacity-75">Merrell AFM Front Page Clip.mp4 from Air Fresh Marketing on Vimeo</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* What We Do Section */}
       <section className="py-20 bg-white" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -93,8 +109,23 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {services.map((service, index) => (
               <div key={index} className="text-center">
-                <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
-                  <service.icon className="h-8 w-8 text-primary" />
+                <div className="w-20 h-20 mx-auto mb-6">
+                  <svg className="w-full h-full text-primary" viewBox="0 0 100 100" fill="currentColor">
+                    {index === 0 && (
+                      <path d="M50 10 L60 40 L90 40 L70 55 L80 85 L50 70 L20 85 L30 55 L10 40 L40 40 Z" />
+                    )}
+                    {index === 1 && (
+                      <path d="M50 20 C65 20 75 30 75 45 C75 60 65 70 50 80 C35 70 25 60 25 45 C25 30 35 20 50 20 Z" />
+                    )}
+                    {index === 2 && (
+                      <g>
+                        <circle cx="30" cy="35" r="8" />
+                        <circle cx="50" cy="35" r="8" />
+                        <circle cx="70" cy="35" r="8" />
+                        <rect x="20" y="50" width="60" height="30" rx="5" />
+                      </g>
+                    )}
+                  </svg>
                 </div>
                 <h3 className="text-2xl font-bold mb-4 text-gray-900">{service.title}</h3>
                 <p className="text-gray-600 text-lg">{service.description}</p>
@@ -114,15 +145,13 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
             {turnkeyServices.map((service, index) => (
               <div key={index} className="text-center">
-                <Card className="p-6 hover:shadow-md transition-shadow">
-                  <CardContent className="flex flex-col items-center p-0">
-                    <service.icon className="h-8 w-8 text-primary mb-4" />
-                    <h4 className="font-semibold text-gray-900 text-center">{service.title}</h4>
-                  </CardContent>
-                </Card>
+                <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                  <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
+                  <h4 className="font-semibold text-gray-900 text-sm leading-tight">{service.title}</h4>
+                </div>
               </div>
             ))}
           </div>
@@ -133,19 +162,19 @@ export default function Home() {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
-              <p className="text-gray-600">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
+              <p className="text-gray-600 text-sm">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
             </div>
 
-            <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Bring your brand to life with the five senses.</h3>
-              <p className="text-gray-600">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Bring your brand to life with the five senses.</h3>
+              <p className="text-gray-600 text-sm">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
             </div>
 
-            <div className="text-center lg:text-left">
-              <h3 className="text-2xl font-bold mb-4 text-gray-900">Targeted marketing that BANGS!</h3>
-              <p className="text-gray-600">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
+            <div className="text-center">
+              <h3 className="text-xl font-bold mb-4 text-gray-900">Targeted marketing that BANGS!</h3>
+              <p className="text-gray-600 text-sm">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
             </div>
           </div>
         </div>
@@ -214,12 +243,57 @@ export default function Home() {
       {/* Client Logos Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-2 md:grid-cols-6 gap-8 items-center opacity-60">
-            {clientLogos.map((logo, index) => (
-              <div key={index} className="flex justify-center">
-                <img src={logo} alt={`Client ${index + 1}`} className="h-12 w-auto grayscale hover:grayscale-0 transition-all" />
+          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center opacity-60">
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-red-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Google</span>
               </div>
-            ))}
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-black rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">adidas</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Microsoft</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-pink-500 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Lyft</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-blue-700 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Facebook</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-green-700 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Clif Bar</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-blue-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Pepsi</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-orange-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">5-hour</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-purple-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">NFL</span>
+              </div>
+            </div>
+            <div className="flex justify-center">
+              <div className="w-20 h-12 bg-green-600 rounded flex items-center justify-center">
+                <span className="text-white font-bold text-sm">Naked</span>
+              </div>
+            </div>
           </div>
         </div>
       </section>
