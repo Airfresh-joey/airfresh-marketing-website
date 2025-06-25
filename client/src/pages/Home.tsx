@@ -139,18 +139,17 @@ export default function Home() {
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">TURNKEY SERVICES</h2>
-            <p className="text-xl text-gray-600 max-w-4xl mx-auto">
+            <h2 className="text-sm font-semibold text-cyan-600 uppercase tracking-wide mb-4">TURNKEY SERVICES</h2>
+            <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Everything we do is done in-house and as an extension of your team. We strategize what's best for meeting your goals and then come together to crush them as a single unit.
             </p>
           </div>
 
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-8">
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
             {turnkeyServices.map((service, index) => (
               <div key={index} className="text-center">
-                <div className="bg-white p-6 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-                  <service.icon className="h-12 w-12 text-primary mx-auto mb-4" />
-                  <h4 className="font-semibold text-gray-900 text-sm leading-tight">{service.title}</h4>
+                <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow h-24 flex items-center justify-center">
+                  <h4 className="font-medium text-gray-900 text-sm leading-tight">{service.title}</h4>
                 </div>
               </div>
             ))}

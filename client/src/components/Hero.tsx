@@ -24,9 +24,9 @@ export default function Hero() {
           </Button>
         </div>
         
-        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-bold leading-tight mb-8">
+        <h1 className="text-4xl sm:text-6xl md:text-7xl lg:text-8xl font-light leading-tight mb-8">
           Let's get people<br />
-          experiencing <span className="italic font-serif text-primary">your</span> brand.
+          experiencing <span className="italic font-serif text-yellow-300">your</span> brand.
         </h1>
       </div>
     </section>
