@@ -98,6 +98,12 @@ This is a full-stack web application for AirFresh Marketing, a nationwide experi
 - Static file serving for production builds
 - Environment variables for database connection
 
+## Recent Changes
+
+- June 25, 2025: Updated website design to match original AirFresh Marketing appearance
+- June 25, 2025: Integrated PostgreSQL database with contact form submissions
+- June 25, 2025: Replaced in-memory storage with persistent database storage
+
 ## Changelog
 
 Changelog:
