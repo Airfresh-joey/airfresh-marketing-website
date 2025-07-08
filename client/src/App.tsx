@@ -24,7 +24,7 @@ function Router() {
           <Route path="/services" component={Services} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
-          <Route path="/cities/:city" component={CityPage} />
+          <Route path="/city/:cityName" component={CityPage} />
           <Route component={NotFound} />
         </Switch>
       </main>
