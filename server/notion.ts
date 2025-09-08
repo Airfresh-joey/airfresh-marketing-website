@@ -19,15 +19,11 @@ export const NOTION_PAGE_ID = extractPageIdFromUrl(process.env.NOTION_PAGE_URL!)
 
 /**
  * Lists all child databases contained within NOTION_PAGE_ID
- * @returns {Promise<Array<{id: string, title: string}>>} - Array of database objects with id and title
  */
 export async function getNotionDatabases() {
-
-    // Array to store the child databases
     const childDatabases = [];
 
     try {
-        // Query all child blocks in the specified page
         let hasMore = true;
         let startCursor: string | undefined = undefined;
 
@@ -40,7 +36,7 @@ export async function getNotionDatabases() {
             // Process the results
             for (const block of response.results) {
                 // Check if the block is a child database
-                if (block.type === "child_database") {
+                if ("type" in block && block.type === "child_database") {
                     const databaseId = block.id;
 
                     // Retrieve the database title
@@ -69,12 +65,12 @@ export async function getNotionDatabases() {
     }
 }
 
-// Find get a Notion database with the matching title
+// Find a Notion database with the matching title
 export async function findDatabaseByTitle(title: string) {
     const databases = await getNotionDatabases();
 
     for (const db of databases) {
-        if (db.title && Array.isArray(db.title) && db.title.length > 0) {
+        if ("title" in db && db.title && Array.isArray(db.title) && db.title.length > 0) {
             const dbTitle = db.title[0]?.plain_text?.toLowerCase() || "";
             if (dbTitle === title.toLowerCase()) {
                 return db;
@@ -91,6 +87,7 @@ export async function createDatabaseIfNotExists(title: string, properties: any) 
     if (existingDb) {
         return existingDb;
     }
+    
     return await notion.databases.create({
         parent: {
             type: "page_id",
@@ -105,17 +102,36 @@ export async function createDatabaseIfNotExists(title: string, properties: any) 
             }
         ],
         properties
-    });
+    } as any);
+}
+
+// Define case study interface
+export interface CaseStudy {
+    notionId: string;
+    title: string;
+    client: string;
+    description: string;
+    industry: string;
+    results: string;
+    imageUrl: string;
+    location: string;
+    eventType: string;
+    budget: string;
+    attendees: number;
+    duration: string;
+    featured: boolean;
+    createdAt: Date;
+    lastEditedAt: Date;
 }
 
 // Get all case studies from the Notion database
-export async function getCaseStudies(caseStudiesDatabaseId: string) {
+export async function getCaseStudies(caseStudiesDatabaseId: string): Promise<CaseStudy[]> {
     try {
-        const response = await notion.databases.query({
+        const response = await (notion.databases as any).query({
             database_id: caseStudiesDatabaseId,
         });
 
-        return response.results.map((page: any) => {
+        return response.results.map((page: any): CaseStudy => {
             const properties = page.properties;
 
             return {
@@ -143,10 +159,10 @@ export async function getCaseStudies(caseStudiesDatabaseId: string) {
 }
 
 // Get a specific case study by ID
-export async function getCaseStudyById(caseStudiesDatabaseId: string, notionId: string) {
+export async function getCaseStudyById(caseStudiesDatabaseId: string, notionId: string): Promise<CaseStudy | null> {
     try {
         const caseStudies = await getCaseStudies(caseStudiesDatabaseId);
-        return caseStudies.find(cs => cs.notionId === notionId) || null;
+        return caseStudies.find((cs: CaseStudy) => cs.notionId === notionId) || null;
     } catch (error) {
         console.error("Error fetching case study by ID:", error);
         throw new Error("Failed to fetch case study");
