@@ -11,6 +11,9 @@ import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
 import CityPage from "@/pages/CityPage";
+import CaseStudies from "@/pages/CaseStudies";
+import BrandActivations from "@/pages/BrandActivations";
+import CorporateEvents from "@/pages/CorporateEvents";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -25,6 +28,9 @@ function Router() {
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/city/:cityName" component={CityPage} />
+          <Route path="/projects/case-studies" component={CaseStudies} />
+          <Route path="/projects/brand-activations" component={BrandActivations} />
+          <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route component={NotFound} />
         </Switch>
       </main>
