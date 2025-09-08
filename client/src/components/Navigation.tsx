@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
+import logoUrl from "@assets/airfreshmarketing_logo_1757365403567.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -22,10 +23,12 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <div className="flex items-center">
-                <div className="w-8 h-8 bg-primary rounded-full flex items-center justify-center mr-3">
-                  <span className="text-white font-bold text-sm">A</span>
-                </div>
-                <span className="text-xl font-bold text-gray-900">AirFresh</span>
+                <img 
+                  src={logoUrl} 
+                  alt="AirFresh Marketing" 
+                  className="w-10 h-10 mr-3"
+                />
+                <span className="text-xl font-bold text-gray-900">AirFresh Marketing</span>
               </div>
             </Link>
           </div>

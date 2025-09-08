@@ -1,14 +1,19 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Linkedin, Twitter, Phone, Mail, MapPin } from "lucide-react";
+import logoUrl from "@assets/airfreshmarketing_logo_1757365403567.jpg";
 
 export default function Footer() {
   return (
     <footer className="bg-gray-900 text-white py-16">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
         <div className="mb-8">
-          <div className="w-16 h-16 bg-white rounded-full flex items-center justify-center mx-auto mb-4">
-            <span className="text-gray-900 font-bold text-xl">A</span>
-          </div>
+          <Link href="/" className="inline-block">
+            <img 
+              src={logoUrl} 
+              alt="AirFresh Marketing" 
+              className="w-16 h-16 mx-auto mb-4"
+            />
+          </Link>
         </div>
         
         <div className="space-y-4 mb-8">
