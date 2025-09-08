@@ -2,12 +2,12 @@ import Hero from "@/components/Hero";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
-import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play } from "lucide-react";
+import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles } from "lucide-react";
 
 export default function Home() {
   const services = [
     {
-      icon: Star,
+      icon: Sparkles,
       title: "Create Memorable Brand Experiences",
       description: "Your customers crave unforgettable experiences with your brand. It's our job to give them to them."
     },
@@ -24,11 +24,11 @@ export default function Home() {
   ];
 
   const turnkeyServices = [
-    { icon: Cog, title: "Production and Execution" },
-    { icon: Laptop, title: "Experiential & Digital" },
-    { icon: ShoppingCart, title: "Asset Procurement" },
-    { icon: TrendingUp, title: "Marketing Strategy" },
-    { icon: Palette, title: "Creative" }
+    { icon: Cog, title: "Production and Execution", description: "Complete project management from planning to delivery" },
+    { icon: Laptop, title: "Experiential & Digital", description: "Seamless integration of physical and digital experiences" },
+    { icon: ShoppingCart, title: "Asset Procurement", description: "Sourcing all necessary materials and equipment" },
+    { icon: TrendingUp, title: "Marketing Strategy", description: "Strategic planning aligned with your objectives" },
+    { icon: Palette, title: "Creative", description: "Innovative concepts that captivate audiences" }
   ];
 
   const targetAudience = [
@@ -86,13 +86,25 @@ export default function Home() {
       {/* Video Section */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
-            <div className="aspect-video bg-gray-900 flex items-center justify-center">
-              <div className="text-center text-white">
-                <div className="w-20 h-20 bg-white/20 rounded-full flex items-center justify-center mx-auto mb-4 hover:bg-white/30 transition-colors cursor-pointer">
-                  <Play className="h-8 w-8 ml-1" />
+          <div className="text-center mb-12">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">SEE US IN ACTION</h2>
+            <h3 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">Experience the Difference</h3>
+            <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+              Watch how we bring brands to life through unforgettable experiential marketing campaigns.
+            </p>
+          </div>
+          <div className="relative bg-white rounded-2xl shadow-2xl overflow-hidden">
+            <div className="aspect-video bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center relative">
+              <div className="absolute inset-0 bg-black/20"></div>
+              <div className="text-center text-white relative z-10">
+                <div className="w-24 h-24 bg-primary/80 backdrop-blur-sm rounded-full flex items-center justify-center mx-auto mb-6 hover:bg-primary transition-colors cursor-pointer group">
+                  <Play className="h-10 w-10 ml-1 group-hover:scale-110 transition-transform" />
                 </div>
-                <p className="text-sm opacity-75">Merrell AFM Front Page Clip.mp4 from Air Fresh Marketing on Vimeo</p>
+                <h4 className="text-xl font-semibold mb-2">Brand Experience Showcase</h4>
+                <p className="text-sm opacity-90">Featuring our recent campaigns and live event highlights</p>
+              </div>
+              <div className="absolute bottom-4 right-4 bg-white/10 backdrop-blur-sm px-3 py-1 rounded-full text-white text-sm">
+                3:42
               </div>
             </div>
           </div>
@@ -108,28 +120,15 @@ export default function Home() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             {services.map((service, index) => (
-              <div key={index} className="text-center">
-                <div className="w-20 h-20 mx-auto mb-6">
-                  <svg className="w-full h-full text-primary" viewBox="0 0 100 100" fill="currentColor">
-                    {index === 0 && (
-                      <path d="M50 10 L60 40 L90 40 L70 55 L80 85 L50 70 L20 85 L30 55 L10 40 L40 40 Z" />
-                    )}
-                    {index === 1 && (
-                      <path d="M50 20 C65 20 75 30 75 45 C75 60 65 70 50 80 C35 70 25 60 25 45 C25 30 35 20 50 20 Z" />
-                    )}
-                    {index === 2 && (
-                      <g>
-                        <circle cx="30" cy="35" r="8" />
-                        <circle cx="50" cy="35" r="8" />
-                        <circle cx="70" cy="35" r="8" />
-                        <rect x="20" y="50" width="60" height="30" rx="5" />
-                      </g>
-                    )}
-                  </svg>
-                </div>
-                <h3 className="text-2xl font-bold mb-4 text-gray-900">{service.title}</h3>
-                <p className="text-gray-600 text-lg">{service.description}</p>
-              </div>
+              <Card key={index} className="text-center p-8 hover:shadow-xl transition-all duration-300 group">
+                <CardContent className="p-0">
+                  <div className="w-20 h-20 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-10 w-10 text-primary" />
+                  </div>
+                  <h3 className="text-2xl font-bold mb-4 text-gray-900 group-hover:text-primary transition-colors">{service.title}</h3>
+                  <p className="text-gray-600 text-lg leading-relaxed">{service.description}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -145,13 +144,17 @@ export default function Home() {
             </p>
           </div>
 
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {turnkeyServices.map((service, index) => (
-              <div key={index} className="text-center">
-                <div className="bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow h-24 flex items-center justify-center">
-                  <h4 className="font-medium text-gray-900 text-sm leading-tight">{service.title}</h4>
-                </div>
-              </div>
+              <Card key={index} className="text-center p-6 hover:shadow-lg transition-all duration-300 group">
+                <CardContent className="p-0">
+                  <div className="w-12 h-12 mx-auto mb-4 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                    <service.icon className="h-6 w-6 text-primary" />
+                  </div>
+                  <h4 className="font-bold text-gray-900 text-sm mb-2">{service.title}</h4>
+                  <p className="text-xs text-gray-600 leading-relaxed">{service.description}</p>
+                </CardContent>
+              </Card>
             ))}
           </div>
         </div>
@@ -160,21 +163,40 @@ export default function Home() {
       {/* Features Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHY CHOOSE US</h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">The AirFresh Advantage</h3>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
-            <div className="text-center">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
-              <p className="text-gray-600 text-sm">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
-            </div>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-full flex items-center justify-center">
+                  <BarChart3 className="h-8 w-8 text-blue-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
+                <p className="text-gray-600 leading-relaxed">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
+              </CardContent>
+            </Card>
 
-            <div className="text-center">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Bring your brand to life with the five senses.</h3>
-              <p className="text-gray-600 text-sm">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
-            </div>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 mx-auto mb-6 bg-purple-50 rounded-full flex items-center justify-center">
+                  <Eye className="h-8 w-8 text-purple-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">Bring your brand to life with the five senses</h3>
+                <p className="text-gray-600 leading-relaxed">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
+              </CardContent>
+            </Card>
 
-            <div className="text-center">
-              <h3 className="text-xl font-bold mb-4 text-gray-900">Targeted marketing that BANGS!</h3>
-              <p className="text-gray-600 text-sm">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
-            </div>
+            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
+              <CardContent className="p-0">
+                <div className="w-16 h-16 mx-auto mb-6 bg-green-50 rounded-full flex items-center justify-center">
+                  <Target className="h-8 w-8 text-green-600" />
+                </div>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">Targeted marketing that BANGS!</h3>
+                <p className="text-gray-600 leading-relaxed">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
+              </CardContent>
+            </Card>
           </div>
         </div>
       </section>
@@ -203,11 +225,29 @@ export default function Home() {
       </section>
 
       {/* Stats Section */}
-      <section className="py-20 bg-secondary text-white">
+      <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-8">In 20+ years, we've helped</h2>
-          <p className="text-2xl mb-8">Over 300 brands connect with customers through unforgettable live events.</p>
-          <Button asChild size="lg" variant="default">
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">In 20+ years, we've helped</h2>
+          <p className="text-2xl md:text-3xl mb-8 opacity-90">Over 300 brands connect with customers through unforgettable live events.</p>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">300+</div>
+              <div className="text-white/80 font-medium">Brands Served</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">20+</div>
+              <div className="text-white/80 font-medium">Years Experience</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+              <div className="text-white/80 font-medium">Cities Nationwide</div>
+            </div>
+            <div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">1000+</div>
+              <div className="text-white/80 font-medium">Events Produced</div>
+            </div>
+          </div>
+          <Button asChild size="lg" variant="secondary">
             <Link href="/contact">Contact Us</Link>
           </Button>
         </div>
@@ -242,55 +282,59 @@ export default function Home() {
       {/* Client Logos Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-3 md:grid-cols-6 gap-8 items-center opacity-60">
+          <div className="text-center mb-12">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">TRUSTED BY LEADING BRANDS</h2>
+            <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Our Client Portfolio</h3>
+          </div>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-red-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Google</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Google</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-black rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">adidas</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-gray-800 to-black rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">adidas</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Microsoft</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Microsoft</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-pink-500 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Lyft</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Lyft</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-blue-700 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Facebook</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Meta</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-green-700 rounded flex items-center justify-center">
+              <div className="w-24 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
                 <span className="text-white font-bold text-sm">Clif Bar</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-blue-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Pepsi</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Pepsi</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-orange-600 rounded flex items-center justify-center">
+              <div className="w-24 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
                 <span className="text-white font-bold text-sm">5-hour</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-purple-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">NFL</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">NFL</span>
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-20 h-12 bg-green-600 rounded flex items-center justify-center">
-                <span className="text-white font-bold text-sm">Naked</span>
+              <div className="w-24 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+                <span className="text-white font-bold text-lg">Naked</span>
               </div>
             </div>
           </div>
