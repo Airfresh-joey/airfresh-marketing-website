@@ -69,6 +69,12 @@ export default function Navigation() {
             </DropdownMenu>
             
             <Link 
+              href="/talent" 
+              className={`font-medium ${isActive('/talent') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              Talent
+            </Link>
+            <Link 
               href="/about" 
               className={`font-medium ${isActive('/about') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
@@ -118,6 +124,7 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
             <Link href="/projects" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Projects</Link>
             <Link href="/services" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Services</Link>
+            <Link href="/talent" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Talent</Link>
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">About</Link>
             <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Blog</Link>
             <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Contact</Link>

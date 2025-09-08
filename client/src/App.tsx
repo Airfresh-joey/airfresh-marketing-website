@@ -14,6 +14,7 @@ import CityPage from "@/pages/CityPage";
 import CaseStudies from "@/pages/CaseStudies";
 import BrandActivations from "@/pages/BrandActivations";
 import CorporateEvents from "@/pages/CorporateEvents";
+import Talent from "@/pages/Talent";
 import NotFound from "@/pages/not-found";
 
 function Router() {
@@ -31,6 +32,7 @@ function Router() {
           <Route path="/projects/case-studies" component={CaseStudies} />
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
+          <Route path="/talent" component={Talent} />
           <Route component={NotFound} />
         </Switch>
       </main>
