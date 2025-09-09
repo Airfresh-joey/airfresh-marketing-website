@@ -46,7 +46,7 @@ export function GoogleDriveImage({
       ].filter(Boolean);
     }
     
-    return [src, fallbackSrc].filter(Boolean);
+    return [src, fallbackSrc].filter(Boolean) as string[];
   });
 
   const [currentIndex, setCurrentIndex] = useState(0);
