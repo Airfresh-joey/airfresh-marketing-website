@@ -1,8 +1,8 @@
-# AirFresh Marketing - Experiential Marketing Website
+# AirFresh - Experiential Marketing Website
 
 ## Overview
 
-This is a full-stack web application for AirFresh Marketing, a nationwide experiential marketing company. The application features a React frontend with shadcn/ui components and an Express.js backend with PostgreSQL database integration using Drizzle ORM. The site includes marketing pages, a contact form, and a blog section to showcase the company's services and expertise.
+This is a full-stack web application for AirFresh, a nationwide experiential marketing company. The application features a React frontend with shadcn/ui components and an Express.js backend with PostgreSQL database integration using Drizzle ORM. The site includes marketing pages, a contact form, and a blog section to showcase the company's services and expertise.
 
 ## System Architecture
 

@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logoUrl from "@assets/airfreshmarketing_logo_1757365403567.jpg";
+import logoUrl from "@assets/AirFresh_Logo_Horizontal_RGB_1757387574418.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -25,10 +25,9 @@ export default function Navigation() {
               <div className="flex items-center">
                 <img 
                   src={logoUrl} 
-                  alt="AirFresh Marketing" 
-                  className="w-10 h-10 mr-3"
+                  alt="AirFresh" 
+                  className="h-10 w-auto"
                 />
-                <span className="text-xl font-bold text-gray-900">AirFresh Marketing</span>
               </div>
             </Link>
           </div>

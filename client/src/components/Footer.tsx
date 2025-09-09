@@ -1,6 +1,6 @@
 import { Link } from "wouter";
 import { Facebook, Instagram, Linkedin, Twitter, Phone, Mail, MapPin } from "lucide-react";
-import logoUrl from "@assets/airfreshmarketing_logo_1757365403567.jpg";
+import logoUrl from "@assets/AirFresh_Logo_Horizontal_RGB_1757387574418.jpg";
 
 export default function Footer() {
   return (
@@ -10,8 +10,8 @@ export default function Footer() {
           <Link href="/" className="inline-block">
             <img 
               src={logoUrl} 
-              alt="AirFresh Marketing" 
-              className="w-16 h-16 mx-auto mb-4"
+              alt="AirFresh" 
+              className="h-16 w-auto mx-auto mb-4"
             />
           </Link>
         </div>

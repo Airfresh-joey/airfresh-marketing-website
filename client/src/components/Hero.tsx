@@ -15,7 +15,7 @@ export default function Hero() {
       <div className="relative z-10 max-w-6xl mx-auto px-4 text-center">
         <div className="bg-white/20 backdrop-blur-sm rounded-lg p-8 mb-12 max-w-2xl mx-auto">
           <p className="text-base sm:text-lg mb-6 font-medium leading-relaxed">
-            AIR FRESH MARKETING IS A NATIONWIDE COMPANY THAT<br />
+            AIRFRESH IS A NATIONWIDE COMPANY THAT<br />
             CONNECTS BRANDS WITH THEIR CUSTOMERS<br />
             THROUGH UNFORGETTABLE EXPERIENCES
           </p>
