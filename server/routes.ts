@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
-import { sampleCaseStudies, type CaseStudy } from "./case-studies-data";
+import { fetchRealCaseStudies, type RealCaseStudy } from "./notion-case-studies-real";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -31,12 +31,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
-  // Get all case studies
+  // Get all case studies from Notion
   app.get("/api/case-studies", async (req, res) => {
     try {
-      // Filter only published case studies
-      const publishedCaseStudies = sampleCaseStudies.filter(cs => cs.status === 'Published');
-      res.json(publishedCaseStudies);
+      const caseStudies = await fetchRealCaseStudies();
+      res.json(caseStudies);
     } catch (error) {
       console.error('Error fetching case studies:', error);
       res.status(500).json({ message: 'Failed to fetch case studies' });
@@ -46,8 +45,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get featured case studies (first 3)
   app.get("/api/case-studies/featured", async (req, res) => {
     try {
-      const publishedCaseStudies = sampleCaseStudies.filter(cs => cs.status === 'Published');
-      const featuredCaseStudies = publishedCaseStudies.slice(0, 3);
+      const allCaseStudies = await fetchRealCaseStudies();
+      const featuredCaseStudies = allCaseStudies.slice(0, 3);
       res.json(featuredCaseStudies);
     } catch (error) {
       console.error('Error fetching featured case studies:', error);
@@ -58,7 +57,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get case study by ID
   app.get("/api/case-studies/:id", async (req, res) => {
     try {
-      const caseStudy = sampleCaseStudies.find(cs => cs.id === req.params.id && cs.status === 'Published');
+      const allCaseStudies = await fetchRealCaseStudies();
+      const caseStudy = allCaseStudies.find(cs => cs.id === req.params.id);
       if (!caseStudy) {
         return res.status(404).json({ message: "Case study not found" });
       }
@@ -71,11 +71,21 @@ export async function registerRoutes(app: Express): Promise<Server> {
 
   // Health check endpoint
   app.get("/api/health", async (req, res) => {
-    res.json({ 
-      status: 'ok', 
-      timestamp: new Date().toISOString(),
-      case_studies_count: sampleCaseStudies.length 
-    });
+    try {
+      const caseStudies = await fetchRealCaseStudies();
+      res.json({ 
+        status: 'ok', 
+        timestamp: new Date().toISOString(),
+        case_studies_count: caseStudies.length 
+      });
+    } catch (error) {
+      res.json({ 
+        status: 'error', 
+        timestamp: new Date().toISOString(),
+        case_studies_count: 0,
+        error: 'Failed to fetch case studies'
+      });
+    }
   });
 
   const httpServer = createServer(app);
