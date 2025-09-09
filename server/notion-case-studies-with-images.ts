@@ -174,7 +174,7 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
         
         // Use Google Drive image if available, otherwise use client-specific stock image
         const image_url = google_drive_images.length > 0 ? 
-            google_drive_images[0] : 
+            createGoogleDriveImageUrl(assets_folder || google_drive_folder) : 
             getClientSpecificImage(client, industry, campaign_type);
         
         const caseStudy: CaseStudyWithImages = {
@@ -221,16 +221,19 @@ function extractGoogleDriveImages(googleDriveFolderUrl: string): string[] {
     
     const folderId = folderIdMatch[1];
     
-    // Create different formats that might work for displaying Google Drive content
+    // Create Google Drive image URLs that can be displayed directly
     const imageUrls = [
-        // Embedded folder view - shows folder contents in an iframe-like format
-        `https://drive.google.com/embeddedfolderview?id=${folderId}#grid`,
+        // Use Google Drive's embedded folder preview as main image
+        `https://drive.google.com/uc?export=view&id=${folderId}`,
         
-        // Direct folder link for opening in new tab
-        googleDriveFolderUrl,
+        // Alternative format for thumbnail
+        `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600-c`,
         
-        // Try thumbnail format (may work for some folders)
-        `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600`
+        // Folder preview format
+        `https://lh3.googleusercontent.com/d/${folderId}=w800-h600-no`,
+        
+        // Direct folder view for fallback
+        googleDriveFolderUrl
     ];
     
     console.log(`Extracted ${imageUrls.length} image URLs from Google Drive folder: ${folderId}`);
@@ -324,4 +327,22 @@ function getClientSpecificImage(client: string, industry: string, campaign_type:
     
     // Default professional event image
     return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+}
+
+function createGoogleDriveImageUrl(googleDriveFolderUrl: string): string {
+    if (!googleDriveFolderUrl || !googleDriveFolderUrl.includes('drive.google.com')) {
+        return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    }
+    
+    // Extract folder ID from Google Drive URL
+    const folderIdMatch = googleDriveFolderUrl.match(/folders\/([a-zA-Z0-9-_]+)/);
+    if (!folderIdMatch) {
+        return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    }
+    
+    const folderId = folderIdMatch[1];
+    
+    // Create a Google Drive image URL that works for display
+    // This uses Google's thumbnail service which often works for public/shared folders
+    return `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600-c`;
 }

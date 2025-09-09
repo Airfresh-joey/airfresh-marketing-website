@@ -6,6 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import VideoPlayer from "@/components/ui/video-player";
+import GoogleDriveImage from "@/components/GoogleDriveImage";
 import type { CaseStudy } from "@shared/schema";
 import {
   ArrowLeft,
@@ -182,10 +183,12 @@ export default function CaseStudyDetail() {
             
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
-                <img 
-                  src={caseStudy.image_url} 
+                <GoogleDriveImage
+                  src={caseStudy.image_url}
                   alt={caseStudy.title}
-                  className="w-full h-96 lg:h-[500px] object-cover"
+                  className="w-full h-96 lg:h-[500px]"
+                  driveUrl={caseStudy.assets_folder}
+                  fallbackSrc={`https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`}
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                 {caseStudy.has_real_assets && (

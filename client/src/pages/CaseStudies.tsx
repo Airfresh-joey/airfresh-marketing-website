@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import SEO from "@/components/SEO";
+import GoogleDriveImage from "@/components/GoogleDriveImage";
 import type { CaseStudy } from "@shared/schema";
 import { 
   Award, 
@@ -210,10 +211,12 @@ export default function CaseStudies() {
               {gridCaseStudies.map((caseStudy) => (
                 <Card key={caseStudy.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
                   <div className="relative">
-                    <img 
-                      src={caseStudy.image_url} 
+                    <GoogleDriveImage
+                      src={caseStudy.image_url}
                       alt={caseStudy.title}
-                      className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                      className="w-full h-48 group-hover:scale-105 transition-transform duration-300"
+                      driveUrl={caseStudy.assets_folder}
+                      fallbackSrc={`https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80`}
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-white/90 text-primary px-2 py-1 rounded text-xs font-semibold">
