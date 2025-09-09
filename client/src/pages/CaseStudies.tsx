@@ -261,8 +261,10 @@ export default function CaseStudies() {
                     </div>
                     
                     <div className="flex gap-2">
-                      <Button variant="ghost" size="sm" className="text-primary hover:text-primary/90 flex-1">
-                        Learn More <ArrowRight className="h-3 w-3 ml-1" />
+                      <Button asChild variant="ghost" size="sm" className="text-primary hover:text-primary/90 flex-1">
+                        <Link href={`/projects/case-studies/${caseStudy.id}`}>
+                          Learn More <ArrowRight className="h-3 w-3 ml-1" />
+                        </Link>
                       </Button>
                       {caseStudy.assets_folder && (
                         <Button 
