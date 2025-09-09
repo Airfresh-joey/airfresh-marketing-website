@@ -172,10 +172,8 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
         const has_real_assets = !!(assets_folder || google_drive_folder);
         const google_drive_images = extractGoogleDriveImages(assets_folder || google_drive_folder);
         
-        // Use Google Drive image if available, otherwise use client-specific stock image
-        const image_url = google_drive_images.length > 0 ? 
-            createGoogleDriveImageUrl(assets_folder || google_drive_folder) : 
-            getClientSpecificImage(client, industry, campaign_type);
+        // Always use high-quality brand-specific images (Google Drive direct linking doesn't work reliably)
+        const image_url = getClientSpecificImage(client, industry, campaign_type);
         
         const caseStudy: CaseStudyWithImages = {
             id: pageId,
@@ -269,63 +267,99 @@ function createBasicCaseStudyWithImages(pageId: string, title: string): CaseStud
 function getClientSpecificImage(client: string, industry: string, campaign_type: string): string {
     const clientLower = client.toLowerCase();
     
-    // Client-specific high-quality images
+    // Brand-specific high-quality images that actually load
     if (clientLower.includes('microsoft')) {
-        return 'https://images.unsplash.com/photo-1633114128174-2f8aa49759b0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
-    }
-    if (clientLower.includes('apple')) {
-        return 'https://images.unsplash.com/photo-1560472354-b33ff0c44a43?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1566933293069-b55dc0a4e7de?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Tech conference
     }
     if (clientLower.includes('netflix')) {
-        return 'https://images.unsplash.com/photo-1489599804962-c3dd2d6f6965?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Entertainment/streaming
+    }
+    if (clientLower.includes('apple')) {
+        return 'https://images.unsplash.com/photo-1531297484001-80022131f5a1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Apple/tech
     }
     if (clientLower.includes('mrbeast')) {
-        return 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // YouTube/content
     }
-    if (clientLower.includes('williams') || clientLower.includes('racing') || clientLower.includes('formula')) {
-        return 'https://images.unsplash.com/photo-1525198018674-2b5d8030bb80?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('mac') && clientLower.includes('cosmetic')) {
+        return 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Makeup/beauty
     }
-    if (clientLower.includes('mac') || clientLower.includes('cosmetic')) {
-        return 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('buffalo') && clientLower.includes('wild')) {
+        return 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Sports bar/restaurant
     }
-    if (clientLower.includes('buffalo') || clientLower.includes('wild') || clientLower.includes('wings')) {
-        return 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('williams') || (clientLower.includes('racing') && !clientLower.includes('formula'))) {
+        return 'https://images.unsplash.com/photo-1558618047-3c8c76ca7d13?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // F1 racing
+    }
+    if (clientLower.includes('formula') || clientLower.includes('las vegas')) {
+        return 'https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Formula racing
     }
     if (clientLower.includes('cirque') || clientLower.includes('soleil')) {
-        return 'https://images.unsplash.com/photo-1518611012118-696072aa579a?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Circus/performance
     }
     if (clientLower.includes('nissan')) {
-        return 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1552519507-da3b142c6e3d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Car/automotive
     }
-    if (clientLower.includes('tequila') || clientLower.includes('1800')) {
-        return 'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('clarins')) {
+        return 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Luxury skincare
     }
-    if (clientLower.includes('waiakea') || clientLower.includes('water')) {
-        return 'https://images.unsplash.com/photo-1547036967-23d11aacaee0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('1800') || clientLower.includes('tequila')) {
+        return 'https://images.unsplash.com/photo-1569529465841-dfecdab7503b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Premium spirits
+    }
+    if (clientLower.includes('waiakea') || (clientLower.includes('water') && !clientLower.includes('car'))) {
+        return 'https://images.unsplash.com/photo-1571019613454-1cb2f99b2d8b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Premium water
     }
     if (clientLower.includes('topps') || clientLower.includes('trading')) {
-        return 'https://images.unsplash.com/photo-1606092195730-5d7b9af1efc5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1594736797933-d0280ba2fe65?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Trading cards
     }
-    if (clientLower.includes('wagamama') || clientLower.includes('culinary')) {
-        return 'https://images.unsplash.com/photo-1414235077428-338989a2e8c0?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('wagamama')) {
+        return 'https://images.unsplash.com/photo-1555396273-367ea4eb4db5?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Asian restaurant
     }
-    if (clientLower.includes('clarins') || clientLower.includes('byoma')) {
-        return 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('culinary dropout')) {
+        return 'https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Modern restaurant
+    }
+    if (clientLower.includes('byoma')) {
+        return 'https://images.unsplash.com/photo-1570194065650-d99c79498227?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Skincare
+    }
+    if (clientLower.includes('katjes')) {
+        return 'https://images.unsplash.com/photo-1549007908-b5ba11ce1ca8?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Candy/sweets
+    }
+    if (clientLower.includes('peelzon')) {
+        return 'https://images.unsplash.com/photo-1556228852-4c3d6b5cf94e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Beauty tech
     }
     if (clientLower.includes('ted')) {
-        return 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1475721027785-f74eccf877e2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Speaking/conference
     }
-    if (clientLower.includes('car') || clientLower.includes('wash')) {
-        return 'https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('polaris')) {
+        return 'https://images.unsplash.com/photo-1551632436-cbf8dd35adfa?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Vehicles/outdoor
+    }
+    if (clientLower.includes('car') && clientLower.includes('wash')) {
+        return 'https://images.unsplash.com/photo-1549317661-bd32c8ce0db2?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Car wash
+    }
+    if (clientLower.includes('skinny mixes')) {
+        return 'https://images.unsplash.com/photo-1551698618-1dfe5d97d256?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Drinks/mixers
     }
     if (clientLower.includes('solar')) {
-        return 'https://images.unsplash.com/photo-1509391366360-2e959784a276?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+        return 'https://images.unsplash.com/photo-1508514177221-188b1cf16e9d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Solar energy
     }
-    if (clientLower.includes('golf')) {
-        return 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
+    if (clientLower.includes('bond vet')) {
+        return 'https://images.unsplash.com/photo-1601758228041-f3b2795255f1?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Veterinary
+    }
+    if (clientLower.includes('brooklyn magazine')) {
+        return 'https://images.unsplash.com/photo-1495020689067-958852a7765e?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Media/publishing
+    }
+    if (clientLower.includes('paradise body')) {
+        return 'https://images.unsplash.com/photo-1544161515-4ab6ce6db874?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Beauty/wellness
+    }
+    if (clientLower.includes('cortie') || clientLower.includes('digital yalo')) {
+        return 'https://images.unsplash.com/photo-1461749280684-dccba630e2f6?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Digital/tech
+    }
+    if (clientLower.includes('qwuick')) {
+        return 'https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Tech/mobile
+    }
+    if (clientLower.includes('golf') || clientLower.includes('sun club')) {
+        return 'https://images.unsplash.com/photo-1535131749006-b7f58c99034b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80'; // Golf/sports
     }
     
-    // Default professional event image
+    // Default professional experiential marketing event
     return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
 }
 
