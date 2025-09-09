@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import SEO from "@/components/SEO";
+import type { CaseStudy } from "@shared/schema";
 import { 
   Award, 
   Users, 
@@ -18,18 +19,6 @@ import {
   DollarSign
 } from "lucide-react";
 
-interface CaseStudy {
-  id: string;
-  title: string;
-  client: string;
-  description: string;
-  industry: string;
-  campaign_type: string;
-  results: string;
-  image_url: string;
-  date: string;
-  status: string;
-}
 
 export default function CaseStudies() {
   // Structured data for better SEO and LLM understanding

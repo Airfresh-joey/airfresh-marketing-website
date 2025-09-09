@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
+import VideoPlayer from "@/components/ui/video-player";
 import type { CaseStudy } from "@shared/schema";
 import {
   ArrowLeft,
@@ -198,8 +199,9 @@ export default function CaseStudyDetail() {
               </div>
               
               {/* Floating elements for visual appeal */}
-              <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary/20 rounded-full blur-sm"></div>
-              <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-400/20 rounded-full blur-sm"></div>
+              <div className="absolute -top-4 -left-4 w-8 h-8 bg-primary/20 rounded-full blur-sm animate-pulse"></div>
+              <div className="absolute -bottom-4 -right-4 w-12 h-12 bg-blue-400/20 rounded-full blur-sm animate-bounce"></div>
+              <div className="absolute top-1/2 -left-8 w-4 h-4 bg-green-400/30 rounded-full blur-sm animate-ping"></div>
             </div>
           </div>
         </div>
@@ -219,15 +221,15 @@ export default function CaseStudyDetail() {
               <div className="w-24 h-1 bg-gradient-to-r from-primary to-blue-600 mx-auto"></div>
             </div>
             
-            <Card className="border-0 shadow-xl bg-gradient-to-br from-white to-gray-50/50">
+            <Card className="border-0 shadow-xl bg-gradient-to-br from-white to-gray-50/50 hover:shadow-2xl transition-all duration-500 hover:scale-[1.02]">
               <CardContent className="p-12">
                 <div className="prose prose-lg max-w-none">
                   <div className="text-xl leading-relaxed text-gray-700 space-y-6">
                     {caseStudy.what_we_did.split('.').map((sentence, index) => (
                       sentence.trim() && (
-                        <div key={index} className="flex items-start gap-4">
-                          <div className="flex-shrink-0 w-2 h-2 bg-primary rounded-full mt-3"></div>
-                          <p className="text-lg leading-relaxed">{sentence.trim()}.</p>
+                        <div key={index} className="flex items-start gap-4 group">
+                          <div className="flex-shrink-0 w-3 h-3 bg-gradient-to-br from-primary to-blue-600 rounded-full mt-3 group-hover:scale-125 transition-transform duration-300"></div>
+                          <p className="text-lg leading-relaxed group-hover:text-gray-900 transition-colors duration-300">{sentence.trim()}.</p>
                         </div>
                       )
                     ))}
