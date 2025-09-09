@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Users, 
   Target, 
@@ -16,6 +17,19 @@ import {
 } from "lucide-react";
 
 export default function About() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "AboutPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "description": "Premier experiential marketing agency with 20+ years of experience creating memorable brand activations and customer engagement campaigns",
+      "foundingDate": "2004",
+      "specialty": "Experiential Marketing, Brand Activations, Event Marketing",
+      "serviceArea": "United States",
+      "hasCredential": "20+ Years Experience, 300+ Brands Served, 50+ Cities Nationwide"
+    }
+  };
   const stats = [
     { number: "20+", label: "Years of Experience" },
     { number: "300+", label: "Brands Served" },
@@ -92,6 +106,13 @@ export default function About() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="About AirFresh Marketing - 20+ Years of Experiential Marketing Excellence | Leading Brand Activation Agency"
+        description="Learn about AirFresh Marketing's 20+ year journey as a premier experiential marketing agency. We've served 300+ brands across 50+ cities with innovative brand activations, event marketing, and customer engagement campaigns."
+        keywords="about experiential marketing agency, brand activation company history, event marketing experts, experiential advertising team, promotional marketing professionals, brand engagement specialists"
+        canonical="https://airfreshmarketing.com/about"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

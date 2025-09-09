@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Zap, 
   Heart, 
@@ -22,6 +23,47 @@ import {
 } from "lucide-react";
 
 export default function Services() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing"
+    },
+    "serviceType": [
+      "Experiential Marketing",
+      "Brand Activations", 
+      "Corporate Events",
+      "Event Production",
+      "Product Sampling",
+      "Trade Show Marketing",
+      "Promotional Campaigns",
+      "Brand Ambassador Services"
+    ],
+    "areaServed": "United States",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "Experiential Marketing Services",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "Experiential Marketing",
+            "description": "Multi-sensory brand experiences that create emotional connections"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service", 
+            "name": "Brand Activations",
+            "description": "Interactive experiences and product launches that generate brand awareness"
+          }
+        }
+      ]
+    }
+  };
   const mainServices = [
     {
       icon: Heart,
@@ -106,6 +148,13 @@ export default function Services() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Experiential Marketing Services | Brand Activations, Event Marketing & Corporate Events - AirFresh Marketing"
+        description="Comprehensive experiential marketing services including brand activations, corporate events, product sampling, and trade show marketing. Full-service event production and brand ambassador programs nationwide."
+        keywords="experiential marketing services, brand activation services, corporate event planning, event production company, product sampling campaigns, trade show marketing, brand ambassador programs, promotional marketing services, event marketing agency, experiential advertising services"
+        canonical="https://airfreshmarketing.com/services"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

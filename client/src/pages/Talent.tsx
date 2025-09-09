@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   MapPin, 
   Star, 
@@ -15,6 +16,39 @@ import {
 } from "lucide-react";
 
 export default function Talent() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "WebPage",
+    "name": "Brand Ambassador Talent Network",
+    "description": "Professional brand ambassadors and experiential marketing talent for hire",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing Talent Network",
+      "description": "Network of 5,000+ professional brand ambassadors, event hosts, and experiential marketing specialists",
+      "hasOfferCatalog": {
+        "@type": "OfferCatalog",
+        "name": "Brand Ambassador Services",
+        "itemListElement": [
+          {
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Brand Ambassador Services",
+              "description": "Professional brand representation and customer engagement"
+            }
+          },
+          {
+            "@type": "Offer", 
+            "itemOffered": {
+              "@type": "Service",
+              "name": "Event Host Services",
+              "description": "Professional event hosting and audience engagement"
+            }
+          }
+        ]
+      }
+    }
+  };
   const featuredTalent = [
     {
       image: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&auto=format&fit=crop&w=400&q=80",
@@ -134,6 +168,13 @@ export default function Talent() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Professional Brand Ambassadors & Event Talent | 5,000+ Verified Experiential Marketing Specialists - AirFresh Marketing"
+        description="Hire professional brand ambassadors, event hosts, and experiential marketing talent from our network of 5,000+ verified specialists. Nationwide coverage across 50+ cities for brand activations and promotional campaigns."
+        keywords="brand ambassadors for hire, professional event staff, experiential marketing talent, promotional staff agency, event hosts, product demonstration specialists, trade show staff, brand representative services, promotional models, event marketing personnel"
+        canonical="https://airfreshmarketing.com/talent"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

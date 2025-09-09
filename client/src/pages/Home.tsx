@@ -1,20 +1,59 @@
 import Hero from "@/components/Hero";
+import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Link } from "wouter";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles } from "lucide-react";
 
 export default function Home() {
+  // Structured data for better SEO and LLM understanding
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "AirFresh Marketing",
+    "description": "Leading experiential marketing agency specializing in brand activations, event marketing, and customer engagement campaigns nationwide",
+    "url": "https://airfreshmarketing.com",
+    "logo": "https://airfreshmarketing.com/logo.jpg",
+    "sameAs": [
+      "https://www.linkedin.com/company/airfresh-marketing",
+      "https://twitter.com/airfreshmarket"
+    ],
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "telephone": "+1-303-720-6060",
+      "contactType": "customer service",
+      "email": "hello@airfreshmarketing.com"
+    },
+    "address": {
+      "@type": "PostalAddress",
+      "addressCountry": "US",
+      "addressRegion": "CO"
+    },
+    "areaServed": "US",
+    "serviceType": [
+      "Experiential Marketing",
+      "Brand Activation",
+      "Event Marketing",
+      "Customer Engagement",
+      "Trade Show Marketing",
+      "Product Sampling",
+      "Brand Ambassador Services",
+      "Pop-up Experiences",
+      "Corporate Events",
+      "Promotional Campaigns"
+    ]
+  };
+
   const services = [
     {
       icon: Sparkles,
       title: "Create Memorable Brand Experiences",
-      description: "Your customers crave unforgettable experiences with your brand. It's our job to give them to them."
+      description: "Transform customer interactions into unforgettable experiential marketing moments that drive brand loyalty and engagement through innovative activations and immersive experiences."
     },
     {
       icon: Heart,
-      title: "Earn Die-Hard Brand Advocates",
-      description: "There is no substitute for brand loyalty! Give your customers something to buzz about, and you'll always be top of mind."
+      title: "Build Lasting Customer Relationships Through Experiential Marketing",
+      description: "Convert customers into passionate brand advocates through strategic experiential campaigns, product sampling, and authentic brand interactions that create lasting emotional connections."
     },
     {
       icon: Users,
@@ -81,6 +120,13 @@ export default function Home() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="AirFresh Marketing - Premier Experiential Marketing Agency | Brand Activations & Event Marketing"
+        description="AirFresh Marketing is a leading experiential marketing agency specializing in brand activations, product sampling, trade shows, and customer engagement campaigns. Nationwide coverage with 5,000+ brand ambassadors."
+        keywords="experiential marketing, brand activation, event marketing, promotional marketing, brand ambassadors, product sampling, trade show marketing, customer engagement, pop-up experiences, corporate events, marketing campaigns, brand awareness, experiential advertising, guerrilla marketing, field marketing"
+        canonical="https://airfreshmarketing.com"
+        structuredData={structuredData}
+      />
       <Hero />
 
       {/* Video Section */}

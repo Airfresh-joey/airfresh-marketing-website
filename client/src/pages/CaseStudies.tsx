@@ -2,6 +2,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
+import SEO from "@/components/SEO";
 import { 
   Award, 
   Users, 
@@ -36,6 +37,35 @@ interface CaseStudy {
 }
 
 export default function CaseStudies() {
+  // Structured data for better SEO and LLM understanding
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "CollectionPage",
+    "name": "Experiential Marketing Case Studies",
+    "description": "Success stories and case studies from AirFresh Marketing's experiential marketing campaigns",
+    "mainEntity": {
+      "@type": "ItemList",
+      "numberOfItems": "500+",
+      "itemListElement": [
+        {
+          "@type": "CaseStudy",
+          "name": "Brand Activation Case Studies",
+          "description": "Real results from brand activation campaigns across multiple industries"
+        },
+        {
+          "@type": "CaseStudy",
+          "name": "Product Sampling Success Stories", 
+          "description": "Measurable outcomes from product sampling and trial campaigns"
+        },
+        {
+          "@type": "CaseStudy",
+          "name": "Corporate Event Case Studies",
+          "description": "Successful corporate events and experiential marketing activations"
+        }
+      ]
+    }
+  };
+
   // Fetch case studies from Notion
   const { data: caseStudies = [], isLoading } = useQuery<CaseStudy[]>({
     queryKey: ['/api/case-studies'],
@@ -50,6 +80,13 @@ export default function CaseStudies() {
   if (isLoading) {
     return (
       <div className="pt-16">
+        <SEO 
+          title="Experiential Marketing Case Studies & Success Stories | Real Campaign Results - AirFresh Marketing"
+          description="Explore 500+ experiential marketing case studies showcasing real results from brand activations, product sampling, corporate events, and customer engagement campaigns across all industries."
+          keywords="experiential marketing case studies, brand activation success stories, event marketing results, promotional campaign case studies, product sampling outcomes, corporate event case studies, experiential advertising examples, marketing campaign results, brand engagement case studies"
+          canonical="https://airfreshmarketing.com/projects/case-studies"
+          structuredData={structuredData}
+        />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
           <div className="text-center">
             <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-primary mx-auto"></div>
