@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
-import { fetchFinalCaseStudies, type FinalCaseStudy } from "./notion-final-case-studies";
+import { fetchCompleteCaseStudies, type CompleteCaseStudy } from "./notion-case-studies-complete";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -34,7 +34,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get all case studies from Notion
   app.get("/api/case-studies", async (req, res) => {
     try {
-      const caseStudies = await fetchFinalCaseStudies();
+      const caseStudies = await fetchCompleteCaseStudies();
       res.json(caseStudies);
     } catch (error) {
       console.error('Error fetching case studies:', error);
@@ -45,7 +45,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get featured case studies (first 3)
   app.get("/api/case-studies/featured", async (req, res) => {
     try {
-      const allCaseStudies = await fetchFinalCaseStudies();
+      const allCaseStudies = await fetchCompleteCaseStudies();
       const featuredCaseStudies = allCaseStudies.slice(0, 3);
       res.json(featuredCaseStudies);
     } catch (error) {
@@ -57,7 +57,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Get case study by ID
   app.get("/api/case-studies/:id", async (req, res) => {
     try {
-      const allCaseStudies = await fetchFinalCaseStudies();
+      const allCaseStudies = await fetchCompleteCaseStudies();
       const caseStudy = allCaseStudies.find(cs => cs.id === req.params.id);
       if (!caseStudy) {
         return res.status(404).json({ message: "Case study not found" });
@@ -72,7 +72,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // Health check endpoint
   app.get("/api/health", async (req, res) => {
     try {
-      const caseStudies = await fetchFinalCaseStudies();
+      const caseStudies = await fetchCompleteCaseStudies();
       res.json({ 
         status: 'ok', 
         timestamp: new Date().toISOString(),
