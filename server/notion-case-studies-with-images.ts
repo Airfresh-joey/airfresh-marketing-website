@@ -342,7 +342,7 @@ function createGoogleDriveImageUrl(googleDriveFolderUrl: string): string {
     
     const folderId = folderIdMatch[1];
     
-    // Create a Google Drive image URL that works for display
-    // This uses Google's thumbnail service which often works for public/shared folders
-    return `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600-c`;
+    // Create a Google Drive image URL using the most reliable method
+    // Return the original folder URL so our component can try different methods
+    return googleDriveFolderUrl;
 }
