@@ -35,3 +35,26 @@ export const insertUserSchema = createInsertSchema(users).pick({
 
 export type InsertUser = z.infer<typeof insertUserSchema>;
 export type User = typeof users.$inferSelect;
+
+// Case study type for frontend use
+export interface CaseStudy {
+  id: string;
+  title: string;
+  client: string;
+  industry: string;
+  campaign_type: string;
+  description: string;
+  results: string;
+  what_we_did: string;
+  services_provided: string[];
+  markets: string[];
+  product_offering: string;
+  google_drive_folder: string;
+  assets_folder: string;
+  notion_url: string;
+  image_url: string;
+  has_real_assets: boolean;
+  google_drive_images: string[];
+  date: string;
+  status: string;
+}
