@@ -66,13 +66,6 @@ export default function CaseStudies() {
     queryKey: ['/api/case-studies'],
   });
 
-  // Debug logging
-  console.log('CaseStudies Debug:', { 
-    caseStudies, 
-    isLoading, 
-    error,
-    dataLength: caseStudies?.length 
-  });
 
   // Get featured case study (first one)
   const featuredCaseStudy = caseStudies[0];
