@@ -248,14 +248,39 @@ export default function CaseStudies() {
                       </p>
                     </div>
 
-                    <div className="flex items-center justify-between">
+                    <div className="flex items-center justify-between mb-3">
                       <div className="flex items-center text-xs text-gray-500">
                         <MapPin className="h-3 w-3 mr-1" />
                         {caseStudy.industry}
                       </div>
-                      <Button variant="ghost" size="sm" className="text-primary hover:text-primary/90">
+                      {caseStudy.has_real_assets && (
+                        <span className="bg-green-100 text-green-800 text-xs font-medium px-2 py-1 rounded-full">
+                          📁 Real Assets
+                        </span>
+                      )}
+                    </div>
+                    
+                    <div className="flex gap-2">
+                      <Button variant="ghost" size="sm" className="text-primary hover:text-primary/90 flex-1">
                         Learn More <ArrowRight className="h-3 w-3 ml-1" />
                       </Button>
+                      {caseStudy.assets_folder && (
+                        <Button 
+                          asChild 
+                          variant="outline" 
+                          size="sm"
+                          className="text-blue-600 border-blue-600 hover:bg-blue-50"
+                        >
+                          <a 
+                            href={caseStudy.assets_folder} 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            className="flex items-center gap-1"
+                          >
+                            📸
+                          </a>
+                        </Button>
+                      )}
                     </div>
                   </CardContent>
                 </Card>

@@ -4,7 +4,7 @@ const notion = new Client({
     auth: process.env.NOTION_INTEGRATION_SECRET!,
 });
 
-export interface CompleteCaseStudy {
+export interface CaseStudyWithImages {
     id: string;
     title: string;
     client: string;
@@ -20,6 +20,8 @@ export interface CompleteCaseStudy {
     assets_folder: string;
     notion_url: string;
     image_url: string;
+    has_real_assets: boolean;
+    google_drive_images: string[];
     date: string;
     status: string;
 }
@@ -56,42 +58,39 @@ const CASE_STUDIES_LIST = [
     { title: "Paradise Body", id: "1adda91659c68063b872fefb796610d1" },
     { title: "The Sun Club Golf", id: "1adda91659c6802996f4db045cb88c88" },
     { title: "Cortie - Digital Yalo", id: "1adda91659c6805aa56fdcef106e666e" },
-    { title: "Beer Samplings", id: "Beer Samplings" }, // This appears to be a category header
     { title: "Qwuick", id: "1adda91659c680b88db2f1a2be210c82" }
 ];
 
-export async function fetchCompleteCaseStudies(): Promise<CompleteCaseStudy[]> {
+export async function fetchCaseStudiesWithImages(): Promise<CaseStudyWithImages[]> {
     try {
-        console.log("Fetching complete case studies from specific Notion pages...");
+        console.log("Fetching case studies with Google Drive images...");
         
-        const caseStudies: CompleteCaseStudy[] = [];
+        const caseStudies: CaseStudyWithImages[] = [];
         
         for (const study of CASE_STUDIES_LIST) {
-            if (study.id === "Beer Samplings") continue; // Skip category header
-            
             try {
-                const caseStudy = await fetchSpecificCaseStudy(study.id, study.title);
+                const caseStudy = await fetchSpecificCaseStudyWithImages(study.id, study.title);
                 if (caseStudy) {
                     caseStudies.push(caseStudy);
                 }
             } catch (error) {
                 console.error(`Error fetching case study ${study.title}:`, error);
                 // Create a basic case study entry if fetch fails
-                const basicCaseStudy = createBasicCaseStudy(study.id, study.title);
+                const basicCaseStudy = createBasicCaseStudyWithImages(study.id, study.title);
                 caseStudies.push(basicCaseStudy);
             }
         }
         
-        console.log(`Successfully fetched ${caseStudies.length} complete case studies`);
+        console.log(`Successfully fetched ${caseStudies.length} case studies with images`);
         return caseStudies;
         
     } catch (error) {
-        console.error("Error fetching complete case studies:", error);
+        console.error("Error fetching case studies with images:", error);
         return [];
     }
 }
 
-async function fetchSpecificCaseStudy(pageId: string, title: string): Promise<CompleteCaseStudy | null> {
+async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): Promise<CaseStudyWithImages | null> {
     try {
         // Get page properties
         const page = await notion.pages.retrieve({ page_id: pageId });
@@ -169,10 +168,16 @@ async function fetchSpecificCaseStudy(pageId: string, title: string): Promise<Co
         
         const results = results_parts.join('. ') + '.';
         
-        // Get appropriate image based on client
-        const image_url = getClientSpecificImage(client, industry, campaign_type);
+        // Process Google Drive links for images
+        const has_real_assets = !!(assets_folder || google_drive_folder);
+        const google_drive_images = extractGoogleDriveImages(assets_folder || google_drive_folder);
         
-        const caseStudy: CompleteCaseStudy = {
+        // Use Google Drive image if available, otherwise use client-specific stock image
+        const image_url = google_drive_images.length > 0 ? 
+            google_drive_images[0] : 
+            getClientSpecificImage(client, industry, campaign_type);
+        
+        const caseStudy: CaseStudyWithImages = {
             id: pageId,
             title,
             client,
@@ -188,11 +193,13 @@ async function fetchSpecificCaseStudy(pageId: string, title: string): Promise<Co
             assets_folder: assets_folder || '',
             notion_url: `https://www.notion.so/${pageId.replace(/-/g, '')}`,
             image_url,
+            has_real_assets,
+            google_drive_images,
             date,
             status: 'Published'
         };
         
-        console.log(`✓ Fetched: ${title} - Assets: ${assets_folder ? 'Yes' : 'No'} - Services: ${services_provided.length}`);
+        console.log(`✓ ${title} - Real Assets: ${has_real_assets ? 'Yes' : 'No'} - Images: ${google_drive_images.length}`);
         return caseStudy;
         
     } catch (error) {
@@ -201,7 +208,36 @@ async function fetchSpecificCaseStudy(pageId: string, title: string): Promise<Co
     }
 }
 
-function createBasicCaseStudy(pageId: string, title: string): CompleteCaseStudy {
+function extractGoogleDriveImages(googleDriveFolderUrl: string): string[] {
+    if (!googleDriveFolderUrl || !googleDriveFolderUrl.includes('drive.google.com')) {
+        return [];
+    }
+    
+    // Extract folder ID from Google Drive URL
+    const folderIdMatch = googleDriveFolderUrl.match(/folders\/([a-zA-Z0-9-_]+)/);
+    if (!folderIdMatch) {
+        return [];
+    }
+    
+    const folderId = folderIdMatch[1];
+    
+    // Create different formats that might work for displaying Google Drive content
+    const imageUrls = [
+        // Embedded folder view - shows folder contents in an iframe-like format
+        `https://drive.google.com/embeddedfolderview?id=${folderId}#grid`,
+        
+        // Direct folder link for opening in new tab
+        googleDriveFolderUrl,
+        
+        // Try thumbnail format (may work for some folders)
+        `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600`
+    ];
+    
+    console.log(`Extracted ${imageUrls.length} image URLs from Google Drive folder: ${folderId}`);
+    return imageUrls;
+}
+
+function createBasicCaseStudyWithImages(pageId: string, title: string): CaseStudyWithImages {
     const client = title.split('(')[0].trim();
     
     return {
@@ -220,6 +256,8 @@ function createBasicCaseStudy(pageId: string, title: string): CompleteCaseStudy 
         assets_folder: '',
         notion_url: `https://www.notion.so/${pageId.replace(/-/g, '')}`,
         image_url: getClientSpecificImage(client, 'Marketing', 'Brand Activation'),
+        has_real_assets: false,
+        google_drive_images: [],
         date: new Date().toISOString().split('T')[0],
         status: 'Published'
     };
