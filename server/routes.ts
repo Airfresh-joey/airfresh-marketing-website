@@ -2,7 +2,7 @@ import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
-import { getCaseStudies, findDatabaseByTitle } from "./notion";
+import { getCaseStudies, findDatabaseByTitle, notion } from "./notion";
 import { z } from "zod";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -78,6 +78,32 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching case study:', error);
       res.status(500).json({ message: "Internal server error" });
+    }
+  });
+
+  // Test Notion connection
+  app.get("/api/notion/test", async (req, res) => {
+    try {
+      const searchResults = await notion.search({});
+      res.json({
+        connected: true,
+        accessible_items: searchResults.results.length,
+        items: searchResults.results.map(item => ({
+          id: item.id,
+          object: item.object,
+          title: item.object === 'page' && 'properties' in item && item.properties.title 
+            ? item.properties.title.title[0]?.plain_text || 'Untitled'
+            : item.object === 'database' && 'title' in item 
+            ? item.title[0]?.plain_text || 'Untitled Database'
+            : 'No title'
+        }))
+      });
+    } catch (error) {
+      res.json({
+        connected: false,
+        error: error.message,
+        page_id_configured: process.env.NOTION_PAGE_URL || 'Not set'
+      });
     }
   });
 
