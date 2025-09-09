@@ -61,9 +61,17 @@ export default function CaseStudies() {
     }
   };
 
-  // Fetch case studies from Notion
-  const { data: caseStudies = [], isLoading } = useQuery<CaseStudy[]>({
+  // Fetch case studies from API
+  const { data: caseStudies = [], isLoading, error } = useQuery<CaseStudy[]>({
     queryKey: ['/api/case-studies'],
+  });
+
+  // Debug logging
+  console.log('CaseStudies Debug:', { 
+    caseStudies, 
+    isLoading, 
+    error,
+    dataLength: caseStudies?.length 
   });
 
   // Get featured case study (first one)
