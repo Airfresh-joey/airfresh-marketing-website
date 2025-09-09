@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Calendar, 
   Clock, 
@@ -17,6 +18,35 @@ import {
 } from "lucide-react";
 
 export default function Blog() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Blog",
+    "name": "AirFresh Marketing Blog - Experiential Marketing Insights",
+    "description": "Expert insights on experiential marketing trends, brand activation strategies, event marketing tips, and proven tactics for creating memorable customer experiences",
+    "url": "https://airfreshmarketing.com/blog",
+    "publisher": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "logo": "https://airfreshmarketing.com/logo.jpg"
+    },
+    "inLanguage": "en-US",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://airfreshmarketing.com/blog"
+    },
+    "about": [
+      {
+        "@type": "Thing",
+        "name": "Experiential Marketing",
+        "description": "Marketing strategy that directly engages consumers through live experiences"
+      },
+      {
+        "@type": "Thing",
+        "name": "Brand Activation",
+        "description": "Interactive marketing campaigns that promote brands through memorable experiences"
+      }
+    ]
+  };
   const featuredArticle = {
     title: "The Future of Experiential Marketing: 2025 Trends & Predictions",
     excerpt: "Explore how emerging technologies, changing consumer behaviors, and new engagement strategies are reshaping the experiential marketing landscape for the year ahead.",
@@ -102,6 +132,13 @@ export default function Blog() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Experiential Marketing Blog - Expert Insights & Industry Trends | AirFresh Marketing"
+        description="Get expert insights on experiential marketing trends, brand activation strategies, event marketing tips, and proven tactics for creating memorable customer experiences. Read industry insights from AirFresh Marketing professionals."
+        keywords="experiential marketing blog, brand activation insights, event marketing strategies, promotional marketing tips, customer engagement tactics, experiential advertising trends, marketing industry insights, brand experience articles"
+        canonical="https://airfreshmarketing.com/blog"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

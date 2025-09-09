@@ -2,6 +2,7 @@ import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Phone, 
   Mail, 
@@ -19,6 +20,32 @@ import {
 } from "lucide-react";
 
 export default function Contact() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "ContactPage",
+    "mainEntity": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "telephone": "+1-303-720-6060",
+      "email": "hello@airfreshmarketing.com",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "720 S. Colorado Blvd., Penthouse North",
+        "addressLocality": "Denver",
+        "addressRegion": "CO",
+        "postalCode": "80246",
+        "addressCountry": "US"
+      },
+      "openingHours": "Mo-Fr 09:00-18:00",
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "telephone": "+1-303-720-6060",
+        "contactType": "customer service",
+        "email": "hello@airfreshmarketing.com",
+        "availableLanguage": "en"
+      }
+    }
+  };
   const contactInfo = [
     {
       icon: Phone,
@@ -67,6 +94,13 @@ export default function Contact() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Contact AirFresh Marketing - Get Your Free Experiential Marketing Consultation | 303-720-6060"
+        description="Contact AirFresh Marketing for a free consultation on your next experiential marketing campaign. Call 303-720-6060 or email hello@airfreshmarketing.com. Located in Denver, CO with nationwide coverage."
+        keywords="contact experiential marketing agency, free marketing consultation, experiential marketing quote, brand activation consultation, event marketing contact, AirFresh Marketing phone number, Denver marketing agency contact"
+        canonical="https://airfreshmarketing.com/contact"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 
