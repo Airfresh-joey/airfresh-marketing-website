@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
 import SEO from "@/components/SEO";
+import CaseStudyImage from "@/components/CaseStudyImage";
 import type { CaseStudy } from "@shared/schema";
 import { 
   Award, 
@@ -210,9 +211,10 @@ export default function CaseStudies() {
               {gridCaseStudies.map((caseStudy) => (
                 <Card key={caseStudy.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
                   <div className="relative">
-<img 
-                      src={caseStudy.image_url} 
+<CaseStudyImage
+                      src={caseStudy.image_url}
                       alt={caseStudy.title}
+                      client={caseStudy.client}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">

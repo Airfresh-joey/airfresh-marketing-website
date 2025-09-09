@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
+import CaseStudyImage from "@/components/CaseStudyImage";
 import VideoPlayer from "@/components/ui/video-player";
 import type { CaseStudy } from "@shared/schema";
 import {
@@ -182,9 +183,10 @@ export default function CaseStudyDetail() {
             
             <div className="relative">
               <div className="relative rounded-2xl overflow-hidden shadow-2xl transform rotate-1 hover:rotate-0 transition-transform duration-500">
-<img 
-                  src={caseStudy.image_url} 
+<CaseStudyImage
+                  src={caseStudy.image_url}
                   alt={caseStudy.title}
+                  client={caseStudy.client}
                   className="w-full h-96 lg:h-[500px] object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>

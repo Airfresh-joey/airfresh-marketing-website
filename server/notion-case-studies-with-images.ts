@@ -172,8 +172,10 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
         const has_real_assets = !!(assets_folder || google_drive_folder);
         const google_drive_images = extractGoogleDriveImages(assets_folder || google_drive_folder);
         
-        // Always use high-quality brand-specific images (Google Drive direct linking doesn't work reliably)
-        const image_url = getClientSpecificImage(client, industry, campaign_type);
+        // Create image URL - will check object storage first, then use stock photos as fallback
+        // Object storage path format: /public-objects/case-studies/{client-slug}.jpg
+        const clientSlug = client.toLowerCase().replace(/[^a-z0-9]+/g, '-');
+        const image_url = `/public-objects/case-studies/${clientSlug}.jpg`;
         
         const caseStudy: CaseStudyWithImages = {
             id: pageId,

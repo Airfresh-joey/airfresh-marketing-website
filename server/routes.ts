@@ -4,8 +4,25 @@ import { storage } from "./storage";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { fetchCaseStudiesWithImages, type CaseStudyWithImages } from "./notion-case-studies-with-images";
 import { z } from "zod";
+import { ObjectStorageService } from "./objectStorage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
+  const objectStorageService = new ObjectStorageService();
+  
+  // Serve images from object storage
+  app.get("/public-objects/:filePath(*)", async (req, res) => {
+    const filePath = req.params.filePath;
+    try {
+      const file = await objectStorageService.searchPublicObject(filePath);
+      if (!file) {
+        return res.status(404).json({ error: "File not found" });
+      }
+      await objectStorageService.downloadObject(file, res);
+    } catch (error) {
+      console.error("Error serving object storage file:", error);
+      return res.status(500).json({ error: "Internal server error" });
+    }
+  });
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {
