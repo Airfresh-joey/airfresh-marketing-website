@@ -19,21 +19,16 @@ import {
 } from "lucide-react";
 
 interface CaseStudy {
-  notionId: string;
+  id: string;
   title: string;
   client: string;
   description: string;
   industry: string;
+  campaign_type: string;
   results: string;
-  imageUrl: string;
-  location: string;
-  eventType: string;
-  budget: string;
-  attendees: number;
-  duration: string;
-  featured: boolean;
-  createdAt: string;
-  lastEditedAt: string;
+  image_url: string;
+  date: string;
+  status: string;
 }
 
 export default function CaseStudies() {
@@ -71,11 +66,11 @@ export default function CaseStudies() {
     queryKey: ['/api/case-studies'],
   });
 
-  // Get featured case study (first featured one)
-  const featuredCaseStudy = caseStudies.find(cs => cs.featured) || caseStudies[0];
+  // Get featured case study (first one)
+  const featuredCaseStudy = caseStudies[0];
 
-  // Get non-featured case studies for grid
-  const gridCaseStudies = caseStudies.filter(cs => !cs.featured || cs.notionId !== featuredCaseStudy?.notionId);
+  // Get remaining case studies for grid
+  const gridCaseStudies = caseStudies.slice(1);
 
   if (isLoading) {
     return (
@@ -146,7 +141,7 @@ export default function CaseStudies() {
               <div className="lg:grid lg:grid-cols-2">
                 <div className="relative">
                   <img 
-                    src={featuredCaseStudy.imageUrl} 
+                    src={featuredCaseStudy.image_url} 
                     alt={featuredCaseStudy.title}
                     className="w-full h-64 lg:h-full object-cover"
                   />
@@ -172,7 +167,7 @@ export default function CaseStudies() {
                       </div>
                       <div className="flex items-center">
                         <Calendar className="h-4 w-4 mr-1" />
-                        {featuredCaseStudy.duration}
+                        {featuredCaseStudy.campaign_type}
                       </div>
                     </div>
                     <p className="text-gray-600 leading-relaxed mb-6">
@@ -190,30 +185,14 @@ export default function CaseStudies() {
                   )}
 
                   <div className="grid grid-cols-2 gap-4 mb-6">
-                    {featuredCaseStudy.location && (
-                      <div className="flex items-center text-sm text-gray-600">
-                        <MapPin className="h-4 w-4 mr-2" />
-                        {featuredCaseStudy.location}
-                      </div>
-                    )}
-                    {featuredCaseStudy.attendees > 0 && (
-                      <div className="flex items-center text-sm text-gray-600">
-                        <Users className="h-4 w-4 mr-2" />
-                        {featuredCaseStudy.attendees.toLocaleString()} Attendees
-                      </div>
-                    )}
-                    {featuredCaseStudy.budget && (
-                      <div className="flex items-center text-sm text-gray-600">
-                        <DollarSign className="h-4 w-4 mr-2" />
-                        {featuredCaseStudy.budget}
-                      </div>
-                    )}
-                    {featuredCaseStudy.eventType && (
-                      <div className="flex items-center text-sm text-gray-600">
-                        <Award className="h-4 w-4 mr-2" />
-                        {featuredCaseStudy.eventType}
-                      </div>
-                    )}
+                    <div className="flex items-center text-sm text-gray-600">
+                      <Calendar className="h-4 w-4 mr-2" />
+                      {new Date(featuredCaseStudy.date).toLocaleDateString()}
+                    </div>
+                    <div className="flex items-center text-sm text-gray-600">
+                      <Award className="h-4 w-4 mr-2" />
+                      Campaign Complete
+                    </div>
                   </div>
 
                   <Button asChild className="w-full lg:w-auto">
@@ -239,16 +218,16 @@ export default function CaseStudies() {
           {gridCaseStudies.length > 0 ? (
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
               {gridCaseStudies.map((caseStudy) => (
-                <Card key={caseStudy.notionId} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
+                <Card key={caseStudy.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
                   <div className="relative">
                     <img 
-                      src={caseStudy.imageUrl} 
+                      src={caseStudy.image_url} 
                       alt={caseStudy.title}
                       className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
                     />
                     <div className="absolute top-4 left-4">
                       <span className="bg-white/90 text-primary px-2 py-1 rounded text-xs font-semibold">
-                        {caseStudy.eventType}
+                        {caseStudy.campaign_type}
                       </span>
                     </div>
                   </div>
@@ -271,7 +250,7 @@ export default function CaseStudies() {
                     <div className="flex items-center justify-between">
                       <div className="flex items-center text-xs text-gray-500">
                         <MapPin className="h-3 w-3 mr-1" />
-                        {caseStudy.location}
+                        {caseStudy.industry}
                       </div>
                       <Button variant="ghost" size="sm" className="text-primary hover:text-primary/90">
                         Learn More <ArrowRight className="h-3 w-3 ml-1" />
