@@ -56,13 +56,13 @@ export default function Navigation() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link href="/services">Experiential Marketing</Link>
+                  <Link href="/services/experiential-marketing">Experiential Marketing</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="/services">Brand Strategy</Link>
+                  <Link href="/services/brand-strategy">Brand Strategy</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
-                  <Link href="/services">Event Production</Link>
+                  <Link href="/services/event-production">Event Production</Link>
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>

@@ -17,6 +17,9 @@ import BrandActivations from "@/pages/BrandActivations";
 import CorporateEvents from "@/pages/CorporateEvents";
 import Talent from "@/pages/Talent";
 import NotFound from "@/pages/not-found";
+import ExperientialMarketing from "@/pages/ExperientialMarketing";
+import BrandStrategy from "@/pages/BrandStrategy";
+import EventProduction from "@/pages/EventProduction";
 
 function Router() {
   return (
@@ -27,6 +30,9 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
+          <Route path="/services/experiential-marketing" component={ExperientialMarketing} />
+          <Route path="/services/brand-strategy" component={BrandStrategy} />
+          <Route path="/services/event-production" component={EventProduction} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/city/:cityName" component={CityPage} />
