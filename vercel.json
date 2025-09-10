@@ -1,7 +1,7 @@
 {
-  "buildCommand": "npm run build",
+  "buildCommand": "echo 'Using pre-built files'",
   "outputDirectory": ".",
-  "installCommand": "npm install",
+  "installCommand": "npm install --production",
   "functions": {
     "api/index.js": {
       "maxDuration": 30
