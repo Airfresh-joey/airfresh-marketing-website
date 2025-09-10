@@ -121,12 +121,12 @@ export default function Navigation() {
       {mobileMenuOpen && (
         <div className="md:hidden">
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
-            <Link href="/projects" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Projects</Link>
-            <Link href="/services" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Services</Link>
-            <Link href="/talent" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Talent</Link>
-            <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">About</Link>
-            <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Blog</Link>
-            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-50">Contact</Link>
+            <Link href="/projects" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
+            <Link href="/services" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+            <Link href="/talent" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Talent</Link>
+            <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>About</Link>
+            <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+            <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </div>
         </div>
       )}
