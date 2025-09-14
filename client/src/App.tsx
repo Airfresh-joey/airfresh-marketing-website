@@ -17,6 +17,7 @@ import BrandActivations from "@/pages/BrandActivations";
 import CorporateEvents from "@/pages/CorporateEvents";
 import Talent from "@/pages/Talent";
 import NotFound from "@/pages/not-found";
+import { Redirect } from "wouter";
 import ExperientialMarketing from "@/pages/ExperientialMarketing";
 import BrandStrategy from "@/pages/BrandStrategy";
 import EventProduction from "@/pages/EventProduction";
@@ -36,6 +37,7 @@ function Router() {
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/city/:cityName" component={CityPage} />
+          <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
           <Route path="/projects/case-studies" component={CaseStudies} />
           <Route path="/projects/case-studies/:id" component={CaseStudyDetail} />
           <Route path="/projects/brand-activations" component={BrandActivations} />
