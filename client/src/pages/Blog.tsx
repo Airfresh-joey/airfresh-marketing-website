@@ -14,12 +14,26 @@ import {
   Target,
   Award,
   Zap,
-  Heart
+  Heart,
+  Edit
 } from "lucide-react";
 import LinkedInShare from "@/components/LinkedInShare";
 import LinkedInContentTemplates from "@/components/LinkedInContentTemplates";
+import { useQuery } from "@tanstack/react-query";
+import type { BlogPost } from "@shared/schema";
+import { Skeleton } from "@/components/ui/skeleton";
 
 export default function Blog() {
+  const { data: posts = [], isLoading } = useQuery<BlogPost[]>({
+    queryKey: ["/api/blog"],
+  });
+
+  // Sort posts by date and identify featured
+  const sortedPosts = [...posts].sort((a, b) => 
+    new Date(b.date).getTime() - new Date(a.date).getTime()
+  );
+  const featuredPost = sortedPosts.find(p => p.featured === "true") || sortedPosts[0];
+  const regularPosts = sortedPosts.filter(p => p.id !== featuredPost?.id);
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Blog",
@@ -49,79 +63,30 @@ export default function Blog() {
       }
     ]
   };
-  const featuredArticle = {
-    title: "The Future of Experiential Marketing: 2025 Trends & Predictions",
-    excerpt: "Explore how emerging technologies, changing consumer behaviors, and new engagement strategies are reshaping the experiential marketing landscape for the year ahead.",
-    image: "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-    date: "March 15, 2024",
-    readTime: "8 min read",
-    author: "AirFresh Marketing Team",
-    category: "Industry Trends",
-    featured: true
+  const categoryIcons: Record<string, any> = {
+    "Strategy": Target,
+    "Analytics": TrendingUp,
+    "Psychology": Heart,
+    "Production": Award,
+    "Brand Strategy": Users,
+    "Technology": Zap,
+    "Industry Trends": Lightbulb,
   };
 
-  const articles = [
-    {
-      title: "Creating Memorable Brand Activations That Drive ROI",
-      excerpt: "Learn the essential elements that make brand activations unforgettable and discover proven strategies for creating lasting impressions that convert to business results.",
-      image: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "March 10, 2024",
-      readTime: "6 min read",
-      author: "Sarah Johnson",
-      category: "Strategy",
-      icon: Target
-    },
-    {
-      title: "Measuring Success: ROI Metrics for Experiential Campaigns",
-      excerpt: "Discover effective methods for tracking and measuring the success of your experiential marketing campaigns. We break down key metrics and optimization strategies.",
-      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "March 5, 2024",
-      readTime: "5 min read",
-      author: "Mike Chen",
-      category: "Analytics",
-      icon: TrendingUp
-    },
-    {
-      title: "The Psychology Behind Successful Brand Experiences",
-      excerpt: "Understanding the psychological principles that influence consumer behavior at live events. Learn how emotions, memory, and social dynamics drive engagement.",
-      image: "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "February 28, 2024",
-      readTime: "7 min read",
-      author: "Dr. Lisa Wang",
-      category: "Psychology",
-      icon: Heart
-    },
-    {
-      title: "Event Production Secrets: Behind the Scenes of Flawless Execution",
-      excerpt: "Go behind the scenes to discover the planning, coordination, and execution strategies that ensure every event runs smoothly from start to finish.",
-      image: "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "February 20, 2024",
-      readTime: "9 min read",
-      author: "James Rodriguez",
-      category: "Production",
-      icon: Award
-    },
-    {
-      title: "Building Brand Loyalty Through Experiential Touchpoints",
-      excerpt: "Explore how strategic experiential touchpoints throughout the customer journey can build lasting brand loyalty and turn customers into advocates.",
-      image: "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "February 15, 2024",
-      readTime: "6 min read",
-      author: "Amanda Taylor",
-      category: "Brand Strategy",
-      icon: Users
-    },
-    {
-      title: "Innovation in Experiential: Technology Meets Human Connection",
-      excerpt: "Discover how cutting-edge technology is being integrated into experiential marketing to create more immersive and engaging brand experiences.",
-      image: "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-      date: "February 8, 2024",
-      readTime: "8 min read",
-      author: "Tech Innovation Team",
-      category: "Technology",
-      icon: Zap
-    }
-  ];
+  const categoryImages: Record<string, string> = {
+    "Strategy": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Analytics": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Psychology": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Production": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Brand Strategy": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Technology": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
+    "Industry Trends": "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
+  };
+
+  const getReadTime = (content: string) => {
+    const words = content.split(' ').length;
+    return `${Math.ceil(words / 200)} min read`;
+  };
 
   const categories = [
     { name: "Industry Trends", count: 12, color: "bg-blue-100 text-blue-800" },
@@ -187,64 +152,88 @@ export default function Blog() {
       </section>
 
       {/* Featured Article */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">FEATURED ARTICLE</h2>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900">Latest Insights</h3>
-          </div>
-
-          <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-            <div className="md:flex">
-              <div className="md:w-1/2">
-                <img 
-                  src={featuredArticle.image} 
-                  alt={featuredArticle.title}
-                  className="w-full h-64 md:h-full object-cover"
-                />
-              </div>
-              <div className="md:w-1/2 p-8">
-                <div className="flex items-center mb-4">
-                  <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold">
-                    {featuredArticle.category}
-                  </span>
-                </div>
-                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900">
-                  {featuredArticle.title}
-                </h3>
-                <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                  {featuredArticle.excerpt}
-                </p>
-                <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4">
-                  <div className="flex items-center">
-                    <User className="h-4 w-4 mr-1" />
-                    {featuredArticle.author}
-                  </div>
-                  <div className="flex items-center">
-                    <Calendar className="h-4 w-4 mr-1" />
-                    {featuredArticle.date}
-                  </div>
-                  <div className="flex items-center">
-                    <Clock className="h-4 w-4 mr-1" />
-                    {featuredArticle.readTime}
-                  </div>
-                </div>
-                <div className="flex items-center gap-4">
-                  <Button className="group">
-                    Read Full Article
-                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                  </Button>
-                  <LinkedInShare 
-                    variant="compact"
-                    title={featuredArticle.title}
-                    summary={featuredArticle.excerpt}
-                  />
-                </div>
-              </div>
+      {featuredPost && (
+        <section className="py-16 bg-gray-50">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">FEATURED ARTICLE</h2>
+              <h3 className="text-3xl md:text-4xl font-bold text-gray-900">Latest Insights</h3>
             </div>
-          </Card>
-        </div>
-      </section>
+
+            {isLoading ? (
+              <Card className="overflow-hidden">
+                <div className="md:flex">
+                  <Skeleton className="md:w-1/2 h-64 md:h-96" />
+                  <div className="md:w-1/2 p-8 space-y-4">
+                    <Skeleton className="h-6 w-24" />
+                    <Skeleton className="h-8 w-full" />
+                    <Skeleton className="h-4 w-full" />
+                    <Skeleton className="h-4 w-3/4" />
+                    <Skeleton className="h-10 w-32" />
+                  </div>
+                </div>
+              </Card>
+            ) : (
+              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
+                <div className="md:flex">
+                  <div className="md:w-1/2">
+                    <img 
+                      src={categoryImages[featuredPost.category] || categoryImages["Industry Trends"]} 
+                      alt={featuredPost.title}
+                      className="w-full h-64 md:h-full object-cover"
+                      data-testid={`img-featured-${featuredPost.id}`}
+                    />
+                  </div>
+                  <div className="md:w-1/2 p-8">
+                    <div className="flex items-center mb-4">
+                      <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold"
+                            data-testid={`badge-featured-category-${featuredPost.id}`}>
+                        {featuredPost.category}
+                      </span>
+                    </div>
+                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900"
+                        data-testid={`text-featured-title-${featuredPost.id}`}>
+                      {featuredPost.title}
+                    </h3>
+                    <p className="text-gray-600 text-lg leading-relaxed mb-6"
+                       data-testid={`text-featured-excerpt-${featuredPost.id}`}>
+                      {featuredPost.excerpt}
+                    </p>
+                    <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4">
+                      <div className="flex items-center">
+                        <User className="h-4 w-4 mr-1" />
+                        {featuredPost.author}
+                      </div>
+                      <div className="flex items-center">
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {new Date(featuredPost.date).toLocaleDateString()}
+                      </div>
+                      <div className="flex items-center">
+                        <Clock className="h-4 w-4 mr-1" />
+                        {getReadTime(featuredPost.content)}
+                      </div>
+                    </div>
+                    <div className="flex items-center gap-4">
+                      <Link href={`/blog/${featuredPost.slug}`}>
+                        <Button className="group" data-testid={`button-read-featured-${featuredPost.id}`}>
+                          Read Full Article
+                          <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                      <LinkedInShare 
+                        variant="compact"
+                        url={`https://airfreshmarketing.com/blog/${featuredPost.slug}`}
+                        title={featuredPost.title}
+                        summary={featuredPost.excerpt}
+                      />
+                    </div>
+                  </div>
+                </div>
+              </Card>
+            )}
+          </div>
+        </section>
+      )}
 
       {/* Articles Grid */}
       <section className="py-20 bg-white">
@@ -259,63 +248,98 @@ export default function Blog() {
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {articles.map((article, index) => (
-              <Card key={index} className="overflow-hidden hover:shadow-xl transition-all duration-300 group">
-                <div className="relative">
-                  <img 
-                    src={article.image} 
-                    alt={article.title}
-                    className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                  />
-                  <div className="absolute top-4 left-4">
-                    <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white bg-primary`}>
-                      {article.category}
-                    </span>
-                  </div>
-                </div>
-                <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary transition-colors">
-                    {article.title}
-                  </h3>
-                  <p className="text-gray-600 mb-4 leading-relaxed">
-                    {article.excerpt}
-                  </p>
-                  <div className="flex items-center text-sm text-gray-500 mb-4 space-x-3">
-                    <div className="flex items-center">
-                      <User className="h-4 w-4 mr-1" />
-                      {article.author}
-                    </div>
-                    <div className="flex items-center">
-                      <Calendar className="h-4 w-4 mr-1" />
-                      {article.date}
-                    </div>
-                  </div>
-                  <div className="flex items-center justify-between">
-                    <div className="flex items-center text-sm text-gray-500">
-                      <Clock className="h-4 w-4 mr-1" />
-                      {article.readTime}
-                    </div>
-                    <div className="flex items-center gap-2">
-                      <LinkedInShare 
-                        variant="icon"
-                        title={article.title}
-                        summary={article.excerpt}
+            {isLoading ? (
+              // Loading skeletons
+              Array.from({ length: 6 }).map((_, index) => (
+                <Card key={index} className="overflow-hidden">
+                  <Skeleton className="h-48 w-full" />
+                  <CardContent className="p-6 space-y-3">
+                    <Skeleton className="h-6 w-full" />
+                    <Skeleton className="h-4 w-full" />
+                    <Skeleton className="h-4 w-3/4" />
+                    <Skeleton className="h-4 w-1/2" />
+                  </CardContent>
+                </Card>
+              ))
+            ) : regularPosts.length > 0 ? (
+              regularPosts.map((post) => {
+                const Icon = categoryIcons[post.category] || BookOpen;
+                return (
+                  <Card key={post.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
+                        data-testid={`card-blog-post-${post.id}`}>
+                    <div className="relative">
+                      <img 
+                        src={categoryImages[post.category] || categoryImages["Industry Trends"]} 
+                        alt={post.title}
+                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
+                        data-testid={`img-blog-${post.id}`}
                       />
-                      <Button variant="ghost" size="sm" className="group/btn">
-                        Read More
-                        <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                      </Button>
+                      <div className="absolute top-4 left-4">
+                        <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white bg-primary`}
+                              data-testid={`badge-category-${post.id}`}>
+                          {post.category}
+                        </span>
+                      </div>
                     </div>
-                  </div>
-                </CardContent>
-              </Card>
-            ))}
+                    <CardContent className="p-6">
+                      <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary transition-colors"
+                          data-testid={`text-title-${post.id}`}>
+                        {post.title}
+                      </h3>
+                      <p className="text-gray-600 mb-4 leading-relaxed"
+                         data-testid={`text-excerpt-${post.id}`}>
+                        {post.excerpt}
+                      </p>
+                      <div className="flex items-center text-sm text-gray-500 mb-4 space-x-3">
+                        <div className="flex items-center">
+                          <User className="h-4 w-4 mr-1" />
+                          {post.author}
+                        </div>
+                        <div className="flex items-center">
+                          <Calendar className="h-4 w-4 mr-1" />
+                          {new Date(post.date).toLocaleDateString()}
+                        </div>
+                      </div>
+                      <div className="flex items-center justify-between">
+                        <div className="flex items-center text-sm text-gray-500">
+                          <Clock className="h-4 w-4 mr-1" />
+                          {getReadTime(post.content)}
+                        </div>
+                        <div className="flex items-center gap-2">
+                          <LinkedInShare 
+                            variant="icon"
+                            url={`https://airfreshmarketing.com/blog/${post.slug}`}
+                            title={post.title}
+                            summary={post.excerpt}
+                          />
+                          <Link href={`/blog/${post.slug}`}>
+                            <Button variant="ghost" size="sm" className="group/btn"
+                                    data-testid={`button-read-${post.id}`}>
+                              Read More
+                              <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                            </Button>
+                          </Link>
+                        </div>
+                      </div>
+                    </CardContent>
+                  </Card>
+                );
+              })
+            ) : (
+              <div className="col-span-full text-center py-12">
+                <p className="text-gray-500">No blog posts available yet. Check back soon!</p>
+              </div>
+            )}
           </div>
 
-          <div className="text-center mt-12">
-            <Button size="lg" variant="outline">
-              Load More Articles
-            </Button>
+          {/* Admin Link */}
+          <div className="text-center mt-12 space-y-4">
+            <Link href="/blog/editor">
+              <Button variant="outline" className="gap-2">
+                <Edit size={16} />
+                Create New Post
+              </Button>
+            </Link>
           </div>
         </div>
       </section>

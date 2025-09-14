@@ -1,4 +1,4 @@
-import { users, contactSubmissions, type User, type InsertUser, type ContactSubmission, type InsertContactSubmission } from "@shared/schema";
+import { users, contactSubmissions, blogPosts, type User, type InsertUser, type ContactSubmission, type InsertContactSubmission, type BlogPost, type InsertBlogPost } from "@shared/schema";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
 
@@ -8,6 +8,13 @@ export interface IStorage {
   createUser(user: InsertUser): Promise<User>;
   createContactSubmission(submission: InsertContactSubmission): Promise<ContactSubmission>;
   getContactSubmissions(): Promise<ContactSubmission[]>;
+  // Blog post methods
+  createBlogPost(post: InsertBlogPost): Promise<BlogPost>;
+  getBlogPosts(): Promise<BlogPost[]>;
+  getBlogPostBySlug(slug: string): Promise<BlogPost | undefined>;
+  getBlogPostById(id: number): Promise<BlogPost | undefined>;
+  updateBlogPost(id: number, post: Partial<InsertBlogPost>): Promise<BlogPost | undefined>;
+  deleteBlogPost(id: number): Promise<boolean>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -40,19 +47,59 @@ export class DatabaseStorage implements IStorage {
   async getContactSubmissions(): Promise<ContactSubmission[]> {
     return await db.select().from(contactSubmissions);
   }
+
+  async createBlogPost(insertPost: InsertBlogPost): Promise<BlogPost> {
+    const [post] = await db
+      .insert(blogPosts)
+      .values(insertPost)
+      .returning();
+    return post;
+  }
+
+  async getBlogPosts(): Promise<BlogPost[]> {
+    return await db.select().from(blogPosts).orderBy(blogPosts.date);
+  }
+
+  async getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+    const [post] = await db.select().from(blogPosts).where(eq(blogPosts.slug, slug));
+    return post || undefined;
+  }
+
+  async getBlogPostById(id: number): Promise<BlogPost | undefined> {
+    const [post] = await db.select().from(blogPosts).where(eq(blogPosts.id, id));
+    return post || undefined;
+  }
+
+  async updateBlogPost(id: number, updatePost: Partial<InsertBlogPost>): Promise<BlogPost | undefined> {
+    const [post] = await db
+      .update(blogPosts)
+      .set({ ...updatePost, updatedAt: new Date() })
+      .where(eq(blogPosts.id, id))
+      .returning();
+    return post || undefined;
+  }
+
+  async deleteBlogPost(id: number): Promise<boolean> {
+    const result = await db.delete(blogPosts).where(eq(blogPosts.id, id));
+    return true;
+  }
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private contactSubmissions: Map<number, ContactSubmission>;
+  private blogPosts: Map<number, BlogPost>;
   private currentUserId: number;
   private currentContactId: number;
+  private currentBlogPostId: number;
 
   constructor() {
     this.users = new Map();
     this.contactSubmissions = new Map();
+    this.blogPosts = new Map();
     this.currentUserId = 1;
     this.currentContactId = 1;
+    this.currentBlogPostId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -88,6 +135,45 @@ export class MemStorage implements IStorage {
 
   async getContactSubmissions(): Promise<ContactSubmission[]> {
     return Array.from(this.contactSubmissions.values());
+  }
+
+  async createBlogPost(insertPost: InsertBlogPost): Promise<BlogPost> {
+    const id = this.currentBlogPostId++;
+    const post: BlogPost = {
+      ...insertPost,
+      id,
+      date: insertPost.date || new Date(),
+      tags: insertPost.tags || null,
+      featured: insertPost.featured || "false",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+    this.blogPosts.set(id, post);
+    return post;
+  }
+
+  async getBlogPosts(): Promise<BlogPost[]> {
+    return Array.from(this.blogPosts.values()).sort((a, b) => b.date.getTime() - a.date.getTime());
+  }
+
+  async getBlogPostBySlug(slug: string): Promise<BlogPost | undefined> {
+    return Array.from(this.blogPosts.values()).find(post => post.slug === slug);
+  }
+
+  async getBlogPostById(id: number): Promise<BlogPost | undefined> {
+    return this.blogPosts.get(id);
+  }
+
+  async updateBlogPost(id: number, updatePost: Partial<InsertBlogPost>): Promise<BlogPost | undefined> {
+    const post = this.blogPosts.get(id);
+    if (!post) return undefined;
+    const updated = { ...post, ...updatePost, updatedAt: new Date() };
+    this.blogPosts.set(id, updated);
+    return updated;
+  }
+
+  async deleteBlogPost(id: number): Promise<boolean> {
+    return this.blogPosts.delete(id);
   }
 }
 

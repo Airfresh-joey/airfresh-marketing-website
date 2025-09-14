@@ -2,13 +2,25 @@ import HeroAgencyVideo from "@/components/HeroAgencyVideo";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
 import { Link } from "wouter";
-import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield } from "lucide-react";
+import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import LinkedInFollow from "@/components/LinkedInFollow";
+import { useQuery } from "@tanstack/react-query";
+import type { BlogPost } from "@shared/schema";
 
 export default function Home() {
+  // Fetch recent blog posts
+  const { data: blogPosts = [] } = useQuery<BlogPost[]>({
+    queryKey: ["/api/blog"],
+  });
+
+  // Get the 3 most recent blog posts
+  const recentPosts = blogPosts
+    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
+    .slice(0, 3);
   // Enhanced structured data for better SEO and LLM understanding
   const structuredData = {
     "@context": "https://schema.org",
@@ -410,8 +422,68 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Recent Blog Posts Section */}
+      <section className="py-20 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-16">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">MARKET INSIGHTS</h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Latest Experiential Marketing Insights
+            </h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Expert answers to your experiential marketing questions, from costs to strategies.
+            </p>
+          </div>
+          
+          {recentPosts.length > 0 && (
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {recentPosts.map((post) => (
+                <Card key={post.id} className="hover:shadow-xl transition-all duration-300 group"
+                      data-testid={`card-recent-post-${post.id}`}>
+                  <CardContent className="p-6">
+                    <Badge variant="secondary" className="mb-4" data-testid={`badge-category-${post.id}`}>
+                      {post.category}
+                    </Badge>
+                    <h4 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary transition-colors"
+                        data-testid={`text-title-${post.id}`}>
+                      {post.title}
+                    </h4>
+                    <p className="text-gray-600 mb-4 line-clamp-3"
+                       data-testid={`text-excerpt-${post.id}`}>
+                      {post.excerpt}
+                    </p>
+                    <div className="flex items-center justify-between">
+                      <div className="flex items-center text-sm text-gray-500">
+                        <Calendar className="h-4 w-4 mr-1" />
+                        {new Date(post.date).toLocaleDateString()}
+                      </div>
+                      <Link href={`/blog/${post.slug}`}>
+                        <Button variant="ghost" size="sm" className="group/btn"
+                                data-testid={`button-read-${post.id}`}>
+                          Read More
+                          <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                        </Button>
+                      </Link>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          )}
+          
+          <div className="text-center mt-12">
+            <Link href="/blog">
+              <Button size="lg" variant="outline" data-testid="button-view-all-insights">
+                <BookOpen className="mr-2" size={20} />
+                View All Market Insights
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Client Logos Section */}
-      <section className="py-16 bg-gray-50">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">TRUSTED BY LEADING BRANDS</h2>

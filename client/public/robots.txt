@@ -8,6 +8,7 @@ User-agent: *
 Allow: /
 Disallow: /api/
 Disallow: /admin/
+Disallow: /blog/editor
 Disallow: /_next/
 Disallow: /*.json$
 

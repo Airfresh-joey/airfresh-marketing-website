@@ -1,0 +1,39 @@
+Explicit Instructions for Implementing Content Calendar in Replit
+These instructions build on your existing “AirFreshMarketing-Redo” Replit project (HTML/CSS/JS with Node.js). We’ll automate a content calendar for the website by using node-cron for scheduling tasks (e.g., generating reminders or auto-drafts for 2–3 LinkedIn posts weekly, 1 blog monthly, 1–2 case studies quarterly), integrating Google Calendar API to create events (for visual scheduling and notifications), and building a dashboard for manual overrides/content previews. This keeps content fresh for SEO (regular updates signal relevance) and LLM indexing (consistent, structured posts improve crawlability). 10 11 12 13 14 15 16 17 18 For “contact calendar for other things,” we’ll extend to a general calendar system (e.g., for client contacts/meetings) using the same API, with separate event categories. Automation includes email reminders (via Nodemailer) and auto-generation ties (e.g., from prior repurposing tools). Use current date (September 14, 2025) for examples. Test in preview—no live changes.
+1. Install Dependencies for Scheduling, Emails, and Google Calendar API
+	•	In Replit’s shell (bottom pane): Run npm install node-cron nodemailer googleapis mustache dotenv qrcode.
+	◦	node-cron: For task scheduling (simple, reliable for periodic jobs like weekly posts). 10 11 12 13 14 15 16 17 18 
+	◦	nodemailer: For email reminders (e.g., “Time to post LinkedIn”). 16 
+	◦	googleapis: For Google Calendar integration (create events like “Blog Due: September 2025”). 20 21 22 23 24 25 26 27 28 
+	◦	mustache: For templating emails/events.
+	◦	qrcode: For QR codes linking to calendar shares.
+	•	Add to Secrets tab (gear > Secrets): EMAIL_USER=your-email@gmail.com, EMAIL_PASS=your-app-password (for Gmail SMTP), GOOGLE_CLIENT_ID=your-id, GOOGLE_CLIENT_SECRET=your-secret, GOOGLE_REFRESH_TOKEN=your-token, GOOGLE_CALENDAR_ID=your-calendar-id (get from Google Cloud Console after enabling Calendar API and OAuth; create calendar at calendar.google.com). 20 21 22 23 24 25 26 27 28 
+2. Set Up Google Calendar API Client in server.js
+	•	At top of server.js: require('dotenv').config(); const { google } = require('googleapis'); const cron = require('node-cron'); const nodemailer = require('nodemailer'); const mustache = require('mustache'); const QRCode = require('qrcode'); const calendarAuth = new google.auth.OAuth2(process.env.GOOGLE_CLIENT_ID, process.env.GOOGLE_CLIENT_SECRET); calendarAuth.setCredentials({ refresh_token: process.env.GOOGLE_REFRESH_TOKEN }); const calendar = google.calendar({ version: 'v3', auth: calendarAuth });.
+	•	This sets up API for creating events/reminders. 20 21 22 23 24 25 26 27 28 
+3. Define the Content Schedule and Automation Jobs
+	•	Add schedule config: const contentSchedule = { linkedin: '0 9 * * 1,3,5', // Weekly: Mon, Wed, Fri at 9AM (2-3 posts) blog: '0 9 1 * *', // Monthly: 1st at 9AM caseStudy: '0 9 1 1,4,7,10 *' // Quarterly: Jan, Apr, Jul, Oct 1st at 9AM }; const contactSchedule = '0 9 * * 1'; // Weekly client contact reminders on Mon.
+	•	Add function to create calendar event: async function addCalendarEvent(summary, description, startDate) { await calendar.events.insert({ calendarId: process.env.GOOGLE_CALENDAR_ID, resource: { summary, description, start: { dateTime: startDate }, end: { dateTime: new Date(new Date(startDate).getTime() + 60*60*1000).toISOString() }, reminders: { useDefault: false, overrides: [{ method: 'email', minutes: 1440 }] } } }); }. 20 21 22 23 24 25 26 27 28 
+	•	Set up cron jobs: cron.schedule(contentSchedule.linkedin, async () => { await addCalendarEvent('LinkedIn Post Due', 'Generate 2-3 posts for this week. Use repurposing tool.'); sendEmailReminder('LinkedIn posts due today!'); }); cron.schedule(contentSchedule.blog, async () => { await addCalendarEvent('Monthly Blog Due', 'Draft blog for SEO/LLM freshness.'); sendEmailReminder('Blog post due this month!'); }); cron.schedule(contentSchedule.caseStudy, async () => { await addCalendarEvent('Quarterly Case Study Upload', 'Upload 1-2 case studies.'); sendEmailReminder('Case studies due this quarter!'); }); cron.schedule(contactSchedule, async () => { await addCalendarEvent('Weekly Contact Reminder', 'Reach out to clients/partners.'); sendEmailReminder('Contact calendar reminder!'); });. 10 11 12 13 14 15 16 17 18 (Cron syntax: ‘minute hour day month day-of-week’).
+4. Set Up Email Reminders with Nodemailer
+	•	Add transporter: const transporter = nodemailer.createTransport({ service: 'gmail', auth: { user: process.env.EMAIL_USER, pass: process.env.EMAIL_PASS } });.
+	•	Function: async function sendEmailReminder(subject) { await transporter.sendMail({ from: process.env.EMAIL_USER, to: 'your-team@email.com', subject, text: 'Reminder for content calendar: ' + subject + '. Check dashboard for details.' }); }. 16 Customize ‘to’ with team emails.
+5. Build Content Calendar Dashboard
+	•	Create /content-calendar.html:  Content Calendar (as of September 14, 2025)
+	◦	LinkedIn: 2-3 posts weekly (Mon, Wed, Fri)
+	◦	Blog: 1 monthly (1st)
+	◦	Case Studies: 1-2 quarterly (Jan, Apr, Jul, Oct 1st)
+	◦	Contact Calendar: Weekly reminders (Mon)
+	•	Generate Draft.
+	•	Route for QR: app.get('/calendar-qr', async (req, res) => { await QRCode.toFile('calendar-qr.png', 'https://calendar.google.com/calendar/embed?src=' + process.env.GOOGLE_CALENDAR_ID); res.sendFile(__dirname + '/calendar-qr.png'); });. 20 21 22 23 24 25 26 27 28 Update nav: 
+	•	Content Calendar
+	•	.
+6. Tie to Content Generation (Auto-Drafts)
+	•	Add route: app.get('/generate-draft/:type', (req, res) => { // Use prior repurposing or simple template; res.send('Auto-draft for ' + req.params.type + ': Use keywords for SEO/LLM.'); });. Link from dashboard; expand with AI if OpenAI key added. 0 1 2 3 4 5 6 7 8 9 
+7. Initialize the Calendar with Initial Events
+	•	Add startup code: async function initCalendar() { await addCalendarEvent('Weekly LinkedIn Posts', '2-3 posts due Mon, Wed, Fri.', '2025-09-15T09:00:00'); // Example from current date +1 day; // Add for blog, cases, contacts }; initCalendar();. 20 21 22 23 24 25 26 27 28 
+8. Test Automation and Freshness
+	•	Run project; check cron logs (console.log in jobs), emails (test with your address), calendar events (view at calendar.google.com).
+	•	Use Lighthouse: lighthouse http://localhost:3000/content-calendar.html --view for SEO (fresh content via updates).
+9. Iterate for Expansion
+	•	Fork Replit; add more schedules (e.g., daily checks). For full auto-posting, integrate prior repurposing with social APIs (requires keys). 0 1 2 3 4 5 6 7 8 9 This automates reminders/drafts, ensuring consistent output for SEO/LLM benefits.

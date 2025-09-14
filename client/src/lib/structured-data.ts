@@ -6,7 +6,7 @@ export const organizationSchema = {
   "name": "AirFresh Marketing",
   "alternateName": "AirFresh Experiential Marketing Agency",
   "url": "https://airfreshmarketing.com",
-  "logo": "/favicon.svg",
+  "logo": "https://airfreshmarketing.com/favicon.svg",
   "sameAs": [
     "https://www.linkedin.com/company/airfresh-marketing",
     "https://www.facebook.com/AirFreshMarketing",
@@ -35,7 +35,7 @@ export const localBusinessSchema = {
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "AirFresh Marketing",
-  "image": "/hero-image.jpg",
+  "image": "https://airfreshmarketing.com/favicon.svg",
   "telephone": "+1-303-720-6060",
   "email": "hello@airfreshmarketing.com",
   "address": {

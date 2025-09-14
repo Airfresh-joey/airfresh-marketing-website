@@ -11,6 +11,8 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
+import BlogPostDetail from "@/pages/BlogPostDetail";
+import BlogEditor from "@/pages/BlogEditor";
 import CityPage from "@/pages/CityPage";
 import CaseStudies from "@/pages/CaseStudies";
 import CaseStudyDetail from "@/pages/CaseStudyDetail";
@@ -37,6 +39,8 @@ function Router() {
           <Route path="/services/event-production" component={EventProduction} />
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
+          <Route path="/blog/editor" component={BlogEditor} />
+          <Route path="/blog/:slug" component={BlogPostDetail} />
           <Route path="/city/:cityName" component={CityPage} />
           <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
           <Route path="/projects/case-studies" component={CaseStudies} />
