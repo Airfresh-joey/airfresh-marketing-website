@@ -40,12 +40,11 @@ app.use((req, res, next) => {
   next();
 });
 
-// Initialize app for Vercel
-await registerRoutes(app);
-
+// Global error handler
 app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
   const status = err.status || err.statusCode || 500;
   const message = err.message || "Internal Server Error";
+  console.error('Server error:', err);
   res.status(status).json({ message });
 });
 
@@ -59,14 +58,6 @@ if (!process.env.VERCEL) {
   (async () => {
     const server = await registerRoutes(app);
 
-    app.use((err: any, _req: Request, res: Response, _next: NextFunction) => {
-      const status = err.status || err.statusCode || 500;
-      const message = err.message || "Internal Server Error";
-
-      res.status(status).json({ message });
-      throw err;
-    });
-
     // importantly only setup vite in development and after
     // setting up all the other routes so the catch-all route
     // doesn't interfere with the other routes
@@ -77,10 +68,15 @@ if (!process.env.VERCEL) {
     }
 
     // Serve the app on available port
-    const port = process.env.PORT || 5173;
+    const port = parseInt(process.env.PORT || "5000", 10);
     server.listen(port, "0.0.0.0", () => {
       log(`serving on port ${port}`);
     });
+  })();
+} else {
+  // Initialize app for Vercel (no server creation needed)
+  (async () => {
+    await registerRoutes(app);
   })();
 }
 
