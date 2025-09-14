@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Zap, 
   Users, 
@@ -17,6 +18,16 @@ import {
 } from "lucide-react";
 
 export default function BrandActivations() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing"
+    },
+    "serviceType": "Brand Activation Services",
+    "description": "Professional brand activation services including product launches, sampling campaigns, and pop-up experiences"
+  };
   const featuredActivation = {
     title: "Red Bull Wings Team: Energy Sampling Experience",
     brand: "Red Bull",
@@ -140,6 +151,13 @@ export default function BrandActivations() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Brand Activation Services | Pop-Up Events & Product Launches - AirFresh"
+        description="Expert brand activation services: product launches, sampling campaigns, pop-up experiences & guerrilla marketing. Create memorable brand moments nationwide."
+        pageType="brand-activations"
+        canonical="https://airfreshmarketing.com/services/brand-activations"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

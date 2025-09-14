@@ -1,0 +1,45 @@
+# Robots.txt for AirFresh Marketing
+# https://airfreshmarketing.com
+
+User-agent: *
+Allow: /
+Disallow: /api/
+Disallow: /admin/
+Disallow: /_next/
+Disallow: /*.json$
+
+# Crawl-delay for responsible crawling
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://airfreshmarketing.com/sitemap.xml
+
+# Allow major search engines
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 0
+
+User-agent: Slurp
+Allow: /
+Crawl-delay: 0
+
+User-agent: DuckDuckBot
+Allow: /
+Crawl-delay: 0
+
+# Block bad bots
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+User-agent: DotBot
+Disallow: /
+
+User-agent: MJ12bot
+Disallow: /

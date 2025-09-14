@@ -83,9 +83,9 @@ export default function EventProduction() {
   return (
     <div className="pt-16">
       <SEO 
-        title="Event Production Services | Full-Service Event Management - AirFresh Marketing"
-        description="From corporate conferences to live entertainment, we deliver flawless event production with cutting-edge technology and world-class execution."
-        keywords="event production, corporate events, live entertainment, virtual events, hybrid events, technical production, event management, conference production"
+        title="Event Production Services | Corporate Events & Live Entertainment - AirFresh"
+        description="Full-service event production: corporate conferences, live entertainment, virtual events. Professional event management & technical production nationwide."
+        pageType="event-production"
         canonical="https://airfreshmarketing.com/services/event-production"
       />
 

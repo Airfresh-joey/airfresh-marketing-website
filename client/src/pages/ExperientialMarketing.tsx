@@ -66,9 +66,9 @@ export default function ExperientialMarketing() {
   return (
     <div className="pt-16">
       <SEO 
-        title="Experiential Marketing Services | Create Unforgettable Brand Experiences - AirFresh Marketing"
-        description="Transform your brand with experiential marketing that creates lasting connections. From brand activations to mobile tours, we deliver immersive experiences that drive results."
-        keywords="experiential marketing, brand activations, event marketing, product sampling, mobile tours, brand experiences, immersive marketing, consumer engagement"
+        title="Experiential Marketing Services | Brand Experiences & Live Marketing - AirFresh"
+        description="Transform brands with immersive experiential marketing. Brand activations, product sampling, mobile tours & guerrilla marketing campaigns nationwide."
+        pageType="experiential-marketing"
         canonical="https://airfreshmarketing.com/services/experiential-marketing"
       />
 

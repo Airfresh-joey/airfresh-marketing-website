@@ -85,9 +85,9 @@ export default function CaseStudyDetail() {
   return (
     <div className="pt-16">
       <SEO 
-        title={`${caseStudy.title} - Case Study | AirFresh Marketing`}
-        description={caseStudy.description}
-        keywords={`${caseStudy.client}, ${caseStudy.industry}, ${caseStudy.campaign_type}, experiential marketing case study`}
+        title={`${caseStudy.title} | ${caseStudy.campaign_type} Case Study - AirFresh`}
+        description={`${caseStudy.client} ${caseStudy.campaign_type.toLowerCase()} case study. ${caseStudy.description?.slice(0, 100)}... See results & insights.`}
+        keywords={`${caseStudy.client}, ${caseStudy.industry}, ${caseStudy.campaign_type}, experiential marketing case study, brand activation results, guerrilla marketing success`}
         canonical={`https://airfreshmarketing.com/projects/case-studies/${caseStudy.id}`}
         structuredData={structuredData}
       />

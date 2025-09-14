@@ -82,9 +82,9 @@ export default function BrandStrategy() {
   return (
     <div className="pt-16">
       <SEO 
-        title="Brand Strategy Services | Strategic Brand Development & Positioning - AirFresh Marketing"
-        description="Build a powerful brand strategy that drives growth. From positioning to messaging, we create comprehensive strategies that connect with your audience and deliver results."
-        keywords="brand strategy, brand positioning, messaging framework, audience strategy, campaign strategy, brand development, marketing strategy, brand consulting"
+        title="Brand Strategy & Positioning Services | Marketing Strategy - AirFresh"
+        description="Strategic brand positioning & messaging that drives growth. Brand development, audience strategy & integrated campaign planning for experiential marketing."
+        pageType="brand-strategy"
         canonical="https://airfreshmarketing.com/services/brand-strategy"
       />
 

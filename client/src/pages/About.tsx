@@ -107,9 +107,9 @@ export default function About() {
   return (
     <div className="pt-16">
       <SEO 
-        title="About AirFresh Marketing - 20+ Years of Experiential Marketing Excellence | Leading Brand Activation Agency"
-        description="Learn about AirFresh Marketing's 20+ year journey as a premier experiential marketing agency. We've served 300+ brands across 50+ cities with innovative brand activations, event marketing, and customer engagement campaigns."
-        keywords="about experiential marketing agency, brand activation company history, event marketing experts, experiential advertising team, promotional marketing professionals, brand engagement specialists"
+        title="About Us | Premier Experiential Marketing Agency Since 2004 - AirFresh"
+        description="20+ years of experiential marketing excellence. 300+ brands, 50+ cities. Leading brand ambassadors, event staffing & guerrilla marketing nationwide."
+        pageType="about"
         canonical="https://airfreshmarketing.com/about"
         structuredData={structuredData}
       />

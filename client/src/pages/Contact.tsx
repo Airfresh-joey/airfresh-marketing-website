@@ -95,9 +95,9 @@ export default function Contact() {
   return (
     <div className="pt-16">
       <SEO 
-        title="Contact AirFresh Marketing - Get Your Free Experiential Marketing Consultation | 303-720-6060"
-        description="Contact AirFresh Marketing for a free consultation on your next experiential marketing campaign. Call 303-720-6060 or email hello@airfreshmarketing.com. Located in Denver, CO with nationwide coverage."
-        keywords="contact experiential marketing agency, free marketing consultation, experiential marketing quote, brand activation consultation, event marketing contact, AirFresh Marketing phone number, Denver marketing agency contact"
+        title="Contact Us | Free Experiential Marketing Consultation - AirFresh Marketing"
+        description="Get a free consultation for brand ambassadors, event staffing & guerrilla marketing. Call 303-720-6060. Denver-based, nationwide experiential marketing."
+        pageType="contact"
         canonical="https://airfreshmarketing.com/contact"
         structuredData={structuredData}
       />

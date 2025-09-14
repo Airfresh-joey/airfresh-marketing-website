@@ -1,0 +1,29 @@
+Explicit Instructions for Implementing Notion → Website Content in Replit
+These instructions build on your existing “AirFreshMarketing-Redo” Replit project (HTML/CSS/JS with Node.js). We’ll integrate Notion API to export case studies, photos, and project notes as blogs, service pages, and visual galleries. This uses the official Notion JavaScript SDK for Node.js to fetch content dynamically (or on-demand), parse it to HTML, and display it—boosting SEO (via fresh, keyword-rich content) and credibility (with real project showcases). 0 2 3 4 7 8 9 10 Notion content (pages/databases) exports as JSON; we’ll convert Markdown/rich text to HTML, handle images via URLs, and ensure crawlability. Assume you have a Notion workspace with databases/pages for case studies (e.g., titles, descriptions, metrics), photos (image blocks), and notes (text blocks). Get your Notion API key from developers.notion.com (create internal integration, copy token). 0 8 10 Test in preview—no live changes.
+	1	Install Notion SDK and Dependencies:
+	◦	In Replit’s shell (bottom pane): Run npm install @notionhq/client marked (@notionhq/client for API, marked for Markdown-to-HTML conversion). 3 10 
+	◦	Add your Notion API key: Create .env file (Replit supports via Secrets tab: Add NOTION_API_KEY=your-token-here).
+	2	Set Up Notion Client in server.js:
+	◦	At top of server.js: require('dotenv').config(); const { Client } = require('@notionhq/client'); const notion = new Client({ auth: process.env.NOTION_API_KEY }); const marked = require('marked');.
+	◦	This initializes the client for fetching. 0 3 10 
+	3	Fetch Notion Databases/Pages for Case Studies and Notes:
+	◦	Add function to fetch database (for case studies/notes): async function fetchNotionDatabase(databaseId) { const response = await notion.databases.query({ database_id: databaseId }); return response.results; }. Replace databaseId with your Notion database ID (from URL, e.g., notion.so/your-workspace?v=… or share page with integration). 2 7 10 
+	◦	For individual pages (e.g., detailed notes): async function fetchNotionPage(pageId) { const page = await notion.pages.retrieve({ page_id: pageId }); const blocks = await notion.blocks.children.list({ block_id: pageId }); return { page, blocks }; }. 4 10 
+	4	Handle Photos and Convert Content to HTML:
+	◦	Add parser function: function notionToHtml(blocks) { let html = ''; for (const block of blocks) { if (block.type === 'paragraph') { html +=  ${marked.parseInline(block.paragraph.rich_text.map(t => t.text.content).join(’’))} ; } else if (block.type === 'image') { html += ; } else if (block.type === 'heading_1') { html += ${block.heading_1.rich_text[0].text.content} ; } // Add more types as needed } return html; }. This handles text/notes as paragraphs/headings, photos as (URLs from Notion). 2 4 10 
+	5	Create Routes for Blogs (from Notes/Case Studies):
+	◦	Add blog route using fetched data: app.get('/blog-from-notion', async (req, res) => { const items = await fetchNotionDatabase('your-database-id'); let html = ' Blogs from Notion '; for (const item of items) { const pageId = item.id; const { blocks } = await fetchNotionPage(pageId); html += ${item.properties.Name.title[0].text.content} ${notionToHtml(blocks.results)} ; } res.send(html); });. This turns Notion pages into blog posts. 2 3 7 
+	6	Create Routes for Service Pages (from Project Notes):
+	◦	Similar to blogs: app.get('/services-from-notion', async (req, res) => { const items = await fetchNotionDatabase('your-services-db-id'); let html = ' Services from Notion Notes '; for (const item of items) { const { blocks } = await fetchNotionPage(item.id); html += ${notionToHtml(blocks.results)} ; } res.send(html); });. Use for detailed service descriptions from notes. 2 7 
+	7	Create Visual Galleries (from Photos):
+	◦	For photo-focused database: app.get('/gallery-from-notion', async (req, res) => { const items = await fetchNotionDatabase('your-photos-db-id'); let html = ' Project Galleries from Notion '; for (const item of items) { const { blocks } = await fetchNotionPage(item.id); blocks.results.forEach(block => { if (block.type === 'image') { html += ; } }); } html += ' '; res.send(html); });.
+	◦	In style.css: .gallery { display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 10px; } for responsive grid. 10 
+	8	Optimize for SEO and Credibility:
+	◦	In routes, add meta/schema: E.g., in html: .
+	◦	Update sitemap.xml/robots.txt to include new routes (e.g., /blog-from-notion).
+	◦	For credibility: Add author/dates from Notion properties (e.g., item.created_time).
+	9	Test and Iterate:
+	◦	Run project; visit /blog-from-notion etc., ensure content pulls (share Notion pages with integration first via UI). 0 10 
+	◦	Handle errors: Add try-catch in async functions.
+	◦	For manual export fallback: If API limits, export Notion to JSON/Markdown manually, upload to Replit, parse similarly.
+	◦	Fork Repl; expand with caching (e.g., save fetched JSON) for performance.

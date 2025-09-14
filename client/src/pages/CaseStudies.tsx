@@ -67,9 +67,9 @@ export default function CaseStudies() {
     return (
       <div className="pt-16">
         <SEO 
-          title="Experiential Marketing Case Studies & Success Stories | Real Campaign Results - AirFresh Marketing"
-          description="Explore 500+ experiential marketing case studies showcasing real results from brand activations, product sampling, corporate events, and customer engagement campaigns across all industries."
-          keywords="experiential marketing case studies, brand activation success stories, event marketing results, promotional campaign case studies, product sampling outcomes, corporate event case studies, experiential advertising examples, marketing campaign results, brand engagement case studies"
+          title="Experiential Marketing Case Studies | Guerrilla Marketing Success Stories"
+          description="500+ proven experiential marketing case studies. Brand activation results, guerrilla marketing campaigns & event staffing success stories from 300+ brands."
+          pageType="case-studies"
           canonical="https://airfreshmarketing.com/projects/case-studies"
           structuredData={structuredData}
         />

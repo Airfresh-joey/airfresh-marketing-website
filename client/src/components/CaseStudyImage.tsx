@@ -5,6 +5,7 @@ interface CaseStudyImageProps {
   alt: string;
   className?: string;
   client: string;
+  loading?: 'lazy' | 'eager';
 }
 
 // Stock photo fallbacks for each client
@@ -106,7 +107,7 @@ const getStockFallback = (client: string): string => {
   return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
 };
 
-export default function CaseStudyImage({ src, alt, className, client }: CaseStudyImageProps) {
+export default function CaseStudyImage({ src, alt, className, client, loading = 'lazy' }: CaseStudyImageProps) {
   const [imageSrc, setImageSrc] = useState(src);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -135,10 +136,11 @@ export default function CaseStudyImage({ src, alt, className, client }: CaseStud
       )}
       <img
         src={imageSrc}
-        alt={alt}
+        alt={`${alt} - ${client} experiential marketing campaign by AirFresh Marketing`}
         className={className}
         onError={handleError}
         onLoad={handleLoad}
+        loading={loading}
         style={{ display: isLoading ? 'none' : 'block' }}
       />
     </div>

@@ -1,4 +1,5 @@
 import { useEffect } from 'react';
+import { getPageKeywords } from '@/lib/seo-keywords';
 
 interface SEOProps {
   title: string;
@@ -8,6 +9,7 @@ interface SEOProps {
   ogType?: string;
   ogImage?: string;
   structuredData?: Record<string, any>;
+  pageType?: string; // Used to auto-generate keywords if not provided
 }
 
 export default function SEO({ 
@@ -17,7 +19,8 @@ export default function SEO({
   canonical,
   ogType = 'website',
   ogImage = 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
-  structuredData 
+  structuredData,
+  pageType 
 }: SEOProps) {
   useEffect(() => {
     // Update document title
@@ -42,8 +45,11 @@ export default function SEO({
 
     // Basic meta tags
     updateMetaTag('description', description);
-    if (keywords) {
-      updateMetaTag('keywords', keywords);
+    
+    // Use provided keywords or auto-generate based on page type
+    const finalKeywords = keywords || (pageType ? getPageKeywords(pageType) : '');
+    if (finalKeywords) {
+      updateMetaTag('keywords', finalKeywords);
     }
 
     // Open Graph tags
@@ -64,6 +70,11 @@ export default function SEO({
     updateMetaTag('robots', 'index, follow');
     updateMetaTag('author', 'AirFresh Marketing');
     updateMetaTag('viewport', 'width=device-width, initial-scale=1.0');
+    updateMetaTag('language', 'en-US');
+    updateMetaTag('geo.region', 'US-CO');
+    updateMetaTag('geo.placename', 'Denver');
+    updateMetaTag('geo.position', '39.7392;-104.9903');
+    updateMetaTag('ICBM', '39.7392, -104.9903');
 
     // Canonical URL
     if (canonical) {
@@ -87,7 +98,7 @@ export default function SEO({
       structuredDataElement.textContent = JSON.stringify(structuredData);
     }
 
-  }, [title, description, keywords, canonical, ogType, ogImage, structuredData]);
+  }, [title, description, keywords, canonical, ogType, ogImage, structuredData, pageType]);
 
   return null;
 }

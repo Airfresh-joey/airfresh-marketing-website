@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
+import SEO from "@/components/SEO";
 import { 
   Users, 
   Calendar, 
@@ -19,6 +20,16 @@ import {
 } from "lucide-react";
 
 export default function CorporateEvents() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing"
+    },
+    "serviceType": "Corporate Event Planning",
+    "description": "Full-service corporate event planning and production for conferences, meetings, and company celebrations"
+  };
   const featuredEvent = {
     title: "Microsoft Global Summit: Innovation Conference",
     client: "Microsoft",
@@ -159,6 +170,13 @@ export default function CorporateEvents() {
 
   return (
     <div className="pt-16">
+      <SEO 
+        title="Corporate Event Planning | Conferences & Business Events - AirFresh"
+        description="Professional corporate event planning: conferences, meetings, award ceremonies & team building. Full-service event production for businesses nationwide."
+        pageType="corporate-events"
+        canonical="https://airfreshmarketing.com/services/corporate-events"
+        structuredData={structuredData}
+      />
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div 

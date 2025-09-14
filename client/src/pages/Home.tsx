@@ -123,9 +123,9 @@ export default function Home() {
   return (
     <div className="pt-16">
       <SEO 
-        title="AirFresh Marketing - Premier Experiential Marketing Agency | Brand Activations & Event Marketing"
-        description="AirFresh Marketing is a leading experiential marketing agency specializing in brand activations, product sampling, trade shows, and customer engagement campaigns. Nationwide coverage with 5,000+ brand ambassadors."
-        keywords="experiential marketing, brand activation, event marketing, promotional marketing, brand ambassadors, product sampling, trade show marketing, customer engagement, pop-up experiences, corporate events, marketing campaigns, brand awareness, experiential advertising, guerrilla marketing, field marketing"
+        title="Experiential Marketing Agency | Brand Ambassadors & Event Staffing - AirFresh"
+        description="Premier experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide. 20+ years, 300+ brands served."
+        pageType="home"
         canonical="https://airfreshmarketing.com"
         structuredData={structuredData}
       />

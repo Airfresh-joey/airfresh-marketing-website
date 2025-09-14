@@ -149,9 +149,9 @@ export default function Services() {
   return (
     <div className="pt-16">
       <SEO 
-        title="Experiential Marketing Services | Brand Activations, Event Marketing & Corporate Events - AirFresh Marketing"
-        description="Comprehensive experiential marketing services including brand activations, corporate events, product sampling, and trade show marketing. Full-service event production and brand ambassador programs nationwide."
-        keywords="experiential marketing services, brand activation services, corporate event planning, event production company, product sampling campaigns, trade show marketing, brand ambassador programs, promotional marketing services, event marketing agency, experiential advertising services"
+        title="Event Staffing & Brand Activation Services | Experiential Marketing - AirFresh"
+        description="Full-service experiential marketing: brand ambassadors, event staffing, guerrilla marketing, sampling, pop-up events. Turnkey solutions for brand activations nationwide."
+        pageType="services"
         canonical="https://airfreshmarketing.com/services"
         structuredData={structuredData}
       />
