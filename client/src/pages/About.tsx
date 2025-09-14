@@ -18,23 +18,63 @@ import {
 import LinkedInFollow from "@/components/LinkedInFollow";
 
 export default function About() {
+  // Enhanced structured data with E-E-A-T signals
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "AboutPage",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing",
-      "description": "Premier experiential marketing agency with 20+ years of experience creating memorable brand activations and customer engagement campaigns",
-      "foundingDate": "2004",
-      "specialty": "Experiential Marketing, Brand Activations, Event Marketing",
-      "serviceArea": "United States",
-      "hasCredential": "20+ Years Experience, 300+ Brands Served, 50+ Cities Nationwide"
-    }
+    "@graph": [
+      {
+        "@type": "AboutPage",
+        "mainEntity": {
+          "@type": "Organization",
+          "@id": "https://airfreshmarketing.com/#organization",
+          "name": "AirFresh Marketing",
+          "description": "Experiential marketing agency creating memorable brand activations and customer engagement campaigns",
+          "founder": {
+            "@type": "Person",
+            "name": "AirFresh Marketing Founders",
+            "jobTitle": "Experiential Marketing Pioneers"
+          },
+          "specialty": "Experiential Marketing, Brand Activations, Event Marketing, Guerrilla Marketing",
+          "serviceArea": "United States",
+          "hasCredential": "Years of Experience, Brands Served Nationwide, Experienced Brand Ambassadors",
+          "knowsAbout": [
+            "Experiential Marketing Strategy",
+            "Brand Activation Campaigns",
+            "Event Staffing and Management",
+            "Guerrilla Marketing Tactics",
+            "Product Sampling Programs",
+            "Trade Show Marketing",
+            "Corporate Event Production"
+          ]
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Why choose AirFresh Marketing for experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing brings years of expertise, successful brand campaigns, a network of trained brand ambassadors, and nationwide operations. Our focus on client satisfaction and proven engagement strategies make us a trusted choice for experiential marketing."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes AirFresh different from other marketing agencies?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike traditional agencies, AirFresh specializes exclusively in experiential marketing with in-house capabilities for strategy, creative, production, and execution. Our turnkey solutions, nationwide brand ambassador network, and data-driven approach deliver measurable ROI."
+            }
+          }
+        ]
+      }
+    ]
   };
   const stats = [
-    { number: "20+", label: "Years of Experience" },
-    { number: "300+", label: "Brands Served" },
-    { number: "50+", label: "Cities Nationwide" },
+    { number: "10+", label: "Years of Experience" },
+    { number: "100+", label: "Brands Served" },
+    { number: "25+", label: "Cities Nationwide" },
     { number: "1000+", label: "Events Produced" }
   ];
 
@@ -109,13 +149,13 @@ export default function About() {
     <div className="pt-16">
       <SEO 
         title="About Us | Premier Experiential Marketing Agency Since 2004 - AirFresh"
-        description="20+ years of experiential marketing excellence. 300+ brands, 50+ cities. Leading brand ambassadors, event staffing & guerrilla marketing nationwide."
+        description="Years of experiential marketing excellence. Leading brand ambassadors, event staffing & guerrilla marketing nationwide."
         pageType="about"
         canonical="https://airfreshmarketing.com/about"
         structuredData={structuredData}
       />
-      {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      {/* Hero Section with Semantic HTML and E-E-A-T Signals */}
+      <section className="relative py-20 lg:py-32 overflow-hidden" aria-label="About Hero">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -123,26 +163,26 @@ export default function About() {
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <div className="max-w-4xl">
+        <article className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+          <header className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              About AirFresh <span className="text-yellow-300 italic font-serif">Marketing</span>
+              Why Is AirFresh <span className="text-yellow-300 italic font-serif">Marketing</span> the Leading Experiential Agency?
             </h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-              For over 20 years, we've been the nationwide leader in experiential marketing, 
-              creating unforgettable brand experiences that connect with customers on an emotional level.
+              We've delivered <strong>successful campaigns</strong> for <strong>numerous brands</strong> across <strong>major cities nationwide</strong>. 
+              Our focus on <strong>client satisfaction</strong> and <strong>trained brand ambassadors</strong> make us a trusted choice for experiential marketing.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
               <Link href="/contact">Start Your Project</Link>
             </Button>
-          </div>
-        </div>
+          </header>
+        </article>
       </section>
 
       {/* LinkedIn Connect Section */}
       <section className="py-12 bg-primary/5">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Join Our Professional Network</h3>
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Join Our Professional Network?</h3>
           <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
             Follow AirFresh Marketing on LinkedIn for industry insights, success stories, and the latest trends in experiential marketing.
           </p>
@@ -164,14 +204,16 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Story Section */}
-      <section className="py-20 bg-gray-50">
+      {/* Our Story Section with E-E-A-T Signals */}
+      <section className="py-20 bg-gray-50" aria-label="Company Story">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <article className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
-              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">Our Story</h2>
+              <h2 className="text-3xl md:text-4xl font-bold mb-6 text-gray-900">
+                How Did AirFresh Marketing Become the Premier Experiential Agency?
+              </h2>
               <p className="text-lg text-gray-600 mb-6 leading-relaxed">
-                Founded in Denver, Colorado, AirFresh Marketing began with a simple yet powerful mission: 
+                <time dateTime="2004">Founded in 2004</time> in Denver, Colorado, AirFresh Marketing began with a simple yet powerful mission: 
                 to help brands create authentic, meaningful connections with their audiences through the 
                 power of experiential marketing.
               </p>
@@ -206,7 +248,7 @@ export default function About() {
                 <div className="text-sm">Brands Served</div>
               </div>
             </div>
-          </div>
+          </article>
         </div>
       </section>
 

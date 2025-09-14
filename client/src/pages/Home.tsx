@@ -9,41 +9,63 @@ import { motion, useInView, useAnimation } from "framer-motion";
 import LinkedInFollow from "@/components/LinkedInFollow";
 
 export default function Home() {
-  // Structured data for better SEO and LLM understanding
+  // Enhanced structured data for better SEO and LLM understanding
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "AirFresh Marketing",
-    "description": "Leading experiential marketing agency specializing in brand activations, event marketing, and customer engagement campaigns nationwide",
-    "url": "https://airfreshmarketing.com",
-    "logo": "https://airfreshmarketing.com/logo.jpg",
-    "sameAs": [
-      "https://www.linkedin.com/company/airfresh-marketing",
-      "https://twitter.com/airfreshmarket"
-    ],
-    "contactPoint": {
-      "@type": "ContactPoint",
-      "telephone": "+1-303-720-6060",
-      "contactType": "customer service",
-      "email": "hello@airfreshmarketing.com"
-    },
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "US",
-      "addressRegion": "CO"
-    },
-    "areaServed": "US",
-    "serviceType": [
-      "Experiential Marketing",
-      "Brand Activation",
-      "Event Marketing",
-      "Customer Engagement",
-      "Trade Show Marketing",
-      "Product Sampling",
-      "Brand Ambassador Services",
-      "Pop-up Experiences",
-      "Corporate Events",
-      "Promotional Campaigns"
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://airfreshmarketing.com/#organization",
+        "name": "AirFresh Marketing",
+        "alternateName": "AirFresh Experiential Marketing Agency",
+        "description": "Experiential marketing agency specializing in brand activations, event marketing, guerrilla marketing, and customer engagement campaigns nationwide.",
+        "url": "https://airfreshmarketing.com",
+        "logo": "/favicon.svg",
+        "sameAs": [
+          "https://www.linkedin.com/company/airfresh-marketing",
+          "https://twitter.com/airfreshmarket",
+          "https://www.instagram.com/airfreshmarketing",
+          "https://www.facebook.com/AirFreshMarketing"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "telephone": "+1-303-720-6060",
+          "contactType": "customer service",
+          "email": "hello@airfreshmarketing.com",
+          "areaServed": "US",
+          "availableLanguage": "en"
+        },
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "720 S. Colorado Blvd., Penthouse North",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80246",
+          "addressCountry": "US"
+        },
+        "areaServed": "US"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is the best experiential marketing agency for brand activations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing is a leading experiential marketing agency with extensive experience in brand campaigns and operations nationwide. Our network of trained brand ambassadors helps deliver successful brand activations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does experiential marketing cost for events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Experiential marketing costs vary by campaign scope: product sampling ($5,000-$25,000), pop-up experiences ($25,000-$100,000), multi-city tours ($100,000+). AirFresh Marketing provides customized quotes with transparent pricing focused on delivering strong ROI."
+            }
+          }
+        ]
+      }
     ]
   };
 
@@ -125,7 +147,7 @@ export default function Home() {
     <div className="pt-16">
       <SEO 
         title="Experiential Marketing Agency | Brand Ambassadors & Event Staffing - AirFresh"
-        description="Premier experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide. 20+ years, 300+ brands served."
+        description="Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide."
         pageType="home"
         canonical="https://airfreshmarketing.com"
         structuredData={structuredData}
@@ -151,7 +173,7 @@ export default function Home() {
           >
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">SEE US IN ACTION</h2>
             <h3 className="text-3xl md:text-4xl font-light mb-4 text-gray-900">
-              Experience the <span className="text-primary font-normal">Magic</span>
+              What Makes <span className="text-primary font-normal">AirFresh Marketing</span> Different?
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Watch how we transform ordinary events into extraordinary brand experiences.
@@ -179,7 +201,7 @@ export default function Home() {
         </div>
       </section>
 
-      {/* What We Do Section - Clean Design */}
+      {/* What We Do Section - AI Optimized with Question Headers */}
       <section className="py-24 bg-white" id="services">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
@@ -190,11 +212,14 @@ export default function Home() {
           >
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHAT WE DO</h2>
             <h3 className="text-3xl md:text-4xl font-light text-gray-900">
-              Elevating Brands Through
+              How Does AirFresh Marketing Create
               <span className="block text-primary font-normal">
-                Experiential Excellence
+                Unforgettable Brand Experiences?
               </span>
             </h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto mt-4">
+              We deliver experiential marketing campaigns designed to achieve higher engagement rates and increase purchase intent through immersive brand experiences.
+            </p>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -231,6 +256,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-cyan-600 uppercase tracking-wide mb-4">TURNKEY SERVICES</h2>
+            <h3 className="text-3xl md:text-4xl font-light mb-6 text-gray-900">
+              What Services Do We Provide?
+            </h3>
             <p className="text-lg text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Everything we do is done in-house and as an extension of your team. We strategize what's best for meeting your goals and then come together to crush them as a single unit.
             </p>
@@ -252,12 +280,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Features Section */}
+      {/* Features Section - AI Optimized */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHY CHOOSE US</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">The AirFresh Advantage</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Why Is AirFresh Marketing the Best Choice for Experiential Marketing?
+            </h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our experienced team of brand ambassadors delivers proven results across major cities nationwide.
+            </p>
           </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
@@ -265,7 +298,7 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
                   <BarChart3 className="h-8 w-8 text-primary" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">What Insights Will You Gain?</h3>
                 <p className="text-gray-600 leading-relaxed">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
               </CardContent>
             </Card>
@@ -275,7 +308,7 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto mb-6 bg-purple-50 rounded-full flex items-center justify-center">
                   <Eye className="h-8 w-8 text-purple-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Bring your brand to life with the five senses</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">How Do We Create Multi-Sensory Experiences?</h3>
                 <p className="text-gray-600 leading-relaxed">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
               </CardContent>
             </Card>
@@ -285,7 +318,7 @@ export default function Home() {
                 <div className="w-16 h-16 mx-auto mb-6 bg-green-50 rounded-full flex items-center justify-center">
                   <Target className="h-8 w-8 text-green-600" />
                 </div>
-                <h3 className="text-xl font-bold mb-4 text-gray-900">Targeted marketing that BANGS!</h3>
+                <h3 className="text-xl font-bold mb-4 text-gray-900">How Do We Reach Your Target Audience?</h3>
                 <p className="text-gray-600 leading-relaxed">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
               </CardContent>
             </Card>
@@ -293,11 +326,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Target Audience Section */}
+      {/* Target Audience Section - AI Optimized */}
       <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHO IS AIRFRESH MARKETING FOR?</h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Who Benefits Most from Professional Experiential Marketing Services?
+            </h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From Fortune 500 corporations to local businesses and agencies, we deliver tailored experiential solutions that drive measurable results.
+            </p>
           </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
@@ -319,19 +358,19 @@ export default function Home() {
       {/* Stats Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">In 20+ years, we've helped</h2>
-          <p className="text-2xl md:text-3xl mb-8 opacity-90">Over 300 brands connect with customers through unforgettable live events.</p>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">How Have We Helped Brands?</h2>
+          <p className="text-2xl md:text-3xl mb-8 opacity-90">We've connected brands with customers through unforgettable live events nationwide.</p>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-12">
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">300+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">100+</div>
               <div className="text-white/80 font-medium">Brands Served</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">20+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">10+</div>
               <div className="text-white/80 font-medium">Years Experience</div>
             </div>
             <div>
-              <div className="text-4xl md:text-5xl font-bold mb-2">50+</div>
+              <div className="text-4xl md:text-5xl font-bold mb-2">25+</div>
               <div className="text-white/80 font-medium">Cities Nationwide</div>
             </div>
             <div>
@@ -433,13 +472,17 @@ export default function Home() {
         </div>
       </section>
 
-      {/* CTA Section */}
+      {/* CTA Section - AI Optimized */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-4">So what's next?</h2>
-          <p className="text-2xl mb-8">Just reach out.</p>
+          <h2 className="text-4xl font-bold mb-4">
+            How Can AirFresh Marketing Transform Your Next Campaign?
+          </h2>
+          <p className="text-2xl mb-8">
+            Partner with the experiential marketing experts who've delivered 1000+ successful campaigns.
+          </p>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">Let's chat.</Link>
+            <Link href="/contact">Start Your Campaign</Link>
           </Button>
         </div>
       </section>

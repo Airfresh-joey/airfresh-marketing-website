@@ -23,46 +23,72 @@ import {
 } from "lucide-react";
 
 export default function Services() {
+  // Enhanced structured data with E-E-A-T signals
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "provider": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing"
-    },
-    "serviceType": [
-      "Experiential Marketing",
-      "Brand Activations", 
-      "Corporate Events",
-      "Event Production",
-      "Product Sampling",
-      "Trade Show Marketing",
-      "Promotional Campaigns",
-      "Brand Ambassador Services"
-    ],
-    "areaServed": "United States",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": "Experiential Marketing Services",
-      "itemListElement": [
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service",
-            "name": "Experiential Marketing",
-            "description": "Multi-sensory brand experiences that create emotional connections"
-          }
+    "@graph": [
+      {
+        "@type": "Service",
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing"
         },
-        {
-          "@type": "Offer",
-          "itemOffered": {
-            "@type": "Service", 
-            "name": "Brand Activations",
-            "description": "Interactive experiences and product launches that generate brand awareness"
-          }
+        "serviceType": [
+          "Experiential Marketing",
+          "Brand Activations", 
+          "Corporate Events",
+          "Event Production",
+          "Product Sampling",
+          "Trade Show Marketing",
+          "Promotional Campaigns",
+          "Brand Ambassador Services"
+        ],
+        "areaServed": "United States",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": "Experiential Marketing Services",
+          "itemListElement": [
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service",
+                "name": "Experiential Marketing",
+                "description": "Multi-sensory brand experiences designed to achieve higher engagement rates than traditional marketing"
+              }
+            },
+            {
+              "@type": "Offer",
+              "itemOffered": {
+                "@type": "Service", 
+                "name": "Brand Activations",
+                "description": "Interactive experiences and product launches designed for strong brand recall"
+              }
+            }
+          ]
         }
-      ]
-    }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What experiential marketing services does AirFresh offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing offers comprehensive experiential marketing services including brand activations, event staffing with trained brand ambassadors, guerrilla marketing, product sampling, pop-up events, corporate event production, and trade show marketing nationwide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How to choose the best event staffing agency for brand activations?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Choose an event staffing agency based on: experience, talent network quality, geographic reach, client satisfaction, and proven ROI. AirFresh Marketing offers experienced brand ambassadors and comprehensive services nationwide."
+            }
+          }
+        ]
+      }
+    ]
   };
   const mainServices = [
     {
@@ -131,18 +157,18 @@ export default function Services() {
   const benefits = [
     {
       icon: Target,
-      title: "Targeted marketing that BANGS!",
+      title: "How Do We Target Niche Markets?",
       description: "Aiming for hard-to-reach niches? We help you wiggle your way into obscure markets with crafty campaigns that resonate with specific audiences."
     },
     {
       icon: Award,
-      title: "Leave with knowledge, not just numbers",
+      title: "What Insights Will You Gain?",
       description: "Our end-of-project success reports are packed with actionable data to guide future marketing efforts and maximize ROI."
     },
     {
       icon: Zap,
-      title: "20+ Years of Proven Experience",
-      description: "With over two decades in the industry, we've helped 300+ brands create unforgettable experiences that drive real business results."
+      title: "Why Choose Experienced Professionals?",
+      description: "With years of industry experience, we've helped numerous brands create unforgettable experiences that drive real business results."
     }
   ];
 
@@ -155,8 +181,8 @@ export default function Services() {
         canonical="https://airfreshmarketing.com/services"
         structuredData={structuredData}
       />
-      {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
+      {/* Hero Section with Semantic HTML */}
+      <section className="relative py-20 lg:py-32 overflow-hidden" aria-label="Services Hero">
         <div 
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
@@ -164,20 +190,20 @@ export default function Services() {
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-60" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <div className="max-w-4xl">
+        <article className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+          <header className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Our <span className="text-yellow-300 italic font-serif">Services</span>
+              What Experiential Marketing Services Does <span className="text-yellow-300 italic font-serif">AirFresh</span> Offer?
             </h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-              Comprehensive experiential marketing services designed to create unforgettable 
-              brand experiences that connect with your customers on an emotional level.
+              With years of expertise and successful campaigns nationwide, we deliver comprehensive experiential marketing services 
+              designed to achieve higher engagement rates and create lasting emotional connections with your customers.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
               <Link href="/contact">Start Your Project</Link>
             </Button>
-          </div>
-        </div>
+          </header>
+        </article>
       </section>
 
       {/* Main Services Section */}
@@ -185,7 +211,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHAT WE SPECIALIZE IN</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Core Services</h3>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">What Services Can Transform Your Brand?</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               From intimate brand activations to large-scale corporate events, we create 
               experiences that resonate with your audience and drive meaningful business results.
