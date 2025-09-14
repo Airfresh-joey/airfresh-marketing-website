@@ -16,6 +16,8 @@ import {
   Zap,
   Heart
 } from "lucide-react";
+import LinkedInShare from "@/components/LinkedInShare";
+import LinkedInContentTemplates from "@/components/LinkedInContentTemplates";
 
 export default function Blog() {
   const structuredData = {
@@ -227,10 +229,17 @@ export default function Blog() {
                     {featuredArticle.readTime}
                   </div>
                 </div>
-                <Button className="group">
-                  Read Full Article
-                  <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                </Button>
+                <div className="flex items-center gap-4">
+                  <Button className="group">
+                    Read Full Article
+                    <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
+                  </Button>
+                  <LinkedInShare 
+                    variant="compact"
+                    title={featuredArticle.title}
+                    summary={featuredArticle.excerpt}
+                  />
+                </div>
               </div>
             </div>
           </Card>
@@ -286,10 +295,17 @@ export default function Blog() {
                       <Clock className="h-4 w-4 mr-1" />
                       {article.readTime}
                     </div>
-                    <Button variant="ghost" size="sm" className="group/btn">
-                      Read More
-                      <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                    </Button>
+                    <div className="flex items-center gap-2">
+                      <LinkedInShare 
+                        variant="icon"
+                        title={article.title}
+                        summary={article.excerpt}
+                      />
+                      <Button variant="ghost" size="sm" className="group/btn">
+                        Read More
+                        <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
+                      </Button>
+                    </div>
                   </div>
                 </CardContent>
               </Card>
@@ -324,6 +340,19 @@ export default function Blog() {
           <p className="text-sm opacity-75 mt-4">
             Join 5,000+ marketing professionals who trust our insights.
           </p>
+        </div>
+      </section>
+
+      {/* LinkedIn Content Templates Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Share Your Expertise on LinkedIn</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Use our professionally crafted LinkedIn post templates to share industry insights and engage your network.
+            </p>
+          </div>
+          <LinkedInContentTemplates />
         </div>
       </section>
 

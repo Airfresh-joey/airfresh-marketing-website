@@ -19,6 +19,7 @@ import {
   Building2,
   DollarSign
 } from "lucide-react";
+import LinkedInShare from "@/components/LinkedInShare";
 
 
 export default function CaseStudies() {
@@ -164,6 +165,14 @@ export default function CaseStudies() {
                     <p className="text-gray-600 leading-relaxed mb-6">
                       {featuredCaseStudy.description}
                     </p>
+                  </div>
+                  
+                  <div className="mb-4">
+                    <LinkedInShare 
+                      variant="button"
+                      title={`Success Story: ${featuredCaseStudy.title}`}
+                      summary={`${featuredCaseStudy.client} achieved incredible results through our ${featuredCaseStudy.campaign_type} campaign. ${featuredCaseStudy.description}`}
+                    />
                   </div>
 
                   {featuredCaseStudy.results && (

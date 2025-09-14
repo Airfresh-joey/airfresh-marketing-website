@@ -25,6 +25,7 @@ import {
   Zap,
   Star
 } from "lucide-react";
+import LinkedInShare from "@/components/LinkedInShare";
 
 export default function CaseStudyDetail() {
   const { id } = useParams();
@@ -136,6 +137,14 @@ export default function CaseStudyDetail() {
               <p className="text-xl text-gray-700 leading-relaxed mb-8">
                 {caseStudy.description}
               </p>
+
+              <div className="mb-6">
+                <LinkedInShare 
+                  variant="button"
+                  title={`${caseStudy.client} Success Story: ${caseStudy.title}`}
+                  summary={`Discover how AirFresh Marketing helped ${caseStudy.client} achieve remarkable results through ${caseStudy.campaign_type}. ${caseStudy.description}`}
+                />
+              </div>
 
               {caseStudy.has_real_assets && (
                 <div className="flex gap-4">

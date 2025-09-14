@@ -15,6 +15,7 @@ import {
   Handshake,
   CheckCircle
 } from "lucide-react";
+import LinkedInFollow from "@/components/LinkedInFollow";
 
 export default function About() {
   const structuredData = {
@@ -135,6 +136,17 @@ export default function About() {
               <Link href="/contact">Start Your Project</Link>
             </Button>
           </div>
+        </div>
+      </section>
+
+      {/* LinkedIn Connect Section */}
+      <section className="py-12 bg-primary/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h3 className="text-2xl font-bold text-gray-900 mb-4">Join Our Professional Network</h3>
+          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
+            Follow AirFresh Marketing on LinkedIn for industry insights, success stories, and the latest trends in experiential marketing.
+          </p>
+          <LinkedInFollow size="large" companyId="airfreshmarketing" />
         </div>
       </section>
 

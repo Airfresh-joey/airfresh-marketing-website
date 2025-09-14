@@ -52,19 +52,29 @@ export default function SEO({
       updateMetaTag('keywords', finalKeywords);
     }
 
-    // Open Graph tags
+    // Open Graph tags (essential for LinkedIn sharing)
     updateMetaTag('og:title', title, true);
     updateMetaTag('og:description', description, true);
     updateMetaTag('og:type', ogType, true);
     updateMetaTag('og:image', ogImage, true);
     updateMetaTag('og:url', window.location.href, true);
     updateMetaTag('og:site_name', 'AirFresh Marketing', true);
+    updateMetaTag('og:locale', 'en_US', true);
+    
+    // LinkedIn specific Open Graph tags
+    updateMetaTag('article:author', 'https://www.linkedin.com/company/airfresh-marketing', true);
+    updateMetaTag('article:publisher', 'https://www.linkedin.com/company/airfresh-marketing', true);
+    updateMetaTag('og:image:width', '1200', true);
+    updateMetaTag('og:image:height', '630', true);
+    updateMetaTag('og:image:alt', title, true);
 
     // Twitter tags
     updateMetaTag('twitter:card', 'summary_large_image');
     updateMetaTag('twitter:title', title);
     updateMetaTag('twitter:description', description);
     updateMetaTag('twitter:image', ogImage);
+    updateMetaTag('twitter:site', '@AirFreshMktg');
+    updateMetaTag('twitter:creator', '@AirFreshMktg');
 
     // Additional SEO tags
     updateMetaTag('robots', 'index, follow');
@@ -75,6 +85,15 @@ export default function SEO({
     updateMetaTag('geo.placename', 'Denver');
     updateMetaTag('geo.position', '39.7392;-104.9903');
     updateMetaTag('ICBM', '39.7392, -104.9903');
+    
+    // LinkedIn Profile Links
+    const linkedInProfile = document.querySelector('link[rel="me"]') as HTMLLinkElement;
+    if (!linkedInProfile) {
+      const link = document.createElement('link');
+      link.rel = 'me';
+      link.href = 'https://www.linkedin.com/company/airfresh-marketing';
+      document.head.appendChild(link);
+    }
 
     // Canonical URL
     if (canonical) {

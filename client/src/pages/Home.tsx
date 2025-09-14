@@ -6,6 +6,7 @@ import { Link } from "wouter";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
+import LinkedInFollow from "@/components/LinkedInFollow";
 
 export default function Home() {
   // Structured data for better SEO and LLM understanding
@@ -130,6 +131,14 @@ export default function Home() {
         structuredData={structuredData}
       />
       <HeroAgencyVideo />
+
+      {/* LinkedIn Follow Section */}
+      <section className="py-8 bg-primary/5">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <p className="text-gray-700 mb-4 font-medium">Connect with us on LinkedIn for the latest experiential marketing insights</p>
+          <LinkedInFollow size="large" companyId="airfreshmarketing" />
+        </div>
+      </section>
 
       {/* Video Section - Clean Design */}
       <section className="py-24 bg-gray-50">

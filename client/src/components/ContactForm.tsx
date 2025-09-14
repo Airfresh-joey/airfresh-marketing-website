@@ -24,7 +24,7 @@ export default function ContactForm() {
       email: "",
       phone: "",
       company: "",
-      inquiryType: "",
+      inquiryType: undefined,
       message: "",
     },
   });
@@ -115,7 +115,7 @@ export default function ContactForm() {
                 <FormItem>
                   <FormLabel>Phone</FormLabel>
                   <FormControl>
-                    <Input type="tel" {...field} />
+                    <Input type="tel" {...field} value={field.value || ""} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -129,7 +129,7 @@ export default function ContactForm() {
                 <FormItem>
                   <FormLabel>Company</FormLabel>
                   <FormControl>
-                    <Input {...field} />
+                    <Input {...field} value={field.value || ""} />
                   </FormControl>
                   <FormMessage />
                 </FormItem>
@@ -142,7 +142,7 @@ export default function ContactForm() {
               render={({ field }) => (
                 <FormItem>
                   <FormLabel>Inquiry Type</FormLabel>
-                  <Select onValueChange={field.onChange} defaultValue={field.value}>
+                  <Select onValueChange={field.onChange} value={field.value || undefined}>
                     <FormControl>
                       <SelectTrigger>
                         <SelectValue placeholder="Select one..." />
