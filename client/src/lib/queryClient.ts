@@ -13,7 +13,7 @@ export async function apiRequest(
   data?: unknown | undefined,
   headers?: Record<string, string>,
 ): Promise<Response> {
-  const defaultHeaders = data ? { "Content-Type": "application/json" } : {};
+  const defaultHeaders: Record<string, string> = data ? { "Content-Type": "application/json" } : {};
   const res = await fetch(url, {
     method,
     headers: { ...defaultHeaders, ...headers },
