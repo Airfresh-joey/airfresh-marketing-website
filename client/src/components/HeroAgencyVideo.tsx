@@ -3,6 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
+import airFreshLogo from "@assets/airfreshmarketing_logo_1757876981708.jpg";
 
 export default function HeroAgencyVideo() {
   const shouldReduceMotion = useReducedMotion();
@@ -118,6 +119,18 @@ export default function HeroAgencyVideo() {
           animate="visible"
           className="max-w-6xl mx-auto text-center"
         >
+          {/* Air Fresh Logo */}
+          <motion.div
+            variants={itemVariants}
+            className="mb-12"
+          >
+            <img 
+              src={airFreshLogo} 
+              alt="Air Fresh Marketing" 
+              className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full shadow-2xl"
+            />
+          </motion.div>
+
           {/* Agency Badge */}
           <motion.div
             variants={itemVariants}
