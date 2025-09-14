@@ -41,8 +41,8 @@ export default function NavigationClean() {
                 href={link.href}
                 className={`font-medium transition-colors duration-200 ${
                   isActive(link.href)
-                    ? "text-blue-700"
-                    : "text-gray-600 hover:text-blue-700"
+                    ? "text-primary"
+                    : "text-gray-600 hover:text-primary"
                 }`}
               >
                 {link.label}
@@ -50,7 +50,7 @@ export default function NavigationClean() {
             ))}
             <Button 
               asChild 
-              className="bg-blue-700 hover:bg-blue-800 text-white rounded-md px-4 py-2"
+              className="bg-primary hover:bg-primary/90 text-white rounded-md px-4 py-2"
             >
               <Link href="/contact">Get Started</Link>
             </Button>
@@ -82,8 +82,8 @@ export default function NavigationClean() {
                 href={link.href}
                 className={`block px-3 py-2 rounded-md text-base font-medium ${
                   isActive(link.href)
-                    ? "bg-blue-50 text-blue-700"
-                    : "text-gray-600 hover:bg-gray-50 hover:text-blue-700"
+                    ? "bg-primary/10 text-primary"
+                    : "text-gray-600 hover:bg-gray-50 hover:text-primary"
                 }`}
                 onClick={() => setMobileMenuOpen(false)}
               >
@@ -93,7 +93,7 @@ export default function NavigationClean() {
             <div className="px-3 py-2">
               <Button 
                 asChild 
-                className="w-full bg-blue-700 hover:bg-blue-800 text-white rounded-md"
+                className="w-full bg-primary hover:bg-primary/90 text-white rounded-md"
               >
                 <Link href="/contact">Get Started</Link>
               </Button>

@@ -1,4 +1,4 @@
-import HeroProfessional from "@/components/HeroProfessional";
+import HeroAgencyVideo from "@/components/HeroAgencyVideo";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -129,7 +129,7 @@ export default function Home() {
         canonical="https://airfreshmarketing.com"
         structuredData={structuredData}
       />
-      <HeroProfessional />
+      <HeroAgencyVideo />
 
       {/* Video Section - Clean Design */}
       <section className="py-24 bg-gray-50">
@@ -140,9 +140,9 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-12"
           >
-            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">SEE US IN ACTION</h2>
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">SEE US IN ACTION</h2>
             <h3 className="text-3xl md:text-4xl font-light mb-4 text-gray-900">
-              Experience the <span className="text-blue-600 font-normal">Magic</span>
+              Experience the <span className="text-primary font-normal">Magic</span>
             </h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Watch how we transform ordinary events into extraordinary brand experiences.
@@ -179,10 +179,10 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">WHAT WE DO</h2>
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHAT WE DO</h2>
             <h3 className="text-3xl md:text-4xl font-light text-gray-900">
               Elevating Brands Through
-              <span className="block text-blue-600 font-normal">
+              <span className="block text-primary font-normal">
                 Experiential Excellence
               </span>
             </h3>
@@ -198,10 +198,10 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="group"
               >
-                <Card className="h-full bg-white border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+                <Card className="h-full bg-white border-gray-200 hover:border-primary/30 hover:shadow-lg transition-all duration-300">
                   <CardContent className="p-8 text-center">
-                    <div className="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-lg flex items-center justify-center group-hover:bg-blue-100 transition-colors">
-                      <service.icon className="h-8 w-8 text-blue-600" />
+                    <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-lg flex items-center justify-center group-hover:bg-primary/20 transition-colors">
+                      <service.icon className="h-8 w-8 text-primary" />
                     </div>
                     <h3 className="text-xl font-semibold mb-4 text-gray-900">
                       {service.title}
@@ -253,8 +253,8 @@ export default function Home() {
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
             <Card className="text-center p-8 hover:shadow-lg transition-shadow">
               <CardContent className="p-0">
-                <div className="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-full flex items-center justify-center">
-                  <BarChart3 className="h-8 w-8 text-blue-600" />
+                <div className="w-16 h-16 mx-auto mb-6 bg-primary/10 rounded-full flex items-center justify-center">
+                  <BarChart3 className="h-8 w-8 text-primary" />
                 </div>
                 <h3 className="text-xl font-bold mb-4 text-gray-900">Leave with knowledge, not just numbers</h3>
                 <p className="text-gray-600 leading-relaxed">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
@@ -381,7 +381,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-24 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
                 <span className="text-white font-bold text-lg">Microsoft</span>
               </div>
             </div>
@@ -391,7 +391,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-blue-600 to-blue-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-24 h-16 bg-gradient-to-r from-primary/90 to-primary/70 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
                 <span className="text-white font-bold text-lg">Meta</span>
               </div>
             </div>
@@ -401,7 +401,7 @@ export default function Home() {
               </div>
             </div>
             <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-blue-500 to-blue-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
+              <div className="w-24 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
                 <span className="text-white font-bold text-lg">Pepsi</span>
               </div>
             </div>
