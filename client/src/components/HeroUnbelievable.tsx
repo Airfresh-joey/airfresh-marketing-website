@@ -316,7 +316,7 @@ export default function HeroUnbelievable() {
         </div>
       </motion.div>
       
-      <style jsx>{`
+      <style>{`
         @keyframes aurora {
           0%, 100% {
             transform: translateX(-100%) translateY(0) rotate(0deg);

@@ -98,6 +98,10 @@ export async function fetchCaseStudiesWithImages(): Promise<CaseStudyWithImages[
 }
 
 async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): Promise<CaseStudyWithImages | null> {
+    if (!notion) {
+        return null;
+    }
+    
     try {
         // Get page properties
         const page = await notion.pages.retrieve({ page_id: pageId });

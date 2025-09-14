@@ -1,4 +1,4 @@
-import HeroUnbelievable from "@/components/HeroUnbelievable";
+import HeroProfessional from "@/components/HeroProfessional";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -129,40 +129,32 @@ export default function Home() {
         canonical="https://airfreshmarketing.com"
         structuredData={structuredData}
       />
-      <HeroUnbelievable />
+      <HeroProfessional />
 
-      {/* Video Section with Premium Styling */}
-      <section className="py-32 bg-gradient-to-br from-slate-50 via-purple-50/30 to-slate-50 relative overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute top-0 right-0 w-96 h-96 bg-purple-200/30 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-200/30 rounded-full blur-3xl"></div>
-        </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* Video Section - Clean Design */}
+      <section className="py-24 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-12"
           >
-            <span className="inline-flex items-center gap-2 bg-gradient-to-r from-purple-600 to-cyan-600 text-white text-sm font-semibold px-4 py-2 rounded-full mb-6">
-              <Zap className="w-4 h-4" />
-              SEE US IN ACTION
-            </span>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-slate-900 via-purple-900 to-slate-900">
-              Experience the Magic
+            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">SEE US IN ACTION</h2>
+            <h3 className="text-3xl md:text-4xl font-light mb-4 text-gray-900">
+              Experience the <span className="text-blue-600 font-normal">Magic</span>
             </h3>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              Watch how we transform ordinary events into extraordinary brand experiences that captivate audiences and drive results.
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Watch how we transform ordinary events into extraordinary brand experiences.
             </p>
           </motion.div>
           <motion.div 
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.2 }}
-            className="relative group"
+            className="relative"
           >
-            <div className="absolute -inset-4 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-3xl opacity-20 group-hover:opacity-30 blur-xl transition-opacity duration-500"></div>
-            <div className="relative bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 rounded-3xl shadow-2xl overflow-hidden">
+            <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video relative">
                 <iframe 
                   src="https://player.vimeo.com/video/824804225?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&muted=1&background=0"
@@ -172,35 +164,28 @@ export default function Home() {
                   allowFullScreen
                   title="AirFresh Marketing - Brand Experience Showcase"
                 ></iframe>
-                <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6">
-                  <h4 className="text-2xl font-bold mb-2 text-white">Brand Experience Showcase</h4>
-                  <p className="text-white/90">Featuring our recent campaigns across the nation</p>
-                </div>
               </div>
             </div>
           </motion.div>
         </div>
       </section>
 
-      {/* What We Do Section with Glass Morphism */}
-      <section className="py-32 bg-white relative" id="services">
-        <div className="absolute inset-0 bg-gradient-to-b from-white via-purple-50/20 to-white"></div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+      {/* What We Do Section - Clean Design */}
+      <section className="py-24 bg-white" id="services">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div 
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-20"
+            className="text-center mb-16"
           >
-            <span className="inline-block bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent text-sm font-bold uppercase tracking-wider mb-4">
-              WHAT WE DO
-            </span>
-            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-slate-900">
+            <h2 className="text-sm font-semibold text-blue-600 uppercase tracking-wide mb-4">WHAT WE DO</h2>
+            <h3 className="text-3xl md:text-4xl font-light text-gray-900">
               Elevating Brands Through
-              <span className="block bg-gradient-to-r from-purple-600 to-cyan-600 bg-clip-text text-transparent">
+              <span className="block text-blue-600 font-normal">
                 Experiential Excellence
               </span>
-            </h2>
+            </h3>
           </motion.div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
@@ -213,29 +198,19 @@ export default function Home() {
                 whileHover={{ y: -10 }}
                 className="group"
               >
-                <div className="relative h-full">
-                  <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-3xl opacity-0 group-hover:opacity-100 blur-xl transition-all duration-500"></div>
-                  <Card className="relative h-full bg-white/80 backdrop-blur-xl border-white/50 rounded-3xl p-10 hover:bg-white/90 transition-all duration-500 shadow-xl hover:shadow-2xl">
-                    <CardContent className="p-0 text-center">
-                      <div className="relative mb-8">
-                        <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl blur-2xl opacity-30 group-hover:opacity-50 transition-opacity"></div>
-                        <div className="relative w-24 h-24 mx-auto bg-gradient-to-r from-purple-600 to-cyan-600 rounded-2xl flex items-center justify-center transform group-hover:scale-110 transition-transform duration-300">
-                          <service.icon className="h-12 w-12 text-white" />
-                        </div>
-                      </div>
-                      <h3 className="text-2xl font-bold mb-4 text-slate-900 group-hover:bg-gradient-to-r group-hover:from-purple-600 group-hover:to-cyan-600 group-hover:bg-clip-text group-hover:text-transparent transition-all duration-300">
-                        {service.title}
-                      </h3>
-                      <p className="text-gray-600 text-lg leading-relaxed mb-6">
-                        {service.description}
-                      </p>
-                      <div className="flex items-center justify-center gap-2 text-purple-600 font-semibold opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                        Learn More
-                        <ArrowRight className="w-4 h-4 group-hover:translate-x-1 transition-transform" />
-                      </div>
-                    </CardContent>
-                  </Card>
-                </div>
+                <Card className="h-full bg-white border-gray-200 hover:border-blue-300 hover:shadow-lg transition-all duration-300">
+                  <CardContent className="p-8 text-center">
+                    <div className="w-16 h-16 mx-auto mb-6 bg-blue-50 rounded-lg flex items-center justify-center group-hover:bg-blue-100 transition-colors">
+                      <service.icon className="h-8 w-8 text-blue-600" />
+                    </div>
+                    <h3 className="text-xl font-semibold mb-4 text-gray-900">
+                      {service.title}
+                    </h3>
+                    <p className="text-gray-600 leading-relaxed">
+                      {service.description}
+                    </p>
+                  </CardContent>
+                </Card>
               </motion.div>
             ))}
           </div>
