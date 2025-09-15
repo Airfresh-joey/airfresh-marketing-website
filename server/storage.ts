@@ -1,4 +1,4 @@
-import { users, contactSubmissions, blogPosts, type User, type InsertUser, type ContactSubmission, type InsertContactSubmission, type BlogPost, type InsertBlogPost } from "@shared/schema";
+import { users, contactSubmissions, blogPosts, caseStudiesReal, type User, type InsertUser, type ContactSubmission, type InsertContactSubmission, type BlogPost, type InsertBlogPost, type CaseStudyReal, type InsertCaseStudyReal } from "@shared/schema";
 import { db } from "./db";
 import { eq } from "drizzle-orm";
 
@@ -15,6 +15,13 @@ export interface IStorage {
   getBlogPostById(id: number): Promise<BlogPost | undefined>;
   updateBlogPost(id: number, post: Partial<InsertBlogPost>): Promise<BlogPost | undefined>;
   deleteBlogPost(id: number): Promise<boolean>;
+  // Real case study methods
+  createCaseStudyReal(caseStudy: InsertCaseStudyReal): Promise<CaseStudyReal>;
+  getCaseStudiesReal(): Promise<CaseStudyReal[]>;
+  getCaseStudyRealBySlug(slug: string): Promise<CaseStudyReal | undefined>;
+  getCaseStudyRealById(id: number): Promise<CaseStudyReal | undefined>;
+  updateCaseStudyReal(id: number, caseStudy: Partial<InsertCaseStudyReal>): Promise<CaseStudyReal | undefined>;
+  deleteCaseStudyReal(id: number): Promise<boolean>;
 }
 
 export class DatabaseStorage implements IStorage {
@@ -83,23 +90,63 @@ export class DatabaseStorage implements IStorage {
     const result = await db.delete(blogPosts).where(eq(blogPosts.id, id));
     return true;
   }
+
+  async createCaseStudyReal(insertCaseStudy: InsertCaseStudyReal): Promise<CaseStudyReal> {
+    const [caseStudy] = await db
+      .insert(caseStudiesReal)
+      .values(insertCaseStudy)
+      .returning();
+    return caseStudy;
+  }
+
+  async getCaseStudiesReal(): Promise<CaseStudyReal[]> {
+    return await db.select().from(caseStudiesReal).orderBy(caseStudiesReal.date);
+  }
+
+  async getCaseStudyRealBySlug(slug: string): Promise<CaseStudyReal | undefined> {
+    const [caseStudy] = await db.select().from(caseStudiesReal).where(eq(caseStudiesReal.slug, slug));
+    return caseStudy || undefined;
+  }
+
+  async getCaseStudyRealById(id: number): Promise<CaseStudyReal | undefined> {
+    const [caseStudy] = await db.select().from(caseStudiesReal).where(eq(caseStudiesReal.id, id));
+    return caseStudy || undefined;
+  }
+
+  async updateCaseStudyReal(id: number, updateCaseStudy: Partial<InsertCaseStudyReal>): Promise<CaseStudyReal | undefined> {
+    const [caseStudy] = await db
+      .update(caseStudiesReal)
+      .set({ ...updateCaseStudy, updatedAt: new Date() })
+      .where(eq(caseStudiesReal.id, id))
+      .returning();
+    return caseStudy || undefined;
+  }
+
+  async deleteCaseStudyReal(id: number): Promise<boolean> {
+    const result = await db.delete(caseStudiesReal).where(eq(caseStudiesReal.id, id));
+    return true;
+  }
 }
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
   private contactSubmissions: Map<number, ContactSubmission>;
   private blogPosts: Map<number, BlogPost>;
+  private caseStudiesReal: Map<number, CaseStudyReal>;
   private currentUserId: number;
   private currentContactId: number;
   private currentBlogPostId: number;
+  private currentCaseStudyId: number;
 
   constructor() {
     this.users = new Map();
     this.contactSubmissions = new Map();
     this.blogPosts = new Map();
+    this.caseStudiesReal = new Map();
     this.currentUserId = 1;
     this.currentContactId = 1;
     this.currentBlogPostId = 1;
+    this.currentCaseStudyId = 1;
   }
 
   async getUser(id: number): Promise<User | undefined> {
@@ -174,6 +221,48 @@ export class MemStorage implements IStorage {
 
   async deleteBlogPost(id: number): Promise<boolean> {
     return this.blogPosts.delete(id);
+  }
+
+  async createCaseStudyReal(insertCaseStudy: InsertCaseStudyReal): Promise<CaseStudyReal> {
+    const id = this.currentCaseStudyId++;
+    const caseStudy: CaseStudyReal = {
+      ...insertCaseStudy,
+      id,
+      keyTakeaways: insertCaseStudy.keyTakeaways || null,
+      metrics: insertCaseStudy.metrics || null,
+      images: insertCaseStudy.images || null,
+      tags: insertCaseStudy.tags || null,
+      featured: insertCaseStudy.featured || "false",
+      status: insertCaseStudy.status || "published",
+      createdAt: new Date(),
+      updatedAt: new Date(),
+    };
+    this.caseStudiesReal.set(id, caseStudy);
+    return caseStudy;
+  }
+
+  async getCaseStudiesReal(): Promise<CaseStudyReal[]> {
+    return Array.from(this.caseStudiesReal.values()).sort((a, b) => b.date.getTime() - a.date.getTime());
+  }
+
+  async getCaseStudyRealBySlug(slug: string): Promise<CaseStudyReal | undefined> {
+    return Array.from(this.caseStudiesReal.values()).find(cs => cs.slug === slug);
+  }
+
+  async getCaseStudyRealById(id: number): Promise<CaseStudyReal | undefined> {
+    return this.caseStudiesReal.get(id);
+  }
+
+  async updateCaseStudyReal(id: number, updateCaseStudy: Partial<InsertCaseStudyReal>): Promise<CaseStudyReal | undefined> {
+    const caseStudy = this.caseStudiesReal.get(id);
+    if (!caseStudy) return undefined;
+    const updated = { ...caseStudy, ...updateCaseStudy, updatedAt: new Date() };
+    this.caseStudiesReal.set(id, updated);
+    return updated;
+  }
+
+  async deleteCaseStudyReal(id: number): Promise<boolean> {
+    return this.caseStudiesReal.delete(id);
   }
 }
 

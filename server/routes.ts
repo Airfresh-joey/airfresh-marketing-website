@@ -1,7 +1,7 @@
 import type { Express } from "express";
 import { createServer, type Server } from "http";
 import { storage } from "./storage";
-import { insertContactSubmissionSchema, insertBlogPostSchema } from "@shared/schema";
+import { insertContactSubmissionSchema, insertBlogPostSchema, insertCaseStudyRealSchema } from "@shared/schema";
 import { fetchCaseStudiesWithImages, type CaseStudyWithImages } from "./notion-case-studies-with-images";
 import { 
   fetchNotionBlogPosts, 
@@ -22,8 +22,10 @@ const outreachEmailRequestSchema = z.object({
   contentType: z.enum(['case-study', 'expertise', 'partnership']),
   caseStudyTitle: z.string().optional()
 });
-import { ObjectStorageService } from "./objectStorage";
+import { ObjectStorageService, objectStorageClient } from "./objectStorage";
 import { generateGMBCSV, generateSupplementaryData } from "./gmb-csv-generator";
+import multer from "multer";
+import path from "path";
 import { getCityByName, getAllCities } from "./city-data";
 import { 
   enhancedCaseStudies, 
@@ -69,6 +71,21 @@ import fs from "fs";
 export async function registerRoutes(app: Express): Promise<Server> {
   const objectStorageService = new ObjectStorageService();
   
+  // Configure multer for memory storage
+  const upload = multer({ 
+    storage: multer.memoryStorage(),
+    limits: {
+      fileSize: 10 * 1024 * 1024 // 10MB limit
+    },
+    fileFilter: (req, file, cb) => {
+      // Accept images only
+      if (!file.mimetype.startsWith('image/')) {
+        return cb(new Error('Only image files are allowed'));
+      }
+      cb(null, true);
+    }
+  });
+  
   // Get admin password from environment variable
   // IMPORTANT: Set ADMIN_PASSWORD environment variable before running
   const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
@@ -103,6 +120,55 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error("Error serving object storage file:", error);
       return res.status(500).json({ error: "Internal server error" });
+    }
+  });
+  
+  // Upload case study image to object storage
+  app.post("/api/upload/case-study-image", authenticateBlogAdmin, upload.single('file'), async (req, res) => {
+    try {
+      if (!req.file) {
+        return res.status(400).json({ error: "No file uploaded" });
+      }
+      
+      // Get the filename from header or generate one
+      const filename = req.headers['x-filename'] as string || 
+                      `case-studies/${Date.now()}_${req.file.originalname.replace(/[^a-zA-Z0-9.-]/g, '_')}`;
+      
+      // Get the bucket name from environment
+      const bucketName = process.env.PUBLIC_OBJECT_SEARCH_PATHS?.split('/')[1] || 'replit-objstore-da1bc6a0-6973-4126-abad-b26cb5770b80';
+      const bucket = objectStorageClient.bucket(bucketName);
+      
+      // Upload to public directory
+      const fullPath = `public/${filename}`;
+      const file = bucket.file(fullPath);
+      
+      // Create a stream from buffer and upload
+      const stream = file.createWriteStream({
+        metadata: {
+          contentType: req.file.mimetype,
+          cacheControl: 'public, max-age=3600',
+        },
+        public: true,
+        resumable: false
+      });
+      
+      stream.on('error', (err) => {
+        console.error('Upload error:', err);
+        res.status(500).json({ error: 'Failed to upload file' });
+      });
+      
+      stream.on('finish', () => {
+        // Return the relative path that can be used to access the file
+        res.json({ 
+          url: filename,
+          fullUrl: `/public-objects/${filename}`
+        });
+      });
+      
+      stream.end(req.file.buffer);
+    } catch (error) {
+      console.error('Error uploading image:', error);
+      res.status(500).json({ error: 'Failed to upload image' });
     }
   });
 
@@ -361,6 +427,93 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json({ success: true });
     } catch (error) {
       console.error('Error deleting blog post:', error);
+      res.status(500).json({ message: "Internal server error" });
+    }
+  });
+
+  // Real Case Studies API Endpoints
+  // Get all real case studies
+  app.get("/api/case-studies-real", async (req, res) => {
+    try {
+      const caseStudies = await storage.getCaseStudiesReal();
+      res.json(caseStudies);
+    } catch (error) {
+      console.error('Error fetching real case studies:', error);
+      res.status(500).json({ message: 'Failed to fetch case studies' });
+    }
+  });
+
+  // Get single real case study by slug
+  app.get("/api/case-studies-real/slug/:slug", async (req, res) => {
+    try {
+      const caseStudy = await storage.getCaseStudyRealBySlug(req.params.slug);
+      if (!caseStudy) {
+        return res.status(404).json({ message: 'Case study not found' });
+      }
+      res.json(caseStudy);
+    } catch (error) {
+      console.error('Error fetching case study:', error);
+      res.status(500).json({ message: 'Failed to fetch case study' });
+    }
+  });
+
+  // Get single real case study by ID
+  app.get("/api/case-studies-real/:id", async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const caseStudy = await storage.getCaseStudyRealById(id);
+      if (!caseStudy) {
+        return res.status(404).json({ message: 'Case study not found' });
+      }
+      res.json(caseStudy);
+    } catch (error) {
+      console.error('Error fetching case study:', error);
+      res.status(500).json({ message: 'Failed to fetch case study' });
+    }
+  });
+
+  // Create new real case study (requires admin auth)
+  app.post("/api/case-studies-real", authenticateBlogAdmin, async (req, res) => {
+    try {
+      const validatedData = insertCaseStudyRealSchema.parse(req.body);
+      const caseStudy = await storage.createCaseStudyReal(validatedData);
+      res.json({ success: true, caseStudy });
+    } catch (error) {
+      if (error instanceof z.ZodError) {
+        res.status(400).json({ message: "Invalid case study data", errors: error.errors });
+      } else {
+        console.error('Error creating case study:', error);
+        res.status(500).json({ message: "Internal server error" });
+      }
+    }
+  });
+
+  // Update real case study (requires admin auth)
+  app.put("/api/case-studies-real/:id", authenticateBlogAdmin, async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const caseStudy = await storage.updateCaseStudyReal(id, req.body);
+      if (!caseStudy) {
+        return res.status(404).json({ message: "Case study not found" });
+      }
+      res.json({ success: true, caseStudy });
+    } catch (error) {
+      console.error('Error updating case study:', error);
+      res.status(500).json({ message: "Internal server error" });
+    }
+  });
+
+  // Delete real case study (requires admin auth)
+  app.delete("/api/case-studies-real/:id", authenticateBlogAdmin, async (req, res) => {
+    try {
+      const id = parseInt(req.params.id);
+      const success = await storage.deleteCaseStudyReal(id);
+      if (!success) {
+        return res.status(404).json({ message: "Case study not found" });
+      }
+      res.json({ success: true });
+    } catch (error) {
+      console.error('Error deleting case study:', error);
       res.status(500).json({ message: "Internal server error" });
     }
   });

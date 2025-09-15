@@ -34,6 +34,9 @@ import RepurposeDashboard from "@/pages/RepurposeDashboard";
 import BacklinksDashboard from "@/pages/BacklinksDashboard";
 import ReviewsDashboard from "@/pages/ReviewsDashboard";
 import FeedbackForm from "@/pages/FeedbackForm";
+import CaseStudyAdmin from "@/pages/CaseStudyAdmin";
+import CaseStudiesReal from "@/pages/CaseStudiesReal";
+import CaseStudyRealDetail from "@/pages/CaseStudyRealDetail";
 
 function Router() {
   return (
@@ -55,7 +58,9 @@ function Router() {
           <Route path="/notion-blog/:slug" component={NotionBlogPost} />
           <Route path="/notion-gallery" component={NotionGalleryPage} />
           <Route path="/city/:cityName" component={CityPage} />
-          <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
+          <Route path="/portfolio">{() => <Redirect to="/case-studies" />}</Route>
+          <Route path="/case-studies" component={CaseStudiesReal} />
+          <Route path="/case-studies/:slug" component={CaseStudyRealDetail} />
           <Route path="/projects/case-studies" component={EnhancedCaseStudies} />
           <Route path="/projects/case-studies/:id" component={EnhancedCaseStudyDetail} />
           <Route path="/projects/case-studies-original" component={CaseStudies} />
@@ -63,6 +68,9 @@ function Router() {
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Talent} />
+          
+          {/* Admin Pages */}
+          <Route path="/admin/case-studies" component={CaseStudyAdmin} />
           
           {/* Marketing Tools */}
           <Route path="/repurpose" component={RepurposeDashboard} />

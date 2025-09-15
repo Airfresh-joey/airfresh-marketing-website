@@ -62,7 +62,41 @@ export const insertBlogPostSchema = createInsertSchema(blogPosts).omit({
 export type InsertBlogPost = z.infer<typeof insertBlogPostSchema>;
 export type BlogPost = typeof blogPosts.$inferSelect;
 
-// Case study type for frontend use
+// Real Case Studies table for database storage
+export const caseStudiesReal = pgTable("case_studies_real", {
+  id: serial("id").primaryKey(),
+  slug: text("slug").notNull().unique(),
+  title: text("title").notNull(),
+  client: text("client").notNull(),
+  date: timestamp("date").notNull(),
+  location: text("location").notNull(),
+  industry: text("industry").notNull(),
+  campaignType: text("campaign_type").notNull(),
+  challenge: text("challenge").notNull(),
+  strategy: text("strategy").notNull(),
+  execution: text("execution").notNull(),
+  results: text("results").notNull(),
+  keyTakeaways: text("key_takeaways").array(),
+  metrics: text("metrics").array(),
+  featuredImage: text("featured_image").notNull(),
+  images: text("images").array(),
+  tags: text("tags").array(),
+  featured: text("featured").default("false").notNull(),
+  status: text("status").default("published").notNull(),
+  createdAt: timestamp("created_at").defaultNow().notNull(),
+  updatedAt: timestamp("updated_at").defaultNow().notNull(),
+});
+
+export const insertCaseStudyRealSchema = createInsertSchema(caseStudiesReal).omit({
+  id: true,
+  createdAt: true,
+  updatedAt: true,
+});
+
+export type InsertCaseStudyReal = z.infer<typeof insertCaseStudyRealSchema>;
+export type CaseStudyReal = typeof caseStudiesReal.$inferSelect;
+
+// Case study type for frontend use (legacy compatibility)
 export interface CaseStudy {
   id: string;
   title: string;
