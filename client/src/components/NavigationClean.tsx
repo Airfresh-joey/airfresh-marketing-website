@@ -14,6 +14,8 @@ export default function NavigationClean() {
     { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/services", label: "Services" },
+    { href: "/repurpose", label: "Repurpose" },
+    { href: "/backlinks", label: "Backlinks" },
     { href: "/about", label: "About" },
     { href: "/contact", label: "Contact" }
   ];

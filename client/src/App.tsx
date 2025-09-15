@@ -30,6 +30,8 @@ import NotionBlog from "@/pages/NotionBlog";
 import NotionBlogPost from "@/pages/NotionBlogPost";
 import NotionGalleryPage from "@/pages/NotionGalleryPage";
 import TargetingPage from "@/pages/TargetingPage";
+import RepurposeDashboard from "@/pages/RepurposeDashboard";
+import BacklinksDashboard from "@/pages/BacklinksDashboard";
 
 function Router() {
   return (
@@ -59,6 +61,10 @@ function Router() {
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Talent} />
+          
+          {/* Marketing Tools */}
+          <Route path="/repurpose" component={RepurposeDashboard} />
+          <Route path="/backlinks" component={BacklinksDashboard} />
           
           {/* Targeting Pages - Verticals */}
           <Route path="/verticals/:slug" component={TargetingPage} />

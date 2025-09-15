@@ -10,6 +10,18 @@ import {
   fetchNotionPageContent 
 } from "./notion-content-service";
 import { z } from "zod";
+
+// Validation schemas for backlinks endpoints
+const pressReleaseRequestSchema = z.object({
+  caseStudyId: z.string().min(1, "Case study ID is required")
+});
+
+const outreachEmailRequestSchema = z.object({
+  targetSite: z.string().min(1, "Target site is required"),
+  targetType: z.enum(['blog', 'news', 'partner', 'industry']),
+  contentType: z.enum(['case-study', 'expertise', 'partnership']),
+  caseStudyTitle: z.string().optional()
+});
 import { ObjectStorageService } from "./objectStorage";
 import { generateGMBCSV, generateSupplementaryData } from "./gmb-csv-generator";
 import { getCityByName, getAllCities } from "./city-data";
@@ -26,6 +38,20 @@ import {
   getTargetingCategories, 
   getAllTargetingData 
 } from "./targeting-data";
+import { 
+  extractBlogContent, 
+  extractCaseStudyContent, 
+  generateLinkedInPost,
+  generateInstagramCarousel,
+  generateVideoScript
+} from "./content-repurpose";
+import { 
+  generatePressRelease,
+  generateOutreachEmail,
+  generatePartnerBadge,
+  trackMentions,
+  getMentionReport
+} from "./backlinks-outreach";
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -516,6 +542,186 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching targeting data with city:', error);
       res.status(500).json({ message: 'Failed to fetch targeting data' });
+    }
+  });
+
+  // Content Repurposing API Endpoints
+  
+  // Generate LinkedIn post from content
+  app.get("/api/repurpose/linkedin/:type/:id", async (req, res) => {
+    try {
+      const { type, id } = req.params;
+      let content = null;
+      
+      if (type === 'blog') {
+        content = await extractBlogContent(id);
+      } else if (type === 'case-study') {
+        content = await extractCaseStudyContent(id);
+      }
+      
+      if (!content) {
+        return res.status(404).json({ message: `${type} not found` });
+      }
+      
+      const linkedInPost = generateLinkedInPost(content);
+      res.json({ 
+        post: linkedInPost,
+        metadata: {
+          title: content.title,
+          tags: content.tags,
+          charCount: linkedInPost.length
+        }
+      });
+    } catch (error) {
+      console.error('Error generating LinkedIn post:', error);
+      res.status(500).json({ message: 'Failed to generate LinkedIn post' });
+    }
+  });
+  
+  // Generate Instagram carousel from content
+  app.get("/api/repurpose/carousel/:type/:id", async (req, res) => {
+    try {
+      const { type, id } = req.params;
+      let content = null;
+      
+      if (type === 'blog') {
+        content = await extractBlogContent(id);
+      } else if (type === 'case-study') {
+        content = await extractCaseStudyContent(id);
+      }
+      
+      if (!content) {
+        return res.status(404).json({ message: `${type} not found` });
+      }
+      
+      const carousel = generateInstagramCarousel(content);
+      res.json(carousel);
+    } catch (error) {
+      console.error('Error generating Instagram carousel:', error);
+      res.status(500).json({ message: 'Failed to generate Instagram carousel' });
+    }
+  });
+  
+  // Generate video script from content
+  app.get("/api/repurpose/video/:type/:id", async (req, res) => {
+    try {
+      const { type, id } = req.params;
+      let content = null;
+      
+      if (type === 'blog') {
+        content = await extractBlogContent(id);
+      } else if (type === 'case-study') {
+        content = await extractCaseStudyContent(id);
+      }
+      
+      if (!content) {
+        return res.status(404).json({ message: `${type} not found` });
+      }
+      
+      const script = generateVideoScript(content);
+      res.json(script);
+    } catch (error) {
+      console.error('Error generating video script:', error);
+      res.status(500).json({ message: 'Failed to generate video script' });
+    }
+  });
+  
+  // Backlinks & Mentions API Endpoints
+  
+  // Generate press release
+  app.post("/api/backlinks/press-release", async (req, res) => {
+    try {
+      // Validate request body with Zod
+      const validationResult = pressReleaseRequestSchema.safeParse(req.body);
+      
+      if (!validationResult.success) {
+        return res.status(400).json({ 
+          message: 'Invalid request data',
+          errors: validationResult.error.errors 
+        });
+      }
+      
+      const { caseStudyId } = validationResult.data;
+      
+      const pressRelease = await generatePressRelease(caseStudyId);
+      
+      if (!pressRelease) {
+        return res.status(404).json({ message: 'Case study not found' });
+      }
+      
+      res.json(pressRelease);
+    } catch (error) {
+      console.error('Error generating press release:', error);
+      res.status(500).json({ message: 'Failed to generate press release' });
+    }
+  });
+  
+  // Generate outreach email
+  app.post("/api/backlinks/outreach", async (req, res) => {
+    try {
+      // Validate request body with Zod
+      const validationResult = outreachEmailRequestSchema.safeParse(req.body);
+      
+      if (!validationResult.success) {
+        return res.status(400).json({ 
+          message: 'Invalid request data',
+          errors: validationResult.error.errors 
+        });
+      }
+      
+      const { targetSite, targetType, contentType, caseStudyTitle } = validationResult.data;
+      
+      const email = generateOutreachEmail(
+        targetSite,
+        targetType,
+        contentType,
+        caseStudyTitle
+      );
+      
+      res.json(email);
+    } catch (error) {
+      console.error('Error generating outreach email:', error);
+      res.status(500).json({ message: 'Failed to generate outreach email' });
+    }
+  });
+  
+  // Get partner badge
+  app.get("/api/backlinks/partner-badge", async (req, res) => {
+    try {
+      const style = (req.query.style as string) || 'horizontal';
+      const theme = (req.query.theme as string) || 'light';
+      
+      const badge = generatePartnerBadge(
+        style as 'horizontal' | 'vertical' | 'compact',
+        theme as 'light' | 'dark'
+      );
+      
+      res.json(badge);
+    } catch (error) {
+      console.error('Error generating partner badge:', error);
+      res.status(500).json({ message: 'Failed to generate partner badge' });
+    }
+  });
+  
+  // Track mentions
+  app.get("/api/backlinks/track-mentions", async (req, res) => {
+    try {
+      const mentions = await trackMentions();
+      res.json(mentions);
+    } catch (error) {
+      console.error('Error tracking mentions:', error);
+      res.status(500).json({ message: 'Failed to track mentions' });
+    }
+  });
+  
+  // Get mention report
+  app.get("/api/backlinks/mention-report", async (req, res) => {
+    try {
+      const report = await getMentionReport();
+      res.json(report);
+    } catch (error) {
+      console.error('Error generating mention report:', error);
+      res.status(500).json({ message: 'Failed to generate mention report' });
     }
   });
 
