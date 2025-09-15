@@ -52,6 +52,18 @@ import {
   trackMentions,
   getMentionReport
 } from "./backlinks-outreach";
+import {
+  generateReviewQRCode,
+  generateReviewRequest,
+  getReviewMetrics,
+  generateReviewResponse,
+  reviewRequestSchema,
+  feedbackSubmissionSchema,
+  reviewPlatforms,
+  keywordSuggestions,
+  emailTemplates,
+  responseTemplates
+} from "./review-system";
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -722,6 +734,131 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error generating mention report:', error);
       res.status(500).json({ message: 'Failed to generate mention report' });
+    }
+  });
+
+  // Review & Feedback API Endpoints
+  
+  // Generate review request email
+  app.post("/api/reviews/generate-request", async (req, res) => {
+    try {
+      const validationResult = reviewRequestSchema.safeParse(req.body);
+      
+      if (!validationResult.success) {
+        return res.status(400).json({ 
+          message: 'Invalid request data',
+          errors: validationResult.error.errors 
+        });
+      }
+      
+      const { templateType, clientName, projectName, platform } = validationResult.data;
+      const request = generateReviewRequest(templateType, clientName, projectName, platform);
+      
+      res.json(request);
+    } catch (error) {
+      console.error('Error generating review request:', error);
+      res.status(500).json({ message: 'Failed to generate review request' });
+    }
+  });
+  
+  // Generate QR code for review platform
+  app.get("/api/reviews/generate-qr/:platform", async (req, res) => {
+    try {
+      const platform = req.params.platform as keyof typeof reviewPlatforms;
+      
+      if (!reviewPlatforms[platform]) {
+        return res.status(400).json({ message: 'Invalid platform' });
+      }
+      
+      const qrCode = await generateReviewQRCode(platform);
+      res.json({ 
+        platform: reviewPlatforms[platform],
+        qrCode 
+      });
+    } catch (error) {
+      console.error('Error generating QR code:', error);
+      res.status(500).json({ message: 'Failed to generate QR code' });
+    }
+  });
+  
+  // Get review dashboard data
+  app.get("/api/reviews/dashboard-data", async (req, res) => {
+    try {
+      const metrics = getReviewMetrics();
+      res.json({
+        metrics,
+        platforms: reviewPlatforms,
+        keywordSuggestions
+      });
+    } catch (error) {
+      console.error('Error fetching dashboard data:', error);
+      res.status(500).json({ message: 'Failed to fetch dashboard data' });
+    }
+  });
+  
+  // Submit feedback form
+  app.post("/api/reviews/submit-feedback", async (req, res) => {
+    try {
+      const validationResult = feedbackSubmissionSchema.safeParse(req.body);
+      
+      if (!validationResult.success) {
+        return res.status(400).json({ 
+          message: 'Invalid feedback data',
+          errors: validationResult.error.errors 
+        });
+      }
+      
+      // In production, this would save to database
+      // For now, we'll return success
+      const { name, platform } = validationResult.data;
+      
+      res.json({ 
+        success: true,
+        message: `Thank you for your feedback, ${name}! Please submit your review on ${reviewPlatforms[platform].name}.`,
+        reviewUrl: reviewPlatforms[platform].baseUrl
+      });
+    } catch (error) {
+      console.error('Error submitting feedback:', error);
+      res.status(500).json({ message: 'Failed to submit feedback' });
+    }
+  });
+  
+  // Get response templates
+  app.get("/api/reviews/templates", async (req, res) => {
+    try {
+      res.json({
+        emailTemplates,
+        responseTemplates,
+        keywordSuggestions
+      });
+    } catch (error) {
+      console.error('Error fetching templates:', error);
+      res.status(500).json({ message: 'Failed to fetch templates' });
+    }
+  });
+  
+  // Generate review response
+  app.post("/api/reviews/generate-response", async (req, res) => {
+    try {
+      const { sentiment, platform, reviewerName, specificMention } = req.body;
+      
+      if (!sentiment || !platform || !reviewerName) {
+        return res.status(400).json({ 
+          message: 'Missing required fields: sentiment, platform, reviewerName' 
+        });
+      }
+      
+      const response = generateReviewResponse(
+        sentiment as 'positive' | 'constructive',
+        platform as keyof typeof reviewPlatforms,
+        reviewerName,
+        specificMention
+      );
+      
+      res.json({ response });
+    } catch (error) {
+      console.error('Error generating review response:', error);
+      res.status(500).json({ message: 'Failed to generate review response' });
     }
   });
 

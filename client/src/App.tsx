@@ -32,6 +32,8 @@ import NotionGalleryPage from "@/pages/NotionGalleryPage";
 import TargetingPage from "@/pages/TargetingPage";
 import RepurposeDashboard from "@/pages/RepurposeDashboard";
 import BacklinksDashboard from "@/pages/BacklinksDashboard";
+import ReviewsDashboard from "@/pages/ReviewsDashboard";
+import FeedbackForm from "@/pages/FeedbackForm";
 
 function Router() {
   return (
@@ -65,6 +67,8 @@ function Router() {
           {/* Marketing Tools */}
           <Route path="/repurpose" component={RepurposeDashboard} />
           <Route path="/backlinks" component={BacklinksDashboard} />
+          <Route path="/reviews-dashboard" component={ReviewsDashboard} />
+          <Route path="/feedback" component={FeedbackForm} />
           
           {/* Targeting Pages - Verticals */}
           <Route path="/verticals/:slug" component={TargetingPage} />

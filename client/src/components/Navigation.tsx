@@ -86,6 +86,12 @@ export default function Navigation() {
               Blog
             </Link>
             <Link 
+              href="/reviews-dashboard" 
+              className={`font-medium ${isActive('/reviews-dashboard') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
+            >
+              Reviews
+            </Link>
+            <Link 
               href="/contact" 
               className={`font-medium ${isActive('/contact') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
@@ -126,6 +132,7 @@ export default function Navigation() {
             <Link href="/talent" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Talent</Link>
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
+            <Link href="/reviews-dashboard" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Reviews</Link>
             <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
           </div>
         </div>
