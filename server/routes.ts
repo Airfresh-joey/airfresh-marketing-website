@@ -3,15 +3,25 @@ import { createServer, type Server } from "http";
 import { storage } from "./storage";
 import { insertContactSubmissionSchema, insertBlogPostSchema } from "@shared/schema";
 import { fetchCaseStudiesWithImages, type CaseStudyWithImages } from "./notion-case-studies-with-images";
+import { 
+  fetchNotionBlogPosts, 
+  fetchNotionServices, 
+  fetchNotionGalleries,
+  fetchNotionPageContent 
+} from "./notion-content-service";
 import { z } from "zod";
 import { ObjectStorageService } from "./objectStorage";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   const objectStorageService = new ObjectStorageService();
   
-  // Get admin password from environment or use default for development
-  // IMPORTANT: Set ADMIN_PASSWORD environment variable in production
-  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD || 'admin2024';
+  // Get admin password from environment variable
+  // IMPORTANT: Set ADMIN_PASSWORD environment variable before running
+  const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
+  
+  if (!ADMIN_PASSWORD) {
+    console.warn('WARNING: ADMIN_PASSWORD environment variable is not set. Blog management features will be disabled.');
+  }
   
   // Authentication middleware for blog management
   const authenticateBlogAdmin = (req: any, res: any, next: any) => {
@@ -187,6 +197,56 @@ export async function registerRoutes(app: Express): Promise<Server> {
         case_studies_count: 0,
         error: 'Failed to fetch case studies'
       });
+    }
+  });
+
+  // Notion blog posts endpoint
+  app.get("/api/notion/blog-posts", async (req, res) => {
+    try {
+      const databaseId = req.query.database_id as string | undefined;
+      const blogPosts = await fetchNotionBlogPosts(databaseId);
+      res.json(blogPosts);
+    } catch (error) {
+      console.error('Error fetching Notion blog posts:', error);
+      res.status(500).json({ message: 'Failed to fetch blog posts from Notion' });
+    }
+  });
+
+  // Notion services endpoint
+  app.get("/api/notion/services", async (req, res) => {
+    try {
+      const databaseId = req.query.database_id as string | undefined;
+      const services = await fetchNotionServices(databaseId);
+      res.json(services);
+    } catch (error) {
+      console.error('Error fetching Notion services:', error);
+      res.status(500).json({ message: 'Failed to fetch services from Notion' });
+    }
+  });
+
+  // Notion galleries endpoint
+  app.get("/api/notion/galleries", async (req, res) => {
+    try {
+      const databaseId = req.query.database_id as string | undefined;
+      const galleries = await fetchNotionGalleries(databaseId);
+      res.json(galleries);
+    } catch (error) {
+      console.error('Error fetching Notion galleries:', error);
+      res.status(500).json({ message: 'Failed to fetch galleries from Notion' });
+    }
+  });
+
+  // Notion page content endpoint
+  app.get("/api/notion/page/:pageId", async (req, res) => {
+    try {
+      const pageContent = await fetchNotionPageContent(req.params.pageId);
+      if (!pageContent) {
+        return res.status(404).json({ message: "Page not found" });
+      }
+      res.json(pageContent);
+    } catch (error) {
+      console.error('Error fetching Notion page content:', error);
+      res.status(500).json({ message: 'Failed to fetch page content from Notion' });
     }
   });
 

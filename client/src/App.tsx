@@ -24,6 +24,9 @@ import { Redirect } from "wouter";
 import ExperientialMarketing from "@/pages/ExperientialMarketing";
 import BrandStrategy from "@/pages/BrandStrategy";
 import EventProduction from "@/pages/EventProduction";
+import NotionBlog from "@/pages/NotionBlog";
+import NotionBlogPost from "@/pages/NotionBlogPost";
+import NotionGalleryPage from "@/pages/NotionGalleryPage";
 
 function Router() {
   return (
@@ -41,6 +44,9 @@ function Router() {
           <Route path="/blog" component={Blog} />
           <Route path="/blog/editor" component={BlogEditor} />
           <Route path="/blog/:slug" component={BlogPostDetail} />
+          <Route path="/notion-blog" component={NotionBlog} />
+          <Route path="/notion-blog/:slug" component={NotionBlogPost} />
+          <Route path="/notion-gallery" component={NotionGalleryPage} />
           <Route path="/city/:cityName" component={CityPage} />
           <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
           <Route path="/projects/case-studies" component={CaseStudies} />
