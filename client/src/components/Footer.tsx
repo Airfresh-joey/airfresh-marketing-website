@@ -43,6 +43,43 @@ export default function Footer() {
           </a>
         </div>
         
+        {/* City Locations for Local SEO */}
+        <div className="border-t border-gray-700 pt-8 mb-8">
+          <h3 className="text-lg font-semibold mb-4">Our Locations</h3>
+          <div className="grid grid-cols-2 md:grid-cols-5 gap-4 text-sm">
+            <Link href="/city/new-york" className="text-gray-400 hover:text-white transition-colors">
+              New York
+            </Link>
+            <Link href="/city/los-angeles" className="text-gray-400 hover:text-white transition-colors">
+              Los Angeles
+            </Link>
+            <Link href="/city/chicago" className="text-gray-400 hover:text-white transition-colors">
+              Chicago
+            </Link>
+            <Link href="/city/miami" className="text-gray-400 hover:text-white transition-colors">
+              Miami
+            </Link>
+            <Link href="/city/denver" className="text-gray-400 hover:text-white transition-colors">
+              Denver (HQ)
+            </Link>
+            <Link href="/city/san-francisco" className="text-gray-400 hover:text-white transition-colors">
+              San Francisco
+            </Link>
+            <Link href="/city/boston" className="text-gray-400 hover:text-white transition-colors">
+              Boston
+            </Link>
+            <Link href="/city/atlanta" className="text-gray-400 hover:text-white transition-colors">
+              Atlanta
+            </Link>
+            <Link href="/city/dallas" className="text-gray-400 hover:text-white transition-colors">
+              Dallas
+            </Link>
+            <Link href="/city/seattle" className="text-gray-400 hover:text-white transition-colors">
+              Seattle
+            </Link>
+          </div>
+        </div>
+        
         <div className="border-t border-gray-700 pt-8">
           <p className="text-sm text-gray-400">Airfreshmarketing contact submit to hubspot code</p>
         </div>

@@ -63,6 +63,55 @@ export const localBusinessSchema = {
   ]
 };
 
+// City-specific LocalBusiness schema
+export const cityLocalBusinessSchema = (cityData: any) => ({
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": cityData.businessName,
+  "image": "https://airfreshmarketing.com/favicon.svg",
+  "telephone": cityData.phone,
+  "email": "hello@airfreshmarketing.com",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": cityData.address,
+    "addressLocality": cityData.city,
+    "addressRegion": cityData.state,
+    "postalCode": cityData.zip,
+    "addressCountry": "US"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": cityData.latitude,
+    "longitude": cityData.longitude
+  },
+  "url": cityData.website,
+  "priceRange": "$$$",
+  "description": cityData.description,
+  "openingHoursSpecification": [
+    {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+      "opens": "09:00",
+      "closes": "18:00"
+    }
+  ],
+  "areaServed": cityData.serviceAreas?.map((area: string) => ({
+    "@type": "Place",
+    "name": area
+  })),
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "Services",
+    "itemListElement": cityData.services?.map((service: string) => ({
+      "@type": "Offer",
+      "itemOffered": {
+        "@type": "Service",
+        "name": service
+      }
+    }))
+  }
+});
+
 export const serviceSchema = {
   "@context": "https://schema.org",
   "@type": "Service",

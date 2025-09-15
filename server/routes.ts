@@ -11,6 +11,9 @@ import {
 } from "./notion-content-service";
 import { z } from "zod";
 import { ObjectStorageService } from "./objectStorage";
+import { generateGMBCSV, generateSupplementaryData } from "./gmb-csv-generator";
+import { getCityByName, getAllCities } from "./city-data";
+import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
   const objectStorageService = new ObjectStorageService();
@@ -247,6 +250,65 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching Notion page content:', error);
       res.status(500).json({ message: 'Failed to fetch page content from Notion' });
+    }
+  });
+
+  // Google My Business CSV generation endpoint
+  app.get("/api/gmb/generate-csv", async (req, res) => {
+    try {
+      const csvPath = await generateGMBCSV();
+      
+      // Set headers for CSV download
+      res.setHeader('Content-Type', 'text/csv');
+      res.setHeader('Content-Disposition', 'attachment; filename="airfresh-gmb-locations.csv"');
+      
+      // Stream the file to the response
+      const fileStream = fs.createReadStream(csvPath);
+      fileStream.pipe(res);
+      
+      // Clean up temp file after sending
+      fileStream.on('end', () => {
+        fs.unlinkSync(csvPath);
+      });
+    } catch (error) {
+      console.error('Error generating GMB CSV:', error);
+      res.status(500).json({ message: 'Failed to generate GMB CSV file' });
+    }
+  });
+
+  // Get supplementary GMB data (JSON format)
+  app.get("/api/gmb/data", async (req, res) => {
+    try {
+      const data = await generateSupplementaryData();
+      res.json(data);
+    } catch (error) {
+      console.error('Error generating GMB data:', error);
+      res.status(500).json({ message: 'Failed to generate GMB data' });
+    }
+  });
+
+  // Get all city locations
+  app.get("/api/cities", async (req, res) => {
+    try {
+      const cities = getAllCities();
+      res.json(cities);
+    } catch (error) {
+      console.error('Error fetching cities:', error);
+      res.status(500).json({ message: 'Failed to fetch city data' });
+    }
+  });
+
+  // Get specific city location
+  app.get("/api/cities/:cityName", async (req, res) => {
+    try {
+      const city = getCityByName(req.params.cityName);
+      if (!city) {
+        return res.status(404).json({ message: "City not found" });
+      }
+      res.json(city);
+    } catch (error) {
+      console.error('Error fetching city:', error);
+      res.status(500).json({ message: 'Failed to fetch city data' });
     }
   });
 
