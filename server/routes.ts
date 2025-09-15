@@ -241,6 +241,35 @@ export async function registerRoutes(app: Express): Promise<Server> {
     res.redirect(imageUrl);
   });
 
+  // Admin verification endpoint
+  app.post("/api/admin/verify", async (req, res) => {
+    try {
+      const authHeader = req.headers.authorization;
+      
+      if (!ADMIN_PASSWORD) {
+        return res.status(503).json({ 
+          message: 'Admin features not configured',
+          error: 'ADMIN_PASSWORD environment variable not set' 
+        });
+      }
+      
+      if (!authHeader || authHeader !== `Bearer ${ADMIN_PASSWORD}`) {
+        return res.status(401).json({ 
+          message: 'Invalid admin password',
+          error: 'Authentication failed' 
+        });
+      }
+      
+      res.json({ 
+        success: true,
+        message: 'Admin authenticated successfully'
+      });
+    } catch (error) {
+      console.error('Error verifying admin:', error);
+      res.status(500).json({ message: "Internal server error" });
+    }
+  });
+
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {

@@ -38,6 +38,7 @@ import CaseStudyAdmin from "@/pages/CaseStudyAdmin";
 import CaseStudiesReal from "@/pages/CaseStudiesReal";
 import CaseStudyRealDetail from "@/pages/CaseStudyRealDetail";
 import ContentCalendar from "@/pages/ContentCalendar";
+import AdminDashboard from "@/pages/AdminDashboard";
 
 function Router() {
   return (
@@ -71,6 +72,7 @@ function Router() {
           <Route path="/talent" component={Talent} />
           
           {/* Admin Pages */}
+          <Route path="/admin" component={AdminDashboard} />
           <Route path="/admin/case-studies" component={CaseStudyAdmin} />
           
           {/* Marketing Tools */}
