@@ -12,6 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Download, Copy, FileText, Mail, Code, TrendingUp, Link2, ExternalLink } from "lucide-react";
 import SEO from "@/components/SEO";
 import { apiRequest } from "@/lib/queryClient";
+import AdminProtected from "@/components/AdminProtected";
 
 interface CaseStudy {
   id: string;
@@ -195,7 +196,7 @@ export default function BacklinksDashboard() {
   };
 
   return (
-    <>
+    <AdminProtected>
       <SEO
         title="Backlinks & Mentions Dashboard | AirFresh Marketing"
         description="Generate press releases, outreach emails, and track brand mentions"
@@ -640,6 +641,6 @@ export default function BacklinksDashboard() {
           </TabsContent>
         </Tabs>
       </div>
-    </>
+    </AdminProtected>
   );
 }

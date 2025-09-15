@@ -7,6 +7,7 @@ import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { Download, Linkedin, Instagram, Video, Copy, ChevronRight } from "lucide-react";
 import SEO from "@/components/SEO";
+import AdminProtected from "@/components/AdminProtected";
 
 interface BlogPost {
   id: number;
@@ -166,7 +167,7 @@ export default function RepurposeDashboard() {
   };
 
   return (
-    <>
+    <AdminProtected>
       <SEO
         title="Content Repurposing Dashboard | AirFresh Marketing"
         description="Transform your marketing content for LinkedIn, Instagram, and video platforms"
@@ -474,6 +475,6 @@ export default function RepurposeDashboard() {
           </div>
         </div>
       </div>
-    </>
+    </AdminProtected>
   );
 }

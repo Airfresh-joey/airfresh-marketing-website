@@ -2,6 +2,7 @@ import { useState, useCallback } from "react";
 import { useQuery, useMutation } from "@tanstack/react-query";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import { Button } from "@/components/ui/button";
+import AdminProtected from "@/components/AdminProtected";
 import { Input } from "@/components/ui/input";
 import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
@@ -33,48 +34,6 @@ import type { CaseStudyReal, InsertCaseStudyReal } from "@shared/schema";
 import { Link } from "wouter";
 import { format } from "date-fns";
 
-// Authentication component
-function AuthGuard({ children }: { children: React.ReactNode }) {
-  const [password, setPassword] = useState("");
-  const [isAuthenticated, setIsAuthenticated] = useState(false);
-  const { toast } = useToast();
-  
-  const handleAuth = () => {
-    const adminPassword = prompt("Enter admin password:");
-    if (adminPassword) {
-      // Store the password for API calls
-      localStorage.setItem("adminPassword", adminPassword);
-      setIsAuthenticated(true);
-    } else {
-      toast({
-        title: "Authentication Failed",
-        description: "Invalid password",
-        variant: "destructive"
-      });
-    }
-  };
-  
-  if (!isAuthenticated) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50">
-        <Card className="w-full max-w-md">
-          <CardHeader>
-            <CardTitle>Admin Authentication Required</CardTitle>
-            <CardDescription>Please enter your admin password to continue</CardDescription>
-          </CardHeader>
-          <CardContent>
-            <Button onClick={handleAuth} className="w-full">
-              <Target className="h-4 w-4 mr-2" />
-              Authenticate
-            </Button>
-          </CardContent>
-        </Card>
-      </div>
-    );
-  }
-  
-  return <>{children}</>;
-}
 
 export default function CaseStudyAdmin() {
   const { toast } = useToast();
@@ -316,7 +275,7 @@ export default function CaseStudyAdmin() {
   };
   
   return (
-    <AuthGuard>
+    <AdminProtected>
       <div className="pt-16 min-h-screen bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
           <div className="mb-8">
@@ -745,6 +704,6 @@ export default function CaseStudyAdmin() {
           </Tabs>
         </div>
       </div>
-    </AuthGuard>
+    </AdminProtected>
   );
 }

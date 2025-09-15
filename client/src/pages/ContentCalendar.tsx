@@ -13,6 +13,7 @@ import { useToast } from "@/hooks/use-toast";
 import { queryClient, apiRequest } from "@/lib/queryClient";
 import SEO from "@/components/SEO";
 import { Link } from "wouter";
+import AdminProtected from "@/components/AdminProtected";
 
 interface ContentSchedule {
   linkedIn: {
@@ -198,13 +199,14 @@ export default function ContentCalendar() {
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-20">
-      <SEO 
-        title="Content Calendar | AirFresh Marketing"
-        description="Manage your content schedule with automated reminders and draft generation for LinkedIn, blog posts, case studies, and client outreach."
-      />
+    <AdminProtected>
+      <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-20">
+        <SEO 
+          title="Content Calendar | AirFresh Marketing"
+          description="Manage your content schedule with automated reminders and draft generation for LinkedIn, blog posts, case studies, and client outreach."
+        />
 
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="mb-8 flex justify-between items-center">
           <div>
             <h1 className="text-4xl font-bold text-gray-900 mb-2">Content Calendar</h1>
@@ -581,5 +583,6 @@ export default function ContentCalendar() {
         </Dialog>
       </div>
     </div>
+    </AdminProtected>
   );
 }

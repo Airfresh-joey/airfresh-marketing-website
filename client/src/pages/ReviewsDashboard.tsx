@@ -10,6 +10,7 @@ import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { Badge } from "@/components/ui/badge";
 import { useToast } from "@/hooks/use-toast";
 import { apiRequest } from "@/lib/queryClient";
+import AdminProtected from "@/components/AdminProtected";
 import { 
   Star, 
   Download, 
@@ -176,7 +177,8 @@ export default function ReviewsDashboard() {
   }));
 
   return (
-    <div className="container mx-auto px-4 py-8 space-y-8">
+    <AdminProtected>
+      <div className="container mx-auto px-4 py-8 space-y-8">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-8">
@@ -679,5 +681,6 @@ export default function ReviewsDashboard() {
         </Tabs>
       </div>
     </div>
+    </AdminProtected>
   );
 }
