@@ -13,6 +13,14 @@ import { z } from "zod";
 import { ObjectStorageService } from "./objectStorage";
 import { generateGMBCSV, generateSupplementaryData } from "./gmb-csv-generator";
 import { getCityByName, getAllCities } from "./city-data";
+import { 
+  enhancedCaseStudies, 
+  getEnhancedCaseStudyById, 
+  getFeaturedEnhancedCaseStudies,
+  getEnhancedCaseStudiesByIndustry,
+  getEnhancedCaseStudiesByCampaignType,
+  searchEnhancedCaseStudies
+} from "./case-studies-data";
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -54,6 +62,62 @@ export async function registerRoutes(app: Express): Promise<Server> {
       return res.status(500).json({ error: "Internal server error" });
     }
   });
+
+  // Serve case study images (placeholder/stock photos)
+  app.get("/api/case-study-images/:imageName", async (req, res) => {
+    const imageName = req.params.imageName;
+    
+    // Map client names to appropriate stock photo URLs
+    const stockPhotoMap: Record<string, string> = {
+      // Technology & Innovation
+      'microsoft': 'https://images.unsplash.com/photo-1633419461186-7d40a38105ec?w=1200&h=800&fit=crop',
+      'google': 'https://images.unsplash.com/photo-1573804633927-bfcbcd909acd?w=1200&h=800&fit=crop',
+      'apple': 'https://images.unsplash.com/photo-1569770218135-bea267ed7e84?w=1200&h=800&fit=crop',
+      'amazon': 'https://images.unsplash.com/photo-1523474253046-8cd2748b5fd2?w=1200&h=800&fit=crop',
+      'meta': 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?w=1200&h=800&fit=crop',
+      
+      // Beverages
+      'coca-cola': 'https://images.unsplash.com/photo-1629203851122-3726ecdf080e?w=1200&h=800&fit=crop',
+      'pepsi': 'https://images.unsplash.com/photo-1593642532400-2682810df593?w=1200&h=800&fit=crop',
+      'red bull': 'https://images.unsplash.com/photo-1621951753015-740c699ab970?w=1200&h=800&fit=crop',
+      'redbull': 'https://images.unsplash.com/photo-1621951753015-740c699ab970?w=1200&h=800&fit=crop',
+      'starbucks': 'https://images.unsplash.com/photo-1545231027-637d2f6210f8?w=1200&h=800&fit=crop',
+      
+      // Sports & Fitness
+      'nike': 'https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?w=1200&h=800&fit=crop',
+      'adidas': 'https://images.unsplash.com/photo-1605348532760-6753d2c43329?w=1200&h=800&fit=crop',
+      'under armour': 'https://images.unsplash.com/photo-1571902943202-507ec2618e8f?w=1200&h=800&fit=crop',
+      'lululemon': 'https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=800&fit=crop',
+      'patagonia': 'https://images.unsplash.com/photo-1454391304352-2bf4678b1a7a?w=1200&h=800&fit=crop',
+      
+      // Entertainment
+      'netflix': 'https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?w=1200&h=800&fit=crop',
+      'disney': 'https://images.unsplash.com/photo-1578662996442-48f60103fc67?w=1200&h=800&fit=crop',
+      'warner bros': 'https://images.unsplash.com/photo-1489599849927-2ee91cede3ba?w=1200&h=800&fit=crop',
+      'spotify': 'https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop',
+      
+      // Beauty & Fashion
+      'sephora': 'https://images.unsplash.com/photo-1596462502278-27bfdc403348?w=1200&h=800&fit=crop',
+      'ulta beauty': 'https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=800&fit=crop',
+      'mac cosmetics': 'https://images.unsplash.com/photo-1512496015851-a90fb38ba796?w=1200&h=800&fit=crop',
+      
+      // Food & Restaurants
+      'mcdonalds': 'https://images.unsplash.com/photo-1619454016518-697bc231e7cb?w=1200&h=800&fit=crop',
+      'chipotle': 'https://images.unsplash.com/photo-1579684947550-22e945225d9a?w=1200&h=800&fit=crop',
+      'whole foods': 'https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&h=800&fit=crop',
+      
+      // Default event images
+      'default': 'https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop'
+    };
+    
+    // Extract client name from image name (e.g., "microsoft-activation.jpg" -> "microsoft")
+    const clientKey = imageName.toLowerCase().split('-')[0].split('.')[0];
+    const imageUrl = stockPhotoMap[clientKey] || stockPhotoMap['default'];
+    
+    // Redirect to the stock photo URL
+    res.redirect(imageUrl);
+  });
+
   // Contact form submission
   app.post("/api/contact", async (req, res) => {
     try {
@@ -86,6 +150,80 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.json(caseStudies);
     } catch (error) {
       console.error('Error fetching case studies:', error);
+      res.status(500).json({ message: 'Failed to fetch case studies' });
+    }
+  });
+
+  // Enhanced Case Studies API Endpoints - Deliverables Focused
+  app.get("/api/case-studies-enhanced", async (req, res) => {
+    try {
+      // Return the comprehensive enhanced case studies with deliverables
+      res.json(enhancedCaseStudies);
+    } catch (error) {
+      console.error('Error fetching enhanced case studies:', error);
+      res.status(500).json({ message: 'Failed to fetch enhanced case studies' });
+    }
+  });
+
+  // Get enhanced case study by ID
+  app.get("/api/case-studies-enhanced/:id", async (req, res) => {
+    try {
+      const caseStudy = getEnhancedCaseStudyById(req.params.id);
+      if (!caseStudy) {
+        return res.status(404).json({ message: "Case study not found" });
+      }
+      res.json(caseStudy);
+    } catch (error) {
+      console.error('Error fetching enhanced case study:', error);
+      res.status(500).json({ message: "Internal server error" });
+    }
+  });
+
+  // Get enhanced featured case studies
+  app.get("/api/case-studies-enhanced/featured", async (req, res) => {
+    try {
+      const limit = parseInt(req.query.limit as string) || 3;
+      const featuredCaseStudies = getFeaturedEnhancedCaseStudies(limit);
+      res.json(featuredCaseStudies);
+    } catch (error) {
+      console.error('Error fetching featured enhanced case studies:', error);
+      res.status(500).json({ message: 'Failed to fetch featured case studies' });
+    }
+  });
+
+  // Search enhanced case studies
+  app.get("/api/case-studies-enhanced/search", async (req, res) => {
+    try {
+      const keyword = req.query.q as string;
+      if (!keyword) {
+        return res.status(400).json({ message: "Search keyword is required" });
+      }
+      const results = searchEnhancedCaseStudies(keyword);
+      res.json(results);
+    } catch (error) {
+      console.error('Error searching enhanced case studies:', error);
+      res.status(500).json({ message: 'Failed to search case studies' });
+    }
+  });
+
+  // Get enhanced case studies by industry
+  app.get("/api/case-studies-enhanced/industry/:industry", async (req, res) => {
+    try {
+      const caseStudies = getEnhancedCaseStudiesByIndustry(req.params.industry);
+      res.json(caseStudies);
+    } catch (error) {
+      console.error('Error fetching case studies by industry:', error);
+      res.status(500).json({ message: 'Failed to fetch case studies' });
+    }
+  });
+
+  // Get enhanced case studies by campaign type
+  app.get("/api/case-studies-enhanced/campaign-type/:type", async (req, res) => {
+    try {
+      const caseStudies = getEnhancedCaseStudiesByCampaignType(req.params.type);
+      res.json(caseStudies);
+    } catch (error) {
+      console.error('Error fetching case studies by campaign type:', error);
       res.status(500).json({ message: 'Failed to fetch case studies' });
     }
   });

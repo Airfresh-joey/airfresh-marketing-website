@@ -16,6 +16,8 @@ import BlogEditor from "@/pages/BlogEditor";
 import CityPage from "@/pages/CityPage";
 import CaseStudies from "@/pages/CaseStudies";
 import CaseStudyDetail from "@/pages/CaseStudyDetail";
+import EnhancedCaseStudies from "@/pages/EnhancedCaseStudies";
+import EnhancedCaseStudyDetail from "@/pages/EnhancedCaseStudyDetail";
 import BrandActivations from "@/pages/BrandActivations";
 import CorporateEvents from "@/pages/CorporateEvents";
 import Talent from "@/pages/Talent";
@@ -49,8 +51,10 @@ function Router() {
           <Route path="/notion-gallery" component={NotionGalleryPage} />
           <Route path="/city/:cityName" component={CityPage} />
           <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
-          <Route path="/projects/case-studies" component={CaseStudies} />
-          <Route path="/projects/case-studies/:id" component={CaseStudyDetail} />
+          <Route path="/projects/case-studies" component={EnhancedCaseStudies} />
+          <Route path="/projects/case-studies/:id" component={EnhancedCaseStudyDetail} />
+          <Route path="/projects/case-studies-original" component={CaseStudies} />
+          <Route path="/projects/case-studies-original/:id" component={CaseStudyDetail} />
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Talent} />

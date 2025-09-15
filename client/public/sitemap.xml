@@ -75,6 +75,49 @@
     <priority>0.8</priority>
   </url>
   
+  <!-- Individual Case Studies -->
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/microsoft-nrf-activation</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/netflix-stranger-things-popup</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/redbull-campus-tour</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/apple-camp-grizzly</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/nike-marathon-activation</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies/coca-cola-music-festival</loc>
+    <lastmod>2025-09-15</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  
   <!-- Blog / Insights -->
   <url>
     <loc>https://airfreshmarketing.com/blog</loc>

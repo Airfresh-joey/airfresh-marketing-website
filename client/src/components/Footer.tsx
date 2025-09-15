@@ -43,6 +43,37 @@ export default function Footer() {
           </a>
         </div>
         
+        {/* Quick Links */}
+        <div className="border-t border-gray-700 pt-8 mb-8">
+          <h3 className="text-lg font-semibold mb-4">Quick Links</h3>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 text-sm mb-8">
+            <Link href="/about" className="text-gray-400 hover:text-white transition-colors">
+              About Us
+            </Link>
+            <Link href="/services" className="text-gray-400 hover:text-white transition-colors">
+              Services
+            </Link>
+            <Link href="/projects/case-studies" className="text-gray-400 hover:text-white transition-colors">
+              Case Studies
+            </Link>
+            <Link href="/blog" className="text-gray-400 hover:text-white transition-colors">
+              Blog
+            </Link>
+            <Link href="/projects/brand-activations" className="text-gray-400 hover:text-white transition-colors">
+              Brand Activations
+            </Link>
+            <Link href="/projects/corporate-events" className="text-gray-400 hover:text-white transition-colors">
+              Corporate Events
+            </Link>
+            <Link href="/talent" className="text-gray-400 hover:text-white transition-colors">
+              Talent
+            </Link>
+            <Link href="/contact" className="text-gray-400 hover:text-white transition-colors">
+              Contact
+            </Link>
+          </div>
+        </div>
+        
         {/* City Locations for Local SEO */}
         <div className="border-t border-gray-700 pt-8 mb-8">
           <h3 className="text-lg font-semibold mb-4">Our Locations</h3>
