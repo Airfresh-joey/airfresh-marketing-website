@@ -21,6 +21,11 @@ import {
   getEnhancedCaseStudiesByCampaignType,
   searchEnhancedCaseStudies
 } from "./case-studies-data";
+import { 
+  getTargetingData, 
+  getTargetingCategories, 
+  getAllTargetingData 
+} from "./targeting-data";
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -447,6 +452,70 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching city:', error);
       res.status(500).json({ message: 'Failed to fetch city data' });
+    }
+  });
+
+  // Get all targeting categories
+  app.get("/api/targeting/categories", async (req, res) => {
+    try {
+      const categories = getTargetingCategories();
+      res.json(categories);
+    } catch (error) {
+      console.error('Error fetching targeting categories:', error);
+      res.status(500).json({ message: 'Failed to fetch targeting categories' });
+    }
+  });
+
+  // Get all targeting data
+  app.get("/api/targeting/all", async (req, res) => {
+    try {
+      const allData = getAllTargetingData();
+      res.json(allData);
+    } catch (error) {
+      console.error('Error fetching all targeting data:', error);
+      res.status(500).json({ message: 'Failed to fetch targeting data' });
+    }
+  });
+
+  // Get specific targeting data
+  app.get("/api/targeting/:type/:slug", async (req, res) => {
+    try {
+      const { type, slug } = req.params;
+      const data = getTargetingData(type, slug);
+      
+      if (!data) {
+        return res.status(404).json({ message: "Targeting data not found" });
+      }
+      
+      res.json(data);
+    } catch (error) {
+      console.error('Error fetching targeting data:', error);
+      res.status(500).json({ message: 'Failed to fetch targeting data' });
+    }
+  });
+
+  // Get targeting data with city-specific information
+  app.get("/api/targeting/:type/:slug/:city", async (req, res) => {
+    try {
+      const { type, slug, city } = req.params;
+      const targetingData = getTargetingData(type, slug);
+      const cityData = getCityByName(city);
+      
+      if (!targetingData) {
+        return res.status(404).json({ message: "Targeting data not found" });
+      }
+      
+      // Combine targeting data with city-specific modifications
+      const response = {
+        ...targetingData,
+        city: cityData,
+        citySpecific: targetingData.cityModifier ? targetingData.cityModifier(cityData?.city || city) : null
+      };
+      
+      res.json(response);
+    } catch (error) {
+      console.error('Error fetching targeting data with city:', error);
+      res.status(500).json({ message: 'Failed to fetch targeting data' });
     }
   });
 

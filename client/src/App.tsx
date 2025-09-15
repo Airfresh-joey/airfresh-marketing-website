@@ -29,6 +29,7 @@ import EventProduction from "@/pages/EventProduction";
 import NotionBlog from "@/pages/NotionBlog";
 import NotionBlogPost from "@/pages/NotionBlogPost";
 import NotionGalleryPage from "@/pages/NotionGalleryPage";
+import TargetingPage from "@/pages/TargetingPage";
 
 function Router() {
   return (
@@ -58,6 +59,23 @@ function Router() {
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Talent} />
+          
+          {/* Targeting Pages - Verticals */}
+          <Route path="/verticals/:slug" component={TargetingPage} />
+          <Route path="/verticals/:slug/:city" component={TargetingPage} />
+          
+          {/* Targeting Pages - Conventions */}
+          <Route path="/conventions/:slug" component={TargetingPage} />
+          <Route path="/conventions/:slug/:city" component={TargetingPage} />
+          
+          {/* Targeting Pages - Events */}
+          <Route path="/events/:slug" component={TargetingPage} />
+          <Route path="/events/:slug/:city" component={TargetingPage} />
+          
+          {/* Targeting Pages - Sports */}
+          <Route path="/sports/:slug" component={TargetingPage} />
+          <Route path="/sports/:slug/:city" component={TargetingPage} />
+          
           <Route component={NotFound} />
         </Switch>
       </main>
