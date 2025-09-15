@@ -187,12 +187,20 @@ export function NotionGallery() {
               )}
 
               {/* Image */}
-              <img
-                src={selectedGallery.images[selectedImageIndex]?.url}
-                alt={selectedGallery.images[selectedImageIndex]?.caption || 'Gallery image'}
-                className="w-full h-auto max-h-[80vh] object-contain"
-                data-testid="img-lightbox-current"
-              />
+              <figure itemScope itemType="https://schema.org/ImageObject">
+                <img
+                  src={selectedGallery.images[selectedImageIndex]?.url}
+                  alt={selectedGallery.images[selectedImageIndex]?.caption || `${selectedGallery.title} event photo`}
+                  title={`${selectedGallery.title} - ${selectedGallery.category} - AirFresh Marketing`}
+                  className="w-full h-auto max-h-[80vh] object-contain"
+                  loading="eager"
+                  decoding="async"
+                  data-testid="img-lightbox-current"
+                  itemProp="contentUrl"
+                />
+                <meta itemProp="name" content={selectedGallery.title} />
+                <meta itemProp="description" content={selectedGallery.description} />
+              </figure>
 
               {/* Caption */}
               {selectedGallery.images[selectedImageIndex]?.caption && (
@@ -280,9 +288,14 @@ function GallerySection({
           >
             <img
               src={image.url}
-              alt={image.caption || `Gallery image ${index + 1}`}
+              alt={image.caption || `${gallery.title} photo ${index + 1}`}
+              title={`${gallery.title} - ${gallery.category}`}
               className="w-full h-full object-cover transition-transform duration-300 group-hover:scale-110"
               loading="lazy"
+              decoding="async"
+              width="400"
+              height="400"
+              itemProp="image"
             />
             
             {/* Overlay on hover */}

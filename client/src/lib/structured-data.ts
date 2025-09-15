@@ -209,6 +209,96 @@ export const faqSchema = {
   ]
 };
 
+// ImageObject schema for campaign images and galleries
+export const imageObjectSchema = ({
+  url,
+  name,
+  description,
+  caption,
+  keywords,
+  width = 1200,
+  height = 630,
+  client,
+  location = 'nationwide'
+}: {
+  url: string;
+  name: string;
+  description?: string;
+  caption?: string;
+  keywords?: string[];
+  width?: number;
+  height?: number;
+  client?: string;
+  location?: string;
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "ImageObject",
+  "contentUrl": url,
+  "url": url,
+  "name": name,
+  "description": description || `${client} experiential marketing campaign brand ambassadors event staffing ${location}`,
+  "caption": caption || `Brand activation and guerrilla marketing for ${client} by AirFresh Marketing`,
+  "keywords": keywords?.join(', ') || "experiential marketing, brand ambassadors, event staffing, guerrilla marketing, sampling, brand activation, pop-up events",
+  "width": {
+    "@type": "QuantitativeValue",
+    "value": width,
+    "unitCode": "PX"
+  },
+  "height": {
+    "@type": "QuantitativeValue",
+    "value": height,
+    "unitCode": "PX"
+  },
+  "creator": {
+    "@type": "Organization",
+    "name": "AirFresh Marketing"
+  },
+  "copyrightHolder": {
+    "@type": "Organization",
+    "name": "AirFresh Marketing"
+  },
+  "license": "https://airfreshmarketing.com/terms"
+});
+
+// Gallery schema for event photo collections
+export const gallerySchema = ({
+  title,
+  description,
+  images,
+  category,
+  date
+}: {
+  title: string;
+  description: string;
+  images: Array<{url: string; caption?: string}>;
+  category: string;
+  date: string;
+}) => ({
+  "@context": "https://schema.org",
+  "@type": "ImageGallery",
+  "name": title,
+  "description": description,
+  "about": {
+    "@type": "Event",
+    "name": `${title} - ${category} brand activation`,
+    "startDate": date,
+    "location": {
+      "@type": "Place",
+      "name": "Multiple Locations Nationwide"
+    },
+    "organizer": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing"
+    }
+  },
+  "image": images.map((img, index) => ({
+    "@type": "ImageObject",
+    "contentUrl": img.url,
+    "caption": img.caption || `Event photo ${index + 1} - brand ambassadors and experiential marketing`,
+    "keywords": "experiential marketing, event staffing, brand ambassadors, guerrilla marketing"
+  }))
+});
+
 // Article schema for blog posts and case studies
 export const articleSchema = (article: {
   title: string;

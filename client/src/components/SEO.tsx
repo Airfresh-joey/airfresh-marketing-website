@@ -8,6 +8,9 @@ interface SEOProps {
   canonical?: string;
   ogType?: string;
   ogImage?: string;
+  ogImageAlt?: string;
+  ogImageWidth?: string;
+  ogImageHeight?: string;
   structuredData?: Record<string, any>;
   pageType?: string; // Used to auto-generate keywords if not provided
 }
@@ -19,6 +22,9 @@ export default function SEO({
   canonical,
   ogType = 'website',
   ogImage = 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+  ogImageAlt = 'AirFresh Marketing experiential marketing brand ambassadors event staffing nationwide',
+  ogImageWidth = '1200',
+  ogImageHeight = '630',
   structuredData,
   pageType 
 }: SEOProps) {
@@ -57,16 +63,23 @@ export default function SEO({
     updateMetaTag('og:description', description, true);
     updateMetaTag('og:type', ogType, true);
     updateMetaTag('og:image', ogImage, true);
+    updateMetaTag('og:image:secure_url', ogImage, true);
+    updateMetaTag('og:image:type', 'image/jpeg', true);
     updateMetaTag('og:url', window.location.href, true);
     updateMetaTag('og:site_name', 'AirFresh Marketing', true);
     updateMetaTag('og:locale', 'en_US', true);
     
-    // LinkedIn specific Open Graph tags
+    // LinkedIn specific Open Graph tags with enhanced image metadata
     updateMetaTag('article:author', 'https://www.linkedin.com/company/airfresh-marketing', true);
     updateMetaTag('article:publisher', 'https://www.linkedin.com/company/airfresh-marketing', true);
-    updateMetaTag('og:image:width', '1200', true);
-    updateMetaTag('og:image:height', '630', true);
-    updateMetaTag('og:image:alt', title, true);
+    updateMetaTag('og:image:width', ogImageWidth, true);
+    updateMetaTag('og:image:height', ogImageHeight, true);
+    updateMetaTag('og:image:alt', ogImageAlt, true);
+    
+    // Additional image metadata for better social sharing
+    updateMetaTag('og:rich_attachment', 'true', true);
+    updateMetaTag('linkedin:image', ogImage, true);
+    updateMetaTag('linkedin:card', 'summary_large_image', true);
 
     // Twitter tags
     updateMetaTag('twitter:card', 'summary_large_image');
@@ -117,7 +130,7 @@ export default function SEO({
       structuredDataElement.textContent = JSON.stringify(structuredData);
     }
 
-  }, [title, description, keywords, canonical, ogType, ogImage, structuredData, pageType]);
+  }, [title, description, keywords, canonical, ogType, ogImage, ogImageAlt, ogImageWidth, ogImageHeight, structuredData, pageType]);
 
   return null;
 }

@@ -126,15 +126,26 @@ function NotionBlogPostCard({ post }: { post: NotionBlogPost }) {
     <Card className="h-full flex flex-col hover:shadow-lg transition-shadow duration-300">
       {/* Featured Image */}
       {post.featuredImage && (
-        <div className="aspect-video w-full overflow-hidden rounded-t-lg">
+        <figure className="aspect-video w-full overflow-hidden rounded-t-lg" itemScope itemType="https://schema.org/ImageObject">
           <img 
             src={post.featuredImage} 
             alt={post.title}
+            title={`${post.title} - AirFresh Marketing Blog`}
             className="w-full h-full object-cover"
             loading="lazy"
+            decoding="async"
+            width="800"
+            height="450"
             data-testid={`img-blog-${post.id}`}
+            itemProp="contentUrl"
           />
-        </div>
+          <meta itemProp="name" content={post.title} />
+          <meta itemProp="description" content={post.excerpt} />
+          {/* SEO keywords in caption, not alt text */}
+          <figcaption className="sr-only" itemProp="caption">
+            {post.title} - Expert insights on experiential marketing, brand ambassadors, and event staffing strategies
+          </figcaption>
+        </figure>
       )}
       
       <CardHeader>

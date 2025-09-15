@@ -6,6 +6,11 @@ interface CaseStudyImageProps {
   className?: string;
   client: string;
   loading?: 'lazy' | 'eager';
+  location?: string;
+  width?: number;
+  height?: number;
+  priority?: boolean;
+  campaign?: string;
 }
 
 // Stock photo fallbacks for each client
@@ -107,7 +112,18 @@ const getStockFallback = (client: string): string => {
   return 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
 };
 
-export default function CaseStudyImage({ src, alt, className, client, loading = 'lazy' }: CaseStudyImageProps) {
+export default function CaseStudyImage({ 
+  src, 
+  alt, 
+  className, 
+  client, 
+  loading = 'lazy',
+  location = 'nationwide',
+  width = 800,
+  height = 600,
+  priority = false,
+  campaign = 'brand activation'
+}: CaseStudyImageProps) {
   const [imageSrc, setImageSrc] = useState(src);
   const [hasError, setHasError] = useState(false);
   const [isLoading, setIsLoading] = useState(true);
@@ -129,20 +145,54 @@ export default function CaseStudyImage({ src, alt, className, client, loading = 
     setIsLoading(false);
   };
 
+  // Generate concise, descriptive alt text (for accessibility)
+  const generateAltText = () => {
+    // Alt text should describe what's in the image, not be SEO keyword soup
+    // Keep it under 80 characters and descriptive
+    if (alt && alt.length > 0) {
+      return alt; // Use provided alt text if available
+    }
+    // Simple, descriptive fallback
+    const baseAlt = `${client} ${campaign}`;
+    if (location && location !== 'nationwide') {
+      return `${baseAlt} at ${location}`.trim();
+    }
+    return baseAlt.trim();
+  };
+
+  // Title can contain more SEO keywords
+  const generateTitle = () => {
+    return `${client} ${campaign} - ${location} - AirFresh Marketing`;
+  };
+
+  const imageCaption = `Brand ambassadors and event staffing for ${client} experiential marketing activation ${location}`;
+
   return (
-    <div className={`relative ${className}`}>
+    <figure className={`relative ${className}`} itemScope itemType="https://schema.org/ImageObject">
       {isLoading && (
         <div className="absolute inset-0 bg-gray-200 animate-pulse" />
       )}
       <img
         src={imageSrc}
-        alt={`${alt} - ${client} experiential marketing campaign by AirFresh Marketing`}
+        alt={generateAltText()}
+        title={generateTitle()}
         className={className}
         onError={handleError}
         onLoad={handleLoad}
-        loading={loading}
+        loading={priority ? 'eager' : loading}
+        decoding="async"
+        width={width}
+        height={height}
         style={{ display: isLoading ? 'none' : 'block' }}
+        itemProp="contentUrl"
       />
-    </div>
+      <meta itemProp="name" content={generateTitle()} />
+      <meta itemProp="description" content={imageCaption} />
+      {/* Keywords in meta tags for SEO, not in alt text */}
+      <meta itemProp="keywords" content={`${client}, experiential marketing, brand ambassadors, event staffing, guerrilla marketing, sampling, brand activation, ${location}`} />
+      <figcaption className="sr-only" itemProp="caption">
+        {imageCaption}
+      </figcaption>
+    </figure>
   );
 }

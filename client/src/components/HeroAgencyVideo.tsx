@@ -124,11 +124,25 @@ export default function HeroAgencyVideo() {
             variants={itemVariants}
             className="mb-12"
           >
-            <img 
-              src={airFreshLogo} 
-              alt="Air Fresh Marketing" 
-              className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full shadow-2xl"
-            />
+            <figure itemScope itemType="https://schema.org/ImageObject">
+              <img 
+                src={airFreshLogo} 
+                alt="AirFresh Marketing logo" 
+                title="AirFresh Marketing - Experiential Marketing Agency"
+                className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full shadow-2xl"
+                loading="eager"
+                decoding="async"
+                width="192"
+                height="192"
+                itemProp="contentUrl"
+              />
+              <meta itemProp="name" content="AirFresh Marketing Logo" />
+              {/* SEO keywords in meta and caption, not alt text */}
+              <meta itemProp="description" content="AirFresh Marketing - Experiential marketing agency specializing in brand ambassadors, event staffing, guerrilla marketing, and brand activations nationwide" />
+              <figcaption className="sr-only" itemProp="caption">
+                AirFresh Marketing logo - Leading experiential marketing and brand activation agency
+              </figcaption>
+            </figure>
           </motion.div>
 
           {/* Agency Badge */}
