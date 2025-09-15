@@ -66,6 +66,20 @@ import {
   emailTemplates,
   responseTemplates
 } from "./review-system";
+import {
+  initializeScheduledTasks,
+  getCurrentSchedule,
+  updateSchedule,
+  getUpcomingEvents,
+  getEventById,
+  generateContentDraft,
+  generateCalendarQRCode,
+  generateGoogleCalendarLink,
+  generateICSFile,
+  createCalendarEvent,
+  sendReminderEmail,
+  contentScheduleSchema
+} from "./content-calendar";
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
@@ -1012,6 +1026,177 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error generating review response:', error);
       res.status(500).json({ message: 'Failed to generate review response' });
+    }
+  });
+
+  // Content Calendar API Endpoints
+  
+  // Initialize scheduled tasks on server start
+  initializeScheduledTasks();
+  
+  // Get current schedule
+  app.get("/api/calendar/schedule", async (req, res) => {
+    try {
+      const schedule = getCurrentSchedule();
+      res.json(schedule);
+    } catch (error) {
+      console.error('Error fetching schedule:', error);
+      res.status(500).json({ message: 'Failed to fetch schedule' });
+    }
+  });
+  
+  // Update schedule configuration
+  app.post("/api/calendar/update-schedule", async (req, res) => {
+    // Check admin authentication
+    const authHeader = req.headers.authorization;
+    if (!ADMIN_PASSWORD || authHeader !== `Bearer ${ADMIN_PASSWORD}`) {
+      return res.status(401).json({ 
+        message: 'Unauthorized: Admin authentication required',
+        error: 'Invalid or missing authentication' 
+      });
+    }
+    
+    try {
+      const validationResult = contentScheduleSchema.safeParse(req.body);
+      
+      if (!validationResult.success) {
+        return res.status(400).json({ 
+          message: 'Invalid schedule data',
+          errors: validationResult.error.errors 
+        });
+      }
+      
+      const updatedSchedule = updateSchedule(validationResult.data);
+      res.json(updatedSchedule);
+    } catch (error) {
+      console.error('Error updating schedule:', error);
+      res.status(500).json({ message: 'Failed to update schedule' });
+    }
+  });
+  
+  // Get upcoming content events
+  app.get("/api/calendar/upcoming", async (req, res) => {
+    try {
+      const days = parseInt(req.query.days as string) || 30;
+      const events = getUpcomingEvents(days);
+      res.json(events);
+    } catch (error) {
+      console.error('Error fetching upcoming events:', error);
+      res.status(500).json({ message: 'Failed to fetch upcoming events' });
+    }
+  });
+  
+  // Generate content draft
+  app.get("/api/calendar/generate-draft/:type", async (req, res) => {
+    try {
+      const type = req.params.type;
+      const validTypes = ['linkedin', 'blog', 'case-study', 'client-contact'];
+      
+      if (!validTypes.includes(type)) {
+        return res.status(400).json({ message: 'Invalid content type' });
+      }
+      
+      const draft = await generateContentDraft(type);
+      res.json(draft);
+    } catch (error) {
+      console.error('Error generating draft:', error);
+      res.status(500).json({ message: 'Failed to generate draft' });
+    }
+  });
+  
+  // Generate calendar QR code
+  app.get("/api/calendar/qr-code", async (req, res) => {
+    try {
+      const qrCode = await generateCalendarQRCode();
+      res.json({ qrCode });
+    } catch (error) {
+      console.error('Error generating QR code:', error);
+      res.status(500).json({ message: 'Failed to generate QR code' });
+    }
+  });
+  
+  // Send reminder email manually
+  app.post("/api/calendar/send-reminder", async (req, res) => {
+    // Check admin authentication
+    const authHeader = req.headers.authorization;
+    if (!ADMIN_PASSWORD || authHeader !== `Bearer ${ADMIN_PASSWORD}`) {
+      return res.status(401).json({ 
+        message: 'Unauthorized: Admin authentication required',
+        error: 'Invalid or missing authentication' 
+      });
+    }
+    
+    try {
+      const { eventId } = req.body;
+      
+      if (!eventId) {
+        return res.status(400).json({ message: 'Event ID is required' });
+      }
+      
+      // Look up the event by ID
+      const event = getEventById(eventId);
+      
+      if (!event) {
+        return res.status(404).json({ message: 'Event not found' });
+      }
+      
+      const success = await sendReminderEmail(event);
+      
+      res.json({ 
+        success,
+        message: success ? 'Reminder sent successfully' : 'Failed to send reminder'
+      });
+    } catch (error) {
+      console.error('Error sending reminder:', error);
+      res.status(500).json({ message: 'Failed to send reminder' });
+    }
+  });
+  
+  // Export calendar as ICS file
+  app.get("/api/calendar/export", async (req, res) => {
+    try {
+      const events = getUpcomingEvents(365); // Get events for the next year
+      const icsContent = generateICSFile(events);
+      
+      res.setHeader('Content-Type', 'text/calendar');
+      res.setHeader('Content-Disposition', 'attachment; filename="airfresh-content-calendar.ics"');
+      res.send(icsContent);
+    } catch (error) {
+      console.error('Error exporting calendar:', error);
+      res.status(500).json({ message: 'Failed to export calendar' });
+    }
+  });
+  
+  // Get Google Calendar link for an event
+  app.post("/api/calendar/google-link", async (req, res) => {
+    // Check admin authentication
+    const authHeader = req.headers.authorization;
+    if (!ADMIN_PASSWORD || authHeader !== `Bearer ${ADMIN_PASSWORD}`) {
+      return res.status(401).json({ 
+        message: 'Unauthorized: Admin authentication required',
+        error: 'Invalid or missing authentication' 
+      });
+    }
+    
+    try {
+      const { title, description, dueDate } = req.body;
+      
+      if (!title || !dueDate) {
+        return res.status(400).json({ message: 'Title and due date are required' });
+      }
+      
+      const event = createCalendarEvent(
+        'custom',
+        new Date(dueDate),
+        title,
+        description || ''
+      );
+      
+      const googleLink = generateGoogleCalendarLink(event);
+      res.json({ googleLink });
+    } catch (error) {
+      console.error('Error generating Google Calendar link:', error);
+      res.status(500).json({ message: 'Failed to generate Google Calendar link' });
     }
   });
 

@@ -37,6 +37,7 @@ import FeedbackForm from "@/pages/FeedbackForm";
 import CaseStudyAdmin from "@/pages/CaseStudyAdmin";
 import CaseStudiesReal from "@/pages/CaseStudiesReal";
 import CaseStudyRealDetail from "@/pages/CaseStudyRealDetail";
+import ContentCalendar from "@/pages/ContentCalendar";
 
 function Router() {
   return (
@@ -77,6 +78,7 @@ function Router() {
           <Route path="/backlinks" component={BacklinksDashboard} />
           <Route path="/reviews-dashboard" component={ReviewsDashboard} />
           <Route path="/feedback" component={FeedbackForm} />
+          <Route path="/content-calendar" component={ContentCalendar} />
           
           {/* Targeting Pages - Verticals */}
           <Route path="/verticals/:slug" component={TargetingPage} />
