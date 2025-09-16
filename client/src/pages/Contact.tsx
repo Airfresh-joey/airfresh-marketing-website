@@ -128,10 +128,18 @@ export default function Contact() {
                 href="https://airfreshconnect.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 text-base rounded-md transition-colors"
+                className="inline-flex items-center justify-center px-6 py-3 text-base font-semibold text-gray-800 rounded-full transition-all duration-300 hover:shadow-xl hover:scale-105"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.9)',
+                  backdropFilter: 'blur(20px) saturate(180%)',
+                  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                  border: '1px solid rgba(255, 255, 255, 0.5)',
+                  boxShadow: '0 8px 30px rgba(0, 0, 0, 0.12)'
+                }}
                 data-testid="button-looking-for-work-contact-hero"
               >
-                Looking for Work?
+                <span className="mr-1.5">💼</span>
+                Looking for Work
               </a>
               <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
                 <a href="tel:+13037206060">Call Now: 303-720-6060</a>

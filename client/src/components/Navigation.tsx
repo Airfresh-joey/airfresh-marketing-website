@@ -98,10 +98,17 @@ export default function Navigation() {
               href="https://airfreshconnect.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md transition-colors"
+              className="relative inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 bg-white/70 backdrop-blur-xl border border-white/50 rounded-full shadow-sm hover:bg-white/80 hover:shadow-md transition-all duration-200"
+              style={{
+                background: 'rgba(255, 255, 255, 0.72)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(255, 255, 255, 0.3)'
+              }}
               data-testid="button-looking-for-work-header"
             >
-              Looking for Work?
+              <span className="mr-1">💼</span>
+              Looking for Work
             </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-white">
               <Link href="/contact">Request more information from AirFresh</Link>
@@ -133,11 +140,18 @@ export default function Navigation() {
               href="https://airfreshconnect.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block px-3 py-2 text-green-600 hover:bg-green-50 font-medium"
+              className="block mx-3 my-2 px-4 py-2 text-center text-sm font-medium text-gray-700 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-full hover:bg-white/80 transition-all duration-200"
+              style={{
+                background: 'rgba(255, 255, 255, 0.72)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(209, 213, 219, 0.3)'
+              }}
               onClick={() => setMobileMenuOpen(false)}
               data-testid="button-looking-for-work-mobile"
             >
-              Looking for Work?
+              <span className="mr-1">💼</span>
+              Looking for Work
             </a>
           </div>
         </div>

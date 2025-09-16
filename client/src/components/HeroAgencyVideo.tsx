@@ -203,11 +203,19 @@ export default function HeroAgencyVideo() {
                 href="https://airfreshconnect.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-2xl transition-all duration-200 group"
+                className="inline-flex items-center px-6 py-3 text-base font-semibold text-gray-800 rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105 group"
+                style={{
+                  background: 'rgba(255, 255, 255, 0.85)',
+                  backdropFilter: 'blur(20px) saturate(180%)',
+                  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                  border: '1px solid rgba(255, 255, 255, 0.4)',
+                  boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)'
+                }}
                 data-testid="button-looking-for-work-hero"
               >
-                Looking for Work?
-                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                <span className="mr-1.5">💼</span>
+                Looking for Work
+                <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
             </motion.div>
             

@@ -27,10 +27,18 @@ export default function Footer() {
             href="https://airfreshconnect.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-md transition-colors"
+            className="inline-flex items-center mt-4 px-4 py-2 text-sm font-medium text-gray-800 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105"
+            style={{
+              background: 'rgba(255, 255, 255, 0.9)',
+              backdropFilter: 'blur(20px) saturate(180%)',
+              WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+              border: '1px solid rgba(255, 255, 255, 0.4)',
+              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
+            }}
             data-testid="button-looking-for-work-footer"
           >
-            Looking for Work? Visit AirFresh Connect
+            <span className="mr-1.5">💼</span>
+            Looking for Work
           </a>
         </div>
         
@@ -126,10 +134,16 @@ export default function Footer() {
             href="https://airfreshconnect.com" 
             target="_blank" 
             rel="noopener noreferrer"
-            className="inline-block mb-4 text-green-400 hover:text-green-300 font-medium transition-colors"
+            className="inline-flex items-center mb-4 px-3 py-1.5 text-xs font-medium text-gray-300 rounded-full transition-all duration-200 hover:text-white hover:shadow-md"
+            style={{
+              background: 'rgba(255, 255, 255, 0.1)',
+              backdropFilter: 'blur(10px)',
+              WebkitBackdropFilter: 'blur(10px)',
+              border: '1px solid rgba(255, 255, 255, 0.2)'
+            }}
             data-testid="link-looking-for-work-footer-bottom"
           >
-            💼 Join Our Team at AirFresh Connect
+            💼 Join Our Team
           </a>
           <p className="text-sm text-gray-400">© 2024 AirFresh Marketing. All rights reserved.</p>
         </div>
