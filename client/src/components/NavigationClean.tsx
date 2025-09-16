@@ -52,17 +52,9 @@ export default function NavigationClean() {
               href="https://airfreshconnect.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 rounded-full transition-all duration-200 hover:shadow-md"
-              style={{
-                background: 'rgba(255, 255, 255, 0.72)',
-                backdropFilter: 'blur(20px) saturate(180%)',
-                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-                border: '1px solid rgba(255, 255, 255, 0.3)',
-                boxShadow: '0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06)'
-              }}
+              className="text-gray-600 hover:text-primary font-medium transition-colors"
               data-testid="button-looking-for-work-header"
             >
-              <span className="mr-1">💼</span>
               Looking for Work
             </a>
             <Button 
@@ -112,16 +104,9 @@ export default function NavigationClean() {
                 href="https://airfreshconnect.com" 
                 target="_blank" 
                 rel="noopener noreferrer"
-                className="block w-full text-center px-4 py-2 text-sm font-medium text-gray-700 rounded-full transition-all duration-200 hover:shadow-md"
-                style={{
-                  background: 'rgba(255, 255, 255, 0.72)',
-                  backdropFilter: 'blur(20px) saturate(180%)',
-                  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-                  border: '1px solid rgba(209, 213, 219, 0.3)'
-                }}
+                className="block px-3 py-2 rounded-md text-base font-medium text-gray-600 hover:bg-gray-50 hover:text-primary"
                 data-testid="button-looking-for-work-mobile"
               >
-                <span className="mr-1">💼</span>
                 Looking for Work
               </a>
               <Button 

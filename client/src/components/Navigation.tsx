@@ -98,16 +98,9 @@ export default function Navigation() {
               href="https://airfreshconnect.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="relative inline-flex items-center px-3 py-1.5 text-sm font-medium text-gray-700 bg-white/70 backdrop-blur-xl border border-white/50 rounded-full shadow-sm hover:bg-white/80 hover:shadow-md transition-all duration-200"
-              style={{
-                background: 'rgba(255, 255, 255, 0.72)',
-                backdropFilter: 'blur(20px) saturate(180%)',
-                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-                border: '1px solid rgba(255, 255, 255, 0.3)'
-              }}
+              className="text-gray-600 hover:text-gray-900 font-medium text-sm transition-colors"
               data-testid="button-looking-for-work-header"
             >
-              <span className="mr-1">💼</span>
               Looking for Work
             </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-white">
@@ -140,17 +133,10 @@ export default function Navigation() {
               href="https://airfreshconnect.com" 
               target="_blank" 
               rel="noopener noreferrer"
-              className="block mx-3 my-2 px-4 py-2 text-center text-sm font-medium text-gray-700 bg-white/70 backdrop-blur-xl border border-gray-200/50 rounded-full hover:bg-white/80 transition-all duration-200"
-              style={{
-                background: 'rgba(255, 255, 255, 0.72)',
-                backdropFilter: 'blur(20px) saturate(180%)',
-                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-                border: '1px solid rgba(209, 213, 219, 0.3)'
-              }}
+              className="block px-3 py-2 text-gray-700 hover:bg-gray-50 font-medium"
               onClick={() => setMobileMenuOpen(false)}
               data-testid="button-looking-for-work-mobile"
             >
-              <span className="mr-1">💼</span>
               Looking for Work
             </a>
           </div>

@@ -177,24 +177,44 @@ export default function HeroAgencyVideo() {
           {/* CTA Buttons */}
           <motion.div
             variants={itemVariants}
-            className="flex flex-col sm:flex-row gap-4 justify-center"
+            className="flex flex-col items-center gap-6"
           >
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button 
-                asChild 
-                size="lg" 
-                className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-lg font-semibold rounded-full shadow-2xl transition-all duration-200 group"
+            {/* Primary CTAs Row */}
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
               >
-                <Link href="/contact">
-                  Start Your Campaign
-                  <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </Button>
-            </motion.div>
+                <Button 
+                  asChild 
+                  size="lg" 
+                  className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-lg font-semibold rounded-full shadow-2xl transition-all duration-200 group"
+                >
+                  <Link href="/contact">
+                    Start Your Campaign
+                    <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+                  </Link>
+                </Button>
+              </motion.div>
+              
+              <motion.div
+                whileHover={{ scale: 1.05 }}
+                whileTap={{ scale: 0.95 }}
+              >
+                <Button 
+                  asChild 
+                  size="lg" 
+                  variant="outline"
+                  className="border-2 border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-200"
+                >
+                  <Link href="/case-studies">
+                    View Our Work
+                  </Link>
+                </Button>
+              </motion.div>
+            </div>
             
+            {/* Looking for Work Button - Below */}
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
@@ -203,36 +223,18 @@ export default function HeroAgencyVideo() {
                 href="https://airfreshconnect.com"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="inline-flex items-center px-6 py-3 text-base font-semibold text-gray-800 rounded-full transition-all duration-300 hover:shadow-2xl hover:scale-105 group"
+                className="inline-flex items-center px-6 py-3 text-base font-medium text-white/90 rounded-full transition-all duration-300 hover:bg-white/20 group"
                 style={{
-                  background: 'rgba(255, 255, 255, 0.85)',
-                  backdropFilter: 'blur(20px) saturate(180%)',
-                  WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-                  border: '1px solid rgba(255, 255, 255, 0.4)',
-                  boxShadow: '0 10px 40px rgba(0, 0, 0, 0.1)'
+                  background: 'rgba(255, 255, 255, 0.1)',
+                  backdropFilter: 'blur(10px)',
+                  WebkitBackdropFilter: 'blur(10px)',
+                  border: '1px solid rgba(255, 255, 255, 0.2)'
                 }}
                 data-testid="button-looking-for-work-hero"
               >
-                <span className="mr-1.5">💼</span>
                 Looking for Work
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
               </a>
-            </motion.div>
-            
-            <motion.div
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <Button 
-                asChild 
-                size="lg" 
-                variant="outline"
-                className="border-2 border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-200"
-              >
-                <Link href="/case-studies">
-                  View Our Work
-                </Link>
-              </Button>
             </motion.div>
           </motion.div>
 

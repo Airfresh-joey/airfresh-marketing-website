@@ -23,23 +23,25 @@ export default function Footer() {
             Denver, CO 80203<br />
             hello@airfreshmarketing.com
           </p>
-          <a 
-            href="https://airfreshconnect.com" 
-            target="_blank" 
-            rel="noopener noreferrer"
-            className="inline-flex items-center mt-4 px-4 py-2 text-sm font-medium text-gray-800 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105"
-            style={{
-              background: 'rgba(255, 255, 255, 0.9)',
-              backdropFilter: 'blur(20px) saturate(180%)',
-              WebkitBackdropFilter: 'blur(20px) saturate(180%)',
-              border: '1px solid rgba(255, 255, 255, 0.4)',
-              boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
-            }}
-            data-testid="button-looking-for-work-footer"
-          >
-            <span className="mr-1.5">💼</span>
-            Looking for Work
-          </a>
+          <div className="mt-6 space-y-2">
+            <p className="text-white/90 text-sm font-medium">Hire Air Fresh</p>
+            <a 
+              href="https://airfreshconnect.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="inline-flex items-center px-4 py-2 text-sm font-medium text-gray-800 rounded-full transition-all duration-200 hover:shadow-lg hover:scale-105"
+              style={{
+                background: 'rgba(255, 255, 255, 0.9)',
+                backdropFilter: 'blur(20px) saturate(180%)',
+                WebkitBackdropFilter: 'blur(20px) saturate(180%)',
+                border: '1px solid rgba(255, 255, 255, 0.4)',
+                boxShadow: '0 4px 15px rgba(0, 0, 0, 0.1)'
+              }}
+              data-testid="button-looking-for-work-footer"
+            >
+              Looking for Work
+            </a>
+          </div>
         </div>
         
         <div className="flex justify-center space-x-6 mb-8">
@@ -143,7 +145,7 @@ export default function Footer() {
             }}
             data-testid="link-looking-for-work-footer-bottom"
           >
-            💼 Join Our Team
+            Join Our Team
           </a>
           <p className="text-sm text-gray-400">© 2024 AirFresh Marketing. All rights reserved.</p>
         </div>
