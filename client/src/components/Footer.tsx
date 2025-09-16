@@ -19,6 +19,7 @@ export default function Footer() {
         <div className="space-y-4 mb-8">
           <p className="text-2xl font-bold">303-720-6060</p>
           <p className="text-lg">
+            1580 N. Logan St. Suite 660<br />
             Denver, CO 80203<br />
             hello@airfreshmarketing.com
           </p>

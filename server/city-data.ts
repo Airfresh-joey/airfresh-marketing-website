@@ -268,10 +268,10 @@ export const cityLocations: CityLocation[] = [
   {
     storeCode: "AIRFRESH-DEN",
     businessName: "AirFresh Marketing - Denver HQ",
-    address: "720 S Colorado Blvd, Penthouse North",
+    address: "1580 N. Logan St. Suite 660",
     city: "Denver",
     state: "CO",
-    zip: "80246",
+    zip: "80203",
     phone: "(303) 720-6060",
     latitude: 39.7392,
     longitude: -104.9903,
