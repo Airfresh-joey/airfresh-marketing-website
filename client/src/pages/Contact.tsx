@@ -124,6 +124,15 @@ export default function Contact() {
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="#contact-form">Get Started</Link>
               </Button>
+              <a
+                href="https://airfreshconnect.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center justify-center bg-green-600 hover:bg-green-700 text-white font-semibold px-4 py-2 text-base rounded-md transition-colors"
+                data-testid="button-looking-for-work-contact-hero"
+              >
+                Looking for Work?
+              </a>
               <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
                 <a href="tel:+13037206060">Call Now: 303-720-6060</a>
               </Button>

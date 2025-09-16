@@ -199,6 +199,22 @@ export default function HeroAgencyVideo() {
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
+              <a
+                href="https://airfreshconnect.com"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center bg-green-600 hover:bg-green-700 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-2xl transition-all duration-200 group"
+                data-testid="button-looking-for-work-hero"
+              >
+                Looking for Work?
+                <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
+              </a>
+            </motion.div>
+            
+            <motion.div
+              whileHover={{ scale: 1.05 }}
+              whileTap={{ scale: 0.95 }}
+            >
               <Button 
                 asChild 
                 size="lg" 

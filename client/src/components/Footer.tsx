@@ -23,6 +23,15 @@ export default function Footer() {
             Denver, CO 80203<br />
             hello@airfreshmarketing.com
           </p>
+          <a 
+            href="https://airfreshconnect.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block mt-4 bg-green-600 hover:bg-green-700 text-white font-semibold px-6 py-3 rounded-md transition-colors"
+            data-testid="button-looking-for-work-footer"
+          >
+            Looking for Work? Visit AirFresh Connect
+          </a>
         </div>
         
         <div className="flex justify-center space-x-6 mb-8">
@@ -113,7 +122,16 @@ export default function Footer() {
         </div>
         
         <div className="border-t border-gray-700 pt-8">
-          <p className="text-sm text-gray-400">Airfreshmarketing contact submit to hubspot code</p>
+          <a 
+            href="https://airfreshconnect.com" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="inline-block mb-4 text-green-400 hover:text-green-300 font-medium transition-colors"
+            data-testid="link-looking-for-work-footer-bottom"
+          >
+            💼 Join Our Team at AirFresh Connect
+          </a>
+          <p className="text-sm text-gray-400">© 2024 AirFresh Marketing. All rights reserved.</p>
         </div>
       </div>
     </footer>

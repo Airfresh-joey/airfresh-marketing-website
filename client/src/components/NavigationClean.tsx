@@ -48,6 +48,15 @@ export default function NavigationClean() {
                 {link.label}
               </Link>
             ))}
+            <a 
+              href="https://airfreshconnect.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white font-medium rounded-md px-4 py-2 transition-colors"
+              data-testid="button-looking-for-work-header"
+            >
+              Looking for Work?
+            </a>
             <Button 
               asChild 
               className="bg-primary hover:bg-primary/90 text-white rounded-md px-4 py-2"
@@ -90,7 +99,16 @@ export default function NavigationClean() {
                 {link.label}
               </Link>
             ))}
-            <div className="px-3 py-2">
+            <div className="px-3 py-2 space-y-2">
+              <a 
+                href="https://airfreshconnect.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="block w-full text-center bg-green-600 hover:bg-green-700 text-white font-medium rounded-md px-4 py-2 transition-colors"
+                data-testid="button-looking-for-work-mobile"
+              >
+                Looking for Work?
+              </a>
               <Button 
                 asChild 
                 className="w-full bg-primary hover:bg-primary/90 text-white rounded-md"

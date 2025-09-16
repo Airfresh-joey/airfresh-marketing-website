@@ -93,14 +93,16 @@ export default function Navigation() {
             </Link>
           </div>
 
-          <div className="hidden md:flex items-center">
-            <div className="bg-gray-100 rounded-lg px-4 py-2 mr-4">
-              <input 
-                type="email" 
-                placeholder="Email Address" 
-                className="bg-transparent text-sm placeholder-gray-500 outline-none w-40" 
-              />
-            </div>
+          <div className="hidden md:flex items-center space-x-3">
+            <a 
+              href="https://airfreshconnect.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-green-600 hover:bg-green-700 text-white font-medium px-4 py-2 rounded-md transition-colors"
+              data-testid="button-looking-for-work-header"
+            >
+              Looking for Work?
+            </a>
             <Button asChild className="bg-primary hover:bg-primary/90 text-white">
               <Link href="/contact">Request more information from AirFresh</Link>
             </Button>
@@ -127,6 +129,16 @@ export default function Navigation() {
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
             <Link href="/contact" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Contact</Link>
+            <a 
+              href="https://airfreshconnect.com" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block px-3 py-2 text-green-600 hover:bg-green-50 font-medium"
+              onClick={() => setMobileMenuOpen(false)}
+              data-testid="button-looking-for-work-mobile"
+            >
+              Looking for Work?
+            </a>
           </div>
         </div>
       )}
