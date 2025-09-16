@@ -490,7 +490,7 @@ export default function Home() {
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Our Client Portfolio</h3>
           </div>
           <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/google.com" 
                 alt="Google" 
@@ -498,7 +498,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/adidas.com" 
                 alt="Adidas" 
@@ -506,7 +506,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/microsoft.com" 
                 alt="Microsoft" 
@@ -514,7 +514,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/lyft.com" 
                 alt="Lyft" 
@@ -522,7 +522,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/clifbar.com" 
                 alt="Clif Bar" 
@@ -530,7 +530,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/pepsi.com" 
                 alt="Pepsi" 
@@ -538,7 +538,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/5hourenergy.com" 
                 alt="5-hour Energy" 
@@ -546,7 +546,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/nfl.com" 
                 alt="NFL" 
@@ -554,7 +554,7 @@ export default function Home() {
                 loading="lazy"
               />
             </div>
-            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
               <img 
                 src="https://logo.clearbit.com/nakedjuice.com" 
                 alt="Naked Juice" 
