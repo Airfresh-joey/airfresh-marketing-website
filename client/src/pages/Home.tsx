@@ -489,56 +489,78 @@ export default function Home() {
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">TRUSTED BY LEADING BRANDS</h2>
             <h3 className="text-2xl md:text-3xl font-bold text-gray-900">Our Client Portfolio</h3>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-5 gap-8 items-center">
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-red-500 to-red-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Google</span>
-              </div>
+          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8 items-center">
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/google.com" 
+                alt="Google" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-gray-800 to-black rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">adidas</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/adidas.com" 
+                alt="Adidas" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Microsoft</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/microsoft.com" 
+                alt="Microsoft" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-pink-500 to-pink-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Lyft</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/lyft.com" 
+                alt="Lyft" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-primary/90 to-primary/70 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Meta</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/clifbar.com" 
+                alt="Clif Bar" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-green-600 to-green-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-sm">Clif Bar</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/pepsi.com" 
+                alt="Pepsi" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-primary to-primary/80 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Pepsi</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/5hourenergy.com" 
+                alt="5-hour Energy" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-orange-500 to-orange-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-sm">5-hour</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/nfl.com" 
+                alt="NFL" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-purple-600 to-purple-700 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">NFL</span>
-              </div>
-            </div>
-            <div className="flex justify-center">
-              <div className="w-24 h-16 bg-gradient-to-r from-green-500 to-green-600 rounded-lg flex items-center justify-center shadow-md hover:shadow-lg transition-shadow">
-                <span className="text-white font-bold text-lg">Naked</span>
-              </div>
+            <div className="flex justify-center items-center h-20 grayscale hover:grayscale-0 transition-all duration-300">
+              <img 
+                src="https://logo.clearbit.com/nakedjuice.com" 
+                alt="Naked Juice" 
+                className="max-h-12 w-auto object-contain"
+                loading="lazy"
+              />
             </div>
           </div>
         </div>
