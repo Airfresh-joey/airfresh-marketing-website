@@ -81,7 +81,7 @@ export default function CaseStudyRealDetail() {
             <h1 className="text-3xl font-bold text-gray-900 mb-4">Case Study Not Found</h1>
             <p className="text-gray-600 mb-8">The case study you're looking for doesn't exist.</p>
             <Button asChild>
-              <Link href="/case-studies">
+              <Link href="/projects/case-studies">
                 <ArrowLeft className="h-4 w-4 mr-2" />
                 Back to Case Studies
               </Link>
@@ -147,7 +147,7 @@ export default function CaseStudyRealDetail() {
           <nav className="flex items-center space-x-2 text-sm" data-testid="nav-breadcrumb">
             <Link href="/" className="text-gray-600 hover:text-primary">Home</Link>
             <span className="text-gray-400">/</span>
-            <Link href="/case-studies" className="text-gray-600 hover:text-primary">Case Studies</Link>
+            <Link href="/projects/case-studies" className="text-gray-600 hover:text-primary">Case Studies</Link>
             <span className="text-gray-400">/</span>
             <span className="text-gray-900">{caseStudy.client}</span>
           </nav>

@@ -60,7 +60,7 @@ function Router() {
           <Route path="/notion-blog/:slug" component={NotionBlogPost} />
           <Route path="/notion-gallery" component={NotionGalleryPage} />
           <Route path="/city/:cityName" component={CityPage} />
-          <Route path="/portfolio">{() => <Redirect to="/case-studies" />}</Route>
+          <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
           <Route path="/case-studies" component={CaseStudiesReal} />
           <Route path="/case-studies/:slug" component={CaseStudyRealDetail} />
           <Route path="/projects/case-studies" component={EnhancedCaseStudies} />
