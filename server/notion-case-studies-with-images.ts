@@ -1,4 +1,5 @@
 import { Client } from "@notionhq/client";
+import { googleDriveService } from "./services/google-drive";
 
 // Initialize Notion client only if secret is available
 const notion = process.env.NOTION_INTEGRATION_SECRET 
@@ -181,7 +182,7 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
         
         // Process Google Drive links for images
         const has_real_assets = !!(assets_folder || google_drive_folder);
-        const google_drive_images = extractGoogleDriveImages(assets_folder || google_drive_folder);
+        const google_drive_images = await extractGoogleDriveImages(assets_folder || google_drive_folder, client);
         
         // Create image URL - will check object storage first, then use stock photos as fallback
         // Object storage path format: /public-objects/case-studies/{client-slug}.jpg
@@ -219,36 +220,27 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
     }
 }
 
-function extractGoogleDriveImages(googleDriveFolderUrl: string): string[] {
+async function extractGoogleDriveImages(googleDriveFolderUrl: string, clientName?: string): Promise<string[]> {
     if (!googleDriveFolderUrl || !googleDriveFolderUrl.includes('drive.google.com')) {
         return [];
     }
     
-    // Extract folder ID from Google Drive URL
-    const folderIdMatch = googleDriveFolderUrl.match(/folders\/([a-zA-Z0-9-_]+)/);
-    if (!folderIdMatch) {
+    try {
+        // Use the Google Drive service to get actual image URLs from the folder
+        // Pass client name for better fallback images
+        const imageUrls = await googleDriveService.getImageUrlsFromFolder(googleDriveFolderUrl, 4, clientName);
+        
+        if (imageUrls.length > 0) {
+            console.log(`Extracted ${imageUrls.length} image URLs from Google Drive folder: ${googleDriveFolderUrl.match(/folders\/([a-zA-Z0-9-_]+)/)?.[1]}`);
+            return imageUrls;
+        }
+        
+        // If no images found, return empty array
+        return [];
+    } catch (error) {
+        console.error('Error extracting Google Drive images:', error);
         return [];
     }
-    
-    const folderId = folderIdMatch[1];
-    
-    // Create Google Drive image URLs that can be displayed directly
-    const imageUrls = [
-        // Use Google Drive's embedded folder preview as main image
-        `https://drive.google.com/uc?export=view&id=${folderId}`,
-        
-        // Alternative format for thumbnail
-        `https://drive.google.com/thumbnail?id=${folderId}&sz=w800-h600-c`,
-        
-        // Folder preview format
-        `https://lh3.googleusercontent.com/d/${folderId}=w800-h600-no`,
-        
-        // Direct folder view for fallback
-        googleDriveFolderUrl
-    ];
-    
-    console.log(`Extracted ${imageUrls.length} image URLs from Google Drive folder: ${folderId}`);
-    return imageUrls;
 }
 
 function createBasicCaseStudyWithImages(pageId: string, title: string): CaseStudyWithImages {
