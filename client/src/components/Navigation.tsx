@@ -39,7 +39,7 @@ export default function Navigation() {
               </DropdownMenuTrigger>
               <DropdownMenuContent>
                 <DropdownMenuItem>
-                  <Link href="/projects/case-studies">Case Studies</Link>
+                  <Link href="/case-studies">Case Studies</Link>
                 </DropdownMenuItem>
                 <DropdownMenuItem>
                   <Link href="/projects/brand-activations">Brand Activations</Link>
