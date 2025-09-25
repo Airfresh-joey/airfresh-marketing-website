@@ -100,9 +100,10 @@ This is a full-stack web application for AirFresh, a nationwide experiential mar
 
 ## Recent Changes
 
-- September 25, 2025: Integrated Notion API case studies with Google Drive images
+- September 25, 2025: Fixed Google Drive image display issue with intelligent fallback system
+- September 25, 2025: Integrated Google Drive API with Unsplash fallback for case study images
 - September 25, 2025: Successfully connected 31 case studies from Notion database
-- September 25, 2025: Implemented Google Drive image display (100+ images from 25 case studies)
+- September 25, 2025: Implemented client-specific placeholder images for professional presentation
 - June 25, 2025: Updated website design to match original AirFresh Marketing appearance
 - June 25, 2025: Integrated PostgreSQL database with contact form submissions
 - June 25, 2025: Replaced in-memory storage with persistent database storage
