@@ -20,6 +20,13 @@ export function GoogleDriveImage({
   const [isLoading, setIsLoading] = useState(true);
   const [hasError, setHasError] = useState(false);
   const [imageUrls] = useState<string[]>(() => {
+    // Check if this is already a direct image URL (e.g., from Unsplash or other sources)
+    if (src.includes('unsplash.com') || src.includes('images.pexels.com') || 
+        src.startsWith('http') && !src.includes('drive.google.com')) {
+      // It's already a direct image URL, use it as-is
+      return [src, fallbackSrc].filter(Boolean) as string[];
+    }
+    
     // Extract folder ID from Google Drive URL
     const folderIdMatch = src.match(/folders\/([a-zA-Z0-9-_]+)/);
     const directIdMatch = src.match(/[?&]id=([a-zA-Z0-9-_]+)/);
