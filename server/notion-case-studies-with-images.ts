@@ -184,10 +184,11 @@ async function fetchSpecificCaseStudyWithImages(pageId: string, title: string): 
         const has_real_assets = !!(assets_folder || google_drive_folder);
         const google_drive_images = await extractGoogleDriveImages(assets_folder || google_drive_folder, client);
         
-        // Create image URL - will check object storage first, then use stock photos as fallback
-        // Object storage path format: /public-objects/case-studies/{client-slug}.jpg
-        const clientSlug = client.toLowerCase().replace(/[^a-z0-9]+/g, '-');
-        const image_url = `/public-objects/case-studies/${clientSlug}.jpg`;
+        // Use the first Google Drive image (which may be an Unsplash fallback) as the main image URL
+        // If no images available, use a default Unsplash image
+        const image_url = google_drive_images.length > 0 
+            ? google_drive_images[0] 
+            : 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80';
         
         const caseStudy: CaseStudyWithImages = {
             id: pageId,
@@ -245,6 +246,7 @@ async function extractGoogleDriveImages(googleDriveFolderUrl: string, clientName
 
 function createBasicCaseStudyWithImages(pageId: string, title: string): CaseStudyWithImages {
     const client = title.split('(')[0].trim();
+    const fallbackImage = getClientSpecificImage(client, 'Marketing', 'Brand Activation');
     
     return {
         id: pageId,
@@ -261,7 +263,7 @@ function createBasicCaseStudyWithImages(pageId: string, title: string): CaseStud
         google_drive_folder: '',
         assets_folder: '',
         notion_url: `https://www.notion.so/${pageId.replace(/-/g, '')}`,
-        image_url: getClientSpecificImage(client, 'Marketing', 'Brand Activation'),
+        image_url: fallbackImage,
         has_real_assets: false,
         google_drive_images: [],
         date: new Date().toISOString().split('T')[0],
