@@ -84,11 +84,11 @@ export default function NotionCaseStudies() {
   return (
     <div className="pt-16">
       <SEO
-        title="Notion Case Studies Portfolio | Real Client Campaign Results"
-        description="Explore our real case studies with Google Drive assets showcasing successful brand activations, product sampling, and experiential marketing campaigns."
-        keywords="notion case studies, real campaign results, google drive assets, brand activation portfolio, experiential marketing case studies"
+        title="Case Studies Portfolio | Real Client Campaign Results"
+        description="Explore our real case studies showcasing successful brand activations, product sampling, and experiential marketing campaigns with actual client assets."
+        keywords="case studies, real campaign results, client assets, brand activation portfolio, experiential marketing case studies"
         pageType="case-studies"
-        canonical="https://airfreshmarketing.com/notion-case-studies"
+        canonical="https://airfreshmarketing.com/case-studies"
         structuredData={structuredData}
       />
 
@@ -97,11 +97,11 @@ export default function NotionCaseStudies() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-12">
             <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-6" data-testid="text-page-title">
-              Notion <span className="text-primary">Case Studies</span> Portfolio
+              <span className="text-primary">Case Studies</span> Portfolio
             </h1>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto" data-testid="text-page-description">
-              Real campaign results directly from our Notion database. Explore detailed case studies 
-              with actual client assets, Google Drive images, and comprehensive campaign deliverables.
+              Real campaign results showcasing our successful brand activations. Explore detailed case studies 
+              with actual client assets, campaign imagery, and comprehensive deliverables.
             </p>
           </div>
 
