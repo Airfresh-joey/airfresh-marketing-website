@@ -141,7 +141,7 @@ export default function Contact() {
                 <span className="mr-1.5">💼</span>
                 Looking for Work
               </a>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+              <Button asChild size="lg" variant="outline" className="text-primary border-primary bg-white hover:bg-primary hover:text-white hover:border-primary">
                 <a href="tel:+13037206060">Call Now: 303-720-6060</a>
               </Button>
             </div>
@@ -354,7 +354,7 @@ export default function Contact() {
             <Button asChild size="lg" variant="secondary">
               <Link href="#contact-form">Send Us a Message</Link>
             </Button>
-            <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
+            <Button asChild size="lg" variant="outline" className="text-primary border-primary bg-white hover:bg-primary hover:text-white hover:border-primary">
               <a href="tel:+13037206060">Call: 303-720-6060</a>
             </Button>
           </div>
