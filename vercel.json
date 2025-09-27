@@ -1,16 +1,22 @@
 {
   "buildCommand": "npm run build",
-  "outputDirectory": ".",
+  "outputDirectory": "dist/public",
   "installCommand": "npm install",
+  "framework": null,
   "functions": {
     "api/index.js": {
-      "maxDuration": 30
+      "maxDuration": 30,
+      "runtime": "nodejs20.x"
     }
   },
   "rewrites": [
     {
-      "source": "/(.*)",
+      "source": "/api/(.*)",
       "destination": "/api"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/$1"
     }
   ]
 }
