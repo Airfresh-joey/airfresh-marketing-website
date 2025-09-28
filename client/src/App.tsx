@@ -68,8 +68,8 @@ function Router() {
           <Route path="/city/:cityName" component={CityPage} />
           <Route path="/portfolio" component={PortfolioEnhanced} />
           <Route path="/portfolio/:id" component={PortfolioCaseStudyDetail} />
-          <Route path="/case-studies" component={NotionCaseStudies} />
-          <Route path="/case-studies/:id" component={NotionCaseStudyDetail} />
+          <Route path="/case-studies" component={PortfolioEnhanced} />
+          <Route path="/case-studies/:id" component={PortfolioCaseStudyDetail} />
           <Route path="/projects/case-studies">{() => <Redirect to="/case-studies" />}</Route>
           <Route path="/projects/case-studies/:id" component={EnhancedCaseStudyDetail} />
           <Route path="/projects/case-studies-original" component={CaseStudies} />
