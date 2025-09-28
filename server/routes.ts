@@ -40,13 +40,14 @@ import {
   getTargetingCategories, 
   getAllTargetingData 
 } from "./targeting-data";
-import { 
-  extractBlogContent, 
-  extractCaseStudyContent, 
+import {
+  extractBlogContent,
+  extractCaseStudyContent,
   generateLinkedInPost,
   generateInstagramCarousel,
   generateVideoScript
 } from "./content-repurpose";
+import { handlePortfolioCaseStudies, handleSingleCaseStudy } from "./portfolio-case-studies";
 import { 
   generatePressRelease,
   generateOutreachEmail,
@@ -294,6 +295,10 @@ export async function registerRoutes(app: Express): Promise<Server> {
       res.status(500).json({ message: "Internal server error" });
     }
   });
+
+  // Portfolio API Routes - Complete case studies from CSV
+  app.get("/api/portfolio/case-studies", handlePortfolioCaseStudies);
+  app.get("/api/portfolio/case-studies/:id", handleSingleCaseStudy);
 
   // Get all case studies from Notion
   app.get("/api/case-studies", async (req, res) => {

@@ -41,6 +41,8 @@ import ContentCalendar from "@/pages/ContentCalendar";
 import AdminDashboard from "@/pages/AdminDashboard";
 import NotionCaseStudies from "@/pages/NotionCaseStudies";
 import NotionCaseStudyDetail from "@/pages/NotionCaseStudyDetail";
+import PortfolioEnhanced from "@/pages/PortfolioEnhanced";
+import PortfolioCaseStudyDetail from "@/pages/PortfolioCaseStudyDetail";
 
 function Router() {
   return (
@@ -64,7 +66,8 @@ function Router() {
           <Route path="/notion-case-studies" component={NotionCaseStudies} />
           <Route path="/notion-case-studies/:id" component={NotionCaseStudyDetail} />
           <Route path="/city/:cityName" component={CityPage} />
-          <Route path="/portfolio">{() => <Redirect to="/projects/case-studies" />}</Route>
+          <Route path="/portfolio" component={PortfolioEnhanced} />
+          <Route path="/portfolio/:id" component={PortfolioCaseStudyDetail} />
           <Route path="/case-studies" component={NotionCaseStudies} />
           <Route path="/case-studies/:id" component={NotionCaseStudyDetail} />
           <Route path="/projects/case-studies">{() => <Redirect to="/case-studies" />}</Route>
