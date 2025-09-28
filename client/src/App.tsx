@@ -14,6 +14,7 @@ import Blog from "@/pages/Blog";
 import BlogPostDetail from "@/pages/BlogPostDetail";
 import BlogEditor from "@/pages/BlogEditor";
 import CityPage from "@/pages/CityPage";
+import CityServicePage from "@/pages/CityServicePage";
 import CaseStudies from "@/pages/CaseStudies";
 import CaseStudyDetail from "@/pages/CaseStudyDetail";
 import EnhancedCaseStudies from "@/pages/EnhancedCaseStudies";
@@ -44,6 +45,9 @@ import NotionCaseStudyDetail from "@/pages/NotionCaseStudyDetail";
 import PortfolioEnhanced from "@/pages/PortfolioEnhanced";
 import PortfolioCaseStudyDetail from "@/pages/PortfolioCaseStudyDetail";
 import ScrollToTop from "@/components/ScrollToTop";
+import BrandAmbassadors from "@/pages/services/BrandAmbassadors";
+import StreetTeams from "@/pages/services/StreetTeams";
+import ExperientialMarketingService from "@/pages/services/ExperientialMarketing";
 
 function Router() {
   return (
@@ -55,7 +59,9 @@ function Router() {
           <Route path="/" component={Home} />
           <Route path="/about" component={About} />
           <Route path="/services" component={Services} />
-          <Route path="/services/experiential-marketing" component={ExperientialMarketing} />
+          <Route path="/services/brand-ambassadors" component={BrandAmbassadors} />
+          <Route path="/services/street-teams" component={StreetTeams} />
+          <Route path="/services/experiential-marketing" component={ExperientialMarketingService} />
           <Route path="/services/brand-strategy" component={BrandStrategy} />
           <Route path="/services/event-production" component={EventProduction} />
           <Route path="/contact" component={Contact} />
@@ -68,6 +74,7 @@ function Router() {
           <Route path="/notion-case-studies" component={NotionCaseStudies} />
           <Route path="/notion-case-studies/:id" component={NotionCaseStudyDetail} />
           <Route path="/city/:cityName" component={CityPage} />
+          <Route path="/city-services/:slug" component={CityServicePage} />
           <Route path="/portfolio" component={PortfolioEnhanced} />
           <Route path="/portfolio/:id" component={PortfolioCaseStudyDetail} />
           <Route path="/case-studies" component={PortfolioEnhanced} />

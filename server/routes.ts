@@ -27,6 +27,16 @@ import { generateGMBCSV, generateSupplementaryData } from "./gmb-csv-generator";
 import multer from "multer";
 import path from "path";
 import { getCityByName, getAllCities } from "./city-data";
+import {
+  getServiceBySlug,
+  generateCityServiceContent,
+  parseCityServiceSlug,
+  serviceTypes
+} from "./city-services-data";
+import {
+  getCityImages,
+  getServiceImage
+} from "./city-images-data";
 import { 
   enhancedCaseStudies, 
   getEnhancedCaseStudyById, 
@@ -687,10 +697,82 @@ export async function registerRoutes(app: Express): Promise<Server> {
       if (!city) {
         return res.status(404).json({ message: "City not found" });
       }
-      res.json(city);
+
+      // Add city images to the response
+      const citySlug = req.params.cityName.toLowerCase();
+      const images = getCityImages(citySlug);
+
+      res.json({
+        ...city,
+        images
+      });
     } catch (error) {
       console.error('Error fetching city:', error);
       res.status(500).json({ message: 'Failed to fetch city data' });
+    }
+  });
+
+  // Get all city-service combinations
+  app.get("/api/city-services", async (req, res) => {
+    try {
+      const cities = getAllCities();
+      const combinations = [];
+
+      cities.forEach(city => {
+        serviceTypes.forEach(service => {
+          combinations.push({
+            slug: `${city.city.toLowerCase().replace(/\s+/g, '-')}-${service.slug}`,
+            cityName: city.city,
+            serviceName: service.name
+          });
+        });
+      });
+
+      res.json(combinations);
+    } catch (error) {
+      console.error('Error fetching city-services:', error);
+      res.status(500).json({ message: 'Failed to fetch city-services data' });
+    }
+  });
+
+  // Get specific city-service page data
+  app.get("/api/city-services/:slug", async (req, res) => {
+    try {
+      const slug = req.params.slug;
+      const parsed = parseCityServiceSlug(slug);
+
+      if (!parsed) {
+        return res.status(404).json({ message: "Invalid city-service URL" });
+      }
+
+      const city = getCityByName(parsed.citySlug);
+      const service = getServiceBySlug(parsed.serviceSlug);
+
+      if (!city || !service) {
+        return res.status(404).json({ message: "City or service not found" });
+      }
+
+      const content = generateCityServiceContent(city.city, city.state, service);
+
+      // Get images for this city and service
+      const cityImages = getCityImages(parsed.citySlug);
+      const serviceImage = getServiceImage(parsed.serviceSlug);
+
+      res.json({
+        ...content,
+        cityName: city.city,
+        stateName: city.state,
+        serviceName: service.name,
+        serviceSlug: service.slug,
+        citySlug: parsed.citySlug,
+        images: {
+          city: cityImages,
+          service: serviceImage
+        }
+      });
+    } catch (error) {
+      console.error('Error fetching city-service:', error);
+      res.status(500).json({ message: 'Failed to fetch city-service data' });
     }
   });
 

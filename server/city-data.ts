@@ -502,17 +502,112 @@ export const cityLocations: CityLocation[] = [
   }
 ];
 
-// Helper function to get city by name
-export function getCityByName(cityName: string): CityLocation | undefined {
-  return cityLocations.find(city => 
-    city.city.toLowerCase() === cityName.toLowerCase() ||
-    city.city.toLowerCase().includes(cityName.toLowerCase())
+// Import cities data
+import { cities as citiesData, CityData } from './cities-data';
+
+// Helper function to create a CityLocation from CityData
+function createCityLocationFromData(cityData: CityData): CityLocation {
+  const stateAbbreviation = getStateAbbreviation(cityData.state);
+  return {
+    storeCode: `AIRFRESH-${cityData.slug.toUpperCase()}`,
+    businessName: `AirFresh Marketing - ${cityData.city}`,
+    address: "Contact for local address",
+    city: cityData.city,
+    state: stateAbbreviation,
+    zip: "00000",
+    phone: "(303) 720-6060",
+    latitude: cityData.coordinates?.lat || 0,
+    longitude: cityData.coordinates?.lng || 0,
+    primaryCategory: "Marketing Agency",
+    additionalCategories: ["Event Management Company", "Brand Marketing Consultant", "Advertising Agency"],
+    website: `https://airfreshmarketing.com/city/${cityData.slug}`,
+    description: `AirFresh Marketing ${cityData.city} specializes in experiential marketing, brand activations, and event staffing throughout ${cityData.city} and the surrounding area. We create unforgettable brand experiences tailored to the local market.`,
+    openingHours: {
+      monday: "09:00-18:00",
+      tuesday: "09:00-18:00",
+      wednesday: "09:00-18:00",
+      thursday: "09:00-18:00",
+      friday: "09:00-18:00",
+      saturday: "Closed",
+      sunday: "Closed"
+    },
+    services: [
+      "Brand Activations",
+      "Experiential Marketing",
+      "Event Staffing",
+      "Product Launches",
+      "Corporate Events",
+      "Promotional Campaigns",
+      "Pop-up Experiences",
+      "Street Marketing"
+    ],
+    serviceAreas: [`${cityData.city} Metro Area`],
+    attributes: ["Identifies as women-owned", "Local market expertise", "Full-service agency"],
+    photos: [],
+    localUpdates: [
+      `Serving ${cityData.city} with innovative experiential marketing`,
+      "Over 20 years of brand activation experience",
+      "Trusted by 300+ national brands"
+    ]
+  };
+}
+
+// Helper function to get state abbreviation
+function getStateAbbreviation(stateName: string): string {
+  const stateAbbreviations: { [key: string]: string } = {
+    "Alabama": "AL", "Alaska": "AK", "Arizona": "AZ", "Arkansas": "AR", "California": "CA",
+    "Colorado": "CO", "Connecticut": "CT", "Delaware": "DE", "Florida": "FL", "Georgia": "GA",
+    "Hawaii": "HI", "Idaho": "ID", "Illinois": "IL", "Indiana": "IN", "Iowa": "IA",
+    "Kansas": "KS", "Kentucky": "KY", "Louisiana": "LA", "Maine": "ME", "Maryland": "MD",
+    "Massachusetts": "MA", "Michigan": "MI", "Minnesota": "MN", "Mississippi": "MS", "Missouri": "MO",
+    "Montana": "MT", "Nebraska": "NE", "Nevada": "NV", "New Hampshire": "NH", "New Jersey": "NJ",
+    "New Mexico": "NM", "New York": "NY", "North Carolina": "NC", "North Dakota": "ND", "Ohio": "OH",
+    "Oklahoma": "OK", "Oregon": "OR", "Pennsylvania": "PA", "Rhode Island": "RI", "South Carolina": "SC",
+    "South Dakota": "SD", "Tennessee": "TN", "Texas": "TX", "Utah": "UT", "Vermont": "VT",
+    "Virginia": "VA", "Washington": "WA", "West Virginia": "WV", "Wisconsin": "WI", "Wyoming": "WY",
+    "DC": "DC"
+  };
+  return stateAbbreviations[stateName] || stateName;
+}
+
+// Helper function to get city by name or slug
+export function getCityByName(cityNameOrSlug: string): CityLocation | undefined {
+  // First check if it's in our detailed city locations
+  const detailedCity = cityLocations.find(city =>
+    city.city.toLowerCase() === cityNameOrSlug.toLowerCase() ||
+    city.city.toLowerCase().includes(cityNameOrSlug.toLowerCase()) ||
+    city.city.toLowerCase().replace(/\s+/g, '-') === cityNameOrSlug.toLowerCase()
   );
+
+  if (detailedCity) {
+    return detailedCity;
+  }
+
+  // Then check the comprehensive cities data by slug or name
+  const cityData = citiesData.find(city =>
+    city.slug === cityNameOrSlug.toLowerCase() ||
+    city.city.toLowerCase() === cityNameOrSlug.toLowerCase() ||
+    city.city.toLowerCase().replace(/\s+/g, '-') === cityNameOrSlug.toLowerCase()
+  );
+
+  if (cityData) {
+    return createCityLocationFromData(cityData);
+  }
+
+  return undefined;
 }
 
 // Helper function to get all cities
 export function getAllCities(): CityLocation[] {
-  return cityLocations;
+  // Combine detailed locations with generated locations from cities data
+  const detailedCityNames = new Set(cityLocations.map(city => city.city.toLowerCase()));
+
+  // Add cities from citiesData that aren't already in cityLocations
+  const additionalCities = citiesData
+    .filter(city => !detailedCityNames.has(city.city.toLowerCase()))
+    .map(cityData => createCityLocationFromData(cityData));
+
+  return [...cityLocations, ...additionalCities];
 }
 
 // Helper function to format phone for display

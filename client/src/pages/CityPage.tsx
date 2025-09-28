@@ -49,13 +49,28 @@ export default function CityPage() {
 
   return (
     <div className="pt-16">
-      {/* Hero Section */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h1 className="text-4xl md:text-6xl font-bold mb-8 text-gray-900">
+      {/* Hero Section with City Image */}
+      <section
+        className="relative py-32 bg-cover bg-center"
+        style={{
+          backgroundImage: cityData?.images?.hero
+            ? `linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(${cityData.images.hero})`
+            : 'linear-gradient(135deg, #667eea 0%, #764ba2 100%)'
+        }}
+      >
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 text-white">
+          <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-lg">
             Experiential Marketing in {displayName}
           </h1>
-          
+          <p className="text-xl md:text-2xl text-white/90 max-w-3xl drop-shadow">
+            {cityData?.description || `AirFresh Marketing brings nationwide experiential marketing expertise to ${displayName}. We create unforgettable brand experiences that connect with local audiences and drive meaningful engagement.`}
+          </p>
+        </div>
+      </section>
+
+      {/* Main Content Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Location Info Card */}
           {cityData && (
             <Card className="mb-8 border-cyan-200">
