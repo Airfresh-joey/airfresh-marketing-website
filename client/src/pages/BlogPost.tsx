@@ -36,9 +36,18 @@ export default function BlogPost() {
   // Find the blog post
   const post = blogPosts.find(p => p.slug === slug);
 
-  // Related posts (same category or random)
+  // Related posts (same category, or first 3 other posts)
   const relatedPosts = blogPosts
-    .filter(p => p.slug !== slug && (p.category === post?.category || Math.random() > 0.7))
+    .filter(p => p.slug !== slug)
+    .sort((a, b) => {
+      // Prioritize same category
+      if (post) {
+        const aMatch = a.category === post.category ? 1 : 0;
+        const bMatch = b.category === post.category ? 1 : 0;
+        return bMatch - aMatch;
+      }
+      return 0;
+    })
     .slice(0, 3);
 
   // Handle scroll progress

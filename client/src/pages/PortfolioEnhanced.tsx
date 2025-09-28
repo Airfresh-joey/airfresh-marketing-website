@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
@@ -6,7 +6,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Tabs, TabsList, TabsTrigger } from "@/components/ui/tabs";
-import { useQuery } from "@tanstack/react-query";
+import { portfolioCaseStudies, type CaseStudy } from "@/data/portfolioCaseStudies";
 import {
   ChevronRight,
   MapPin,
@@ -26,23 +26,6 @@ import {
   Briefcase,
   Phone
 } from "lucide-react";
-
-interface CaseStudy {
-  id: string;
-  name: string;
-  tagline: string;
-  description: string;
-  industry?: string;
-  services: string[];
-  markets?: string[];
-  date?: string;
-  googleDriveUrl?: string;
-  stats: Record<string, string>;
-  category: string;
-  featured?: boolean;
-  heroImage?: string;
-  images?: string[];
-}
 
 // Generate placeholder images based on industry/category
 const getPlaceholderImage = (study: CaseStudy, index: number = 0): string => {
@@ -127,20 +110,8 @@ export default function PortfolioEnhanced() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
-  // Fetch case studies from API
-  const { data: caseStudiesResponse, isLoading, error } = useQuery({
-    queryKey: ["portfolio-case-studies"],
-    queryFn: async () => {
-      const response = await fetch("/api/portfolio/case-studies");
-      if (!response.ok) {
-        throw new Error("Failed to fetch case studies");
-      }
-      const result = await response.json();
-      return result.data || [];
-    }
-  });
-
-  const caseStudies = caseStudiesResponse || [];
+  // Use static case studies data
+  const caseStudies = portfolioCaseStudies;
   const categories = getCategories(caseStudies);
 
   const filteredStudies = selectedCategory === "All"
@@ -157,17 +128,6 @@ export default function PortfolioEnhanced() {
     industries: new Set(caseStudies.map((s: CaseStudy) => s.industry).filter(Boolean)).size,
     featured: featuredStudies.length
   };
-
-  if (error) {
-    return (
-      <div className="min-h-screen flex items-center justify-center">
-        <div className="text-center">
-          <h2 className="text-2xl font-bold text-red-600 mb-4">Error Loading Portfolio</h2>
-          <p className="text-gray-600">Unable to load case studies. Please try again later.</p>
-        </div>
-      </div>
-    );
-  }
 
   return (
     <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white">
@@ -376,29 +336,13 @@ export default function PortfolioEnhanced() {
       {/* Case Studies Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <AnimatePresence mode="wait">
-          {isLoading ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="animate-pulse">
-                  <div className="bg-gray-200 rounded-2xl h-64 mb-4" />
-                  <div className="bg-gray-200 rounded h-4 w-3/4 mb-2" />
-                  <div className="bg-gray-200 rounded h-4 w-1/2" />
-                </div>
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {filteredStudies.map((study: CaseStudy, index: number) => (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+          >
+            {filteredStudies.map((study: CaseStudy, index: number) => (
                 <motion.div
                   key={study.id}
                   initial={{ opacity: 0, y: 20 }}
@@ -504,7 +448,6 @@ export default function PortfolioEnhanced() {
                 </motion.div>
               ))}
             </motion.div>
-          )}
         </AnimatePresence>
       </section>
 
