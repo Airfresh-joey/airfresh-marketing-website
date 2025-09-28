@@ -13,11 +13,18 @@ export interface GoogleDriveFile {
 export class GoogleDriveService {
   private driveClient: any;
   private apiKey: string | undefined;
-  
+  private initialized: boolean = false;
+
   constructor() {
+    // Initialization will happen lazily on first use
+  }
+
+  private initialize() {
+    if (this.initialized) return;
+
     // Try to get API key from environment variable
     this.apiKey = process.env.GOOGLE_DRIVE_API_KEY;
-    
+
     if (this.apiKey) {
       console.log('Google Drive API key found, initializing client...');
       this.driveClient = drive.drive({
@@ -27,6 +34,8 @@ export class GoogleDriveService {
     } else {
       console.log('No Google Drive API key found. Set GOOGLE_DRIVE_API_KEY environment variable for full functionality.');
     }
+
+    this.initialized = true;
   }
 
   /**
@@ -45,6 +54,7 @@ export class GoogleDriveService {
    * List image files in a Google Drive folder
    */
   async listImagesInFolder(folderUrl: string, clientName?: string): Promise<GoogleDriveFile[]> {
+    this.initialize();
     const folderId = this.extractFolderId(folderUrl);
     
     if (!folderId) {
@@ -141,6 +151,7 @@ export class GoogleDriveService {
    * Get viewable URLs for images from a Google Drive folder
    */
   async getImageUrlsFromFolder(folderUrl: string, limit: number = 4, clientName?: string): Promise<string[]> {
+    this.initialize();
     const images = await this.listImagesInFolder(folderUrl, clientName);
     
     // Return direct links for the first N images
@@ -151,6 +162,7 @@ export class GoogleDriveService {
    * Get a single representative image from a folder (for thumbnail)
    */
   async getThumbnailFromFolder(folderUrl: string, clientName?: string): Promise<string | null> {
+    this.initialize();
     const images = await this.listImagesInFolder(folderUrl, clientName);
     return images.length > 0 ? images[0].directLink : null;
   }
