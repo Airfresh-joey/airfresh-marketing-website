@@ -69,7 +69,7 @@ export default function HeroAgencyVideo() {
       
       {/* Video Background - Desktop only */}
       {!isMobile && !shouldReduceMotion && (
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
           <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
             <iframe
               src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1#t=12s"
@@ -83,13 +83,16 @@ export default function HeroAgencyVideo() {
             />
           </div>
           
-          {/* Loading overlay */}
+          {/* Loading overlay with gradient background */}
           <motion.div
-            className="absolute inset-0 bg-gray-900"
+            className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
             initial={{ opacity: 1 }}
             animate={{ opacity: videoLoaded ? 0 : 1 }}
             transition={{ duration: 1 }}
-          />
+          >
+            {/* Optional: Add a subtle animation while loading */}
+            <div className="absolute inset-0 bg-black/20" />
+          </motion.div>
         </div>
       )}
 
