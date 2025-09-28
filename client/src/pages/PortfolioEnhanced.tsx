@@ -131,7 +131,7 @@ export default function PortfolioEnhanced() {
   const { data: caseStudiesResponse, isLoading, error } = useQuery({
     queryKey: ["portfolio-case-studies"],
     queryFn: async () => {
-      const response = await fetch("/api/portfolio/case-studies");
+      const response = await fetch("/api/portfolio-case-studies");
       if (!response.ok) {
         throw new Error("Failed to fetch case studies");
       }

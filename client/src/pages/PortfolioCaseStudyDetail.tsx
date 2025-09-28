@@ -190,7 +190,7 @@ export default function PortfolioCaseStudyDetail() {
   const { data: caseStudy, isLoading, error } = useQuery({
     queryKey: ["portfolio-case-study", id],
     queryFn: async () => {
-      const response = await fetch(`/api/portfolio/case-studies/${id}`);
+      const response = await fetch(`/api/portfolio-case-studies/${id}`);
       if (!response.ok) {
         throw new Error("Failed to fetch case study");
       }
