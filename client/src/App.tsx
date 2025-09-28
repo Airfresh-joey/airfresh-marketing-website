@@ -11,6 +11,7 @@ import About from "@/pages/About";
 import Services from "@/pages/Services";
 import Contact from "@/pages/Contact";
 import Blog from "@/pages/Blog";
+import BlogPost from "@/pages/BlogPost";
 import BlogPostDetail from "@/pages/BlogPostDetail";
 import BlogEditor from "@/pages/BlogEditor";
 import CityPage from "@/pages/CityPage";
@@ -67,7 +68,7 @@ function Router() {
           <Route path="/contact" component={Contact} />
           <Route path="/blog" component={Blog} />
           <Route path="/blog/editor" component={BlogEditor} />
-          <Route path="/blog/:slug" component={BlogPostDetail} />
+          <Route path="/blog/:slug" component={BlogPost} />
           <Route path="/notion-blog" component={NotionBlog} />
           <Route path="/notion-blog/:slug" component={NotionBlogPost} />
           <Route path="/notion-gallery" component={NotionGalleryPage} />

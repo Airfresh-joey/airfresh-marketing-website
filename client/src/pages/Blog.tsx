@@ -1,426 +1,366 @@
-import { Card, CardContent } from "@/components/ui/card";
-import { Button } from "@/components/ui/button";
+import { useState, useMemo } from "react";
 import { Link } from "wouter";
+import { motion, AnimatePresence } from "framer-motion";
 import SEO from "@/components/SEO";
-import { 
-  Calendar, 
-  Clock, 
-  User, 
-  ArrowRight, 
-  BookOpen,
+import { blogPosts } from "@/data/blogPosts";
+import {
+  Calendar,
+  Clock,
+  ArrowRight,
+  Search,
+  Filter,
+  Tag,
   TrendingUp,
-  Users,
-  Lightbulb,
-  Target,
-  Award,
-  Zap,
-  Heart,
-  Edit
+  BookOpen,
+  Sparkles,
+  ChevronRight
 } from "lucide-react";
-import LinkedInShare from "@/components/LinkedInShare";
-import LinkedInContentTemplates from "@/components/LinkedInContentTemplates";
-import { useQuery } from "@tanstack/react-query";
-import type { BlogPost } from "@shared/schema";
-import { Skeleton } from "@/components/ui/skeleton";
+import { Badge } from "@/components/ui/badge";
+import { Input } from "@/components/ui/input";
+import { Button } from "@/components/ui/button";
+import { Card, CardContent } from "@/components/ui/card";
 
 export default function Blog() {
-  const { data: posts = [], isLoading } = useQuery<BlogPost[]>({
-    queryKey: ["/api/blog"],
-  });
+  const [searchTerm, setSearchTerm] = useState("");
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [hoveredCard, setHoveredCard] = useState<string | null>(null);
 
-  // Sort posts by date and identify featured
-  const sortedPosts = [...posts].sort((a, b) => 
-    new Date(b.date).getTime() - new Date(a.date).getTime()
-  );
-  const featuredPost = sortedPosts.find(p => p.featured === "true") || sortedPosts[0];
-  const regularPosts = sortedPosts.filter(p => p.id !== featuredPost?.id);
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "Blog",
-    "name": "AirFresh Marketing Blog - Experiential Marketing Insights",
-    "description": "Expert insights on experiential marketing trends, brand activation strategies, event marketing tips, and proven tactics for creating memorable customer experiences",
-    "url": "https://airfreshmarketing.com/blog",
-    "publisher": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing",
-      "logo": "https://airfreshmarketing.com/logo.jpg"
-    },
-    "inLanguage": "en-US",
-    "mainEntityOfPage": {
-      "@type": "WebPage",
-      "@id": "https://airfreshmarketing.com/blog"
-    },
-    "about": [
-      {
-        "@type": "Thing",
-        "name": "Experiential Marketing",
-        "description": "Marketing strategy that directly engages consumers through live experiences"
-      },
-      {
-        "@type": "Thing",
-        "name": "Brand Activation",
-        "description": "Interactive marketing campaigns that promote brands through memorable experiences"
-      }
-    ]
-  };
-  const categoryIcons: Record<string, any> = {
-    "Strategy": Target,
-    "Analytics": TrendingUp,
-    "Psychology": Heart,
-    "Production": Award,
-    "Brand Strategy": Users,
-    "Technology": Zap,
-    "Industry Trends": Lightbulb,
-  };
+  // Get unique categories
+  const categories = useMemo(() => {
+    const cats = new Set(["All"]);
+    blogPosts.forEach(post => cats.add(post.category));
+    return Array.from(cats);
+  }, []);
 
-  const categoryImages: Record<string, string> = {
-    "Strategy": "https://images.unsplash.com/photo-1540575467063-178a50c2df87?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Analytics": "https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Psychology": "https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Production": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Brand Strategy": "https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Technology": "https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-4.0.3&auto=format&fit=crop&w=600&q=80",
-    "Industry Trends": "https://images.unsplash.com/photo-1556761175-b413da4baf72?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80",
-  };
+  // Filter posts based on search and category
+  const filteredPosts = useMemo(() => {
+    return blogPosts.filter(post => {
+      const matchesSearch = post.title.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           post.excerpt.toLowerCase().includes(searchTerm.toLowerCase()) ||
+                           post.tags.some(tag => tag.toLowerCase().includes(searchTerm.toLowerCase()));
+      const matchesCategory = selectedCategory === "All" || post.category === selectedCategory;
+      return matchesSearch && matchesCategory;
+    });
+  }, [searchTerm, selectedCategory]);
 
-  const getReadTime = (content: string) => {
-    const words = content.split(' ').length;
-    return `${Math.ceil(words / 200)} min read`;
-  };
-
-  const categories = [
-    { name: "Industry Trends", count: 12, color: "bg-blue-100 text-blue-800" },
-    { name: "Strategy", count: 8, color: "bg-green-100 text-green-800" },
-    { name: "Analytics", count: 6, color: "bg-purple-100 text-purple-800" },
-    { name: "Psychology", count: 4, color: "bg-pink-100 text-pink-800" },
-    { name: "Production", count: 10, color: "bg-yellow-100 text-yellow-800" },
-    { name: "Technology", count: 5, color: "bg-indigo-100 text-indigo-800" }
-  ];
+  // Get featured post (latest or most important)
+  const featuredPost = blogPosts[0];
 
   return (
-    <div className="pt-16">
-      <SEO 
-        title="Experiential Marketing Blog - Expert Insights & Industry Trends | AirFresh Marketing"
-        description="Get expert insights on experiential marketing trends, brand activation strategies, event marketing tips, and proven tactics for creating memorable customer experiences. Read industry insights from AirFresh Marketing professionals."
-        keywords="experiential marketing blog, brand activation insights, event marketing strategies, promotional marketing tips, customer engagement tactics, experiential advertising trends, marketing industry insights, brand experience articles"
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 via-white to-gray-50">
+      <SEO
+        title="Blog | Air Fresh Marketing Insights & Case Studies"
+        description="Explore expert insights on experiential marketing, street teams, brand ambassadors, and event staffing. Learn from real case studies and industry best practices."
         canonical="https://airfreshmarketing.com/blog"
-        structuredData={structuredData}
       />
+
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div 
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+      <section className="relative min-h-[60vh] flex items-center justify-center overflow-hidden bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900">
+        {/* Animated Background Pattern */}
+        <div className="absolute inset-0 opacity-20">
+          <div className="absolute inset-0" style={{
+            backgroundImage: `radial-gradient(circle at 2px 2px, cyan 1px, transparent 1px)`,
+            backgroundSize: '50px 50px'
+          }} />
+        </div>
+
+        {/* Floating Elements */}
+        <motion.div
+          className="absolute top-20 left-10 text-cyan-400/20"
+          animate={{
+            y: [0, -20, 0],
+            rotate: [0, 5, 0]
           }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
-          <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Blog & <span className="text-yellow-300 italic font-serif">Insights</span>
+          transition={{ duration: 6, repeat: Infinity }}
+        >
+          <BookOpen className="w-24 h-24" />
+        </motion.div>
+
+        <motion.div
+          className="absolute bottom-20 right-10 text-cyan-400/20"
+          animate={{
+            y: [0, 20, 0],
+            rotate: [0, -5, 0]
+          }}
+          transition={{ duration: 7, repeat: Infinity }}
+        >
+          <TrendingUp className="w-32 h-32" />
+        </motion.div>
+
+        {/* Content */}
+        <div className="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+          >
+            <Badge className="mb-6 px-4 py-2 bg-cyan-500/10 text-cyan-400 border-cyan-400/30 text-sm font-semibold">
+              <Sparkles className="w-4 h-4 mr-2" />
+              Marketing Insights & Strategies
+            </Badge>
+
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
+              The Air Fresh
+              <span className="block text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
+                Marketing Blog
+              </span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
-              Stay updated with the latest trends, strategies, and insights in experiential 
-              marketing from our team of industry experts.
+
+            <p className="text-xl md:text-2xl text-gray-300 mb-8 max-w-3xl mx-auto">
+              Expert insights on experiential marketing, street teams, and brand activation strategies that drive real results.
             </p>
-            <div className="flex items-center space-x-4">
-              <BookOpen className="h-6 w-6 text-yellow-300" />
-              <span className="text-lg">Weekly insights from 20+ years of experience</span>
+
+            {/* Search Bar */}
+            <div className="max-w-2xl mx-auto relative">
+              <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400 w-5 h-5" />
+              <Input
+                type="text"
+                placeholder="Search articles, topics, or case studies..."
+                value={searchTerm}
+                onChange={(e) => setSearchTerm(e.target.value)}
+                className="w-full pl-12 pr-4 py-4 text-lg bg-white/10 backdrop-blur-lg border-gray-700 text-white placeholder-gray-400 focus:border-cyan-400"
+              />
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Gradient Overlay */}
+        <div className="absolute bottom-0 left-0 right-0 h-32 bg-gradient-to-t from-gray-50 to-transparent" />
+      </section>
+
+      {/* Category Filter */}
+      <section className="sticky top-16 z-30 bg-white/95 backdrop-blur-md border-b border-gray-100 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center gap-2">
+              <Filter className="w-5 h-5 text-gray-500" />
+              <span className="text-sm font-medium text-gray-600">Filter by category:</span>
+            </div>
+            <div className="flex gap-2 overflow-x-auto">
+              {categories.map((cat) => (
+                <Button
+                  key={cat}
+                  variant={selectedCategory === cat ? "default" : "outline"}
+                  size="sm"
+                  onClick={() => setSelectedCategory(cat)}
+                  className={selectedCategory === cat ? "bg-cyan-500 hover:bg-cyan-600" : ""}
+                >
+                  {cat}
+                  {cat === "All" && (
+                    <span className="ml-2 text-xs opacity-70">
+                      ({blogPosts.length})
+                    </span>
+                  )}
+                </Button>
+              ))}
             </div>
           </div>
         </div>
       </section>
 
-      {/* Categories Section */}
-      <section className="py-12 bg-white border-b">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-8">
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">Explore by Topic</h2>
-          </div>
-          <div className="flex flex-wrap justify-center gap-4">
-            {categories.map((category, index) => (
-              <div 
-                key={index}
-                className={`px-4 py-2 rounded-full text-sm font-medium cursor-pointer transition-all hover:shadow-md ${category.color}`}
-              >
-                {category.name} ({category.count})
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
+      {/* Featured Post */}
+      {selectedCategory === "All" && searchTerm === "" && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <h2 className="text-3xl font-bold mb-8 flex items-center">
+              <TrendingUp className="w-8 h-8 mr-3 text-cyan-500" />
+              Featured Article
+            </h2>
 
-      {/* Featured Article */}
-      {featuredPost && (
-        <section className="py-16 bg-gray-50">
-          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">FEATURED ARTICLE</h2>
-              <h3 className="text-3xl md:text-4xl font-bold text-gray-900">Latest Insights</h3>
-            </div>
-
-            {isLoading ? (
-              <Card className="overflow-hidden">
-                <div className="md:flex">
-                  <Skeleton className="md:w-1/2 h-64 md:h-96" />
-                  <div className="md:w-1/2 p-8 space-y-4">
-                    <Skeleton className="h-6 w-24" />
-                    <Skeleton className="h-8 w-full" />
-                    <Skeleton className="h-4 w-full" />
-                    <Skeleton className="h-4 w-3/4" />
-                    <Skeleton className="h-10 w-32" />
-                  </div>
-                </div>
-              </Card>
-            ) : (
-              <Card className="overflow-hidden hover:shadow-xl transition-all duration-300">
-                <div className="md:flex">
-                  <div className="md:w-1/2">
-                    <img 
-                      src={categoryImages[featuredPost.category] || categoryImages["Industry Trends"]} 
+            <Link href={`/blog/${featuredPost.slug}`}>
+              <div className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer">
+                <div className="grid lg:grid-cols-2 gap-0">
+                  {/* Image */}
+                  <div className="relative h-64 lg:h-full overflow-hidden">
+                    <img
+                      src={featuredPost.image}
                       alt={featuredPost.title}
-                      className="w-full h-64 md:h-full object-cover"
-                      data-testid={`img-featured-${featuredPost.id}`}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                     />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
+                    <Badge className="absolute top-4 left-4 bg-cyan-500 text-white border-0">
+                      Featured
+                    </Badge>
                   </div>
-                  <div className="md:w-1/2 p-8">
-                    <div className="flex items-center mb-4">
-                      <span className="bg-primary text-white px-3 py-1 rounded-full text-xs font-semibold"
-                            data-testid={`badge-featured-category-${featuredPost.id}`}>
-                        {featuredPost.category}
+
+                  {/* Content */}
+                  <div className="p-8 lg:p-12">
+                    <div className="flex items-center gap-4 text-sm text-gray-500 mb-4">
+                      <span className="flex items-center gap-1">
+                        <Calendar className="w-4 h-4" />
+                        {featuredPost.date}
+                      </span>
+                      <span className="flex items-center gap-1">
+                        <Clock className="w-4 h-4" />
+                        {featuredPost.readTime}
                       </span>
                     </div>
-                    <h3 className="text-2xl md:text-3xl font-bold mb-4 text-gray-900"
-                        data-testid={`text-featured-title-${featuredPost.id}`}>
+
+                    <h3 className="text-2xl lg:text-3xl font-bold mb-4 text-gray-900 group-hover:text-cyan-600 transition-colors">
                       {featuredPost.title}
                     </h3>
-                    <p className="text-gray-600 text-lg leading-relaxed mb-6"
-                       data-testid={`text-featured-excerpt-${featuredPost.id}`}>
+
+                    <p className="text-gray-600 mb-6 line-clamp-3">
                       {featuredPost.excerpt}
                     </p>
-                    <div className="flex items-center text-sm text-gray-500 mb-6 space-x-4">
-                      <div className="flex items-center">
-                        <User className="h-4 w-4 mr-1" />
-                        {featuredPost.author}
-                      </div>
-                      <div className="flex items-center">
-                        <Calendar className="h-4 w-4 mr-1" />
-                        {new Date(featuredPost.date).toLocaleDateString()}
-                      </div>
-                      <div className="flex items-center">
-                        <Clock className="h-4 w-4 mr-1" />
-                        {getReadTime(featuredPost.content)}
-                      </div>
+
+                    <div className="flex flex-wrap gap-2 mb-6">
+                      {featuredPost.tags.slice(0, 3).map((tag) => (
+                        <Badge key={tag} variant="secondary" className="bg-gray-100">
+                          <Tag className="w-3 h-3 mr-1" />
+                          {tag}
+                        </Badge>
+                      ))}
                     </div>
-                    <div className="flex items-center gap-4">
-                      <Link href={`/blog/${featuredPost.slug}`}>
-                        <Button className="group" data-testid={`button-read-featured-${featuredPost.id}`}>
-                          Read Full Article
-                          <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
-                        </Button>
-                      </Link>
-                      <LinkedInShare 
-                        variant="compact"
-                        url={`https://airfreshmarketing.com/blog/${featuredPost.slug}`}
-                        title={featuredPost.title}
-                        summary={featuredPost.excerpt}
-                      />
+
+                    <div className="flex items-center text-cyan-600 font-semibold group-hover:text-cyan-700">
+                      Read Full Article
+                      <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-2 transition-transform" />
                     </div>
                   </div>
                 </div>
-              </Card>
-            )}
-          </div>
+              </div>
+            </Link>
+          </motion.div>
         </section>
       )}
 
-      {/* Articles Grid */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">RECENT ARTICLES</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Expert Insights</h3>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Our team regularly shares expertise on experiential marketing trends, best practices, 
-              and innovative approaches to brand engagement.
-            </p>
-          </div>
+      {/* Blog Posts Grid */}
+      <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+        <AnimatePresence mode="wait">
+          {filteredPosts.length === 0 ? (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="text-center py-20"
+            >
+              <Search className="w-16 h-16 mx-auto text-gray-300 mb-4" />
+              <h3 className="text-2xl font-semibold text-gray-600 mb-2">No articles found</h3>
+              <p className="text-gray-500">Try adjusting your search or filter criteria</p>
+            </motion.div>
+          ) : (
+            <motion.div
+              initial={{ opacity: 0 }}
+              animate={{ opacity: 1 }}
+              exit={{ opacity: 0 }}
+              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+            >
+              {filteredPosts.map((post, index) => (
+                <motion.div
+                  key={post.id}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  onMouseEnter={() => setHoveredCard(post.id)}
+                  onMouseLeave={() => setHoveredCard(null)}
+                >
+                  <Link href={`/blog/${post.slug}`}>
+                    <article className="group h-full bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden cursor-pointer flex flex-col">
+                      {/* Image Container */}
+                      <div className="relative h-48 overflow-hidden">
+                        <img
+                          src={post.image}
+                          alt={post.title}
+                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {isLoading ? (
-              // Loading skeletons
-              Array.from({ length: 6 }).map((_, index) => (
-                <Card key={index} className="overflow-hidden">
-                  <Skeleton className="h-48 w-full" />
-                  <CardContent className="p-6 space-y-3">
-                    <Skeleton className="h-6 w-full" />
-                    <Skeleton className="h-4 w-full" />
-                    <Skeleton className="h-4 w-3/4" />
-                    <Skeleton className="h-4 w-1/2" />
-                  </CardContent>
-                </Card>
-              ))
-            ) : regularPosts.length > 0 ? (
-              regularPosts.map((post) => {
-                const Icon = categoryIcons[post.category] || BookOpen;
-                return (
-                  <Card key={post.id} className="overflow-hidden hover:shadow-xl transition-all duration-300 group"
-                        data-testid={`card-blog-post-${post.id}`}>
-                    <div className="relative">
-                      <img 
-                        src={categoryImages[post.category] || categoryImages["Industry Trends"]} 
-                        alt={post.title}
-                        className="w-full h-48 object-cover group-hover:scale-105 transition-transform duration-300"
-                        data-testid={`img-blog-${post.id}`}
-                      />
-                      <div className="absolute top-4 left-4">
-                        <span className={`px-3 py-1 rounded-full text-xs font-semibold text-white bg-primary`}
-                              data-testid={`badge-category-${post.id}`}>
+                        {/* Category Badge */}
+                        <Badge className="absolute top-4 left-4 bg-white/90 text-gray-900">
                           {post.category}
-                        </span>
-                      </div>
-                    </div>
-                    <CardContent className="p-6">
-                      <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-primary transition-colors"
-                          data-testid={`text-title-${post.id}`}>
-                        {post.title}
-                      </h3>
-                      <p className="text-gray-600 mb-4 leading-relaxed"
-                         data-testid={`text-excerpt-${post.id}`}>
-                        {post.excerpt}
-                      </p>
-                      <div className="flex items-center text-sm text-gray-500 mb-4 space-x-3">
-                        <div className="flex items-center">
-                          <User className="h-4 w-4 mr-1" />
-                          {post.author}
-                        </div>
-                        <div className="flex items-center">
-                          <Calendar className="h-4 w-4 mr-1" />
-                          {new Date(post.date).toLocaleDateString()}
-                        </div>
-                      </div>
-                      <div className="flex items-center justify-between">
-                        <div className="flex items-center text-sm text-gray-500">
-                          <Clock className="h-4 w-4 mr-1" />
-                          {getReadTime(post.content)}
-                        </div>
-                        <div className="flex items-center gap-2">
-                          <LinkedInShare 
-                            variant="icon"
-                            url={`https://airfreshmarketing.com/blog/${post.slug}`}
-                            title={post.title}
-                            summary={post.excerpt}
-                          />
-                          <Link href={`/blog/${post.slug}`}>
-                            <Button variant="ghost" size="sm" className="group/btn"
-                                    data-testid={`button-read-${post.id}`}>
-                              Read More
-                              <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
-                            </Button>
-                          </Link>
-                        </div>
-                      </div>
-                    </CardContent>
-                  </Card>
-                );
-              })
-            ) : (
-              <div className="col-span-full text-center py-12">
-                <p className="text-gray-500">No blog posts available yet. Check back soon!</p>
-              </div>
-            )}
-          </div>
+                        </Badge>
 
-          {/* Admin Link */}
-          <div className="text-center mt-12 space-y-4">
-            <Link href="/blog/editor">
-              <Button variant="outline" className="gap-2">
-                <Edit size={16} />
-                Create New Post
-              </Button>
-            </Link>
-          </div>
-        </div>
+                        {/* Hover Overlay */}
+                        <div className={`absolute inset-0 bg-cyan-600/20 transition-opacity duration-300 ${
+                          hoveredCard === post.id ? 'opacity-100' : 'opacity-0'
+                        }`} />
+                      </div>
+
+                      {/* Content */}
+                      <div className="flex-1 p-6 flex flex-col">
+                        {/* Meta */}
+                        <div className="flex items-center gap-3 text-sm text-gray-500 mb-3">
+                          <span className="flex items-center gap-1">
+                            <Calendar className="w-3.5 h-3.5" />
+                            {post.date}
+                          </span>
+                          <span className="flex items-center gap-1">
+                            <Clock className="w-3.5 h-3.5" />
+                            {post.readTime}
+                          </span>
+                        </div>
+
+                        {/* Title */}
+                        <h3 className="text-xl font-bold mb-3 text-gray-900 group-hover:text-cyan-600 transition-colors line-clamp-2">
+                          {post.title}
+                        </h3>
+
+                        {/* Excerpt */}
+                        <p className="text-gray-600 mb-4 line-clamp-3 flex-1">
+                          {post.excerpt}
+                        </p>
+
+                        {/* Tags */}
+                        <div className="flex flex-wrap gap-1.5 mb-4">
+                          {post.tags.slice(0, 2).map((tag) => (
+                            <span key={tag} className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                              {tag}
+                            </span>
+                          ))}
+                          {post.tags.length > 2 && (
+                            <span className="text-xs bg-gray-100 text-gray-600 px-2 py-1 rounded">
+                              +{post.tags.length - 2}
+                            </span>
+                          )}
+                        </div>
+
+                        {/* Read More Link */}
+                        <div className="flex items-center text-cyan-600 font-semibold group-hover:text-cyan-700 mt-auto">
+                          Read Article
+                          <ChevronRight className="w-4 h-4 ml-1 group-hover:translate-x-1 transition-transform" />
+                        </div>
+                      </div>
+                    </article>
+                  </Link>
+                </motion.div>
+              ))}
+            </motion.div>
+          )}
+        </AnimatePresence>
       </section>
 
-      {/* Newsletter Section */}
-      <section className="py-16 bg-primary text-white">
+      {/* Newsletter CTA */}
+      <section className="bg-gradient-to-br from-slate-900 via-gray-900 to-slate-900 py-20 mt-20">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Stay In The Loop</h2>
-          <p className="text-xl mb-8 opacity-90">
-            Get the latest insights, trends, and strategies delivered straight to your inbox.
-          </p>
-          <div className="flex flex-col sm:flex-row max-w-md mx-auto gap-4">
-            <input 
-              type="email" 
-              placeholder="Enter your email" 
-              className="flex-1 px-4 py-3 rounded-lg text-gray-900 placeholder-gray-500"
-            />
-            <Button variant="secondary" size="lg">
-              Subscribe
-            </Button>
-          </div>
-          <p className="text-sm opacity-75 mt-4">
-            Join 5,000+ marketing professionals who trust our insights.
-          </p>
-        </div>
-      </section>
-
-      {/* LinkedIn Content Templates Section */}
-      <section className="py-16 bg-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Share Your Expertise on LinkedIn</h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Use our professionally crafted LinkedIn post templates to share industry insights and engage your network.
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+          >
+            <Sparkles className="w-16 h-16 mx-auto mb-6 text-cyan-400" />
+            <h2 className="text-4xl font-bold mb-4 text-white">
+              Stay Ahead of the Curve
+            </h2>
+            <p className="text-xl mb-8 text-gray-300">
+              Get the latest experiential marketing insights delivered to your inbox
             </p>
-          </div>
-          <LinkedInContentTemplates />
-        </div>
-      </section>
-
-      {/* Related Links */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold text-gray-900 mb-4">Explore More</h2>
-            <p className="text-lg text-gray-600">
-              Ready to put these insights into action? Discover our services and case studies.
-            </p>
-          </div>
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="p-0">
-                <Lightbulb className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Our Services</h3>
-                <p className="text-gray-600 mb-4">Explore our comprehensive experiential marketing solutions.</p>
-                <Button asChild variant="outline">
-                  <Link href="/services">Learn More</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="p-0">
-                <Award className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">Case Studies</h3>
-                <p className="text-gray-600 mb-4">See how we've helped brands create unforgettable experiences.</p>
-                <Button asChild variant="outline">
-                  <Link href="/projects">View Projects</Link>
-                </Button>
-              </CardContent>
-            </Card>
-            <Card className="text-center p-8 hover:shadow-lg transition-shadow">
-              <CardContent className="p-0">
-                <Users className="h-12 w-12 text-primary mx-auto mb-4" />
-                <h3 className="text-xl font-bold mb-2">About Us</h3>
-                <p className="text-gray-600 mb-4">Learn about our 20+ years of experiential marketing expertise.</p>
-                <Button asChild variant="outline">
-                  <Link href="/about">Our Story</Link>
-                </Button>
-              </CardContent>
-            </Card>
-          </div>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+              <Input
+                type="email"
+                placeholder="Enter your email"
+                className="flex-1 bg-white/10 border-gray-700 text-white placeholder-gray-400"
+              />
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white">
+                Subscribe
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </div>
+          </motion.div>
         </div>
       </section>
     </div>
