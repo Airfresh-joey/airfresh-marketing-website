@@ -235,7 +235,7 @@ export default function PortfolioCaseStudyDetail() {
           <h2 className="text-2xl font-bold text-red-600 mb-4">Case Study Not Found</h2>
           <p className="text-gray-600 mb-4">Unable to load this case study.</p>
           <Link href="/portfolio">
-            <Button>
+            <Button className="text-black">
               <ArrowLeft className="w-4 h-4 mr-2" />
               Back to Portfolio
             </Button>
@@ -280,9 +280,9 @@ export default function PortfolioCaseStudyDetail() {
               <Link href="/portfolio">
                 <Button
                   variant="outline"
-                  className="mb-6 text-white border-white hover:bg-white hover:text-black"
+                  className="mb-6 text-black bg-white/90 border-white hover:bg-white hover:text-black"
                 >
-                  <ArrowLeft className="w-4 h-4 mr-2" />
+                  <ArrowLeft className="w-4 h-4 mr-2 text-black" />
                   Back to Portfolio
                 </Button>
               </Link>
@@ -543,13 +543,6 @@ export default function PortfolioCaseStudyDetail() {
 
                   {/* Actions */}
                   <div className="pt-4 border-t space-y-3">
-                    <Button
-                      className="w-full"
-                      onClick={handleShare}
-                    >
-                      <Share2 className="w-4 h-4 mr-2" />
-                      {copied ? "Link Copied!" : "Share Case Study"}
-                    </Button>
 
                     {caseStudy.googleDriveUrl && (
                       <a
