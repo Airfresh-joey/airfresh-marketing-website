@@ -43,10 +43,12 @@ import NotionCaseStudies from "@/pages/NotionCaseStudies";
 import NotionCaseStudyDetail from "@/pages/NotionCaseStudyDetail";
 import PortfolioEnhanced from "@/pages/PortfolioEnhanced";
 import PortfolioCaseStudyDetail from "@/pages/PortfolioCaseStudyDetail";
+import ScrollToTop from "@/components/ScrollToTop";
 
 function Router() {
   return (
     <div className="min-h-screen flex flex-col">
+      <ScrollToTop />
       <NavigationClean />
       <main className="flex-1">
         <Switch>
