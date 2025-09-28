@@ -139,7 +139,7 @@ export default function PortfolioEnhanced() {
     }
   });
 
-  const caseStudies = caseStudiesResponse?.data || [];
+  const caseStudies = caseStudiesResponse || [];
   const categories = getCategories(caseStudies);
 
   const filteredStudies = selectedCategory === "All"
