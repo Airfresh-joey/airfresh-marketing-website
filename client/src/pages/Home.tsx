@@ -449,7 +449,7 @@ export default function Home() {
       <section className="relative py-32 bg-gradient-to-r from-cyan-600 via-blue-600 to-cyan-600 text-white overflow-hidden">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-transparent to-black/20"></div>
-          <div className="absolute top-0 left-0 w-full h-full bg-[url('data:image/svg+xml,%3Csvg width="60" height="60" viewBox="0 0 60 60" xmlns="http://www.w3.org/2000/svg"%3E%3Cg fill="none" fill-rule="evenodd"%3E%3Cg fill="%23ffffff" fill-opacity="0.03"%3E%3Cpath d="M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z"/%3E%3C/g%3E%3C/g%3E%3C/svg%3E')] opacity-20"></div>
+          <div className="absolute top-0 left-0 w-full h-full opacity-20" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <motion.div
@@ -633,103 +633,70 @@ export default function Home() {
       </section>
 
       {/* Client Logos Section - Premium Showcase */}
-      <section className="relative py-24 bg-white overflow-hidden">
+      <section className="relative py-32 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-50/30 via-transparent to-blue-50/30"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-cyan-50/20 via-transparent to-blue-50/20"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-16"
+            className="text-center mb-20"
           >
-            <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full mb-8">
-              <Building className="w-4 h-4 text-cyan-600" />
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full mb-8 shadow-md">
+              <Award className="w-5 h-5 text-cyan-600" />
               <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">TRUSTED BY LEADING BRANDS</span>
             </div>
-            <h3 className="text-3xl md:text-4xl font-bold text-gray-900">Our Client Portfolio</h3>
+            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Client Portfolio</h3>
+            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+              Join the ranks of industry leaders who trust AirFresh Marketing for their experiential campaigns
+            </p>
           </motion.div>
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-12 items-center">
-            <motion.div
-              initial={{ opacity: 0, scale: 0.8 }}
-              whileInView={{ opacity: 1, scale: 1 }}
-              transition={{ duration: 0.5, delay: 0 }}
-              whileHover={{ scale: 1.15 }}
-              className="flex justify-center items-center h-24 p-4 bg-white rounded-xl shadow-md hover:shadow-lg transition-all duration-300"
-            >
-              <img
-                src="https://logo.clearbit.com/google.com"
-                alt="Google"
-                className="max-h-12 w-auto object-contain filter grayscale hover:grayscale-0 transition-all duration-300"
-                loading="lazy"
-              />
-            </motion.div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/adidas.com" 
-                alt="Adidas" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/microsoft.com" 
-                alt="Microsoft" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/lyft.com" 
-                alt="Lyft" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/clifbar.com" 
-                alt="Clif Bar" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/pepsi.com" 
-                alt="Pepsi" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/5hourenergy.com" 
-                alt="5-hour Energy" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/nfl.com" 
-                alt="NFL" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
-            <div className="flex justify-center items-center h-20 hover:scale-110 transition-transform duration-300">
-              <img 
-                src="https://logo.clearbit.com/nakedjuice.com" 
-                alt="Naked Juice" 
-                className="max-h-12 w-auto object-contain"
-                loading="lazy"
-              />
-            </div>
+
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+            {[
+              { src: "https://logo.clearbit.com/google.com", alt: "Google" },
+              { src: "https://logo.clearbit.com/adidas.com", alt: "Adidas" },
+              { src: "https://logo.clearbit.com/microsoft.com", alt: "Microsoft" },
+              { src: "https://logo.clearbit.com/lyft.com", alt: "Lyft" },
+              { src: "https://logo.clearbit.com/clifbar.com", alt: "Clif Bar" },
+              { src: "https://logo.clearbit.com/pepsi.com", alt: "Pepsi" },
+              { src: "https://logo.clearbit.com/5hourenergy.com", alt: "5-hour Energy" },
+              { src: "https://logo.clearbit.com/nfl.com", alt: "NFL" },
+              { src: "https://logo.clearbit.com/nakedjuice.com", alt: "Naked Juice" },
+              { src: "https://logo.clearbit.com/redbull.com", alt: "Red Bull" }
+            ].map((logo, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.5, delay: index * 0.05 }}
+                whileHover={{ scale: 1.05, y: -5 }}
+                className="group"
+              >
+                <div className="flex justify-center items-center h-32 p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
+                  <img
+                    src={logo.src}
+                    alt={logo.alt}
+                    className="max-h-16 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
+                    loading="lazy"
+                  />
+                </div>
+              </motion.div>
+            ))}
           </div>
+
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={{ opacity: 1 }}
+            transition={{ duration: 0.6, delay: 0.5 }}
+            className="text-center mt-16"
+          >
+            <p className="text-gray-600 text-lg">
+              ...and many more amazing brands
+            </p>
+          </motion.div>
         </div>
       </section>
 
