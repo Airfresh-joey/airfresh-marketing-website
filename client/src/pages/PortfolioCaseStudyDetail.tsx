@@ -195,7 +195,7 @@ export default function PortfolioCaseStudyDetail() {
         throw new Error("Failed to fetch case study");
       }
       const result = await response.json();
-      return result.data;
+      return result;
     }
   });
 
