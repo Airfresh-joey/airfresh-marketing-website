@@ -157,8 +157,8 @@ export default function Home() {
 
   return (
     <div className="pt-16">
-      <SEO 
-        title="Experiential Marketing Agency | Brand Ambassadors & Event Staffing - AirFresh"
+      <SEO
+        title="Air Fresh Marketing - Experiential Marketing Agency"
         description="Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide."
         pageType="home"
         canonical="https://airfreshmarketing.com"
