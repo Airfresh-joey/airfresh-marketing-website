@@ -3,7 +3,7 @@ import { Link } from "wouter";
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
 import { useEffect, useState } from "react";
-import airFreshLogo from "@assets/airfreshmarketing_logo_1757876981708.jpg";
+import airFreshLogo from "@assets/airfresh_circle_logo.png";
 
 export default function HeroAgencyVideo() {
   const shouldReduceMotion = useReducedMotion();
@@ -122,7 +122,7 @@ export default function HeroAgencyVideo() {
           {/* Air Fresh Logo */}
           <motion.div
             variants={itemVariants}
-            className="mb-12"
+            className="mb-12 mt-8"
           >
             <figure itemScope itemType="https://schema.org/ImageObject">
               <img 

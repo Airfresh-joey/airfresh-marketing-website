@@ -115,9 +115,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
   // IMPORTANT: Set ADMIN_PASSWORD environment variable before running
   const ADMIN_PASSWORD = process.env.ADMIN_PASSWORD;
   
-  if (!ADMIN_PASSWORD) {
-    console.warn('WARNING: ADMIN_PASSWORD environment variable is not set. Blog management features will be disabled.');
-  }
+  // Admin password is optional - blog management features only work if set
   
   // Authentication middleware for blog management
   const authenticateBlogAdmin = (req: any, res: any, next: any) => {

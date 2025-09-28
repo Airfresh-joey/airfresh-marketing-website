@@ -199,13 +199,14 @@ export default function Home() {
           >
             <div className="relative bg-white rounded-lg shadow-lg overflow-hidden">
               <div className="aspect-video relative">
-                <iframe 
-                  src="https://player.vimeo.com/video/824804225?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=0&muted=1&background=0"
+                <iframe
+                  src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479#t=12s"
                   className="absolute inset-0 w-full h-full"
                   frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture"
+                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                  referrerPolicy="strict-origin-when-cross-origin"
                   allowFullScreen
-                  title="AirFresh Marketing - Brand Experience Showcase"
+                  title="Air Fresh Marketing and Visible Rock at Red Rocks!"
                 ></iframe>
               </div>
             </div>
