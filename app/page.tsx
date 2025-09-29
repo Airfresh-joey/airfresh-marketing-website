@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen } from "lucide-react";
+import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
 import LinkedInFollow from "@/components/LinkedInFollow";
@@ -129,6 +129,57 @@ export default function Home() {
       icon: Handshake,
       title: "Agencies",
       description: "Enhance your agency with fresh ideas, unique perspectives and innovative outreach."
+    }
+  ];
+
+  const technologyFeatures = [
+    {
+      icon: Users,
+      title: "Customer Console & Talent Selection",
+      description: "Select top talent with real-time insights through our intuitive platform for seamless team management."
+    },
+    {
+      icon: MapPin,
+      title: "GPS Check-In & Recapping",
+      description: "Track and report seamlessly in real-time with location-verified check-ins and instant event recaps."
+    },
+    {
+      icon: Video,
+      title: "Video Training & Testing",
+      description: "Ensure campaign readiness with pre-event training modules and knowledge verification tests."
+    },
+    {
+      icon: Database,
+      title: "Data Capturing & Surveys",
+      description: "Gather key consumer insights effortlessly with integrated data collection and survey tools."
+    },
+    {
+      icon: Share2,
+      title: "Social Integration & Endorsements",
+      description: "Amplify campaigns with integrated social proof and authentic brand ambassador endorsements."
+    }
+  ];
+
+  const whyUsHighlights = [
+    {
+      icon: Briefcase,
+      title: "Our Agency",
+      description: "Experiential marketing experts with over a decade of proven success delivering memorable brand activations nationwide."
+    },
+    {
+      icon: Award,
+      title: "Our Clients",
+      description: "Trusted by top brands for measurable results that drive engagement, loyalty, and real business impact."
+    },
+    {
+      icon: FileText,
+      title: "Case Studies",
+      description: "Real success stories from real partnerships showcasing transformative campaigns and exceptional ROI."
+    },
+    {
+      icon: CheckCircle2,
+      title: "Top Ten Reasons",
+      description: "Why brands trust us to deliver: innovation, reliability, expertise, and results that exceed expectations."
     }
   ];
 
@@ -340,6 +391,97 @@ export default function Home() {
                 </Card>
               </motion.div>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Technology / Platform Features Section */}
+      <section id="technology" className="relative py-24 bg-white overflow-hidden">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-orange-50 rounded-full mb-6 border border-orange-100">
+              <Smartphone className="w-4 h-4 text-orange-600" />
+              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider">TECHNOLOGY & PLATFORM</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Cutting-Edge Technology for{" "}
+              <span className="text-orange-600">Seamless Campaign Execution</span>
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Our proprietary platform streamlines every aspect of your experiential marketing campaign.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+            {technologyFeatures.map((feature, index) => {
+              const Icon = feature.icon;
+              return (
+                <Card key={index} className="h-full bg-white border border-gray-100 hover:border-orange-200 shadow-sm hover:shadow-md transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 mb-4 rounded-xl flex items-center justify-center" style={{background: '#F47C48'}}>
+                      <Icon className="h-6 w-6 text-white" strokeWidth={2} />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">
+                      {feature.title}
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {feature.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Us / About Highlights Section */}
+      <section className="relative py-24 bg-gray-50">
+        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6 }}
+            className="text-center mb-16"
+          >
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-cyan-50 rounded-full mb-6 border border-cyan-100">
+              <Award className="w-4 h-4 text-cyan-600" />
+              <span className="text-xs font-bold text-cyan-700 uppercase tracking-wider">WHY AIRFRESH MARKETING</span>
+            </div>
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+              Discover What Sets Us Apart
+            </h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              Learn why leading brands choose AirFresh Marketing for their experiential campaigns.
+            </p>
+          </motion.div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {whyUsHighlights.map((highlight, index) => {
+              const Icon = highlight.icon;
+              return (
+                <Card key={index} className="h-full text-center bg-white border border-gray-100 hover:border-cyan-200 shadow-sm hover:shadow-md transition-all duration-300">
+                  <CardContent className="p-6">
+                    <div className="w-12 h-12 mx-auto mb-4 rounded-xl flex items-center justify-center" style={{background: 'linear-gradient(to bottom right, #06b6d4, #2563eb)'}}>
+                      <Icon className="h-6 w-6 text-white" strokeWidth={2} />
+                    </div>
+                    <h4 className="text-lg font-bold mb-2 text-gray-900">
+                      {highlight.title}
+                    </h4>
+                    <p className="text-sm text-gray-600 leading-relaxed">
+                      {highlight.description}
+                    </p>
+                  </CardContent>
+                </Card>
+              );
+            })}
           </div>
         </div>
       </section>

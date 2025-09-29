@@ -6,7 +6,7 @@ import { TooltipProvider } from '@/components/ui/tooltip'
 import NavigationClean from '@/components/NavigationClean'
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
-import Providers from './providers'
+import Providers from '@/app/providers'
 
 const inter = Inter({ subsets: ['latin'] })
 

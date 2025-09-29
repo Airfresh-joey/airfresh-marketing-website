@@ -14,12 +14,11 @@ export default function NavigationClean() {
   const isActive = (path: string) => pathname === path;
 
   const navLinks = [
-    { href: "/", label: "Home" },
     { href: "/portfolio", label: "Portfolio" },
     { href: "/services", label: "Services", hasDropdown: true },
-    { href: "/blog", label: "Blog" },
+    { href: "/#technology", label: "Technology", isAnchor: true },
     { href: "/about", label: "About" },
-    { href: "/contact", label: "Contact" }
+    { href: "/blog", label: "Blog" }
   ];
 
   const serviceLinks = [
@@ -79,6 +78,21 @@ export default function NavigationClean() {
                     </div>
                   )}
                 </div>
+              ) : link.isAnchor ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="font-medium transition-all duration-200 text-white hover:text-cyan-400"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    const element = document.getElementById('technology');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  {link.label}
+                </a>
               ) : (
                 <Link
                   key={link.href}
@@ -102,12 +116,11 @@ export default function NavigationClean() {
             >
               Looking for Work
             </a>
-            <Button
-              asChild
-              className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-4 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300"
-            >
-              <Link href="/contact">Get Started</Link>
-            </Button>
+            <Link href="/contact">
+              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
+                Contact
+              </Button>
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -149,6 +162,22 @@ export default function NavigationClean() {
                     ))}
                   </div>
                 </div>
+              ) : link.isAnchor ? (
+                <a
+                  key={link.href}
+                  href={link.href}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 hover:text-cyan-400"
+                  onClick={(e) => {
+                    e.preventDefault();
+                    setMobileMenuOpen(false);
+                    const element = document.getElementById('technology');
+                    if (element) {
+                      element.scrollIntoView({ behavior: 'smooth' });
+                    }
+                  }}
+                >
+                  {link.label}
+                </a>
               ) : (
                 <Link
                   key={link.href}

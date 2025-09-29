@@ -66,9 +66,23 @@ export default function Navigation() {
                 </DropdownMenuItem>
               </DropdownMenuContent>
             </DropdownMenu>
-            
-            <Link 
-              href="/talent" 
+
+            <a
+              href="/#technology"
+              className="font-medium text-gray-600 hover:text-gray-900"
+              onClick={(e) => {
+                e.preventDefault();
+                const element = document.getElementById('technology');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Technology
+            </a>
+
+            <Link
+              href="/talent"
               className={`font-medium ${isActive('/talent') ? 'text-gray-900' : 'text-gray-600 hover:text-gray-900'}`}
             >
               Talent
@@ -125,6 +139,20 @@ export default function Navigation() {
           <div className="px-2 pt-2 pb-3 space-y-1 bg-white shadow-lg">
             <Link href="/projects" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Projects</Link>
             <Link href="/services" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Services</Link>
+            <a
+              href="/#technology"
+              className="block px-3 py-2 text-gray-700 hover:bg-gray-50"
+              onClick={(e) => {
+                e.preventDefault();
+                setMobileMenuOpen(false);
+                const element = document.getElementById('technology');
+                if (element) {
+                  element.scrollIntoView({ behavior: 'smooth' });
+                }
+              }}
+            >
+              Technology
+            </a>
             <Link href="/talent" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Talent</Link>
             <Link href="/about" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>About</Link>
             <Link href="/blog" className="block px-3 py-2 text-gray-700 hover:bg-gray-50" onClick={() => setMobileMenuOpen(false)}>Blog</Link>
