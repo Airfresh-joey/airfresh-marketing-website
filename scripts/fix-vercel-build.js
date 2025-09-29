@@ -1,12 +1,16 @@
 #!/usr/bin/env node
 
-const fs = require('fs');
-const path = require('path');
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 // This script fixes the Vercel deployment issue with routes-manifest.json
 // It ensures the manifest is available in the location Vercel expects
 
-const nextDistDir = path.join(process.cwd(), '.next');
+const nextDistDir = path.join(path.dirname(__dirname), '.next');
 const routesManifestPath = path.join(nextDistDir, 'routes-manifest.json');
 const vercelPath = '/vercel/path0/routes-manifest.json';
 
