@@ -139,12 +139,6 @@ export default function CaseStudyDetail() {
                       {caseStudy.markets.join(", ")}
                     </div>
                   )}
-                  {caseStudy.timeline && (
-                    <div className="flex items-center">
-                      <Calendar className="w-4 h-4 mr-2" />
-                      {caseStudy.timeline}
-                    </div>
-                  )}
                 </div>
               </motion.div>
             </div>
@@ -185,46 +179,16 @@ export default function CaseStudyDetail() {
                 </p>
               </div>
 
-              {/* Challenge */}
-              {caseStudy.challenge && (
+              {/* Description */}
+              {caseStudy.description && (
                 <div className="mb-12">
-                  <h2 className="text-3xl font-bold mb-6">The Challenge</h2>
+                  <h2 className="text-3xl font-bold mb-6">Overview</h2>
                   <p className="text-gray-700 leading-relaxed">
-                    {caseStudy.challenge}
+                    {caseStudy.description}
                   </p>
                 </div>
               )}
 
-              {/* Solution */}
-              {caseStudy.solution && (
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold mb-6">Our Solution</h2>
-                  <p className="text-gray-700 leading-relaxed">
-                    {caseStudy.solution}
-                  </p>
-                </div>
-              )}
-
-              {/* Results */}
-              {caseStudy.results && (
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold mb-6">Results</h2>
-                  {Array.isArray(caseStudy.results) ? (
-                    <ul className="space-y-3">
-                      {caseStudy.results.map((result, index) => (
-                        <li key={index} className="flex items-start">
-                          <ChevronRight className="w-5 h-5 text-primary mr-2 mt-0.5 flex-shrink-0" />
-                          <span className="text-gray-700">{result}</span>
-                        </li>
-                      ))}
-                    </ul>
-                  ) : (
-                    <p className="text-gray-700 leading-relaxed">
-                      {caseStudy.results}
-                    </p>
-                  )}
-                </div>
-              )}
 
               {/* Image Gallery */}
               <div className="mb-12">
@@ -313,11 +277,11 @@ export default function CaseStudyDetail() {
                       </div>
                     )}
 
-                    {/* Timeline */}
-                    {caseStudy.timeline && (
+                    {/* Date */}
+                    {caseStudy.date && (
                       <div>
-                        <h4 className="font-semibold text-gray-700 mb-1">Timeline</h4>
-                        <p className="text-gray-600">{caseStudy.timeline}</p>
+                        <h4 className="font-semibold text-gray-700 mb-1">Date</h4>
+                        <p className="text-gray-600">{caseStudy.date}</p>
                       </div>
                     )}
 
@@ -329,13 +293,6 @@ export default function CaseStudyDetail() {
                       </div>
                     )}
 
-                    {/* Team Size */}
-                    {caseStudy.teamSize && (
-                      <div>
-                        <h4 className="font-semibold text-gray-700 mb-1">Team Size</h4>
-                        <p className="text-gray-600">{caseStudy.teamSize}</p>
-                      </div>
-                    )}
                   </div>
 
                   {/* Action Buttons */}

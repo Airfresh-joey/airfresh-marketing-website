@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { usePathname } from "next/link";
+import { usePathname, useRouter } from "next/navigation";
 import { useToast } from "@/hooks/use-toast";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -14,8 +14,8 @@ export default function AdminProtected({ children }: AdminProtectedProps) {
   const [isAuthenticated, setIsAuthenticated] = useState(false);
   const [isChecking, setIsChecking] = useState(true);
   const [password, setPassword] = useState("");
-  const [, setLocation] = useLocation();
   const { toast } = useToast();
+  const router = useRouter();
 
   useEffect(() => {
     checkAuthentication();
@@ -142,7 +142,7 @@ export default function AdminProtected({ children }: AdminProtectedProps) {
                 type="button"
                 variant="outline"
                 className="flex-1"
-                onClick={() => setLocation("/")}
+                onClick={() => router.push("/")}
                 data-testid="button-cancel-login"
               >
                 Cancel

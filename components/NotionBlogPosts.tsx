@@ -1,6 +1,6 @@
 import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
-import Link from 'wouter';
+import Link from 'next/link';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -154,10 +154,12 @@ function NotionBlogPostCard({ post }: { post: NotionBlogPost }) {
           <span>{formattedDate}</span>
         </div>
         <CardTitle className="line-clamp-2">
-          <Link href={`/notion-blog/${post.slug}`}>
-            <a className="hover:text-primary transition-colors" data-testid={`link-blog-${post.id}`}>
-              {post.title}
-            </a>
+          <Link
+            href={`/notion-blog/${post.slug}`}
+            className="hover:text-primary transition-colors"
+            data-testid={`link-blog-${post.id}`}
+          >
+            {post.title}
           </Link>
         </CardTitle>
         <CardDescription className="line-clamp-3 mt-2">

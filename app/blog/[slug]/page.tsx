@@ -294,7 +294,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         title={`${post.title} | Air Fresh Marketing Blog`}
         description={post.excerpt}
         canonical={`https://airfreshmarketing.com/blog/${post.slug}`}
-        image={post.image}
+        ogImage={post.image}
       />
 
       {/* Progress Bar */}

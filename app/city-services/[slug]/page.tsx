@@ -139,7 +139,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
           ...service.keywords.map(k => `${k} ${cityName}`),
           'experiential marketing',
           'brand activation'
-        ]}
+        ].join(', ')}
         pageType="service"
         canonical={`https://airfreshmarketing.com/city-services/${slug}`}
       />

@@ -1,8 +1,8 @@
 import { useState } from "react";
-import { Link, useLocation } from "next/link";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logoUrl from "@assets/AirFresh_Logo_Horizontal_RGB_1757387574418.jpg";
 import {
   DropdownMenu,
   DropdownMenuContent,
@@ -12,9 +12,9 @@ import {
 
 export default function Navigation() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const pathname = usePathname() = useLocation();
+  const pathname = usePathname();
 
-  const isActive = (path: string) => location === path;
+  const isActive = (path: string) => pathname === path;
 
   return (
     <nav className="bg-white shadow-sm fixed w-full top-0 z-50">
@@ -24,7 +24,7 @@ export default function Navigation() {
             <Link href="/" className="flex-shrink-0">
               <div className="flex items-center">
                 <img
-                  src={typeof logoUrl === 'string' ? logoUrl : logoUrl.src}
+                  src="/images/logo.png"
                   alt="AirFresh"
                   className="h-10 w-auto"
                 />
