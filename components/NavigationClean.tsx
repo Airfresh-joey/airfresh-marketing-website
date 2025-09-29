@@ -20,7 +20,15 @@ export default function NavigationClean() {
       // Already on homepage, just scroll
       const element = document.getElementById('technology');
       if (element) {
-        element.scrollIntoView({ behavior: 'smooth' });
+        const navHeight = 64; // Height of fixed nav (h-16 = 4rem = 64px)
+        const offset = 100; // Additional offset to show more of the section
+        const elementPosition = element.getBoundingClientRect().top;
+        const offsetPosition = elementPosition + window.pageYOffset - navHeight - offset;
+
+        window.scrollTo({
+          top: offsetPosition,
+          behavior: 'smooth'
+        });
       }
     } else {
       // Navigate to homepage, then scroll after page loads
@@ -212,7 +220,7 @@ export default function NavigationClean() {
                 asChild
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg"
               >
-                <Link href="/contact">Get Started</Link>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
               </Button>
             </div>
           </div>

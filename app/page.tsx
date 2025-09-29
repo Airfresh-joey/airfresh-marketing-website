@@ -16,6 +16,18 @@ import type { BlogPost } from "@shared/schema";
 export default function Home() {
   // Handle scroll to anchor on page load
   useEffect(() => {
+    const scrollToTechnology = (element: HTMLElement) => {
+      const navHeight = 64; // Height of fixed nav (h-16 = 4rem = 64px)
+      const offset = 100; // Additional offset to show more of the section
+      const elementPosition = element.getBoundingClientRect().top;
+      const offsetPosition = elementPosition + window.pageYOffset - navHeight - offset;
+
+      window.scrollTo({
+        top: offsetPosition,
+        behavior: 'smooth'
+      });
+    };
+
     const checkAndScroll = () => {
       // Check for sessionStorage flag
       const shouldScroll = sessionStorage.getItem('scrollToTechnology');
@@ -23,7 +35,7 @@ export default function Home() {
         sessionStorage.removeItem('scrollToTechnology');
         const element = document.getElementById('technology');
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          scrollToTechnology(element);
         }
         return;
       }
@@ -33,7 +45,7 @@ export default function Home() {
       if (hash === '#technology') {
         const element = document.getElementById('technology');
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          scrollToTechnology(element);
         }
       }
     };
