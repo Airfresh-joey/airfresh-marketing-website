@@ -14,6 +14,41 @@ import { useQuery } from "@tanstack/react-query";
 import type { BlogPost } from "@shared/schema";
 
 export default function Home() {
+  // Handle scroll to anchor on page load
+  useEffect(() => {
+    const checkAndScroll = () => {
+      // Check for sessionStorage flag
+      const shouldScroll = sessionStorage.getItem('scrollToTechnology');
+      if (shouldScroll === 'true') {
+        sessionStorage.removeItem('scrollToTechnology');
+        const element = document.getElementById('technology');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+        return;
+      }
+
+      // Also check for hash in URL
+      const hash = window.location.hash;
+      if (hash === '#technology') {
+        const element = document.getElementById('technology');
+        if (element) {
+          element.scrollIntoView({ behavior: 'smooth' });
+        }
+      }
+    };
+
+    // Try immediately and after delays to ensure content is loaded
+    checkAndScroll();
+    const timer1 = setTimeout(checkAndScroll, 100);
+    const timer2 = setTimeout(checkAndScroll, 500);
+
+    return () => {
+      clearTimeout(timer1);
+      clearTimeout(timer2);
+    };
+  }, []);
+
   // Fetch recent blog posts
   const { data: blogPosts = [] } = useQuery<BlogPost[]>({
     queryKey: ["/api/blog"],

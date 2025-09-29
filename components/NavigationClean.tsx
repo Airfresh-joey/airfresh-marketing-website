@@ -1,7 +1,7 @@
 'use client'
 
 import { useState } from "react";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
@@ -10,8 +10,25 @@ export default function NavigationClean() {
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
   const [servicesDropdownOpen, setServicesDropdownOpen] = useState(false);
   const pathname = usePathname();
+  const router = useRouter();
 
   const isActive = (path: string) => pathname === path;
+
+  const handleTechnologyClick = (e: React.MouseEvent) => {
+    e.preventDefault();
+    if (pathname === '/') {
+      // Already on homepage, just scroll
+      const element = document.getElementById('technology');
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth' });
+      }
+    } else {
+      // Navigate to homepage, then scroll after page loads
+      // Set a flag in sessionStorage so the homepage knows to scroll
+      sessionStorage.setItem('scrollToTechnology', 'true');
+      router.push('/');
+    }
+  };
 
   const navLinks = [
     { href: "/portfolio", label: "Portfolio" },
@@ -79,20 +96,13 @@ export default function NavigationClean() {
                   )}
                 </div>
               ) : link.isAnchor ? (
-                <a
+                <button
                   key={link.href}
-                  href={link.href}
+                  onClick={handleTechnologyClick}
                   className="font-medium transition-all duration-200 text-white hover:text-cyan-400"
-                  onClick={(e) => {
-                    e.preventDefault();
-                    const element = document.getElementById('technology');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
-                  }}
                 >
                   {link.label}
-                </a>
+                </button>
               ) : (
                 <Link
                   key={link.href}
@@ -163,21 +173,16 @@ export default function NavigationClean() {
                   </div>
                 </div>
               ) : link.isAnchor ? (
-                <a
+                <button
                   key={link.href}
-                  href={link.href}
-                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 hover:text-cyan-400"
                   onClick={(e) => {
-                    e.preventDefault();
                     setMobileMenuOpen(false);
-                    const element = document.getElementById('technology');
-                    if (element) {
-                      element.scrollIntoView({ behavior: 'smooth' });
-                    }
+                    handleTechnologyClick(e);
                   }}
+                  className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 hover:text-cyan-400 w-full text-left"
                 >
                   {link.label}
-                </a>
+                </button>
               ) : (
                 <Link
                   key={link.href}
