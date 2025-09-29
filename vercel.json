@@ -1,9 +1,0 @@
-{
-  "redirects": [
-    {
-      "source": "/projects/case-studies",
-      "destination": "/case-studies",
-      "permanent": true
-    }
-  ]
-}
