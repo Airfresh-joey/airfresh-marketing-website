@@ -452,13 +452,13 @@ export default function Home() {
             transition={{ duration: 0.6 }}
             className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 px-5 py-2 bg-orange-50 rounded-full mb-6 border border-orange-100">
-              <Smartphone className="w-4 h-4 text-orange-600" />
-              <span className="text-xs font-bold text-orange-700 uppercase tracking-wider">TECHNOLOGY & PLATFORM</span>
+            <div className="inline-flex items-center gap-2 px-5 py-2 bg-cyan-50 rounded-full mb-6 border border-cyan-100">
+              <Smartphone className="w-4 h-4 text-cyan-600" />
+              <span className="text-xs font-bold text-cyan-700 uppercase tracking-wider">TECHNOLOGY & PLATFORM</span>
             </div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Cutting-Edge Technology for{" "}
-              <span className="text-orange-600">Seamless Campaign Execution</span>
+              <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Seamless Campaign Execution</span>
             </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our proprietary platform streamlines every aspect of your experiential marketing campaign.
@@ -469,9 +469,9 @@ export default function Home() {
             {technologyFeatures.map((feature, index) => {
               const Icon = feature.icon;
               return (
-                <Card key={index} className="h-full bg-white border border-gray-100 hover:border-orange-200 shadow-sm hover:shadow-md transition-all duration-300">
+                <Card key={index} className="h-full bg-white border border-gray-100 hover:border-cyan-200 shadow-sm hover:shadow-md transition-all duration-300">
                   <CardContent className="p-6">
-                    <div className="w-12 h-12 mb-4 rounded-xl flex items-center justify-center" style={{background: '#F47C48'}}>
+                    <div className="w-12 h-12 mb-4 rounded-xl flex items-center justify-center bg-gradient-to-r from-cyan-500 to-blue-500">
                       <Icon className="h-6 w-6 text-white" strokeWidth={2} />
                     </div>
                     <h4 className="text-lg font-bold mb-2 text-gray-900">

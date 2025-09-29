@@ -258,7 +258,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
                 <Link href="/contact">Get Started Today</Link>
               </Button>
-              <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
+              <Button asChild size="lg" variant="outline" className="bg-white text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white">
                 <Link href="/portfolio">View Our Work</Link>
               </Button>
             </div>
