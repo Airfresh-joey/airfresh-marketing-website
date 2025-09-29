@@ -1,4 +1,4 @@
-import drive from '@googleapis/drive';
+import * as drive from '@googleapis/drive';
 import { getUnsplashFallbackImage } from './unsplash-fallback';
 
 export interface GoogleDriveFile {

@@ -1,0 +1,7 @@
+{
+  "/city-services/[slug]/page": "app/city-services/[slug]/page.js",
+  "/portfolio/page": "app/portfolio/page.js",
+  "/case-studies/[id]/page": "app/case-studies/[id]/page.js",
+  "/blog/page": "app/blog/page.js",
+  "/blog/[slug]/page": "app/blog/[slug]/page.js"
+}

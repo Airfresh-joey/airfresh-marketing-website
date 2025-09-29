@@ -504,8 +504,13 @@ function generateUpcomingEvents() {
       const checkDate = new Date(now);
       checkDate.setDate(checkDate.getDate() + i);
       const dayName = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday'][checkDate.getDay()];
-      
-      if (days.includes(dayName)) {
+
+      // Type guard to ensure dayName is a valid weekday
+      const isWeekday = (day: string): day is 'Monday' | 'Tuesday' | 'Wednesday' | 'Thursday' | 'Friday' => {
+        return ['Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday'].includes(day);
+      };
+
+      if (isWeekday(dayName) && days.includes(dayName)) {
         const eventDate = new Date(checkDate);
         eventDate.setHours(hour, minute, 0, 0);
         

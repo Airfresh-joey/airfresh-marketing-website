@@ -128,9 +128,9 @@ export default function HeroAgencyVideo() {
             className="mb-12 mt-8"
           >
             <figure itemScope itemType="https://schema.org/ImageObject">
-              <img 
-                src={airFreshLogo} 
-                alt="AirFresh Marketing logo" 
+              <img
+                src={typeof airFreshLogo === 'string' ? airFreshLogo : airFreshLogo.src}
+                alt="AirFresh Marketing logo"
                 title="AirFresh Marketing - Experiential Marketing Agency"
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full shadow-2xl"
                 loading="eager"

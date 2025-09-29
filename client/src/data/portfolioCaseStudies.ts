@@ -33,7 +33,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1626814026160-2237a95fc5a0?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/netflix.jpg"
   },
   {
     id: "mrbeast-burger-launch",
@@ -52,7 +52,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1565299507177-b0ac66763828?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/mrbeast.jpg"
   },
   {
     id: "microsoft-xbox-activation",
@@ -71,7 +71,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1612287230202-1ff1d85d1bdf?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/microsoft.jpg"
   },
   {
     id: "mac-cosmetics-masterclass",
@@ -90,7 +90,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/mac-cosmetics.jpg"
   },
   {
     id: "starbucks-reserve-opening",
@@ -109,7 +109,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1501339847302-ac426a4a7cbb?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/starbucks.jpg"
   },
   {
     id: "red-bull-campus-tour",
@@ -128,7 +128,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1572252821143-035a024857ac?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/formula-1.jpg"
   },
   {
     id: "spotify-wrapped-experience",
@@ -147,7 +147,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/cirque-du-soleil.jpg"
   },
   {
     id: "nike-air-max-day",
@@ -166,7 +166,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1556906781-9a412961c28c?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/williams-racing.jpg"
   },
   {
     id: "whole-foods-sustainability",
@@ -185,7 +185,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Retail",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1542838132-92c53300491e?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/meijer.jpg"
   },
   {
     id: "coachella-brand-village",
@@ -204,7 +204,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/ted-talk.jpg"
   },
   {
     id: "amazon-prime-day-popup",
@@ -223,7 +223,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1573164713988-8665fc963095?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/1800-tequila.jpg"
   },
   {
     id: "disney-plus-launch",
@@ -242,7 +242,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1578662996442-48f60103fc31?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/brooklyn-magazine.jpg"
   },
   {
     id: "tesla-roadshow",
@@ -261,7 +261,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Automotive",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1617788138017-80ad40651399?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/polaris.jpg"
   },
   {
     id: "sephora-beauty-insider",
@@ -280,7 +280,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/byoma.jpg"
   },
   {
     id: "google-pixel-launch",
@@ -299,7 +299,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1598327105666-5b89351aff97?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/cortie-digital.jpg"
   },
   {
     id: "adidas-originals-streetwear",
@@ -318,7 +318,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1515955656352-a1fa3ffcd111?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/williams-racing-2.jpg"
   },
   {
     id: "chipotle-college-tour",
@@ -337,7 +337,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1623653387945-2fd25214f8fc?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/buffalo-wild-wings.jpg"
   },
   {
     id: "lululemon-sweat-sessions",
@@ -356,7 +356,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1518611012118-696072aa579a?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/skinny-mixes.jpg"
   },
   {
     id: "budweiser-superbowl",
@@ -375,7 +375,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1544919982-b61976f0ba43?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/beer-samplings.jpg"
   },
   {
     id: "target-back-to-school",
@@ -394,6 +394,6 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Retail",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1540221652346-e5dd6b50f3e7?w=1200&h=800&fit=crop"
+    heroImage: "/images/case-studies/wagamama.jpg"
   }
 ];

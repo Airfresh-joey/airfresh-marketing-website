@@ -1,21 +1,17 @@
 {
+  "framework": "nextjs",
   "buildCommand": "npm run build",
-  "outputDirectory": "dist/public",
   "installCommand": "npm install",
-  "framework": null,
   "functions": {
-    "api/index.js": {
+    "app/api/**/*.ts": {
       "maxDuration": 30
     }
   },
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/api/(.*)",
-      "destination": "/api"
-    },
-    {
-      "source": "/(.*)",
-      "destination": "/index.html"
+      "source": "/projects/case-studies",
+      "destination": "/case-studies",
+      "permanent": true
     }
   ]
 }

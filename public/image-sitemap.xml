@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  
+  <!-- Homepage Hero and Brand Images -->
+  <url>
+    <loc>https://airfreshmarketing.com/</loc>
+    <image:image>
+      <image:loc>https://airfreshmarketing.com/favicon.svg</image:loc>
+      <image:title>AirFresh Marketing Logo - Experiential Marketing Agency</image:title>
+      <image:caption>AirFresh Marketing logo - Leading experiential marketing agency specializing in brand ambassadors and event staffing nationwide</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1515187029135-18ee286d815b</image:loc>
+      <image:title>Experiential Marketing Campaign Event Staffing Brand Ambassadors</image:title>
+      <image:caption>Professional brand ambassadors and event staffing for experiential marketing campaigns nationwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Case Studies Images -->
+  <url>
+    <loc>https://airfreshmarketing.com/projects/case-studies</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1566933293069-b55dc0a4e7de</image:loc>
+      <image:title>Microsoft Brand Activation Experiential Marketing Campaign</image:title>
+      <image:caption>Brand ambassadors executing Microsoft product sampling and guerrilla marketing activation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85</image:loc>
+      <image:title>Netflix Brand Experience Event Marketing Pop-up Activation</image:title>
+      <image:caption>Netflix immersive brand experience with event staffing and experiential marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1531297484001-80022131f5a1</image:loc>
+      <image:title>Apple Product Launch Brand Ambassadors Event Production</image:title>
+      <image:caption>Apple product launch with brand ambassadors and experiential marketing activation</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1540747913346-19e32dc3e97e</image:loc>
+      <image:title>Formula 1 Las Vegas Event Staffing Brand Activation</image:title>
+      <image:caption>Formula 1 Las Vegas Grand Prix brand activation with event staffing and VIP experiences</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9</image:loc>
+      <image:title>MAC Cosmetics Beauty Product Sampling Brand Ambassadors</image:title>
+      <image:caption>MAC Cosmetics beauty product sampling campaign with brand ambassadors nationwide</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Services Pages Images -->
+  <url>
+    <loc>https://airfreshmarketing.com/services/experiential-marketing</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1540575467063-178a50c2df87</image:loc>
+      <image:title>Experiential Marketing Services Brand Activation Events</image:title>
+      <image:caption>Full-service experiential marketing including brand activations and guerrilla marketing campaigns</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d</image:loc>
+      <image:title>Brand Ambassadors Event Staffing Services Nationwide</image:title>
+      <image:caption>Professional brand ambassadors and event staffing services for marketing campaigns</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/services/brand-strategy</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1552664730-d307ca884978</image:loc>
+      <image:title>Brand Strategy Development Marketing Consulting Services</image:title>
+      <image:caption>Strategic brand development and experiential marketing consulting services</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/services/event-production</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1492684223066-81342ee5ff30</image:loc>
+      <image:title>Event Production Services Corporate Events Brand Experiences</image:title>
+      <image:caption>Full-service event production for corporate events and brand experiences</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1511578314322-379afb476865</image:loc>
+      <image:title>Pop-up Event Production Guerrilla Marketing Activations</image:title>
+      <image:caption>Pop-up event production and guerrilla marketing campaign execution</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Brand Activations Gallery -->
+  <url>
+    <loc>https://airfreshmarketing.com/projects/brand-activations</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1556742049-0cfed4f6a45d</image:loc>
+      <image:title>Brand Activation Campaign Product Sampling Street Teams</image:title>
+      <image:caption>Brand activation campaign with product sampling and street team marketing</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1569529465841-dfecdab7503b</image:loc>
+      <image:title>1800 Tequila Sampling Campaign Brand Ambassadors</image:title>
+      <image:caption>1800 Tequila product sampling with brand ambassadors at nightlife venues</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1414235077428-338989a2e8c0</image:loc>
+      <image:title>Buffalo Wild Wings Restaurant Marketing Event Staffing</image:title>
+      <image:caption>Buffalo Wild Wings restaurant marketing with event staffing and promotions</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Corporate Events -->
+  <url>
+    <loc>https://airfreshmarketing.com/projects/corporate-events</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1511578314322-379afb476865</image:loc>
+      <image:title>Corporate Event Production Conference Management Services</image:title>
+      <image:caption>Corporate event production and conference management services nationwide</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1475721027785-f74eccf877e2</image:loc>
+      <image:title>TED Conference Event Staffing Brand Experience Design</image:title>
+      <image:caption>TED conference event staffing and brand experience design</image:caption>
+    </image:image>
+  </url>
+
+  <!-- About Page Team Images -->
+  <url>
+    <loc>https://airfreshmarketing.com/about</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1542744173-8e7e53415bb0</image:loc>
+      <image:title>AirFresh Marketing Team Experiential Marketing Professionals</image:title>
+      <image:caption>AirFresh Marketing team of experiential marketing professionals and event specialists</image:caption>
+    </image:image>
+  </url>
+
+  <!-- Talent/Brand Ambassadors Page -->
+  <url>
+    <loc>https://airfreshmarketing.com/talent</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1551818255-e6e10975bc17</image:loc>
+      <image:title>Professional Brand Ambassadors Event Staff Network</image:title>
+      <image:caption>Network of 5000+ professional brand ambassadors and event staff nationwide</image:caption>
+    </image:image>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1600880292203-757bb62b4baf</image:loc>
+      <image:title>Event Staffing Services Brand Representatives Field Marketing</image:title>
+      <image:caption>Professional event staffing and brand representatives for field marketing campaigns</image:caption>
+    </image:image>
+  </url>
+
+  <!-- City-Specific Pages -->
+  <url>
+    <loc>https://airfreshmarketing.com/city/new-york</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1519501025264-65ba15a82390</image:loc>
+      <image:title>NYC Brand Ambassadors Manhattan Event Staffing Services</image:title>
+      <image:caption>New York City brand ambassadors and Manhattan event staffing for experiential marketing</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/city/los-angeles</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1534190239940-9ba8944ea261</image:loc>
+      <image:title>Los Angeles Brand Ambassadors Hollywood Event Marketing</image:title>
+      <image:caption>Los Angeles brand ambassadors and Hollywood event marketing services</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/city/chicago</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1494522855154-9297ac14b55f</image:loc>
+      <image:title>Chicago Brand Ambassadors Midwest Event Staffing</image:title>
+      <image:caption>Chicago brand ambassadors and Midwest event staffing for brand activations</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/city/miami</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1533106497176-45ae19e68ba2</image:loc>
+      <image:title>Miami Brand Ambassadors South Beach Event Marketing</image:title>
+      <image:caption>Miami brand ambassadors and South Beach event marketing for lifestyle brands</image:caption>
+    </image:image>
+  </url>
+
+  <url>
+    <loc>https://airfreshmarketing.com/city/denver</loc>
+    <image:image>
+      <image:loc>https://images.unsplash.com/photo-1546156929-a4c0ac411f47</image:loc>
+      <image:title>Denver Brand Ambassadors Colorado Event Staffing HQ</image:title>
+      <image:caption>Denver brand ambassadors and Colorado event staffing from AirFresh Marketing headquarters</image:caption>
+    </image:image>
+  </url>
+
+</urlset>

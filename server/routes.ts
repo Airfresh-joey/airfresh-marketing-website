@@ -714,7 +714,11 @@ export async function registerRoutes(app: Express): Promise<Server> {
   app.get("/api/city-services", async (req, res) => {
     try {
       const cities = getAllCities();
-      const combinations = [];
+      const combinations: Array<{
+        slug: string;
+        cityName: string;
+        serviceName: string;
+      }> = [];
 
       cities.forEach(city => {
         serviceTypes.forEach(service => {

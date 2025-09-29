@@ -235,7 +235,7 @@ export const defaultCityImages: CityImages = {
 };
 
 // Service-specific images from actual AirFresh Marketing website
-export const serviceImages = {
+export const serviceImages: Record<string, string> = {
   'brand-ambassadors': '/images/heroes/sxsw-event-all-services.jpeg',
   'convention-staffing': '/images/heroes/sxsw-event-all-services.jpeg',
   'event-management': '/images/heroes/mac-cosmetics-event-management.jpeg',
@@ -253,7 +253,7 @@ export function getCityImages(citySlug: string): CityImages {
 
 // Helper function to get service image
 export function getServiceImage(serviceSlug: string): string {
-  return serviceImages[serviceSlug] || defaultCityImages.hero;
+  return serviceImages[serviceSlug as keyof typeof serviceImages] || defaultCityImages.hero;
 }
 
 // Event and activation images from the original site

@@ -1,5 +1,5 @@
 import { googleDriveService } from "../services/google-drive";
-import { getAllCaseStudies } from "../portfolio-case-studies";
+import { getAllCaseStudies, portfolioCaseStudies } from "../portfolio-case-studies";
 import fs from "fs";
 import path from "path";
 import https from "https";
@@ -73,7 +73,8 @@ async function downloadGoogleDriveImages() {
       // Get images from Google Drive folder
       const imageUrls = await googleDriveService.getImageUrlsFromFolder(
         (caseStudy as any).googleDriveUrl!,
-        caseStudy.name
+        10, // limit of images to fetch
+        caseStudy.name // client name
       );
 
       console.log(`  Found ${imageUrls.length} images`);

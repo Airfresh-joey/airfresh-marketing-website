@@ -23,9 +23,9 @@ export default function Navigation() {
           <div className="flex items-center">
             <Link href="/" className="flex-shrink-0">
               <div className="flex items-center">
-                <img 
-                  src={logoUrl} 
-                  alt="AirFresh" 
+                <img
+                  src={typeof logoUrl === 'string' ? logoUrl : logoUrl.src}
+                  alt="AirFresh"
                   className="h-10 w-auto"
                 />
               </div>

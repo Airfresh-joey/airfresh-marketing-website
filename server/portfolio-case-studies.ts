@@ -1,5 +1,28 @@
 import { Request, Response } from 'express';
 
+// Type definitions for case studies
+interface CaseStudy {
+  id: string;
+  name: string;
+  tagline: string;
+  description?: string;
+  industry?: string;
+  services: string[];
+  markets?: string[];
+  date?: string;
+  heroImage: string | null;
+  galleryImages: string[];
+  googleDriveUrl?: string;
+  category?: string;
+  stats?: {
+    reach: string;
+    engagement: string;
+    satisfaction: string;
+    roi: string;
+  };
+  featured?: boolean;
+}
+
 // Complete case studies data from CSV
 export const portfolioCaseStudies = [
   {
@@ -504,7 +527,7 @@ export const portfolioCaseStudies = [
 ];
 
 // Additional case studies from CSV without detailed stats (will generate estimates)
-const additionalCaseStudies = [
+const additionalCaseStudies: CaseStudy[] = [
   {
     id: "car-wash-promotion",
     name: "Car Wash Promotion",
