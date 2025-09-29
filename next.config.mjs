@@ -52,7 +52,7 @@ const nextConfig = {
   },
 
   // Output configuration for deployment
-  output: 'standalone',
+  // output: 'standalone', // Commented out for Vercel deployment
 }
 
 export default nextConfig;
