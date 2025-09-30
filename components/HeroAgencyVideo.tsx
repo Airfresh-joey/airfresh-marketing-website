@@ -59,16 +59,14 @@ export default function HeroAgencyVideo() {
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
       {/* Preconnect hints for Vimeo */}
-      {!isMobile && (
-        <>
-          <link rel="preconnect" href="https://player.vimeo.com" />
-          <link rel="preconnect" href="https://i.vimeocdn.com" />
-          <link rel="preconnect" href="https://f.vimeocdn.com" />
-        </>
-      )}
-      
-      {/* Video Background - Desktop only */}
-      {!isMobile && !shouldReduceMotion && (
+      <>
+        <link rel="preconnect" href="https://player.vimeo.com" />
+        <link rel="preconnect" href="https://i.vimeocdn.com" />
+        <link rel="preconnect" href="https://f.vimeocdn.com" />
+      </>
+
+      {/* Video Background - All devices */}
+      {!shouldReduceMotion && (
         <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
           <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
             <iframe
@@ -96,8 +94,8 @@ export default function HeroAgencyVideo() {
         </div>
       )}
 
-      {/* Mobile Fallback - Static gradient background */}
-      {(isMobile || shouldReduceMotion) && (
+      {/* Fallback - Static gradient background for reduced motion */}
+      {shouldReduceMotion && (
         <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" />
       )}
 
