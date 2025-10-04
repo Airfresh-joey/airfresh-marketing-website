@@ -9,9 +9,9 @@ import Link from "next/link";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
-import LinkedInFollow from "@/components/LinkedInFollow";
 import { useQuery } from "@tanstack/react-query";
 import type { BlogPost } from "@shared/schema";
+import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Home() {
   // Handle scroll to anchor on page load
@@ -261,33 +261,19 @@ export default function Home() {
   ];
 
   return (
-    <div className="pt-16">
-      <SEO
-        title="Air Fresh Marketing - Experiential Marketing Agency"
-        description="Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide."
-        pageType="home"
-        canonical="https://airfreshmarketing.com"
-        structuredData={structuredData}
-      />
-      <HeroAgencyVideo />
+    <>
+      <FloatingCTA />
+      <div className="pt-16">
+        <SEO
+          title="Air Fresh Marketing - Experiential Marketing Agency"
+          description="Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide."
+          pageType="home"
+          canonical="https://airfreshmarketing.com"
+          structuredData={structuredData}
+        />
+        <HeroAgencyVideo />
 
-      {/* LinkedIn Follow Section */}
-      <section className="relative py-12 bg-gradient-to-r from-cyan-50 via-white to-blue-50 overflow-hidden">
-        <div className="absolute inset-0 bg-white/40 backdrop-blur-sm"></div>
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
-          >
-            <p className="text-gray-800 mb-6 font-semibold text-lg">🚀 Connect with us on LinkedIn for the latest experiential marketing insights</p>
-            <LinkedInFollow size="large" />
-          </motion.div>
-        </div>
-      </section>
-
-      {/* Video Section - Premium Design */}
+      {/* Video Section - Premium Design with Multiple Videos */}
       <section className="relative py-32 bg-gradient-to-b from-white via-gray-50 to-white">
         <div className="absolute inset-0">
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-transparent to-blue-500/5"></div>
@@ -310,11 +296,13 @@ export default function Home() {
               Watch how we transform ordinary events into extraordinary brand experiences.
             </p>
           </motion.div>
+
+          {/* Featured Video */}
           <motion.div
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative"
+            className="relative mb-12"
           >
             <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-1 rounded-2xl shadow-2xl">
               <div className="bg-white rounded-xl overflow-hidden">
@@ -332,6 +320,54 @@ export default function Home() {
               </div>
             </div>
           </motion.div>
+
+          {/* Additional Brand Activation Videos */}
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[
+              {
+                title: "Street Team Activation",
+                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=30s",
+                description: "Dynamic street team campaign in action"
+              },
+              {
+                title: "Brand Ambassador Events",
+                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=45s",
+                description: "Professional brand ambassadors engaging audiences"
+              },
+              {
+                title: "Product Sampling Campaign",
+                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=60s",
+                description: "Experiential product sampling at major events"
+              }
+            ].map((video, index) => (
+              <motion.div
+                key={index}
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                transition={{ duration: 0.6, delay: index * 0.1 }}
+                className="group"
+              >
+                <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-0.5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
+                  <div className="bg-white rounded-xl overflow-hidden">
+                    <div className="aspect-video relative">
+                      <iframe
+                        src={video.src}
+                        className="absolute inset-0 w-full h-full"
+                        frameBorder="0"
+                        allow="autoplay; fullscreen; picture-in-picture"
+                        allowFullScreen
+                        title={video.title}
+                      ></iframe>
+                    </div>
+                    <div className="p-4 bg-white">
+                      <h4 className="font-bold text-gray-900 mb-1">{video.title}</h4>
+                      <p className="text-sm text-gray-600">{video.description}</p>
+                    </div>
+                  </div>
+                </div>
+              </motion.div>
+            ))}
+          </div>
         </div>
       </section>
 
@@ -658,9 +694,9 @@ export default function Home() {
           </motion.div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
-              { value: "100+", label: "Brands Served" },
+              { value: "300+", label: "Brands Activated" },
               { value: "10+", label: "Years Experience" },
-              { value: "25+", label: "Cities Nationwide" },
+              { value: "50+", label: "Cities Nationwide" },
               { value: "1000+", label: "Events Produced" }
             ].map((stat, index) => (
               <motion.div
@@ -925,6 +961,7 @@ export default function Home() {
           </motion.div>
         </div>
       </section>
-    </div>
+      </div>
+    </>
   );
 }

@@ -42,6 +42,7 @@ export default function NavigationClean() {
     { href: "/portfolio", label: "Portfolio" },
     { href: "/services", label: "Services", hasDropdown: true },
     { href: "/#technology", label: "Technology", isAnchor: true },
+    { href: "/locations", label: "Locations" },
     { href: "/about", label: "About" },
     { href: "/blog", label: "Blog" }
   ];
@@ -68,7 +69,7 @@ export default function NavigationClean() {
           </div>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-8">
+          <div className="hidden lg:flex items-center space-x-8">
             {navLinks.map((link) => (
               link.hasDropdown ? (
                 <div
@@ -142,7 +143,7 @@ export default function NavigationClean() {
           </div>
 
           {/* Mobile menu button */}
-          <div className="md:hidden flex items-center">
+          <div className="lg:hidden flex items-center">
             <button
               onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
               className="text-white hover:text-cyan-400 focus:outline-none transition-colors"
@@ -159,7 +160,7 @@ export default function NavigationClean() {
 
       {/* Mobile Navigation */}
       {mobileMenuOpen && (
-        <div className="md:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800">
+        <div className="lg:hidden bg-gray-900/95 backdrop-blur-md border-t border-gray-800">
           <div className="px-2 pt-2 pb-3 space-y-1">
             {navLinks.map((link) => (
               link.hasDropdown ? (

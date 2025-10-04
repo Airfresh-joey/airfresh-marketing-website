@@ -15,9 +15,10 @@ import {
   Building2,
   Store,
   Handshake,
-  CheckCircle
+  CheckCircle,
+  MapPin,
+  ArrowRight
 } from "lucide-react";
-import LinkedInFollow from "@/components/LinkedInFollow";
 
 export default function About() {
   // Enhanced structured data with E-E-A-T signals
@@ -75,8 +76,8 @@ export default function About() {
   };
   const stats = [
     { number: "10+", label: "Years of Experience" },
-    { number: "100+", label: "Brands Served" },
-    { number: "25+", label: "Cities Nationwide" },
+    { number: "300+", label: "Brands Activated" },
+    { number: "50+", label: "Cities Nationwide" },
     { number: "1000+", label: "Events Produced" }
   ];
 
@@ -179,17 +180,6 @@ export default function About() {
             </Button>
           </header>
         </article>
-      </section>
-
-      {/* LinkedIn Connect Section */}
-      <section className="py-12 bg-primary/5">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">Why Join Our Professional Network?</h3>
-          <p className="text-gray-600 mb-6 max-w-2xl mx-auto">
-            Follow AirFresh Marketing on LinkedIn for industry insights, success stories, and the latest trends in experiential marketing.
-          </p>
-          <LinkedInFollow size="large" />
-        </div>
       </section>
 
       {/* Stats Section */}
@@ -311,8 +301,66 @@ export default function About() {
         </div>
       </section>
 
-      {/* Client Types Section */}
+      {/* Nationwide Coverage Map Section */}
       <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">NATIONWIDE COVERAGE</h2>
+            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Serving 50+ Cities Coast to Coast</h3>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              From our Denver headquarters to major markets nationwide, we deliver exceptional
+              experiential marketing campaigns wherever your audience is located.
+            </p>
+          </div>
+
+          {/* Interactive Map */}
+          <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-1 rounded-2xl shadow-2xl mb-12">
+            <div className="bg-white rounded-xl overflow-hidden">
+              <div className="aspect-video relative">
+                <iframe
+                  src="https://www.google.com/maps/d/embed?mid=1uXbH8Px2s2mENx8_GsRNcRPKPTiYkXw&ehbc=2E312F&ll=39.8283,-98.5795&z=4"
+                  className="absolute inset-0 w-full h-full"
+                  style={{
+                    border: 0,
+                    marginTop: '-80px',
+                    height: 'calc(100% + 80px)'
+                  }}
+                  allowFullScreen
+                  loading="lazy"
+                  referrerPolicy="no-referrer-when-downgrade"
+                  title="AirFresh Marketing Nationwide Locations"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+
+          {/* Quick City Grid */}
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
+            {[
+              'Denver', 'Los Angeles', 'New York', 'Chicago', 'Houston', 'Phoenix',
+              'San Francisco', 'Seattle', 'Miami', 'Atlanta', 'Boston', 'Dallas',
+              'Austin', 'Portland', 'San Diego', 'Las Vegas', 'Nashville', 'Charlotte'
+            ].map((city) => (
+              <div key={city} className="flex items-center text-gray-600 text-sm">
+                <MapPin className="w-3 h-3 text-cyan-600 mr-1 flex-shrink-0" />
+                {city}
+              </div>
+            ))}
+          </div>
+
+          <div className="text-center">
+            <Link href="/locations">
+              <Button size="lg" className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
+                View All Locations
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Client Types Section */}
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHO WE SERVE</h2>
