@@ -1,7 +1,7 @@
-Name,Latitude,Longitude,Description
-"AirFresh Marketing HQ - Denver, CO",39.7392,-104.9903,"Headquarters - 720 S. Colorado Blvd., Penthouse North, Denver, CO 80246"
-"Los Angeles, CA",34.0522,-118.2437,"Brand Activations & Event Staffing - Los Angeles"
-"San Francisco, CA",37.7749,-122.4194,"Experiential Marketing Services - San Francisco"
+City,Latitude,Longitude,Description
+"Denver, CO",39.7392,-104.9903,"🏢 Headquarters | Full-Service Experiential Marketing"
+"Los Angeles, CA",34.0522,-118.2437,"Brand Activations | Event Staffing | Street Teams"
+"San Francisco, CA",37.7749,-122.4194,"Experiential Marketing | Brand Ambassadors"
 "San Diego, CA",32.7157,-117.1611,"Brand Ambassadors & Street Teams - San Diego"
 "Seattle, WA",47.6062,-122.3321,"Event Marketing & Activations - Seattle"
 "Portland, OR",45.5152,-122.6784,"Brand Ambassadors & Experiential Marketing - Portland"

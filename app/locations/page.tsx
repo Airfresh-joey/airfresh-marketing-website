@@ -161,18 +161,30 @@ export default function Locations() {
             <div className="bg-white rounded-xl overflow-hidden">
               <div className="aspect-video relative">
                 <iframe
-                  src="https://www.google.com/maps/d/embed?mid=1uXbH8Px2s2mENx8_GsRNcRPKPTiYkXw&ehbc=2E312F&ll=39.8283,-98.5795&z=4"
+                  src="https://www.google.com/maps/d/u/0/embed?mid=1uXbH8Px2s2mENx8_GsRNcRPKPTiYkXw&ehbc=2E312F&noprof=1"
                   className="absolute inset-0 w-full h-full"
                   style={{
                     border: 0,
                     marginTop: '-80px',
-                    height: 'calc(100% + 80px)'
+                    height: 'calc(100% + 80px)',
+                    pointerEvents: 'none'
                   }}
                   allowFullScreen
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
                   title="AirFresh Marketing Locations Map"
                 ></iframe>
+                <div
+                  className="absolute inset-0 cursor-pointer"
+                  onClick={(e) => {
+                    const iframe = e.currentTarget.previousElementSibling as HTMLIFrameElement;
+                    if (iframe) {
+                      iframe.style.pointerEvents = 'auto';
+                      e.currentTarget.style.display = 'none';
+                    }
+                  }}
+                  style={{ background: 'transparent' }}
+                ></div>
               </div>
             </div>
           </div>
