@@ -18,7 +18,12 @@ const nextConfig = {
       'lh3.googleusercontent.com',
       'logo.clearbit.com'
     ],
-    unoptimized: process.env.NODE_ENV === 'development',
+    formats: ['image/avif', 'image/webp'],
+    deviceSizes: [640, 750, 828, 1080, 1200, 1920, 2048, 3840],
+    imageSizes: [16, 32, 48, 64, 96, 128, 256, 384],
+    minimumCacheTTL: 60,
+    dangerouslyAllowSVG: true,
+    contentSecurityPolicy: "default-src 'self'; script-src 'none'; sandbox;",
   },
 
   // Environment variables
@@ -38,7 +43,7 @@ const nextConfig = {
   },
 
   // Webpack configuration for aliases
-  webpack: (config, { buildId, dev, isServer, defaultLoaders, webpack }) => {
+  webpack: (config) => {
     config.resolve.alias = {
       ...config.resolve.alias,
       '@': path.resolve(__dirname),

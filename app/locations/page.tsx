@@ -193,6 +193,35 @@ export default function Locations() {
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
             {filteredCities.map((city, index) => {
               const region = regions.find(r => r.name === city.region);
+              const citySlug = city.name.toLowerCase().replace(/\s+/g, '-');
+
+              const cardContent = (
+                <Card className="hover:shadow-lg transition-all duration-300 group cursor-pointer h-full">
+                  <CardContent className="p-4">
+                    <div className="flex items-start justify-between mb-2">
+                      <div>
+                        <h3 className="font-bold text-lg text-gray-900 group-hover:text-cyan-600 transition-colors">
+                          {city.name}
+                        </h3>
+                        <p className="text-sm text-gray-500">{city.state}</p>
+                      </div>
+                      {city.isHQ && (
+                        <Badge className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs">
+                          HQ
+                        </Badge>
+                      )}
+                    </div>
+                    <div className="flex items-center gap-2 text-xs text-gray-600 mb-2">
+                      <div className={`w-2 h-2 rounded-full ${region?.color}`}></div>
+                      {city.region}
+                    </div>
+                    <div className="flex items-center text-xs text-cyan-600 font-medium">
+                      View Details <ArrowRight className="w-3 h-3 ml-1" />
+                    </div>
+                  </CardContent>
+                </Card>
+              );
+
               return (
                 <motion.div
                   key={city.name}
@@ -200,27 +229,9 @@ export default function Locations() {
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: index * 0.05 }}
                 >
-                  <Card className="hover:shadow-lg transition-all duration-300 group cursor-pointer">
-                    <CardContent className="p-4">
-                      <div className="flex items-start justify-between mb-2">
-                        <div>
-                          <h3 className="font-bold text-lg text-gray-900 group-hover:text-cyan-600 transition-colors">
-                            {city.name}
-                          </h3>
-                          <p className="text-sm text-gray-500">{city.state}</p>
-                        </div>
-                        {city.isHQ && (
-                          <Badge className="bg-gradient-to-r from-cyan-500 to-blue-600 text-white text-xs">
-                            HQ
-                          </Badge>
-                        )}
-                      </div>
-                      <div className="flex items-center gap-2 text-xs text-gray-600">
-                        <div className={`w-2 h-2 rounded-full ${region?.color}`}></div>
-                        {city.region}
-                      </div>
-                    </CardContent>
-                  </Card>
+                  <Link href={`/cities/${citySlug}`}>
+                    {cardContent}
+                  </Link>
                 </motion.div>
               );
             })}

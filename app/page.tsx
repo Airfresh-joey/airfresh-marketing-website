@@ -233,21 +233,21 @@ export default function Home() {
   const testimonials = [
     {
       name: "Aimee",
-      role: "Ambassador",
+      role: "Brand Ambassador - LA/NYC Events",
       content: "Air Fresh Marketing is my FAVORITE experiential marketing company to represent across the nation. The staff is responsive and professional, and the events are always a blast!",
-      avatar: "https://images.unsplash.com/photo-1494790108755-2616b612b786?ixlib=rb-4.0.3&w=50&h=50&fit=crop&crop=face"
+      avatar: "/images/testimonials/aimee-ambassador.jpg"
     },
     {
       name: "Kristin Quinn",
       role: "Chief Growth Officer, Gravel",
       content: "Air Fresh Marketing has worked with us all across the country from Los Angeles to New York. Even when events come up last minute, they are able to make magic happen!",
-      avatar: "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&w=50&h=50&fit=crop&crop=face"
+      avatar: "/images/testimonials/kristin-quinn.jpg"
     },
     {
       name: "Anonymous",
-      role: "Glassdoor Review",
+      role: "Glassdoor Review - 5 Stars",
       content: "The company culture is top-notch, and the atmosphere always friendly and motivating. Everyone is engaged and helpful.",
-      avatar: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&w=50&h=50&fit=crop&crop=face"
+      avatar: "/images/testimonials/anonymous-review.jpg"
     }
   ];
 
@@ -325,19 +325,19 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "Street Team Activation",
+                title: "NYC Times Square Activation",
                 src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=30s",
-                description: "Dynamic street team campaign in action"
+                description: "Premier Protein street team distributing 1,500+ samples in Manhattan"
               },
               {
-                title: "Brand Ambassador Events",
+                title: "LA Festival Brand Experience",
                 src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=45s",
-                description: "Professional brand ambassadors engaging audiences"
+                description: "Mac Cosmetics ambassadors generating 800+ opt-ins at Coachella"
               },
               {
-                title: "Product Sampling Campaign",
+                title: "Denver Convention Center Takeover",
                 src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=60s",
-                description: "Experiential product sampling at major events"
+                description: "Merrell guerrilla marketing campaign with interactive product demos"
               }
             ].map((video, index) => (
               <motion.div
@@ -888,16 +888,16 @@ export default function Home() {
 
           <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
             {[
-              { src: "https://logo.clearbit.com/google.com", alt: "Google" },
-              { src: "https://logo.clearbit.com/adidas.com", alt: "Adidas" },
-              { src: "https://logo.clearbit.com/microsoft.com", alt: "Microsoft" },
-              { src: "https://logo.clearbit.com/lyft.com", alt: "Lyft" },
-              { src: "https://logo.clearbit.com/clifbar.com", alt: "Clif Bar" },
-              { src: "https://logo.clearbit.com/pepsi.com", alt: "Pepsi" },
-              { src: "https://logo.clearbit.com/5hourenergy.com", alt: "5-hour Energy" },
-              { src: "https://logo.clearbit.com/nfl.com", alt: "NFL" },
-              { src: "https://logo.clearbit.com/nakedjuice.com", alt: "Naked Juice" },
-              { src: "https://logo.clearbit.com/redbull.com", alt: "Red Bull" }
+              { src: "/images/clients/google-activation-exact.jpg", alt: "Google experiential campaign with brand ambassadors" },
+              { src: "/images/clients/adidas-activation-exact.jpg", alt: "Adidas street team activation in Los Angeles" },
+              { src: "/images/clients/microsoft-activation-exact.jpg", alt: "Microsoft tech conference guerrilla marketing" },
+              { src: "/images/clients/lyft-activation-exact.jpg", alt: "Lyft NYC and Philadelphia market penetration campaign" },
+              { src: "/images/clients/clif-bar-activation-exact.jpg", alt: "Clif Bar outdoor sampling at Denver events" },
+              { src: "/images/clients/pepsi-activation-exact.jpg", alt: "Pepsi multi-city product sampling tour" },
+              { src: "/images/clients/5-hour-energy-activation-exact.jpg", alt: "5-hour Energy convention staffing nationwide" },
+              { src: "/images/clients/nfl-activation-exact.jpg", alt: "NFL Super Bowl fan experience activation" },
+              { src: "/images/clients/naked-juice-activation-exact.jpg", alt: "Naked Juice health expo brand ambassadors" },
+              { src: "/images/clients/red-bull-activation-exact.jpg", alt: "Red Bull extreme sports event marketing" }
             ].map((logo, index) => (
               <motion.div
                 key={index}

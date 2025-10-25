@@ -1,6 +1,7 @@
 import { users, contactSubmissions, blogPosts, caseStudiesReal, type User, type InsertUser, type ContactSubmission, type InsertContactSubmission, type BlogPost, type InsertBlogPost, type CaseStudyReal, type InsertCaseStudyReal } from "@shared/schema";
-import { db } from "./db";
-import { eq } from "drizzle-orm";
+// Commenting out database imports since we're using in-memory storage
+// import { db } from "./db";
+// import { eq } from "drizzle-orm";
 
 export interface IStorage {
   getUser(id: number): Promise<User | undefined>;
@@ -24,6 +25,9 @@ export interface IStorage {
   deleteCaseStudyReal(id: number): Promise<boolean>;
 }
 
+// DatabaseStorage class is commented out since we're not using database
+// Uncomment this class and the database imports above when you have a database configured
+/*
 export class DatabaseStorage implements IStorage {
   async getUser(id: number): Promise<User | undefined> {
     const [user] = await db.select().from(users).where(eq(users.id, id));
@@ -127,6 +131,7 @@ export class DatabaseStorage implements IStorage {
     return true;
   }
 }
+*/
 
 export class MemStorage implements IStorage {
   private users: Map<number, User>;
@@ -266,4 +271,5 @@ export class MemStorage implements IStorage {
   }
 }
 
-export const storage = new DatabaseStorage();
+// Use MemStorage instead of DatabaseStorage since no database is configured
+export const storage = new MemStorage();

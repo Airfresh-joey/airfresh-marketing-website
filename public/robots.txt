@@ -1,4 +1,9 @@
 User-agent: *
 Allow: /
+Allow: /images/
 
+# Disallow admin/private areas if any
+Disallow: /api/
+
+# Image sitemaps
 Sitemap: https://www.airfreshmarketing.com/sitemap.xml
