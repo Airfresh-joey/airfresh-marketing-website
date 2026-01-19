@@ -13,16 +13,210 @@ export interface CaseStudy {
   featured?: boolean;
   heroImage?: string;
   images?: string[];
+  videoUrl?: string;
 }
 
 export const portfolioCaseStudies: CaseStudy[] = [
   {
+    id: "premier-protein-nyc",
+    name: "NYC Times Square Activation",
+    tagline: "Premier Protein Street Team",
+    description: "Premier Protein street team distributing 1,500+ samples in Manhattan. Our brand ambassadors engaged with consumers in one of the world's busiest locations, creating memorable brand experiences and driving product trial.",
+    industry: "Food & Beverage",
+    services: ["Street Teams", "Product Sampling", "Brand Ambassadors"],
+    markets: ["New York City"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "1,500+",
+      "Location": "Times Square",
+      "Consumer Interactions": "5,000+",
+      "Brand Impressions": "50,000+"
+    },
+    category: "Food & Beverage",
+    featured: true,
+    heroImage: "/images/case-studies/formula-1.jpg",
+    videoUrl: "https://player.vimeo.com/video/395306497"
+  },
+  {
+    id: "mac-cosmetics-coachella",
+    name: "LA Festival Brand Experience",
+    tagline: "MAC Cosmetics at Coachella",
+    description: "MAC Cosmetics ambassadors generating 800+ opt-ins at Coachella. Our team created an immersive beauty experience at one of the world's most iconic music festivals, connecting with festival-goers and building brand loyalty.",
+    industry: "Beauty",
+    services: ["Brand Ambassadors", "Festival Marketing", "Lead Generation"],
+    markets: ["Los Angeles", "Coachella"],
+    date: "2024",
+    stats: {
+      "Opt-ins Generated": "800+",
+      "Festival": "Coachella",
+      "Brand Interactions": "3,000+",
+      "Social Shares": "1,000+"
+    },
+    category: "Beauty & Fashion",
+    featured: true,
+    heroImage: "/images/case-studies/williams-racing.jpg",
+    videoUrl: "https://player.vimeo.com/video/395306497"
+  },
+  {
+    id: "merrell-denver",
+    name: "Denver Convention Center Takeover",
+    tagline: "Merrell Guerrilla Marketing",
+    description: "Merrell guerrilla marketing campaign with interactive product demos. Our team created engaging experiences at the Denver Convention Center, allowing consumers to test Merrell footwear and connect with the brand's outdoor adventure spirit.",
+    industry: "Retail",
+    services: ["Guerrilla Marketing", "Product Demos", "Event Activation"],
+    markets: ["Denver, CO"],
+    date: "2024",
+    stats: {
+      "Product Demos": "500+",
+      "Location": "Denver Convention Center",
+      "Lead Captures": "300+",
+      "Conversion Rate": "25%"
+    },
+    category: "Retail",
+    featured: true,
+    heroImage: "/images/case-studies/cortie-digital.jpg",
+    videoUrl: "https://player.vimeo.com/video/395306497"
+  },
+  {
+    id: "future-beauty-labs-byoma",
+    name: "Future Beauty Labs - Byoma",
+    tagline: "National Sampling Campaign",
+    description: "National sampling of Byoma Creamy Jelly Cleanser across New York, Philadelphia, and Los Angeles. Our brand ambassadors introduced consumers to this innovative skincare product through targeted sampling activations.",
+    industry: "Beauty",
+    services: ["Product Sampling", "Brand Ambassadors", "Multi-Market Activation"],
+    markets: ["New York", "Philadelphia", "Los Angeles"],
+    date: "2024",
+    stats: {
+      "Markets": "3 Cities",
+      "Samples Distributed": "10,000+",
+      "Consumer Engagements": "15,000+",
+      "Brand Awareness Lift": "+45%"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/bond-vet.jpg"
+  },
+  {
+    id: "grubhub-national",
+    name: "Grubhub National Campaign",
+    tagline: "Nationwide Marketing Activation",
+    description: "National marketing campaign for Grubhub featuring street teams, promotional events, and brand ambassador activations in major markets across the country. Our team drove app downloads and new customer acquisition.",
+    industry: "Technology",
+    services: ["Street Teams", "Promotional Marketing", "App Downloads"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Markets Activated": "25+",
+      "App Downloads": "50,000+",
+      "Promo Codes Distributed": "100,000+",
+      "New User Sign-ups": "30,000+"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/qwick.jpg"
+  },
+  {
+    id: "clif-bar-national",
+    name: "Clif Bar National Campaign",
+    tagline: "Fueling Adventure Nationwide",
+    description: "National marketing campaign for Clif Bar featuring product sampling at outdoor events, fitness centers, and retail locations. Our brand ambassadors connected with active consumers and drove product trial.",
+    industry: "Food & Beverage",
+    services: ["Product Sampling", "Event Marketing", "Retail Activation"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "500,000+",
+      "Events Activated": "200+",
+      "Consumer Interactions": "250,000+",
+      "Sales Lift": "+35%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/beer-samplings.jpg"
+  },
+  {
+    id: "boss-coffee-launch",
+    name: "Boss Coffee US Launch",
+    tagline: "Japanese Coffee Meets America",
+    description: "US product launch for Boss Coffee in Denver, Colorado. Our team introduced American consumers to this iconic Japanese coffee brand through strategic sampling and experiential marketing activations.",
+    industry: "Beverage",
+    services: ["Product Launch", "Sampling", "Experiential Marketing"],
+    markets: ["Denver, Colorado"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "25,000+",
+      "Launch Events": "10+",
+      "Consumer Feedback": "95% Positive",
+      "Retail Placement": "100+ Stores"
+    },
+    category: "Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/meijer.jpg"
+  },
+  {
+    id: "lyft-national",
+    name: "Lyft National Marketing",
+    tagline: "Ride Into the Future",
+    description: "National marketing campaign for Lyft featuring promotional activations, driver recruitment events, and rider acquisition programs. Our teams activated in major markets to grow Lyft's presence.",
+    industry: "Technology",
+    services: ["Promotional Marketing", "Driver Recruitment", "User Acquisition"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Markets Activated": "30+",
+      "New Riders": "75,000+",
+      "Driver Sign-ups": "5,000+",
+      "Promo Rides": "100,000+"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/car-wash.jpg"
+  },
+  {
+    id: "adidas-national",
+    name: "Adidas National Staffing",
+    tagline: "Three Stripes, One Team",
+    description: "Staffing support for Adidas national marketing campaign. Our trained brand ambassadors and event staff represented the Adidas brand at retail locations, sporting events, and promotional activations across the country.",
+    industry: "Fashion",
+    services: ["Event Staffing", "Brand Ambassadors", "Retail Support"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Events Staffed": "150+",
+      "Staff Deployed": "500+",
+      "Markets Covered": "40+",
+      "Client Satisfaction": "98%"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/peelzon.jpg"
+  },
+  {
+    id: "visible-national",
+    name: "Visible National Campaign",
+    tagline: "Wireless Without Limits",
+    description: "National marketing campaign for Visible wireless featuring experiential activations, product demos, and promotional events. Our team helped Visible connect with consumers and drive plan sign-ups.",
+    industry: "Technology",
+    services: ["Experiential Marketing", "Product Demos", "Lead Generation"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Plan Sign-ups": "25,000+",
+      "Demo Events": "100+",
+      "Consumer Interactions": "200,000+",
+      "Brand Awareness": "+60%"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/topps-cards.jpg"
+  },
+  {
     id: "formula-1-las-vegas",
     name: "Formula 1 Las Vegas Grand Prix",
     tagline: "Racing Into the Future",
-    description: "Executed comprehensive event staffing and brand activation for the Formula 1 Las Vegas Grand Prix, managing hospitality suites, fan zones, and VIP experiences across the Las Vegas Strip. Our team delivered world-class service for one of motorsport's most anticipated events.",
+    description: "Executed comprehensive event staffing and brand activation for the Formula 1 Las Vegas Grand Prix, managing hospitality suites, fan zones, and VIP experiences across the Las Vegas Strip.",
     industry: "Sports & Entertainment",
-    services: ["Event Staffing", "VIP Management", "Brand Activation", "Hospitality"],
+    services: ["Event Staffing", "VIP Management", "Brand Activation"],
     markets: ["Las Vegas"],
     date: "2024",
     stats: {
@@ -32,24 +226,22 @@ export const portfolioCaseStudies: CaseStudy[] = [
       "Satisfaction Rate": "98%"
     },
     category: "Entertainment",
-    featured: true,
+    featured: false,
     heroImage: "/images/case-studies/formula-1.jpg",
     images: [
       "/images/case-studies/formula-1.jpg",
       "/images/case-studies/formula-1-2.jpg",
-      "/images/case-studies/formula-1-3.jpg",
-      "/images/case-studies/formula-1-4.jpg",
-      "/images/case-studies/formula-1-5.jpg"
+      "/images/case-studies/formula-1-3.jpg"
     ]
   },
   {
     id: "williams-racing-f1",
     name: "Williams Racing Fan Experience",
     tagline: "Racing Heritage Meets Innovation",
-    description: "Delivered premium fan experiences and hospitality services for Williams Racing at Formula 1 events, managing paddock tours, autograph sessions, and sponsor activations that brought fans closer to the action.",
+    description: "Delivered premium fan experiences and hospitality services for Williams Racing at Formula 1 events, managing paddock tours, autograph sessions, and sponsor activations.",
     industry: "Sports & Entertainment",
     services: ["VIP Management", "Hospitality", "Fan Activation"],
-    markets: ["F1 Circuit - Multiple Grand Prix"],
+    markets: ["F1 Circuit"],
     date: "2024",
     stats: {
       "VIP Experiences": "5,000+",
@@ -58,241 +250,12 @@ export const portfolioCaseStudies: CaseStudy[] = [
       "Guest Satisfaction": "97%"
     },
     category: "Entertainment",
-    featured: true,
+    featured: false,
     heroImage: "/images/case-studies/williams-racing.jpg",
     images: [
       "/images/case-studies/williams-racing.jpg",
       "/images/case-studies/williams-racing-2.jpg",
-      "/images/case-studies/williams-racing-3.jpg",
-      "/images/case-studies/williams-racing-4.jpg",
-      "/images/case-studies/williams-racing-5.jpg"
-    ]
-  },
-  {
-    id: "beer-sampling-program",
-    name: "National Craft Beer Sampling",
-    tagline: "Taste the Craft Revolution",
-    description: "Managed comprehensive beer sampling programs for multiple craft breweries at festivals, retail locations, and sports venues nationwide. Our trained beer ambassadors delivered engaging brand experiences that converted samplers to loyal customers.",
-    industry: "Beverage",
-    services: ["Product Sampling", "Festival Marketing", "Retail Activation"],
-    markets: ["Nationwide - 50+ Markets"],
-    date: "2024",
-    stats: {
-      "Events Staffed": "500+",
-      "Samples Poured": "2M+",
-      "New Customers Acquired": "100,000+",
-      "Retail Sales Lift": "+45%"
-    },
-    category: "Beverage",
-    featured: true,
-    heroImage: "/images/case-studies/beer-samplings.jpg",
-    images: [
-      "/images/case-studies/beer-samplings.jpg",
-      "/images/case-studies/beer-samplings-2.jpg",
-      "/images/case-studies/beer-samplings-3.jpg",
-      "/images/case-studies/beer-samplings-4.jpg",
-      "/images/case-studies/beer-samplings-5.jpg"
-    ]
-  },
-  {
-    id: "cortie-digital-activation",
-    name: "Cortie Digital Brand Launch",
-    tagline: "Digital Innovation Meets Live Experience",
-    description: "Launched Cortie Digital's innovative platform with multi-city activation events, product demonstrations, and influencer partnerships. Our brand ambassadors educated consumers on the technology while creating shareable social moments.",
-    industry: "Technology",
-    services: ["Product Launch", "Brand Ambassadors", "Tech Demos"],
-    markets: ["Los Angeles", "San Francisco", "New York", "Austin"],
-    date: "2024",
-    stats: {
-      "Product Demos": "25,000+",
-      "Lead Generation": "15,000+",
-      "Social Impressions": "5M+",
-      "Conversion Rate": "12%"
-    },
-    category: "Technology",
-    featured: false,
-    heroImage: "/images/case-studies/cortie-digital.jpg",
-    images: [
-      "/images/case-studies/cortie-digital.jpg",
-      "/images/case-studies/cortie-digital-2.jpg",
-      "/images/case-studies/cortie-digital-3.jpg",
-      "/images/case-studies/cortie-digital-4.jpg",
-      "/images/case-studies/cortie-digital-5.jpg"
-    ]
-  },
-  {
-    id: "meijer-retail-activation",
-    name: "Meijer In-Store Activation",
-    tagline: "Midwest Retail Excellence",
-    description: "Executed comprehensive in-store sampling and promotional programs for multiple brands at Meijer locations across the Midwest, driving product trial and increasing basket size through engaging customer interactions.",
-    industry: "Retail",
-    services: ["In-Store Marketing", "Product Sampling", "Promotional Events"],
-    markets: ["Michigan", "Ohio", "Indiana", "Illinois", "Wisconsin"],
-    date: "2024",
-    stats: {
-      "Stores Activated": "200+",
-      "Samples Distributed": "1M+",
-      "Sales Lift": "+55%",
-      "Brand Awareness": "+40%"
-    },
-    category: "Retail",
-    featured: false,
-    heroImage: "/images/case-studies/meijer.jpg",
-    images: [
-      "/images/case-studies/meijer.jpg",
-      "/images/case-studies/meijer-2.jpg",
-      "/images/case-studies/meijer-3.jpg",
-      "/images/case-studies/meijer-4.jpg",
-      "/images/case-studies/meijer-5.jpg"
-    ]
-  },
-  {
-    id: "bond-vet-grand-opening",
-    name: "Bond Vet Clinic Openings",
-    tagline: "Modern Pet Care Experience",
-    description: "Supported Bond Vet's expansion with grand opening events and community outreach programs at new clinic locations, creating welcoming experiences for pet owners and building local brand awareness.",
-    industry: "Healthcare",
-    services: ["Grand Opening Events", "Community Marketing", "Brand Ambassadors"],
-    markets: ["New York", "Boston", "Chicago", "Washington DC"],
-    date: "2024",
-    stats: {
-      "Clinic Openings": "15+",
-      "Pet Owner Interactions": "50,000+",
-      "New Patient Sign-ups": "10,000+",
-      "Community Events": "100+"
-    },
-    category: "Retail",
-    featured: false,
-    heroImage: "/images/case-studies/bond-vet.jpg",
-    images: [
-      "/images/case-studies/bond-vet.jpg",
-      "/images/case-studies/bond-vet-2.jpg",
-      "/images/case-studies/bond-vet-3.jpg",
-      "/images/case-studies/bond-vet-4.jpg",
-      "/images/case-studies/bond-vet-5.jpg"
-    ]
-  },
-  {
-    id: "car-wash-promo",
-    name: "Express Car Wash Promotion",
-    tagline: "Shine Bright Campaign",
-    description: "Drove membership sign-ups and brand awareness for express car wash locations through strategic street team marketing, promotional events, and sampling programs that showcased the premium wash experience.",
-    industry: "Automotive",
-    services: ["Street Teams", "Promotional Marketing", "Membership Drives"],
-    markets: ["Texas", "Arizona", "California", "Florida"],
-    date: "2024",
-    stats: {
-      "Locations Activated": "50+",
-      "Free Wash Samples": "100,000+",
-      "Membership Sign-ups": "25,000+",
-      "Revenue Increase": "+35%"
-    },
-    category: "Automotive",
-    featured: false,
-    heroImage: "/images/case-studies/car-wash.jpg",
-    images: [
-      "/images/case-studies/car-wash.jpg",
-      "/images/case-studies/car-wash-2.jpg",
-      "/images/case-studies/car-wash-3.jpg",
-      "/images/case-studies/car-wash-4.jpg",
-      "/images/case-studies/car-wash-5.jpg"
-    ]
-  },
-  {
-    id: "peelzon-launch",
-    name: "Peelzon Product Launch",
-    tagline: "Peel Away the Competition",
-    description: "Launched Peelzon's innovative product line with targeted sampling campaigns, retail demonstrations, and influencer partnerships that introduced consumers to the brand's unique value proposition.",
-    industry: "Consumer Products",
-    services: ["Product Launch", "Sampling", "Retail Demos"],
-    markets: ["Major Retailers Nationwide"],
-    date: "2024",
-    stats: {
-      "Samples Distributed": "500,000+",
-      "Retail Locations": "1,000+",
-      "Brand Awareness Lift": "+60%",
-      "Trial-to-Purchase": "25%"
-    },
-    category: "Retail",
-    featured: false,
-    heroImage: "/images/case-studies/peelzon.jpg",
-    images: [
-      "/images/case-studies/peelzon.jpg",
-      "/images/case-studies/peelzon-2.jpg",
-      "/images/case-studies/peelzon-3.jpg",
-      "/images/case-studies/peelzon-4.jpg"
-    ]
-  },
-  {
-    id: "qwick-staffing-events",
-    name: "Qwick Platform Events",
-    tagline: "Staffing Solutions Showcase",
-    description: "Partnered with Qwick to staff high-profile hospitality events and showcase the platform's on-demand staffing capabilities, demonstrating quality service while building brand awareness in the hospitality industry.",
-    industry: "Technology",
-    services: ["Event Staffing", "Platform Demonstration", "Industry Events"],
-    markets: ["Phoenix", "Los Angeles", "Dallas", "Miami"],
-    date: "2024",
-    stats: {
-      "Events Staffed": "200+",
-      "Staff Deployed": "5,000+",
-      "Client Satisfaction": "98%",
-      "Platform Sign-ups": "10,000+"
-    },
-    category: "Technology",
-    featured: false,
-    heroImage: "/images/case-studies/qwick.jpg",
-    images: [
-      "/images/case-studies/qwick.jpg",
-      "/images/case-studies/qwick-2.jpg",
-      "/images/case-studies/qwick-3.jpg",
-      "/images/case-studies/qwick-4.jpg",
-      "/images/case-studies/qwick-5.jpg"
-    ]
-  },
-  {
-    id: "topps-trading-cards",
-    name: "Topps Trading Card Events",
-    tagline: "Collecting Comes Alive",
-    description: "Staffed major sports card and collectibles events for Topps, managing autograph sessions, pack breaks, and collector meetups that created memorable experiences for sports and entertainment fans.",
-    industry: "Entertainment",
-    services: ["Event Staffing", "Autograph Sessions", "Fan Experiences"],
-    markets: ["Major Sports Events Nationwide"],
-    date: "2024",
-    stats: {
-      "Events Staffed": "50+",
-      "Collector Interactions": "75,000+",
-      "Exclusive Pack Sales": "100,000+",
-      "Social Impressions": "10M+"
-    },
-    category: "Entertainment",
-    featured: false,
-    heroImage: "/images/case-studies/topps-cards.jpg",
-    images: [
-      "/images/case-studies/topps-cards.jpg",
-      "/images/case-studies/topps-cards-2.jpg"
-    ]
-  },
-  {
-    id: "1800-tequila-sampling",
-    name: "1800 Tequila National Sampling",
-    tagline: "Premium Spirits Experience",
-    description: "Executed a nationwide sampling and brand ambassador program for 1800 Tequila, featuring premium tasting experiences at bars, restaurants, and special events. Our trained brand ambassadors educated consumers on the brand's heritage and cocktail culture.",
-    industry: "Beverage",
-    services: ["Product Sampling", "Brand Ambassadors", "Bar Marketing"],
-    markets: ["Los Angeles", "Miami", "New York", "Dallas", "Chicago"],
-    date: "2024",
-    stats: {
-      "Samples Distributed": "500,000+",
-      "Venues Activated": "1,000+",
-      "Consumer Interactions": "250,000+",
-      "Sales Lift": "+35%"
-    },
-    category: "Beverage",
-    featured: false,
-    heroImage: "/images/case-studies/1800-tequila.jpg",
-    images: [
-      "/images/case-studies/1800-tequila.jpg",
-      "/images/case-studies/1800-tequila-2.jpg"
+      "/images/case-studies/williams-racing-3.jpg"
     ]
   }
 ];
