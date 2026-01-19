@@ -72,7 +72,7 @@ export default function About() {
     ]
   };
   const stats = [
-    { number: "10+", label: "Years of Experience" },
+    { number: "25+", label: "Years of Experience" },
     { number: "100+", label: "Brands Served" },
     { number: "25+", label: "Cities Nationwide" },
     { number: "1000+", label: "Events Produced" }

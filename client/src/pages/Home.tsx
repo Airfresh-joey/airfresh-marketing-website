@@ -463,7 +463,7 @@ export default function Home() {
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
               { value: "100+", label: "Brands Served" },
-              { value: "10+", label: "Years Experience" },
+              { value: "25+", label: "Years Experience" },
               { value: "25+", label: "Cities Nationwide" },
               { value: "1000+", label: "Events Produced" }
             ].map((stat, index) => (

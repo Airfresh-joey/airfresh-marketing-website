@@ -75,7 +75,7 @@ export default function About() {
     ]
   };
   const stats = [
-    { number: "10+", label: "Years of Experience" },
+    { number: "25+", label: "Years of Experience" },
     { number: "300+", label: "Brands Activated" },
     { number: "50+", label: "Cities Nationwide" },
     { number: "1000+", label: "Events Produced" }
