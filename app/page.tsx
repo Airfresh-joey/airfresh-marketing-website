@@ -202,8 +202,8 @@ export default function Home() {
     },
     {
       icon: Share2,
-      title: "Social Integration & Endorsements",
-      description: "Amplify campaigns with integrated social proof and authentic brand ambassador endorsements."
+      title: "Custom Software & Gamification",
+      description: "Elevate experiences with custom-built apps, interactive games, and digital activations powered by Humming Agent AI."
     }
   ];
 
@@ -864,70 +864,151 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Client Logos Section - Premium Showcase */}
-      <section className="relative py-32 bg-gradient-to-b from-white via-gray-50/50 to-white overflow-hidden">
+      {/* Featured Work Showcase - Premium Visual Gallery */}
+      <section className="relative py-24 bg-gray-900 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-r from-cyan-50/20 via-transparent to-blue-50/20"></div>
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-gray-900 to-blue-900/20"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6 }}
-            className="text-center mb-20"
+            className="text-center mb-16"
           >
-            <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full mb-8 shadow-md">
-              <Award className="w-5 h-5 text-cyan-600" />
-              <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">TRUSTED BY LEADING BRANDS</span>
+            <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
+              <Award className="w-5 h-5 text-cyan-400" />
+              <span className="text-sm font-bold text-white uppercase tracking-wider">Our Work In Action</span>
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">Our Client Portfolio</h3>
-            <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-              Join the ranks of industry leaders who trust AirFresh Marketing for their experiential campaigns
+            <h3 className="text-4xl md:text-6xl font-bold text-white mb-6">Campaigns That <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Deliver Results</span></h3>
+            <p className="text-xl text-gray-300 max-w-3xl mx-auto">
+              From Times Square to Coachella, we create unforgettable brand experiences that drive real business outcomes
             </p>
           </motion.div>
 
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 items-center">
+          {/* Featured Campaign - Large Hero */}
+          <motion.div
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-12"
+          >
+            <div className="relative rounded-3xl overflow-hidden group">
+              <div className="aspect-[21/9] relative">
+                <img
+                  src="/images/case-studies/formula-1.jpg"
+                  alt="Formula 1 Las Vegas Grand Prix activation"
+                  className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
+                <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
+                  <div className="flex flex-wrap gap-3 mb-4">
+                    <span className="px-4 py-1.5 bg-cyan-500 text-white text-sm font-bold rounded-full">Featured</span>
+                    <span className="px-4 py-1.5 bg-white/20 backdrop-blur-sm text-white text-sm font-medium rounded-full">Formula 1</span>
+                  </div>
+                  <h4 className="text-3xl md:text-5xl font-bold text-white mb-4">Las Vegas Grand Prix</h4>
+                  <p className="text-lg text-gray-200 max-w-2xl mb-6">500+ event staff deployed across the Las Vegas Strip for motorsport's biggest spectacle</p>
+                  <div className="flex flex-wrap gap-8">
+                    <div>
+                      <div className="text-3xl font-bold text-cyan-400">300K+</div>
+                      <div className="text-sm text-gray-400">Fan Interactions</div>
+                    </div>
+                    <div>
+                      <div className="text-3xl font-bold text-cyan-400">98%</div>
+                      <div className="text-sm text-gray-400">Satisfaction Rate</div>
+                    </div>
+                    <div>
+                      <div className="text-3xl font-bold text-cyan-400">10K+</div>
+                      <div className="text-sm text-gray-400">VIP Guests</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </motion.div>
+
+          {/* Campaign Grid - 3 Featured */}
+          <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
-              { src: "/images/clients/google-activation-exact.jpg", alt: "Google experiential campaign with brand ambassadors" },
-              { src: "/images/clients/adidas-activation-exact.jpg", alt: "Adidas street team activation in Los Angeles" },
-              { src: "/images/clients/microsoft-activation-exact.jpg", alt: "Microsoft tech conference guerrilla marketing" },
-              { src: "/images/clients/lyft-activation-exact.jpg", alt: "Lyft NYC and Philadelphia market penetration campaign" },
-              { src: "/images/clients/clif-bar-activation-exact.jpg", alt: "Clif Bar outdoor sampling at Denver events" },
-              { src: "/images/clients/pepsi-activation-exact.jpg", alt: "Pepsi multi-city product sampling tour" },
-              { src: "/images/clients/5-hour-energy-activation-exact.jpg", alt: "5-hour Energy convention staffing nationwide" },
-              { src: "/images/clients/nfl-activation-exact.jpg", alt: "NFL Super Bowl fan experience activation" },
-              { src: "/images/clients/naked-juice-activation-exact.jpg", alt: "Naked Juice health expo brand ambassadors" },
-              { src: "/images/clients/red-bull-activation-exact.jpg", alt: "Red Bull extreme sports event marketing" }
-            ].map((logo, index) => (
+              {
+                image: "/images/case-studies/williams-racing.jpg",
+                category: "Motorsports",
+                title: "Williams Racing F1",
+                stat: "100K+ Fans",
+                description: "Premium hospitality & fan experiences"
+              },
+              {
+                image: "/images/case-studies/beer-samplings.jpg",
+                category: "Beverage",
+                title: "National Beer Sampling",
+                stat: "2M+ Samples",
+                description: "Craft brewery festival activations"
+              },
+              {
+                image: "/images/case-studies/meijer.jpg",
+                category: "Retail",
+                title: "Meijer In-Store",
+                stat: "+55% Sales",
+                description: "Midwest retail sampling program"
+              }
+            ].map((campaign, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
                 whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.05 }}
-                whileHover={{ scale: 1.05, y: -5 }}
-                className="group"
+                transition={{ duration: 0.5, delay: index * 0.1 }}
+                whileHover={{ y: -8 }}
+                className="group cursor-pointer"
               >
-                <div className="flex justify-center items-center h-32 p-6 bg-white rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 border border-gray-100">
-                  <img
-                    src={logo.src}
-                    alt={logo.alt}
-                    className="max-h-16 w-auto object-contain filter grayscale opacity-60 group-hover:grayscale-0 group-hover:opacity-100 transition-all duration-300"
-                    loading="lazy"
-                  />
+                <div className="relative rounded-2xl overflow-hidden">
+                  <div className="aspect-[4/3]">
+                    <img
+                      src={campaign.image}
+                      alt={campaign.title}
+                      className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
+                    <div className="absolute top-4 left-4">
+                      <span className="px-3 py-1 bg-white/20 backdrop-blur-sm text-white text-xs font-bold rounded-full">{campaign.category}</span>
+                    </div>
+                    <div className="absolute bottom-0 left-0 right-0 p-6">
+                      <div className="text-2xl font-bold text-cyan-400 mb-1">{campaign.stat}</div>
+                      <h5 className="text-xl font-bold text-white mb-2">{campaign.title}</h5>
+                      <p className="text-sm text-gray-300">{campaign.description}</p>
+                    </div>
+                  </div>
                 </div>
               </motion.div>
             ))}
           </div>
 
+          {/* Client Logos Row */}
           <motion.div
             initial={{ opacity: 0 }}
             whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.6, delay: 0.5 }}
-            className="text-center mt-16"
+            transition={{ duration: 0.8 }}
+            className="pt-12 border-t border-white/10"
           >
-            <p className="text-gray-600 text-lg">
-              ...and many more amazing brands
-            </p>
+            <p className="text-center text-gray-500 text-sm uppercase tracking-wider mb-8">Trusted by industry leaders</p>
+            <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
+              {["Google", "Adidas", "Microsoft", "Lyft", "PepsiCo", "NFL", "Red Bull", "Clif Bar"].map((brand, i) => (
+                <span key={i} className="text-white/50 font-bold text-lg tracking-wide">{brand}</span>
+              ))}
+            </div>
+          </motion.div>
+
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.3 }}
+            className="text-center mt-12"
+          >
+            <Link href="/portfolio">
+              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-6">
+                View All Case Studies
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </motion.div>
         </div>
       </section>
