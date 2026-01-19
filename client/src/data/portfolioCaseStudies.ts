@@ -112,288 +112,288 @@ export const portfolioCaseStudies: CaseStudy[] = [
     heroImage: "/images/case-studies/starbucks.jpg"
   },
   {
-    id: "red-bull-campus-tour",
-    name: "Red Bull Campus Rush",
-    tagline: "Energy Meets Education",
-    description: "Executed Red Bull's nationwide campus activation program, reaching 50+ universities with high-energy events, product sampling, and student athlete partnerships. Our teams created lasting brand connections with the next generation.",
-    industry: "Beverage",
-    services: ["Campus Marketing", "Product Sampling", "Event Activation"],
-    markets: ["Nationwide - 50+ Universities"],
+    id: "formula-1-las-vegas",
+    name: "Formula 1 Las Vegas Grand Prix",
+    tagline: "Racing Into the Future",
+    description: "Executed comprehensive event staffing and brand activation for the inaugural Formula 1 Las Vegas Grand Prix, managing hospitality suites, fan zones, and VIP experiences across the Las Vegas Strip.",
+    industry: "Sports & Entertainment",
+    services: ["Event Staffing", "VIP Management", "Brand Activation"],
+    markets: ["Las Vegas"],
     date: "2024",
     stats: {
-      "Students Reached": "500,000+",
-      "Samples Distributed": "1M+",
-      "Campus Events": "200+",
-      "Brand Awareness Lift": "+45%"
+      "Event Staff": "500+",
+      "Fan Interactions": "300,000+",
+      "VIP Guests Served": "10,000+",
+      "Satisfaction Rate": "98%"
     },
-    category: "Beverage",
-    featured: false,
+    category: "Entertainment",
+    featured: true,
     heroImage: "/images/case-studies/formula-1.jpg"
   },
   {
-    id: "spotify-wrapped-experience",
-    name: "Spotify Wrapped Live",
-    tagline: "Your Year in Music",
-    description: "Brought Spotify Wrapped to life with interactive pop-up experiences in major cities, featuring personalized music moments, artist appearances, and shareable photo opportunities that celebrated users' listening habits.",
+    id: "cirque-du-soleil-activation",
+    name: "Cirque du Soleil Tour Launch",
+    tagline: "Spectacular Brand Experience",
+    description: "Created immersive pre-show experiences and street marketing campaigns for Cirque du Soleil touring productions, driving ticket sales and building excitement in each market through creative guerrilla marketing and brand ambassador activations.",
     industry: "Entertainment",
-    services: ["Experiential Marketing", "Pop-up Events", "Social Media Activation"],
-    markets: ["Los Angeles", "New York", "Miami", "Chicago"],
-    date: "2023",
+    services: ["Street Teams", "Brand Ambassadors", "Experiential Marketing"],
+    markets: ["Las Vegas", "Los Angeles", "New York", "Chicago", "Miami"],
+    date: "2024",
     stats: {
-      "Experience Visitors": "100,000+",
-      "Social Posts": "250,000+",
-      "App Downloads": "50,000+",
-      "User Engagement": "95%"
+      "Markets Activated": "25+",
+      "Ticket Sales Driven": "50,000+",
+      "Street Team Impressions": "2M+",
+      "Brand Awareness Lift": "+40%"
     },
     category: "Entertainment",
     featured: false,
     heroImage: "/images/case-studies/cirque-du-soleil.jpg"
   },
   {
-    id: "nike-air-max-day",
-    name: "Nike Air Max Day",
-    tagline: "Sneaker Culture Celebration",
-    description: "Produced Nike's Air Max Day celebration with exclusive product launches, customization stations, and athlete appearances. Our street teams drove sneakerhead engagement and created authentic community connections.",
-    industry: "Fashion",
-    services: ["Street Teams", "Product Launch", "Community Marketing"],
-    markets: ["New York", "Los Angeles", "Chicago", "Atlanta"],
+    id: "1800-tequila-sampling",
+    name: "1800 Tequila National Sampling",
+    tagline: "Premium Spirits Experience",
+    description: "Executed a nationwide sampling and brand ambassador program for 1800 Tequila, featuring premium tasting experiences at bars, restaurants, and special events. Our trained brand ambassadors educated consumers on the brand's heritage and cocktail culture.",
+    industry: "Beverage",
+    services: ["Product Sampling", "Brand Ambassadors", "Bar Marketing"],
+    markets: ["Los Angeles", "Miami", "New York", "Dallas", "Chicago"],
     date: "2024",
     stats: {
-      "Event Attendance": "30,000+",
-      "Shoes Sold": "10,000+ pairs",
-      "Custom Designs": "5,000+",
-      "Social Reach": "20M+"
+      "Samples Distributed": "500,000+",
+      "Venues Activated": "1,000+",
+      "Consumer Interactions": "250,000+",
+      "Sales Lift": "+35%"
     },
-    category: "Beauty & Fashion",
-    featured: false,
-    heroImage: "/images/case-studies/williams-racing.jpg"
-  },
-  {
-    id: "whole-foods-sustainability",
-    name: "Whole Foods Earth Month",
-    tagline: "Sustainable Shopping Experience",
-    description: "Activated Whole Foods' Earth Month campaign with in-store education, product demonstrations, and community gardens. Our eco-ambassadors connected with conscious consumers and drove sustainable product sales.",
-    industry: "Retail",
-    services: ["Brand Ambassadors", "In-store Marketing", "Product Demos"],
-    markets: ["San Francisco", "Portland", "Seattle", "Austin", "Boulder"],
-    date: "2024",
-    stats: {
-      "Stores Activated": "100+",
-      "Customer Interactions": "250,000+",
-      "Sustainable Product Sales": "+65%",
-      "Email Sign-ups": "30,000+"
-    },
-    category: "Retail",
-    featured: false,
-    heroImage: "/images/case-studies/meijer.jpg"
-  },
-  {
-    id: "coachella-brand-village",
-    name: "Coachella Brand Village",
-    tagline: "Festival Marketing Excellence",
-    description: "Managed multiple brand activations within Coachella, creating Instagram-worthy moments, product experiences, and VIP lounges that captured the festival spirit while driving brand engagement.",
-    industry: "Entertainment",
-    services: ["Festival Marketing", "Brand Activation", "VIP Management"],
-    markets: ["Indio, CA"],
-    date: "2024",
-    stats: {
-      "Festival Attendees Engaged": "150,000+",
-      "Social Media Tags": "500,000+",
-      "Brand Interactions": "300,000+",
-      "Influencer Partnerships": "100+"
-    },
-    category: "Entertainment",
-    featured: false,
-    heroImage: "/images/case-studies/ted-talk.jpg"
-  },
-  {
-    id: "amazon-prime-day-popup",
-    name: "Amazon Prime Day Pop-ups",
-    tagline: "Deals Come to Life",
-    description: "Created physical pop-up experiences for Amazon Prime Day, showcasing deals, providing instant gratification purchases, and demonstrating Alexa-enabled devices to drive Prime memberships.",
-    industry: "Technology",
-    services: ["Pop-up Retail", "Product Demos", "Membership Drive"],
-    markets: ["New York", "Los Angeles", "Chicago", "Seattle"],
-    date: "2023",
-    stats: {
-      "Pop-up Visitors": "200,000+",
-      "Prime Sign-ups": "15,000+",
-      "Product Sales": "$5M+",
-      "Device Demos": "50,000+"
-    },
-    category: "Technology",
+    category: "Beverage",
     featured: false,
     heroImage: "/images/case-studies/1800-tequila.jpg"
   },
   {
-    id: "disney-plus-launch",
-    name: "Disney+ Launch Events",
-    tagline: "Streaming Magic Nationwide",
-    description: "Executed Disney+'s launch campaign with family-friendly events, character appearances, and exclusive screening parties that drove subscriptions and created magical moments for fans of all ages.",
-    industry: "Entertainment",
-    services: ["Event Production", "Character Management", "Family Marketing"],
-    markets: ["Orlando", "Los Angeles", "New York", "Chicago"],
-    date: "2023",
-    stats: {
-      "Event Attendees": "100,000+",
-      "Subscriptions Generated": "25,000+",
-      "Character Meet & Greets": "10,000+",
-      "Family Engagement": "98%"
-    },
-    category: "Entertainment",
-    featured: false,
-    heroImage: "/images/case-studies/brooklyn-magazine.jpg"
-  },
-  {
-    id: "tesla-roadshow",
-    name: "Tesla Experience Roadshow",
-    tagline: "The Future of Driving",
-    description: "Produced Tesla's nationwide roadshow featuring test drives, technology demonstrations, and sustainability education that converted curious consumers into passionate brand advocates and buyers.",
-    industry: "Automotive",
-    services: ["Roadshow Management", "Test Drive Events", "Tech Demos"],
-    markets: ["California", "Texas", "Florida", "New York", "Illinois"],
-    date: "2024",
-    stats: {
-      "Test Drives": "50,000+",
-      "Vehicle Orders": "5,000+",
-      "Tech Demo Participants": "100,000+",
-      "Conversion Rate": "10%"
-    },
-    category: "Automotive",
-    featured: false,
-    heroImage: "/images/case-studies/polaris.jpg"
-  },
-  {
-    id: "sephora-beauty-insider",
-    name: "Sephora Beauty Insider Events",
-    tagline: "VIP Beauty Experience",
-    description: "Managed Sephora's exclusive Beauty Insider events nationwide, creating luxurious experiences with product previews, makeovers, and influencer meet-and-greets that strengthened loyalty program engagement.",
-    industry: "Beauty",
-    services: ["VIP Events", "Influencer Management", "Loyalty Marketing"],
-    markets: ["Major US Cities - 25 locations"],
-    date: "2024",
-    stats: {
-      "VIP Attendees": "50,000+",
-      "Product Sales": "$10M+",
-      "Loyalty Sign-ups": "20,000+",
-      "Customer Satisfaction": "97%"
-    },
-    category: "Beauty & Fashion",
-    featured: false,
-    heroImage: "/images/case-studies/byoma.jpg"
-  },
-  {
-    id: "google-pixel-launch",
-    name: "Google Pixel Launch",
-    tagline: "Photography Reimagined",
-    description: "Launched Google Pixel with interactive photography experiences, showcasing camera capabilities through real-world challenges and celebrity photographer workshops that demonstrated product superiority.",
-    industry: "Technology",
-    services: ["Product Launch", "Workshop Management", "Tech Demos"],
-    markets: ["San Francisco", "New York", "Los Angeles", "Austin"],
-    date: "2023",
-    stats: {
-      "Workshop Attendees": "25,000+",
-      "Photos Taken": "1M+",
-      "Device Pre-orders": "10,000+",
-      "Media Coverage": "200+ outlets"
-    },
-    category: "Technology",
-    featured: false,
-    heroImage: "/images/case-studies/cortie-digital.jpg"
-  },
-  {
-    id: "adidas-originals-streetwear",
-    name: "Adidas Originals Street Culture",
-    tagline: "Where Sport Meets Style",
-    description: "Activated Adidas Originals in urban markets with street art collaborations, sneaker customization workshops, and hip-hop performances that authentically connected with streetwear culture.",
-    industry: "Fashion",
-    services: ["Street Marketing", "Cultural Events", "Artist Collaborations"],
-    markets: ["Brooklyn", "Los Angeles", "Atlanta", "Chicago", "Miami"],
-    date: "2024",
-    stats: {
-      "Event Attendance": "75,000+",
-      "Custom Sneakers": "10,000+",
-      "Artist Collaborations": "50+",
-      "Social Engagement": "5M+"
-    },
-    category: "Beauty & Fashion",
-    featured: false,
-    heroImage: "/images/case-studies/williams-racing-2.jpg"
-  },
-  {
-    id: "chipotle-college-tour",
-    name: "Chipotle College Tour",
-    tagline: "Real Food for Real Students",
-    description: "Executed Chipotle's college campus tour with free burrito days, study fuel stations, and sustainability education that made the brand essential to student life while driving app downloads.",
-    industry: "Food & Beverage",
-    services: ["Campus Marketing", "Product Sampling", "App Activation"],
-    markets: ["50+ College Campuses Nationwide"],
-    date: "2023",
-    stats: {
-      "Students Reached": "250,000+",
-      "Burritos Served": "100,000+",
-      "App Downloads": "75,000+",
-      "Campus Brand Lift": "+60%"
-    },
-    category: "Food & Beverage",
-    featured: false,
-    heroImage: "/images/case-studies/buffalo-wild-wings.jpg"
-  },
-  {
-    id: "lululemon-sweat-sessions",
-    name: "Lululemon Community Sweat",
-    tagline: "Wellness in Motion",
-    description: "Produced Lululemon's community workout series featuring celebrity trainers, yoga masters, and running clubs that built brand community while showcasing product performance in action.",
-    industry: "Fashion",
-    services: ["Community Events", "Fitness Activations", "Influencer Partnerships"],
-    markets: ["Los Angeles", "New York", "San Francisco", "Chicago", "Denver"],
-    date: "2024",
-    stats: {
-      "Workout Participants": "100,000+",
-      "Community Members": "50,000+",
-      "Product Sales Lift": "+40%",
-      "Brand Advocacy": "92%"
-    },
-    category: "Beauty & Fashion",
-    featured: false,
-    heroImage: "/images/case-studies/skinny-mixes.jpg"
-  },
-  {
-    id: "budweiser-superbowl",
-    name: "Budweiser Super Bowl Experience",
-    tagline: "The King of Game Day",
-    description: "Created Budweiser's Super Bowl fan experience with viewing parties, NFL legend appearances, and interactive football challenges that made the brand synonymous with the big game.",
+    id: "beer-sampling-program",
+    name: "National Craft Beer Sampling",
+    tagline: "Taste the Craft Revolution",
+    description: "Managed comprehensive beer sampling programs for multiple craft breweries at festivals, retail locations, and sports venues nationwide. Our trained beer ambassadors delivered engaging brand experiences that converted samplers to loyal customers.",
     industry: "Beverage",
-    services: ["Sports Marketing", "Event Production", "Celebrity Management"],
-    markets: ["Super Bowl Host City + 10 Major Markets"],
+    services: ["Product Sampling", "Festival Marketing", "Retail Activation"],
+    markets: ["Nationwide - 50+ Markets"],
     date: "2024",
     stats: {
-      "Fan Engagement": "500,000+",
-      "Viewing Party Attendees": "100,000+",
-      "Social Impressions": "50M+",
-      "Sales Increase": "+25%"
+      "Events Staffed": "500+",
+      "Samples Poured": "2M+",
+      "New Customers Acquired": "100,000+",
+      "Retail Sales Lift": "+45%"
     },
     category: "Beverage",
     featured: false,
     heroImage: "/images/case-studies/beer-samplings.jpg"
   },
   {
-    id: "target-back-to-school",
-    name: "Target Back-to-School Bash",
-    tagline: "School Prep Made Fun",
-    description: "Transformed back-to-school shopping with interactive experiences, dorm room setups, and influencer styling sessions that made Target the destination for students and parents alike.",
-    industry: "Retail",
-    services: ["Retail Activation", "Family Events", "Influencer Marketing"],
-    markets: ["Nationwide - 100+ Stores"],
+    id: "buffalo-wild-wings-promotion",
+    name: "Buffalo Wild Wings Game Day",
+    tagline: "Wings Meet Championship Moments",
+    description: "Staffed major sporting event activations and game day promotions for Buffalo Wild Wings, creating engaging fan experiences at stadiums, tailgates, and watch parties that drove restaurant traffic and brand loyalty.",
+    industry: "Food & Beverage",
+    services: ["Sports Marketing", "Event Staffing", "Promotional Marketing"],
+    markets: ["Nationwide - NFL Cities"],
     date: "2023",
     stats: {
-      "Store Events": "200+",
-      "Families Engaged": "1M+",
-      "Sales Period Lift": "+35%",
-      "Social Content": "100,000+ posts"
+      "Events Activated": "200+",
+      "Fan Engagements": "500,000+",
+      "App Downloads": "75,000+",
+      "Traffic Increase": "+30%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/buffalo-wild-wings.jpg"
+  },
+  {
+    id: "byoma-skincare-launch",
+    name: "BYOMA Skincare Launch",
+    tagline: "Barrier Care Revolution",
+    description: "Launched BYOMA's barrier skincare line with in-store demos at major retailers, influencer events, and pop-up activations. Our beauty ambassadors educated consumers on the science of skin barrier health while driving trial and purchase.",
+    industry: "Beauty",
+    services: ["Product Launch", "In-Store Demos", "Influencer Events"],
+    markets: ["Target Stores Nationwide"],
+    date: "2024",
+    stats: {
+      "Store Demos": "500+",
+      "Samples Distributed": "200,000+",
+      "Social Impressions": "5M+",
+      "First-Month Sales": "Exceeded Target by 150%"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/byoma.jpg"
+  },
+  {
+    id: "williams-racing-f1",
+    name: "Williams Racing Fan Experience",
+    tagline: "Racing Heritage Meets Innovation",
+    description: "Delivered premium fan experiences and hospitality services for Williams Racing at Formula 1 events, managing paddock tours, autograph sessions, and sponsor activations that brought fans closer to the action.",
+    industry: "Sports & Entertainment",
+    services: ["VIP Management", "Hospitality", "Fan Activation"],
+    markets: ["F1 Circuit - Multiple Grand Prix"],
+    date: "2024",
+    stats: {
+      "VIP Experiences": "5,000+",
+      "Fan Interactions": "100,000+",
+      "Sponsor Activations": "50+",
+      "Guest Satisfaction": "97%"
+    },
+    category: "Entertainment",
+    featured: false,
+    heroImage: "/images/case-studies/williams-racing.jpg"
+  },
+  {
+    id: "meijer-retail-activation",
+    name: "Meijer In-Store Activation",
+    tagline: "Midwest Retail Excellence",
+    description: "Executed comprehensive in-store sampling and promotional programs for multiple brands at Meijer locations across the Midwest, driving product trial and increasing basket size through engaging customer interactions.",
+    industry: "Retail",
+    services: ["In-Store Marketing", "Product Sampling", "Promotional Events"],
+    markets: ["Michigan", "Ohio", "Indiana", "Illinois", "Wisconsin"],
+    date: "2024",
+    stats: {
+      "Stores Activated": "200+",
+      "Samples Distributed": "1M+",
+      "Sales Lift": "+55%",
+      "Brand Awareness": "+40%"
     },
     category: "Retail",
     featured: false,
+    heroImage: "/images/case-studies/meijer.jpg"
+  },
+  {
+    id: "polaris-outdoor-tour",
+    name: "Polaris Adventures Tour",
+    tagline: "Off-Road Brand Experience",
+    description: "Managed a nationwide demo tour for Polaris powersports vehicles, staffing test ride events, dealer activations, and outdoor festivals. Our trained product specialists helped customers experience the thrill of Polaris vehicles firsthand.",
+    industry: "Automotive",
+    services: ["Demo Tours", "Product Specialists", "Dealer Events"],
+    markets: ["Outdoor Events Nationwide"],
+    date: "2024",
+    stats: {
+      "Test Rides": "25,000+",
+      "Events Staffed": "100+",
+      "Leads Generated": "15,000+",
+      "Conversion Rate": "12%"
+    },
+    category: "Automotive",
+    featured: false,
+    heroImage: "/images/case-studies/polaris.jpg"
+  },
+  {
+    id: "clarins-beauty-experience",
+    name: "Clarins Spa Experience Tour",
+    tagline: "Luxury Skincare Discovery",
+    description: "Created premium spa experiences and beauty consultations for Clarins at department stores and luxury retail locations, featuring personalized skincare analysis and product recommendations from trained beauty experts.",
+    industry: "Beauty",
+    services: ["Brand Ambassadors", "Beauty Consultations", "Luxury Retail"],
+    markets: ["Nordstrom & Neiman Marcus Nationwide"],
+    date: "2024",
+    stats: {
+      "Consultations Delivered": "30,000+",
+      "Average Transaction": "+65%",
+      "Customer Loyalty Sign-ups": "20,000+",
+      "Return Customer Rate": "45%"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/clarins.jpg"
+  },
+  {
+    id: "wagamama-opening",
+    name: "Wagamama US Expansion",
+    tagline: "Asian-Inspired Fast Casual",
+    description: "Supported Wagamama's US market expansion with grand opening events, local marketing activations, and community engagement programs that introduced the brand to new markets and built loyal customer bases.",
+    industry: "Food & Beverage",
+    services: ["Grand Opening Events", "Local Marketing", "Community Engagement"],
+    markets: ["New York", "Boston", "Washington DC"],
+    date: "2023",
+    stats: {
+      "Grand Openings": "10+",
+      "Opening Week Traffic": "5,000+ per location",
+      "Social Media Growth": "+200%",
+      "Repeat Visit Rate": "35%"
+    },
+    category: "Food & Beverage",
+    featured: false,
     heroImage: "/images/case-studies/wagamama.jpg"
+  },
+  {
+    id: "skinny-mixes-sampling",
+    name: "Skinny Mixes National Campaign",
+    tagline: "Zero Sugar, Full Flavor",
+    description: "Executed a nationwide sampling campaign for Skinny Mixes at grocery stores, fitness centers, and wellness events, connecting with health-conscious consumers and driving trial of the zero-sugar cocktail mixer brand.",
+    industry: "Beverage",
+    services: ["Product Sampling", "Wellness Marketing", "Retail Activation"],
+    markets: ["Nationwide Retail"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "500,000+",
+      "Retail Locations": "2,000+",
+      "Social Engagements": "100,000+",
+      "Sales Growth": "+80%"
+    },
+    category: "Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/skinny-mixes.jpg"
+  },
+  {
+    id: "topps-trading-cards",
+    name: "Topps Trading Card Events",
+    tagline: "Collecting Comes Alive",
+    description: "Staffed major sports card and collectibles events for Topps, managing autograph sessions, pack breaks, and collector meetups that created memorable experiences for sports and entertainment fans.",
+    industry: "Entertainment",
+    services: ["Event Staffing", "Autograph Sessions", "Fan Experiences"],
+    markets: ["Major Sports Events Nationwide"],
+    date: "2024",
+    stats: {
+      "Events Staffed": "50+",
+      "Collector Interactions": "75,000+",
+      "Exclusive Pack Sales": "100,000+",
+      "Social Impressions": "10M+"
+    },
+    category: "Entertainment",
+    featured: false,
+    heroImage: "/images/case-studies/topps-cards.jpg"
+  },
+  {
+    id: "waiakea-water-campaign",
+    name: "Waiakea Hawaiian Water",
+    tagline: "Sustainable Hydration",
+    description: "Launched Waiakea's premium Hawaiian volcanic water with eco-focused sampling campaigns at yoga studios, farmers markets, and wellness events, highlighting the brand's sustainability story and unique mineral content.",
+    industry: "Beverage",
+    services: ["Product Sampling", "Wellness Marketing", "Sustainability Events"],
+    markets: ["California", "Hawaii", "Colorado", "Arizona"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "300,000+",
+      "Wellness Events": "200+",
+      "Brand Awareness Lift": "+60%",
+      "Retail Velocity": "+45%"
+    },
+    category: "Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/waiakea-water.jpg"
+  },
+  {
+    id: "katjes-candy-launch",
+    name: "Katjes Plant-Based Candy",
+    tagline: "Germany's Favorite Goes Stateside",
+    description: "Introduced Katjes plant-based gummy candies to US consumers through targeted sampling at natural grocery stores, vegan festivals, and lifestyle events, building awareness for the European confection brand.",
+    industry: "Food & Beverage",
+    services: ["Product Launch", "Sampling", "Specialty Retail"],
+    markets: ["Whole Foods & Natural Retailers Nationwide"],
+    date: "2024",
+    stats: {
+      "Stores Activated": "500+",
+      "Samples Distributed": "250,000+",
+      "Retailer Reorders": "95%",
+      "Consumer Trial Rate": "70%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/katjes.jpg"
   }
 ];
