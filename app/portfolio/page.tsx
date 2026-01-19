@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from "react";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
@@ -40,6 +40,8 @@ export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(true);
+  const [videoLoaded, setVideoLoaded] = useState(false);
+  const shouldReduceMotion = useReducedMotion();
 
   useEffect(() => {
     // Simulate loading
@@ -65,22 +67,47 @@ export default function Portfolio() {
         canonical="https://airfreshmarketing.com/portfolio"
       />
 
-      {/* Hero Section with Parallax Effect */}
+      {/* Hero Section with Video Background */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
-        {/* Animated Background */}
+        {/* Video Background */}
+        {!shouldReduceMotion && (
+          <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
+            <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
+              <iframe
+                src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1#t=12s"
+                className="absolute top-0 left-0 w-full h-full object-cover"
+                frameBorder="0"
+                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                loading="lazy"
+                onLoad={() => setVideoLoaded(true)}
+                style={{ pointerEvents: 'none' }}
+                title="AirFresh Marketing Portfolio Video Background"
+              />
+            </div>
+
+            {/* Loading overlay with gradient background */}
+            <motion.div
+              className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
+              initial={{ opacity: 1 }}
+              animate={{ opacity: videoLoaded ? 0 : 1 }}
+              transition={{ duration: 1 }}
+            />
+          </div>
+        )}
+
+        {/* Fallback - Static gradient background for reduced motion */}
+        {shouldReduceMotion && (
+          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" />
+        )}
+
+        {/* Overlay Gradients for text readability */}
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-gradient-to-br from-primary/10 via-purple-500/10 to-pink-500/10" />
-          <motion.div
-            className="absolute inset-0"
-            animate={{
-              background: [
-                "radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-                "radial-gradient(circle at 80% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-                "radial-gradient(circle at 20% 50%, rgba(120, 119, 198, 0.1) 0%, transparent 50%)",
-              ],
-            }}
-            transition={{ duration: 10, repeat: Infinity, ease: "linear" }}
-          />
+          <div className="absolute inset-0" style={{
+            background: 'radial-gradient(circle at center, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 100%)'
+          }} />
+          <div className="absolute inset-0" style={{
+            background: 'linear-gradient(to bottom, rgba(0,0,0,0.6) 0%, rgba(0,0,0,0.3) 50%, rgba(0,0,0,0.5) 100%)'
+          }} />
         </div>
 
         {/* Content */}
@@ -90,18 +117,18 @@ export default function Portfolio() {
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
           >
-            <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-primary/10 text-primary border-0">
+            <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-white/10 backdrop-blur-sm text-white border-0">
               <Sparkles className="w-4 h-4 mr-1" />
               300+ Successful Campaigns
             </Badge>
 
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-gray-900 via-primary to-purple-600 bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
               Our Portfolio of
               <br />
-              <span className="relative">
+              <span className="relative bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Excellence
                 <motion.div
-                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-primary to-purple-600"
+                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-cyan-400"
                   initial={{ scaleX: 0 }}
                   animate={{ scaleX: 1 }}
                   transition={{ delay: 0.5, duration: 0.8 }}
@@ -109,7 +136,7 @@ export default function Portfolio() {
               </span>
             </h1>
 
-            <p className="text-xl md:text-2xl text-gray-600 mb-8 max-w-3xl mx-auto">
+            <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
               Transforming brands through unforgettable experiences.
               Every campaign tells a story of innovation, engagement, and measurable success.
             </p>
@@ -127,11 +154,11 @@ export default function Portfolio() {
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
                   transition={{ delay: 0.1 * index }}
-                  className="bg-white/80 backdrop-blur-sm rounded-xl p-4 shadow-lg"
+                  className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
                 >
-                  <stat.icon className="w-8 h-8 text-primary mx-auto mb-2" />
-                  <div className="text-2xl font-bold text-gray-900">{stat.value}</div>
-                  <div className="text-sm text-gray-600">{stat.label}</div>
+                  <stat.icon className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
+                  <div className="text-2xl font-bold text-white">{stat.value}</div>
+                  <div className="text-sm text-white/80">{stat.label}</div>
                 </motion.div>
               ))}
             </div>
@@ -144,7 +171,7 @@ export default function Portfolio() {
           animate={{ y: [0, 10, 0] }}
           transition={{ duration: 1.5, repeat: Infinity }}
         >
-          <ChevronRight className="w-6 h-6 text-gray-400 rotate-90" />
+          <ChevronRight className="w-6 h-6 text-white/70 rotate-90" />
         </motion.div>
       </section>
 
