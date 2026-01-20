@@ -782,24 +782,24 @@ export default async function CityPage({ params }: CityPageProps) {
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
             We've delivered successful experiential marketing campaigns for these industry-leading brands nationwide.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" width={120} height={40} className="object-contain max-h-12" />
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/google.com" alt="Google" width={120} height={40} className="object-contain max-h-12" />
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/google.com" alt="Google" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/pepsico.com" alt="Pepsi" width={120} height={40} className="object-contain max-h-12" />
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/pepsico.com" alt="Pepsi" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/redbull.com" alt="Red Bull" width={120} height={40} className="object-contain max-h-12" />
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/redbull.com" alt="Red Bull" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/netflix.com" alt="Netflix" width={120} height={40} className="object-contain max-h-12" />
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/netflix.com" alt="Netflix" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
-            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
-              <Image src="https://logo.clearbit.com/lyft.com" alt="Lyft" width={120} height={40} className="object-contain max-h-12" />
+            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
+              <img src="https://logo.clearbit.com/lyft.com" alt="Lyft" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
             </div>
           </div>
         </div>
