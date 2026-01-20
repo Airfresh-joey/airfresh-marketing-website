@@ -77,7 +77,7 @@ export default function Locations() {
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
           <img
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+            src="/images/case-studies/gallery/formula1/formula1-1.jpg"
             alt="Experiential marketing event"
             className="w-full h-full object-cover"
           />
