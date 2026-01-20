@@ -54,31 +54,60 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1504707748692-419802cf939d?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/formula-1.jpg",
+    images: [
+      "/images/case-studies/formula-1.jpg",
+      "/images/case-studies/formula-1-2.jpg",
+      "/images/case-studies/formula-1-3.jpg"
+    ]
   },
   {
-    id: "super-bowl-hospitality",
-    name: "Super Bowl VIP Hospitality",
-    tagline: "Championship Experience",
-    description: "Premium hospitality staffing for Super Bowl events including VIP suites, fan experiences, and sponsor activations throughout game week.",
+    id: "williams-racing-f1",
+    name: "Williams Racing Fan Experience",
+    tagline: "Racing Heritage Meets Innovation",
+    description: "Delivered premium fan experiences and hospitality services for Williams Racing at Formula 1 events, managing paddock tours, autograph sessions, and sponsor activations.",
     industry: "Sports & Entertainment",
-    services: ["VIP Management", "Hospitality", "Event Staffing"],
-    markets: ["Super Bowl Host Cities"],
+    services: ["VIP Management", "Hospitality", "Fan Activation"],
+    markets: ["F1 Circuit"],
     date: "2024",
     stats: {
-      "VIP Guests": "10,000+",
-      "Hospitality Staff": "200+",
-      "Sponsor Activations": "25+",
-      "Guest Satisfaction": "98%"
+      "VIP Experiences": "5,000+",
+      "Fan Interactions": "100,000+",
+      "Sponsor Activations": "50+",
+      "Guest Satisfaction": "97%"
     },
     category: "Entertainment",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/williams-racing.jpg",
+    images: [
+      "/images/case-studies/williams-racing.jpg",
+      "/images/case-studies/williams-racing-2.jpg",
+      "/images/case-studies/williams-racing-3.jpg"
+    ]
   },
 
   // ============ FOOD & BEVERAGE ============
   {
-    id: "craft-beer-festivals",
+    id: "1800-tequila",
+    name: "1800 Tequila Bar Activations",
+    tagline: "Elevate Your Night",
+    description: "Premium bar and nightlife activation campaign for 1800 Tequila featuring brand ambassadors, sampling events, and signature cocktail promotions at top venues.",
+    industry: "Beverage",
+    services: ["Bar Activations", "Brand Ambassadors", "Sampling"],
+    markets: ["Las Vegas", "Miami", "Los Angeles"],
+    date: "2024",
+    stats: {
+      "Venues Activated": "150+",
+      "Samples Served": "25,000+",
+      "Social Impressions": "2M+",
+      "Brand Lift": "+40%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/1800-tequila.jpg"
+  },
+  {
+    id: "beer-samplings-national",
     name: "Craft Beer Festival Tour",
     tagline: "Taste the Craft",
     description: "Multi-city beer festival staffing and sampling program featuring brand ambassadors, pour teams, and consumer education about craft brewing techniques.",
@@ -94,303 +123,507 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1536935338788-846bb9981813?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/beer-samplings.jpg",
+    images: [
+      "/images/case-studies/beer-samplings.jpg",
+      "/images/case-studies/beer-samplings-2.jpg",
+      "/images/case-studies/beer-samplings-3.jpg"
+    ]
   },
   {
-    id: "coffee-brand-sampling",
-    name: "Premium Coffee Sampling",
-    tagline: "Wake Up to Better Coffee",
-    description: "Nationwide coffee sampling program at grocery stores, office buildings, and events featuring trained baristas and brand ambassadors.",
-    industry: "Beverage",
-    services: ["Product Sampling", "Brand Ambassadors", "Retail Marketing"],
-    markets: ["Nationwide"],
+    id: "meijer-retail",
+    name: "Meijer In-Store Sampling",
+    tagline: "Midwest Retail Excellence",
+    description: "Comprehensive in-store sampling and demonstration program at Meijer locations across the Midwest, featuring trained product specialists and consumer engagement.",
+    industry: "Retail",
+    services: ["In-Store Sampling", "Product Demos", "Retail Marketing"],
+    markets: ["Midwest"],
     date: "2024",
     stats: {
-      "Samples Served": "500,000+",
-      "Locations": "1,000+",
-      "Trial Rate": "85%",
+      "Stores Activated": "100+",
+      "Demos Conducted": "5,000+",
+      "Samples Distributed": "250,000+",
+      "Sales Lift": "+35%"
+    },
+    category: "Retail",
+    featured: false,
+    heroImage: "/images/case-studies/meijer.jpg",
+    images: [
+      "/images/case-studies/meijer.jpg",
+      "/images/case-studies/meijer-2.jpg",
+      "/images/case-studies/meijer-3.jpg"
+    ]
+  },
+  {
+    id: "waiakea-water",
+    name: "Waiakea Hawaiian Water Launch",
+    tagline: "Pure Hawaiian Hydration",
+    description: "Product launch campaign for Waiakea volcanic water featuring fitness center activations, event sampling, and retail demonstrations to introduce this premium sustainable water brand.",
+    industry: "Beverage",
+    services: ["Product Launch", "Sampling", "Retail Activation"],
+    markets: ["California", "Hawaii", "National"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "75,000+",
+      "Fitness Centers": "200+",
+      "Events Activated": "50+",
       "Purchase Intent": "+70%"
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/waiakea-water.jpg"
   },
   {
-    id: "food-truck-activation",
-    name: "Food Truck Brand Activation",
-    tagline: "Street Food Revolution",
-    description: "Mobile food truck activation campaigns featuring custom branded vehicles, product sampling, and street team support at high-traffic locations.",
+    id: "buffalo-wild-wings",
+    name: "Buffalo Wild Wings Game Day",
+    tagline: "Wings. Beer. Sports.",
+    description: "Game day promotional staffing for Buffalo Wild Wings featuring brand ambassadors, trivia hosts, and promotional teams during major sporting events.",
     industry: "Food & Beverage",
-    services: ["Mobile Marketing", "Product Sampling", "Street Teams"],
-    markets: ["Major US Cities"],
-    date: "2024",
-    stats: {
-      "Cities Visited": "25+",
-      "Samples Served": "100,000+",
-      "Social Impressions": "5M+",
-      "Media Coverage": "National"
-    },
-    category: "Food & Beverage",
-    featured: false,
-    heroImage: "https://images.unsplash.com/photo-1565123409695-7b5ef63a2efb?w=800&h=600&fit=crop&q=80"
-  },
-
-  // ============ TECHNOLOGY ============
-  {
-    id: "tech-product-launch",
-    name: "Tech Product Launch Events",
-    tagline: "Innovation Unveiled",
-    description: "Product launch event staffing for major tech companies featuring trained product specialists, demo teams, and VIP management.",
-    industry: "Technology",
-    services: ["Product Launch", "Demo Teams", "VIP Management"],
+    services: ["Promotional Staffing", "Event Marketing", "Brand Ambassadors"],
     markets: ["Nationwide"],
     date: "2024",
     stats: {
-      "Launch Events": "50+",
-      "Product Demos": "100,000+",
-      "Media Attendees": "5,000+",
-      "Social Reach": "50M+"
+      "Locations Staffed": "300+",
+      "Game Days": "100+",
+      "Guest Interactions": "500,000+",
+      "Loyalty Sign-ups": "50,000+"
     },
-    category: "Technology",
+    category: "Food & Beverage",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/buffalo-wild-wings.jpg"
   },
   {
-    id: "ces-trade-show",
-    name: "CES Trade Show Staffing",
-    tagline: "The Future is Here",
-    description: "Comprehensive booth staffing for CES exhibitors featuring product specialists, lead capture teams, and hospitality staff.",
-    industry: "Technology",
-    services: ["Trade Show Staffing", "Lead Capture", "Product Demos"],
-    markets: ["Las Vegas"],
+    id: "wagamama-launch",
+    name: "Wagamama US Expansion",
+    tagline: "Asian Soul Food",
+    description: "Restaurant opening support for Wagamama US expansion featuring street teams, sampling activations, and grand opening event staffing.",
+    industry: "Food & Beverage",
+    services: ["Restaurant Launch", "Street Teams", "Event Staffing"],
+    markets: ["New York", "Boston", "DC"],
     date: "2024",
     stats: {
-      "Exhibitors Staffed": "25+",
-      "Leads Captured": "50,000+",
-      "Booth Staff": "150+",
-      "Client Satisfaction": "97%"
+      "Store Openings": "10+",
+      "Samples Distributed": "50,000+",
+      "Grand Opening Guests": "25,000+",
+      "Social Mentions": "10,000+"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/wagamama.jpg"
+  },
+  {
+    id: "culinary-dropout",
+    name: "Culinary Dropout Events",
+    tagline: "Comfort Food Revolution",
+    description: "Event staffing and promotional support for Culinary Dropout restaurant locations featuring live music events, game tournaments, and special dining experiences.",
+    industry: "Food & Beverage",
+    services: ["Event Staffing", "Promotional Marketing", "Hospitality"],
+    markets: ["Phoenix", "Denver", "Austin"],
+    date: "2024",
+    stats: {
+      "Events Staffed": "200+",
+      "Guest Experiences": "50,000+",
+      "Event Capacity": "Sold Out",
+      "Repeat Visits": "+45%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/culinary-dropout.jpg"
+  },
+  {
+    id: "katjes-candy",
+    name: "Katjes Candy Sampling Tour",
+    tagline: "European Candy Excellence",
+    description: "National sampling tour introducing Katjes vegan candy to American consumers through retail demonstrations, festival activations, and strategic sampling events.",
+    industry: "Food & Beverage",
+    services: ["Product Sampling", "Mobile Tour", "Retail Demos"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Tour Stops": "75+",
+      "Samples Distributed": "500,000+",
+      "Retail Partners": "1,000+",
+      "Trial Rate": "85%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/katjes.jpg"
+  },
+
+  // ============ TECHNOLOGY & MEDIA ============
+  {
+    id: "microsoft-events",
+    name: "Microsoft Product Launches",
+    tagline: "Empowering Every Person",
+    description: "Product launch and retail support for Microsoft featuring trained product specialists, in-store demonstrations, and consumer education on Surface, Xbox, and Windows products.",
+    industry: "Technology",
+    services: ["Product Launch", "Retail Staffing", "Product Demos"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Retail Locations": "500+",
+      "Product Demos": "100,000+",
+      "Launch Events": "25+",
+      "Consumer Satisfaction": "96%"
     },
     category: "Technology",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1591115765373-5207764f72e7?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/microsoft.jpg",
+    images: [
+      "/images/case-studies/microsoft.jpg",
+      "/images/case-studies/microsoft-2.jpg",
+      "/images/case-studies/microsoft-3.jpg"
+    ]
+  },
+  {
+    id: "netflix-activations",
+    name: "Netflix Premiere Events",
+    tagline: "Stories That Move You",
+    description: "Premiere event staffing and fan experience activations for Netflix original series launches, including red carpet events, fan screenings, and immersive pop-up experiences.",
+    industry: "Entertainment",
+    services: ["Premiere Events", "Fan Experiences", "VIP Management"],
+    markets: ["Los Angeles", "New York"],
+    date: "2024",
+    stats: {
+      "Premiere Events": "25+",
+      "Fan Experiences": "50,000+",
+      "VIP Guests": "5,000+",
+      "Social Reach": "50M+"
+    },
+    category: "Entertainment",
+    featured: false,
+    heroImage: "/images/case-studies/netflix.jpg"
+  },
+  {
+    id: "ted-talk-events",
+    name: "TED Conference Staffing",
+    tagline: "Ideas Worth Spreading",
+    description: "Premium event staffing for TED conferences including registration, hospitality, speaker support, and attendee services for these world-renowned thought leadership events.",
+    industry: "Events",
+    services: ["Conference Staffing", "Hospitality", "VIP Services"],
+    markets: ["Vancouver", "New York", "Various"],
+    date: "2024",
+    stats: {
+      "Conferences Staffed": "15+",
+      "Attendees Served": "20,000+",
+      "Speaker Support": "500+",
+      "Satisfaction Rate": "99%"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/ted-talk.jpg"
   },
 
   // ============ BEAUTY & FASHION ============
   {
-    id: "beauty-brand-sampling",
-    name: "Beauty Brand Sampling Tour",
-    tagline: "Discover Your Glow",
-    description: "National beauty sampling campaign at malls, events, and retail locations featuring trained beauty consultants and product demonstrations.",
+    id: "mac-cosmetics",
+    name: "MAC Cosmetics Festival Tour",
+    tagline: "All Ages, All Races, All Genders",
+    description: "Festival activation campaign for MAC Cosmetics featuring makeup artists, product sampling, and immersive beauty experiences at major music festivals nationwide.",
     industry: "Beauty",
-    services: ["Product Sampling", "Beauty Consultants", "Retail Marketing"],
+    services: ["Festival Marketing", "Brand Ambassadors", "Sampling"],
+    markets: ["Coachella", "Lollapalooza", "Governors Ball"],
+    date: "2024",
+    stats: {
+      "Festivals": "10+",
+      "Makeovers": "15,000+",
+      "Samples Distributed": "100,000+",
+      "Social Shares": "25,000+"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/mac-cosmetics.jpg"
+  },
+  {
+    id: "clarins-beauty",
+    name: "Clarins Skincare Launch",
+    tagline: "Plant-Powered Beauty",
+    description: "Luxury skincare launch support for Clarins featuring trained beauty consultants, in-store demonstrations, and VIP customer events at premium retail locations.",
+    industry: "Beauty",
+    services: ["Product Launch", "Beauty Consultants", "VIP Events"],
     markets: ["Nationwide"],
     date: "2024",
     stats: {
-      "Samples Distributed": "250,000+",
-      "Consultations": "50,000+",
-      "Retail Partners": "500+",
+      "Retail Partners": "200+",
+      "Consultations": "25,000+",
+      "VIP Events": "50+",
+      "Sales Lift": "+40%"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/clarins.jpg"
+  },
+  {
+    id: "byoma-skincare",
+    name: "Byoma Gen-Z Skincare Launch",
+    tagline: "Barrier Care Made Simple",
+    description: "National sampling campaign for Byoma skincare targeting Gen-Z consumers at college campuses, shopping centers, and social events.",
+    industry: "Beauty",
+    services: ["Product Sampling", "Campus Marketing", "Social Activation"],
+    markets: ["New York", "Los Angeles", "Chicago"],
+    date: "2024",
+    stats: {
+      "Campuses Visited": "50+",
+      "Samples Distributed": "100,000+",
+      "Social Followers": "+50,000",
       "Purchase Intent": "+75%"
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1522335789203-aabd1fc54bc9?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/byoma.jpg"
   },
+
+  // ============ AUTOMOTIVE & OUTDOOR ============
   {
-    id: "fashion-week-staffing",
-    name: "Fashion Week Event Staffing",
-    tagline: "Style Meets Service",
-    description: "Premium event staffing for Fashion Week events including runway shows, after parties, and VIP experiences.",
-    industry: "Fashion",
-    services: ["Event Staffing", "VIP Management", "Hospitality"],
-    markets: ["New York", "Los Angeles", "Miami"],
+    id: "polaris-powersports",
+    name: "Polaris Demo Events",
+    tagline: "Think Outside",
+    description: "Product demonstration and test ride events for Polaris powersports vehicles featuring trained demo drivers, lead capture, and consumer education.",
+    industry: "Automotive",
+    services: ["Demo Events", "Product Specialists", "Lead Generation"],
+    markets: ["Nationwide"],
     date: "2024",
     stats: {
-      "Fashion Events": "100+",
-      "VIP Guests Served": "25,000+",
-      "Staff Deployed": "500+",
-      "Designer Partners": "50+"
+      "Demo Events": "100+",
+      "Test Rides": "25,000+",
+      "Leads Captured": "15,000+",
+      "Conversion Rate": "22%"
     },
-    category: "Beauty & Fashion",
+    category: "Automotive",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/polaris.jpg"
+  },
+  {
+    id: "car-wash-promotions",
+    name: "Express Car Wash Grand Openings",
+    tagline: "Shine On",
+    description: "Grand opening staffing for express car wash locations featuring street teams, promotional giveaways, and membership sign-up activations.",
+    industry: "Automotive",
+    services: ["Grand Openings", "Street Teams", "Membership Sales"],
+    markets: ["Southwest", "Southeast"],
+    date: "2024",
+    stats: {
+      "Grand Openings": "50+",
+      "Free Washes": "100,000+",
+      "Memberships Sold": "25,000+",
+      "ROI": "400%+"
+    },
+    category: "Automotive",
+    featured: false,
+    heroImage: "/images/case-studies/car-wash.jpg",
+    images: [
+      "/images/case-studies/car-wash.jpg",
+      "/images/case-studies/car-wash-2.jpg",
+      "/images/case-studies/car-wash-3.jpg"
+    ]
   },
 
   // ============ ENTERTAINMENT ============
   {
-    id: "music-festival-staffing",
-    name: "Music Festival Activations",
-    tagline: "Feel the Beat",
-    description: "Festival staffing and brand activations at major music festivals including Coachella, Lollapalooza, and Austin City Limits.",
+    id: "cirque-du-soleil",
+    name: "Cirque du Soleil Promotions",
+    tagline: "Spark the Imagination",
+    description: "Street team and promotional staffing for Cirque du Soleil productions featuring costumed performers, ticket promotions, and experiential marketing in high-traffic areas.",
     industry: "Entertainment",
-    services: ["Festival Staffing", "Brand Activation", "Experiential Marketing"],
-    markets: ["Festival Circuit"],
+    services: ["Street Teams", "Promotional Marketing", "Experiential"],
+    markets: ["Las Vegas", "Touring Cities"],
     date: "2024",
     stats: {
-      "Festivals": "25+",
-      "Staff Deployed": "1,000+",
-      "Fan Interactions": "500,000+",
-      "Brand Partners": "50+"
+      "Shows Supported": "8+",
+      "Street Team Hours": "10,000+",
+      "Flyers Distributed": "500,000+",
+      "Ticket Sales Lift": "+25%"
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1459749411175-04bf5292ceea?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/cirque-du-soleil.jpg"
   },
   {
-    id: "movie-premiere-events",
-    name: "Movie Premiere Staffing",
-    tagline: "Red Carpet Ready",
-    description: "Premium event staffing for Hollywood movie premieres including red carpet management, VIP hospitality, and fan experiences.",
-    industry: "Entertainment",
-    services: ["Premiere Events", "VIP Management", "Red Carpet"],
-    markets: ["Los Angeles", "New York"],
+    id: "mrbeast-events",
+    name: "MrBeast Feastables Launch",
+    tagline: "Better Ingredients, Better Chocolate",
+    description: "Product launch and sampling support for MrBeast's Feastables chocolate bars featuring influencer events, retail activations, and viral marketing campaigns.",
+    industry: "Food & Beverage",
+    services: ["Product Launch", "Influencer Events", "Retail Activation"],
+    markets: ["Nationwide"],
     date: "2024",
     stats: {
-      "Premieres Staffed": "50+",
-      "VIP Guests": "10,000+",
-      "Media Managed": "500+",
-      "Fan Experiences": "25,000+"
+      "Launch Events": "25+",
+      "Samples Distributed": "1M+",
+      "Social Views": "100M+",
+      "Retail Sellout": "First Week"
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1478720568477-152d9b164e26?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/mrbeast.jpg"
+  },
+
+  // ============ RETAIL & SERVICES ============
+  {
+    id: "bond-vet",
+    name: "Bond Vet Clinic Openings",
+    tagline: "Modern Pet Care",
+    description: "Grand opening and community event staffing for Bond Vet clinics featuring pet-friendly activations, community outreach, and new client acquisition.",
+    industry: "Healthcare",
+    services: ["Grand Openings", "Community Events", "Lead Generation"],
+    markets: ["New York", "Chicago", "Boston"],
+    date: "2024",
+    stats: {
+      "Clinic Openings": "15+",
+      "Pet Parents Engaged": "25,000+",
+      "New Client Sign-ups": "10,000+",
+      "Community Events": "50+"
+    },
+    category: "Healthcare",
+    featured: false,
+    heroImage: "/images/case-studies/bond-vet.jpg",
+    images: [
+      "/images/case-studies/bond-vet.jpg",
+      "/images/case-studies/bond-vet-2.jpg",
+      "/images/case-studies/bond-vet-3.jpg"
+    ]
   },
   {
-    id: "concert-vip-services",
-    name: "Concert VIP Services",
-    tagline: "Backstage Access",
-    description: "VIP hospitality and backstage management for major concert tours and arena shows.",
-    industry: "Entertainment",
-    services: ["VIP Hospitality", "Backstage Management", "Artist Services"],
+    id: "qwick-staffing",
+    name: "Qwick Hospitality Platform",
+    tagline: "Staff On Demand",
+    description: "Brand ambassador program promoting Qwick's hospitality staffing platform to restaurants and event venues, driving platform adoption and professional sign-ups.",
+    industry: "Technology",
+    services: ["Brand Ambassadors", "B2B Marketing", "Lead Generation"],
+    markets: ["Phoenix", "Dallas", "Miami"],
+    date: "2024",
+    stats: {
+      "Venues Visited": "2,000+",
+      "Platform Sign-ups": "5,000+",
+      "Demo Requests": "1,500+",
+      "Conversion Rate": "35%"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/qwick.jpg",
+    images: [
+      "/images/case-studies/qwick.jpg",
+      "/images/case-studies/qwick-2.jpg",
+      "/images/case-studies/qwick-3.jpg"
+    ]
+  },
+  {
+    id: "starbucks-seasonal",
+    name: "Starbucks Seasonal Promotions",
+    tagline: "Inspiring Connection",
+    description: "Seasonal promotional staffing for Starbucks featuring holiday-themed activations, new product sampling, and loyalty program promotions.",
+    industry: "Food & Beverage",
+    services: ["Seasonal Marketing", "Product Sampling", "Loyalty Activation"],
     markets: ["Nationwide"],
     date: "2024",
     stats: {
-      "Concert Tours": "30+",
-      "VIP Guests": "50,000+",
-      "Artist Meet & Greets": "500+",
-      "Satisfaction Rate": "99%"
+      "Locations Activated": "500+",
+      "Samples Distributed": "2M+",
+      "Rewards Sign-ups": "100,000+",
+      "Sales Lift": "+30%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/starbucks.jpg"
+  },
+  {
+    id: "solar-company",
+    name: "Solar Energy Home Shows",
+    tagline: "Power Your Future",
+    description: "Lead generation and event staffing for solar energy companies at home shows, community events, and retail locations throughout the Southwest.",
+    industry: "Energy",
+    services: ["Trade Show Staffing", "Lead Generation", "Consumer Education"],
+    markets: ["Arizona", "California", "Nevada"],
+    date: "2024",
+    stats: {
+      "Events Staffed": "200+",
+      "Leads Generated": "50,000+",
+      "Consultations Booked": "15,000+",
+      "Installation Rate": "25%"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/solar-company.jpg"
+  },
+  {
+    id: "topps-cards",
+    name: "Topps Trading Card Events",
+    tagline: "Collect the Moment",
+    description: "Event staffing and promotional support for Topps trading card releases featuring athlete appearances, pack breaks, and collector events.",
+    industry: "Entertainment",
+    services: ["Event Staffing", "Athlete Appearances", "Collector Events"],
+    markets: ["Sports Venues Nationwide"],
+    date: "2024",
+    stats: {
+      "Card Events": "100+",
+      "Athlete Appearances": "50+",
+      "Packs Distributed": "500,000+",
+      "Collector Engagement": "250,000+"
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=800&h=600&fit=crop&q=80"
-  },
-
-  // ============ SPORTS ============
-  {
-    id: "nba-all-star-weekend",
-    name: "NBA All-Star Weekend",
-    tagline: "Where Amazing Happens",
-    description: "Event staffing for NBA All-Star Weekend including fan festival, celebrity game, and all-star game hospitality.",
-    industry: "Sports",
-    services: ["Event Staffing", "VIP Hospitality", "Fan Activation"],
-    markets: ["All-Star Host Cities"],
-    date: "2024",
-    stats: {
-      "Weekend Events": "15+",
-      "Fan Zone Visitors": "200,000+",
-      "VIP Experiences": "5,000+",
-      "Sponsor Activations": "30+"
-    },
-    category: "Sports",
-    featured: false,
-    heroImage: "https://images.unsplash.com/photo-1546519638-68e109498ffc?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/topps-cards.jpg"
   },
   {
-    id: "golf-tournament-hospitality",
-    name: "Golf Tournament Hospitality",
-    tagline: "Championship Experience",
-    description: "Premium hospitality staffing for PGA tournaments including corporate tents, VIP experiences, and player viewing areas.",
-    industry: "Sports",
-    services: ["Hospitality Staffing", "VIP Services", "Corporate Events"],
-    markets: ["PGA Tour"],
+    id: "cortie-digital",
+    name: "Cortie Digital Marketing Events",
+    tagline: "Digital Innovation",
+    description: "Conference and trade show staffing for Cortie Digital featuring tech demonstrations, lead capture, and B2B networking support.",
+    industry: "Technology",
+    services: ["Trade Show Staffing", "Lead Generation", "Tech Demos"],
+    markets: ["Tech Conferences Nationwide"],
     date: "2024",
     stats: {
-      "Tournaments": "20+",
-      "VIP Guests Served": "50,000+",
-      "Corporate Tents": "100+",
-      "Guest Satisfaction": "97%"
+      "Conferences": "25+",
+      "Leads Captured": "10,000+",
+      "Demos Conducted": "5,000+",
+      "Meeting Bookings": "2,000+"
     },
-    category: "Sports",
+    category: "Technology",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1535131749006-b7f58c99034b?w=800&h=600&fit=crop&q=80"
-  },
-
-  // ============ AUTOMOTIVE ============
-  {
-    id: "auto-show-staffing",
-    name: "Auto Show Product Specialists",
-    tagline: "Drive the Experience",
-    description: "Trained product specialists for auto shows featuring vehicle presentations, lead capture, and test drive coordination.",
-    industry: "Automotive",
-    services: ["Trade Show Staffing", "Product Specialists", "Lead Capture"],
-    markets: ["Major Auto Shows"],
-    date: "2024",
-    stats: {
-      "Auto Shows": "15+",
-      "OEMs Supported": "10+",
-      "Leads Captured": "100,000+",
-      "Test Drives Coordinated": "25,000+"
-    },
-    category: "Automotive",
-    featured: false,
-    heroImage: "https://images.unsplash.com/photo-1494976388531-d1058494cdd8?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/cortie-digital.jpg",
+    images: [
+      "/images/case-studies/cortie-digital.jpg",
+      "/images/case-studies/cortie-digital-2.jpg",
+      "/images/case-studies/cortie-digital-3.jpg"
+    ]
   },
   {
-    id: "ev-launch-events",
-    name: "Electric Vehicle Launch Events",
-    tagline: "The Future of Driving",
-    description: "Product launch support for electric vehicle brands featuring test drive events, charging station activations, and consumer education.",
-    industry: "Automotive",
-    services: ["Product Launch", "Test Drive Events", "Consumer Education"],
-    markets: ["Nationwide"],
+    id: "peelzon-beauty",
+    name: "Peelzon Skincare Launch",
+    tagline: "Reveal Your Best Skin",
+    description: "Product launch and sampling campaign for Peelzon skincare featuring beauty consultants, in-store demonstrations, and influencer events.",
+    industry: "Beauty",
+    services: ["Product Launch", "Sampling", "Influencer Events"],
+    markets: ["Los Angeles", "New York", "Miami"],
     date: "2024",
     stats: {
-      "Launch Events": "50+",
-      "Test Drives": "25,000+",
-      "Consumer Education": "100,000+",
-      "Purchase Intent": "+60%"
+      "Launch Events": "20+",
+      "Samples Distributed": "50,000+",
+      "Influencer Partners": "100+",
+      "Sales Generated": "$2M+"
     },
-    category: "Automotive",
+    category: "Beauty & Fashion",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1593941707882-a5bba14938c7?w=800&h=600&fit=crop&q=80"
-  },
-
-  // ============ RETAIL ============
-  {
-    id: "retail-grand-openings",
-    name: "Retail Grand Opening Events",
-    tagline: "Open for Business",
-    description: "Grand opening staffing for retail locations featuring crowd management, promotional teams, and customer engagement.",
-    industry: "Retail",
-    services: ["Grand Openings", "Promotional Teams", "Customer Engagement"],
-    markets: ["Nationwide"],
-    date: "2024",
-    stats: {
-      "Store Openings": "100+",
-      "Opening Day Guests": "500,000+",
-      "Promotional Staff": "2,000+",
-      "Sales Lift": "+200%"
-    },
-    category: "Retail",
-    featured: false,
-    heroImage: "https://images.unsplash.com/photo-1441986300917-64674bd600d8?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/peelzon.jpg"
   },
   {
-    id: "holiday-retail-staffing",
-    name: "Holiday Retail Staffing",
-    tagline: "Seasonal Success",
-    description: "Holiday season staffing augmentation for retailers featuring trained sales associates, gift wrappers, and customer service support.",
-    industry: "Retail",
-    services: ["Seasonal Staffing", "Sales Associates", "Customer Service"],
-    markets: ["Nationwide"],
+    id: "brooklyn-magazine",
+    name: "Brooklyn Magazine Events",
+    tagline: "Brooklyn Culture",
+    description: "Event staffing and promotional support for Brooklyn Magazine events including launch parties, cultural events, and brand partnerships.",
+    industry: "Media",
+    services: ["Event Staffing", "Brand Partnerships", "VIP Management"],
+    markets: ["New York"],
     date: "2024",
     stats: {
-      "Retailers Supported": "50+",
-      "Seasonal Staff": "5,000+",
-      "Holiday Season": "8 Weeks",
-      "Sales Support": "$100M+"
+      "Events Staffed": "30+",
+      "Attendees Served": "15,000+",
+      "Brand Partners": "50+",
+      "Media Impressions": "10M+"
     },
-    category: "Retail",
+    category: "Entertainment",
     featured: false,
-    heroImage: "https://images.unsplash.com/photo-1607083206869-4c7672e72a8a?w=800&h=600&fit=crop&q=80"
+    heroImage: "/images/case-studies/brooklyn-magazine.jpg"
   }
 ];
