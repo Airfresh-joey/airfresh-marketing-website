@@ -319,7 +319,7 @@ export default function Home() {
             {[
               {
                 title: "Skinny Mixes Sampling Campaign",
-                image: "/images/case-studies/meijer-1.jpg",
+                image: "/images/case-studies/skinny-mixes.jpg",
                 description: "Nationwide product sampling driving brand awareness and trial",
                 link: "/case-studies/skinny-mixes"
               },
@@ -331,7 +331,7 @@ export default function Home() {
               },
               {
                 title: "Lyft Rider Acquisition Campaign",
-                image: "/images/clients/lyft-activation-exact.jpg",
+                image: "/images/case-studies/lyft-hero.jpg",
                 description: "Street team activation driving 10,000+ new rider sign-ups",
                 link: "/case-studies/lyft"
               }

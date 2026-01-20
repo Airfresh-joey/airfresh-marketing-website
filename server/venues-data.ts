@@ -56,7 +56,7 @@ export const venues: Venue[] = [
     website: "https://www.mccormickplace.com",
     latitude: 41.8507,
     longitude: -87.6159,
-    image: "https://images.unsplash.com/photo-1477959858617-67f85cf4f1df?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 1
   },
   {
@@ -91,7 +91,7 @@ export const venues: Venue[] = [
     website: "https://www.vegasmeansbusiness.com",
     latitude: 36.1318,
     longitude: -115.1512,
-    image: "https://images.unsplash.com/photo-1605833556294-ea5c7a74f57d?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 1
   },
   {
@@ -126,7 +126,7 @@ export const venues: Venue[] = [
     website: "https://www.occc.net",
     latitude: 28.4267,
     longitude: -81.4679,
-    image: "https://images.unsplash.com/photo-1575089976121-8ed7b2a54265?w=1920&q=85",
+    image: "/images/cities/miami-beach.jpg",
     tier: 1
   },
   {
@@ -161,7 +161,7 @@ export const venues: Venue[] = [
     website: "https://www.mccno.com",
     latitude: 29.9439,
     longitude: -90.0629,
-    image: "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=1920&q=85",
+    image: "/images/cities/miami-beach.jpg",
     tier: 1
   },
   {
@@ -196,7 +196,7 @@ export const venues: Venue[] = [
     website: "https://www.gwcca.org",
     latitude: 33.7596,
     longitude: -84.3963,
-    image: "https://images.unsplash.com/photo-1575917649705-5b59aaa12e6b?w=1920&q=85",
+    image: "/images/cities/atlanta-activation.jpg",
     tier: 1
   },
 
@@ -233,7 +233,7 @@ export const venues: Venue[] = [
     website: "https://www.javitscenter.com",
     latitude: 40.7579,
     longitude: -74.0024,
-    image: "https://images.unsplash.com/photo-1496442226666-8d4d0e62e6e9?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 1
   },
   {
@@ -268,7 +268,7 @@ export const venues: Venue[] = [
     website: "https://www.visitsandiego.com/meetings",
     latitude: 32.7066,
     longitude: -117.1635,
-    image: "https://images.unsplash.com/photo-1538964173425-93640f1b10e5?w=1920&q=85",
+    image: "/images/cities/los-angeles-sampling.jpg",
     tier: 1
   },
   {
@@ -303,7 +303,7 @@ export const venues: Venue[] = [
     website: "https://www.lacclink.com",
     latitude: 34.0407,
     longitude: -118.2698,
-    image: "https://images.unsplash.com/photo-1534190760961-74e8c1c5c3da?w=1920&q=85",
+    image: "/images/cities/los-angeles-sampling.jpg",
     tier: 2
   },
   {
@@ -338,7 +338,7 @@ export const venues: Venue[] = [
     website: "https://www.moscone.com",
     latitude: 37.7842,
     longitude: -122.4016,
-    image: "https://images.unsplash.com/photo-1501594907352-04cda38ebc29?w=1920&q=85",
+    image: "/images/cities/san-francisco-activation.jpg",
     tier: 2
   },
   {
@@ -373,7 +373,7 @@ export const venues: Venue[] = [
     website: "https://www.dallasconventioncenter.com",
     latitude: 32.7757,
     longitude: -96.8011,
-    image: "https://images.unsplash.com/photo-1545194445-dddb8f4487c6?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 2
   },
   {
@@ -408,7 +408,7 @@ export const venues: Venue[] = [
     website: "https://www.eventsdc.com",
     latitude: 38.9048,
     longitude: -77.0229,
-    image: "https://images.unsplash.com/photo-1617581629397-a72507c3de9e?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 2
   },
   {
@@ -443,7 +443,7 @@ export const venues: Venue[] = [
     website: "https://www.nrgpark.com",
     latitude: 29.6847,
     longitude: -95.4107,
-    image: "https://images.unsplash.com/photo-1530089711124-9ca31fb9e863?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 2
   },
   {
@@ -478,7 +478,7 @@ export const venues: Venue[] = [
     website: "https://www.paconvention.com",
     latitude: 39.9546,
     longitude: -75.1588,
-    image: "https://images.unsplash.com/photo-1569761316261-9a8696fa2ca3?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 2
   },
   {
@@ -513,7 +513,7 @@ export const venues: Venue[] = [
     website: "https://www.huntingtonplacedetroit.com",
     latitude: 42.3266,
     longitude: -83.0522,
-    image: "https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 2
   },
   {
@@ -548,7 +548,7 @@ export const venues: Venue[] = [
     website: "https://www.icclos.com",
     latitude: 39.7641,
     longitude: -86.1635,
-    image: "https://images.unsplash.com/photo-1570168007204-dfb528c6958f?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 2
   },
   {
@@ -583,7 +583,7 @@ export const venues: Venue[] = [
     website: "https://denverconvention.com",
     latitude: 39.7436,
     longitude: -104.9954,
-    image: "https://images.unsplash.com/photo-1546156929-a4c0ac411f47?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 2
   },
   {
@@ -618,7 +618,7 @@ export const venues: Venue[] = [
     website: "https://www.phoenixconventioncenter.com",
     latitude: 33.4475,
     longitude: -112.0697,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 2
   },
   {
@@ -653,7 +653,7 @@ export const venues: Venue[] = [
     website: "https://www.massconvention.com",
     latitude: 42.3463,
     longitude: -71.0448,
-    image: "https://images.unsplash.com/photo-1501979376754-1d09a9bc6abb?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 2
   },
   {
@@ -688,7 +688,7 @@ export const venues: Venue[] = [
     website: "https://www.visitsaltlake.com/salt-palace",
     latitude: 40.7675,
     longitude: -111.8977,
-    image: "https://images.unsplash.com/photo-1544620347-c4fd4a3d5957?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 2
   },
   {
@@ -723,7 +723,7 @@ export const venues: Venue[] = [
     website: "https://www.sahbgcc.com",
     latitude: 29.4209,
     longitude: -98.4856,
-    image: "https://images.unsplash.com/photo-1531766269738-4b855de6d14a?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 2
   },
   {
@@ -758,7 +758,7 @@ export const venues: Venue[] = [
     website: "https://www.miamibeachconvention.com",
     latitude: 25.7948,
     longitude: -80.1365,
-    image: "https://images.unsplash.com/photo-1533106497176-45ae19e68ba2?w=1920&q=85",
+    image: "/images/cities/miami-beach.jpg",
     tier: 2
   },
   {
@@ -793,7 +793,7 @@ export const venues: Venue[] = [
     website: "https://www.nashvillemusiccitycenter.com",
     latitude: 36.1565,
     longitude: -86.7773,
-    image: "https://images.unsplash.com/photo-1545419913-793b5c9f8e71?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 2
   },
 
@@ -830,7 +830,7 @@ export const venues: Venue[] = [
     website: "https://www.austinconventioncenter.com",
     latitude: 30.2634,
     longitude: -97.7398,
-    image: "https://images.unsplash.com/photo-1531218150217-54595bc2b934?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 3
   },
   {
@@ -865,7 +865,7 @@ export const venues: Venue[] = [
     website: "https://www.visitseattle.org/convention-center",
     latitude: 47.6116,
     longitude: -122.3315,
-    image: "https://images.unsplash.com/photo-1502175353174-a7a70e73b362?w=1920&q=85",
+    image: "/images/cities/san-francisco-activation.jpg",
     tier: 3
   },
   {
@@ -900,7 +900,7 @@ export const venues: Venue[] = [
     website: "https://www.oregoncc.org",
     latitude: 45.5284,
     longitude: -122.6627,
-    image: "https://images.unsplash.com/photo-1507400492013-162706c8c05e?w=1920&q=85",
+    image: "/images/cities/san-francisco-activation.jpg",
     tier: 3
   },
   {
@@ -935,7 +935,7 @@ export const venues: Venue[] = [
     website: "https://www.minneapolis.org/minneapolis-convention-center",
     latitude: 44.9693,
     longitude: -93.2733,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 3
   },
   {
@@ -970,7 +970,7 @@ export const venues: Venue[] = [
     website: "https://www.bccenter.org",
     latitude: 39.2865,
     longitude: -76.6180,
-    image: "https://images.unsplash.com/photo-1569503533657-3e3d44b1760f?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 3
   },
   {
@@ -1005,7 +1005,7 @@ export const venues: Venue[] = [
     website: "https://www.pittsburghcc.com",
     latitude: 40.4456,
     longitude: -80.0058,
-    image: "https://images.unsplash.com/photo-1558642452-9d2a7deb7f62?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 3
   },
   {
@@ -1040,7 +1040,7 @@ export const venues: Venue[] = [
     website: "https://www.charlotteconventionctr.com",
     latitude: 35.2237,
     longitude: -80.8426,
-    image: "https://images.unsplash.com/photo-1560186247-6b2e904b10e0?w=1920&q=85",
+    image: "/images/cities/atlanta-activation.jpg",
     tier: 3
   },
   {
@@ -1075,7 +1075,7 @@ export const venues: Venue[] = [
     website: "https://www.clevelandconventions.com",
     latitude: 41.5030,
     longitude: -81.6905,
-    image: "https://images.unsplash.com/photo-1558036117-15d82a90b9b1?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 3
   },
   {
@@ -1110,7 +1110,7 @@ export const venues: Venue[] = [
     website: "https://www.tampagov.net/tcc",
     latitude: 27.9442,
     longitude: -82.4592,
-    image: "https://images.unsplash.com/photo-1566737236500-c8ac43014a67?w=1920&q=85",
+    image: "/images/cities/miami-beach.jpg",
     tier: 3
   },
   {
@@ -1145,7 +1145,7 @@ export const venues: Venue[] = [
     website: "https://www.kystatefair.org",
     latitude: 38.1906,
     longitude: -85.7475,
-    image: "https://images.unsplash.com/photo-1558642084-fd07fae5282e?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 3
   },
   {
@@ -1180,7 +1180,7 @@ export const venues: Venue[] = [
     website: "https://www.explorestlouis.com",
     latitude: 38.6313,
     longitude: -90.1918,
-    image: "https://images.unsplash.com/photo-1569087682520-45253cc2e0ee?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 3
   },
   {
@@ -1215,7 +1215,7 @@ export const venues: Venue[] = [
     website: "https://www.venetianexpo.com",
     latitude: 36.1215,
     longitude: -115.1656,
-    image: "https://images.unsplash.com/photo-1581351721010-8cf859cb14a4?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 2
   },
   {
@@ -1250,7 +1250,7 @@ export const venues: Venue[] = [
     website: "https://www.mandalaybay.com/en/meetings.html",
     latitude: 36.0910,
     longitude: -115.1761,
-    image: "https://images.unsplash.com/photo-1516496636080-14fb876e029d?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 2
   },
   {
@@ -1285,7 +1285,7 @@ export const venues: Venue[] = [
     website: "https://www.raleighconvention.com",
     latitude: 35.7726,
     longitude: -78.6382,
-    image: "https://images.unsplash.com/photo-1558642084-fd07fae5282e?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 3
   },
   {
@@ -1320,7 +1320,7 @@ export const venues: Venue[] = [
     website: "https://www.anaheimconventioncenter.com",
     latitude: 33.8003,
     longitude: -117.9205,
-    image: "https://images.unsplash.com/photo-1580655653885-65763b2597d0?w=1920&q=85",
+    image: "/images/cities/los-angeles-sampling.jpg",
     tier: 2
   },
   {
@@ -1355,7 +1355,7 @@ export const venues: Venue[] = [
     website: "https://www.hawaiiconvention.com",
     latitude: 21.2911,
     longitude: -157.8382,
-    image: "https://images.unsplash.com/photo-1507876466758-bc54f384809c?w=1920&q=85",
+    image: "/images/cities/los-angeles-sampling.jpg",
     tier: 3
   },
   {
@@ -1390,7 +1390,7 @@ export const venues: Venue[] = [
     website: "https://www.columbusconventions.com",
     latitude: 39.9726,
     longitude: -83.0007,
-    image: "https://images.unsplash.com/photo-1564182842519-8a3b2af3e228?w=1920&q=85",
+    image: "/images/cities/chicago-event.jpg",
     tier: 3
   },
   {
@@ -1425,7 +1425,7 @@ export const venues: Venue[] = [
     website: "https://www.sanjose.org/plan/convention-center",
     latitude: 37.3293,
     longitude: -121.8879,
-    image: "https://images.unsplash.com/photo-1522030299830-16b8d3d049fe?w=1920&q=85",
+    image: "/images/cities/san-francisco-activation.jpg",
     tier: 3
   },
   {
@@ -1460,7 +1460,7 @@ export const venues: Venue[] = [
     website: "https://www.kcconvention.com",
     latitude: 39.0979,
     longitude: -94.5825,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 3
   },
   {
@@ -1495,7 +1495,7 @@ export const venues: Venue[] = [
     website: "https://www.mccno.com",
     latitude: 29.9439,
     longitude: -90.0629,
-    image: "https://images.unsplash.com/photo-1568402102990-bc541580b59f?w=1920&q=85",
+    image: "/images/cities/miami-beach.jpg",
     tier: 1
   },
   {
@@ -1530,7 +1530,7 @@ export const venues: Venue[] = [
     website: "https://www.wisconsincenter.com",
     latitude: 43.0389,
     longitude: -87.9159,
-    image: "https://images.unsplash.com/photo-1558618666-fcd25c85cd64?w=1920&q=85",
+    image: "/images/cities/denver-downtown.jpg",
     tier: 3
   },
   {
@@ -1565,7 +1565,7 @@ export const venues: Venue[] = [
     website: "https://www.marriott.com/gaylord-opryland",
     latitude: 36.2106,
     longitude: -86.6951,
-    image: "https://images.unsplash.com/photo-1545419913-793b5c9f8e71?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 3
   },
   {
@@ -1600,7 +1600,7 @@ export const venues: Venue[] = [
     website: "https://www.marriott.com/gaylord-texan",
     latitude: 32.9546,
     longitude: -97.0553,
-    image: "https://images.unsplash.com/photo-1545194445-dddb8f4487c6?w=1920&q=85",
+    image: "/images/cities/austin-sxsw.jpg",
     tier: 3
   },
   {
@@ -1635,7 +1635,7 @@ export const venues: Venue[] = [
     website: "https://www.marriott.com/gaylord-national",
     latitude: 38.7824,
     longitude: -77.0175,
-    image: "https://images.unsplash.com/photo-1617581629397-a72507c3de9e?w=1920&q=85",
+    image: "/images/cities/new-york-activation.jpg",
     tier: 3
   }
 ];
