@@ -778,7 +778,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "/images/case-studies/mac-cosmetics-hero.jpg"
+    heroImage: "/images/case-studies/mac-cosmetics-new-hero.jpg"
   },
   {
     id: "adidas-staffing",
