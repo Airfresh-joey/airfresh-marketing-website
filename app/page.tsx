@@ -931,7 +931,7 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               {
-                image: "/images/case-studies/cortie-digital.jpg",
+                image: "/images/case-studies/microsoft.jpg",
                 category: "Technology",
                 title: "Microsoft",
                 stat: "50K+ Interactions",
