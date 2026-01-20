@@ -90,16 +90,34 @@ export default function CaseStudyDetail() {
 
       {/* Hero Section */}
       <section className="relative text-white h-[60vh] flex items-end">
-        <div
-          className="absolute inset-0 z-0"
-          style={{
-            backgroundImage: `url(${heroImageUrl})`,
-            backgroundSize: 'cover',
-            backgroundPosition: 'top center',
-            backgroundRepeat: 'no-repeat'
-          }}
-        />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-10" />
+        {caseStudy.heroVideo ? (
+          <>
+            <div className="absolute inset-0 z-0 overflow-hidden">
+              <iframe
+                src={`https://player.vimeo.com/video/${caseStudy.heroVideo}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`}
+                className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+                style={{ aspectRatio: '16/9' }}
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                title="Hero Video"
+              />
+            </div>
+            <div className="absolute inset-0 bg-gradient-to-b from-black/50 to-black/80 z-10" />
+          </>
+        ) : (
+          <>
+            <div
+              className="absolute inset-0 z-0"
+              style={{
+                backgroundImage: `url(${heroImageUrl})`,
+                backgroundSize: 'cover',
+                backgroundPosition: 'top center',
+                backgroundRepeat: 'no-repeat'
+              }}
+            />
+            <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-10" />
+          </>
+        )}
 
         {/* Content Overlay */}
         <div className="relative z-20 w-full p-8 lg:p-16">

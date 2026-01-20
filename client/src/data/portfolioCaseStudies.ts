@@ -12,6 +12,7 @@ export interface CaseStudy {
   category: string;
   featured?: boolean;
   heroImage?: string;
+  heroVideo?: string;
   images?: string[];
   videoUrl?: string;
 }
@@ -763,7 +764,8 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Sports",
     featured: false,
-    heroImage: "/images/case-studies/merrell-hero.jpg"
+    heroImage: "/images/case-studies/merrell-hero.jpg",
+    heroVideo: "651787642"
   },
   {
     id: "grubhub-campaign",
