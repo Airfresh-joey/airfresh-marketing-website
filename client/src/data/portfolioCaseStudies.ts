@@ -524,7 +524,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/starbucks.jpg"
+    heroImage: "/images/case-studies/starbucks-hero.jpg"
   },
   {
     id: "solar-company",
