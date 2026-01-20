@@ -311,7 +311,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "/images/case-studies/ted-talk.jpg"
+    heroImage: "/images/case-studies/ted-talk-hero.jpg"
   },
 
   // ============ BEAUTY & FASHION ============
