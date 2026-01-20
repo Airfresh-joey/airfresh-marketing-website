@@ -1,0 +1,326 @@
+import { notFound } from 'next/navigation';
+import { Button } from "@/components/ui/button";
+import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
+import { Badge } from "@/components/ui/badge";
+import Link from "next/link";
+import Image from "next/image";
+import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, Landmark, Car, Building } from "lucide-react";
+import SEO from "@/components/SEO";
+import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
+
+interface EventPageProps {
+  params: Promise<{ slug: string }>;
+}
+
+const services = [
+  { slug: 'brand-ambassadors', name: 'Brand Ambassadors', description: 'Professional brand representatives to engage your audience' },
+  { slug: 'event-staff', name: 'Event Staff', description: 'Experienced staff for registration, check-in, and event support' },
+  { slug: 'promotional-models', name: 'Promotional Models', description: 'Attractive, professional models for product launches and activations' },
+  { slug: 'trade-show-staff', name: 'Trade Show Staff', description: 'Booth staff, lead scanners, and product demonstrators' },
+  { slug: 'hospitality-staff', name: 'Hospitality Staff', description: 'VIP hosts, servers, and guest services professionals' },
+  { slug: 'street-teams', name: 'Street Teams', description: 'High-energy teams for guerrilla marketing and sampling' },
+  { slug: 'sampling-teams', name: 'Sampling Teams', description: 'Product sampling specialists to drive trial and awareness' },
+  { slug: 'festival-staff', name: 'Festival Staff', description: 'Experienced festival and outdoor event personnel' }
+];
+
+export async function generateStaticParams() {
+  return usaEvents.map(event => ({
+    slug: event.slug
+  }));
+}
+
+export default async function EventPage({ params }: EventPageProps) {
+  const { slug } = await params;
+  const event = getEventBySlug(slug);
+
+  if (!event) {
+    notFound();
+  }
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Event",
+    "name": event.name,
+    "description": event.description,
+    "startDate": event.dates || event.month,
+    "location": {
+      "@type": "Place",
+      "name": event.venue,
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": event.city,
+        "addressRegion": event.state,
+        "addressCountry": "US"
+      }
+    },
+    "image": event.heroImage,
+    "organizer": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "url": "https://airfreshmarketing.com"
+    }
+  };
+
+  return (
+    <div className="pt-16 min-h-screen">
+      <SEO
+        title={event.title}
+        description={event.metaDescription}
+        keywords={event.keywords.join(', ')}
+        structuredData={structuredData}
+        canonical={`https://airfreshmarketing.com/events/${event.slug}`}
+      />
+
+      {/* Hero Section */}
+      <section className="relative h-[500px] lg:h-[600px] overflow-hidden">
+        <div className="absolute inset-0">
+          <Image
+            src={event.heroImage}
+            alt={event.name}
+            fill
+            className="object-cover"
+            priority
+          />
+          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/40 to-black/70" />
+        </div>
+        <div className="relative h-full flex items-center">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+            <div className="max-w-3xl">
+              <div className="flex flex-wrap items-center gap-3 mb-4">
+                <Badge className="bg-primary text-white">{event.category}</Badge>
+                <Badge className="bg-white/20 text-white">{event.subcategory}</Badge>
+                {event.featured && (
+                  <Badge className="bg-yellow-500 text-black">
+                    <Star className="w-3 h-3 mr-1" /> Featured Event
+                  </Badge>
+                )}
+              </div>
+              <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-4">
+                {event.heroTitle}
+              </h1>
+              <p className="text-xl md:text-2xl mb-6 text-gray-200">
+                {event.heroSubtitle}
+              </p>
+              <div className="flex flex-wrap items-center gap-4 text-white/90">
+                <div className="flex items-center gap-2">
+                  <MapPin className="w-5 h-5" />
+                  <span>{event.city}, {event.state}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Calendar className="w-5 h-5" />
+                  <span>{event.dates || event.month}</span>
+                </div>
+                <div className="flex items-center gap-2">
+                  <Users className="w-5 h-5" />
+                  <span>{event.attendees} attendees</span>
+                </div>
+              </div>
+              <div className="mt-8 flex flex-col sm:flex-row gap-4">
+                <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
+                  <Link href="/contact">
+                    Get Staffing Quote
+                    <ArrowRight className="w-4 h-4 ml-2" />
+                  </Link>
+                </Button>
+                <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20">
+                  <a href="tel:3037206060">
+                    <Phone className="w-4 h-4 mr-2" />
+                    Call (303) 720-6060
+                  </a>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Event Description */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-3 gap-12">
+            <div className="lg:col-span-2">
+              <h2 className="text-3xl font-bold mb-6">About {event.name}</h2>
+              <p className="text-lg text-gray-700 leading-relaxed mb-8">
+                {event.description}
+              </p>
+
+              <h3 className="text-2xl font-bold mb-4">Venue Information</h3>
+              <Card className="mb-8">
+                <CardContent className="p-6">
+                  <div className="flex items-start gap-4">
+                    <Building className="w-8 h-8 text-primary flex-shrink-0" />
+                    <div>
+                      <h4 className="font-bold text-lg">{event.venue}</h4>
+                      <p className="text-gray-600">{event.city}, {event.state}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              <h3 className="text-2xl font-bold mb-4">Typical Staffing Needs</h3>
+              <div className="grid md:grid-cols-2 gap-4 mb-8">
+                {event.staffingNeeds.map((need, index) => (
+                  <div key={index} className="flex items-center gap-3">
+                    <CheckCircle className="w-5 h-5 text-green-500 flex-shrink-0" />
+                    <span className="text-gray-700">{need}</span>
+                  </div>
+                ))}
+              </div>
+            </div>
+
+            <div className="space-y-6">
+              {/* Quick Info Card */}
+              <Card>
+                <CardHeader>
+                  <CardTitle>Event Details</CardTitle>
+                </CardHeader>
+                <CardContent className="space-y-4">
+                  <div className="flex items-start gap-3">
+                    <Calendar className="w-5 h-5 text-primary mt-0.5" />
+                    <div>
+                      <p className="font-medium">When</p>
+                      <p className="text-gray-600">{event.dates || event.month}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <MapPin className="w-5 h-5 text-primary mt-0.5" />
+                    <div>
+                      <p className="font-medium">Where</p>
+                      <p className="text-gray-600">{event.venue}</p>
+                      <p className="text-gray-500 text-sm">{event.city}, {event.state}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start gap-3">
+                    <Users className="w-5 h-5 text-primary mt-0.5" />
+                    <div>
+                      <p className="font-medium">Expected Attendance</p>
+                      <p className="text-gray-600">{event.attendees}</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+
+              {/* Nearby Hotels */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Hotel className="w-5 h-5" />
+                    Nearby Hotels
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {event.nearbyHotels.map((hotel, index) => (
+                      <li key={index} className="text-gray-600 text-sm">{hotel}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Local Attractions */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Landmark className="w-5 h-5" />
+                    Local Attractions
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <ul className="space-y-2">
+                    {event.localAttractions.map((attraction, index) => (
+                      <li key={index} className="text-gray-600 text-sm">{attraction}</li>
+                    ))}
+                  </ul>
+                </CardContent>
+              </Card>
+
+              {/* Transportation */}
+              <Card>
+                <CardHeader>
+                  <CardTitle className="flex items-center gap-2">
+                    <Car className="w-5 h-5" />
+                    Getting There
+                  </CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-600 text-sm">{event.transportation}</p>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Staffing Services */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-4 text-center">Staffing Services for {event.name}</h2>
+          <p className="text-xl text-gray-600 text-center mb-12 max-w-3xl mx-auto">
+            Professional event staff tailored to your specific needs at {event.name}
+          </p>
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+            {services.filter(service =>
+              event.relevantServices.some(rs =>
+                rs.toLowerCase().includes(service.name.toLowerCase().split(' ')[0]) ||
+                service.name.toLowerCase().includes(rs.toLowerCase().split(' ')[0])
+              )
+            ).slice(0, 8).map((service) => (
+              <Link key={service.slug} href={`/events/${event.slug}/${service.slug}`}>
+                <Card className="h-full hover:shadow-lg transition-shadow cursor-pointer">
+                  <CardContent className="p-6">
+                    <h3 className="font-bold text-lg mb-2">{service.name}</h3>
+                    <p className="text-gray-600 text-sm mb-4">{service.description}</p>
+                    <span className="text-primary text-sm font-medium flex items-center">
+                      Learn More <ArrowRight className="w-4 h-4 ml-1" />
+                    </span>
+                  </CardContent>
+                </Card>
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Typical Roles */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8">Typical Roles We Staff</h2>
+          <div className="flex flex-wrap gap-3">
+            {event.typicalRoles.map((role, index) => (
+              <Badge key={index} variant="secondary" className="px-4 py-2 text-base">
+                {role}
+              </Badge>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA Section */}
+      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+            Need Staff for {event.name}?
+          </h2>
+          <p className="text-xl mb-8 text-cyan-50">
+            Get a custom staffing quote for your activation at {event.name}.
+            Our experienced team is ready to make your event a success.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
+              <Link href="/contact">
+                Get Free Quote
+                <ArrowRight className="w-4 h-4 ml-2" />
+              </Link>
+            </Button>
+            <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
+              <a href="tel:3037206060">
+                <Phone className="w-4 h-4 mr-2" />
+                Call (303) 720-6060
+              </a>
+            </Button>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+}
