@@ -41,17 +41,19 @@ export default function CaseStudyDetail() {
     notFound();
   }
 
-  // Get placeholder images if not provided
-  const getPlaceholderImages = () => {
-    const baseImages = [
-      "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1511578314322-379afb476865?w=1200&h=800&fit=crop",
-      "https://images.unsplash.com/photo-1505373877841-8d25f7d46678?w=1200&h=800&fit=crop"
-    ];
-    return caseStudy.images || baseImages;
+  // Get images - only use case study images, no placeholders
+  const getImages = () => {
+    if (caseStudy.images && caseStudy.images.length > 0) {
+      return caseStudy.images;
+    }
+    // If no images array, use hero image as fallback
+    if (caseStudy.heroImage) {
+      return [caseStudy.heroImage];
+    }
+    return [];
   };
 
-  const images = getPlaceholderImages();
+  const images = getImages();
 
   // Ensure we have a hero image
   const heroImageUrl = caseStudy.heroImage || images[0] || "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop";
@@ -93,7 +95,7 @@ export default function CaseStudyDetail() {
           style={{
             backgroundImage: `url(${heroImageUrl})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center',
+            backgroundPosition: 'top center',
             backgroundRepeat: 'no-repeat'
           }}
         />
