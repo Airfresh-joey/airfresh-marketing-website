@@ -73,7 +73,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: true,
-    heroImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=800&h=600&fit=crop&q=80"
+    heroImage: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=800&h=600&fit=crop&q=80"
   },
 
   // ============ FOOD & BEVERAGE ============
