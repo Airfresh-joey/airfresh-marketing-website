@@ -319,7 +319,7 @@ export default function Home() {
             {[
               {
                 title: "Skinny Mixes Sampling Campaign",
-                image: "/images/case-studies/skinny-mixes.jpg",
+                image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
                 description: "Nationwide product sampling driving brand awareness and trial",
                 link: "/case-studies/skinny-mixes"
               },
@@ -330,10 +330,10 @@ export default function Home() {
                 link: "/case-studies/netflix"
               },
               {
-                title: "Lyft Rider Acquisition Campaign",
-                image: "/images/case-studies/lyft-hero.jpg",
-                description: "Street team activation driving 10,000+ new rider sign-ups",
-                link: "/case-studies/lyft"
+                title: "Grubhub NYC Street Team",
+                image: "/images/case-studies/gallery/grubhub/grubhub-1.jpg",
+                description: "Street team activation driving restaurant partnerships in NYC",
+                link: "/case-studies/grubhub-campaign"
               }
             ].map((caseStudy, index) => (
               <motion.div
