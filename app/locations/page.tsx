@@ -81,9 +81,10 @@ export default function Locations() {
             alt="Experiential marketing event"
             className="w-full h-full object-cover"
           />
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-blue-900/70 to-purple-900/80"></div>
-          <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
-          <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(to bottom right, rgba(22, 78, 99, 0.85), rgba(30, 58, 138, 0.8), rgba(88, 28, 135, 0.85))' }}
+          ></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
           <motion.div
