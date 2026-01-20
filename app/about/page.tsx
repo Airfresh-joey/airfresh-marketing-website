@@ -159,14 +159,19 @@ export default function About() {
       />
       {/* Hero Section with Semantic HTML and E-E-A-T Signals */}
       <section className="relative py-20 lg:py-32 overflow-hidden" aria-label="About Hero">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{
-            backgroundImage: "url('/images/clients/microsoft-activation-exact.jpg')"
-          }}
-        />
-        <div className="absolute inset-0 bg-black/70" />
-        <article className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <iframe
+            src="https://player.vimeo.com/video/394240533?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
+            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+            style={{ aspectRatio: '16/9' }}
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            title="AirFresh Marketing Team"
+          />
+        </div>
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        <article className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <header className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
               Why Is AirFresh <span className="text-cyan-400">Marketing</span> the Leading Experiential Agency?

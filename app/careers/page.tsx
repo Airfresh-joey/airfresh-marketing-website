@@ -211,16 +211,20 @@ export default function CareersPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-24 bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-600 overflow-hidden">
-        <div className="absolute inset-0 opacity-20">
-          <Image
-            src="/images/case-studies/gallery/ted/ted-1.jpg"
-            alt="Event activation"
-            fill
-            className="object-cover"
+      <section className="relative py-24 overflow-hidden">
+        {/* Video Background */}
+        <div className="absolute inset-0 z-0">
+          <iframe
+            src="https://player.vimeo.com/video/394240533?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
+            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+            style={{ aspectRatio: '16/9' }}
+            frameBorder="0"
+            allow="autoplay; fullscreen"
+            title="Working for a Top Agency"
           />
         </div>
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/80 via-blue-600/80 to-purple-600/80 z-10" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
           <div className="text-center">
             <Badge className="mb-4 bg-white/20 text-white border-0">
               <Sparkles className="w-4 h-4 mr-1" />
