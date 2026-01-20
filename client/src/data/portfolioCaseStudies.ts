@@ -171,7 +171,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/waiakea-water.jpg"
+    heroImage: "/images/case-studies/waiakea-hero.jpg"
   },
   {
     id: "buffalo-wild-wings",
@@ -190,7 +190,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/buffalo-wild-wings.jpg"
+    heroImage: "/images/case-studies/buffalo-wild-wings-hero.jpg"
   },
   {
     id: "wagamama-launch",
@@ -209,7 +209,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/wagamama.jpg"
+    heroImage: "/images/case-studies/wagamama-hero.jpg"
   },
   {
     id: "culinary-dropout",
@@ -247,7 +247,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/katjes.jpg"
+    heroImage: "/images/case-studies/katjes-hero.jpg"
   },
 
   // ============ TECHNOLOGY & MEDIA ============
@@ -268,7 +268,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "/images/case-studies/microsoft.jpg",
+    heroImage: "/images/case-studies/microsoft-hero.jpg",
     images: [
       "/images/case-studies/microsoft.jpg",
       "/images/case-studies/microsoft-2.jpg",
