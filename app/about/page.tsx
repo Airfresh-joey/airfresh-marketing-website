@@ -162,16 +162,16 @@ export default function About() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1559136555-9303baea8ebd?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('/images/clients/microsoft-activation-exact.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        <div className="absolute inset-0 bg-black/70" />
         <article className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <header className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Why Is AirFresh <span className="text-yellow-300 italic font-serif">Marketing</span> the Leading Experiential Agency?
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              Why Is AirFresh <span className="text-cyan-400">Marketing</span> the Leading Experiential Agency?
             </h1>
-            <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
               We've delivered <strong>successful campaigns</strong> for <strong>numerous brands</strong> across <strong>major cities nationwide</strong>.
               Our focus on <strong>client satisfaction</strong> and <strong>trained brand ambassadors</strong> make us a trusted choice for experiential marketing.
             </p>
@@ -231,9 +231,9 @@ export default function About() {
             </div>
             <div className="relative">
               <img
-                src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Team collaboration"
-                className="rounded-lg shadow-xl"
+                src="/images/case-studies/williams-racing-2.jpg"
+                alt="AirFresh Marketing team at Williams Racing activation event"
+                className="rounded-lg shadow-xl object-cover w-full h-[400px]"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">300+</div>
