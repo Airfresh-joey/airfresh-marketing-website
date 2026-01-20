@@ -294,8 +294,8 @@ export default function Locations() {
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-2xl opacity-20"></div>
               <img
-                src="https://images.unsplash.com/photo-1619947790672-f0720d5f1d6e?ixlib=rb-4.0.3&auto=format&fit=crop&w=1000&q=80"
-                alt="Denver skyline"
+                src="/images/case-studies/gallery/ted/ted-1.jpg"
+                alt="Air Fresh Marketing team"
                 className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover"
               />
             </div>

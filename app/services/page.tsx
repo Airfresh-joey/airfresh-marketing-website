@@ -129,7 +129,7 @@ export default function Services() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1511632765486-a01980e01a18?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('/images/case-studies/gallery/microsoft/microsoft-1.jpg')"
           }}
         />
         <div className="absolute inset-0 bg-black bg-opacity-50" />

@@ -56,7 +56,7 @@ export default function CaseStudyDetail() {
   const images = getImages();
 
   // Ensure we have a hero image
-  const heroImageUrl = caseStudy.heroImage || images[0] || "https://images.unsplash.com/photo-1557804506-669a67965ba0?w=1200&h=800&fit=crop";
+  const heroImageUrl = caseStudy.heroImage || images[0] || "/images/case-studies/gallery/formula1/formula1-1.jpg";
 
   // Find related case studies
   const relatedStudies = portfolioCaseStudies
