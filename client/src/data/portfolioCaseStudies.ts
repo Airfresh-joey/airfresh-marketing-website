@@ -13,6 +13,7 @@ export interface CaseStudy {
   featured?: boolean;
   heroImage?: string;
   heroVideo?: string;
+  heroPosition?: string;
   images?: string[];
   videoUrl?: string;
 }
@@ -37,6 +38,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     category: "Food & Beverage",
     featured: true,
     heroImage: "/images/case-studies/skinny-mixes-hero.jpg",
+    heroPosition: "center right",
     images: [
       "/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg",
       "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",

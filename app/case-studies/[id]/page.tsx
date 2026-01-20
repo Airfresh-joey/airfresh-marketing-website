@@ -111,7 +111,7 @@ export default function CaseStudyDetail() {
               style={{
                 backgroundImage: `url(${heroImageUrl})`,
                 backgroundSize: 'cover',
-                backgroundPosition: 'top center',
+                backgroundPosition: caseStudy.heroPosition || 'top center',
                 backgroundRepeat: 'no-repeat'
               }}
             />
