@@ -65,9 +65,9 @@ export default function Contact() {
     },
     {
       icon: MapPin,
-      title: "Nationwide Service",
-      value: "We Service All 50 States",
-      description: "USA",
+      title: "Service Territory",
+      value: "All 50 US States",
+      description: "Nationwide Coverage",
       href: "/locations"
     }
   ];

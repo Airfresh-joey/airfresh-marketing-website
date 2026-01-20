@@ -532,8 +532,8 @@ export default function ServicePage({ params }: ServicePageProps) {
             </div>
             <div className="relative">
               <img
-                src="/images/case-studies/mac-cosmetics.jpg"
-                alt="Team collaboration"
+                src="/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg"
+                alt="Professional brand ambassadors team"
                 className="rounded-lg shadow-xl"
               />
               <div className={`absolute -bottom-6 -right-6 bg-gradient-to-r ${service.color} text-white p-6 rounded-lg shadow-lg`}>
