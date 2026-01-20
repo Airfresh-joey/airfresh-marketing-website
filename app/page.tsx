@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
+import Image from "next/image";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
 import { useEffect, useRef, useState } from "react";
 import { motion, useInView, useAnimation } from "framer-motion";
@@ -321,25 +322,28 @@ export default function Home() {
             </div>
           </motion.div>
 
-          {/* Additional Brand Activation Videos */}
+          {/* Additional Brand Activation Case Studies */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
             {[
               {
-                title: "NYC Times Square Activation",
-                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=30s",
-                description: "Premier Protein street team distributing 1,500+ samples in Manhattan"
+                title: "Skinny Mixes Sampling Campaign",
+                image: "/images/case-studies/meijer-1.jpg",
+                description: "Nationwide product sampling driving brand awareness and trial",
+                link: "/case-studies/skinny-mixes"
               },
               {
-                title: "LA Festival Brand Experience",
-                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=45s",
-                description: "Mac Cosmetics ambassadors generating 800+ opt-ins at Coachella"
+                title: "Netflix Cowboy Bebop Launch",
+                image: "/images/clients/netflix-activation-exact.jpg",
+                description: "Immersive pop-up experience generating massive social engagement",
+                link: "/case-studies/netflix"
               },
               {
-                title: "Denver Convention Center Takeover",
-                src: "https://player.vimeo.com/video/395306497?badge=0&autopause=0#t=60s",
-                description: "Merrell guerrilla marketing campaign with interactive product demos"
+                title: "Lyft Rider Acquisition Campaign",
+                image: "/images/clients/lyft-activation-exact.jpg",
+                description: "Street team activation driving 10,000+ new rider sign-ups",
+                link: "/case-studies/lyft"
               }
-            ].map((video, index) => (
+            ].map((caseStudy, index) => (
               <motion.div
                 key={index}
                 initial={{ opacity: 0, y: 20 }}
@@ -347,24 +351,28 @@ export default function Home() {
                 transition={{ duration: 0.6, delay: index * 0.1 }}
                 className="group"
               >
-                <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-0.5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300">
-                  <div className="bg-white rounded-xl overflow-hidden">
-                    <div className="aspect-video relative">
-                      <iframe
-                        src={video.src}
-                        className="absolute inset-0 w-full h-full"
-                        frameBorder="0"
-                        allow="autoplay; fullscreen; picture-in-picture"
-                        allowFullScreen
-                        title={video.title}
-                      ></iframe>
-                    </div>
-                    <div className="p-4 bg-white">
-                      <h4 className="font-bold text-gray-900 mb-1">{video.title}</h4>
-                      <p className="text-sm text-gray-600">{video.description}</p>
+                <Link href={caseStudy.link}>
+                  <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-0.5 rounded-xl shadow-lg hover:shadow-2xl transition-all duration-300 group-hover:scale-[1.02]">
+                    <div className="bg-white rounded-xl overflow-hidden">
+                      <div className="aspect-video relative overflow-hidden">
+                        <Image
+                          src={caseStudy.image}
+                          alt={caseStudy.title}
+                          fill
+                          className="object-cover group-hover:scale-105 transition-transform duration-500"
+                        />
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
+                        <div className="absolute bottom-4 left-4 right-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                          <span className="text-white text-sm font-medium">View Case Study →</span>
+                        </div>
+                      </div>
+                      <div className="p-4 bg-white">
+                        <h4 className="font-bold text-gray-900 mb-1">{caseStudy.title}</h4>
+                        <p className="text-sm text-gray-600">{caseStudy.description}</p>
+                      </div>
                     </div>
                   </div>
-                </div>
+                </Link>
               </motion.div>
             ))}
           </div>
