@@ -474,8 +474,9 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Automotive",
     featured: false,
-    heroImage: "/images/case-studies/polaris-hero.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-15.jpg",
     images: [
+      "/images/case-studies/gallery/polaris/polaris-15.jpg",
       "/images/case-studies/gallery/polaris/polaris-1.jpg",
       "/images/case-studies/gallery/polaris/polaris-2.jpg",
       "/images/case-studies/gallery/polaris/polaris-3.jpg",
@@ -483,7 +484,11 @@ export const portfolioCaseStudies: CaseStudy[] = [
       "/images/case-studies/gallery/polaris/polaris-5.jpg",
       "/images/case-studies/gallery/polaris/polaris-6.jpg",
       "/images/case-studies/gallery/polaris/polaris-7.jpg",
-      "/images/case-studies/gallery/polaris/polaris-8.jpg"
+      "/images/case-studies/gallery/polaris/polaris-8.jpg",
+      "/images/case-studies/gallery/polaris/polaris-9.jpg",
+      "/images/case-studies/gallery/polaris/polaris-10.jpg",
+      "/images/case-studies/gallery/polaris/polaris-11.jpg",
+      "/images/case-studies/gallery/polaris/polaris-12.jpg"
     ]
   },
   {
