@@ -20,7 +20,7 @@ export const blogPosts: BlogPost[] = [
     excerpt: "Discover how Air Fresh Marketing creates impactful street marketing campaigns in Austin, Las Vegas, and Baton Rouge that drive real engagement and results.",
     image: "/images/blog/street-marketing-examples.jpg",
     author: "Air Fresh Marketing Team",
-    date: "August 27, 2024",
+    date: "January 15, 2026",
     readTime: "5 min read",
     category: "Street Marketing",
     tags: ["Street Teams", "Guerrilla Marketing", "Brand Activation", "Austin", "Las Vegas", "Baton Rouge"],
@@ -116,7 +116,7 @@ Contact Air Fresh Marketing at **303-720-6060** or visit our website to launch y
     excerpt: "Learn how Air Fresh Marketing's network of 20,000+ trained brand ambassadors creates living brand experiences that drive engagement and conversions.",
     image: "/images/blog/brand-ambassador-marketing.jpg",
     author: "Air Fresh Marketing Team",
-    date: "August 27, 2024",
+    date: "December 18, 2025",
     readTime: "7 min read",
     category: "Brand Ambassadors",
     tags: ["Brand Ambassadors", "Experiential Marketing", "Brand Activation", "Event Staffing"],
@@ -261,7 +261,7 @@ Contact us today at **303-720-6060** or email **hello@airfreshmarketing.com** to
     excerpt: "Discover the key factors to consider when selecting an experiential marketing agency and why Air Fresh Marketing stands out as a top choice.",
     image: "/images/blog/experiential-agency-guide.jpg",
     author: "Air Fresh Marketing Team",
-    date: "June 30, 2024",
+    date: "November 5, 2025",
     readTime: "6 min read",
     category: "Experiential Marketing",
     tags: ["Experiential Marketing", "Agency Selection", "Brand Strategy", "Marketing Guide"],
@@ -473,7 +473,7 @@ Transform your brand experience with Air Fresh Marketing—where strategy meets 
     excerpt: "Learn why brands like Adidas partner with professional event staffing companies and how it drives consistent brand experiences nationwide.",
     image: "/images/blog/adidas-event-staffing.jpg",
     author: "Air Fresh Marketing Team",
-    date: "May 8, 2024",
+    date: "September 22, 2025",
     readTime: "5 min read",
     category: "Event Staffing",
     tags: ["Event Staffing", "Brand Consistency", "Adidas", "Professional Staff", "Event Management"],
@@ -761,7 +761,7 @@ Let's create experiences that matter, delivered by professionals who care.
     excerpt: "Learn how Air Fresh Marketing's street teams can transform your grand opening into an unforgettable event that drives lasting success.",
     image: "/images/blog/grand-opening-success.jpg",
     author: "Air Fresh Marketing Team",
-    date: "May 8, 2024",
+    date: "August 10, 2025",
     readTime: "6 min read",
     category: "Street Teams",
     tags: ["Grand Opening", "Street Teams", "Local Marketing", "Brand Launch", "Event Marketing"],
@@ -1108,7 +1108,7 @@ Let's create a grand opening that your community will never forget!
     excerpt: "Discover how Air Fresh Marketing's street team campaign helped Grubhub increase market share by 25% through strategic ground-level marketing.",
     image: "/images/blog/grubhub-campaign.jpg",
     author: "Air Fresh Marketing Team",
-    date: "May 19, 2024",
+    date: "June 28, 2025",
     readTime: "7 min read",
     category: "Case Studies",
     tags: ["Grubhub", "Street Teams", "Case Study", "Food Delivery", "Market Expansion"],
@@ -1119,7 +1119,7 @@ When Grubhub needed to expand market share in competitive urban markets, they tu
 
 ## The Challenge: Breaking Through the Delivery App Noise
 
-In 2023, Grubhub faced intense competition in three key markets:
+In 2025, Grubhub faced intense competition in three key markets:
 - **New York City**: Dominated by multiple delivery platforms
 - **Boston**: Strong local competitor presence
 - **Philadelphia**: Low brand awareness despite market potential
