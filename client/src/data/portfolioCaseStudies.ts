@@ -410,9 +410,9 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Automotive",
     featured: false,
-    heroImage: "/images/case-studies/car-wash.jpg",
+    heroImage: "/images/case-studies/car-wash-hero.jpg",
     images: [
-      "/images/case-studies/car-wash.jpg",
+      "/images/case-studies/car-wash-hero.jpg",
       "/images/case-studies/car-wash-2.jpg",
       "/images/case-studies/car-wash-3.jpg"
     ]
@@ -436,7 +436,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/cirque-du-soleil.jpg"
+    heroImage: "/images/case-studies/cirque-du-soleil-hero.jpg"
   },
   {
     id: "mrbeast-events",
@@ -455,7 +455,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/mrbeast.jpg"
+    heroImage: "/images/case-studies/mrbeast-hero.jpg"
   },
 
   // ============ RETAIL & SERVICES ============
