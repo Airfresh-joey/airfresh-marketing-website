@@ -91,6 +91,7 @@ const serviceConfigs = {
     subtitle: 'Guerrilla Marketing & Urban Brand Activation',
     description: 'Make a bold statement with our dynamic street teams that create buzz, generate viral moments, and drive immediate brand awareness in high-traffic urban environments.',
     heroImage: '/images/heroes/la-kings-street-teams.jpeg',
+    heroVideo: '394240533',
     icon: Megaphone,
     color: 'from-orange-500 to-red-500',
     stats: [
@@ -291,6 +292,7 @@ const serviceConfigs = {
     subtitle: 'Trial-Driving Sampling & Distribution',
     description: 'Get your products directly into consumers\' hands with strategic sampling programs. We execute in-store demos, street sampling, event activations, and targeted distribution campaigns.',
     heroImage: '/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg',
+    heroVideo: '394240533',
     icon: Sparkles,
     color: 'from-amber-500 to-orange-500',
     stats: [
@@ -434,12 +436,30 @@ export default function ServicePage({ params }: ServicePageProps) {
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
-        <div
-          className="absolute inset-0 bg-cover bg-center bg-no-repeat"
-          style={{ backgroundImage: `url('${service.heroImage}')` }}
-        />
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
-        <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
+        {service.heroVideo ? (
+          <>
+            <div className="absolute inset-0 z-0">
+              <iframe
+                src={`https://player.vimeo.com/video/${service.heroVideo}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`}
+                className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
+                style={{ aspectRatio: '16/9' }}
+                frameBorder="0"
+                allow="autoplay; fullscreen"
+                title="Hero Video"
+              />
+            </div>
+            <div className="absolute inset-0 bg-black/60 z-10" />
+          </>
+        ) : (
+          <>
+            <div
+              className="absolute inset-0 bg-cover bg-center bg-no-repeat"
+              style={{ backgroundImage: `url('${service.heroImage}')` }}
+            />
+            <div className="absolute inset-0 bg-black bg-opacity-50" />
+          </>
+        )}
+        <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-4xl">
             <Badge className={`mb-4 px-4 py-2 bg-gradient-to-r ${service.color} text-white border-0`}>
               <IconComponent className="w-4 h-4 mr-2" />

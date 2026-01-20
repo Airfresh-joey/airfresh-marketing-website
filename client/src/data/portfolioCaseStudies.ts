@@ -809,7 +809,8 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/premier-protein-hero.jpg"
+    heroImage: "/images/case-studies/premier-protein-hero.jpg",
+    heroVideo: "394084617"
   },
   {
     id: "clif-bar-marketing",
