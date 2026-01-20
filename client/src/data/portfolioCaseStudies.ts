@@ -58,11 +58,12 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: true,
-    heroImage: "/images/case-studies/formula-1.jpg",
+    heroImage: "/images/case-studies/formula-1-4.jpg",
     images: [
-      "/images/case-studies/formula-1.jpg",
+      "/images/case-studies/formula-1-4.jpg",
       "/images/case-studies/formula-1-2.jpg",
-      "/images/case-studies/formula-1-3.jpg"
+      "/images/case-studies/formula-1-3.jpg",
+      "/images/case-studies/formula-1.jpg"
     ]
   },
   {
