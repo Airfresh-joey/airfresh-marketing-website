@@ -316,25 +316,6 @@ export const portfolioCaseStudies: CaseStudy[] = [
 
   // ============ BEAUTY & FASHION ============
   {
-    id: "mac-cosmetics",
-    name: "MAC Cosmetics Festival Tour",
-    tagline: "All Ages, All Races, All Genders",
-    description: "Festival activation campaign for MAC Cosmetics featuring makeup artists, product sampling, and immersive beauty experiences at major music festivals nationwide.",
-    industry: "Beauty",
-    services: ["Festival Marketing", "Brand Ambassadors", "Sampling"],
-    markets: ["Coachella", "Lollapalooza", "Governors Ball"],
-    date: "2024",
-    stats: {
-      "Festivals": "10+",
-      "Makeovers": "15,000+",
-      "Samples Distributed": "100,000+",
-      "Social Shares": "25,000+"
-    },
-    category: "Beauty & Fashion",
-    featured: false,
-    heroImage: "/images/case-studies/mac-cosmetics.jpg"
-  },
-  {
     id: "clarins-beauty",
     name: "Clarins Skincare Launch",
     tagline: "Plant-Powered Beauty",
@@ -391,7 +372,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Automotive",
     featured: false,
-    heroImage: "/images/case-studies/polaris.jpg"
+    heroImage: "/images/case-studies/polaris-hero.jpg"
   },
   {
     id: "car-wash-promotions",
