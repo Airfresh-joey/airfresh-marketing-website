@@ -50,7 +50,11 @@ export default function NavigationClean() {
   const serviceLinks = [
     { href: "/services/brand-ambassadors", label: "Brand Ambassadors" },
     { href: "/services/street-teams", label: "Street Teams" },
-    { href: "/services/experiential-marketing", label: "Experiential Marketing" }
+    { href: "/services/experiential-marketing", label: "Experiential Marketing" },
+    { href: "/services/convention-staffing", label: "Convention Staffing" },
+    { href: "/services/event-management", label: "Event Management" },
+    { href: "/services/sampling", label: "Product Sampling" },
+    { href: "/services/promotional-models", label: "Promotional Models" }
   ];
 
   return (

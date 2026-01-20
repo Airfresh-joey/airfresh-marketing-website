@@ -60,7 +60,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX International Airport, Metro Rail, Uber/Lyft, Olympic Express Shuttles",
     staffingNeeds: ["Venue greeters", "VIP hospitality", "Sponsor activation staff", "Wayfinding assistants", "Credential checkers"],
     typicalRoles: ["Brand Ambassadors", "Guest Services", "VIP Hosts", "Sampling Teams", "Event Coordinators"],
-    heroImage: "https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=1200&h=800&fit=crop&q=80",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: true,
     tier: 1
   },
@@ -91,7 +91,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Francisco International Airport, San Jose Airport, Caltrain, VTA Light Rail, Rideshare",
     staffingNeeds: ["Fan zone staff", "Tailgate activation teams", "VIP hospitality", "Sponsor booth staff", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Coordinators", "Hospitality Staff", "Sampling Teams"],
-    heroImage: "https://images.unsplash.com/photo-1508098682722-e99c43a406b2?w=1200&h=800&fit=crop&q=80",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: true,
     tier: 1
   },

@@ -185,6 +185,206 @@ const serviceConfigs = {
       stats: { intent: '+65%', shares: '500K', leads: '2.8K' },
       image: '/images/case-studies/microsoft.jpg'
     }
+  },
+  'convention-staffing': {
+    title: 'Professional Convention Staffing',
+    subtitle: 'Trade Show & Conference Event Staff',
+    description: 'Expert convention and trade show staffing services for conferences, expos, and industry events. Our trained professionals handle booth staffing, lead capture, product demonstrations, and guest services.',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+    icon: Building2,
+    color: 'from-indigo-500 to-blue-500',
+    stats: [
+      { value: '300+', label: 'Conventions Staffed' },
+      { value: '40+', label: 'Cities Covered' },
+      { value: '98%', label: 'Client Retention' },
+      { value: '5000+', label: 'Leads Captured Monthly' }
+    ],
+    features: [
+      {
+        icon: Users,
+        title: 'Trained Booth Staff',
+        description: 'Professional staff trained in product knowledge, lead qualification, and customer engagement.'
+      },
+      {
+        icon: Target,
+        title: 'Lead Generation',
+        description: 'Expert lead capture and qualification to maximize your trade show ROI.'
+      },
+      {
+        icon: Award,
+        title: 'Industry Experience',
+        description: 'Staff experienced across tech, healthcare, automotive, and more industries.'
+      },
+      {
+        icon: TrendingUp,
+        title: 'Real-Time Reporting',
+        description: 'Live metrics and detailed post-event analytics on booth performance.'
+      }
+    ],
+    benefits: [
+      'Professional booth representation',
+      'Maximize lead generation at trade shows',
+      'Trained product demonstrators',
+      'Seamless event coordination',
+      'Multi-day and multi-show coverage',
+      'Bilingual staff available'
+    ],
+    caseStudy: {
+      title: 'Tech Conference Success',
+      description: 'Staffed 15 booths at CES, generating over 3,000 qualified leads for our clients.',
+      stats: { leads: '3K+', booths: '15', satisfaction: '99%' },
+      image: '/images/case-studies/gallery/microsoft/microsoft-2.jpg'
+    }
+  },
+  'event-management': {
+    title: 'Full-Service Event Management',
+    subtitle: 'End-to-End Event Planning & Execution',
+    description: 'Comprehensive event management services from planning to execution. We handle logistics, staffing, vendor coordination, and on-site management to ensure flawless events.',
+    heroImage: '/images/case-studies/gallery/ted/ted-1.jpg',
+    icon: Calendar,
+    color: 'from-emerald-500 to-teal-500',
+    stats: [
+      { value: '500+', label: 'Events Managed' },
+      { value: '100%', label: 'On-Time Delivery' },
+      { value: '4.9/5', label: 'Client Rating' },
+      { value: '50+', label: 'Cities Nationwide' }
+    ],
+    features: [
+      {
+        icon: Lightbulb,
+        title: 'Strategic Planning',
+        description: 'Comprehensive event strategy aligned with your brand goals and audience.'
+      },
+      {
+        icon: Building2,
+        title: 'Venue & Vendor Management',
+        description: 'Full coordination of venues, catering, AV, and all event vendors.'
+      },
+      {
+        icon: Users,
+        title: 'On-Site Management',
+        description: 'Dedicated event managers ensuring smooth execution from start to finish.'
+      },
+      {
+        icon: TrendingUp,
+        title: 'Post-Event Analysis',
+        description: 'Detailed reporting and insights to measure event success and ROI.'
+      }
+    ],
+    benefits: [
+      'Reduce planning stress and workload',
+      'Professional on-site coordination',
+      'Budget management and optimization',
+      'Vendor negotiation and oversight',
+      'Risk management and contingency planning',
+      'Post-event reporting and analysis'
+    ],
+    caseStudy: {
+      title: 'Corporate Conference Excellence',
+      description: 'Managed a 2,000-person corporate conference with multiple tracks and VIP experiences.',
+      stats: { attendees: '2K+', satisfaction: '98%', sessions: '45' },
+      image: '/images/case-studies/gallery/ted/ted-2.jpg'
+    }
+  },
+  'sampling': {
+    title: 'Product Sampling Programs',
+    subtitle: 'Trial-Driving Sampling & Distribution',
+    description: 'Get your products directly into consumers\' hands with strategic sampling programs. We execute in-store demos, street sampling, event activations, and targeted distribution campaigns.',
+    heroImage: '/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg',
+    icon: Sparkles,
+    color: 'from-amber-500 to-orange-500',
+    stats: [
+      { value: '5M+', label: 'Samples Distributed' },
+      { value: '85%', label: 'Trial-to-Purchase Rate' },
+      { value: '200+', label: 'Retail Partners' },
+      { value: '1000+', label: 'Sampling Events/Year' }
+    ],
+    features: [
+      {
+        icon: Target,
+        title: 'Strategic Placement',
+        description: 'Targeted sampling at high-traffic locations reaching your ideal customers.'
+      },
+      {
+        icon: Users,
+        title: 'Trained Samplers',
+        description: 'Brand ambassadors trained in product benefits and engagement techniques.'
+      },
+      {
+        icon: Eye,
+        title: 'Consumer Insights',
+        description: 'Real-time feedback collection and consumer reaction tracking.'
+      },
+      {
+        icon: TrendingUp,
+        title: 'Conversion Tracking',
+        description: 'Measure sampling-to-purchase conversion and program ROI.'
+      }
+    ],
+    benefits: [
+      'Drive product trial and awareness',
+      'Collect real consumer feedback',
+      'Support new product launches',
+      'Build retail relationships',
+      'Create word-of-mouth buzz',
+      'Measure campaign effectiveness'
+    ],
+    caseStudy: {
+      title: 'Beverage Brand Launch',
+      description: 'Distributed 50,000 samples across NYC, achieving 40% purchase conversion within 30 days.',
+      stats: { samples: '50K', conversion: '40%', locations: '25' },
+      image: '/images/case-studies/gallery/waiakea/waiakea-1.jpg'
+    }
+  },
+  'promotional-models': {
+    title: 'Professional Promotional Models',
+    subtitle: 'Elevate Your Brand Presence',
+    description: 'Premium promotional talent for trade shows, product launches, corporate events, and brand activations. Our models are trained professionals who represent your brand with polish and expertise.',
+    heroImage: '/images/case-studies/gallery/clarins/clarins-1.jpg',
+    icon: Star,
+    color: 'from-pink-500 to-rose-500',
+    stats: [
+      { value: '2000+', label: 'Talent Network' },
+      { value: '50+', label: 'Markets Covered' },
+      { value: '99%', label: 'On-Time Arrival' },
+      { value: '4.9/5', label: 'Client Satisfaction' }
+    ],
+    features: [
+      {
+        icon: Award,
+        title: 'Premium Talent',
+        description: 'Carefully selected, professional models with experience in brand representation.'
+      },
+      {
+        icon: Target,
+        title: 'Custom Matching',
+        description: 'We match talent to your brand demographics, style, and event requirements.'
+      },
+      {
+        icon: Users,
+        title: 'Trained & Prepared',
+        description: 'All talent receives brand training and arrives event-ready.'
+      },
+      {
+        icon: Zap,
+        title: 'Quick Booking',
+        description: 'Fast turnaround for last-minute needs with our extensive talent network.'
+      }
+    ],
+    benefits: [
+      'Elevate brand perception',
+      'Professional booth presence',
+      'Attract attention at events',
+      'Versatile talent for any event type',
+      'Reliable and punctual staff',
+      'Multilingual options available'
+    ],
+    caseStudy: {
+      title: 'Auto Show Success',
+      description: 'Provided 20 promotional models for major auto show, driving 5,000+ qualified leads.',
+      stats: { models: '20', leads: '5K+', days: '10' },
+      image: '/images/case-studies/gallery/polaris/polaris-1.jpg'
+    }
   }
 };
 

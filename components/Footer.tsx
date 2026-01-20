@@ -9,8 +9,10 @@ export default function Footer() {
     { name: "Brand Ambassadors", href: "/services/brand-ambassadors" },
     { name: "Street Teams", href: "/services/street-teams" },
     { name: "Experiential Marketing", href: "/services/experiential-marketing" },
-    { name: "Convention Staffing", href: "/city-services/denver-convention-staffing" },
-    { name: "Event Management", href: "/city-services/denver-event-management" },
+    { name: "Convention Staffing", href: "/services/convention-staffing" },
+    { name: "Event Management", href: "/services/event-management" },
+    { name: "Product Sampling", href: "/services/sampling" },
+    { name: "Promotional Models", href: "/services/promotional-models" },
   ];
 
   const company = [
