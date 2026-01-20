@@ -1,14 +1,17 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import { ArrowRight, Play } from "lucide-react";
+import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { useEffect, useState } from "react";
-import airFreshLogo from "@assets/airfresh_circle_logo.png";
+import { useEffect, useState, useRef } from "react";
+
+// Vimeo video URL with start time at 7 seconds for instant action
+const VIMEO_VIDEO_URL = "https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7s";
 
 export default function HeroAgencyVideo() {
   const shouldReduceMotion = useReducedMotion();
   const [isMobile, setIsMobile] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     // Check if mobile
@@ -20,25 +23,40 @@ export default function HeroAgencyVideo() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  // Preload the video iframe as soon as possible
+  useEffect(() => {
+    const preloadLink = document.createElement('link');
+    preloadLink.rel = 'preload';
+    preloadLink.as = 'document';
+    preloadLink.href = VIMEO_VIDEO_URL;
+    document.head.appendChild(preloadLink);
+
+    return () => {
+      if (document.head.contains(preloadLink)) {
+        document.head.removeChild(preloadLink);
+      }
+    };
+  }, []);
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3
+        staggerChildren: 0.1,
+        delayChildren: 0
       }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.5,
         ease: "easeOut"
       }
     }
@@ -68,25 +86,30 @@ export default function HeroAgencyVideo() {
       {/* Video Background - All devices */}
       {!shouldReduceMotion && (
         <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
-          <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
+          <div className={`absolute top-1/2 left-1/2 min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 ${
+            isMobile
+              ? 'w-[300vw] h-[100vh]'
+              : 'w-[177.78vh] h-[56.25vw]'
+          }`}>
             <iframe
-              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1#t=12s"
+              ref={iframeRef}
+              src={VIMEO_VIDEO_URL}
               className="absolute top-0 left-0 w-full h-full object-cover"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              loading="lazy"
+              loading="eager"
               onLoad={() => setVideoLoaded(true)}
               style={{ pointerEvents: 'none' }}
               title="AirFresh Marketing Brand Experience Video Background"
             />
           </div>
-          
+
           {/* Loading overlay with gradient background */}
           <motion.div
             className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
             initial={{ opacity: 1 }}
             animate={{ opacity: videoLoaded ? 0 : 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.3 }}
           >
             {/* Optional: Add a subtle animation while loading */}
             <div className="absolute inset-0 bg-black/20" />
@@ -127,8 +150,8 @@ export default function HeroAgencyVideo() {
           >
             <figure itemScope itemType="https://schema.org/ImageObject">
               <img
-                src={typeof airFreshLogo === 'string' ? airFreshLogo : airFreshLogo.src}
-                alt="AirFresh Marketing logo" 
+                src="/images/airfresh-logo.svg"
+                alt="AirFresh Marketing logo"
                 title="AirFresh Marketing - Experiential Marketing Agency"
                 className="w-32 h-32 md:w-40 md:h-40 lg:w-48 lg:h-48 mx-auto rounded-full shadow-2xl"
                 loading="eager"
@@ -160,9 +183,9 @@ export default function HeroAgencyVideo() {
             variants={itemVariants}
             className="text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6"
           >
-            <span className="block">Transform Your</span>
+            <span className="block">Turning Passive Audiences</span>
             <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              Brand Experience
+              into Active Superfans
             </span>
           </motion.h1>
 
@@ -171,8 +194,8 @@ export default function HeroAgencyVideo() {
             variants={itemVariants}
             className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 font-light leading-relaxed"
           >
-            We create unforgettable moments that connect brands with audiences 
-            through innovative activations and immersive experiences.
+            We craft immersive experiential marketing campaigns that spark emotional connections,
+            drive brand loyalty, and transform one-time customers into lifelong advocates.
           </motion.p>
 
           {/* CTA Buttons */}
@@ -186,44 +209,43 @@ export default function HeroAgencyVideo() {
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button 
-                  asChild 
-                  size="lg" 
-                  className="bg-white hover:bg-gray-100 text-gray-900 px-8 py-6 text-lg font-semibold rounded-full shadow-2xl transition-all duration-200 group"
+                <Button
+                  asChild
+                  size="lg"
+                  className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 group"
+                  data-testid="button-get-strategy-audit"
                 >
                   <Link href="/contact">
-                    Start Your Campaign
+                    Get Your Strategy Audit
                     <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                   </Link>
                 </Button>
               </motion.div>
-              
+
               <motion.div
                 whileHover={{ scale: 1.05 }}
                 whileTap={{ scale: 0.95 }}
               >
-                <Button 
-                  asChild 
-                  size="lg" 
+                <Button
+                  asChild
+                  size="lg"
                   variant="outline"
                   className="border-2 border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-200"
                 >
-                  <Link href="/case-studies">
+                  <Link href="/portfolio">
                     View Our Work
                   </Link>
                 </Button>
               </motion.div>
             </div>
-            
+
             {/* Looking for Work Button - Below */}
             <motion.div
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
             >
-              <a
-                href="https://airfreshconnect.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/careers"
                 className="inline-flex items-center px-6 py-3 text-base font-medium text-white/90 rounded-full transition-all duration-300 hover:bg-white/20 group"
                 style={{
                   background: 'rgba(255, 255, 255, 0.1)',
@@ -235,7 +257,7 @@ export default function HeroAgencyVideo() {
               >
                 Looking for Work
                 <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-              </a>
+              </Link>
             </motion.div>
           </motion.div>
 
@@ -261,6 +283,23 @@ export default function HeroAgencyVideo() {
           </motion.div>
         </motion.div>
       </div>
+
+      {/* Scroll Indicator */}
+      <motion.div
+        className="absolute bottom-8 left-1/2 -translate-x-1/2 z-10"
+        initial={{ opacity: 0, y: -20 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ delay: 1, duration: 0.5 }}
+      >
+        <motion.div
+          animate={{ y: [0, 8, 0] }}
+          transition={{ duration: 2, repeat: Infinity }}
+          className="flex flex-col items-center gap-2"
+        >
+          <span className="text-white/60 text-sm font-medium uppercase tracking-wider">Scroll to Explore</span>
+          <ChevronDown className="w-6 h-6 text-white/60" />
+        </motion.div>
+      </motion.div>
 
     </section>
   );

@@ -21,6 +21,7 @@ import {
   Mail
 } from "lucide-react";
 import SEO from "@/components/SEO";
+import TalentApplicationForm from "@/components/TalentApplicationForm";
 
 const benefits = [
   {
@@ -240,7 +241,7 @@ export default function CareersPage() {
                 </a>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link href="/contact">Apply Now</Link>
+                <a href="#apply">Apply Now</a>
               </Button>
             </div>
           </div>
@@ -308,7 +309,7 @@ export default function CareersPage() {
                   </div>
                   <p className="text-gray-600 mb-4">{position.description}</p>
                   <Button asChild variant="outline" className="w-full">
-                    <Link href="/contact">Apply Now</Link>
+                    <a href="#apply">Apply Now</a>
                   </Button>
                 </CardContent>
               </Card>
@@ -397,33 +398,76 @@ export default function CareersPage() {
         </div>
       </section>
 
-      {/* CTA Section */}
-      <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Ready to Join Our Team?
-          </h2>
-          <p className="text-xl mb-8 text-cyan-50">
-            Apply today and start your journey with AirFresh Marketing. We're always looking for
-            enthusiastic, professional individuals to join our growing team.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href="/contact">
-                Apply Now
-                <ArrowRight className="w-4 h-4 ml-2" />
-              </Link>
-            </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <a href="mailto:talent@airfreshmarketing.com">
-                <Mail className="w-4 h-4 mr-2" />
-                talent@airfreshmarketing.com
-              </a>
-            </Button>
+      {/* Application Form Section */}
+      <section id="apply" className="py-20 bg-gradient-to-br from-gray-900 via-cyan-900 to-blue-900">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-start">
+            {/* Left Column - Info */}
+            <div className="text-white">
+              <h2 className="text-3xl md:text-4xl font-bold mb-6">
+                Ready to Join Our Team?
+              </h2>
+              <p className="text-xl mb-8 text-cyan-100">
+                Apply today and start your journey with AirFresh Marketing. We&apos;re always looking for
+                enthusiastic, professional individuals to join our growing team.
+              </p>
+
+              <div className="space-y-6 mb-8">
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <CheckCircle className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">Quick Application</h3>
+                    <p className="text-cyan-100 text-sm">Takes less than 2 minutes to complete</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Calendar className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">Fast Response</h3>
+                    <p className="text-cyan-100 text-sm">We review applications within 48 hours</p>
+                  </div>
+                </div>
+                <div className="flex items-start gap-4">
+                  <div className="w-10 h-10 bg-cyan-500/20 rounded-lg flex items-center justify-center flex-shrink-0">
+                    <Star className="w-5 h-5 text-cyan-400" />
+                  </div>
+                  <div>
+                    <h3 className="font-semibold text-white">No Experience Required</h3>
+                    <p className="text-cyan-100 text-sm">We provide full training for all events</p>
+                  </div>
+                </div>
+              </div>
+
+              <div className="border-t border-white/20 pt-8">
+                <p className="text-cyan-100 mb-4">Prefer to reach out directly?</p>
+                <div className="flex flex-col sm:flex-row gap-4">
+                  <a
+                    href="mailto:talent@airfreshmarketing.com"
+                    className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    talent@airfreshmarketing.com
+                  </a>
+                  <a
+                    href="tel:3037206060"
+                    className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    (303) 720-6060
+                  </a>
+                </div>
+              </div>
+            </div>
+
+            {/* Right Column - Form */}
+            <div>
+              <TalentApplicationForm />
+            </div>
           </div>
-          <p className="mt-8 text-cyan-100">
-            Or call us at <a href="tel:3037206060" className="underline font-medium">(303) 720-6060</a>
-          </p>
         </div>
       </section>
     </div>
