@@ -16,7 +16,9 @@ export default function Footer() {
   const company = [
     { name: "About Us", href: "/about" },
     { name: "Portfolio", href: "/portfolio" },
-    { name: "Case Studies", href: "/case-studies" },
+    { name: "Events", href: "/events" },
+    { name: "Venues", href: "/venues" },
+    { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },
   ];
@@ -221,14 +223,12 @@ export default function Footer() {
                     Get Started
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
-                  <a
-                    href="https://airfreshconnect.com"
-                    target="_blank"
-                    rel="noopener noreferrer"
+                  <Link
+                    href="/careers"
                     className="inline-flex items-center justify-center px-6 py-3 bg-gray-800 hover:bg-gray-700 text-white font-semibold rounded-lg transition-all duration-300"
                   >
                     Join Our Team
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

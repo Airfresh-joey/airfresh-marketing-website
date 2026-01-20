@@ -126,15 +126,13 @@ export default function NavigationClean() {
                 </Link>
               )
             ))}
-            <a
-              href="https://airfreshconnect.com"
-              target="_blank"
-              rel="noopener noreferrer"
+            <Link
+              href="/careers"
               className="text-white hover:text-cyan-400 font-medium transition-all duration-200"
               data-testid="button-looking-for-work-header"
             >
               Looking for Work
-            </a>
+            </Link>
             <Link href="/contact">
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
                 Contact
@@ -208,15 +206,14 @@ export default function NavigationClean() {
               )
             ))}
             <div className="px-3 py-2 space-y-2">
-              <a
-                href="https://airfreshconnect.com"
-                target="_blank"
-                rel="noopener noreferrer"
+              <Link
+                href="/careers"
                 className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 hover:text-cyan-400"
                 data-testid="button-looking-for-work-mobile"
+                onClick={() => setMobileMenuOpen(false)}
               >
                 Looking for Work
-              </a>
+              </Link>
               <Button
                 asChild
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg"
