@@ -775,16 +775,32 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
-      {/* Local Clients Section */}
-      <section className="py-16">
+      {/* Trusted Brands Section */}
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">Trusted by Leading Brands in {city.name}</h2>
-          <div className="flex flex-wrap justify-center gap-8">
-            {city.clients.map((client, index) => (
-              <div key={index} className="bg-white rounded-lg shadow-md px-8 py-4">
-                <span className="text-xl font-semibold text-gray-700">{client}</span>
-              </div>
-            ))}
+          <h2 className="text-3xl font-bold text-center mb-4">Trusted by Leading Brands</h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            We've delivered successful experiential marketing campaigns for these industry-leading brands nationwide.
+          </p>
+          <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" width={120} height={40} className="object-contain max-h-12" />
+            </div>
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/google.com" alt="Google" width={120} height={40} className="object-contain max-h-12" />
+            </div>
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/pepsico.com" alt="Pepsi" width={120} height={40} className="object-contain max-h-12" />
+            </div>
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/redbull.com" alt="Red Bull" width={120} height={40} className="object-contain max-h-12" />
+            </div>
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/netflix.com" alt="Netflix" width={120} height={40} className="object-contain max-h-12" />
+            </div>
+            <div className="bg-white rounded-lg shadow-sm p-6 w-full flex items-center justify-center h-24">
+              <Image src="https://logo.clearbit.com/lyft.com" alt="Lyft" width={120} height={40} className="object-contain max-h-12" />
+            </div>
           </div>
         </div>
       </section>
