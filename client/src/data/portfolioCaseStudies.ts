@@ -370,7 +370,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "/images/case-studies/byoma.jpg"
+    heroImage: "/images/case-studies/byoma-hero.jpg"
   },
 
   // ============ AUTOMOTIVE & OUTDOOR ============
@@ -625,5 +625,197 @@ export const portfolioCaseStudies: CaseStudy[] = [
     category: "Entertainment",
     featured: false,
     heroImage: "/images/case-studies/brooklyn-magazine.jpg"
+  },
+
+  // ============ ADDITIONAL CASE STUDIES FROM OLD SITE ============
+  {
+    id: "merrell-outdoor",
+    name: "Merrell Outdoor Activations",
+    tagline: "Trail Tested",
+    description: "Brand activation and product sampling for Merrell outdoor footwear featuring hiking events, trail activations, and outdoor enthusiast engagement.",
+    industry: "Outdoor & Sports",
+    services: ["Brand Activation", "Product Sampling", "Event Marketing"],
+    markets: ["Denver, CO"],
+    date: "2024",
+    stats: {
+      "Events": "25+",
+      "Product Trials": "10,000+",
+      "Trail Activations": "50+",
+      "Brand Engagement": "100,000+"
+    },
+    category: "Sports",
+    featured: false,
+    heroImage: "/images/case-studies/merrell-hero.jpg"
+  },
+  {
+    id: "grubhub-campaign",
+    name: "Grubhub National Campaign",
+    tagline: "Delivering Happiness",
+    description: "National marketing campaign for Grubhub featuring street team activations, promotional giveaways, and brand ambassador programs in major metropolitan areas.",
+    industry: "Food Tech",
+    services: ["Street Teams", "Promotional Marketing", "Brand Ambassadors"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Cities Activated": "50+",
+      "Promo Codes Distributed": "500,000+",
+      "New User Sign-ups": "100,000+",
+      "Brand Impressions": "25M+"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/grubhub-hero.jpg"
+  },
+  {
+    id: "premier-protein-sampling",
+    name: "Premier Protein National Sampling",
+    tagline: "Fuel Your Day",
+    description: "National sampling campaign for Premier Protein featuring in-store demos, gym activations, and health-focused event marketing.",
+    industry: "Health & Nutrition",
+    services: ["Product Sampling", "In-Store Demos", "Gym Activations"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Samples Distributed": "1M+",
+      "Retail Locations": "5,000+",
+      "Gym Partnerships": "500+",
+      "Purchase Intent": "+70%"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/premier-protein-hero.jpg"
+  },
+  {
+    id: "clif-bar-marketing",
+    name: "Clif Bar National Marketing",
+    tagline: "Adventure Fueled",
+    description: "National marketing campaign for Clif Bar featuring outdoor event sponsorships, athlete partnerships, and adventure sports activations.",
+    industry: "Health & Nutrition",
+    services: ["Event Sponsorship", "Athlete Partnerships", "Sampling"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Events Sponsored": "200+",
+      "Samples Distributed": "2M+",
+      "Athlete Partners": "50+",
+      "Social Reach": "50M+"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/clif-bar-hero.jpg"
+  },
+  {
+    id: "boss-coffee-launch",
+    name: "Boss Coffee US Launch",
+    tagline: "Boss Level Coffee",
+    description: "US product launch campaign for Boss Coffee featuring street team activations, sampling events, and brand awareness campaigns in key urban markets.",
+    industry: "Beverage",
+    services: ["Product Launch", "Street Teams", "Sampling"],
+    markets: ["Denver, Colorado"],
+    date: "2024",
+    stats: {
+      "Launch Events": "50+",
+      "Samples Distributed": "100,000+",
+      "Brand Awareness": "+200%",
+      "Retail Placement": "1,000+"
+    },
+    category: "Food & Beverage",
+    featured: false,
+    heroImage: "/images/case-studies/boss-coffee-hero.jpg"
+  },
+  {
+    id: "aimco-residential",
+    name: "Aimco Residential Marketing",
+    tagline: "Home Sweet Home",
+    description: "Residential property marketing and leasing support for Aimco featuring community events, prospect engagement, and brand ambassador programs.",
+    industry: "Real Estate",
+    services: ["Community Events", "Leasing Support", "Brand Ambassadors"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Properties Supported": "100+",
+      "Community Events": "500+",
+      "Prospect Engagements": "50,000+",
+      "Lease Conversions": "+35%"
+    },
+    category: "Retail",
+    featured: false,
+    heroImage: "/images/case-studies/aimco-hero.jpg"
+  },
+  {
+    id: "lyft-national",
+    name: "Lyft National Marketing Campaign",
+    tagline: "Your Ride Awaits",
+    description: "National marketing campaign for Lyft featuring driver recruitment events, rider promotions, and brand activations at major events and venues.",
+    industry: "Transportation",
+    services: ["Driver Recruitment", "Promotional Marketing", "Event Activations"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Cities Activated": "100+",
+      "Driver Sign-ups": "25,000+",
+      "Promo Rides": "500,000+",
+      "Event Activations": "1,000+"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/lyft-hero.jpg"
+  },
+  {
+    id: "mac-cosmetics-campaign",
+    name: "MAC Cosmetics National Campaign",
+    tagline: "All Ages, All Races, All Genders",
+    description: "National marketing campaign for MAC Cosmetics featuring beauty consultations, product launches, and experiential activations at retail and events.",
+    industry: "Beauty",
+    services: ["Beauty Consultations", "Product Launch", "Experiential Marketing"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Consultations": "100,000+",
+      "Product Launches": "25+",
+      "Retail Activations": "500+",
+      "Social Impressions": "100M+"
+    },
+    category: "Beauty & Fashion",
+    featured: false,
+    heroImage: "/images/case-studies/mac-cosmetics-hero.jpg"
+  },
+  {
+    id: "adidas-staffing",
+    name: "Adidas National Marketing Campaign",
+    tagline: "Impossible Is Nothing",
+    description: "National staffing and marketing campaign for Adidas featuring athlete events, retail activations, and sports marketing initiatives.",
+    industry: "Sports & Apparel",
+    services: ["Event Staffing", "Athlete Events", "Retail Activations"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Events Staffed": "500+",
+      "Athlete Appearances": "100+",
+      "Retail Activations": "2,000+",
+      "Brand Impressions": "500M+"
+    },
+    category: "Sports",
+    featured: false,
+    heroImage: "/images/case-studies/adidas-hero.jpg"
+  },
+  {
+    id: "visible-wireless",
+    name: "Visible National Marketing Campaign",
+    tagline: "Wireless Made Simple",
+    description: "National marketing campaign for Visible wireless featuring street team activations, promotional events, and customer acquisition programs.",
+    industry: "Telecommunications",
+    services: ["Street Teams", "Promotional Events", "Customer Acquisition"],
+    markets: ["Nationwide"],
+    date: "2024",
+    stats: {
+      "Cities Activated": "75+",
+      "New Subscribers": "50,000+",
+      "Promotional Events": "1,000+",
+      "Brand Awareness": "+150%"
+    },
+    category: "Technology",
+    featured: false,
+    heroImage: "/images/case-studies/visible-hero.jpg"
   }
 ];
