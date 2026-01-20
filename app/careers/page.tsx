@@ -85,7 +85,7 @@ const testimonials = [
     location: "Denver, CO",
     tenure: "2 years",
     quote: "Working with AirFresh has been incredible. The flexibility lets me balance school while gaining real marketing experience. I've worked with Netflix, Google, and so many amazing brands!",
-    image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=face"
+    image: "/images/testimonials/aimee-ambassador.jpg"
   },
   {
     name: "Marcus J.",
@@ -93,7 +93,7 @@ const testimonials = [
     location: "Los Angeles, CA",
     tenure: "3 years",
     quote: "I started as a brand ambassador and worked my way up to team lead. The growth opportunities here are real. Every event is different, and I've built skills I use every day.",
-    image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=face"
+    image: "/images/testimonials/anonymous-review.jpg"
   },
   {
     name: "Jessica L.",
@@ -101,7 +101,7 @@ const testimonials = [
     location: "Miami, FL",
     tenure: "1.5 years",
     quote: "The team culture is what makes AirFresh special. Everyone genuinely cares about each other's success. Plus, representing Formula One and major sports events? Dream come true!",
-    image: "https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=face"
+    image: "/images/testimonials/kristin-quinn.jpg"
   }
 ];
 

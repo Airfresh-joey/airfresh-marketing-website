@@ -252,14 +252,6 @@ export default function Home() {
     }
   ];
 
-  const clientLogos = [
-    "https://images.unsplash.com/photo-1611224923853-80b023f02d71?ixlib=rb-4.0.3&w=120&h=60&fit=crop",
-    "https://images.unsplash.com/photo-1552820728-8b83bb6b773f?ixlib=rb-4.0.3&w=120&h=60&fit=crop",
-    "https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&w=120&h=60&fit=crop",
-    "https://images.unsplash.com/photo-1633409361618-c73427e4e206?ixlib=rb-4.0.3&w=120&h=60&fit=crop",
-    "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&w=120&h=60&fit=crop",
-    "https://images.unsplash.com/photo-1606107557195-0e29a4b5b4aa?ixlib=rb-4.0.3&w=120&h=60&fit=crop"
-  ];
 
   return (
     <>
