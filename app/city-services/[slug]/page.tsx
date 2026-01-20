@@ -43,7 +43,10 @@ export async function generateStaticParams() {
     { name: 'portland', displayName: 'Portland' },
     { name: 'las-vegas', displayName: 'Las Vegas' },
     { name: 'nashville', displayName: 'Nashville' },
-    { name: 'charlotte', displayName: 'Charlotte' }
+    { name: 'charlotte', displayName: 'Charlotte' },
+    { name: 'washington', displayName: 'Washington DC' },
+    { name: 'minneapolis', displayName: 'Minneapolis' },
+    { name: 'detroit', displayName: 'Detroit' }
   ];
 
   const allCities = [...cities, ...additionalCities];

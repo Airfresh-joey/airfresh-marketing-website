@@ -69,7 +69,6 @@ const nextConfig = {
       { source: '/event-staffing', destination: '/services/event-staffing', permanent: true },
       { source: '/privacy', destination: '/legal/privacy-policy', permanent: true },
       { source: '/terms', destination: '/legal/terms-and-conditions', permanent: true },
-      { source: '/cities/:cityName', destination: '/city/:cityName', permanent: true },
     ]
   },
 
