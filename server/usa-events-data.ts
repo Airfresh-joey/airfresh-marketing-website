@@ -60,7 +60,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX International Airport, Metro Rail, Uber/Lyft, Olympic Express Shuttles",
     staffingNeeds: ["Venue greeters", "VIP hospitality", "Sponsor activation staff", "Wayfinding assistants", "Credential checkers"],
     typicalRoles: ["Brand Ambassadors", "Guest Services", "VIP Hosts", "Sampling Teams", "Event Coordinators"],
-    heroImage: "https://images.unsplash.com/photo-1587280501635-68a0e82cd5ff?w=1200&h=800&fit=crop&q=80",
+    heroImage: "https://images.unsplash.com/photo-1569517282132-25d22f4573e6?w=1200&h=800&fit=crop&q=80",
     featured: true,
     tier: 1
   },
@@ -91,7 +91,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Louis Armstrong International Airport, Streetcars, Rideshare, Super Bowl Express",
     staffingNeeds: ["Fan zone staff", "Tailgate activation teams", "VIP hospitality", "Sponsor booth staff", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Coordinators", "Hospitality Staff", "Sampling Teams"],
-    heroImage: "https://images.unsplash.com/photo-1566577739112-5180d4bf9390?w=1200&h=800&fit=crop&q=80",
+    heroImage: "https://images.unsplash.com/photo-1504450758481-7338eba7524a?w=1200&h=800&fit=crop&q=80",
     featured: true,
     tier: 1
   },
@@ -122,7 +122,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare, Convention Shuttles",
     staffingNeeds: ["Booth staff", "Product demonstrators", "Lead scanners", "Hospitality staff", "Registration support"],
     typicalRoles: ["Product Specialists", "Brand Ambassadors", "Lead Generators", "Hostesses", "Technical Demonstrators"],
-    heroImage: "https://images.unsplash.com/photo-1531297484001-80022131f5a1?w=1200&h=800&fit=crop&q=80",
+    heroImage: "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1200&h=800&fit=crop&q=80",
     featured: true,
     tier: 1
   },

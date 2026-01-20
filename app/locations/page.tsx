@@ -74,9 +74,14 @@ export default function Locations() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-20 lg:py-32 overflow-hidden bg-gradient-to-br from-cyan-600 via-blue-600 to-cyan-700">
+      <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <div className="absolute inset-0 bg-black/10"></div>
+          <img
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920&q=80"
+            alt="Experiential marketing event"
+            className="w-full h-full object-cover"
+          />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/80 via-blue-900/70 to-purple-900/80"></div>
           <div className="absolute top-0 right-0 w-96 h-96 bg-white/10 rounded-full blur-3xl"></div>
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
         </div>
