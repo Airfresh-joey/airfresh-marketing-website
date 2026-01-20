@@ -896,7 +896,7 @@ export default function Home() {
             <div className="relative rounded-3xl overflow-hidden group">
               <div className="aspect-[21/9] relative">
                 <img
-                  src="/images/case-studies/formula-1.jpg"
+                  src="/images/case-studies/formula-1-4.jpg"
                   alt="Formula 1 Las Vegas Grand Prix activation"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                 />
@@ -931,25 +931,25 @@ export default function Home() {
           <div className="grid md:grid-cols-3 gap-6 mb-12">
             {[
               {
-                image: "/images/case-studies/williams-racing.jpg",
+                image: "/images/case-studies/cortie-digital.jpg",
+                category: "Technology",
+                title: "Microsoft",
+                stat: "50K+ Interactions",
+                description: "Brand activation & experiential marketing"
+              },
+              {
+                image: "/images/case-studies/williams-racing-2.jpg",
                 category: "Motorsports",
-                title: "Williams Racing F1",
+                title: "Williams Racing",
                 stat: "100K+ Fans",
                 description: "Premium hospitality & fan experiences"
               },
               {
-                image: "/images/case-studies/beer-samplings.jpg",
+                image: "/images/case-studies/beer-samplings-2.jpg",
                 category: "Beverage",
-                title: "National Beer Sampling",
+                title: "National Sampling",
                 stat: "2M+ Samples",
-                description: "Craft brewery festival activations"
-              },
-              {
-                image: "/images/case-studies/meijer.jpg",
-                category: "Retail",
-                title: "Meijer In-Store",
-                stat: "+55% Sales",
-                description: "Midwest retail sampling program"
+                description: "Nationwide sampling campaigns"
               }
             ].map((campaign, index) => (
               <motion.div
@@ -960,8 +960,8 @@ export default function Home() {
                 whileHover={{ y: -8 }}
                 className="group cursor-pointer"
               >
-                <div className="relative rounded-2xl overflow-hidden">
-                  <div className="aspect-[4/3]">
+                <div className="relative rounded-2xl overflow-hidden h-full">
+                  <div className="aspect-[4/3] relative">
                     <img
                       src={campaign.image}
                       alt={campaign.title}
@@ -982,31 +982,16 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Client Logos Row */}
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            transition={{ duration: 0.8 }}
-            className="pt-12 border-t border-white/10"
-          >
-            <p className="text-center text-gray-500 text-sm uppercase tracking-wider mb-8">Trusted by industry leaders</p>
-            <div className="flex flex-wrap justify-center items-center gap-12 opacity-60">
-              {["Google", "Adidas", "Microsoft", "Lyft", "PepsiCo", "NFL", "Red Bull", "Clif Bar"].map((brand, i) => (
-                <span key={i} className="text-white/50 font-bold text-lg tracking-wide">{brand}</span>
-              ))}
-            </div>
-          </motion.div>
-
           <motion.div
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.6, delay: 0.3 }}
-            className="text-center mt-12"
+            className="text-center mt-16"
           >
             <Link href="/portfolio">
-              <Button size="lg" className="bg-white text-gray-900 hover:bg-gray-100 font-bold px-8 py-6">
+              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xl px-12 py-8 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transform hover:scale-105 transition-all duration-300">
                 View All Case Studies
-                <ArrowRight className="ml-2 h-5 w-5" />
+                <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>
           </motion.div>

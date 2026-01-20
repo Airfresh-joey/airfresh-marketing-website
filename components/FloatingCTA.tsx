@@ -95,7 +95,7 @@ export default function FloatingCTA() {
               </div>
 
               <p className="text-xs text-gray-500 mt-4 text-center">
-                Average response time: &lt; 2 hours
+                We respond quickly to all inquiries
               </p>
             </motion.div>
           )}

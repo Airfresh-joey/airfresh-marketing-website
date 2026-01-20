@@ -65,10 +65,10 @@ export default function Contact() {
     },
     {
       icon: MapPin,
-      title: "Visit Us",
-      value: "720 S. Colorado Blvd., Penthouse North",
-      description: "Denver, Colorado 80246",
-      href: "#"
+      title: "Nationwide Service",
+      value: "We Service All 50 States",
+      description: "USA",
+      href: "/locations"
     }
   ];
 
@@ -81,7 +81,7 @@ export default function Contact() {
 
   const stats = [
     { icon: Users, number: "300+", label: "Brands Served" },
-    { icon: Award, number: "20+", label: "Years Experience" },
+    { icon: Award, number: "25+", label: "Years Experience" },
     { icon: Zap, number: "1000+", label: "Events Produced" }
   ];
 
@@ -89,7 +89,7 @@ export default function Contact() {
     "Nationwide coverage across 50+ cities",
     "Full-service in-house capabilities",
     "Data-driven insights and reporting",
-    "20+ years of proven experience",
+    "25+ years of proven experience",
     "Dedicated project management",
     "End-to-end event production"
   ];
@@ -108,16 +108,16 @@ export default function Contact() {
         <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{
-            backgroundImage: "url('https://images.unsplash.com/photo-1551434678-e076c223a692?ixlib=rb-4.0.3&auto=format&fit=crop&w=2070&q=80')"
+            backgroundImage: "url('/images/case-studies/formula-1-4.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-black bg-opacity-60" />
+        <div className="absolute inset-0 bg-black/70" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-4xl">
-            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight">
-              Let's <span className="text-yellow-300 italic font-serif">Connect</span>
+            <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
+              Let's <span className="text-cyan-400">Connect</span>
             </h1>
-            <p className="text-xl md:text-2xl mb-8 leading-relaxed opacity-90">
+            <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
               Ready to create unforgettable brand experiences? Let's start the conversation.
               Whether you're planning a brand activation, corporate event, or experiential marketing campaign,
               our team is here to bring your vision to life.
@@ -256,93 +256,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Location & Social */}
-      <section className="py-20 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
-            {/* Location */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Our Denver Headquarters</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Located in the heart of Denver, our office serves as the hub for our nationwide operations.
-                While we work with clients across the country, you're always welcome to visit us in Colorado.
-              </p>
-
-              <Card className="p-6">
-                <CardContent className="p-0">
-                  <div className="flex items-start mb-4">
-                    <MapPin className="h-6 w-6 text-primary mr-4 mt-1" />
-                    <div>
-                      <h3 className="text-lg font-semibold mb-1">AirFresh Marketing</h3>
-                      <p className="text-gray-600">
-                        720 S. Colorado Blvd., Penthouse North<br />
-                        Denver, Colorado 80246
-                      </p>
-                    </div>
-                  </div>
-                  <div className="mt-6">
-                    <h4 className="font-semibold mb-2">Nearby Landmarks:</h4>
-                    <ul className="text-gray-600 text-sm space-y-1">
-                      <li>• Cherry Creek Shopping Center (0.5 miles)</li>
-                      <li>• Denver Tech Center (2 miles)</li>
-                      <li>• Denver International Airport (25 miles)</li>
-                    </ul>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-
-            {/* Social & Updates */}
-            <div>
-              <h2 className="text-3xl font-bold mb-6 text-gray-900">Stay Connected</h2>
-              <p className="text-lg text-gray-600 mb-8">
-                Follow us on social media for the latest updates, industry insights,
-                behind-the-scenes content, and inspiration from our recent projects.
-              </p>
-
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {socialLinks.map((social, index) => (
-                  <a
-                    key={index}
-                    href={social.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className={`flex items-center p-4 bg-white rounded-lg shadow-sm hover:shadow-md transition-all duration-300 ${social.color}`}
-                  >
-                    <social.icon className="h-6 w-6 mr-3" />
-                    <span className="font-medium">{social.name}</span>
-                  </a>
-                ))}
-              </div>
-
-              {/* Newsletter Signup */}
-              <Card className="p-6 bg-primary text-white">
-                <CardContent className="p-0">
-                  <div className="flex items-start">
-                    <MessageSquare className="h-6 w-6 mr-4 mt-1" />
-                    <div className="flex-1">
-                      <h3 className="text-lg font-semibold mb-2">Marketing Insights Newsletter</h3>
-                      <p className="text-white/90 mb-4 text-sm">
-                        Get monthly insights, case studies, and industry trends delivered to your inbox.
-                      </p>
-                      <div className="flex gap-2">
-                        <input
-                          type="email"
-                          placeholder="Your email"
-                          className="flex-1 px-3 py-2 text-gray-900 rounded text-sm"
-                        />
-                        <Button variant="secondary" size="sm">
-                          Subscribe
-                        </Button>
-                      </div>
-                    </div>
-                  </div>
-                </CardContent>
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
 
       {/* CTA Section */}
       <section className="py-16 bg-primary text-white">
