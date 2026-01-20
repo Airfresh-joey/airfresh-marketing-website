@@ -35,7 +35,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: true,
-    heroImage: "/images/case-studies/skinny-mixes-hero.jpg"
+    heroImage: "/images/case-studies/skinny-mixes-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-3.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-4.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-5.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-6.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-7.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-8.jpg"
+    ]
   },
   {
     id: "formula-1-las-vegas",
@@ -56,9 +66,14 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: true,
     heroImage: "/images/case-studies/formula-1-5.jpg",
     images: [
-      "/images/case-studies/formula-1-5.jpg",
-      "/images/case-studies/formula-1-2.jpg",
-      "/images/case-studies/formula-1-3.jpg"
+      "/images/case-studies/gallery/formula1/formula1-1.jpg",
+      "/images/case-studies/gallery/formula1/formula1-2.jpg",
+      "/images/case-studies/gallery/formula1/formula1-3.jpg",
+      "/images/case-studies/gallery/formula1/formula1-4.jpg",
+      "/images/case-studies/gallery/formula1/formula1-5.jpg",
+      "/images/case-studies/gallery/formula1/formula1-6.jpg",
+      "/images/case-studies/gallery/formula1/formula1-7.jpg",
+      "/images/case-studies/gallery/formula1/formula1-8.jpg"
     ]
   },
   {
@@ -103,7 +118,11 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/1800-tequila.jpg"
+    heroImage: "/images/case-studies/1800-tequila.jpg",
+    images: [
+      "/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg",
+      "/images/case-studies/gallery/1800-tequila/1800-tequila-2.jpg"
+    ]
   },
   {
     id: "beer-samplings-national",
@@ -124,9 +143,10 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/beer-samplings.jpg",
     images: [
-      "/images/case-studies/beer-samplings.jpg",
-      "/images/case-studies/beer-samplings-2.jpg",
-      "/images/case-studies/beer-samplings-3.jpg"
+      "/images/case-studies/gallery/northgate-beer/northgate-beer-1.jpg",
+      "/images/case-studies/gallery/northgate-beer/northgate-beer-2.jpg",
+      "/images/case-studies/gallery/northgate-beer/northgate-beer-3.jpg",
+      "/images/case-studies/gallery/northgate-beer/northgate-beer-4.jpg"
     ]
   },
   {
@@ -148,9 +168,13 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/meijer.jpg",
     images: [
-      "/images/case-studies/meijer.jpg",
-      "/images/case-studies/meijer-2.jpg",
-      "/images/case-studies/meijer-3.jpg"
+      "/images/case-studies/gallery/meijer/meijer-1.jpg",
+      "/images/case-studies/gallery/meijer/meijer-2.jpg",
+      "/images/case-studies/gallery/meijer/meijer-3.jpg",
+      "/images/case-studies/gallery/meijer/meijer-4.jpg",
+      "/images/case-studies/gallery/meijer/meijer-5.jpg",
+      "/images/case-studies/gallery/meijer/meijer-6.jpg",
+      "/images/case-studies/gallery/meijer/meijer-7.jpg"
     ]
   },
   {
@@ -170,7 +194,14 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/waiakea-hero.jpg"
+    heroImage: "/images/case-studies/waiakea-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/waiakea/waiakea-1.jpg",
+      "/images/case-studies/gallery/waiakea/waiakea-2.jpg",
+      "/images/case-studies/gallery/waiakea/waiakea-3.jpg",
+      "/images/case-studies/gallery/waiakea/waiakea-4.jpg",
+      "/images/case-studies/gallery/waiakea/waiakea-5.jpg"
+    ]
   },
   {
     id: "buffalo-wild-wings",
@@ -189,7 +220,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/buffalo-wild-wings-hero.jpg"
+    heroImage: "/images/case-studies/buffalo-wild-wings-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/bww/bww-1.jpg",
+      "/images/case-studies/gallery/bww/bww-2.jpg",
+      "/images/case-studies/gallery/bww/bww-3.jpg",
+      "/images/case-studies/gallery/bww/bww-4.jpg",
+      "/images/case-studies/gallery/bww/bww-5.jpg",
+      "/images/case-studies/gallery/bww/bww-6.jpg",
+      "/images/case-studies/gallery/bww/bww-7.jpg",
+      "/images/case-studies/gallery/bww/bww-8.jpg"
+    ]
   },
   {
     id: "wagamama-launch",
@@ -227,7 +268,14 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/culinary-dropout.jpg"
+    heroImage: "/images/case-studies/culinary-dropout.jpg",
+    images: [
+      "/images/case-studies/gallery/culinary-dropout/culinary-dropout-1.jpg",
+      "/images/case-studies/gallery/culinary-dropout/culinary-dropout-2.jpg",
+      "/images/case-studies/gallery/culinary-dropout/culinary-dropout-3.jpg",
+      "/images/case-studies/gallery/culinary-dropout/culinary-dropout-4.jpg",
+      "/images/case-studies/gallery/culinary-dropout/culinary-dropout-5.jpg"
+    ]
   },
   {
     id: "katjes-candy",
@@ -246,7 +294,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: false,
-    heroImage: "/images/case-studies/katjes-hero.jpg"
+    heroImage: "/images/case-studies/katjes-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/katjes/katjes-1.jpg",
+      "/images/case-studies/gallery/katjes/katjes-2.jpg",
+      "/images/case-studies/gallery/katjes/katjes-3.jpg",
+      "/images/case-studies/gallery/katjes/katjes-4.jpg",
+      "/images/case-studies/gallery/katjes/katjes-5.jpg",
+      "/images/case-studies/gallery/katjes/katjes-6.jpg",
+      "/images/case-studies/gallery/katjes/katjes-7.jpg",
+      "/images/case-studies/gallery/katjes/katjes-8.jpg"
+    ]
   },
 
   // ============ TECHNOLOGY & MEDIA ============
@@ -269,9 +327,14 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/microsoft-hero.jpg",
     images: [
-      "/images/case-studies/microsoft.jpg",
-      "/images/case-studies/microsoft-2.jpg",
-      "/images/case-studies/microsoft-3.jpg"
+      "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-3.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-4.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-5.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-6.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-7.jpg",
+      "/images/case-studies/gallery/microsoft/microsoft-8.jpg"
     ]
   },
   {
@@ -291,7 +354,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/netflix-hero.jpg"
+    heroImage: "/images/case-studies/netflix-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/netflix/netflix-1.jpg",
+      "/images/case-studies/gallery/netflix/netflix-2.jpg",
+      "/images/case-studies/gallery/netflix/netflix-3.jpg",
+      "/images/case-studies/gallery/netflix/netflix-4.jpg",
+      "/images/case-studies/gallery/netflix/netflix-5.jpg",
+      "/images/case-studies/gallery/netflix/netflix-6.jpg",
+      "/images/case-studies/gallery/netflix/netflix-7.jpg",
+      "/images/case-studies/gallery/netflix/netflix-8.jpg"
+    ]
   },
   {
     id: "ted-talk-events",
@@ -310,7 +383,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "/images/case-studies/ted-talk-hero.jpg"
+    heroImage: "/images/case-studies/ted-talk-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/ted/ted-1.jpg",
+      "/images/case-studies/gallery/ted/ted-2.jpg",
+      "/images/case-studies/gallery/ted/ted-3.jpg",
+      "/images/case-studies/gallery/ted/ted-4.jpg",
+      "/images/case-studies/gallery/ted/ted-5.jpg",
+      "/images/case-studies/gallery/ted/ted-6.jpg",
+      "/images/case-studies/gallery/ted/ted-7.jpg",
+      "/images/case-studies/gallery/ted/ted-8.jpg"
+    ]
   },
 
   // ============ BEAUTY & FASHION ============
@@ -331,7 +414,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "/images/case-studies/clarins.jpg"
+    heroImage: "/images/case-studies/clarins.jpg",
+    images: [
+      "/images/case-studies/gallery/clarins/clarins-1.jpg",
+      "/images/case-studies/gallery/clarins/clarins-2.jpg",
+      "/images/case-studies/gallery/clarins/clarins-3.jpg",
+      "/images/case-studies/gallery/clarins/clarins-4.jpg",
+      "/images/case-studies/gallery/clarins/clarins-5.jpg",
+      "/images/case-studies/gallery/clarins/clarins-6.jpg",
+      "/images/case-studies/gallery/clarins/clarins-7.jpg",
+      "/images/case-studies/gallery/clarins/clarins-8.jpg"
+    ]
   },
   {
     id: "byoma-skincare",
@@ -350,7 +443,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "/images/case-studies/byoma-hero.jpg"
+    heroImage: "/images/case-studies/byoma-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/byoma/byoma-1.jpg",
+      "/images/case-studies/gallery/byoma/byoma-2.jpg",
+      "/images/case-studies/gallery/byoma/byoma-3.jpg",
+      "/images/case-studies/gallery/byoma/byoma-4.jpg",
+      "/images/case-studies/gallery/byoma/byoma-5.jpg",
+      "/images/case-studies/gallery/byoma/byoma-6.jpg",
+      "/images/case-studies/gallery/byoma/byoma-7.jpg",
+      "/images/case-studies/gallery/byoma/byoma-8.jpg"
+    ]
   },
 
   // ============ AUTOMOTIVE & OUTDOOR ============
@@ -371,7 +474,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Automotive",
     featured: false,
-    heroImage: "/images/case-studies/polaris-hero.jpg"
+    heroImage: "/images/case-studies/polaris-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/polaris/polaris-1.jpg",
+      "/images/case-studies/gallery/polaris/polaris-2.jpg",
+      "/images/case-studies/gallery/polaris/polaris-3.jpg",
+      "/images/case-studies/gallery/polaris/polaris-4.jpg",
+      "/images/case-studies/gallery/polaris/polaris-5.jpg",
+      "/images/case-studies/gallery/polaris/polaris-6.jpg",
+      "/images/case-studies/gallery/polaris/polaris-7.jpg",
+      "/images/case-studies/gallery/polaris/polaris-8.jpg"
+    ]
   },
   {
     id: "car-wash-promotions",
@@ -392,9 +505,10 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/car-wash-hero.jpg",
     images: [
-      "/images/case-studies/car-wash-hero.jpg",
-      "/images/case-studies/car-wash-2.jpg",
-      "/images/case-studies/car-wash-3.jpg"
+      "/images/case-studies/gallery/car-wash/car-wash-1.jpg",
+      "/images/case-studies/gallery/car-wash/car-wash-2.jpg",
+      "/images/case-studies/gallery/car-wash/car-wash-3.jpg",
+      "/images/case-studies/gallery/car-wash/car-wash-4.jpg"
     ]
   },
 
@@ -416,7 +530,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/cirque-du-soleil-hero.jpg"
+    heroImage: "/images/case-studies/cirque-du-soleil-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/cirque/cirque-1.jpg",
+      "/images/case-studies/gallery/cirque/cirque-2.jpg",
+      "/images/case-studies/gallery/cirque/cirque-3.jpg",
+      "/images/case-studies/gallery/cirque/cirque-4.jpg",
+      "/images/case-studies/gallery/cirque/cirque-5.jpg",
+      "/images/case-studies/gallery/cirque/cirque-6.jpg",
+      "/images/case-studies/gallery/cirque/cirque-7.jpg",
+      "/images/case-studies/gallery/cirque/cirque-8.jpg"
+    ]
   },
   {
     id: "mrbeast-events",
@@ -458,9 +582,11 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/bond-vet.jpg",
     images: [
-      "/images/case-studies/bond-vet.jpg",
-      "/images/case-studies/bond-vet-2.jpg",
-      "/images/case-studies/bond-vet-3.jpg"
+      "/images/case-studies/gallery/bond-vet/bond-vet-1.jpg",
+      "/images/case-studies/gallery/bond-vet/bond-vet-2.jpg",
+      "/images/case-studies/gallery/bond-vet/bond-vet-3.jpg",
+      "/images/case-studies/gallery/bond-vet/bond-vet-4.jpg",
+      "/images/case-studies/gallery/bond-vet/bond-vet-5.jpg"
     ]
   },
   {
@@ -482,9 +608,13 @@ export const portfolioCaseStudies: CaseStudy[] = [
     featured: false,
     heroImage: "/images/case-studies/qwick.jpg",
     images: [
-      "/images/case-studies/qwick.jpg",
-      "/images/case-studies/qwick-2.jpg",
-      "/images/case-studies/qwick-3.jpg"
+      "/images/case-studies/gallery/qwick/qwick-1.jpg",
+      "/images/case-studies/gallery/qwick/qwick-2.jpg",
+      "/images/case-studies/gallery/qwick/qwick-3.jpg",
+      "/images/case-studies/gallery/qwick/qwick-4.jpg",
+      "/images/case-studies/gallery/qwick/qwick-5.jpg",
+      "/images/case-studies/gallery/qwick/qwick-6.jpg",
+      "/images/case-studies/gallery/qwick/qwick-7.jpg"
     ]
   },
   {
@@ -541,7 +671,11 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/topps-cards.jpg"
+    heroImage: "/images/case-studies/topps-cards.jpg",
+    images: [
+      "/images/case-studies/gallery/topps/topps-1.jpg",
+      "/images/case-studies/gallery/topps/topps-2.jpg"
+    ]
   },
   {
     id: "cortie-digital",
@@ -643,7 +777,13 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: false,
-    heroImage: "/images/case-studies/grubhub-hero.jpg"
+    heroImage: "/images/case-studies/grubhub-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/grubhub/grubhub-1.jpg",
+      "/images/case-studies/gallery/grubhub/grubhub-2.jpg",
+      "/images/case-studies/gallery/grubhub/grubhub-3.jpg",
+      "/images/case-studies/gallery/grubhub/grubhub-4.jpg"
+    ]
   },
   {
     id: "premier-protein-sampling",
@@ -757,7 +897,14 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Beauty & Fashion",
     featured: false,
-    heroImage: "/images/case-studies/mac-cosmetics-new-hero.jpg"
+    heroImage: "/images/case-studies/mac-cosmetics-new-hero.jpg",
+    images: [
+      "/images/case-studies/gallery/mac/mac-1.jpg",
+      "/images/case-studies/gallery/mac/mac-2.jpg",
+      "/images/case-studies/gallery/mac/mac-3.jpg",
+      "/images/case-studies/gallery/mac/mac-4.jpg",
+      "/images/case-studies/gallery/mac/mac-5.jpg"
+    ]
   },
   {
     id: "adidas-staffing",
