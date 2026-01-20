@@ -282,17 +282,17 @@ export const portfolioCaseStudies: CaseStudy[] = [
     description: "Premiere event staffing and fan experience activations for Netflix original series launches, including red carpet events, fan screenings, and immersive pop-up experiences.",
     industry: "Entertainment",
     services: ["Premiere Events", "Fan Experiences", "VIP Management"],
-    markets: ["Los Angeles", "New York"],
-    date: "2024",
+    markets: ["Los Angeles"],
+    date: "2021",
+    googleDriveUrl: "https://drive.google.com/drive/folders/17ffDXAso3Tu5-ossU3AXTfdqjr2p-YkU",
     stats: {
-      "Premiere Events": "25+",
-      "Fan Experiences": "50,000+",
-      "VIP Guests": "5,000+",
-      "Social Reach": "50M+"
+      "Premiere Events": "3",
+      "Event Staff": "Team of 7",
+      "Location": "Goya Studios, Hollywood"
     },
     category: "Entertainment",
     featured: false,
-    heroImage: "/images/case-studies/netflix.jpg"
+    heroImage: "/images/case-studies/netflix-hero.jpg"
   },
   {
     id: "ted-talk-events",
