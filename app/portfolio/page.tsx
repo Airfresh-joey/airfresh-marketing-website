@@ -146,7 +146,7 @@ export default function Portfolio() {
               {[
                 { icon: TrendingUp, value: "4.2x", label: "Average ROI" },
                 { icon: Users, value: "5M+", label: "People Reached" },
-                { icon: Award, value: "50+", label: "Awards Won" },
+                { icon: Award, value: "300+", label: "Brands Served" },
                 { icon: Target, value: "98%", label: "Client Satisfaction" }
               ].map((stat, index) => (
                 <motion.div
