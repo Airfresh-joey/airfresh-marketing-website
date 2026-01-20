@@ -35,7 +35,11 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Food & Beverage",
     featured: true,
-    heroImage: "/images/case-studies/skinny-mixes.jpg"
+    heroImage: "/images/case-studies/skinny-mixes-hero.jpg",
+    images: [
+      "/images/case-studies/skinny-mixes-hero.jpg",
+      "/images/case-studies/skinny-mixes.jpg"
+    ]
   },
   {
     id: "formula-1-las-vegas",
