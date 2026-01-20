@@ -208,7 +208,7 @@ const cities = [
     slug: 'san-diego',
     name: 'San Diego',
     state: 'CA',
-    image: '/images/cities/san-francisco-activation.jpg',
+    image: '/images/case-studies/gallery/netflix/netflix-5.jpg',
     alt: 'San Diego beach and convention center experiential marketing',
     problems: [
       'Competition from beach destinations',
@@ -232,7 +232,7 @@ const cities = [
     slug: 'seattle',
     name: 'Seattle',
     state: 'WA',
-    image: '/images/cities/san-francisco-activation.jpg',
+    image: '/images/case-studies/gallery/qwick/qwick-1.jpg',
     alt: 'Seattle Pike Place Market and tech industry experiential marketing',
     problems: [
       'Weather limitations for outdoor events',
@@ -256,7 +256,7 @@ const cities = [
     slug: 'portland',
     name: 'Portland',
     state: 'OR',
-    image: '/images/cities/denver-downtown.jpg',
+    image: '/images/case-studies/gallery/qwick/qwick-2.jpg',
     alt: 'Portland downtown and food festival experiential marketing',
     problems: [
       'Unique, independent-minded market',
@@ -280,7 +280,7 @@ const cities = [
     slug: 'phoenix',
     name: 'Phoenix',
     state: 'AZ',
-    image: '/images/cities/miami-beach.jpg',
+    image: '/images/case-studies/gallery/duracell/duracell-1.jpg',
     alt: 'Phoenix outdoor and sports venue experiential marketing',
     problems: [
       'Extreme summer heat limiting outdoor events',
@@ -304,7 +304,7 @@ const cities = [
     slug: 'las-vegas',
     name: 'Las Vegas',
     state: 'NV',
-    image: '/images/cities/austin-sxsw.jpg',
+    image: '/images/case-studies/gallery/formula1/formula1-1.jpg',
     alt: 'Las Vegas Strip and convention experiential marketing',
     problems: [
       'Oversaturation of marketing messages',
@@ -328,7 +328,7 @@ const cities = [
     slug: 'dallas',
     name: 'Dallas',
     state: 'TX',
-    image: '/images/cities/austin-sxsw.jpg',
+    image: '/images/case-studies/gallery/duracell/duracell-2.jpg',
     alt: 'Dallas downtown and sports venue experiential marketing',
     problems: [
       'Dispersed suburban market',
@@ -352,7 +352,7 @@ const cities = [
     slug: 'houston',
     name: 'Houston',
     state: 'TX',
-    image: '/images/cities/miami-beach.jpg',
+    image: '/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg',
     alt: 'Houston energy corridor and sports venue experiential marketing',
     problems: [
       'Massive geographic sprawl',
@@ -400,7 +400,7 @@ const cities = [
     slug: 'nashville',
     name: 'Nashville',
     state: 'TN',
-    image: '/images/cities/austin-sxsw.jpg',
+    image: '/images/case-studies/gallery/bww/bww-1.jpg',
     alt: 'Nashville Broadway and music venue experiential marketing',
     problems: [
       'Tourist-focused market challenges',
@@ -472,7 +472,7 @@ const cities = [
     slug: 'boston',
     name: 'Boston',
     state: 'MA',
-    image: '/images/cities/new-york-activation.jpg',
+    image: '/images/case-studies/gallery/byoma/byoma-1.jpg',
     alt: 'Boston college campus and historic district experiential marketing',
     problems: [
       'Dense college population with limited reach',
@@ -496,7 +496,7 @@ const cities = [
     slug: 'philadelphia',
     name: 'Philadelphia',
     state: 'PA',
-    image: '/images/cities/new-york-activation.jpg',
+    image: '/images/case-studies/gallery/microsoft/microsoft-3.jpg',
     alt: 'Philadelphia historic district and sports complex experiential marketing',
     problems: [
       'Overshadowed by NYC market',
@@ -520,7 +520,7 @@ const cities = [
     slug: 'washington',
     name: 'Washington',
     state: 'DC',
-    image: '/images/cities/new-york-activation.jpg',
+    image: '/images/case-studies/gallery/ted/ted-1.jpg',
     alt: 'Washington DC monuments and convention center experiential marketing',
     problems: [
       'Government/tourist split market',
