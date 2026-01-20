@@ -775,31 +775,43 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
-      {/* Trusted Brands Section */}
+      {/* Client Work Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-4">Trusted by Leading Brands</h2>
           <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
-            We've delivered successful experiential marketing campaigns for these industry-leading brands nationwide.
+            We've delivered successful experiential marketing campaigns for industry-leading brands nationwide.
           </p>
-          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-6 gap-6 items-center justify-items-center">
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/microsoft.com" alt="Microsoft" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+          <div className="grid grid-cols-2 md:grid-cols-3 gap-6">
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/microsoft-activation-exact.jpg" alt="Microsoft activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Microsoft</div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/google.com" alt="Google" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/google-activation-exact.jpg" alt="Google activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Google</div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/pepsico.com" alt="Pepsi" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/pepsi-activation-exact.jpg" alt="Pepsi activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Pepsi</div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/redbull.com" alt="Red Bull" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/netflix-activation-exact.jpg" alt="Netflix activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Netflix</div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/netflix.com" alt="Netflix" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/red-bull-activation-exact.jpg" alt="Red Bull activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Red Bull</div>
             </div>
-            <div className="bg-white rounded-xl shadow-md p-6 w-full flex items-center justify-center h-24 hover:shadow-lg transition-shadow">
-              <img src="https://logo.clearbit.com/lyft.com" alt="Lyft" className="max-h-10 max-w-[100px] object-contain" loading="lazy" />
+            <div className="relative group overflow-hidden rounded-xl shadow-lg h-48">
+              <Image src="/images/clients/lyft-activation-exact.jpg" alt="Lyft activation" fill className="object-cover group-hover:scale-105 transition-transform duration-300" />
+              <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent" />
+              <div className="absolute bottom-4 left-4 text-white font-bold text-lg">Lyft</div>
             </div>
           </div>
         </div>
