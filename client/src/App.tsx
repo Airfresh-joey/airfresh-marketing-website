@@ -50,6 +50,20 @@ import BrandAmbassadors from "@/pages/services/BrandAmbassadors";
 import StreetTeams from "@/pages/services/StreetTeams";
 import ExperientialMarketingService from "@/pages/services/ExperientialMarketing";
 
+// Events pages
+import EventsDirectory from "@/pages/EventsDirectory";
+import EventPage from "@/pages/EventPage";
+import EventServicePage from "@/pages/EventServicePage";
+import Olympics2028 from "@/pages/Olympics2028";
+
+// Venues pages
+import VenuesDirectory from "@/pages/VenuesDirectory";
+import VenuePage from "@/pages/VenuePage";
+import VenueServicePage from "@/pages/VenueServicePage";
+
+// Careers
+import Recruiting from "@/pages/Recruiting";
+
 function Router() {
   return (
     <div className="min-h-screen flex flex-col">
@@ -86,8 +100,25 @@ function Router() {
           <Route path="/projects/case-studies-original/:id" component={CaseStudyDetail} />
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
-          <Route path="/talent" component={Talent} />
-          
+          <Route path="/talent">{() => <Redirect to="/careers" />}</Route>
+
+          {/* Events & Conferences */}
+          <Route path="/events" component={EventsDirectory} />
+          <Route path="/events/olympics-2028-los-angeles" component={Olympics2028} />
+          <Route path="/events/2028-olympics" component={Olympics2028} />
+          <Route path="/events/:slug/:service" component={EventServicePage} />
+          <Route path="/events/:slug" component={EventPage} />
+
+          {/* Venues / Convention Centers */}
+          <Route path="/venues" component={VenuesDirectory} />
+          <Route path="/venues/:slug/:service" component={VenueServicePage} />
+          <Route path="/venues/:slug" component={VenuePage} />
+          <Route path="/convention-centers">{() => <Redirect to="/venues" />}</Route>
+
+          {/* Careers */}
+          <Route path="/careers" component={Recruiting} />
+          <Route path="/join">{() => <Redirect to="/careers" />}</Route>
+
           {/* Admin Pages */}
           <Route path="/admin" component={AdminDashboard} />
           <Route path="/admin/case-studies" component={CaseStudyAdmin} />
