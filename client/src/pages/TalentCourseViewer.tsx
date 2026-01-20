@@ -23,7 +23,7 @@ import {
 import { useAuth } from "@/hooks/use-auth";
 import { apiRequest } from "@/lib/queryClient";
 import SEO from "@/components/SEO";
-import airFreshLogo from "@assets/airfresh_circle_logo.png";
+const airFreshLogo = "/images/airfresh-logo.svg";
 import { motion } from "framer-motion";
 
 interface CourseModule {

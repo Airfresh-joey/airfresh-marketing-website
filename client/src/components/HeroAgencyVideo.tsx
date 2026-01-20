@@ -2,13 +2,17 @@ import { Button } from "@/components/ui/button";
 import { Link } from "wouter";
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
 import { motion, useReducedMotion } from "framer-motion";
-import { useEffect, useState } from "react";
-import airFreshLogo from "@assets/airfresh_circle_logo.png";
+import { useEffect, useState, useRef } from "react";
+const airFreshLogo = "/images/airfresh-logo.svg";
+
+// Vimeo video URL with start time at 7 seconds for instant action
+const VIMEO_VIDEO_URL = "https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7s";
 
 export default function HeroAgencyVideo() {
   const shouldReduceMotion = useReducedMotion();
   const [isMobile, setIsMobile] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
+  const iframeRef = useRef<HTMLIFrameElement>(null);
 
   useEffect(() => {
     // Check if mobile
@@ -20,25 +24,39 @@ export default function HeroAgencyVideo() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
+  // Preload the video iframe as soon as possible
+  useEffect(() => {
+    // Create a hidden iframe to preload the video
+    const preloadLink = document.createElement('link');
+    preloadLink.rel = 'preload';
+    preloadLink.as = 'document';
+    preloadLink.href = VIMEO_VIDEO_URL;
+    document.head.appendChild(preloadLink);
+
+    return () => {
+      document.head.removeChild(preloadLink);
+    };
+  }, []);
+
   // Animation variants
   const containerVariants = {
     hidden: { opacity: 0 },
     visible: {
       opacity: 1,
       transition: {
-        staggerChildren: 0.2,
-        delayChildren: 0.3
+        staggerChildren: 0.1,
+        delayChildren: 0
       }
     }
   };
 
   const itemVariants = {
-    hidden: { opacity: 0, y: 30 },
+    hidden: { opacity: 0, y: 20 },
     visible: {
       opacity: 1,
       y: 0,
       transition: {
-        duration: 0.8,
+        duration: 0.5,
         ease: "easeOut"
       }
     }
@@ -58,12 +76,16 @@ export default function HeroAgencyVideo() {
 
   return (
     <section className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Preconnect hints for Vimeo */}
+      {/* Preconnect hints for Vimeo - DNS prefetch for faster loading */}
       {!shouldReduceMotion && (
         <>
-          <link rel="preconnect" href="https://player.vimeo.com" />
-          <link rel="preconnect" href="https://i.vimeocdn.com" />
-          <link rel="preconnect" href="https://f.vimeocdn.com" />
+          <link rel="preconnect" href="https://player.vimeo.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://i.vimeocdn.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://f.vimeocdn.com" crossOrigin="anonymous" />
+          <link rel="preconnect" href="https://vod-progressive.akamaized.net" crossOrigin="anonymous" />
+          <link rel="dns-prefetch" href="https://player.vimeo.com" />
+          <link rel="dns-prefetch" href="https://i.vimeocdn.com" />
+          <link rel="dns-prefetch" href="https://f.vimeocdn.com" />
         </>
       )}
       
@@ -76,11 +98,12 @@ export default function HeroAgencyVideo() {
               : 'w-[177.78vh] h-[56.25vw]'
           }`}>
             <iframe
-              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1#t=12s"
+              ref={iframeRef}
+              src={VIMEO_VIDEO_URL}
               className="absolute top-0 left-0 w-full h-full object-cover"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              loading="lazy"
+              loading="eager"
               onLoad={() => setVideoLoaded(true)}
               style={{ pointerEvents: 'none' }}
               title="AirFresh Marketing Brand Experience Video Background"
@@ -92,7 +115,7 @@ export default function HeroAgencyVideo() {
             className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
             initial={{ opacity: 1 }}
             animate={{ opacity: videoLoaded ? 0 : 1 }}
-            transition={{ duration: 1 }}
+            transition={{ duration: 0.3 }}
           >
             {/* Optional: Add a subtle animation while loading */}
             <div className="absolute inset-0 bg-black/20" />

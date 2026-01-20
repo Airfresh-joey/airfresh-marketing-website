@@ -20,7 +20,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import SEO from "@/components/SEO";
-import airFreshLogo from "@assets/airfresh_circle_logo.png";
+const airFreshLogo = "/images/airfresh-logo.svg";
 import { motion } from "framer-motion";
 
 interface Course {

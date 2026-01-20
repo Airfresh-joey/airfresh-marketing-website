@@ -53,6 +53,19 @@ import StreetTeams from "@/pages/services/StreetTeams";
 import ExperientialMarketingService from "@/pages/services/ExperientialMarketing";
 import TalentDashboard from "@/pages/TalentDashboard";
 import TalentCourseViewer from "@/pages/TalentCourseViewer";
+import TalentAdmin from "@/pages/TalentAdmin";
+import TrainingAdmin from "@/pages/TrainingAdmin";
+
+// Events pages
+import EventsDirectory from "@/pages/EventsDirectory";
+import EventPage from "@/pages/EventPage";
+import EventServicePage from "@/pages/EventServicePage";
+import Olympics2028 from "@/pages/Olympics2028";
+
+// Venues pages
+import VenuesDirectory from "@/pages/VenuesDirectory";
+import VenuePage from "@/pages/VenuePage";
+import VenueServicePage from "@/pages/VenueServicePage";
 
 function Router() {
   return (
@@ -93,9 +106,24 @@ function Router() {
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Recruiting} />
           <Route path="/training" component={TrainingPortal} />
+          <Route path="/training/admin" component={TrainingAdmin} />
           <Route path="/training/dashboard/:clientSlug" component={TalentDashboard} />
           <Route path="/training/course/:courseId" component={TalentCourseViewer} />
-          
+          <Route path="/careers" component={Recruiting} />
+          <Route path="/careers/admin" component={TalentAdmin} />
+
+          {/* Events & Conferences */}
+          <Route path="/events" component={EventsDirectory} />
+          <Route path="/events/olympics-2028-los-angeles" component={Olympics2028} />
+          <Route path="/events/2028-olympics" component={Olympics2028} />
+          <Route path="/events/:slug/:service" component={EventServicePage} />
+          <Route path="/events/:slug" component={EventPage} />
+
+          {/* Venues / Convention Centers */}
+          <Route path="/venues" component={VenuesDirectory} />
+          <Route path="/venues/:slug/:service" component={VenueServicePage} />
+          <Route path="/venues/:slug" component={VenuePage} />
+
           {/* Admin Pages */}
           <Route path="/admin" component={AdminDashboard} />
           <Route path="/admin/case-studies" component={CaseStudyAdmin} />
@@ -115,9 +143,7 @@ function Router() {
           <Route path="/conventions/:slug" component={TargetingPage} />
           <Route path="/conventions/:slug/:city" component={TargetingPage} />
           
-          {/* Targeting Pages - Events */}
-          <Route path="/events/:slug" component={TargetingPage} />
-          <Route path="/events/:slug/:city" component={TargetingPage} />
+          {/* Note: Event routes handled above with EventPage component */}
           
           {/* Targeting Pages - Sports */}
           <Route path="/sports/:slug" component={TargetingPage} />
