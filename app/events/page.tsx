@@ -50,7 +50,7 @@ export default function EventsDirectory() {
 
       {/* Hero Section */}
       <section className="relative py-20 bg-gradient-to-br from-gray-900 via-blue-900 to-purple-900">
-        <div className="absolute inset-0 bg-[url('https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920')] bg-cover bg-center opacity-20"></div>
+        <div className="absolute inset-0 bg-[url('/images/case-studies/gallery/cirque/cirque-1.jpg')] bg-cover bg-center opacity-20"></div>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
           <div className="text-center">
             <Badge className="mb-4 bg-white/20 text-white border-0">

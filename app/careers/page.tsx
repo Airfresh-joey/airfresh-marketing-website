@@ -213,7 +213,7 @@ export default function CareersPage() {
       <section className="relative py-24 bg-gradient-to-br from-cyan-600 via-blue-600 to-purple-600 overflow-hidden">
         <div className="absolute inset-0 opacity-20">
           <Image
-            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=1920"
+            src="/images/case-studies/gallery/ted/ted-1.jpg"
             alt="Event activation"
             fill
             className="object-cover"

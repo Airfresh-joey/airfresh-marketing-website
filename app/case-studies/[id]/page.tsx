@@ -337,7 +337,7 @@ export default function CaseStudyDetail() {
                   <Card className="group hover:shadow-xl transition-all duration-300">
                     <div className="relative h-48 overflow-hidden">
                       <img
-                        src={study.heroImage || "https://images.unsplash.com/photo-1540575467063-178a50c2df87?w=600&h=400&fit=crop"}
+                        src={study.heroImage || "/images/case-studies/gallery/formula1/formula1-2.jpg"}
                         alt={study.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
