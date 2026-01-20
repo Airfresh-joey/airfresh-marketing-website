@@ -34,8 +34,27 @@ interface ServicePageProps {
   }>;
 }
 
+interface ServiceConfig {
+  title: string;
+  subtitle: string;
+  description: string;
+  heroImage: string;
+  heroVideo?: string;
+  icon: React.ComponentType<{ className?: string }>;
+  color: string;
+  stats: Array<{ value: string; label: string }>;
+  features: Array<{ icon: React.ComponentType<{ className?: string }>; title: string; description: string }>;
+  benefits: string[];
+  caseStudy: {
+    title: string;
+    description: string;
+    stats: Record<string, string>;
+    image: string;
+  };
+}
+
 // Service configurations
-const serviceConfigs = {
+const serviceConfigs: Record<string, ServiceConfig> = {
   'brand-ambassadors': {
     title: 'Professional Brand Ambassadors',
     subtitle: 'Authentic Brand Representation & Customer Engagement',
