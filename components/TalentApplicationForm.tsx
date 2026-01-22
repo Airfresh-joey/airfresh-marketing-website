@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -234,6 +234,27 @@ export default function TalentApplicationForm() {
     // Step 8
     workAreas: [],
   });
+
+  // Check for quick apply data from careers page
+  useEffect(() => {
+    const quickApplyData = sessionStorage.getItem('quickApply');
+    if (quickApplyData) {
+      try {
+        const data = JSON.parse(quickApplyData);
+        setFormData(prev => ({
+          ...prev,
+          firstName: data.firstName || prev.firstName,
+          lastName: data.lastName || prev.lastName,
+          email: data.email || prev.email,
+          emailConfirm: data.email || prev.emailConfirm,
+        }));
+        // Clear the data after using it
+        sessionStorage.removeItem('quickApply');
+      } catch (e) {
+        // Ignore parse errors
+      }
+    }
+  }, []);
 
   const handleChange = (field: keyof FormData, value: string | boolean | string[]) => {
     setFormData((prev) => ({ ...prev, [field]: value }));

@@ -21,6 +21,7 @@ import {
   Mail
 } from "lucide-react";
 import SEO from "@/components/SEO";
+import QuickApplyForm from "@/components/QuickApplyForm";
 
 const benefits = [
   {
@@ -406,65 +407,66 @@ export default function CareersPage() {
 
       {/* Apply CTA Section */}
       <section id="apply" className="py-20 bg-gradient-to-br from-gray-900 via-cyan-900 to-blue-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
-            Ready to Join Our Team?
-          </h2>
-          <p className="text-xl text-cyan-100 mb-8 max-w-2xl mx-auto">
-            Apply today and start your journey with AirFresh Marketing. We&apos;re always looking for
-            enthusiastic, professional individuals to join our growing team.
-          </p>
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            {/* Left - Text */}
+            <div className="text-center lg:text-left">
+              <h2 className="text-3xl md:text-5xl font-bold text-white mb-6">
+                Ready to Join Our Team?
+              </h2>
+              <p className="text-xl text-cyan-100 mb-8">
+                Apply today and start your journey with AirFresh Marketing. We&apos;re always looking for
+                enthusiastic, professional individuals to join our growing team.
+              </p>
 
-          <div className="flex flex-col sm:flex-row gap-4 justify-center mb-12">
-            <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 text-lg px-8 py-6">
-              <Link href="/careers/apply">
-                Start Your Application
-                <ArrowRight className="w-5 h-5 ml-2" />
-              </Link>
-            </Button>
-          </div>
+              <div className="grid sm:grid-cols-3 gap-6 mb-8">
+                <div className="flex flex-col items-center lg:items-start">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-3">
+                    <CheckCircle className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <h3 className="font-semibold text-white mb-1">Quick Application</h3>
+                  <p className="text-cyan-100 text-sm">Complete in minutes</p>
+                </div>
+                <div className="flex flex-col items-center lg:items-start">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-3">
+                    <Calendar className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <h3 className="font-semibold text-white mb-1">Fast Response</h3>
+                  <p className="text-cyan-100 text-sm">Review in 48 hours</p>
+                </div>
+                <div className="flex flex-col items-center lg:items-start">
+                  <div className="w-12 h-12 bg-cyan-500/20 rounded-full flex items-center justify-center mb-3">
+                    <Star className="w-6 h-6 text-cyan-400" />
+                  </div>
+                  <h3 className="font-semibold text-white mb-1">No Experience</h3>
+                  <p className="text-cyan-100 text-sm">Full training provided</p>
+                </div>
+              </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-cyan-500/20 rounded-full flex items-center justify-center mb-4">
-                <CheckCircle className="w-7 h-7 text-cyan-400" />
+              <div className="border-t border-white/20 pt-6">
+                <p className="text-cyan-100 mb-3">Prefer to reach out directly?</p>
+                <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
+                  <a
+                    href="mailto:talent@airfreshmarketing.com"
+                    className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
+                  >
+                    <Mail className="w-4 h-4 mr-2" />
+                    talent@airfreshmarketing.com
+                  </a>
+                  <a
+                    href="tel:3037206060"
+                    className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
+                  >
+                    <Phone className="w-4 h-4 mr-2" />
+                    (303) 720-6060
+                  </a>
+                </div>
               </div>
-              <h3 className="font-semibold text-white text-lg mb-1">Quick Application</h3>
-              <p className="text-cyan-100 text-sm">Complete in minutes</p>
             </div>
-            <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-cyan-500/20 rounded-full flex items-center justify-center mb-4">
-                <Calendar className="w-7 h-7 text-cyan-400" />
-              </div>
-              <h3 className="font-semibold text-white text-lg mb-1">Fast Response</h3>
-              <p className="text-cyan-100 text-sm">We review within 48 hours</p>
-            </div>
-            <div className="flex flex-col items-center">
-              <div className="w-14 h-14 bg-cyan-500/20 rounded-full flex items-center justify-center mb-4">
-                <Star className="w-7 h-7 text-cyan-400" />
-              </div>
-              <h3 className="font-semibold text-white text-lg mb-1">No Experience Required</h3>
-              <p className="text-cyan-100 text-sm">Full training provided</p>
-            </div>
-          </div>
 
-          <div className="border-t border-white/20 pt-8">
-            <p className="text-cyan-100 mb-4">Prefer to reach out directly?</p>
-            <div className="flex flex-col sm:flex-row gap-6 justify-center">
-              <a
-                href="mailto:talent@airfreshmarketing.com"
-                className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
-              >
-                <Mail className="w-4 h-4 mr-2" />
-                talent@airfreshmarketing.com
-              </a>
-              <a
-                href="tel:3037206060"
-                className="inline-flex items-center text-white hover:text-cyan-300 transition-colors"
-              >
-                <Phone className="w-4 h-4 mr-2" />
-                (303) 720-6060
-              </a>
+            {/* Right - Quick Form */}
+            <div>
+              <QuickApplyForm />
             </div>
           </div>
         </div>
