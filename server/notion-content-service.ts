@@ -457,3 +457,210 @@ export async function fetchNotionPageContent(pageId: string): Promise<any> {
         return null;
     }
 }
+
+// Job Posting Types and Data
+interface JobPosting {
+    id: string;
+    title: string;
+    location: string;
+    city: string;
+    state: string;
+    type: string;
+    category: string;
+    description: string;
+    requirements: string[];
+    isActive: boolean;
+    featured: boolean;
+    payRange?: string;
+    createdAt: string;
+    updatedAt: string;
+}
+
+// Mock job postings for development
+const MOCK_JOB_POSTINGS: JobPosting[] = [
+    {
+        id: "job-1",
+        title: "Brand Ambassador",
+        location: "Los Angeles, CA",
+        city: "Los Angeles",
+        state: "CA",
+        type: "Part-time / Flexible",
+        category: "Brand Ambassador",
+        description: "Represent premium brands at retail locations and events throughout LA. Engage customers, demonstrate products, and create memorable brand experiences.",
+        requirements: ["Excellent communication skills", "Outgoing personality", "Reliable transportation", "Previous brand ambassador experience preferred"],
+        isActive: true,
+        featured: true,
+        payRange: "$20-35/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-2",
+        title: "Event Staff",
+        location: "New York, NY",
+        city: "New York",
+        state: "NY",
+        type: "Part-time / Flexible",
+        category: "Event Staff",
+        description: "Support high-profile brand activations and experiential marketing events in the NYC metro area. Work with top brands at exciting venues.",
+        requirements: ["Ability to stand for extended periods", "Professional appearance", "Team player", "Flexible schedule"],
+        isActive: true,
+        featured: true,
+        payRange: "$22-40/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-3",
+        title: "Promotional Model",
+        location: "Miami, FL",
+        city: "Miami",
+        state: "FL",
+        type: "Part-time / Flexible",
+        category: "Promotional Model",
+        description: "Engage consumers at trade shows, conventions, and product launches. Represent brands with professionalism and enthusiasm.",
+        requirements: ["Professional appearance", "Excellent communication", "Comfortable in front of cameras", "Reliable"],
+        isActive: true,
+        featured: false,
+        payRange: "$25-50/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-4",
+        title: "Street Team Member",
+        location: "Chicago, IL",
+        city: "Chicago",
+        state: "IL",
+        type: "Part-time / Flexible",
+        category: "Street Team",
+        description: "Execute guerrilla marketing campaigns and grassroots brand awareness initiatives. High energy role for outgoing individuals.",
+        requirements: ["High energy", "Outgoing personality", "Comfortable approaching strangers", "Physical stamina"],
+        isActive: true,
+        featured: false,
+        payRange: "$18-30/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-5",
+        title: "Brand Ambassador",
+        location: "Denver, CO",
+        city: "Denver",
+        state: "CO",
+        type: "Part-time / Flexible",
+        category: "Brand Ambassador",
+        description: "Lead product sampling and demonstration programs for national brands in the Denver metro area.",
+        requirements: ["Product knowledge aptitude", "Sales experience helpful", "Valid driver's license", "Flexible availability"],
+        isActive: true,
+        featured: true,
+        payRange: "$20-35/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-6",
+        title: "Event Coordinator",
+        location: "Austin, TX",
+        city: "Austin",
+        state: "TX",
+        type: "Part-time / Flexible",
+        category: "Event Coordinator",
+        description: "Manage on-site logistics and team coordination for brand events. Leadership role for experienced event professionals.",
+        requirements: ["Event management experience", "Leadership skills", "Problem-solving ability", "Excellent communication"],
+        isActive: true,
+        featured: false,
+        payRange: "$25-45/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-7",
+        title: "Convention Staff",
+        location: "Las Vegas, NV",
+        city: "Las Vegas",
+        state: "NV",
+        type: "Part-time / Flexible",
+        category: "Convention Staff",
+        description: "Work major conventions and trade shows at the Las Vegas Convention Center. CES, NAB, and more.",
+        requirements: ["Convention experience a plus", "Professional demeanor", "Ability to work long shifts", "Strong communication skills"],
+        isActive: true,
+        featured: true,
+        payRange: "$22-40/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    },
+    {
+        id: "job-8",
+        title: "Trade Show Specialist",
+        location: "San Francisco, CA",
+        city: "San Francisco",
+        state: "CA",
+        type: "Part-time / Flexible",
+        category: "Trade Show",
+        description: "Represent tech companies at major industry conferences. Knowledge of technology trends helpful.",
+        requirements: ["Tech industry knowledge", "Professional appearance", "Quick learner", "Engaging personality"],
+        isActive: true,
+        featured: false,
+        payRange: "$25-45/hr",
+        createdAt: "2025-01-01",
+        updatedAt: "2025-01-10"
+    }
+];
+
+// In-memory job postings storage
+let jobPostings: JobPosting[] = [...MOCK_JOB_POSTINGS];
+
+// Fetch job postings
+export async function fetchJobPostings(): Promise<JobPosting[]> {
+    return jobPostings.filter(job => job.isActive);
+}
+
+// Get all job postings (including inactive) for admin
+export function getAllJobPostings(): JobPosting[] {
+    return jobPostings;
+}
+
+// Add a new job posting
+export function addJobPosting(job: Omit<JobPosting, 'id' | 'createdAt' | 'updatedAt'>): JobPosting {
+    const newJob: JobPosting = {
+        ...job,
+        id: `job-${Date.now()}`,
+        createdAt: new Date().toISOString(),
+        updatedAt: new Date().toISOString()
+    };
+    jobPostings.push(newJob);
+    return newJob;
+}
+
+// Update a job posting
+export function updateJobPosting(id: string, updates: Partial<JobPosting>): JobPosting | null {
+    const index = jobPostings.findIndex(job => job.id === id);
+    if (index === -1) return null;
+
+    jobPostings[index] = {
+        ...jobPostings[index],
+        ...updates,
+        updatedAt: new Date().toISOString()
+    };
+    return jobPostings[index];
+}
+
+// Delete a job posting
+export function deleteJobPosting(id: string): boolean {
+    const index = jobPostings.findIndex(job => job.id === id);
+    if (index === -1) return false;
+
+    jobPostings.splice(index, 1);
+    return true;
+}
+
+// Get job categories
+export function getJobCategories(): string[] {
+    return [...new Set(jobPostings.map(job => job.category))];
+}
+
+// Get job locations
+export function getJobLocations(): string[] {
+    return [...new Set(jobPostings.map(job => job.location))];
+}

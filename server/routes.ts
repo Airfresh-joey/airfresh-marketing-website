@@ -811,6 +811,56 @@ export async function registerRoutes(app: Express): Promise<Server> {
     }
   });
 
+  // ===== JOB POSTINGS API ROUTES =====
+
+  // Get all active job postings
+  app.get("/api/jobs", async (req, res) => {
+    try {
+      const { fetchJobPostings } = await import("./notion-content-service");
+      const jobs = await fetchJobPostings();
+      res.json(jobs);
+    } catch (error) {
+      console.error('Error fetching jobs:', error);
+      res.status(500).json({ message: 'Failed to fetch job postings' });
+    }
+  });
+
+  // Get all job postings (admin)
+  app.get("/api/jobs/all", async (req, res) => {
+    try {
+      const { getAllJobPostings } = await import("./notion-content-service");
+      const jobs = getAllJobPostings();
+      res.json(jobs);
+    } catch (error) {
+      console.error('Error fetching all jobs:', error);
+      res.status(500).json({ message: 'Failed to fetch job postings' });
+    }
+  });
+
+  // Get job categories
+  app.get("/api/jobs/categories", async (req, res) => {
+    try {
+      const { getJobCategories } = await import("./notion-content-service");
+      const categories = getJobCategories();
+      res.json(categories);
+    } catch (error) {
+      console.error('Error fetching categories:', error);
+      res.status(500).json({ message: 'Failed to fetch categories' });
+    }
+  });
+
+  // Get job locations
+  app.get("/api/jobs/locations", async (req, res) => {
+    try {
+      const { getJobLocations } = await import("./notion-content-service");
+      const locations = getJobLocations();
+      res.json(locations);
+    } catch (error) {
+      console.error('Error fetching locations:', error);
+      res.status(500).json({ message: 'Failed to fetch locations' });
+    }
+  });
+
   // ===== EVENTS API ROUTES =====
 
   // Get all events
