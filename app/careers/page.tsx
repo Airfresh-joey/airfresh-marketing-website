@@ -211,7 +211,7 @@ export default function CareersPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900">
+      <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-gray-900">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
           <iframe
