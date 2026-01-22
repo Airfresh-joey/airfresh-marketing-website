@@ -216,7 +216,7 @@ export default function CareersPage() {
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
           <div className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
             <iframe
-              src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+              src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1#t=8s"
               className="absolute top-0 left-0 w-full h-full"
               style={{ border: 'none', pointerEvents: 'none' }}
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
@@ -247,7 +247,7 @@ export default function CareersPage() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </a>
               </Button>
-              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/20">
                 <Link href="/careers/apply">Apply Now</Link>
               </Button>
             </div>
