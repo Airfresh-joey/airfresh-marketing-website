@@ -316,19 +316,24 @@ export default function Recruiting() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[80vh] flex items-center justify-center overflow-hidden">
-        <div className="absolute inset-0">
-          <div className="absolute inset-0 w-full h-full overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
+        {/* Video Background */}
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <div className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
             <iframe
               src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7s"
-              className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
-              style={{ border: 'none' }}
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              style={{ pointerEvents: 'none' }}
               title="AirFresh Marketing Careers Video Background"
             />
           </div>
-          <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
         </div>
+
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/50" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60" />
 
         <div className="container mx-auto px-4 relative z-10">
           <motion.div
