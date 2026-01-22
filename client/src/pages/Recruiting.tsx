@@ -320,11 +320,11 @@ export default function Recruiting() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <iframe
-              src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7s"
               className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2 pointer-events-none"
               style={{ border: 'none' }}
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-              title="Air Fresh Marketing hits the SoCal Streets with Premier Protein"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              title="AirFresh Marketing Careers Video Background"
             />
           </div>
           <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/50 to-black/70" />
