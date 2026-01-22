@@ -211,18 +211,16 @@ export default function CareersPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative min-h-[50vh] flex items-center justify-center overflow-hidden bg-gray-900">
+      <section className="relative min-h-[85vh] flex items-center justify-center overflow-hidden bg-gray-900">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
-          <div className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
-            <iframe
-              src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1#t=8s"
-              className="absolute top-0 left-0 w-full h-full"
-              style={{ border: 'none', pointerEvents: 'none' }}
-              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              title="Air Fresh Marketing Careers"
-            />
-          </div>
+          <iframe
+            src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1#t=8s"
+            className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
+            style={{ border: 'none', pointerEvents: 'none', width: '177.78vh', height: '100vh', minWidth: '100%', minHeight: '100%' }}
+            allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            title="Air Fresh Marketing Careers"
+          />
         </div>
         {/* Dark Overlay */}
         <div className="absolute inset-0 bg-black/60 z-10" />
