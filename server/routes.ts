@@ -60,6 +60,8 @@ import {
   generateVideoScript
 } from "./content-repurpose";
 import { handlePortfolioCaseStudies, handleSingleCaseStudy } from "./portfolio-case-studies";
+import { usaEvents, getEventBySlug } from "./usa-events-data";
+import { venues } from "./venues-data";
 import { 
   generatePressRelease,
   generateOutreachEmail,
@@ -806,6 +808,58 @@ export async function registerRoutes(app: Express): Promise<Server> {
     } catch (error) {
       console.error('Error fetching city-service:', error);
       res.status(500).json({ message: 'Failed to fetch city-service data' });
+    }
+  });
+
+  // ===== EVENTS API ROUTES =====
+
+  // Get all events
+  app.get("/api/events", async (req, res) => {
+    try {
+      res.json(usaEvents);
+    } catch (error) {
+      console.error('Error fetching events:', error);
+      res.status(500).json({ message: 'Failed to fetch events' });
+    }
+  });
+
+  // Get single event by slug
+  app.get("/api/events/:slug", async (req, res) => {
+    try {
+      const event = getEventBySlug(req.params.slug);
+      if (!event) {
+        return res.status(404).json({ message: "Event not found" });
+      }
+      res.json(event);
+    } catch (error) {
+      console.error('Error fetching event:', error);
+      res.status(500).json({ message: 'Failed to fetch event' });
+    }
+  });
+
+  // ===== VENUES API ROUTES =====
+
+  // Get all venues
+  app.get("/api/venues", async (req, res) => {
+    try {
+      res.json(venues);
+    } catch (error) {
+      console.error('Error fetching venues:', error);
+      res.status(500).json({ message: 'Failed to fetch venues' });
+    }
+  });
+
+  // Get single venue by slug
+  app.get("/api/venues/:slug", async (req, res) => {
+    try {
+      const venue = venues.find(v => v.slug === req.params.slug);
+      if (!venue) {
+        return res.status(404).json({ message: "Venue not found" });
+      }
+      res.json(venue);
+    } catch (error) {
+      console.error('Error fetching venue:', error);
+      res.status(500).json({ message: 'Failed to fetch venue' });
     }
   });
 
