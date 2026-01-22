@@ -3,7 +3,7 @@ import TalentApplicationForm from "@/components/TalentApplicationForm";
 
 export default function ApplyPage() {
   return (
-    <div className="pt-16 min-h-screen bg-gradient-to-br from-gray-50 via-white to-cyan-50">
+    <div className="pt-16 min-h-screen bg-white">
       <SEO
         title="Apply Now | Join Air Fresh Marketing"
         description="Apply to join Air Fresh Marketing's team of brand ambassadors and event staff. Complete our application to start working with top brands nationwide."
@@ -25,19 +25,6 @@ export default function ApplyPage() {
 
         {/* Application Form */}
         <TalentApplicationForm />
-
-        {/* Footer info */}
-        <div className="mt-8 text-center text-sm text-gray-500">
-          <p>Questions? Contact us at{" "}
-            <a href="mailto:talent@airfreshmarketing.com" className="text-cyan-600 hover:underline">
-              talent@airfreshmarketing.com
-            </a>
-            {" "}or call{" "}
-            <a href="tel:3037206060" className="text-cyan-600 hover:underline">
-              (303) 720-6060
-            </a>
-          </p>
-        </div>
       </div>
     </div>
   );
