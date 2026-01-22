@@ -211,20 +211,23 @@ export default function CareersPage() {
       />
 
       {/* Hero Section */}
-      <section className="relative py-24 overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden bg-gray-900">
         {/* Video Background */}
-        <div className="absolute inset-0 z-0">
-          <iframe
-            src="https://player.vimeo.com/video/394240533?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
-            className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
-            style={{ aspectRatio: '16/9' }}
-            frameBorder="0"
-            allow="autoplay; fullscreen"
-            title="Working for a Top Agency"
-          />
+        <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
+          <div className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2">
+            <iframe
+              src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1"
+              className="absolute top-0 left-0 w-full h-full"
+              style={{ border: 'none', pointerEvents: 'none' }}
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              title="Air Fresh Marketing Careers"
+            />
+          </div>
         </div>
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/80 via-blue-600/80 to-purple-600/80 z-10" />
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20">
+        {/* Dark Overlay */}
+        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-10" />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-24">
           <div className="text-center">
             <Badge className="mb-4 bg-white/20 text-white border-0">
               <Sparkles className="w-4 h-4 mr-1" />
