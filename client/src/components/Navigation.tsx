@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logoUrl from "@assets/AirFresh_Logo_Horizontal_RGB_1757387574418.jpg";
+import logoUrl from "/images/airfresh-logo.svg";
 import {
   DropdownMenu,
   DropdownMenuContent,

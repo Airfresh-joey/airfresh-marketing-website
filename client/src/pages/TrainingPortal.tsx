@@ -8,7 +8,7 @@ import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { useAuth } from "@/hooks/use-auth";
 import { motion, useReducedMotion } from "framer-motion";
-import airFreshLogo from "@assets/airfresh_circle_logo.png";
+import airFreshLogo from "/images/airfresh-logo.svg";
 
 interface TrainingClient {
   id: string;
