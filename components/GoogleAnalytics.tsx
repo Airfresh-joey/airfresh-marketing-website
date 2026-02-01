@@ -3,7 +3,7 @@
 import { useEffect } from 'react';
 
 // Google Analytics 4 Configuration
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with actual GA4 measurement ID
+const GA_MEASUREMENT_ID = 'G-4H5YW90R4R'; // Air Fresh Marketing GA4 Property
 
 declare global {
   interface Window {
