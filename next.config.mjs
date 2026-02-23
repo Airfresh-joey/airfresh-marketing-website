@@ -111,4 +111,4 @@ const nextConfig = {
   // output: 'standalone', // Commented out for Vercel deployment
 }
 
-export default nextConfig;
+export default nextConfig;// Cache bust: 1771814978
