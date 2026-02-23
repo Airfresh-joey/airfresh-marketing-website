@@ -37,8 +37,29 @@ const nextConfig = {
   // Security headers
   async headers() {
     return [
+      // Allow iframe embedding for portfolio page (for proposal-dashboard integration)
       {
-        source: '/(.*)',
+        source: '/portfolio',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Content-Security-Policy', value: "frame-ancestors 'self' https://proposal-dashboard-blond.vercel.app https://*.vercel.app http://localhost:*" },
+        ],
+      },
+      // Allow iframe embedding for case study pages
+      {
+        source: '/case-studies/:path*',
+        headers: [
+          { key: 'X-Content-Type-Options', value: 'nosniff' },
+          { key: 'X-XSS-Protection', value: '1; mode=block' },
+          { key: 'Referrer-Policy', value: 'strict-origin-when-cross-origin' },
+          { key: 'Content-Security-Policy', value: "frame-ancestors 'self' https://proposal-dashboard-blond.vercel.app https://*.vercel.app http://localhost:*" },
+        ],
+      },
+      // Default security headers for all other pages
+      {
+        source: '/((?!portfolio|case-studies).*)',
         headers: [
           { key: 'X-Content-Type-Options', value: 'nosniff' },
           { key: 'X-Frame-Options', value: 'SAMEORIGIN' },
