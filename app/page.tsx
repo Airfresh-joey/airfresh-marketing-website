@@ -11,7 +11,7 @@ import dynamic from "next/dynamic";
 import ScrollToAnchor from "@/components/ScrollToAnchor";
 
 // Lazy load FloatingCTA - only needed after scroll
-const FloatingCTA = dynamic(() => import("@/components/FloatingCTA"), { ssr: false });
+const FloatingCTA = dynamic(() => import("@/components/FloatingCTA"));
 
 // Server-side metadata (no client JS needed)
 export const metadata: Metadata = {

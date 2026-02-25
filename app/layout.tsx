@@ -2,13 +2,13 @@ import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
 import dynamic from 'next/dynamic'
-import NavigationClean from '@/components/NavigationClean'
+import NavigationWrapper from '@/components/NavigationWrapper'
 import Footer from '@/components/Footer'
 import GoogleAnalytics from '@/components/GoogleAnalytics'
 import Providers from '@/app/providers'
 
 // Lazy load Toaster - only needed when toast is triggered
-const Toaster = dynamic(() => import('@/components/ui/toaster').then(mod => ({ default: mod.Toaster })), { ssr: false })
+const Toaster = dynamic(() => import('@/components/ui/toaster').then(mod => ({ default: mod.Toaster })))
 
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
@@ -52,7 +52,7 @@ export default function RootLayout({
         <Providers>
           <GoogleAnalytics />
           <div className="min-h-screen flex flex-col">
-            <NavigationClean />
+            <NavigationWrapper />
             <main className="flex-1">
               {children}
             </main>
