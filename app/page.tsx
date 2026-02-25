@@ -8,8 +8,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
-import { useEffect, useRef, useState } from "react";
-import { motion, useInView, useAnimation } from "framer-motion";
+import { useEffect, useState } from "react";
 import { useQuery } from "@tanstack/react-query";
 import type { BlogPost } from "@shared/schema";
 import FloatingCTA from "@/components/FloatingCTA";
@@ -272,10 +271,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-r from-cyan-500/5 via-transparent to-blue-500/5"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-16"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-cyan-100 rounded-full mb-6">
@@ -288,13 +287,13 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Watch how we transform ordinary events into extraordinary brand experiences.
             </p>
-          </motion.div>
+          </div>
 
           {/* Featured Video */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
+          <div
+            
+            
+            
             className="relative mb-12"
           >
             <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-1 rounded-2xl shadow-2xl">
@@ -312,7 +311,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Additional Brand Activation Case Studies */}
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
@@ -336,11 +335,11 @@ export default function Home() {
                 link: "/case-studies/grubhub-campaign"
               }
             ].map((caseStudy, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6, delay: index * 0.1 }}
+                
+                
+                
                 className="group"
               >
                 <Link href={caseStudy.link}>
@@ -365,7 +364,7 @@ export default function Home() {
                     </div>
                   </div>
                 </Link>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -378,10 +377,10 @@ export default function Home() {
           <div className="absolute bottom-0 right-1/4 w-96 h-96 bg-blue-100/20 rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-4 py-2 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full mb-6">
@@ -397,16 +396,16 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               We deliver experiential marketing campaigns designed to achieve higher engagement rates and increase purchase intent through immersive brand experiences.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {services.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -10, scale: 1.02 }}
+                
+                
+                
+                
                 className="group"
               >
                 <Card className="h-full bg-gradient-to-br from-white to-gray-50 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 overflow-hidden">
@@ -423,7 +422,7 @@ export default function Home() {
                     </p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -436,10 +435,10 @@ export default function Home() {
           <div className="absolute inset-y-0 right-0 w-1/2 bg-gradient-to-l from-blue-50/50 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full mb-8">
@@ -452,16 +451,16 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Everything we do is done in-house and as an extension of your team. We strategize what's best for meeting your goals and then come together to crush them as a single unit.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-6">
             {turnkeyServices.map((service, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ scale: 1.05, y: -5 }}
+                
+                
+                
+                
               >
                 <Card className="text-center p-8 bg-white/80 backdrop-blur-sm border-0 shadow-lg hover:shadow-2xl transition-all duration-300 group h-full">
                   <CardContent className="p-0">
@@ -472,7 +471,7 @@ export default function Home() {
                     <p className="text-sm text-gray-600 leading-relaxed">{service.description}</p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -481,11 +480,11 @@ export default function Home() {
       {/* Technology / Platform Features Section */}
       <section id="technology" className="relative py-24 bg-white overflow-hidden">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
+            
             className="text-center mb-16"
           >
             <div className="inline-flex items-center gap-2 px-5 py-2 bg-cyan-50 rounded-full mb-6 border border-cyan-100">
@@ -499,7 +498,7 @@ export default function Home() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Our proprietary platform streamlines every aspect of your experiential marketing campaign.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
             {technologyFeatures.map((feature, index) => {
@@ -527,11 +526,11 @@ export default function Home() {
       {/* Why Us / About Highlights Section */}
       <section className="relative py-24 bg-gray-50">
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
+            
             className="text-center mb-16"
           >
             <div className="inline-flex items-center gap-2 px-5 py-2 bg-cyan-50 rounded-full mb-6 border border-cyan-100">
@@ -544,7 +543,7 @@ export default function Home() {
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Learn why leading brands choose AirFresh Marketing for their experiential campaigns.
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             {whyUsHighlights.map((highlight, index) => {
@@ -576,10 +575,10 @@ export default function Home() {
           <div className="absolute bottom-20 left-20 w-72 h-72 bg-blue-400/10 rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-white/90 backdrop-blur-sm border border-cyan-200 rounded-full mb-8">
@@ -592,13 +591,13 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Our experienced team of brand ambassadors delivers proven results across major cities nationwide.
             </p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
-            <motion.div
-              initial={{ opacity: 0, x: -50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.1 }}
-              whileHover={{ scale: 1.03 }}
+            <div
+              
+              
+              
+              
             >
               <Card className="text-center p-10 bg-white/70 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-300 h-full group">
                 <CardContent className="p-0">
@@ -609,13 +608,13 @@ export default function Home() {
                   <p className="text-gray-600 leading-relaxed text-lg">Our end-of-project success reports are packed with actionable data to guide future marketing efforts.</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, y: 50 }}
-              whileInView={{ opacity: 1, y: 0 }}
-              transition={{ duration: 0.6, delay: 0.2 }}
-              whileHover={{ scale: 1.03 }}
+            <div
+              
+              
+              
+              
             >
               <Card className="text-center p-10 bg-white/70 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-300 h-full group">
                 <CardContent className="p-0">
@@ -626,13 +625,13 @@ export default function Home() {
                   <p className="text-gray-600 leading-relaxed text-lg">Transform your products and services into a dynamic experience that they can see, hear, touch, taste and feel.</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 50 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              transition={{ duration: 0.6, delay: 0.3 }}
-              whileHover={{ scale: 1.03 }}
+            <div
+              
+              
+              
+              
             >
               <Card className="text-center p-10 bg-white/70 backdrop-blur-md border-0 shadow-xl hover:shadow-2xl transition-all duration-300 h-full group">
                 <CardContent className="p-0">
@@ -643,7 +642,7 @@ export default function Home() {
                   <p className="text-gray-600 leading-relaxed text-lg">Aiming for hard-to-reach niches? Wiggle your way into obscure markets with crafty campaigns.</p>
                 </CardContent>
               </Card>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -684,14 +683,14 @@ export default function Home() {
           <div className="absolute top-0 left-0 w-full h-full opacity-20" style={{backgroundImage: "url(\"data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%23ffffff' fill-opacity='0.03'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E\")"}}></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6">How Have We Helped Brands?</h2>
             <p className="text-2xl md:text-3xl mb-16 text-cyan-50">We've connected brands with customers through unforgettable live events nationwide.</p>
-          </motion.div>
+          </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
               { value: "300+", label: "Brands Activated" },
@@ -699,24 +698,24 @@ export default function Home() {
               { value: "50+", label: "Cities Nationwide" },
               { value: "1000+", label: "Events Produced" }
             ].map((stat, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.5 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
+                
+                
+                
                 className="group"
               >
                 <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 border border-white/20 hover:bg-white/20 transition-all duration-300">
                   <div className="text-5xl md:text-6xl font-bold mb-3 bg-gradient-to-b from-white to-cyan-100 bg-clip-text text-transparent">{stat.value}</div>
                   <div className="text-cyan-100 font-semibold text-lg">{stat.label}</div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.4 }}
+          <div
+            
+            
+            
           >
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-8 py-6 shadow-xl hover:shadow-2xl transition-all duration-300">
               <Link href="/contact">
@@ -724,17 +723,17 @@ export default function Home() {
                 Start Your Success Story
               </Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Testimonials Section - Premium Cards */}
       <section className="relative py-32 bg-gradient-to-b from-white via-gray-50/50 to-white" id="testimonials">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-100 to-blue-100 rounded-full mb-8">
@@ -742,16 +741,16 @@ export default function Home() {
               <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">WHAT PEOPLE ARE SAYING</span>
             </div>
             <h2 className="text-4xl md:text-5xl font-bold text-gray-900">Client Success Stories</h2>
-          </motion.div>
+          </div>
 
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {testimonials.map((testimonial, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 30 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -5 }}
+                
+                
+                
+                
               >
                 <Card className="bg-gradient-to-br from-white to-gray-50/50 p-10 border-0 shadow-xl hover:shadow-2xl transition-all duration-300 h-full relative overflow-hidden group">
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
@@ -771,7 +770,7 @@ export default function Home() {
                     <p className="text-gray-700 text-lg leading-relaxed italic">"{testimonial.content}"</p>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -783,10 +782,10 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 right-0 h-px bg-gradient-to-r from-transparent via-cyan-200 to-transparent"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-20"
           >
             <div className="inline-flex items-center gap-2 px-5 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-full mb-8">
@@ -799,17 +798,17 @@ export default function Home() {
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Expert answers to your experiential marketing questions, from costs to strategies.
             </p>
-          </motion.div>
+          </div>
 
           {recentPosts.length > 0 && (
             <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
               {recentPosts.map((post, index) => (
-                <motion.div
+                <div
                   key={post.id}
-                  initial={{ opacity: 0, y: 30 }}
-                  whileInView={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.5, delay: index * 0.1 }}
-                  whileHover={{ y: -10 }}
+                  
+                  
+                  
+                  
                   className="group"
                 >
                   <Card className="h-full bg-white border-0 shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden"
@@ -842,15 +841,15 @@ export default function Home() {
                       </Link>
                     </CardContent>
                   </Card>
-                </motion.div>
+                </div>
               ))}
             </div>
           )}
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+          <div
+            
+            
+            
             className="text-center mt-16"
           >
             <Link href="/blog">
@@ -860,7 +859,7 @@ export default function Home() {
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -870,10 +869,10 @@ export default function Home() {
           <div className="absolute inset-0 bg-gradient-to-br from-cyan-900/20 via-gray-900 to-blue-900/20"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
             className="text-center mb-16"
           >
             <div className="inline-flex items-center gap-2 px-6 py-3 bg-white/10 backdrop-blur-sm rounded-full mb-8 border border-white/20">
@@ -884,13 +883,13 @@ export default function Home() {
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               From Times Square to Coachella, we create unforgettable brand experiences that drive real business outcomes
             </p>
-          </motion.div>
+          </div>
 
           {/* Featured Campaign - Large Hero */}
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
+          <div
+            
+            
+            
             className="mb-12"
           >
             <div className="relative rounded-3xl overflow-hidden group">
@@ -925,7 +924,7 @@ export default function Home() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
 
           {/* Campaign Grid - 3 Featured */}
           <div className="grid md:grid-cols-3 gap-6 mb-12">
@@ -952,12 +951,12 @@ export default function Home() {
                 description: "Nationwide sampling campaigns"
               }
             ].map((campaign, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.5, delay: index * 0.1 }}
-                whileHover={{ y: -8 }}
+                
+                
+                
+                
                 className="group cursor-pointer"
               >
                 <div className="relative rounded-2xl overflow-hidden h-full">
@@ -978,14 +977,14 @@ export default function Home() {
                     </div>
                   </div>
                 </div>
-              </motion.div>
+              </div>
             ))}
           </div>
 
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6, delay: 0.3 }}
+          <div
+            
+            
+            
             className="text-center mt-16"
           >
             <Link href="/portfolio">
@@ -994,7 +993,7 @@ export default function Home() {
                 <ArrowRight className="ml-3 h-6 w-6" />
               </Button>
             </Link>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -1006,10 +1005,10 @@ export default function Home() {
           <div className="absolute bottom-0 left-0 w-96 h-96 bg-cyan-400/20 rounded-full blur-3xl"></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, scale: 0.9 }}
-            whileInView={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.6 }}
+          <div
+            
+            
+            
           >
             <h2 className="text-5xl md:text-6xl font-bold mb-6">
               How Can AirFresh Marketing<br />Transform Your Next Campaign?
@@ -1024,7 +1023,7 @@ export default function Home() {
                 <ArrowRight className="w-6 h-6 ml-3" />
               </Link>
             </Button>
-          </motion.div>
+          </div>
         </div>
       </section>
       </div>

@@ -43,10 +43,14 @@ export default function HeroAgencyVideo() {
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Preconnect hints for Vimeo - immediate */}
-      <link rel="preconnect" href="https://player.vimeo.com" />
-      <link rel="preconnect" href="https://i.vimeocdn.com" />
-      <link rel="preconnect" href="https://f.vimeocdn.com" />
+      {/* Preconnect hints for Vimeo - desktop only */}
+      {!isMobile && (
+        <>
+          <link rel="preconnect" href="https://player.vimeo.com" />
+          <link rel="preconnect" href="https://i.vimeocdn.com" />
+          <link rel="preconnect" href="https://f.vimeocdn.com" />
+        </>
+      )}
 
       {/* Video Background with facade pattern */}
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
@@ -63,15 +67,11 @@ export default function HeroAgencyVideo() {
           />
         </div>
 
-        {/* Video loads after delay */}
-        {shouldLoadVideo && (
+        {/* Video loads only on desktop for performance */}
+        {shouldLoadVideo && !isMobile && (
           <div className={`absolute top-1/2 left-1/2 min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ${
             videoLoaded ? 'opacity-100' : 'opacity-0'
-          } ${
-            isMobile
-              ? 'w-[300vw] h-[100vh]'
-              : 'w-[177.78vh] h-[56.25vw]'
-          }`}>
+          } w-[177.78vh] h-[56.25vw]`}>
             <iframe
               ref={iframeRef}
               src={VIMEO_VIDEO_URL}
