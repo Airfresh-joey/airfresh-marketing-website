@@ -104,8 +104,10 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
     location => location.city.toLowerCase().replace(/\s+/g, '-') === citySlug
   );
 
-  const pageTitle = `${service.name} in ${cityName} | AirFresh Marketing`;
-  const pageDescription = `Professional ${service.name.toLowerCase()} services in ${cityName}. ${service.description}`;
+  // SEO: Exact keyword phrase format (per Ben's requirements)
+  const keywordPhrase = `${service.name} ${cityName}`;
+  const pageTitle = `${keywordPhrase} | Professional ${service.name} Services | AirFresh Marketing`;
+  const pageDescription = `${keywordPhrase} services from AirFresh Marketing. ${service.description} Contact us for professional ${service.name.toLowerCase()} in ${cityName} today.`;
 
   // Get hero image for service with fallback
   const serviceImages: Record<string, string> = {
@@ -152,7 +154,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         <div className="absolute inset-0">
           <Image
             src={heroImage}
-            alt={`${service.name} in ${cityName}`}
+            alt={keywordPhrase}
             fill
             className="object-cover"
             priority
@@ -162,11 +164,13 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         <div className="absolute inset-0 bg-black bg-opacity-50" />
         <div className="relative h-full flex items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
           <div className="text-center">
+            {/* SEO: H1 with exact keyword phrase at beginning */}
             <h1 className="text-4xl md:text-6xl font-bold mb-6 text-white drop-shadow-2xl">
-              {service.name} in {cityName}
+              {keywordPhrase}
             </h1>
+            {/* SEO: First sentence with exact keyword phrase */}
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-              {service.description}
+              {keywordPhrase} services are available year-round from AirFresh Marketing. {service.description}
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button size="lg" className="bg-primary hover:bg-primary/90">
@@ -188,11 +192,13 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         </div>
       </section>
 
-      {/* Service Benefits */}
+      {/* Service Benefits - SEO: H2 with exact keyword phrase at beginning */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <Card>
           <CardHeader>
-            <CardTitle className="text-2xl">Why Choose Our {service.name} in {cityName}?</CardTitle>
+            <CardTitle className="text-2xl">
+              <h2>{keywordPhrase} - Why Choose AirFresh Marketing?</h2>
+            </CardTitle>
           </CardHeader>
           <CardContent>
             <div className="grid md:grid-cols-2 gap-6">
@@ -229,11 +235,28 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         </Card>
       </section>
 
+      {/* SEO: Additional content paragraph to reach 350+ words */}
+      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <div className="prose prose-lg max-w-none">
+          <p>
+            {keywordPhrase} is one of the most effective ways to connect with your target audience and drive meaningful engagement. 
+            At AirFresh Marketing, we specialize in providing top-tier {service.name.toLowerCase()} services throughout {cityName} and the surrounding areas. 
+            Our team of experienced professionals understands the unique characteristics of the {cityName} market and tailors every campaign to maximize your brand's impact.
+          </p>
+          <p>
+            Whether you're launching a new product, building brand awareness, or driving foot traffic to your {cityName} location, 
+            our {service.name.toLowerCase()} team delivers results. We've helped hundreds of brands achieve their marketing goals through 
+            strategic activations, engaging consumer interactions, and measurable outcomes. From downtown {cityName} to suburban neighborhoods, 
+            we have the local expertise and national resources to execute campaigns of any scale.
+          </p>
+        </div>
+      </section>
+
       {/* Stats Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold text-center mb-12">
-            {service.name} Impact in {cityName}
+            {keywordPhrase} - Proven Results
           </h2>
           <div className="grid md:grid-cols-4 gap-8">
             <div className="text-center">
