@@ -9,8 +9,9 @@ import Image from "next/image";
 // Vimeo video URL with start time at 7 seconds for instant action
 const VIMEO_VIDEO_URL = "https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7s";
 
-// Video thumbnail for facade pattern (load video only when needed)
-const VIDEO_THUMBNAIL = "/images/hero-video-poster.jpg";
+// Video thumbnails - mobile optimized for fast LCP
+const VIDEO_THUMBNAIL_MOBILE = "/images/hero-poster-mobile.jpg";
+const VIDEO_THUMBNAIL_DESKTOP = "/images/hero-poster-desktop.jpg";
 
 export default function HeroAgencyVideo() {
   // Start as null to indicate "not yet determined" - prevents premature video load
@@ -26,6 +27,17 @@ export default function HeroAgencyVideo() {
     };
     checkDesktop();
     window.addEventListener('resize', checkDesktop);
+    
+    // Preload mobile hero image for fast LCP
+    if (window.innerWidth < 768) {
+      const link = document.createElement('link');
+      link.rel = 'preload';
+      link.as = 'image';
+      link.href = VIDEO_THUMBNAIL_MOBILE;
+      link.fetchPriority = 'high';
+      document.head.appendChild(link);
+    }
+    
     return () => window.removeEventListener('resize', checkDesktop);
   }, []);
 
@@ -48,17 +60,26 @@ export default function HeroAgencyVideo() {
 
       {/* Video Background with facade pattern */}
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
-        {/* Static poster image for fast LCP */}
+        {/* Static poster image for fast LCP - responsive with mobile optimization */}
         <div className="absolute inset-0">
-          <Image
-            src={VIDEO_THUMBNAIL}
-            alt=""
-            fill
-            priority
-            quality={75}
-            className="object-cover"
-            sizes="100vw"
-          />
+          <picture>
+            <source
+              media="(max-width: 767px)"
+              srcSet={VIDEO_THUMBNAIL_MOBILE}
+            />
+            <source
+              media="(min-width: 768px)"
+              srcSet={VIDEO_THUMBNAIL_DESKTOP}
+            />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src={VIDEO_THUMBNAIL_DESKTOP}
+              alt=""
+              fetchPriority="high"
+              decoding="async"
+              className="absolute inset-0 w-full h-full object-cover"
+            />
+          </picture>
         </div>
 
         {/* Video loads only on desktop for performance - isDesktop must be explicitly true */}
