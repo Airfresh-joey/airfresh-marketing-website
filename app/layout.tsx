@@ -30,6 +30,22 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
+      <head>
+        {/* Preload hero images for fast LCP */}
+        <link
+          rel="preload"
+          href="/images/hero-poster-mobile.jpg"
+          as="image"
+          media="(max-width: 767px)"
+          fetchPriority="high"
+        />
+        <link
+          rel="preload"
+          href="/images/hero-poster-desktop.jpg"
+          as="image"
+          media="(min-width: 768px)"
+        />
+      </head>
       <body className={inter.className}>
         <Providers>
           <TooltipProvider>
