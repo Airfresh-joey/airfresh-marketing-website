@@ -38,6 +38,13 @@ export default function GoogleAnalytics() {
     `;
     document.head.appendChild(script2);
 
+    // Load Ahrefs Analytics
+    const ahrefsScript = document.createElement('script');
+    ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
+    ahrefsScript.setAttribute('data-key', 's5rfropseUKWtzsvv14fyg');
+    ahrefsScript.async = true;
+    document.head.appendChild(ahrefsScript);
+
     // Track page views on route changes
     const handleRouteChange = () => {
       if (window.gtag) {
