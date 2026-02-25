@@ -1,14 +1,50 @@
+import type { Metadata } from "next";
 import HeroAgencyVideo from "@/components/HeroAgencyVideo";
-import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
+import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
 import { blogPosts as staticBlogPosts } from "@/client/src/data/blogPosts";
-import FloatingCTA from "@/components/FloatingCTA";
+import dynamic from "next/dynamic";
 import ScrollToAnchor from "@/components/ScrollToAnchor";
+
+// Lazy load FloatingCTA - only needed after scroll
+const FloatingCTA = dynamic(() => import("@/components/FloatingCTA"), { ssr: false });
+
+// Server-side metadata (no client JS needed)
+export const metadata: Metadata = {
+  title: "Air Fresh Marketing - Experiential Marketing Agency",
+  description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+  keywords: "experiential marketing, brand ambassadors, event staffing, guerrilla marketing, brand activations, product sampling, street teams",
+  openGraph: {
+    title: "Air Fresh Marketing - Experiential Marketing Agency",
+    description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+    url: "https://airfreshmarketing.com",
+    siteName: "AirFresh Marketing",
+    type: "website",
+    locale: "en_US",
+    images: [{
+      url: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      width: 1200,
+      height: 630,
+      alt: "AirFresh Marketing experiential marketing brand ambassadors event staffing nationwide"
+    }]
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Air Fresh Marketing - Experiential Marketing Agency",
+    description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+    site: "@AirFreshMktg",
+    creator: "@AirFreshMktg"
+  },
+  alternates: {
+    canonical: "https://airfreshmarketing.com"
+  },
+  robots: "index, follow",
+  authors: [{ name: "AirFresh Marketing" }]
+};
 
 export default function Home() {
   // Get the 3 most recent blog posts (static data - no API call needed)
@@ -195,12 +231,10 @@ export default function Home() {
       <FloatingCTA />
       <ScrollToAnchor />
       <div className="pt-16">
-        <SEO
-          title="Air Fresh Marketing - Experiential Marketing Agency"
-          description="Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide."
-          pageType="home"
-          canonical="https://airfreshmarketing.com"
-          structuredData={structuredData}
+        {/* Structured data for SEO */}
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
         />
         <HeroAgencyVideo />
 
