@@ -20,12 +20,12 @@ export default function GoogleAnalytics() {
 
   return (
     <>
-      {/* Google Analytics - loads after page is interactive */}
+      {/* Google Analytics - loads when browser is idle (lowest priority) */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
-      <Script id="google-analytics" strategy="afterInteractive">
+      <Script id="google-analytics" strategy="lazyOnload">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
@@ -38,11 +38,11 @@ export default function GoogleAnalytics() {
         `}
       </Script>
       
-      {/* Ahrefs Analytics - loads after page is interactive */}
+      {/* Ahrefs Analytics - loads when browser is idle (lowest priority) */}
       <Script
         src="https://analytics.ahrefs.com/analytics.js"
         data-key="s5rfropseUKWtzsvv14fyg"
-        strategy="afterInteractive"
+        strategy="lazyOnload"
       />
     </>
   );
