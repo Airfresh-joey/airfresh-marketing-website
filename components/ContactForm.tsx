@@ -1,10 +1,8 @@
 import { useState, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
-import { useMutation } from "@tanstack/react-query";
 import { insertContactSubmissionSchema } from "@shared/schema";
 import { Button } from "@/components/ui/button";
-import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
@@ -14,37 +12,24 @@ import type { InsertContactSubmission } from "@shared/schema";
 
 // Format phone number as user types
 const formatPhoneNumber = (value: string) => {
-  // Remove all non-digits
   const phoneNumber = value.replace(/\D/g, "");
-
-  // Format based on length
-  if (phoneNumber.length === 0) {
-    return "";
-  } else if (phoneNumber.length <= 3) {
-    return `(${phoneNumber}`;
-  } else if (phoneNumber.length <= 6) {
-    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
-  } else if (phoneNumber.length <= 10) {
-    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
-  } else {
-    return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
-  }
+  if (phoneNumber.length === 0) return "";
+  if (phoneNumber.length <= 3) return `(${phoneNumber}`;
+  if (phoneNumber.length <= 6) return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3)}`;
+  if (phoneNumber.length <= 10) return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6)}`;
+  return `(${phoneNumber.slice(0, 3)}) ${phoneNumber.slice(3, 6)}-${phoneNumber.slice(6, 10)}`;
 };
 
 // Validate email format
-const validateEmail = (email: string) => {
-  const re = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-  return re.test(email);
-};
+const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
 
 // Capitalize first letter of each word
-const capitalizeWords = (str: string) => {
-  return str.replace(/\b\w/g, (char) => char.toUpperCase());
-};
+const capitalizeWords = (str: string) => str.replace(/\b\w/g, (char) => char.toUpperCase());
 
 export default function ContactForm() {
   const { toast } = useToast();
   const [isFormValid, setIsFormValid] = useState(false);
+  const [isSubmitting, setIsSubmitting] = useState(false);
 
   const form = useForm<InsertContactSubmission>({
     resolver: zodResolver(insertContactSubmissionSchema),
@@ -58,9 +43,6 @@ export default function ContactForm() {
       message: "",
     },
   });
-
-  // Watch form fields to check if required fields are filled
-  const watchedFields = form.watch(['firstName', 'lastName', 'email', 'message']);
 
   // Check form validity whenever fields change
   useEffect(() => {
@@ -77,13 +59,32 @@ export default function ContactForm() {
     return () => subscription.unsubscribe();
   }, [form]);
 
-  const mutation = useMutation({
-    mutationFn: async (data: InsertContactSubmission) => {
+  const onSubmit = async (data: InsertContactSubmission) => {
+    // Additional validation before submission
+    if (!data.firstName || !data.lastName || !data.email || !data.message) {
+      toast({
+        title: "Missing Required Fields",
+        description: "Please fill in all required fields before submitting.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    if (!validateEmail(data.email)) {
+      toast({
+        title: "Invalid Email",
+        description: "Please enter a valid email address.",
+        variant: "destructive",
+      });
+      return;
+    }
+
+    setIsSubmitting(true);
+    
+    try {
       const response = await fetch("https://formspree.io/f/myznknaa", {
         method: "POST",
-        headers: {
-          "Content-Type": "application/json",
-        },
+        headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           firstName: data.firstName,
           lastName: data.lastName,
@@ -95,50 +96,22 @@ export default function ContactForm() {
         }),
       });
 
-      if (!response.ok) {
-        throw new Error("Failed to submit form");
-      }
+      if (!response.ok) throw new Error("Failed to submit form");
 
-      return response.json();
-    },
-    onSuccess: () => {
       toast({
         title: "Message sent!",
         description: "We'll be in touch with you shortly.",
       });
       form.reset();
-    },
-    onError: (error) => {
+    } catch (error) {
       toast({
         title: "Error",
         description: "Something went wrong. Please try again.",
         variant: "destructive",
       });
-    },
-  });
-
-  const onSubmit = (data: InsertContactSubmission) => {
-    // Additional validation before submission
-    if (!data.firstName || !data.lastName || !data.email || !data.message) {
-      toast({
-        title: "Missing Required Fields",
-        description: "Please fill in all required fields before submitting.",
-        variant: "destructive",
-      });
-      return;
+    } finally {
+      setIsSubmitting(false);
     }
-
-    // Validate email format
-    if (!validateEmail(data.email)) {
-      toast({
-        title: "Invalid Email",
-        description: "Please enter a valid email address.",
-        variant: "destructive",
-      });
-      return;
-    }
-
-    mutation.mutate(data);
   };
 
   return (
@@ -150,7 +123,6 @@ export default function ContactForm() {
           </div>
           <h2 className="text-2xl font-bold text-gray-900 mb-2">Request more information from AirFresh</h2>
         </div>
-        <div>
         <Form {...form}>
           <form onSubmit={form.handleSubmit(onSubmit)} className="grid grid-cols-1 md:grid-cols-2 gap-6">
             <FormField
@@ -163,10 +135,7 @@ export default function ContactForm() {
                     <Input
                       {...field}
                       placeholder="John"
-                      onChange={(e) => {
-                        const value = capitalizeWords(e.target.value);
-                        field.onChange(value);
-                      }}
+                      onChange={(e) => field.onChange(capitalizeWords(e.target.value))}
                     />
                   </FormControl>
                   <FormMessage />
@@ -184,10 +153,7 @@ export default function ContactForm() {
                     <Input
                       {...field}
                       placeholder="Doe"
-                      onChange={(e) => {
-                        const value = capitalizeWords(e.target.value);
-                        field.onChange(value);
-                      }}
+                      onChange={(e) => field.onChange(capitalizeWords(e.target.value))}
                     />
                   </FormControl>
                   <FormMessage />
@@ -209,10 +175,7 @@ export default function ContactForm() {
                       onBlur={(e) => {
                         field.onBlur();
                         if (e.target.value && !validateEmail(e.target.value)) {
-                          form.setError("email", {
-                            type: "manual",
-                            message: "Please enter a valid email address"
-                          });
+                          form.setError("email", { type: "manual", message: "Please enter a valid email address" });
                         } else {
                           form.clearErrors("email");
                         }
@@ -238,9 +201,7 @@ export default function ContactForm() {
                       placeholder="(555) 123-4567"
                       onChange={(e) => {
                         const rawValue = e.target.value.replace(/\D/g, "");
-                        if (rawValue.length <= 10) {
-                          field.onChange(rawValue);
-                        }
+                        if (rawValue.length <= 10) field.onChange(rawValue);
                       }}
                       maxLength={14}
                     />
@@ -261,10 +222,7 @@ export default function ContactForm() {
                       {...field}
                       value={field.value || ""}
                       placeholder="Acme Corporation"
-                      onChange={(e) => {
-                        const value = capitalizeWords(e.target.value);
-                        field.onChange(value);
-                      }}
+                      onChange={(e) => field.onChange(capitalizeWords(e.target.value))}
                     />
                   </FormControl>
                   <FormMessage />
@@ -314,14 +272,13 @@ export default function ContactForm() {
                 type="submit"
                 className="w-full"
                 size="lg"
-                disabled={!isFormValid || mutation.isPending}
+                disabled={!isFormValid || isSubmitting}
               >
-                {mutation.isPending ? "Sending..." : !isFormValid ? "Please fill in all required fields" : "Send Message"}
+                {isSubmitting ? "Sending..." : !isFormValid ? "Please fill in all required fields" : "Send Message"}
               </Button>
             </div>
           </form>
         </Form>
-        </div>
       </div>
     </div>
   );
