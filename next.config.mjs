@@ -90,6 +90,18 @@ const nextConfig = {
       { source: '/event-staffing', destination: '/services/event-staffing', permanent: true },
       { source: '/privacy', destination: '/legal/privacy-policy', permanent: true },
       { source: '/terms', destination: '/legal/terms-and-conditions', permanent: true },
+      // Additional old Webflow URLs
+      { source: '/convention-staffing', destination: '/services/convention-staffing', permanent: true },
+      { source: '/marketing-mascots', destination: '/services/marketing-mascots', permanent: true },
+      { source: '/guerilla-marketing', destination: '/services/guerilla-marketing', permanent: true },
+      { source: '/nationwide-brand-ambassadors', destination: '/services/brand-ambassadors', permanent: true },
+      { source: '/video-production', destination: '/services', permanent: true },
+      { source: '/discovery-call', destination: '/contact', permanent: true },
+      { source: '/joey-calendar', destination: '/contact', permanent: true },
+      { source: '/brand-ambassador-order-form', destination: '/contact', permanent: true },
+      { source: '/brand-surveys-and-market-sampling', destination: '/services', permanent: true },
+      { source: '/interactive-vending-machine', destination: '/services', permanent: true },
+      { source: '/production-map', destination: '/locations', permanent: true },
     ]
   },
 
