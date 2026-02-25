@@ -9,8 +9,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
 import { useEffect, useState } from "react";
-import { useQuery } from "@tanstack/react-query";
-import type { BlogPost } from "@shared/schema";
+import { blogPosts as staticBlogPosts } from "@/client/src/data/blogPosts";
 import FloatingCTA from "@/components/FloatingCTA";
 
 export default function Home() {
@@ -61,20 +60,8 @@ export default function Home() {
     };
   }, []);
 
-  // Fetch recent blog posts
-  const { data: blogPosts = [] } = useQuery<BlogPost[]>({
-    queryKey: ["/api/blog"],
-    queryFn: async () => {
-      const response = await fetch("/api/blog");
-      if (!response.ok) throw new Error("Failed to fetch blog posts");
-      return response.json();
-    },
-  });
-
-  // Get the 3 most recent blog posts
-  const recentPosts = blogPosts
-    .sort((a, b) => new Date(b.date).getTime() - new Date(a.date).getTime())
-    .slice(0, 3);
+  // Get the 3 most recent blog posts (static data - no API call needed)
+  const recentPosts = staticBlogPosts.slice(0, 3);
   // Enhanced structured data for better SEO and LLM understanding
   const structuredData = {
     "@context": "https://schema.org",
