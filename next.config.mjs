@@ -10,6 +10,11 @@ const nextConfig = {
 
   // Use Turbopack (Next.js 16 default)
   turbopack: {},
+  
+  // Experimental CSS optimization
+  experimental: {
+    optimizeCss: true,
+  },
 
   // Handle image optimization
   images: {
