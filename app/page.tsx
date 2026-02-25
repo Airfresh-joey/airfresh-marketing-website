@@ -286,15 +286,35 @@ export default function Home() {
             <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-1 rounded-2xl shadow-2xl">
               <div className="bg-white rounded-xl overflow-hidden">
                 <div className="aspect-video relative">
-                <iframe
-                  src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479#t=12s"
-                  className="absolute inset-0 w-full h-full"
-                  frameBorder="0"
-                  allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
-                  referrerPolicy="strict-origin-when-cross-origin"
-                  allowFullScreen
-                  title="Air Fresh Marketing and Visible Rock at Red Rocks!"
-                ></iframe>
+                  {/* Lazy load video - only on desktop to save mobile bandwidth */}
+                  <div className="hidden md:block absolute inset-0">
+                    <iframe
+                      src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479#t=12s"
+                      className="absolute inset-0 w-full h-full"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      loading="lazy"
+                      title="Air Fresh Marketing and Visible Rock at Red Rocks!"
+                    ></iframe>
+                  </div>
+                  {/* Mobile: Show thumbnail with play button */}
+                  <div className="md:hidden absolute inset-0 bg-gradient-to-br from-cyan-600 to-blue-600 flex items-center justify-center">
+                    <a 
+                      href="https://vimeo.com/395306497" 
+                      target="_blank" 
+                      rel="noopener noreferrer"
+                      className="flex flex-col items-center gap-4 text-white"
+                    >
+                      <div className="w-20 h-20 rounded-full bg-white/20 backdrop-blur-sm flex items-center justify-center hover:bg-white/30 transition-colors">
+                        <svg className="w-10 h-10 text-white ml-1" fill="currentColor" viewBox="0 0 24 24">
+                          <path d="M8 5v14l11-7z"/>
+                        </svg>
+                      </div>
+                      <span className="text-lg font-semibold">Watch Video</span>
+                    </a>
+                  </div>
                 </div>
               </div>
             </div>
