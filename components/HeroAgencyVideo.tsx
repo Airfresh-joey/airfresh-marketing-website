@@ -3,7 +3,7 @@
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import { ArrowRight, ChevronDown, Play } from "lucide-react";
-import { useEffect, useState, useRef, useCallback } from "react";
+import { useEffect, useState, useRef } from "react";
 import Image from "next/image";
 
 // Vimeo video URL with start time at 7 seconds for instant action
@@ -13,26 +13,20 @@ const VIMEO_VIDEO_URL = "https://player.vimeo.com/video/395306497?badge=0&autopa
 const VIDEO_THUMBNAIL = "/images/hero-video-poster.jpg";
 
 export default function HeroAgencyVideo() {
-  const [isMobile, setIsMobile] = useState(false);
+  // Start as null to indicate "not yet determined" - prevents premature video load
+  const [isDesktop, setIsDesktop] = useState<boolean | null>(null);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const [shouldLoadVideo, setShouldLoadVideo] = useState(false);
   const iframeRef = useRef<HTMLIFrameElement>(null);
   const sectionRef = useRef<HTMLElement>(null);
 
   useEffect(() => {
-    // Check if mobile
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
+    // Only load video on desktop (768px+)
+    const checkDesktop = () => {
+      setIsDesktop(window.innerWidth >= 768);
     };
-    checkMobile();
-    window.addEventListener('resize', checkMobile);
-    return () => window.removeEventListener('resize', checkMobile);
-  }, []);
-
-  // Load video immediately but let poster show for fast LCP
-  useEffect(() => {
-    // Start loading video right away - poster provides instant visual
-    setShouldLoadVideo(true);
+    checkDesktop();
+    window.addEventListener('resize', checkDesktop);
+    return () => window.removeEventListener('resize', checkDesktop);
   }, []);
 
   // Simple fade-in animation using CSS
@@ -43,8 +37,8 @@ export default function HeroAgencyVideo() {
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Preconnect hints for Vimeo - desktop only */}
-      {!isMobile && (
+      {/* Preconnect hints for Vimeo - desktop only (after detection) */}
+      {isDesktop === true && (
         <>
           <link rel="preconnect" href="https://player.vimeo.com" />
           <link rel="preconnect" href="https://i.vimeocdn.com" />
@@ -67,8 +61,8 @@ export default function HeroAgencyVideo() {
           />
         </div>
 
-        {/* Video loads only on desktop for performance */}
-        {shouldLoadVideo && !isMobile && (
+        {/* Video loads only on desktop for performance - isDesktop must be explicitly true */}
+        {isDesktop === true && (
           <div className={`absolute top-1/2 left-1/2 min-w-full min-h-full max-w-none -translate-x-1/2 -translate-y-1/2 transition-opacity duration-1000 ${
             videoLoaded ? 'opacity-100' : 'opacity-0'
           } w-[177.78vh] h-[56.25vw]`}>
