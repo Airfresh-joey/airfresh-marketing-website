@@ -1,4 +1,6 @@
-import { useEffect } from 'react';
+'use client';
+
+import Script from 'next/script';
 
 // Google Analytics 4 Configuration
 const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with actual GA4 measurement ID
@@ -11,63 +13,44 @@ declare global {
 }
 
 export default function GoogleAnalytics() {
-  useEffect(() => {
-    // Only load in production
-    if (import.meta.env.MODE !== 'production') {
-      console.log('Google Analytics disabled in development');
-      return;
-    }
+  // Only render in production
+  if (process.env.NODE_ENV !== 'production') {
+    return null;
+  }
 
-    // Load Google Analytics script
-    const script1 = document.createElement('script');
-    script1.async = true;
-    script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
-    document.head.appendChild(script1);
-
-    // Initialize Google Analytics
-    const script2 = document.createElement('script');
-    script2.innerHTML = `
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', '${GA_MEASUREMENT_ID}', {
-        page_path: window.location.pathname,
-        anonymize_ip: true,
-        cookie_flags: 'SameSite=None;Secure'
-      });
-    `;
-    document.head.appendChild(script2);
-
-    // Load Ahrefs Analytics
-    const ahrefsScript = document.createElement('script');
-    ahrefsScript.src = 'https://analytics.ahrefs.com/analytics.js';
-    ahrefsScript.setAttribute('data-key', 's5rfropseUKWtzsvv14fyg');
-    ahrefsScript.async = true;
-    document.head.appendChild(ahrefsScript);
-
-    // Track page views on route changes
-    const handleRouteChange = () => {
-      if (window.gtag) {
-        window.gtag('config', GA_MEASUREMENT_ID, {
-          page_path: window.location.pathname,
-        });
-      }
-    };
-
-    // Listen for popstate events (back/forward navigation)
-    window.addEventListener('popstate', handleRouteChange);
-
-    return () => {
-      window.removeEventListener('popstate', handleRouteChange);
-    };
-  }, []);
-
-  return null;
+  return (
+    <>
+      {/* Google Analytics - loads after page is interactive */}
+      <Script
+        src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+        strategy="afterInteractive"
+      />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${GA_MEASUREMENT_ID}', {
+            page_path: window.location.pathname,
+            anonymize_ip: true,
+            cookie_flags: 'SameSite=None;Secure'
+          });
+        `}
+      </Script>
+      
+      {/* Ahrefs Analytics - loads after page is interactive */}
+      <Script
+        src="https://analytics.ahrefs.com/analytics.js"
+        data-key="s5rfropseUKWtzsvv14fyg"
+        strategy="afterInteractive"
+      />
+    </>
+  );
 }
 
 // Track custom events
 export const trackEvent = (action: string, category: string, label?: string, value?: number) => {
-  if (window.gtag) {
+  if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', action, {
       event_category: category,
       event_label: label,
