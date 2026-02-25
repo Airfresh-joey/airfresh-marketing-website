@@ -763,7 +763,7 @@ export default function Home() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <CardContent className="p-0 relative">
                     <div className="flex items-center mb-6">
-                      <img className="w-14 h-14 rounded-full mr-4 border-2 border-cyan-200" src={testimonial.avatar} alt={testimonial.name} />
+                      <img className="w-14 h-14 rounded-full mr-4 border-2 border-cyan-200" src={testimonial.avatar} alt={testimonial.name} loading="lazy" />
                       <div>
                         <h4 className="font-bold text-gray-900 text-lg">{testimonial.name}</h4>
                         <p className="text-sm text-cyan-600 font-medium">{testimonial.role}</p>
@@ -905,6 +905,7 @@ export default function Home() {
                   src="/images/case-studies/formula-1-4.jpg"
                   alt="Formula 1 Las Vegas Grand Prix activation"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
+                  loading="lazy"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/20 to-transparent"></div>
                 <div className="absolute bottom-0 left-0 right-0 p-8 md:p-12">
@@ -972,6 +973,7 @@ export default function Home() {
                       src={campaign.image}
                       alt={campaign.title}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/30 to-transparent"></div>
                     <div className="absolute top-4 left-4">
