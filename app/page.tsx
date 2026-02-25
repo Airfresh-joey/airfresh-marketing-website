@@ -1,5 +1,3 @@
-'use client'
-
 import HeroAgencyVideo from "@/components/HeroAgencyVideo";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
@@ -8,58 +6,11 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Globe, Shield, Calendar, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
-import { useEffect, useState } from "react";
 import { blogPosts as staticBlogPosts } from "@/client/src/data/blogPosts";
 import FloatingCTA from "@/components/FloatingCTA";
+import ScrollToAnchor from "@/components/ScrollToAnchor";
 
 export default function Home() {
-  // Handle scroll to anchor on page load
-  useEffect(() => {
-    const scrollToTechnology = (element: HTMLElement) => {
-      const navHeight = 64; // Height of fixed nav (h-16 = 4rem = 64px)
-      const offset = 100; // Additional offset to show more of the section
-      const elementPosition = element.getBoundingClientRect().top;
-      const offsetPosition = elementPosition + window.pageYOffset - navHeight - offset;
-
-      window.scrollTo({
-        top: offsetPosition,
-        behavior: 'smooth'
-      });
-    };
-
-    const checkAndScroll = () => {
-      // Check for sessionStorage flag
-      const shouldScroll = sessionStorage.getItem('scrollToTechnology');
-      if (shouldScroll === 'true') {
-        sessionStorage.removeItem('scrollToTechnology');
-        const element = document.getElementById('technology');
-        if (element) {
-          scrollToTechnology(element);
-        }
-        return;
-      }
-
-      // Also check for hash in URL
-      const hash = window.location.hash;
-      if (hash === '#technology') {
-        const element = document.getElementById('technology');
-        if (element) {
-          scrollToTechnology(element);
-        }
-      }
-    };
-
-    // Try immediately and after delays to ensure content is loaded
-    checkAndScroll();
-    const timer1 = setTimeout(checkAndScroll, 100);
-    const timer2 = setTimeout(checkAndScroll, 500);
-
-    return () => {
-      clearTimeout(timer1);
-      clearTimeout(timer2);
-    };
-  }, []);
-
   // Get the 3 most recent blog posts (static data - no API call needed)
   const recentPosts = staticBlogPosts.slice(0, 3);
   // Enhanced structured data for better SEO and LLM understanding
@@ -242,6 +193,7 @@ export default function Home() {
   return (
     <>
       <FloatingCTA />
+      <ScrollToAnchor />
       <div className="pt-16">
         <SEO
           title="Air Fresh Marketing - Experiential Marketing Agency"
