@@ -1,6 +1,9 @@
 import Link from "next/link";
+import dynamic from "next/dynamic";
 import { Facebook, Instagram, Linkedin, Twitter, Phone, Mail, MapPin, ArrowRight } from "lucide-react";
-import NewsletterForm from "./NewsletterForm";
+
+// Lazy load NewsletterForm - below fold, not critical for initial render
+const NewsletterForm = dynamic(() => import("./NewsletterForm"), { ssr: false });
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
