@@ -29,14 +29,10 @@ export default function HeroAgencyVideo() {
     return () => window.removeEventListener('resize', checkMobile);
   }, []);
 
-  // Load video after initial render to improve LCP
+  // Load video immediately but let poster show for fast LCP
   useEffect(() => {
-    // Delay video load to after LCP
-    const timer = setTimeout(() => {
-      setShouldLoadVideo(true);
-    }, 2500); // Load video after 2.5s to prioritize LCP
-
-    return () => clearTimeout(timer);
+    // Start loading video right away - poster provides instant visual
+    setShouldLoadVideo(true);
   }, []);
 
   // Simple fade-in animation using CSS
@@ -47,14 +43,10 @@ export default function HeroAgencyVideo() {
 
   return (
     <section ref={sectionRef} className="relative min-h-screen flex flex-col overflow-hidden">
-      {/* Preconnect hints for Vimeo - only when we're about to load */}
-      {shouldLoadVideo && (
-        <>
-          <link rel="preconnect" href="https://player.vimeo.com" />
-          <link rel="preconnect" href="https://i.vimeocdn.com" />
-          <link rel="preconnect" href="https://f.vimeocdn.com" />
-        </>
-      )}
+      {/* Preconnect hints for Vimeo - immediate */}
+      <link rel="preconnect" href="https://player.vimeo.com" />
+      <link rel="preconnect" href="https://i.vimeocdn.com" />
+      <link rel="preconnect" href="https://f.vimeocdn.com" />
 
       {/* Video Background with facade pattern */}
       <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
