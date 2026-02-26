@@ -93,7 +93,7 @@ export default function HeroAgencyVideo() {
               className="absolute top-0 left-0 w-full h-full object-cover"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-              loading="lazy"
+              loading="eager"
               onLoad={() => setVideoLoaded(true)}
               style={{ pointerEvents: 'none' }}
               title="AirFresh Marketing Brand Experience Video Background"

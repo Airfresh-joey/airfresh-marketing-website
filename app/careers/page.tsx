@@ -210,15 +210,21 @@ export default function CareersPage() {
         canonical="https://airfreshmarketing.com/careers"
       />
 
+      {/* Preconnect to Vimeo for faster video load */}
+      <link rel="preconnect" href="https://player.vimeo.com" />
+      <link rel="preconnect" href="https://i.vimeocdn.com" />
+      <link rel="preconnect" href="https://f.vimeocdn.com" />
+
       {/* Hero Section */}
       <section className="relative min-h-[95vh] flex items-center justify-center overflow-hidden bg-gray-900">
         {/* Video Background */}
         <div className="absolute inset-0 w-full h-full overflow-hidden z-0">
           <iframe
-            src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1#t=8s"
+            src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479&autoplay=1&muted=1&loop=1&background=1&playsinline=1&dnt=1#t=8s"
             className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2"
             style={{ border: 'none', pointerEvents: 'none', width: '177.78vh', height: '100vh', minWidth: '100%', minHeight: '100%' }}
             allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+            loading="eager"
             title="Air Fresh Marketing Careers"
           />
         </div>
