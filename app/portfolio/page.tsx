@@ -67,6 +67,11 @@ export default function Portfolio() {
         canonical="https://airfreshmarketing.com/portfolio"
       />
 
+      {/* Preconnect to Vimeo for faster video load */}
+      <link rel="preconnect" href="https://player.vimeo.com" />
+      <link rel="preconnect" href="https://i.vimeocdn.com" />
+      <link rel="preconnect" href="https://f.vimeocdn.com" />
+
       {/* Hero Section with Video Background */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Video Background */}
@@ -74,11 +79,11 @@ export default function Portfolio() {
           <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
             <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
               <iframe
-                src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1#t=12s"
+                src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=12s"
                 className="absolute top-0 left-0 w-full h-full object-cover"
                 frameBorder="0"
                 allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                loading="lazy"
+                loading="eager"
                 onLoad={() => setVideoLoaded(true)}
                 style={{ pointerEvents: 'none' }}
                 title="AirFresh Marketing Portfolio Video Background"
