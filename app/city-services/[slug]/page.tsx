@@ -161,7 +161,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
             sizes="100vw"
           />
         </div>
-        <div className="absolute inset-0 bg-black bg-opacity-50" />
+        <div className="absolute inset-0 bg-black bg-opacity-50 pointer-events-none" />
         <div className="relative h-full flex items-center justify-center max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 z-20">
           <div className="text-center">
             {/* SEO: H1 with exact keyword phrase at beginning */}

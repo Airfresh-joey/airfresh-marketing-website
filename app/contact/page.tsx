@@ -111,7 +111,7 @@ export default function Contact() {
             backgroundImage: "url('/images/case-studies/formula-1-4.jpg')"
           }}
         />
-        <div className="absolute inset-0 bg-black/70" />
+        <div className="absolute inset-0 bg-black/70 pointer-events-none" />
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <div className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">

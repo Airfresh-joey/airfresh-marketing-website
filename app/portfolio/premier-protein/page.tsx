@@ -62,7 +62,7 @@ export default function PremierProteinCaseStudy() {
             allow="autoplay; fullscreen"
             title="Premier Protein Campaign Video"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/40 pointer-events-none" />
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">

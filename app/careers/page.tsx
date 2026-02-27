@@ -229,7 +229,7 @@ export default function CareersPage() {
           />
         </div>
         {/* Dark Overlay */}
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
         <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-transparent to-black/60 z-10" />
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-20 py-24">
           <div className="text-center">

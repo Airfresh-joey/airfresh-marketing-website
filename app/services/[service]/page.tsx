@@ -467,7 +467,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 title="Hero Video"
               />
             </div>
-            <div className="absolute inset-0 bg-black/60 z-10" />
+            <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
           </>
         ) : (
           <>
@@ -475,7 +475,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               className="absolute inset-0 bg-cover bg-center bg-no-repeat"
               style={{ backgroundImage: `url('${service.heroImage}')` }}
             />
-            <div className="absolute inset-0 bg-black bg-opacity-50" />
+            <div className="absolute inset-0 bg-black bg-opacity-50 pointer-events-none" />
           </>
         )}
         <div className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">

@@ -170,7 +170,7 @@ export default function About() {
             title="AirFresh Marketing Team"
           />
         </div>
-        <div className="absolute inset-0 bg-black/60 z-10" />
+        <div className="absolute inset-0 bg-black/60 z-10 pointer-events-none" />
         <article className="relative z-20 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
           <header className="max-w-4xl">
             <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
