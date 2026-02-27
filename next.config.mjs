@@ -93,11 +93,9 @@ const nextConfig = {
       { source: '/promotional-models', destination: '/services/promotional-models', permanent: true },
       { source: '/event-staff', destination: '/services/event-management', permanent: true },
       { source: '/event-staffing', destination: '/services/event-management', permanent: true },
-      // TODO: Create actual /privacy and /terms pages - redirecting to contact for now
-      { source: '/privacy', destination: '/contact', permanent: false },
-      { source: '/terms', destination: '/contact', permanent: false },
-      { source: '/legal/privacy-policy', destination: '/contact', permanent: false },
-      { source: '/legal/terms-and-conditions', destination: '/contact', permanent: false },
+      // Legal page redirects (pages now exist at /legal/*)
+      { source: '/privacy', destination: '/legal/privacy-policy', permanent: true },
+      { source: '/terms', destination: '/legal/terms-and-conditions', permanent: true },
       // Additional old Webflow URLs
       { source: '/convention-staffing', destination: '/services/convention-staffing', permanent: true },
       { source: '/marketing-mascots', destination: '/services', permanent: true }, // No dedicated mascots page

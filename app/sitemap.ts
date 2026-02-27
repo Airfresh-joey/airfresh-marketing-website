@@ -2,6 +2,7 @@ import { MetadataRoute } from 'next'
 import { usaEvents } from '@/server/usa-events-data'
 import { venues } from '@/server/venues-data'
 import { cities as citiesData } from '@/server/cities-data'
+import { serviceTypes } from '@/server/city-services-data'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
@@ -37,20 +38,8 @@ const citySlugs = [
   'philadelphia', 'washington'
 ]
 
-// City service types
-const cityServiceTypes = [
-  'brand-ambassadors',
-  'convention-staffing',
-  'event-management',
-  'experiential-marketing',
-  'guerilla-marketing',
-  'marketing-mascots',
-  'mobile-tours',
-  'product-sampling',
-  'promotional-models',
-  'street-teams',
-  'trade-shows'
-]
+// City service types - use actual service slugs from city-services-data.ts
+const cityServiceTypes = serviceTypes.map(s => s.slug)
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const today = new Date().toISOString().split('T')[0]
