@@ -173,13 +173,17 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
               {keywordPhrase} services are available year-round from AirFresh Marketing. {service.description}
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
-              <Button size="lg" className="bg-primary hover:bg-primary/90">
-                Get Free Quote
-                <ArrowRight className="ml-2 h-5 w-5" />
+              <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
+                <Link href={`/contact?source=${slug}`}>
+                  Get Free Quote
+                  <ArrowRight className="ml-2 h-5 w-5" />
+                </Link>
               </Button>
-              <Button size="lg" variant="outline">
-                <Phone className="mr-2 h-5 w-5" />
-                Call Now
+              <Button asChild size="lg" variant="outline">
+                <a href="tel:+13037206060">
+                  <Phone className="mr-2 h-5 w-5" />
+                  Call Now
+                </a>
               </Button>
             </div>
             {cityData && (
@@ -346,13 +350,17 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
             Get started with a free consultation and custom proposal
           </p>
           <div className="flex flex-wrap justify-center gap-4">
-            <Button size="lg" className="bg-white text-primary hover:bg-gray-100">
-              Get Free Quote
-              <ArrowRight className="ml-2 h-5 w-5" />
+            <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
+              <Link href={`/contact?source=${slug}`}>
+                Get Free Quote
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Link>
             </Button>
-            <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Phone className="mr-2 h-5 w-5" />
-              {cityData ? cityData.phone : '1-800-AIRFRESH'}
+            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <a href={cityData ? `tel:${cityData.phone.replace(/\D/g, '')}` : 'tel:+13037206060'}>
+                <Phone className="mr-2 h-5 w-5" />
+                {cityData ? cityData.phone : '303-720-6060'}
+              </a>
             </Button>
           </div>
         </div>
