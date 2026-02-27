@@ -8,6 +8,62 @@ import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, L
 import SEO from "@/components/SEO";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 
+// Helper to convert date strings to ISO 8601 format
+function toISO8601(dateStr: string | undefined, year?: number): string {
+  if (!dateStr) return new Date().toISOString();
+  
+  // Try to parse dates like "February 8, 2026" or "July 14 - July 30, 2028"
+  const months: Record<string, string> = {
+    'january': '01', 'february': '02', 'march': '03', 'april': '04',
+    'may': '05', 'june': '06', 'july': '07', 'august': '08',
+    'september': '09', 'october': '10', 'november': '11', 'december': '12',
+    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'jun': '06',
+    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+  };
+  
+  // Handle range dates - take the first date
+  const firstDate = dateStr.split('-')[0].trim();
+  
+  // Try to match "Month Day, Year" or "Month Day"
+  const match = firstDate.match(/([a-zA-Z]+)\s+(\d+),?\s*(\d{4})?/);
+  if (match) {
+    const month = months[match[1].toLowerCase()];
+    const day = match[2].padStart(2, '0');
+    const yr = match[3] || year || new Date().getFullYear();
+    return `${yr}-${month}-${day}`;
+  }
+  
+  // Fallback - return current date
+  return new Date().toISOString().split('T')[0];
+}
+
+// Helper to get end date from range
+function getEndDate(dateStr: string | undefined, year?: number): string | null {
+  if (!dateStr || !dateStr.includes('-')) return null;
+  
+  const months: Record<string, string> = {
+    'january': '01', 'february': '02', 'march': '03', 'april': '04',
+    'may': '05', 'june': '06', 'july': '07', 'august': '08',
+    'september': '09', 'october': '10', 'november': '11', 'december': '12',
+    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'jun': '06',
+    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+  };
+  
+  const parts = dateStr.split('-');
+  if (parts.length < 2) return null;
+  
+  const secondDate = parts[1].trim();
+  const match = secondDate.match(/([a-zA-Z]+)\s+(\d+),?\s*(\d{4})?/);
+  if (match) {
+    const month = months[match[1].toLowerCase()];
+    const day = match[2].padStart(2, '0');
+    const yr = match[3] || year || new Date().getFullYear();
+    return `${yr}-${month}-${day}`;
+  }
+  
+  return null;
+}
+
 interface EventPageProps {
   params: Promise<{ slug: string }>;
 }
@@ -37,12 +93,18 @@ export default async function EventPage({ params }: EventPageProps) {
     notFound();
   }
 
-  const structuredData = {
+  // Parse dates for structured data (ISO 8601 format required by Google)
+  const startDateISO = toISO8601(event.dates || event.month);
+  const endDateISO = getEndDate(event.dates);
+  
+  const structuredData: Record<string, unknown> = {
     "@context": "https://schema.org",
     "@type": "Event",
     "name": event.name,
     "description": event.description,
-    "startDate": event.dates || event.month,
+    "startDate": startDateISO,
+    "eventStatus": "https://schema.org/EventScheduled",
+    "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
       "@type": "Place",
       "name": event.venue,
@@ -53,13 +115,22 @@ export default async function EventPage({ params }: EventPageProps) {
         "addressCountry": "US"
       }
     },
-    "image": event.heroImage,
+    "image": event.heroImage ? `https://airfreshmarketing.com${event.heroImage}` : undefined,
     "organizer": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
       "url": "https://airfreshmarketing.com"
+    },
+    "performer": {
+      "@type": "Organization",
+      "name": event.name
     }
   };
+  
+  // Add endDate if it's a multi-day event
+  if (endDateISO) {
+    structuredData.endDate = endDateISO;
+  }
 
   return (
     <div className="pt-16 min-h-screen">
