@@ -8,6 +8,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
+import { useSearchParams } from "next/navigation";
 import type { InsertContactSubmission } from "@shared/schema";
 
 // Format phone number as user types
@@ -30,6 +31,27 @@ export default function ContactForm() {
   const { toast } = useToast();
   const [isFormValid, setIsFormValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const searchParams = useSearchParams();
+  
+  // Capture source page from URL param or referrer
+  const [sourcePage, setSourcePage] = useState<string>("");
+  
+  useEffect(() => {
+    const sourceParam = searchParams.get("source");
+    if (sourceParam) {
+      setSourcePage(sourceParam);
+    } else if (typeof document !== "undefined" && document.referrer) {
+      // Extract path from referrer if no source param
+      try {
+        const referrerUrl = new URL(document.referrer);
+        if (referrerUrl.hostname.includes("airfreshmarketing.com")) {
+          setSourcePage(referrerUrl.pathname);
+        }
+      } catch {
+        // Ignore invalid referrer URLs
+      }
+    }
+  }, [searchParams]);
 
   const form = useForm<InsertContactSubmission>({
     resolver: zodResolver(insertContactSubmissionSchema),
@@ -93,6 +115,7 @@ export default function ContactForm() {
           company: data.company || "",
           inquiryType: data.inquiryType || "",
           message: data.message,
+          _sourcePage: sourcePage || "direct", // Track which page they came from
         }),
       });
 

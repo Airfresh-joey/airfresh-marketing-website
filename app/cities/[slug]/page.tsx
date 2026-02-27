@@ -679,7 +679,7 @@ export default async function CityPage({ params }: CityPageProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                  <Link href="/contact">
+                  <Link href={`/contact?source=${city.slug}`}>
                     <Sparkles className="w-5 h-5 mr-2" />
                     Get {city.name} Quote
                   </Link>
@@ -1207,13 +1207,13 @@ export default async function CityPage({ params }: CityPageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href="/contact">
+              <Link href={`/contact?source=${city.slug}`}>
                 <Phone className="w-5 h-5 mr-2" />
                 Call (303) 720-6060
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              <Link href="/contact">
+              <Link href={`/contact?source=${city.slug}`}>
                 Get Free {city.name} Quote
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
