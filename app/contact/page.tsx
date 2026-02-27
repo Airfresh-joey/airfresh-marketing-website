@@ -1,5 +1,6 @@
 'use client'
 
+import { Suspense } from "react";
 import ContactForm from "@/components/ContactForm";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -213,7 +214,9 @@ export default function Contact() {
                 Tell us about your upcoming project and we'll get back to you within 24 hours
                 with ideas, insights, and next steps.
               </p>
-              <ContactForm />
+              <Suspense fallback={<div className="animate-pulse bg-gray-100 rounded-lg h-96" />}>
+                <ContactForm />
+              </Suspense>
             </div>
 
             {/* Why Choose Us */}
