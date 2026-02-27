@@ -148,19 +148,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  // State pages
-  const states = [
-    'alabama', 'alaska', 'arizona', 'arkansas', 'california', 'colorado',
-    'connecticut', 'delaware', 'florida', 'georgia', 'hawaii', 'idaho',
-    'illinois', 'indiana', 'iowa', 'kansas', 'kentucky', 'louisiana',
-    'maine', 'maryland', 'massachusetts', 'michigan', 'minnesota',
-    'mississippi', 'missouri', 'montana', 'nebraska', 'nevada',
-    'new-hampshire', 'new-jersey', 'new-mexico', 'new-york-state', 'north-carolina',
-    'north-dakota', 'ohio', 'oklahoma', 'oregon', 'pennsylvania',
-    'rhode-island', 'south-carolina', 'south-dakota', 'tennessee', 'texas',
-    'utah', 'vermont', 'virginia', 'washington-state', 'west-virginia',
-    'wisconsin', 'wyoming', 'district-of-columbia'
-  ]
+  // State pages - only include states that have actual pages
+  // Page slugs use abbreviations: ca, ny, tx, fl, il, co, ga, wa
+  const states = ['ca', 'ny', 'tx', 'fl', 'il', 'co', 'ga', 'wa']
 
   const statePages: MetadataRoute.Sitemap = states.map(state => ({
     url: `${DOMAIN}/states/${state}`,

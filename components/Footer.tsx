@@ -29,14 +29,14 @@ export default function Footer() {
   ];
 
   const majorCities = [
-    { name: "New York", href: "/city/new-york" },
-    { name: "Los Angeles", href: "/city/los-angeles" },
-    { name: "Chicago", href: "/city/chicago" },
-    { name: "Miami", href: "/city/miami" },
-    { name: "Denver", href: "/city/denver", isHQ: true },
-    { name: "San Francisco", href: "/city/san-francisco" },
-    { name: "Austin", href: "/city/austin" },
-    { name: "Atlanta", href: "/city/atlanta" },
+    { name: "New York", href: "/cities/new-york" },
+    { name: "Los Angeles", href: "/cities/los-angeles" },
+    { name: "Chicago", href: "/cities/chicago" },
+    { name: "Miami", href: "/cities/miami" },
+    { name: "Denver", href: "/cities/denver", isHQ: true },
+    { name: "San Francisco", href: "/cities/san-francisco" },
+    { name: "Austin", href: "/cities/austin" },
+    { name: "Atlanta", href: "/cities/atlanta" },
   ];
 
   return (
