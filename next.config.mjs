@@ -107,6 +107,10 @@ const nextConfig = {
       { source: '/brand-surveys-and-market-sampling', destination: '/services', permanent: true },
       { source: '/interactive-vending-machine', destination: '/services', permanent: true },
       { source: '/production-map', destination: '/locations', permanent: true },
+      // Critical 404 fixes from Google Ads audit (Feb 2026)
+      { source: '/street-team', destination: '/services/street-teams', permanent: true },
+      { source: '/locations/:city', destination: '/cities/:city', permanent: true },
+      { source: '/locations/brand-ambassadors-:city', destination: '/cities/:city', permanent: true },
     ]
   },
 
