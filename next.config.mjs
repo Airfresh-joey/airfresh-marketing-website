@@ -91,14 +91,17 @@ const nextConfig = {
       { source: '/street-team-marketing', destination: '/services/street-teams', permanent: true },
       { source: '/experiential-marketing', destination: '/services/experiential-marketing', permanent: true },
       { source: '/promotional-models', destination: '/services/promotional-models', permanent: true },
-      { source: '/event-staff', destination: '/services/event-staff', permanent: true },
-      { source: '/event-staffing', destination: '/services/event-staffing', permanent: true },
-      { source: '/privacy', destination: '/legal/privacy-policy', permanent: true },
-      { source: '/terms', destination: '/legal/terms-and-conditions', permanent: true },
+      { source: '/event-staff', destination: '/services/event-management', permanent: true },
+      { source: '/event-staffing', destination: '/services/event-management', permanent: true },
+      // TODO: Create actual /privacy and /terms pages - redirecting to contact for now
+      { source: '/privacy', destination: '/contact', permanent: false },
+      { source: '/terms', destination: '/contact', permanent: false },
+      { source: '/legal/privacy-policy', destination: '/contact', permanent: false },
+      { source: '/legal/terms-and-conditions', destination: '/contact', permanent: false },
       // Additional old Webflow URLs
       { source: '/convention-staffing', destination: '/services/convention-staffing', permanent: true },
-      { source: '/marketing-mascots', destination: '/services/marketing-mascots', permanent: true },
-      { source: '/guerilla-marketing', destination: '/services/guerilla-marketing', permanent: true },
+      { source: '/marketing-mascots', destination: '/services', permanent: true }, // No dedicated mascots page
+      { source: '/guerilla-marketing', destination: '/services/street-teams', permanent: true }, // Closest match
       { source: '/nationwide-brand-ambassadors', destination: '/services/brand-ambassadors', permanent: true },
       { source: '/video-production', destination: '/services', permanent: true },
       { source: '/discovery-call', destination: '/contact', permanent: true },
