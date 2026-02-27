@@ -7,55 +7,23 @@ import Image from "next/image";
 import SEO from "@/components/SEO";
 import { serviceTypes } from "@/server/city-services-data";
 import { cityLocations } from "@/server/city-data";
+import { cities as allCitiesData } from "@/server/cities-data";
 
 interface CityServicePageProps {
   params: Promise<{ slug: string }>;
 }
 
 // Generate static params for all city-service combinations
+// Uses ALL cities from cities-data.ts to match sitemap URLs
 export async function generateStaticParams() {
-  const paths = [];
+  const paths: { slug: string }[] = [];
 
-  // Get major cities from cityLocations
-  const cities = cityLocations.map(location => ({
-    name: location.city.toLowerCase().replace(/\s+/g, '-'),
-    displayName: location.city
-  }));
-
-  // Add additional major cities
-  const additionalCities = [
-    { name: 'los-angeles', displayName: 'Los Angeles' },
-    { name: 'chicago', displayName: 'Chicago' },
-    { name: 'houston', displayName: 'Houston' },
-    { name: 'phoenix', displayName: 'Phoenix' },
-    { name: 'philadelphia', displayName: 'Philadelphia' },
-    { name: 'san-antonio', displayName: 'San Antonio' },
-    { name: 'san-diego', displayName: 'San Diego' },
-    { name: 'dallas', displayName: 'Dallas' },
-    { name: 'austin', displayName: 'Austin' },
-    { name: 'san-francisco', displayName: 'San Francisco' },
-    { name: 'seattle', displayName: 'Seattle' },
-    { name: 'denver', displayName: 'Denver' },
-    { name: 'boston', displayName: 'Boston' },
-    { name: 'atlanta', displayName: 'Atlanta' },
-    { name: 'orlando', displayName: 'Orlando' },
-    { name: 'tampa', displayName: 'Tampa' },
-    { name: 'portland', displayName: 'Portland' },
-    { name: 'las-vegas', displayName: 'Las Vegas' },
-    { name: 'nashville', displayName: 'Nashville' },
-    { name: 'charlotte', displayName: 'Charlotte' },
-    { name: 'washington', displayName: 'Washington DC' },
-    { name: 'minneapolis', displayName: 'Minneapolis' },
-    { name: 'detroit', displayName: 'Detroit' }
-  ];
-
-  const allCities = [...cities, ...additionalCities];
-
-  // Generate paths for each city-service combination
-  for (const city of allCities) {
+  // Use all cities from the cities-data.ts file (158 cities)
+  // This ensures all sitemap URLs resolve to actual pages
+  for (const city of allCitiesData) {
     for (const service of serviceTypes) {
       paths.push({
-        slug: `${city.name}-${service.slug}`
+        slug: `${city.slug}-${service.slug}`
       });
     }
   }
