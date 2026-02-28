@@ -112,6 +112,8 @@ const nextConfig = {
       { source: '/street-team', destination: '/services/street-teams', permanent: true },
       { source: '/locations/:city', destination: '/cities/:city', permanent: true },
       { source: '/locations/brand-ambassadors-:city', destination: '/cities/:city', permanent: true },
+      // Case study short URL redirect
+      { source: '/case-studies/netflix', destination: '/case-studies/netflix-stranger-things-popup', permanent: true },
     ]
   },
 

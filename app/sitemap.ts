@@ -29,14 +29,8 @@ const venueServices = [
   'sampling-teams'
 ]
 
-// Cities with dedicated pages (from app/cities/[slug]/page.tsx)
-const citySlugs = [
-  'new-york', 'los-angeles', 'chicago', 'miami', 'denver',
-  'san-francisco', 'austin', 'atlanta', 'san-diego', 'seattle',
-  'portland', 'phoenix', 'las-vegas', 'dallas', 'houston',
-  'charlotte', 'nashville', 'minneapolis', 'detroit', 'boston',
-  'philadelphia', 'washington'
-]
+// Cities with dedicated pages - now uses ALL cities from cities-data.ts
+const citySlugs = citiesData.map(city => city.slug)
 
 // City service types - use actual service slugs from city-services-data.ts
 const cityServiceTypes = serviceTypes.map(s => s.slug)

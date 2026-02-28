@@ -5,13 +5,14 @@ import { MapPin, CheckCircle, Star, Phone, ArrowRight, Users, TrendingUp, Award,
 import Link from "next/link";
 import Image from "next/image";
 import SEO from "@/components/SEO";
+import { cities as allCitiesData } from "@/server/cities-data";
 
 interface CityPageProps {
   params: Promise<{ slug: string }>;
 }
 
-// City data with localized information
-const cities = [
+// Rich city data with localized information (detailed content for major markets)
+const richCities = [
   {
     slug: 'new-york',
     name: 'New York',
@@ -543,9 +544,57 @@ const cities = [
 ];
 
 export async function generateStaticParams() {
-  return cities.map(city => ({
+  // Generate pages for ALL cities from cities-data.ts
+  return allCitiesData.map(city => ({
     slug: city.slug
   }));
+}
+
+// Helper to generate default content for cities without rich data
+function generateDefaultCityData(cityData: typeof allCitiesData[0]) {
+  const stateAbbrev = getStateAbbrev(cityData.state);
+  return {
+    slug: cityData.slug,
+    name: cityData.city,
+    state: stateAbbrev,
+    image: '/images/heroes/mac-cosmetics-experiential-marketing.jpeg',
+    alt: `${cityData.city} experiential marketing and brand activation services`,
+    problems: [
+      `Reaching target audiences effectively in ${cityData.city}`,
+      `Standing out in competitive ${cityData.industries?.[0] || 'local'} markets`,
+      `Building authentic brand connections with local consumers`
+    ],
+    solutions: [
+      `Strategic activations in high-traffic ${cityData.city} locations`,
+      `Local brand ambassador teams who know the ${cityData.city} market`,
+      `Data-driven campaigns tailored to ${cityData.city} demographics`
+    ],
+    stats: {
+      events: cityData.marketSize === 'Large' ? '200+' : cityData.marketSize === 'Medium' ? '100+' : '50+',
+      ambassadors: cityData.marketSize === 'Large' ? '75+' : cityData.marketSize === 'Medium' ? '40+' : '20+',
+      samples: cityData.marketSize === 'Large' ? '400K+' : cityData.marketSize === 'Medium' ? '200K+' : '100K+'
+    },
+    testimonial: `AirFresh Marketing delivered exceptional results in ${cityData.city}. Their local expertise made all the difference.`,
+    clients: ['Fortune 500 Brands', 'National Retailers', 'Consumer Products']
+  };
+}
+
+// State name to abbreviation mapping
+function getStateAbbrev(stateName: string): string {
+  const stateMap: Record<string, string> = {
+    'Alabama': 'AL', 'Alaska': 'AK', 'Arizona': 'AZ', 'Arkansas': 'AR', 'California': 'CA',
+    'Colorado': 'CO', 'Connecticut': 'CT', 'Delaware': 'DE', 'Florida': 'FL', 'Georgia': 'GA',
+    'Hawaii': 'HI', 'Idaho': 'ID', 'Illinois': 'IL', 'Indiana': 'IN', 'Iowa': 'IA',
+    'Kansas': 'KS', 'Kentucky': 'KY', 'Louisiana': 'LA', 'Maine': 'ME', 'Maryland': 'MD',
+    'Massachusetts': 'MA', 'Michigan': 'MI', 'Minnesota': 'MN', 'Mississippi': 'MS', 'Missouri': 'MO',
+    'Montana': 'MT', 'Nebraska': 'NE', 'Nevada': 'NV', 'New Hampshire': 'NH', 'New Jersey': 'NJ',
+    'New Mexico': 'NM', 'New York': 'NY', 'North Carolina': 'NC', 'North Dakota': 'ND', 'Ohio': 'OH',
+    'Oklahoma': 'OK', 'Oregon': 'OR', 'Pennsylvania': 'PA', 'Rhode Island': 'RI', 'South Carolina': 'SC',
+    'South Dakota': 'SD', 'Tennessee': 'TN', 'Texas': 'TX', 'Utah': 'UT', 'Vermont': 'VT',
+    'Virginia': 'VA', 'Washington': 'WA', 'West Virginia': 'WV', 'Wisconsin': 'WI', 'Wyoming': 'WY',
+    'District of Columbia': 'DC'
+  };
+  return stateMap[stateName] || stateName.substring(0, 2).toUpperCase();
 }
 
 // Helper function to generate ImageObject schema
@@ -572,10 +621,17 @@ function generateImageSchema(imageData: {
 
 export default async function CityPage({ params }: CityPageProps) {
   const { slug } = await params;
-  const city = cities.find(c => c.slug === slug);
-
+  
+  // First, check if we have rich data for this city
+  let city = richCities.find(c => c.slug === slug);
+  
+  // If not, generate from cities-data.ts
   if (!city) {
-    notFound();
+    const basicCityData = allCitiesData.find(c => c.slug === slug);
+    if (!basicCityData) {
+      notFound();
+    }
+    city = generateDefaultCityData(basicCityData);
   }
 
   const pageTitle = `${city.name} Experiential Marketing & Brand Activation | AirFresh Marketing`;

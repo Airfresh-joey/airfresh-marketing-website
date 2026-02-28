@@ -319,7 +319,7 @@ export default function Home() {
                 title: "Netflix Cowboy Bebop Launch",
                 image: "/images/clients/netflix-activation-exact.jpg",
                 description: "Immersive pop-up experience generating massive social engagement",
-                link: "/case-studies/netflix"
+                link: "/case-studies/netflix-stranger-things-popup"
               },
               {
                 title: "Grubhub NYC Street Team",

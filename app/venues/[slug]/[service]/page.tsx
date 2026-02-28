@@ -108,6 +108,54 @@ const services = [
       'Data capture proficiency'
     ],
     pricing: 'Starting at $35/hour per staff member'
+  },
+  {
+    slug: 'convention-staffing',
+    name: 'Convention Staffing',
+    description: 'Complete convention staffing solutions including booth staff, demo specialists, and event support personnel.',
+    benefits: [
+      'Full-service convention support',
+      'Experienced trade show professionals',
+      'Flexible team sizing',
+      'Multi-day event coverage'
+    ],
+    pricing: 'Starting at $32/hour per staff member'
+  },
+  {
+    slug: 'event-management',
+    name: 'Event Management',
+    description: 'On-site event coordination and management to ensure seamless execution of your venue activations.',
+    benefits: [
+      'Professional event coordination',
+      'Vendor and staff management',
+      'Timeline and logistics oversight',
+      'Problem resolution expertise'
+    ],
+    pricing: 'Starting at $50/hour for event managers'
+  },
+  {
+    slug: 'experiential-marketing',
+    name: 'Experiential Marketing',
+    description: 'Immersive brand experiences and interactive activations designed for convention and venue environments.',
+    benefits: [
+      'Memorable brand experiences',
+      'Interactive engagement tactics',
+      'Social media integration',
+      'Measurable ROI tracking'
+    ],
+    pricing: 'Custom pricing based on activation scope'
+  },
+  {
+    slug: 'sampling-teams',
+    name: 'Sampling Teams',
+    description: 'Professional product sampling specialists trained to engage attendees and drive trial at events.',
+    benefits: [
+      'High-volume sampling capacity',
+      'Brand messaging expertise',
+      'Lead capture capabilities',
+      'Health and safety compliance'
+    ],
+    pricing: 'Starting at $30/hour per team member'
   }
 ];
 

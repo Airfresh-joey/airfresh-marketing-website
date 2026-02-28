@@ -62,6 +62,20 @@ export const serviceTypes: ServiceType[] = [
     title: 'Street Team Marketing Campaigns',
     description: 'Mobilize energetic street teams to distribute samples, generate awareness, and create grassroots buzz in high-traffic areas.',
     keywords: ['street teams', 'sampling campaigns', 'grassroots marketing', 'field marketing']
+  },
+  {
+    slug: 'street-teams',
+    name: 'Street Teams',
+    title: 'Professional Street Team Services',
+    description: 'High-energy street teams for guerrilla marketing, product distribution, and grassroots brand activations in urban environments.',
+    keywords: ['street teams', 'guerrilla marketing', 'grassroots marketing', 'urban activation']
+  },
+  {
+    slug: 'sampling',
+    name: 'Sampling',
+    title: 'Product Sampling Services',
+    description: 'Professional product sampling campaigns that drive trial, build brand awareness, and generate consumer engagement.',
+    keywords: ['product sampling', 'brand sampling', 'sampling campaigns', 'trial marketing']
   }
 ];
 
