@@ -106,10 +106,8 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
-      // Get reCAPTCHA token
-      let recaptchaToken = "";
-      if (executeRecaptcha) {try {
-        recaptchaToken = await executeRecaptcha("contact_form"); } catch(e) { console.log("reCAPTCHA not available, continuing without"); }}
+      // reCAPTCHA disabled - Formshield handles spam protection
+      const recaptchaToken = ""; catch(e) { console.log("reCAPTCHA not available, continuing without"); }}
       }
 
       const response = await fetch("https://formspree.io/f/myznknaa", {
