@@ -121,6 +121,8 @@ const nextConfig = {
       { source: '/locations/brand-ambassadors-:city', destination: '/cities/:city', permanent: true },
       // Case study short URL redirect
       { source: '/case-studies/netflix', destination: '/case-studies/netflix-stranger-things-popup', permanent: true },
+      // City-services slug consolidation (old slugs → new standard slugs)
+      { source: '/city-services/:city-street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
     ]
   },
 

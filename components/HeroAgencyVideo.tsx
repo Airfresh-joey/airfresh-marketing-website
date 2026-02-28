@@ -74,7 +74,7 @@ export default function HeroAgencyVideo() {
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={VIDEO_THUMBNAIL_DESKTOP}
-              alt=""
+              alt="AirFresh Marketing experiential brand activation with professional brand ambassadors"
               fetchPriority="high"
               decoding="async"
               className="absolute inset-0 w-full h-full object-cover"

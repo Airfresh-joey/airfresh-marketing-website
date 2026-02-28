@@ -57,13 +57,6 @@ export const serviceTypes: ServiceType[] = [
     keywords: ['promo models', 'product sampling', 'brand modeling', 'promotional staff']
   },
   {
-    slug: 'street-team-marketing',
-    name: 'Street Team Marketing',
-    title: 'Street Team Marketing Campaigns',
-    description: 'Mobilize energetic street teams to distribute samples, generate awareness, and create grassroots buzz in high-traffic areas.',
-    keywords: ['street teams', 'sampling campaigns', 'grassroots marketing', 'field marketing']
-  },
-  {
     slug: 'street-teams',
     name: 'Street Teams',
     title: 'Professional Street Team Services',
