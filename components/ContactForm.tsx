@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect, useCallback } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { insertContactSubmissionSchema } from "@shared/schema";
@@ -9,6 +9,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { useToast } from "@/hooks/use-toast";
 import { useSearchParams } from "next/navigation";
+import { useGoogleReCaptcha } from 'react-google-recaptcha-v3';
 import type { InsertContactSubmission } from "@shared/schema";
 
 // Format phone number as user types
@@ -32,6 +33,7 @@ export default function ContactForm() {
   const [isFormValid, setIsFormValid] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const searchParams = useSearchParams();
+  const { executeRecaptcha } = useGoogleReCaptcha();
   
   // Capture source page from URL param or referrer
   const [sourcePage, setSourcePage] = useState<string>("");
@@ -81,7 +83,7 @@ export default function ContactForm() {
     return () => subscription.unsubscribe();
   }, [form]);
 
-  const onSubmit = async (data: InsertContactSubmission) => {
+  const onSubmit = useCallback(async (data: InsertContactSubmission) => {
     // Additional validation before submission
     if (!data.firstName || !data.lastName || !data.email || !data.message) {
       toast({
@@ -104,6 +106,12 @@ export default function ContactForm() {
     setIsSubmitting(true);
     
     try {
+      // Get reCAPTCHA token
+      let recaptchaToken = '';
+      if (executeRecaptcha) {
+        recaptchaToken = await executeRecaptcha('contact_form');
+      }
+
       const response = await fetch("https://formspree.io/f/myznknaa", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
@@ -116,6 +124,7 @@ export default function ContactForm() {
           inquiryType: data.inquiryType || "",
           message: data.message,
           _sourcePage: sourcePage || "direct", // Track which page they came from
+          "g-recaptcha-response": recaptchaToken, // reCAPTCHA token for Formspree
         }),
       });
 
@@ -148,7 +157,7 @@ export default function ContactForm() {
     } finally {
       setIsSubmitting(false);
     }
-  };
+  }, [executeRecaptcha, form, sourcePage, toast]);
 
   return (
     <div className="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
