@@ -1,0 +1,2103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AirFresh Marketing - SEO & Backlink Playbook</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #fff;
+        }
+        .cover-page {
+            height: 100vh;
+            background: linear-gradient(135deg, #0891b2 0%, #1e40af 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-align: center;
+            page-break-after: always;
+        }
+        .cover-page h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            font-weight: 700;
+        }
+        .cover-page h2 {
+            font-size: 28px;
+            font-weight: 400;
+            opacity: 0.9;
+            margin-bottom: 40px;
+        }
+        .cover-page .subtitle {
+            font-size: 18px;
+            opacity: 0.8;
+            max-width: 600px;
+        }
+        .cover-page .date {
+            position: absolute;
+            bottom: 40px;
+            font-size: 14px;
+            opacity: 0.7;
+        }
+        .page {
+            padding: 40px 60px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        .page-break {
+            page-break-after: always;
+        }
+        h1 {
+            color: #0891b2;
+            font-size: 32px;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 3px solid #0891b2;
+        }
+        h2 {
+            color: #1e40af;
+            font-size: 24px;
+            margin: 30px 0 15px 0;
+        }
+        h3 {
+            color: #333;
+            font-size: 20px;
+            margin: 25px 0 10px 0;
+        }
+        h4 {
+            color: #555;
+            font-size: 16px;
+            margin: 20px 0 10px 0;
+        }
+        p {
+            margin-bottom: 15px;
+        }
+        .highlight-box {
+            background: linear-gradient(135deg, #f0f9ff 0%, #e0f2fe 100%);
+            border-left: 4px solid #0891b2;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .warning-box {
+            background: #fef3c7;
+            border-left: 4px solid #f59e0b;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .success-box {
+            background: #d1fae5;
+            border-left: 4px solid #10b981;
+            padding: 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 14px;
+        }
+        th {
+            background: #0891b2;
+            color: white;
+            padding: 12px;
+            text-align: left;
+        }
+        td {
+            padding: 12px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        tr:nth-child(even) {
+            background: #f9fafb;
+        }
+        .checklist {
+            list-style: none;
+            padding: 0;
+        }
+        .checklist li {
+            padding: 10px 0 10px 35px;
+            position: relative;
+            border-bottom: 1px solid #e5e7eb;
+        }
+        .checklist li:before {
+            content: "☐";
+            position: absolute;
+            left: 0;
+            font-size: 20px;
+            color: #0891b2;
+        }
+        .step-box {
+            background: #f8fafc;
+            border: 1px solid #e2e8f0;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+        }
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background: #0891b2;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            font-weight: bold;
+            margin-right: 10px;
+        }
+        .copy-block {
+            background: #1e293b;
+            color: #e2e8f0;
+            padding: 20px;
+            border-radius: 8px;
+            margin: 15px 0;
+            font-family: 'Courier New', monospace;
+            font-size: 13px;
+            white-space: pre-wrap;
+            word-wrap: break-word;
+        }
+        .priority-high {
+            color: #dc2626;
+            font-weight: bold;
+        }
+        .priority-medium {
+            color: #f59e0b;
+            font-weight: bold;
+        }
+        .priority-low {
+            color: #10b981;
+        }
+        .toc {
+            background: #f8fafc;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 20px 0;
+        }
+        .toc ul {
+            list-style: none;
+            padding-left: 0;
+        }
+        .toc li {
+            padding: 8px 0;
+            border-bottom: 1px dotted #cbd5e1;
+        }
+        .toc a {
+            color: #1e40af;
+            text-decoration: none;
+        }
+        .directory-card {
+            border: 2px solid #e2e8f0;
+            border-radius: 12px;
+            padding: 25px;
+            margin: 25px 0;
+            background: #fff;
+        }
+        .directory-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 15px;
+            padding-bottom: 15px;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        .directory-name {
+            font-size: 22px;
+            font-weight: bold;
+            color: #1e40af;
+        }
+        .directory-dr {
+            background: #0891b2;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+        .field-label {
+            font-weight: bold;
+            color: #374151;
+            margin-top: 15px;
+            margin-bottom: 5px;
+        }
+        .field-value {
+            background: #f1f5f9;
+            padding: 10px 15px;
+            border-radius: 6px;
+            font-size: 14px;
+        }
+        .tag {
+            display: inline-block;
+            background: #dbeafe;
+            color: #1e40af;
+            padding: 3px 10px;
+            border-radius: 12px;
+            font-size: 12px;
+            margin-right: 5px;
+            margin-bottom: 5px;
+        }
+        footer {
+            text-align: center;
+            padding: 20px;
+            color: #6b7280;
+            font-size: 12px;
+            border-top: 1px solid #e5e7eb;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<!-- COVER PAGE -->
+<div class="cover-page">
+    <h1>🚀 AirFresh Marketing</h1>
+    <h2>SEO & Backlink Playbook</h2>
+    <p class="subtitle">
+        The Complete Guide to Directory Submissions, Backlink Building, and Search Engine Optimization
+    </p>
+    <p class="date">February 2026 | Prepared by HummingAgent</p>
+</div>
+
+<!-- TABLE OF CONTENTS -->
+<div class="page page-break">
+    <h1>📋 Table of Contents</h1>
+    
+    <div class="toc">
+        <ul>
+            <li><strong>SECTION 1:</strong> Executive Summary & Goals</li>
+            <li><strong>SECTION 2:</strong> Company Profile (Copy-Paste Ready)</li>
+            <li><strong>SECTION 3:</strong> High-Priority Directories (DR 70+)</li>
+            <li><strong>SECTION 4:</strong> Industry-Specific Directories</li>
+            <li><strong>SECTION 5:</strong> Business & Local Directories</li>
+            <li><strong>SECTION 6:</strong> Google Business Profile Optimization</li>
+            <li><strong>SECTION 7:</strong> Clutch.co Review Strategy</li>
+            <li><strong>SECTION 8:</strong> PR & Press Release Strategy</li>
+            <li><strong>SECTION 9:</strong> Guest Posting Opportunities</li>
+            <li><strong>SECTION 10:</strong> Link Building Tactics</li>
+            <li><strong>SECTION 11:</strong> Content Calendar</li>
+            <li><strong>SECTION 12:</strong> Tracking & Reporting</li>
+            <li><strong>APPENDIX A:</strong> Complete Directory List (50+)</li>
+            <li><strong>APPENDIX B:</strong> Submission Tracker Spreadsheet</li>
+            <li><strong>APPENDIX C:</strong> Email Templates</li>
+        </ul>
+    </div>
+</div>
+
+<!-- SECTION 1: EXECUTIVE SUMMARY -->
+<div class="page page-break">
+    <h1>SECTION 1: Executive Summary & Goals</h1>
+    
+    <h2>Objective</h2>
+    <p>Build high-quality backlinks to airfreshmarketing.com to improve search engine rankings, increase organic traffic, and establish authority in the experiential marketing industry.</p>
+    
+    <div class="highlight-box">
+        <h3>🎯 6-Month Goals</h3>
+        <ul>
+            <li>Acquire <strong>50+ quality backlinks</strong> from directories and publications</li>
+            <li>Achieve <strong>Domain Rating 40+</strong> (check current in Ahrefs)</li>
+            <li>Rank <strong>Top 3</strong> for "experiential marketing agency [city]" in 5 markets</li>
+            <li>Increase organic traffic by <strong>50%</strong></li>
+        </ul>
+    </div>
+    
+    <h2>Strategy Overview</h2>
+    
+    <table>
+        <tr>
+            <th>Phase</th>
+            <th>Timeline</th>
+            <th>Activities</th>
+            <th>Expected Links</th>
+        </tr>
+        <tr>
+            <td><strong>Phase 1</strong></td>
+            <td>Weeks 1-2</td>
+            <td>High-priority directory submissions</td>
+            <td>10-15 links</td>
+        </tr>
+        <tr>
+            <td><strong>Phase 2</strong></td>
+            <td>Weeks 3-4</td>
+            <td>Industry & business directories</td>
+            <td>15-20 links</td>
+        </tr>
+        <tr>
+            <td><strong>Phase 3</strong></td>
+            <td>Months 2-3</td>
+            <td>PR, guest posts, partnerships</td>
+            <td>10-15 links</td>
+        </tr>
+        <tr>
+            <td><strong>Ongoing</strong></td>
+            <td>Monthly</td>
+            <td>Content, HARO, outreach</td>
+            <td>5-10 links/month</td>
+        </tr>
+    </table>
+    
+    <h2>Team Responsibilities</h2>
+    
+    <table>
+        <tr>
+            <th>Task</th>
+            <th>Owner</th>
+            <th>Time Required</th>
+        </tr>
+        <tr>
+            <td>Directory submissions</td>
+            <td>Marketing Team</td>
+            <td>2-3 hours/week</td>
+        </tr>
+        <tr>
+            <td>Client review requests</td>
+            <td>Account Managers</td>
+            <td>1 hour/week</td>
+        </tr>
+        <tr>
+            <td>Google Business management</td>
+            <td>Marketing Team</td>
+            <td>30 min/week</td>
+        </tr>
+        <tr>
+            <td>Content/blog writing</td>
+            <td>Content Team</td>
+            <td>4-6 hours/week</td>
+        </tr>
+        <tr>
+            <td>PR/press releases</td>
+            <td>Marketing Lead</td>
+            <td>2-3 hours/month</td>
+        </tr>
+    </table>
+</div>
+
+<!-- SECTION 2: COMPANY PROFILE -->
+<div class="page page-break">
+    <h1>SECTION 2: Company Profile (Copy-Paste Ready)</h1>
+    
+    <div class="warning-box">
+        <strong>⚠️ IMPORTANT:</strong> Use these exact descriptions for all directory submissions to maintain consistency and optimize for SEO keywords.
+    </div>
+    
+    <h2>Basic Information</h2>
+    
+    <div class="field-label">Company Name</div>
+    <div class="field-value">AirFresh Marketing</div>
+    
+    <div class="field-label">Website</div>
+    <div class="field-value">https://www.airfreshmarketing.com</div>
+    
+    <div class="field-label">Phone</div>
+    <div class="field-value">(303) 720-6060</div>
+    
+    <div class="field-label">Email</div>
+    <div class="field-value">hello@airfreshmarketing.com</div>
+    
+    <div class="field-label">Address</div>
+    <div class="field-value">1580 N. Logan St. Suite 660, Denver, CO 80203</div>
+    
+    <div class="field-label">Year Founded</div>
+    <div class="field-value">2001</div>
+    
+    <div class="field-label">Company Size</div>
+    <div class="field-value">50-100 employees (plus 20,000+ brand ambassador network)</div>
+    
+    <div class="field-label">Annual Revenue Range (if asked)</div>
+    <div class="field-value">$5M - $10M</div>
+    
+    <h2>Descriptions</h2>
+    
+    <div class="field-label">Tagline (Under 100 characters)</div>
+    <div class="copy-block">Experiential Marketing Agency | Brand Ambassadors | Event Staffing Nationwide</div>
+    
+    <div class="field-label">Short Description (Under 160 characters - for meta descriptions)</div>
+    <div class="copy-block">Award-winning experiential marketing agency providing brand ambassadors, event staffing, and activations nationwide for Fortune 500 brands. 25+ years experience.</div>
+    
+    <div class="field-label">Medium Description (Under 500 characters)</div>
+    <div class="copy-block">AirFresh Marketing is a full-service experiential marketing agency with 25+ years of experience. We provide professional brand ambassadors, street teams, event staffing, and product sampling in 50+ cities nationwide. Our network of 20,000+ trained brand ambassadors has delivered successful campaigns for Microsoft, Netflix, Google, Pepsi, Red Bull, and 300+ leading brands. From product launches to nationwide tours, we create unforgettable consumer experiences that drive engagement and ROI.</div>
+    
+    <div class="field-label">Long Description (500-1000 characters)</div>
+    <div class="copy-block">AirFresh Marketing is a premier experiential marketing agency headquartered in Denver, Colorado, with nationwide reach across 50+ major markets. For over 25 years, we've helped Fortune 500 companies and emerging brands create unforgettable consumer experiences that drive engagement, build loyalty, and deliver measurable ROI.
+
+Our comprehensive services include:
+• Brand Ambassador Programs - Professional representatives who embody your brand
+• Street Team Marketing - High-energy guerrilla campaigns
+• Event Staffing & Management - Trade shows, conventions, corporate events
+• Product Sampling - Strategic sampling with data capture
+• Experiential Activations - Pop-ups, mobile tours, immersive experiences
+• Promotional Models - Professional talent for launches and events
+
+What sets us apart: Network of 20,000+ vetted ambassadors, proprietary real-time tracking technology, full-service in-house production, and a 95%+ client satisfaction rate.
+
+Notable clients: Microsoft, Netflix, Google, Pepsi, Red Bull, Lyft, Formula 1, Williams Racing, and 300+ brands.
+
+Contact us: (303) 720-6060 | hello@airfreshmarketing.com</div>
+</div>
+
+<!-- COMPANY PROFILE CONTINUED -->
+<div class="page page-break">
+    <h2>Services List</h2>
+    <p>Use these exact service names when filling out directory forms:</p>
+    
+    <table>
+        <tr>
+            <th>#</th>
+            <th>Service Name</th>
+            <th>Short Description</th>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td>Brand Ambassadors</td>
+            <td>Professional, trained representatives who embody your brand values</td>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td>Street Team Marketing</td>
+            <td>High-energy guerrilla marketing campaigns in high-traffic locations</td>
+        </tr>
+        <tr>
+            <td>3</td>
+            <td>Experiential Marketing</td>
+            <td>Immersive brand experiences, pop-ups, and interactive activations</td>
+        </tr>
+        <tr>
+            <td>4</td>
+            <td>Event Staffing</td>
+            <td>Professional staff for corporate events, launches, and activations</td>
+        </tr>
+        <tr>
+            <td>5</td>
+            <td>Product Sampling</td>
+            <td>Strategic sampling campaigns with data capture and analytics</td>
+        </tr>
+        <tr>
+            <td>6</td>
+            <td>Trade Show Staffing</td>
+            <td>Booth staff, demonstrators, and lead capture specialists</td>
+        </tr>
+        <tr>
+            <td>7</td>
+            <td>Convention Staffing</td>
+            <td>Registration, hospitality, and event support staff</td>
+        </tr>
+        <tr>
+            <td>8</td>
+            <td>Promotional Models</td>
+            <td>Professional talent for product launches and events</td>
+        </tr>
+        <tr>
+            <td>9</td>
+            <td>Mobile Tours</td>
+            <td>Multi-city touring activations and roadshows</td>
+        </tr>
+        <tr>
+            <td>10</td>
+            <td>Pop-Up Experiences</td>
+            <td>Temporary retail and brand experience installations</td>
+        </tr>
+    </table>
+    
+    <h2>Industries Served</h2>
+    <p>
+        <span class="tag">Technology</span>
+        <span class="tag">Food & Beverage</span>
+        <span class="tag">Consumer Packaged Goods</span>
+        <span class="tag">Automotive</span>
+        <span class="tag">Entertainment</span>
+        <span class="tag">Sports</span>
+        <span class="tag">Health & Wellness</span>
+        <span class="tag">Retail</span>
+        <span class="tag">Financial Services</span>
+        <span class="tag">Telecommunications</span>
+    </p>
+    
+    <h2>Service Areas</h2>
+    <p><strong>National Coverage - 50+ Cities Including:</strong></p>
+    <p>
+        <span class="tag">New York, NY</span>
+        <span class="tag">Los Angeles, CA</span>
+        <span class="tag">Chicago, IL</span>
+        <span class="tag">Miami, FL</span>
+        <span class="tag">Denver, CO (HQ)</span>
+        <span class="tag">San Francisco, CA</span>
+        <span class="tag">Austin, TX</span>
+        <span class="tag">Atlanta, GA</span>
+        <span class="tag">Las Vegas, NV</span>
+        <span class="tag">Dallas, TX</span>
+        <span class="tag">Seattle, WA</span>
+        <span class="tag">Boston, MA</span>
+        <span class="tag">Phoenix, AZ</span>
+        <span class="tag">Houston, TX</span>
+        <span class="tag">Philadelphia, PA</span>
+        <span class="tag">San Diego, CA</span>
+        <span class="tag">Nashville, TN</span>
+        <span class="tag">Portland, OR</span>
+        <span class="tag">Minneapolis, MN</span>
+        <span class="tag">Detroit, MI</span>
+    </p>
+    
+    <h2>Notable Clients</h2>
+    <p>
+        <span class="tag">Microsoft</span>
+        <span class="tag">Netflix</span>
+        <span class="tag">Google</span>
+        <span class="tag">Pepsi</span>
+        <span class="tag">Red Bull</span>
+        <span class="tag">Lyft</span>
+        <span class="tag">Formula 1</span>
+        <span class="tag">Williams Racing</span>
+        <span class="tag">Grubhub</span>
+        <span class="tag">MAC Cosmetics</span>
+        <span class="tag">Duracell</span>
+        <span class="tag">Buffalo Wild Wings</span>
+    </p>
+    
+    <h2>Key Statistics</h2>
+    <table>
+        <tr>
+            <td><strong>25+</strong></td>
+            <td>Years in Business</td>
+        </tr>
+        <tr>
+            <td><strong>300+</strong></td>
+            <td>Brands Served</td>
+        </tr>
+        <tr>
+            <td><strong>1,000+</strong></td>
+            <td>Events Produced</td>
+        </tr>
+        <tr>
+            <td><strong>50+</strong></td>
+            <td>Cities Nationwide</td>
+        </tr>
+        <tr>
+            <td><strong>20,000+</strong></td>
+            <td>Brand Ambassador Network</td>
+        </tr>
+        <tr>
+            <td><strong>95%</strong></td>
+            <td>Client Satisfaction Rate</td>
+        </tr>
+    </table>
+    
+    <h2>Social Media URLs</h2>
+    <div class="field-label">LinkedIn</div>
+    <div class="field-value">https://www.linkedin.com/company/airfresh-marketing</div>
+    
+    <div class="field-label">Instagram</div>
+    <div class="field-value">https://www.instagram.com/airfreshmarketing/</div>
+    
+    <div class="field-label">Facebook</div>
+    <div class="field-value">https://www.facebook.com/AirFreshMarketing</div>
+    
+    <div class="field-label">Twitter/X</div>
+    <div class="field-value">https://twitter.com/AirFreshmktg</div>
+</div>
+
+<!-- SECTION 3: HIGH-PRIORITY DIRECTORIES -->
+<div class="page page-break">
+    <h1>SECTION 3: High-Priority Directories (DR 70+)</h1>
+    
+    <div class="highlight-box">
+        <strong>📌 Priority Level:</strong> These directories have the highest Domain Rating and will provide the most SEO value. Complete these first!
+    </div>
+    
+    <!-- CLUTCH -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">1. Clutch.co</span>
+            <span class="directory-dr">DR: 91</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://clutch.co/agencies/apply">https://clutch.co/agencies/apply</a></p>
+        <p><strong>Cost:</strong> Free (Premium options available)</p>
+        <p><strong>Time to Complete:</strong> 30-45 minutes</p>
+        <p><strong>Approval Time:</strong> 1-2 weeks</p>
+        
+        <div class="warning-box">
+            <strong>⚠️ CRITICAL:</strong> Clutch rankings depend heavily on VERIFIED CLIENT REVIEWS. You need at least 3 reviews to rank well. See Section 7 for review strategy.
+        </div>
+        
+        <h4>Step-by-Step Instructions:</h4>
+        
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <strong>Go to:</strong> https://clutch.co/agencies/apply
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <strong>Click "List Your Company"</strong> and create an account with your business email
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <strong>Select Categories:</strong>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>Event Marketing Companies</li>
+                <li>Experiential Marketing Agencies</li>
+                <li>Brand Activation Agencies</li>
+                <li>Promotional Marketing Companies</li>
+            </ul>
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <strong>Fill in company details</strong> using the information from Section 2
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <strong>Add 3-5 case studies</strong> with results (use F1, Netflix, Microsoft examples)
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">6</span>
+            <strong>Submit and verify</strong> your listing via email
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">7</span>
+            <strong>Request client reviews</strong> (see Section 7 for email templates)
+        </div>
+        
+        <h4>Categories to Select:</h4>
+        <p>
+            <span class="tag">Event Marketing</span>
+            <span class="tag">Experiential Marketing</span>
+            <span class="tag">Brand Activation</span>
+            <span class="tag">Promotional Marketing</span>
+        </p>
+    </div>
+    
+    <!-- DESIGNRUSH -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">2. DesignRush</span>
+            <span class="directory-dr">DR: 73</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.designrush.com/agency/register">https://www.designrush.com/agency/register</a></p>
+        <p><strong>Cost:</strong> Free</p>
+        <p><strong>Time to Complete:</strong> 15-20 minutes</p>
+        <p><strong>Approval Time:</strong> 3-5 business days</p>
+        
+        <h4>Step-by-Step Instructions:</h4>
+        
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <strong>Go to:</strong> https://www.designrush.com/agency/register
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <strong>Fill in the registration form:</strong>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>Agency Name: AirFresh Marketing</li>
+                <li>Website: https://www.airfreshmarketing.com</li>
+                <li>Email: hello@airfreshmarketing.com</li>
+                <li>Location: Denver, CO</li>
+            </ul>
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <strong>Select service categories:</strong>
+            <ul style="margin-top: 10px; padding-left: 20px;">
+                <li>Event Marketing</li>
+                <li>Experiential Marketing</li>
+                <li>Brand Marketing</li>
+            </ul>
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <strong>Add portfolio items:</strong> Upload 3-5 images from case studies
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <strong>Paste the medium description</strong> from Section 2
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">6</span>
+            <strong>Submit and confirm</strong> via email
+        </div>
+    </div>
+</div>
+
+<!-- MORE HIGH-PRIORITY DIRECTORIES -->
+<div class="page page-break">
+    
+    <!-- GOODFIRMS -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">3. GoodFirms</span>
+            <span class="directory-dr">DR: 71</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.goodfirms.co/add-your-company">https://www.goodfirms.co/add-your-company</a></p>
+        <p><strong>Cost:</strong> Free</p>
+        <p><strong>Time to Complete:</strong> 20 minutes</p>
+        <p><strong>Approval Time:</strong> 1-2 weeks</p>
+        
+        <h4>Step-by-Step Instructions:</h4>
+        
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <strong>Visit:</strong> https://www.goodfirms.co/add-your-company
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <strong>Create account</strong> with business email
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <strong>Select categories:</strong> Event Marketing Companies, Promotional Marketing
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <strong>Fill company profile</strong> using Section 2 information
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <strong>Add client logos</strong> and case studies
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">6</span>
+            <strong>Submit for review</strong>
+        </div>
+    </div>
+    
+    <!-- AGENCY SPOTTER -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">4. Agency Spotter</span>
+            <span class="directory-dr">DR: 68</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.agencyspotter.com/agency-signup">https://www.agencyspotter.com/agency-signup</a></p>
+        <p><strong>Cost:</strong> Free basic listing</p>
+        <p><strong>Time to Complete:</strong> 20-25 minutes</p>
+        <p><strong>Approval Time:</strong> 1 week</p>
+        
+        <h4>Step-by-Step Instructions:</h4>
+        
+        <div class="step-box">
+            <span class="step-number">1</span>
+            <strong>Visit:</strong> https://www.agencyspotter.com/agency-signup
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">2</span>
+            <strong>Click "Add Your Agency"</strong>
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">3</span>
+            <strong>Complete profile:</strong> Company info, services, portfolio
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">4</span>
+            <strong>Add case studies</strong> with results metrics
+        </div>
+        
+        <div class="step-box">
+            <span class="step-number">5</span>
+            <strong>Verify via email</strong>
+        </div>
+    </div>
+</div>
+
+<!-- SECTION 4: INDUSTRY DIRECTORIES -->
+<div class="page page-break">
+    <h1>SECTION 4: Industry-Specific Directories</h1>
+    
+    <p>These directories cater specifically to the events and marketing industry. They provide relevant, high-quality backlinks.</p>
+    
+    <!-- BIZBASH -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">5. BizBash</span>
+            <span class="directory-dr">DR: 67</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.bizbash.com/vendor-directory">https://www.bizbash.com/vendor-directory</a></p>
+        <p><strong>Cost:</strong> Free basic / Paid premium</p>
+        <p><strong>Industry:</strong> Events, Meetings, Experiential</p>
+        
+        <h4>How to Submit:</h4>
+        <div class="step-box">
+            <span class="step-number">1</span>
+            Go to BizBash.com and click "Vendor Directory"
+        </div>
+        <div class="step-box">
+            <span class="step-number">2</span>
+            Click "Add Your Company" or "Get Listed"
+        </div>
+        <div class="step-box">
+            <span class="step-number">3</span>
+            Select categories: Event Staffing, Experiential Marketing, Brand Activation
+        </div>
+        <div class="step-box">
+            <span class="step-number">4</span>
+            Complete profile with company information from Section 2
+        </div>
+        
+        <h4>Categories to Select:</h4>
+        <p>
+            <span class="tag">Staffing & Talent</span>
+            <span class="tag">Experiential Marketing</span>
+            <span class="tag">Event Production</span>
+            <span class="tag">Brand Activation</span>
+        </p>
+    </div>
+    
+    <!-- EVENTMB -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">6. EventMB (Skift Meetings)</span>
+            <span class="directory-dr">DR: 55</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.skift.com/meetings/">https://www.skift.com/meetings/</a></p>
+        <p><strong>Industry:</strong> Events, Meetings, Conferences</p>
+        
+        <h4>How to Submit:</h4>
+        <div class="step-box">
+            Contact via their website to request directory listing
+        </div>
+    </div>
+    
+    <!-- SPECIAL EVENTS -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">7. Special Events Magazine</span>
+            <span class="directory-dr">DR: 52</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.specialevents.com">https://www.specialevents.com</a></p>
+        <p><strong>Industry:</strong> Special Events, Catering, Production</p>
+        
+        <h4>How to Submit:</h4>
+        <div class="step-box">
+            Look for "Supplier Directory" or "Vendor Listings" section
+        </div>
+    </div>
+    
+    <!-- EVENT MARKETER -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">8. Event Marketer</span>
+            <span class="directory-dr">DR: 54</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.eventmarketer.com">https://www.eventmarketer.com</a></p>
+        <p><strong>Industry:</strong> Experiential Marketing, Events</p>
+        
+        <h4>How to Submit:</h4>
+        <div class="step-box">
+            Contact editorial team for listing opportunities. Also submit for "It List" awards consideration.
+        </div>
+    </div>
+    
+    <!-- EXHIBITOR -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">9. EXHIBITOR Magazine</span>
+            <span class="directory-dr">DR: 50</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.exhibitoronline.com">https://www.exhibitoronline.com</a></p>
+        <p><strong>Industry:</strong> Trade Shows, Exhibits</p>
+        
+        <h4>How to Submit:</h4>
+        <div class="step-box">
+            Look for supplier/vendor directory section
+        </div>
+    </div>
+    
+    <!-- TRADE SHOW EXECUTIVE -->
+    <div class="directory-card">
+        <div class="directory-header">
+            <span class="directory-name">10. Trade Show Executive</span>
+            <span class="directory-dr">DR: 48</span>
+        </div>
+        
+        <p><strong>URL:</strong> <a href="https://www.tradeshowexecutive.com">https://www.tradeshowexecutive.com</a></p>
+        <p><strong>Industry:</strong> Trade Shows, B2B Events</p>
+    </div>
+</div>
+
+<!-- SECTION 5: BUSINESS DIRECTORIES -->
+<div class="page page-break">
+    <h1>SECTION 5: Business & Local Directories</h1>
+    
+    <p>General business directories provide foundational backlinks and help with local SEO.</p>
+    
+    <table>
+        <tr>
+            <th>Directory</th>
+            <th>DR</th>
+            <th>URL</th>
+            <th>Cost</th>
+            <th>Priority</th>
+        </tr>
+        <tr>
+            <td><strong>Google Business Profile</strong></td>
+            <td>100</td>
+            <td>business.google.com</td>
+            <td>Free</td>
+            <td class="priority-high">HIGH</td>
+        </tr>
+        <tr>
+            <td><strong>Yelp for Business</strong></td>
+            <td>94</td>
+            <td>biz.yelp.com</td>
+            <td>Free</td>
+            <td class="priority-high">HIGH</td>
+        </tr>
+        <tr>
+            <td><strong>Better Business Bureau</strong></td>
+            <td>93</td>
+            <td>bbb.org</td>
+            <td>$500+/yr</td>
+            <td class="priority-medium">MEDIUM</td>
+        </tr>
+        <tr>
+            <td><strong>Bing Places</strong></td>
+            <td>93</td>
+            <td>bingplaces.com</td>
+            <td>Free</td>
+            <td class="priority-high">HIGH</td>
+        </tr>
+        <tr>
+            <td><strong>Apple Maps</strong></td>
+            <td>100</td>
+            <td>mapsconnect.apple.com</td>
+            <td>Free</td>
+            <td class="priority-high">HIGH</td>
+        </tr>
+        <tr>
+            <td><strong>Yellow Pages</strong></td>
+            <td>91</td>
+            <td>yellowpages.com</td>
+            <td>Free</td>
+            <td class="priority-medium">MEDIUM</td>
+        </tr>
+        <tr>
+            <td><strong>Manta</strong></td>
+            <td>75</td>
+            <td>manta.com</td>
+            <td>Free</td>
+            <td class="priority-medium">MEDIUM</td>
+        </tr>
+        <tr>
+            <td><strong>Hotfrog</strong></td>
+            <td>62</td>
+            <td>hotfrog.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>Foursquare</strong></td>
+            <td>91</td>
+            <td>business.foursquare.com</td>
+            <td>Free</td>
+            <td class="priority-medium">MEDIUM</td>
+        </tr>
+        <tr>
+            <td><strong>MapQuest</strong></td>
+            <td>91</td>
+            <td>mapquest.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>Citysearch</strong></td>
+            <td>80</td>
+            <td>citysearch.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>Superpages</strong></td>
+            <td>81</td>
+            <td>superpages.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>DexKnows</strong></td>
+            <td>70</td>
+            <td>dexknows.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>Brownbook</strong></td>
+            <td>68</td>
+            <td>brownbook.net</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+        <tr>
+            <td><strong>Cylex</strong></td>
+            <td>65</td>
+            <td>cylex.us.com</td>
+            <td>Free</td>
+            <td class="priority-low">LOW</td>
+        </tr>
+    </table>
+    
+    <h2>Local Denver Directories</h2>
+    
+    <table>
+        <tr>
+            <th>Directory</th>
+            <th>URL</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td><strong>Denver Chamber of Commerce</strong></td>
+            <td>denverchamber.org</td>
+            <td>Membership required</td>
+        </tr>
+        <tr>
+            <td><strong>Colorado Business Directory</strong></td>
+            <td>colorado.com/business</td>
+            <td>State tourism site</td>
+        </tr>
+        <tr>
+            <td><strong>Denver Business Journal</strong></td>
+            <td>bizjournals.com/denver</td>
+            <td>Business directory</td>
+        </tr>
+        <tr>
+            <td><strong>5280 Magazine</strong></td>
+            <td>5280.com</td>
+            <td>Local directory</td>
+        </tr>
+    </table>
+</div>
+
+<!-- SECTION 6: GOOGLE BUSINESS -->
+<div class="page page-break">
+    <h1>SECTION 6: Google Business Profile Optimization</h1>
+    
+    <div class="success-box">
+        <strong>✅ WHY THIS MATTERS:</strong> Google Business Profile is the #1 factor for local search rankings. A fully optimized profile can increase visibility by 70%+.
+    </div>
+    
+    <h2>Access Setup</h2>
+    
+    <div class="step-box">
+        <span class="step-number">1</span>
+        <strong>Check if listing exists:</strong> Search "AirFresh Marketing Denver" on Google Maps
+    </div>
+    
+    <div class="step-box">
+        <span class="step-number">2</span>
+        <strong>Claim or create listing:</strong> Go to business.google.com
+    </div>
+    
+    <div class="step-box">
+        <span class="step-number">3</span>
+        <strong>Verify ownership:</strong> Usually via postcard, phone, or email
+    </div>
+    
+    <h2>Optimization Checklist</h2>
+    
+    <h3>Basic Information</h3>
+    <ul class="checklist">
+        <li>Business name exactly matches website: "AirFresh Marketing"</li>
+        <li>Address: 1580 N. Logan St. Suite 660, Denver, CO 80203</li>
+        <li>Phone: (303) 720-6060</li>
+        <li>Website: https://www.airfreshmarketing.com</li>
+        <li>Hours: Monday-Friday 9:00 AM - 6:00 PM</li>
+    </ul>
+    
+    <h3>Categories</h3>
+    <ul class="checklist">
+        <li>Primary: Marketing Agency</li>
+        <li>Additional: Event Planner</li>
+        <li>Additional: Advertising Agency</li>
+        <li>Additional: Business Management Consultant</li>
+    </ul>
+    
+    <h3>Description (750 characters max)</h3>
+    <div class="copy-block">AirFresh Marketing is Denver's premier experiential marketing agency with 25+ years of nationwide experience. We provide professional brand ambassadors, street teams, event staffing, and product sampling in 50+ cities. Our network of 20,000+ trained representatives has delivered successful campaigns for Microsoft, Netflix, Google, Pepsi, Red Bull, Formula 1, and 300+ brands. Services include brand activations, trade show staffing, promotional models, pop-up experiences, and mobile tours. Contact us at (303) 720-6060 for a free consultation.</div>
+    
+    <h3>Services to Add</h3>
+    <ul class="checklist">
+        <li>Brand Ambassador Services</li>
+        <li>Event Staffing</li>
+        <li>Experiential Marketing</li>
+        <li>Product Sampling</li>
+        <li>Trade Show Staffing</li>
+        <li>Street Team Marketing</li>
+        <li>Promotional Models</li>
+        <li>Convention Staffing</li>
+    </ul>
+    
+    <h3>Photos Needed (Upload 20+)</h3>
+    <ul class="checklist">
+        <li>Logo (square format)</li>
+        <li>Cover photo (1080x608px)</li>
+        <li>Office exterior</li>
+        <li>Office interior</li>
+        <li>Team photos (3-5)</li>
+        <li>Event activation photos (10-15)</li>
+        <li>Brand ambassador photos</li>
+        <li>Client work samples</li>
+    </ul>
+    
+    <h3>Posts (Weekly)</h3>
+    <p>Post updates weekly about:</p>
+    <ul>
+        <li>Recent events and activations</li>
+        <li>Behind-the-scenes content</li>
+        <li>Client success stories</li>
+        <li>Team highlights</li>
+        <li>Industry tips</li>
+    </ul>
+    
+    <h3>Q&A Section</h3>
+    <p>Pre-populate with common questions:</p>
+    <ul class="checklist">
+        <li>Q: What areas do you serve? A: We serve 50+ cities nationwide...</li>
+        <li>Q: How much do brand ambassadors cost? A: Pricing varies based on...</li>
+        <li>Q: Do you staff trade shows? A: Yes, we specialize in...</li>
+        <li>Q: How far in advance should I book? A: We recommend 4-8 weeks...</li>
+    </ul>
+    
+    <h3>Reviews Strategy</h3>
+    <p>Goal: 20+ reviews with 4.5+ average rating</p>
+    <ul class="checklist">
+        <li>Create a short review link using g.page</li>
+        <li>Add review link to email signatures</li>
+        <li>Request reviews after successful events</li>
+        <li>Respond to all reviews within 24 hours</li>
+    </ul>
+</div>
+
+<!-- SECTION 7: CLUTCH REVIEWS -->
+<div class="page page-break">
+    <h1>SECTION 7: Clutch.co Review Strategy</h1>
+    
+    <div class="warning-box">
+        <strong>⚠️ CRITICAL:</strong> Clutch rankings are primarily based on verified client reviews. Without reviews, your listing won't rank. Aim for 5+ reviews within the first month.
+    </div>
+    
+    <h2>Review Requirements</h2>
+    <ul>
+        <li>Reviews must be from real clients (Clutch verifies)</li>
+        <li>Reviewers are contacted directly by Clutch for a 15-minute call</li>
+        <li>Reviews include project details, budget range, and ratings</li>
+        <li>Minimum 3 reviews to appear in search results</li>
+    </ul>
+    
+    <h2>Ideal Review Candidates</h2>
+    <p>Choose clients who:</p>
+    <ul>
+        <li>Had a positive experience</li>
+        <li>Can speak to specific results</li>
+        <li>Are willing to spend 15 minutes on a verification call</li>
+        <li>Have worked with you on substantial projects</li>
+    </ul>
+    
+    <h2>Top Client Candidates</h2>
+    <table>
+        <tr>
+            <th>Client</th>
+            <th>Project</th>
+            <th>Contact</th>
+            <th>Status</th>
+        </tr>
+        <tr>
+            <td>Netflix</td>
+            <td>Stranger Things Pop-Up</td>
+            <td>[Add contact]</td>
+            <td>⬜ Not contacted</td>
+        </tr>
+        <tr>
+            <td>Microsoft</td>
+            <td>Product Launch</td>
+            <td>[Add contact]</td>
+            <td>⬜ Not contacted</td>
+        </tr>
+        <tr>
+            <td>Formula 1</td>
+            <td>Las Vegas GP</td>
+            <td>[Add contact]</td>
+            <td>⬜ Not contacted</td>
+        </tr>
+        <tr>
+            <td>Grubhub</td>
+            <td>NYC Street Team</td>
+            <td>[Add contact]</td>
+            <td>⬜ Not contacted</td>
+        </tr>
+        <tr>
+            <td>Red Bull</td>
+            <td>Various Events</td>
+            <td>[Add contact]</td>
+            <td>⬜ Not contacted</td>
+        </tr>
+    </table>
+    
+    <h2>Email Template: Review Request</h2>
+    
+    <div class="copy-block">Subject: Quick favor - 15 min to help AirFresh Marketing?
+
+Hi [NAME],
+
+I hope this email finds you well! I wanted to reach out because we're building our presence on Clutch.co, a leading B2B review platform.
+
+We valued our partnership on [PROJECT NAME] and would be honored if you'd consider leaving a brief review about your experience working with us.
+
+The process is simple:
+1. I'll send you an invite through Clutch
+2. A Clutch analyst will contact you for a 15-minute call
+3. You share your honest feedback about our work together
+
+Your review would help other companies discover our services and would mean a lot to our team.
+
+Would you be open to this? If so, I'll send the invite right away.
+
+Thank you for considering!
+
+Best regards,
+[YOUR NAME]
+AirFresh Marketing
+(303) 720-6060</div>
+    
+    <h2>Follow-Up Template</h2>
+    
+    <div class="copy-block">Subject: Following up - Clutch review
+
+Hi [NAME],
+
+Just wanted to follow up on my previous email about leaving a review on Clutch.
+
+I know you're busy, so I wanted to make this as easy as possible. The entire process takes about 15 minutes, and it would really help us reach more clients like you.
+
+Let me know if you have any questions or if there's a better time to discuss.
+
+Thanks again!
+[YOUR NAME]</div>
+</div>
+
+<!-- SECTION 8: PR STRATEGY -->
+<div class="page page-break">
+    <h1>SECTION 8: PR & Press Release Strategy</h1>
+    
+    <h2>Press Release Distribution Services</h2>
+    
+    <table>
+        <tr>
+            <th>Service</th>
+            <th>Cost</th>
+            <th>Reach</th>
+            <th>Best For</th>
+        </tr>
+        <tr>
+            <td><strong>PRWeb</strong></td>
+            <td>$99-$499</td>
+            <td>Good</td>
+            <td>Budget-friendly</td>
+        </tr>
+        <tr>
+            <td><strong>Business Wire</strong></td>
+            <td>$400+</td>
+            <td>Excellent</td>
+            <td>Major announcements</td>
+        </tr>
+        <tr>
+            <td><strong>PR Newswire</strong></td>
+            <td>$500+</td>
+            <td>Excellent</td>
+            <td>Industry reach</td>
+        </tr>
+        <tr>
+            <td><strong>EIN Presswire</strong></td>
+            <td>$49-$199</td>
+            <td>Good</td>
+            <td>Budget option</td>
+        </tr>
+    </table>
+    
+    <h2>Press Release Topics</h2>
+    
+    <h3>Immediate Opportunities:</h3>
+    <ol>
+        <li><strong>Olympics 2028 Partnership</strong> - "AirFresh Marketing Selected as Staffing Partner for 2028 Los Angeles Olympics"</li>
+        <li><strong>Company Milestone</strong> - "AirFresh Marketing Celebrates 25 Years, 1000+ Events Produced"</li>
+        <li><strong>Case Study Results</strong> - "AirFresh Marketing Delivers 300,000+ Fan Interactions at Formula 1 Las Vegas Grand Prix"</li>
+    </ol>
+    
+    <h3>Ongoing Topics:</h3>
+    <ul>
+        <li>Major client wins</li>
+        <li>New city expansions</li>
+        <li>Industry awards</li>
+        <li>Executive hires</li>
+        <li>Technology launches</li>
+        <li>Survey/research findings</li>
+    </ul>
+    
+    <h2>Sample Press Release</h2>
+    
+    <div class="copy-block">FOR IMMEDIATE RELEASE
+
+AirFresh Marketing Selected as Official Staffing Partner for 2028 Los Angeles Olympics
+
+DENVER, CO – [DATE] – AirFresh Marketing, a leading experiential marketing agency, today announced its selection as an official staffing partner for the 2028 Los Angeles Olympic Games. The agency will deploy thousands of brand ambassadors, event staff, and promotional personnel across Olympic venues.
+
+"This partnership represents the culmination of 25 years of excellence in experiential marketing," said [EXECUTIVE NAME], [TITLE] at AirFresh Marketing. "Our team is honored to help create unforgettable experiences for athletes and spectators from around the world."
+
+AirFresh Marketing will provide:
+• Brand ambassador programs for Olympic sponsors
+• Event staffing across 30+ venues
+• Product sampling and promotional campaigns
+• VIP hospitality services
+
+With a network of 20,000+ trained brand ambassadors and experience serving Fortune 500 clients including Microsoft, Netflix, and Google, AirFresh Marketing brings unparalleled expertise to the world's largest sporting event.
+
+About AirFresh Marketing
+AirFresh Marketing is a full-service experiential marketing agency headquartered in Denver, Colorado. For over 25 years, the company has delivered professional brand ambassadors, event staffing, and experiential activations for 300+ leading brands across 50+ cities nationwide.
+
+Contact:
+[NAME]
+[EMAIL]
+(303) 720-6060
+www.airfreshmarketing.com
+
+###</div>
+</div>
+
+<!-- SECTION 9: GUEST POSTING -->
+<div class="page page-break">
+    <h1>SECTION 9: Guest Posting Opportunities</h1>
+    
+    <p>Guest posting on industry publications builds authority backlinks and establishes thought leadership.</p>
+    
+    <h2>Target Publications</h2>
+    
+    <table>
+        <tr>
+            <th>Publication</th>
+            <th>DR</th>
+            <th>Topics</th>
+            <th>Contact</th>
+        </tr>
+        <tr>
+            <td><strong>Event Marketer</strong></td>
+            <td>54</td>
+            <td>Experiential, activations</td>
+            <td>editorial@eventmarketer.com</td>
+        </tr>
+        <tr>
+            <td><strong>BizBash</strong></td>
+            <td>67</td>
+            <td>Events, trends</td>
+            <td>Submit via website</td>
+        </tr>
+        <tr>
+            <td><strong>AdAge</strong></td>
+            <td>91</td>
+            <td>Marketing insights</td>
+            <td>Contributor application</td>
+        </tr>
+        <tr>
+            <td><strong>Marketing Week</strong></td>
+            <td>82</td>
+            <td>Marketing strategy</td>
+            <td>editorial@marketingweek.com</td>
+        </tr>
+        <tr>
+            <td><strong>Forbes (Councils)</strong></td>
+            <td>95</td>
+            <td>Business, leadership</td>
+            <td>councils.forbes.com</td>
+        </tr>
+        <tr>
+            <td><strong>Entrepreneur</strong></td>
+            <td>92</td>
+            <td>Business growth</td>
+            <td>Contributor program</td>
+        </tr>
+        <tr>
+            <td><strong>Inc.</strong></td>
+            <td>92</td>
+            <td>Business</td>
+            <td>Contributor program</td>
+        </tr>
+        <tr>
+            <td><strong>Chief Marketer</strong></td>
+            <td>58</td>
+            <td>Marketing</td>
+            <td>editorial@chiefmarketer.com</td>
+        </tr>
+    </table>
+    
+    <h2>Article Topic Ideas</h2>
+    
+    <ol>
+        <li><strong>"How We Staffed 500+ Events for Formula 1 Las Vegas"</strong> - Behind-the-scenes logistics story</li>
+        <li><strong>"The ROI of Experiential Marketing: Data from 300+ Campaigns"</strong> - Data-driven insights</li>
+        <li><strong>"5 Trends Shaping Experiential Marketing in 2026"</strong> - Thought leadership</li>
+        <li><strong>"Building a 20,000-Person Brand Ambassador Network"</strong> - Operations story</li>
+        <li><strong>"Why Experiential Marketing Outperforms Digital (With Data)"</strong> - Comparison piece</li>
+        <li><strong>"The Future of Events: What Olympics 2028 Will Look Like"</strong> - Forward-looking</li>
+    </ol>
+    
+    <h2>Outreach Email Template</h2>
+    
+    <div class="copy-block">Subject: Guest article pitch: [TOPIC]
+
+Hi [EDITOR NAME],
+
+I'm [YOUR NAME], [TITLE] at AirFresh Marketing, an experiential marketing agency that's worked with Microsoft, Netflix, Formula 1, and 300+ brands over 25 years.
+
+I'd love to contribute an article to [PUBLICATION] on [TOPIC]. Here's my angle:
+
+[2-3 sentence pitch]
+
+Key points I'd cover:
+• [Point 1]
+• [Point 2]
+• [Point 3]
+
+I can include original data from our campaigns and real examples. The piece would be [WORD COUNT] words and exclusive to [PUBLICATION].
+
+Would this be of interest? Happy to adjust the angle based on your editorial needs.
+
+Best,
+[YOUR NAME]
+[TITLE]
+AirFresh Marketing
+www.airfreshmarketing.com</div>
+</div>
+
+<!-- SECTION 10: LINK BUILDING -->
+<div class="page page-break">
+    <h1>SECTION 10: Additional Link Building Tactics</h1>
+    
+    <h2>1. HARO (Help a Reporter Out)</h2>
+    
+    <div class="highlight-box">
+        <strong>What:</strong> Journalists post queries; you respond with expert quotes and get backlinks.<br>
+        <strong>URL:</strong> helpareporter.com<br>
+        <strong>Cost:</strong> Free<br>
+        <strong>Time:</strong> 15-30 min/day
+    </div>
+    
+    <h4>How to Use:</h4>
+    <ol>
+        <li>Sign up at helpareporter.com as a "Source"</li>
+        <li>Receive 3 emails daily with journalist queries</li>
+        <li>Filter for marketing, events, business topics</li>
+        <li>Respond quickly (within 2-3 hours) with expert quotes</li>
+        <li>Include your credentials and company link</li>
+    </ol>
+    
+    <h4>Topics to Monitor:</h4>
+    <ul>
+        <li>Marketing and advertising</li>
+        <li>Events and meetings</li>
+        <li>Small business</li>
+        <li>Entrepreneurship</li>
+        <li>Customer experience</li>
+    </ul>
+    
+    <h2>2. Client/Partner Link Requests</h2>
+    
+    <p>Request backlinks from:</p>
+    <ul>
+        <li>Clients' vendor/partner pages</li>
+        <li>Venue partner directories</li>
+        <li>Event sponsor acknowledgment pages</li>
+        <li>Industry association memberships</li>
+    </ul>
+    
+    <h2>3. Broken Link Building</h2>
+    
+    <ol>
+        <li>Use Ahrefs or SEMrush to find broken links on event industry sites</li>
+        <li>Create content that could replace the broken link</li>
+        <li>Contact webmaster offering your content as replacement</li>
+    </ol>
+    
+    <h2>4. Resource Page Link Building</h2>
+    
+    <p>Target resource pages on:</p>
+    <ul>
+        <li>University event planning programs</li>
+        <li>Convention center vendor lists</li>
+        <li>Trade association resources</li>
+        <li>Event planning guides</li>
+    </ul>
+    
+    <h2>5. Scholarship Link Building</h2>
+    
+    <p>Create a small scholarship ($500-$1000) for marketing students. Universities link to scholarship pages, providing .edu backlinks (highest value).</p>
+    
+    <h2>6. Data/Survey Link Building</h2>
+    
+    <p>Conduct original research/surveys and publish findings. Examples:</p>
+    <ul>
+        <li>"State of Experiential Marketing 2026" report</li>
+        <li>"Brand Ambassador Industry Salary Survey"</li>
+        <li>"Event Marketing ROI Benchmarks"</li>
+    </ul>
+</div>
+
+<!-- SECTION 11: CONTENT CALENDAR -->
+<div class="page page-break">
+    <h1>SECTION 11: Content Calendar</h1>
+    
+    <p>Consistent content creation attracts natural backlinks and improves rankings.</p>
+    
+    <h2>Monthly Content Goals</h2>
+    <ul>
+        <li>2-4 blog posts</li>
+        <li>1 case study</li>
+        <li>4 social media posts/week</li>
+        <li>1 press release (as needed)</li>
+        <li>1 Google Business post/week</li>
+    </ul>
+    
+    <h2>Blog Topic Categories</h2>
+    
+    <h3>Commercial Intent (Target Keywords)</h3>
+    <ul>
+        <li>"Brand ambassador cost guide 2026"</li>
+        <li>"How to hire event staff [city]"</li>
+        <li>"Experiential marketing agency pricing"</li>
+        <li>"Trade show staffing services"</li>
+        <li>"Product sampling companies near me"</li>
+    </ul>
+    
+    <h3>Informational (Traffic Builders)</h3>
+    <ul>
+        <li>"What is experiential marketing?"</li>
+        <li>"Brand ambassador job description template"</li>
+        <li>"Event marketing ideas for 2026"</li>
+        <li>"How to plan a product launch event"</li>
+        <li>"Guerrilla marketing examples that worked"</li>
+    </ul>
+    
+    <h3>Local SEO (City Pages)</h3>
+    <ul>
+        <li>"Brand ambassadors in [city]"</li>
+        <li>"Event staffing agencies in [city]"</li>
+        <li>"Best experiential marketing in [city]"</li>
+    </ul>
+    
+    <h2>Q1 2026 Content Calendar</h2>
+    
+    <table>
+        <tr>
+            <th>Week</th>
+            <th>Blog Post</th>
+            <th>Type</th>
+        </tr>
+        <tr>
+            <td>Week 1</td>
+            <td>Brand Ambassador Cost Guide 2026</td>
+            <td>Commercial</td>
+        </tr>
+        <tr>
+            <td>Week 2</td>
+            <td>F1 Las Vegas Case Study</td>
+            <td>Case Study</td>
+        </tr>
+        <tr>
+            <td>Week 3</td>
+            <td>5 Experiential Marketing Trends</td>
+            <td>Informational</td>
+        </tr>
+        <tr>
+            <td>Week 4</td>
+            <td>NYC Brand Ambassadors Guide</td>
+            <td>Local SEO</td>
+        </tr>
+        <tr>
+            <td>Week 5</td>
+            <td>How to Plan a Product Launch</td>
+            <td>Informational</td>
+        </tr>
+        <tr>
+            <td>Week 6</td>
+            <td>Netflix Activation Case Study</td>
+            <td>Case Study</td>
+        </tr>
+        <tr>
+            <td>Week 7</td>
+            <td>Event Staffing Pricing Guide</td>
+            <td>Commercial</td>
+        </tr>
+        <tr>
+            <td>Week 8</td>
+            <td>LA Brand Ambassadors Guide</td>
+            <td>Local SEO</td>
+        </tr>
+    </table>
+</div>
+
+<!-- SECTION 12: TRACKING -->
+<div class="page page-break">
+    <h1>SECTION 12: Tracking & Reporting</h1>
+    
+    <h2>Tools Needed</h2>
+    
+    <table>
+        <tr>
+            <th>Tool</th>
+            <th>Purpose</th>
+            <th>Cost</th>
+        </tr>
+        <tr>
+            <td><strong>Google Search Console</strong></td>
+            <td>Track rankings, clicks, impressions</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Google Analytics</strong></td>
+            <td>Track traffic, conversions</td>
+            <td>Free</td>
+        </tr>
+        <tr>
+            <td><strong>Ahrefs</strong></td>
+            <td>Backlink monitoring, DR tracking</td>
+            <td>$99+/mo</td>
+        </tr>
+        <tr>
+            <td><strong>SEMrush</strong></td>
+            <td>Keyword rankings, competitors</td>
+            <td>$119+/mo</td>
+        </tr>
+    </table>
+    
+    <h2>Key Metrics to Track</h2>
+    
+    <h3>Weekly</h3>
+    <ul class="checklist">
+        <li>New backlinks acquired</li>
+        <li>Domain Rating changes</li>
+        <li>Keyword ranking movements</li>
+        <li>Organic traffic</li>
+    </ul>
+    
+    <h3>Monthly</h3>
+    <ul class="checklist">
+        <li>Total backlinks</li>
+        <li>Referring domains</li>
+        <li>Organic traffic growth</li>
+        <li>Lead generation from organic</li>
+        <li>Directory listing status</li>
+        <li>Review count and ratings</li>
+    </ul>
+    
+    <h2>Target KPIs (6 Months)</h2>
+    
+    <table>
+        <tr>
+            <th>Metric</th>
+            <th>Current</th>
+            <th>Target</th>
+        </tr>
+        <tr>
+            <td>Domain Rating</td>
+            <td>[Check Ahrefs]</td>
+            <td>40+</td>
+        </tr>
+        <tr>
+            <td>Referring Domains</td>
+            <td>[Check]</td>
+            <td>+50</td>
+        </tr>
+        <tr>
+            <td>Organic Traffic</td>
+            <td>[Check GA]</td>
+            <td>+50%</td>
+        </tr>
+        <tr>
+            <td>Clutch Reviews</td>
+            <td>0</td>
+            <td>5+</td>
+        </tr>
+        <tr>
+            <td>Google Reviews</td>
+            <td>[Check]</td>
+            <td>20+</td>
+        </tr>
+    </table>
+    
+    <h2>Monthly Report Template</h2>
+    
+    <div class="step-box">
+        <strong>BACKLINK REPORT - [MONTH] 2026</strong><br><br>
+        <strong>New Backlinks:</strong> [#]<br>
+        <strong>Total Referring Domains:</strong> [#]<br>
+        <strong>Domain Rating:</strong> [#] (change: +/-)<br><br>
+        <strong>Directory Submissions:</strong><br>
+        - Submitted: [list]<br>
+        - Approved: [list]<br>
+        - Pending: [list]<br><br>
+        <strong>Content Published:</strong><br>
+        - [Blog titles]<br><br>
+        <strong>Next Month Focus:</strong><br>
+        - [Priorities]
+    </div>
+</div>
+
+<!-- APPENDIX A: COMPLETE DIRECTORY LIST -->
+<div class="page page-break">
+    <h1>APPENDIX A: Complete Directory List (50+)</h1>
+    
+    <h2>Agency Directories</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>DR</th><th>URL</th><th>Status</th></tr>
+        <tr><td>1</td><td>Clutch.co</td><td>91</td><td>clutch.co</td><td>⬜</td></tr>
+        <tr><td>2</td><td>DesignRush</td><td>73</td><td>designrush.com</td><td>⬜</td></tr>
+        <tr><td>3</td><td>GoodFirms</td><td>71</td><td>goodfirms.co</td><td>⬜</td></tr>
+        <tr><td>4</td><td>Agency Spotter</td><td>68</td><td>agencyspotter.com</td><td>⬜</td></tr>
+        <tr><td>5</td><td>The Manifest</td><td>65</td><td>themanifest.com</td><td>⬜</td></tr>
+        <tr><td>6</td><td>UpCity</td><td>60</td><td>upcity.com</td><td>⬜</td></tr>
+        <tr><td>7</td><td>Sortlist</td><td>58</td><td>sortlist.com</td><td>⬜</td></tr>
+        <tr><td>8</td><td>Digital Agency Network</td><td>55</td><td>digitalagencynetwork.com</td><td>⬜</td></tr>
+    </table>
+    
+    <h2>Event Industry Directories</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>DR</th><th>URL</th><th>Status</th></tr>
+        <tr><td>9</td><td>BizBash</td><td>67</td><td>bizbash.com</td><td>⬜</td></tr>
+        <tr><td>10</td><td>EventMB/Skift</td><td>55</td><td>skift.com/meetings</td><td>⬜</td></tr>
+        <tr><td>11</td><td>Special Events</td><td>52</td><td>specialevents.com</td><td>⬜</td></tr>
+        <tr><td>12</td><td>Event Marketer</td><td>54</td><td>eventmarketer.com</td><td>⬜</td></tr>
+        <tr><td>13</td><td>EXHIBITOR</td><td>50</td><td>exhibitoronline.com</td><td>⬜</td></tr>
+        <tr><td>14</td><td>Trade Show Executive</td><td>48</td><td>tradeshowexecutive.com</td><td>⬜</td></tr>
+        <tr><td>15</td><td>TSNN</td><td>45</td><td>tsnn.com</td><td>⬜</td></tr>
+        <tr><td>16</td><td>MeetingsNet</td><td>52</td><td>meetingsnet.com</td><td>⬜</td></tr>
+    </table>
+    
+    <h2>Business Directories</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>DR</th><th>URL</th><th>Status</th></tr>
+        <tr><td>17</td><td>Google Business</td><td>100</td><td>business.google.com</td><td>⬜</td></tr>
+        <tr><td>18</td><td>Yelp</td><td>94</td><td>yelp.com</td><td>⬜</td></tr>
+        <tr><td>19</td><td>BBB</td><td>93</td><td>bbb.org</td><td>⬜</td></tr>
+        <tr><td>20</td><td>Bing Places</td><td>93</td><td>bingplaces.com</td><td>⬜</td></tr>
+        <tr><td>21</td><td>Apple Maps</td><td>100</td><td>mapsconnect.apple.com</td><td>⬜</td></tr>
+        <tr><td>22</td><td>Yellow Pages</td><td>91</td><td>yellowpages.com</td><td>⬜</td></tr>
+        <tr><td>23</td><td>Foursquare</td><td>91</td><td>foursquare.com</td><td>⬜</td></tr>
+        <tr><td>24</td><td>MapQuest</td><td>91</td><td>mapquest.com</td><td>⬜</td></tr>
+        <tr><td>25</td><td>Citysearch</td><td>80</td><td>citysearch.com</td><td>⬜</td></tr>
+        <tr><td>26</td><td>Superpages</td><td>81</td><td>superpages.com</td><td>⬜</td></tr>
+        <tr><td>27</td><td>Manta</td><td>75</td><td>manta.com</td><td>⬜</td></tr>
+        <tr><td>28</td><td>DexKnows</td><td>70</td><td>dexknows.com</td><td>⬜</td></tr>
+        <tr><td>29</td><td>Brownbook</td><td>68</td><td>brownbook.net</td><td>⬜</td></tr>
+        <tr><td>30</td><td>Hotfrog</td><td>62</td><td>hotfrog.com</td><td>⬜</td></tr>
+        <tr><td>31</td><td>Cylex</td><td>65</td><td>cylex.us.com</td><td>⬜</td></tr>
+        <tr><td>32</td><td>Spoke</td><td>60</td><td>spoke.com</td><td>⬜</td></tr>
+        <tr><td>33</td><td>eLocal</td><td>58</td><td>elocal.com</td><td>⬜</td></tr>
+        <tr><td>34</td><td>ShowMeLocal</td><td>55</td><td>showmelocal.com</td><td>⬜</td></tr>
+        <tr><td>35</td><td>n49</td><td>52</td><td>n49.com</td><td>⬜</td></tr>
+    </table>
+</div>
+
+<!-- APPENDIX A CONTINUED -->
+<div class="page page-break">
+    <h2>Social & Professional</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>DR</th><th>URL</th><th>Status</th></tr>
+        <tr><td>36</td><td>LinkedIn Company</td><td>98</td><td>linkedin.com</td><td>⬜</td></tr>
+        <tr><td>37</td><td>Crunchbase</td><td>91</td><td>crunchbase.com</td><td>⬜</td></tr>
+        <tr><td>38</td><td>AngelList</td><td>91</td><td>angel.co</td><td>⬜</td></tr>
+        <tr><td>39</td><td>Glassdoor</td><td>91</td><td>glassdoor.com</td><td>⬜</td></tr>
+        <tr><td>40</td><td>Indeed Company</td><td>93</td><td>indeed.com</td><td>⬜</td></tr>
+    </table>
+    
+    <h2>Local Denver</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>Notes</th><th>Status</th></tr>
+        <tr><td>41</td><td>Denver Chamber</td><td>Membership required</td><td>⬜</td></tr>
+        <tr><td>42</td><td>Colorado.com</td><td>State business directory</td><td>⬜</td></tr>
+        <tr><td>43</td><td>Denver Business Journal</td><td>Business list</td><td>⬜</td></tr>
+        <tr><td>44</td><td>5280 Magazine</td><td>Local directory</td><td>⬜</td></tr>
+        <tr><td>45</td><td>Westword</td><td>Local listings</td><td>⬜</td></tr>
+    </table>
+    
+    <h2>Industry Associations</h2>
+    <table>
+        <tr><th>#</th><th>Organization</th><th>Notes</th><th>Status</th></tr>
+        <tr><td>46</td><td>ILEA (Intl Live Events)</td><td>Membership directory</td><td>⬜</td></tr>
+        <tr><td>47</td><td>MPI (Meeting Prof Intl)</td><td>Membership directory</td><td>⬜</td></tr>
+        <tr><td>48</td><td>PCMA</td><td>Professional convention</td><td>⬜</td></tr>
+        <tr><td>49</td><td>IAEE (Exhibitions)</td><td>Trade show association</td><td>⬜</td></tr>
+        <tr><td>50</td><td>EMA (Event Marketing)</td><td>Industry association</td><td>⬜</td></tr>
+    </table>
+    
+    <h2>Niche Directories</h2>
+    <table>
+        <tr><th>#</th><th>Directory</th><th>Focus</th><th>Status</th></tr>
+        <tr><td>51</td><td>Staffing Industry Analysts</td><td>Staffing</td><td>⬜</td></tr>
+        <tr><td>52</td><td>American Staffing Assoc</td><td>Staffing</td><td>⬜</td></tr>
+        <tr><td>53</td><td>Promotional Products Assoc</td><td>Promo products</td><td>⬜</td></tr>
+        <tr><td>54</td><td>Marketing Agencies Assoc</td><td>Marketing</td><td>⬜</td></tr>
+        <tr><td>55</td><td>Event Industry Council</td><td>Events</td><td>⬜</td></tr>
+    </table>
+</div>
+
+<!-- APPENDIX B: TRACKER -->
+<div class="page page-break">
+    <h1>APPENDIX B: Submission Tracker</h1>
+    
+    <p>Use this tracker to monitor submission status. Copy to a spreadsheet for team use.</p>
+    
+    <table>
+        <tr>
+            <th>Directory</th>
+            <th>Submitted</th>
+            <th>Date</th>
+            <th>Status</th>
+            <th>Live URL</th>
+            <th>Notes</th>
+        </tr>
+        <tr>
+            <td>Clutch.co</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Need 3 reviews</td>
+        </tr>
+        <tr>
+            <td>DesignRush</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>GoodFirms</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Agency Spotter</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>BizBash</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Google Business</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td>Optimize existing</td>
+        </tr>
+        <tr>
+            <td>Yelp</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Bing Places</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Apple Maps</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Yellow Pages</td>
+            <td>⬜</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+    
+    <p><em>Continue tracking all 55 directories in a spreadsheet</em></p>
+</div>
+
+<!-- APPENDIX C: EMAIL TEMPLATES -->
+<div class="page page-break">
+    <h1>APPENDIX C: Email Templates</h1>
+    
+    <h2>1. Clutch Review Request</h2>
+    <div class="copy-block">Subject: Quick favor? 15 min to help AirFresh Marketing
+
+Hi [NAME],
+
+Hope you're doing well! I'm reaching out because we're building our presence on Clutch.co and would be honored if you'd share your experience working with us.
+
+The process is simple:
+• I send you an invite through Clutch
+• A Clutch analyst calls you for 15 minutes
+• You share honest feedback about our [PROJECT] work
+
+Your review would help other companies find us. Would you be open to this?
+
+Thanks!
+[YOUR NAME]</div>
+    
+    <h2>2. Google Review Request</h2>
+    <div class="copy-block">Subject: Would you share your experience?
+
+Hi [NAME],
+
+Thank you for choosing AirFresh Marketing for your [EVENT/PROJECT]. We hope you were satisfied with our services!
+
+If you have a moment, would you mind leaving us a Google review? It takes less than 2 minutes and helps other businesses find us.
+
+[INSERT GOOGLE REVIEW LINK]
+
+Thank you for your support!
+[YOUR NAME]</div>
+    
+    <h2>3. Backlink Request (Partner)</h2>
+    <div class="copy-block">Subject: Partner link request
+
+Hi [NAME],
+
+I noticed [COMPANY] has a partners/vendors page on your website. Since we've worked together on [PROJECT], would you consider adding AirFresh Marketing to that page?
+
+Here's our info:
+• Company: AirFresh Marketing
+• URL: https://www.airfreshmarketing.com
+• Description: Experiential marketing agency providing brand ambassadors and event staffing
+
+Happy to reciprocate if you have a similar page you'd like us to link to.
+
+Thanks!
+[YOUR NAME]</div>
+    
+    <h2>4. Guest Post Pitch</h2>
+    <div class="copy-block">Subject: Guest article pitch: [TOPIC]
+
+Hi [EDITOR],
+
+I'm [NAME] from AirFresh Marketing. We've worked with Microsoft, Netflix, and Formula 1 on experiential campaigns.
+
+I'd love to write an article for [PUBLICATION] on [TOPIC]:
+
+[2-3 sentence pitch]
+
+Key points:
+• [Point 1]
+• [Point 2]  
+• [Point 3]
+
+Interested?
+
+Best,
+[NAME]</div>
+    
+    <h2>5. Press Release Distribution</h2>
+    <div class="copy-block">Subject: Press release for distribution
+
+Hi,
+
+Please find attached our press release: "[HEADLINE]"
+
+Summary: [2 sentences]
+
+Contact: [NAME], [EMAIL], [PHONE]
+
+Please confirm receipt and expected distribution date.
+
+Thank you,
+[NAME]</div>
+</div>
+
+<!-- FINAL PAGE -->
+<div class="page">
+    <h1>Next Steps</h1>
+    
+    <div class="success-box">
+        <h2>✅ Ready to Execute!</h2>
+        <p>This playbook contains everything your team needs to build a strong backlink profile for AirFresh Marketing.</p>
+    </div>
+    
+    <h2>Immediate Actions (This Week)</h2>
+    <ol>
+        <li>Submit to Clutch, DesignRush, GoodFirms</li>
+        <li>Optimize Google Business Profile</li>
+        <li>Request 3 Clutch reviews from clients</li>
+        <li>Submit to Yelp, Bing Places, Apple Maps</li>
+    </ol>
+    
+    <h2>Week 2 Actions</h2>
+    <ol>
+        <li>Submit to industry directories (BizBash, EventMB)</li>
+        <li>Submit to remaining business directories</li>
+        <li>Set up HARO account</li>
+        <li>Begin content calendar</li>
+    </ol>
+    
+    <h2>Ongoing (Monthly)</h2>
+    <ol>
+        <li>Track and report on backlink progress</li>
+        <li>Publish 2-4 blog posts</li>
+        <li>Send 1 press release</li>
+        <li>Respond to HARO queries</li>
+        <li>Request ongoing client reviews</li>
+    </ol>
+    
+    <footer>
+        <p><strong>AirFresh Marketing SEO & Backlink Playbook</strong></p>
+        <p>Prepared by HummingAgent | February 2026</p>
+        <p>Questions? Contact: hello@airfreshmarketing.com</p>
+    </footer>
+</div>
+
+</body>
+</html>
