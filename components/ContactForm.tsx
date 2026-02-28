@@ -107,9 +107,9 @@ export default function ContactForm() {
     
     try {
       // Get reCAPTCHA token
-      let recaptchaToken = '';
-      if (executeRecaptcha) {
-        recaptchaToken = await executeRecaptcha('contact_form');
+      let recaptchaToken = "";
+      if (executeRecaptcha) {try {
+        recaptchaToken = await executeRecaptcha("contact_form"); } catch(e) { console.log("reCAPTCHA not available, continuing without"); }}
       }
 
       const response = await fetch("https://formspree.io/f/myznknaa", {
