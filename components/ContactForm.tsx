@@ -121,6 +121,19 @@ export default function ContactForm() {
 
       if (!response.ok) throw new Error("Failed to submit form");
 
+      // Track form submission as conversion for Google Ads
+      if (typeof window !== 'undefined' && (window as any).gtag) {
+        // Google Ads conversion tracking
+        (window as any).gtag('event', 'conversion', {
+          'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+        });
+        // GA4 generate_lead event
+        (window as any).gtag('event', 'generate_lead', {
+          'event_category': 'contact_form',
+        });
+        console.log('Contact form conversion tracked');
+      }
+
       toast({
         title: "Message sent!",
         description: "We'll be in touch with you shortly.",
