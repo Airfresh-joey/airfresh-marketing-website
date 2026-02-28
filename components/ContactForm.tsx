@@ -107,8 +107,7 @@ export default function ContactForm() {
     
     try {
       // reCAPTCHA disabled - Formshield handles spam protection
-      const recaptchaToken = ""; catch(e) { console.log("reCAPTCHA not available, continuing without"); }}
-      }
+      const recaptchaToken = "";
 
       const response = await fetch("https://formspree.io/f/myznknaa", {
         method: "POST",
