@@ -419,28 +419,74 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   const IconComponent = service.icon;
 
+  // FAQ data for each service
+  const serviceFAQs: Record<string, Array<{question: string, answer: string}>> = {
+    'brand-ambassadors': [
+      { question: "How much do brand ambassadors cost?", answer: "Brand ambassador costs typically range from $25-$75 per hour depending on experience, location, and campaign requirements. AirFresh Marketing provides customized quotes based on your specific needs, with volume discounts available for larger campaigns." },
+      { question: "How do you select brand ambassadors for my campaign?", answer: "We match ambassadors based on your target demographics, brand values, and campaign requirements. Each ambassador undergoes background checks, training, and brand-specific preparation to ensure authentic representation." },
+      { question: "What cities do you provide brand ambassadors in?", answer: "AirFresh Marketing provides professional brand ambassadors in 50+ cities nationwide, including New York, Los Angeles, Chicago, Miami, Denver, San Francisco, Austin, and Atlanta." }
+    ],
+    'street-teams': [
+      { question: "What is street team marketing?", answer: "Street team marketing involves deploying trained promotional teams in high-traffic public areas to engage directly with consumers, distribute samples or materials, and create brand awareness through face-to-face interactions." },
+      { question: "How effective is street team marketing?", answer: "Street team marketing typically achieves 70%+ engagement rates compared to 2-3% for digital ads. Our clients see an average 300% ROI on street team campaigns through direct consumer engagement and immediate feedback." },
+      { question: "Do you handle permits for street team activations?", answer: "Yes, AirFresh Marketing manages all permitting, insurance, and logistics for street team activations. We have established relationships with city authorities nationwide to streamline the permit process." }
+    ],
+    'experiential-marketing': [
+      { question: "What is experiential marketing?", answer: "Experiential marketing creates immersive brand experiences that engage consumers directly, building emotional connections through interactive events, pop-ups, product demonstrations, and memorable activations." },
+      { question: "How do you measure experiential marketing ROI?", answer: "We track engagement metrics, lead generation, social media impressions, sales lift, and brand sentiment. Our proprietary platform provides real-time data and comprehensive post-campaign analytics." },
+      { question: "What types of experiential activations do you create?", answer: "We design and execute pop-up experiences, product launches, festival activations, mobile tours, interactive installations, VIP experiences, and custom brand activations tailored to your objectives." }
+    ],
+    'event-management': [
+      { question: "What event management services do you provide?", answer: "We offer full-service event management including venue sourcing, logistics, staffing, production, catering coordination, entertainment booking, and on-site management for corporate events, product launches, and brand activations." },
+      { question: "How far in advance should I book event management services?", answer: "We recommend booking 4-8 weeks in advance for standard events and 3-6 months for large-scale activations. However, we've successfully executed events with as little as 2 weeks notice when needed." },
+      { question: "Do you provide event staff for trade shows?", answer: "Yes, we specialize in trade show and convention staffing with trained booth staff, product demonstrators, lead capture specialists, and hospitality personnel across all major convention centers." }
+    ],
+    'sampling': [
+      { question: "How much does product sampling cost?", answer: "Product sampling campaigns typically range from $5,000-$25,000 depending on sample quantity, locations, staffing needs, and campaign duration. We provide detailed quotes with transparent cost breakdowns." },
+      { question: "What products can you sample?", answer: "We handle food, beverage, beauty, health, and consumer product sampling. We manage all required permits, health certifications, and compliance requirements for your product category." },
+      { question: "How do you track product sampling results?", answer: "Our platform tracks samples distributed, consumer demographics, feedback, coupon redemptions, and geographic data. You receive real-time dashboards and comprehensive post-campaign reports." }
+    ]
+  };
+
+  const faqs = serviceFAQs[serviceName] || [];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": service.title,
-    "description": service.description,
-    "provider": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing",
-      "url": "https://airfreshmarketing.com"
-    },
-    "areaServed": "United States",
-    "hasOfferCatalog": {
-      "@type": "OfferCatalog",
-      "name": service.title,
-      "itemListElement": service.benefits.map((benefit, index) => ({
-        "@type": "Offer",
-        "itemOffered": {
-          "@type": "Service",
-          "name": benefit
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": service.title,
+        "description": service.description,
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://airfreshmarketing.com"
+        },
+        "areaServed": "United States",
+        "hasOfferCatalog": {
+          "@type": "OfferCatalog",
+          "name": service.title,
+          "itemListElement": service.benefits.map((benefit, index) => ({
+            "@type": "Offer",
+            "itemOffered": {
+              "@type": "Service",
+              "name": benefit
+            }
+          }))
         }
-      }))
-    }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -733,6 +779,32 @@ export default function ServicePage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {/* FAQ Section */}
+      {faqs.length > 0 && (
+        <section className="py-20 bg-gray-50">
+          <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                Frequently Asked Questions
+              </h2>
+              <p className="text-lg text-gray-600">
+                Common questions about our {service.title.toLowerCase()} services
+              </p>
+            </div>
+            <div className="space-y-6">
+              {faqs.map((faq, index) => (
+                <Card key={index} className="border-0 shadow-md">
+                  <CardContent className="p-6">
+                    <h3 className="text-xl font-bold mb-3 text-gray-900">{faq.question}</h3>
+                    <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className={`py-20 bg-gradient-to-r ${service.color} text-white`}>
