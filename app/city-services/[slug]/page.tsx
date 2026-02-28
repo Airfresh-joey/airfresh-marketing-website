@@ -8,9 +8,61 @@ import SEO from "@/components/SEO";
 import { serviceTypes } from "@/server/city-services-data";
 import { cityLocations } from "@/server/city-data";
 import { cities as allCitiesData } from "@/server/cities-data";
+import type { Metadata } from 'next';
 
 interface CityServicePageProps {
   params: Promise<{ slug: string }>;
+}
+
+// Helper function to parse slug for metadata
+function parseSlugForMeta(slug: string) {
+  for (const service of serviceTypes) {
+    if (slug.endsWith(`-${service.slug}`)) {
+      const citySlug = slug.replace(`-${service.slug}`, '');
+      return { citySlug, serviceSlug: service.slug, service };
+    }
+  }
+  return null;
+}
+
+// Format city name from slug
+function formatCityNameMeta(citySlug: string) {
+  return citySlug.split('-').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}
+
+// Generate metadata for SEO (server-side)
+export async function generateMetadata({ params }: CityServicePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const parsed = parseSlugForMeta(slug);
+  
+  if (!parsed) {
+    return { title: 'Service Not Found' };
+  }
+  
+  const cityName = formatCityNameMeta(parsed.citySlug);
+  const serviceName = parsed.service.name;
+  
+  return {
+    title: `${serviceName} ${cityName} | Professional ${serviceName} Services`,
+    description: `${serviceName} services in ${cityName}. ${parsed.service.description} Contact AirFresh Marketing for professional ${serviceName.toLowerCase()} today.`,
+    keywords: `${serviceName.toLowerCase()} ${cityName}, ${cityName} ${serviceName.toLowerCase()}, ${parsed.service.keywords.join(', ')}`,
+    openGraph: {
+      title: `${serviceName} ${cityName} | AirFresh Marketing`,
+      description: `Professional ${serviceName.toLowerCase()} services in ${cityName}.`,
+      url: `https://www.airfreshmarketing.com/city-services/${slug}`,
+      type: 'website',
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${serviceName} ${cityName} | AirFresh Marketing`,
+      description: `Professional ${serviceName.toLowerCase()} services in ${cityName}.`,
+      images: ['/images/og-image.jpg'],
+    },
+    alternates: {
+      canonical: `https://www.airfreshmarketing.com/city-services/${slug}`,
+    },
+  };
 }
 
 // Generate static params for all city-service combinations

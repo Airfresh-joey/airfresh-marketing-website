@@ -13,8 +13,27 @@ const Toaster = dynamic(() => import('@/components/ui/toaster').then(mod => ({ d
 const inter = Inter({ subsets: ['latin'], display: 'swap' })
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing - Experiential Marketing & Brand Activation',
-  description: 'Professional experiential marketing and brand activation services',
+  metadataBase: new URL('https://www.airfreshmarketing.com'),
+  title: {
+    default: 'Air Fresh Marketing - Experiential Marketing & Brand Activation',
+    template: '%s | AirFresh Marketing'
+  },
+  description: 'Professional experiential marketing and brand activation services. Brand ambassadors, street teams, product sampling, and event staffing nationwide.',
+  keywords: ['experiential marketing', 'brand ambassadors', 'event staffing', 'street teams', 'product sampling', 'brand activation', 'guerrilla marketing', 'promotional models'],
+  authors: [{ name: 'AirFresh Marketing' }],
+  creator: 'AirFresh Marketing',
+  publisher: 'AirFresh Marketing',
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   icons: {
     icon: [
       { url: '/favicon.svg', type: 'image/svg+xml' },
@@ -22,6 +41,35 @@ export const metadata: Metadata = {
     ],
     shortcut: '/favicon.png',
     apple: '/favicon.png',
+  },
+  openGraph: {
+    type: 'website',
+    locale: 'en_US',
+    siteName: 'AirFresh Marketing',
+    title: 'Air Fresh Marketing - Experiential Marketing & Brand Activation',
+    description: 'Professional experiential marketing and brand activation services. Brand ambassadors, street teams, product sampling, and event staffing nationwide.',
+    images: [
+      {
+        url: '/images/og-image.jpg',
+        width: 1200,
+        height: 630,
+        alt: 'AirFresh Marketing - Experiential Marketing Agency',
+      },
+    ],
+  },
+  twitter: {
+    card: 'summary_large_image',
+    site: '@AirFreshMktg',
+    creator: '@AirFreshMktg',
+    title: 'Air Fresh Marketing - Experiential Marketing & Brand Activation',
+    description: 'Professional experiential marketing and brand activation services nationwide.',
+    images: ['/images/og-image.jpg'],
+  },
+  alternates: {
+    canonical: 'https://www.airfreshmarketing.com',
+  },
+  verification: {
+    google: 'your-google-verification-code', // Add if you have one
   },
 }
 

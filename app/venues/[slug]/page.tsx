@@ -7,9 +7,42 @@ import Image from "next/image";
 import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, ExternalLink, Landmark, Car, Calendar, Building } from "lucide-react";
 import SEO from "@/components/SEO";
 import { venues, getVenueBySlug } from "@/server/venues-data";
+import type { Metadata } from 'next';
 
 interface VenuePageProps {
   params: Promise<{ slug: string }>;
+}
+
+// Generate metadata for SEO (server-side)
+export async function generateMetadata({ params }: VenuePageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const venue = getVenueBySlug(slug);
+  
+  if (!venue) {
+    return { title: 'Venue Not Found' };
+  }
+  
+  return {
+    title: `${venue.shortName} Event Staffing & Brand Ambassadors | ${venue.city}`,
+    description: `Professional event staffing and brand ambassadors for ${venue.name} in ${venue.city}, ${venue.state}. Trade show staff, promotional models, and convention staffing.`,
+    keywords: `${venue.shortName} staffing, ${venue.city} event staff, ${venue.name} brand ambassadors, convention staffing ${venue.city}`,
+    openGraph: {
+      title: `${venue.shortName} Event Staffing | AirFresh Marketing`,
+      description: `Professional event staffing for ${venue.name} in ${venue.city}.`,
+      url: `https://www.airfreshmarketing.com/venues/${slug}`,
+      type: 'website',
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${venue.shortName} Event Staffing | AirFresh Marketing`,
+      description: `Professional event staffing for ${venue.name} in ${venue.city}.`,
+      images: ['/images/og-image.jpg'],
+    },
+    alternates: {
+      canonical: `https://www.airfreshmarketing.com/venues/${slug}`,
+    },
+  };
 }
 
 const services = [

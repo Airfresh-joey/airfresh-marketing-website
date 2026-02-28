@@ -6,9 +6,45 @@ import Link from "next/link";
 import Image from "next/image";
 import SEO from "@/components/SEO";
 import { cities as allCitiesData } from "@/server/cities-data";
+import type { Metadata } from 'next';
 
 interface CityPageProps {
   params: Promise<{ slug: string }>;
+}
+
+// Generate metadata for SEO (server-side for crawlers)
+export async function generateMetadata({ params }: CityPageProps): Promise<Metadata> {
+  const { slug } = await params;
+  const cityData = allCitiesData.find(c => c.slug === slug);
+  
+  if (!cityData) {
+    return { title: 'City Not Found' };
+  }
+  
+  const cityName = cityData.city;
+  const stateName = cityData.state;
+  
+  return {
+    title: `${cityName} Experiential Marketing & Brand Ambassadors`,
+    description: `Professional experiential marketing services in ${cityName}, ${stateName}. Brand ambassadors, street teams, product sampling, and event staffing with proven ROI.`,
+    keywords: `${cityName} experiential marketing, ${cityName} brand ambassadors, ${cityName} street teams, ${cityName} product sampling, ${cityName} event staffing`,
+    openGraph: {
+      title: `${cityName} Experiential Marketing | AirFresh Marketing`,
+      description: `Professional experiential marketing services in ${cityName}, ${stateName}. Brand ambassadors, street teams, and product sampling.`,
+      url: `https://www.airfreshmarketing.com/cities/${slug}`,
+      type: 'website',
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${cityName} Experiential Marketing | AirFresh Marketing`,
+      description: `Professional experiential marketing services in ${cityName}, ${stateName}.`,
+      images: ['/images/og-image.jpg'],
+    },
+    alternates: {
+      canonical: `https://www.airfreshmarketing.com/cities/${slug}`,
+    },
+  };
 }
 
 // Rich city data with localized information (detailed content for major markets)

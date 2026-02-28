@@ -7,6 +7,7 @@ import Image from "next/image";
 import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, Building } from "lucide-react";
 import SEO from "@/components/SEO";
 import { venues, getVenueBySlug } from "@/server/venues-data";
+import type { Metadata } from 'next';
 
 interface VenueServicePageProps {
   params: Promise<{ slug: string; service: string }>;
@@ -172,6 +173,39 @@ export async function generateStaticParams() {
   });
 
   return params;
+}
+
+// Generate metadata for SEO (server-side)
+export async function generateMetadata({ params }: VenueServicePageProps): Promise<Metadata> {
+  const { slug, service: serviceSlug } = await params;
+  const venue = getVenueBySlug(slug);
+  const service = services.find(s => s.slug === serviceSlug);
+  
+  if (!venue || !service) {
+    return { title: 'Service Not Found' };
+  }
+  
+  return {
+    title: `${service.name} for ${venue.shortName} | ${venue.city} Event Staffing`,
+    description: `Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}. ${service.description}`,
+    keywords: `${service.name.toLowerCase()} ${venue.shortName}, ${venue.city} ${service.name.toLowerCase()}, ${venue.name} staffing`,
+    openGraph: {
+      title: `${service.name} at ${venue.shortName} | AirFresh Marketing`,
+      description: `Professional ${service.name.toLowerCase()} for ${venue.name} in ${venue.city}.`,
+      url: `https://www.airfreshmarketing.com/venues/${slug}/${serviceSlug}`,
+      type: 'website',
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.name} at ${venue.shortName} | AirFresh Marketing`,
+      description: `Professional ${service.name.toLowerCase()} for ${venue.name}.`,
+      images: ['/images/og-image.jpg'],
+    },
+    alternates: {
+      canonical: `https://www.airfreshmarketing.com/venues/${slug}/${serviceSlug}`,
+    },
+  };
 }
 
 export default async function VenueServicePage({ params }: VenueServicePageProps) {
