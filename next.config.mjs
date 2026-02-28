@@ -79,6 +79,13 @@ const nextConfig = {
   // Redirects from old routes
   async redirects() {
     return [
+      // Redirect non-www to www (fixes duplicate content issues)
+      {
+        source: '/:path*',
+        has: [{ type: 'host', value: 'airfreshmarketing.com' }],
+        destination: 'https://www.airfreshmarketing.com/:path*',
+        permanent: true,
+      },
       { source: '/projects/case-studies', destination: '/case-studies', permanent: true },
       { source: '/about-us', destination: '/about', permanent: true },
       { source: '/contact-us', destination: '/contact', permanent: true },

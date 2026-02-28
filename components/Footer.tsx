@@ -254,10 +254,10 @@ export default function Footer() {
                 <a href="/llms.txt" className="text-gray-500 hover:text-cyan-400 transition-colors">
                   LLMs
                 </a>
-                <Link href="/privacy" className="text-gray-500 hover:text-cyan-400 transition-colors">
+                <Link href="/legal/privacy-policy" className="text-gray-500 hover:text-cyan-400 transition-colors">
                   Privacy Policy
                 </Link>
-                <Link href="/terms" className="text-gray-500 hover:text-cyan-400 transition-colors">
+                <Link href="/legal/terms-and-conditions" className="text-gray-500 hover:text-cyan-400 transition-colors">
                   Terms of Service
                 </Link>
               </div>
