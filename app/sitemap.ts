@@ -4,6 +4,7 @@ import { venues } from '@/server/venues-data'
 import { cities as citiesData } from '@/server/cities-data'
 import { serviceTypes } from '@/server/city-services-data'
 import { enhancedCaseStudies } from '@/server/case-studies-data'
+import { industries } from '@/server/industries-data'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
@@ -63,6 +64,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.85
     })),
     { url: `${DOMAIN}/careers`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
+    { url: `${DOMAIN}/industries`, lastModified: today, changeFrequency: 'weekly', priority: 0.85 },
+    // Individual industry pages
+    ...industries.map(ind => ({
+      url: `${DOMAIN}/industries/${ind.slug}`,
+      lastModified: today,
+      changeFrequency: 'monthly' as const,
+      priority: 0.8
+    })),
     { url: `${DOMAIN}/locations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
