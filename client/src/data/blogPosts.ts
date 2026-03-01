@@ -5159,5 +5159,403 @@ Beverage sampling converts trial to purchase. Here's how to maximize impact.
 
 Beverage sampling experts: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "61",
+    slug: "food-truck-marketing",
+    title: "Food Truck Marketing: Mobile Brand Activations",
+    excerpt: "Food trucks create memorable brand experiences. Here's how to leverage mobile food marketing.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "September 10, 2026",
+    readTime: "6 min read",
+    category: "Food & Beverage",
+    tags: ["Food Truck Marketing", "Mobile Marketing", "Brand Activation", "Experiential"],
+    content: `# Food Truck Marketing Guide
+
+Food trucks combine product sampling with mobile brand experiences. Here's the playbook.
+
+## Why Food Trucks Work
+
+- Mobile flexibility
+- Built-in crowd draw
+- Social media appeal
+- Extended dwell time
+- Memorable experiences
+
+## Food Truck Strategies
+
+### Branded Trucks
+- Custom wrapped vehicles
+- Menu tie-ins
+- Product sampling
+- Social media moments
+
+### Event Integration
+- Festival presence
+- Corporate events
+- Sporting events
+- Community activations
+
+## Staffing Needs
+
+- Food handlers (certified)
+- Brand ambassadors
+- Social media capture
+- Line management
+
+## Logistics
+
+- Permits by city
+- Health inspections
+- Parking arrangements
+- Power/utilities
+- Waste management
+
+Food truck marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "62",
+    slug: "launch-party-planning",
+    title: "Launch Party Planning: Creating Buzz for New Products",
+    excerpt: "Launch parties set the tone for product success. Here's how to create memorable launch events.",
+    image: "/images/case-studies/gallery/netflix/netflix-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "September 15, 2026",
+    readTime: "7 min read",
+    category: "Events",
+    tags: ["Launch Party", "Product Launch", "Event Planning", "Brand Activation"],
+    content: `# Launch Party Planning Guide
+
+A great launch party creates momentum for your product. Here's how to execute.
+
+## Pre-Launch Planning
+
+### Timeline
+- 8 weeks: Venue and date
+- 6 weeks: Guest list and invites
+- 4 weeks: Content and program
+- 2 weeks: Final details
+- Day of: Execute
+
+### Guest List
+- Media and press
+- Influencers
+- VIP customers
+- Industry partners
+- Internal team
+
+## Event Elements
+
+### Must-Haves
+- Product showcase
+- Demo stations
+- Photo opportunities
+- Press materials
+- Social media walls
+
+### Nice-to-Haves
+- Celebrity appearance
+- Live entertainment
+- Exclusive reveals
+- Gift bags
+- After-party
+
+## Staffing
+
+- Event management
+- Product demonstrators
+- Media handlers
+- Guest services
+- Photo/video team
+
+## Measuring Success
+
+- Media coverage
+- Social mentions
+- Attendee feedback
+- Lead capture
+- Sales impact
+
+Launch party experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "63",
+    slug: "holiday-marketing-campaigns",
+    title: "Holiday Marketing Campaigns: Seasonal Activation Strategies",
+    excerpt: "The holiday season offers peak marketing opportunities. Here's how to maximize seasonal impact.",
+    image: "/images/case-studies/gallery/meijer/meijer-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "September 20, 2026",
+    readTime: "8 min read",
+    category: "Seasonal",
+    tags: ["Holiday Marketing", "Seasonal Campaigns", "Retail Marketing", "Q4 Marketing"],
+    content: `# Holiday Marketing Campaigns
+
+The holiday season is peak marketing time. Here's how to stand out.
+
+## Holiday Calendar
+
+### October
+- Halloween activations
+- Fall festivals
+- Pre-holiday prep
+
+### November
+- Black Friday
+- Small Business Saturday
+- Cyber Monday
+- Thanksgiving
+
+### December
+- Holiday shopping peak
+- Gift guides
+- New Year's prep
+- Year-end celebrations
+
+## Activation Types
+
+### Retail
+- In-store demos
+- Gift wrapping stations
+- Holiday displays
+- Shopping assistance
+
+### Experiential
+- Winter wonderlands
+- Photo experiences
+- Holiday markets
+- Pop-up shops
+
+### Sampling
+- Holiday flavors
+- Gift set demos
+- Seasonal products
+- Festive packaging
+
+## Staffing Considerations
+
+- Extended hours
+- Increased volume
+- Holiday attire
+- Peak availability
+- Overtime planning
+
+## Success Tips
+
+1. Book early (August/September)
+2. Plan for weather
+3. Match holiday mood
+4. Capture content
+5. Measure everything
+
+Holiday marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "64",
+    slug: "fitness-wellness-marketing",
+    title: "Fitness & Wellness Marketing: Gym and Health Event Activations",
+    excerpt: "Health-conscious consumers are highly engaged. Here's how to reach them through fitness marketing.",
+    image: "/images/case-studies/gallery/byoma/byoma-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "September 25, 2026",
+    readTime: "7 min read",
+    category: "Health & Fitness",
+    tags: ["Fitness Marketing", "Wellness Events", "Gym Marketing", "Health Activations"],
+    content: `# Fitness & Wellness Marketing
+
+Health-conscious consumers are engaged and brand-loyal. Here's how to reach them.
+
+## Venue Types
+
+### Gyms & Studios
+- Large chains (Equinox, LA Fitness)
+- Boutique studios
+- CrossFit boxes
+- Yoga studios
+
+### Events
+- Marathons/races
+- Fitness expos
+- Wellness festivals
+- Sports competitions
+
+### Retail
+- Supplement stores
+- Athletic retailers
+- Health food stores
+- Wellness centers
+
+## Activation Strategies
+
+### Sampling
+- Protein/energy products
+- Supplements
+- Healthy snacks
+- Beverages
+
+### Experiences
+- Workout classes
+- Health screenings
+- Fitness challenges
+- Recovery stations
+
+## Staffing Profile
+
+- Fitness enthusiasts
+- Health-conscious
+- Active lifestyle
+- Knowledgeable
+- Aspirational appearance
+
+## Best Practices
+
+- Respect workout time
+- Offer genuine value
+- Align with health goals
+- Capture post-workout
+- Follow gym rules
+
+Fitness marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "65",
+    slug: "gaming-esports-marketing",
+    title: "Gaming & Esports Marketing: Reaching Digital Natives",
+    excerpt: "Gaming audiences are massive and engaged. Here's how to activate in the gaming space.",
+    image: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "September 30, 2026",
+    readTime: "7 min read",
+    category: "Gaming",
+    tags: ["Gaming Marketing", "Esports", "Digital Natives", "Gen Z Marketing"],
+    content: `# Gaming & Esports Marketing
+
+Gaming reaches billions worldwide. Here's how to connect with this audience.
+
+## Gaming Landscape
+
+### Esports Events
+- Major tournaments
+- League championships
+- Gaming conventions
+- LAN parties
+
+### Gaming Conventions
+- PAX events
+- Comic-Con
+- TwitchCon
+- E3/Summer Game Fest
+
+### Retail
+- GameStop events
+- Console launches
+- Game releases
+- Midnight openings
+
+## Activation Types
+
+### Experiential
+- Gaming lounges
+- Tournament hosting
+- Demo stations
+- Meet-and-greets
+
+### Content
+- Streamer partnerships
+- Content creation
+- Social integration
+- Influencer events
+
+## Staffing Requirements
+
+- Gaming knowledge
+- Platform familiarity
+- Streamer awareness
+- Tech comfortable
+- Authentic enthusiasm
+
+## Authenticity Matters
+
+- Know the culture
+- Respect the community
+- Add value, don't interrupt
+- Partner with creators
+- Be genuine
+
+Gaming marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "66",
+    slug: "pet-industry-marketing",
+    title: "Pet Industry Marketing: Reaching Pet Parents",
+    excerpt: "Pet owners are passionate consumers. Here's how to connect through pet-focused activations.",
+    image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 1, 2026",
+    readTime: "6 min read",
+    category: "Pet Industry",
+    tags: ["Pet Marketing", "Pet Events", "Animal Lovers", "Pet Products"],
+    content: `# Pet Industry Marketing
+
+Pet parents spend generously on their furry family members. Here's how to reach them.
+
+## Pet Events
+
+### Dog Events
+- Dog shows
+- Bark in the Park
+- Dog-friendly festivals
+- Adoption events
+
+### Pet Retail
+- Pet store demos
+- Vet office activations
+- Pet supply chains
+- Specialty boutiques
+
+### Community
+- Dog parks
+- Pet-friendly venues
+- Animal shelters
+- Rescue events
+
+## Activation Strategies
+
+### Sampling
+- Treats and food
+- Toys and accessories
+- Health products
+- Grooming items
+
+### Experiences
+- Pet photo booths
+- Agility courses
+- Training demos
+- Pet costume contests
+
+## Staffing Profile
+
+- Animal lovers
+- Pet handling comfort
+- Patience
+- Engaging personality
+- Knowledge of products
+
+## Safety First
+
+- Leash requirements
+- Treat ingredients
+- Pet temperaments
+- Owner permissions
+- Cleanup supplies
+
+Pet marketing: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
