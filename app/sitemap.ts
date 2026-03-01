@@ -6,6 +6,7 @@ import { serviceTypes } from '@/server/city-services-data'
 import { enhancedCaseStudies } from '@/server/case-studies-data'
 import { industries } from '@/server/industries-data'
 import { states, stateServices } from '@/server/states-data'
+import { industries as industryList, cities as industryCities } from '@/server/industry-city-data'
 import { portfolioCaseStudies } from '@/server/portfolio-case-studies'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
@@ -237,6 +238,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
+  // Industry + City combo pages (10 industries × 40 cities = 400 pages)
+  const industryCityPages: MetadataRoute.Sitemap = []
+  industryList.forEach(industry => {
+    industryCities.forEach(city => {
+      industryCityPages.push({
+        url: `${DOMAIN}/industries/${industry.slug}/${city.slug}`,
+        lastModified: today,
+        changeFrequency: 'monthly' as const,
+        priority: 0.65
+      })
+    })
+  })
+
   // Combine all pages
   const allPages = [
     ...staticPages,
@@ -247,7 +261,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...venuePages,
     ...venueServicePages,
     ...statePages,
-    ...stateServicePages
+    ...stateServicePages,
+    ...industryCityPages
   ]
 
   console.log(`Sitemap generated with ${allPages.length} URLs:`)
@@ -260,6 +275,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`- Venue-service pages: ${venueServicePages.length}`)
   console.log(`- State pages: ${statePages.length}`)
   console.log(`- State-service pages: ${stateServicePages.length}`)
+  console.log(`- Industry-city pages: ${industryCityPages.length}`)
 
   return allPages
 }
