@@ -487,6 +487,417 @@ export const enhancedCaseStudies: EnhancedCaseStudy[] = [
       "/api/case-study-images/coca-cola-crowd.jpg",
       "/api/case-study-images/coca-cola-sampling.jpg"
     ]
+  },
+  {
+    id: "bmw-auto-show-experience",
+    title: "BMW Ultimate Driving Experience Auto Show Tour",
+    client: "BMW North America",
+    industry: "Automotive",
+    campaign_type: "Auto Show & Test Drive Activation",
+    date: "2024-06",
+    location: "Los Angeles, Chicago, New York, Miami",
+    description: "Multi-city auto show presence and test drive experience program showcasing the all-electric BMW iX lineup with professional product specialists and VIP hospitality staff.",
+    challenge: "BMW needed to educate consumers about electric vehicle technology while maintaining their luxury brand positioning across major auto shows and standalone test drive events.",
+    solution: "AirFresh deployed automotive-trained product specialists who could articulate EV technology benefits, paired with VIP hospitality staff for the premium lounge experience and test drive coordination teams.",
+    results: [
+      "Facilitated 8,500+ test drives across 4 cities",
+      "85% of test drivers reported increased purchase consideration",
+      "Generated 3,200 qualified sales leads",
+      "Achieved 94% customer satisfaction rating"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 45,
+        product_specialists: 20,
+        event_managers: 8,
+        total_staff_hours: 4800
+      },
+      event_management: {
+        on_site_oversight: true,
+        coordination_points: ["Dealership coordination", "Test drive scheduling", "VIP guest management"],
+        safety_protocols: true,
+        contingency_planning: true
+      }
+    },
+    metrics: {
+      impressions: "2.5M",
+      engagement_rate: "45%",
+      roi: "380%",
+      sales_uplift: "12% regional increase",
+      conversion_rate: "38%"
+    },
+    testimonial: {
+      quote: "AirFresh's automotive specialists truly understood our brand and technology. Their professionalism elevated the entire experience.",
+      author: "Marcus Chen",
+      title: "Regional Marketing Director, BMW North America"
+    },
+    keywords: ["automotive experiential marketing", "auto show staffing", "test drive events", "luxury automotive activations", "EV product specialists"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
+  },
+  {
+    id: "budweiser-super-bowl-activation",
+    title: "Budweiser Super Bowl Fan Experience",
+    client: "Anheuser-Busch",
+    industry: "Alcohol & Beverage",
+    campaign_type: "Sports Event Activation",
+    date: "2024-02",
+    location: "Las Vegas, NV",
+    description: "Immersive Budweiser fan experience at Super Bowl LVIII featuring sampling stations, interactive games, and celebrity appearances with TIPS-certified promotional staff.",
+    challenge: "Create a memorable brand experience that stands out during the most competitive marketing weekend of the year while ensuring responsible alcohol service.",
+    solution: "AirFresh provided 100% TIPS-certified brand ambassadors for sampling, energetic street teams for fan zone activations, and VIP hospitality staff for the exclusive Bud Light Hotel events.",
+    results: [
+      "Served 50,000+ samples over Super Bowl weekend",
+      "Generated 500M+ social media impressions",
+      "Created viral moments with celebrity partnerships",
+      "Zero compliance incidents"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 75,
+        street_teams: 40,
+        event_managers: 12,
+        total_staff_hours: 6200
+      },
+      sampling: {
+        products_distributed: 50000,
+        locations: 8,
+        days: 4
+      }
+    },
+    metrics: {
+      impressions: "500M+",
+      engagement_rate: "65%",
+      roi: "420%",
+      social_reach: "500M+"
+    },
+    testimonial: {
+      quote: "The AirFresh team delivered an incredible Super Bowl activation. Professional, energetic, and zero compliance issues.",
+      author: "Jennifer Walsh",
+      title: "Senior Brand Manager, Anheuser-Busch"
+    },
+    keywords: ["super bowl marketing", "alcohol brand activation", "TIPS certified staff", "sports event staffing", "beverage sampling"],
+    featured_image: "/images/case-studies/gallery/duracell/duracell-1.jpg",
+    gallery_images: []
+  },
+  {
+    id: "amazon-prime-day-popup",
+    title: "Amazon Prime Day Pop-Up Experience",
+    client: "Amazon",
+    industry: "Technology",
+    campaign_type: "Pop-Up Retail Activation",
+    date: "2024-07",
+    location: "New York City, Los Angeles, Chicago",
+    description: "Interactive Prime Day pop-up shops featuring product demos, exclusive deals, and immersive brand experiences with tech-savvy demonstration specialists.",
+    challenge: "Bring the online Prime Day experience to life in physical spaces while demonstrating the breadth of Amazon products and services to drive membership sign-ups.",
+    solution: "AirFresh deployed tech-trained product demonstrators across multiple product categories, registration specialists for Prime sign-ups, and crowd management teams for high-traffic locations.",
+    results: [
+      "15,000+ Prime membership sign-ups",
+      "Demonstrated products to 45,000 visitors",
+      "Generated 2.1M social impressions",
+      "Achieved 4.8/5 visitor satisfaction"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 60,
+        product_specialists: 30,
+        event_managers: 10,
+        total_staff_hours: 5400
+      },
+      event_management: {
+        on_site_oversight: true,
+        coordination_points: ["Queue management", "Demo scheduling", "Inventory tracking"],
+        safety_protocols: true,
+        contingency_planning: true
+      }
+    },
+    metrics: {
+      impressions: "2.1M",
+      engagement_rate: "72%",
+      roi: "520%",
+      conversion_rate: "33%"
+    },
+    testimonial: {
+      quote: "AirFresh transformed our digital event into an unforgettable real-world experience. The staff were incredibly knowledgeable.",
+      author: "Sarah Mitchell",
+      title: "Head of Experiential Marketing, Amazon"
+    },
+    keywords: ["pop-up retail", "tech product demos", "retail activation", "brand experience", "membership marketing"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
+  },
+  {
+    id: "lululemon-marathon-activation",
+    title: "Lululemon Marathon & Running Event Series",
+    client: "Lululemon",
+    industry: "Fashion & Retail",
+    campaign_type: "Sports & Fitness Activation",
+    date: "2024-04",
+    location: "Boston, Chicago, NYC, LA",
+    description: "Marathon expo presence and finish line activation series with brand ambassadors providing product education, fitting services, and post-race recovery experiences.",
+    challenge: "Connect with serious runners at major marathons while differentiating from athletic wear competitors and driving both brand affinity and retail traffic.",
+    solution: "AirFresh staffed marathon expos with knowledgeable running enthusiasts who could speak authentically about performance apparel, plus post-race recovery zone staff offering stretch assistance and product sampling.",
+    results: [
+      "Engaged 35,000+ runners across 4 marathons",
+      "Drove 28% increase in local store traffic post-event",
+      "Collected 12,000 email sign-ups",
+      "92% positive brand sentiment"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 50,
+        product_specialists: 15,
+        event_managers: 8,
+        total_staff_hours: 3600
+      },
+      sampling: {
+        products_distributed: 25000,
+        locations: 4,
+        days: 8
+      }
+    },
+    metrics: {
+      impressions: "1.8M",
+      engagement_rate: "58%",
+      roi: "340%",
+      brand_awareness_lift: "22%"
+    },
+    testimonial: {
+      quote: "The running ambassadors AirFresh provided were authentic athletes who genuinely connected with our community.",
+      author: "Michael Torres",
+      title: "Director of Community Events, Lululemon"
+    },
+    keywords: ["marathon activation", "fitness brand marketing", "running events", "athletic retail", "sports experiential"],
+    featured_image: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    gallery_images: []
+  },
+  {
+    id: "pfizer-health-fair-tour",
+    title: "Pfizer Community Health Fair Tour",
+    client: "Pfizer",
+    industry: "Healthcare & Pharma",
+    campaign_type: "Health Education Campaign",
+    date: "2024-03",
+    location: "20+ Cities Nationwide",
+    description: "Nationwide health education tour with compliance-trained health educators providing screening information, wellness resources, and patient support program enrollment.",
+    challenge: "Deliver complex health information in an accessible, engaging way while maintaining strict pharmaceutical marketing compliance across diverse communities.",
+    solution: "AirFresh recruited and trained healthcare-background staff in pharmaceutical compliance, health literacy communication, and cultural competency to effectively reach diverse patient populations.",
+    results: [
+      "Reached 75,000+ community members",
+      "Enrolled 8,500 patients in support programs",
+      "100% compliance audit pass rate",
+      "Expanded to 15 additional markets"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 40,
+        product_specialists: 25,
+        event_managers: 10,
+        total_staff_hours: 8000
+      },
+      event_management: {
+        on_site_oversight: true,
+        coordination_points: ["Healthcare facility coordination", "Compliance monitoring", "Patient privacy protocols"],
+        safety_protocols: true,
+        contingency_planning: true
+      }
+    },
+    metrics: {
+      impressions: "3.2M",
+      engagement_rate: "42%",
+      roi: "280%",
+      conversion_rate: "11%"
+    },
+    testimonial: {
+      quote: "AirFresh's compliance-trained staff allowed us to confidently expand our community health initiatives.",
+      author: "Dr. Rebecca Stone",
+      title: "Director of Patient Engagement, Pfizer"
+    },
+    keywords: ["healthcare marketing", "pharma compliance", "health fair staffing", "patient education", "medical event staff"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
+  },
+  {
+    id: "chase-bank-branch-launch",
+    title: "Chase Bank New Market Branch Launch Campaign",
+    client: "JPMorgan Chase",
+    industry: "Financial Services",
+    campaign_type: "Retail Banking Launch",
+    date: "2024-05",
+    location: "Phoenix, Austin, Denver",
+    description: "New branch market launch campaign featuring community street teams, grand opening events, and ongoing brand ambassador presence to drive account openings.",
+    challenge: "Establish Chase presence in new markets where the brand had limited awareness, competing against established regional banks with strong community ties.",
+    solution: "AirFresh deployed professional, polished street teams for community outreach, bilingual brand ambassadors for diverse neighborhoods, and VIP event staff for grand opening celebrations.",
+    results: [
+      "Opened 15,000+ new accounts across 3 markets",
+      "Generated 45,000 qualified leads",
+      "Achieved 340% of account opening goals",
+      "Built database of 80,000 prospects"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 35,
+        street_teams: 25,
+        event_managers: 6,
+        total_staff_hours: 4200
+      },
+      logistics: {
+        permits_secured: ["Street permits", "Event permits"],
+        transportation: ["Branded vehicles", "Mobile banking units"],
+        equipment: ["Registration tablets", "Promotional materials"],
+        venue_coordination: true
+      }
+    },
+    metrics: {
+      impressions: "1.5M",
+      engagement_rate: "38%",
+      roi: "450%",
+      conversion_rate: "33%"
+    },
+    testimonial: {
+      quote: "AirFresh helped us establish a strong community presence from day one. Their bilingual teams were essential.",
+      author: "Robert Martinez",
+      title: "Regional Marketing VP, JPMorgan Chase"
+    },
+    keywords: ["bank branch marketing", "financial services activation", "community outreach", "retail banking", "account acquisition"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
+  },
+  {
+    id: "gopro-action-sports-tour",
+    title: "GoPro Action Sports Festival Tour",
+    client: "GoPro",
+    industry: "Consumer Electronics",
+    campaign_type: "Action Sports Sponsorship Activation",
+    date: "2024-06",
+    location: "X Games, Vans US Open, Dew Tour",
+    description: "Action sports festival tour with product demo stations, athlete meet-and-greets, and user-generated content activations featuring adventure-lifestyle brand ambassadors.",
+    challenge: "Authentically connect with action sports enthusiasts who are skeptical of corporate marketing while demonstrating GoPro's latest camera technology in real-world conditions.",
+    solution: "AirFresh recruited actual action sports athletes and enthusiasts as brand ambassadors who could authentically demonstrate products and engage with the community as peers rather than salespeople.",
+    results: [
+      "Generated 2M+ pieces of user content",
+      "Drove 180% increase in social engagement",
+      "Facilitated 25,000+ hands-on demos",
+      "Achieved 67% purchase intent lift"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 40,
+        product_specialists: 20,
+        event_managers: 8,
+        total_staff_hours: 3800
+      },
+      creative: {
+        custom_activation: "Content creation stations with instant editing",
+        branded_materials: ["Demo cameras", "Mounting accessories", "Branded merchandise"],
+        digital_integration: ["Social sharing stations", "Live streaming setups"]
+      }
+    },
+    metrics: {
+      impressions: "8.5M",
+      engagement_rate: "78%",
+      roi: "520%",
+      social_reach: "15M+",
+      brand_awareness_lift: "34%"
+    },
+    testimonial: {
+      quote: "AirFresh found us genuine action sports enthusiasts who lived the GoPro lifestyle. You can't fake that authenticity.",
+      author: "Chris Hendricks",
+      title: "Global Events Director, GoPro"
+    },
+    keywords: ["action sports marketing", "festival activation", "UGC campaigns", "athlete ambassadors", "extreme sports events"],
+    featured_image: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    gallery_images: []
+  },
+  {
+    id: "target-back-to-school",
+    title: "Target Back-to-School Campus Activation",
+    client: "Target",
+    industry: "Retail",
+    campaign_type: "Campus Marketing Campaign",
+    date: "2024-08",
+    location: "50 Universities Nationwide",
+    description: "Nationwide college campus back-to-school campaign featuring dorm room makeover demonstrations, student discount promotions, and social media content creation activations.",
+    challenge: "Connect with Gen Z college students in an authentic way that cuts through advertising noise while driving both in-store traffic and online purchases.",
+    solution: "AirFresh recruited current college students and recent graduates as campus ambassadors who could relate peer-to-peer, creating authentic content and genuine word-of-mouth recommendations.",
+    results: [
+      "Reached 500,000+ college students",
+      "Generated 1.2M social impressions",
+      "Drove 45% increase in student segment sales",
+      "Achieved 89% positive sentiment"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 150,
+        street_teams: 100,
+        event_managers: 25,
+        total_staff_hours: 12000
+      },
+      sampling: {
+        products_distributed: 200000,
+        locations: 50,
+        days: 21
+      }
+    },
+    metrics: {
+      impressions: "1.2M",
+      engagement_rate: "52%",
+      roi: "380%",
+      sales_uplift: "45%"
+    },
+    testimonial: {
+      quote: "The campus ambassadors felt like real students giving real recommendations, not brand representatives. That's exactly what we needed.",
+      author: "Amanda Chen",
+      title: "VP Youth Marketing, Target"
+    },
+    keywords: ["campus marketing", "back to school", "Gen Z marketing", "student ambassadors", "college activation"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
+  },
+  {
+    id: "salesforce-dreamforce-experience",
+    title: "Salesforce Dreamforce Conference Activation",
+    client: "Salesforce",
+    industry: "Technology",
+    campaign_type: "Conference & Trade Show",
+    date: "2024-09",
+    location: "San Francisco, CA",
+    description: "Comprehensive staffing for Salesforce's flagship Dreamforce conference including registration, session management, demo specialists, and VIP hospitality across multiple venues.",
+    challenge: "Staff the world's largest software conference with 40,000+ attendees across multiple San Francisco venues, requiring diverse skillsets from technical demonstrators to hospitality professionals.",
+    solution: "AirFresh provided a multi-tier staffing solution with tech-trained demo specialists for product pavilions, hospitality-experienced staff for executive events, and high-energy registration teams for seamless check-in.",
+    results: [
+      "Supported 45,000+ attendees seamlessly",
+      "Staffed 200+ sessions and demos",
+      "Achieved 4.9/5 attendee satisfaction",
+      "Zero critical staffing gaps"
+    ],
+    deliverables: {
+      staffing: {
+        brand_ambassadors: 200,
+        product_specialists: 75,
+        event_managers: 30,
+        total_staff_hours: 18000
+      },
+      event_management: {
+        on_site_oversight: true,
+        coordination_points: ["Multi-venue logistics", "Session management", "VIP coordination", "Emergency response"],
+        safety_protocols: true,
+        contingency_planning: true
+      }
+    },
+    metrics: {
+      impressions: "50M+",
+      engagement_rate: "85%",
+      roi: "600%"
+    },
+    testimonial: {
+      quote: "Dreamforce is our Super Bowl, and AirFresh has been our MVP staffing partner for five consecutive years.",
+      author: "Kevin Park",
+      title: "VP Global Events, Salesforce"
+    },
+    keywords: ["tech conference staffing", "Dreamforce", "B2B event staff", "conference registration", "demo specialists"],
+    featured_image: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    gallery_images: []
   }
 ];
 
