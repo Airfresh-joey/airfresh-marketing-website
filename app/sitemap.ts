@@ -109,6 +109,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog/b2b-event-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/mobile-marketing-tours`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/guerrilla-marketing-tactics`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/event-roi-measurement`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/hiring-brand-ambassadors-checklist`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/seasonal-marketing-calendar`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/virtual-hybrid-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/experiential-marketing-trends-2026`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/crisis-management-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Individual portfolio case studies
     ...portfolioCaseStudies.map(cs => ({
