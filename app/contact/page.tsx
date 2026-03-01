@@ -175,13 +175,13 @@ export default function Contact() {
               </div>
 
               <div className="flex flex-col sm:flex-row gap-4">
-                <Button asChild size="lg" variant="outline" className="text-primary border-white bg-white hover:bg-gray-100">
+                <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100 border-0">
                   <a href="tel:+13037206060">
                     <Phone className="h-5 w-5 mr-2" />
                     Call: 303-720-6060
                   </a>
                 </Button>
-                <Button asChild size="lg" variant="outline" className="text-white border-white/50 hover:bg-white/10">
+                <Button asChild size="lg" className="bg-cyan-400 text-gray-900 hover:bg-cyan-300 border-0">
                   <a href="mailto:hello@airfreshmarketing.com">
                     <Mail className="h-5 w-5 mr-2" />
                     Email Us
