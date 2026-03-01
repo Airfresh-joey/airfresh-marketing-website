@@ -3,6 +3,7 @@ import { usaEvents } from '@/server/usa-events-data'
 import { venues } from '@/server/venues-data'
 import { cities as citiesData } from '@/server/cities-data'
 import { serviceTypes } from '@/server/city-services-data'
+import { enhancedCaseStudies } from '@/server/case-studies-data'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
@@ -54,6 +55,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog`, lastModified: today, changeFrequency: 'weekly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${DOMAIN}/case-studies`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
+    // Individual case study pages
+    ...enhancedCaseStudies.map(cs => ({
+      url: `${DOMAIN}/case-studies/${cs.id}`,
+      lastModified: today,
+      changeFrequency: 'monthly' as const,
+      priority: 0.85
+    })),
     { url: `${DOMAIN}/careers`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     { url: `${DOMAIN}/locations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
