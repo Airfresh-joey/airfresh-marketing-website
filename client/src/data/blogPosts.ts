@@ -5557,5 +5557,416 @@ Pet parents spend generously on their furry family members. Here's how to reach 
 
 Pet marketing: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "67",
+    slug: "cannabis-marketing-compliance",
+    title: "Cannabis Marketing: Navigating Compliance in a Growing Industry",
+    excerpt: "Cannabis marketing requires careful compliance. Here's how to activate legally in this emerging space.",
+    image: "/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 5, 2026",
+    readTime: "8 min read",
+    category: "Cannabis",
+    tags: ["Cannabis Marketing", "CBD Marketing", "Compliance", "Emerging Industries"],
+    content: `# Cannabis Marketing Compliance
+
+Cannabis marketing offers opportunities but requires careful compliance. Here's the guide.
+
+## Regulatory Landscape
+
+### Federal vs State
+- Federal scheduling status
+- State-by-state rules
+- Local restrictions
+- Evolving regulations
+
+### Key Restrictions
+- Age-gating (21+)
+- Health claims
+- Consumption displays
+- Location restrictions
+
+## Compliant Activation Types
+
+### Educational
+- Product education
+- Industry events
+- Trade shows
+- Consumer education
+
+### Retail
+- Dispensary events
+- Product launches
+- Loyalty programs
+- Community events
+
+## Staffing Requirements
+
+- 21+ mandatory
+- Compliance training
+- Product knowledge
+- State certifications
+- Background checks
+
+## Platform Considerations
+
+- No major social ads
+- Limited digital marketing
+- In-person focus
+- Community building
+- PR strategies
+
+Compliant cannabis marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "68",
+    slug: "luxury-brand-activations",
+    title: "Luxury Brand Activations: High-End Experiential Marketing",
+    excerpt: "Luxury brands require premium execution. Here's how to create exclusive brand experiences.",
+    image: "/images/case-studies/gallery/cirque/cirque-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 10, 2026",
+    readTime: "7 min read",
+    category: "Luxury",
+    tags: ["Luxury Marketing", "Premium Brands", "High-End Events", "VIP Experiences"],
+    content: `# Luxury Brand Activations
+
+Luxury brands demand flawless execution and premium experiences. Here's the playbook.
+
+## Luxury Event Types
+
+### Exclusive Launches
+- Private previews
+- VIP-only events
+- Invitation-only
+- Limited access
+
+### Experiential
+- Immersive installations
+- Art partnerships
+- Cultural events
+- Lifestyle experiences
+
+### Retail
+- Personal shopping
+- Private appointments
+- Concierge services
+- White-glove delivery
+
+## Execution Standards
+
+### Environment
+- Premium venues
+- Impeccable design
+- Sensory details
+- Seamless tech
+
+### Service
+- Anticipatory service
+- Personal attention
+- Discretion
+- Problem prevention
+
+## Staffing Profile
+
+- Refined appearance
+- Polished communication
+- Hospitality background
+- Discretion
+- Cultural awareness
+
+## Details Matter
+
+- Champagne service
+- Catering quality
+- Gift presentation
+- Follow-up touches
+- No visible logistics
+
+Luxury marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "69",
+    slug: "nonprofit-event-marketing",
+    title: "Nonprofit Event Marketing: Fundraising & Awareness Campaigns",
+    excerpt: "Nonprofits need cost-effective marketing solutions. Here's how to maximize impact on limited budgets.",
+    image: "/images/case-studies/gallery/ted/ted-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 15, 2026",
+    readTime: "7 min read",
+    category: "Nonprofit",
+    tags: ["Nonprofit Marketing", "Fundraising", "Cause Marketing", "Awareness Campaigns"],
+    content: `# Nonprofit Event Marketing
+
+Nonprofits need maximum impact from limited budgets. Here's how to make it work.
+
+## Nonprofit Event Types
+
+### Fundraising
+- Galas and dinners
+- Charity auctions
+- Walk/run events
+- Giving days
+
+### Awareness
+- Community events
+- Educational programs
+- Advocacy campaigns
+- Volunteer drives
+
+### Stewardship
+- Donor appreciation
+- Volunteer recognition
+- Impact showcases
+- Annual meetings
+
+## Budget Strategies
+
+### In-Kind Support
+- Donated services
+- Venue partnerships
+- Vendor discounts
+- Volunteer staffing
+
+### Volunteer Integration
+- Trained volunteers
+- Professional guidance
+- Mixed staffing
+- Capacity building
+
+## Staffing Considerations
+
+- Mission alignment
+- Flexibility on rates
+- Volunteer coordination
+- Training efficiency
+
+## Measuring Success
+
+- Funds raised
+- Donors acquired
+- Awareness metrics
+- Volunteer engagement
+- Mission impact
+
+Nonprofit marketing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "70",
+    slug: "convention-center-guide",
+    title: "Convention Center Guide: America's Top Exhibition Venues",
+    excerpt: "Know the venues before you book. Here's your guide to major convention centers nationwide.",
+    image: "/images/case-studies/gallery/mac/mac-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 20, 2026",
+    readTime: "9 min read",
+    category: "Venues",
+    tags: ["Convention Centers", "Trade Shows", "Exhibition Venues", "Event Venues"],
+    content: `# Convention Center Guide
+
+Knowing venues helps you plan better activations. Here's the guide to major centers.
+
+## Top Convention Centers
+
+### McCormick Place (Chicago)
+- 2.6M sq ft
+- Largest in North America
+- Major trade shows
+- Union labor
+
+### Las Vegas Convention Center
+- 2.5M sq ft
+- CES, trade shows
+- Entertainment options
+- Tech infrastructure
+
+### Orange County Convention Center (Orlando)
+- 2.1M sq ft
+- Family/tourism events
+- Theme park proximity
+- Year-round weather
+
+### Georgia World Congress Center (Atlanta)
+- 1.4M sq ft
+- Connected to stadium
+- Airport proximity
+- Southern hospitality
+
+### Javits Center (New York)
+- 1.2M sq ft (expanded)
+- NYC location
+- High costs
+- Media access
+
+## Planning Considerations
+
+### Logistics
+- Load-in/out times
+- Union requirements
+- Parking/transport
+- Hotel proximity
+
+### Costs
+- Space rental
+- Labor rates
+- Services
+- Hidden fees
+
+### Staffing
+- Local talent pools
+- Travel needs
+- Union considerations
+- Training logistics
+
+Convention staffing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "71",
+    slug: "qr-code-marketing",
+    title: "QR Code Marketing: Bridging Physical and Digital Experiences",
+    excerpt: "QR codes connect offline activations to digital content. Here's how to use them effectively.",
+    image: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 25, 2026",
+    readTime: "6 min read",
+    category: "Digital",
+    tags: ["QR Codes", "Digital Marketing", "Mobile Marketing", "Phygital"],
+    content: `# QR Code Marketing Guide
+
+QR codes bridge physical and digital experiences. Here's how to maximize their impact.
+
+## QR Code Applications
+
+### At Events
+- Lead capture
+- Content access
+- Gamification
+- Contactless info
+
+### On Materials
+- Product packaging
+- Print advertising
+- Signage
+- Business cards
+
+## Best Practices
+
+### Design
+- Adequate size
+- Good contrast
+- Error correction
+- Brand integration
+
+### Destination
+- Mobile-optimized
+- Fast loading
+- Clear value
+- Trackable URLs
+
+## Staffing Integration
+
+- Staff explanation
+- Incentive offers
+- Technical support
+- Engagement boost
+
+## Measurement
+
+- Scan rates
+- Time on site
+- Conversion rates
+- Geographic data
+- Device insights
+
+## Common Mistakes
+
+- Too small
+- Poor placement
+- Broken links
+- No mobile optimization
+- No tracking
+
+QR marketing experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "72",
+    slug: "street-team-management",
+    title: "Street Team Management: Effective Grassroots Marketing",
+    excerpt: "Street teams put your brand in the community. Here's how to manage effective grassroots campaigns.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "October 30, 2026",
+    readTime: "7 min read",
+    category: "Street Teams",
+    tags: ["Street Teams", "Grassroots Marketing", "Field Marketing", "Community Marketing"],
+    content: `# Street Team Management
+
+Street teams bring your brand directly to consumers. Here's how to manage them effectively.
+
+## Street Team Basics
+
+### Activities
+- Flyer distribution
+- Product sampling
+- Event promotion
+- Guerrilla marketing
+- Social media content
+
+### Locations
+- High-traffic areas
+- Target demographics
+- Event surroundings
+- Retail locations
+
+## Team Management
+
+### Recruitment
+- Local knowledge
+- Outgoing personality
+- Reliability
+- Physical stamina
+
+### Training
+- Brand messaging
+- Territory mapping
+- Safety protocols
+- Reporting requirements
+
+### Supervision
+- Check-ins
+- Photo verification
+- GPS tracking
+- Mystery shopping
+
+## Logistics
+
+### Materials
+- Inventory management
+- Distribution
+- Storage
+- Replenishment
+
+### Legal
+- Permits
+- Private property
+- Local ordinances
+- Insurance
+
+## Metrics
+
+- Distributions
+- Impressions
+- Engagements
+- Photos captured
+- Territory coverage
+
+Street team experts: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
