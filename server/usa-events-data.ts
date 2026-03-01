@@ -2023,6 +2023,68 @@ export const usaEvents: USAEvent[] = [
     tier: 2
   },
 
+  // Formula 1 Miami Grand Prix
+  {
+    id: "f1-miami-2026",
+    slug: "formula-1-miami-grand-prix-2026",
+    name: "Formula 1 Miami Grand Prix",
+    category: "sports",
+    subcategory: "Motorsports",
+    city: "Miami",
+    state: "Florida",
+    venue: "Miami International Autodrome",
+    month: "May",
+    dates: "May 1-3, 2026",
+    attendees: "300,000+",
+    industry: "Motorsports",
+    title: "F1 Miami Grand Prix 2026 Staffing | Event Staff & VIP Hospitality",
+    metaDescription: "Professional Formula 1 Miami Grand Prix staffing. VIP hospitality, brand ambassadors, yacht activations, and event staff for F1's glamorous Miami race weekend.",
+    keywords: ["f1 miami staffing", "formula 1 miami event staff", "miami grand prix hospitality", "f1 miami brand ambassadors"],
+    heroTitle: "Formula 1 Miami Grand Prix 2026 Staffing",
+    heroSubtitle: "Miami Glamour Meets World-Class Racing",
+    description: "The Formula 1 Miami Grand Prix brings unparalleled glamour to South Florida with racing, celebrities, and world-class hospitality. AirFresh provides sophisticated staff for paddock experiences, yacht parties, sponsor activations, and VIP hospitality throughout race weekend.",
+    relevantServices: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Promotional Models", "Event Staff"],
+    nearbyHotels: ["Fontainebleau Miami Beach", "Faena Hotel", "Four Seasons Surf Club", "The Setai"],
+    localAttractions: ["South Beach", "Wynwood Art District", "Design District", "Brickell"],
+    transportation: "Miami International Airport, Rideshare, F1 Express Shuttles",
+    staffingNeeds: ["VIP paddock hospitality", "Yacht party staff", "Suite hosts", "Brand ambassadors", "Sponsor activation teams"],
+    typicalRoles: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Promotional Models", "Event Staff"],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
+    featured: true,
+    tier: 1
+  },
+
+  // Formula 1 Las Vegas Grand Prix
+  {
+    id: "f1-vegas-2026",
+    slug: "formula-1-las-vegas-grand-prix-2026",
+    name: "Formula 1 Las Vegas Grand Prix",
+    category: "sports",
+    subcategory: "Motorsports",
+    city: "Las Vegas",
+    state: "Nevada",
+    venue: "Las Vegas Strip Street Circuit",
+    month: "November",
+    dates: "November 20-22, 2026",
+    attendees: "350,000+",
+    industry: "Motorsports",
+    title: "F1 Las Vegas Grand Prix 2026 Staffing | Event Staff & VIP Hospitality",
+    metaDescription: "Professional Formula 1 Las Vegas Grand Prix staffing. Night race hospitality, casino activations, brand ambassadors, and VIP staff for F1's spectacular Vegas race.",
+    keywords: ["f1 las vegas staffing", "formula 1 vegas event staff", "las vegas grand prix hospitality", "f1 vegas brand ambassadors", "strip circuit staffing"],
+    heroTitle: "Formula 1 Las Vegas Grand Prix 2026 Staffing",
+    heroSubtitle: "The Most Spectacular Race on Earth Needs Spectacular Staff",
+    description: "The Formula 1 Las Vegas Grand Prix transforms the iconic Strip into a high-speed racing circuit under the neon lights. This spectacular night race demands exceptional hospitality, VIP handling, and brand activation staff. AirFresh provides world-class teams for casino hospitality, rooftop viewing parties, paddock experiences, and sponsor activations.",
+    relevantServices: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Promotional Models", "Event Staff", "Casino Hosts"],
+    nearbyHotels: ["Bellagio", "Wynn Las Vegas", "Venetian", "Caesars Palace", "MGM Grand"],
+    localAttractions: ["Las Vegas Strip", "Sphere", "High Roller", "Fremont Street"],
+    transportation: "Harry Reid International Airport, Monorail, Rideshare",
+    staffingNeeds: ["Casino hospitality", "Rooftop party staff", "VIP handlers", "Paddock hosts", "Brand ambassadors", "Night event specialists"],
+    typicalRoles: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Promotional Models", "Event Staff", "Night Event Specialists"],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
+    featured: true,
+    tier: 1
+  },
+
   // Indy 500
   {
     id: "indy-500-2026",
