@@ -523,6 +523,27 @@ export const portfolioCaseStudies = [
     },
     category: "Sports",
     featured: true
+  },
+  {
+    id: "peelz-citrus",
+    name: "Peelz Citrus",
+    tagline: "Fresh Citrus Sampling at Retail",
+    description: "Air Fresh Marketing partnered with Peelz Citrus for an in-store sampling activation at Market 32 by Price Chopper. Our brand ambassadors engaged shoppers with fresh citrus samples, driving trial and purchase of the premium fruit brand. The activation featured professional displays and knowledgeable staff who educated consumers about the benefits of Peelz premium citrus products.",
+    industry: "Food & Beverage",
+    services: ["Product Sampling", "In-Store Activation", "Brand Ambassadors", "Retail Marketing"],
+    markets: ["New York", "Price Chopper Locations", "Market 32"],
+    heroImage: "/images/case-studies/beer-samplings.jpg",
+    galleryImages: [
+      "/images/case-studies/beer-samplings.jpg"
+    ],
+    stats: {
+      reach: "5,000+",
+      engagement: "92%",
+      satisfaction: "98%",
+      roi: "4.2x"
+    },
+    category: "Food & Beverage",
+    featured: true
   }
 ];
 

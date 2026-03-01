@@ -3361,5 +3361,420 @@ Turn your events into content machines by designing for influencer sharing.
 
 Influencer event expertise: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "37",
+    slug: "grocery-store-sampling-guide",
+    title: "Grocery Store Sampling Guide: In-Store Product Demos That Drive Sales",
+    excerpt: "In-store sampling is one of the most effective ways to drive trial and purchase. Here's how to maximize your grocery store activations.",
+    image: "/images/case-studies/gallery/byoma/byoma-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "May 25, 2026",
+    readTime: "7 min read",
+    category: "Sampling",
+    tags: ["Grocery Sampling", "Product Demos", "Retail Marketing", "In-Store Activation"],
+    content: `# Grocery Store Sampling Guide
+
+In-store sampling converts browsers to buyers. Here's how to execute effectively in grocery environments.
+
+## Why Grocery Sampling Works
+
+- 73% of purchase decisions made in-store
+- Sampling increases purchase likelihood by 475%
+- Creates immediate conversion opportunity
+- Builds brand awareness at point of purchase
+
+## Key Grocery Retailers
+
+### National Chains
+- Kroger / King Soopers
+- Safeway / Albertsons
+- Publix
+- Whole Foods
+- Costco / Sam's Club
+
+### Regional Chains
+- Price Chopper / Market 32
+- HEB (Texas)
+- Wegmans
+- Meijer
+
+## Staffing Requirements
+
+### Brand Ambassadors Need:
+- Food handler certification
+- Engaging personality
+- Product knowledge
+- Sales ability
+- Professional appearance
+
+### Equipment/Setup
+- Sampling table
+- Product display
+- Napkins/cups
+- Coupons
+- Waste disposal
+
+## Best Practices
+
+1. **Location** - High-traffic areas near product shelf
+2. **Timing** - Peak shopping hours (11am-2pm, 4pm-7pm weekends)
+3. **Engagement** - Ask questions, don't just offer samples
+4. **Coupons** - Immediate incentive to purchase
+5. **Measurement** - Track samples vs. sales lift
+
+Grocery sampling experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "38",
+    slug: "festival-marketing-guide",
+    title: "Festival Marketing Guide: Standing Out at Music & Cultural Events",
+    excerpt: "Festivals offer unmatched brand exposure to engaged audiences. Here's how to maximize your festival presence.",
+    image: "/images/case-studies/gallery/1800-tequila/1800-tequila-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "May 30, 2026",
+    readTime: "8 min read",
+    category: "Events",
+    tags: ["Festival Marketing", "Music Festivals", "Event Activation", "Brand Experience"],
+    content: `# Festival Marketing Guide
+
+Festivals create unique marketing opportunities with captive, engaged audiences. Here's how to maximize impact.
+
+## Top Festival Opportunities
+
+### Music Festivals
+- Coachella
+- Lollapalooza
+- Bonnaroo
+- Electric Daisy Carnival
+- Austin City Limits
+- Outside Lands
+
+### Cultural Festivals
+- SXSW
+- Art Basel
+- Comic-Con
+- Burning Man (limited)
+- Food & Wine festivals
+
+## Activation Types
+
+### Sponsored Experiences
+- Branded lounges
+- Charging stations
+- Photo booths
+- Product sampling
+- VIP areas
+
+### Guerrilla Marketing
+- Street teams
+- Branded merchandise
+- Surprise giveaways
+- Social media challenges
+
+## Festival Staffing
+
+### Staff Qualities Needed
+- High energy for long days
+- Heat/weather tolerance
+- Festival-appropriate vibe
+- Social media savvy
+- Responsible (alcohol events)
+
+### Typical Shifts
+- 8-12 hour days
+- 2-4 day events
+- Early arrival, late departure
+- Limited breaks
+
+## Success Metrics
+
+- Samples/products distributed
+- Social media impressions
+- Lead capture
+- Brand recall surveys
+- Sales attribution
+
+Festival marketing experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "39",
+    slug: "automotive-marketing-events",
+    title: "Automotive Event Marketing: Test Drives, Auto Shows & Launch Events",
+    excerpt: "Auto marketing requires specialized expertise. Here's how to staff and execute automotive activations.",
+    image: "/images/case-studies/gallery/polaris/polaris-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 1, 2026",
+    readTime: "7 min read",
+    category: "Automotive",
+    tags: ["Automotive Marketing", "Auto Shows", "Test Drives", "Vehicle Launch"],
+    content: `# Automotive Event Marketing
+
+Automotive activations require specialized knowledge and premium execution. Here's the playbook.
+
+## Event Types
+
+### Auto Shows
+- NAIAS (Detroit)
+- LA Auto Show
+- Chicago Auto Show
+- New York International Auto Show
+- Regional shows
+
+### Test Drive Events
+- Mall ride-and-drives
+- Track experiences
+- Comparison events
+- Launch test drives
+
+### Dealership Events
+- Grand openings
+- Sales events
+- Customer appreciation
+- Service promotions
+
+## Staffing Requirements
+
+### Product Specialists
+- Deep vehicle knowledge
+- Sales background preferred
+- Professional appearance
+- Driver's license (obviously)
+- Background check required
+
+### Brand Ambassadors
+- Engaging personality
+- Lead capture ability
+- Comfortable with technology
+- Professional attire
+
+## Key Success Factors
+
+1. **Training** - Staff must know vehicles inside-out
+2. **Presentation** - Premium brand = premium execution
+3. **Lead Capture** - Systematic data collection
+4. **Follow-up** - Integration with dealer CRM
+5. **Insurance** - Proper coverage for test drives
+
+Auto marketing specialists: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "40",
+    slug: "beer-wine-spirits-marketing",
+    title: "Beer, Wine & Spirits Marketing: Alcohol Sampling & Promotions",
+    excerpt: "Alcohol marketing has unique requirements and regulations. Here's how to execute compliant, effective activations.",
+    image: "/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 5, 2026",
+    readTime: "8 min read",
+    category: "Beverage",
+    tags: ["Alcohol Marketing", "Beer Sampling", "Spirits Promotion", "Wine Marketing"],
+    content: `# Beer, Wine & Spirits Marketing Guide
+
+Alcohol marketing offers high engagement but requires careful compliance. Here's what you need to know.
+
+## Regulatory Requirements
+
+### Federal
+- Must be 21+ only
+- No targeting minors
+- Health warnings required
+- Responsible drinking messaging
+
+### State-Specific
+- Sampling permits
+- Pour limits
+- Timing restrictions
+- Location restrictions
+
+## Activation Types
+
+### On-Premise
+- Bar/restaurant tastings
+- Sponsored events
+- Happy hour promotions
+- Brand takeovers
+
+### Off-Premise
+- Liquor store tastings
+- Grocery sampling
+- Package store demos
+- Festival booths
+
+### Events
+- Beer festivals
+- Wine tastings
+- Cocktail competitions
+- Brand launch parties
+
+## Staffing Requirements
+
+### Mandatory
+- 21+ years old
+- TIPS/TABC certification
+- State-specific permits
+- Responsible service training
+
+### Preferred
+- Mixology knowledge
+- Brand passion
+- Engaging personality
+- Professional appearance
+
+## Best Practices
+
+1. **ID Everyone** - No exceptions
+2. **Limit Pours** - Follow regulations
+3. **Cut Off** - Refuse visibly intoxicated
+4. **Track Inventory** - Accurate counts
+5. **Report Incidents** - Document everything
+
+Beverage marketing experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "41",
+    slug: "tech-product-launch-marketing",
+    title: "Tech Product Launch Marketing: Creating Buzz for New Gadgets",
+    excerpt: "Tech launches require precision execution and deep product knowledge. Here's the playbook for successful tech activations.",
+    image: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 10, 2026",
+    readTime: "7 min read",
+    category: "Tech",
+    tags: ["Tech Marketing", "Product Launch", "Gadget Demo", "Consumer Electronics"],
+    content: `# Tech Product Launch Marketing
+
+Tech launches demand flawless execution and deep expertise. Here's how to create buzz for new products.
+
+## Launch Event Types
+
+### Media Events
+- Press-only previews
+- Influencer briefings
+- Analyst meetings
+- Embargo management
+
+### Consumer Launches
+- Retail launch parties
+- Pop-up experiences
+- Demo tours
+- Mall activations
+
+### Trade Shows
+- CES booth
+- MWC presence
+- Regional tech shows
+- Industry conferences
+
+## Staffing Tech Events
+
+### Product Experts
+- Deep technical knowledge
+- Demo proficiency
+- Troubleshooting ability
+- Patience for questions
+
+### Brand Ambassadors
+- Tech enthusiasm
+- Quick learners
+- Social media savvy
+- Professional appearance
+
+## Demo Best Practices
+
+1. **Know the Product** - Every feature, every benefit
+2. **Have Backups** - Tech fails, be prepared
+3. **Tell Stories** - Use cases > specs
+4. **Handle Objections** - Competitor comparisons ready
+5. **Capture Data** - Leads, feedback, insights
+
+## Success Metrics
+
+- Demo completions
+- Dwell time
+- Lead quality
+- Social mentions
+- Pre-order conversions
+
+Tech launch experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "42",
+    slug: "healthcare-event-marketing",
+    title: "Healthcare Event Marketing: Conferences, Trade Shows & Patient Events",
+    excerpt: "Healthcare marketing requires specialized knowledge and compliance awareness. Here's the guide to medical event staffing.",
+    image: "/images/case-studies/gallery/ted/ted-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 15, 2026",
+    readTime: "7 min read",
+    category: "Healthcare",
+    tags: ["Healthcare Marketing", "Medical Conferences", "Pharma Events", "Patient Education"],
+    content: `# Healthcare Event Marketing
+
+Healthcare events require specialized knowledge, compliance awareness, and professional execution.
+
+## Event Types
+
+### Medical Conferences
+- HIMSS
+- RSNA
+- AHA Scientific Sessions
+- Specialty conferences
+
+### Trade Shows
+- Medical device exhibitions
+- Pharma industry shows
+- Healthcare IT events
+- Hospital purchasing shows
+
+### Patient Events
+- Health fairs
+- Screening events
+- Education seminars
+- Support groups
+
+## Compliance Considerations
+
+### Pharma/Device Rules
+- FDA guidelines
+- Off-label restrictions
+- Adverse event reporting
+- Sample documentation
+
+### HIPAA
+- Patient privacy
+- Data handling
+- Photo permissions
+- Information security
+
+## Staffing Healthcare Events
+
+### Clinical Staff
+- Nurses/NPs for clinical demos
+- Medical device training
+- Adverse event protocols
+- Professional credentials
+
+### Brand Ambassadors
+- Healthcare background preferred
+- Compliance training required
+- Professional appearance
+- Scientific literacy
+
+## Best Practices
+
+1. **Compliance First** - Know the rules
+2. **Train Thoroughly** - Clinical accuracy matters
+3. **Document Everything** - Required by regulations
+4. **Professional Always** - Medical community expectations
+5. **Follow Up** - HCP relationships are long-term
+
+Healthcare event experts: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
