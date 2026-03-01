@@ -5,6 +5,7 @@ import { cities as citiesData } from '@/server/cities-data'
 import { serviceTypes } from '@/server/city-services-data'
 import { enhancedCaseStudies } from '@/server/case-studies-data'
 import { industries } from '@/server/industries-data'
+import { states, stateServices } from '@/server/states-data'
 import { portfolioCaseStudies } from '@/server/portfolio-case-studies'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
@@ -178,16 +179,26 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
-  // State pages - only include states that have actual pages
-  // Page slugs use abbreviations: ca, ny, tx, fl, il, co, ga, wa
-  const states = ['ca', 'ny', 'tx', 'fl', 'il', 'co', 'ga', 'wa']
-
+  // State pages - all 50 states + DC
   const statePages: MetadataRoute.Sitemap = states.map(state => ({
-    url: `${DOMAIN}/states/${state}`,
+    url: `${DOMAIN}/states/${state.slug}`,
     lastModified: today,
     changeFrequency: 'monthly' as const,
     priority: 0.7
   }))
+
+  // State + Service combo pages (51 states × 9 services = 459 pages)
+  const stateServicePages: MetadataRoute.Sitemap = []
+  states.forEach(state => {
+    stateServices.forEach(service => {
+      stateServicePages.push({
+        url: `${DOMAIN}/states/${state.slug}/${service.slug}`,
+        lastModified: today,
+        changeFrequency: 'monthly' as const,
+        priority: 0.65
+      })
+    })
+  })
 
   // Combine all pages
   const allPages = [
@@ -198,7 +209,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...eventServicePages,
     ...venuePages,
     ...venueServicePages,
-    ...statePages
+    ...statePages,
+    ...stateServicePages
   ]
 
   console.log(`Sitemap generated with ${allPages.length} URLs:`)
@@ -210,6 +222,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`- Venue pages: ${venuePages.length}`)
   console.log(`- Venue-service pages: ${venueServicePages.length}`)
   console.log(`- State pages: ${statePages.length}`)
+  console.log(`- State-service pages: ${stateServicePages.length}`)
 
   return allPages
 }
