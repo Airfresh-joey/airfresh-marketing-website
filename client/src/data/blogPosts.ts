@@ -1820,5 +1820,423 @@ Sports marketing comes with rules:
 
 Partner with experienced agencies who understand the landscape. Call Air Fresh Marketing at 303-720-6060.
     `
+  },
+  {
+    id: "13",
+    slug: "pop-up-shop-marketing",
+    title: "Pop-Up Shop Marketing: Creating Temporary Retail Magic",
+    excerpt: "Pop-up shops offer unique opportunities for brand engagement. Learn how to create memorable temporary retail experiences.",
+    image: "/images/case-studies/gallery/byoma/byoma-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 1, 2026",
+    readTime: "6 min read",
+    category: "Retail",
+    tags: ["Pop-Up Shops", "Retail Marketing", "Brand Experience", "Temporary Retail"],
+    content: `# Pop-Up Shop Marketing: Creating Temporary Retail Magic
+
+Pop-up shops have evolved from retail trend to essential marketing strategy. Here's how to create temporary retail experiences that drive lasting results.
+
+## Why Pop-Ups Work
+
+- **Urgency**: Limited time creates FOMO
+- **Exclusivity**: Special products or experiences
+- **Experiential**: Immersive brand environments
+- **Testing**: Try new markets or concepts
+
+## Planning Your Pop-Up
+
+### Location Selection
+- High foot traffic areas
+- Alignment with target demographics
+- Accessibility and visibility
+- Cost vs. exposure balance
+
+### Design Principles
+- Instagram-worthy moments
+- Clear brand storytelling
+- Smooth customer flow
+- Memorable sensory experiences
+
+### Staffing Requirements
+- Brand ambassadors for engagement
+- Sales associates for transactions
+- Event managers for operations
+- Security as needed
+
+## Pop-Up Success Metrics
+
+Track both immediate and long-term impact:
+- Foot traffic and dwell time
+- Sales and average transaction value
+- Email/social media capture
+- Press coverage and social mentions
+- Brand awareness lift
+
+Ready to launch your pop-up experience? Contact Air Fresh Marketing at 303-720-6060.
+    `
+  },
+  {
+    id: "14",
+    slug: "automotive-event-marketing",
+    title: "Automotive Event Marketing: Driving Brand Engagement",
+    excerpt: "From auto shows to test drive events, learn how to create compelling automotive brand experiences.",
+    image: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 5, 2026",
+    readTime: "7 min read",
+    category: "Automotive",
+    tags: ["Automotive Marketing", "Auto Shows", "Test Drives", "Vehicle Launch"],
+    content: `# Automotive Event Marketing: Driving Brand Engagement
+
+The automotive industry relies heavily on experiential marketing. Here's how to create compelling events that put prospects behind the wheel.
+
+## Types of Automotive Activations
+
+### Auto Shows
+- Product launches and unveils
+- Comparison displays
+- Technology demonstrations
+- VIP hospitality suites
+
+### Test Drive Events
+- Ride and drive experiences
+- Performance demonstrations
+- Comparison drives
+- Track day events
+
+### Dealer Events
+- Grand openings
+- Sales events
+- Customer appreciation
+- Service clinics
+
+### Sponsorship Activations
+- Golf tournaments
+- Sporting events
+- Music festivals
+- Community events
+
+## Automotive Staff Requirements
+
+### Product Specialists
+- Deep vehicle knowledge
+- Technical specifications
+- Competitive comparisons
+- Feature demonstrations
+
+### Test Drive Coordinators
+- License verification
+- Route management
+- Safety protocols
+- Lead capture
+
+### VIP Hosts
+- Executive presence
+- White-glove service
+- Relationship building
+- Follow-up coordination
+
+## Success Metrics
+
+- Test drives completed
+- Leads captured and qualified
+- Purchase intent lift
+- Dealer traffic increase
+- Social media engagement
+
+Elevate your automotive marketing with Air Fresh Marketing. Call 303-720-6060.
+    `
+  },
+  {
+    id: "15",
+    slug: "alcohol-beverage-promotions",
+    title: "Alcohol & Beverage Promotions: Responsible Marketing That Works",
+    excerpt: "Navigate the complexities of alcohol marketing while creating engaging brand experiences. TIPS certification and compliance included.",
+    image: "/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 10, 2026",
+    readTime: "8 min read",
+    category: "Beverage",
+    tags: ["Alcohol Marketing", "Beverage Promotions", "TIPS Certified", "Bar Promotions", "Sampling"],
+    content: `# Alcohol & Beverage Promotions: Responsible Marketing That Works
+
+Alcohol and beverage marketing offers tremendous opportunities - and unique challenges. Here's how to execute compliant, effective promotions.
+
+## Compliance First
+
+### TIPS Certification
+All Air Fresh alcohol promotional staff are TIPS certified, ensuring:
+- Responsible service knowledge
+- Age verification protocols
+- Signs of intoxication recognition
+- Intervention techniques
+
+### State Regulations
+Alcohol marketing varies by state:
+- Sampling restrictions
+- Hours of operation
+- Venue requirements
+- Signage rules
+
+## Effective Beverage Activations
+
+### Bar Takeovers
+- Branded nights at key venues
+- Specialty cocktail menus
+- Bar staff training
+- Social media integration
+
+### Retail Sampling
+- In-store tastings
+- Recipe demonstrations
+- Purchase incentives
+- Display merchandising
+
+### Festival Activations
+- Branded bars and lounges
+- VIP experiences
+- Sampling stations
+- Product education
+
+### Launch Events
+- New product introductions
+- Media and influencer events
+- Trade education
+- Consumer premieres
+
+## Measuring Success
+
+- Samples distributed (with compliance)
+- Velocity lift at retail
+- Social media engagement
+- Bar/restaurant placements
+- Brand awareness growth
+
+Partner with compliance experts. Call Air Fresh Marketing at 303-720-6060.
+    `
+  },
+  {
+    id: "16",
+    slug: "guerrilla-marketing-tactics",
+    title: "Guerrilla Marketing Tactics That Get Attention",
+    excerpt: "Stand out from the noise with unconventional marketing tactics. Learn guerrilla strategies that create buzz without breaking budgets.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 15, 2026",
+    readTime: "6 min read",
+    category: "Guerrilla Marketing",
+    tags: ["Guerrilla Marketing", "Viral Marketing", "Street Marketing", "Unconventional"],
+    content: `# Guerrilla Marketing Tactics That Get Attention
+
+In a world of ad blockers and scroll fatigue, guerrilla marketing cuts through the noise. Here are tactics that create buzz and drive results.
+
+## What Is Guerrilla Marketing?
+
+Guerrilla marketing uses unconventional, often surprising tactics to promote brands in public spaces. It's about creativity over budget, impact over impressions.
+
+## Proven Guerrilla Tactics
+
+### Street Art & Installations
+- Chalk art campaigns
+- 3D sidewalk illusions
+- Interactive installations
+- Projection mapping
+
+### Flash Mobs & Performances
+- Choreographed dance
+- Musical performances
+- Theatrical scenes
+- Surprise celebrity appearances
+
+### Product Placements
+- Oversized product replicas
+- Unexpected locations
+- Interactive elements
+- Photo opportunities
+
+### Sticker & Poster Campaigns
+- Strategic placement
+- Clever messaging
+- QR code integration
+- Sequential storytelling
+
+## Planning Guerrilla Campaigns
+
+### Legal Considerations
+- Permit requirements
+- Property permissions
+- Cleanup responsibilities
+- Insurance coverage
+
+### Amplification Strategy
+- Social media documentation
+- PR outreach
+- Influencer seeding
+- Hashtag campaigns
+
+### Measurement
+- Social mentions and reach
+- Media coverage value
+- Website traffic spikes
+- Lead generation
+
+Ready to surprise and delight? Call Air Fresh Marketing at 303-720-6060.
+    `
+  },
+  {
+    id: "17",
+    slug: "event-staffing-checklist",
+    title: "The Complete Event Staffing Checklist for 2026",
+    excerpt: "Don't leave anything to chance. Use our comprehensive checklist to ensure your next event is perfectly staffed.",
+    image: "/images/case-studies/gallery/ted/ted-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 20, 2026",
+    readTime: "5 min read",
+    category: "Event Staffing",
+    tags: ["Event Staffing", "Checklist", "Event Planning", "Staff Management"],
+    content: `# The Complete Event Staffing Checklist for 2026
+
+Proper staffing can make or break your event. Use this comprehensive checklist to ensure nothing falls through the cracks.
+
+## Pre-Event Planning (4-8 Weeks Out)
+
+### Staff Requirements
+- [ ] Define all roles needed
+- [ ] Determine staff quantities per role
+- [ ] Create detailed job descriptions
+- [ ] Set experience requirements
+- [ ] Establish dress code
+
+### Logistics
+- [ ] Confirm event dates and hours
+- [ ] Identify venue location(s)
+- [ ] Plan for breaks and meals
+- [ ] Arrange parking/transportation
+- [ ] Prepare credential/access needs
+
+### Training
+- [ ] Develop training materials
+- [ ] Schedule training sessions
+- [ ] Create product knowledge guides
+- [ ] Prepare FAQ documents
+- [ ] Plan role-play scenarios
+
+## Week Before Event
+
+### Confirmation
+- [ ] Confirm all staff assignments
+- [ ] Send schedule reminders
+- [ ] Distribute venue details
+- [ ] Share emergency contacts
+- [ ] Verify transportation plans
+
+### Materials
+- [ ] Prepare uniforms/attire
+- [ ] Assemble training kits
+- [ ] Print schedules and maps
+- [ ] Gather technology/devices
+- [ ] Stock supplies and giveaways
+
+## Event Day
+
+### Morning
+- [ ] Conduct team briefing
+- [ ] Distribute credentials
+- [ ] Position staff at stations
+- [ ] Test equipment and technology
+- [ ] Review emergency procedures
+
+### During Event
+- [ ] Monitor staff performance
+- [ ] Manage break rotations
+- [ ] Address issues immediately
+- [ ] Track key metrics
+- [ ] Document highlights
+
+### End of Day
+- [ ] Collect materials and equipment
+- [ ] Gather staff feedback
+- [ ] Thank team members
+- [ ] Note areas for improvement
+- [ ] Plan next-day adjustments
+
+Need help with event staffing? Call Air Fresh Marketing at 303-720-6060.
+    `
+  },
+  {
+    id: "18",
+    slug: "denver-event-marketing-guide",
+    title: "Denver Event Marketing: A Local's Guide to the Mile High City",
+    excerpt: "Planning an event in Denver? Here's your insider guide to venues, timing, and marketing strategies for Colorado's capital.",
+    image: "/images/case-studies/gallery/cortland/cortland-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 25, 2026",
+    readTime: "7 min read",
+    category: "Local Markets",
+    tags: ["Denver", "Colorado", "Local Marketing", "Event Venues", "Mile High"],
+    content: `# Denver Event Marketing: A Local's Guide to the Mile High City
+
+As Air Fresh Marketing's headquarters, Denver holds a special place in our hearts - and our expertise. Here's your guide to event marketing in the Mile High City.
+
+## Why Denver?
+
+- Growing tech and startup scene
+- Active outdoor lifestyle culture
+- Craft beer and culinary renaissance
+- Four professional sports teams
+- 300+ days of sunshine
+
+## Top Event Venues
+
+### Large Scale
+- Ball Arena (20,000 capacity)
+- Empower Field at Mile High (76,000)
+- Colorado Convention Center (2.2M sq ft)
+- Red Rocks Amphitheatre (9,500)
+
+### Mid-Size
+- Mission Ballroom (3,950)
+- Bellco Theatre (5,000)
+- Denver Botanic Gardens (varies)
+- Wings Over the Rockies Museum
+
+### Boutique
+- Dairy Block
+- Milk Market
+- RiNo Art District warehouses
+- Rooftop venues downtown
+
+## Seasonal Considerations
+
+### Spring (March-May)
+- Ski season winding down
+- Outdoor events becoming viable
+- Great American Beer Festival season
+
+### Summer (June-August)
+- Peak outdoor event season
+- Festival calendar packed
+- Tourism at highest
+
+### Fall (September-November)
+- Denver Startup Week
+- Broncos season activations
+- Perfect weather for outdoor events
+
+### Winter (December-February)
+- Holiday activations
+- Ski resort partnerships
+- Indoor venue premium
+
+## Denver Demographics
+
+- Median age: 34.6
+- College educated: 47%
+- Active lifestyle focused
+- Environmentally conscious
+- Craft beverage enthusiasts
+
+Your Denver event partner since 2001. Call Air Fresh Marketing at 303-720-6060.
+    `
   }
 ];
