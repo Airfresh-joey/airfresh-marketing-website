@@ -2596,5 +2596,375 @@ Super Bowl is more than a game - it's a week-long marketing festival. Here's how
 
 Super Bowl 2026 is in Santa Clara. Start planning now: 303-720-6060
     `
+  },
+  {
+    id: "25",
+    slug: "new-york-event-marketing-guide",
+    title: "New York Event Marketing Guide: NYC Activations That Work",
+    excerpt: "NYC is the world's marketing capital. Here's how to execute successful brand activations in the Big Apple.",
+    image: "/images/case-studies/gallery/netflix/netflix-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 30, 2026",
+    readTime: "8 min read",
+    category: "Local Markets",
+    tags: ["New York", "NYC", "Event Marketing", "Brand Activation"],
+    content: `# New York Event Marketing Guide
+
+New York City offers unmatched marketing opportunities - and unique challenges. Here's how to succeed in the world's most competitive market.
+
+## Top NYC Activation Locations
+
+### Times Square
+- Highest foot traffic in America
+- Tourist and local mix
+- Premium permit costs
+
+### Hudson Yards
+- Newer, premium venue
+- Upscale demographics
+- The Vessel photo ops
+
+### Bryant Park
+- Midtown accessibility
+- Corporate crowd
+- Seasonal programming
+
+### Brooklyn (Williamsburg, DUMBO)
+- Young, trendy demographics
+- Lower costs than Manhattan
+- Authentic brand positioning
+
+## NYC Staffing Considerations
+
+- Higher hourly rates ($35-60/hour)
+- Multilingual needs (Spanish, Mandarin, etc.)
+- Union considerations for some venues
+- Transportation logistics
+
+## Permit Requirements
+
+NYC requires permits for most activations:
+- Street permits (varies by location)
+- Park permits (NYC Parks Dept)
+- Sound permits (if amplified)
+- Food handling (Health Dept)
+
+## Best Times to Activate
+
+- Spring/Fall: Best weather
+- Summer: Tourists, outdoor events
+- Holiday Season: Massive foot traffic
+- Fashion Week: Premium opportunities
+
+Contact Air Fresh Marketing for NYC staffing: 303-720-6060
+    `
+  },
+  {
+    id: "26",
+    slug: "los-angeles-brand-activation-guide",
+    title: "Los Angeles Brand Activation Guide: Hollywood Marketing",
+    excerpt: "LA is entertainment, lifestyle, and innovation. Here's how to create brand experiences that resonate in SoCal.",
+    image: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 1, 2026",
+    readTime: "7 min read",
+    category: "Local Markets",
+    tags: ["Los Angeles", "LA", "Brand Activation", "Hollywood"],
+    content: `# Los Angeles Brand Activation Guide
+
+Los Angeles sets trends for the world. Here's how to create activations that capture LA's unique energy.
+
+## Key LA Markets
+
+### Hollywood/West Hollywood
+- Entertainment industry
+- Nightlife activations
+- Celebrity proximity
+
+### Santa Monica/Venice
+- Beach lifestyle
+- Health/wellness brands
+- Active demographics
+
+### Downtown LA (DTLA)
+- Revitalized arts district
+- Young professionals
+- Convention center proximity
+
+### Orange County
+- Affluent suburbs
+- Family demographics
+- Theme park adjacency
+
+## LA-Specific Opportunities
+
+- Award season events (Oscars, Grammys)
+- Film premieres
+- Coachella pre/post parties
+- Beach/outdoor activations
+- Influencer events
+
+## Staffing in LA
+
+- Acting/modeling talent available
+- Bilingual Spanish essential
+- Car culture (transportation planning)
+- Celebrity handler experience
+
+## Venue Options
+
+- Rooftop venues
+- Beach clubs
+- Production studios
+- Art galleries
+- Private estates
+
+LA market expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "27",
+    slug: "chicago-event-staffing-guide",
+    title: "Chicago Event Staffing Guide: Midwest Marketing Hub",
+    excerpt: "Chicago anchors the Midwest market. Here's how to execute successful activations in the Windy City.",
+    image: "/images/case-studies/gallery/meijer/meijer-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 5, 2026",
+    readTime: "6 min read",
+    category: "Local Markets",
+    tags: ["Chicago", "Midwest", "Event Staffing", "McCormick Place"],
+    content: `# Chicago Event Staffing Guide
+
+Chicago is America's convention capital and Midwest business hub. Here's how to win in this dynamic market.
+
+## Why Chicago Matters
+
+- McCormick Place: Largest convention center in North America
+- Corporate headquarters hub
+- Sports-passionate market
+- Four distinct seasons = year-round opportunities
+
+## Top Chicago Venues
+
+### McCormick Place
+- 2.6M sq ft exhibit space
+- Major trade shows
+- Requires experienced staff
+
+### Navy Pier
+- Tourist destination
+- Family events
+- Summer festivals
+
+### Wrigleyville
+- Sports fan activations
+- Bar/restaurant takeovers
+- Game day marketing
+
+### Magnificent Mile
+- Premium retail
+- Tourist and local mix
+- Holiday activations
+
+## Chicago Staffing Tips
+
+- Midwestern friendliness valued
+- Sports team loyalty matters
+- Winter-ready outdoor staff
+- Union awareness for some venues
+
+## Major Events Calendar
+
+- Auto Show (February)
+- St. Patrick's Day (March)
+- Lollapalooza (August)
+- Bears/Cubs/Bulls seasons
+
+Chicago staffing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "28",
+    slug: "miami-experiential-marketing-guide",
+    title: "Miami Experiential Marketing Guide: South Florida Activations",
+    excerpt: "Miami's international flair and beach culture create unique marketing opportunities. Here's your South Florida guide.",
+    image: "/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 10, 2026",
+    readTime: "7 min read",
+    category: "Local Markets",
+    tags: ["Miami", "South Florida", "Beach Marketing", "Latin Market"],
+    content: `# Miami Experiential Marketing Guide
+
+Miami is America's gateway to Latin America and a lifestyle marketing paradise. Here's how to capture South Florida's energy.
+
+## Miami's Unique Appeal
+
+- Bilingual market (English/Spanish)
+- International tourist destination
+- Art Basel/fashion influence
+- Year-round outdoor events
+- Nightlife culture
+
+## Key Miami Markets
+
+### South Beach
+- Tourist central
+- Lifestyle brands
+- Beach activations
+- Nightclub marketing
+
+### Wynwood
+- Art district
+- Young, creative demographic
+- Instagram-worthy murals
+- Gallery openings
+
+### Brickell
+- Financial district
+- Young professionals
+- Luxury market
+- After-work activations
+
+### Coconut Grove
+- Family demographic
+- Outdoor festivals
+- Sailing/marina culture
+
+## Miami Staffing Requirements
+
+- Bilingual Spanish ESSENTIAL
+- Beach-appropriate attire
+- Heat tolerance
+- Nightlife experience
+- Multicultural sensitivity
+
+## Major Miami Events
+
+- Art Basel (December)
+- Miami Music Week (March)
+- Boat shows
+- Formula 1 Miami Grand Prix
+- Super Bowl rotations
+
+Miami expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "29",
+    slug: "texas-event-marketing-guide",
+    title: "Texas Event Marketing: Dallas, Houston, Austin & San Antonio",
+    excerpt: "Texas is America's second-largest market with distinct regional personalities. Here's your guide to the Lone Star State.",
+    image: "/images/case-studies/gallery/duracell/duracell-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 15, 2026",
+    readTime: "9 min read",
+    category: "Local Markets",
+    tags: ["Texas", "Dallas", "Houston", "Austin", "San Antonio"],
+    content: `# Texas Event Marketing Guide
+
+Texas offers four major metros, each with distinct character. Here's how to win in the Lone Star State.
+
+## Dallas-Fort Worth
+
+**Character**: Corporate, sports-crazy, luxury retail
+**Key Venues**: AT&T Stadium, American Airlines Center, Kay Bailey Hutchison Convention Center
+**Opportunities**: Cowboys game days, State Fair of Texas, corporate events
+**Staff Profile**: Polished, professional, football-friendly
+
+## Houston
+
+**Character**: Diverse, international, energy industry
+**Key Venues**: NRG Center, Toyota Center, Minute Maid Park
+**Opportunities**: Energy conferences, medical center events, diverse communities
+**Staff Profile**: Multicultural, multilingual, professional
+
+## Austin
+
+**Character**: Tech, music, young, weird (proudly)
+**Key Venues**: Austin Convention Center, Circuit of the Americas, ACL venues
+**Opportunities**: SXSW, ACL Festival, F1, tech conferences
+**Staff Profile**: Tech-savvy, creative, authentic
+
+## San Antonio
+
+**Character**: Tourism, military, Hispanic heritage
+**Key Venues**: Alamodome, River Walk, Convention Center
+**Opportunities**: Fiesta, NCAA events, military appreciation
+**Staff Profile**: Bilingual, family-friendly, warm hospitality
+
+## Texas-Wide Tips
+
+- Everything IS bigger
+- Sports loyalty matters
+- BBQ and hospitality culture
+- Weather extremes (plan accordingly)
+- Driving distances between cities
+
+Texas coverage: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "30",
+    slug: "atlanta-event-marketing-guide",
+    title: "Atlanta Event Marketing: Gateway to the South",
+    excerpt: "Atlanta is the South's business and cultural capital. Here's how to succeed in the ATL market.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 20, 2026",
+    readTime: "6 min read",
+    category: "Local Markets",
+    tags: ["Atlanta", "Georgia", "Southern Marketing", "Convention"],
+    content: `# Atlanta Event Marketing Guide
+
+Atlanta is the South's commercial hub with world-class venues and diverse demographics.
+
+## Why Atlanta Matters
+
+- Busiest airport in the world
+- Major corporate headquarters (Coca-Cola, Delta, Home Depot)
+- Growing film/TV industry
+- Diverse population
+- Convention destination
+
+## Key Atlanta Venues
+
+### Mercedes-Benz Stadium
+- Falcons and Atlanta United
+- Concerts and events
+- Retractable roof
+
+### Georgia World Congress Center
+- Major trade shows
+- Connected to stadium
+- Downtown location
+
+### Atlantic Station
+- Mixed-use development
+- Outdoor activations
+- Family friendly
+
+### Ponce City Market
+- Trendy food hall
+- Beltline access
+- Young demographic
+
+## Atlanta Staffing
+
+- Southern hospitality valued
+- Diverse talent pool
+- Sports passion (Braves, Falcons, Hawks, United)
+- Film/TV experience available
+
+## Major Atlanta Events
+
+- SEC Championship
+- Peach Bowl
+- DragonCon
+- Music Midtown
+- Atlanta Film Festival
+
+Atlanta expertise: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
