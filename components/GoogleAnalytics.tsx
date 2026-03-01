@@ -25,12 +25,12 @@ export default function GoogleAnalytics() {
 
   return (
     <>
-      {/* Google Analytics - loads when browser is idle (lowest priority) */}
+      {/* Google Analytics - loads after page interactive for proper tracking */}
       <Script
         src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
-        strategy="lazyOnload"
+        strategy="afterInteractive"
       />
-      <Script id="google-analytics" strategy="lazyOnload">
+      <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
