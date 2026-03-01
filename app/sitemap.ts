@@ -140,6 +140,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog/event-marketing-budgeting`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/social-media-event-integration`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/conference-networking-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/promotional-model-guide`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/experiential-retail-design`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/brand-activation-case-study-tips`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/event-insurance-guide`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/multilingual-event-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/weather-contingency-planning`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Individual portfolio case studies
     ...portfolioCaseStudies.map(cs => ({

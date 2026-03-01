@@ -6349,5 +6349,396 @@ Networking often provides more value than sessions. Here's how to facilitate.
 
 Networking events: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "79",
+    slug: "promotional-model-guide",
+    title: "Promotional Model Guide: Finding and Managing Premium Talent",
+    excerpt: "Promotional models represent your brand visually. Here's how to find and manage top talent.",
+    image: "/images/case-studies/gallery/byoma/byoma-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "November 30, 2026",
+    readTime: "7 min read",
+    category: "Staffing",
+    tags: ["Promotional Models", "Brand Models", "Event Staffing", "Talent Management"],
+    content: `# Promotional Model Guide
+
+Promotional models create visual brand impact. Here's how to work with them effectively.
+
+## Model Categories
+
+### Trade Show Models
+- Professional appearance
+- Product knowledge
+- Stamina for long shows
+- Lead generation skills
+
+### Spokesmodels
+- On-camera presence
+- Public speaking ability
+- Deep product knowledge
+- Media training
+
+### Product Models
+- Specific look requirements
+- Photo/video experience
+- Flexible scheduling
+- Travel ready
+
+## Finding Talent
+
+### Agencies
+- Pre-vetted talent
+- Variety of looks
+- Reliability backup
+- Insurance coverage
+
+### Direct
+- Lower cost
+- Direct relationship
+- Custom fit
+- More management
+
+## Management
+
+### Expectations
+- Clear guidelines
+- Dress code
+- Behavior standards
+- Photo policies
+
+### Day-of
+- Call times
+- Check-ins
+- Problem resolution
+- Feedback
+
+Model staffing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "80",
+    slug: "experiential-retail-design",
+    title: "Experiential Retail Design: Creating Immersive Shopping Experiences",
+    excerpt: "Modern retail is experiential. Here's how to design immersive shopping environments.",
+    image: "/images/case-studies/gallery/meijer/meijer-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 1, 2026",
+    readTime: "8 min read",
+    category: "Retail",
+    tags: ["Experiential Retail", "Retail Design", "Store Experience", "Immersive Marketing"],
+    content: `# Experiential Retail Design
+
+Retail must be experiential to compete with e-commerce. Here's how to design for impact.
+
+## Design Elements
+
+### Sensory
+- Visual merchandising
+- Ambient music
+- Scent marketing
+- Tactile experiences
+
+### Interactive
+- Product testing
+- Digital integration
+- Customization stations
+- Demo areas
+
+### Social
+- Photo moments
+- Gathering spaces
+- Event areas
+- Community hubs
+
+## Technology Integration
+
+- AR/VR experiences
+- Digital displays
+- Smart mirrors
+- Mobile integration
+
+## Staffing Needs
+
+- Brand experts
+- Tech support
+- Customer service
+- Experience guides
+
+## Measuring Success
+
+- Dwell time
+- Conversion rates
+- Social sharing
+- Customer feedback
+- Return visits
+
+Retail experience: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "81",
+    slug: "brand-activation-case-study-tips",
+    title: "Creating Compelling Brand Activation Case Studies",
+    excerpt: "Great case studies win future business. Here's how to document and present your success.",
+    image: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 5, 2026",
+    readTime: "6 min read",
+    category: "Marketing",
+    tags: ["Case Studies", "Portfolio", "Marketing", "Business Development"],
+    content: `# Creating Compelling Case Studies
+
+Great case studies win future business. Here's how to document success effectively.
+
+## Case Study Structure
+
+### Overview
+- Client and challenge
+- Objectives
+- Approach
+- Results
+
+### Story Arc
+- Problem/opportunity
+- Strategy
+- Execution
+- Outcomes
+
+## Content Capture
+
+### During Activation
+- Professional photography
+- Video clips
+- Staff testimonials
+- Consumer reactions
+
+### Post-Activation
+- Client interviews
+- Data compilation
+- ROI calculation
+- Lessons learned
+
+## Presentation
+
+### Formats
+- Written documents
+- Presentation decks
+- Video summaries
+- Social media versions
+
+### Distribution
+- Website portfolio
+- Sales materials
+- Award submissions
+- Social media
+
+## Best Practices
+
+- Get approvals early
+- Capture during event
+- Quantify results
+- Tell compelling stories
+
+Case study support: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "82",
+    slug: "event-insurance-guide",
+    title: "Event Insurance Guide: Protecting Your Activations",
+    excerpt: "Proper insurance protects your events. Here's what you need to know about coverage.",
+    image: "/images/case-studies/gallery/duracell/duracell-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 10, 2026",
+    readTime: "7 min read",
+    category: "Operations",
+    tags: ["Event Insurance", "Risk Management", "Liability", "Event Planning"],
+    content: `# Event Insurance Guide
+
+Proper insurance protects against event risks. Here's what you need to know.
+
+## Coverage Types
+
+### General Liability
+- Bodily injury
+- Property damage
+- Personal injury
+- Advertising injury
+
+### Workers' Compensation
+- Staff injuries
+- Medical expenses
+- Lost wages
+- Legal requirements
+
+### Event Cancellation
+- Weather
+- Venue issues
+- Vendor failures
+- Force majeure
+
+### Equipment
+- Damage
+- Theft
+- Loss
+- Rental equipment
+
+## Requirements
+
+### Venue Requirements
+- Certificate of insurance
+- Named insured
+- Coverage limits
+- Specific riders
+
+### Client Requirements
+- Indemnification
+- Additional insured
+- Waiver of subrogation
+- Proof of coverage
+
+## Working with Agencies
+
+- Verify coverage
+- Request certificates
+- Understand limits
+- Know exclusions
+
+Event protection: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "83",
+    slug: "multilingual-event-marketing",
+    title: "Multilingual Event Marketing: Reaching Diverse Audiences",
+    excerpt: "Diverse markets require multilingual capabilities. Here's how to connect across languages.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 15, 2026",
+    readTime: "7 min read",
+    category: "Diversity",
+    tags: ["Multilingual Marketing", "Diverse Audiences", "Cultural Marketing", "Language"],
+    content: `# Multilingual Event Marketing
+
+America is diverse. Here's how to connect with multilingual audiences effectively.
+
+## Key Languages
+
+### Spanish
+- Largest non-English market
+- Regional variations
+- Cultural nuances
+- Growing importance
+
+### Asian Languages
+- Mandarin/Cantonese
+- Korean
+- Vietnamese
+- Japanese
+
+### Other Languages
+- Portuguese
+- French
+- Arabic
+- Hindi
+
+## Staffing Considerations
+
+### Finding Bilingual Talent
+- Language proficiency tests
+- Cultural competency
+- Market-specific recruitment
+- Premium compensation
+
+### Training
+- Brand messaging in-language
+- Cultural context
+- Regional differences
+- Sensitivity training
+
+## Materials
+
+### Translation
+- Professional translation
+- Cultural adaptation
+- Legal review
+- Visual consistency
+
+### Production
+- In-language signage
+- Multilingual materials
+- Video subtitles
+- Audio options
+
+Multilingual expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "84",
+    slug: "weather-contingency-planning",
+    title: "Weather Contingency Planning: When Mother Nature Doesn't Cooperate",
+    excerpt: "Outdoor events need weather backup plans. Here's how to prepare for any conditions.",
+    image: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 20, 2026",
+    readTime: "6 min read",
+    category: "Operations",
+    tags: ["Weather Planning", "Event Contingency", "Outdoor Events", "Risk Management"],
+    content: `# Weather Contingency Planning
+
+Outdoor events face weather risks. Here's how to prepare for any conditions.
+
+## Planning Ahead
+
+### Assessment
+- Historical weather data
+- Seasonal patterns
+- Local conditions
+- Risk tolerance
+
+### Backup Options
+- Indoor alternatives
+- Tent structures
+- Date flexibility
+- Cancellation policies
+
+## Day-of Protocols
+
+### Monitoring
+- Weather apps
+- Local forecasts
+- Radar tracking
+- On-site assessment
+
+### Decision Points
+- Go/no-go criteria
+- Modification triggers
+- Communication plans
+- Safety thresholds
+
+## Staff Preparation
+
+- Weather-appropriate gear
+- Communication protocols
+- Safety training
+- Flexibility expectations
+
+## Equipment Considerations
+
+- Weatherproof materials
+- Quick teardown capability
+- Product protection
+- Electrical safety
+
+## Documentation
+
+- Insurance requirements
+- Client communication
+- Decision documentation
+- Post-event analysis
+
+Weather-ready events: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
