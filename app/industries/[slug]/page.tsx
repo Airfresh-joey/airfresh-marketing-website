@@ -197,9 +197,4 @@ export default function IndustryPage() {
   );
 }
 
-// Generate static params for all industries
-export function generateStaticParams() {
-  return industries.map((industry) => ({
-    slug: industry.slug,
-  }));
-}
+
