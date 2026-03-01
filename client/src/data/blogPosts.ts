@@ -6740,5 +6740,711 @@ Outdoor events face weather risks. Here's how to prepare for any conditions.
 
 Weather-ready events: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "85",
+    slug: "celebrity-event-appearances",
+    title: "Celebrity Event Appearances: Managing VIP Brand Partnerships",
+    excerpt: "Celebrities amplify events but require careful management. Here's how to work with VIPs.",
+    image: "/images/case-studies/gallery/netflix/netflix-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 25, 2026",
+    readTime: "7 min read",
+    category: "VIP Events",
+    tags: ["Celebrity Events", "VIP Management", "Brand Partnerships", "Influencer Events"],
+    content: `# Celebrity Event Appearances
+
+Celebrity appearances create buzz but require careful management. Here's how to execute.
+
+## Planning
+
+- Contract details
+- Rider requirements
+- Security needs
+- Photo/content rights
+- Exclusivity terms
+
+## Event Day
+
+- Arrival coordination
+- Green room setup
+- Handler assignment
+- Security protocols
+- Exit strategy
+
+## Staff Roles
+
+- VIP handlers
+- Security liaison
+- Media management
+- Fan control
+
+Celebrity event expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "86",
+    slug: "experiential-marketing-kpis",
+    title: "Experiential Marketing KPIs: Measuring What Matters",
+    excerpt: "The right KPIs prove experiential value. Here's how to measure experiential marketing success.",
+    image: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 30, 2026",
+    readTime: "8 min read",
+    category: "Analytics",
+    tags: ["KPIs", "Marketing Metrics", "ROI", "Analytics"],
+    content: `# Experiential Marketing KPIs
+
+Measuring the right metrics proves value and improves future events.
+
+## Reach Metrics
+
+- Total impressions
+- Unique engagements
+- Geographic coverage
+- Social reach
+
+## Engagement Metrics
+
+- Dwell time
+- Interaction rate
+- Demo completions
+- Content creation
+
+## Conversion Metrics
+
+- Leads captured
+- Sales attributed
+- Cost per lead
+- Customer acquisition
+
+## Brand Metrics
+
+- Awareness lift
+- Sentiment change
+- Consideration increase
+- Net promoter score
+
+Analytics expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "87",
+    slug: "sampling-compliance-regulations",
+    title: "Sampling Compliance: Navigating Regulations by Product Type",
+    excerpt: "Different products have different sampling rules. Here's your compliance guide by category.",
+    image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 1, 2027",
+    readTime: "8 min read",
+    category: "Compliance",
+    tags: ["Sampling Compliance", "Regulations", "Food Safety", "Legal"],
+    content: `# Sampling Compliance Guide
+
+Different products require different compliance approaches. Know the rules.
+
+## Food Products
+
+- Health permits
+- Temperature control
+- Allergen disclosure
+- Expiration dates
+
+## Alcohol
+
+- State permits
+- Age verification
+- Pour limits
+- Server certification
+
+## Cosmetics
+
+- FDA compliance
+- Allergen testing
+- Sanitation protocols
+- Individual samples
+
+## Supplements
+
+- FDA guidelines
+- Health claims
+- Ingredient disclosure
+- Age restrictions
+
+Compliance expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "88",
+    slug: "corporate-event-planning",
+    title: "Corporate Event Planning: Internal Meetings to External Launches",
+    excerpt: "Corporate events require professional execution. Here's the guide for business events.",
+    image: "/images/case-studies/gallery/ted/ted-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 5, 2027",
+    readTime: "7 min read",
+    category: "Corporate",
+    tags: ["Corporate Events", "Business Events", "Meetings", "Conferences"],
+    content: `# Corporate Event Planning
+
+Corporate events range from internal meetings to external showcases. Here's how to execute.
+
+## Event Types
+
+- Sales kickoffs
+- Product launches
+- Annual meetings
+- Client events
+- Team building
+
+## Planning Elements
+
+- Venue selection
+- A/V requirements
+- Catering
+- Transportation
+- Registration
+
+## Staffing Needs
+
+- Registration staff
+- Technical support
+- Hospitality
+- Breakout facilitators
+
+## Professional Standards
+
+- Business attire
+- Confidentiality
+- Executive handling
+- Brand alignment
+
+Corporate event staffing: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "89",
+    slug: "award-show-activations",
+    title: "Award Show Activations: Marketing Around Major Events",
+    excerpt: "Award shows offer premium marketing opportunities. Here's how to activate around red carpets.",
+    image: "/images/case-studies/gallery/cirque/cirque-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 10, 2027",
+    readTime: "6 min read",
+    category: "Entertainment",
+    tags: ["Award Shows", "Red Carpet", "Celebrity Events", "Entertainment Marketing"],
+    content: `# Award Show Activations
+
+Award shows attract massive attention. Here's how to activate around them.
+
+## Major Award Shows
+
+- Oscars
+- Grammys
+- Emmys
+- Golden Globes
+- MTV Awards
+
+## Activation Opportunities
+
+- Gift lounges
+- After parties
+- Viewing events
+- Social campaigns
+
+## Staffing Requirements
+
+- Premium appearance
+- Celebrity handling
+- Media awareness
+- Discretion
+
+## Timing
+
+- Award season planning
+- Day-of execution
+- Post-event content
+
+Award show expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "90",
+    slug: "brand-ambassador-retention",
+    title: "Brand Ambassador Retention: Building Long-Term Talent Relationships",
+    excerpt: "Great ambassadors are worth keeping. Here's how to retain top event talent.",
+    image: "/images/case-studies/gallery/byoma/byoma-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 15, 2027",
+    readTime: "6 min read",
+    category: "Staffing",
+    tags: ["Brand Ambassadors", "Talent Retention", "Staffing", "Team Building"],
+    content: `# Brand Ambassador Retention
+
+Retaining great talent improves quality and reduces costs. Here's how.
+
+## Retention Strategies
+
+- Competitive pay
+- Consistent work
+- Professional development
+- Recognition programs
+
+## Building Loyalty
+
+- Fair treatment
+- Clear communication
+- Growth opportunities
+- Feedback loops
+
+## Benefits of Retention
+
+- Brand consistency
+- Reduced training
+- Deeper knowledge
+- Better performance
+
+## Warning Signs
+
+- Declining availability
+- Quality drops
+- Communication gaps
+- Competitor moves
+
+Talent management: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "91",
+    slug: "convention-floor-navigation",
+    title: "Convention Floor Navigation: Maximizing Trade Show Impact",
+    excerpt: "Trade show floors are competitive. Here's how to drive traffic to your booth.",
+    image: "/images/case-studies/gallery/mac/mac-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 20, 2027",
+    readTime: "7 min read",
+    category: "Trade Shows",
+    tags: ["Trade Shows", "Convention Floor", "Booth Traffic", "Exhibition"],
+    content: `# Convention Floor Navigation
+
+Trade show floors are battlegrounds for attention. Here's how to win.
+
+## Location Strategy
+
+- Corner booths
+- Near entrances
+- High traffic areas
+- Anchor neighbors
+
+## Traffic Drivers
+
+- Demos/presentations
+- Giveaways
+- Celebrity/speaker
+- Interactive experiences
+
+## Staff Positioning
+
+- Aisle engagement
+- Booth coverage
+- Rotating positions
+- Peak time focus
+
+## Attendee Capture
+
+- Quick qualification
+- Lead prioritization
+- Efficient handoffs
+- CRM integration
+
+Trade show expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "92",
+    slug: "brand-activation-trends-2027",
+    title: "Brand Activation Trends 2027: What's Next in Experiential",
+    excerpt: "Stay ahead with the latest activation trends for 2027 and beyond.",
+    image: "/images/case-studies/gallery/duracell/duracell-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 25, 2027",
+    readTime: "8 min read",
+    category: "Trends",
+    tags: ["Marketing Trends", "2027", "Innovation", "Future"],
+    content: `# Brand Activation Trends 2027
+
+Stay ahead with the latest activation innovations and emerging strategies.
+
+## Emerging Trends
+
+- AI personalization
+- Sustainable activations
+- Hybrid experiences
+- Community building
+
+## Technology Shifts
+
+- AR mainstream
+- Voice integration
+- Biometric engagement
+- Predictive analytics
+
+## Consumer Expectations
+
+- Authenticity
+- Purpose-driven
+- Seamless digital
+- Privacy respect
+
+## Staffing Evolution
+
+- Tech fluency
+- Adaptability
+- Multi-channel
+- Data awareness
+
+Future-ready activations: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "93",
+    slug: "food-sampling-guide",
+    title: "Food Sampling Guide: From Preparation to Execution",
+    excerpt: "Food sampling drives trial and purchase. Here's the complete guide to food demos.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "January 30, 2027",
+    readTime: "7 min read",
+    category: "Sampling",
+    tags: ["Food Sampling", "Product Demos", "Retail Marketing", "CPG"],
+    content: `# Food Sampling Guide
+
+Food sampling is proven to drive purchase. Here's how to execute effectively.
+
+## Preparation
+
+- Food handler permits
+- Temperature control
+- Allergen protocols
+- Portion planning
+
+## Equipment
+
+- Heating/cooling
+- Serving supplies
+- Waste disposal
+- Sanitation station
+
+## Execution
+
+- Fresh appearance
+- Portion control
+- Engaging conversation
+- Purchase encouragement
+
+## Compliance
+
+- Health codes
+- Store policies
+- Allergen disclosure
+- Documentation
+
+Food sampling experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "94",
+    slug: "popup-store-operations",
+    title: "Pop-Up Store Operations: Running Temporary Retail Successfully",
+    excerpt: "Pop-ups require retail operations in condensed timeframes. Here's how to execute.",
+    image: "/images/case-studies/gallery/meijer/meijer-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 1, 2027",
+    readTime: "7 min read",
+    category: "Retail",
+    tags: ["Pop-Up Stores", "Retail Operations", "Temporary Retail", "Store Management"],
+    content: `# Pop-Up Store Operations
+
+Pop-ups compress retail operations into short windows. Here's how to succeed.
+
+## Pre-Opening
+
+- Fixture setup
+- Inventory staging
+- POS testing
+- Staff training
+
+## Operations
+
+- Opening/closing
+- Cash handling
+- Customer service
+- Inventory management
+
+## Staffing
+
+- Store manager
+- Sales associates
+- Security needs
+- Shift coverage
+
+## Teardown
+
+- Inventory count
+- Fixture removal
+- Venue restoration
+- Documentation
+
+Pop-up retail expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "95",
+    slug: "event-check-in-technology",
+    title: "Event Check-In Technology: Modern Registration Solutions",
+    excerpt: "Smooth check-in sets the event tone. Here's the guide to modern registration technology.",
+    image: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 5, 2027",
+    readTime: "6 min read",
+    category: "Technology",
+    tags: ["Event Technology", "Registration", "Check-In", "Event Apps"],
+    content: `# Event Check-In Technology
+
+Modern check-in creates seamless first impressions. Here's what to know.
+
+## Technology Options
+
+- Mobile check-in
+- QR codes
+- RFID/NFC
+- Facial recognition
+- Self-service kiosks
+
+## Staff Integration
+
+- Tech training
+- Backup procedures
+- Problem resolution
+- VIP handling
+
+Check-in solutions: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "96",
+    slug: "automotive-ride-and-drive",
+    title: "Automotive Ride-and-Drive Events: Test Drive Marketing Excellence",
+    excerpt: "Test drives sell cars. Here's how to execute effective ride-and-drive programs.",
+    image: "/images/case-studies/gallery/polaris/polaris-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 10, 2027",
+    readTime: "7 min read",
+    category: "Automotive",
+    tags: ["Automotive Marketing", "Test Drives", "Ride and Drive", "Vehicle Events"],
+    content: `# Automotive Ride-and-Drive Events
+
+Test drives are the ultimate conversion tool. Here's how to execute.
+
+## Planning
+
+- Route selection
+- Vehicle preparation
+- Insurance coverage
+- Weather contingency
+
+## Staffing
+
+- Product specialists
+- Licensed drivers
+- Lead capture
+- Traffic control
+
+## Safety
+
+- Waivers
+- Insurance verification
+- Safety briefings
+- Emergency protocols
+
+Automotive expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "97",
+    slug: "customer-appreciation-events",
+    title: "Customer Appreciation Events: Turning Customers into Advocates",
+    excerpt: "Customer events build loyalty and advocacy. Here's how to show appreciation effectively.",
+    image: "/images/case-studies/gallery/netflix/netflix-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 15, 2027",
+    readTime: "6 min read",
+    category: "Customer Events",
+    tags: ["Customer Appreciation", "Loyalty Events", "Customer Experience", "Retention"],
+    content: `# Customer Appreciation Events
+
+Appreciation events build lasting loyalty. Here's how to create memorable experiences.
+
+## Event Types
+
+- VIP previews
+- Thank you parties
+- Anniversary celebrations
+- Milestone recognition
+
+## Personal Touches
+
+- Name recognition
+- Purchase history awareness
+- Personalized gifts
+- Exclusive access
+
+## Staffing
+
+- Hospitality focus
+- Customer knowledge
+- Problem solving
+- Genuine warmth
+
+Customer event expertise: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "98",
+    slug: "event-staffing-software",
+    title: "Event Staffing Software: Managing Teams Efficiently",
+    excerpt: "The right software streamlines event staffing. Here's what to look for in solutions.",
+    image: "/images/case-studies/gallery/ted/ted-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 20, 2027",
+    readTime: "6 min read",
+    category: "Technology",
+    tags: ["Staffing Software", "Event Technology", "Team Management", "Operations"],
+    content: `# Event Staffing Software
+
+Technology streamlines staffing operations. Here's what to consider.
+
+## Key Features
+
+- Scheduling
+- Communication
+- Time tracking
+- Reporting
+
+## Integration
+
+- CRM systems
+- Payroll
+- Background checks
+- Training platforms
+
+## Selection Criteria
+
+- Ease of use
+- Mobile access
+- Scalability
+- Support quality
+
+Staffing technology: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "99",
+    slug: "brand-experience-design",
+    title: "Brand Experience Design: Creating Memorable Moments",
+    excerpt: "Great experiences are designed, not accidental. Here's the framework for memorable brand moments.",
+    image: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "February 25, 2027",
+    readTime: "8 min read",
+    category: "Design",
+    tags: ["Experience Design", "Brand Experience", "Event Design", "Creative"],
+    content: `# Brand Experience Design
+
+Memorable experiences require intentional design. Here's the framework.
+
+## Design Principles
+
+- Emotional connection
+- Sensory engagement
+- Storytelling
+- Interaction design
+
+## Experience Arc
+
+- Anticipation
+- Arrival
+- Peak moment
+- Departure
+
+## Elements
+
+- Visual design
+- Sound/music
+- Scent/taste
+- Touch/texture
+
+Experience design: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "100",
+    slug: "event-marketing-glossary",
+    title: "Event Marketing Glossary: 100 Terms You Need to Know",
+    excerpt: "Master the language of event marketing with this comprehensive glossary of industry terms.",
+    image: "/images/case-studies/gallery/mac/mac-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 1, 2027",
+    readTime: "10 min read",
+    category: "Resources",
+    tags: ["Glossary", "Event Marketing Terms", "Industry Guide", "Education"],
+    content: `# Event Marketing Glossary
+
+Master the language of event marketing with these essential terms.
+
+## A-D
+
+- Activation: Brand experience execution
+- Brand Ambassador: Brand representative
+- Call Time: Staff arrival time
+- Dwell Time: Time spent engaging
+
+## E-H
+
+- Experiential: Experience-based marketing
+- Footprint: Physical space
+- Guerrilla: Unconventional marketing
+- Hospitality: Guest services
+
+## I-L
+
+- Impressions: Total exposures
+- KPI: Key performance indicator
+- Lead Capture: Data collection
+- Load-in: Setup process
+
+## M-P
+
+- Mapping: Projection technology
+- Net Promoter: Loyalty metric
+- On-site: At the event
+- Pop-up: Temporary activation
+
+## Q-T
+
+- Qualification: Lead assessment
+- ROI: Return on investment
+- Sampling: Product trial
+- Teardown: Breakdown process
+
+## U-Z
+
+- UGC: User-generated content
+- Venue: Event location
+- Walk-through: Pre-event visit
+- Zone: Activation area
+
+Your event marketing partner: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
