@@ -60,7 +60,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX International Airport, Metro Rail, Uber/Lyft, Olympic Express Shuttles",
     staffingNeeds: ["Venue greeters", "VIP hospitality", "Sponsor activation staff", "Wayfinding assistants", "Credential checkers"],
     typicalRoles: ["Brand Ambassadors", "Guest Services", "VIP Hosts", "Sampling Teams", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: true,
     tier: 1
   },
@@ -91,7 +91,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX Airport, Metro Rail, Olympic Express Shuttles",
     staffingNeeds: ["Ceremony production staff", "VIP escorts", "Media liaisons", "Guest services", "Credential verification"],
     typicalRoles: ["VIP Hosts", "Brand Ambassadors", "Production Assistants", "Guest Services", "Media Liaisons"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: true,
     tier: 1
   },
@@ -120,7 +120,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX Airport, Metro Expo Line, Olympic Shuttles",
     staffingNeeds: ["Athletics venue staff", "Medal ceremony teams", "Fan zone hosts", "Hospitality crews", "Sampling teams"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Guest Services"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: true,
     tier: 1
   },
@@ -149,7 +149,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Metro Rail, LAX Airport, Rideshare",
     staffingNeeds: ["Arena hosts", "VIP suite staff", "Concourse teams", "Sponsor activation crews", "Media liaisons"],
     typicalRoles: ["VIP Hosts", "Brand Ambassadors", "Hospitality Staff", "Event Coordinators", "Media Liaisons"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: true,
     tier: 1
   },
@@ -178,7 +178,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Long Beach Airport, Metro Blue Line, Rideshare",
     staffingNeeds: ["Waterfront venue staff", "Action sports ambassadors", "Beach activation teams", "Fan zone hosts", "Hospitality crews"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Street Teams", "Guest Services"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: true,
     tier: 1
   },
@@ -207,7 +207,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Metro Expo Line, LAX Airport, Rideshare",
     staffingNeeds: ["Beach venue staff", "Boardwalk teams", "Surf culture ambassadors", "Sampling crews", "VIP beach hospitality"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Sampling Teams", "Beach Hosts", "Event Staff"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: true,
     tier: 1
   },
@@ -236,7 +236,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Metro Gold Line, LAX/Burbank Airports, Rideshare",
     staffingNeeds: ["Stadium hosts", "Fan zone teams", "Tailgate activation staff", "VIP hospitality", "Old Town ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Street Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: true,
     tier: 1
   },
@@ -267,7 +267,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Francisco International Airport, San Jose Airport, Caltrain, VTA Light Rail, Rideshare",
     staffingNeeds: ["Fan zone staff", "Tailgate activation teams", "VIP hospitality", "Sponsor booth staff", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Coordinators", "Hospitality Staff", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: true,
     tier: 1
   },
@@ -298,7 +298,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare, Convention Shuttles",
     staffingNeeds: ["Booth staff", "Product demonstrators", "Lead scanners", "Hospitality staff", "Registration support"],
     typicalRoles: ["Product Specialists", "Brand Ambassadors", "Lead Generators", "Hostesses", "Technical Demonstrators"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: true,
     tier: 1
   },
@@ -329,7 +329,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Austin-Bergstrom International Airport, MetroRail, Rideshare, Scooters",
     staffingNeeds: ["Brand house staff", "Street teams", "Registration staff", "Venue assistants", "Sampling teams"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Coordinators", "Street Team Members", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: true,
     tier: 1
   },
@@ -360,7 +360,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Palm Springs International Airport, Festival Shuttles, Rideshare, Car Rentals",
     staffingNeeds: ["Brand activation staff", "Sampling teams", "VIP lounge hosts", "Photo booth operators", "Roaming ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: true,
     tier: 1
   },
@@ -391,7 +391,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA L Train, Metra, Rideshare",
     staffingNeeds: ["Stage ambassadors", "Sampling teams", "Hydration station staff", "VIP area hosts", "Brand activation staff"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Promotional Models", "Sampling Teams", "Guest Services"],
-    heroImage: "/images/case-studies/gallery/mac/mac-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: true,
     tier: 1
   },
@@ -422,7 +422,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Rideshare, Water Taxis, Trolleys",
     staffingNeeds: ["Gallery hosts", "VIP concierge", "Registration staff", "Coat check", "Event assistants"],
     typicalRoles: ["VIP Hosts", "Gallery Assistants", "Brand Ambassadors", "Hospitality Staff", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: true,
     tier: 1
   },
@@ -453,7 +453,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA/EWR Airports, Subway, Rideshare, Yellow Cabs",
     staffingNeeds: ["Check-in staff", "Dresser assistants", "Ushers", "VIP hosts", "Brand activation staff"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "Runway Assistants", "VIP Hosts", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: true,
     tier: 1
   },
@@ -484,7 +484,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Diego International Airport, Trolley, Rideshare, Convention Shuttles",
     staffingNeeds: ["Booth staff", "Line management", "Photo op assistants", "Costume characters", "Brand ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Costume Characters", "Line Managers", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/mac/mac-11.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: true,
     tier: 1
   },
@@ -515,7 +515,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/OAK Airports, BART, Muni, Rideshare",
     staffingNeeds: ["Booth staff", "Demo specialists", "Registration staff", "Session monitors", "Wayfinders"],
     typicalRoles: ["Brand Ambassadors", "Product Demonstrators", "Registration Staff", "Event Coordinators", "Technical Staff"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: true,
     tier: 1
   },
@@ -548,7 +548,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO Airport, BART, Muni, Rideshare",
     staffingNeeds: ["Fan zone staff", "VIP hospitality", "Sponsor activation teams", "Celebrity handlers", "Registration staff"],
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Event Staff", "Promotional Models", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-10.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: true,
     tier: 1
   },
@@ -579,7 +579,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA Airports, 7 Train, LIRR, Rideshare",
     staffingNeeds: ["Suite hospitality", "Sponsor booth staff", "Fan zone ambassadors", "Sampling teams", "VIP hosts"],
     typicalRoles: ["Hospitality Staff", "Brand Ambassadors", "VIP Hosts", "Sampling Teams", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: true,
     tier: 1
   },
@@ -610,7 +610,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Augusta Regional Airport, Atlanta Airport (2 hrs), Rideshare, Shuttles",
     staffingNeeds: ["Chalet hosts", "Bartenders", "Servers", "VIP concierge", "Guest services"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Servers", "Bartenders", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: true,
     tier: 1
   },
@@ -641,7 +641,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Louisville International Airport, Rideshare, Derby Shuttles",
     staffingNeeds: ["Suite hospitality", "Mint Julep service", "VIP hosts", "Brand ambassadors", "Guest services"],
     typicalRoles: ["Hospitality Staff", "Servers", "VIP Hosts", "Brand Ambassadors", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/katjes/katjes-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: true,
     tier: 1
   },
@@ -672,7 +672,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Festival Shuttles, Rideshare",
     staffingNeeds: ["Stage ambassadors", "Water station staff", "VIP hosts", "Brand activation teams", "Sampling crews"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: true,
     tier: 1
   },
@@ -703,7 +703,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Metromover, Rideshare",
     staffingNeeds: ["VIP table hosts", "Brand activation staff", "Sampling teams", "Guest services", "Backstage assistants"],
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Festival Staff", "Sampling Teams", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/byoma/byoma-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: true,
     tier: 1
   },
@@ -734,7 +734,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Reno-Tahoe Airport, Car Rental, Burner Express Bus",
     staffingNeeds: ["Camp hosts", "Art installation guides", "Gift economy ambassadors", "Experience facilitators"],
     typicalRoles: ["Camp Staff", "Experience Guides", "Hospitality Hosts", "Brand Ambassadors"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: true,
     tier: 1
   },
@@ -765,7 +765,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by host city",
     staffingNeeds: ["Fan zone staff", "Sponsor activation teams", "VIP hospitality", "Street teams", "Stadium ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: true,
     tier: 1
   },
@@ -796,7 +796,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/Newark/LaGuardia Airports, NJ Transit, PATH Train, NYC Subway, Rideshare",
     staffingNeeds: ["Stadium ambassadors", "Fan zone hosts", "VIP hospitality staff", "Street teams", "Sponsor activation crews"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Bilingual Staff"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: true,
     tier: 1
   },
@@ -825,7 +825,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX International Airport, Metro Rail, Rideshare, World Cup Shuttles",
     staffingNeeds: ["Final ceremony staff", "VIP hospitality", "Celebrity handlers", "Fan fest teams", "Sponsor activations"],
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Hospitality Staff", "Promotional Models", "Bilingual Staff"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: true,
     tier: 1
   },
@@ -854,7 +854,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "DFW International Airport, Dallas Love Field, DART Rail, TRE Train, Rideshare",
     staffingNeeds: ["Stadium greeters", "Fan zone hosts", "Sponsor booth staff", "VIP services", "Bilingual teams"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Sampling Teams", "Bilingual Staff"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: true,
     tier: 1
   },
@@ -883,7 +883,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Fort Lauderdale Airport, Brightline, Metrorail, Rideshare",
     staffingNeeds: ["Multilingual staff", "Beach activation teams", "VIP hospitality", "Nightlife ambassadors", "Cultural liaisons"],
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Bilingual Staff", "Promotional Models", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: true,
     tier: 1
   },
@@ -912,7 +912,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Hartsfield-Jackson Airport, MARTA Rail, Rideshare, World Cup Shuttles",
     staffingNeeds: ["Stadium hosts", "Fan zone staff", "Hospitality teams", "Sampling crews", "Southern hospitality ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Sampling Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: true,
     tier: 1
   },
@@ -941,7 +941,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "George Bush Intercontinental, Hobby Airport, MetroRail, Rideshare",
     staffingNeeds: ["Multilingual teams", "Fan fest staff", "Stadium ambassadors", "Cultural liaisons", "VIP services"],
     typicalRoles: ["Brand Ambassadors", "Bilingual Staff", "Event Staff", "Hospitality Staff", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: true,
     tier: 1
   },
@@ -970,7 +970,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Philadelphia International Airport, Amtrak 30th Street, SEPTA, Rideshare",
     staffingNeeds: ["Stadium hosts", "Historic district ambassadors", "Fan zone teams", "Sampling crews", "VIP services"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Street Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: true,
     tier: 1
   },
@@ -999,7 +999,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Seattle-Tacoma Airport, Link Light Rail, King County Metro, Rideshare",
     staffingNeeds: ["Soccer-savvy staff", "Fan zone hosts", "Tech activation teams", "Hospitality crews", "Pacific Northwest ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Tech Demo Staff", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: true,
     tier: 1
   },
@@ -1028,7 +1028,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/SJC/OAK Airports, Caltrain, BART, VTA Light Rail, Rideshare",
     staffingNeeds: ["Tech-savvy demonstrators", "Multilingual staff", "VIP hospitality", "Fan zone teams", "Innovation ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Tech Demo Staff", "Bilingual Staff", "VIP Hosts", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: true,
     tier: 1
   },
@@ -1057,7 +1057,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Logan Airport, Commuter Rail, MBTA, Rideshare",
     staffingNeeds: ["New England sports fans", "Stadium ambassadors", "Historic tour guides", "Fan fest staff", "VIP services"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Hospitality Staff", "Street Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: true,
     tier: 1
   },
@@ -1086,7 +1086,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Kansas City International Airport, KC Streetcar, Rideshare",
     staffingNeeds: ["Soccer culture ambassadors", "Tailgate teams", "Fan zone hosts", "BBQ sampling crews", "Midwest hospitality staff"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Hospitality Staff", "Street Teams"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: true,
     tier: 1
   },
@@ -1117,7 +1117,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Antonio International Airport, VIA Bus, Rideshare",
     staffingNeeds: ["Fan fest staff", "Bracket challenge hosts", "Sponsor booth teams", "VIP hospitality", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: true,
     tier: 1
   },
@@ -1150,7 +1150,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Demo specialists", "Lead scanners", "Registration support", "Session monitors"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Registration Staff", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/mac/mac-4.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -1181,7 +1181,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA/EWR Airports, Subway, Rideshare",
     staffingNeeds: ["Booth staff", "Demo specialists", "Registration teams", "Session monitors", "VIP hosts"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-8.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1212,7 +1212,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "John Wayne Airport, LAX, Rideshare, ART Shuttle",
     staffingNeeds: ["Sampling staff", "Booth ambassadors", "Lead collectors", "Demo specialists", "Registration support"],
     typicalRoles: ["Sampling Teams", "Brand Ambassadors", "Product Demonstrators", "Booth Staff", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-5.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1243,7 +1243,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Austin-Bergstrom Airport, MetroRail, Rideshare, Scooters",
     staffingNeeds: ["Brand activation staff", "Sampling teams", "VIP area hosts", "Hydration stations", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1274,7 +1274,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Nashville International Airport, Car Rental, Festival Shuttles",
     staffingNeeds: ["Camping area ambassadors", "Main stage staff", "Sampling teams", "Centeroo activation staff"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Experience Guides", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1336,7 +1336,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Salt Lake City Airport, Park City Transit, Rideshare, Shuttles",
     staffingNeeds: ["Lounge hosts", "Gifting suite staff", "Check-in personnel", "VIP handlers", "Brand ambassadors"],
     typicalRoles: ["VIP Hosts", "Brand Ambassadors", "Hospitality Staff", "Registration Staff", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-3.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -1367,7 +1367,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA/EWR Airports, Subway, Rideshare",
     staffingNeeds: ["Premiere hosts", "Red carpet staff", "Theater ushers", "Brand ambassadors", "VIP handlers"],
     typicalRoles: ["Event Staff", "VIP Hosts", "Brand Ambassadors", "Registration Staff", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -1398,7 +1398,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Detroit Metro Airport, QLine, People Mover, Rideshare",
     staffingNeeds: ["Product specialists", "Lead collectors", "Interactive display staff", "VIP tour guides", "Registration staff"],
     typicalRoles: ["Product Specialists", "Brand Ambassadors", "Booth Staff", "VIP Hosts", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/mac/mac-10.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -1429,7 +1429,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX Airport, Metro Rail, Rideshare",
     staffingNeeds: ["Product specialists", "Lead collectors", "Test drive coordinators", "VIP hosts", "Interactive staff"],
     typicalRoles: ["Product Specialists", "Brand Ambassadors", "Booth Staff", "VIP Hosts", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-6.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1460,7 +1460,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA/EWR Airports, Subway, Bus",
     staffingNeeds: ["Expo staff", "Course cheering stations", "Finish line support", "Sampling teams", "Medal presenters"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Course Support", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-8.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -1491,7 +1491,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Logan International Airport, MBTA Subway, Commuter Rail, Rideshare",
     staffingNeeds: ["Expo staff", "Cheering station teams", "Finish line support", "Sampling crews", "Brand ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Course Support", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-13.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1522,7 +1522,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA L Train, Metra, Rideshare",
     staffingNeeds: ["Expo staff", "Aid station support", "Finish line teams", "Sampling crews", "Brand ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Course Support", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/katjes/katjes-2.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1553,7 +1553,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA L Train, Metra, Rideshare",
     staffingNeeds: ["Sampling specialists", "Food booth support", "Brand ambassadors", "VIP tent staff", "Entertainment support"],
     typicalRoles: ["Sampling Teams", "Brand Ambassadors", "Event Staff", "Promotional Models", "Hospitality Staff"],
-    heroImage: "/images/case-studies/gallery/bww/bww-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1584,7 +1584,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Rideshare, South Beach Local",
     staffingNeeds: ["Servers", "Bartenders", "Event hosts", "Brand ambassadors", "VIP coordinators"],
     typicalRoles: ["Hospitality Staff", "Servers", "Bartenders", "Brand Ambassadors", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/mac/mac-5.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1615,7 +1615,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Demo specialists", "Lead scanners", "Registration support", "Session monitors"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Registration Staff", "Lead Generators"],
-    heroImage: "/images/case-studies/gallery/byoma/byoma-5.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -1646,7 +1646,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/SJC Airports, Caltrain, VTA, Rideshare",
     staffingNeeds: ["Registration staff", "Session monitors", "Demo assistants", "Wayfinders", "Information desk"],
     typicalRoles: ["Event Staff", "Registration Staff", "Session Monitors", "Information Desk", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -1677,7 +1677,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/SJC Airports, Caltrain, VTA, Rideshare",
     staffingNeeds: ["Registration staff", "Lab assistants", "Session monitors", "Information desk", "Transportation coordinators"],
     typicalRoles: ["Event Staff", "Registration Staff", "Session Monitors", "Information Desk", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/byoma/byoma-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -1708,7 +1708,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by host city",
     staffingNeeds: ["Fan zone staff", "VIP hospitality", "Sponsor activation teams", "Sampling crews", "Stadium ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Stadium Ambassadors"],
-    heroImage: "/images/case-studies/gallery/katjes/katjes-3.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -1739,7 +1739,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Charlotte Douglas International Airport, LYNX Light Rail, Rideshare",
     staffingNeeds: ["Chalet hosts", "Bartenders", "Servers", "VIP concierge", "Course marshals"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Servers", "Bartenders", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1770,7 +1770,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Palm Springs Airport, Festival Shuttles, Rideshare",
     staffingNeeds: ["Brand activation staff", "Sampling teams", "Saloon hosts", "Line dance teachers", "VIP area staff"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Entertainment Staff"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -1801,7 +1801,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Ft. Lauderdale Airport, Rideshare",
     staffingNeeds: ["Stage ambassadors", "Sampling teams", "VIP area hosts", "Merch booth support", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Street Team Members"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1832,7 +1832,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Deuce Bus, Rideshare",
     staffingNeeds: ["Music stage staff", "Art installation guides", "Culinary village hosts", "Brand ambassadors", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Experience Guides", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-4.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1863,7 +1863,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Vehicle models", "Product demonstrators", "Lead collectors", "Social media ambassadors"],
     typicalRoles: ["Promotional Models", "Brand Ambassadors", "Booth Staff", "Product Demonstrators", "Lead Generators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -1894,7 +1894,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/OAK Airports, BART, Muni, Rideshare",
     staffingNeeds: ["Booth staff", "Demo specialists", "Lead scanners", "Registration support", "Session monitors"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Registration Staff", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -1925,7 +1925,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX Airport, Metro Rail, Rideshare",
     staffingNeeds: ["Registration staff", "Lab assistants", "Session monitors", "Community lounge hosts", "Brand ambassadors"],
     typicalRoles: ["Event Staff", "Registration Staff", "Session Monitors", "Brand Ambassadors", "Community Hosts"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-10.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -1956,7 +1956,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare, re:Invent Shuttles",
     staffingNeeds: ["Booth staff", "Session monitors", "Registration teams", "Wayfinders", "Networking event hosts"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Session Monitors", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-8.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -1987,7 +1987,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA L Train, Metra, Rideshare",
     staffingNeeds: ["Registration staff", "Session monitors", "Demo assistants", "Partner booth support", "Networking hosts"],
     typicalRoles: ["Event Staff", "Registration Staff", "Session Monitors", "Brand Ambassadors", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-13.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -2018,7 +2018,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Austin-Bergstrom Airport, COTA Express Shuttles, Rideshare",
     staffingNeeds: ["Paddock hospitality", "Suite hosts", "VIP handlers", "Brand ambassadors", "Fan zone staff"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Event Staff", "Suite Attendants"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-11.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -2049,7 +2049,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Indianapolis International Airport, IndyGo, Rideshare",
     staffingNeeds: ["Hospitality suite staff", "VIP hosts", "Sampling teams", "Fan zone ambassadors", "Sponsor activation staff"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Brand Ambassadors", "Event Staff", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-6.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2080,7 +2080,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Daytona Beach International Airport, Orlando Airport (1 hr), Rideshare",
     staffingNeeds: ["Fan zone staff", "Sampling teams", "VIP hospitality", "Sponsor booth staff", "Pit road experiences"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "Hospitality Staff", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-12.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -2111,7 +2111,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX/Burbank Airports, Metro Gold Line, Rideshare",
     staffingNeeds: ["Tailgate activation staff", "VIP hospitality", "Fan zone ambassadors", "Sponsor booth teams", "Parade support"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Hospitality Staff"],
-    heroImage: "/images/case-studies/gallery/mac/mac-7.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2142,7 +2142,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LGA Airports, 7 Train, LIRR, Rideshare",
     staffingNeeds: ["Brand activation staff", "Sampling teams", "VIP area hosts", "Food village support", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/mac/mac-1.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2173,7 +2173,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Grand Rapids Airport, Chicago Airports, Car Rental",
     staffingNeeds: ["Forest installation guides", "Brand experience staff", "Sampling teams", "Wellness area hosts"],
     typicalRoles: ["Brand Ambassadors", "Experience Guides", "Festival Staff", "Sampling Teams", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2206,7 +2206,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Rideshare, Monorail",
     staffingNeeds: ["Fan zone staff", "Merchandise area support", "VIP hospitality", "Meet & greet coordination", "Axxess event staff"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Promotional Models", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-15.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2237,7 +2237,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Louis Armstrong International Airport, Streetcars, Rideshare",
     staffingNeeds: ["Food tent support", "Brand activation staff", "VIP tent hosts", "Sampling teams", "Information booth staff"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Hospitality Staff", "Sampling Teams", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -2268,7 +2268,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Louis Armstrong International Airport, Streetcars, Rideshare",
     staffingNeeds: ["Convention center staff", "Concert venue support", "Brand ambassadors", "Sampling teams", "VIP hospitality"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -2299,7 +2299,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "General Mitchell Airport, Milwaukee County Transit, Rideshare",
     staffingNeeds: ["Stage area ambassadors", "Sampling teams", "VIP hospitality", "Brand activation staff", "Information booth"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -2330,7 +2330,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA Blue Line, Rideshare",
     staffingNeeds: ["Brand activation staff", "Record fair helpers", "Stage area support", "VIP hosts", "Art installation guides"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Experience Guides", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -2361,7 +2361,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Oakland/SFO Airports, Wine Train, Rideshare",
     staffingNeeds: ["Wine pouring staff", "Culinary village hosts", "VIP lounge attendants", "Brand ambassadors", "Sampling teams"],
     typicalRoles: ["Hospitality Staff", "Brand Ambassadors", "Servers", "VIP Hosts", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/mac/mac-5.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2392,7 +2392,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Philadelphia International Airport, SEPTA, Rideshare",
     staffingNeeds: ["Brand activation staff", "Sampling teams", "VIP area hosts", "Street teams", "Information booth"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Street Team Members"],
-    heroImage: "/images/case-studies/gallery/mac/mac-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -2423,7 +2423,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Philadelphia Airport (1.5 hrs), Baltimore Airport (1 hr), Car Rental",
     staffingNeeds: ["Campground ambassadors", "Stage area staff", "Sampling teams", "VIP hosts", "Brand activation staff"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2454,7 +2454,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA Pink Line, Rideshare",
     staffingNeeds: ["Stage area ambassadors", "Carnival ride support", "Sampling teams", "Brand activation staff", "VIP hosts"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Event Coordinators", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2485,7 +2485,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "John Wayne Airport, LAX, Rideshare, ART Shuttle",
     staffingNeeds: ["Meet & greet coordinators", "Brand booth staff", "Registration teams", "Creator lounge hosts", "Crowd management"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Registration Staff", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2516,7 +2516,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Diego International Airport, Trolley, Rideshare",
     staffingNeeds: ["Booth staff", "Demo station attendants", "Meet & greet support", "Brand ambassadors", "Stage assistants"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Gaming Specialists", "VIP Hosts", "Registration Staff"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2547,7 +2547,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "LAX Airport, Metro Rail, Rideshare",
     staffingNeeds: ["Booth staff", "Line management", "Photo op assistants", "Brand ambassadors", "Panel room support"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Event Staff", "Registration Staff", "Costume Characters"],
-    heroImage: "/images/case-studies/gallery/mac/mac-8.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -2578,7 +2578,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Seattle-Tacoma Airport, Light Rail, Rideshare",
     staffingNeeds: ["Demo station staff", "Tournament support", "Booth ambassadors", "Line management", "VIP escorts"],
     typicalRoles: ["Gaming Specialists", "Brand Ambassadors", "Booth Staff", "Event Staff", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -2609,7 +2609,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Logan International Airport, MBTA Silver Line, Rideshare",
     staffingNeeds: ["Demo station staff", "Tabletop gaming support", "Booth ambassadors", "Queue management", "Indie showcase guides"],
     typicalRoles: ["Gaming Specialists", "Brand Ambassadors", "Booth Staff", "Event Staff", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -2640,7 +2640,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "John Wayne Airport, LAX, Rideshare, ART Shuttle",
     staffingNeeds: ["Panel room support", "Meet & greet coordinators", "Emporium staff", "VIP lounge hosts", "Registration teams"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "VIP Hosts", "Registration Staff", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/mac/mac-9.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -2671,7 +2671,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Rideshare, Tram",
     staffingNeeds: ["Booth staff", "Demo assistants", "Registration teams", "Session monitors", "Lead collectors"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Event Staff", "Technical Support"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2702,7 +2702,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Rideshare, Monorail",
     staffingNeeds: ["Village support staff", "Registration teams", "Brand ambassadors", "Information booth", "Contest support"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "Registration Staff", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-12.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -2733,7 +2733,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Logan International Airport, MBTA Silver Line, Rideshare",
     staffingNeeds: ["Registration teams", "Session monitors", "Networking event hosts", "Booth staff", "VIP coordinators"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "Registration Staff", "VIP Hosts", "Session Monitors"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-4.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2764,7 +2764,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Rideshare, Tram",
     staffingNeeds: ["Booth staff", "Demo specialists", "Registration teams", "Meeting facilitators", "Networking hosts"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-8.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2795,7 +2795,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Equipment demonstrators", "Lead collectors", "Registration support", "Outdoor demo area staff"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Lead Generators", "Event Staff"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -2826,7 +2826,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Showroom hosts", "Runway assistants", "Lead collectors", "Registration support"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Booth Staff", "Showroom Hosts", "Event Staff"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -2857,7 +2857,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "O'Hare/Midway Airports, CTA Brown/Purple Lines, Rideshare",
     staffingNeeds: ["Showroom hosts", "Product demonstrators", "Registration staff", "Tour guides", "Hospitality servers"],
     typicalRoles: ["Showroom Hosts", "Brand Ambassadors", "Product Demonstrators", "Event Staff", "Hospitality Staff"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-9.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -2888,7 +2888,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Product demonstrators", "Lead collectors", "Registration support", "Cooking demo assistants"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Lead Generators", "Event Staff"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-9.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -2919,7 +2919,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Equipment demonstrators", "Lead collectors", "Registration support", "Show home tours"],
     typicalRoles: ["Product Demonstrators", "Brand Ambassadors", "Booth Staff", "Lead Generators", "Tour Guides"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-10.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -2950,7 +2950,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Harry Reid International Airport, Monorail, Rideshare",
     staffingNeeds: ["Booth staff", "Makeup artists", "Hair demonstrators", "Sampling specialists", "Lead collectors"],
     typicalRoles: ["Beauty Specialists", "Brand Ambassadors", "Product Demonstrators", "Sampling Teams", "Promotional Models"],
-    heroImage: "/images/case-studies/gallery/clarins/clarins-7.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -2981,7 +2981,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "JFK/LaGuardia Airports, Hamptons Jitney, Car Service",
     staffingNeeds: ["Chalet hosts", "Bartenders", "Servers", "VIP concierge", "Course ambassadors"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Servers", "Bartenders", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3012,7 +3012,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by venue",
     staffingNeeds: ["Chalet hosts", "Bartenders", "Servers", "VIP concierge", "Course ambassadors"],
     typicalRoles: ["Hospitality Staff", "VIP Hosts", "Servers", "Bartenders", "Brand Ambassadors"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -3043,7 +3043,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Ft. Lauderdale Airport, Rideshare",
     staffingNeeds: ["Fan fest staff", "Tailgate activation teams", "VIP hospitality", "Sponsor booth staff", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Hospitality Staff"],
-    heroImage: "/images/case-studies/gallery/mac/mac-7.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -3074,7 +3074,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by host city",
     staffingNeeds: ["Fan zone staff", "VIP hospitality", "Sponsor activation teams", "Sampling crews", "Arena ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Arena Ambassadors"],
-    heroImage: "/images/case-studies/gallery/katjes/katjes-1.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3105,7 +3105,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by host city",
     staffingNeeds: ["Fan zone staff", "VIP hospitality", "Sponsor activation teams", "Sampling crews", "Arena ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "VIP Hosts", "Sampling Teams", "Arena Ambassadors"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-10.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3136,7 +3136,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Varies by host city",
     staffingNeeds: ["Fan fest staff", "Sponsor activation teams", "VIP hospitality", "Street teams", "Stadium ambassadors"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "VIP Hosts", "Stadium Ambassadors"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 2
   },
@@ -3167,7 +3167,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Miami International Airport, Metromover, Rideshare",
     staffingNeeds: ["Art installation guides", "Brand activation staff", "VIP lounge hosts", "Sampling teams", "Street teams"],
     typicalRoles: ["Brand Ambassadors", "Experience Guides", "Festival Staff", "Sampling Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 2
   },
@@ -3198,7 +3198,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Norfolk International Airport, Hampton Roads Transit, Rideshare",
     staffingNeeds: ["Beach activation staff", "Brand ambassadors", "Sampling teams", "VIP hosts", "Information booth"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "Event Coordinators", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 2
   },
@@ -3229,7 +3229,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Phoenix Sky Harbor Airport, Rideshare",
     staffingNeeds: ["Vendor booth staff", "Demo ride support", "Brand ambassadors", "Sampling teams", "Concert area staff"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Staff", "Sampling Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 2
   },
@@ -3260,7 +3260,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Rapid City Regional Airport, Car Rental",
     staffingNeeds: ["Vendor booth staff", "Demo support", "Brand ambassadors", "Sampling teams", "Main Street teams"],
     typicalRoles: ["Brand Ambassadors", "Promotional Models", "Event Staff", "Sampling Teams", "Street Team Members"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-6.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -3291,7 +3291,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "SFO/OAK Airports, Muni, BART, Rideshare",
     staffingNeeds: ["Air show viewing hosts", "Ship tour guides", "Sampling teams", "VIP tent staff", "Information booth"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "Hospitality Staff", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-4.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3322,7 +3322,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Austin-Bergstrom Airport, MetroRail, Rideshare",
     staffingNeeds: ["Demo kitchen assistants", "Wine pouring staff", "VIP lounge hosts", "Sampling teams", "Registration staff"],
     typicalRoles: ["Hospitality Staff", "Servers", "Brand Ambassadors", "VIP Hosts", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/mac/mac-5.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 2
   },
@@ -3353,7 +3353,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Aspen-Pitkin County Airport, Denver Airport + Car (3.5 hrs)",
     staffingNeeds: ["Tent servers", "Wine pourers", "VIP concierge", "Demo assistants", "Registration staff"],
     typicalRoles: ["Servers", "Bartenders", "VIP Hosts", "Hospitality Staff", "Brand Ambassadors"],
-    heroImage: "/images/case-studies/gallery/mac/mac-5.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: false,
     tier: 2
   },
@@ -3384,7 +3384,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Denver International Airport, RTD Light Rail, Rideshare",
     staffingNeeds: ["Booth staff", "Line management", "Photo op assistants", "Brand ambassadors", "Panel room support"],
     typicalRoles: ["Brand Ambassadors", "Booth Staff", "Event Staff", "Registration Staff", "Costume Characters"],
-    heroImage: "/images/case-studies/gallery/mac/mac-11.jpg",
+    heroImage: "/images/case-studies/gallery/polaris/polaris-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3415,7 +3415,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Denver International Airport, RTD Light Rail, Rideshare",
     staffingNeeds: ["Beer pourers", "Booth staff", "Brand ambassadors", "Designated driver program support", "VIP area hosts"],
     typicalRoles: ["Servers", "Brand Ambassadors", "Event Staff", "Sampling Teams", "VIP Hosts"],
-    heroImage: "/images/case-studies/gallery/duracell/duracell-5.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg",
     featured: false,
     tier: 2
   },
@@ -3448,7 +3448,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "San Diego Airport + Border Crossing, Festival Shuttles",
     staffingNeeds: ["Bilingual brand ambassadors", "Sampling teams", "VIP hosts", "Beach activation staff", "Stage area support"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-3.jpg",
     featured: false,
     tier: 3
   },
@@ -3479,7 +3479,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Denver International Airport, Concert Shuttles, Rideshare",
     staffingNeeds: ["Sponsor activation staff", "VIP box hosts", "Sampling teams", "Brand ambassadors", "Merchandise support"],
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Event Staff", "Hospitality Staff", "Sampling Teams"],
-    heroImage: "/images/case-studies/gallery/formula1/formula1-4.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-5.jpg",
     featured: false,
     tier: 3
   },
@@ -3510,7 +3510,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Friedman Memorial Airport, Boise Airport (2.5 hrs)",
     staffingNeeds: ["Screening hosts", "VIP lounge staff", "Brand ambassadors", "Registration teams", "Transportation coordinators"],
     typicalRoles: ["VIP Hosts", "Brand Ambassadors", "Event Staff", "Registration Staff", "Hospitality Staff"],
-    heroImage: "/images/case-studies/gallery/cirque/cirque-3.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-7.jpg",
     featured: false,
     tier: 3
   },
@@ -3541,7 +3541,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Denver International Airport, RTD Light Rail, Rideshare",
     staffingNeeds: ["Session monitors", "Registration teams", "Networking hosts", "Brand ambassadors", "Pitch competition support"],
     typicalRoles: ["Event Staff", "Brand Ambassadors", "Registration Staff", "Session Monitors", "Networking Hosts"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-1.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-9.jpg",
     featured: false,
     tier: 3
   },
@@ -3572,7 +3572,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "Aspen-Pitkin County Airport, Denver Airport (3.5 hrs)",
     staffingNeeds: ["Mountain activation staff", "Brand ambassadors", "Sampling teams", "VIP tent hosts", "Athlete meet & greet support"],
     typicalRoles: ["Brand Ambassadors", "Event Staff", "Sampling Teams", "VIP Hosts", "Experience Guides"],
-    heroImage: "/images/case-studies/gallery/byoma/byoma-3.jpg",
+    heroImage: "/images/case-studies/gallery/formula1/formula1-11.jpg",
     featured: false,
     tier: 2
   },
@@ -3603,7 +3603,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "T.F. Green Airport, Boston Logan (1.5 hrs), Ferry from Jamestown",
     staffingNeeds: ["Stage area ambassadors", "VIP tent hosts", "Sampling teams", "Information booth", "Artist hospitality"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "VIP Hosts", "Hospitality Staff", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/microsoft/microsoft-2.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-1.jpg",
     featured: false,
     tier: 3
   },
@@ -3634,7 +3634,7 @@ export const usaEvents: USAEvent[] = [
     transportation: "T.F. Green Airport, Boston Logan (1.5 hrs), Ferry from Jamestown",
     staffingNeeds: ["Stage area ambassadors", "VIP hospitality", "Sampling teams", "Information booth", "Artist hospitality"],
     typicalRoles: ["Brand Ambassadors", "Festival Staff", "VIP Hosts", "Hospitality Staff", "Event Coordinators"],
-    heroImage: "/images/case-studies/gallery/mac/mac-6.jpg",
+    heroImage: "/images/case-studies/gallery/duracell/duracell-2.jpg",
     featured: false,
     tier: 3
   }
