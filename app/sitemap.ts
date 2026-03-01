@@ -78,6 +78,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog/guerrilla-marketing-tactics`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/event-staffing-checklist`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/denver-event-marketing-guide`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/world-cup-2026-marketing-guide`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/olympics-2028-la-marketing-opportunities`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/trade-show-lead-generation-tips`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/brand-activation-ideas-2026`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/event-staffing-rates-guide`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/super-bowl-marketing-playbook`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Individual portfolio case studies
     ...portfolioCaseStudies.map(cs => ({
