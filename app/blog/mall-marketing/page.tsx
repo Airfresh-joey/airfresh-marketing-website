@@ -1,0 +1,56 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Mall Marketing and Kiosk Activations | Air Fresh Marketing',
+  description: 'Malls offer captive audiences and high foot traffic. Here\'s how to run effective mall marketing programs.',
+  keywords: 'mall marketing, kiosk marketing, mall activation, shopping center marketing, mall sampling, mall events',
+};
+
+export default function MallMarketing() {
+  return (
+    <article className="pt-16 min-h-screen bg-white">
+      <header className="bg-gradient-to-r from-pink-500 to-rose-500 text-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-pink-200 mb-4">July 18, 2025 · 7 min read</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Mall Marketing: Capturing Captive Audiences</h1>
+          <p className="text-xl text-pink-100">Malls still draw millions. Here's how to reach them.</p>
+        </div>
+      </header>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
+        <p>Reports of the mall's death are exaggerated. Top malls still draw massive foot traffic - captive, often bored, looking for entertainment and discovery. That's marketing gold.</p>
+        <h2>Mall Marketing Options</h2>
+        <p><strong>Kiosk/cart programs:</strong> Temporary retail presence in common areas. Sell or sample directly.</p>
+        <p><strong>Event space activations:</strong> Larger footprint for immersive experiences. Often center court or atrium.</p>
+        <p><strong>Store-level support:</strong> Staff specific retailers for demos, launches, peak periods.</p>
+        <p><strong>Roaming teams:</strong> Brand ambassadors moving through the mall engaging shoppers.</p>
+        <h2>Mall Considerations</h2>
+        <ul>
+          <li><strong>Leasing:</strong> Mall management controls everything. Budget for space rental.</li>
+          <li><strong>Insurance:</strong> Malls require significant liability coverage.</li>
+          <li><strong>Restrictions:</strong> Rules on signage, sound, giveaways. Check everything first.</li>
+          <li><strong>Peak times:</strong> Weekends and holidays = traffic. Weekday mornings = ghost towns.</li>
+        </ul>
+        <h2>What Works in Malls</h2>
+        <ul>
+          <li>Interactive experiences (games, photo ops, try-ons)</li>
+          <li>Immediate gratification (samples, giveaways)</li>
+          <li>Kid/family appeal (parents are often the decision-makers)</li>
+          <li>Seasonal relevance (holiday themes, back-to-school)</li>
+        </ul>
+        <hr className="my-12" />
+        <div className="not-prose">
+          <div className="bg-gradient-to-r from-pink-500 to-rose-500 text-white p-8 rounded-xl">
+            <h2 className="text-2xl font-bold mb-4">Need Mall Marketing Staff?</h2>
+            <p className="mb-6 text-pink-100">Air Fresh provides trained staff for mall activations, kiosks, and retail events.</p>
+            <Button asChild size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
+              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
