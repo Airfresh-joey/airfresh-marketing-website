@@ -3776,5 +3776,469 @@ Healthcare events require specialized knowledge, compliance awareness, and profe
 
 Healthcare event experts: Air Fresh Marketing 303-720-6060
     `
+  },
+  {
+    id: "43",
+    slug: "college-campus-marketing",
+    title: "College Campus Marketing: Reaching Gen Z Where They Live",
+    excerpt: "College campuses offer direct access to Gen Z consumers. Here's how to execute effective campus activations.",
+    image: "/images/case-studies/gallery/grubhub/grubhub-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 20, 2026",
+    readTime: "7 min read",
+    category: "Campus Marketing",
+    tags: ["College Marketing", "Gen Z", "Campus Activation", "Student Marketing"],
+    content: `# College Campus Marketing Guide
+
+College campuses offer concentrated access to Gen Z consumers during formative brand-relationship years.
+
+## Why Campus Marketing Works
+
+- 20 million college students in US
+- High engagement during college years
+- Brand loyalty formation period
+- Social influence multiplier
+- Limited advertising clutter
+
+## Campus Activation Types
+
+### Tabling
+- Student union tables
+- Quad/outdoor spaces
+- Library areas
+- Dining halls
+
+### Events
+- Welcome week activations
+- Tailgate marketing
+- Greek life events
+- Finals week stress relief
+
+### Sampling
+- Dorm distributions
+- Bookstore samples
+- Athletic events
+- Classroom handouts
+
+### Ambassador Programs
+- Student brand ambassadors
+- Peer-to-peer marketing
+- Social media content
+- Campus influence
+
+## University Partnerships
+
+### Getting Access
+- Contact student activities office
+- Partner with student orgs
+- Sponsor university events
+- Work with Greek life
+
+### Top Campus Markets
+- Big Ten schools
+- SEC schools
+- Pac-12 schools
+- Urban universities
+
+## Staffing Campus Events
+
+- College students preferred
+- Relatable to audience
+- Social media native
+- Energetic and engaging
+
+Campus marketing experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "44",
+    slug: "sports-marketing-guide",
+    title: "Sports Marketing Guide: Stadium, Tailgate & Fan Activations",
+    excerpt: "Sports fans are among the most passionate consumers. Here's how to activate at stadiums and sporting events.",
+    image: "/images/case-studies/gallery/formula1/formula1-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 25, 2026",
+    readTime: "8 min read",
+    category: "Sports Marketing",
+    tags: ["Sports Marketing", "Stadium Events", "Tailgate Marketing", "Fan Engagement"],
+    content: `# Sports Marketing Guide
+
+Sports events deliver passionate, engaged audiences in predictable settings. Here's the playbook.
+
+## Venue Types
+
+### Professional Sports
+- NFL stadiums
+- NBA/NHL arenas
+- MLB ballparks
+- MLS stadiums
+
+### College Sports
+- Football Saturdays
+- March Madness
+- College World Series
+- Bowl games
+
+### Motorsports
+- NASCAR tracks
+- F1 circuits
+- IndyCar venues
+- Local tracks
+
+## Activation Locations
+
+### Pre-Game
+- Tailgate lots
+- Fan zones
+- Parking areas
+- Surrounding bars
+
+### In-Venue
+- Concourse activations
+- Suite hospitality
+- In-seat sampling
+- Halftime events
+
+### Post-Game
+- Exit areas
+- Watch party venues
+- Celebration zones
+
+## Sports Staffing
+
+### Requirements
+- Team gear-neutral (usually)
+- Weather-appropriate
+- High energy
+- Sports knowledge
+- Crowd management
+
+### Challenges
+- Long hours
+- Weather extremes
+- Rowdy fans
+- Alcohol presence
+
+## Best Practices
+
+1. **Respect the Game** - Don't compete with action
+2. **Team Sensitivity** - Know local rivalries
+3. **Timing** - Pre-game best for engagement
+4. **Weather Ready** - Plan for all conditions
+5. **Safety First** - Crowd management matters
+
+Sports marketing experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "45",
+    slug: "pop-up-shop-marketing",
+    title: "Pop-Up Shop Marketing: Creating Temporary Retail Experiences",
+    excerpt: "Pop-up shops combine retail with experiential marketing. Here's how to create memorable temporary retail experiences.",
+    image: "/images/case-studies/gallery/netflix/netflix-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "June 30, 2026",
+    readTime: "7 min read",
+    category: "Retail",
+    tags: ["Pop-Up Shops", "Retail Marketing", "Brand Experience", "Temporary Retail"],
+    content: `# Pop-Up Shop Marketing Guide
+
+Pop-up shops create urgency and exclusivity while testing markets and building buzz.
+
+## Why Pop-Ups Work
+
+- Scarcity creates demand
+- Lower commitment than permanent retail
+- PR and social media buzz
+- Direct customer feedback
+- Market testing opportunity
+
+## Pop-Up Types
+
+### Brand Launch
+- New product introduction
+- Limited edition releases
+- Seasonal collections
+- Collaboration showcases
+
+### Experience-Driven
+- Immersive installations
+- Interactive exhibits
+- Photo-worthy moments
+- Educational experiences
+
+### Sales-Focused
+- Sample sales
+- Outlet events
+- Holiday shops
+- Clearance events
+
+## Location Selection
+
+### High-Traffic Options
+- Shopping centers
+- Street retail
+- Event venues
+- Festival grounds
+
+### Considerations
+- Foot traffic patterns
+- Target demographic match
+- Lease flexibility
+- Buildout requirements
+
+## Pop-Up Staffing
+
+### Roles Needed
+- Store manager
+- Sales associates
+- Brand ambassadors
+- Security (if needed)
+- Experience guides
+
+### Staff Qualities
+- Retail experience
+- Brand enthusiasm
+- Sales ability
+- Customer service
+- Flexibility
+
+Pop-up shop experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "46",
+    slug: "b2b-event-marketing",
+    title: "B2B Event Marketing: Conferences, Trade Shows & Corporate Events",
+    excerpt: "B2B events require different strategies than consumer marketing. Here's how to generate quality leads at business events.",
+    image: "/images/case-studies/gallery/mac/mac-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "July 5, 2026",
+    readTime: "8 min read",
+    category: "B2B Marketing",
+    tags: ["B2B Marketing", "Trade Shows", "Corporate Events", "Lead Generation"],
+    content: `# B2B Event Marketing Guide
+
+B2B events are high-investment, high-reward marketing opportunities requiring strategic execution.
+
+## B2B Event Types
+
+### Trade Shows
+- Industry exhibitions
+- Vertical conferences
+- Regional shows
+- International events
+
+### Corporate Events
+- User conferences
+- Partner summits
+- Sales meetings
+- Executive briefings
+
+### Networking Events
+- Industry associations
+- Chamber events
+- Roundtables
+- Dinner events
+
+## Lead Generation Strategy
+
+### Pre-Event
+- Attendee list research
+- Appointment setting
+- Email campaigns
+- Social media outreach
+
+### At-Event
+- Badge scanning
+- Qualification questions
+- Demo scheduling
+- Meeting documentation
+
+### Post-Event
+- 48-hour follow-up
+- Lead scoring
+- CRM integration
+- Nurture campaigns
+
+## B2B Staffing
+
+### Specialized Roles
+- Product specialists
+- Sales engineers
+- Executive hosts
+- Lead qualifiers
+
+### Staff Requirements
+- Business acumen
+- Industry knowledge
+- Professional polish
+- Consultative approach
+
+## Measuring Success
+
+- Meetings held
+- Qualified leads
+- Pipeline generated
+- Deals closed
+- ROI calculation
+
+B2B event experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "47",
+    slug: "mobile-marketing-tours",
+    title: "Mobile Marketing Tours: Taking Your Brand on the Road",
+    excerpt: "Mobile marketing tours bring your brand directly to consumers across multiple markets. Here's the complete guide.",
+    image: "/images/case-studies/gallery/duracell/duracell-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "July 10, 2026",
+    readTime: "8 min read",
+    category: "Experiential",
+    tags: ["Mobile Marketing", "Brand Tours", "Experiential Marketing", "Multi-Market"],
+    content: `# Mobile Marketing Tours Guide
+
+Mobile tours bring your brand experience to consumers across multiple markets efficiently.
+
+## Tour Types
+
+### Vehicle-Based
+- Branded trucks
+- Airstream trailers
+- Custom vehicles
+- RV experiences
+
+### Pop-Up Tours
+- Tent activations
+- Modular displays
+- Portable exhibits
+- Inflatable structures
+
+### Sampling Tours
+- Product distribution
+- Demo stations
+- Trial experiences
+- Coupon distribution
+
+## Tour Planning
+
+### Route Strategy
+- Market prioritization
+- Event alignment
+- Seasonal considerations
+- Logistics optimization
+
+### Timeline
+- 6+ months planning
+- Vehicle design/wrap
+- Permit acquisition
+- Staff recruitment/training
+
+## Tour Staffing
+
+### On-Tour Team
+- Tour manager
+- Brand ambassadors
+- Drivers (CDL if needed)
+- Setup crew
+
+### Challenges
+- Extended travel
+- Living on the road
+- Consistent execution
+- Weather variables
+
+## Measuring Tour Success
+
+- Markets reached
+- Consumers engaged
+- Samples distributed
+- Social impressions
+- Cost per engagement
+
+Mobile tour experts: Air Fresh Marketing 303-720-6060
+    `
+  },
+  {
+    id: "48",
+    slug: "guerrilla-marketing-tactics",
+    title: "Guerrilla Marketing Tactics: Creative, Low-Cost Brand Activations",
+    excerpt: "Guerrilla marketing creates big impact on small budgets. Here are proven tactics that get attention.",
+    image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "July 15, 2026",
+    readTime: "7 min read",
+    category: "Guerrilla Marketing",
+    tags: ["Guerrilla Marketing", "Street Marketing", "Creative Marketing", "Low Budget"],
+    content: `# Guerrilla Marketing Tactics
+
+Guerrilla marketing creates outsized impact through creativity rather than budget.
+
+## Classic Tactics
+
+### Street Teams
+- Flyer distribution
+- Product sampling
+- Costumed characters
+- Human billboards
+
+### Ambient Marketing
+- Chalk art
+- Sticker campaigns
+- Projection mapping
+- Street installations
+
+### Stunts
+- Flash mobs
+- Public performances
+- Surprise events
+- Viral moments
+
+## Modern Guerrilla
+
+### Social-First
+- TikTok challenges
+- Instagram moments
+- User-generated content
+- Viral seeding
+
+### Tech-Enhanced
+- AR experiences
+- QR code hunts
+- Geofenced content
+- Digital treasure hunts
+
+## Legal Considerations
+
+### Know the Rules
+- Permit requirements
+- Property permissions
+- Trademark issues
+- Safety regulations
+
+### Risk Management
+- Insurance coverage
+- Legal review
+- Brand safety
+- Crisis planning
+
+## Guerrilla Staffing
+
+### Ideal Team
+- Creative mindset
+- Improvisation skills
+- Social media savvy
+- Bold personality
+- Quick thinking
+
+### Training Focus
+- Brand guidelines
+- Legal boundaries
+- Safety protocols
+- Documentation
+
+Guerrilla marketing experts: Air Fresh Marketing 303-720-6060
+    `
   }
 ];
