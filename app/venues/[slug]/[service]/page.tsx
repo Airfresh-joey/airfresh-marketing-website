@@ -7,6 +7,7 @@ import Image from "next/image";
 import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, Building } from "lucide-react";
 import SEO from "@/components/SEO";
 import { venues, getVenueBySlug } from "@/server/venues-data";
+import { portfolioCaseStudies } from "@/server/portfolio-case-studies";
 import type { Metadata } from 'next';
 
 interface VenueServicePageProps {
@@ -440,6 +441,58 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
                 </CardContent>
               </Card>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Case Studies Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-center mb-4">
+            {service.name} Success Stories
+          </h2>
+          <p className="text-center text-gray-600 mb-12 max-w-2xl mx-auto">
+            See how we've helped brands achieve remarkable results at venues like {venue.shortName}
+          </p>
+          <div className="grid md:grid-cols-3 gap-6">
+            {portfolioCaseStudies
+              .filter(cs => cs.featured || cs.category === 'Events' || cs.services?.some(s => s.toLowerCase().includes(service.name.toLowerCase().split(' ')[0])))
+              .slice(0, 3)
+              .map((caseStudy) => (
+                <Card key={caseStudy.id} className="hover:shadow-lg transition-shadow overflow-hidden">
+                  {caseStudy.heroImage && (
+                    <div className="relative h-48 bg-gray-100">
+                      <Image
+                        src={caseStudy.heroImage}
+                        alt={caseStudy.name}
+                        fill
+                        className="object-cover"
+                      />
+                    </div>
+                  )}
+                  <CardContent className="p-6">
+                    <h3 className="font-bold text-lg mb-1">{caseStudy.name}</h3>
+                    <p className="text-sm text-gray-500 mb-2">{caseStudy.industry}</p>
+                    <p className="text-gray-600 text-sm line-clamp-2 mb-4">
+                      {caseStudy.tagline}
+                    </p>
+                    <Link href={`/portfolio/${caseStudy.id}`}>
+                      <Button variant="outline" size="sm" className="w-full">
+                        View Case Study
+                        <ArrowRight className="ml-2 h-4 w-4" />
+                      </Button>
+                    </Link>
+                  </CardContent>
+                </Card>
+              ))}
+          </div>
+          <div className="text-center mt-8">
+            <Link href="/portfolio">
+              <Button variant="outline" size="lg">
+                View All Case Studies
+                <ArrowRight className="ml-2 h-5 w-5" />
+              </Button>
+            </Link>
           </div>
         </div>
       </section>
