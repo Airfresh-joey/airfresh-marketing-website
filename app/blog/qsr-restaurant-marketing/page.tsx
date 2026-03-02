@@ -1,0 +1,60 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { ArrowRight } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Quick Service Restaurant Marketing | Air Fresh Marketing',
+  description: 'QSR brands need high-energy, fast-paced marketing. Here\'s how to execute at McDonald\'s, Chick-fil-A, and fast food locations.',
+  keywords: 'qsr marketing, fast food marketing, restaurant marketing, mcdonalds marketing, quick service marketing',
+};
+
+export default function QSRMarketing() {
+  return (
+    <article className="pt-16 min-h-screen bg-white">
+      <header className="bg-gradient-to-r from-yellow-500 to-red-500 text-white py-16">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          <p className="text-yellow-100 mb-4">October 8, 2024 · 7 min read</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">QSR Marketing: Speed Meets Experience</h1>
+          <p className="text-xl text-yellow-100">Fast food. Faster decisions. Make every second count.</p>
+        </div>
+      </header>
+      <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
+        <p>Quick service restaurants move fast. Marketing in this environment needs to match the pace - quick impressions, immediate value, no wasted time.</p>
+        <h2>QSR Landscape</h2>
+        <ul>
+          <li><strong>Burgers:</strong> McDonald's, Burger King, Wendy's, Five Guys</li>
+          <li><strong>Chicken:</strong> Chick-fil-A, Popeyes, KFC</li>
+          <li><strong>Mexican:</strong> Chipotle, Taco Bell, Qdoba</li>
+          <li><strong>Coffee:</strong> Starbucks, Dunkin', local shops</li>
+          <li><strong>Pizza:</strong> Domino's, Pizza Hut, local favorites</li>
+        </ul>
+        <h2>Marketing Opportunities</h2>
+        <ul>
+          <li><strong>New product launches:</strong> Sampling new menu items</li>
+          <li><strong>Grand openings:</strong> New location buzz</li>
+          <li><strong>App/loyalty promotions:</strong> Driving downloads</li>
+          <li><strong>Cross-promotions:</strong> Movie tie-ins, sports partnerships</li>
+          <li><strong>Community events:</strong> Local sponsorship activation</li>
+        </ul>
+        <h2>Staff Requirements</h2>
+        <ul>
+          <li>High energy (matching QSR environment)</li>
+          <li>Quick interactions (no long conversations)</li>
+          <li>Family-friendly (lots of kids in QSR)</li>
+          <li>Ability to work rush hour crowds</li>
+        </ul>
+        <hr className="my-12" />
+        <div className="not-prose">
+          <div className="bg-gradient-to-r from-yellow-500 to-red-500 text-white p-8 rounded-xl">
+            <h2 className="text-2xl font-bold mb-4">QSR Marketing Staff?</h2>
+            <p className="mb-6 text-yellow-100">Air Fresh provides high-energy teams for restaurant marketing.</p>
+            <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
+              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+            </Button>
+          </div>
+        </div>
+      </div>
+    </article>
+  );
+}
