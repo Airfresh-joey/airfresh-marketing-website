@@ -7,6 +7,7 @@ import { enhancedCaseStudies } from '@/server/case-studies-data'
 import { industries } from '@/server/industries-data'
 import { states, stateServices } from '@/server/states-data'
 import { industries as industryList, cities as industryCities } from '@/server/industry-city-data'
+import { neighborhoods, neighborhoodServices } from '@/server/neighborhoods-data'
 import { portfolioCaseStudies } from '@/server/portfolio-case-studies'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
@@ -329,6 +330,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
     })
   })
 
+  // Neighborhood pages (36 neighborhoods)
+  const neighborhoodMainPages: MetadataRoute.Sitemap = neighborhoods.map(n => ({
+    url: `${DOMAIN}/neighborhoods/${n.slug}`,
+    lastModified: today,
+    changeFrequency: 'monthly' as const,
+    priority: 0.7
+  }))
+
+  // Neighborhood + Service combo pages (36 neighborhoods × 5 services = 180 pages)
+  const neighborhoodServicePages: MetadataRoute.Sitemap = []
+  neighborhoods.forEach(neighborhood => {
+    neighborhoodServices.forEach(service => {
+      neighborhoodServicePages.push({
+        url: `${DOMAIN}/neighborhoods/${neighborhood.slug}/${service.slug}`,
+        lastModified: today,
+        changeFrequency: 'monthly' as const,
+        priority: 0.65
+      })
+    })
+  })
+
   // Combine all pages
   const allPages = [
     ...staticPages,
@@ -340,7 +362,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ...venueServicePages,
     ...statePages,
     ...stateServicePages,
-    ...industryCityPages
+    ...industryCityPages,
+    ...neighborhoodMainPages,
+    ...neighborhoodServicePages
   ]
 
   console.log(`Sitemap generated with ${allPages.length} URLs:`)
@@ -354,6 +378,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`- State pages: ${statePages.length}`)
   console.log(`- State-service pages: ${stateServicePages.length}`)
   console.log(`- Industry-city pages: ${industryCityPages.length}`)
+  console.log(`- Neighborhood pages: ${neighborhoodMainPages.length}`)
+  console.log(`- Neighborhood-service pages: ${neighborhoodServicePages.length}`)
 
   return allPages
 }
