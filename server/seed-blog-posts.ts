@@ -41,7 +41,7 @@ A $30,000 campaign that reaches 100,000 people directly and generates 1 million 
 **Strategic timing and location selection** can reduce costs by 20-30%. Avoiding peak permit seasons and choosing emerging neighborhoods over tourist hotspots maintains impact while managing expenses.
 
 Partnering with local organizations or piggybacking on existing events reduces permit and staffing costs. Creating shareable moments that encourage user-generated content extends reach without additional spending. Focus on one powerful execution rather than diluting budget across multiple weak activations.`,
-    author: "AirFresh Marketing Team",
+    author: "Joey Kercher",
     category: "Strategy",
     tags: ["guerrilla marketing", "NYC", "costs", "budgeting", "permits"],
     metaDescription: "Learn the real costs of guerrilla marketing in NYC, from $10,000-$50,000 budgets to permits and ROI expectations.",
@@ -93,7 +93,7 @@ But technology should enhance, not replace, human connection. **The most success
 Smart experiential campaigns track both quantitative and qualitative data. RFID wristbands monitor movement patterns, while facial recognition (with consent) measures emotional responses. **Campaigns that adjust based on real-time data see 25% higher ROI** than static executions.
 
 Post-event surveys reveal that 89% of participants feel more positive about brands after experiential marketing encounters. More importantly, 72% share their experiences with others, creating an amplification effect worth 3-5x the original investment.`,
-    author: "Sarah Johnson",
+    author: "Joey Kercher",
     category: "Strategy",
     tags: ["customer engagement", "immersive experiences", "pop-ups", "brand ambassadors", "technology"],
     metaDescription: "Learn proven strategies for engaging customers through experiential marketing, from immersive activations to brand ambassadors.",
@@ -249,7 +249,7 @@ Social amplification strategies extend reach by 500% on average. We design share
 Speed and scale differentiate our execution. We can deploy nationwide campaigns in 72 hours for urgent opportunities, or spend months perfecting tentpole activations. Our record: **activating in 25 cities simultaneously for a product launch** that generated $10 million in first-week sales.
 
 Long-term partnership value exceeds individual campaign metrics. Clients working with us for 2+ years report 45% improvement in brand health scores, 30% increase in market share, and 50% reduction in customer acquisition costs. Our strategic guidance helps brands build experiential marketing into a sustainable competitive advantage.`,
-    author: "AirFresh Marketing Team",
+    author: "Joey Kercher",
     category: "Q&A",
     tags: ["AirFresh Marketing", "expertise", "services", "differentiators", "capabilities"],
     metaDescription: "Explore AirFresh Marketing's specialized expertise in experiential marketing, from guerrilla campaigns to technology integration.",
