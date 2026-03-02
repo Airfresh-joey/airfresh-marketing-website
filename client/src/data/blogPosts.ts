@@ -11714,6 +11714,630 @@ Enable attendees to create:
     `
   },
   {
+    id: "138",
+    slug: "food-beverage-sampling-guide",
+    title: "Food & Beverage Sampling: The Complete Guide to Delicious Marketing",
+    excerpt: "Food sampling seems simple until you do it wrong. Here's everything you need to know about feeding your way to sales.",
+    image: "/images/case-studies/gallery/modelo/modelo-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "August 15, 2027",
+    readTime: "10 min read",
+    category: "Food Marketing",
+    tags: ["Food Sampling", "Beverage Sampling", "CPG Marketing", "Grocery Marketing"],
+    content: `# Food & Beverage Sampling: The Complete Guide
+
+Food sampling is the oldest trick in marketing.
+
+It works because it's biological. You literally put your product inside the customer's body. The sensory experience is immediate and undeniable.
+
+But simple doesn't mean easy. Here's how to do it right.
+
+## The Science of Sampling
+
+### Why It Works
+
+**Reciprocity:** When someone gives you something, you feel obligated to give back. A sample triggers the impulse to buy.
+
+**Risk elimination:** Food is personal. People fear wasting money on something they won't like. Sampling removes that risk.
+
+**Sensory persuasion:** No description, photo, or advertisement can match actually tasting something.
+
+**Memory formation:** Taste memories are powerful and lasting.
+
+### Conversion Psychology
+
+The goal isn't just trial. It's purchase.
+
+The magic window is the 30 seconds after someone tastes your product. That's when buying impulse is highest. Your staff needs to guide them toward purchase in that window.
+
+## Location Strategy
+
+### Grocery Sampling
+
+**Pros:** Immediate purchase opportunity, controlled environment
+**Cons:** Captive to store rules, limited time slots
+
+Best practices:
+- Position near product shelf
+- Saturday/Sunday 11am-3pm is prime time
+- Coordinate with store demo coordinator
+- Respect store traffic patterns
+
+### Farmers Markets
+
+**Pros:** Foodie audience, community vibe, extended conversations
+**Cons:** Outdoor variables, limited scale
+
+Best practices:
+- Bring your own table, tent, everything
+- Tell your story - these customers care about origin
+- Build relationships, not just transactions
+
+### Festival/Event Sampling
+
+**Pros:** High volume, captive audience, brand association
+**Cons:** Chaos, competition, logistics complexity
+
+Best practices:
+- Plan for heat/cold affecting product quality
+- Have adequate supply (then add 30%)
+- Fast-moving, quick-hit approach
+
+### Street Teams
+
+**Pros:** Meet people where they are, guerrilla impact
+**Cons:** Permitting, weather, lower conversion
+
+Best practices:
+- High-traffic commuter areas
+- Quick messaging - seconds, not minutes
+- Clear branding, immediate recognition
+
+## Product Quality Imperatives
+
+### Temperature Control
+
+This is non-negotiable. Serve products at proper temperature or don't serve them.
+
+**Hot items:** 140°F minimum
+**Cold items:** 40°F maximum
+**Frozen items:** Frozen solid
+
+Invest in proper equipment. Test constantly. One warm sample of something meant to be cold kills your brand impression.
+
+### Portion Sizing
+
+The sample should represent the real product experience.
+
+**Too small:** They can't properly taste, judge, decide
+**Too large:** Wasteful, fills them up, reduces purchase need
+
+Sweet spot: 1-2 oz for beverages, bite-sized for food
+
+### Freshness
+
+Samples sitting out become sad samples. Rotate constantly. Freshly prepared beats pre-made sitting under heat lamps.
+
+## Food Safety (Non-Negotiable)
+
+### Certifications Required
+
+Staff should hold:
+- Food Handler's Certification (most states require)
+- Understanding of allergen protocols
+- Knowledge of proper temperatures
+- Handwashing and sanitation procedures
+
+### Allergen Protocols
+
+EVERY sampling must address:
+- Clear allergen signage
+- Staff knowledge of ingredients
+- Ability to answer allergen questions
+- Cross-contamination prevention
+
+One allergic reaction incident ends your sampling program forever.
+
+### ServSafe Compliance
+
+- Proper handwashing stations
+- Gloves and utensil use
+- Temperature monitoring
+- Clean surface maintenance
+- Proper food storage
+
+## Staffing Food Demos
+
+### The Ideal Demo Staff
+
+Food sampling staff should:
+- Genuinely enjoy food and cooking
+- Communicate enthusiasm authentically
+- Know the product story and ingredients
+- Handle objections smoothly
+- Guide toward purchase naturally
+- Maintain station cleanliness instinctively
+
+### What to Avoid
+
+- Staff who won't eat the product
+- Disinterested or low-energy people
+- Those who can't cook/prep competently
+- Anyone who won't maintain sanitation
+
+### Pay Expectations
+
+Food demo staff typically earn $18-30/hour depending on:
+- Product complexity
+- Preparation requirements
+- Market
+- Certification requirements
+
+## Measuring Success
+
+### Core Metrics
+
+**Distribution count:** How many samples served
+**Conversion rate:** Purchases vs. samples (target: 15-30% in grocery)
+**Units per transaction:** Did they buy multiple?
+**Coupon redemption:** Trackable with coded offers
+
+### Long-Term Value
+
+**Velocity lift:** Does the product sell faster after demo period?
+**Repeat purchases:** Can you track trial-to-loyalty?
+**Market penetration:** New distribution following demos?
+
+## Common Mistakes
+
+### Wrong Product Selection
+Sample your best product, not your new product nobody wants. Lead with strength.
+
+### Bad Timing
+Don't sample breakfast foods at 4pm. Match product to daypart and consumer mindset.
+
+### Invisible Branding
+People should know what brand they're trying from 10 feet away. Big, clear branding.
+
+### No Purchase Path
+If they can't immediately buy, they won't. Shelf proximity is everything.
+
+### Untrained Staff
+A warm body handing out samples is worse than nothing. Train properly.
+
+---
+
+*Air Fresh Marketing runs food and beverage sampling programs for CPG brands nationwide. Food-safe, brand-building, sales-driving. 303-720-6060*
+    `
+  },
+  {
+    id: "139",
+    slug: "cannabis-event-marketing",
+    title: "Cannabis Event Marketing: Compliance, Culture, and Connection",
+    excerpt: "Cannabis marketing is uniquely challenging. Here's how to activate in the industry's tightly regulated landscape.",
+    image: "/images/case-studies/gallery/byoma/byoma-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "August 20, 2027",
+    readTime: "11 min read",
+    category: "Cannabis Marketing",
+    tags: ["Cannabis Marketing", "Dispensary Events", "Compliance", "420 Marketing"],
+    content: `# Cannabis Event Marketing
+
+Cannabis is legal in most of the country now. The industry is maturing rapidly.
+
+But cannabis marketing remains uniquely challenging. Advertising restrictions, platform bans, age-gating requirements, and rapidly evolving regulations make this unlike any other category.
+
+Here's how to do cannabis event marketing that works.
+
+## The Regulatory Reality
+
+### What You Can't Do
+- No sampling of actual cannabis (even in legal states)
+- No advertising to minors
+- No health claims
+- Limited digital advertising options
+- State-by-state rules that vary wildly
+
+### What You Can Do
+- Education and information
+- Brand awareness building
+- Community events
+- Dispensary activations
+- Industry trade shows
+- Non-consumption experiential marketing
+
+### The Compliance First Approach
+
+In cannabis, compliance isn't a checkbox. It's survival.
+
+One violation can:
+- Revoke licenses
+- End partnerships
+- Create PR disasters
+- Invite enforcement attention
+
+Build compliance into every activation from the start.
+
+## Dispensary Activations
+
+### The Dispensary Environment
+
+Legal dispensaries are retail stores with:
+- Age verification at entry
+- Controlled environment
+- Captive, qualified audience
+- Limited space for activation
+- Staff who can speak to products
+
+### Activation Formats
+
+**Vendor days:** Brand presence in store, education, merchandise
+**Pop-up experiences:** Enhanced brand presence, photo ops, giveaways
+**Educational sessions:** Budtender training, consumer education
+**Launch events:** New product introductions
+
+### Staffing Dispensary Events
+
+Staff must:
+- Be 21+ (obvious but verify)
+- Understand compliance completely
+- Know products thoroughly
+- Represent brand appropriately
+- Respect dispensary staff and protocols
+
+Many states require specific badging or registration for anyone working in cannabis retail environments.
+
+## Cannabis Industry Events
+
+### Major Shows
+
+**MJBizCon:** The industry's largest B2B show. 35,000+ attendees.
+**Hall of Flowers:** California-focused, trend-setting
+**Cannabis Business Summit:** Policy and business focus
+**State-specific shows:** Local markets, regulatory specific
+
+### Trade Show Approach
+
+Cannabis trade shows are B2B focused:
+- Decision makers looking for products, services, technology
+- Networking is primary activity
+- Meeting space matters more than flashy booths
+- Follow-up systems essential
+
+### Consumer Events
+
+**420 festivals:** Large-scale celebrations (where legal)
+**Cannabis cups:** Competition and sampling events
+**Lifestyle events:** Music, art, wellness with cannabis integration
+
+These require different approaches:
+- Entertainment value matters
+- Brand experience over education
+- Photo opportunities
+- Community building
+
+## Non-Consumption Marketing
+
+### The Experience Economy
+
+When you can't let people consume your product, you create experiences around your brand:
+
+**Branded merchandise:** Quality items people actually want
+**Art and music:** Cultural alignment
+**Education:** Dosing, strains, effects, responsible use
+**Technology:** Apps, hardware, accessories
+**Lifestyle:** Yoga, wellness, cooking classes
+
+### The Content Play
+
+Cannabis brands often win through content:
+- Educational resources
+- Strain guides
+- Cooking and recipe content
+- Lifestyle imagery
+- Community stories
+
+Events become content creation opportunities.
+
+## Staffing Considerations
+
+### Finding Cannabis-Fluent Staff
+
+The best cannabis brand ambassadors:
+- Actually use and understand cannabis
+- Can speak knowledgeably about strains, effects, products
+- Represent brand values authentically
+- Pass background checks (some states require)
+- Are 21+ with valid ID
+
+### Budtender Relationships
+
+Budtenders are the cannabis industry's MVPs. They drive recommendations.
+
+Brand ambassador programs should prioritize:
+- Budtender education
+- Sample distribution to staff
+- Relationship building
+- Merchandising support
+
+An educated, loyal budtender is worth more than any advertising.
+
+## Compliance Deep Dive
+
+### Age-Gating
+
+Every activation must prevent minor access:
+- ID check at entry
+- No minors allowed, period
+- Staff trained on ID verification
+- Documentation of protocols
+
+### State-Specific Rules
+
+California rules ≠ Colorado rules ≠ New York rules.
+
+Research requirements for each state:
+- Marketing restrictions
+- Event permitting
+- Staff requirements
+- Product handling rules
+- Signage requirements
+
+### Social Media Limitations
+
+Major platforms ban cannabis advertising:
+- Facebook/Instagram: No paid ads
+- Google: Very limited options
+- TikTok: No cannabis content
+
+Organic social and email become critical. Events feed content.
+
+## Measuring Cannabis Marketing ROI
+
+### What You Can Track
+
+- Event attendance
+- Leads captured
+- Dispensary velocity lift
+- Budtender engagement
+- Social mentions
+- Press coverage
+
+### What's Harder
+
+- Direct sales attribution (complex retail landscape)
+- Long-term brand lift
+- Consumer lifetime value
+
+### The Real Measure
+
+In cannabis, brand awareness IS sales. When someone asks a budtender "what's good?" - will they recommend you?
+
+---
+
+*Air Fresh Marketing understands cannabis marketing compliance and culture. We help brands connect with consumers and budtenders effectively and legally. 303-720-6060*
+    `
+  },
+  {
+    id: "140",
+    slug: "healthcare-pharma-event-marketing",
+    title: "Healthcare & Pharma Event Marketing: Compliance, Credibility, and Connection",
+    excerpt: "Healthcare marketing requires navigating strict regulations while building trust. Here's how to do it right.",
+    image: "/images/case-studies/aimco-hero.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "August 25, 2027",
+    readTime: "12 min read",
+    category: "Healthcare Marketing",
+    tags: ["Healthcare Marketing", "Pharma Events", "Medical Conferences", "HIPAA Compliance"],
+    content: `# Healthcare & Pharma Event Marketing
+
+Healthcare marketing operates in a different universe.
+
+FDA regulations. HIPAA compliance. Medical claims restrictions. Sunshine Act reporting. Professional licensing. Insurance considerations.
+
+Get it wrong and you face regulatory action, not just bad PR.
+
+Get it right and you build credibility with an audience that values expertise above all else.
+
+## The Regulatory Framework
+
+### Key Regulations to Know
+
+**FDA:** Controls claims about drugs, devices, supplements
+**FTC:** Governs advertising truthfulness
+**HIPAA:** Protects patient health information
+**Sunshine Act:** Requires disclosure of payments to physicians
+**State laws:** Additional requirements vary by state
+
+### What This Means Practically
+
+- No claims beyond FDA-approved indications
+- Accurate balance of benefits and risks
+- Proper disclosure of sponsorships
+- No patient information collection without consent
+- Documentation of everything
+
+### The Compliance Review Process
+
+Every piece of marketing collateral typically requires:
+- Medical/legal/regulatory (MLR) review
+- Multiple stakeholder sign-off
+- Reference documentation
+- Version control
+- Audit trails
+
+Build this time into every timeline. MLR review isn't fast.
+
+## Medical Conference Marketing
+
+### The Conference Landscape
+
+Major medical conferences drive healthcare marketing:
+- Specialty-specific (cardiology, oncology, dermatology, etc.)
+- Large exhibits and scientific sessions
+- Key opinion leader presence
+- Media coverage
+- Peer networking
+
+### Exhibit Strategy
+
+Medical conference exhibits require:
+- Compliant messaging (reviewed and approved)
+- Credentialed staff (MSLs, nurses, etc.)
+- Scientific data presentation
+- Sample and literature distribution protocols
+- Lead capture systems
+
+### Staffing Medical Exhibits
+
+Healthcare exhibits typically staff:
+- **Medical Science Liaisons (MSLs):** Scientific expertise
+- **Sales representatives:** Relationship and follow-up
+- **Nurses/clinicians:** Clinical credibility
+- **Brand ambassadors:** Logistics and support
+
+All staff must understand:
+- On-label vs. off-label discussions
+- Adverse event reporting requirements
+- Sample handling regulations
+- Documentation requirements
+
+### Symposia and Speaker Programs
+
+Beyond exhibits, pharma companies sponsor:
+- Scientific symposia
+- Dinner programs
+- Breakfast roundtables
+- Peer-to-peer education
+
+Each has specific compliance requirements around:
+- Speaker qualifications and compensation
+- Content approval
+- Meal limits
+- Attendee documentation
+
+## Patient Marketing
+
+### Direct-to-Consumer (DTC)
+
+Consumer healthcare marketing must:
+- Include fair balance (benefits AND risks)
+- Meet FDA advertising requirements
+- Provide clear calls to action
+- Avoid misleading claims
+
+### Patient Event Types
+
+**Awareness campaigns:** Disease education, screening events
+**Community health:** Wellness fairs, health screenings
+**Support groups:** Condition-specific community building
+**Clinical trial recruitment:** Carefully regulated outreach
+
+### Sensitivity Requirements
+
+Healthcare events touch vulnerable populations:
+- Seriously ill patients
+- Caregivers under stress
+- People making life-affecting decisions
+
+Staff must demonstrate:
+- Empathy and sensitivity
+- Appropriate boundaries
+- Privacy protection
+- No pressure tactics
+
+## Hospital and Clinic Activations
+
+### In-Facility Events
+
+Healthcare facilities are controlled environments:
+- Credentialing requirements
+- Time restrictions
+- Space limitations
+- Patient privacy concerns
+
+### Healthcare Worker Education
+
+Lunch-and-learns, in-services, and educational sessions:
+- Must provide clinical value
+- Sunshine Act reporting required
+- Meals must stay within limits
+- Documentation essential
+
+## Health Tech Marketing
+
+### The Digital Health Boom
+
+Health technology requires modified approaches:
+- App demonstrations
+- Device education
+- Integration discussions
+- ROI conversations with administrators
+
+### Trade Show Presence
+
+Health IT shows (HIMSS, etc.) draw:
+- Hospital administrators
+- IT decision makers
+- Clinical informaticists
+- Investors and partners
+
+Focus shifts from clinical to operational value.
+
+## Staffing Healthcare Events
+
+### Credential Requirements
+
+Healthcare event staff often need:
+- Clinical backgrounds (nursing, pharmacy, etc.)
+- State licensure verification
+- Background checks
+- Drug testing
+- HIPAA training
+
+### Knowledge Requirements
+
+Even non-clinical staff must understand:
+- Basic terminology
+- Compliance boundaries
+- When to refer questions
+- Documentation requirements
+
+### Where to Find Staff
+
+- Nurses seeking per-diem work
+- Retired clinicians
+- Medical sales professionals
+- Pharmacy staff
+- Healthcare students (limited roles)
+
+## Measuring Healthcare Marketing ROI
+
+### Unique Metrics
+
+Healthcare marketing tracks:
+- Reach and frequency among HCPs
+- Scientific exchange interactions
+- Sample distribution
+- Speaker program attendance
+- Prescription lift (where attributable)
+
+### Long-Term Relationship Value
+
+Healthcare decisions are relationship-driven:
+- Years to build credibility
+- Referral networks matter
+- Key opinion leader influence
+- Peer-to-peer impact
+
+The event is just one touchpoint in a long relationship.
+
+---
+
+*Air Fresh Marketing understands healthcare compliance and credibility requirements. We staff medical conferences and healthcare events with trained, credentialed professionals. 303-720-6060*
+    `
+  },
+  {
     id: "101",
     slug: "what-is-experiential-marketing",
     title: "What is Experiential Marketing? The Complete Guide",
