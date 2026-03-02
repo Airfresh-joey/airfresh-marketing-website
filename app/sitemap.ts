@@ -211,6 +211,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog/brand-ambassador-training`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/retail-activation-strategies`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/event-staffing-technology`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/crisis-management-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/seasonal-event-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/multilingual-event-staff`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/blog/sustainable-event-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Individual portfolio case studies
     ...portfolioCaseStudies.map(cs => ({
