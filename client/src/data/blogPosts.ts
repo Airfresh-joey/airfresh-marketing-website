@@ -16795,6 +16795,811 @@ When possible:
     `
   },
   {
+    id: "161",
+    slug: "airport-transit-marketing",
+    title: "Airport and Transit Marketing: Reaching Travelers on the Move",
+    excerpt: "Airports and transit hubs offer captive, diverse audiences. Here's how to activate in travel environments.",
+    image: "/images/case-studies/aimco-hero.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 10, 2027",
+    readTime: "10 min read",
+    category: "Travel Marketing",
+    tags: ["Airport Marketing", "Transit Advertising", "Travel Marketing", "On-the-Go"],
+    content: `# Airport and Transit Marketing
+
+Travelers are captive.
+
+They're waiting. They're bored. They have time to kill and money to spend. They're often more receptive to brand messages than in their normal environment.
+
+Airport and transit marketing reaches people in unique states of mind.
+
+## The Travel Environment
+
+### Traveler Psychology
+
+People in transit are:
+- Removed from daily routine
+- Time-rich (waiting)
+- Potentially stressed
+- Open to distraction
+- Often spending freely
+- Thinking about destination
+
+### Airport Advantages
+
+Why airports work:
+- Affluent audience
+- Extended dwell time
+- Captive attention
+- Diverse demographics
+- High traffic volume
+- Gift/impulse buying mindset
+
+### Transit Advantages
+
+Mass transit offers:
+- Daily commuter frequency
+- Diverse demographics
+- Local market penetration
+- High volume touchpoints
+- Routine exposure
+
+## Airport Activation Types
+
+### Terminal Sampling
+
+Product distribution in airports:
+- Security checkpoint exits
+- Gate areas
+- Baggage claim
+- Arrivals halls
+- Departure lounges
+
+### Brand Experiences
+
+Immersive activations:
+- Experiential lounges
+- Pop-up retail
+- Interactive displays
+- VR/AR experiences
+- Charging/amenity stations
+
+### Airport Retail
+
+Point-of-purchase presence:
+- Duty-free partnerships
+- Hudson News/bookstores
+- Food court sampling
+- Gift shop presence
+- Vending and kiosk
+
+### Lounge Marketing
+
+Premium audience access:
+- Sponsored lounges
+- Lounge partnerships
+- Premium sampling
+- VIP experiences
+- Business traveler focus
+
+## Transit Activation Types
+
+### Station Activations
+
+Transit hub presence:
+- Major station takeovers
+- Platform sampling
+- Commuter engagement
+- Rush hour targeting
+- Event-aligned timing
+
+### On-Vehicle Marketing
+
+Inside transit:
+- Interior branding
+- Digital screen presence
+- Seat-back advertising
+- Vehicle wraps
+- Audio announcements
+
+### Commuter Sampling
+
+Reaching daily travelers:
+- Morning commute sampling
+- Evening distribution
+- Transit stop presence
+- Park-and-ride locations
+
+## Staffing Travel Environments
+
+### Airport Staff Requirements
+
+Security and reliability:
+- Background check clearance
+- Airport credentialing (SIDA badges often required)
+- Punctuality critical
+- Professional appearance
+- Multi-language valuable
+
+### Transit Staff Needs
+
+High-volume efficiency:
+- Quick engagement skills
+- Volume distribution capability
+- Weather resilience
+- Early/late availability
+- Geographic flexibility
+
+### Unique Challenges
+
+Travel environment difficulties:
+- Security restrictions
+- Limited access areas
+- Early call times
+- Long days
+- Climate extremes (outdoor transit)
+
+## Regulatory Considerations
+
+### Airport Regulations
+
+Working in airports requires:
+- Airport authority approval
+- TSA compliance
+- Tenant coordination
+- Security protocols
+- Union considerations
+
+### Transit Authority Rules
+
+Public transit requirements:
+- Transit authority permits
+- Space reservations
+- Time restrictions
+- Product limitations
+- Insurance requirements
+
+## Timing Strategies
+
+### Airport Timing
+
+When to activate:
+- Peak travel days (Th-Sun)
+- Holiday travel periods
+- Convention/event times
+- Morning vs. evening flows
+- Seasonal patterns
+
+### Transit Timing
+
+Commuter patterns:
+- Morning rush (7-9am)
+- Evening rush (5-7pm)
+- Midday travelers
+- Weekend different profile
+- Event-driven spikes
+
+## Measuring Travel Marketing
+
+### Airport Metrics
+
+Track performance:
+- Samples/impressions
+- Engagement time
+- Lead capture
+- Purchase conversion
+- Flight-specific tracking
+
+### Transit Metrics
+
+Commuter measurement:
+- Volume reached
+- Frequency exposure
+- Brand recall studies
+- Geographic coverage
+- Cost per impression
+
+---
+
+*Air Fresh Marketing activates brands in airports and transit systems nationwide. We have credentialed staff and understand the travel environment. 303-720-6060*
+    `
+  },
+  {
+    id: "162",
+    slug: "pet-industry-event-marketing",
+    title: "Pet Industry Event Marketing: Reaching Pet Parents and Their Companions",
+    excerpt: "Pet parents are passionate and spending. Here's how to market to them at events where pets are welcome.",
+    image: "/images/case-studies/gallery/byoma/byoma-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 15, 2027",
+    readTime: "9 min read",
+    category: "Pet Marketing",
+    tags: ["Pet Marketing", "Pet Events", "Dog Events", "Pet Parents"],
+    content: `# Pet Industry Event Marketing
+
+Americans spend over $140 billion annually on their pets.
+
+Pet parents treat their animals like family members. They're passionate, loyal, and willing to spend. They gather at events specifically for their pets.
+
+This is a massive opportunity.
+
+## The Pet Parent Audience
+
+### Who They Are
+
+Pet parent demographics:
+- 70% of US households have pets
+- Millennials are largest pet-owning generation
+- Increasing spend per pet annually
+- High brand loyalty potential
+- Emotional purchase decisions
+
+### What They Value
+
+Pet parent priorities:
+- Pet health and wellness
+- Quality ingredients/materials
+- Brand trust and transparency
+- Convenience
+- Community and belonging
+- Instagram-worthy products
+
+### Purchase Behavior
+
+How pet parents buy:
+- Research-driven for health products
+- Impulse for treats and toys
+- Subscription/repeat purchase
+- Premium willing
+- Influenced by veterinarians and peers
+
+## Pet Event Types
+
+### Dog-Focused Events
+
+Canine gatherings:
+- Dog shows (AKC events)
+- Bark in the Park days
+- Dog-friendly festivals
+- Adoption events
+- Training demonstrations
+- Breed-specific meetups
+
+### Multi-Species Events
+
+Broader pet events:
+- Pet expos
+- Adopt-a-thons
+- Pet-friendly markets
+- Animal welfare fundraisers
+- Pet industry trade shows
+
+### Pet-Friendly Mainstream Events
+
+Pets at regular events:
+- Farmers markets
+- Outdoor festivals
+- Brewery events
+- Restaurant patios
+- Retail pet days
+
+## Activation Strategies
+
+### Product Sampling
+
+Getting product to pets:
+- Treat sampling (direct to pet)
+- Food samples (take-home)
+- Product trials
+- Subscription signups
+- Coupon distribution
+
+### Pet Experience Creation
+
+Engaging activations:
+- Photo booths for pets
+- Agility courses
+- Splash zones
+- Costume contests
+- Training demonstrations
+
+### Pet Parent Engagement
+
+Owner-focused activities:
+- Educational sessions
+- Expert consultations
+- Product demonstrations
+- Community building
+- Social content creation
+
+## Staffing Pet Events
+
+### Pet-Friendly Staff
+
+Essential qualities:
+- Genuine pet lovers
+- Comfortable with all animals
+- Basic animal handling knowledge
+- Calm under pet chaos
+- Not allergic (obviously)
+
+### Safety Training
+
+Pet interaction skills:
+- Reading animal body language
+- Handling nervous animals
+- Managing pet interactions
+- Emergency response
+- Bite/scratch protocols
+
+### Staff Safety
+
+Protecting your team:
+- No handling of aggressive animals
+- Sanitization between pets
+- Appropriate attire
+- Weather protection
+- Break scheduling
+
+## Operational Considerations
+
+### Sample Management
+
+Pet product logistics:
+- Allergen awareness
+- Treat storage (temperature)
+- Portion control
+- Multi-pet households
+- Product matching to pet size
+
+### Space Setup
+
+Pet-friendly activation design:
+- Shade and water
+- Waste stations
+- Non-toxic materials
+- Secure boundaries
+- Easy-clean surfaces
+
+### Unexpected Pet Behavior
+
+Plan for:
+- Accidents (pee/poop)
+- Pet conflicts
+- Over-excited animals
+- Lost pets
+- Health emergencies
+
+## Measuring Pet Marketing
+
+### Engagement Metrics
+
+Track activity:
+- Pets sampled
+- Photos taken/shared
+- Sign-ups captured
+- Samples distributed
+- Time engagement
+
+### Business Metrics
+
+Sales impact:
+- Coupon redemption
+- Subscription conversion
+- Retail velocity lift
+- Website traffic
+- Social growth
+
+---
+
+*Air Fresh Marketing staffs pet industry events with animal lovers who know how to engage pet parents and their companions. 303-720-6060*
+    `
+  },
+  {
+    id: "163",
+    slug: "fitness-wellness-event-marketing",
+    title: "Fitness and Wellness Event Marketing: Reaching the Health-Conscious Consumer",
+    excerpt: "Health and fitness consumers are highly engaged and brand-loyal. Here's how to reach them at events.",
+    image: "/images/case-studies/gallery/coachella/coachella-1.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 20, 2027",
+    readTime: "10 min read",
+    category: "Fitness Marketing",
+    tags: ["Fitness Marketing", "Wellness Events", "Health Marketing", "Active Lifestyle"],
+    content: `# Fitness and Wellness Event Marketing
+
+Fitness consumers are different.
+
+They're intentional about what they put in their bodies. They're community-oriented. They're willing to pay premium prices for products aligned with their values.
+
+And they gather in predictable places.
+
+## The Fitness Consumer
+
+### Who They Are
+
+Fitness audience profile:
+- Higher income on average
+- Health-motivated purchase decisions
+- Brand loyal once convinced
+- Community-seeking
+- Aspirational and goal-oriented
+- Highly engaged with content
+
+### What They Care About
+
+Fitness consumer values:
+- Ingredients and nutrition
+- Performance and results
+- Convenience for active life
+- Sustainability
+- Authenticity
+- Community belonging
+
+### Purchase Patterns
+
+How they buy:
+- Research ingredient lists
+- Try before committing
+- Subscription-oriented
+- Premium willing
+- Influenced by trainers and peers
+- Responsive to performance claims
+
+## Fitness Event Types
+
+### Races and Runs
+
+Athletic events:
+- Marathons and half marathons
+- 5K/10K charity runs
+- Color runs and themed races
+- Obstacle course races (Spartan, Tough Mudder)
+- Trail running events
+- Triathlon events
+
+### Fitness Classes and Gatherings
+
+Group exercise:
+- Outdoor yoga
+- Boot camp events
+- Dance fitness gatherings
+- CrossFit competitions
+- Cycling events
+
+### Wellness Events
+
+Holistic health:
+- Wellness festivals
+- Mind-body expos
+- Recovery and self-care events
+- Meditation gatherings
+- Health conferences
+
+### Gym and Studio Events
+
+Facility-based:
+- Gym grand openings
+- Member appreciation events
+- Challenge kickoffs
+- New class launches
+- Trainer showcases
+
+## Activation Strategies
+
+### Race Marketing
+
+Running event presence:
+- Expo booth presence
+- Finish line sampling
+- Race packet insert
+- Course hydration station
+- Recovery zone activation
+
+### Sampling Tactics
+
+Getting product to fitness consumers:
+- Post-workout timing
+- Pre-workout energy
+- Recovery products
+- Hydration
+- Nutrition samples
+
+### Experience Creation
+
+Fitness-aligned activations:
+- Try-before-you-buy workouts
+- Trainer-led sessions
+- Performance assessments
+- Goal-setting stations
+- Community challenges
+
+## Staffing Fitness Events
+
+### Fit Staff Required
+
+Credibility matters:
+- Visibly fit appearance
+- Genuine fitness lifestyle
+- Activity-specific knowledge
+- Product knowledge
+- Relatable to audience
+
+### Activity Capability
+
+Staff may need to:
+- Demonstrate products
+- Lead light activities
+- Participate in workouts
+- Handle physical setup
+- Work long active days
+
+### Early Hours Reality
+
+Fitness events often mean:
+- Very early call times
+- Outdoor conditions
+- Physical labor
+- Long standing hours
+- High energy requirements
+
+## Product Categories
+
+### Nutrition and Supplements
+
+Food/drink opportunities:
+- Protein products
+- Energy products
+- Recovery products
+- Healthy snacks
+- Sports drinks
+- Supplements
+
+### Equipment and Apparel
+
+Fitness gear:
+- Athletic apparel
+- Footwear
+- Fitness tech (wearables)
+- Training equipment
+- Recovery tools
+
+### Services
+
+Wellness services:
+- Gym memberships
+- Fitness apps
+- Training services
+- Recovery services (massage, cryotherapy)
+- Health services
+
+## Measuring Fitness Marketing
+
+### Event Metrics
+
+Track activity:
+- Samples distributed
+- Trial participants
+- Sign-ups captured
+- Engagements
+- Social content
+
+### Conversion Metrics
+
+Business impact:
+- Membership signups
+- Product purchases
+- Subscription conversions
+- Retail velocity
+- Long-term retention
+
+---
+
+*Air Fresh Marketing staffs fitness and wellness events with brand ambassadors who live the active lifestyle. Authentic representation guaranteed. 303-720-6060*
+    `
+  },
+  {
+    id: "164",
+    slug: "wedding-bridal-event-marketing",
+    title: "Wedding and Bridal Event Marketing: Reaching Engaged Couples and Wedding Planners",
+    excerpt: "Weddings are a $50+ billion industry. Here's how to reach couples during the most spend-heavy time of their lives.",
+    image: "/images/case-studies/mac-cosmetics-hero.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "December 25, 2027",
+    readTime: "9 min read",
+    category: "Wedding Marketing",
+    tags: ["Wedding Marketing", "Bridal Events", "Event Marketing", "Couple Marketing"],
+    content: `# Wedding and Bridal Event Marketing
+
+Engaged couples spend aggressively.
+
+The average American wedding costs over $30,000. That money flows to venues, catering, photography, attire, beauty, travel, gifts, and dozens of other categories.
+
+Reaching couples during engagement is reaching them at peak spending.
+
+## The Bridal Market
+
+### The Engaged Couple
+
+Who they are:
+- Average engagement: 13-15 months
+- Heavy research phase
+- Emotionally charged decisions
+- Often first major joint purchases
+- Family influence significant
+- Social media documented
+
+### Spending Categories
+
+Where wedding money goes:
+- Venue and catering (largest)
+- Photography and videography
+- Attire and beauty
+- Entertainment
+- Flowers and décor
+- Invitations and paper
+- Travel and honeymoon
+- Registry and gifts
+
+### The Decision Timeline
+
+When choices are made:
+- Venue: Very early
+- Catering: Early
+- Photography: Early-mid
+- Attire: Mid
+- Beauty: Mid-late
+- Smaller vendors: Late
+
+## Wedding Event Types
+
+### Bridal Shows
+
+Traditional format:
+- Large exhibition events
+- Multiple vendors
+- Fashion shows
+- Cake tastings
+- Grand prize drawings
+
+### Wedding Expos
+
+Modern version:
+- More experiential
+- Styled photo areas
+- Interactive vendor displays
+- Education sessions
+- Influencer presence
+
+### Trunk Shows
+
+Bridal retail:
+- Dress designer events
+- Exclusive collections
+- Appointment-based
+- Personalized experience
+
+### Vendor Open Houses
+
+Individual businesses:
+- Venue tours
+- Tasting events
+- Photography portfolio events
+- Florist showcases
+
+## Activation Strategies
+
+### Booth Presence
+
+Traditional exhibition:
+- Portfolio displays
+- Service information
+- Special offers
+- Lead capture
+- Consultation booking
+
+### Experiential Elements
+
+Standing out:
+- Photo opportunities
+- Tastings and samples
+- Beauty demonstrations
+- Interactive displays
+- Styled vignettes
+
+### Lead Capture
+
+Data collection:
+- Wedding date
+- Venue status
+- Budget range
+- Planning stage
+- Contact preferences
+
+## Staffing Bridal Events
+
+### Staff Profile
+
+Bridal event ambassadors:
+- Polished presentation
+- Wedding industry knowledge
+- Consultative approach
+- Patience for details
+- Relationship building skills
+
+### Sensitivity Required
+
+Emotional awareness:
+- Wedding stress is real
+- Budget sensitivity
+- Family dynamics
+- Cultural differences
+- LGBTQ+ inclusion
+
+### Sales Orientation
+
+Bridal events are sales:
+- Qualification skills
+- Consultation booking
+- Follow-up commitment
+- Competition awareness
+- Closing capability
+
+## Vendor Categories
+
+### High-Touch Services
+
+Relationship-based vendors:
+- Wedding planners
+- Photographers
+- Videographers
+- Florists
+- Caterers
+
+### Product-Based
+
+Tangible goods:
+- Bridal attire
+- Jewelry
+- Invitations
+- Favors and gifts
+- Registry items
+
+### Experience-Based
+
+Service delivery:
+- Venues
+- Entertainment
+- Transportation
+- Beauty services
+- Honeymoon travel
+
+## Measuring Wedding Marketing
+
+### Lead Metrics
+
+Track capture:
+- Qualified leads
+- Consultation bookings
+- Wedding date distribution
+- Budget range mix
+- Planning stage breakdown
+
+### Conversion Metrics
+
+Business impact:
+- Consultation to booking rate
+- Average booking value
+- Time to decision
+- Referral generation
+- Review acquisition
+
+---
+
+*Air Fresh Marketing staffs bridal shows and wedding expos with polished professionals who understand the industry. 303-720-6060*
+    `
+  },
+  {
     id: "101",
     slug: "what-is-experiential-marketing",
     title: "What is Experiential Marketing? The Complete Guide",
