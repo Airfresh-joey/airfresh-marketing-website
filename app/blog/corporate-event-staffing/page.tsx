@@ -4,57 +4,49 @@ import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Corporate Event Staffing: Making Meetings Memorable | Air Fresh Marketing',
-  description: 'Corporate events require professional, polished staff. From conferences to holiday parties, here\'s how to staff corporate events right.',
-  keywords: 'corporate event staffing, corporate events, business event staff, company event staffing, meeting staff, corporate hospitality',
+  title: 'Corporate Event Staffing | Air Fresh Marketing',
+  description: 'Corporate events require polished, professional staff. Here\'s how to staff galas, meetings, and corporate functions.',
+  keywords: 'corporate event staffing, corporate event staff, gala staffing, corporate function staff, meeting staff',
 };
 
-export default function CorporateEvents() {
+export default function CorporateEventStaffing() {
   return (
     <article className="pt-16 min-h-screen bg-white">
-      <header className="bg-gradient-to-r from-gray-700 to-gray-900 text-white py-16">
+      <header className="bg-gradient-to-r from-gray-800 to-slate-900 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
-          <p className="text-gray-300 mb-4">July 8, 2025 · 7 min read</p>
-          <h1 className="text-4xl md:text-5xl font-bold mb-6">Corporate Event Staffing: The Professional Touch</h1>
-          <p className="text-xl text-gray-300">Corporate events reflect your company. Staff accordingly.</p>
+          <p className="text-gray-400 mb-4">January 26, 2024 · 7 min read</p>
+          <h1 className="text-4xl md:text-5xl font-bold mb-6">Corporate Event Staffing: Professional Excellence</h1>
+          <p className="text-xl text-gray-400">When your company's reputation is on the line.</p>
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Corporate events are different. The stakes are higher. The audience is more discerning. The expectation is polished professionalism. That means every staff member needs to operate at a higher level.</p>
+        <p>Corporate events reflect your company. Whether it's a client gala, shareholder meeting, or employee celebration, the staff you hire becomes an extension of your brand.</p>
         <h2>Corporate Event Types</h2>
         <ul>
-          <li><strong>Conferences and conventions</strong> - Registration, ushering, session support</li>
-          <li><strong>Product launches</strong> - Brand presentation, demos, media handling</li>
-          <li><strong>Client events</strong> - Hospitality, relationship building, VIP management</li>
-          <li><strong>Company parties</strong> - Social hosting, activity facilitation</li>
-          <li><strong>Award ceremonies</strong> - Formal protocol, stage management</li>
-          <li><strong>Shareholder meetings</strong> - Registration, crowd control, A/V support</li>
+          <li><strong>Galas and dinners:</strong> Formal, high-touch hospitality</li>
+          <li><strong>Shareholder meetings:</strong> Registration, logistics, AV support</li>
+          <li><strong>Product launches:</strong> Brand representation and demos</li>
+          <li><strong>Holiday parties:</strong> Creating memorable experiences</li>
+          <li><strong>Team offsites:</strong> Facilitation and logistics support</li>
         </ul>
-        <h2>What "Professional" Actually Means</h2>
-        <ul>
-          <li><strong>Appearance:</strong> Business attire, polished grooming, brand-appropriate presentation</li>
-          <li><strong>Communication:</strong> Articulate, appropriate language, ability to handle executives</li>
-          <li><strong>Discretion:</strong> What happens at corporate events stays there</li>
-          <li><strong>Reliability:</strong> Zero tolerance for lateness or no-shows</li>
-          <li><strong>Adaptability:</strong> Handle changes without visible stress</li>
-        </ul>
-        <h2>Roles We Staff</h2>
+        <h2>Staff Qualities</h2>
+        <p><strong>Polished presentation:</strong> Appropriate dress, grooming, demeanor.</p>
+        <p><strong>Discretion:</strong> Confidentiality in corporate settings.</p>
+        <p><strong>Adaptability:</strong> Handling executives and varied personalities.</p>
+        <p><strong>Problem-solving:</strong> Quiet competence under pressure.</p>
+        <h2>Common Roles</h2>
         <ul>
           <li>Registration and check-in</li>
-          <li>Greeters and hosts</li>
-          <li>Ushers and wayfinding</li>
-          <li>Coat check and bag check</li>
-          <li>A/V and tech support</li>
-          <li>Event coordinators</li>
-          <li>Brand ambassadors (product-focused events)</li>
+          <li>Hospitality and hosting</li>
+          <li>Coat check and valet coordination</li>
+          <li>A/V and presentation support</li>
+          <li>Guest services and wayfinding</li>
         </ul>
-        <h2>The Corporate Premium</h2>
-        <p>Corporate event staff costs more than standard event staff. You're paying for vetting, experience, and reliability. This isn't where you cut corners - a single unprofessional interaction reflects on your entire company.</p>
         <hr className="my-12" />
         <div className="not-prose">
-          <div className="bg-gradient-to-r from-gray-700 to-gray-900 text-white p-8 rounded-xl">
-            <h2 className="text-2xl font-bold mb-4">Need Corporate Event Staff?</h2>
-            <p className="mb-6 text-gray-300">Air Fresh provides professional staff for corporate events of all types.</p>
+          <div className="bg-gradient-to-r from-gray-800 to-slate-900 text-white p-8 rounded-xl">
+            <h2 className="text-2xl font-bold mb-4">Corporate Event Coming?</h2>
+            <p className="mb-6 text-gray-400">Air Fresh provides polished corporate event staff.</p>
             <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
               <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
