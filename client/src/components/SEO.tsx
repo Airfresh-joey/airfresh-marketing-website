@@ -108,16 +108,16 @@ export default function SEO({
       document.head.appendChild(link);
     }
 
-    // Canonical URL
-    if (canonical) {
-      let canonicalElement = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
-      if (!canonicalElement) {
-        canonicalElement = document.createElement('link');
-        canonicalElement.rel = 'canonical';
-        document.head.appendChild(canonicalElement);
-      }
-      canonicalElement.href = canonical;
+    // Canonical URL - ALWAYS set to prevent duplicate content issues
+    // Use provided canonical or default to current page URL (without query params)
+    const canonicalUrl = canonical || `${window.location.origin}${window.location.pathname}`;
+    let canonicalElement = document.querySelector('link[rel="canonical"]') as HTMLLinkElement;
+    if (!canonicalElement) {
+      canonicalElement = document.createElement('link');
+      canonicalElement.rel = 'canonical';
+      document.head.appendChild(canonicalElement);
     }
+    canonicalElement.href = canonicalUrl;
 
     // Structured data
     if (structuredData) {

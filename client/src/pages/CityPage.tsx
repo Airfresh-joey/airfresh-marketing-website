@@ -5,6 +5,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, Clock, CheckCircle, Star, Briefcase } from "lucide-react";
 import { useEffect } from "react";
 import { cityLocalBusinessSchema } from "@/lib/structured-data";
+import SEO from "@/components/SEO";
 
 export default function CityPage() {
   const [match, params] = useRoute("/city/:cityName");
@@ -23,19 +24,7 @@ export default function CityPage() {
   // Format city name for display
   const displayName = cityData?.city || cityName.charAt(0).toUpperCase() + cityName.slice(1).toLowerCase();
   
-  // Add LocalBusiness structured data to page head
-  useEffect(() => {
-    if (cityData) {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify(cityLocalBusinessSchema(cityData));
-      document.head.appendChild(script);
-      
-      return () => {
-        document.head.removeChild(script);
-      };
-    }
-  }, [cityData]);
+  // Note: LocalBusiness structured data is now handled by SEO component
 
   if (isLoading) {
     return (
@@ -47,8 +36,21 @@ export default function CityPage() {
     );
   }
 
+  // Generate unique meta description for this city
+  const metaDescription = cityData?.description || 
+    `AirFresh Marketing provides expert experiential marketing, brand activations, and event staffing services in ${displayName}. Local team, nationwide expertise. Contact us for a free quote.`;
+
   return (
     <div className="pt-16">
+      {/* SEO Component - handles canonical, meta tags, OG tags */}
+      <SEO
+        title={`Experiential Marketing Agency in ${displayName} | AirFresh Marketing`}
+        description={metaDescription}
+        canonical={`https://airfreshmarketing.com/city/${cityName.toLowerCase()}`}
+        ogType="website"
+        structuredData={cityData ? cityLocalBusinessSchema(cityData) : undefined}
+        pageType="city"
+      />
       {/* Hero Section with City Image */}
       <section
         className="relative py-32 bg-cover bg-center"

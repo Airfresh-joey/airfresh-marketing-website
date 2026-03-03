@@ -4,6 +4,7 @@ import { useQuery } from "@tanstack/react-query";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, CheckCircle, Star, Phone, ArrowRight } from "lucide-react";
 import { useEffect } from "react";
+import SEO from "@/components/SEO";
 
 export default function CityServicePage() {
   const [match, params] = useRoute("/city-services/:slug");
@@ -19,41 +20,23 @@ export default function CityServicePage() {
     }
   });
 
-  // Add structured data for SEO
-  useEffect(() => {
-    if (pageData) {
-      const script = document.createElement('script');
-      script.type = 'application/ld+json';
-      script.text = JSON.stringify({
-        "@context": "https://schema.org",
-        "@type": "Service",
-        "name": pageData.title,
-        "description": pageData.metaDescription,
-        "provider": {
-          "@type": "Organization",
-          "name": "AirFresh Marketing",
-          "url": "https://airfreshmarketing.com"
-        },
-        "areaServed": {
-          "@type": "City",
-          "name": pageData.cityName
-        },
-        "serviceType": pageData.serviceName
-      });
-      document.head.appendChild(script);
-
-      // Update meta tags
-      document.title = pageData.title;
-      const metaDescription = document.querySelector('meta[name="description"]');
-      if (metaDescription) {
-        metaDescription.setAttribute('content', pageData.metaDescription);
-      }
-
-      return () => {
-        document.head.removeChild(script);
-      };
-    }
-  }, [pageData]);
+  // Build structured data for this page
+  const structuredData = pageData ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": pageData.title,
+    "description": pageData.metaDescription,
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "url": "https://airfreshmarketing.com"
+    },
+    "areaServed": {
+      "@type": "City",
+      "name": pageData.cityName
+    },
+    "serviceType": pageData.serviceName
+  } : undefined;
 
   if (isLoading) {
     return (
@@ -77,6 +60,17 @@ export default function CityServicePage() {
 
   return (
     <div className="pt-16">
+      {/* SEO Component - handles canonical, meta tags, OG tags */}
+      {pageData && (
+        <SEO
+          title={pageData.title}
+          description={pageData.metaDescription}
+          canonical={`https://airfreshmarketing.com/city-services/${slug}`}
+          ogType="website"
+          structuredData={structuredData}
+          pageType="city-service"
+        />
+      )}
       {/* Hero Section with Background Image */}
       <section
         className="relative py-32 bg-cover bg-center"

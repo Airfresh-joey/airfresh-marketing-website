@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, MapPin, Users, Target, Megaphone } from "lucide-react";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
-import { useEffect } from "react";
+import SEO from "@/components/SEO";
 
 export default function StreetTeams() {
   // Fetch all cities data
@@ -16,14 +16,20 @@ export default function StreetTeams() {
     }
   });
 
-  // Add SEO meta tags
-  useEffect(() => {
-    document.title = "Street Team Marketing | Nationwide Guerrilla Marketing | AirFresh Marketing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional street team marketing and guerrilla campaigns nationwide. AirFresh Marketing provides high-energy street teams for product sampling, flyering, and grassroots promotion.');
-    }
-  }, []);
+  // Structured data for street teams service
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Street Team Marketing",
+    "description": "Professional street team marketing and guerrilla campaigns nationwide. AirFresh Marketing provides high-energy street teams for product sampling, flyering, and grassroots promotion.",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "url": "https://airfreshmarketing.com"
+    },
+    "areaServed": "United States",
+    "serviceType": "Street Team Marketing"
+  };
 
   // Group cities by state for better organization
   const citiesByState = cities?.reduce((acc: any, city: any) => {
@@ -44,6 +50,15 @@ export default function StreetTeams() {
 
   return (
     <div className="pt-16">
+      {/* SEO Component - handles canonical, meta tags, OG tags */}
+      <SEO
+        title="Street Team Marketing | Nationwide Guerrilla Marketing | AirFresh Marketing"
+        description="Professional street team marketing and guerrilla campaigns nationwide. AirFresh Marketing provides high-energy street teams for product sampling, flyering, and grassroots promotion."
+        canonical="https://airfreshmarketing.com/services/street-teams"
+        ogType="website"
+        structuredData={structuredData}
+        pageType="service"
+      />
       {/* Hero Section */}
       <section
         className="relative py-32 bg-cover bg-center"

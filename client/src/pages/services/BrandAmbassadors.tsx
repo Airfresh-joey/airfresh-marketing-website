@@ -3,7 +3,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { CheckCircle, MapPin, Users, Star, TrendingUp } from "lucide-react";
 import { Link } from "wouter";
 import { useQuery } from "@tanstack/react-query";
-import { useEffect } from "react";
+import SEO from "@/components/SEO";
 
 export default function BrandAmbassadors() {
   // Fetch all cities data
@@ -16,14 +16,20 @@ export default function BrandAmbassadors() {
     }
   });
 
-  // Add SEO meta tags
-  useEffect(() => {
-    document.title = "Brand Ambassadors | Nationwide Event Staffing | AirFresh Marketing";
-    const metaDescription = document.querySelector('meta[name="description"]');
-    if (metaDescription) {
-      metaDescription.setAttribute('content', 'Professional brand ambassadors for events nationwide. AirFresh Marketing provides trained, enthusiastic brand representatives for product launches, activations, and promotional campaigns.');
-    }
-  }, []);
+  // Structured data for brand ambassadors service
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "Brand Ambassador Services",
+    "description": "Professional brand ambassadors for events nationwide. AirFresh Marketing provides trained, enthusiastic brand representatives for product launches, activations, and promotional campaigns.",
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "url": "https://airfreshmarketing.com"
+    },
+    "areaServed": "United States",
+    "serviceType": "Brand Ambassador Staffing"
+  };
 
   // Group cities by state for better organization
   const citiesByState = cities?.reduce((acc: any, city: any) => {
@@ -44,6 +50,15 @@ export default function BrandAmbassadors() {
 
   return (
     <div className="pt-16">
+      {/* SEO Component - handles canonical, meta tags, OG tags */}
+      <SEO
+        title="Brand Ambassadors | Nationwide Event Staffing | AirFresh Marketing"
+        description="Professional brand ambassadors for events nationwide. AirFresh Marketing provides trained, enthusiastic brand representatives for product launches, activations, and promotional campaigns."
+        canonical="https://airfreshmarketing.com/services/brand-ambassadors"
+        ogType="website"
+        structuredData={structuredData}
+        pageType="service"
+      />
       {/* Hero Section */}
       <section
         className="relative py-32 bg-cover bg-center"
