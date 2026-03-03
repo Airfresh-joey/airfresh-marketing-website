@@ -65,11 +65,10 @@ export const metadata: Metadata = {
     description: 'Professional experiential marketing and brand activation services nationwide.',
     images: ['/images/og-image.jpg'],
   },
-  alternates: {
-    canonical: 'https://www.airfreshmarketing.com',
-  },
+  // NOTE: Do NOT set a default canonical here - each page must set its own
+  // canonical in its metadata to prevent duplicate content issues
   verification: {
-    google: 'your-google-verification-code', // Add if you have one
+    google: 'k0VaTORraaOp5KktJQiGMnCXyxZa_R2vlcnUsqKHBwA',
   },
 }
 
