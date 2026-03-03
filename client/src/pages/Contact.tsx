@@ -91,6 +91,8 @@ export default function Contact() {
       return response.json();
     },
     onSuccess: () => {
+      // Redirect to thank-you page for conversion tracking
+      window.location.href = "/thank-you";
       toast({
         title: "Message sent!",
         description: "We'll be in touch within 24 hours.",
