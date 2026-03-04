@@ -5,10 +5,10 @@ import Script from 'next/script';
 // Google Analytics 4 Configuration
 const GA_MEASUREMENT_ID = 'G-4H5YW90R4R'; // Air Fresh Marketing GA4 Property
 
-// Google Ads Configuration - NEEDS CONVERSION ID FROM JOEY
+// Google Ads Configuration
 // Account: 138-985-8224
-// Format: AW-XXXXXXXXX
-const GOOGLE_ADS_ID = 'AW-CONVERSION_ID'; // TODO: Replace with actual Google Ads conversion ID
+const GOOGLE_ADS_ID = 'AW-969773658';
+const GOOGLE_ADS_LABEL = '6QBGCIm0pYIcENqkts4D';
 
 declare global {
   interface Window {
@@ -40,8 +40,8 @@ export default function GoogleAnalytics() {
             anonymize_ip: true,
             cookie_flags: 'SameSite=None;Secure'
           });
-          // Google Ads - uncomment when conversion ID is added
-          // gtag('config', '${GOOGLE_ADS_ID}');
+          // Google Ads tracking
+          gtag('config', '${GOOGLE_ADS_ID}');
         `}
       </Script>
       
@@ -71,10 +71,9 @@ export const trackFormSubmission = (formName: string) => {
   trackEvent('form_submit', 'engagement', formName);
   
   // Google Ads conversion tracking
-  // TODO: Replace CONVERSION_LABEL with actual label from Google Ads
   if (typeof window !== 'undefined' && window.gtag) {
     window.gtag('event', 'conversion', {
-      'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL', // TODO: Update with real values
+      'send_to': `${GOOGLE_ADS_ID}/${GOOGLE_ADS_LABEL}`,
     });
   }
 };
@@ -89,9 +88,9 @@ export const trackLeadGeneration = (leadType: string, value?: number) => {
       lead_type: leadType,
     });
     
-    // Google Ads conversion - TODO: Update with real conversion ID/label
+    // Google Ads conversion
     window.gtag('event', 'conversion', {
-      'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+      'send_to': `${GOOGLE_ADS_ID}/${GOOGLE_ADS_LABEL}`,
       'value': value || 100,
       'currency': 'USD',
     });
