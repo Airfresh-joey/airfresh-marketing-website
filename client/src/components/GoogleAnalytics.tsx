@@ -1,7 +1,9 @@
 import { useEffect } from 'react';
 
 // Google Analytics 4 Configuration
-const GA_MEASUREMENT_ID = 'G-XXXXXXXXXX'; // Replace with actual GA4 measurement ID
+const GA_MEASUREMENT_ID = 'G-4H5YW90R4R';
+const GOOGLE_ADS_ID = 'AW-969773658';
+const CONVERSION_LABEL = '6QBGCIm0pYIcENqkts4D';
 
 declare global {
   interface Window {
@@ -24,7 +26,7 @@ export default function GoogleAnalytics() {
     script1.src = `https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`;
     document.head.appendChild(script1);
 
-    // Initialize Google Analytics
+    // Initialize Google Analytics + Google Ads
     const script2 = document.createElement('script');
     script2.innerHTML = `
       window.dataLayer = window.dataLayer || [];
@@ -35,6 +37,7 @@ export default function GoogleAnalytics() {
         anonymize_ip: true,
         cookie_flags: 'SameSite=None;Secure'
       });
+      gtag('config', '${GOOGLE_ADS_ID}');
     `;
     document.head.appendChild(script2);
 
@@ -97,4 +100,15 @@ export const trackPhoneClick = () => {
 // Track email clicks
 export const trackEmailClick = () => {
   trackEvent('email_click', 'contact', 'contact_email');
+};
+
+// Track Google Ads conversions (form submissions)
+export const trackGoogleAdsConversion = () => {
+  if (window.gtag) {
+    window.gtag('event', 'conversion', {
+      'send_to': `${GOOGLE_ADS_ID}/${CONVERSION_LABEL}`,
+      'value': 1.0,
+      'currency': 'USD'
+    });
+  }
 };

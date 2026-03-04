@@ -1,9 +1,17 @@
+import { useEffect } from "react";
 import { Link } from "wouter";
 import SEO from "@/components/SEO";
 import { CheckCircle, ArrowRight, Phone, Mail } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import { trackGoogleAdsConversion, trackFormSubmission } from "@/components/GoogleAnalytics";
 
 export default function ThankYou() {
+  // Fire conversion tracking on page load
+  useEffect(() => {
+    trackGoogleAdsConversion();
+    trackFormSubmission('contact_form');
+  }, []);
+
   return (
     <>
       <SEO
