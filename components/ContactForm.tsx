@@ -133,7 +133,7 @@ export default function ContactForm() {
       if (typeof window !== 'undefined' && (window as any).gtag) {
         // Google Ads conversion tracking
         (window as any).gtag('event', 'conversion', {
-          'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+          'send_to': 'AW-969773658/6QBGCIm0pYIcENqkts4D',
         });
         // GA4 generate_lead event
         (window as any).gtag('event', 'generate_lead', {

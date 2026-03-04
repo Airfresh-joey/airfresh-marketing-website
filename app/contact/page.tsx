@@ -98,7 +98,7 @@ export default function Contact() {
       // Track form submission as conversion for Google Ads
       if (typeof window !== 'undefined' && (window as any).gtag) {
         (window as any).gtag('event', 'conversion', {
-          'send_to': 'AW-CONVERSION_ID/CONVERSION_LABEL',
+          'send_to': 'AW-969773658/6QBGCIm0pYIcENqkts4D',
         });
         (window as any).gtag('event', 'generate_lead', {
           'event_category': 'contact_form',
