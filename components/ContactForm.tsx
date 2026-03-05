@@ -30,6 +30,51 @@ const validateEmail = (email: string) => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email
 // Capitalize first letter of each word
 const capitalizeWords = (str: string) => str.replace(/\b\w/g, (char) => char.toUpperCase());
 
+// Attribution tracking data interface
+interface AttributionData {
+  utm_source: string;
+  utm_medium: string;
+  utm_campaign: string;
+  utm_content: string;
+  utm_term: string;
+  gclid: string;
+  fbclid: string;
+  referrer: string;
+  landing_page: string;
+  source_page: string;
+}
+
+// Get or initialize attribution data from localStorage
+const getAttributionData = (): AttributionData => {
+  if (typeof window === 'undefined') {
+    return {
+      utm_source: '', utm_medium: '', utm_campaign: '', utm_content: '', utm_term: '',
+      gclid: '', fbclid: '', referrer: '', landing_page: '', source_page: ''
+    };
+  }
+  
+  const stored = localStorage.getItem('afm_attribution');
+  if (stored) {
+    try {
+      return JSON.parse(stored);
+    } catch {
+      // Invalid JSON, start fresh
+    }
+  }
+  
+  return {
+    utm_source: '', utm_medium: '', utm_campaign: '', utm_content: '', utm_term: '',
+    gclid: '', fbclid: '', referrer: '', landing_page: '', source_page: ''
+  };
+};
+
+// Save attribution data to localStorage
+const saveAttributionData = (data: AttributionData) => {
+  if (typeof window !== 'undefined') {
+    localStorage.setItem('afm_attribution', JSON.stringify(data));
+  }
+};
+
 export default function ContactForm() {
   const { toast } = useToast();
   const [isFormValid, setIsFormValid] = useState(false);
@@ -37,24 +82,81 @@ export default function ContactForm() {
   const searchParams = useSearchParams();
   const { executeRecaptcha } = useGoogleReCaptcha();
   
-  // Capture source page from URL param or referrer
-  const [sourcePage, setSourcePage] = useState<string>("");
+  // Attribution tracking state
+  const [attribution, setAttribution] = useState<AttributionData>({
+    utm_source: '', utm_medium: '', utm_campaign: '', utm_content: '', utm_term: '',
+    gclid: '', fbclid: '', referrer: '', landing_page: '', source_page: ''
+  });
   
+  // Capture attribution data on mount and URL changes
   useEffect(() => {
-    const sourceParam = searchParams.get("source");
-    if (sourceParam) {
-      setSourcePage(sourceParam);
-    } else if (typeof document !== "undefined" && document.referrer) {
-      // Extract path from referrer if no source param
+    const currentAttribution = getAttributionData();
+    const urlParams = new URLSearchParams(window.location.search);
+    
+    // Capture UTM parameters (only if present in URL - first touch wins)
+    const utm_source = urlParams.get('utm_source') || currentAttribution.utm_source;
+    const utm_medium = urlParams.get('utm_medium') || currentAttribution.utm_medium;
+    const utm_campaign = urlParams.get('utm_campaign') || currentAttribution.utm_campaign;
+    const utm_content = urlParams.get('utm_content') || currentAttribution.utm_content;
+    const utm_term = urlParams.get('utm_term') || currentAttribution.utm_term;
+    
+    // Capture click IDs (Google Ads, Facebook)
+    const gclid = urlParams.get('gclid') || currentAttribution.gclid;
+    const fbclid = urlParams.get('fbclid') || currentAttribution.fbclid;
+    
+    // Capture referrer (only on first visit)
+    let referrer = currentAttribution.referrer;
+    if (!referrer && document.referrer) {
       try {
-        const referrerUrl = new URL(document.referrer);
-        if (referrerUrl.hostname.includes("airfreshmarketing.com")) {
-          setSourcePage(referrerUrl.pathname);
+        const refUrl = new URL(document.referrer);
+        // Only capture external referrers
+        if (!refUrl.hostname.includes('airfreshmarketing.com')) {
+          referrer = document.referrer;
         }
       } catch {
-        // Ignore invalid referrer URLs
+        referrer = document.referrer;
       }
     }
+    
+    // Capture landing page (only on first visit)
+    const landing_page = currentAttribution.landing_page || window.location.pathname;
+    
+    // Current page (always update)
+    const source_page = window.location.pathname;
+    
+    // Determine source if not explicitly set
+    let finalSource = utm_source;
+    if (!finalSource && gclid) {
+      finalSource = 'google';
+    } else if (!finalSource && fbclid) {
+      finalSource = 'facebook';
+    } else if (!finalSource && referrer) {
+      // Infer source from referrer
+      if (referrer.includes('google.com')) finalSource = 'google_organic';
+      else if (referrer.includes('bing.com')) finalSource = 'bing_organic';
+      else if (referrer.includes('linkedin.com')) finalSource = 'linkedin';
+      else if (referrer.includes('facebook.com')) finalSource = 'facebook_organic';
+      else if (referrer.includes('instagram.com')) finalSource = 'instagram';
+      else finalSource = 'referral';
+    } else if (!finalSource) {
+      finalSource = 'direct';
+    }
+    
+    const newAttribution: AttributionData = {
+      utm_source: finalSource,
+      utm_medium: utm_medium || (gclid ? 'cpc' : ''),
+      utm_campaign,
+      utm_content,
+      utm_term,
+      gclid,
+      fbclid,
+      referrer,
+      landing_page,
+      source_page
+    };
+    
+    setAttribution(newAttribution);
+    saveAttributionData(newAttribution);
   }, [searchParams]);
 
   const form = useForm<InsertContactSubmission>({
@@ -122,8 +224,18 @@ export default function ContactForm() {
           company: data.company || "",
           inquiryType: data.inquiryType || "",
           message: data.message,
-          _sourcePage: sourcePage || "direct", // Track which page they came from
-          "g-recaptcha-response": recaptchaToken, // reCAPTCHA token for Formspree
+          // Attribution tracking fields
+          _source: attribution.utm_source || "direct",
+          _medium: attribution.utm_medium || "",
+          _campaign: attribution.utm_campaign || "",
+          _content: attribution.utm_content || "",
+          _term: attribution.utm_term || "",
+          _gclid: attribution.gclid || "",
+          _fbclid: attribution.fbclid || "",
+          _referrer: attribution.referrer || "",
+          _landingPage: attribution.landing_page || "",
+          _sourcePage: attribution.source_page || "",
+          "g-recaptcha-response": recaptchaToken,
         }),
       });
 
@@ -156,7 +268,7 @@ export default function ContactForm() {
     } finally {
       setIsSubmitting(false);
     }
-  }, [executeRecaptcha, form, sourcePage, toast]);
+  }, [executeRecaptcha, form, attribution, toast]);
 
   return (
     <div className="bg-gray-100 p-8 rounded-lg max-w-2xl mx-auto">
