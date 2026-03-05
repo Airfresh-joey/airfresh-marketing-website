@@ -206,22 +206,40 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Aimee",
-      role: "Brand Ambassador - LA/NYC Events",
-      content: "Air Fresh Marketing is my FAVORITE experiential marketing company to represent across the nation. The staff is responsive and professional, and the events are always a blast!",
-      avatar: "/images/testimonials/aimee-ambassador.jpg"
+      name: "Claire McKibben",
+      role: "Marketing Manager, Sweetgreen",
+      content: "Thank you so much for these, this level of insight is fantastic. We've never had this before and I'm excited to dive in.",
+      avatar: "/images/testimonials/sweetgreen-client.jpg"
     },
     {
-      name: "Kristin Quinn",
-      role: "Chief Growth Officer, Gravel",
-      content: "Air Fresh Marketing has worked with us all across the country from Los Angeles to New York. Even when events come up last minute, they are able to make magic happen!",
-      avatar: "/images/testimonials/kristin-quinn.jpg"
+      name: "Jessica Hersh",
+      role: "Hunter PR / Durex",
+      content: "Thanks so much for this, Joey - appreciate the thorough recap and additional photos. Great work on the Milwaukee Game Day Activation!",
+      avatar: "/images/testimonials/durex-client.jpg"
     },
     {
-      name: "Anonymous",
-      role: "Glassdoor Review - 5 Stars",
-      content: "The company culture is top-notch, and the atmosphere always friendly and motivating. Everyone is engaged and helpful.",
-      avatar: "/images/testimonials/anonymous-review.jpg"
+      name: "Chanichi C.",
+      role: "Brand Ambassador - Get Out and Vote Campaign",
+      content: "Working for Air Fresh Marketing has to be one of the best experiences I have had with a company. This was one of the most organized events I have ever worked! I would definitely work with them again!",
+      avatar: "/images/testimonials/chanichi-ambassador.jpg"
+    },
+    {
+      name: "Yvonne Hamilton",
+      role: "Senior Marketing Manager, Ent Credit Union",
+      content: "Love the money machine idea and really like the idea of capturing data with an experience. Air Fresh brings creative solutions we hadn't considered.",
+      avatar: "/images/testimonials/ent-client.jpg"
+    },
+    {
+      name: "Andrew Porter",
+      role: "Director of Sales, Midwest Immersive",
+      content: "I saw a few highlighted experiential projects and was extremely impressed at the level of work your company does. I love the work you guys do!",
+      avatar: "/images/testimonials/midwest-client.jpg"
+    },
+    {
+      name: "Verified Brand Ambassador",
+      role: "PopBookings Review - 5 Stars",
+      content: "Communication is always great and pay is next day! I love working for this company. Great company and fantastic staff.",
+      avatar: "/images/testimonials/ba-review.jpg"
     }
   ];
 
