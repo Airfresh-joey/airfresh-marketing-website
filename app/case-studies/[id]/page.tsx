@@ -5,7 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { notFound } from "next/navigation";
 import { motion } from "framer-motion";
-import { portfolioCaseStudies } from "@/client/src/data/portfolioCaseStudies";
+import { portfolioCaseStudies } from "@/server/portfolioCaseStudies";
 import SEO from "@/components/SEO";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";

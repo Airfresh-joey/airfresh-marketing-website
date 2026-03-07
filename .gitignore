@@ -6,3 +6,7 @@ vite.config.ts.*
 .next
 .vercel
 .env*.local
+
+# Old Vite SPA (deprecated - now using Next.js)
+client/
+dist/

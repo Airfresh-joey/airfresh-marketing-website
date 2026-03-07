@@ -7,7 +7,7 @@ import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
-import { portfolioCaseStudies } from "@/client/src/data/portfolioCaseStudies";
+import { portfolioCaseStudies } from "@/server/portfolioCaseStudies";
 import {
   ChevronRight,
   MapPin,

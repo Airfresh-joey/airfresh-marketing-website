@@ -4,7 +4,7 @@ import { useState, useMemo } from "react";
 import Link from "next/link";
 import { motion, AnimatePresence } from "framer-motion";
 import SEO from "@/components/SEO";
-import { blogPosts } from "@/client/src/data/blogPosts";
+import { blogPosts } from "@/server/blogPosts";
 import {
   Calendar,
   Clock,

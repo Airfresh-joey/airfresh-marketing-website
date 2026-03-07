@@ -6,7 +6,7 @@ import Link from "next/link";
 import { motion } from "framer-motion";
 import { useState, useEffect } from "react";
 import SEO from "@/components/SEO";
-import { blogPosts } from "@/client/src/data/blogPosts";
+import { blogPosts } from "@/server/blogPosts";
 import {
   Calendar,
   Clock,

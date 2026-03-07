@@ -6,7 +6,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { Star, Heart, Users, Cog, Laptop, ShoppingCart, TrendingUp, Palette, Store, Building, Handshake, Play, Award, Target, BarChart3, Eye, Sparkles, ArrowRight, CheckCircle2, Zap, Clock, BookOpen, MapPin, Video, Database, Share2, Smartphone, FileText, Briefcase } from "lucide-react";
-import { blogPosts as staticBlogPosts } from "@/client/src/data/blogPosts";
+import { blogPosts as staticBlogPosts } from "@/server/blogPosts";
 import dynamic from "next/dynamic";
 import ScrollToAnchor from "@/components/ScrollToAnchor";
 
