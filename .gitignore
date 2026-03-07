@@ -10,3 +10,4 @@ vite.config.ts.*
 # Old Vite SPA (deprecated - now using Next.js)
 client/
 dist/
+public/sitemap.xml.backup
