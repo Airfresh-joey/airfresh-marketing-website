@@ -187,7 +187,7 @@ export async function generateMetadata({ params }: VenueServicePageProps): Promi
   }
   
   return {
-    title: `${service.name} for ${venue.shortName} | ${venue.city} Event Staffing`,
+    title: `${service.name} at ${venue.shortName}`,
     description: `Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}. ${service.description}`,
     keywords: `${service.name.toLowerCase()} ${venue.shortName}, ${venue.city} ${service.name.toLowerCase()}, ${venue.name} staffing`,
     openGraph: {
@@ -218,7 +218,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
     notFound();
   }
 
-  const pageTitle = `${service.name} for ${venue.shortName} | ${venue.city} Event Staffing`;
+  const pageTitle = `${service.name} at ${venue.shortName}`;
   const pageDescription = `Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}. ${service.description}`;
 
   const structuredData = {

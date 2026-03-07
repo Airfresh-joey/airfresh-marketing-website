@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   const stateName = cityData.state;
   
   return {
-    title: `${cityName} Experiential Marketing & Brand Ambassadors`,
-    description: `Professional experiential marketing services in ${cityName}, ${stateName}. Brand ambassadors, street teams, product sampling, and event staffing with proven ROI.`,
+    title: `${cityName} Brand Ambassadors & Event Staffing`,
+    description: `Professional brand ambassadors and event staffing in ${cityName}, ${stateName}. Street teams, product sampling, and experiential marketing with proven ROI.`,
     keywords: `${cityName} experiential marketing, ${cityName} brand ambassadors, ${cityName} street teams, ${cityName} product sampling, ${cityName} event staffing`,
     openGraph: {
       title: `${cityName} Experiential Marketing | AirFresh Marketing`,

@@ -123,6 +123,8 @@ const nextConfig = {
       { source: '/case-studies/netflix', destination: '/case-studies/netflix-stranger-things-popup', permanent: true },
       // City-services slug consolidation (old slugs → new standard slugs)
       { source: '/city-services/:city-street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
+      // Portfolio to case-studies redirects (March 2026 crawl fix)
+      { source: '/portfolio/:slug', destination: '/case-studies/:slug', permanent: true },
     ]
   },
 
