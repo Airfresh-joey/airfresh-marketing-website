@@ -1,7 +1,7 @@
 // Comprehensive Schema.org structured data for AirFresh Marketing
 
+// Note: No @context - these schemas are used inside @graph arrays
 export const organizationSchema = {
-  "@context": "https://schema.org",
   "@type": "Organization",
   "name": "AirFresh Marketing",
   "alternateName": "AirFresh Experiential Marketing Agency",
@@ -32,7 +32,6 @@ export const organizationSchema = {
 };
 
 export const localBusinessSchema = {
-  "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": "AirFresh Marketing",
   "image": "https://airfreshmarketing.com/favicon.svg",
@@ -113,7 +112,6 @@ export const cityLocalBusinessSchema = (cityData: any) => ({
 });
 
 export const serviceSchema = {
-  "@context": "https://schema.org",
   "@type": "Service",
   "provider": {
     "@type": "Organization",
@@ -168,7 +166,6 @@ export const serviceSchema = {
 };
 
 export const breadcrumbSchema = (items: Array<{name: string, url: string}>) => ({
-  "@context": "https://schema.org",
   "@type": "BreadcrumbList",
   "itemListElement": items.map((item, index) => ({
     "@type": "ListItem",
@@ -203,8 +200,8 @@ export const eventSchema = (event: {
   }
 });
 
+// Note: No @context here - this schema is used inside @graph arrays
 export const faqSchema = {
-  "@context": "https://schema.org",
   "@type": "FAQPage",
   "mainEntity": [
     {
@@ -390,7 +387,6 @@ export const articleSchema = (article: {
 
 // Person/Author schema for E-E-A-T signals
 export const authorSchema = {
-  "@context": "https://schema.org",
   "@type": "Person",
   "name": "AirFresh Marketing Team",
   "jobTitle": "Experiential Marketing Specialists",
@@ -423,7 +419,6 @@ export const webPageSchema = (page: {
   url: string;
   type?: string;
 }) => ({
-  "@context": "https://schema.org",
   "@type": page.type || "WebPage",
   "name": page.title,
   "description": page.description,

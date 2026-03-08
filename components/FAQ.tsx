@@ -69,28 +69,10 @@ export default function FAQ() {
 
   const categories = Array.from(new Set(faqs.map(faq => faq.category)));
 
-  // Structured data for FAQ
-  const structuredData = {
-    "@context": "https://schema.org",
-    "@type": "FAQPage",
-    "mainEntity": faqs.map(faq => ({
-      "@type": "Question",
-      "name": faq.question,
-      "acceptedAnswer": {
-        "@type": "Answer",
-        "text": faq.answer
-      }
-    }))
-  };
+  // Note: Structured data is handled by parent pages to avoid duplicates
 
   return (
     <div className="max-w-4xl mx-auto px-4 py-8">
-      <script
-        type="application/ld+json"
-        dangerouslySetInnerHTML={{
-          __html: JSON.stringify(structuredData)
-        }}
-      />
       
       <div className="text-center mb-8">
         <h1 className="text-3xl font-bold mb-4">
