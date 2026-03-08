@@ -188,7 +188,7 @@ export async function generateMetadata({ params }: VenueServicePageProps): Promi
   
   return {
     title: `${service.name} at ${venue.shortName}`,
-    description: `Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}. ${service.description}`,
+    description: `Professional ${service.name.toLowerCase()} for ${venue.shortName} in ${venue.city}, ${venue.state}. Experienced event staff. Get a quote.`,
     keywords: `${service.name.toLowerCase()} ${venue.shortName}, ${venue.city} ${service.name.toLowerCase()}, ${venue.name} staffing`,
     openGraph: {
       title: `${service.name} at ${venue.shortName} | AirFresh Marketing`,
@@ -219,7 +219,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
   }
 
   const pageTitle = `${service.name} at ${venue.shortName}`;
-  const pageDescription = `Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}. ${service.description}`;
+  const pageDescription = `Professional ${service.name.toLowerCase()} for ${venue.shortName} in ${venue.city}, ${venue.state}. Experienced staff for events and activations.`;
 
   const structuredData = {
     "@context": "https://schema.org",

@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: IndustryCityPageProps): Promi
   
   return {
     title: `${industry.name} Event Marketing in ${city.name}, ${city.state} | AirFresh Marketing`,
-    description: `Professional ${industry.name.toLowerCase()} event staffing and marketing services in ${city.name}. ${industry.description}. Brand ambassadors, event staff, and experiential marketing.`,
+    description: `${industry.name} event marketing & staffing in ${city.name}, ${city.state}. Brand ambassadors, event staff & experiential marketing. Get a quote.`,
     alternates: {
       canonical: `https://www.airfreshmarketing.com/industries/${industrySlug}/${citySlug}`,
     },

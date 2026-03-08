@@ -79,7 +79,7 @@ export function getServiceBySlug(slug: string): ServiceType | undefined {
 export function generateCityServiceContent(cityName: string, stateName: string, service: ServiceType) {
   return {
     title: `${service.name} in ${cityName}, ${stateName} | AirFresh Marketing`,
-    metaDescription: `Professional ${service.name.toLowerCase()} services in ${cityName}. AirFresh Marketing provides experienced ${service.title.toLowerCase()} for events, activations, and campaigns throughout ${cityName} and ${stateName}.`,
+    metaDescription: `Professional ${service.name.toLowerCase()} in ${cityName}, ${stateName}. Experienced staff for events, activations & campaigns. Get a free quote.`,
     h1: `${cityName} ${service.name}`,
     heroDescription: `Looking for professional ${service.name.toLowerCase()} in ${cityName}? AirFresh Marketing delivers exceptional ${service.title.toLowerCase()} services throughout the ${cityName} metro area. With over 20 years of experience and a network of trained professionals, we help brands create impactful experiences that resonate with local audiences.`,
 
