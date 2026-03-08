@@ -3,12 +3,11 @@ import { usaEvents } from '@/server/usa-events-data'
 import { venues } from '@/server/venues-data'
 import { cities as citiesData } from '@/server/cities-data'
 import { serviceTypes } from '@/server/city-services-data'
-import { enhancedCaseStudies } from '@/server/case-studies-data'
+import { portfolioCaseStudies } from '@/server/portfolioCaseStudies'
 import { industries } from '@/server/industries-data'
 import { states, stateServices } from '@/server/states-data'
 import { industries as industryList, cities as industryCities } from '@/server/industry-city-data'
 import { neighborhoods, neighborhoodServices } from '@/server/neighborhoods-data'
-import { portfolioCaseStudies } from '@/server/portfolio-case-studies'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
@@ -232,16 +231,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/blog/promotional-models-vs-brand-ambassadors`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/blog/event-staffing-contracts`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
-    // Individual portfolio case studies
-    ...portfolioCaseStudies.map(cs => ({
-      url: `${DOMAIN}/portfolio/${cs.id}`,
-      lastModified: today,
-      changeFrequency: 'monthly' as const,
-      priority: 0.75
-    })),
+    // Note: Individual portfolio pages redirect to /case-studies/, so we don't include them in sitemap
     { url: `${DOMAIN}/case-studies`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
-    // Individual case study pages
-    ...enhancedCaseStudies.map(cs => ({
+    // Individual case study pages (using portfolioCaseStudies which powers the actual pages)
+    ...portfolioCaseStudies.map(cs => ({
       url: `${DOMAIN}/case-studies/${cs.id}`,
       lastModified: today,
       changeFrequency: 'monthly' as const,

@@ -125,6 +125,11 @@ const nextConfig = {
       { source: '/city-services/:city-street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
       // Portfolio to case-studies redirects (March 2026 crawl fix)
       { source: '/portfolio/:slug', destination: '/case-studies/:slug', permanent: true },
+      // City+service slug fixes (March 2026 crawl fix)
+      { source: '/cities/:city/event-staffing', destination: '/cities/:city/event-marketing', permanent: true },
+      { source: '/cities/:city/trade-show-staff', destination: '/cities/:city/trade-show-marketing', permanent: true },
+      // Services page slug fix
+      { source: '/services/product-sampling', destination: '/services/sampling', permanent: true },
     ]
   },
 
