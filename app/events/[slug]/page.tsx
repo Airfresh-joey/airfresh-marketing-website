@@ -352,8 +352,26 @@ export default async function EventPage({ params }: EventPageProps) {
         </div>
       </section>
 
+      {/* All Services for This Event */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold mb-4 text-gray-900">All Staffing Services for {event.name}</h3>
+          <div className="flex flex-wrap gap-2">
+            {services.map((service) => (
+              <Link
+                key={service.slug}
+                href={`/events/${event.slug}/${service.slug}`}
+                className="px-3 py-1.5 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded border border-gray-200 transition-colors"
+              >
+                {service.name}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Typical Roles */}
-      <section className="py-16 bg-white">
+      <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8">Typical Roles We Staff</h2>
           <div className="flex flex-wrap gap-3">

@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, ArrowRight, Building2, Users, Award, ChevronDown } from "lucide-react";
 import { cities as allCitiesData } from "@/server/cities-data";
+import { states } from "@/server/states-data";
 
 // Major cities where AirFresh operates
 const cities = [
@@ -324,6 +325,31 @@ export default function Locations() {
                   className="px-3 py-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded transition-colors"
                 >
                   {city.city}, {city.state.slice(0, 2).toUpperCase()}
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Browse All States Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Browse by State</h2>
+            <p className="text-lg text-gray-600">
+              We provide experiential marketing services in all 50 states
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+            {states
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((state) => (
+                <Link
+                  key={state.slug}
+                  href={`/states/${state.slug}`}
+                  className="px-3 py-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded transition-colors"
+                >
+                  {state.name}
                 </Link>
               ))}
           </div>

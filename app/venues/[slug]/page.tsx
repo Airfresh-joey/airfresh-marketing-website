@@ -45,15 +45,16 @@ export async function generateMetadata({ params }: VenuePageProps): Promise<Meta
   };
 }
 
+// Services matching sitemap venueServices for consistent internal linking
 const services = [
   { slug: 'brand-ambassadors', name: 'Brand Ambassadors', description: 'Professional brand representatives for booth engagement' },
+  { slug: 'convention-staffing', name: 'Convention Staffing', description: 'Full-service convention and trade show staffing solutions' },
+  { slug: 'event-management', name: 'Event Management', description: 'Registration, check-in, and general event support' },
+  { slug: 'experiential-marketing', name: 'Experiential Marketing', description: 'Interactive brand activations and immersive experiences' },
   { slug: 'trade-show-staff', name: 'Trade Show Staff', description: 'Booth staff, lead scanners, and product demonstrators' },
-  { slug: 'event-staff', name: 'Event Staff', description: 'Registration, check-in, and general event support' },
   { slug: 'hospitality-staff', name: 'Hospitality Staff', description: 'VIP hosts, servers, and guest services' },
   { slug: 'promotional-models', name: 'Promotional Models', description: 'Professional models for high-profile activations' },
-  { slug: 'product-demonstrators', name: 'Product Demonstrators', description: 'Trained specialists for product demos and presentations' },
-  { slug: 'registration-staff', name: 'Registration Staff', description: 'Check-in, badge scanning, and attendee management' },
-  { slug: 'lead-generators', name: 'Lead Generators', description: 'Proactive staff for lead capture and qualification' }
+  { slug: 'sampling-teams', name: 'Sampling Teams', description: 'Product sampling and demonstration specialists' }
 ];
 
 export async function generateStaticParams() {

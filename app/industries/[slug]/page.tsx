@@ -7,6 +7,7 @@ import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import SEO from "@/components/SEO";
 import { industries, getIndustryBySlug } from "@/server/industries-data";
+import { cities as industryCities } from "@/server/industry-city-data";
 import {
   CheckCircle,
   Target,
@@ -166,6 +167,29 @@ export default function IndustryPage() {
                   <span className="text-gray-800 font-medium">{service}</span>
                 </CardContent>
               </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Browse by City Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">
+            {industry.name} Marketing by City
+          </h2>
+          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+            We provide specialized {industry.name.toLowerCase()} event marketing and staffing services in major cities across the United States.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+            {industryCities.map((city) => (
+              <Link
+                key={city.slug}
+                href={`/industries/${industry.slug}/${city.slug}`}
+                className="px-3 py-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded transition-colors text-center"
+              >
+                {city.name}, {city.state}
+              </Link>
             ))}
           </div>
         </div>
