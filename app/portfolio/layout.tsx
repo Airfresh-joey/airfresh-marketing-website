@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Explore AirFresh Marketing portfolio of successful brand activations, experiential campaigns, and event marketing projects for top brands.',
   keywords: 'experiential marketing portfolio, brand activation examples, event marketing case studies, marketing campaign examples',
   openGraph: {
+    type: 'website',
     title: 'Portfolio | AirFresh Marketing',
     description: 'Explore our portfolio of successful brand activations and experiential marketing campaigns.',
     url: 'https://www.airfreshmarketing.com/portfolio',

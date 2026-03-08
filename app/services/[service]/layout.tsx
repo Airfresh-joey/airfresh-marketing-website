@@ -56,6 +56,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     description: meta.description,
     keywords: meta.keywords,
     openGraph: {
+      type: 'website',
       title: meta.title,
       description: meta.description,
       url: `https://www.airfreshmarketing.com/services/${service}`,

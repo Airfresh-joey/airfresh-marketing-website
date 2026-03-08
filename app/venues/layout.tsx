@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Professional event staffing at major convention centers and venues nationwide. Trade show staff, brand ambassadors, and event support.',
   keywords: 'convention center staffing, venue event staff, trade show staffing, event venue marketing, convention staffing',
   openGraph: {
+    type: 'website',
     title: 'Venue Staffing | AirFresh Marketing',
     description: 'Professional event staffing at major convention centers and venues nationwide.',
     url: 'https://www.airfreshmarketing.com/venues',

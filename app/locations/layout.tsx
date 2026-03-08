@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'AirFresh Marketing serves 50+ cities nationwide with experiential marketing, brand ambassadors, and event staffing services coast to coast.',
   keywords: 'experiential marketing locations, brand ambassadors nationwide, event staffing cities, marketing agency locations',
   openGraph: {
+    type: 'website',
     title: 'Nationwide Locations | AirFresh Marketing',
     description: 'AirFresh Marketing serves 50+ cities nationwide with experiential marketing and event staffing services.',
     url: 'https://www.airfreshmarketing.com/locations',

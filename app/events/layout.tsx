@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Professional event marketing and staffing for major events nationwide. Brand activations, trade shows, festivals, conferences, and sports events.',
   keywords: 'event marketing, event staffing, trade show staff, festival marketing, conference staffing, sports event marketing',
   openGraph: {
+    type: 'website',
     title: 'Events | AirFresh Marketing',
     description: 'Professional event marketing and staffing for major events nationwide.',
     url: 'https://www.airfreshmarketing.com/events',

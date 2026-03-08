@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Read AirFresh Marketing case studies showcasing successful experiential marketing campaigns, brand activations, and measurable ROI results.',
   keywords: 'experiential marketing case studies, brand activation success stories, event marketing ROI, marketing campaign results',
   openGraph: {
+    type: 'website',
     title: 'Case Studies | AirFresh Marketing Success Stories',
     description: 'Read our case studies showcasing successful experiential marketing campaigns with measurable ROI.',
     url: 'https://www.airfreshmarketing.com/case-studies',

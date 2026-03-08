@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Full-service experiential marketing: brand ambassadors, street teams, product sampling, event staffing, trade show support, and promotional models.',
   keywords: 'experiential marketing services, brand ambassadors, street teams, product sampling, event staffing, trade show staff',
   openGraph: {
+    type: 'website',
     title: 'Experiential Marketing Services | AirFresh Marketing',
     description: 'Full-service experiential marketing: brand ambassadors, street teams, product sampling, event staffing, and more.',
     url: 'https://www.airfreshmarketing.com/services',

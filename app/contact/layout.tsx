@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Contact AirFresh Marketing for experiential marketing, brand ambassadors, event staffing, and promotional services. Get a free quote today.',
   keywords: 'contact airfresh marketing, experiential marketing quote, event staffing inquiry, brand ambassador services',
   openGraph: {
+    type: 'website',
     title: 'Contact AirFresh Marketing | Get a Quote',
     description: 'Contact AirFresh Marketing for experiential marketing, brand ambassadors, event staffing, and promotional services.',
     url: 'https://www.airfreshmarketing.com/contact',

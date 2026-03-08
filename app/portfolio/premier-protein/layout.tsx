@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'See how AirFresh Marketing executed a nationwide product sampling campaign for Premier Protein, driving brand awareness and trial.',
   keywords: 'Premier Protein sampling, protein shake marketing, product sampling campaign, CPG brand activation',
   openGraph: {
+    type: 'website',
     title: 'Premier Protein Case Study | AirFresh Marketing',
     description: 'Nationwide product sampling campaign for Premier Protein driving brand awareness and trial.',
     url: 'https://www.airfreshmarketing.com/portfolio/premier-protein',

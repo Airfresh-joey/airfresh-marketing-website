@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Expert insights on experiential marketing, brand activations, event staffing tips, and industry trends from AirFresh Marketing.',
   keywords: 'experiential marketing blog, brand activation tips, event marketing insights, marketing industry trends',
   openGraph: {
+    type: 'website',
     title: 'Blog | AirFresh Marketing Insights',
     description: 'Expert insights on experiential marketing, brand activations, and event staffing.',
     url: 'https://www.airfreshmarketing.com/blog',

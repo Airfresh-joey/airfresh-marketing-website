@@ -124,6 +124,26 @@ const nextConfig = {
       // City-services slug consolidation (old slugs → new standard slugs)
       { source: '/city-services/:city-street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
       // Portfolio to case-studies redirects (March 2026 crawl fix)
+      // Specific slug mappings for old portfolio URLs that don't match new case study IDs
+      { source: '/portfolio/beer-samplings', destination: '/case-studies/beer-samplings-national', permanent: true },
+      { source: '/portfolio/byoma', destination: '/case-studies/byoma-skincare', permanent: true },
+      { source: '/portfolio/ted-talk', destination: '/case-studies/ted-talk-events', permanent: true },
+      { source: '/portfolio/wagamama', destination: '/case-studies/wagamama-launch', permanent: true },
+      { source: '/portfolio/williams-racing', destination: '/case-studies/williams-racing-f1', permanent: true },
+      { source: '/portfolio/formula-one', destination: '/case-studies/formula-1-las-vegas', permanent: true },
+      { source: '/portfolio/clarins', destination: '/case-studies/clarins-beauty', permanent: true },
+      { source: '/portfolio/starbucks', destination: '/case-studies/starbucks-seasonal', permanent: true },
+      { source: '/portfolio/microsoft-nrf', destination: '/case-studies/microsoft-events', permanent: true },
+      { source: '/portfolio/mac-cosmetics', destination: '/case-studies/mac-cosmetics-campaign', permanent: true },
+      { source: '/portfolio/mrbeast', destination: '/case-studies/mrbeast-events', permanent: true },
+      { source: '/portfolio/grubhub', destination: '/case-studies/grubhub-campaign', permanent: true },
+      { source: '/portfolio/netflix', destination: '/case-studies/netflix-activations', permanent: true },
+      // Portfolio slugs without matching case studies - redirect to main page
+      { source: '/portfolio/apple-camp-grizzly', destination: '/case-studies', permanent: true },
+      { source: '/portfolio/nissan-nfl-draft', destination: '/case-studies', permanent: true },
+      { source: '/portfolio/pride-activations', destination: '/case-studies', permanent: true },
+      { source: '/portfolio/peelz-citrus', destination: '/case-studies', permanent: true },
+      // Catch-all for any other portfolio slugs
       { source: '/portfolio/:slug', destination: '/case-studies/:slug', permanent: true },
       // City+service slug fixes (March 2026 crawl fix)
       { source: '/cities/:city/event-staffing', destination: '/cities/:city/event-marketing', permanent: true },

@@ -22,6 +22,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     description,
     keywords: `${event.name} event staffing, ${event.name} brand ambassadors, ${event.city} event marketing, ${event.name} promotional staff`,
     openGraph: {
+      type: 'website',
       title,
       description,
       url: `https://www.airfreshmarketing.com/events/${slug}`,

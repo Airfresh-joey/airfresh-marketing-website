@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'AirFresh Marketing is a leading experiential marketing agency creating memorable brand activations and customer engagement campaigns nationwide.',
   keywords: 'experiential marketing agency, brand activation company, event marketing agency, about airfresh marketing',
   openGraph: {
+    type: 'website',
     title: 'About AirFresh Marketing | Experiential Marketing Agency',
     description: 'AirFresh Marketing is a leading experiential marketing agency creating memorable brand activations and customer engagement campaigns nationwide.',
     url: 'https://www.airfreshmarketing.com/about',

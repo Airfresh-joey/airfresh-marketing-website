@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Apply to join AirFresh Marketing as a brand ambassador, promotional model, or event staff. Quick application, flexible schedules, competitive pay.',
   keywords: 'apply brand ambassador, event staff application, promotional model jobs, join airfresh marketing',
   openGraph: {
+    type: 'website',
     title: 'Apply Now | AirFresh Marketing Careers',
     description: 'Apply to join our team of brand ambassadors and event staff. Quick application process.',
     url: 'https://www.airfreshmarketing.com/careers/apply',

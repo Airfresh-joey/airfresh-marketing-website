@@ -5,6 +5,7 @@ export const metadata: Metadata = {
   description: 'Specialized experiential marketing for every industry: tech, automotive, CPG, beverage, healthcare, retail, and more. Industry-specific expertise.',
   keywords: 'experiential marketing industries, tech marketing, automotive marketing, CPG brand activations, beverage sampling, retail marketing',
   openGraph: {
+    type: 'website',
     title: 'Industries We Serve | AirFresh Marketing',
     description: 'Specialized experiential marketing for tech, automotive, CPG, beverage, healthcare, retail, and more.',
     url: 'https://www.airfreshmarketing.com/industries',

@@ -24,6 +24,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     description,
     keywords: `${city.city} ${serviceType.name.toLowerCase()}, ${serviceType.name.toLowerCase()} ${city.state}, ${city.city} event staffing`,
     openGraph: {
+      type: 'website',
       title,
       description,
       url: `https://www.airfreshmarketing.com/cities/${slug}/${service}`,
