@@ -119,8 +119,9 @@ const nextConfig = {
       { source: '/street-team', destination: '/services/street-teams', permanent: true },
       { source: '/locations/:city', destination: '/cities/:city', permanent: true },
       { source: '/locations/brand-ambassadors-:city', destination: '/cities/:city', permanent: true },
-      // Case study short URL redirect
+      // Case study short URL redirects
       { source: '/case-studies/netflix', destination: '/case-studies/netflix-activations', permanent: true },
+      { source: '/case-studies/microsoft', destination: '/case-studies/microsoft-events', permanent: true },
       // City-services slug consolidation (old slugs → new standard slugs)
       { source: '/city-services/:city-street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
       // Portfolio to case-studies redirects (March 2026 crawl fix)
@@ -134,6 +135,7 @@ const nextConfig = {
       { source: '/portfolio/clarins', destination: '/case-studies/clarins-beauty', permanent: true },
       { source: '/portfolio/starbucks', destination: '/case-studies/starbucks-seasonal', permanent: true },
       { source: '/portfolio/microsoft-nrf', destination: '/case-studies/microsoft-events', permanent: true },
+      { source: '/portfolio/microsoft', destination: '/case-studies/microsoft-events', permanent: true },
       { source: '/portfolio/mac-cosmetics', destination: '/case-studies/mac-cosmetics-campaign', permanent: true },
       { source: '/portfolio/mrbeast', destination: '/case-studies/mrbeast-events', permanent: true },
       { source: '/portfolio/grubhub', destination: '/case-studies/grubhub-campaign', permanent: true },
