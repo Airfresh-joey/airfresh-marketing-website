@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: NeighborhoodPageProps): Promi
   
   return {
     title: `Event Staffing in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`,
-    description: `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. ${neighborhood.description}`,
+    description: `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`,
     alternates: {
       canonical: `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
     },

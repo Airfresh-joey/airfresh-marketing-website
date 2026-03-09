@@ -145,11 +145,30 @@ const nextConfig = {
       { source: '/portfolio/peelz-citrus', destination: '/case-studies', permanent: true },
       // Catch-all for any other portfolio slugs
       { source: '/portfolio/:slug', destination: '/case-studies/:slug', permanent: true },
-      // City+service slug fixes (March 2026 crawl fix)
-      { source: '/cities/:city/event-staffing', destination: '/cities/:city/event-marketing', permanent: true },
-      { source: '/cities/:city/trade-show-staff', destination: '/cities/:city/trade-show-marketing', permanent: true },
+      // City+service routes → city-services combined slug format
+      { source: '/cities/:city/brand-ambassadors', destination: '/city-services/:city-brand-ambassadors', permanent: true },
+      { source: '/cities/:city/event-marketing', destination: '/city-services/:city-event-management', permanent: true },
+      { source: '/cities/:city/experiential-marketing', destination: '/city-services/:city-experiential-marketing', permanent: true },
+      { source: '/cities/:city/trade-show-marketing', destination: '/city-services/:city-convention-staffing', permanent: true },
+      { source: '/cities/:city/convention-staffing', destination: '/city-services/:city-convention-staffing', permanent: true },
+      { source: '/cities/:city/promotional-models', destination: '/city-services/:city-promotional-models', permanent: true },
+      { source: '/cities/:city/street-teams', destination: '/city-services/:city-street-teams', permanent: true },
+      { source: '/cities/:city/sampling', destination: '/city-services/:city-sampling', permanent: true },
+      // Legacy slug redirects
+      { source: '/cities/:city/event-staffing', destination: '/city-services/:city-event-management', permanent: true },
+      { source: '/cities/:city/trade-show-staff', destination: '/city-services/:city-convention-staffing', permanent: true },
       // Services page slug fix
       { source: '/services/product-sampling', destination: '/services/sampling', permanent: true },
+      // Old industry slug redirects (industry-city-data.ts was updated to match industries-data.ts)
+      { source: '/industries/tech/:city', destination: '/industries/technology/:city', permanent: true },
+      { source: '/industries/healthcare/:city', destination: '/industries/healthcare-pharma/:city', permanent: true },
+      { source: '/industries/financial/:city', destination: '/industries/financial-services/:city', permanent: true },
+      { source: '/industries/retail/:city', destination: '/industries/fashion-retail/:city', permanent: true },
+      { source: '/industries/sports/:city', destination: '/industries/sports-entertainment/:city', permanent: true },
+      { source: '/industries/entertainment/:city', destination: '/industries/sports-entertainment/:city', permanent: true },
+      { source: '/industries/beauty/:city', destination: '/industries/cpg-consumer-goods/:city', permanent: true },
+      { source: '/industries/real-estate/:city', destination: '/industries/cpg-consumer-goods/:city', permanent: true },
+      { source: '/industries/food-beverage/:city', destination: '/industries/alcohol-beverage/:city', permanent: true },
     ]
   },
 

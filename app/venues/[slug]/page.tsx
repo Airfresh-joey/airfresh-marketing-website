@@ -24,7 +24,7 @@ export async function generateMetadata({ params }: VenuePageProps): Promise<Meta
   
   return {
     title: `${venue.shortName} Event Staffing & Brand Ambassadors | ${venue.city}`,
-    description: `Professional event staffing and brand ambassadors for ${venue.name} in ${venue.city}, ${venue.state}. Trade show staff, promotional models, and convention staffing.`,
+    description: `Professional event staffing for ${venue.shortName} in ${venue.city}. Trade show staff, brand ambassadors, and convention staffing.`,
     keywords: `${venue.shortName} staffing, ${venue.city} event staff, ${venue.name} brand ambassadors, convention staffing ${venue.city}`,
     openGraph: {
       title: `${venue.shortName} Event Staffing | AirFresh Marketing`,

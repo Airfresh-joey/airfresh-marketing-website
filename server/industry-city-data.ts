@@ -15,18 +15,13 @@ export interface IndustryCity {
 }
 
 // Industries with event marketing needs
+// IMPORTANT: These slugs must match industries-data.ts for links to work!
 export const industries = [
   {
-    slug: 'tech',
-    name: 'Technology',
-    description: 'Tech conferences, product launches, developer events, and startup showcases',
-    keywords: ['tech events', 'software conferences', 'startup events', 'product launches', 'developer conferences']
-  },
-  {
-    slug: 'healthcare',
-    name: 'Healthcare',
-    description: 'Medical conferences, pharma events, health fairs, and patient education',
-    keywords: ['medical conferences', 'healthcare events', 'pharma marketing', 'health fairs']
+    slug: 'alcohol-beverage',
+    name: 'Alcohol & Beverage',
+    description: 'Beverage sampling, bar promotions, alcohol brand activations, and tastings',
+    keywords: ['beverage sampling', 'alcohol marketing', 'bar promotions', 'brand tastings']
   },
   {
     slug: 'automotive',
@@ -35,46 +30,40 @@ export const industries = [
     keywords: ['auto shows', 'car events', 'test drive events', 'vehicle launches']
   },
   {
-    slug: 'food-beverage',
-    name: 'Food & Beverage',
-    description: 'Food festivals, restaurant openings, beverage sampling, and culinary events',
-    keywords: ['food festivals', 'restaurant events', 'beverage sampling', 'culinary marketing']
+    slug: 'technology',
+    name: 'Technology',
+    description: 'Tech conferences, product launches, developer events, and startup showcases',
+    keywords: ['tech events', 'software conferences', 'startup events', 'product launches']
   },
   {
-    slug: 'financial',
+    slug: 'cpg-consumer-goods',
+    name: 'CPG & Consumer Goods',
+    description: 'Product sampling, retail activations, consumer demos, and in-store marketing',
+    keywords: ['product sampling', 'retail marketing', 'consumer goods', 'in-store demos']
+  },
+  {
+    slug: 'sports-entertainment',
+    name: 'Sports & Entertainment',
+    description: 'Sporting events, concerts, festivals, fan experiences, and entertainment marketing',
+    keywords: ['sports events', 'concerts', 'festivals', 'fan experiences', 'entertainment']
+  },
+  {
+    slug: 'fashion-retail',
+    name: 'Fashion & Retail',
+    description: 'Fashion shows, store openings, pop-up shops, and retail activations',
+    keywords: ['fashion events', 'store openings', 'pop-up shops', 'retail marketing']
+  },
+  {
+    slug: 'healthcare-pharma',
+    name: 'Healthcare & Pharma',
+    description: 'Medical conferences, pharma events, health fairs, and patient education',
+    keywords: ['medical conferences', 'healthcare events', 'pharma marketing', 'health fairs']
+  },
+  {
+    slug: 'financial-services',
     name: 'Financial Services',
     description: 'Banking events, fintech conferences, investment seminars, and financial education',
     keywords: ['banking events', 'fintech conferences', 'financial marketing', 'investment events']
-  },
-  {
-    slug: 'retail',
-    name: 'Retail',
-    description: 'Store openings, pop-up shops, seasonal promotions, and shopping events',
-    keywords: ['retail events', 'store openings', 'pop-up shops', 'shopping events']
-  },
-  {
-    slug: 'sports',
-    name: 'Sports & Fitness',
-    description: 'Sporting events, fitness expos, athletic brand activations, and fan experiences',
-    keywords: ['sports events', 'fitness expos', 'athletic marketing', 'fan experiences']
-  },
-  {
-    slug: 'entertainment',
-    name: 'Entertainment',
-    description: 'Film premieres, music events, gaming conventions, and entertainment marketing',
-    keywords: ['film events', 'music marketing', 'gaming conventions', 'entertainment events']
-  },
-  {
-    slug: 'beauty',
-    name: 'Beauty & Cosmetics',
-    description: 'Beauty launches, cosmetics sampling, skincare events, and fashion marketing',
-    keywords: ['beauty events', 'cosmetics sampling', 'skincare marketing', 'fashion events']
-  },
-  {
-    slug: 'real-estate',
-    name: 'Real Estate',
-    description: 'Property launches, open houses, real estate expos, and community events',
-    keywords: ['real estate events', 'property launches', 'open houses', 'community events']
   }
 ];
 

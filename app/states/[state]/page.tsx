@@ -21,7 +21,7 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
   
   return {
     title: `Event Staffing & Marketing Services in ${state.name} | AirFresh Marketing`,
-    description: `Professional event staffing, brand ambassadors, and experiential marketing services throughout ${state.name}. Serving ${state.majorCities.join(', ')} and all ${state.name} cities.`,
+    description: `Professional event staffing and brand ambassadors in ${state.name}. Serving all major cities with local expertise.`,
     alternates: {
       canonical: `https://www.airfreshmarketing.com/states/${stateSlug}`,
     },

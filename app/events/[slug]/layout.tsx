@@ -15,7 +15,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   }
   
   const title = `${event.name} Event Staffing & Marketing`
-  const description = `Professional event staffing and brand activations for ${event.name}. Brand ambassadors, promotional staff, and experiential marketing in ${event.city}.`
+  const description = `Professional event staffing for ${event.name} in ${event.city}. Brand ambassadors and experiential marketing.`
   
   return {
     title,

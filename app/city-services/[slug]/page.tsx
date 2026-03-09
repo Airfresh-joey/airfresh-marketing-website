@@ -45,7 +45,7 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
   
   return {
     title: `${serviceName} in ${cityName}`,
-    description: `Professional ${serviceName.toLowerCase()} in ${cityName}. ${parsed.service.description}`,
+    description: `Professional ${serviceName.toLowerCase()} in ${cityName}. Local expertise, trained staff, and reliable service for your brand.`,
     keywords: `${serviceName.toLowerCase()} ${cityName}, ${cityName} ${serviceName.toLowerCase()}, ${parsed.service.keywords.join(', ')}`,
     openGraph: {
       title: `${serviceName} ${cityName} | AirFresh Marketing`,

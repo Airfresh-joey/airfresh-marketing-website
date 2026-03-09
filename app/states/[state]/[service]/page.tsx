@@ -23,8 +23,8 @@ export async function generateMetadata({ params }: StateServicePageProps): Promi
   }
   
   return {
-    title: `${service.name} ${state.name} | Professional ${service.name} Services Statewide`,
-    description: `${service.name} services throughout ${state.name}. ${service.description} Serving ${state.majorCities.slice(0, 3).join(', ')} and all ${state.name} cities.`,
+    title: `${service.name} in ${state.name} | AirFresh Marketing`,
+    description: `${service.name} services throughout ${state.name}. Local expertise across all major cities.`,
     openGraph: {
       title: `${service.name} ${state.name} | AirFresh Marketing`,
       description: `Professional ${service.name.toLowerCase()} services across ${state.name}.`,
