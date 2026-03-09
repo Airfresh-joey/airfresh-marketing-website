@@ -263,6 +263,80 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Browse by City Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold text-gray-900 mb-4 text-center">Services by City</h2>
+          <p className="text-lg text-gray-600 mb-8 text-center max-w-3xl mx-auto">
+            Find our full range of experiential marketing services in major cities across the United States.
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+            {[
+              { city: 'New York', slug: 'new-york' },
+              { city: 'Los Angeles', slug: 'los-angeles' },
+              { city: 'Chicago', slug: 'chicago' },
+              { city: 'Houston', slug: 'houston' },
+              { city: 'Phoenix', slug: 'phoenix' },
+              { city: 'San Francisco', slug: 'san-francisco' },
+              { city: 'Dallas', slug: 'dallas' },
+              { city: 'Austin', slug: 'austin' },
+              { city: 'Miami', slug: 'miami' },
+              { city: 'Atlanta', slug: 'atlanta' },
+              { city: 'Seattle', slug: 'seattle' },
+              { city: 'Denver', slug: 'denver' },
+              { city: 'Boston', slug: 'boston' },
+              { city: 'Nashville', slug: 'nashville' },
+              { city: 'Las Vegas', slug: 'las-vegas' },
+              { city: 'San Diego', slug: 'san-diego' },
+              { city: 'Portland', slug: 'portland' },
+              { city: 'Detroit', slug: 'detroit' },
+              { city: 'Minneapolis', slug: 'minneapolis' },
+              { city: 'Philadelphia', slug: 'philadelphia' },
+              { city: 'Charlotte', slug: 'charlotte' },
+              { city: 'Orlando', slug: 'orlando' },
+              { city: 'Tampa', slug: 'tampa' },
+              { city: 'San Antonio', slug: 'san-antonio' },
+            ].map((c) => (
+              <Link
+                key={c.slug}
+                href={`/city-services/${c.slug}-brand-ambassadors`}
+                className="px-3 py-2 text-sm text-gray-600 hover:text-primary hover:bg-primary/5 rounded transition-colors text-center"
+              >
+                {c.city}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
+            <span className="col-span-full text-sm font-semibold text-gray-500 mb-2">Popular Services:</span>
+            {[
+              { label: 'NYC Brand Ambassadors', href: '/city-services/new-york-brand-ambassadors' },
+              { label: 'LA Experiential', href: '/city-services/los-angeles-experiential-marketing' },
+              { label: 'Chicago Street Teams', href: '/city-services/chicago-street-teams' },
+              { label: 'Miami Sampling', href: '/city-services/miami-sampling' },
+              { label: 'Vegas Convention Staff', href: '/city-services/las-vegas-convention-staffing' },
+              { label: 'Austin Event Mgmt', href: '/city-services/austin-event-management' },
+              { label: 'Denver Promo Models', href: '/city-services/denver-promotional-models' },
+              { label: 'Atlanta Guerilla Mktg', href: '/city-services/atlanta-guerilla-marketing' },
+              { label: 'SF Marketing Mascots', href: '/city-services/san-francisco-marketing-mascots' },
+              { label: 'Seattle Brand Ambassadors', href: '/city-services/seattle-brand-ambassadors' },
+            ].map((s) => (
+              <Link
+                key={s.href}
+                href={s.href}
+                className="px-3 py-2 text-xs text-gray-500 hover:text-primary hover:bg-primary/5 rounded transition-colors"
+              >
+                {s.label}
+              </Link>
+            ))}
+          </div>
+          <div className="mt-6 text-center">
+            <Link href="/locations" className="text-primary hover:underline font-medium">
+              View all locations →
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

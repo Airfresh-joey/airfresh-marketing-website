@@ -10,6 +10,7 @@ import { Badge } from "@/components/ui/badge";
 import { MapPin, Phone, Mail, ArrowRight, Building2, Users, Award, ChevronDown } from "lucide-react";
 import { cities as allCitiesData } from "@/server/cities-data";
 import { states } from "@/server/states-data";
+import { neighborhoods } from "@/server/neighborhoods-data";
 
 // Major cities where AirFresh operates
 const cities = [
@@ -350,6 +351,31 @@ export default function Locations() {
                   className="px-3 py-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded transition-colors"
                 >
                   {state.name}
+                </Link>
+              ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Browse by Neighborhood Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold text-gray-900 mb-4">Browse by Neighborhood</h2>
+            <p className="text-lg text-gray-600">
+              Hyper-local event staffing in popular neighborhoods across major cities
+            </p>
+          </div>
+          <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
+            {neighborhoods
+              .sort((a, b) => a.name.localeCompare(b.name))
+              .map((n) => (
+                <Link
+                  key={n.slug}
+                  href={`/neighborhoods/${n.slug}`}
+                  className="px-3 py-2 text-sm text-gray-600 hover:text-cyan-600 hover:bg-cyan-50 rounded transition-colors"
+                >
+                  {n.name}
                 </Link>
               ))}
           </div>
