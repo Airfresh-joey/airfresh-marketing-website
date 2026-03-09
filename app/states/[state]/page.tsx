@@ -22,6 +22,18 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
   return {
     title: `Event Staffing & Marketing Services in ${state.name} | AirFresh Marketing`,
     description: `Professional event staffing and brand ambassadors in ${state.name}. Serving all major cities with local expertise.`,
+    openGraph: {
+      type: 'website',
+      title: `Event Staffing in ${state.name} | AirFresh Marketing`,
+      description: `Professional event staffing and brand ambassadors in ${state.name}.`,
+      url: `https://www.airfreshmarketing.com/states/${stateSlug}`,
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Event Staffing in ${state.name}`,
+      description: `Professional event staffing and brand ambassadors in ${state.name}.`,
+    },
     alternates: {
       canonical: `https://www.airfreshmarketing.com/states/${stateSlug}`,
     },

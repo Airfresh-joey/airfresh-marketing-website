@@ -21,7 +21,19 @@ export async function generateMetadata({ params }: NeighborhoodServicePageProps)
   
   return {
     title: `${service.name} in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`,
-    description: `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}. ${neighborhood.description} Local expertise, reliable staff.`,
+    description: `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable staff.`,
+    openGraph: {
+      type: 'website',
+      title: `${service.name} in ${neighborhood.name} | AirFresh Marketing`,
+      description: `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}.`,
+      url: `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}/${serviceSlug}`,
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.name} in ${neighborhood.name}`,
+      description: `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}.`,
+    },
     alternates: {
       canonical: `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}/${serviceSlug}`,
     },

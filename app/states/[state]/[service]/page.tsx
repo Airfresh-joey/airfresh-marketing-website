@@ -26,9 +26,16 @@ export async function generateMetadata({ params }: StateServicePageProps): Promi
     title: `${service.name} in ${state.name} | AirFresh Marketing`,
     description: `${service.name} services throughout ${state.name}. Local expertise across all major cities.`,
     openGraph: {
-      title: `${service.name} ${state.name} | AirFresh Marketing`,
+      type: 'website',
+      title: `${service.name} in ${state.name} | AirFresh Marketing`,
       description: `Professional ${service.name.toLowerCase()} services across ${state.name}.`,
       url: `https://www.airfreshmarketing.com/states/${stateSlug}/${serviceSlug}`,
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `${service.name} in ${state.name}`,
+      description: `Professional ${service.name.toLowerCase()} services across ${state.name}.`,
     },
     alternates: {
       canonical: `https://www.airfreshmarketing.com/states/${stateSlug}/${serviceSlug}`,

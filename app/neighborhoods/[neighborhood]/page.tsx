@@ -21,6 +21,18 @@ export async function generateMetadata({ params }: NeighborhoodPageProps): Promi
   return {
     title: `Event Staffing in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`,
     description: `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`,
+    openGraph: {
+      type: 'website',
+      title: `Event Staffing in ${neighborhood.name} | AirFresh Marketing`,
+      description: `Professional event staffing in ${neighborhood.name}, ${neighborhood.city}.`,
+      url: `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
+      images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: `Event Staffing in ${neighborhood.name}`,
+      description: `Professional event staffing in ${neighborhood.name}, ${neighborhood.city}.`,
+    },
     alternates: {
       canonical: `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
     },
