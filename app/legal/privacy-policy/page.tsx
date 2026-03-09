@@ -3,6 +3,16 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Privacy Policy | AirFresh Marketing',
   description: 'Privacy policy for AirFresh Marketing. Learn how we collect, use, and protect your personal information.',
+  openGraph: {
+    type: 'website',
+    title: 'Privacy Policy | AirFresh Marketing',
+    description: 'Privacy policy for AirFresh Marketing.',
+    url: 'https://www.airfreshmarketing.com/legal/privacy-policy',
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+  },
+  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/legal/privacy-policy',
+  },
 };
 
 export default function PrivacyPolicyPage() {

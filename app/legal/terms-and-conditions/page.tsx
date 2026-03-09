@@ -3,6 +3,16 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Terms and Conditions | AirFresh Marketing',
   description: 'Terms and conditions for AirFresh Marketing services. Read our service agreement, usage policies, and legal terms.',
+  openGraph: {
+    type: 'website',
+    title: 'Terms and Conditions | AirFresh Marketing',
+    description: 'Terms and conditions for AirFresh Marketing services.',
+    url: 'https://www.airfreshmarketing.com/legal/terms-and-conditions',
+    images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
+  },
+  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/legal/terms-and-conditions',
+  },
 };
 
 export default function TermsAndConditionsPage() {

@@ -154,9 +154,12 @@ const nextConfig = {
       { source: '/cities/:city/promotional-models', destination: '/city-services/:city-promotional-models', permanent: true },
       { source: '/cities/:city/street-teams', destination: '/city-services/:city-street-teams', permanent: true },
       { source: '/cities/:city/sampling', destination: '/city-services/:city-sampling', permanent: true },
-      // Legacy slug redirects
+      // Legacy/variant service slug redirects
       { source: '/cities/:city/event-staffing', destination: '/city-services/:city-event-management', permanent: true },
       { source: '/cities/:city/trade-show-staff', destination: '/city-services/:city-convention-staffing', permanent: true },
+      { source: '/cities/:city/trade-show-marketing', destination: '/city-services/:city-convention-staffing', permanent: true },
+      { source: '/cities/:city/street-team-marketing', destination: '/city-services/:city-street-teams', permanent: true },
+      { source: '/cities/:city/product-sampling', destination: '/city-services/:city-sampling', permanent: true },
       // Services page slug fix
       { source: '/services/product-sampling', destination: '/services/sampling', permanent: true },
       // Common city slug variations
