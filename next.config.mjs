@@ -9,7 +9,9 @@ const nextConfig = {
   reactStrictMode: true,
 
   // Use Turbopack (Next.js 16 default)
-  turbopack: {},
+  turbopack: {
+    root: path.resolve(__dirname),
+  },
   
   // Experimental CSS optimization
   experimental: {
