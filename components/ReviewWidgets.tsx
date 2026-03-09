@@ -191,7 +191,7 @@ export default function ReviewWidgets() {
                 className="w-full mt-4" 
                 size="sm"
                 variant="outline"
-                onClick={() => window.open('https://www.linkedin.com/company/airfresh-marketing', '_blank')}
+                onClick={() => window.open('https://www.linkedin.com/company/airfreshmarketing', '_blank')}
               >
                 <ExternalLink className="h-4 w-4 mr-2" />
                 View on LinkedIn

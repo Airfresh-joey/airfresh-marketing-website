@@ -72,8 +72,8 @@ export default function SEO({
     updateMetaTag('og:locale', 'en_US', true);
     
     // LinkedIn specific Open Graph tags with enhanced image metadata
-    updateMetaTag('article:author', 'https://www.linkedin.com/company/airfresh-marketing', true);
-    updateMetaTag('article:publisher', 'https://www.linkedin.com/company/airfresh-marketing', true);
+    updateMetaTag('article:author', 'https://www.linkedin.com/company/airfreshmarketing', true);
+    updateMetaTag('article:publisher', 'https://www.linkedin.com/company/airfreshmarketing', true);
     updateMetaTag('og:image:width', ogImageWidth, true);
     updateMetaTag('og:image:height', ogImageHeight, true);
     updateMetaTag('og:image:alt', ogImageAlt, true);
@@ -106,7 +106,7 @@ export default function SEO({
     if (!linkedInProfile) {
       const link = document.createElement('link');
       link.rel = 'me';
-      link.href = 'https://www.linkedin.com/company/airfresh-marketing';
+      link.href = 'https://www.linkedin.com/company/airfreshmarketing';
       document.head.appendChild(link);
     }
 

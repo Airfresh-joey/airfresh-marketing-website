@@ -94,7 +94,7 @@ export default function Footer() {
               {/* Social Links */}
               <div className="flex gap-2">
                 <a
-                  href="https://www.linkedin.com/company/airfresh-marketing"
+                  href="https://www.linkedin.com/company/airfreshmarketing"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300"
                   aria-label="LinkedIn"
                 >

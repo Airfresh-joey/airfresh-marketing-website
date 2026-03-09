@@ -8,7 +8,7 @@ export const organizationSchema = {
   "url": "https://airfreshmarketing.com",
   "logo": "https://airfreshmarketing.com/favicon.svg",
   "sameAs": [
-    "https://www.linkedin.com/company/airfresh-marketing",
+    "https://www.linkedin.com/company/airfreshmarketing",
     "https://www.facebook.com/AirFreshMarketing",
     "https://twitter.com/AirFreshmktg",
     "https://www.instagram.com/airfreshmarketing/"

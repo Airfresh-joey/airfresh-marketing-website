@@ -62,7 +62,7 @@ export default function Home() {
         "url": "https://airfreshmarketing.com",
         "logo": "/favicon.svg",
         "sameAs": [
-          "https://www.linkedin.com/company/airfresh-marketing",
+          "https://www.linkedin.com/company/airfreshmarketing",
           "https://twitter.com/airfreshmarket",
           "https://www.instagram.com/airfreshmarketing",
           "https://www.facebook.com/AirFreshMarketing"

@@ -10,7 +10,7 @@ export const reviewPlatforms = {
   },
   linkedin: {
     name: 'LinkedIn',
-    baseUrl: 'https://www.linkedin.com/company/airfresh-marketing/recommendations',
+    baseUrl: 'https://www.linkedin.com/company/airfreshmarketing/recommendations',
     instructions: 'Share your professional experience working with AirFresh Marketing on LinkedIn.'
   },
   clutch: {

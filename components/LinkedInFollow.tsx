@@ -18,7 +18,7 @@ export default function LinkedInFollow({
   return (
     <div className={`linkedin-follow-button ${className}`} data-testid="linkedin-follow-button">
       <a 
-        href="https://www.linkedin.com/company/airfresh-marketing"
+        href="https://www.linkedin.com/company/airfreshmarketing"
         target="_blank"
         rel="noopener noreferrer"
         className={`inline-flex items-center ${getSizeClasses()} bg-[#0077b5] text-white rounded hover:bg-[#005885] transition-colors font-medium`}
