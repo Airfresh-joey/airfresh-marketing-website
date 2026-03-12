@@ -142,6 +142,14 @@ const stats = [
 
 const openPositions = [
   {
+    title: "Experience Manager",
+    location: "Denver, CO",
+    type: "Full-time",
+    salary: "$80K-$90K",
+    description: "Lead workplace experiences and events for a premier office property. Plan tenant engagement, coordinate vendors, and manage event staff. 3-5 years experience in hospitality, events, or experiential marketing required.",
+    featured: true
+  },
+  {
     title: "Brand Ambassador",
     location: "Multiple Cities",
     type: "Part-time / Flexible",
@@ -310,16 +318,30 @@ export default function CareersPage() {
           </div>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {openPositions.map((position, index) => (
-              <Card key={index} className="hover:shadow-lg transition-shadow">
+              <Card key={index} className={`hover:shadow-lg transition-shadow ${position.featured ? 'ring-2 ring-cyan-500 bg-cyan-50' : ''}`}>
                 <CardContent className="p-6">
-                  <Badge className="mb-3 bg-cyan-100 text-cyan-700">{position.type}</Badge>
+                  <div className="flex gap-2 mb-3 flex-wrap">
+                    {position.featured && (
+                      <Badge className="bg-cyan-600 text-white">
+                        <Star className="w-3 h-3 mr-1" />
+                        Featured
+                      </Badge>
+                    )}
+                    <Badge className="bg-cyan-100 text-cyan-700">{position.type}</Badge>
+                    {position.salary && (
+                      <Badge className="bg-green-100 text-green-700">
+                        <DollarSign className="w-3 h-3 mr-1" />
+                        {position.salary}
+                      </Badge>
+                    )}
+                  </div>
                   <h3 className="text-xl font-bold mb-2">{position.title}</h3>
                   <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
                     <MapPin className="w-4 h-4" />
                     {position.location}
                   </div>
                   <p className="text-gray-600 mb-4">{position.description}</p>
-                  <Button asChild variant="outline" className="w-full">
+                  <Button asChild variant={position.featured ? "default" : "outline"} className="w-full">
                     <Link href="/careers/apply">Apply Now</Link>
                   </Button>
                 </CardContent>
