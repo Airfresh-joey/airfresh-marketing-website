@@ -313,7 +313,6 @@ export default function ExperienceManagerApplication() {
                 accept=".pdf,.doc,.docx"
                 onChange={handleFileChange}
                 className="hidden"
-                required
               />
               <label htmlFor="resume" className="cursor-pointer">
                 {resumeFile ? (
