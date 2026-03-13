@@ -89,7 +89,7 @@ export default function Contact() {
           phone: data.phone ? formatPhoneNumber(data.phone) : "",
           inquiryType: data.inquiryType || "General",
           message: data.message,
-          _sourcePage: "contact-page",
+          _source: "airfreshmarketing.com",
         }),
       });
 
