@@ -14,6 +14,45 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "133",
+    slug: "micro-experiences-intimate-brand-activations-2026",
+    title: "The Rise of Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026",
+    excerpt: "Micro-experiences are delivering 3-5x higher engagement than traditional large-scale events. Learn why intimate brand activations are the future of experiential marketing and how to execute them.",
+    image: "/images/blog/micro-experiences-2026.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 13, 2026",
+    readTime: "16 min read",
+    category: "Experiential Marketing",
+    tags: ["Micro-Experiences", "Brand Activations", "Pop-Up Events", "Community Marketing", "2026 Trends"],
+    content: `# The Rise of Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026\n\nMicro-experiences are delivering 3-5x higher engagement than traditional large-scale events. Learn why intimate brand activations are the future of experiential marketing.`
+  },
+  {
+    id: "132",
+    slug: "ai-experiential-marketing-2026",
+    title: "AI-Powered Experiential Marketing: How Artificial Intelligence Is Transforming Brand Activations in 2026",
+    excerpt: "AI-powered experiential marketing is revolutionizing how brands connect with consumers at live events. From predictive analytics to real-time personalization, here's how AI is reshaping brand activations.",
+    image: "/images/blog/ai-experiential-marketing.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 10, 2026",
+    readTime: "15 min read",
+    category: "Technology",
+    tags: ["AI Marketing", "Experiential Marketing", "Brand Activations", "Technology Trends", "2026 Trends"],
+    content: `# AI-Powered Experiential Marketing: How Artificial Intelligence Is Transforming Brand Activations in 2026\n\nAI-powered experiential marketing is revolutionizing how brands connect with consumers at live events. From predictive analytics to real-time personalization, here's how AI is reshaping brand activations.`
+  },
+  {
+    id: "131",
+    slug: "sustainable-experiential-marketing-2026",
+    title: "Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026",
+    excerpt: "Sustainable event marketing isn't just good ethics — it's good business. Learn how to plan carbon-neutral activations, eliminate waste, and build brand loyalty through environmental responsibility.",
+    image: "/images/blog/sustainable-marketing-2026.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "March 6, 2026",
+    readTime: "14 min read",
+    category: "Sustainability",
+    tags: ["Sustainable Marketing", "Eco-Friendly Events", "Green Activations", "Brand Responsibility", "2026 Trends"],
+    content: `# Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026\n\nSustainable event marketing isn't just good ethics — it's good business. Learn how to plan carbon-neutral activations and build brand loyalty through environmental responsibility.`
+  },
+  {
     id: "1",
     slug: "street-marketing-examples",
     title: "Eye-Catching Street Marketing Examples by Air Fresh Marketing",
