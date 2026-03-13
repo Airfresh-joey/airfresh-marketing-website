@@ -147,7 +147,8 @@ const openPositions = [
     type: "Full-time",
     salary: "$80K-$90K",
     description: "Lead workplace experiences and events for a premier office property. Plan tenant engagement, coordinate vendors, and manage event staff. 3-5 years experience in hospitality, events, or experiential marketing required.",
-    featured: true
+    featured: true,
+    link: "/careers/experience-manager"
   },
   {
     title: "Brand Ambassador",
@@ -342,7 +343,7 @@ export default function CareersPage() {
                   </div>
                   <p className="text-gray-600 mb-4">{position.description}</p>
                   <Button asChild variant={position.featured ? "default" : "outline"} className="w-full">
-                    <Link href="/careers/apply">Apply Now</Link>
+                    <Link href={position.link || "/careers/apply"}>Apply Now</Link>
                   </Button>
                 </CardContent>
               </Card>

@@ -1,0 +1,33 @@
+name,last_vacuum,last_autovacuum,last_analyze,last_autoanalyze,rowcount,dead_rowcount,autovacuum_threshold,expect_autovacuum,autoanalyze_threshold,expect_autoanalyze
+public.admin_roles,"","","",2026-02-12 03:44,             6,            23,            51,no,            51,no
+public.bookings,"",2026-02-18 16:41,"",2026-03-10 15:26,           171,            75,            84,no,            67,yes
+public.email_logs,"",2026-03-02 17:46,"",2026-03-06 21:36,           262,            25,           102,no,            76,no
+public.event_days,"","","",2026-02-13 00:37,            22,             9,            54,no,            52,no
+public.event_roles,"","","",2026-03-02 15:58,            47,             5,            59,no,            55,no
+public.events,"",2026-03-02 21:25,"",2026-03-11 15:03,            32,            19,            56,no,            53,no
+public.profiles,"",2026-03-02 21:00,"",2026-03-06 20:27,            44,            18,            59,no,            54,no
+public.recaps,"","","",2026-03-11 04:04,            46,             7,            59,no,            55,no
+public.system_status,"",2026-02-15 15:45,"",2026-03-02 17:45,             3,            37,            51,no,            50,no
+public.activity_logs,"","","","",            -1,             0,            50,no,            50,no
+public.admin_feedback,"","","","",            -1,             0,            50,no,            50,no
+public.admin_users,"","","","",            -1,             2,            50,no,            50,no
+public.app_feedback,"","","","",            -1,             0,            50,no,            50,no
+public.booking_breaks,"","","","",            -1,             1,            50,no,            50,no
+public.client_feedback,"","","","",            -1,             0,            50,no,            50,no
+public.client_profiles,"","","","",            -1,             0,            50,no,            50,no
+public.client_users,"","","","",            -1,             0,            50,no,            50,no
+public.clients,"","","","",            -1,             0,            50,no,            50,no
+public.document_signatures,"","","","",            -1,             0,            50,no,            50,no
+public.documents,"","","","",            -1,             0,            50,no,            50,no
+public.email_templates,"","","","",            -1,             0,            50,no,            50,no
+public.event_documents,"","","","",            -1,             0,            50,no,            50,no
+public.event_files,"","","","",            -1,             0,            50,no,            50,no
+public.event_notes,"","","","",            -1,             2,            50,no,            50,no
+public.expenses,"","","","",            -1,             0,            50,no,            50,no
+public.no_show_alerts,"","","","",            -1,             0,            50,no,            50,no
+public.operations_alerts,"","","","",            -1,             0,            50,no,            50,no
+public.staff_invitations,"","","","",            -1,             1,            50,no,            50,no
+public.staff_status,"","","","",            -1,             0,            50,no,            50,no
+public.talent_availability,"","","","",            -1,             0,            50,no,            50,no
+public.training_completions,"","","","",            -1,             0,            50,no,            50,no
+public.training_materials,"","","","",            -1,             0,            50,no,            50,no

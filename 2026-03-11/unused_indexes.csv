@@ -1,0 +1,8 @@
+name,index,index_size,index_scans
+public.profiles,idx_profiles_w9_completed,16 kB,0
+public.bookings,idx_bookings_payment_status,16 kB,0
+public.email_logs,idx_email_logs_status,16 kB,1
+public.bookings,idx_bookings_assigned_role,16 kB,1
+public.bookings,idx_bookings_event_day,16 kB,4
+public.event_files,idx_event_files_event_id,16 kB,7
+public.bookings,idx_bookings_status,16 kB,43

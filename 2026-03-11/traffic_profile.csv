@@ -1,0 +1,33 @@
+schemaname,table_name,blocks_read,write_tuples,blocks_write,activity_ratio
+auth,users,20,1911,136.5,6.8:1 (Write-Heavy)
+public,events,3,426,106.5,35.5:1 (Write-Heavy)
+public,profiles,7,501,91.0909090909091,13.0:1 (Write-Heavy)
+public,system_status,2,260,86.6666666666667,43.3:1 (Write-Heavy)
+auth,refresh_tokens,12,2742,54.2482014388489,4.5:1 (Write-Heavy)
+auth,sessions,9,1849,44.5542168674699,5.0:1 (Write-Heavy)
+public,bookings,11,865,30.3508771929825,2.8:1 (Write-Heavy)
+storage,objects,6,310,31.9117647058824,5.3:1 (Write-Heavy)
+auth,one_time_tokens,8,188,15.6666666666667,2.0:1 (Write-Heavy)
+public,email_logs,3,530,18.206106870229,6.1:1 (Write-Heavy)
+auth,identities,7,142,9.68181818181818,1.4:1 (Write-Heavy)
+auth,flow_state,8,167,6.95833333333333,0.9:1 (Write-Heavy)
+public,event_days,5,189,8.59090909090909,1.7:1 (Write-Heavy)
+public,admin_roles,5,51,8.5,1.7:1 (Write-Heavy)
+auth,mfa_amr_claims,2,541,7.02597402597403,3.5:1 (Write-Heavy)
+auth,schema_migrations,6,68,0.944444444444444,1:6.4 (Read-Heavy)
+public,recaps,3,56,3.65217391304348,1.2:1 (Write-Heavy)
+realtime,schema_migrations,4,68,1.04615384615385,0.3:1 (Write-Heavy)
+storage,migrations,2,80,2.85714285714286,1.4:1 (Write-Heavy)
+public,staff_invitations,4,3,-0,Read-Only
+public,event_roles,2,89,1.8936170212766,0.9:1 (Write-Heavy)
+public,activity_logs,3,8,-0,Read-Only
+public,no_show_alerts,3,4,-0,Read-Only
+public,clients,2,1,-0,Read-Only
+public,app_feedback,2,28,-0,Read-Only
+public,event_notes,2,5,-0,Read-Only
+public,event_files,2,33,-0,Read-Only
+storage,buckets,2,14,-0,Read-Only
+public,booking_breaks,2,2,-0,Read-Only
+public,client_feedback,1,8,-0,Read-Only
+public,admin_users,1,7,-0,Read-Only
+supabase_migrations,schema_migrations,1,43,-0,Read-Only
