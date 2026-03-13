@@ -8,7 +8,8 @@ import { Label } from "@/components/ui/label";
 import { CheckCircle, Loader2, Upload, FileText, Briefcase, MapPin } from "lucide-react";
 import Link from "next/link";
 
-const FORMSPREE_ID = "xwpkpqvz"; // New form for Experience Manager applications
+// Using existing talent form - filtering by position field
+const FORMSPREE_ID = "mojjqakb";
 
 export default function ExperienceManagerApplication() {
   const [isSubmitting, setIsSubmitting] = useState(false);
