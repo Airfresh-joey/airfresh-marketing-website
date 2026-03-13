@@ -111,18 +111,27 @@ export default function ExperienceManagerApplication() {
     <div className="pt-16 min-h-screen bg-gray-50">
       <div className="max-w-3xl mx-auto px-4 py-12">
         {/* Header */}
-        <div className="bg-gradient-to-r from-orange-500 to-orange-600 rounded-2xl p-8 text-white mb-8">
-          <div className="flex items-center gap-2 text-orange-100 mb-2">
-            <Briefcase className="w-5 h-5" />
-            <span className="text-sm font-medium">Full-time Position</span>
-          </div>
-          <h1 className="text-3xl font-bold mb-2">Experience Manager</h1>
-          <div className="flex items-center gap-4 text-orange-100">
-            <span className="flex items-center gap-1">
-              <MapPin className="w-4 h-4" />
-              Denver, CO
-            </span>
-            <span>$80,000 - $90,000/year</span>
+        <div className="relative rounded-2xl overflow-hidden mb-8">
+          <div 
+            className="absolute inset-0 bg-cover bg-center"
+            style={{
+              backgroundImage: "url('https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?w=1200&q=80')",
+            }}
+          />
+          <div className="absolute inset-0 bg-gradient-to-r from-black/70 to-black/40" />
+          <div className="relative p-8 text-white">
+            <div className="flex items-center gap-2 text-gray-200 mb-2">
+              <Briefcase className="w-5 h-5" />
+              <span className="text-sm font-medium">Full-time Position</span>
+            </div>
+            <h1 className="text-3xl font-bold mb-2">Experience Manager</h1>
+            <div className="flex items-center gap-4 text-gray-200">
+              <span className="flex items-center gap-1">
+                <MapPin className="w-4 h-4" />
+                Denver, CO
+              </span>
+              <span>$80,000 - $90,000/year</span>
+            </div>
           </div>
         </div>
 
