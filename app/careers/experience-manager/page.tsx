@@ -270,7 +270,7 @@ export default function ExperienceManagerApplication() {
           {/* Resume Upload */}
           <div className="mb-8">
             <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">Resume *</h3>
-            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-orange-400 transition-colors">
+            <div className="border-2 border-dashed border-gray-300 rounded-lg p-6 text-center hover:border-primary transition-colors">
               <input
                 type="file"
                 id="resume"
@@ -412,7 +412,7 @@ export default function ExperienceManagerApplication() {
           <Button
             type="submit"
             disabled={isSubmitting}
-            className="w-full bg-orange-500 hover:bg-orange-600 text-white py-3 text-lg"
+            className="w-full bg-primary hover:bg-primary/90 text-white py-3 text-lg"
           >
             {isSubmitting ? (
               <>
