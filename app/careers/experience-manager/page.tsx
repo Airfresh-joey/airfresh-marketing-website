@@ -135,31 +135,67 @@ export default function ExperienceManagerApplication() {
           </div>
         </div>
 
-        {/* Position Overview */}
+        {/* Full Job Description */}
         <div className="bg-white rounded-xl shadow-sm p-6 mb-8">
-          <h2 className="text-lg font-semibold mb-3">About This Role</h2>
-          <p className="text-gray-600 mb-4">
-            Lead workplace experiences and events for a premier office property. You&apos;ll plan tenant engagement programs, coordinate with vendors, manage event staff, and create memorable experiences that build community.
+          <h2 className="text-xl font-semibold mb-4">About This Role</h2>
+          <p className="text-gray-600 mb-6">
+            Air Fresh Marketing is seeking an Experience Manager to lead workplace experiences and tenant engagement for a premier Class A office property in downtown Denver. This is a highly visible, full-time W2 role where you&apos;ll be the driving force behind creating memorable experiences that build community and elevate the workplace environment.
           </p>
-          <div className="grid md:grid-cols-2 gap-4 text-sm">
-            <div>
-              <h3 className="font-medium text-gray-900 mb-2">Requirements</h3>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">What You&apos;ll Do</h3>
+          <ul className="text-gray-600 space-y-2 mb-6">
+            <li>• Lead planning and execution of tenant engagement events and programs - from wellness initiatives to networking happy hours to holiday celebrations</li>
+            <li>• Serve as the on-site point of contact for all engagement initiatives, building relationships with tenants and property management</li>
+            <li>• Coordinate vendors, staffing, proposals, and reporting for all events</li>
+            <li>• Develop community-building opportunities through wellness, cultural, and networking events</li>
+            <li>• Manage part-time brand ambassadors and event staff</li>
+            <li>• Ensure smooth event operations and provide recaps with actionable insights</li>
+            <li>• Track KPIs and continuously improve programming based on tenant feedback</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Who You Are</h3>
+          <ul className="text-gray-600 space-y-2 mb-6">
+            <li>• 3-5 years of experience in hospitality, events, experiential marketing, or workplace experience</li>
+            <li>• Proven track record of planning and executing successful events</li>
+            <li>• Experience managing teams, vendors, and multiple stakeholders</li>
+            <li>• Strong written and verbal communication skills</li>
+            <li>• Tech-savvy with comfort in digital tools (Google Workspace, Slack, project management software)</li>
+            <li>• Self-starter who thrives in a fast-paced, dynamic environment</li>
+            <li>• Passionate about creating exceptional experiences and building community</li>
+          </ul>
+
+          <h3 className="text-lg font-semibold text-gray-900 mb-3">Schedule & Location</h3>
+          <ul className="text-gray-600 space-y-2 mb-6">
+            <li>• Monday - Friday, 9 AM - 5 PM</li>
+            <li>• On-site at a premier office property in downtown Denver</li>
+            <li>• Occasional evening events (typically mid-week)</li>
+            <li>• Some flexibility for remote admin/reporting work</li>
+          </ul>
+
+          <div className="grid md:grid-cols-2 gap-6">
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-3">Compensation</h3>
               <ul className="text-gray-600 space-y-1">
-                <li>• 3-5 years in hospitality, events, or experiential marketing</li>
-                <li>• Experience managing teams and vendors</li>
-                <li>• Strong communication and organizational skills</li>
-                <li>• Ability to work on-site in Denver</li>
+                <li>• $80,000 - $90,000 annually</li>
+                <li>• Based on experience</li>
+                <li>• Bonus potential</li>
               </ul>
             </div>
-            <div>
-              <h3 className="font-medium text-gray-900 mb-2">Benefits</h3>
+            <div className="bg-gray-50 rounded-lg p-4">
+              <h3 className="font-semibold text-gray-900 mb-3">Benefits</h3>
               <ul className="text-gray-600 space-y-1">
-                <li>• Competitive salary + bonus potential</li>
                 <li>• Health, dental, and vision insurance</li>
                 <li>• 401(k) with company match</li>
                 <li>• Paid time off + holidays</li>
+                <li>• Professional development</li>
               </ul>
             </div>
+          </div>
+
+          <div className="mt-6 p-4 bg-primary/5 rounded-lg border border-primary/20">
+            <p className="text-gray-700 font-medium">
+              This is a full-time W2 position. We&apos;re looking for someone who wants to grow with us long-term and is excited about building something meaningful.
+            </p>
           </div>
         </div>
 
