@@ -422,9 +422,9 @@ export default function ServicePage({ params }: ServicePageProps) {
   // FAQ data for each service
   const serviceFAQs: Record<string, Array<{question: string, answer: string}>> = {
     'brand-ambassadors': [
-      { question: "How much do brand ambassadors cost?", answer: "Brand ambassador costs typically range from $25-$75 per hour depending on experience, location, and campaign requirements. AirFresh Marketing provides customized quotes based on your specific needs, with volume discounts available for larger campaigns." },
       { question: "How do you select brand ambassadors for my campaign?", answer: "We match ambassadors based on your target demographics, brand values, and campaign requirements. Each ambassador undergoes background checks, training, and brand-specific preparation to ensure authentic representation." },
-      { question: "What cities do you provide brand ambassadors in?", answer: "AirFresh Marketing provides professional brand ambassadors in 50+ cities nationwide, including New York, Los Angeles, Chicago, Miami, Denver, San Francisco, Austin, and Atlanta." }
+      { question: "What cities do you provide brand ambassadors in?", answer: "AirFresh Marketing provides professional brand ambassadors in 50+ cities nationwide, including New York, Los Angeles, Chicago, Miami, Denver, San Francisco, Austin, and Atlanta." },
+      { question: "How do I get started?", answer: "Contact us for a free consultation. We'll discuss your campaign goals, timeline, and requirements, then provide a customized proposal tailored to your specific needs." }
     ],
     'street-teams': [
       { question: "What is street team marketing?", answer: "Street team marketing involves deploying trained promotional teams in high-traffic public areas to engage directly with consumers, distribute samples or materials, and create brand awareness through face-to-face interactions." },
@@ -442,9 +442,9 @@ export default function ServicePage({ params }: ServicePageProps) {
       { question: "Do you provide event staff for trade shows?", answer: "Yes, we specialize in trade show and convention staffing with trained booth staff, product demonstrators, lead capture specialists, and hospitality personnel across all major convention centers." }
     ],
     'sampling': [
-      { question: "How much does product sampling cost?", answer: "Product sampling campaigns typically range from $5,000-$25,000 depending on sample quantity, locations, staffing needs, and campaign duration. We provide detailed quotes with transparent cost breakdowns." },
       { question: "What products can you sample?", answer: "We handle food, beverage, beauty, health, and consumer product sampling. We manage all required permits, health certifications, and compliance requirements for your product category." },
-      { question: "How do you track product sampling results?", answer: "Our platform tracks samples distributed, consumer demographics, feedback, coupon redemptions, and geographic data. You receive real-time dashboards and comprehensive post-campaign reports." }
+      { question: "How do you track product sampling results?", answer: "Our platform tracks samples distributed, consumer demographics, feedback, coupon redemptions, and geographic data. You receive real-time dashboards and comprehensive post-campaign reports." },
+      { question: "How do I get a quote for a sampling campaign?", answer: "Contact us with your product details, target locations, and campaign timeline. We'll provide a customized proposal with detailed scope and deliverables." }
     ]
   };
 

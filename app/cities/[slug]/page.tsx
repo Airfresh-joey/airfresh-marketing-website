@@ -705,10 +705,10 @@ export default async function CityPage({ params }: CityPageProps) {
         "mainEntity": [
           {
             "@type": "Question",
-            "name": `How much does experiential marketing cost in ${city.name}?`,
+            "name": `How do I get started with experiential marketing in ${city.name}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `Experiential marketing costs in ${city.name} vary by campaign scope. Product sampling starts at $5,000, pop-up experiences range from $25,000-$100,000, and multi-location tours exceed $100,000. Contact us for a customized ${city.name} quote.`
+              "text": `Contact AirFresh Marketing for a free consultation. We'll discuss your campaign goals, target audience, and timeline, then provide a customized proposal for your ${city.name} activation.`
             }
           },
           {
@@ -1233,9 +1233,9 @@ export default async function CityPage({ params }: CityPageProps) {
           <div className="space-y-6">
             <Card>
               <CardContent className="p-6">
-                <h3 className="text-xl font-bold mb-3">How much does experiential marketing cost in {city.name}?</h3>
+                <h3 className="text-xl font-bold mb-3">How do I get started with experiential marketing in {city.name}?</h3>
                 <p className="text-gray-700 leading-relaxed">
-                  Experiential marketing costs in {city.name} vary significantly based on campaign scope, duration, and complexity. Basic product sampling campaigns typically start around $5,000-$10,000 for a single-day activation with 5-10 brand ambassadors. Mid-size pop-up experiences range from $25,000-$50,000, while comprehensive multi-day activations or large-scale events can exceed $100,000. Factors affecting cost include talent quantity, venue fees, permit expenses, production requirements, and campaign duration. We provide detailed, transparent quotes for every {city.name} campaign, ensuring you understand exactly what you're investing in and the expected ROI.
+                  Getting started is simple. Contact AirFresh Marketing for a free consultation where we'll discuss your campaign goals, target audience, timeline, and specific requirements. Our team will then develop a customized proposal tailored to your {city.name} activation. Factors we consider include talent quantity, venue selection, permit requirements, production needs, and campaign duration. We provide detailed, transparent proposals for every {city.name} campaign, ensuring you understand exactly what's included and the expected deliverables.
                 </p>
               </CardContent>
             </Card>

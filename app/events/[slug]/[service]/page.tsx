@@ -284,11 +284,10 @@ export default async function EventServicePage({ params }: EventServicePageProps
             </div>
 
             <div className="space-y-6">
-              {/* Pricing Card */}
+              {/* CTA Card */}
               <Card className="bg-gradient-to-br from-cyan-50 to-blue-50">
                 <CardContent className="p-6">
-                  <h3 className="text-xl font-bold mb-4">Pricing</h3>
-                  <p className="text-2xl font-bold text-cyan-600 mb-2">{service.pricing}</p>
+                  <h3 className="text-xl font-bold mb-4">Get Started</h3>
                   <p className="text-gray-600 text-sm mb-4">
                     Custom quotes available for multi-day activations and large teams.
                   </p>

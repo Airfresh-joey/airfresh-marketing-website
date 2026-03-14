@@ -98,10 +98,10 @@ export default function Home() {
           },
           {
             "@type": "Question",
-            "name": "How much does experiential marketing cost for events?",
+            "name": "How do I get started with experiential marketing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "Experiential marketing costs vary by campaign scope: product sampling ($5,000-$25,000), pop-up experiences ($25,000-$100,000), multi-city tours ($100,000+). AirFresh Marketing provides customized quotes with transparent pricing focused on delivering strong ROI."
+              "text": "Contact AirFresh Marketing for a free consultation. We'll discuss your campaign goals, target audience, and timeline, then provide a customized proposal tailored to your specific needs and objectives."
             }
           }
         ]

@@ -587,10 +587,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
                     </Link>
                   </Button>
                   
-                  <div className="mt-6 pt-6 border-t">
-                    <p className="text-sm text-gray-600 mb-2"><strong>Pricing:</strong></p>
-                    <p className="text-sm text-gray-700">{serviceData.pricing}</p>
-                  </div>
+
                 </CardContent>
               </Card>
 
