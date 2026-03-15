@@ -406,6 +406,257 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       stats: { models: '20', leads: '5K+', days: '10' },
       image: '/images/case-studies/gallery/polaris/polaris-1.jpg'
     }
+  },
+  'trade-show-staffing': {
+    title: 'Trade Show Staffing Solutions',
+    subtitle: 'Expert Staff for Maximum Trade Show Impact',
+    description: 'Elevate your trade show presence with our professionally trained booth staff. From lead capture specialists to product demonstrators, we provide the talent that turns booth visitors into qualified prospects.',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+    icon: Building2,
+    color: 'from-indigo-600 to-purple-600',
+    stats: [
+      { value: '500+', label: 'Trade Shows Staffed' },
+      { value: '50+', label: 'Convention Centers' },
+      { value: '98%', label: 'Client Retention' },
+      { value: '10K+', label: 'Leads/Month' }
+    ],
+    features: [
+      {
+        icon: Users,
+        title: 'Trained Booth Staff',
+        description: 'Professional staff trained in lead qualification, product demos, and customer engagement for maximum booth ROI.'
+      },
+      {
+        icon: Target,
+        title: 'Lead Capture Specialists',
+        description: 'Expert staff focused on qualifying visitors and capturing actionable leads for your sales team.'
+      },
+      {
+        icon: Award,
+        title: 'Industry-Specific Expertise',
+        description: 'Staff experienced in tech, healthcare, automotive, CPG, and other verticals for authentic conversations.'
+      },
+      {
+        icon: Clock,
+        title: 'Multi-Day Coverage',
+        description: 'Reliable staffing for single-day events to week-long conventions with consistent quality.'
+      }
+    ],
+    benefits: [
+      'Maximize booth traffic and engagement',
+      'Generate qualified leads efficiently',
+      'Professional product demonstrations',
+      'Seamless badge scanning and data capture',
+      'Bilingual staff available nationwide',
+      'Detailed daily reporting and analytics'
+    ],
+    caseStudy: {
+      title: 'CES 2024 Success Story',
+      description: 'Staffed 12 tech company booths at CES, generating over 4,500 qualified leads across the 4-day event.',
+      stats: { leads: '4.5K+', booths: '12', conversion: '35%' },
+      image: '/images/case-studies/gallery/microsoft/microsoft-2.jpg'
+    }
+  },
+  'product-sampling': {
+    title: 'Product Sampling Campaigns',
+    subtitle: 'Get Your Products Into Consumers\' Hands',
+    description: 'Strategic product sampling programs that drive trial, generate feedback, and convert samplers to buyers. From in-store demos to street sampling and event activations, we execute campaigns that deliver measurable results.',
+    heroImage: '/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg',
+    heroVideo: '394240533',
+    icon: Sparkles,
+    color: 'from-amber-500 to-orange-600',
+    stats: [
+      { value: '10M+', label: 'Samples Distributed' },
+      { value: '85%', label: 'Trial-to-Purchase Rate' },
+      { value: '300+', label: 'Retail Partners' },
+      { value: '1500+', label: 'Events Annually' }
+    ],
+    features: [
+      {
+        icon: Target,
+        title: 'Strategic Targeting',
+        description: 'Data-driven placement at high-traffic locations that reach your ideal customer demographics.'
+      },
+      {
+        icon: Users,
+        title: 'Trained Brand Samplers',
+        description: 'Professional staff trained on product benefits, talking points, and engagement techniques.'
+      },
+      {
+        icon: Eye,
+        title: 'Real-Time Feedback',
+        description: 'Instant consumer feedback collection and reaction tracking during sampling activations.'
+      },
+      {
+        icon: TrendingUp,
+        title: 'Conversion Analytics',
+        description: 'Track sample-to-purchase conversion with coupon redemption and sales lift data.'
+      }
+    ],
+    benefits: [
+      'Drive immediate product trial',
+      'Collect authentic consumer feedback',
+      'Support new product launches',
+      'Build retail partner relationships',
+      'Generate word-of-mouth buzz',
+      'Measure ROI with precision tracking'
+    ],
+    caseStudy: {
+      title: 'Beverage Launch Success',
+      description: 'Distributed 75,000 samples across 30 markets for a new energy drink, achieving 42% purchase conversion.',
+      stats: { samples: '75K', markets: '30', conversion: '42%' },
+      image: '/images/case-studies/gallery/waiakea/waiakea-1.jpg'
+    }
+  },
+  'mobile-tours': {
+    title: 'Mobile Marketing Tours',
+    subtitle: 'Take Your Brand On The Road',
+    description: 'Multi-market mobile tours that bring your brand directly to consumers. Custom-branded vehicles, experiential activations, and strategic routing to maximize reach and engagement across target markets.',
+    heroImage: '/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg',
+    icon: Play,
+    color: 'from-green-500 to-emerald-600',
+    stats: [
+      { value: '200+', label: 'Tours Executed' },
+      { value: '500+', label: 'Cities Visited' },
+      { value: '5M+', label: 'Consumers Reached' },
+      { value: '4.5x', label: 'Average ROI' }
+    ],
+    features: [
+      {
+        icon: MapPin,
+        title: 'Strategic Route Planning',
+        description: 'Data-driven tour routing to maximize market coverage and consumer touchpoints.'
+      },
+      {
+        icon: Sparkles,
+        title: 'Custom Vehicle Builds',
+        description: 'Branded vehicles from wrapped vans to custom experiential trailers and pop-up units.'
+      },
+      {
+        icon: Users,
+        title: 'Tour Staff Management',
+        description: 'Professional tour teams managed end-to-end including travel, lodging, and logistics.'
+      },
+      {
+        icon: Eye,
+        title: 'Integrated Activations',
+        description: 'Combine sampling, demos, social media, and lead capture at each tour stop.'
+      }
+    ],
+    benefits: [
+      'Reach multiple markets efficiently',
+      'Create immersive brand experiences',
+      'Generate content for social media',
+      'Build local market awareness',
+      'Flexible stop durations and activities',
+      'Comprehensive tour reporting'
+    ],
+    caseStudy: {
+      title: 'National Snack Brand Tour',
+      description: '12-week tour across 45 cities generated 2.5M impressions and 50,000+ product samples distributed.',
+      stats: { weeks: '12', cities: '45', impressions: '2.5M' },
+      image: '/images/case-studies/gallery/netflix/netflix-1.jpg'
+    }
+  },
+  'pop-up-activations': {
+    title: 'Pop-Up Activations',
+    subtitle: 'Memorable Brand Experiences',
+    description: 'Create buzz with immersive pop-up experiences that captivate audiences and drive engagement. From retail pop-ups to experiential installations, we design and execute activations that leave lasting impressions.',
+    heroImage: '/images/case-studies/gallery/ted/ted-1.jpg',
+    icon: Lightbulb,
+    color: 'from-purple-500 to-pink-600',
+    stats: [
+      { value: '300+', label: 'Pop-Ups Executed' },
+      { value: '92%', label: 'Brand Recall Rate' },
+      { value: '2M+', label: 'Social Impressions' },
+      { value: '5x', label: 'Engagement Rate' }
+    ],
+    features: [
+      {
+        icon: Lightbulb,
+        title: 'Creative Concept Design',
+        description: 'Innovative pop-up concepts that align with your brand story and campaign objectives.'
+      },
+      {
+        icon: Building2,
+        title: 'End-to-End Production',
+        description: 'Full production from concept development to build-out, staffing, and breakdown.'
+      },
+      {
+        icon: Eye,
+        title: 'Social-First Design',
+        description: 'Instagram-worthy moments and shareable experiences that amplify reach organically.'
+      },
+      {
+        icon: Calendar,
+        title: 'Flexible Formats',
+        description: 'From single-day activations to multi-week installations at retail or event spaces.'
+      }
+    ],
+    benefits: [
+      'Create viral brand moments',
+      'Generate earned media coverage',
+      'Drive foot traffic and sales',
+      'Collect first-party customer data',
+      'Test new products or concepts',
+      'Build brand affinity through experience'
+    ],
+    caseStudy: {
+      title: 'Beauty Brand Pop-Up Shop',
+      description: '2-week pop-up in NYC generated 15,000 visitors, 3M social impressions, and $200K in direct sales.',
+      stats: { visitors: '15K', impressions: '3M', sales: '$200K' },
+      image: '/images/case-studies/gallery/clarins/clarins-1.jpg'
+    }
+  },
+  'festival-staffing': {
+    title: 'Festival Staffing Services',
+    subtitle: 'Expert Staff for Festival Activations',
+    description: 'Specialized staffing for music festivals, food festivals, cultural events, and outdoor activations. Our experienced festival teams thrive in high-energy environments and know how to engage festival-goers authentically.',
+    heroImage: '/images/heroes/la-kings-street-teams.jpeg',
+    icon: Heart,
+    color: 'from-rose-500 to-red-600',
+    stats: [
+      { value: '150+', label: 'Festivals Staffed' },
+      { value: '50+', label: 'Festival Partners' },
+      { value: '10K+', label: 'Staff Deployed' },
+      { value: '99%', label: 'On-Time Rate' }
+    ],
+    features: [
+      {
+        icon: Users,
+        title: 'Festival-Experienced Staff',
+        description: 'Teams who understand festival culture and know how to connect with diverse audiences.'
+      },
+      {
+        icon: Zap,
+        title: 'High-Energy Engagement',
+        description: 'Staff who thrive in fast-paced, outdoor environments and maintain energy all day.'
+      },
+      {
+        icon: Award,
+        title: 'Multi-Day Reliability',
+        description: 'Consistent staffing across 3-5 day festivals with backup teams ready if needed.'
+      },
+      {
+        icon: Target,
+        title: 'Activation Specialists',
+        description: 'Trained in sampling, games, photo ops, and interactive experiences for festival settings.'
+      }
+    ],
+    benefits: [
+      'Connect with engaged audiences',
+      'Create memorable brand moments',
+      'Drive social media content',
+      'Sample products at scale',
+      'Build brand affinity with key demos',
+      'Capture leads and consumer data'
+    ],
+    caseStudy: {
+      title: 'Coachella Activation',
+      description: 'Staffed a major beverage brand activation at Coachella, sampling 50,000+ products and generating viral social content.',
+      stats: { samples: '50K+', staff: '25', social: '1M+' },
+      image: '/images/heroes/la-kings-street-teams.jpeg'
+    }
   }
 };
 
@@ -445,6 +696,36 @@ export default function ServicePage({ params }: ServicePageProps) {
       { question: "What products can you sample?", answer: "We handle food, beverage, beauty, health, and consumer product sampling. We manage all required permits, health certifications, and compliance requirements for your product category." },
       { question: "How do you track product sampling results?", answer: "Our platform tracks samples distributed, consumer demographics, feedback, coupon redemptions, and geographic data. You receive real-time dashboards and comprehensive post-campaign reports." },
       { question: "How do I get a quote for a sampling campaign?", answer: "Contact us with your product details, target locations, and campaign timeline. We'll provide a customized proposal with detailed scope and deliverables." }
+    ],
+    'trade-show-staffing': [
+      { question: "What types of trade show staff do you provide?", answer: "We provide booth staff, product demonstrators, lead capture specialists, hospitality hosts, registration staff, and management personnel. All staff receive comprehensive training on your brand and products before the event." },
+      { question: "How far in advance should I book trade show staffing?", answer: "We recommend booking 3-4 weeks in advance for optimal staff selection. For major shows like CES, NAB, or SXSW, we suggest 6-8 weeks to secure top talent. We can accommodate rush requests when needed." },
+      { question: "What's included in your trade show staffing rates?", answer: "Rates include staff recruitment, background checks, brand training, travel coordination (if applicable), management oversight, and detailed post-show reporting. Uniforms, meals, and travel expenses are quoted separately based on event requirements." },
+      { question: "Do you staff shows outside the US?", answer: "Yes, we have experience staffing international trade shows in Canada, Mexico, and Europe. We partner with local agencies while maintaining our quality standards and providing consistent management oversight." }
+    ],
+    'product-sampling': [
+      { question: "What types of sampling programs do you execute?", answer: "We execute in-store demos, street sampling, event sampling, venue partnerships, gym/fitness sampling, office sampling, and targeted distribution campaigns. Each program is customized to reach your ideal consumers effectively." },
+      { question: "How do you ensure product safety and compliance?", answer: "We handle all required permits, food handler certifications, insurance, and health department approvals. Our teams are trained in proper product handling, storage, and sampling protocols for your specific product category." },
+      { question: "What reporting do I receive from sampling campaigns?", answer: "You receive real-time dashboards showing samples distributed, geographic coverage, consumer demographics, feedback scores, and photos. Post-campaign reports include conversion data, ROI analysis, and strategic recommendations." },
+      { question: "What's the minimum order for a sampling campaign?", answer: "We can execute targeted local campaigns with as few as 1,000 samples, though most clients see optimal ROI with programs of 10,000+ samples across multiple markets. Contact us for a customized proposal." }
+    ],
+    'mobile-tours': [
+      { question: "What types of vehicles do you use for mobile tours?", answer: "We work with wrapped sprinter vans, custom trailers, food trucks, glass box trucks, experiential rigs, and specialty vehicles. We can also build custom units designed specifically for your activation concept." },
+      { question: "How many markets can we cover in a tour?", answer: "A typical 8-12 week tour covers 30-50 markets. We optimize routing for efficiency while maximizing time at high-value locations. Tours can range from regional (10-15 markets) to national (75+ markets) based on your goals." },
+      { question: "What's included in mobile tour management?", answer: "Full service includes route planning, permitting, vehicle logistics, staff recruitment and management, lodging and travel, experiential design, activation execution, daily reporting, and comprehensive post-tour analysis." },
+      { question: "How do you select tour stop locations?", answer: "We analyze market prioritization, consumer demographics, retailer locations, event calendars, and permitting requirements. Each stop is strategically selected to maximize reach and align with campaign objectives." }
+    ],
+    'pop-up-activations': [
+      { question: "What types of pop-up activations do you create?", answer: "We design and execute retail pop-ups, experiential installations, product launch events, sampling stations, interactive brand experiences, photo activations, and immersive environments. Each is custom-designed for your brand and objectives." },
+      { question: "How long does it take to plan a pop-up?", answer: "Simple pop-ups can be executed in 4-6 weeks. Complex experiential installations typically require 8-12 weeks for design, fabrication, and logistics. We've executed rush projects in as little as 2 weeks when needed." },
+      { question: "What's the cost range for pop-up activations?", answer: "Pop-ups range from $15,000 for simple single-day activations to $250,000+ for elaborate multi-week experiential installations. Most clients invest $30,000-$75,000 for high-impact, multi-day pop-ups with custom builds." },
+      { question: "Where can you execute pop-up activations?", answer: "We activate in shopping centers, retail locations, event spaces, outdoor venues, festivals, conventions, corporate campuses, and high-traffic urban locations nationwide. We handle all venue negotiations and permitting." }
+    ],
+    'festival-staffing': [
+      { question: "What festivals do you have experience staffing?", answer: "We've staffed activations at Coachella, Lollapalooza, SXSW, Bonnaroo, Outside Lands, Electric Daisy Carnival, Essence Festival, and hundreds of regional music, food, and cultural festivals across the country." },
+      { question: "How do you prepare staff for festival environments?", answer: "Festival staff receive specialized training on working outdoors, managing high-volume engagement, festival culture and etiquette, crowd management, and maintaining energy through long shifts. We also cover heat safety and hydration protocols." },
+      { question: "What's included in festival staffing packages?", answer: "Packages include staff recruitment, festival-specific training, credential management, on-site management, backup staffing, daily reporting, and post-event analysis. We coordinate with festival organizers on all credential and access requirements." },
+      { question: "Can you handle last-minute festival staffing needs?", answer: "Yes, we maintain a network of experienced festival staff who can be deployed on short notice. For major festivals, we recommend booking 4-6 weeks out, but we've successfully staffed activations with as little as 1 week notice." }
     ]
   };
 

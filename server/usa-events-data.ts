@@ -275,7 +275,7 @@ export const usaEvents: USAEvent[] = [
   // CES
   {
     id: "ces-2026",
-    slug: "ces-2026-las-vegas",
+    slug: "ces-2026",
     name: "CES 2026",
     category: "conference",
     subcategory: "Technology",
@@ -306,7 +306,7 @@ export const usaEvents: USAEvent[] = [
   // SXSW
   {
     id: "sxsw-2026",
-    slug: "sxsw-2026-austin",
+    slug: "sxsw-2026",
     name: "SXSW 2026",
     category: "festival",
     subcategory: "Music & Tech",
@@ -337,7 +337,7 @@ export const usaEvents: USAEvent[] = [
   // Coachella
   {
     id: "coachella-2026",
-    slug: "coachella-2026-indio",
+    slug: "coachella-2026",
     name: "Coachella Valley Music and Arts Festival",
     category: "festival",
     subcategory: "Music",
@@ -461,7 +461,7 @@ export const usaEvents: USAEvent[] = [
   // Comic-Con San Diego
   {
     id: "sdcc-2026",
-    slug: "san-diego-comic-con-2026",
+    slug: "comic-con-2026",
     name: "San Diego Comic-Con International",
     category: "convention",
     subcategory: "Entertainment",
