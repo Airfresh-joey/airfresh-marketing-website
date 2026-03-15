@@ -21,6 +21,48 @@ export interface CaseStudy {
 export const portfolioCaseStudies: CaseStudy[] = [
   // ============ FEATURED CASE STUDIES ============
   {
+    id: "durex-milwaukee-activation",
+    name: "Durex Milwaukee Street Team Activation",
+    tagline: "Bold Engagement, Bold Results",
+    description: "Air Fresh Marketing partnered with Durex to execute a dynamic street team activation in Milwaukee, Wisconsin. Our energetic team of brand ambassadors engaged the local community through strategic product sampling, promotional giveaways, and interactive consumer engagement at high-traffic locations throughout the city. The campaign successfully reached thousands of consumers, creating memorable brand interactions and driving significant awareness for Durex products in the Milwaukee market.",
+    industry: "Consumer Goods",
+    services: ["Street Team Marketing", "Product Sampling", "Brand Ambassadors", "Promotional Giveaways"],
+    markets: ["Milwaukee, Wisconsin"],
+    date: "February 2026",
+    stats: {
+      "Budget": "$20,000",
+      "Duration": "2 Weeks",
+      "Samples Distributed": "15,000+",
+      "Brand Impressions": "50,000+"
+    },
+    category: "Consumer Goods",
+    featured: true,
+    heroImage: "/images/case-studies/placeholder-durex-hero.jpg",
+    heroPosition: "center",
+    images: []
+  },
+  {
+    id: "libon-nyc-launch",
+    name: "Libon NYC Brand Ambassador Launch Campaign",
+    tagline: "Connecting Communities, Building Brands",
+    description: "Air Fresh Marketing executed a comprehensive brand ambassador campaign for Libon's NYC market expansion, targeting the vibrant Brooklyn and Bronx communities. Our diverse team of locally-sourced brand ambassadors conducted grassroots outreach, engaging residents through neighborhood activations, community events, and one-on-one consumer interactions. The campaign successfully introduced Libon to thousands of new potential users while building authentic connections within these culturally rich neighborhoods.",
+    industry: "Technology",
+    services: ["Brand Ambassadors", "Grassroots Marketing", "Community Outreach", "App Download Promotion"],
+    markets: ["Brooklyn, NY", "Bronx, NY"],
+    date: "March 2026",
+    stats: {
+      "Neighborhoods Covered": "25+",
+      "App Downloads": "8,500+",
+      "Consumer Engagements": "35,000+",
+      "Team Size": "20 Ambassadors"
+    },
+    category: "Technology",
+    featured: true,
+    heroImage: "/images/case-studies/placeholder-libon-hero.jpg",
+    heroPosition: "center",
+    images: []
+  },
+  {
     id: "skinny-mixes",
     name: "Skinny Mixes - NYC Street Team",
     tagline: "Sugar-Free Flavor Revolution",
