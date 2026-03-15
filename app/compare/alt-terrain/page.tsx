@@ -1,0 +1,326 @@
+import { Metadata } from 'next';
+import Link from 'next/link';
+import { Button } from '@/components/ui/button';
+import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Mountain, Building } from 'lucide-react';
+
+export const metadata: Metadata = {
+  title: 'Air Fresh Marketing vs Alt Terrain - Experiential Agency Comparison',
+  description: 'Compare Air Fresh Marketing vs Alt Terrain: More cities, faster deployment, flexible pricing. See why growing brands choose Air Fresh Marketing.',
+  keywords: 'Air Fresh Marketing vs Alt Terrain, experiential marketing comparison, brand activation agency, Alt Terrain alternative',
+  openGraph: {
+    title: 'Air Fresh Marketing vs Alt Terrain - Which Agency Fits Your Needs?',
+    description: 'Compare services, coverage, and value. Find your ideal experiential marketing partner.',
+    url: 'https://airfreshmarketing.com/compare/alt-terrain',
+  },
+  alternates: {
+    canonical: 'https://airfreshmarketing.com/compare/alt-terrain',
+  },
+};
+
+const comparison = [
+  { feature: 'Geographic Focus', afm: 'All 50 states', competitor: 'NYC & Northeast focus', winner: 'afm' },
+  { feature: 'Years in Business', afm: '15+ years', competitor: '20+ years', winner: 'competitor' },
+  { feature: 'Wild Posting/Wheat Paste', afm: 'Available nationwide', competitor: 'Specialty (NYC)', winner: 'tie' },
+  { feature: 'Street Teams', afm: 'All major markets', competitor: 'Select markets', winner: 'afm' },
+  { feature: 'Campaign Minimums', afm: 'Flexible for all budgets', competitor: 'Higher minimums', winner: 'afm' },
+  { feature: 'Rapid Deployment', afm: '24-48 hours possible', competitor: 'Standard lead times', winner: 'afm' },
+  { feature: 'Event Staffing', afm: 'Full service', competitor: 'Limited', winner: 'afm' },
+  { feature: 'Brand Ambassadors', afm: '10,000+ network', competitor: 'Smaller network', winner: 'afm' },
+  { feature: 'Product Sampling', afm: 'Full service', competitor: 'Available', winner: 'tie' },
+  { feature: 'Real-time Reporting', afm: 'Included', competitor: 'Available', winner: 'tie' },
+];
+
+const afmAdvantages = [
+  {
+    icon: MapPin,
+    title: 'True Nationwide Coverage',
+    description: 'While Alt Terrain focuses on NYC and the Northeast, we execute campaigns in all 50 states with local expertise in every market.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Budget-Flexible Programs',
+    description: 'No massive minimums. We work with emerging brands and Fortune 500s alike, scaling programs to fit your budget.',
+  },
+  {
+    icon: Zap,
+    title: 'Rapid Market Activation',
+    description: 'Need to launch in multiple cities fast? Our network enables 24-48 hour deployment when timing is critical.',
+  },
+  {
+    icon: Users,
+    title: 'Full-Service Event Staffing',
+    description: 'Beyond street marketing, we provide complete event staffing, trade show teams, and brand ambassador programs.',
+  },
+];
+
+const marketsCovered = [
+  'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
+  'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'Austin',
+  'Denver', 'Miami', 'Atlanta', 'Boston', 'Seattle',
+  'San Francisco', 'Portland', 'Nashville', 'Las Vegas', 'And 200+ more',
+];
+
+const servicesOffered = [
+  { name: 'Street Teams', afm: true, alt: true },
+  { name: 'Wild Posting', afm: true, alt: true },
+  { name: 'Brand Ambassadors', afm: true, alt: false },
+  { name: 'Event Staffing', afm: true, alt: false },
+  { name: 'Product Sampling', afm: true, alt: true },
+  { name: 'Trade Show Staff', afm: true, alt: false },
+  { name: 'Guerrilla Marketing', afm: true, alt: true },
+  { name: 'Promotional Models', afm: true, alt: false },
+];
+
+export default function CompareAltTerrain() {
+  return (
+    <main className="min-h-screen bg-white">
+      {/* Hero */}
+      <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B]">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute -top-40 right-0 w-[600px] h-[600px] rounded-full bg-[#F7931E]/10 blur-3xl" />
+          <div className="absolute top-20 -left-40 w-[400px] h-[400px] rounded-full bg-white/5 blur-3xl" />
+        </div>
+
+        <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
+            <Mountain className="w-4 h-4" />
+            Agency Comparison
+          </div>
+          <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
+            Air Fresh Marketing vs{' '}
+            <span className="text-[#F7931E]">
+              Alt Terrain
+            </span>
+          </h1>
+          <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
+            Alt Terrain excels in NYC street marketing. Air Fresh Marketing brings that same energy nationwide—plus full-service event staffing capabilities.
+          </p>
+        </div>
+      </section>
+
+      {/* Key Difference */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
+                  <MapPin className="w-6 h-6 text-white" />
+                </div>
+                <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
+              </div>
+              <p className="text-gray-700 font-medium mb-4">Nationwide experiential marketing</p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> All 50 states covered
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Full event staffing services
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Flexible budget minimums
+                </li>
+              </ul>
+            </div>
+            <div className="p-8 bg-gray-100 rounded-2xl border border-gray-200">
+              <div className="flex items-center gap-3 mb-4">
+                <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
+                  <Mountain className="w-6 h-6 text-gray-600" />
+                </div>
+                <h3 className="text-xl font-bold text-gray-800">Alt Terrain</h3>
+              </div>
+              <p className="text-gray-600 font-medium mb-4">NYC-focused street marketing</p>
+              <ul className="space-y-2">
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Strong NYC presence
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Wild posting expertise
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Northeast focus
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Comparison Table */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              Head-to-Head Comparison
+            </h2>
+            <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
+              Compare capabilities across key areas
+            </p>
+          </div>
+
+          <div className="overflow-x-auto">
+            <table className="w-full min-w-[600px]">
+              <thead>
+                <tr className="border-b-2 border-gray-200">
+                  <th className="text-left py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
+                    Capability
+                  </th>
+                  <th className="text-center py-4 px-6 w-1/3">
+                    <div className="inline-flex items-center gap-2 bg-[#002B5B] text-white text-sm font-bold px-4 py-2 rounded-full">
+                      <Star className="w-4 h-4 fill-[#F7931E] text-[#F7931E]" />
+                      Air Fresh Marketing
+                    </div>
+                  </th>
+                  <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
+                    Alt Terrain
+                  </th>
+                </tr>
+              </thead>
+              <tbody>
+                {comparison.map((row, i) => (
+                  <tr
+                    key={row.feature}
+                    className={i % 2 === 0 ? 'bg-white' : 'bg-gray-50'}
+                  >
+                    <td className="py-4 px-6 text-sm font-medium text-gray-900">
+                      {row.feature}
+                    </td>
+                    <td className="py-4 px-6 text-center">
+                      <span className={`inline-flex items-center gap-1.5 text-sm font-semibold px-3 py-1 rounded-full ${
+                        row.winner === 'afm' ? 'text-[#002B5B] bg-[#002B5B]/10' : 'text-gray-700 bg-gray-100'
+                      }`}>
+                        {row.winner === 'afm' && <CheckCircle2 className="w-4 h-4 text-green-500" />}
+                        {row.afm}
+                      </span>
+                    </td>
+                    <td className="py-4 px-6 text-center">
+                      <span className={`text-sm ${row.winner === 'competitor' ? 'text-green-600 font-semibold' : 'text-gray-500'}`}>
+                        {row.competitor}
+                      </span>
+                    </td>
+                  </tr>
+                ))}
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Comparison */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              Service Capabilities
+            </h2>
+            <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
+              We offer more services in more markets
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-3xl mx-auto">
+            {servicesOffered.map((service) => (
+              <div key={service.name} className="flex items-center justify-between p-4 bg-white rounded-xl border border-gray-200">
+                <span className="font-medium text-gray-900">{service.name}</span>
+                <div className="flex gap-6">
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-gray-500">AFM</span>
+                    {service.afm ? (
+                      <CheckCircle2 className="w-5 h-5 text-green-500" />
+                    ) : (
+                      <span className="w-5 h-5 rounded-full bg-gray-200" />
+                    )}
+                  </div>
+                  <div className="flex items-center gap-2">
+                    <span className="text-xs text-gray-500">AT</span>
+                    {service.alt ? (
+                      <CheckCircle2 className="w-5 h-5 text-gray-400" />
+                    ) : (
+                      <span className="w-5 h-5 rounded-full bg-gray-200" />
+                    )}
+                  </div>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Why Choose AFM */}
+      <section className="py-20 sm:py-28">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              The Air Fresh Advantage
+            </h2>
+          </div>
+
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            {afmAdvantages.map((item) => (
+              <div key={item.title} className="flex gap-4 p-6 bg-white rounded-2xl border border-gray-200 shadow-sm">
+                <div className="flex-shrink-0 w-12 h-12 bg-[#002B5B]/10 rounded-xl flex items-center justify-center">
+                  <item.icon className="w-6 h-6 text-[#002B5B]" />
+                </div>
+                <div>
+                  <h3 className="font-bold text-gray-900 mb-2">{item.title}</h3>
+                  <p className="text-gray-600 text-sm">{item.description}</p>
+                </div>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Markets */}
+      <section className="py-20 sm:py-28 bg-[#002B5B]/5">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="text-center mb-14">
+            <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900">
+              We&apos;re Where You Need Us
+            </h2>
+            <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
+              Local expertise in 200+ markets nationwide
+            </p>
+          </div>
+
+          <div className="flex flex-wrap justify-center gap-3">
+            {marketsCovered.map((market) => (
+              <span key={market} className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">
+                {market}
+              </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="relative py-20 sm:py-28 bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B] overflow-hidden">
+        <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
+          <div className="absolute top-0 left-1/4 w-[500px] h-[500px] rounded-full bg-white/5 blur-3xl" />
+          <div className="absolute bottom-0 right-1/4 w-[400px] h-[400px] rounded-full bg-[#F7931E]/10 blur-3xl" />
+        </div>
+        <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
+            Go beyond NYC
+          </h2>
+          <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
+            Launch your experiential campaign in any market—or all of them. Get started with a free consultation.
+          </p>
+          <div className="flex flex-col sm:flex-row gap-4 justify-center">
+            <Link href="/contact">
+              <Button size="lg" className="w-full sm:w-auto bg-[#F7931E] hover:bg-[#e8850f] text-white font-bold px-8 py-6 rounded-full text-base flex items-center justify-center gap-2">
+                Get a Free Quote
+                <ArrowRight className="w-5 h-5" />
+              </Button>
+            </Link>
+            <Link href="/locations">
+              <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white/30 text-white hover:bg-white/10 font-bold px-8 py-6 rounded-full text-base">
+                See Our Markets
+              </Button>
+            </Link>
+          </div>
+        </div>
+      </section>
+    </main>
+  );
+}

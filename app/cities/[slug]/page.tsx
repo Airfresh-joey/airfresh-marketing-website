@@ -576,6 +576,54 @@ const richCities = [
     },
     testimonial: 'Professional execution navigating DC\'s unique security and permit requirements.',
     clients: ['Politico', 'Marriott', 'Lockheed Martin']
+  },
+  {
+    slug: 'cleveland',
+    name: 'Cleveland',
+    state: 'OH',
+    image: '/images/case-studies/gallery/microsoft/microsoft-3.jpg',
+    alt: 'Cleveland downtown and sports venue experiential marketing',
+    problems: [
+      'Midwest market overlooked by national brands',
+      'Seasonal weather challenges',
+      'Competing for attention with larger markets'
+    ],
+    solutions: [
+      'Public Square and downtown activations',
+      'Guardians and Cavaliers game day campaigns',
+      'Rock & Roll Hall of Fame experiences'
+    ],
+    stats: {
+      events: '85+',
+      ambassadors: '38+',
+      samples: '180K+'
+    },
+    testimonial: 'AirFresh Marketing connected with Cleveland\'s passionate fanbase and delivered authentic engagement.',
+    clients: ['Progressive', 'Cleveland Clinic', 'Sherwin-Williams']
+  },
+  {
+    slug: 'pittsburgh',
+    name: 'Pittsburgh',
+    state: 'PA',
+    image: '/images/case-studies/gallery/microsoft/microsoft-3.jpg',
+    alt: 'Pittsburgh downtown and university district experiential marketing',
+    problems: [
+      'Bridge city geography creates logistics challenges',
+      'Tech renaissance competing with traditional industries',
+      'Strong local loyalty requiring authentic approach'
+    ],
+    solutions: [
+      'Strip District market activations',
+      'Steelers and Penguins game day experiences',
+      'Oakland university district campaigns'
+    ],
+    stats: {
+      events: '90+',
+      ambassadors: '40+',
+      samples: '190K+'
+    },
+    testimonial: 'Perfect understanding of Pittsburgh\'s neighborhoods and authentic Steel City execution.',
+    clients: ['PNC', 'UPMC', 'Heinz']
   }
 ];
 

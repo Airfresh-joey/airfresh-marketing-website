@@ -186,6 +186,133 @@ export const industries: Industry[] = [
       { label: "Fintech Activations", value: "75+" }
     ],
     heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "motorsport-racing",
+    slug: "motorsport-racing",
+    name: "Motorsport & Racing",
+    title: "Motorsport Event Staffing | F1, NASCAR, IndyCar & Racing Events",
+    metaDescription: "Professional event staffing for motorsport events. Brand ambassadors, VIP hospitality, and experiential marketing teams for F1, NASCAR, IndyCar, and racing activations.",
+    keywords: ["motorsport event staffing", "f1 brand ambassadors", "nascar event staff", "indycar staffing", "racing event marketing", "formula 1 hospitality staff", "motorsport activation"],
+    heroTitle: "Motorsport & Racing Event Staffing",
+    heroSubtitle: "Premium Staff for High-Speed Brand Experiences",
+    description: "AirFresh provides premium staffing for motorsport events across F1, NASCAR, IndyCar, IMSA, and MotoGP. From the glamour of the F1 Miami Grand Prix to the tradition of the Daytona 500, our staff delivers the sophistication and energy these high-profile events demand. We understand the unique requirements of motorsport activations—from paddock hospitality to fan zone engagement.",
+    challenges: ["Luxury brand standards for F1 events", "High-energy fan engagement for NASCAR", "Multi-day race weekend scheduling", "VIP hospitality expertise", "Technical product knowledge for sponsors"],
+    solutions: ["Motorsport-experienced talent roster", "Luxury hospitality training", "Flexible multi-day scheduling", "Premium appearance standards", "Sponsor-specific product education"],
+    services: ["F1 Paddock Club Hospitality", "NASCAR Fan Zone Activations", "IndyCar Brand Ambassadors", "Race Weekend VIP Hosting", "Pit Lane Experiences", "Driver Meet & Greets", "Sponsor Sampling Programs", "Hospitality Suite Staff"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Race Events Staffed", value: "150+" },
+      { label: "Motorsport Sponsors Served", value: "45+" },
+      { label: "Fans Engaged", value: "5M+" },
+      { label: "F1 Grand Prix Events", value: "12+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-1.jpg"
+  },
+  {
+    id: "gaming-esports",
+    slug: "gaming-esports",
+    name: "Gaming & Esports",
+    title: "Gaming & Esports Event Staffing | Tournaments & Game Launches",
+    metaDescription: "Professional event staffing for gaming tournaments, esports events, and video game launches. Demo specialists, cosplay staff, and brand ambassadors for gaming activations.",
+    keywords: ["gaming event staffing", "esports event staff", "game launch staff", "gaming brand ambassadors", "tournament staffing", "cosplay event staff"],
+    heroTitle: "Gaming & Esports Event Staffing",
+    heroSubtitle: "Level Up Your Gaming Events with Expert Staff",
+    description: "AirFresh provides gaming-native staff for esports tournaments, game launches, conventions, and experiential activations. Our talent understands gaming culture and connects authentically with this passionate audience.",
+    challenges: ["Gaming culture authenticity", "Technical demo proficiency", "Long tournament hours", "Cosplay coordination", "Streaming-friendly presentation"],
+    solutions: ["Gaming-enthusiast talent pool", "Game-specific training", "Extended shift experience", "Professional cosplay coordination", "Camera-ready presentation"],
+    services: ["Tournament Staff", "Game Demo Specialists", "Cosplay Performers", "Brand Ambassadors", "VIP Gaming Lounges", "Launch Event Staff", "Convention Booth Teams"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Gaming Events", value: "200+" },
+      { label: "Game Launches", value: "75+" },
+      { label: "Esports Tournaments", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "cannabis-cbd",
+    slug: "cannabis-cbd",
+    name: "Cannabis & CBD",
+    title: "Cannabis Event Staffing | Dispensary Events & CBD Brand Activations",
+    metaDescription: "Professional event staffing for cannabis events, dispensary activations, and CBD brand experiences. Compliance-trained staff for the regulated cannabis industry.",
+    keywords: ["cannabis event staffing", "dispensary event staff", "cbd brand ambassadors", "cannabis trade show staff", "marijuana marketing events"],
+    heroTitle: "Cannabis & CBD Event Staffing",
+    heroSubtitle: "Compliant, Professional Staff for the Cannabis Industry",
+    description: "AirFresh provides compliance-trained staff for cannabis industry events, dispensary activations, and CBD brand experiences. Our staff understands the unique regulatory requirements and consumer education needs of this growing industry.",
+    challenges: ["State-by-state compliance requirements", "Consumer education needs", "Industry stigma navigation", "Age verification protocols", "Product knowledge complexity"],
+    solutions: ["Compliance-first training", "Educational messaging expertise", "Professional presentation", "Age verification protocols", "Strain and product education"],
+    services: ["Dispensary Grand Openings", "Trade Show Booth Staff", "Brand Ambassadors", "Product Educators", "Sampling Events (where legal)", "Industry Conference Staff"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Cannabis Events", value: "100+" },
+      { label: "Dispensary Openings", value: "50+" },
+      { label: "States Covered", value: "20+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "real-estate-property",
+    slug: "real-estate-property",
+    name: "Real Estate & Property",
+    title: "Real Estate Event Staffing | Open Houses & Property Launch Events",
+    metaDescription: "Professional event staffing for real estate launches, open houses, and property marketing events. Brand ambassadors and hospitality staff for luxury property experiences.",
+    keywords: ["real estate event staffing", "property launch staff", "open house staff", "luxury real estate events", "property marketing staff"],
+    heroTitle: "Real Estate & Property Event Staffing",
+    heroSubtitle: "Elevate Your Property Marketing with Professional Staff",
+    description: "AirFresh provides polished, professional staff for real estate launches, model home experiences, and property marketing events. Our staff creates welcoming, informative experiences that help convert prospects to buyers.",
+    challenges: ["Luxury presentation standards", "Local market knowledge", "Extended open house hours", "Lead capture coordination", "Multi-property scheduling"],
+    solutions: ["Real estate-experienced talent", "Local market orientation", "Flexible scheduling", "CRM integration support", "Multi-site coordination"],
+    services: ["Model Home Hosts", "Open House Staff", "Property Launch Events", "VIP Broker Events", "Community Grand Openings", "Sales Center Staff"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Property Events", value: "300+" },
+      { label: "Developer Partners", value: "40+" },
+      { label: "Leads Generated", value: "50K+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "non-profit-cause",
+    slug: "non-profit-cause",
+    name: "Non-Profit & Cause Marketing",
+    title: "Non-Profit Event Staffing | Charity Events & Cause Marketing",
+    metaDescription: "Professional event staffing for non-profit galas, charity events, and cause marketing activations. Mission-aligned staff who represent your cause with passion.",
+    keywords: ["non-profit event staffing", "charity event staff", "cause marketing staff", "fundraising event teams", "gala event staffing"],
+    heroTitle: "Non-Profit & Cause Marketing Staffing",
+    heroSubtitle: "Passionate Staff for Mission-Driven Events",
+    description: "AirFresh provides mission-aligned staff for non-profit galas, charity events, and cause marketing activations. Our staff brings genuine passion to cause-based events while maintaining professional event execution.",
+    challenges: ["Mission alignment and authenticity", "Budget-conscious operations", "Volunteer coordination", "Donor engagement protocols", "Emotional sensitivity"],
+    solutions: ["Values-matched staffing", "Non-profit pricing programs", "Volunteer integration", "Donor relations training", "Compassionate communication"],
+    services: ["Gala Event Staff", "Charity Walk/Run Teams", "Fundraising Events", "Awareness Campaigns", "Donor Appreciation Events", "Volunteer Management Support"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Charity Events", value: "250+" },
+      { label: "Non-Profits Served", value: "100+" },
+      { label: "Funds Raised Support", value: "$50M+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "hospitality-tourism",
+    slug: "hospitality-tourism",
+    name: "Hospitality & Tourism",
+    title: "Hospitality Event Staffing | Hotels, Resorts & Tourism Marketing",
+    metaDescription: "Professional event staffing for hospitality brands, hotels, resorts, and tourism marketing. White-glove service staff for guest experiences and destination marketing.",
+    keywords: ["hospitality event staffing", "hotel event staff", "resort marketing staff", "tourism brand ambassadors", "destination marketing staff"],
+    heroTitle: "Hospitality & Tourism Event Staffing",
+    heroSubtitle: "White-Glove Service for Hospitality Brand Experiences",
+    description: "AirFresh provides hospitality-trained staff for hotels, resorts, and tourism marketing activations. Our staff delivers the warm, professional service that hospitality brands demand for guest experiences and destination marketing.",
+    challenges: ["Service excellence standards", "Multilingual requirements", "24/7 hospitality needs", "Luxury brand alignment", "Cultural sensitivity"],
+    solutions: ["Hospitality industry veterans", "Multilingual talent pool", "Flexible shift coverage", "Luxury service training", "Cultural competency training"],
+    services: ["Hotel Opening Events", "Resort Activations", "Tourism Trade Shows", "Destination Marketing", "Guest Experience Programs", "Concierge Services"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Hospitality Events", value: "400+" },
+      { label: "Hotels & Resorts Served", value: "150+" },
+      { label: "Languages Available", value: "25+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
   }
 ];
 
