@@ -8,7 +8,7 @@ import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, L
 import SEO from "@/components/SEO";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 
-// Helper to convert date strings to ISO 8601 format
+// Helper to convert date strings to ISO 8601 format (with time component for Google compliance)
 function toISO8601(dateStr: string | undefined, year?: number): string {
   if (!dateStr) return new Date().toISOString();
   
@@ -30,14 +30,15 @@ function toISO8601(dateStr: string | undefined, year?: number): string {
     const month = months[match[1].toLowerCase()];
     const day = match[2].padStart(2, '0');
     const yr = match[3] || year || new Date().getFullYear();
-    return `${yr}-${month}-${day}`;
+    // Return full ISO 8601 datetime format (Google requires time component)
+    return `${yr}-${month}-${day}T00:00:00`;
   }
   
-  // Fallback - return current date
-  return new Date().toISOString().split('T')[0];
+  // Fallback - return current date in ISO format
+  return new Date().toISOString();
 }
 
-// Helper to get end date from range
+// Helper to get end date from range (returns ISO 8601 datetime)
 function getEndDate(dateStr: string | undefined, year?: number): string | null {
   if (!dateStr || !dateStr.includes('-')) return null;
   
@@ -58,7 +59,8 @@ function getEndDate(dateStr: string | undefined, year?: number): string | null {
     const month = months[match[1].toLowerCase()];
     const day = match[2].padStart(2, '0');
     const yr = match[3] || year || new Date().getFullYear();
-    return `${yr}-${month}-${day}`;
+    // Return full ISO 8601 datetime format with end of day time
+    return `${yr}-${month}-${day}T23:59:59`;
   }
   
   return null;
