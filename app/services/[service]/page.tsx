@@ -756,7 +756,8 @@ export default function ServicePage({ params }: ServicePageProps) {
           }))
         }
       },
-      {
+      // Only include FAQPage if there are actual FAQs
+      ...(faqs.length > 0 ? [{
         "@type": "FAQPage",
         "mainEntity": faqs.map(faq => ({
           "@type": "Question",
@@ -766,7 +767,7 @@ export default function ServicePage({ params }: ServicePageProps) {
             "text": faq.answer
           }
         }))
-      }
+      }] : [])
     ]
   };
 

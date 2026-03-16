@@ -681,7 +681,7 @@ function getStateAbbrev(stateName: string): string {
   return stateMap[stateName] || stateName.substring(0, 2).toUpperCase();
 }
 
-// Helper function to generate ImageObject schema
+// Helper function to generate ImageObject schema (no @context - used inside @graph)
 function generateImageSchema(imageData: {
   url: string;
   name: string;
@@ -691,7 +691,6 @@ function generateImageSchema(imageData: {
   height?: string;
 }) {
   return {
-    "@context": "https://schema.org",
     "@type": "ImageObject",
     "contentUrl": `https://airfreshmarketing.com${imageData.url}`,
     "name": imageData.name,
