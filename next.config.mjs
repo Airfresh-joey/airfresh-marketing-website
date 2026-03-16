@@ -169,7 +169,8 @@ const nextConfig = {
       // Common city slug variations
       { source: '/cities/new-york', destination: '/cities/new-york-city', permanent: true },
       { source: '/cities/new-york/:service', destination: '/city-services/new-york-city-:service', permanent: true },
-      { source: '/city-services/new-york-:service', destination: '/city-services/new-york-city-:service', permanent: true },
+      // NOTE: Removed '/city-services/new-york-:service' redirect - it was causing infinite loops
+      // because 'new-york-city-brand-ambassadors' matched as service='city-brand-ambassadors'
       // Old industry slug redirects (industry-city-data.ts was updated to match industries-data.ts)
       { source: '/industries/tech/:city', destination: '/industries/technology/:city', permanent: true },
       { source: '/industries/healthcare/:city', destination: '/industries/healthcare-pharma/:city', permanent: true },
