@@ -37,7 +37,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Consumer Goods",
     featured: true,
-    heroImage: "/images/case-studies/placeholder-durex-hero.jpg",
+    heroImage: "/images/case-studies/beer-samplings.jpg",
     heroPosition: "center",
     images: []
   },
@@ -58,7 +58,7 @@ export const portfolioCaseStudies: CaseStudy[] = [
     },
     category: "Technology",
     featured: true,
-    heroImage: "/images/case-studies/placeholder-libon-hero.jpg",
+    heroImage: "/images/case-studies/cortie-digital.jpg",
     heroPosition: "center",
     images: []
   },
