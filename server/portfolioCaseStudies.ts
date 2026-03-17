@@ -21,6 +21,36 @@ export interface CaseStudy {
 export const portfolioCaseStudies: CaseStudy[] = [
   // ============ FEATURED CASE STUDIES ============
   {
+    id: "skinny-mixes",
+    name: "Skinny Mixes - NYC Street Team",
+    tagline: "Sugar-Free Flavor Revolution",
+    description: "Air Fresh Marketing partnered with Skinny Mixes to execute a sampling activation in New York City. Our team provided effective promotional engagement through street team product distribution to enhance brand visibility and consumer interaction, ensuring a memorable experience for the audience.",
+    industry: "Food & Beverage",
+    services: ["Sampling Activation", "Street Team", "Product Distribution"],
+    markets: ["New York City"],
+    date: "March 2025",
+    googleDriveUrl: "https://drive.google.com/drive/folders/1J5BNDKfyZNo_Y0gR__AbClEJDMelKHwH?usp=sharing",
+    stats: {
+      "Location": "New York City",
+      "Type": "Street Team Product Distribution",
+      "Services": "Sampling Activation"
+    },
+    category: "Food & Beverage",
+    featured: true,
+    heroImage: "/images/case-studies/skinny-mixes-hero.jpg",
+    heroPosition: "center right",
+    images: [
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-3.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-4.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-5.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-6.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-7.jpg",
+      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-8.jpg"
+    ]
+  },
+  {
     id: "durex-milwaukee-activation",
     name: "Durex Milwaukee Street Team Activation",
     tagline: "Bold Engagement, Bold Results",
@@ -61,36 +91,6 @@ export const portfolioCaseStudies: CaseStudy[] = [
     heroImage: "/images/case-studies/cortie-digital.jpg",
     heroPosition: "center",
     images: []
-  },
-  {
-    id: "skinny-mixes",
-    name: "Skinny Mixes - NYC Street Team",
-    tagline: "Sugar-Free Flavor Revolution",
-    description: "Air Fresh Marketing partnered with Skinny Mixes to execute a sampling activation in New York City. Our team provided effective promotional engagement through street team product distribution to enhance brand visibility and consumer interaction, ensuring a memorable experience for the audience.",
-    industry: "Food & Beverage",
-    services: ["Sampling Activation", "Street Team", "Product Distribution"],
-    markets: ["New York City"],
-    date: "March 2025",
-    googleDriveUrl: "https://drive.google.com/drive/folders/1J5BNDKfyZNo_Y0gR__AbClEJDMelKHwH?usp=sharing",
-    stats: {
-      "Location": "New York City",
-      "Type": "Street Team Product Distribution",
-      "Services": "Sampling Activation"
-    },
-    category: "Food & Beverage",
-    featured: true,
-    heroImage: "/images/case-studies/skinny-mixes-hero.jpg",
-    heroPosition: "center right",
-    images: [
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-1.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-3.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-4.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-5.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-6.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-7.jpg",
-      "/images/case-studies/gallery/skinny-mixes/skinny-mixes-8.jpg"
-    ]
   },
   {
     id: "formula-1-las-vegas",
