@@ -1,13 +1,13 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { useForm } from "react-hook-form";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { Briefcase, MapPin, Clock, DollarSign, Sparkles, Code, CheckCircle2, Send } from "lucide-react";
+import { Briefcase, MapPin, Clock, DollarSign, Sparkles, Code, CheckCircle2, Send, Upload, FileText } from "lucide-react";
 
 const applicationSchema = z.object({
   fullName: z.string().min(2, "Name is required"),
@@ -20,6 +20,8 @@ const applicationSchema = z.object({
   experience: z.string().min(20, "Tell us about your experience"),
   whyInterested: z.string().min(20, "Tell us why you're interested"),
   availability: z.string().min(1, "Please specify your availability"),
+  resumeText: z.string().optional(),
+  coverLetterText: z.string().optional(),
 });
 
 type ApplicationFormData = z.infer<typeof applicationSchema>;
@@ -31,6 +33,10 @@ const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzdjwkdj";
 export default function TechnicalInternPage() {
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [submitted, setSubmitted] = useState(false);
+  const [resumeFile, setResumeFile] = useState<File | null>(null);
+  const [coverLetterFile, setCoverLetterFile] = useState<File | null>(null);
+  const resumeInputRef = useRef<HTMLInputElement>(null);
+  const coverLetterInputRef = useRef<HTMLInputElement>(null);
 
   const {
     register,
@@ -44,23 +50,47 @@ export default function TechnicalInternPage() {
   const onSubmit = async (data: ApplicationFormData) => {
     setIsSubmitting(true);
     try {
+      // Use FormData for file uploads
+      const formData = new FormData();
+      
+      // Add all text fields
+      formData.append("fullName", data.fullName);
+      formData.append("email", data.email);
+      formData.append("phone", data.phone);
+      formData.append("school", data.school || "");
+      formData.append("linkedIn", data.linkedIn || "");
+      formData.append("github", data.github || "");
+      formData.append("portfolio", data.portfolio || "");
+      formData.append("experience", data.experience);
+      formData.append("whyInterested", data.whyInterested);
+      formData.append("availability", data.availability);
+      formData.append("resumeText", data.resumeText || "");
+      formData.append("coverLetterText", data.coverLetterText || "");
+      formData.append("_subject", `Technical Intern Application: ${data.fullName}`);
+      formData.append("position", "Technical Intern");
+      formData.append("submittedAt", new Date().toISOString());
+      
+      // Add file attachments if present
+      if (resumeFile) {
+        formData.append("resume", resumeFile);
+      }
+      if (coverLetterFile) {
+        formData.append("coverLetter", coverLetterFile);
+      }
+
       const response = await fetch(FORMSPREE_ENDPOINT, {
         method: "POST",
+        body: formData,
         headers: {
-          "Content-Type": "application/json",
           Accept: "application/json",
         },
-        body: JSON.stringify({
-          ...data,
-          _subject: `Technical Intern Application: ${data.fullName}`,
-          position: "Technical Intern",
-          submittedAt: new Date().toISOString(),
-        }),
       });
 
       if (response.ok) {
         setSubmitted(true);
         reset();
+        setResumeFile(null);
+        setCoverLetterFile(null);
       } else {
         throw new Error("Failed to submit");
       }
@@ -68,6 +98,21 @@ export default function TechnicalInternPage() {
       alert("Submission failed. Please try again or email careers@airfreshmarketing.com");
     } finally {
       setIsSubmitting(false);
+    }
+  };
+
+  const handleFileChange = (
+    e: React.ChangeEvent<HTMLInputElement>,
+    setFile: (file: File | null) => void
+  ) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      // Check file size (max 10MB)
+      if (file.size > 10 * 1024 * 1024) {
+        alert("File too large. Maximum size is 10MB.");
+        return;
+      }
+      setFile(file);
     }
   };
 
@@ -327,6 +372,93 @@ export default function TechnicalInternPage() {
                     placeholder="yoursite.com"
                   />
                 </div>
+              </div>
+
+              {/* Resume Upload or Paste */}
+              <div className="space-y-4">
+                <label className="block text-sm font-medium text-gray-700">
+                  Resume
+                </label>
+                <div className="flex gap-4">
+                  <div className="flex-1">
+                    <input
+                      ref={resumeInputRef}
+                      type="file"
+                      accept=".pdf,.doc,.docx,.txt"
+                      onChange={(e) => handleFileChange(e, setResumeFile)}
+                      className="hidden"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => resumeInputRef.current?.click()}
+                      className="w-full flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-colors"
+                    >
+                      <Upload className="w-5 h-5 text-gray-500" />
+                      <span className="text-gray-600">
+                        {resumeFile ? resumeFile.name : "Upload Resume (PDF, DOC, DOCX)"}
+                      </span>
+                    </button>
+                    {resumeFile && (
+                      <button
+                        type="button"
+                        onClick={() => setResumeFile(null)}
+                        className="text-sm text-red-600 hover:text-red-800 mt-1"
+                      >
+                        Remove file
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div className="text-center text-sm text-gray-500">— or paste your resume below —</div>
+                <Textarea
+                  {...register("resumeText")}
+                  placeholder="Paste your resume text here if you don't have a file..."
+                  rows={6}
+                  className="font-mono text-sm"
+                />
+              </div>
+
+              {/* Cover Letter Upload or Paste */}
+              <div className="space-y-4">
+                <label className="block text-sm font-medium text-gray-700">
+                  Cover Letter (optional)
+                </label>
+                <div className="flex gap-4">
+                  <div className="flex-1">
+                    <input
+                      ref={coverLetterInputRef}
+                      type="file"
+                      accept=".pdf,.doc,.docx,.txt"
+                      onChange={(e) => handleFileChange(e, setCoverLetterFile)}
+                      className="hidden"
+                    />
+                    <button
+                      type="button"
+                      onClick={() => coverLetterInputRef.current?.click()}
+                      className="w-full flex items-center justify-center gap-2 px-4 py-3 border-2 border-dashed border-gray-300 rounded-lg hover:border-blue-400 hover:bg-blue-50 transition-colors"
+                    >
+                      <FileText className="w-5 h-5 text-gray-500" />
+                      <span className="text-gray-600">
+                        {coverLetterFile ? coverLetterFile.name : "Upload Cover Letter (PDF, DOC, DOCX)"}
+                      </span>
+                    </button>
+                    {coverLetterFile && (
+                      <button
+                        type="button"
+                        onClick={() => setCoverLetterFile(null)}
+                        className="text-sm text-red-600 hover:text-red-800 mt-1"
+                      >
+                        Remove file
+                      </button>
+                    )}
+                  </div>
+                </div>
+                <div className="text-center text-sm text-gray-500">— or paste your cover letter below —</div>
+                <Textarea
+                  {...register("coverLetterText")}
+                  placeholder="Paste your cover letter text here if you don't have a file..."
+                  rows={6}
+                />
               </div>
 
               <div>
