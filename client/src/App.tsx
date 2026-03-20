@@ -56,6 +56,7 @@ import TalentDashboard from "@/pages/TalentDashboard";
 import TalentCourseViewer from "@/pages/TalentCourseViewer";
 import TalentAdmin from "@/pages/TalentAdmin";
 import TrainingAdmin from "@/pages/TrainingAdmin";
+import Careers from "@/pages/Careers";
 
 // Events pages
 import EventsDirectory from "@/pages/EventsDirectory";
@@ -67,6 +68,14 @@ import Olympics2028 from "@/pages/Olympics2028";
 import VenuesDirectory from "@/pages/VenuesDirectory";
 import VenuePage from "@/pages/VenuePage";
 import VenueServicePage from "@/pages/VenueServicePage";
+
+// By My Side Senior Services Pages
+import SeniorServicesHub from "@/pages/senior-services/ServicesHub";
+import TechMonitoring from "@/pages/senior-services/TechMonitoring";
+import SafetyMobility from "@/pages/senior-services/SafetyMobility";
+import DeclutteringDownsizing from "@/pages/senior-services/DeclutteringDownsizing";
+import InHomeCare from "@/pages/senior-services/InHomeCare";
+import AssistedLivingSearch from "@/pages/senior-services/AssistedLivingSearch";
 
 function Router() {
   return (
@@ -107,12 +116,13 @@ function Router() {
           <Route path="/projects/brand-activations" component={BrandActivations} />
           <Route path="/projects/corporate-events" component={CorporateEvents} />
           <Route path="/talent" component={Recruiting} />
+          <Route path="/careers" component={Careers} />
+          <Route path="/careers/technical-intern" component={Careers} />
+          <Route path="/careers/admin" component={TalentAdmin} />
           <Route path="/training" component={TrainingPortal} />
           <Route path="/training/admin" component={TrainingAdmin} />
           <Route path="/training/dashboard/:clientSlug" component={TalentDashboard} />
           <Route path="/training/course/:courseId" component={TalentCourseViewer} />
-          <Route path="/careers" component={Recruiting} />
-          <Route path="/careers/admin" component={TalentAdmin} />
 
           {/* Events & Conferences */}
           <Route path="/events" component={EventsDirectory} />
@@ -150,7 +160,15 @@ function Router() {
           {/* Targeting Pages - Sports */}
           <Route path="/sports/:slug" component={TargetingPage} />
           <Route path="/sports/:slug/:city" component={TargetingPage} />
-          
+
+          {/* By My Side Senior Services */}
+          <Route path="/senior-services" component={SeniorServicesHub} />
+          <Route path="/senior-services/tech-monitoring" component={TechMonitoring} />
+          <Route path="/senior-services/safety-mobility" component={SafetyMobility} />
+          <Route path="/senior-services/decluttering-downsizing" component={DeclutteringDownsizing} />
+          <Route path="/senior-services/in-home-care" component={InHomeCare} />
+          <Route path="/senior-services/assisted-living-search" component={AssistedLivingSearch} />
+
           <Route component={NotFound} />
         </Switch>
       </main>
