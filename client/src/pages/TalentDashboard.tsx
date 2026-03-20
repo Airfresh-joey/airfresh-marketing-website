@@ -20,6 +20,7 @@ import {
 } from "lucide-react";
 import { useAuth } from "@/hooks/use-auth";
 import SEO from "@/components/SEO";
+// Logo is served from public folder
 const airFreshLogo = "/images/airfresh-logo.svg";
 import { motion } from "framer-motion";
 

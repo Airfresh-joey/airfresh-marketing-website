@@ -2,7 +2,8 @@ import { useState } from "react";
 import { Link, useLocation } from "wouter";
 import { Button } from "@/components/ui/button";
 import { Menu, X, ChevronDown } from "lucide-react";
-import logoUrl from "/images/airfresh-logo.svg";
+// Logo is served from public folder
+const logoUrl = "/images/airfresh-logo.svg";
 import {
   DropdownMenu,
   DropdownMenuContent,

@@ -98,9 +98,18 @@ import {
 import fs from "fs";
 
 export async function registerRoutes(app: Express): Promise<Server> {
-  // Set up Replit Auth (must be before other routes)
-  await setupAuth(app);
-  registerAuthRoutes(app);
+  // Set up Replit Auth only if environment variables are configured
+  // This allows the app to run locally without Replit authentication
+  if (process.env.REPL_ID) {
+    try {
+      await setupAuth(app);
+      registerAuthRoutes(app);
+    } catch (error) {
+      console.warn('Replit Auth not configured, skipping authentication setup');
+    }
+  } else {
+    console.log('Running without Replit Auth (local development mode)');
+  }
   
   // Register training portal routes
   registerTrainingRoutes(app);

@@ -420,7 +420,4 @@ export const portfolioCaseStudies: CaseStudy[] = [
                 "https://images.unsplash.com/photo-1611162617213-7d7a39e9b1d7?w=800&h=600&fit=crop"
               ]
   }
-        ]
-        }
-  }
 ];

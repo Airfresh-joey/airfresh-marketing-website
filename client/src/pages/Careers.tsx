@@ -24,8 +24,8 @@ const applicationSchema = z.object({
 type ApplicationFormData = z.infer<typeof applicationSchema>;
 
 // Formspree form ID for AFM Technical Intern applications
-// TODO: Replace with actual form ID after creating in Formspree dashboard
-const FORMSPREE_ENDPOINT = "https://formspree.io/f/REPLACE_WITH_FORM_ID";
+// Form: xzdjwkdj - sends to joey@airfreshmarketing.com
+const FORMSPREE_ENDPOINT = "https://formspree.io/f/xzdjwkdj";
 
 export default function Careers() {
   const [isSubmitting, setIsSubmitting] = useState(false);
