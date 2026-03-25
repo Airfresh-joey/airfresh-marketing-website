@@ -1257,6 +1257,133 @@ export const sports: TargetingData[] = [
       title: `Golf Tournament Marketing in ${cityName}`,
       description: `Host premium golf experiences at ${cityName} tournaments with hospitality programs that connect with affluent decision-makers.`
     })
+  },
+  {
+    slug: "f1-event-staffing",
+    name: "F1 Event Staffing",
+    title: "F1 Event Staffing & Formula 1 Brand Activations | Air Fresh Marketing",
+    metaDescription: "Professional F1 event staffing for brand activations, hospitality, and fan experiences at Formula 1 races in Austin, Las Vegas, and Miami. 15+ years motorsport staffing expertise.",
+    heroTitle: "Formula 1 Event Staffing & Brand Activations",
+    heroSubtitle: "The premier F1 activation staffing agency across all three U.S. Grand Prix markets — Austin, Las Vegas, and Miami",
+    challenges: [
+      "Finding staff experienced with the unique pace and prestige of Formula 1 race weekends",
+      "Navigating venue-specific logistics at COTA, Las Vegas Strip Circuit, and Miami International Autodrome",
+      "Staffing multi-day activations that require Friday practice through Sunday race coverage",
+      "Meeting the high-service expectations of F1's affluent, global audience",
+      "Coordinating union labor rules, tight build schedules, and permit requirements at each circuit",
+      "Sourcing multilingual staff for F1's international fan base"
+    ],
+    solutions: [
+      {
+        title: "F1-Experienced Brand Ambassadors",
+        description: "Staff who have worked previous F1 activations and understand the rhythm of race weekends — from light Friday crowds to peak Sunday energy. Our roster includes Williams Racing and Duracell activation veterans."
+      },
+      {
+        title: "Multi-Market F1 Coverage",
+        description: "Proven staffing operations across all three U.S. Grand Prix venues: Circuit of the Americas (Austin), Las Vegas Strip Circuit, and Miami International Autodrome. Local teams in each market with national management oversight."
+      },
+      {
+        title: "Paddock & Hospitality Specialists",
+        description: "VIP hospitality staff trained for the premium expectations of Paddock Club guests, team sponsors, and corporate hospitality suites. Polished, discreet, and experienced in luxury service environments."
+      },
+      {
+        title: "Fan Zone & Interactive Activation Teams",
+        description: "High-energy teams for sponsor activations in F1 Fan Zones, Grand Plaza areas, and off-circuit pop-ups. Trained on interactive tech, product sampling, and social media engagement."
+      }
+    ],
+    deliverables: [
+      "Brand ambassador recruitment vetted for F1 experience",
+      "Multi-day race weekend staffing (Friday through Sunday)",
+      "Paddock Club and VIP hospitality staff",
+      "Fan Zone and Grand Plaza activation teams",
+      "Field management and on-site coordination",
+      "Multilingual staff (Spanish, Portuguese, French, German)",
+      "TABC-certified beverage service staff (Texas events)",
+      "Pre-event brand and product training",
+      "Real-time reporting and post-event recaps",
+      "Off-circuit activation staffing (downtown bar takeovers, hotel pop-ups)"
+    ],
+    metrics: [
+      { metric: "3", description: "U.S. Grand Prix markets staffed (Austin, Vegas, Miami)" },
+      { metric: "5,000+", description: "Trained brand ambassadors in our F1 market roster" },
+      { metric: "100%", description: "Client satisfaction across F1 activations" },
+      { metric: "15+", description: "Years of motorsport staffing experience" }
+    ],
+    keywords: [
+      "F1 event staffing",
+      "Formula 1 brand activation agency",
+      "F1 Austin event staffing",
+      "F1 Las Vegas staffing",
+      "F1 Miami staffing",
+      "COTA brand activation",
+      "F1 hospitality staffing",
+      "Formula 1 brand ambassadors",
+      "motorsport event staffing",
+      "F1 fan zone staffing",
+      "Grand Prix activation agency",
+      "F1 experiential marketing"
+    ],
+    relatedCaseStudies: [
+      "duracell-x-formula-1-racing-activations",
+      "williams-racing"
+    ],
+    cityModifier: (cityName) => ({
+      title: `F1 Event Staffing in ${cityName}`,
+      description: `Professional Formula 1 event staffing in ${cityName}. Experienced brand ambassadors, hospitality staff, and activation teams for F1 race weekends and motorsport events.`
+    })
+  },
+  {
+    slug: "nascar-events",
+    name: "NASCAR Event Marketing",
+    title: "NASCAR Event Marketing & Motorsport Activations | Air Fresh Marketing",
+    metaDescription: "Professional NASCAR event staffing and motorsport marketing. Brand activations, fan zone experiences, and hospitality staff at NASCAR races nationwide.",
+    heroTitle: "NASCAR Event Marketing & Activations",
+    heroSubtitle: "Engage motorsport fans with high-octane brand experiences at NASCAR events",
+    challenges: [
+      "Reaching NASCAR's loyal and passionate fan base authentically",
+      "Managing multi-day race weekend logistics at speedways",
+      "Creating activations that complement the tailgate culture",
+      "Standing out in crowded infield and vendor areas",
+      "Handling weather-dependent outdoor activations"
+    ],
+    solutions: [
+      {
+        title: "Infield & Fan Zone Activations",
+        description: "High-energy brand experiences in the heart of NASCAR fan areas, from interactive displays to product sampling stations"
+      },
+      {
+        title: "Tailgate Marketing Programs",
+        description: "Branded tailgate experiences that integrate with NASCAR's unique pre-race culture and traditions"
+      },
+      {
+        title: "Hospitality & Suite Staffing",
+        description: "Professional staff for corporate suites, sponsor hospitality, and VIP experiences at speedways"
+      },
+      {
+        title: "Multi-Race Series Support",
+        description: "Consistent staffing across multiple NASCAR events in a season for sustained brand presence"
+      }
+    ],
+    deliverables: [
+      "Race weekend brand ambassador staffing",
+      "Infield activation setup and management",
+      "Corporate hospitality and suite staff",
+      "Product sampling and demonstration teams",
+      "Fan engagement and contest coordination",
+      "Social media content creation",
+      "Post-event reporting and analytics"
+    ],
+    metrics: [
+      { metric: "75K+", description: "Average speedway attendance reached" },
+      { metric: "90%", description: "Fan engagement rate at activations" },
+      { metric: "1,000+", description: "Motorsport events staffed" },
+      { metric: "4.5x", description: "Social amplification vs. standard events" }
+    ],
+    keywords: ["NASCAR event staffing", "NASCAR marketing", "motorsport activations", "speedway event staff", "NASCAR fan zone", "racing event marketing"],
+    cityModifier: (cityName) => ({
+      title: `NASCAR Event Marketing in ${cityName}`,
+      description: `Execute high-energy NASCAR activations in ${cityName} with experienced motorsport staff who understand racing fan culture.`
+    })
   }
 ];
 

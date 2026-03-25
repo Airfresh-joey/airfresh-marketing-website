@@ -35,6 +35,7 @@ import {
   parseCityServiceSlug,
   serviceTypes
 } from "./city-services-data";
+import { getUniqueCityServiceContent, hasCityProfile } from "./unique-city-content";
 import {
   getCityImages,
   getServiceImage
@@ -796,7 +797,35 @@ export async function registerRoutes(app: Express): Promise<Server> {
         return res.status(404).json({ message: "City or service not found" });
       }
 
-      const content = generateCityServiceContent(city.city, city.state, service);
+      // Use unique localized content for top-20 cities, fall back to template for others
+      const uniqueContent = getUniqueCityServiceContent(parsed.citySlug, service, city.city, city.state);
+      const baseContent = generateCityServiceContent(city.city, city.state, service);
+      
+      // Merge unique content over base template content
+      const content = uniqueContent ? {
+        ...baseContent,
+        heroDescription: uniqueContent.heroDescription,
+        localInsight: uniqueContent.localInsight,
+        sections: [
+          {
+            title: `Why Choose AirFresh for ${service.name} in ${city.city}`,
+            content: uniqueContent.whyChooseUs
+          },
+          {
+            title: `Our ${city.city} ${service.name} Services Include`,
+            content: uniqueContent.servicesInclude
+          },
+          {
+            title: `Industries We Serve in ${city.city}`,
+            content: uniqueContent.industriesWeServe
+          }
+        ],
+        faqs: [
+          { question: uniqueContent.faq1Question, answer: uniqueContent.faq1Answer },
+          { question: uniqueContent.faq2Question, answer: uniqueContent.faq2Answer },
+          { question: uniqueContent.faq3Question, answer: uniqueContent.faq3Answer }
+        ]
+      } : baseContent;
 
       // Get images for this city and service
       const cityImages = getCityImages(parsed.citySlug);

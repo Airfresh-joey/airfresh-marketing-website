@@ -701,6 +701,58 @@ export default function Recruiting() {
             </div>
           )}
 
+          {/* Featured: Technical Intern */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            className="max-w-4xl mx-auto mb-8"
+          >
+            <Card className="border-2 border-cyan-500 bg-gradient-to-r from-cyan-50 to-blue-50 hover:shadow-xl transition-all duration-300">
+              <CardContent className="p-6">
+                <div className="flex flex-col md:flex-row md:items-center gap-6">
+                  <div className="flex-1">
+                    <div className="flex items-center gap-2 mb-2">
+                      <Badge className="bg-cyan-500 text-white border-0">
+                        <Star className="w-3 h-3 mr-1 fill-white" />
+                        Featured
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-cyan-300 text-cyan-700">
+                        <Clock className="w-3 h-3 mr-1" />
+                        Part-Time (20 hrs/week)
+                      </Badge>
+                      <Badge variant="outline" className="text-xs border-green-300 text-green-700">
+                        <DollarSign className="w-3 h-3 mr-1" />
+                        $20/hour
+                      </Badge>
+                    </div>
+                    <h3 className="text-xl font-bold text-gray-900 mb-1">Technical Intern</h3>
+                    <div className="flex items-center gap-2 text-gray-500 text-sm mb-3">
+                      <MapPin className="w-4 h-4" />
+                      <span>Denver, CO • Remote-Friendly</span>
+                    </div>
+                    <p className="text-gray-600 text-sm">
+                      Join our AI-forward team! Work on real projects with React, Next.js, TypeScript, and AI tools like Cursor and Claude. 
+                      Perfect for CS students or self-taught developers looking for hands-on experience.
+                    </p>
+                  </div>
+                  <div className="flex-shrink-0">
+                    <Button
+                      size="lg"
+                      className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white w-full md:w-auto"
+                      asChild
+                    >
+                      <Link href="/careers/technical-intern">
+                        View & Apply
+                        <ArrowRight className="w-4 h-4 ml-2" />
+                      </Link>
+                    </Button>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </motion.div>
+
           <motion.div
             variants={containerVariants}
             initial="hidden"

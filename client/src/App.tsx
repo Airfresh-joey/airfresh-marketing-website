@@ -64,6 +64,12 @@ import EventPage from "@/pages/EventPage";
 import EventServicePage from "@/pages/EventServicePage";
 import Olympics2028 from "@/pages/Olympics2028";
 
+// NFL / Sports pages
+import NFLEventStaffing from "@/pages/NFLEventStaffing";
+import NFLTailgateMarketing from "@/pages/NFLTailgateMarketing";
+import SuperBowlActivations from "@/pages/SuperBowlActivations";
+import NFLDraftStaffing from "@/pages/NFLDraftStaffing";
+
 // Venues pages
 import VenuesDirectory from "@/pages/VenuesDirectory";
 import VenuePage from "@/pages/VenuePage";
@@ -157,7 +163,13 @@ function Router() {
           
           {/* Note: Event routes handled above with EventPage component */}
           
-          {/* Targeting Pages - Sports */}
+          {/* NFL / Sports - Dedicated Pages (must be before catch-all) */}
+          <Route path="/sports/nfl-event-staffing" component={NFLEventStaffing} />
+          <Route path="/sports/nfl-tailgate-marketing" component={NFLTailgateMarketing} />
+          <Route path="/sports/super-bowl-activations" component={SuperBowlActivations} />
+          <Route path="/sports/nfl-draft-staffing" component={NFLDraftStaffing} />
+
+          {/* Targeting Pages - Sports (catch-all) */}
           <Route path="/sports/:slug" component={TargetingPage} />
           <Route path="/sports/:slug/:city" component={TargetingPage} />
 

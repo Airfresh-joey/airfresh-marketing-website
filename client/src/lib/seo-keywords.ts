@@ -94,6 +94,33 @@ export const seoKeywords = {
     ]
   },
 
+  // Sports & Motorsport keywords
+  sportsMotorsport: {
+    f1: [
+      "F1 event staffing",
+      "Formula 1 brand activation agency",
+      "F1 Austin event staffing",
+      "COTA brand activation",
+      "F1 Las Vegas staffing",
+      "F1 hospitality staffing",
+      "Formula 1 brand ambassadors",
+      "F1 fan zone staffing",
+      "Grand Prix activation agency",
+      "F1 experiential marketing",
+      "motorsport event staffing",
+      "F1 Austin Grand Prix staffing",
+      "COTA fan zone staffing",
+      "US Grand Prix activation agency"
+    ],
+    general: [
+      "sports event staffing",
+      "NASCAR event marketing",
+      "motorsport brand activation",
+      "racing event staff",
+      "Super Bowl activations"
+    ]
+  },
+
   // Long-tail keywords
   longTail: [
     "hire brand ambassadors for events",
@@ -105,7 +132,11 @@ export const seoKeywords = {
     "brand activation strategies",
     "pop-up event planning",
     "immersive brand experiences",
-    "field marketing services"
+    "field marketing services",
+    "F1 Austin brand activation guide",
+    "how to activate your brand at COTA",
+    "Formula 1 event staffing agency",
+    "F1 hospitality staff hire"
   ]
 };
 
