@@ -5,6 +5,10 @@ import Image from "next/image";
 const clients = [
   { name: "Microsoft", logo: "/images/clients/microsoft.svg" },
   { name: "Netflix", logo: "/images/clients/netflix.svg" },
+  { name: "Red Bull", logo: "/images/clients/redbull.svg" },
+  { name: "Google", logo: "/images/clients/google.svg" },
+  { name: "Adidas", logo: "/images/clients/adidas.svg" },
+  { name: "Nike", logo: "/images/clients/nike.svg" },
   { name: "Lyft", logo: "/images/clients/lyft.svg" },
   { name: "Formula 1", logo: "/images/clients/f1.svg" },
   { name: "TED", logo: "/images/clients/ted.svg" },
