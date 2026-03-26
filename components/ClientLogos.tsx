@@ -8,7 +8,7 @@ const clients = [
   { name: "Lyft", logo: "/images/clients/lyft.svg" },
   { name: "Formula 1", logo: "/images/clients/f1.svg" },
   { name: "TED", logo: "/images/clients/ted.svg" },
-  { name: "Grubhub", logo: "/images/clients/grubhub.svg" },
+  { name: "Starbucks", logo: "/images/clients/starbucks.png" },
 ];
 
 export default function ClientLogos() {
@@ -28,13 +28,13 @@ export default function ClientLogos() {
           {clients.map((client) => (
             <div
               key={client.name}
-              className="flex items-center justify-center h-20 w-40 hover:scale-105 transition-transform duration-300"
+              className="flex items-center justify-center h-24 w-44 hover:scale-105 transition-transform duration-300"
             >
               <img
                 src={client.logo}
                 alt={`${client.name} logo`}
-                className="h-12 w-auto object-contain"
-                style={{ minWidth: '80px' }}
+                className="h-16 w-auto object-contain"
+                style={{ minWidth: '100px', maxWidth: '160px' }}
               />
             </div>
           ))}
