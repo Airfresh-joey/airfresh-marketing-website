@@ -5,16 +5,12 @@ import Image from "next/image";
 const clients = [
   { name: "Microsoft", logo: "/images/clients/microsoft.svg" },
   { name: "Netflix", logo: "/images/clients/netflix.svg" },
-  { name: "MAC Cosmetics", logo: "/images/clients/mac.svg" },
   { name: "Lyft", logo: "/images/clients/lyft.svg" },
   { name: "Formula 1", logo: "/images/clients/f1.svg" },
   { name: "TED", logo: "/images/clients/ted.svg" },
   { name: "Cirque du Soleil", logo: "/images/clients/cirque.svg" },
   { name: "Grubhub", logo: "/images/clients/grubhub.svg" },
   { name: "Starbucks", logo: "/images/clients/starbucks.svg" },
-  { name: "Williams Racing", logo: "/images/clients/williams.svg" },
-  { name: "MrBeast", logo: "/images/clients/mrbeast.svg" },
-  { name: "Polaris", logo: "/images/clients/polaris.svg" },
 ];
 
 export default function ClientLogos() {
