@@ -6,14 +6,8 @@ const clients = [
   { name: "Microsoft", logo: "/images/clients/microsoft.svg" },
   { name: "Netflix", logo: "/images/clients/netflix.png" },
   { name: "Google", logo: "/images/clients/google.png" },
-  { name: "Red Bull", logo: "/images/clients/redbull.svg" },
-  { name: "Adidas", logo: "/images/clients/adidas.svg" },
-  { name: "Nike", logo: "/images/clients/nike.svg" },
   { name: "Lyft", logo: "/images/clients/lyft.svg" },
-  { name: "Formula 1", logo: "/images/clients/f1.svg" },
-  { name: "TED", logo: "/images/clients/ted.svg" },
   { name: "Williams Racing", logo: "/images/clients/williams.png" },
-  { name: "Grubhub", logo: "/images/clients/grubhub.svg" },
   { name: "Starbucks", logo: "/images/clients/starbucks.png" },
 ];
 
