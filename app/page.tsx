@@ -333,7 +333,7 @@ export default function Home() {
             {[
               {
                 title: "Skinny Mixes Sampling Campaign",
-                image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-2.jpg",
+                image: "/images/case-studies/gallery/skinny-mixes/skinny-mixes-3.jpg",
                 description: "Nationwide product sampling driving brand awareness and trial",
                 link: "/case-studies/skinny-mixes"
               },
