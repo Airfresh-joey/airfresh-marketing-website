@@ -4,7 +4,7 @@ import { use } from 'react';
 import { useParams, useRouter } from "next/navigation";
 import Link from "next/link";
 import { motion } from "framer-motion";
-import { useState, useEffect } from "react";
+import { useState, useEffect, FormEvent } from "react";
 import SEO from "@/components/SEO";
 import { blogPosts } from "@/server/blogPosts";
 import {
@@ -42,6 +42,30 @@ export default function BlogPost({ params }: BlogPostPageProps) {
   const router = useRouter();
   const [copied, setCopied] = useState(false);
   const [readProgress, setReadProgress] = useState(0);
+  const [email, setEmail] = useState("");
+  const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubscribe = async (e: FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setSubscribeStatus("loading");
+    try {
+      const res = await fetch("https://formspree.io/f/xzdjwkdj", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, _subject: "New Blog Subscriber" }),
+      });
+      if (res.ok) {
+        setSubscribeStatus("success");
+        setEmail("");
+      } else {
+        setSubscribeStatus("error");
+      }
+    } catch {
+      setSubscribeStatus("error");
+    }
+  };
 
   // Find the blog post
   const post = blogPosts.find(p => p.slug === slug);
@@ -540,17 +564,28 @@ export default function BlogPost({ params }: BlogPostPageProps) {
             <p className="text-xl mb-8 text-gray-600">
               Get the latest marketing insights delivered directly to your inbox
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-cyan-500 text-lg"
+                required
               />
-              <Button size="lg" className="bg-cyan-600 hover:bg-cyan-700 text-white">
-                Subscribe
-                <ChevronRight className="w-5 h-5 ml-2" />
+              <Button 
+                type="submit" 
+                size="lg" 
+                className="bg-cyan-600 hover:bg-cyan-700 text-white"
+                disabled={subscribeStatus === "loading"}
+              >
+                {subscribeStatus === "loading" ? "..." : subscribeStatus === "success" ? "Subscribed!" : "Subscribe"}
+                {subscribeStatus !== "success" && <ChevronRight className="w-5 h-5 ml-2" />}
               </Button>
-            </div>
+            </form>
+            {subscribeStatus === "success" && (
+              <p className="text-green-600 mt-4">Thanks for subscribing!</p>
+            )}
           </motion.div>
         </div>
       </section>

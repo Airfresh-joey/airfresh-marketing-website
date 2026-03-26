@@ -108,11 +108,26 @@ export default function GetQuote() {
     e.preventDefault()
     setIsSubmitting(true)
     
-    // Simulate API call
-    await new Promise(resolve => setTimeout(resolve, 1500))
+    try {
+      const response = await fetch("https://formspree.io/f/xzdjwkdj", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          ...formData,
+          _subject: `New Quote Request: ${formData.eventType} in ${formData.eventLocation}`,
+        }),
+      });
+      
+      if (response.ok) {
+        setIsSubmitted(true)
+      } else {
+        alert("Something went wrong. Please try again or email us directly.")
+      }
+    } catch (error) {
+      alert("Something went wrong. Please try again or email us directly.")
+    }
     
     setIsSubmitting(false)
-    setIsSubmitted(true)
   }
 
   const canProceedStep1 = formData.firstName && formData.lastName && formData.email && formData.phone
