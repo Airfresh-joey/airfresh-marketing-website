@@ -207,13 +207,13 @@ export default function Home() {
 
   const testimonials = [
     {
-      name: "Claire McKibben",
+      name: "Claire M.",
       role: "Marketing Manager, Sweetgreen",
       content: "Thank you so much for these, this level of insight is fantastic. We've never had this before and I'm excited to dive in.",
       avatar: "/images/testimonials/kristin-quinn.jpg"
     },
     {
-      name: "Jessica Hersh",
+      name: "Jessica H.",
       role: "Hunter PR / Durex",
       content: "Thanks so much for this, Joey - appreciate the thorough recap and additional photos. Great work on the Milwaukee Game Day Activation!",
       avatar: "/images/testimonials/anonymous-review.jpg"
@@ -225,13 +225,13 @@ export default function Home() {
       avatar: "/images/testimonials/aimee-ambassador.jpg"
     },
     {
-      name: "Yvonne Hamilton",
+      name: "Yvonne H.",
       role: "Senior Marketing Manager, Ent Credit Union",
       content: "Love the money machine idea and really like the idea of capturing data with an experience. Air Fresh brings creative solutions we hadn't considered.",
       avatar: "/images/testimonials/kristin-quinn.jpg"
     },
     {
-      name: "Andrew Porter",
+      name: "Andrew P.",
       role: "Director of Sales, Midwest Immersive",
       content: "I saw a few highlighted experiential projects and was extremely impressed at the level of work your company does. I love the work you guys do!",
       avatar: "/images/testimonials/anonymous-review.jpg"
