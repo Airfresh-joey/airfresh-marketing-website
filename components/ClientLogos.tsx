@@ -30,18 +30,18 @@ export default function ClientLogos() {
           </h2>
         </div>
         
-        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 items-center justify-items-center">
+        <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-12 items-center justify-items-center">
           {clients.map((client) => (
             <div
               key={client.name}
-              className="flex items-center justify-center h-16 w-full grayscale hover:grayscale-0 opacity-60 hover:opacity-100 transition-all duration-300"
+              className="flex items-center justify-center h-12 w-32 hover:scale-110 transition-transform duration-300"
             >
               <Image
                 src={client.logo}
                 alt={`${client.name} logo`}
-                width={120}
-                height={48}
-                className="max-h-12 w-auto object-contain"
+                width={100}
+                height={40}
+                className="h-8 w-auto object-contain"
               />
             </div>
           ))}
