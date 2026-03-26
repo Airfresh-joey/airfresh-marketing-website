@@ -28,6 +28,30 @@ export default function Blog() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   const [currentPage, setCurrentPage] = useState(1);
+  const [email, setEmail] = useState("");
+  const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
+
+  const handleSubscribe = async (e: React.FormEvent) => {
+    e.preventDefault();
+    if (!email) return;
+    
+    setSubscribeStatus("loading");
+    try {
+      const res = await fetch("https://formspree.io/f/xzdjwkdj", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ email, _subject: "New Blog Subscriber" }),
+      });
+      if (res.ok) {
+        setSubscribeStatus("success");
+        setEmail("");
+      } else {
+        setSubscribeStatus("error");
+      }
+    } catch {
+      setSubscribeStatus("error");
+    }
+  };
   const postsPerPage = 9;
 
   // Get unique categories
@@ -278,11 +302,11 @@ export default function Blog() {
                   <Link href={`/blog/${post.slug}`}>
                     <article className="group h-full bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden cursor-pointer flex flex-col">
                       {/* Image Container */}
-                      <div className="relative h-48 overflow-hidden">
+                      <div className="relative h-52 overflow-hidden">
                         <img
                           src={post.image}
                           alt={post.title}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-700"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
 
@@ -430,17 +454,27 @@ export default function Blog() {
             <p className="text-xl mb-8 text-gray-300">
               Get the latest experiential marketing insights delivered to your inbox
             </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
+            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
               <Input
                 type="email"
                 placeholder="Enter your email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
                 className="flex-1 bg-white/10 border-gray-700 text-white placeholder-gray-400"
+                required
               />
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                Subscribe
-                <ArrowRight className="w-4 h-4 ml-2" />
+              <Button 
+                type="submit" 
+                className="bg-cyan-500 hover:bg-cyan-600 text-white"
+                disabled={subscribeStatus === "loading"}
+              >
+                {subscribeStatus === "loading" ? "..." : subscribeStatus === "success" ? "Subscribed!" : "Subscribe"}
+                {subscribeStatus !== "success" && <ArrowRight className="w-4 h-4 ml-2" />}
               </Button>
-            </div>
+            </form>
+            {subscribeStatus === "success" && (
+              <p className="text-green-400 mt-4">Thanks for subscribing!</p>
+            )}
           </motion.div>
         </div>
       </section>
