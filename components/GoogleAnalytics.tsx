@@ -8,7 +8,7 @@ const GA_MEASUREMENT_ID = 'G-4H5YW90R4R'; // Air Fresh Marketing GA4 Property
 // Google Ads Configuration
 // Account: 138-985-8224
 const GOOGLE_ADS_ID = 'AW-969773658';
-const GOOGLE_ADS_LABEL = '6QBGCIm0pYIcENqkts4D';
+const GOOGLE_ADS_LABEL = 'N7djCI-U4pAcENqkts4D';
 
 declare global {
   interface Window {
