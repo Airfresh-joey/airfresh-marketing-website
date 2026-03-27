@@ -3,7 +3,7 @@ import { useEffect } from 'react';
 // Google Analytics 4 Configuration
 const GA_MEASUREMENT_ID = 'G-4H5YW90R4R';
 const GOOGLE_ADS_ID = 'AW-969773658';
-const CONVERSION_LABEL = '6QBGCIm0pYIcENqkts4D';
+const CONVERSION_LABEL = 'N7djCI-U4pAcENqkts4D';
 
 declare global {
   interface Window {
