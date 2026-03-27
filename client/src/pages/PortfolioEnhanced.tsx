@@ -269,6 +269,11 @@ export default function PortfolioEnhanced() {
         description="Explore our portfolio of successful brand activations for Netflix, MrBeast, Microsoft, MAC Cosmetics, Starbucks, and more. Real results from Fortune 500 brands."
         canonical="https://airfreshmarketing.com/portfolio"
       />
+      
+      {/* Preconnect hints for faster Vimeo video loading */}
+      <link rel="preconnect" href="https://player.vimeo.com" />
+      <link rel="preconnect" href="https://i.vimeocdn.com" />
+      <link rel="preconnect" href="https://f.vimeocdn.com" />
 
       {/* Hero Section with Video Background */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
@@ -276,10 +281,11 @@ export default function PortfolioEnhanced() {
         <div className="absolute inset-0">
           <div className="absolute inset-0 w-full h-full overflow-hidden">
             <iframe
-              src="https://player.vimeo.com/video/394086862?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1"
+              src="https://player.vimeo.com/video/394086862?background=1&autoplay=1&loop=1&byline=0&title=0&muted=1&quality=auto&dnt=1"
               className="absolute top-1/2 left-1/2 w-[177.77vh] min-w-full min-h-full -translate-x-1/2 -translate-y-1/2"
               style={{ border: 'none' }}
               allow="autoplay; fullscreen"
+              loading="eager"
               title="Portfolio Hero Video"
             />
           </div>
