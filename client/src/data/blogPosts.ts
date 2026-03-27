@@ -2422,7 +2422,7 @@ Don't leave your booth staffing to chance. Partner with Air Fresh Marketing for 
     readTime: "15 min read",
     category: "F1 Marketing",
     tags: ["F1 Austin Event Staffing", "COTA Brand Activation", "F1 Austin Activations", "Formula 1 Activation Agency", "Experiential Marketing", "Event Staffing", "Motorsport Marketing"],
-    content: \`
+    content: `
 # How to Activate Your Brand at F1 Austin (COTA): The Definitive Guide
 
 The Formula 1 United States Grand Prix at Circuit of the Americas draws over 400,000 fans across race weekend, making it one of the highest-attendance sporting events in North America. For brands looking to connect with an affluent, global audience, there is no better stage than F1 Austin.
@@ -2575,7 +2575,7 @@ Air Fresh Marketing has staffed F1 activations across Austin, Las Vegas, and Mia
 - **Call**: 303-720-6060
 - **Email**: f1@airfreshmarketing.com
 - **Request a quote**: airfreshmarketing.com/contact
-    \`
+    `
   },
   {
     id: "12",
@@ -2588,7 +2588,7 @@ Air Fresh Marketing has staffed F1 activations across Austin, Las Vegas, and Mia
     readTime: "14 min read",
     category: "NASCAR Marketing",
     tags: ["NASCAR Tailgate Marketing", "NASCAR Brand Activation", "Race Day Brand Ambassadors", "Tailgate Sampling", "Motorsport Marketing", "Event Staffing", "NASCAR Event Staffing"],
-    content: \`
+    content: `
 # NASCAR Tailgate Marketing: The Complete Brand Activation Playbook for Race Weekend
 
 Every major NASCAR race weekend is more than a 500-mile sprint around a superspeedway. It is a multi-day, open-air festival where 100,000 or more fans camp, cook, socialize, and immerse themselves in motorsport culture days before the green flag ever drops. For brands willing to meet these fans where they live — literally, in the parking lots and campgrounds surrounding America's biggest tracks — NASCAR tailgate marketing offers one of the highest-ROI activation opportunities in sports.
@@ -2807,6 +2807,6 @@ The 2026 NASCAR Cup Series season is underway. The spring and fall race schedule
 - **Request a quote**: airfreshmarketing.com/contact
 
 *Your brand belongs at the track. Let's make race weekend unforgettable.*
-    \`
+    `
   }
 ];
