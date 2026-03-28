@@ -77,12 +77,18 @@
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "LocalBusiness",
+        "@type": "MarketingAgency",
+        "@id": "https://airfreshmarketing.com/#organization",
         "name": "Air Fresh Marketing",
-        "description": "Experiential marketing agency transforming brands through innovative campaigns, street teams, and brand activations nationwide.",
+        "alternateName": "Air Fresh",
+        "description": "Leading experiential marketing agency specializing in brand activations, street teams, event staffing, and brand ambassador services nationwide.",
         "url": "https://airfreshmarketing.com",
         "telephone": "(303) 720-6060",
         "email": "hello@airfreshmarketing.com",
+        "logo": "https://airfreshmarketing.com/logo.png",
+        "image": "https://airfreshmarketing.com/logo.png",
+        "foundingDate": "2010",
+        "priceRange": "$$",
         "address": {
           "@type": "PostalAddress",
           "streetAddress": "1580 N. Logan St. Suite 660",
@@ -96,46 +102,135 @@
           "latitude": 39.7589,
           "longitude": -104.9849
         },
-        "image": "https://airfreshmarketing.com/logo.png",
-        "priceRange": "$$",
-        "areaServed": "US",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
         "knowsAbout": [
           "Experiential Marketing",
           "Brand Activation",
           "Street Teams",
           "Event Marketing",
-          "Brand Ambassadors"
+          "Brand Ambassadors",
+          "Event Staffing",
+          "Product Sampling",
+          "Sports Marketing"
         ],
-        "sameAs": ["https://www.linkedin.com/company/air-fresh-marketing"]
+        "sameAs": [
+          "https://www.linkedin.com/company/air-fresh-marketing"
+        ],
+        "contactPoint": {
+          "@type": "ContactPoint",
+          "contactType": "Sales",
+          "telephone": "(303) 720-6060",
+          "email": "hello@airfreshmarketing.com",
+          "availableLanguage": ["English", "Spanish"]
+        }
       }
     </script>
 
     <script type="application/ld+json">
       {
         "@context": "https://schema.org",
-        "@type": "Organization",
-        "name": "Air Fresh Marketing",
-        "alternateName": "Air Fresh",
+        "@type": "WebSite",
+        "@id": "https://airfreshmarketing.com/#website",
         "url": "https://airfreshmarketing.com",
-        "logo": "https://airfreshmarketing.com/logo.png",
-        "description": "Leading experiential marketing agency nationwide",
-        "foundingDate": "2010",
-        "foundingLocation": {
-          "@type": "City",
-          "name": "Denver",
-          "address": {
-            "@type": "PostalAddress",
-            "addressRegion": "CO",
-            "addressCountry": "US"
-          }
+        "name": "Air Fresh Marketing",
+        "description": "Experiential marketing agency transforming brands through innovative campaigns, street teams, and brand activations nationwide.",
+        "publisher": {
+          "@id": "https://airfreshmarketing.com/#organization"
         },
-        "contactPoint": {
-          "@type": "ContactPoint",
-          "contactType": "Sales",
-          "telephone": "(303) 720-6060",
-          "email": "hello@airfreshmarketing.com"
+        "inLanguage": "en-US"
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://airfreshmarketing.com/#brand-ambassadors",
+        "name": "Brand Ambassador Services",
+        "description": "Professional brand ambassadors for events, retail activations, trade shows, and experiential marketing campaigns. Trained staff representing your brand with authenticity and expertise.",
+        "provider": {
+          "@id": "https://airfreshmarketing.com/#organization"
         },
-        "sameAs": ["https://www.linkedin.com/company/air-fresh-marketing"]
+        "serviceType": "Brand Ambassador Staffing",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://airfreshmarketing.com/#street-teams",
+        "name": "Street Team Marketing",
+        "description": "High-energy street teams for grassroots marketing, product sampling, flyering, and guerrilla marketing campaigns in major cities nationwide.",
+        "provider": {
+          "@id": "https://airfreshmarketing.com/#organization"
+        },
+        "serviceType": "Street Team Marketing",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://airfreshmarketing.com/#event-staffing",
+        "name": "Event Staffing",
+        "description": "Professional event staff for corporate events, trade shows, conferences, product launches, and experiential activations. Registration, hospitality, and promotional staff.",
+        "provider": {
+          "@id": "https://airfreshmarketing.com/#organization"
+        },
+        "serviceType": "Event Staffing",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://airfreshmarketing.com/#sports-marketing",
+        "name": "Sports Event Marketing",
+        "description": "Specialized event marketing and staffing for NFL, MLB, NHL, NASCAR, F1, World Cup 2026, and LA Olympics 2028. Stadium activations, fan experiences, and VIP hospitality.",
+        "provider": {
+          "@id": "https://airfreshmarketing.com/#organization"
+        },
+        "serviceType": "Sports Marketing",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
+      }
+    </script>
+
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://airfreshmarketing.com/#product-sampling",
+        "name": "Product Sampling & Demos",
+        "description": "Product sampling campaigns at retail locations, events, festivals, and high-traffic areas. Demo teams trained to drive trial and conversion.",
+        "provider": {
+          "@id": "https://airfreshmarketing.com/#organization"
+        },
+        "serviceType": "Product Sampling",
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        }
       }
     </script>
   </head>
