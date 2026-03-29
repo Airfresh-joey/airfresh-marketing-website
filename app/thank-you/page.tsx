@@ -8,7 +8,6 @@ import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { portfolioCaseStudies } from "@/server/portfolioCaseStudies";
 import {
-  CheckCircle,
   ArrowRight,
   Phone,
   Mail,
@@ -64,10 +63,16 @@ export default function ThankYou() {
         </div>
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          {/* Success Icon */}
+          {/* AirFresh Logo */}
           <div className="mb-8">
-            <div className="w-24 h-24 mx-auto bg-white rounded-full flex items-center justify-center shadow-2xl">
-              <CheckCircle className="w-14 h-14 text-green-500" />
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-white rounded-full flex items-center justify-center shadow-2xl p-4">
+              <Image
+                src="/images/airfresh-logo.svg"
+                alt="AirFresh Marketing"
+                width={120}
+                height={120}
+                className="w-full h-full object-contain"
+              />
             </div>
           </div>
 
