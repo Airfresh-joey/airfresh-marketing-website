@@ -44,7 +44,18 @@ export default function ThankYou() {
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
       {/* Success Hero Section */}
       <section className="relative py-16 lg:py-24 overflow-hidden">
-        <div className="absolute inset-0 bg-gradient-to-br from-cyan-600 via-blue-600 to-blue-700" />
+        {/* Hero background image */}
+        <div className="absolute inset-0">
+          <Image
+            src="https://images.unsplash.com/photo-1540575467063-178a50c2df87?auto=format&fit=crop&w=2000&q=80"
+            alt="Event marketing success"
+            fill
+            className="object-cover"
+            priority
+          />
+          {/* Gradient overlay for text legibility */}
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/90 via-blue-600/85 to-blue-700/90" />
+        </div>
         
         {/* Animated background elements */}
         <div className="absolute inset-0 overflow-hidden">
@@ -98,7 +109,7 @@ export default function ThankYou() {
                 Call: 303-720-6060
               </a>
             </Button>
-            <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+            <Button asChild size="lg" className="bg-transparent border-2 border-white text-white hover:bg-white/20">
               <Link href="/">
                 Return Home
                 <ArrowRight className="ml-2 h-5 w-5" />
