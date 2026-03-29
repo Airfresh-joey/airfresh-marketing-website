@@ -15,7 +15,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "174",
-    slug: "event-staffing-agency-chicago-complete-guide-premier-staffing-services",
+    slug: "event-staffing-agency-chicago",
     title: "Event Staffing Agency Chicago: Complete Guide to Premier Staffing Services in the Windy City",
     excerpt: "Discover how to choose the right event staffing agency in Chicago for maximum ROI. Expert guide covering local market dynamics, evaluation criteria, cost factors, and proven strategies for successful Chicago events.",
     image: "/images/blog/brand-ambassador-marketing.jpg",
@@ -224,7 +224,7 @@ Ready to discuss your Chicago event staffing needs? [Contact us today](/contact)
   },
   {
     id: "173",
-    slug: "guerrilla-marketing-agency-choosing-right-partner-maximum-impact",
+    slug: "guerrilla-marketing-agency",
     title: "Guerrilla Marketing Agency: How to Choose the Right Partner for Maximum Impact",
     excerpt: "Learn how to choose a guerrilla marketing agency that delivers results you can measure. Expert guide covering strategy evaluation, execution capabilities, cost factors, and success metrics for effective guerrilla campaigns.",
     image: "/images/blog/street-marketing-examples.jpg",
@@ -3047,7 +3047,7 @@ Whether you're planning a Times Square product launch, a Brooklyn pop-up experie
   },
   {
     id: "134",
-    slug: "brand-ambassadors-los-angeles-complete-2026-guide",
+    slug: "brand-ambassador-agency-los-angeles",
     title: "Brand Ambassadors Los Angeles - Complete 2026 Guide to Hiring & Strategy",
     excerpt: "Brand ambassadors Los Angeles are essential for any brand looking to make an impact in the entertainment capital of the world. This complete guide covers hiring strategies, top activation locations, pricing, and how to maximize ROI in the LA market.",
     image: "/images/blog/candy-sampling-event.jpg",
