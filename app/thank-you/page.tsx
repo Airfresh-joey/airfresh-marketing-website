@@ -65,9 +65,9 @@ export default function ThankYou() {
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           {/* AirFresh Logo */}
           <div className="mb-8">
-            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-white rounded-full flex items-center justify-center shadow-2xl p-4">
+            <div className="w-32 h-32 md:w-40 md:h-40 mx-auto bg-white rounded-full flex items-center justify-center shadow-2xl p-5">
               <Image
-                src="/images/airfresh-logo.svg"
+                src="/images/airfresh-logo-color.png"
                 alt="AirFresh Marketing"
                 width={120}
                 height={120}
