@@ -18,11 +18,8 @@ declare global {
 }
 
 export default function GoogleAnalytics() {
-  // Only render in production
-  if (process.env.NODE_ENV !== 'production') {
-    return null;
-  }
-
+  // Always render - Vercel handles environment detection
+  // The NODE_ENV check was causing issues with client component hydration
   return (
     <>
       {/* Google Analytics - loads after page interactive for proper tracking */}
