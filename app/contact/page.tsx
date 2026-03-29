@@ -2,6 +2,7 @@
 
 import { useState, useCallback } from "react";
 import { useForm } from "react-hook-form";
+import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
 import { z } from "zod";
 import { Card, CardContent } from "@/components/ui/card";
@@ -45,6 +46,7 @@ const formatPhoneNumber = (value: string) => {
 
 export default function Contact() {
   const { toast } = useToast();
+  const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
   const structuredData = {
@@ -105,10 +107,8 @@ export default function Contact() {
         });
       }
 
-      toast({
-        title: "Message sent!",
-        description: "We'll be in touch within 24 hours.",
-      });
+      // Redirect to thank you page
+      router.push('/thank-you');
       form.reset();
     } catch (error) {
       toast({

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Input } from "@/components/ui/input"
@@ -87,6 +88,7 @@ export default function GetQuote() {
     description: '',
     hearAboutUs: '',
   })
+  const router = useRouter()
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [step, setStep] = useState(1)
@@ -119,7 +121,8 @@ export default function GetQuote() {
       });
       
       if (response.ok) {
-        setIsSubmitted(true)
+        // Redirect to thank you page
+        router.push('/thank-you')
       } else {
         alert("Something went wrong. Please try again or email us directly.")
       }
