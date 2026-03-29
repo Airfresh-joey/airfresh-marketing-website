@@ -54,7 +54,7 @@ export default function ThankYou() {
             priority
           />
           {/* Gradient overlay for text legibility */}
-          <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/90 via-blue-600/85 to-blue-700/90" />
+          <div className="absolute inset-0 bg-gradient-to-br from-cyan-600/80 via-blue-600/70 to-blue-700/80" />
         </div>
         
         {/* Animated background elements */}
