@@ -106,6 +106,43 @@ export default function Home() {
             }
           }
         ]
+      },
+      {
+        "@type": "Service",
+        "name": "Experiential Marketing & Event Staffing",
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "serviceType": [
+          "Experiential Marketing",
+          "Brand Ambassadors",
+          "Event Staffing",
+          "Street Team Marketing",
+          "Product Sampling",
+          "Trade Show Staffing",
+          "Guerrilla Marketing",
+          "Brand Activation",
+          "Pop-up Events",
+          "Mobile Marketing Tours"
+        ],
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "url": "https://www.airfreshmarketing.com/services"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://www.airfreshmarketing.com"
+          }
+        ]
       }
     ]
   };
