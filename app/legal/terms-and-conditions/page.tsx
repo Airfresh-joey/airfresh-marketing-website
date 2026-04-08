@@ -155,7 +155,7 @@ export default function TermsAndConditionsPage() {
           <section className="mb-8">
             <h2 className="text-2xl font-bold text-gray-900 mb-4">16. Relationship of Parties</h2>
             <p className="text-gray-700 mb-4">
-              The Agency is an independent contractor and is not an employee of the Principal.
+              Fresh Air&apos;s relationship to Customer is that of an independent contractor. The staffing services provided by Fresh Air to Customer do not create an employment relationship between Fresh Air&apos;s personnel and Customer. Nothing in this Agreement or any other written materials between the Parties, including invoicing terms, is intended to or should be construed as constituting a joint venture or joint employer relationship. Except as narrowly prescribed herein, Fresh Air shall have exclusive control of the means and methods of the work and shall independently manage and control its activities and those of its personnel. Fresh Air shall have no authority to bind, assume, or create any obligations or responsibility on behalf of Customer without the prior written authorization of the appropriate officer of Customer. If any governmental agency or other person challenges Fresh Air&apos;s independent contractor status (or that of any of Fresh Air&apos;s personnel), Fresh Air shall defend, indemnify, and hold Customer (including its employees, officers, and affiliates) harmless from and against any claims, liabilities, fines, penalties, and/or attorneys&apos; fees arising therefrom.
             </p>
           </section>
 

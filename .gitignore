@@ -5,6 +5,8 @@ vite.config.ts.*
 *.tar.gz
 .next
 .vercel
+.env
+.env.*
 .env*.local
 
 # Old Vite SPA (deprecated - now using Next.js)
