@@ -204,7 +204,7 @@ export default function TermsAndConditionsPage() {
             <h3 className="text-xl font-bold text-gray-900 mb-4">Agency Obligations</h3>
             <p className="text-gray-700 mb-2">Agency agrees to:</p>
             <ul className="list-disc pl-6 text-gray-700 mb-6">
-              <li>Provide qualified event staffing &amp; payroll services on behalf of Principal for event teams</li>
+              <li>Provide qualified event staffing for event teams</li>
               <li>Ensure staff are communicated all details for event</li>
               <li>Develop detailed day-of production schedules, deliverables, timing &amp; promotional material tracking and reporting</li>
               <li>Provide staff with the following general qualifications:
