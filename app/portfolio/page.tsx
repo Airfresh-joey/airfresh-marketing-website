@@ -1,8 +1,9 @@
 'use client'
 
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
+import Image from "next/image";
 import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -39,14 +40,9 @@ const getCategories = (studies: any[]) => {
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
-  const [isLoading, setIsLoading] = useState(true);
+  const [isLoading, setIsLoading] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
   const shouldReduceMotion = useReducedMotion();
-
-  useEffect(() => {
-    // Simulate loading
-    setTimeout(() => setIsLoading(false), 800);
-  }, []);
 
   // Use static case studies data
   const caseStudiesData = portfolioCaseStudies;
@@ -229,10 +225,15 @@ export default function Portfolio() {
 
               <div className="relative group">
                 <div className="absolute inset-0 bg-gradient-to-r from-primary to-purple-600 rounded-2xl blur-2xl opacity-20 group-hover:opacity-30 transition-opacity" />
-                <img
-                  src={featuredStudy.heroImage}
+                <Image
+                  src={featuredStudy.heroImage || '/images/placeholder.jpg'}
                   alt={featuredStudy.name}
+                  width={800}
+                  height={500}
                   className="relative rounded-2xl shadow-2xl w-full h-[500px] object-cover"
+                  priority
+                  placeholder="blur"
+                  blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAEBQYH/8QAIRAAAQMEAgMAAAAAAAAAAAAAAQIDBAAFERIhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aj9I4jb6p0q3tMYW4mYPqMhCFn1SslRJO5JJPk5oNlqbTLdNRHYhxWI7aAhtplsISkeAABgUUVn//2Q=="
                 />
                 <div className="absolute inset-0 rounded-2xl bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-8">
                   <div className="text-white">
@@ -307,7 +308,7 @@ export default function Portfolio() {
                   key={study.id}
                   initial={{ opacity: 0, y: 20 }}
                   animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
+                  transition={{ delay: Math.min(index * 0.05, 0.3) }}
                   whileHover={{ y: -8 }}
                   onHoverStart={() => setHoveredCard(study.id)}
                   onHoverEnd={() => setHoveredCard(null)}
@@ -317,10 +318,15 @@ export default function Portfolio() {
                     <Card className="overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500">
                       {/* Image Container */}
                       <div className="relative h-64 overflow-hidden bg-gradient-to-br from-gray-100 to-gray-200">
-                        <img
-                          src={study.heroImage}
+                        <Image
+                          src={study.heroImage || '/images/placeholder.jpg'}
                           alt={study.name}
-                          className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                          fill
+                          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+                          className="object-cover group-hover:scale-110 transition-transform duration-700"
+                          loading="lazy"
+                          placeholder="blur"
+                          blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAgGBgcGBQgHBwcJCQgKDBQNDAsLDBkSEw8UHRofHh0aHBwgJC4nICIsIxwcKDcpLDAxNDQ0Hyc5PTgyPC4zNDL/2wBDAQkJCQwLDBgNDRgyIRwhMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjIyMjL/wAARCAAIAAwDASIAAhEBAxEB/8QAFgABAQEAAAAAAAAAAAAAAAAEBQYH/8QAIRAAAQMEAgMAAAAAAAAAAAAAAQIDBAAFERIhMUH/xAAUAQEAAAAAAAAAAAAAAAAAAAAA/8QAFBEBAAAAAAAAAAAAAAAAAAAAAP/aAAwDAQACEQMRAD8Aj9I4jb6p0q3tMYW4mYPqMhCFn1SslRJO5JJPk5oNlqbTLdNRHYhxWI7aAhtplsISkeAABgUUVn//2Q=="
                         />
 
                         {/* Overlay */}
