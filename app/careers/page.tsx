@@ -20,7 +20,7 @@ import {
   Phone,
   Mail
 } from "lucide-react";
-import SEO from "@/components/SEO";
+
 import QuickApplyForm from "@/components/QuickApplyForm";
 
 const benefits = [
@@ -220,12 +220,9 @@ export default function CareersPage() {
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title="Careers | Join Our Team | AirFresh Marketing"
-        description="Join AirFresh Marketing's team of brand ambassadors and event staff. Flexible schedules, competitive pay, and opportunities to work with top brands nationwide."
-        keywords="brand ambassador jobs, event staff jobs, promotional model jobs, marketing jobs, flexible work, experiential marketing careers"
-        structuredData={structuredData}
-        canonical="https://www.airfreshmarketing.com/careers"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Preconnect to Vimeo for faster video load */}

@@ -3,7 +3,7 @@
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
-import SEO from '@/components/SEO';
+
 import ResourceEmailCapture from '@/components/ResourceEmailCapture';
 import { useState } from 'react';
 import {
@@ -163,11 +163,9 @@ export default function EventPlanningChecklistPage() {
 
   return (
     <>
-      <SEO
-        title="Event Planning Checklist | Free Download | AirFresh Marketing"
-        description="Free interactive event planning checklist covering everything from 6 weeks out to post-event follow-up. Never miss a detail at your next brand activation."
-        canonical="https://www.airfreshmarketing.com/checklist/event-planning"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero */}

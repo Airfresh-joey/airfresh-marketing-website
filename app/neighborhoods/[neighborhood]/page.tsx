@@ -3,7 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, ArrowRight, Building2 } from "lucide-react";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import { neighborhoods, neighborhoodServices, getNeighborhoodBySlug } from "@/server/neighborhoods-data";
 import type { Metadata } from 'next';
 
@@ -88,12 +88,9 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
 
   return (
     <div className="min-h-screen pt-16">
-      <SEO
-        title={`Event Staffing in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`}
-        description={`Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`}
-        pageType="service"
-        canonical={`https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       {/* Hero */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-r from-primary to-purple-600">

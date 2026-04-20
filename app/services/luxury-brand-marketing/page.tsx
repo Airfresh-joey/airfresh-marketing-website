@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import {
   Sparkles,
   Users,
@@ -80,12 +80,9 @@ export default function LuxuryBrandMarketingPage() {
 
   return (
     <>
-      <SEO
-        title="Luxury Brand Experiential Marketing | AirFresh Marketing"
-        description="Elevate your luxury brand with exclusive experiential marketing, VIP events, and premium brand activations. White-glove service for discerning brands."
-        keywords="luxury brand marketing, high-end brand activations, VIP events, luxury experiential marketing, premium brand experiences, luxury brand agency"
-        canonical="https://www.airfreshmarketing.com/services/luxury-brand-marketing"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

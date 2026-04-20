@@ -1,16 +1,9 @@
-import SEO from "@/components/SEO";
+
 import TalentApplicationForm from "@/components/TalentApplicationForm";
 
 export default function ApplyPage() {
   return (
     <div className="pt-16 min-h-screen bg-gray-50">
-      <SEO
-        title="Apply Now | Join Air Fresh Marketing"
-        description="Apply to join Air Fresh Marketing's team of brand ambassadors and event staff. Complete our application to start working with top brands nationwide."
-        keywords="apply brand ambassador, event staff application, promotional model jobs, marketing jobs application"
-        canonical="https://www.airfreshmarketing.com/careers/apply"
-      />
-
       {/* Main Content */}
       <div className="max-w-4xl mx-auto px-4 py-12">
         <div className="text-center mb-8">

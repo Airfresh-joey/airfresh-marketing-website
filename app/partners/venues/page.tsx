@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import {
   Store,
   DollarSign,
@@ -119,12 +119,9 @@ export default function VenuePartnerships() {
 
   return (
     <div className="pt-16">
-      <SEO
-        title="Venue Partnerships | Host Brand Activations - AirFresh Marketing"
-        description="Partner your venue with AirFresh Marketing for brand activations. Earn revenue hosting experiential marketing events at your location."
-        pageType="website"
-        canonical="https://www.airfreshmarketing.com/partners/venues"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

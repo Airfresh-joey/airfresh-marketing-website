@@ -3,7 +3,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import {
   Handshake,
   Building2,
@@ -130,12 +130,9 @@ export default function Partners() {
 
   return (
     <div className="pt-16">
-      <SEO
-        title="Partner Program | Venue & Agency Partnerships - AirFresh Marketing"
-        description="Join AirFresh Marketing's partner program. Venue partnerships, agency collaborations, and referral opportunities for experiential marketing."
-        pageType="website"
-        canonical="https://www.airfreshmarketing.com/partners"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

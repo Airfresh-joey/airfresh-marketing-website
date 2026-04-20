@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Calendar, Users, ArrowRight, Star, Trophy, Building } from "lucide-react";
-import SEO from "@/components/SEO";
+
 import { usaEvents, getFeaturedEvents, getTier1Events, getTier2Events } from "@/server/usa-events-data";
 
 const categoryColors: Record<string, string> = {
@@ -40,12 +40,9 @@ export default function EventsDirectory() {
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title="USA Events & Conferences | Event Staffing Directory | AirFresh Marketing"
-        description="Find professional event staffing for major US conferences, festivals, sporting events, and conventions. CES, Coachella, Super Bowl, Olympics 2028, and 100+ more events."
-        keywords="event staffing, conference staffing, festival staff, trade show staff, super bowl staffing, ces staffing, coachella staffing, olympics 2028 staffing"
-        structuredData={structuredData}
-        canonical="https://www.airfreshmarketing.com/events"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

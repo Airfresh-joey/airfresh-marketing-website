@@ -1,7 +1,7 @@
 'use client'
 
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
@@ -45,12 +45,6 @@ export default function PremierProteinCaseStudy() {
 
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <SEO
-        title="Premier Protein Case Study | SoCal Street Sampling Campaign"
-        description="See how AirFresh Marketing executed a high-energy mobile sampling campaign for Premier Protein across Southern California, distributing 645 cases at beach events, festivals, and 5K races."
-        canonical="https://www.airfreshmarketing.com/portfolio/premier-protein"
-      />
-
       {/* Hero Section with Video */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden bg-black">
         <div className="absolute inset-0">

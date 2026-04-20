@@ -14,7 +14,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import Link from "next/link"
-import SEO from "@/components/SEO"
+
 import {
   Calculator,
   TrendingUp,
@@ -107,11 +107,6 @@ export default function ROICalculator() {
 
   return (
     <>
-      <SEO 
-        title="ROI Calculator | Experiential Marketing Investment Returns | AirFresh Marketing"
-        description="Calculate the potential return on investment for your experiential marketing campaigns. Estimate impressions, leads, and revenue from trade shows, sampling, brand activations, and more."
-        canonical="/tools/roi-calculator"
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

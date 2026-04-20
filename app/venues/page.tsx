@@ -4,7 +4,7 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Building, ArrowRight, Users, Star, Square } from "lucide-react";
-import SEO from "@/components/SEO";
+
 import { venues, getFeaturedVenues, getVenuesByTier } from "@/server/venues-data";
 
 export default function VenuesDirectory() {
@@ -31,12 +31,9 @@ export default function VenuesDirectory() {
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title="Convention Centers & Venues | Event Staffing Directory | AirFresh Marketing"
-        description="Find professional event staffing for major US convention centers and venues. McCormick Place, Las Vegas Convention Center, OCCC, and 40+ more venues."
-        keywords="convention center staffing, venue staffing, trade show staff, event staff, mccormick place staffing, lvcc staffing, convention staff"
-        structuredData={structuredData}
-        canonical="https://www.airfreshmarketing.com/venues"
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

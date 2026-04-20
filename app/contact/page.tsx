@@ -12,7 +12,7 @@ import { Textarea } from "@/components/ui/textarea";
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from "@/components/ui/select";
 import { Form, FormControl, FormField, FormItem, FormLabel, FormMessage } from "@/components/ui/form";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import { useToast } from "@/hooks/use-toast";
 import {
   Phone,
@@ -136,12 +136,9 @@ export default function Contact() {
 
   return (
     <div className="pt-16">
-      <SEO
-        title="Get a Free Quote | Experiential Marketing - AirFresh Marketing"
-        description="Get a free quote for brand ambassadors, event staffing & experiential marketing. Call 303-720-6060. Nationwide coverage, 20+ years experience."
-        pageType="contact"
-        canonical="https://www.airfreshmarketing.com/contact"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section with Inline Form */}

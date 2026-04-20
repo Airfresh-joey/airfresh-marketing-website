@@ -3,7 +3,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import SEO from "@/components/SEO";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
@@ -54,13 +54,6 @@ export default function Portfolio() {
 
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <SEO
-        title="Portfolio | Award-Winning Experiential Marketing Case Studies - AirFresh"
-        description="Explore our portfolio of successful brand activations, experiential marketing campaigns, and event productions. Real results from Fortune 500 brands."
-        pageType="portfolio"
-        canonical="https://www.airfreshmarketing.com/portfolio"
-      />
-
       {/* Preconnect to Vimeo for faster video load */}
       <link rel="preconnect" href="https://player.vimeo.com" />
       <link rel="preconnect" href="https://i.vimeocdn.com" />

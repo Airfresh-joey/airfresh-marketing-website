@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import Image from "next/image";
-import SEO from "@/components/SEO";
+
 import {
   Linkedin,
   Mail,
@@ -86,12 +86,9 @@ export default function TeamPage() {
 
   return (
     <div className="pt-16">
-      <SEO
-        title="Our Team | Leadership & Expertise - AirFresh Marketing"
-        description="Meet the experienced leadership team behind AirFresh Marketing. 20+ years of experiential marketing expertise driving brand success nationwide."
-        pageType="about"
-        canonical="https://www.airfreshmarketing.com/team"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

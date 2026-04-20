@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import {
   ShoppingCart,
   Users,
@@ -82,12 +82,9 @@ export default function RetailActivationsPage() {
 
   return (
     <>
-      <SEO
-        title="Retail Activations & In-Store Marketing | AirFresh Marketing"
-        description="Transform your retail customer experience with professional in-store activations, product demonstrations, and brand ambassador programs. Drive sales at point of purchase."
-        keywords="retail activations, in-store marketing, product demonstrations, retail customer experience, in-store sampling, retail brand ambassadors"
-        canonical="https://www.airfreshmarketing.com/services/retail-activations"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

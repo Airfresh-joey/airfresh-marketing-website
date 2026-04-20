@@ -16,7 +16,7 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import Link from "next/link"
-import SEO from "@/components/SEO"
+
 import {
   Users,
   Calendar,
@@ -152,11 +152,6 @@ export default function GetQuote() {
   if (isSubmitted) {
     return (
       <>
-        <SEO 
-          title="Quote Request Received | AirFresh Marketing"
-          description="Thank you for your event staffing quote request. Our team will contact you within 24 hours."
-          canonical="/get-quote"
-        />
         <main className="min-h-screen bg-gradient-to-br from-slate-50 via-green-50 to-slate-100 flex items-center justify-center py-20">
           <Card className="max-w-lg mx-4 shadow-2xl border-0">
             <CardContent className="pt-12 pb-8 text-center">
@@ -184,11 +179,6 @@ export default function GetQuote() {
 
   return (
     <>
-      <SEO 
-        title="Get a Quote | Event Staffing & Brand Ambassadors | AirFresh Marketing"
-        description="Request a custom quote for professional event staffing services. Brand ambassadors, trade show staff, promotional teams, and more. Fast response guaranteed."
-        canonical="/get-quote"
-      />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

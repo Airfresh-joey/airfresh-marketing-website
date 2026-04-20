@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -67,12 +67,9 @@ export default function Locations() {
 
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <SEO
-        title="Nationwide Locations | Experiential Marketing in 50+ Cities - AirFresh"
-        description="AirFresh Marketing serves 50+ cities nationwide with experiential marketing services. Find our locations from coast to coast."
-        pageType="locations"
-        canonical="https://www.airfreshmarketing.com/locations"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}
