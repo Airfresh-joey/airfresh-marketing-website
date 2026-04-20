@@ -76,21 +76,51 @@ export default async function VenuePage({ params }: VenuePageProps) {
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "LocalBusiness",
-    "name": `AirFresh Marketing - ${venue.name} Staffing`,
-    "description": pageDescription,
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": venue.address.split(',')[0],
-      "addressLocality": venue.city,
-      "addressRegion": venue.state,
-      "addressCountry": "US"
-    },
-    "geo": {
-      "@type": "GeoCoordinates",
-      "latitude": venue.latitude,
-      "longitude": venue.longitude
-    }
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "MarketingAgency"],
+        "@id": `https://airfreshmarketing.com/venues/${venue.slug}#business`,
+        "name": `AirFresh Marketing - ${venue.name} Staffing`,
+        "description": pageDescription,
+        "url": `https://airfreshmarketing.com/venues/${venue.slug}`,
+        "telephone": "+1-303-720-6060",
+        "email": "hello@airfreshmarketing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1580 N. Logan St., Suite 660",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80203",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://twitter.com/AirFreshMktg",
+          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.instagram.com/airfreshmarketing"
+        ],
+        "areaServed": {
+          "@type": "Place",
+          "name": `${venue.name}, ${venue.city}`
+        },
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Place",
+        "name": venue.name,
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": venue.address.split(',')[0],
+          "addressLocality": venue.city,
+          "addressRegion": venue.state,
+          "addressCountry": "US"
+        },
+        "geo": {
+          "@type": "GeoCoordinates",
+          "latitude": venue.latitude,
+          "longitude": venue.longitude
+        }
+      }
+    ]
   };
 
   return (

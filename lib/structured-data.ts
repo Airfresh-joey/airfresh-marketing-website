@@ -23,10 +23,10 @@ export const organizationSchema = {
   },
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "720 S. Colorado Blvd., Penthouse North",
+    "streetAddress": "1580 N. Logan St., Suite 660",
     "addressLocality": "Denver",
     "addressRegion": "CO",
-    "postalCode": "80246",
+    "postalCode": "80203",
     "addressCountry": "US"
   }
 };
@@ -39,10 +39,10 @@ export const localBusinessSchema = {
   "email": "hello@airfreshmarketing.com",
   "address": {
     "@type": "PostalAddress",
-    "streetAddress": "720 S. Colorado Blvd., Penthouse North",
+    "streetAddress": "1580 N. Logan St., Suite 660",
     "addressLocality": "Denver",
     "addressRegion": "CO",
-    "postalCode": "80246",
+    "postalCode": "80203",
     "addressCountry": "US"
   },
   "geo": {

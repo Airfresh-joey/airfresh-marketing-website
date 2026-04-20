@@ -725,21 +725,31 @@ export default async function CityPage({ params }: CityPageProps) {
     "@context": "https://schema.org",
     "@graph": [
       {
-        "@type": "LocalBusiness",
+        "@type": ["LocalBusiness", "MarketingAgency"],
         "@id": `https://airfreshmarketing.com/cities/${city.slug}#business`,
         "name": `AirFresh Marketing - ${city.name}`,
         "description": pageDescription,
         "url": `https://airfreshmarketing.com/cities/${city.slug}`,
+        "telephone": "+1-303-720-6060",
+        "email": "hello@airfreshmarketing.com",
         "address": {
           "@type": "PostalAddress",
-          "addressLocality": city.name,
-          "addressRegion": city.state,
+          "streetAddress": "1580 N. Logan St., Suite 660",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80203",
           "addressCountry": "US"
         },
+        "sameAs": [
+          "https://twitter.com/AirFreshMktg",
+          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.instagram.com/airfreshmarketing"
+        ],
         "areaServed": {
           "@type": "City",
           "name": city.name
-        }
+        },
+        "priceRange": "$$$"
       },
       generateImageSchema({
         url: city.image,

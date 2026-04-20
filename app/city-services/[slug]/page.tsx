@@ -154,6 +154,75 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   // Verify image exists by checking if we have a valid service image
   const hasHeroImage = serviceImages[serviceSlug] !== undefined;
 
+  // Structured data with LocalBusiness, Service, and FAQPage schemas
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "MarketingAgency"],
+        "@id": `https://airfreshmarketing.com/city-services/${slug}#business`,
+        "name": `AirFresh Marketing - ${keywordPhrase}`,
+        "description": pageDescription,
+        "url": `https://airfreshmarketing.com/city-services/${slug}`,
+        "telephone": "+1-303-720-6060",
+        "email": "hello@airfreshmarketing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1580 N. Logan St., Suite 660",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80203",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://twitter.com/AirFreshMktg",
+          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.instagram.com/airfreshmarketing"
+        ],
+        "areaServed": {
+          "@type": "City",
+          "name": cityName
+        },
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Service",
+        "name": keywordPhrase,
+        "description": service.description,
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "areaServed": {
+          "@type": "City",
+          "name": cityName
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": `How do I get started with ${service.name.toLowerCase()} in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Contact AirFresh Marketing for a free consultation. We'll discuss your campaign goals, target audience, and timeline, then provide a customized proposal for ${service.name.toLowerCase()} in ${cityName}.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What makes AirFresh Marketing the best choice for ${service.name.toLowerCase()} in ${cityName}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `With years of experience and a proven track record, AirFresh Marketing delivers professional ${service.name.toLowerCase()} services throughout ${cityName}. Our local expertise, trained staff, and data-driven approach ensure measurable results for your campaign.`
+            }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
       <SEO
@@ -168,6 +237,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         ].join(', ')}
         pageType="service"
         canonical={`https://airfreshmarketing.com/city-services/${slug}`}
+        structuredData={structuredData}
       />
 
       {/* Hero Section */}

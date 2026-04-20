@@ -85,6 +85,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly' as const,
       priority: 0.8
     })),
+    { url: `${DOMAIN}/technology`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/locations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     // Venue/event-specific staffing pages (high-intent keywords)
     { url: `${DOMAIN}/staffing-for/ces`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },

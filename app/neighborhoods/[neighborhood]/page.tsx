@@ -3,6 +3,7 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, ArrowRight, Building2 } from "lucide-react";
 import Link from "next/link";
+import SEO from "@/components/SEO";
 import { neighborhoods, neighborhoodServices, getNeighborhoodBySlug } from "@/server/neighborhoods-data";
 import type { Metadata } from 'next';
 
@@ -51,8 +52,49 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
     notFound();
   }
 
+  // Structured data with LocalBusiness schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "MarketingAgency"],
+        "@id": `https://airfreshmarketing.com/neighborhoods/${neighborhoodSlug}#business`,
+        "name": `AirFresh Marketing - ${neighborhood.name}, ${neighborhood.city}`,
+        "description": `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`,
+        "url": `https://airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
+        "telephone": "+1-303-720-6060",
+        "email": "hello@airfreshmarketing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1580 N. Logan St., Suite 660",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80203",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://twitter.com/AirFreshMktg",
+          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.instagram.com/airfreshmarketing"
+        ],
+        "areaServed": {
+          "@type": "Place",
+          "name": `${neighborhood.name}, ${neighborhood.city}`
+        },
+        "priceRange": "$$$"
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen pt-16">
+      <SEO
+        title={`Event Staffing in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`}
+        description={`Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`}
+        pageType="service"
+        canonical={`https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`}
+        structuredData={structuredData}
+      />
       {/* Hero */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-r from-primary to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">

@@ -52,6 +52,54 @@ export default async function StatePage({ params }: StatePageProps) {
     notFound();
   }
 
+  // Structured data with LocalBusiness schema
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": ["LocalBusiness", "MarketingAgency"],
+        "@id": `https://airfreshmarketing.com/states/${stateSlug}#business`,
+        "name": `AirFresh Marketing - ${state.name}`,
+        "description": `Professional event staffing, brand ambassadors, and experiential marketing services throughout ${state.name}.`,
+        "url": `https://airfreshmarketing.com/states/${stateSlug}`,
+        "telephone": "+1-303-720-6060",
+        "email": "hello@airfreshmarketing.com",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "1580 N. Logan St., Suite 660",
+          "addressLocality": "Denver",
+          "addressRegion": "CO",
+          "postalCode": "80203",
+          "addressCountry": "US"
+        },
+        "sameAs": [
+          "https://twitter.com/AirFreshMktg",
+          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.instagram.com/airfreshmarketing"
+        ],
+        "areaServed": {
+          "@type": "State",
+          "name": state.name
+        },
+        "priceRange": "$$$"
+      },
+      {
+        "@type": "Service",
+        "name": `Event Staffing & Marketing Services in ${state.name}`,
+        "description": state.description,
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": state.name
+        }
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen pt-16">
       <SEO
@@ -59,6 +107,7 @@ export default async function StatePage({ params }: StatePageProps) {
         description={`Professional event staffing, brand ambassadors, and experiential marketing services throughout ${state.name}.`}
         pageType="service"
         canonical={`https://www.airfreshmarketing.com/states/${stateSlug}`}
+        structuredData={structuredData}
       />
 
       {/* Hero */}
