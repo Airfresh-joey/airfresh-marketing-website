@@ -80,6 +80,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <head>
+        {/* Preconnect to external origins for faster resource loading */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://www.googletagmanager.com" />
+        <link rel="dns-prefetch" href="https://analytics.ahrefs.com" />
+        <link rel="dns-prefetch" href="https://www.google-analytics.com" />
         {/* Preload hero images for fast LCP */}
         <link
           rel="preload"

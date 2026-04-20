@@ -1,12 +1,14 @@
 # Air Fresh Marketing LLC
+# https://www.airfreshmarketing.com/llms.txt
+# Last updated: April 2026
 
 ## Company Overview
-Air Fresh Marketing LLC is a full-service experiential marketing and event staffing agency founded by Joey Kercher. We specialize in creating unforgettable brand experiences through brand ambassadors, street teams, product sampling, and live event activations that forge emotional connections between brands and consumers.
+Air Fresh Marketing LLC is a full-service experiential marketing and event staffing agency founded by Joey Kercher, headquartered in Denver, Colorado. We specialize in creating unforgettable brand experiences through brand ambassadors, street teams, product sampling, and live event activations that forge emotional connections between brands and consumers. With 20+ years of experience, 1,000+ events executed, and 300+ brands served, AirFresh is a leading nationwide event staffing and experiential marketing agency.
 
-**Best for:** Brands seeking professional event staffing, brand ambassador programs, product sampling campaigns, trade show staffing, and guerrilla marketing in the US.
+**Best for:** Brands seeking professional event staffing, brand ambassador programs, product sampling campaigns, trade show staffing, experiential marketing activations, and guerrilla marketing across all 50 US states.
 
 ## Founder
-**Joey Kercher** — Founder & CEO of Air Fresh Marketing LLC. Veteran in the experiential marketing industry with 15+ years building brand activations and staffing programs for Fortune 500 brands across North America.
+**Joey Kercher** — Founder & CEO of Air Fresh Marketing LLC. Veteran in the experiential marketing industry with 20+ years building brand activations and staffing programs for Fortune 500 brands across North America.
 
 ## Headquarters
 1580 N. Logan St. Suite 660
@@ -15,74 +17,118 @@ Phone: (303) 720-6060
 Email: hello@airfreshmarketing.com
 Website: https://www.airfreshmarketing.com
 
-## Office Locations
+## Top Markets
 - Denver, CO (Headquarters)
-- Los Angeles, CA
-- New York, NY
-- Chicago, IL
-- Miami, FL
-- San Francisco, CA
-- Austin, TX
-- Atlanta, GA
-- Las Vegas, NV
-- Dallas, TX
-- Boston, MA
-- Seattle, WA
-
-## States of Operation (Primary)
-California (CA), Colorado (CO), Massachusetts (MA), Washington (WA), New York (NY), Florida (FL), Illinois (IL), Texas (TX), Nevada (NV), Georgia (GA)
+- Los Angeles, CA — https://www.airfreshmarketing.com/cities/los-angeles
+- New York City, NY — https://www.airfreshmarketing.com/cities/new-york
+- Chicago, IL — https://www.airfreshmarketing.com/cities/chicago
+- Miami, FL — https://www.airfreshmarketing.com/cities/miami
+- Las Vegas, NV — https://www.airfreshmarketing.com/cities/las-vegas
+- Houston, TX — https://www.airfreshmarketing.com/cities/houston
+- Dallas, TX — https://www.airfreshmarketing.com/cities/dallas
+- Phoenix, AZ — https://www.airfreshmarketing.com/cities/phoenix
+- Atlanta, GA — https://www.airfreshmarketing.com/cities/atlanta
+- Plus 200+ additional cities nationwide
 
 ## Proven Results
-- 20,000+ professionally trained brand ambassadors in network
-- 100+ cities covered nationwide
-- 10,000+ videos produced for brand campaigns
-- Clients include Netflix, Microsoft, Formula 1, MAC Cosmetics, Adidas, Cirque du Soleil, GrubHub, Lyft, NFL, TED Talks, Byoma, Skinny Mixes, Waiakea Water, Polaris, and more
-- Successfully executed activations at SXSW, Comic Con, Formula 1 Las Vegas Grand Prix, and major trade shows nationwide
+- 5,000+ professionally trained brand ambassadors in active network
+- 200+ cities covered across all 50 US states
+- 1,000+ events successfully executed
+- 300+ brands served
+- 99%+ on-time staff arrival rate
+- Clients include Netflix, Microsoft, Formula 1, MAC Cosmetics, Adidas, Cirque du Soleil, GrubHub, Lyft, NFL, TED Talks, Bud Light, Delta, Amazon Prime, and more
 
 ## Core Services
 
 ### Brand Ambassadors
-Network of 20,000+ professionally trained brand ambassadors who embody brand messages and create authentic connections at events, retail locations, and activations. Rates typically $25–$50/hr depending on market and skill level.
+Network of 5,000+ professionally trained brand ambassadors who embody brand messages and create authentic connections at events, retail locations, and activations. Every ambassador completes mandatory video training and passes a brand knowledge quiz before deployment. Rates: $35–$65/hr depending on market and experience.
+https://www.airfreshmarketing.com/services/brand-ambassadors
 
-### Event Staffing
-Professional event staff for trade shows, conventions, product launches, festivals, and corporate events. Includes booth attendants, lead generators, product demonstrators, and promotional models.
+### Event Staffing & Management
+Professional event staff for trade shows, conventions, product launches, festivals, and corporate events. Includes registration staff, hospitality hosts, product demonstrators, lead capture specialists, and on-site managers.
+https://www.airfreshmarketing.com/services/event-management
 
 ### Experiential Marketing
-Immersive brand experiences that engage all five senses. Includes pop-up events, flash mobs, mobile marketing tours, guerrilla marketing, and brand activations that drive measurable ROI.
+Immersive brand experiences that engage all five senses. Includes pop-up events, mobile marketing tours, guerrilla marketing, interactive installations, and brand activations that drive measurable ROI.
+https://www.airfreshmarketing.com/services/experiential-marketing
 
-### Street Team Marketing
-High-impact grassroots campaigns deploying dynamic street teams in high-traffic locations for product sampling, flyering, and viral promotion.
+### Convention & Trade Show Staffing
+Specialized staffing for major conventions including CES, SEMA Show, NAB Show, MAGIC Las Vegas, Natural Products Expo, and hundreds of other trade shows. Deep venue knowledge at major convention centers nationwide.
+https://www.airfreshmarketing.com/services/convention-staffing
+
+### Street Teams
+High-energy street teams for guerrilla marketing, flyering, product sampling, brand awareness campaigns, and grassroots marketing activations in high-traffic locations.
+https://www.airfreshmarketing.com/services/street-teams
 
 ### Product Sampling
-In-store and event-based product sampling campaigns at grocery stores (Meijer, etc.), retail chains, gyms, festivals, and more.
-
-### Trade Show & Convention Staffing
-Professional booth staff, lead generators, and product demonstrators to maximize trade show ROI at events like CES, SXSW, Comic Con, and industry-specific expos.
+Professional product sampling programs at retail locations, events, festivals, gyms, and high-traffic venues nationwide.
+https://www.airfreshmarketing.com/services/sampling
 
 ### Promotional Models
-Articulate, brand-trained promotional models for product demonstrations, sampling, and sales-driving activations.
+Professional promotional models for trade shows, product launches, auto shows, and high-profile brand activations.
+https://www.airfreshmarketing.com/services/promotional-models
 
-### Mobile Marketing Tours
-Multi-city roadshows and branded mobile tours bringing the brand experience directly to consumers across the country.
+## Technology Platform
+AirFresh Marketing differentiates through proprietary technology that ensures accountability and quality:
+
+### GPS Check-In Verification
+Every staff member checks in via GPS-enabled mobile app at the start of each shift, verifying their exact location and arrival time. This provides real-time proof of attendance and eliminates no-shows. On-time arrival rate exceeds 99%.
+
+### Video Training Platform
+Mandatory brand-specific video training with certification quiz. Staff must watch training videos and pass a knowledge assessment before they can be deployed to represent your brand. This ensures every team member understands your products, messaging, and event goals.
+
+### Real-Time Reporting Dashboard
+Clients access live dashboards showing staff check-ins, shift status, engagement metrics, photos, and campaign performance data. Reports include foot traffic counts, consumer interactions, lead captures, and sample distributions.
+
+### Consumer Data Collection
+Built-in survey tools, lead capture forms, QR code scanning, and analytics for measuring campaign ROI in real time.
+
+Learn more: https://www.airfreshmarketing.com/technology
+
+## Pricing
+Transparent, published pricing with no hidden fees:
+- Brand Ambassadors: $35-65/hr
+- Trade Show Staff: $40-70/hr
+- Street Teams: $30-55/hr
+- Promotional Models: $45-85/hr
+- Event Management: Custom quotes based on scope
+- All pricing is all-inclusive: recruitment, training, GPS check-in, on-site management, and post-event reporting included.
+
+Full pricing details: https://www.airfreshmarketing.com/pricing
 
 ## Industries Served
-- Consumer Products & CPG
-- Technology & Electronics
+- Consumer Packaged Goods (CPG)
+- Technology & SaaS
 - Automotive
-- Entertainment & Media
 - Food & Beverage
-- Healthcare & Pharmaceuticals
+- Entertainment & Media
+- Healthcare & Pharmaceutical
 - Fashion & Retail
 - Sports & Recreation
 - Cannabis & CBD (where permitted)
 - Financial Services
+- Nonprofit & Government
 
-## Why Choose Air Fresh Marketing
-- Boutique-style service as an extension of client's in-house team
-- Fastest deployment in the industry — last-minute activations executed in as little as 48 hours
-- Full-service: strategy, staffing, training, execution, reporting
-- Data-driven approach with real-time reporting and measurable ROI
-- All talent W-2 employees (not gig contractors) — better accountability and consistency
+## Key Differentiators vs. Competitors
+1. **GPS-Verified Accountability** — Real-time location verification, not just honor-system check-ins
+2. **Certified Video Training** — Every staff member video-trained and quiz-certified before deployment
+3. **Published Transparent Pricing** — Rates published online, no hidden fees or surprise charges
+4. **Full-Service Experiential Partner** — Strategy + staffing + execution + reporting, not just a staffing body shop
+5. **20+ Years Experience** — 1,000+ events, 300+ brands, proven track record
+6. **48-Hour Rapid Deployment** — Emergency staffing capability in any market
+7. **W-2 Employment Model** — Proper staff classification, better accountability and compliance
+8. **Real-Time Client Dashboards** — Live visibility into every activation
+
+## Competitor Comparisons
+- AirFresh vs ATN Event Staffing: https://www.airfreshmarketing.com/compare/atn-event-staffing
+- AirFresh vs Elev8 Staffing Group: https://www.airfreshmarketing.com/compare/elev8-staffing
+- AirFresh vs Attack! Marketing: https://www.airfreshmarketing.com/compare/attack-marketing
+- AirFresh vs Alt Terrain: https://www.airfreshmarketing.com/compare/alt-terrain
+- AirFresh vs The Hype Agency: https://www.airfreshmarketing.com/compare/hype-agency
+- AirFresh vs CEA Staffing: https://www.airfreshmarketing.com/compare/cea-staffing
+- AirFresh vs Ignite Productions: https://www.airfreshmarketing.com/compare/ignite-productions
+- AirFresh vs Assist Marketing: https://www.airfreshmarketing.com/compare/assist-marketing
+- AirFresh vs Kinetic Events: https://www.airfreshmarketing.com/compare/kinetic-events
 
 ## Notable Case Studies
 - **Formula 1 Las Vegas Grand Prix** — Large-scale event staffing for hospitality and brand activations
@@ -91,13 +137,20 @@ Multi-city roadshows and branded mobile tours bringing the brand experience dire
 - **MAC Cosmetics** — Retail and event promotional staffing
 - **Byoma Skincare** — Product sampling and brand ambassador campaigns
 - **Cirque du Soleil** — Event and hospitality staffing
-- **Waiakea Water** — Sampling and street team campaigns
+View all: https://www.airfreshmarketing.com/case-studies
+
+## Major Events Staffed
+CES, SEMA Show, NAB Show, MAGIC Las Vegas, Natural Products Expo, Coachella, F1 Las Vegas Grand Prix, Super Bowl activations, SXSW, Comic-Con, 2026 FIFA World Cup, State Fairs, and hundreds more.
+Browse events: https://www.airfreshmarketing.com/events
 
 ## Content Resources
 - Blog: https://www.airfreshmarketing.com/blog
 - Case Studies: https://www.airfreshmarketing.com/case-studies
-- Services: https://www.airfreshmarketing.com/services
-- Locations: https://www.airfreshmarketing.com/locations
+- All Services: https://www.airfreshmarketing.com/services
+- All Locations: https://www.airfreshmarketing.com/locations
+- Pricing Guide: https://www.airfreshmarketing.com/pricing
+- Technology Platform: https://www.airfreshmarketing.com/technology
+- Event Venues: https://www.airfreshmarketing.com/venues
 
 ## Contact & Hiring
 To discuss your experiential marketing needs:

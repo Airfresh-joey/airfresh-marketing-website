@@ -2,8 +2,12 @@ User-agent: *
 Allow: /
 Allow: /images/
 
-# Disallow admin/private areas if any
+# Disallow admin/private areas
 Disallow: /api/
+Disallow: /_next/
 
-# Image sitemaps
+# Sitemaps
 Sitemap: https://www.airfreshmarketing.com/sitemap.xml
+
+# Canonical host
+Host: https://www.airfreshmarketing.com
