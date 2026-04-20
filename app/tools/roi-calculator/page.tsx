@@ -332,6 +332,27 @@ export default function ROICalculator() {
           </div>
         </section>
 
+        {/* SEO Content Section */}
+        <section className="py-16 bg-gray-50">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">Understanding Experiential Marketing ROI</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Measuring the return on investment for experiential marketing campaigns is essential for justifying budgets and optimizing future activations. Unlike digital marketing where clicks and conversions are tracked automatically, experiential marketing ROI requires measuring both direct and indirect impacts including brand impressions, consumer engagements, lead generation, and downstream revenue.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Our ROI calculator uses industry benchmarks from thousands of real experiential marketing campaigns to provide accurate projections. Trade shows typically deliver 12-15 impressions per dollar invested, while product sampling campaigns can reach 25-30 impressions per dollar due to higher foot traffic and direct consumer interaction. Brand activations and street team campaigns fall between these ranges depending on location, audience targeting, and activation design.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                The most successful experiential campaigns combine strong staff training, strategic location selection, and integrated digital amplification to maximize every dollar spent. Brands that invest in professional event staffing through agencies like AirFresh Marketing see 30-50% higher engagement rates compared to using untrained temporary workers, directly impacting lead quality and conversion rates.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Use this calculator to estimate your campaign's potential returns, then <a href="/contact" className="text-primary hover:underline font-medium">contact our team</a> for a detailed proposal with custom projections based on your specific goals, target audience, and market conditions.
+              </p>
+            </div>
+          </div>
+        </section>
+
         {/* How It Works */}
         <section className="py-16 bg-white">
           <div className="container mx-auto px-4">

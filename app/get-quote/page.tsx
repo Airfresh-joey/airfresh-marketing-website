@@ -629,6 +629,27 @@ export default function GetQuote() {
             </div>
           </div>
         </section>
+
+        {/* SEO Content Section */}
+        <section className="py-16 bg-white">
+          <div className="container mx-auto px-4">
+            <div className="max-w-3xl mx-auto">
+              <h2 className="text-2xl font-bold text-gray-900 mb-4">How Our Event Staffing Quote Process Works</h2>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Getting an event staffing quote from AirFresh Marketing is straightforward and commitment-free. Simply fill out the form above with your event details including date, location, number of staff needed, and the types of roles you require. Our team reviews every request personally and responds within 24 hours with a custom proposal tailored to your specific campaign goals.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                Your quote will include itemized pricing for each staff role, training and onboarding costs, travel and logistics if applicable, and a detailed scope of work. We offer transparent pricing with no hidden fees. Whether you need two brand ambassadors for a single-day sampling event or fifty staff members for a multi-city tour, we provide accurate quotes that fit your budget without compromising quality.
+              </p>
+              <p className="text-gray-700 mb-4 leading-relaxed">
+                AirFresh Marketing has served over 300 brands including Fortune 500 companies, fast-growing startups, and leading agencies. Our nationwide network of 1,000+ pre-vetted event professionals covers 50+ major U.S. markets, ensuring you get experienced local talent wherever your activation takes place. All staff are background-checked, trained on your brand messaging, and supported by on-site team leads.
+              </p>
+              <p className="text-gray-700 leading-relaxed">
+                Prefer to speak with someone directly? Call us at <a href="tel:+13037206060" className="text-primary hover:underline font-medium">(303) 720-6060</a> or email <a href="mailto:hello@airfreshmarketing.com" className="text-primary hover:underline font-medium">hello@airfreshmarketing.com</a>. Our team is available Monday through Friday, 9AM to 6PM MST.
+              </p>
+            </div>
+          </div>
+        </section>
       </main>
     </>
   )
