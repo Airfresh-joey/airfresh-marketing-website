@@ -1051,6 +1051,61 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Top Markets & Resources */}
+      <section className="py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center text-gray-900">Event Staffing in Top U.S. Markets</h2>
+          <p className="text-lg text-gray-600 text-center mb-12 max-w-3xl mx-auto">Professional brand ambassadors, event staff, and experiential marketing teams in every major city</p>
+          <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-4 mb-12">
+            {[
+              { city: 'Los Angeles', slug: 'los-angeles' },
+              { city: 'New York City', slug: 'new-york-city' },
+              { city: 'Miami', slug: 'miami' },
+              { city: 'Chicago', slug: 'chicago' },
+              { city: 'Las Vegas', slug: 'las-vegas' },
+              { city: 'Denver', slug: 'denver' },
+              { city: 'Houston', slug: 'houston' },
+              { city: 'Dallas', slug: 'dallas' },
+              { city: 'Phoenix', slug: 'phoenix' },
+              { city: 'Atlanta', slug: 'atlanta' },
+            ].map(market => (
+              <Link key={market.slug} href={`/city-services/${market.slug}-brand-ambassadors`} className="group">
+                <div className="p-4 bg-gray-50 rounded-xl text-center hover:bg-cyan-50 hover:shadow-md transition-all">
+                  <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">{market.city}</div>
+                  <div className="text-xs text-gray-500 mt-1">Brand Ambassadors</div>
+                </div>
+              </Link>
+            ))}
+          </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/pricing" className="group">
+              <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Event Staffing Pricing</div>
+                <div className="text-sm text-gray-500 mt-1">Transparent rates and packages</div>
+              </div>
+            </Link>
+            <Link href="/technology" className="group">
+              <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Our Technology Platform</div>
+                <div className="text-sm text-gray-500 mt-1">GPS tracking and real-time reporting</div>
+              </div>
+            </Link>
+            <Link href="/compare/atn-event-staffing" className="group">
+              <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">AirFresh vs ATN Staffing</div>
+                <div className="text-sm text-gray-500 mt-1">Side-by-side comparison</div>
+              </div>
+            </Link>
+            <Link href="/case-studies" className="group">
+              <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Client Case Studies</div>
+                <div className="text-sm text-gray-500 mt-1">Real results from real campaigns</div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section - Premium Gradient */}
       <section className="relative py-32 bg-gradient-to-br from-cyan-600 via-blue-600 to-cyan-700 text-white overflow-hidden">
         <div className="absolute inset-0">
