@@ -107,16 +107,16 @@ const cityLinks = [
 ];
 
 const popularServices = [
-  { label: 'NYC Brand Ambassadors', href: '/city-services/new-york-brand-ambassadors' },
-  { label: 'LA Experiential', href: '/city-services/los-angeles-experiential-marketing' },
-  { label: 'Chicago Street Teams', href: '/city-services/chicago-street-teams' },
-  { label: 'Miami Sampling', href: '/city-services/miami-sampling' },
-  { label: 'Vegas Convention Staff', href: '/city-services/las-vegas-convention-staffing' },
-  { label: 'Austin Event Mgmt', href: '/city-services/austin-event-management' },
-  { label: 'Denver Promo Models', href: '/city-services/denver-promotional-models' },
-  { label: 'Atlanta Guerilla Mktg', href: '/city-services/atlanta-guerilla-marketing' },
-  { label: 'SF Marketing Mascots', href: '/city-services/san-francisco-marketing-mascots' },
-  { label: 'Seattle Brand Ambassadors', href: '/city-services/seattle-brand-ambassadors' },
+  { label: 'Brand Ambassadors New York', href: '/city-services/new-york-brand-ambassadors' },
+  { label: 'Experiential Marketing Los Angeles', href: '/city-services/los-angeles-experiential-marketing' },
+  { label: 'Street Teams Chicago', href: '/city-services/chicago-street-teams' },
+  { label: 'Product Sampling Miami', href: '/city-services/miami-sampling' },
+  { label: 'Convention Staffing Las Vegas', href: '/city-services/las-vegas-convention-staffing' },
+  { label: 'Event Management Austin', href: '/city-services/austin-event-management' },
+  { label: 'Promotional Models Denver', href: '/city-services/denver-promotional-models' },
+  { label: 'Guerrilla Marketing Atlanta', href: '/city-services/atlanta-guerilla-marketing' },
+  { label: 'Brand Ambassadors San Francisco', href: '/city-services/san-francisco-marketing-mascots' },
+  { label: 'Brand Ambassadors Seattle', href: '/city-services/seattle-brand-ambassadors' },
 ];
 
 export default function Services() {
