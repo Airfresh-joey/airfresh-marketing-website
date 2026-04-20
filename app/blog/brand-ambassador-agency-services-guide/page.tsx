@@ -434,7 +434,7 @@ export default function BrandAmbassadorAgencyServicesGuide() {
           <Card className="bg-teal-50 border-teal-200">
             <CardContent className="p-6">
               <h4 className="font-bold text-teal-900 mb-2">Case Study: Grubhub — 664% ROI in 60 Days</h4>
-              <p className="text-teal-800 text-sm">When Grubhub needed to break through competitive noise in NYC, Boston, and Philadelphia, our street teams generated 18,000 new app downloads at a 73% lower cost per acquisition than digital advertising. The campaign moved Grubhub from #3 to #2 in the Boston market. <Link href="/blog/how-street-team-marketing-helped-grubhub-deliver-more-than-just-food" className="text-teal-600 hover:underline font-medium">Read the full Grubhub case study →</Link></p>
+              <p className="text-teal-800 text-sm">When Grubhub needed to break through competitive noise in NYC, Boston, and Philadelphia, our street teams generated 18,000 new app downloads at a 73% lower cost per acquisition than digital advertising. The campaign moved Grubhub from #3 to #2 in the Boston market. <Link href="/blog/street-teams-marketing-guide" className="text-teal-600 hover:underline font-medium">Read the full Grubhub case study →</Link></p>
             </CardContent>
           </Card>
         </section>

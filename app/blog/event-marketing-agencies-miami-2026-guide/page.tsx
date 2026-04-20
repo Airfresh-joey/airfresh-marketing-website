@@ -151,7 +151,7 @@ export default function EventMarketingAgenciesMiamiGuide() {
           <li><strong>Multi-day discounts</strong>: 3+ day campaigns qualify for 15-20% savings</li>
         </ul>
 
-        <p>For complete national pricing data, check our <Link href="/blog/event-staffing-costs-2026-complete-pricing-guide" className="text-blue-600 hover:text-blue-700">event staffing costs guide</Link>.</p>
+        <p>For complete national pricing data, check our <Link href="/pricing" className="text-blue-600 hover:text-blue-700">event staffing costs guide</Link>.</p>
 
         <h2>Top Miami Neighborhoods for Event Activations</h2>
 

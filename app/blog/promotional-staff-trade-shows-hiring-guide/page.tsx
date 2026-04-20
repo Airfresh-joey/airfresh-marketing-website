@@ -180,7 +180,7 @@ export default function PromotionalStaffTradeShows() {
 
         <p><strong>Tier 3 markets (Nashville, Charlotte, Indianapolis, Salt Lake City):</strong> $25-$40 per hour for brand ambassadors, $35-$55 per hour for product demonstrators, $40-$70 per hour for emcees.</p>
 
-        <p>Most staffing agencies require a minimum booking of 4-8 hours per staff member per day. Some also charge a management fee (typically 15-25% on top of staff rates) that covers on-site supervision, training coordination, and administrative support. For a detailed market-by-market breakdown, see our <Link href="/blog/event-staffing-costs-2026-complete-pricing-guide" className="text-orange-600 hover:text-orange-700">complete event staffing costs guide for 2026</Link>.</p>
+        <p>Most staffing agencies require a minimum booking of 4-8 hours per staff member per day. Some also charge a management fee (typically 15-25% on top of staff rates) that covers on-site supervision, training coordination, and administrative support. For a detailed market-by-market breakdown, see our <Link href="/pricing" className="text-orange-600 hover:text-orange-700">complete event staffing costs guide for 2026</Link>.</p>
 
         <h2>Measuring the ROI of Your Trade Show Promotional Staff</h2>
 

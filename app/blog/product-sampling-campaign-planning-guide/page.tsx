@@ -109,7 +109,7 @@ export default function ProductSamplingCampaignPlanningGuide() {
 
         <h3>Mobile Sampling Tours</h3>
 
-        <p>Branded vehicles travel to multiple cities and locations, creating pop-up sampling experiences. <Link href="/blog/mobile-marketing-tour-planning-guide-2026" className="text-blue-600 hover:text-blue-700">Mobile marketing tours</Link> combine sampling with experiential marketing for maximum impact.</p>
+        <p>Branded vehicles travel to multiple cities and locations, creating pop-up sampling experiences. <Link href="/blog/mobile-marketing-tours-explained" className="text-blue-600 hover:text-blue-700">Mobile marketing tours</Link> combine sampling with experiential marketing for maximum impact.</p>
 
         <p><strong>Best for</strong>: National product launches, beverage brands, and campaigns requiring geographic reach</p>
 

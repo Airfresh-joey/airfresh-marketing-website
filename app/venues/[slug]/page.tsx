@@ -468,7 +468,7 @@ export default async function VenuePage({ params }: VenuePageProps) {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/blog/trade-show-staffing-guide" className="group">
+            <Link href="/blog/trade-show-marketing-strategies" className="group">
               <Card className="hover:shadow-lg transition-shadow h-full">
                 <CardContent className="p-5">
                   <BookOpen className="w-6 h-6 text-primary mb-3" />
@@ -479,7 +479,7 @@ export default async function VenuePage({ params }: VenuePageProps) {
             </Link>
           </div>
           <div className="grid md:grid-cols-3 gap-4 mt-4">
-            <Link href="/blog/convention-staffing-tips" className="group">
+            <Link href="/blog/convention-center-marketing" className="group">
               <Card className="hover:shadow-lg transition-shadow h-full">
                 <CardContent className="p-5">
                   <BookOpen className="w-6 h-6 text-primary mb-3" />
@@ -488,7 +488,7 @@ export default async function VenuePage({ params }: VenuePageProps) {
                 </CardContent>
               </Card>
             </Link>
-            <Link href="/blog/convention-center-guide" className="group">
+            <Link href="/blog/convention-center-marketing" className="group">
               <Card className="hover:shadow-lg transition-shadow h-full">
                 <CardContent className="p-5">
                   <BookOpen className="w-6 h-6 text-primary mb-3" />

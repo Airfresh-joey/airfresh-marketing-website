@@ -136,7 +136,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
           <li><strong>Duration</strong>: Multi-day or ongoing programs often qualify for volume discounts of 10-20%</li>
         </ul>
 
-        <p>For detailed city-by-city pricing, see our <Link href="/blog/event-staffing-costs-2026-complete-pricing-guide" className="text-blue-600 hover:text-blue-700">complete event staffing costs guide</Link>.</p>
+        <p>For detailed city-by-city pricing, see our <Link href="/pricing" className="text-blue-600 hover:text-blue-700">complete event staffing costs guide</Link>.</p>
 
         <h2>Types of Brand Ambassador Campaigns</h2>
 
@@ -144,7 +144,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
 
         <h3>In-Store Product Sampling</h3>
 
-        <p>Ambassadors set up demonstrations at retail locations like Costco, Target, Whole Foods, or specialty retailers. They engage shoppers, offer samples, and drive purchase at the point of sale. <Link href="/blog/product-sampling-campaigns-that-convert" className="text-blue-600 hover:text-blue-700">Product sampling campaigns</Link> remain one of the highest-ROI experiential tactics.</p>
+        <p>Ambassadors set up demonstrations at retail locations like Costco, Target, Whole Foods, or specialty retailers. They engage shoppers, offer samples, and drive purchase at the point of sale. <Link href="/blog/product-sampling-campaigns" className="text-blue-600 hover:text-blue-700">Product sampling campaigns</Link> remain one of the highest-ROI experiential tactics.</p>
 
         <h3>Trade Show and Convention Staffing</h3>
 

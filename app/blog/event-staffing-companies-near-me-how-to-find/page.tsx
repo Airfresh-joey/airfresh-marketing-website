@@ -118,7 +118,7 @@ export default function EventStaffingCompaniesNearMe() {
 
         <h3>6. Pricing Transparency</h3>
 
-        <p>Request a detailed pricing breakdown, not a single bundled rate. You should see separate line items for staff hourly rates, agency management fees, training costs, travel expenses (if any), and any additional charges. Compare pricing across your shortlisted agencies, but do not make price the primary decision factor. The cheapest event staffing company near you is rarely the best value — because the cost of poor staff quality shows up in missed leads, brand damage, and wasted activation investment. For a comprehensive look at what event staffing costs across different markets, see our <Link href="/blog/event-staffing-costs-2026-complete-pricing-guide" className="text-blue-600 hover:text-blue-700">event staffing costs guide for 2026</Link>.</p>
+        <p>Request a detailed pricing breakdown, not a single bundled rate. You should see separate line items for staff hourly rates, agency management fees, training costs, travel expenses (if any), and any additional charges. Compare pricing across your shortlisted agencies, but do not make price the primary decision factor. The cheapest event staffing company near you is rarely the best value — because the cost of poor staff quality shows up in missed leads, brand damage, and wasted activation investment. For a comprehensive look at what event staffing costs across different markets, see our <Link href="/pricing" className="text-blue-600 hover:text-blue-700">event staffing costs guide for 2026</Link>.</p>
 
         <h3>7. Insurance and Compliance</h3>
 

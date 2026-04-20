@@ -154,7 +154,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>We helped them execute a three-weekend <Link href="/blog/pop-up-shop-marketing-guide" className="text-teal-600 hover:text-teal-700">pop-up shop</Link> in a high-foot-traffic shopping district. We staffed the pop-up with brand ambassadors who were trained estheticians, capable of doing mini skin consultations and product recommendations. The experience was designed to feel like a beauty counter, not a temporary booth.</p>
+        <p>We helped them execute a three-weekend <Link href="/blog/pop-up-shop-staffing-guide" className="text-teal-600 hover:text-teal-700">pop-up shop</Link> in a high-foot-traffic shopping district. We staffed the pop-up with brand ambassadors who were trained estheticians, capable of doing mini skin consultations and product recommendations. The experience was designed to feel like a beauty counter, not a temporary booth.</p>
 
         <h3>The Results</h3>
 
@@ -178,7 +178,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>We activated at four music festivals over the summer season, each with a branded lounge area, sampling stations, and a social media activation (a branded photo experience that generated shareable content). We deployed teams of 12-16 <Link href="/blog/festival-event-staff-guide" className="text-teal-600 hover:text-teal-700">festival brand ambassadors</Link> per event, all trained on responsible alcohol service and brand messaging. Each sampling interaction included a brief brand story — why the product was different — before the taste.</p>
+        <p>We activated at four music festivals over the summer season, each with a branded lounge area, sampling stations, and a social media activation (a branded photo experience that generated shareable content). We deployed teams of 12-16 <Link href="/blog/hire-event-staff-festivals" className="text-teal-600 hover:text-teal-700">festival brand ambassadors</Link> per event, all trained on responsible alcohol service and brand messaging. Each sampling interaction included a brief brand story — why the product was different — before the taste.</p>
 
         <h3>The Results</h3>
 
@@ -202,7 +202,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>We placed trained <Link href="/blog/retail-product-demonstration-services" className="text-teal-600 hover:text-teal-700">product demonstration specialists</Link> in 90 retail locations across 14 markets for three consecutive weekends. Each specialist ran hands-on demos where consumers could compare the noise cancellation against competing products at higher price points. The demo script was designed around a specific moment of surprise — the "wow, these are only $79?" reaction that happened consistently when people tried them.</p>
+        <p>We placed trained <Link href="/blog/retail-demo-programs" className="text-teal-600 hover:text-teal-700">product demonstration specialists</Link> in 90 retail locations across 14 markets for three consecutive weekends. Each specialist ran hands-on demos where consumers could compare the noise cancellation against competing products at higher price points. The demo script was designed around a specific moment of surprise — the "wow, these are only $79?" reaction that happened consistently when people tried them.</p>
 
         <h3>The Results</h3>
 
@@ -227,7 +227,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>We recruited and trained <Link href="/blog/campus-brand-ambassador-program-guide" className="text-teal-600 hover:text-teal-700">campus brand ambassadors</Link> at 22 universities — students who were genuinely embedded in campus social networks. Each ambassador ran weekly activations: dorm move-in day signups, tailgate activations, student organization partnerships, and dining hall tabling. The key difference from a standard campus marketing program was that ambassadors were trained to help students set up the app on the spot and make their first transaction, not just download it.</p>
+        <p>We recruited and trained <Link href="/blog/school-campus-marketing" className="text-teal-600 hover:text-teal-700">campus brand ambassadors</Link> at 22 universities — students who were genuinely embedded in campus social networks. Each ambassador ran weekly activations: dorm move-in day signups, tailgate activations, student organization partnerships, and dining hall tabling. The key difference from a standard campus marketing program was that ambassadors were trained to help students set up the app on the spot and make their first transaction, not just download it.</p>
 
         <h3>The Results</h3>
 
@@ -250,7 +250,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>1. Trained Staff, Not Warm Bodies</h3>
 
-        <p>Every high-performing campaign used brand ambassadors who were thoroughly trained on the product, the target audience, and the specific behaviors that drive conversion. The difference between a trained ambassador and a warm body holding a sign is the difference between a 30 percent conversion rate and a 3 percent conversion rate. <Link href="/blog/brand-ambassador-training-guide" className="text-teal-600 hover:text-teal-700">Ambassador training</Link> is not an optional line item — it is the highest-ROI investment in any experiential campaign.</p>
+        <p>Every high-performing campaign used brand ambassadors who were thoroughly trained on the product, the target audience, and the specific behaviors that drive conversion. The difference between a trained ambassador and a warm body holding a sign is the difference between a 30 percent conversion rate and a 3 percent conversion rate. <Link href="/blog/event-staff-training" className="text-teal-600 hover:text-teal-700">Ambassador training</Link> is not an optional line item — it is the highest-ROI investment in any experiential campaign.</p>
 
         <h3>2. Clear KPIs Defined Before Launch</h3>
 
