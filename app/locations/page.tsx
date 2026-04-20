@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react";
-import { motion } from "framer-motion";
 import Link from "next/link";
 import SEO from "@/components/SEO";
 import { Card, CardContent } from "@/components/ui/card";
@@ -90,11 +89,7 @@ export default function Locations() {
           ></div>
         </div>
         <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-          >
+          <div className="animate-fade-in">
             <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-white/20 text-white border-white/30">
               <MapPin className="w-4 h-4 mr-1" />
               Nationwide Coverage
@@ -116,20 +111,17 @@ export default function Locations() {
                 { icon: Users, value: "1000+", label: "Ambassadors" },
                 { icon: Award, value: "300+", label: "Brands" }
               ].map((stat, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.2 * index }}
                   className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
                 >
                   <stat.icon className="w-8 h-8 mx-auto mb-2" />
                   <div className="text-3xl font-bold">{stat.value}</div>
                   <div className="text-sm opacity-90">{stat.label}</div>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
@@ -232,16 +224,11 @@ export default function Locations() {
               );
 
               return (
-                <motion.div
-                  key={city.name}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.05 }}
-                >
+                <div key={city.name}>
                   <Link href={`/cities/${citySlug}`}>
                     {cardContent}
                   </Link>
-                </motion.div>
+                </div>
               );
             })}
           </div>
@@ -385,11 +372,7 @@ export default function Locations() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <h2 className="text-4xl font-bold mb-4">
               Ready to Launch Your Campaign?
             </h2>
@@ -410,7 +393,7 @@ export default function Locations() {
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

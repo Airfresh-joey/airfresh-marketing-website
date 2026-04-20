@@ -1,91 +1,83 @@
-'use client'
-
-import { useState } from "react";
-import { useParams } from "next/navigation";
-import Link from "next/link";
-import { notFound } from "next/navigation";
-import { motion } from "framer-motion";
-import { portfolioCaseStudies } from "@/server/portfolioCaseStudies";
-import SEO from "@/components/SEO";
-import { Button } from "@/components/ui/button";
-import { Badge } from "@/components/ui/badge";
-import { Card, CardContent } from "@/components/ui/card";
+import Link from "next/link"
+import { notFound } from "next/navigation"
+import { portfolioCaseStudies } from "@/server/portfolioCaseStudies"
+import { Button } from "@/components/ui/button"
+import { Badge } from "@/components/ui/badge"
+import { Card, CardContent } from "@/components/ui/card"
+import { CaseStudyGallery } from "@/components/CaseStudyGallery"
 import {
   ArrowLeft,
   ArrowRight,
   MapPin,
-  Calendar,
-  Users,
-  Target,
-  Award,
-  Clock,
   ExternalLink,
-  Building,
   Briefcase,
-  ChevronRight,
-  Eye,
-  Share2,
-  Download,
-  Play,
-  Image as ImageIcon
-} from "lucide-react";
+  Share2
+} from "lucide-react"
 
-export default function CaseStudyDetail() {
-  const params = useParams();
-  const [activeImageIndex, setActiveImageIndex] = useState(0);
+export async function generateStaticParams() {
+  return portfolioCaseStudies.map((study) => ({ id: study.id }))
+}
 
-  // Find the case study by ID
-  const caseStudy = portfolioCaseStudies.find(study => study.id === params.id);
+export default async function CaseStudyDetail(
+  { params }: { params: Promise<{ id: string }> }
+) {
+  const { id } = await params
+  const caseStudy = portfolioCaseStudies.find((study) => study.id === id)
 
   if (!caseStudy) {
-    notFound();
+    notFound()
   }
 
-  // Get images - only use case study images, no placeholders
-  const getImages = () => {
-    if (caseStudy.images && caseStudy.images.length > 0) {
-      return caseStudy.images;
-    }
-    // If no images array, use hero image as fallback
-    if (caseStudy.heroImage) {
-      return [caseStudy.heroImage];
-    }
-    return [];
-  };
+  // Get images
+  const images: string[] =
+    caseStudy.images && caseStudy.images.length > 0
+      ? caseStudy.images
+      : caseStudy.heroImage
+      ? [caseStudy.heroImage]
+      : []
 
-  const images = getImages();
+  const heroImageUrl =
+    caseStudy.heroImage || images[0] || "/images/case-studies/gallery/formula1/formula1-1.jpg"
 
-  // Ensure we have a hero image
-  const heroImageUrl = caseStudy.heroImage || images[0] || "/images/case-studies/gallery/formula1/formula1-1.jpg";
-
-  // Find related case studies
   const relatedStudies = portfolioCaseStudies
-    .filter(study => study.id !== caseStudy.id && study.category === caseStudy.category)
-    .slice(0, 3);
+    .filter((study) => study.id !== caseStudy.id && study.category === caseStudy.category)
+    .slice(0, 3)
 
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "CreativeWork",
-    "name": caseStudy.name,
-    "description": caseStudy.description,
-    "url": `https://www.airfreshmarketing.com/case-studies/${caseStudy.id}`,
-    "creator": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing"
-    },
-    "about": {
-      "@type": "Thing",
-      "name": caseStudy.category
-    }
-  };
+    "@graph": [
+      {
+        "@type": "CreativeWork",
+        "name": caseStudy.name,
+        "description": caseStudy.description,
+        "url": `https://www.airfreshmarketing.com/case-studies/${caseStudy.id}`,
+        "creator": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com",
+        },
+        "about": {
+          "@type": "Thing",
+          "name": caseStudy.category,
+        },
+        ...(caseStudy.heroImage && { image: caseStudy.heroImage }),
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://www.airfreshmarketing.com/case-studies" },
+          { "@type": "ListItem", "position": 3, "name": caseStudy.name, "item": `https://www.airfreshmarketing.com/case-studies/${caseStudy.id}` },
+        ],
+      },
+    ],
+  }
 
   return (
     <div className="pt-16 min-h-screen bg-white">
-      <SEO
-        title={`${caseStudy.name} | Case Study - AirFresh Marketing`}
-        description={caseStudy.description}
-        canonical={`https://www.airfreshmarketing.com/case-studies/${caseStudy.id}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}
@@ -96,7 +88,7 @@ export default function CaseStudyDetail() {
               <iframe
                 src={`https://player.vimeo.com/video/${caseStudy.heroVideo}?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0`}
                 className="absolute top-1/2 left-1/2 min-w-full min-h-full w-auto h-auto -translate-x-1/2 -translate-y-1/2"
-                style={{ aspectRatio: '16/9' }}
+                style={{ aspectRatio: "16/9" }}
                 frameBorder="0"
                 allow="autoplay; fullscreen"
                 title="Hero Video"
@@ -110,9 +102,9 @@ export default function CaseStudyDetail() {
               className="absolute inset-0 z-0"
               style={{
                 backgroundImage: `url(${heroImageUrl})`,
-                backgroundSize: 'cover',
-                backgroundPosition: caseStudy.heroPosition || 'top center',
-                backgroundRepeat: 'no-repeat'
+                backgroundSize: "cover",
+                backgroundPosition: caseStudy.heroPosition || "top center",
+                backgroundRepeat: "no-repeat",
               }}
             />
             <div className="absolute inset-0 bg-gradient-to-b from-black/40 to-black/70 z-10" />
@@ -122,47 +114,41 @@ export default function CaseStudyDetail() {
         {/* Content Overlay */}
         <div className="relative z-20 w-full p-8 lg:p-16">
           <div className="max-w-7xl mx-auto">
-              <Link href="/portfolio">
-                <Button variant="ghost" className="text-white hover:text-gray-300 mb-6 -ml-2">
-                  <ArrowLeft className="w-4 h-4 mr-2" />
-                  Back to Portfolio
-                </Button>
-              </Link>
+            <Link href="/portfolio">
+              <Button variant="ghost" className="text-white hover:text-gray-300 mb-6 -ml-2">
+                <ArrowLeft className="w-4 h-4 mr-2" />
+                Back to Portfolio
+              </Button>
+            </Link>
 
-              <motion.div
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ duration: 0.6 }}
-              >
-                <Badge className="mb-4 bg-white/20 text-white border-white/30">
-                  {caseStudy.category}
-                </Badge>
+            <div className="animate-fade-in">
+              <Badge className="mb-4 bg-white/20 text-white border-white/30">
+                {caseStudy.category}
+              </Badge>
 
-                <h1 className="text-4xl md:text-6xl font-bold mb-4">
-                  {caseStudy.name}
-                </h1>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">{caseStudy.name}</h1>
 
-                <p className="text-xl md:text-2xl opacity-90 mb-6 max-w-3xl">
-                  {caseStudy.tagline}
-                </p>
+              <p className="text-xl md:text-2xl opacity-90 mb-6 max-w-3xl">
+                {caseStudy.tagline}
+              </p>
 
-                <div className="flex flex-wrap gap-4 text-sm">
-                  {caseStudy.industry && (
-                    <div className="flex items-center">
-                      <Briefcase className="w-4 h-4 mr-2" />
-                      {caseStudy.industry}
-                    </div>
-                  )}
-                  {caseStudy.markets && caseStudy.markets.length > 0 && (
-                    <div className="flex items-center">
-                      <MapPin className="w-4 h-4 mr-2" />
-                      {caseStudy.markets.join(", ")}
-                    </div>
-                  )}
-                </div>
-              </motion.div>
+              <div className="flex flex-wrap gap-4 text-sm">
+                {caseStudy.industry && (
+                  <div className="flex items-center">
+                    <Briefcase className="w-4 h-4 mr-2" />
+                    {caseStudy.industry}
+                  </div>
+                )}
+                {caseStudy.markets && caseStudy.markets.length > 0 && (
+                  <div className="flex items-center">
+                    <MapPin className="w-4 h-4 mr-2" />
+                    {caseStudy.markets.join(", ")}
+                  </div>
+                )}
+              </div>
             </div>
           </div>
+        </div>
       </section>
 
       {/* Stats Bar */}
@@ -172,12 +158,8 @@ export default function CaseStudyDetail() {
             <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
               {Object.entries(caseStudy.stats).map(([key, value]) => (
                 <div key={key} className="text-center">
-                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">
-                    {value}
-                  </div>
-                  <div className="text-sm text-gray-600 capitalize">
-                    {key.replace(/_/g, ' ')}
-                  </div>
+                  <div className="text-3xl md:text-4xl font-bold text-primary mb-2">{value}</div>
+                  <div className="text-sm text-gray-600 capitalize">{key.replace(/_/g, " ")}</div>
                 </div>
               ))}
             </div>
@@ -194,96 +176,20 @@ export default function CaseStudyDetail() {
               {/* Overview */}
               <div className="mb-12">
                 <h2 className="text-3xl font-bold mb-6">Overview</h2>
-                <p className="text-lg text-gray-700 leading-relaxed">
-                  {caseStudy.description}
-                </p>
+                <p className="text-lg text-gray-700 leading-relaxed">{caseStudy.description}</p>
               </div>
 
-              {/* Description */}
-              {caseStudy.description && (
-                <div className="mb-12">
-                  <h2 className="text-3xl font-bold mb-6">Overview</h2>
-                  <p className="text-gray-700 leading-relaxed">
-                    {caseStudy.description}
-                  </p>
-                </div>
-              )}
-
-
-              {/* Image Gallery */}
-              <div className="mb-12">
-                <h2 className="text-3xl font-bold mb-6">Campaign Gallery</h2>
-                <div className="relative rounded-lg overflow-hidden bg-gray-100">
-                  <img
-                    src={images[activeImageIndex]}
-                    alt={`${caseStudy.name} - Image ${activeImageIndex + 1}`}
-                    className="w-full h-[500px] object-cover"
-                  />
-
-                  {/* Image Navigation */}
-                  {images.length > 1 && (
-                    <>
-                      <button
-                        onClick={() => setActiveImageIndex((prev) => (prev - 1 + images.length) % images.length)}
-                        className="absolute left-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 transition-colors"
-                      >
-                        <ArrowLeft className="w-5 h-5" />
-                      </button>
-                      <button
-                        onClick={() => setActiveImageIndex((prev) => (prev + 1) % images.length)}
-                        className="absolute right-4 top-1/2 -translate-y-1/2 bg-white/80 hover:bg-white rounded-full p-2 transition-colors"
-                      >
-                        <ArrowRight className="w-5 h-5" />
-                      </button>
-
-                      {/* Dots */}
-                      <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
-                        {images.map((_, index) => (
-                          <button
-                            key={index}
-                            onClick={() => setActiveImageIndex(index)}
-                            className={`w-2 h-2 rounded-full transition-colors ${
-                              index === activeImageIndex ? 'bg-white' : 'bg-white/50'
-                            }`}
-                          />
-                        ))}
-                      </div>
-                    </>
-                  )}
-                </div>
-
-                {/* Thumbnail Grid */}
-                {images.length > 1 && (
-                  <div className="grid grid-cols-4 gap-4 mt-4">
-                    {images.slice(0, 4).map((img, index) => (
-                      <button
-                        key={index}
-                        onClick={() => setActiveImageIndex(index)}
-                        className={`relative rounded-lg overflow-hidden ${
-                          index === activeImageIndex ? 'ring-2 ring-primary' : ''
-                        }`}
-                      >
-                        <img
-                          src={img}
-                          alt={`Thumbnail ${index + 1}`}
-                          className="w-full h-24 object-cover"
-                        />
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </div>
+              {/* Image Gallery (client component) */}
+              <CaseStudyGallery images={images} name={caseStudy.name} />
             </div>
 
             {/* Sidebar */}
             <div className="lg:col-span-1">
-              {/* Project Details Card */}
               <Card className="mb-8 sticky top-24">
                 <CardContent className="p-6">
                   <h3 className="text-xl font-bold mb-4">Project Details</h3>
 
                   <div className="space-y-4">
-                    {/* Services */}
                     {caseStudy.services && (
                       <div>
                         <h4 className="font-semibold text-gray-700 mb-2">Services</h4>
@@ -297,7 +203,6 @@ export default function CaseStudyDetail() {
                       </div>
                     )}
 
-                    {/* Date */}
                     {caseStudy.date && (
                       <div>
                         <h4 className="font-semibold text-gray-700 mb-1">Date</h4>
@@ -305,17 +210,14 @@ export default function CaseStudyDetail() {
                       </div>
                     )}
 
-                    {/* Markets */}
                     {caseStudy.markets && (
                       <div>
                         <h4 className="font-semibold text-gray-700 mb-1">Markets</h4>
                         <p className="text-gray-600">{caseStudy.markets.join(", ")}</p>
                       </div>
                     )}
-
                   </div>
 
-                  {/* Action Buttons */}
                   <div className="mt-6 space-y-3">
                     {caseStudy.googleDriveUrl && (
                       <a
@@ -355,7 +257,10 @@ export default function CaseStudyDetail() {
                   <Card className="group hover:shadow-xl transition-all duration-300">
                     <div className="relative h-48 overflow-hidden">
                       <img
-                        src={study.heroImage || "/images/case-studies/gallery/formula1/formula1-2.jpg"}
+                        src={
+                          study.heroImage ||
+                          "/images/case-studies/gallery/formula1/formula1-2.jpg"
+                        }
                         alt={study.name}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
@@ -369,9 +274,7 @@ export default function CaseStudyDetail() {
                       <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                         {study.name}
                       </h3>
-                      <p className="text-gray-600 line-clamp-2">
-                        {study.description}
-                      </p>
+                      <p className="text-gray-600 line-clamp-2">{study.description}</p>
                     </CardContent>
                   </Card>
                 </Link>
@@ -384,11 +287,9 @@ export default function CaseStudyDetail() {
       {/* CTA Section */}
       <section className="py-20 bg-gradient-to-br from-primary to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <h2 className="text-4xl font-bold mb-4">
-            Ready to Create Your Success Story?
-          </h2>
+          <h2 className="text-4xl font-bold mb-4">Ready to Create Your Success Story?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Let's discuss how we can help achieve similar results for your brand.
+            Let&apos;s discuss how we can help achieve similar results for your brand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
@@ -398,7 +299,11 @@ export default function CaseStudyDetail() {
               </Button>
             </Link>
             <Link href="/portfolio">
-              <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
+              <Button
+                size="lg"
+                variant="outline"
+                className="bg-transparent border-white text-white hover:bg-white hover:text-primary"
+              >
                 View More Work
               </Button>
             </Link>
@@ -406,5 +311,5 @@ export default function CaseStudyDetail() {
         </div>
       </section>
     </div>
-  );
+  )
 }

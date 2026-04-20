@@ -1,6 +1,5 @@
 'use client'
 
-import { motion } from "framer-motion";
 import Link from "next/link";
 import SEO from "@/components/SEO";
 import { Badge } from "@/components/ui/badge";
@@ -66,11 +65,7 @@ export default function PremierProteinCaseStudy() {
         </div>
 
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center text-white">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="animate-fade-in">
             <Link href="/portfolio">
               <Button variant="ghost" className="mb-6 text-white hover:bg-white/20" data-testid="button-back">
                 <ArrowLeft className="w-4 h-4 mr-2" />
@@ -92,18 +87,14 @@ export default function PremierProteinCaseStudy() {
             <p className="text-lg text-white/80 max-w-2xl mx-auto">
               April - May 2019 | Southern California
             </p>
-          </motion.div>
+          </div>
         </div>
 
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <div className="w-6 h-10 border-2 border-white/50 rounded-full flex justify-center">
-            <div className="w-1 h-3 bg-white/70 rounded-full mt-2 animate-bounce" />
+            <div className="w-1 h-3 bg-white/70 rounded-full mt-2" />
           </div>
-        </motion.div>
+        </div>
       </section>
 
       {/* Stats Overview */}
@@ -116,18 +107,14 @@ export default function PremierProteinCaseStudy() {
               { icon: MapPin, value: "5+", label: "Event Locations" },
               { icon: Users, value: "1000s", label: "Consumers Reached" }
             ].map((stat, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="text-center p-6 bg-gray-50 rounded-xl"
               >
                 <stat.icon className="w-10 h-10 text-cyan-600 mx-auto mb-3" />
                 <div className="text-3xl font-bold text-gray-900">{stat.value}</div>
                 <div className="text-sm text-gray-600">{stat.label}</div>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -137,11 +124,7 @@ export default function PremierProteinCaseStudy() {
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid lg:grid-cols-2 gap-12 items-start">
-            <motion.div
-              initial={{ opacity: 0, x: -30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+            <div>
               <h2 className="text-3xl font-bold mb-6">The Challenge</h2>
               <p className="text-lg text-gray-600 mb-6">
                 Premier Protein wanted to increase brand awareness and drive trial among health-conscious consumers in Southern California. They needed a dynamic, mobile sampling solution that could reach target audiences at high-traffic events and locations.
@@ -159,13 +142,9 @@ export default function PremierProteinCaseStudy() {
                   </Badge>
                 ))}
               </div>
-            </motion.div>
+            </div>
 
-            <motion.div
-              initial={{ opacity: 0, x: 30 }}
-              whileInView={{ opacity: 1, x: 0 }}
-              viewport={{ once: true }}
-            >
+            <div>
               <div className="rounded-2xl overflow-hidden shadow-xl" style={{ paddingTop: '56.25%', position: 'relative' }}>
                 <iframe
                   src="https://player.vimeo.com/video/394084617?badge=0&autopause=0&player_id=0&app_id=58479"
@@ -175,7 +154,7 @@ export default function PremierProteinCaseStudy() {
                   title="Premier Protein Campaign Video"
                 />
               </div>
-            </motion.div>
+            </div>
           </div>
         </div>
       </section>
@@ -183,27 +162,16 @@ export default function PremierProteinCaseStudy() {
       {/* Event Breakdown */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Event Breakdown</h2>
             <p className="text-lg text-gray-600">
               Five strategic activation days across Southern California&apos;s premier events
             </p>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
             {eventBreakdown.map((event, index) => (
-              <motion.div
-                key={index}
-                initial={{ opacity: 0, y: 20 }}
-                whileInView={{ opacity: 1, y: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
-              >
+              <div key={index}>
                 <Card className="h-full hover:shadow-lg transition-shadow">
                   <CardContent className="p-6">
                     <div className="flex items-center gap-3 mb-4">
@@ -222,7 +190,7 @@ export default function PremierProteinCaseStudy() {
                     </div>
                   </CardContent>
                 </Card>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -231,32 +199,23 @@ export default function PremierProteinCaseStudy() {
       {/* Results */}
       <section className="py-16">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <Badge className="mb-4 bg-green-100 text-green-800">
               <TrendingUp className="w-4 h-4 mr-1" />
               Campaign Results
             </Badge>
             <h2 className="text-3xl font-bold mb-4">Key Outcomes & Learnings</h2>
-          </motion.div>
+          </div>
 
           <div className="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
             {keyResults.map((result, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, x: index % 2 === 0 ? -20 : 20 }}
-                whileInView={{ opacity: 1, x: 0 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.1 }}
                 className="flex items-start gap-4 p-4 bg-green-50 rounded-xl"
               >
                 <CheckCircle className="w-6 h-6 text-green-600 flex-shrink-0 mt-0.5" />
                 <p className="text-gray-700">{result}</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -265,27 +224,18 @@ export default function PremierProteinCaseStudy() {
       {/* Flavor Insights */}
       <section className="py-16 bg-gradient-to-br from-cyan-50 to-purple-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            className="text-center mb-12"
-          >
+          <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Consumer Insights</h2>
             <p className="text-lg text-gray-600">Top performing flavors during the campaign</p>
-          </motion.div>
+          </div>
 
           <div className="flex justify-center gap-8 flex-wrap">
             {[
               { flavor: "Cookies and Cream", rating: 5 },
               { flavor: "Caramel", rating: 5 }
             ].map((item, index) => (
-              <motion.div
+              <div
                 key={index}
-                initial={{ opacity: 0, scale: 0.9 }}
-                whileInView={{ opacity: 1, scale: 1 }}
-                viewport={{ once: true }}
-                transition={{ delay: index * 0.2 }}
                 className="bg-white rounded-2xl p-8 shadow-lg text-center"
               >
                 <div className="text-4xl mb-4">🥤</div>
@@ -296,7 +246,7 @@ export default function PremierProteinCaseStudy() {
                   ))}
                 </div>
                 <p className="text-sm text-gray-500 mt-2">Fan Favorite</p>
-              </motion.div>
+              </div>
             ))}
           </div>
         </div>
@@ -305,11 +255,7 @@ export default function PremierProteinCaseStudy() {
       {/* CTA */}
       <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <h2 className="text-3xl md:text-4xl font-bold mb-4">
               Ready to Hit the Streets?
             </h2>
@@ -328,7 +274,7 @@ export default function PremierProteinCaseStudy() {
                 </Button>
               </Link>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>

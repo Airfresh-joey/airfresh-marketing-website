@@ -1,7 +1,6 @@
 'use client'
 
 import { useState } from "react";
-import { motion, AnimatePresence, useReducedMotion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 import SEO from "@/components/SEO";
@@ -42,7 +41,6 @@ export default function Portfolio() {
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
   const [isLoading, setIsLoading] = useState(false);
   const [videoLoaded, setVideoLoaded] = useState(false);
-  const shouldReduceMotion = useReducedMotion();
 
   // Use static case studies data
   const caseStudiesData = portfolioCaseStudies;
@@ -71,35 +69,26 @@ export default function Portfolio() {
       {/* Hero Section with Video Background */}
       <section className="relative min-h-[70vh] flex items-center justify-center overflow-hidden">
         {/* Video Background */}
-        {!shouldReduceMotion && (
-          <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
-            <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
-              <iframe
-                src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=12s"
-                className="absolute top-0 left-0 w-full h-full object-cover"
-                frameBorder="0"
-                allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
-                loading="eager"
-                onLoad={() => setVideoLoaded(true)}
-                style={{ pointerEvents: 'none' }}
-                title="AirFresh Marketing Portfolio Video Background"
-              />
-            </div>
-
-            {/* Loading overlay with gradient background */}
-            <motion.div
-              className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900"
-              initial={{ opacity: 1 }}
-              animate={{ opacity: videoLoaded ? 0 : 1 }}
-              transition={{ duration: 1 }}
+        <div className="absolute inset-0 w-full h-full overflow-hidden bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900">
+          <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] max-w-none -translate-x-1/2 -translate-y-1/2">
+            <iframe
+              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=12s"
+              className="absolute top-0 left-0 w-full h-full object-cover"
+              frameBorder="0"
+              allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+              loading="eager"
+              onLoad={() => setVideoLoaded(true)}
+              style={{ pointerEvents: 'none' }}
+              title="AirFresh Marketing Portfolio Video Background"
             />
           </div>
-        )}
 
-        {/* Fallback - Static gradient background for reduced motion */}
-        {shouldReduceMotion && (
-          <div className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-gray-900" />
-        )}
+          {/* Loading overlay with gradient background */}
+          <div
+            className="absolute inset-0 bg-gradient-to-br from-gray-900 via-blue-900 to-cyan-900 transition-opacity duration-1000"
+            style={{ opacity: videoLoaded ? 0 : 1 }}
+          />
+        </div>
 
         {/* Overlay Gradients for text readability */}
         <div className="absolute inset-0">
@@ -113,11 +102,7 @@ export default function Portfolio() {
 
         {/* Content */}
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 30 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-          >
+          <div className="animate-fade-in">
             <Badge className="mb-4 px-4 py-2 text-sm font-semibold bg-white/10 backdrop-blur-sm text-white border-0">
               <Sparkles className="w-4 h-4 mr-1" />
               300+ Successful Campaigns
@@ -128,12 +113,7 @@ export default function Portfolio() {
               <br />
               <span className="relative bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
                 Excellence
-                <motion.div
-                  className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-cyan-400"
-                  initial={{ scaleX: 0 }}
-                  animate={{ scaleX: 1 }}
-                  transition={{ delay: 0.5, duration: 0.8 }}
-                />
+                <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-cyan-400" />
               </span>
             </h1>
 
@@ -150,41 +130,29 @@ export default function Portfolio() {
                 { icon: Award, value: "300+", label: "Brands Served" },
                 { icon: Target, value: "98%", label: "Client Satisfaction" }
               ].map((stat, index) => (
-                <motion.div
+                <div
                   key={index}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: 0.1 * index }}
                   className="bg-white/10 backdrop-blur-sm rounded-xl p-4 border border-white/20"
                 >
                   <stat.icon className="w-8 h-8 text-cyan-400 mx-auto mb-2" />
                   <div className="text-2xl font-bold text-white">{stat.value}</div>
                   <div className="text-sm text-white/80">{stat.label}</div>
-                </motion.div>
+                </div>
               ))}
             </div>
-          </motion.div>
+          </div>
         </div>
 
         {/* Scroll Indicator */}
-        <motion.div
-          className="absolute bottom-8 left-1/2 transform -translate-x-1/2"
-          animate={{ y: [0, 10, 0] }}
-          transition={{ duration: 1.5, repeat: Infinity }}
-        >
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 animate-bounce">
           <ChevronRight className="w-6 h-6 text-white/70 rotate-90" />
-        </motion.div>
+        </div>
       </section>
 
       {/* Featured Case Study */}
       {featuredStudy && (
         <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="mb-12"
-          >
+          <div className="mb-12">
             <Badge className="mb-4 bg-gradient-to-r from-primary to-purple-600 text-white">
               <Award className="w-4 h-4 mr-1" />
               Featured Case Study
@@ -243,7 +211,7 @@ export default function Portfolio() {
                 </div>
               </div>
             </div>
-          </motion.div>
+          </div>
         </section>
       )}
 
@@ -280,40 +248,25 @@ export default function Portfolio() {
 
       {/* Case Studies Grid */}
       <section className="py-20 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <AnimatePresence mode="wait">
-          {isLoading ? (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {[...Array(6)].map((_, i) => (
-                <div key={i} className="animate-pulse">
-                  <div className="bg-gray-200 rounded-2xl h-64 mb-4" />
-                  <div className="bg-gray-200 rounded h-4 w-3/4 mb-2" />
-                  <div className="bg-gray-200 rounded h-4 w-1/2" />
-                </div>
-              ))}
-            </motion.div>
-          ) : (
-            <motion.div
-              initial={{ opacity: 0 }}
-              animate={{ opacity: 1 }}
-              exit={{ opacity: 0 }}
-              className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-            >
-              {filteredStudies.map((study, index) => (
-                <motion.div
-                  key={study.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: Math.min(index * 0.05, 0.3) }}
-                  whileHover={{ y: -8 }}
-                  onHoverStart={() => setHoveredCard(study.id)}
-                  onHoverEnd={() => setHoveredCard(null)}
-                  className="group cursor-pointer"
-                >
+        {isLoading ? (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {[...Array(6)].map((_, i) => (
+              <div key={i} className="animate-pulse">
+                <div className="bg-gray-200 rounded-2xl h-64 mb-4" />
+                <div className="bg-gray-200 rounded h-4 w-3/4 mb-2" />
+                <div className="bg-gray-200 rounded h-4 w-1/2" />
+              </div>
+            ))}
+          </div>
+        ) : (
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            {filteredStudies.map((study, index) => (
+              <div
+                key={study.id}
+                onMouseEnter={() => setHoveredCard(study.id)}
+                onMouseLeave={() => setHoveredCard(null)}
+                className="group cursor-pointer hover:-translate-y-2 transition-transform duration-300"
+              >
                   <Link href={`/case-studies/${study.id}`}>
                     <Card className="overflow-hidden border-0 shadow-lg hover:shadow-2xl transition-all duration-500">
                       {/* Image Container */}
@@ -403,21 +356,16 @@ export default function Portfolio() {
                       </CardContent>
                     </Card>
                   </Link>
-                </motion.div>
+                </div>
               ))}
-            </motion.div>
+            </div>
           )}
-        </AnimatePresence>
       </section>
 
       {/* Call to Action */}
       <section className="py-20 bg-gradient-to-br from-primary to-purple-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
+          <div>
             <Zap className="w-16 h-16 mx-auto mb-6 text-yellow-300" />
             <h2 className="text-4xl font-bold mb-4">
               Ready to Create Your Success Story?
@@ -437,7 +385,7 @@ export default function Portfolio() {
                 Download Portfolio PDF
               </Button>
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
     </div>
