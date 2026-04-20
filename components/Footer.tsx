@@ -16,6 +16,8 @@ export default function Footer() {
     { name: "Event Management", href: "/services/event-management" },
     { name: "Product Sampling", href: "/services/sampling" },
     { name: "Promotional Models", href: "/services/promotional-models" },
+    { name: "Event Staffing Guide", href: "/guides/event-staffing-101" },
+    { name: "Hiring Guide", href: "/guides/brand-ambassador-hiring-guide" },
   ];
 
   const company = [
@@ -26,6 +28,7 @@ export default function Footer() {
     { name: "Events", href: "/events" },
     { name: "Venues", href: "/venues" },
     { name: "Compare Agencies", href: "/compare" },
+    { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },

@@ -89,6 +89,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/locations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     // Pillar/guide pages (high-value, long-form content)
     { url: `${DOMAIN}/guides/best-event-staffing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/guides/event-staffing-101`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/guides/brand-ambassador-hiring-guide`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    // High-intent local search pages
+    { url: `${DOMAIN}/event-staffing-near-me`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Venue/event-specific staffing pages (high-intent keywords)
     { url: `${DOMAIN}/staffing-for/ces`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/sema`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },

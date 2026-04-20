@@ -280,6 +280,8 @@ export default function ComparePage() {
             { href: '/blog/top-event-staffing-agencies-new-york', label: 'Top 10 Agencies in NYC' },
             { href: '/guides/event-staffing-101', label: 'Event Staffing 101 Guide' },
             { href: '/guides/best-event-staffing-agency', label: 'Best Event Staffing Agency Guide' },
+            { href: '/guides/brand-ambassador-hiring-guide', label: 'Brand Ambassador Hiring Guide' },
+            { href: '/event-staffing-near-me', label: 'Find Event Staffing Near You' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />

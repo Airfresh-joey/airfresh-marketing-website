@@ -60,6 +60,19 @@ export default function NavigationWrapper() {
                           {serviceLink.label}
                         </Link>
                       ))}
+                      <div className="border-t border-gray-700 my-1" />
+                      <Link
+                        href="/guides/event-staffing-101"
+                        className="block px-4 py-2 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 text-sm"
+                      >
+                        Event Staffing Guide
+                      </Link>
+                      <Link
+                        href="/event-staffing-near-me"
+                        className="block px-4 py-2 text-cyan-400 hover:bg-cyan-500/10 transition-all duration-200 text-sm"
+                      >
+                        Find Staff Near Me
+                      </Link>
                     </div>
                   </div>
                 </div>

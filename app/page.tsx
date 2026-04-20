@@ -1077,6 +1077,26 @@ export default function Home() {
               </Link>
             ))}
           </div>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
+            <Link href="/guides/best-event-staffing-agency" className="group">
+              <div className="p-5 border border-cyan-200 bg-cyan-50/50 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Best Event Staffing Agency 2026</div>
+                <div className="text-sm text-gray-500 mt-1">Comprehensive guide to choosing the right partner</div>
+              </div>
+            </Link>
+            <Link href="/guides/event-staffing-101" className="group">
+              <div className="p-5 border border-cyan-200 bg-cyan-50/50 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Event Staffing 101 Guide</div>
+                <div className="text-sm text-gray-500 mt-1">Everything you need to know about hiring event staff</div>
+              </div>
+            </Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="group">
+              <div className="p-5 border border-cyan-200 bg-cyan-50/50 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Brand Ambassador Hiring Guide</div>
+                <div className="text-sm text-gray-500 mt-1">How to find, hire, and manage top brand ambassadors</div>
+              </div>
+            </Link>
+          </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
             <Link href="/pricing" className="group">
               <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
@@ -1090,16 +1110,16 @@ export default function Home() {
                 <div className="text-sm text-gray-500 mt-1">GPS tracking and real-time reporting</div>
               </div>
             </Link>
-            <Link href="/compare/atn-event-staffing" className="group">
+            <Link href="/compare" className="group">
               <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
-                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">AirFresh vs ATN Staffing</div>
-                <div className="text-sm text-gray-500 mt-1">Side-by-side comparison</div>
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Compare Staffing Agencies</div>
+                <div className="text-sm text-gray-500 mt-1">See how we stack up against competitors</div>
               </div>
             </Link>
-            <Link href="/case-studies" className="group">
+            <Link href="/event-staffing-near-me" className="group">
               <div className="p-5 border border-gray-200 rounded-xl hover:border-cyan-400 hover:shadow-md transition-all">
-                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Client Case Studies</div>
-                <div className="text-sm text-gray-500 mt-1">Real results from real campaigns</div>
+                <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Event Staffing Near Me</div>
+                <div className="text-sm text-gray-500 mt-1">Find local staff in 40+ cities</div>
               </div>
             </Link>
           </div>

@@ -1470,6 +1470,22 @@ export default function ServicePage({ params }: ServicePageProps) {
                 </CardContent>
               </Card>
             </Link>
+            <Link href="/guides/event-staffing-101" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">Event Staffing 101 Guide</h3>
+                  <p className="text-sm text-gray-500">Everything you need to know about event staffing</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">Brand Ambassador Hiring Guide</h3>
+                  <p className="text-sm text-gray-500">How to find and hire the best brand ambassadors</p>
+                </CardContent>
+              </Card>
+            </Link>
             <Link href="/compare/atn-event-staffing" className="group">
               <Card className="hover:shadow-lg transition-all duration-300 h-full">
                 <CardContent className="p-5">
