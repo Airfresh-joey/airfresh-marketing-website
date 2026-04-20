@@ -43,12 +43,9 @@ export default function IndustryPage() {
 
   return (
     <div className="pt-16">
-      <SEO
-        title={industry.title}
-        description={industry.metaDescription}
-        pageType="service"
-        canonical={`https://www.airfreshmarketing.com/industries/${industry.slug}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

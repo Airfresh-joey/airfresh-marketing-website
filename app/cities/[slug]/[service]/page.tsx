@@ -405,21 +405,9 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
 
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
-      <SEO
-        title={pageTitle}
-        description={pageDescription}
-        keywords={[
-          `${city.name} ${serviceData.name.toLowerCase()}`,
-          `${serviceData.name.toLowerCase()} ${city.name}`,
-          `${serviceData.name.toLowerCase()} agency ${city.name}`,
-          `${city.name} ${service.replace('-', ' ')}`,
-          `${serviceData.name.toLowerCase()} ${city.state}`,
-          `hire ${serviceData.name.toLowerCase()} ${city.name}`,
-          `best ${serviceData.name.toLowerCase()} agency ${city.name}`
-        ].join(', ')}
-        pageType="service"
-        canonical={`https://www.airfreshmarketing.com/cities/${slug}/${service}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

@@ -102,12 +102,9 @@ export default async function StatePage({ params }: StatePageProps) {
 
   return (
     <div className="min-h-screen pt-16">
-      <SEO
-        title={`Event Staffing & Marketing Services in ${state.name} | AirFresh Marketing`}
-        description={`Professional event staffing, brand ambassadors, and experiential marketing services throughout ${state.name}.`}
-        pageType="service"
-        canonical={`https://www.airfreshmarketing.com/states/${stateSlug}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero */}

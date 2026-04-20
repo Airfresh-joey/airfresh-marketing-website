@@ -239,12 +239,9 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title={pageTitle}
-        description={pageDescription}
-        keywords={`${service.name.toLowerCase()}, ${venue.name} staffing, ${venue.city} trade show staff, convention center staffing`}
-        structuredData={structuredData}
-        canonical={`https://www.airfreshmarketing.com/venues/${venue.slug}/${service.slug}`}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

@@ -184,12 +184,9 @@ export default async function EventPage({ params }: EventPageProps) {
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title={event.title}
-        description={event.metaDescription}
-        keywords={event.keywords.join(', ')}
-        structuredData={structuredData}
-        canonical={`https://www.airfreshmarketing.com/events/${event.slug}`}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}

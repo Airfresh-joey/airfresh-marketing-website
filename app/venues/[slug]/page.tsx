@@ -167,12 +167,9 @@ export default async function VenuePage({ params }: VenuePageProps) {
 
   return (
     <div className="pt-16 min-h-screen">
-      <SEO
-        title={pageTitle}
-        description={pageDescription}
-        keywords={`${venue.name} staffing, ${venue.city} event staff, ${venue.shortName} trade show staff, convention center staffing, ${venue.city} brand ambassadors`}
-        structuredData={structuredData}
-        canonical={`https://www.airfreshmarketing.com/venues/${venue.slug}`}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}
