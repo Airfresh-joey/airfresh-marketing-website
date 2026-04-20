@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Portfolio | Our Work',
-  description: 'Explore AirFresh Marketing portfolio of successful brand activations, experiential campaigns, and event marketing projects for top brands.',
+  title: 'Brand Activation Portfolio | Experiential Marketing Campaigns',
+  description: 'Brand activation portfolio featuring campaigns for Netflix, Google, Formula One, and more. See real experiential marketing results and event photos.',
   keywords: 'experiential marketing portfolio, brand activation examples, event marketing case studies, marketing campaign examples',
   openGraph: {
     type: 'website',

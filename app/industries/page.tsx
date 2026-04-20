@@ -1,9 +1,6 @@
-'use client'
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
 import { industries } from "@/server/industries-data";
 import {
   Wine,
@@ -17,7 +14,7 @@ import {
   ArrowRight
 } from "lucide-react";
 
-const industryIcons: Record<string, any> = {
+const industryIcons: Record<string, typeof Wine> = {
   "alcohol-beverage": Wine,
   "automotive": Car,
   "technology": Laptop,
@@ -31,25 +28,33 @@ const industryIcons: Record<string, any> = {
 export default function IndustriesPage() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Industries Served by AirFresh Marketing",
-    "description": "Experiential marketing and event staffing solutions for various industries",
-    "itemListElement": industries.map((industry, index) => ({
-      "@type": "ListItem",
-      "position": index + 1,
-      "name": industry.name,
-      "url": `https://www.airfreshmarketing.com/industries/${industry.slug}`
-    }))
+    "@graph": [
+      {
+        "@type": "ItemList",
+        "name": "Industries Served by AirFresh Marketing",
+        "description": "Experiential marketing and event staffing solutions for various industries",
+        "itemListElement": industries.map((industry, index) => ({
+          "@type": "ListItem",
+          "position": index + 1,
+          "name": industry.name,
+          "url": `https://www.airfreshmarketing.com/industries/${industry.slug}`
+        }))
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.airfreshmarketing.com/industries" }
+        ]
+      }
+    ]
   };
 
   return (
     <div className="pt-16">
-      <SEO
-        title="Industries We Serve | Experiential Marketing by Sector - AirFresh Marketing"
-        description="Specialized experiential marketing and event staffing for alcohol, automotive, technology, CPG, sports, fashion, healthcare, and financial services industries."
-        pageType="service"
-        canonical="https://www.airfreshmarketing.com/industries"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}
@@ -64,7 +69,7 @@ export default function IndustriesPage() {
             Industries We <span className="text-cyan-400">Serve</span>
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
-            Specialized experiential marketing expertise across every major industry. 
+            Specialized experiential marketing expertise across every major industry.
             We understand your unique challenges and deliver tailored staffing solutions.
           </p>
         </div>
@@ -131,7 +136,7 @@ export default function IndustriesPage() {
       <section className="py-16 bg-primary text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Don't See Your Industry?
+            Don&apos;t See Your Industry?
           </h2>
           <p className="text-xl mb-8 opacity-90">
             We have experience across virtually every industry. Contact us to discuss your specific needs.

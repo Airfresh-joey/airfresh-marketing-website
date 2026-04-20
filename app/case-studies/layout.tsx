@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Case Studies | Success Stories',
-  description: 'Read AirFresh Marketing case studies showcasing successful experiential marketing campaigns, brand activations, and measurable ROI results.',
+  title: 'Experiential Marketing Case Studies | Brand Activation Results',
+  description: 'Experiential marketing case studies with measurable ROI results. See how brands like Netflix, Google, and Formula One drive engagement with AirFresh Marketing campaigns.',
   keywords: 'experiential marketing case studies, brand activation success stories, event marketing ROI, marketing campaign results',
   openGraph: {
     type: 'website',

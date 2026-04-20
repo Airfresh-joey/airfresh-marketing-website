@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Locations | Nationwide Coverage',
-  description: 'AirFresh Marketing serves 50+ cities nationwide with experiential marketing, brand ambassadors, and event staffing services coast to coast.',
+  title: 'Event Staffing Locations | 50+ Cities Nationwide',
+  description: 'Event staffing and brand ambassadors in 50+ cities including New York, Los Angeles, Chicago, Miami, and Denver. Find experiential marketing services near you.',
   keywords: 'experiential marketing locations, brand ambassadors nationwide, event staffing cities, marketing agency locations',
   openGraph: {
     type: 'website',

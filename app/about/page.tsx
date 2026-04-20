@@ -1,9 +1,7 @@
-'use client'
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
+import { InteractiveMap } from "@/components/InteractiveMap";
 import {
   Users,
   Target,
@@ -20,26 +18,108 @@ import {
   ArrowRight
 } from "lucide-react";
 
+const stats = [
+  { number: "25+", label: "Years of Experience" },
+  { number: "300+", label: "Brands Activated" },
+  { number: "50+", label: "Cities Nationwide" },
+  { number: "1000+", label: "Events Produced" }
+];
+
+const values = [
+  {
+    icon: Heart,
+    title: "Passion-Driven",
+    description: "Every project is fueled by our genuine passion for creating unforgettable experiences that connect brands with their audiences."
+  },
+  {
+    icon: Target,
+    title: "Results-Focused",
+    description: "We measure success by the meaningful connections and measurable outcomes we create for your brand."
+  },
+  {
+    icon: Lightbulb,
+    title: "Innovation First",
+    description: "We constantly push creative boundaries to deliver fresh, engaging experiences that stand out in the marketplace."
+  }
+];
+
+const services = [
+  {
+    icon: Zap,
+    title: "Production and Execution",
+    description: "Complete project management from planning to flawless delivery"
+  },
+  {
+    icon: TrendingUp,
+    title: "Experiential & Digital Marketing",
+    description: "Seamless integration of physical and digital brand experiences"
+  },
+  {
+    icon: Target,
+    title: "Asset Procurement",
+    description: "Sourcing and managing all necessary materials and equipment"
+  },
+  {
+    icon: Lightbulb,
+    title: "Marketing Strategy",
+    description: "Strategic planning perfectly aligned with your business objectives"
+  },
+  {
+    icon: Award,
+    title: "Creative Development",
+    description: "Innovative concepts that captivate and engage your target audiences"
+  }
+];
+
+const clientTypes = [
+  {
+    icon: Store,
+    title: "Local Brands",
+    description: "Pump up the volume with next-level events for your local business.",
+    color: "bg-blue-50 text-blue-600"
+  },
+  {
+    icon: Building2,
+    title: "Corporations",
+    description: "Give every customer an intimate experience when it comes to colossal nationwide campaigns.",
+    color: "bg-purple-50 text-purple-600"
+  },
+  {
+    icon: Handshake,
+    title: "Agencies",
+    description: "Enhance your agency with fresh ideas, unique perspectives and innovative outreach.",
+    color: "bg-green-50 text-green-600"
+  }
+];
+
+const cities = [
+  'Denver', 'Los Angeles', 'New York', 'Chicago', 'Houston', 'Phoenix',
+  'San Francisco', 'Seattle', 'Miami', 'Atlanta', 'Boston', 'Dallas',
+  'Austin', 'Portland', 'San Diego', 'Las Vegas', 'Nashville', 'Charlotte'
+];
+
 export default function About() {
-  // Enhanced structured data with E-E-A-T signals
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "AboutPage",
+        "url": "https://www.airfreshmarketing.com/about",
         "mainEntity": {
           "@type": "Organization",
           "@id": "https://www.airfreshmarketing.com/#organization",
           "name": "AirFresh Marketing",
-          "description": "Experiential marketing agency creating memorable brand activations and customer engagement campaigns",
+          "description": "Experiential marketing agency creating memorable brand activations and customer engagement campaigns since 2004",
+          "foundingDate": "2004",
           "founder": {
             "@type": "Person",
-            "name": "AirFresh Marketing Founders",
-            "jobTitle": "Experiential Marketing Pioneers"
+            "name": "AirFresh Marketing Founders"
           },
           "specialty": "Experiential Marketing, Brand Activations, Event Marketing, Guerrilla Marketing",
-          "serviceArea": "United States",
-          "hasCredential": "Years of Experience, Brands Served Nationwide, Experienced Brand Ambassadors",
+          "areaServed": {
+            "@type": "Country",
+            "name": "United States"
+          },
           "knowsAbout": [
             "Experiential Marketing Strategy",
             "Brand Activation Campaigns",
@@ -59,7 +139,7 @@ export default function About() {
             "name": "Why choose AirFresh Marketing for experiential marketing?",
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": "AirFresh Marketing brings years of expertise, successful brand campaigns, a network of trained brand ambassadors, and nationwide operations. Our focus on client satisfaction and proven engagement strategies make us a trusted choice for experiential marketing."
+              "text": "AirFresh Marketing brings over 25 years of expertise, 300+ successful brand campaigns, a network of trained brand ambassadors in 50+ cities, and nationwide operations. Our focus on client satisfaction and proven engagement strategies make us a trusted choice for experiential marketing."
             }
           },
           {
@@ -71,95 +151,26 @@ export default function About() {
             }
           }
         ]
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "About", "item": "https://www.airfreshmarketing.com/about" }
+        ]
       }
     ]
   };
-  const stats = [
-    { number: "25+", label: "Years of Experience" },
-    { number: "300+", label: "Brands Activated" },
-    { number: "50+", label: "Cities Nationwide" },
-    { number: "1000+", label: "Events Produced" }
-  ];
-
-  const values = [
-    {
-      icon: Heart,
-      title: "Passion-Driven",
-      description: "Every project is fueled by our genuine passion for creating unforgettable experiences that connect brands with their audiences."
-    },
-    {
-      icon: Target,
-      title: "Results-Focused",
-      description: "We measure success by the meaningful connections and measurable outcomes we create for your brand."
-    },
-    {
-      icon: Lightbulb,
-      title: "Innovation First",
-      description: "We constantly push creative boundaries to deliver fresh, engaging experiences that stand out in the marketplace."
-    }
-  ];
-
-  const services = [
-    {
-      icon: Zap,
-      title: "Production and Execution",
-      description: "Complete project management from planning to flawless delivery"
-    },
-    {
-      icon: TrendingUp,
-      title: "Experiential & Digital Marketing",
-      description: "Seamless integration of physical and digital brand experiences"
-    },
-    {
-      icon: Target,
-      title: "Asset Procurement",
-      description: "Sourcing and managing all necessary materials and equipment"
-    },
-    {
-      icon: Lightbulb,
-      title: "Marketing Strategy",
-      description: "Strategic planning perfectly aligned with your business objectives"
-    },
-    {
-      icon: Award,
-      title: "Creative Development",
-      description: "Innovative concepts that captivate and engage your target audiences"
-    }
-  ];
-
-  const clientTypes = [
-    {
-      icon: Store,
-      title: "Local Brands",
-      description: "Pump up the volume with next-level events for your local business.",
-      color: "bg-blue-50 text-blue-600"
-    },
-    {
-      icon: Building2,
-      title: "Corporations",
-      description: "Give every customer an intimate experience when it comes to colossal nationwide campaigns.",
-      color: "bg-purple-50 text-purple-600"
-    },
-    {
-      icon: Handshake,
-      title: "Agencies",
-      description: "Enhance your agency with fresh ideas, unique perspectives and innovative outreach.",
-      color: "bg-green-50 text-green-600"
-    }
-  ];
 
   return (
     <div className="pt-16">
-      <SEO
-        title="About Us | Premier Experiential Marketing Agency Since 2004 - AirFresh"
-        description="Years of experiential marketing excellence. Leading brand ambassadors, event staffing & guerrilla marketing nationwide."
-        pageType="about"
-        canonical="https://www.airfreshmarketing.com/about"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
-      {/* Hero Section with Semantic HTML and E-E-A-T Signals */}
+
+      {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden" aria-label="About Hero">
-        {/* Video Background */}
         <div className="absolute inset-0 z-0">
           <iframe
             src="https://player.vimeo.com/video/394240533?background=1&autoplay=1&loop=1&muted=1&title=0&byline=0&portrait=0"
@@ -177,7 +188,7 @@ export default function About() {
               Why Is AirFresh <span className="text-cyan-400">Marketing</span> the Leading Experiential Agency?
             </h1>
             <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
-              We've delivered <strong>successful campaigns</strong> for <strong>numerous brands</strong> across <strong>major cities nationwide</strong>.
+              We&apos;ve delivered <strong>successful campaigns</strong> for <strong>numerous brands</strong> across <strong>major cities nationwide</strong>.
               Our focus on <strong>client satisfaction</strong> and <strong>trained brand ambassadors</strong> make us a trusted choice for experiential marketing.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -201,7 +212,7 @@ export default function About() {
         </div>
       </section>
 
-      {/* Our Story Section with E-E-A-T Signals */}
+      {/* Our Story Section */}
       <section className="py-20 bg-gray-50" aria-label="Company Story">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <article className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
@@ -216,7 +227,7 @@ export default function About() {
               </p>
               <p className="text-lg text-gray-600 mb-8 leading-relaxed">
                 What started as a small team of passionate marketers has evolved into a nationwide company
-                serving clients from coast to coast. Today, we've helped over 300 brands create memorable
+                serving clients from coast to coast. Today, we&apos;ve helped over 300 brands create memorable
                 experiences that drive real business results.
               </p>
               <div className="space-y-3">
@@ -283,7 +294,7 @@ export default function About() {
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Turnkey Services</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               Everything we do is done in-house and as an extension of your team. We strategize
-              what's best for meeting your goals and then come together to crush them as a single unit.
+              what&apos;s best for meeting your goals and then come together to crush them as a single unit.
             </p>
           </div>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
@@ -318,46 +329,14 @@ export default function About() {
             </p>
           </div>
 
-          {/* Interactive Map */}
           <div className="relative bg-gradient-to-r from-cyan-600 to-blue-600 p-1 rounded-2xl shadow-2xl mb-12">
             <div className="bg-white rounded-xl overflow-hidden">
-              <div className="aspect-video relative">
-                <iframe
-                  src="https://www.google.com/maps/d/u/0/embed?mid=1uXbH8Px2s2mENx8_GsRNcRPKPTiYkXw&ehbc=2E312F&noprof=1"
-                  className="absolute inset-0 w-full h-full"
-                  style={{
-                    border: 0,
-                    marginTop: '-80px',
-                    height: 'calc(100% + 80px)',
-                    pointerEvents: 'none'
-                  }}
-                  allowFullScreen
-                  loading="lazy"
-                  referrerPolicy="no-referrer-when-downgrade"
-                  title="AirFresh Marketing Nationwide Locations"
-                ></iframe>
-                <div
-                  className="absolute inset-0 cursor-pointer"
-                  onClick={(e) => {
-                    const iframe = e.currentTarget.previousElementSibling as HTMLIFrameElement;
-                    if (iframe) {
-                      iframe.style.pointerEvents = 'auto';
-                      e.currentTarget.style.display = 'none';
-                    }
-                  }}
-                  style={{ background: 'transparent' }}
-                ></div>
-              </div>
+              <InteractiveMap />
             </div>
           </div>
 
-          {/* Quick City Grid */}
           <div className="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-6 gap-3 mb-8">
-            {[
-              'Denver', 'Los Angeles', 'New York', 'Chicago', 'Houston', 'Phoenix',
-              'San Francisco', 'Seattle', 'Miami', 'Atlanta', 'Boston', 'Dallas',
-              'Austin', 'Portland', 'San Diego', 'Las Vegas', 'Nashville', 'Charlotte'
-            ].map((city) => (
+            {cities.map((city) => (
               <div key={city} className="flex items-center text-gray-600 text-sm">
                 <MapPin className="w-3 h-3 text-cyan-600 mr-1 flex-shrink-0" />
                 {city}
@@ -433,7 +412,7 @@ export default function About() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Unforgettable Experiences?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Let's discuss how we can help your brand connect with customers in meaningful ways.
+            Let&apos;s discuss how we can help your brand connect with customers in meaningful ways.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">

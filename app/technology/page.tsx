@@ -584,7 +584,7 @@ export default function TechnologyPage() {
             Frequently Asked Questions
           </h2>
           <div className="space-y-6">
-            {structuredData['@graph'][0].mainEntity.map((faq: { name: string; acceptedAnswer: { text: string } }, i: number) => (
+            {structuredData['@graph'][0].mainEntity?.map((faq: { name: string; acceptedAnswer: { text: string } }, i: number) => (
               <details key={i} className="group bg-gray-50 rounded-xl p-6 cursor-pointer">
                 <summary className="flex items-center justify-between font-semibold text-gray-900 list-none">
                   <span className="pr-4">{faq.name}</span>

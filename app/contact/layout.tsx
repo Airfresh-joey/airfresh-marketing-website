@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Contact Us | Get a Quote',
-  description: 'Contact AirFresh Marketing for experiential marketing, brand ambassadors, event staffing, and promotional services. Get a free quote today.',
+  title: 'Contact AirFresh Marketing | Get a Free Event Staffing Quote',
+  description: 'Event staffing and experiential marketing quotes in 24 hours. Contact AirFresh Marketing for brand ambassadors, street teams, and promotional staff nationwide.',
   keywords: 'contact airfresh marketing, experiential marketing quote, event staffing inquiry, brand ambassador services',
   openGraph: {
     type: 'website',

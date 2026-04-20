@@ -76,14 +76,6 @@ export default function NavigationWrapper() {
                     </div>
                   </div>
                 </div>
-              ) : link.isAnchor ? (
-                <Link
-                  key={link.href}
-                  href={link.href}
-                  className="font-medium transition-all duration-200 text-white hover:text-cyan-400"
-                >
-                  {link.label}
-                </Link>
               ) : (
                 <Link
                   key={link.href}

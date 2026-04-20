@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Services | Experiential Marketing Solutions',
-  description: 'Full-service experiential marketing: brand ambassadors, street teams, product sampling, event staffing, trade show support, and promotional models.',
+  title: 'Experiential Marketing Services | Brand Activations & Event Staffing',
+  description: 'Experiential marketing services including brand ambassadors, street teams, product sampling, event staffing, and trade show support. Nationwide coverage in 50+ cities. Get a free quote.',
   keywords: 'experiential marketing services, brand ambassadors, street teams, product sampling, event staffing, trade show staff',
   openGraph: {
     type: 'website',

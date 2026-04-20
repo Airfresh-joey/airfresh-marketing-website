@@ -1,8 +1,8 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'About Us | Experiential Marketing Agency',
-  description: 'AirFresh Marketing is a leading experiential marketing agency creating memorable brand activations and customer engagement campaigns nationwide.',
+  title: 'About AirFresh Marketing | Experiential Marketing Agency Since 2004',
+  description: 'Experiential marketing agency with 25+ years of experience. 300+ brands activated across 50+ cities. Brand ambassadors, event staffing, and guerrilla marketing nationwide.',
   keywords: 'experiential marketing agency, brand activation company, event marketing agency, about airfresh marketing',
   openGraph: {
     type: 'website',

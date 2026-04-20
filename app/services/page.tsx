@@ -1,31 +1,125 @@
-'use client'
-
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
 import {
-  Zap,
-  Heart,
   Users,
-  Target,
-  Lightbulb,
-  Award,
-  TrendingUp,
-  Palette,
+  CheckCircle,
+  Megaphone,
+  Calendar,
+  Sparkles,
   Cog,
   Laptop,
   ShoppingCart,
+  TrendingUp,
+  Palette,
   BarChart3,
-  Megaphone,
-  Calendar,
-  Camera,
-  Sparkles,
-  CheckCircle
 } from "lucide-react";
 
+const mainServices = [
+  {
+    icon: Sparkles,
+    title: "Brand Activations & Product Sampling",
+    description: "Create memorable first impressions with interactive brand experiences that let customers touch, taste, and experience your products firsthand.",
+    features: ["Product Demonstrations", "Sampling Campaigns", "Pop-up Experiences", "Interactive Displays"],
+    color: "bg-gradient-to-br from-blue-50 to-cyan-50"
+  },
+  {
+    icon: Users,
+    title: "Corporate Events & Team Building",
+    description: "Strengthen company culture and client relationships through professionally managed corporate events and team building experiences.",
+    features: ["Conference Management", "Team Building Activities", "Client Entertainment", "Award Ceremonies"],
+    color: "bg-gradient-to-br from-purple-50 to-pink-50"
+  },
+  {
+    icon: Megaphone,
+    title: "Guerrilla Marketing & Street Teams",
+    description: "Make a bold statement with creative guerrilla marketing campaigns that generate buzz and create viral moments for your brand.",
+    features: ["Street Team Campaigns", "Flash Mob Events", "Viral Stunts", "Community Engagement"],
+    color: "bg-gradient-to-br from-green-50 to-emerald-50"
+  },
+  {
+    icon: Calendar,
+    title: "Trade Show & Convention Marketing",
+    description: "Maximize your trade show ROI with professional booth management, lead generation, and attendee engagement strategies.",
+    features: ["Booth Management", "Lead Generation", "Product Launches", "Attendee Engagement"],
+    color: "bg-gradient-to-br from-orange-50 to-yellow-50"
+  }
+];
+
+const turnkeyServices = [
+  {
+    icon: Cog,
+    title: "Production & Execution",
+    description: "Complete project management from planning to delivery"
+  },
+  {
+    icon: Laptop,
+    title: "Experiential & Digital",
+    description: "Seamless integration of physical and digital experiences"
+  },
+  {
+    icon: ShoppingCart,
+    title: "Asset Procurement",
+    description: "Sourcing all necessary materials and equipment"
+  },
+  {
+    icon: TrendingUp,
+    title: "Marketing Strategy",
+    description: "Strategic planning aligned with your objectives"
+  },
+  {
+    icon: Palette,
+    title: "Creative Development",
+    description: "Innovative concepts that captivate audiences"
+  },
+  {
+    icon: BarChart3,
+    title: "Analytics & Reporting",
+    description: "Data-driven insights and performance metrics"
+  }
+];
+
+const cityLinks = [
+  { city: 'New York', slug: 'new-york' },
+  { city: 'Los Angeles', slug: 'los-angeles' },
+  { city: 'Chicago', slug: 'chicago' },
+  { city: 'Houston', slug: 'houston' },
+  { city: 'Phoenix', slug: 'phoenix' },
+  { city: 'San Francisco', slug: 'san-francisco' },
+  { city: 'Dallas', slug: 'dallas' },
+  { city: 'Austin', slug: 'austin' },
+  { city: 'Miami', slug: 'miami' },
+  { city: 'Atlanta', slug: 'atlanta' },
+  { city: 'Seattle', slug: 'seattle' },
+  { city: 'Denver', slug: 'denver' },
+  { city: 'Boston', slug: 'boston' },
+  { city: 'Nashville', slug: 'nashville' },
+  { city: 'Las Vegas', slug: 'las-vegas' },
+  { city: 'San Diego', slug: 'san-diego' },
+  { city: 'Portland', slug: 'portland' },
+  { city: 'Detroit', slug: 'detroit' },
+  { city: 'Minneapolis', slug: 'minneapolis' },
+  { city: 'Philadelphia', slug: 'philadelphia' },
+  { city: 'Charlotte', slug: 'charlotte' },
+  { city: 'Orlando', slug: 'orlando' },
+  { city: 'Tampa', slug: 'tampa' },
+  { city: 'San Antonio', slug: 'san-antonio' },
+];
+
+const popularServices = [
+  { label: 'NYC Brand Ambassadors', href: '/city-services/new-york-brand-ambassadors' },
+  { label: 'LA Experiential', href: '/city-services/los-angeles-experiential-marketing' },
+  { label: 'Chicago Street Teams', href: '/city-services/chicago-street-teams' },
+  { label: 'Miami Sampling', href: '/city-services/miami-sampling' },
+  { label: 'Vegas Convention Staff', href: '/city-services/las-vegas-convention-staffing' },
+  { label: 'Austin Event Mgmt', href: '/city-services/austin-event-management' },
+  { label: 'Denver Promo Models', href: '/city-services/denver-promotional-models' },
+  { label: 'Atlanta Guerilla Mktg', href: '/city-services/atlanta-guerilla-marketing' },
+  { label: 'SF Marketing Mascots', href: '/city-services/san-francisco-marketing-mascots' },
+  { label: 'Seattle Brand Ambassadors', href: '/city-services/seattle-brand-ambassadors' },
+];
+
 export default function Services() {
-  // Enhanced structured data with E-E-A-T signals
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -33,7 +127,8 @@ export default function Services() {
         "@type": "Service",
         "provider": {
           "@type": "Organization",
-          "name": "AirFresh Marketing"
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
         },
         "serviceType": [
           "Experiential Marketing",
@@ -42,86 +137,30 @@ export default function Services() {
           "Event Production",
           "Product Sampling",
           "Trade Show Marketing",
-          "Promotional Campaigns",
+          "Guerrilla Marketing",
           "Brand Ambassador Services"
         ],
-        "areaServed": "United States"
+        "areaServed": {
+          "@type": "Country",
+          "name": "United States"
+        },
+        "url": "https://www.airfreshmarketing.com/services"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.airfreshmarketing.com/services" }
+        ]
       }
     ]
   };
 
-  const mainServices = [
-    {
-      icon: Sparkles,
-      title: "Brand Activations & Product Sampling",
-      description: "Create memorable first impressions with interactive brand experiences that let customers touch, taste, and experience your products firsthand.",
-      features: ["Product Demonstrations", "Sampling Campaigns", "Pop-up Experiences", "Interactive Displays"],
-      color: "bg-gradient-to-br from-blue-50 to-cyan-50"
-    },
-    {
-      icon: Users,
-      title: "Corporate Events & Team Building",
-      description: "Strengthen company culture and client relationships through professionally managed corporate events and team building experiences.",
-      features: ["Conference Management", "Team Building Activities", "Client Entertainment", "Award Ceremonies"],
-      color: "bg-gradient-to-br from-purple-50 to-pink-50"
-    },
-    {
-      icon: Megaphone,
-      title: "Guerrilla Marketing & Street Teams",
-      description: "Make a bold statement with creative guerrilla marketing campaigns that generate buzz and create viral moments for your brand.",
-      features: ["Street Team Campaigns", "Flash Mob Events", "Viral Stunts", "Community Engagement"],
-      color: "bg-gradient-to-br from-green-50 to-emerald-50"
-    },
-    {
-      icon: Calendar,
-      title: "Trade Show & Convention Marketing",
-      description: "Maximize your trade show ROI with professional booth management, lead generation, and attendee engagement strategies.",
-      features: ["Booth Management", "Lead Generation", "Product Launches", "Attendee Engagement"],
-      color: "bg-gradient-to-br from-orange-50 to-yellow-50"
-    }
-  ];
-
-  const turnkeyServices = [
-    {
-      icon: Cog,
-      title: "Production & Execution",
-      description: "Complete project management from planning to delivery"
-    },
-    {
-      icon: Laptop,
-      title: "Experiential & Digital",
-      description: "Seamless integration of physical and digital experiences"
-    },
-    {
-      icon: ShoppingCart,
-      title: "Asset Procurement",
-      description: "Sourcing all necessary materials and equipment"
-    },
-    {
-      icon: TrendingUp,
-      title: "Marketing Strategy",
-      description: "Strategic planning aligned with your objectives"
-    },
-    {
-      icon: Palette,
-      title: "Creative Development",
-      description: "Innovative concepts that captivate audiences"
-    },
-    {
-      icon: BarChart3,
-      title: "Analytics & Reporting",
-      description: "Data-driven insights and performance metrics"
-    }
-  ];
-
   return (
     <div className="pt-16">
-      <SEO
-        title="Experiential Marketing Services | Brand Activations & Events - AirFresh"
-        description="Professional experiential marketing services including brand activations, corporate events, guerrilla marketing & trade show campaigns nationwide."
-        pageType="services"
-        canonical="https://www.airfreshmarketing.com/services"
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* Hero Section */}
@@ -196,7 +235,7 @@ export default function Services() {
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">TURNKEY SOLUTIONS</h2>
             <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Everything In-House</h3>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              We do everything in-house as an extension of your team. We strategize what's best
+              We do everything in-house as an extension of your team. We strategize what&apos;s best
               for meeting your goals and then come together to crush them as a single unit.
             </p>
           </div>
@@ -271,32 +310,7 @@ export default function Services() {
             Find our full range of experiential marketing services in major cities across the United States.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-2">
-            {[
-              { city: 'New York', slug: 'new-york' },
-              { city: 'Los Angeles', slug: 'los-angeles' },
-              { city: 'Chicago', slug: 'chicago' },
-              { city: 'Houston', slug: 'houston' },
-              { city: 'Phoenix', slug: 'phoenix' },
-              { city: 'San Francisco', slug: 'san-francisco' },
-              { city: 'Dallas', slug: 'dallas' },
-              { city: 'Austin', slug: 'austin' },
-              { city: 'Miami', slug: 'miami' },
-              { city: 'Atlanta', slug: 'atlanta' },
-              { city: 'Seattle', slug: 'seattle' },
-              { city: 'Denver', slug: 'denver' },
-              { city: 'Boston', slug: 'boston' },
-              { city: 'Nashville', slug: 'nashville' },
-              { city: 'Las Vegas', slug: 'las-vegas' },
-              { city: 'San Diego', slug: 'san-diego' },
-              { city: 'Portland', slug: 'portland' },
-              { city: 'Detroit', slug: 'detroit' },
-              { city: 'Minneapolis', slug: 'minneapolis' },
-              { city: 'Philadelphia', slug: 'philadelphia' },
-              { city: 'Charlotte', slug: 'charlotte' },
-              { city: 'Orlando', slug: 'orlando' },
-              { city: 'Tampa', slug: 'tampa' },
-              { city: 'San Antonio', slug: 'san-antonio' },
-            ].map((c) => (
+            {cityLinks.map((c) => (
               <Link
                 key={c.slug}
                 href={`/city-services/${c.slug}-brand-ambassadors`}
@@ -308,18 +322,7 @@ export default function Services() {
           </div>
           <div className="mt-8 grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-2">
             <span className="col-span-full text-sm font-semibold text-gray-500 mb-2">Popular Services:</span>
-            {[
-              { label: 'NYC Brand Ambassadors', href: '/city-services/new-york-brand-ambassadors' },
-              { label: 'LA Experiential', href: '/city-services/los-angeles-experiential-marketing' },
-              { label: 'Chicago Street Teams', href: '/city-services/chicago-street-teams' },
-              { label: 'Miami Sampling', href: '/city-services/miami-sampling' },
-              { label: 'Vegas Convention Staff', href: '/city-services/las-vegas-convention-staffing' },
-              { label: 'Austin Event Mgmt', href: '/city-services/austin-event-management' },
-              { label: 'Denver Promo Models', href: '/city-services/denver-promotional-models' },
-              { label: 'Atlanta Guerilla Mktg', href: '/city-services/atlanta-guerilla-marketing' },
-              { label: 'SF Marketing Mascots', href: '/city-services/san-francisco-marketing-mascots' },
-              { label: 'Seattle Brand Ambassadors', href: '/city-services/seattle-brand-ambassadors' },
-            ].map((s) => (
+            {popularServices.map((s) => (
               <Link
                 key={s.href}
                 href={s.href}
@@ -342,7 +345,7 @@ export default function Services() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Ready to Create Unforgettable Experiences?</h2>
           <p className="text-xl mb-8 opacity-90">
-            Let's discuss how our experiential marketing services can help your brand connect with customers in meaningful ways.
+            Let&apos;s discuss how our experiential marketing services can help your brand connect with customers in meaningful ways.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
