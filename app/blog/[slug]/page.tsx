@@ -1,257 +1,95 @@
-'use client'
-
-import { use } from 'react';
-import { useParams, useRouter } from "next/navigation";
-import Link from "next/link";
-import { motion } from "framer-motion";
-import { useState, useEffect, FormEvent } from "react";
-import SEO from "@/components/SEO";
-import { blogPosts } from "@/server/blogPosts";
+import { notFound } from 'next/navigation'
+import type { Metadata } from 'next'
+import Link from "next/link"
+import Image from "next/image"
 import {
   Calendar,
   Clock,
   ArrowLeft,
   Tag,
-  Share2,
-  Twitter,
-  Facebook,
-  Linkedin,
-  Copy,
-  CheckCircle,
   User,
   BookOpen,
   Sparkles,
   ChevronRight,
-  Mail,
   Phone,
   MessageCircle
-} from "lucide-react";
-import { Badge } from "@/components/ui/badge";
-import { Button } from "@/components/ui/button";
-import { Card, CardContent } from "@/components/ui/card";
-import { toast } from "@/hooks/use-toast";
+} from "lucide-react"
+import { Badge } from "@/components/ui/badge"
+import { Button } from "@/components/ui/button"
+import { Card, CardContent } from "@/components/ui/card"
+import { blogPosts } from "@/server/blogPosts"
+import { ReadProgressBar, ShareButtons, NewsletterSection } from "@/components/BlogPostClient"
 
-interface BlogPostPageProps {
-  params: Promise<{
-    slug: string;
-  }>;
+// ── Static params for pre-rendering all blog posts ──────────────────
+export async function generateStaticParams() {
+  return blogPosts.map((post) => ({ slug: post.slug }))
 }
 
-export default function BlogPost({ params }: BlogPostPageProps) {
-  const { slug } = use(params);
-  const router = useRouter();
-  const [copied, setCopied] = useState(false);
-  const [readProgress, setReadProgress] = useState(0);
-  const [email, setEmail] = useState("");
-  const [subscribeStatus, setSubscribeStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
-
-  const handleSubscribe = async (e: FormEvent) => {
-    e.preventDefault();
-    if (!email) return;
-    
-    setSubscribeStatus("loading");
-    try {
-      const res = await fetch("https://formspree.io/f/xzdjwkdj", {
-        method: "POST",
-        headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, _subject: "New Blog Subscriber" }),
-      });
-      if (res.ok) {
-        setSubscribeStatus("success");
-        setEmail("");
-      } else {
-        setSubscribeStatus("error");
-      }
-    } catch {
-      setSubscribeStatus("error");
-    }
-  };
-
-  // Find the blog post
-  const post = blogPosts.find(p => p.slug === slug);
-
-  // Related posts (same category, or first 3 other posts)
-  const relatedPosts = blogPosts
-    .filter(p => p.slug !== slug)
-    .sort((a, b) => {
-      // Prioritize same category
-      if (post) {
-        const aMatch = a.category === post.category ? 1 : 0;
-        const bMatch = b.category === post.category ? 1 : 0;
-        return bMatch - aMatch;
-      }
-      return 0;
-    })
-    .slice(0, 3);
-
-  // Handle scroll progress
-  useEffect(() => {
-    const handleScroll = () => {
-      const windowHeight = window.innerHeight;
-      const documentHeight = document.documentElement.scrollHeight - windowHeight;
-      const scrollTop = window.scrollY;
-      const progress = (scrollTop / documentHeight) * 100;
-      setReadProgress(Math.min(100, Math.max(0, progress)));
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
+// ── SEO metadata generated server-side ──────────────────────────────
+export async function generateMetadata(
+  { params }: { params: Promise<{ slug: string }> }
+): Promise<Metadata> {
+  const { slug } = await params
+  const post = blogPosts.find((p) => p.slug === slug)
 
   if (!post) {
-    return (
-      <div className="min-h-screen flex items-center justify-center bg-gray-50 pt-16">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">Article Not Found</h1>
-          <p className="text-gray-600 mb-8">The article you\'re looking for doesn\'t exist.</p>
-          <Link href="/blog">
-            <Button className="bg-cyan-500 hover:bg-cyan-600">
-              <ArrowLeft className="w-4 h-4 mr-2" />
-              Back to Blog
-            </Button>
-          </Link>
-        </div>
-      </div>
-    );
+    return { title: 'Article Not Found | Air Fresh Marketing Blog' }
   }
 
-  // Copy link to clipboard
-  const copyLink = () => {
-    navigator.clipboard.writeText(window.location.href);
-    setCopied(true);
-    toast({
-      title: "Link copied!",
-      description: "Article link has been copied to clipboard.",
-    });
-    setTimeout(() => setCopied(false), 3000);
-  };
+  const url = `https://www.airfreshmarketing.com/blog/${post.slug}`
 
-  // Share functions
-  const shareOnTwitter = () => {
-    window.open(`https://twitter.com/intent/tweet?text=${encodeURIComponent(post.title)}&url=${encodeURIComponent(window.location.href)}`, '_blank');
-  };
+  return {
+    title: `${post.title} | Air Fresh Marketing Blog`,
+    description: post.excerpt,
+    alternates: { canonical: url },
+    openGraph: {
+      title: post.title,
+      description: post.excerpt,
+      url,
+      type: 'article',
+      publishedTime: post.date,
+      authors: [post.author],
+      images: [{ url: post.image, width: 1200, height: 630, alt: post.title }],
+      siteName: 'Air Fresh Marketing',
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: post.title,
+      description: post.excerpt,
+      images: [post.image],
+    },
+  }
+}
 
-  const shareOnFacebook = () => {
-    window.open(`https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(window.location.href)}`, '_blank');
-  };
+// ── Markdown content rendering (server-side) ────────────────────────
 
-  const shareOnLinkedIn = () => {
-    window.open(`https://www.linkedin.com/sharing/share-offsite/?url=${encodeURIComponent(window.location.href)}`, '_blank');
-  };
+function processInlineFormatting(text: string): string {
+  return text
+    .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-gray-900">$1</strong>')
+    .replace(/\*(.*?)\*/g, '<em class="italic text-gray-700">$1</em>')
+}
 
-  // Enhanced content rendering with beautiful typography
-  const renderContent = () => {
-    const lines = post.content.split('\n');
-    const elements: JSX.Element[] = [];
-    let currentSection: string[] = [];
-    let listItems: string[] = [];
-    let inList = false;
-
-    lines.forEach((line) => {
-      const trimmedLine = line.trim();
-
-      // Check if this is a list item
-      if (trimmedLine.startsWith('- ')) {
-        if (!inList) {
-          // Process any accumulated content before the list
-          if (currentSection.length > 0) {
-            const content = currentSection.join(' ').trim();
-            if (content) {
-              elements.push(renderParagraph(content, elements.length));
-            }
-            currentSection = [];
-          }
-          inList = true;
-          listItems = [];
-        }
-        listItems.push(trimmedLine.substring(2));
-      } else {
-        // If we were in a list, render it
-        if (inList && listItems.length > 0) {
-          elements.push(renderList(listItems, elements.length));
-          listItems = [];
-          inList = false;
-        }
-
-        // Check for headers
-        if (trimmedLine.startsWith('# ')) {
-          if (currentSection.length > 0) {
-            const content = currentSection.join(' ').trim();
-            if (content) {
-              elements.push(renderParagraph(content, elements.length));
-            }
-            currentSection = [];
-          }
-          // Skip the main title as it\'s already displayed in the hero
-        } else if (trimmedLine.startsWith('## ')) {
-          if (currentSection.length > 0) {
-            const content = currentSection.join(' ').trim();
-            if (content) {
-              elements.push(renderParagraph(content, elements.length));
-            }
-            currentSection = [];
-          }
-          elements.push(renderH2(trimmedLine.substring(3), elements.length));
-        } else if (trimmedLine.startsWith('### ')) {
-          if (currentSection.length > 0) {
-            const content = currentSection.join(' ').trim();
-            if (content) {
-              elements.push(renderParagraph(content, elements.length));
-            }
-            currentSection = [];
-          }
-          elements.push(renderH3(trimmedLine.substring(4), elements.length));
-        } else if (trimmedLine === '') {
-          if (currentSection.length > 0) {
-            const content = currentSection.join(' ').trim();
-            if (content) {
-              elements.push(renderParagraph(content, elements.length));
-            }
-            currentSection = [];
-          }
-        } else {
-          currentSection.push(trimmedLine);
-        }
-      }
-    });
-
-    // Process any remaining content
-    if (inList && listItems.length > 0) {
-      elements.push(renderList(listItems, elements.length));
-    }
-    if (currentSection.length > 0) {
-      const content = currentSection.join(' ').trim();
-      if (content) {
-        elements.push(renderParagraph(content, elements.length));
-      }
-    }
-
-    return <div className="prose prose-xl max-w-none">{elements}</div>;
-  };
-
-  // Helper functions for rendering
-  const processInlineFormatting = (text: string) => {
-    return text
-      .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-gray-900">$1</strong>')
-      .replace(/\*(.*?)\*/g, '<em class="italic text-gray-700">$1</em>');
-  };
-
-  const renderH2 = (text: string, key: number) => (
+function renderH2(text: string, key: number) {
+  return (
     <h2 key={key} className="text-4xl font-bold mt-16 mb-8 text-gray-900 relative">
       <span className="absolute -left-12 top-2 text-cyan-500/20 text-6xl font-black">#</span>
       <span dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }} />
     </h2>
-  );
+  )
+}
 
-  const renderH3 = (text: string, key: number) => (
+function renderH3(text: string, key: number) {
+  return (
     <h3
       key={key}
       className="text-2xl font-bold mt-10 mb-6 text-gray-800 border-l-4 border-cyan-500 pl-4"
       dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
     />
-  );
+  )
+}
 
-  const renderList = (items: string[], key: number) => (
+function renderList(items: string[], key: number) {
+  return (
     <ul key={key} className="space-y-4 my-8">
       {items.map((item, i) => (
         <li key={i} className="flex items-start group">
@@ -265,97 +103,199 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         </li>
       ))}
     </ul>
-  );
+  )
+}
 
-  const renderParagraph = (text: string, key: number) => {
-    // Check for special content types
-    const isResultsSection = text.includes('Results') && (text.includes('%') || text.includes('$'));
-    const hasStats = text.match(/\d{3,}/) || (text.includes('%') && text.includes('-'));
+function renderParagraph(text: string, key: number) {
+  const isResultsSection = text.includes('Results') && (text.includes('%') || text.includes('$'))
+  const hasStats = text.match(/\d{3,}/) || (text.includes('%') && text.includes('-'))
 
-    if (isResultsSection || hasStats) {
-      return (
-        <div key={key} className="my-12 relative">
-          <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl blur opacity-20"></div>
-          <Card className="relative bg-gradient-to-br from-white to-cyan-50 border-cyan-200/50">
-            <CardContent className="p-8">
-              <div className="flex items-start">
-                <Sparkles className="w-8 h-8 text-cyan-500 mr-4 flex-shrink-0 mt-1" />
-                <div
-                  className="text-lg text-gray-800 leading-relaxed font-medium"
-                  dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
-                />
-              </div>
-            </CardContent>
-          </Card>
-        </div>
-      );
-    }
+  if (isResultsSection || hasStats) {
+    return (
+      <div key={key} className="my-12 relative">
+        <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-blue-500 rounded-xl blur opacity-20" />
+        <Card className="relative bg-gradient-to-br from-white to-cyan-50 border-cyan-200/50">
+          <CardContent className="p-8">
+            <div className="flex items-start">
+              <Sparkles className="w-8 h-8 text-cyan-500 mr-4 flex-shrink-0 mt-1" />
+              <div
+                className="text-lg text-gray-800 leading-relaxed font-medium"
+                dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
+              />
+            </div>
+          </CardContent>
+        </Card>
+      </div>
+    )
+  }
 
-    // Bold emphasis paragraph
-    if (text.startsWith('**') && text.endsWith('**')) {
-      return (
-        <p
-          key={key}
-          className="text-2xl font-bold text-gray-900 my-10 leading-relaxed bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
-          dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
-        />
-      );
-    }
-
-    // Regular paragraph with better typography
+  if (text.startsWith('**') && text.endsWith('**')) {
     return (
       <p
         key={key}
-        className="text-xl text-gray-700 leading-relaxed my-6 tracking-wide"
+        className="text-2xl font-bold text-gray-900 my-10 leading-relaxed bg-gradient-to-r from-gray-900 to-gray-700 bg-clip-text text-transparent"
         dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
       />
-    );
-  };
+    )
+  }
+
+  return (
+    <p
+      key={key}
+      className="text-xl text-gray-700 leading-relaxed my-6 tracking-wide"
+      dangerouslySetInnerHTML={{ __html: processInlineFormatting(text) }}
+    />
+  )
+}
+
+function renderContent(content: string) {
+  const lines = content.split('\n')
+  const elements: React.ReactElement[] = []
+  let currentSection: string[] = []
+  let listItems: string[] = []
+  let inList = false
+
+  lines.forEach((line) => {
+    const trimmedLine = line.trim()
+
+    if (trimmedLine.startsWith('- ')) {
+      if (!inList) {
+        if (currentSection.length > 0) {
+          const text = currentSection.join(' ').trim()
+          if (text) elements.push(renderParagraph(text, elements.length))
+          currentSection = []
+        }
+        inList = true
+        listItems = []
+      }
+      listItems.push(trimmedLine.substring(2))
+    } else {
+      if (inList && listItems.length > 0) {
+        elements.push(renderList(listItems, elements.length))
+        listItems = []
+        inList = false
+      }
+
+      if (trimmedLine.startsWith('# ')) {
+        if (currentSection.length > 0) {
+          const text = currentSection.join(' ').trim()
+          if (text) elements.push(renderParagraph(text, elements.length))
+          currentSection = []
+        }
+        // Skip main title — already displayed in the hero
+      } else if (trimmedLine.startsWith('## ')) {
+        if (currentSection.length > 0) {
+          const text = currentSection.join(' ').trim()
+          if (text) elements.push(renderParagraph(text, elements.length))
+          currentSection = []
+        }
+        elements.push(renderH2(trimmedLine.substring(3), elements.length))
+      } else if (trimmedLine.startsWith('### ')) {
+        if (currentSection.length > 0) {
+          const text = currentSection.join(' ').trim()
+          if (text) elements.push(renderParagraph(text, elements.length))
+          currentSection = []
+        }
+        elements.push(renderH3(trimmedLine.substring(4), elements.length))
+      } else if (trimmedLine === '') {
+        if (currentSection.length > 0) {
+          const text = currentSection.join(' ').trim()
+          if (text) elements.push(renderParagraph(text, elements.length))
+          currentSection = []
+        }
+      } else {
+        currentSection.push(trimmedLine)
+      }
+    }
+  })
+
+  if (inList && listItems.length > 0) {
+    elements.push(renderList(listItems, elements.length))
+  }
+  if (currentSection.length > 0) {
+    const text = currentSection.join(' ').trim()
+    if (text) elements.push(renderParagraph(text, elements.length))
+  }
+
+  return <div className="prose prose-xl max-w-none">{elements}</div>
+}
+
+// ── Page component (Server Component) ───────────────────────────────
+
+export default async function BlogPost(
+  { params }: { params: Promise<{ slug: string }> }
+) {
+  const { slug } = await params
+  const post = blogPosts.find((p) => p.slug === slug)
+
+  if (!post) {
+    notFound()
+  }
+
+  const relatedPosts = blogPosts
+    .filter((p) => p.slug !== slug)
+    .sort((a, b) => {
+      const aMatch = a.category === post.category ? 1 : 0
+      const bMatch = b.category === post.category ? 1 : 0
+      return bMatch - aMatch
+    })
+    .slice(0, 3)
+
+  const wordCount = post.content.split(' ').length
+  const postUrl = `https://www.airfreshmarketing.com/blog/${post.slug}`
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": post.title,
+        "description": post.excerpt,
+        "image": post.image,
+        "author": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+          }
+        },
+        "datePublished": post.date,
+        "dateModified": post.date,
+        "mainEntityOfPage": postUrl,
+        "wordCount": wordCount,
+        "articleSection": post.category,
+        "keywords": post.tags.join(', ')
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.airfreshmarketing.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl }
+        ]
+      }
+    ]
+  }
 
   return (
     <div className="min-h-screen bg-white pt-16">
-      <SEO
-        title={`${post.title} | Air Fresh Marketing Blog`}
-        description={post.excerpt}
-        canonical={`https://www.airfreshmarketing.com/blog/${post.slug}`}
-        ogImage={post.image}
-        structuredData={{
-          "@context": "https://schema.org",
-          "@graph": [
-            {
-              "@type": "Article",
-              "headline": post.title,
-              "description": post.excerpt,
-              "image": post.image,
-              "author": { "@type": "Organization", "name": "AirFresh Marketing", "url": "https://www.airfreshmarketing.com" },
-              "publisher": { "@type": "Organization", "name": "AirFresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg" } },
-              "datePublished": post.date,
-              "mainEntityOfPage": `https://www.airfreshmarketing.com/blog/${post.slug}`
-            },
-            {
-              "@type": "BreadcrumbList",
-              "itemListElement": [
-                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
-                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.airfreshmarketing.com/blog" },
-                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.airfreshmarketing.com/blog/${post.slug}` }
-              ]
-            }
-          ]
-        }}
+      {/* JSON-LD Structured Data */}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
-      {/* Progress Bar */}
-      <div className="fixed top-16 left-0 right-0 z-50 h-1 bg-gray-100">
-        <motion.div
-          className="h-full bg-gradient-to-r from-cyan-500 to-blue-600"
-          style={{ width: `${readProgress}%` }}
-          transition={{ duration: 0.1 }}
-        />
-      </div>
+      {/* Progress Bar (client component) */}
+      <ReadProgressBar />
 
       {/* Hero with Image */}
       <section className="relative bg-white pt-20">
-        {/* Back Button - Fixed at top */}
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
           <Link href="/blog">
             <Button variant="ghost" className="group hover:bg-gray-50">
@@ -367,12 +307,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pb-16">
           {/* Article Header */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.6 }}
-            className="max-w-4xl mx-auto text-center mb-12"
-          >
+          <div className="max-w-4xl mx-auto text-center mb-12 animate-fade-in">
             <Badge className="mb-6 px-4 py-2 bg-cyan-100 text-cyan-700 hover:bg-cyan-200 text-sm font-semibold">
               {post.category}
             </Badge>
@@ -403,39 +338,30 @@ export default function BlogPost({ params }: BlogPostPageProps) {
               </span>
               <span className="flex items-center gap-2">
                 <BookOpen className="w-5 h-5" />
-                {post.content.split(' ').length} words
+                {wordCount} words
               </span>
             </div>
-          </motion.div>
+          </div>
 
           {/* Hero Image */}
-          <motion.div
-            initial={{ opacity: 0, scale: 0.95 }}
-            animate={{ opacity: 1, scale: 1 }}
-            transition={{ duration: 0.8, delay: 0.2 }}
-            className="relative rounded-2xl overflow-hidden shadow-2xl"
-          >
+          <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
             <div className="aspect-[21/9] relative">
               <img
                 src={post.image}
                 alt={post.title}
                 className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent"></div>
+              <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
             </div>
-          </motion.div>
+          </div>
         </div>
       </section>
 
       {/* Main Content Area */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <motion.article
-          initial={{ opacity: 0 }}
-          animate={{ opacity: 1 }}
-          transition={{ delay: 0.3 }}
-        >
+        <article>
           {/* Article Content */}
-          {renderContent()}
+          {renderContent(post.content)}
 
           {/* Tags Section */}
           <div className="mt-16 pt-8 border-t-2 border-gray-100">
@@ -453,60 +379,19 @@ export default function BlogPost({ params }: BlogPostPageProps) {
             </div>
           </div>
 
-          {/* Share Section */}
-          <div className="mt-12 p-8 bg-gray-50 rounded-2xl">
-            <h3 className="text-lg font-bold mb-6 text-gray-900">Share this article</h3>
-            <div className="flex gap-3">
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={shareOnTwitter}
-                className="hover:bg-cyan-50 hover:border-cyan-400 hover:text-cyan-700"
-              >
-                <Twitter className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={shareOnFacebook}
-                className="hover:bg-blue-50 hover:border-blue-400 hover:text-blue-700"
-              >
-                <Facebook className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={shareOnLinkedIn}
-                className="hover:bg-blue-50 hover:border-blue-600 hover:text-blue-700"
-              >
-                <Linkedin className="w-5 h-5" />
-              </Button>
-              <Button
-                variant="outline"
-                size="lg"
-                onClick={copyLink}
-                className="hover:bg-green-50 hover:border-green-400 hover:text-green-700"
-              >
-                {copied ? <CheckCircle className="w-5 h-5" /> : <Copy className="w-5 h-5" />}
-              </Button>
-            </div>
-          </div>
-        </motion.article>
+          {/* Share Section (client component) */}
+          <ShareButtons title={post.title} />
+        </article>
 
         {/* CTA Section */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          className="mt-16"
-        >
+        <div className="mt-16">
           <Card className="bg-gradient-to-br from-cyan-600 to-blue-700 text-white overflow-hidden relative">
-            <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]"></div>
+            <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]" />
             <CardContent className="p-12 relative">
               <Sparkles className="w-12 h-12 mb-6 text-cyan-200" />
               <h2 className="text-3xl font-bold mb-4">Ready to Amplify Your Brand?</h2>
               <p className="text-lg text-cyan-50 mb-8">
-                Let\'s create memorable experiences that drive real results for your business.
+                Let&apos;s create memorable experiences that drive real results for your business.
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link href="/contact">
@@ -524,7 +409,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
               </div>
             </CardContent>
           </Card>
-        </motion.div>
+        </div>
 
         {/* Internal Cross-Links for SEO */}
         <div className="mt-16 p-8 bg-white border border-gray-200 rounded-2xl">
@@ -536,26 +421,21 @@ export default function BlogPost({ params }: BlogPostPageProps) {
             <Link href="/services/event-management" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Management</Link>
             <Link href="/services/street-teams" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Street Teams</Link>
             <Link href="/services/sampling" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Product Sampling</Link>
-            <Link href="/city-services/los-angeles-brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassadors Los Angeles</Link>
-            <Link href="/city-services/new-york-city-brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassadors New York City</Link>
-            <Link href="/city-services/las-vegas-convention-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Convention Staffing Las Vegas</Link>
-            <Link href="/city-services/miami-experiential-marketing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Experiential Marketing Miami</Link>
-            <Link href="/city-services/chicago-convention-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Convention Staffing Chicago</Link>
-            <Link href="/city-services/denver-brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassadors Denver</Link>
+            <Link href="/guides/best-event-staffing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Best Event Staffing Agency Guide</Link>
+            <Link href="/guides/event-staffing-101" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Staffing 101 Guide</Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassador Hiring Guide</Link>
+            <Link href="/event-staffing-near-me" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Staffing Near Me</Link>
             <Link href="/pricing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Staffing Pricing</Link>
             <Link href="/technology" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Our Technology Platform</Link>
             <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Client Case Studies</Link>
+            <Link href="/compare" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Compare Staffing Agencies</Link>
+            <Link href="/locations" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">All Service Locations</Link>
           </div>
         </div>
 
         {/* Related Posts */}
         {relatedPosts.length > 0 && (
-          <motion.div
-            initial={{ opacity: 0 }}
-            whileInView={{ opacity: 1 }}
-            viewport={{ once: true }}
-            className="mt-20"
-          >
+          <div className="mt-20">
             <h2 className="text-3xl font-bold mb-10 text-gray-900">Continue Reading</h2>
             <div className="grid md:grid-cols-3 gap-6">
               {relatedPosts.map((relatedPost) => (
@@ -567,7 +447,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
                         alt={relatedPost.title}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
-                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       <Badge className="absolute bottom-3 left-3 bg-white/90 text-gray-900">
                         {relatedPost.category}
                       </Badge>
@@ -588,52 +468,12 @@ export default function BlogPost({ params }: BlogPostPageProps) {
                 </Link>
               ))}
             </div>
-          </motion.div>
+          </div>
         )}
       </section>
 
-      {/* Newsletter Section */}
-      <section className="bg-gray-50 py-20 mt-20">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-          >
-            <div className="inline-flex items-center justify-center w-16 h-16 rounded-full bg-cyan-100 mb-6">
-              <Mail className="w-8 h-8 text-cyan-600" />
-            </div>
-            <h2 className="text-4xl font-bold mb-4 text-gray-900">
-              Never Miss an Update
-            </h2>
-            <p className="text-xl mb-8 text-gray-600">
-              Get the latest marketing insights delivered directly to your inbox
-            </p>
-            <form onSubmit={handleSubscribe} className="flex flex-col sm:flex-row gap-4 justify-center max-w-md mx-auto">
-              <input
-                type="email"
-                placeholder="Enter your email"
-                value={email}
-                onChange={(e) => setEmail(e.target.value)}
-                className="flex-1 px-6 py-3 rounded-lg border border-gray-300 focus:outline-none focus:border-cyan-500 text-lg"
-                required
-              />
-              <Button 
-                type="submit" 
-                size="lg" 
-                className="bg-cyan-600 hover:bg-cyan-700 text-white"
-                disabled={subscribeStatus === "loading"}
-              >
-                {subscribeStatus === "loading" ? "..." : subscribeStatus === "success" ? "Subscribed!" : "Subscribe"}
-                {subscribeStatus !== "success" && <ChevronRight className="w-5 h-5 ml-2" />}
-              </Button>
-            </form>
-            {subscribeStatus === "success" && (
-              <p className="text-green-600 mt-4">Thanks for subscribing!</p>
-            )}
-          </motion.div>
-        </div>
-      </section>
+      {/* Newsletter Section (client component) */}
+      <NewsletterSection />
     </div>
-  );
+  )
 }
