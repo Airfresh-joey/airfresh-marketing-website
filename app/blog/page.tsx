@@ -269,6 +269,27 @@ export default function Blog() {
         </section>
       )}
 
+      {/* Popular Guides */}
+      {selectedCategory === "All" && searchTerm === "" && (
+        <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
+          <h2 className="text-xl font-bold mb-4 text-gray-900">Popular Guides</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link href="/guides/best-event-staffing-agency" className="group p-4 bg-cyan-50 rounded-xl border border-cyan-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors text-sm">Best Event Staffing Agency 2026</div>
+            </Link>
+            <Link href="/guides/event-staffing-101" className="group p-4 bg-cyan-50 rounded-xl border border-cyan-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors text-sm">Event Staffing 101 Complete Guide</div>
+            </Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="group p-4 bg-cyan-50 rounded-xl border border-cyan-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors text-sm">Brand Ambassador Hiring Guide</div>
+            </Link>
+            <Link href="/event-staffing-near-me" className="group p-4 bg-cyan-50 rounded-xl border border-cyan-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-semibold text-gray-900 group-hover:text-cyan-600 transition-colors text-sm">Find Event Staffing Near You</div>
+            </Link>
+          </div>
+        </section>
+      )}
+
       {/* Blog Posts Grid */}
       <section className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <AnimatePresence mode="wait">

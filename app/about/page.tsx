@@ -403,6 +403,31 @@ export default function About() {
         </div>
       </section>
 
+      {/* Resources */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Explore Our Resources</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/guides/event-staffing-101" className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Event Staffing 101</div>
+              <p className="text-sm text-gray-500 mt-1">Everything you need to know</p>
+            </Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Brand Ambassador Guide</div>
+              <p className="text-sm text-gray-500 mt-1">How to hire top ambassadors</p>
+            </Link>
+            <Link href="/technology" className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Our Technology</div>
+              <p className="text-sm text-gray-500 mt-1">GPS check-in and real-time reporting</p>
+            </Link>
+            <Link href="/compare" className="group p-5 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-md transition-all">
+              <div className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Compare Agencies</div>
+              <p className="text-sm text-gray-500 mt-1">See how we stack up</p>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
