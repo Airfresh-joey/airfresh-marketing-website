@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Industries | Experiential Marketing by Sector',
+  title: 'Experiential Marketing by Industry | Sector Expertise',
   description: 'Specialized experiential marketing for every industry: tech, automotive, CPG, beverage, healthcare, retail, and more. Industry-specific expertise.',
   keywords: 'experiential marketing industries, tech marketing, automotive marketing, CPG brand activations, beverage sampling, retail marketing',
   openGraph: {

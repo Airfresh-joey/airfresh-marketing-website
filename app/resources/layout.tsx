@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Resources | Event Staffing Tools & Guides',
+  title: 'Event Staffing Resources | Tools, Guides & Checklists',
   description: 'Free event staffing resources, ROI calculators, planning checklists, and marketing guides from AirFresh Marketing. Tools to plan better brand activations.',
   openGraph: {
     title: 'Resources | AirFresh Marketing',

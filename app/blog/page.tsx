@@ -4,13 +4,12 @@ import { blogPosts } from "@/server/blogPosts"
 import { BlogListClient, BlogNewsletterSection } from "@/components/BlogListClient"
 
 export const metadata: Metadata = {
-  title: 'Blog | Air Fresh Marketing Insights & Case Studies',
-  description: 'Explore expert insights on experiential marketing, street teams, brand ambassadors, and event staffing. Learn from real case studies and industry best practices from Air Fresh Marketing.',
+  description: 'Experiential marketing insights, event staffing guides, and brand activation strategies. Expert tips from AirFresh Marketing to boost your next campaign.',
   alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog',
   },
   openGraph: {
-    title: 'The Air Fresh Marketing Blog',
+    title: 'Experiential Marketing Blog | AirFresh Marketing',
     description: 'Expert insights on experiential marketing, street teams, and brand activation strategies that drive real results.',
     url: 'https://www.airfreshmarketing.com/blog',
     type: 'website',
@@ -18,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'The Air Fresh Marketing Blog',
+    title: 'Experiential Marketing Blog | AirFresh Marketing',
     description: 'Expert insights on experiential marketing, street teams, and brand activation strategies.',
   },
 }

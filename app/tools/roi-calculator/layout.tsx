@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event Marketing ROI Calculator | Free Tool',
+  title: 'Event Marketing ROI Calculator | Free Experiential Marketing Tool',
   description: 'Event marketing ROI calculator to estimate impressions, leads, conversions, and revenue from experiential marketing campaigns. Free tool by AirFresh Marketing.',
   openGraph: {
     title: 'Event Marketing ROI Calculator | AirFresh Marketing',

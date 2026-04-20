@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Technology Platform | GPS Check-In, Video Training & Real-Time Reporting | AirFresh Marketing',
+  title: 'Event Staffing Technology | GPS Check-In & Real-Time Reporting',
   description: 'Event staffing technology that eliminates no-shows and drives accountability. GPS check-in, video training with knowledge testing, real-time reporting dashboards, and data capture tools. See how our platform works.',
   keywords: 'event staffing technology, brand ambassador GPS tracking, event staff check-in app, staffing platform, event reporting dashboard, brand ambassador training platform, event staffing software, experiential marketing technology',
   openGraph: {
