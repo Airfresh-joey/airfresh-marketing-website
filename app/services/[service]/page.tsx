@@ -58,51 +58,51 @@ const serviceConfigs: Record<string, ServiceConfig> = {
   'brand-ambassadors': {
     title: 'Professional Brand Ambassadors',
     subtitle: 'Authentic Brand Representation & Customer Engagement',
-    description: 'Connect with your audience through our network of professional, trained brand ambassadors who embody your brand values and create meaningful customer interactions.',
+    description: 'AirFresh Marketing provides professional, trained brand ambassadors for events, trade shows, product launches, and brand activations nationwide. Our network of 5,000+ vetted brand ambassadors are trained in your brand messaging, equipped with GPS check-in technology for real-time accountability, and supported by on-site management. From Fortune 500 corporations to fast-growing startups, we deliver authentic brand representation that drives engagement, generates leads, and creates lasting customer connections across 50+ U.S. markets.',
     heroImage: '/images/heroes/mac-cosmetics-promotional-models.jpeg',
     icon: Users,
     color: 'from-blue-500 to-cyan-500',
     stats: [
-      { value: '1000+', label: 'Trained Ambassadors' },
+      { value: '5000+', label: 'Trained Ambassadors' },
       { value: '50+', label: 'Cities Nationwide' },
-      { value: '95%', label: 'Client Satisfaction' },
+      { value: '98%', label: 'Client Satisfaction' },
       { value: '2.5M+', label: 'Interactions Generated' }
     ],
     features: [
       {
         icon: Star,
-        title: 'Elite Training Program',
-        description: 'Comprehensive training on brand messaging, product knowledge, and customer engagement techniques.'
+        title: 'Elite Vetting Process',
+        description: 'Every brand ambassador passes background checks, interviews, and brand-fit assessments. We accept only the top 5% of applicants to ensure premium representation.'
       },
       {
-        icon: Target,
-        title: 'Targeted Recruitment',
-        description: 'We select ambassadors who match your brand demographics and values for authentic representation.'
+        icon: MapPin,
+        title: 'GPS Check-In & Real-Time Tracking',
+        description: 'Our proprietary technology verifies staff arrival, tracks location throughout events, and provides real-time status updates to your dashboard.'
       },
       {
-        icon: Award,
-        title: 'Quality Assurance',
-        description: 'Ongoing monitoring and performance evaluation to ensure consistent brand representation.'
+        icon: Play,
+        title: 'Video Training & Testing',
+        description: 'Brand ambassadors complete video training modules and pass knowledge tests before every event, ensuring consistent brand messaging.'
       },
       {
         icon: TrendingUp,
-        title: 'Real-Time Reporting',
-        description: 'Live updates and detailed analytics on engagement metrics and campaign performance.'
+        title: 'Data Capture & Reporting',
+        description: 'Integrated data collection tools capture leads, survey responses, and consumer insights. Post-event reports include engagement metrics, photos, and actionable analytics.'
       }
     ],
     benefits: [
-      'Increase brand awareness through personal connections',
-      'Generate qualified leads and drive conversions',
-      'Build authentic relationships with target customers',
-      'Create memorable brand experiences',
-      'Expand market reach with local expertise',
-      'Collect valuable customer feedback and insights'
+      'Drive 3-5x more engagement than traditional marketing',
+      'Generate qualified leads with integrated data capture',
+      'Ensure brand consistency with video training verification',
+      'Track staff in real-time with GPS check-in technology',
+      'Scale to 50+ cities with one agency partner',
+      'Reduce no-show risk with backup staffing guarantees'
     ],
     caseStudy: {
-      title: 'Tech Startup Launch Success',
-      description: 'Helped a tech startup increase brand awareness by 300% through strategic brand ambassador deployment.',
-      stats: { reach: '100K+', conversion: '45%', roi: '6.2x' },
-      image: '/images/case-studies/netflix.jpg'
+      title: 'Formula 1 Las Vegas Grand Prix',
+      description: 'Deployed 500+ brand ambassadors and event staff across the Las Vegas Strip for the F1 Grand Prix, managing fan engagement zones, VIP hospitality, and brand activations.',
+      stats: { staff: '500+', interactions: '300K+', satisfaction: '98%' },
+      image: '/images/case-studies/formula-1-4.jpg'
     }
   },
   'street-teams': {
@@ -673,9 +673,46 @@ export default function ServicePage({ params }: ServicePageProps) {
   // FAQ data for each service
   const serviceFAQs: Record<string, Array<{question: string, answer: string}>> = {
     'brand-ambassadors': [
-      { question: "How do you select brand ambassadors for my campaign?", answer: "We match ambassadors based on your target demographics, brand values, and campaign requirements. Each ambassador undergoes background checks, training, and brand-specific preparation to ensure authentic representation." },
-      { question: "What cities do you provide brand ambassadors in?", answer: "AirFresh Marketing provides professional brand ambassadors in 50+ cities nationwide, including New York, Los Angeles, Chicago, Miami, Denver, San Francisco, Austin, and Atlanta." },
-      { question: "How do I get started?", answer: "Contact us for a free consultation. We'll discuss your campaign goals, timeline, and requirements, then provide a customized proposal tailored to your specific needs." }
+      {
+        question: "What is a brand ambassador and what do they do at events?",
+        answer: "A brand ambassador is a trained promotional professional who represents your company at events, trade shows, product launches, and activations. They engage consumers face-to-face, communicate key brand messages, distribute samples or marketing materials, capture leads, and create positive brand impressions. Unlike generic event staff, brand ambassadors are carefully selected to embody your brand values and receive product-specific training so every interaction feels authentic and informed. They serve as the human face of your brand in real-world environments."
+      },
+      {
+        question: "How do you select and vet brand ambassadors for my campaign?",
+        answer: "Our selection process is rigorous by design. Every candidate submits an application, completes a video interview, and passes a background check before entering our talent pool. From there, we match ambassadors to your campaign based on demographics, personality, industry experience, and brand alignment. We present you with candidate profiles for approval, so you always have input on who represents your brand. We accept only the top 5% of applicants, which means our talent pool is smaller but significantly higher quality than agencies that take all comers."
+      },
+      {
+        question: "What types of events does AirFresh staff brand ambassadors for?",
+        answer: "We staff brand ambassadors for a wide range of events including trade shows, conventions, product launches, sporting events, music festivals, retail activations, sampling campaigns, college campus tours, pop-up shops, corporate events, and community sponsorships. We have experience across industries including consumer packaged goods, technology, automotive, alcohol and beverage, beauty, healthcare, and entertainment. Whether your activation is one day or six weeks, one city or fifty, we can build a staffing solution that fits your campaign."
+      },
+      {
+        question: "Can you staff brand ambassadors in multiple cities simultaneously?",
+        answer: "Yes. Scaling across multiple markets is one of our core strengths. With a network spanning 50+ U.S. cities, we can execute coordinated multi-market activations simultaneously without sacrificing quality. Each market has a dedicated local talent pool and on-site management, supported by centralized coordination from our national operations team. This means you work with a single agency partner, receive consolidated reporting, and maintain brand consistency regardless of how many cities are running at once. We have executed programs covering 30+ markets in a single weekend."
+      },
+      {
+        question: "Can I request specific demographics, skills, or languages?",
+        answer: "Absolutely. We routinely match brand ambassadors based on age, gender, ethnicity, language fluency, physical appearance, industry background, and specialized skills. If your campaign targets Spanish-speaking consumers, we can staff bilingual ambassadors. If you need someone with a background in fitness, nutrition, or technology to have credible conversations, we can source for that expertise. Our talent profiles include detailed information on skills, languages, experience, and physical attributes so we can make highly specific matches that align with your brand and audience."
+      },
+      {
+        question: "How do you train brand ambassadors before an event?",
+        answer: "Training is delivered through our proprietary video training platform. Each ambassador receives a campaign-specific training module covering your brand story, product details, key talking points, objection handling, and activation goals. They must pass a knowledge test before being cleared to work the event. This ensures every ambassador arrives prepared and confident, not just briefed verbally on-site. For complex campaigns, we supplement video training with live briefings, physical product walk-throughs, and scenario-based role play. Training records are logged so you can verify completion for every staff member."
+      },
+      {
+        question: "Will there be on-site management or supervision?",
+        answer: "Yes, on-site management is included for all activations above a minimum staff threshold, and available as an add-on for smaller deployments. Our field managers are experienced event professionals who oversee logistics, maintain brand standards, handle real-time problem solving, and serve as your point of contact during the activation. They conduct staff check-ins, monitor performance, document the activation with photos and notes, and provide end-of-day summaries. For large-scale or multi-location events, we deploy regional leads who report up to a national account manager."
+      },
+      {
+        question: "How do you ensure staff reliability and accountability?",
+        answer: "Reliability is built into our systems rather than assumed. Every brand ambassador checks in through our GPS-enabled mobile app at the start of their shift, which verifies their location and timestamps their arrival. Staff location is visible on your real-time dashboard throughout the event. If a no-show occurs, our operations team is notified instantly and a backup ambassador is dispatched. We maintain a backup staffing pool in every active market specifically for this purpose. This combination of GPS check-in technology, backup staffing protocols, and real-time visibility gives clients confidence that their events are covered."
+      },
+      {
+        question: "How is pricing determined for brand ambassador programs?",
+        answer: "Pricing is based on several factors: number of staff, number of hours per day, number of event days, geographic markets, required skills or qualifications, and the level of management support needed. Multi-day and multi-market programs benefit from volume pricing. Training, management, reporting, and technology access are typically included in program packages rather than billed as add-ons. We provide detailed, itemized proposals after an initial discovery call so you can see exactly what is included. Most clients find our all-in pricing more transparent than agencies that quote a low staff rate and then add on every ancillary service."
+      },
+      {
+        question: "What makes AirFresh different from other brand ambassador agencies?",
+        answer: "The difference comes down to technology, process, and quality control. Most agencies still rely on text messages and spreadsheets to manage staff. AirFresh uses a purpose-built technology stack that includes GPS check-in for real-time accountability, video training with knowledge testing for verified readiness, integrated data capture tools for lead collection and consumer insights, and performance gamification that keeps staff motivated throughout long activations. Combined with our strict top-5% talent selection, dedicated on-site management, and backup staffing guarantees, we deliver a level of reliability and measurable outcomes that traditional staffing agencies cannot match."
+      }
     ],
     'street-teams': [
       { question: "What is street team marketing?", answer: "Street team marketing involves deploying trained promotional teams in high-traffic public areas to engage directly with consumers, distribute samples or materials, and create brand awareness through face-to-face interactions." },
