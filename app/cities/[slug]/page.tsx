@@ -1345,6 +1345,51 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
+      {/* Explore More Resources */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-8 text-gray-900 text-center">Explore More {city.name} Marketing Resources</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            <Link href={`/city-services/${city.slug}-brand-ambassadors`} className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Brand Ambassadors {city.name}</h3>
+                <p className="text-sm text-gray-500 mt-1">Trained local talent for your activation</p>
+              </CardContent></Card>
+            </Link>
+            <Link href={`/city-services/${city.slug}-experiential-marketing`} className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Experiential Marketing {city.name}</h3>
+                <p className="text-sm text-gray-500 mt-1">Immersive brand experiences</p>
+              </CardContent></Card>
+            </Link>
+            <Link href={`/city-services/${city.slug}-convention-staffing`} className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Convention Staffing {city.name}</h3>
+                <p className="text-sm text-gray-500 mt-1">Trade show and convention professionals</p>
+              </CardContent></Card>
+            </Link>
+            <Link href="/pricing" className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Event Staffing Pricing</h3>
+                <p className="text-sm text-gray-500 mt-1">Transparent rates and packages</p>
+              </CardContent></Card>
+            </Link>
+            <Link href="/technology" className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Our Technology Platform</h3>
+                <p className="text-sm text-gray-500 mt-1">GPS tracking and real-time reporting</p>
+              </CardContent></Card>
+            </Link>
+            <Link href="/compare/atn-event-staffing" className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">AirFresh vs ATN Event Staffing</h3>
+                <p className="text-sm text-gray-500 mt-1">See how we compare</p>
+              </CardContent></Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Final CTA Section */}
       <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

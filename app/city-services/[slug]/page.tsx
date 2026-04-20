@@ -446,6 +446,43 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
               </div>
             </div>
           </section>
+
+          {/* Internal Links - SEO cross-linking */}
+          <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <Card className="bg-gray-50">
+              <CardHeader>
+                <CardTitle className="text-xl">Explore More {enriched.cityName} Marketing Resources</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+                  <Link href={`/cities/${citySlug}`} className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <MapPin className="h-4 w-4" />
+                    All Services in {enriched.cityName}
+                  </Link>
+                  <Link href={`/services/${serviceSlug}`} className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <Star className="h-4 w-4" />
+                    {enriched.serviceName} Nationwide
+                  </Link>
+                  <Link href="/pricing" className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <ArrowRight className="h-4 w-4" />
+                    View Pricing Guide
+                  </Link>
+                  <Link href="/technology" className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <ArrowRight className="h-4 w-4" />
+                    Our Technology Platform
+                  </Link>
+                  <Link href="/compare/atn-event-staffing" className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <ArrowRight className="h-4 w-4" />
+                    AirFresh vs ATN Event Staffing
+                  </Link>
+                  <Link href="/compare/elev8-staffing" className="flex items-center gap-2 text-primary hover:underline font-medium">
+                    <ArrowRight className="h-4 w-4" />
+                    AirFresh vs Elev8 Staffing
+                  </Link>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
         </>
       ) : (
         <>

@@ -1441,6 +1441,47 @@ export default function ServicePage({ params }: ServicePageProps) {
         </section>
       )}
 
+      {/* Related Resources Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-8 text-gray-900 text-center">Related Resources</h2>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-4">
+            <Link href="/pricing" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">Event Staffing Pricing</h3>
+                  <p className="text-sm text-gray-500">Transparent rates and packages</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/technology" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">Our Technology Platform</h3>
+                  <p className="text-sm text-gray-500">GPS tracking, video training, and real-time reporting</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/compare/atn-event-staffing" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">AirFresh vs ATN Event Staffing</h3>
+                  <p className="text-sm text-gray-500">Side-by-side comparison</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/case-studies" className="group">
+              <Card className="hover:shadow-lg transition-all duration-300 h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors mb-1">Client Case Studies</h3>
+                  <p className="text-sm text-gray-500">Real results from real campaigns</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className={`py-20 bg-gradient-to-r ${service.color} text-white`}>
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

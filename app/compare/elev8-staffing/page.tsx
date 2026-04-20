@@ -293,6 +293,32 @@ export default function CompareElev8Staffing() {
         </div>
       </section>
 
+      {/* Related Resources */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-5xl mx-auto">
+        <h2 className="text-2xl font-bold mb-8 text-center">Explore Our Top Markets</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          {[
+            { href: '/city-services/los-angeles-brand-ambassadors', label: 'Brand Ambassadors Los Angeles' },
+            { href: '/city-services/new-york-city-convention-staffing', label: 'Convention Staffing NYC' },
+            { href: '/city-services/las-vegas-convention-staffing', label: 'Convention Staffing Las Vegas' },
+            { href: '/city-services/chicago-event-management', label: 'Event Management Chicago' },
+            { href: '/city-services/miami-experiential-marketing', label: 'Experiential Marketing Miami' },
+            { href: '/blog/top-event-staffing-agencies-los-angeles', label: 'Top 10 Agencies in LA' },
+            { href: '/blog/top-event-staffing-agencies-new-york', label: 'Top 10 Agencies in NYC' },
+            { href: '/blog/top-event-staffing-agencies-las-vegas', label: 'Top 10 Agencies in Las Vegas' },
+            { href: '/pricing', label: 'View Our Pricing' },
+            { href: '/technology', label: 'Our Technology Platform' },
+            { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
+            { href: '/portfolio', label: 'View Case Studies' },
+          ].map((link) => (
+            <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
+              <ArrowRight className="w-4 h-4 flex-shrink-0" />
+              {link.label}
+            </Link>
+          ))}
+        </div>
+      </section>
+
       {/* CTA */}
       <section className="relative py-20 sm:py-28 bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B] overflow-hidden">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
