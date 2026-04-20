@@ -113,6 +113,23 @@ export default function MobileMarketingTours() {
             </Button>
           </div>
         </div>
+
+        {/* Internal Links Section */}
+        <div className="not-prose mt-12 pt-8 border-t border-gray-200">
+          <h3 className="text-lg font-bold text-gray-900 mb-4">Explore More Resources</h3>
+          <div className="grid sm:grid-cols-2 gap-3">
+            <Link href="/services" className="text-sm text-primary hover:underline">Our Services</Link>
+            <Link href="/services/brand-ambassadors" className="text-sm text-primary hover:underline">Brand Ambassador Services</Link>
+            <Link href="/services/experiential-marketing" className="text-sm text-primary hover:underline">Experiential Marketing</Link>
+            <Link href="/services/convention-staffing" className="text-sm text-primary hover:underline">Convention Staffing</Link>
+            <Link href="/services/sampling" className="text-sm text-primary hover:underline">Product Sampling</Link>
+            <Link href="/services/street-teams" className="text-sm text-primary hover:underline">Street Teams</Link>
+            <Link href="/guides/event-staffing-101" className="text-sm text-primary hover:underline">Event Staffing 101 Guide</Link>
+            <Link href="/guides/brand-ambassador-hiring-guide" className="text-sm text-primary hover:underline">Brand Ambassador Hiring Guide</Link>
+            <Link href="/pricing" className="text-sm text-primary hover:underline">Pricing &amp; Rates</Link>
+            <Link href="/locations" className="text-sm text-primary hover:underline">All Locations</Link>
+          </div>
+        </div>
       </div>
     </article>
   );
