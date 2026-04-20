@@ -60,12 +60,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/contact`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMAIN}/blog`, lastModified: today, changeFrequency: 'weekly', priority: 0.7 },
     // Blog posts - dynamically generated from blogPosts data
-    ...blogPosts.map(post => ({
-      url: `${DOMAIN}/blog/${post.slug}`,
-      lastModified: today,
-      changeFrequency: 'monthly' as const,
-      priority: 0.7
-    })),
+    ...blogPosts.map(post => {
+      let lastMod = today
+      try {
+        const d = new Date(post.date)
+        if (!isNaN(d.getTime())) lastMod = d.toISOString().split('T')[0]
+      } catch {}
+      return {
+        url: `${DOMAIN}/blog/${post.slug}`,
+        lastModified: lastMod,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7
+      }
+    }),
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Note: Individual portfolio pages redirect to /case-studies/, so we don't include them in sitemap
     { url: `${DOMAIN}/case-studies`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
