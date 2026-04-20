@@ -75,6 +75,13 @@ export default function Contact() {
         }
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Contact", "item": "https://www.airfreshmarketing.com/contact" }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": contactFaqs.map(faq => ({
           "@type": "Question",

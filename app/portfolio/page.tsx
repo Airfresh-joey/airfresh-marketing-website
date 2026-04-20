@@ -73,6 +73,13 @@ export default function Portfolio() {
         }
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Portfolio", "item": "https://www.airfreshmarketing.com/portfolio" }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": faqs.map(faq => ({
           "@type": "Question",

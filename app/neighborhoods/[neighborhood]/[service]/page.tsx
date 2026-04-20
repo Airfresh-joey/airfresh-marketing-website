@@ -73,8 +73,66 @@ export default async function NeighborhoodServicePage({ params }: NeighborhoodSe
     `Background-checked and trained team members`
   ];
 
+  const faqs = [
+    {
+      question: `How do I hire ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}?`,
+      answer: `Contact AirFresh Marketing at (303) 720-6060 or request a free quote online. We provide professional ${service.name.toLowerCase()} in ${neighborhood.name} with local expertise and flexible scheduling for any event size.`
+    },
+    {
+      question: `What does ${service.name.toLowerCase()} cost in ${neighborhood.name}?`,
+      answer: `${service.name} rates in ${neighborhood.name}, ${neighborhood.city} vary by event type, duration, and requirements. Contact us for a custom quote tailored to your specific needs. We offer competitive rates and volume discounts.`
+    },
+    {
+      question: `What venues in ${neighborhood.name} do you staff?`,
+      answer: `We staff events at all major venues in ${neighborhood.name} including ${neighborhood.venues.slice(0, 3).join(', ')}, and more. Our team knows the local area and can provide recommendations for your event.`
+    },
+  ];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": `${service.name} in ${neighborhood.name}, ${neighborhood.city}`,
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "areaServed": {
+          "@type": "Place",
+          "name": `${neighborhood.name}, ${neighborhood.city}`
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.airfreshmarketing.com/locations" },
+          { "@type": "ListItem", "position": 3, "name": `${neighborhood.name}`, "item": `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}` },
+          { "@type": "ListItem", "position": 4, "name": service.name, "item": `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}/${serviceSlug}` }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <div className="min-h-screen pt-16">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Hero */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-r from-primary to-purple-600">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-white">
@@ -163,6 +221,19 @@ export default async function NeighborhoodServicePage({ params }: NeighborhoodSe
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">{service.name} in {neighborhood.name} FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

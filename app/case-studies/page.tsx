@@ -46,8 +46,36 @@ export default function CaseStudies() {
 
   const featuredStudies = portfolioCaseStudies.filter(s => s.featured).slice(0, 3);
 
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "Case Studies | AirFresh Marketing",
+        "description": "Explore AirFresh Marketing's experiential marketing case studies showcasing successful brand activations, event staffing, and campaign results.",
+        "url": "https://www.airfreshmarketing.com/case-studies",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        }
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://www.airfreshmarketing.com/case-studies" }
+        ]
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Preconnect to Vimeo for faster video load */}
       <link rel="preconnect" href="https://player.vimeo.com" />
       <link rel="preconnect" href="https://i.vimeocdn.com" />

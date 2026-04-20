@@ -74,6 +74,13 @@ export default function Locations() {
         }))
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.airfreshmarketing.com/locations" }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": faqs.map(faq => ({
           "@type": "Question",

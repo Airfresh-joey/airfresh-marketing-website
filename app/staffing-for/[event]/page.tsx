@@ -162,6 +162,15 @@ export default async function EventPage({ params }: EventPageProps) {
           })),
         },
       },
+      // BreadcrumbList
+      {
+        '@type': 'BreadcrumbList',
+        itemListElement: [
+          { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://www.airfreshmarketing.com' },
+          { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://www.airfreshmarketing.com/services' },
+          { '@type': 'ListItem', position: 3, name: eventPage.h1, item: `https://www.airfreshmarketing.com/staffing-for/${slug}` },
+        ],
+      },
       // FAQPage
       {
         '@type': 'FAQPage',

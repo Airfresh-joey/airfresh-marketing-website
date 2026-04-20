@@ -99,6 +99,14 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
         "priceRange": "$$$"
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.airfreshmarketing.com/locations" },
+          { "@type": "ListItem", "position": 3, "name": `${neighborhood.name}, ${neighborhood.city}`, "item": `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}` }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": faqs.map(faq => ({
           "@type": "Question",
