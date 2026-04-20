@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Retail Activations & In-Store Marketing | Product Demonstrations',
-  description: 'Transform your retail customer experience with professional in-store activations, product demonstrations, and brand ambassador programs nationwide.',
+  description: 'Retail activations and in-store marketing that drive sales at point of purchase. Professional product demonstrations, sampling, and brand ambassador programs in 50+ cities.',
   alternates: {
     canonical: 'https://www.airfreshmarketing.com/services/retail-activations',
   },

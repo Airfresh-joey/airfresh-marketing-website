@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Luxury Brand Experiential Marketing | VIP Events & Activations',
-  description: 'Elevate your luxury brand with exclusive experiential marketing, high-end brand activations, and VIP event experiences. Premium brand representation nationwide.',
+  description: 'Luxury brand experiential marketing with exclusive activations, VIP event experiences, and premium brand representation. White-glove service for high-end brands nationwide.',
   alternates: {
     canonical: 'https://www.airfreshmarketing.com/services/luxury-brand-marketing',
   },

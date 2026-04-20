@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Event Staffing Locations | 50+ Cities Nationwide',
-  description: 'Event staffing and brand ambassadors in 50+ cities including New York, Los Angeles, Chicago, Miami, and Denver. Find experiential marketing services near you.',
+  description: 'Event staffing and brand ambassadors in 50+ cities including New York, Los Angeles, Chicago, Miami, Denver, and Atlanta. Find local experiential marketing services near you.',
   keywords: 'experiential marketing locations, brand ambassadors nationwide, event staffing cities, marketing agency locations',
   openGraph: {
     type: 'website',

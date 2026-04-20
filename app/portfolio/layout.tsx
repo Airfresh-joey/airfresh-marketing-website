@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Brand Activation Portfolio | Experiential Marketing Campaigns',
-  description: 'Brand activation portfolio featuring campaigns for Netflix, Google, Formula One, and more. See real experiential marketing results and event photos.',
+  description: 'Brand activation portfolio featuring campaigns for Netflix, Google, Formula One, and 300+ more brands. See real experiential marketing results, event photos, and ROI metrics.',
   keywords: 'experiential marketing portfolio, brand activation examples, event marketing case studies, marketing campaign examples',
   openGraph: {
     type: 'website',
