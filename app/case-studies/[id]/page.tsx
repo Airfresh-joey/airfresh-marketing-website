@@ -13,9 +13,41 @@ import {
   Briefcase,
   Share2
 } from "lucide-react"
+import type { Metadata } from "next"
 
 export async function generateStaticParams() {
   return portfolioCaseStudies.map((study) => ({ id: study.id }))
+}
+
+export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
+  const { id } = await params
+  const study = portfolioCaseStudies.find((s) => s.id === id)
+  if (!study) return { title: 'Case Study | AirFresh Marketing' }
+
+  const title = `${study.name} | Case Study | AirFresh Marketing`
+  const description = study.description.length > 160
+    ? study.description.slice(0, 157) + '...'
+    : study.description
+
+  return {
+    title,
+    description,
+    openGraph: {
+      type: 'article',
+      title,
+      description,
+      url: `https://www.airfreshmarketing.com/case-studies/${id}`,
+      images: study.heroImage ? [{ url: study.heroImage, width: 1200, height: 630, alt: study.name }] : undefined,
+    },
+    twitter: {
+      card: 'summary_large_image',
+      title: study.name,
+      description,
+    },
+    alternates: {
+      canonical: `https://www.airfreshmarketing.com/case-studies/${id}`,
+    },
+  }
 }
 
 export default async function CaseStudyDetail(
