@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, ArrowRight, Building, Users } from "lucide-react";
 import Link from "next/link";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { states, stateServices, getStateBySlug } from "@/server/states-data";
 import type { Metadata } from 'next';
 
@@ -106,6 +107,8 @@ export default async function StatePage({ params }: StatePageProps) {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+
+      <Breadcrumbs items={[{ label: "Locations", href: "/locations" }, { label: state.name }]} />
 
       {/* Hero */}
       <section className="relative py-20 lg:py-32 bg-gradient-to-r from-primary to-purple-600">

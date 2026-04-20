@@ -6,6 +6,7 @@ import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import {
   Users,
   Target,
@@ -1365,6 +1366,8 @@ export default function ServicePage({ params }: ServicePageProps) {
         />
       )}
 
+      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: service.title }]} />
+
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         {service.heroVideo ? (
@@ -1484,7 +1487,7 @@ export default function ServicePage({ params }: ServicePageProps) {
             <div className="relative">
               <img
                 src="/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg"
-                alt="Professional brand ambassadors team"
+                alt={`${service.title} services by AirFresh Marketing`}
                 className="rounded-lg shadow-xl"
               />
               <div className={`absolute -bottom-6 -right-6 bg-gradient-to-r ${service.color} text-white p-6 rounded-lg shadow-lg`}>
@@ -1509,7 +1512,7 @@ export default function ServicePage({ params }: ServicePageProps) {
               <div className="relative h-64 lg:h-auto">
                 <img
                   src={service.caseStudy.image}
-                  alt={service.caseStudy.title}
+                  alt={`${service.caseStudy.title} - ${service.title} case study by AirFresh Marketing`}
                   className="w-full h-full object-cover"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />

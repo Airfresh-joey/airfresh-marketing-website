@@ -5,6 +5,7 @@ import { MapPin, CheckCircle, Star, Phone, ArrowRight, Users, TrendingUp, Award,
 import Link from "next/link";
 import Image from "next/image";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { serviceTypes } from "@/server/city-services-data";
 import { cityLocations } from "@/server/city-data";
 import { cities as allCitiesData } from "@/server/cities-data";
@@ -253,6 +254,8 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
+
+      <Breadcrumbs items={[{ label: "Services", href: "/services" }, { label: pageTitle || "Service" }]} />
 
       {/* Hero Section */}
       <section className="relative h-[500px] lg:h-[600px] overflow-hidden">

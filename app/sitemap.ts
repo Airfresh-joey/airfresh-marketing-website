@@ -121,6 +121,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/compare/ignite-productions`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/assist-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/kinetic-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    // Additional pages
+    { url: `${DOMAIN}/get-quote`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMAIN}/team`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/resources`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/partners`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/partners/venues`, lastModified: today, changeFrequency: 'monthly', priority: 0.65 },
+    { url: `${DOMAIN}/partners/agencies`, lastModified: today, changeFrequency: 'monthly', priority: 0.65 },
+    { url: `${DOMAIN}/checklist/event-planning`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/tools/roi-calculator`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/services/luxury-brand-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${DOMAIN}/services/retail-activations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${DOMAIN}/careers/experience-manager`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/careers/technical-intern`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
+    { url: `${DOMAIN}/legal/privacy-policy`, lastModified: today, changeFrequency: 'yearly', priority: 0.3 },
+    { url: `${DOMAIN}/legal/terms-and-conditions`, lastModified: today, changeFrequency: 'yearly', priority: 0.3 },
   ]
 
   // City pages - using /cities/ route

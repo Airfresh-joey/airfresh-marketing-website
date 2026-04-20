@@ -249,7 +249,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
         <div className="absolute inset-0">
           <Image
             src={venue.image}
-            alt={`${service.name} at ${venue.name}`}
+            alt={`Professional ${service.name.toLowerCase()} for events at ${venue.name} in ${venue.city}, ${venue.state}`}
             fill
             className="object-cover"
             priority
@@ -460,7 +460,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
                     <div className="relative h-48 bg-gray-100">
                       <Image
                         src={caseStudy.heroImage}
-                        alt={caseStudy.name}
+                        alt={`${caseStudy.name} - experiential marketing case study by AirFresh Marketing`}
                         fill
                         className="object-cover"
                       />

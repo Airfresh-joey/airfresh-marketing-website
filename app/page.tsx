@@ -16,12 +16,12 @@ const FloatingCTA = dynamic(() => import("@/components/FloatingCTA"));
 
 // Server-side metadata (no client JS needed)
 export const metadata: Metadata = {
-  title: "Air Fresh Marketing - Experiential Marketing Agency",
-  description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+  title: "Experiential Marketing Agency | Brand Ambassadors & Event Staffing | AirFresh Marketing",
+  description: "Experiential marketing agency with brand ambassadors, event staffing, and brand activations in 50+ cities nationwide. 500+ campaigns delivered. Get a free quote today.",
   keywords: "experiential marketing, brand ambassadors, event staffing, guerrilla marketing, brand activations, product sampling, street teams",
   openGraph: {
-    title: "Air Fresh Marketing - Experiential Marketing Agency",
-    description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+    title: "Experiential Marketing Agency | Brand Ambassadors & Event Staffing | AirFresh Marketing",
+    description: "Experiential marketing agency with brand ambassadors, event staffing, and brand activations in 50+ cities nationwide. 500+ campaigns delivered.",
     url: "https://www.airfreshmarketing.com",
     siteName: "AirFresh Marketing",
     type: "website",
@@ -35,8 +35,8 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: "summary_large_image",
-    title: "Air Fresh Marketing - Experiential Marketing Agency",
-    description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
+    title: "Experiential Marketing Agency | Brand Ambassadors & Event Staffing",
+    description: "Experiential marketing agency with brand ambassadors, event staffing, and brand activations in 50+ cities nationwide.",
     site: "@AirFreshMktg",
     creator: "@AirFreshMktg"
   },
@@ -313,9 +313,9 @@ export default function Home() {
               <Play className="w-4 h-4 text-cyan-600" />
               <span className="text-sm font-semibold text-cyan-700 uppercase tracking-wide">SEE US IN ACTION</span>
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               What Makes <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">AirFresh Marketing</span> Different?
-            </h3>
+            </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
               Watch how we transform ordinary events into extraordinary brand experiences.
             </p>
@@ -400,7 +400,7 @@ export default function Home() {
                       <div className="aspect-video relative overflow-hidden">
                         <Image
                           src={caseStudy.image}
-                          alt={caseStudy.title}
+                          alt={`${caseStudy.title} brand activation case study`}
                           fill
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
@@ -439,12 +439,12 @@ export default function Home() {
               <Sparkles className="w-4 h-4 text-cyan-600" />
               <span className="text-sm font-semibold text-gray-700 uppercase tracking-wide">WHAT WE DO</span>
             </div>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
-              How Does AirFresh Marketing Create
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-gray-900 mb-6">
+              Experiential Marketing Agency Creating
               <span className="block bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent mt-2">
-                Unforgettable Brand Experiences?
+                Unforgettable Brand Experiences
               </span>
-            </h3>
+            </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               We deliver experiential marketing campaigns designed to achieve higher engagement rates and increase purchase intent through immersive brand experiences.
             </p>
@@ -497,9 +497,9 @@ export default function Home() {
               <Cog className="w-5 h-5 text-white animate-spin-slow" />
               <span className="text-sm font-bold text-white uppercase tracking-wider">TURNKEY SERVICES</span>
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
-              What Services Do We Provide?
-            </h3>
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+              Event Staffing &amp; Brand Activation Services
+            </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Everything we do is done in-house and as an extension of your team. We strategize what's best for meeting your goals and then come together to crush them as a single unit.
             </p>
@@ -637,9 +637,9 @@ export default function Home() {
               <Award className="w-4 h-4 text-cyan-600" />
               <span className="text-sm font-bold text-gray-700 uppercase tracking-wider">WHY CHOOSE US</span>
             </div>
-            <h3 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
-              Why Is <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">AirFresh Marketing</span> the Best Choice?
-            </h3>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-gray-900">
+              Brand Ambassadors &amp; <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Event Staff Nationwide</span>
+            </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Our experienced team of brand ambassadors delivers proven results across major cities nationwide.
             </p>
@@ -704,9 +704,9 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-primary uppercase tracking-wide mb-4">WHO IS AIRFRESH MARKETING FOR?</h2>
-            <h3 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
               Who Benefits Most from Professional Experiential Marketing Services?
-            </h3>
+            </h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               From Fortune 500 corporations to local businesses and agencies, we deliver tailored experiential solutions that drive measurable results.
             </p>
@@ -844,9 +844,9 @@ export default function Home() {
               <BookOpen className="w-4 h-4 text-white" />
               <span className="text-sm font-bold text-white uppercase tracking-wider">MARKET INSIGHTS</span>
             </div>
-            <h3 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
+            <h2 className="text-4xl md:text-5xl font-bold mb-6 text-gray-900">
               Latest Experiential Marketing <span className="bg-gradient-to-r from-cyan-600 to-blue-600 bg-clip-text text-transparent">Insights</span>
-            </h3>
+            </h2>
             <p className="text-xl text-gray-600 max-w-4xl mx-auto leading-relaxed">
               Expert answers to your experiential marketing questions, from costs to strategies.
             </p>
@@ -931,7 +931,7 @@ export default function Home() {
               <Award className="w-5 h-5 text-cyan-400" />
               <span className="text-sm font-bold text-white uppercase tracking-wider">Our Work In Action</span>
             </div>
-            <h3 className="text-4xl md:text-6xl font-bold text-white mb-6">Campaigns That <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Deliver Results</span></h3>
+            <h2 className="text-4xl md:text-6xl font-bold text-white mb-6">Campaigns That <span className="bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">Deliver Results</span></h2>
             <p className="text-xl text-gray-300 max-w-3xl mx-auto">
               From Times Square to Coachella, we create unforgettable brand experiences that drive real business outcomes
             </p>
@@ -948,7 +948,7 @@ export default function Home() {
               <div className="aspect-[21/9] relative">
                 <img
                   src="/images/case-studies/formula-1-4.jpg"
-                  alt="Formula 1 Las Vegas Grand Prix activation"
+                  alt="Event staffing for Formula 1 Las Vegas Grand Prix brand activation by AirFresh Marketing"
                   className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700"
                   loading="lazy"
                 />
@@ -1016,7 +1016,7 @@ export default function Home() {
                   <div className="aspect-[4/3] relative">
                     <img
                       src={campaign.image}
-                      alt={campaign.title}
+                      alt={`${campaign.title} experiential marketing campaign by AirFresh`}
                       className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500"
                       loading="lazy"
                     />

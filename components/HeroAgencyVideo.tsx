@@ -154,14 +154,14 @@ export default function HeroAgencyVideo() {
           </div>
 
           {/* Main Headline */}
-          <h1 
+          <h1
             className={`text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 transition-all duration-700 delay-150 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            <span className="block">Turning Passive Audiences</span>
+            <span className="block">Experiential Marketing</span>
             <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              into Active Superfans
+              That Turns Fans into Superfans
             </span>
           </h1>
 

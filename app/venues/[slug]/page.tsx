@@ -4,8 +4,9 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, ExternalLink, Landmark, Car, Calendar, Building } from "lucide-react";
+import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, ExternalLink, Landmark, Car, Calendar, Building, BookOpen } from "lucide-react";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { venues, getVenueBySlug } from "@/server/venues-data";
 import type { Metadata } from 'next';
 
@@ -172,12 +173,14 @@ export default async function VenuePage({ params }: VenuePageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
+      <Breadcrumbs items={[{ label: "Venues", href: "/venues" }, { label: venue.name }]} />
+
       {/* Hero Section */}
       <section className="relative h-[500px] lg:h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={venue.image}
-            alt={venue.name}
+            alt={`Event staffing and brand ambassadors at ${venue.name} in ${venue.city}, ${venue.state}`}
             fill
             className="object-cover"
             priority
@@ -439,6 +442,71 @@ export default async function VenuePage({ params }: VenuePageProps) {
             <Link href="/technology" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Our Technology Platform</Link>
             <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Client Case Studies</Link>
             <Link href="/services/convention-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Convention Staffing Services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Local Pages - Internal Linking */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-6">Explore More Event Staffing Options</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href={`/cities/${venue.city.toLowerCase().replace(/\s+/g, '-')}`} className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <MapPin className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Event Staffing in {venue.city}</h3>
+                  <p className="text-sm text-gray-500 mt-1">All event staffing services available in {venue.city}, {venue.stateAbbrev}</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href={`/states/${venue.state.toLowerCase().replace(/\s+/g, '-')}`} className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <Building className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Event Staffing in {venue.state}</h3>
+                  <p className="text-sm text-gray-500 mt-1">Browse all cities and venues we serve across {venue.state}</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/blog/trade-show-staffing-guide" className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <BookOpen className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Trade Show Staffing Guide</h3>
+                  <p className="text-sm text-gray-500 mt-1">The ultimate guide to staffing your trade show booth for maximum impact</p>
+                </CardContent>
+              </Card>
+            </Link>
+          </div>
+          <div className="grid md:grid-cols-3 gap-4 mt-4">
+            <Link href="/blog/convention-staffing-tips" className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <BookOpen className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Convention Staffing Tips</h3>
+                  <p className="text-sm text-gray-500 mt-1">10 convention staffing mistakes to avoid at your next event</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/blog/convention-center-guide" className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <BookOpen className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Convention Center Guide</h3>
+                  <p className="text-sm text-gray-500 mt-1">Your guide to America&#39;s top exhibition venues and convention centers</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/guides/best-event-staffing-agency" className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <BookOpen className="w-6 h-6 text-primary mb-3" />
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">How to Choose a Staffing Agency</h3>
+                  <p className="text-sm text-gray-500 mt-1">Expert guide to selecting the best event staffing partner for your brand</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

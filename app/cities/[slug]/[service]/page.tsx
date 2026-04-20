@@ -415,7 +415,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
         <div className="absolute inset-0">
           <Image
             src={city.image}
-            alt={`${serviceData.name} in ${city.name}`}
+            alt={`${serviceData.name} services by AirFresh Marketing in ${city.name}, ${city.state}`}
             fill
             className="object-cover"
             priority

@@ -348,7 +348,7 @@ export default async function BlogPost(
             <div className="aspect-[21/9] relative">
               <img
                 src={post.image}
-                alt={post.title}
+                alt={`${post.title} - AirFresh Marketing blog`}
                 className="w-full h-full object-cover"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
@@ -444,7 +444,7 @@ export default async function BlogPost(
                     <div className="aspect-video relative overflow-hidden bg-gray-100">
                       <img
                         src={relatedPost.image}
-                        alt={relatedPost.title}
+                        alt={`${relatedPost.title} - event marketing insights`}
                         className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />

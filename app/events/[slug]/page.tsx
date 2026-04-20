@@ -6,6 +6,7 @@ import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, Landmark, Car, Building } from "lucide-react";
 import SEO from "@/components/SEO";
+import Breadcrumbs from "@/components/Breadcrumbs";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 
 // Helper to convert date strings to ISO 8601 format (with time component for Google compliance)
@@ -189,12 +190,14 @@ export default async function EventPage({ params }: EventPageProps) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
+      <Breadcrumbs items={[{ label: "Events", href: "/events" }, { label: event.name }]} />
+
       {/* Hero Section */}
       <section className="relative h-[500px] lg:h-[600px] overflow-hidden">
         <div className="absolute inset-0">
           <Image
             src={event.heroImage}
-            alt={event.name}
+            alt={`Brand ambassadors and event staffing at ${event.name} in ${event.city}, ${event.state}`}
             fill
             className="object-cover"
             priority
