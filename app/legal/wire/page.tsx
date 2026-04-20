@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Wire Transfer Information | Air Fresh Marketing',
   description: 'Wire transfer payment information for Air Fresh Marketing. Bank routing and account details for domestic wire transfers.',
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
     title: 'Wire Transfer Information | Air Fresh Marketing',

@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'Voided Check Information | Air Fresh Marketing',
   description: 'Voided check and bank verification information for Air Fresh Marketing vendor setup.',
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
     title: 'Voided Check Information | Air Fresh Marketing',

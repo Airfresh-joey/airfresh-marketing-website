@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 export const metadata: Metadata = {
   title: 'W9 Information | Air Fresh Marketing',
   description: 'W9 tax information for Air Fresh Marketing. EIN and business details for vendor setup.',
+  robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
     title: 'W9 Information | Air Fresh Marketing',
