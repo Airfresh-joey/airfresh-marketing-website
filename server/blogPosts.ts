@@ -14,6 +14,19 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "400",
+    slug: "2026-world-cup-event-staffing",
+    title: "2026 World Cup Event Staffing: Brand Activations Guide",
+    excerpt: "104 matches. 11 US host cities. 5+ million visitors. The complete guide to staffing World Cup brand activations — from bilingual brand ambassadors to street teams and fan zone activations.",
+    image: "/images/blog/event-marketing-team.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 20, 2026",
+    readTime: "14 min read",
+    category: "Event Marketing",
+    tags: ["2026 World Cup Event Staffing", "World Cup Brand Activations", "FIFA World Cup Marketing", "Bilingual Event Staff"],
+    content: `Read the full article at /blog/2026-world-cup-event-staffing`
+  },
+  {
     id: "186",
     slug: "top-event-staffing-agencies-los-angeles",
     title: "Top 10 Event Staffing Agencies in Los Angeles [2026 Guide]",
