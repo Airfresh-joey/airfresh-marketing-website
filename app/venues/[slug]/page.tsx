@@ -74,6 +74,29 @@ export default async function VenuePage({ params }: VenuePageProps) {
   const pageTitle = `${venue.name} Staffing | Event Staff for ${venue.shortName} | AirFresh Marketing`;
   const pageDescription = `Professional event staffing for ${venue.name} in ${venue.city}, ${venue.state}. Trade show staff, brand ambassadors, and hospitality teams for conventions and events at ${venue.shortName}.`;
 
+  const venueFaqs = [
+    {
+      question: `How much does event staffing cost at ${venue.name}?`,
+      answer: `Event staffing rates at ${venue.name} depend on roles, team size, event duration, and complexity. Typical rates range from $30 to $75 per hour per staff member. AirFresh Marketing provides transparent all-inclusive pricing covering recruitment, training, GPS check-in, on-site management, and post-event reporting. Contact us at (303) 720-6060 for a custom quote for your ${venue.shortName} event.`
+    },
+    {
+      question: `What types of staff can you provide for events at ${venue.shortName}?`,
+      answer: `AirFresh Marketing provides brand ambassadors, trade show booth staff, product demonstrators, lead capture specialists, registration personnel, hospitality hosts, promotional models, and on-site managers for events at ${venue.name}. Every staff member completes brand-specific video training and passes a knowledge quiz before arriving at ${venue.shortName}.`
+    },
+    {
+      question: `How far in advance should I book staffing for ${venue.shortName}?`,
+      answer: `We recommend booking 4-6 weeks before your event at ${venue.name}. For major trade shows and conventions, 6-8 weeks ensures the best talent selection from our ${venue.city} roster. Rush requests can be accommodated with as little as 1 week notice depending on availability and team size.`
+    },
+    {
+      question: `Do you know the layout and logistics of ${venue.name}?`,
+      answer: `Yes. AirFresh Marketing has extensive experience staffing events at ${venue.name} in ${venue.city}. Our team understands the venue layout, loading dock procedures, credential requirements, parking logistics, and operational protocols. This venue-specific knowledge ensures smooth deployments and eliminates common first-time staffing issues.`
+    },
+    {
+      question: `How do you ensure staff show up on time at ${venue.shortName}?`,
+      answer: `Every AirFresh staff member checks in via GPS-enabled mobile app at the start of each shift at ${venue.name}, verifying their location and arrival time. We require check-in 30 minutes before call time and maintain backup staff in ${venue.city} who can be deployed within hours. Our on-time arrival rate exceeds 99%.`
+    }
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -119,6 +142,17 @@ export default async function VenuePage({ params }: VenuePageProps) {
           "latitude": venue.latitude,
           "longitude": venue.longitude
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": venueFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -370,6 +404,36 @@ export default async function VenuePage({ params }: VenuePageProps) {
                 </p>
               </CardContent>
             </Card>
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">{venue.shortName} Staffing FAQ</h2>
+          <div className="space-y-6">
+            {venueFaqs.map((faq, index) => (
+              <Card key={index} className="border-0 shadow-md">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Resources */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold mb-6 text-center text-gray-900">Explore More Resources</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link href="/pricing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Event Staffing Pricing</Link>
+            <Link href="/technology" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Our Technology Platform</Link>
+            <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Client Case Studies</Link>
+            <Link href="/services/convention-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-gray-50 rounded-lg shadow-sm">Convention Staffing Services</Link>
           </div>
         </div>
       </section>

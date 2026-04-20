@@ -99,8 +99,30 @@ export default async function EventPage({ params }: EventPageProps) {
   const startDateISO = toISO8601(event.dates || event.month);
   const endDateISO = getEndDate(event.dates);
   
-  const structuredData: Record<string, unknown> = {
-    "@context": "https://schema.org",
+  const eventFaqs = [
+    {
+      question: `How much does event staffing cost for ${event.name}?`,
+      answer: `Event staffing rates for ${event.name} depend on the number of staff, roles required, shift length, and campaign complexity. Typical rates range from $30 to $75 per hour per staff member. AirFresh Marketing provides all-inclusive pricing covering recruitment, training, GPS check-in, on-site management, and post-event reporting. Contact us at (303) 720-6060 for a custom quote.`
+    },
+    {
+      question: `How far in advance should I book staff for ${event.name}?`,
+      answer: `We recommend booking 4-6 weeks before ${event.name} for optimal talent selection. For large-scale activations requiring 10+ staff members, 6-8 weeks is ideal. We can accommodate rush requests with as little as 1 week notice depending on availability. The earlier you book, the better selection of experienced ${event.city} talent you will have.`
+    },
+    {
+      question: `What types of staff does AirFresh provide for ${event.name}?`,
+      answer: `AirFresh Marketing provides brand ambassadors, promotional models, product demonstrators, lead capture specialists, registration staff, hospitality hosts, street teams, and on-site managers for ${event.name}. Every staff member completes brand-specific video training and must pass a knowledge quiz before the event. We match talent based on your brand, audience, and activation goals.`
+    },
+    {
+      question: `How do you ensure staff reliability at ${event.name}?`,
+      answer: `Every AirFresh staff member checks in via our GPS-enabled mobile app at the start of their shift, verifying location and arrival time. We maintain backup staff in ${event.city} who can be deployed within hours. On-site managers monitor performance throughout the event. Our consistent on-time arrival rate exceeds 99% across all events.`
+    },
+    {
+      question: `Do you provide on-site management for ${event.name}?`,
+      answer: `Yes, on-site management is included for all ${event.name} staffing engagements above minimum team size. Our event managers handle staff check-ins, enforce brand standards, monitor performance, manage breaks, troubleshoot issues, and serve as your single point of contact at ${event.venue}. They provide daily recap reports with engagement metrics.`
+    }
+  ];
+
+  const eventSchema: Record<string, unknown> = {
     "@type": "Event",
     "name": event.name,
     "description": event.description,
@@ -117,7 +139,7 @@ export default async function EventPage({ params }: EventPageProps) {
         "addressCountry": "US"
       }
     },
-    "image": event.heroImage ? `https://airfreshmarketing.com${event.heroImage}` : undefined,
+    "image": event.heroImage ? `https://www.airfreshmarketing.com${event.heroImage}` : undefined,
     "organizer": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
@@ -128,11 +150,29 @@ export default async function EventPage({ params }: EventPageProps) {
       "name": event.name
     }
   };
-  
+
   // Add endDate if it's a multi-day event
   if (endDateISO) {
-    structuredData.endDate = endDateISO;
+    eventSchema.endDate = endDateISO;
   }
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      eventSchema,
+      {
+        "@type": "FAQPage",
+        "mainEntity": eventFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
 
   return (
     <div className="pt-16 min-h-screen">
@@ -382,6 +422,36 @@ export default async function EventPage({ params }: EventPageProps) {
                 {role}
               </Badge>
             ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 bg-white">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl font-bold mb-8 text-center">{event.name} Staffing FAQ</h2>
+          <div className="space-y-6">
+            {eventFaqs.map((faq, index) => (
+              <Card key={index} className="border-0 shadow-md">
+                <CardContent className="p-6">
+                  <h3 className="text-lg font-bold mb-3 text-gray-900">{faq.question}</h3>
+                  <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Related Resources */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h3 className="text-xl font-bold mb-6 text-center text-gray-900">Explore More Resources</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-3">
+            <Link href="/pricing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Event Staffing Pricing</Link>
+            <Link href="/technology" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Our Technology Platform</Link>
+            <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Client Case Studies</Link>
+            <Link href="/services/brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Brand Ambassador Services</Link>
           </div>
         </div>
       </section>
