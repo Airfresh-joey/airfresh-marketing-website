@@ -1421,6 +1421,20 @@ export default async function CityPage({ params }: CityPageProps) {
                 <p className="text-sm text-gray-500 mt-1">See how we compare</p>
               </CardContent></Card>
             </Link>
+            {['los-angeles','new-york','chicago','miami','las-vegas','dallas','denver','houston','atlanta','phoenix'].includes(city.slug) && (
+              <Link href={`/blog/top-event-staffing-agencies-${city.slug}`} className="group">
+                <Card className="hover:shadow-lg transition-all h-full border-cyan-200 bg-cyan-50/50"><CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Top 10 Event Staffing Agencies in {city.name}</h3>
+                  <p className="text-sm text-gray-500 mt-1">2026 rankings and comparison guide</p>
+                </CardContent></Card>
+              </Link>
+            )}
+            <Link href="/guides/best-event-staffing-agency" className="group">
+              <Card className="hover:shadow-lg transition-all h-full"><CardContent className="p-5">
+                <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Best Event Staffing Agency Guide</h3>
+                <p className="text-sm text-gray-500 mt-1">How to choose the right partner</p>
+              </CardContent></Card>
+            </Link>
           </div>
         </div>
       </section>
