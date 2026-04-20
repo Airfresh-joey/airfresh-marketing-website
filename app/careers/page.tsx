@@ -253,11 +253,11 @@ export default function CareersPage() {
               Now Hiring Nationwide
             </Badge>
             <h1 className="text-4xl md:text-6xl font-bold text-white mb-6">
-              Join the AirFresh Team
+              Brand Ambassador Jobs & Event Staff Careers
             </h1>
             <p className="text-xl text-white/90 max-w-3xl mx-auto mb-8">
-              Love events? Want to represent amazing brands? Join our team of brand ambassadors
-              and event professionals working with the world's top companies.
+              Brand ambassador jobs with top brands like Netflix, Google, and Formula One.
+              Join our nationwide team of event professionals earning $20-35/hour with flexible schedules.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">

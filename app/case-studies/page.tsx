@@ -116,14 +116,14 @@ export default function CaseStudies() {
           </Badge>
 
           <h1 className="text-4xl md:text-6xl lg:text-7xl font-bold text-white mb-6">
-            Case{" "}
+            Experiential Marketing{" "}
             <span className="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400">
-              Studies
+              Case Studies
             </span>
           </h1>
 
           <p className="text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-8">
-            Dive deep into our most impactful campaigns. See how we helped brands 
+            Experiential marketing case studies from 300+ successful campaigns. See how we helped brands
             create memorable experiences and achieve measurable results.
           </p>
 

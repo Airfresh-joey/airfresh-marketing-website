@@ -147,16 +147,16 @@ export default function Portfolio() {
             </Badge>
 
             <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white">
-              Our Portfolio of
+              Experiential Marketing
               <br />
               <span className="relative bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-                Excellence
+                Portfolio
                 <div className="absolute -bottom-2 left-0 right-0 h-1 bg-gradient-to-r from-blue-400 to-cyan-400" />
               </span>
             </h1>
 
             <p className="text-xl md:text-2xl text-white/90 mb-8 max-w-3xl mx-auto">
-              Transforming brands through unforgettable experiences.
+              Experiential marketing campaigns that transform brands through unforgettable experiences.
               Every campaign tells a story of innovation, engagement, and measurable success.
             </p>
 

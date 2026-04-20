@@ -100,7 +100,7 @@ export default function RetailActivationsPage() {
               Retail Marketing Solutions
             </Badge>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-white mb-6">
-              Transform Your Retail Customer Experience
+              Retail Activations That Transform Customer Experience
             </h1>
             <p className="text-xl text-blue-100 mb-8">
               Drive sales at point of purchase with professional in-store activations, 
