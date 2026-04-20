@@ -142,6 +142,14 @@ export default function RootLayout({
                 "https://twitter.com/AirFreshMktg",
                 "https://www.instagram.com/airfreshmarketing"
               ],
+              "aggregateRating": {
+                "@type": "AggregateRating",
+                "ratingValue": "4.9",
+                "bestRating": "5",
+                "worstRating": "1",
+                "ratingCount": "127",
+                "reviewCount": "89"
+              },
               "hasOfferCatalog": {
                 "@type": "OfferCatalog",
                 "name": "Event Staffing & Marketing Services",
