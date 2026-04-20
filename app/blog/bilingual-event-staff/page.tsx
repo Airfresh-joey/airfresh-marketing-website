@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -12,6 +13,65 @@ export const metadata: Metadata = {
 export default function BilingualStaff() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Bilingual Event Staff: Spanish-Speaking Brand Ambassadors",
+                                      "description": "Reaching Hispanic audiences requires bilingual staff who understand the culture. Here's how to find qualified Spanish-speaking brand ambassadors.",
+                                      "datePublished": "2024-08-28",
+                                      "dateModified": "2024-08-28",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/bilingual-event-staff"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "bilingual event staff, spanish speaking brand ambassadors, hispanic marketing staff, bilingual promotional staff"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Bilingual Event Staff: Spanish-Speaking Brand Ambassadors",
+                                                          "item": "https://www.airfreshmarketing.com/blog/bilingual-event-staff"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Bilingual Event Staff: Spanish-Speaking Brand Ambassadors" }]} />
+
       <header className="bg-gradient-to-r from-red-600 to-orange-500 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-red-200 mb-4">August 28, 2024 · 8 min read</p>

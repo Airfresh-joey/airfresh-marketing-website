@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function StreetTeamsGuide() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Street Teams: The Marketing Channel Nobody Talks About Anymore",
+                                      "description": "Street teams aren't dead - they've evolved. Here's how modern street marketing works, what it costs, and why some brands are seeing 10x ROI.",
+                                      "datePublished": "2026-01-28",
+                                      "dateModified": "2026-01-28",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/street-teams-marketing-guide"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "street teams, street marketing, street team marketing, guerrilla marketing team, street promotion, flyer distribution"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Street Teams: The Marketing Channel Nobody Talks About Anymore",
+                                                          "item": "https://www.airfreshmarketing.com/blog/street-teams-marketing-guide"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Street Teams: The Marketing Channel Nobody Talks About Anymore" }]} />
+
       <header className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-yellow-100 mb-4">January 28, 2026 · 10 min read</p>

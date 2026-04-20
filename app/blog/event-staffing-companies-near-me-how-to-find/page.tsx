@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -29,6 +30,7 @@ export default function EventStaffingCompaniesNearMe() {
 
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Event Staffing Companies Near Me: How to Find and Hire the Best in 2026" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">

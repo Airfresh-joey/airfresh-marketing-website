@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -12,6 +13,65 @@ export const metadata: Metadata = {
 export default function CannabisMarketing() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Cannabis Marketing Events: Navigating the Green Rush",
+                                      "description": "Cannabis marketing faces unique restrictions. Here's how brands create compliant, effective events and activations.",
+                                      "datePublished": "2025-09-25",
+                                      "dateModified": "2025-09-25",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/cannabis-marketing-events"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "cannabis marketing, cannabis events, dispensary marketing, cannabis brand activation, 420 marketing, cannabis sampling"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Cannabis Marketing Events: Navigating the Green Rush",
+                                                          "item": "https://www.airfreshmarketing.com/blog/cannabis-marketing-events"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Cannabis Marketing Events: Navigating the Green Rush" }]} />
+
       <header className="bg-gradient-to-r from-lime-600 to-green-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-lime-200 mb-4">September 25, 2025 · 10 min read</p>

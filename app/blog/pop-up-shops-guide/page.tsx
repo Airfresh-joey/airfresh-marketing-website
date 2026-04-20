@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function PopUpShopsGuide() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Pop-Up Shops: The Complete Guide to Temporary Retail",
+                                      "description": "Pop-up shops let you test markets, create buzz, and sell direct without permanent retail commitment. Here's how to plan and execute a pop-up that actually works.",
+                                      "datePublished": "2026-02-01",
+                                      "dateModified": "2026-02-01",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/pop-up-shops-guide"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "pop-up shop, pop-up store, temporary retail, pop-up retail, how to start a pop-up shop, pop-up shop ideas"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Pop-Up Shops: The Complete Guide to Temporary Retail",
+                                                          "item": "https://www.airfreshmarketing.com/blog/pop-up-shops-guide"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Pop-Up Shops: The Complete Guide to Temporary Retail" }]} />
+
       <header className="bg-gradient-to-r from-fuchsia-600 to-pink-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-fuchsia-200 mb-4">February 1, 2026 · 12 min read</p>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -19,6 +20,65 @@ export const metadata: Metadata = {
 export default function TradeShowMarketing() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Trade Show Marketing: 15 Strategies That Actually Work (2026)",
+                                      "description": "Learn proven trade show marketing strategies to maximize your exhibition ROI. Pre-show, at-show, and post-show tactics from industry experts.",
+                                      "datePublished": "2025-01-01",
+                                      "dateModified": "2025-01-01",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/trade-show-marketing-strategies"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "trade show marketing, trade show strategies, exhibition marketing, trade show tips, trade show booth ideas, trade show lead generation"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Trade Show Marketing: 15 Strategies That Actually Work (2026)",
+                                                          "item": "https://www.airfreshmarketing.com/blog/trade-show-marketing-strategies"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Trade Show Marketing: 15 Strategies That Actually Work (2026)" }]} />
+
       {/* Hero */}
       <header className="bg-gradient-to-r from-orange-500 to-red-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

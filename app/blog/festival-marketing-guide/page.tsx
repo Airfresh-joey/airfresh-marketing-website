@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function FestivalMarketingGuide() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Festival Marketing: How to Win at Coachella, SXSW, and Beyond",
+                                      "description": "Festival marketing done right generates massive ROI. Done wrong, it's an expensive party. Here's what separates the winners from the wasters.",
+                                      "datePublished": "2026-02-20",
+                                      "dateModified": "2026-02-20",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/festival-marketing-guide"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "festival marketing, coachella marketing, sxsw marketing, music festival marketing, festival brand activation, festival sponsorship"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Festival Marketing: How to Win at Coachella, SXSW, and Beyond",
+                                                          "item": "https://www.airfreshmarketing.com/blog/festival-marketing-guide"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Festival Marketing: How to Win at Coachella, SXSW, and Beyond" }]} />
+
       <header className="bg-gradient-to-r from-pink-600 to-red-500 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-pink-200 mb-4">February 20, 2026 · 12 min read</p>

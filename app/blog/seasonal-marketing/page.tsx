@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -12,6 +13,65 @@ export const metadata: Metadata = {
 export default function SeasonalMarketing() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Seasonal Marketing Campaigns: Maximizing Holiday Impact",
+                                      "description": "Seasonal campaigns require precise timing and execution. Here's how to staff holiday activations, summer campaigns, and seasonal events.",
+                                      "datePublished": "2025-02-16",
+                                      "dateModified": "2025-02-16",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/seasonal-marketing"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "seasonal marketing, holiday marketing, holiday events, summer marketing, seasonal campaigns, holiday activations"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Seasonal Marketing Campaigns: Maximizing Holiday Impact",
+                                                          "item": "https://www.airfreshmarketing.com/blog/seasonal-marketing"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Seasonal Marketing Campaigns: Maximizing Holiday Impact" }]} />
+
       <header className="bg-gradient-to-r from-red-600 to-green-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-red-200 mb-4">February 16, 2025 · 7 min read</p>

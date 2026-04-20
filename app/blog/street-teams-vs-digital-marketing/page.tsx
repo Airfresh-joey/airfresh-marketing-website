@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -31,6 +32,7 @@ export default function StreetTeamsVsDigitalMarketing() {
 
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Street Teams vs Digital Marketing: Why In-Person Still Wins in 2026" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       {/* Hero */}

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -29,6 +30,7 @@ export default function HireBrandAmbassadorsProductLaunch() {
 
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "How to Hire Brand Ambassadors for Your Product Launch in 2026" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
 
       <header className="bg-gradient-to-r from-orange-500 to-rose-600 text-white py-16">

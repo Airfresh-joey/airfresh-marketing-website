@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
@@ -32,6 +33,7 @@ export default function WhatIsExperientialMarketing() {
 
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "What is Experiential Marketing? The Complete 2026 Guide" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
       
       {/* Hero */}

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function SustainableExperientialMarketing() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026",
+                                      "description": "Sustainable event marketing is no longer optional. Learn how to plan carbon-neutral activations, eliminate waste, meet Gen Z expectations, and build brand loyalty through eco-friendly experiential marketing.",
+                                      "datePublished": "2026-03-06",
+                                      "dateModified": "2026-03-06",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/sustainable-experiential-marketing-2026"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "sustainable event marketing, eco-friendly brand activations, green event planning, carbon-neutral events, zero-waste activations, sustainable experiential marketing, green marketing 2026"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026",
+                                                          "item": "https://www.airfreshmarketing.com/blog/sustainable-experiential-marketing-2026"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026" }]} />
+
       <header className="bg-gradient-to-r from-green-600 to-emerald-700 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-green-200 mb-4">March 6, 2026 · 14 min read</p>

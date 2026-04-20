@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function MicroExperiencesBlog() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026",
+                                      "description": "Micro-experiences and intimate brand activations are outperforming large-scale events in 2026. Learn why smaller activations drive higher engagement, deeper brand connections, and better ROI.",
+                                      "datePublished": "2026-03-13",
+                                      "dateModified": "2026-03-13",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/micro-experiences-intimate-brand-activations-2026"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "micro-experiences, intimate brand activations, small-scale brand events, micro-activations, brand experience marketing, experiential marketing 2026, pop-up experiences, community activations, FOMO marketing, brand engagement strategy"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026",
+                                                          "item": "https://www.airfreshmarketing.com/blog/micro-experiences-intimate-brand-activations-2026"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026" }]} />
+
       <header className="bg-gradient-to-r from-orange-500 to-amber-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-orange-200 mb-4">March 13, 2026 · 16 min read</p>

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Card, CardContent } from '@/components/ui/card';
@@ -18,6 +19,65 @@ export const metadata: Metadata = {
 export default function GuerrillaMarketingExamples() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "15 Guerrilla Marketing Examples That Went Viral (2026)",
+                                      "description": "Discover the best guerrilla marketing examples and learn how to create low-cost, high-impact campaigns that generate massive buzz for your brand.",
+                                      "datePublished": "2025-01-01",
+                                      "dateModified": "2025-01-01",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/guerrilla-marketing-examples"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "guerrilla marketing examples, guerrilla marketing ideas, street marketing, ambient advertising, creative marketing campaigns, viral marketing examples"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "15 Guerrilla Marketing Examples That Went Viral (2026)",
+                                                          "item": "https://www.airfreshmarketing.com/blog/guerrilla-marketing-examples"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "15 Guerrilla Marketing Examples That Went Viral (2026)" }]} />
+
       {/* Hero */}
       <header className="bg-gradient-to-r from-green-600 to-teal-600 text-white py-16">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">

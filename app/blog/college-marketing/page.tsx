@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight, GraduationCap, Users, Megaphone, Calendar, Target, TrendingUp, CheckCircle } from 'lucide-react';
@@ -37,6 +38,7 @@ export default function CollegeMarketing() {
 
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "College Marketing: How to Reach Students on Campus in 2026" }]} />
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}

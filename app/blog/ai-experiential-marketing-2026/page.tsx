@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
@@ -17,6 +18,65 @@ export const metadata: Metadata = {
 export default function AIExperientialMarketing2026() {
   return (
     <article className="pt-16 min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
+                  "@graph": [
+                            {
+                                      "@type": "Article",
+                                      "headline": "AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026",
+                                      "description": "AI-powered experiential marketing is reshaping brand activations in 2026. Learn how artificial intelligence drives personalization, predictive analytics, engagement metrics, and more at live events.",
+                                      "datePublished": "2026-03-10",
+                                      "dateModified": "2026-03-10",
+                                      "author": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "url": "https://www.airfreshmarketing.com"
+                                      },
+                                      "publisher": {
+                                                "@type": "Organization",
+                                                "name": "AirFresh Marketing",
+                                                "logo": {
+                                                          "@type": "ImageObject",
+                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+                                                }
+                                      },
+                                      "mainEntityOfPage": {
+                                                "@type": "WebPage",
+                                                "@id": "https://www.airfreshmarketing.com/blog/ai-experiential-marketing-2026"
+                                      },
+                                      "inLanguage": "en-US",
+                                      "keywords": "AI experiential marketing, AI brand activations, artificial intelligence events, AI event marketing, AI personalization events, predictive analytics events, computer vision marketing, AI chatbots events, virtual brand ambassadors"
+                            },
+                            {
+                                      "@type": "BreadcrumbList",
+                                      "itemListElement": [
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 1,
+                                                          "name": "Home",
+                                                          "item": "https://www.airfreshmarketing.com"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 2,
+                                                          "name": "Blog",
+                                                          "item": "https://www.airfreshmarketing.com/blog"
+                                                },
+                                                {
+                                                          "@type": "ListItem",
+                                                          "position": 3,
+                                                          "name": "AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026",
+                                                          "item": "https://www.airfreshmarketing.com/blog/ai-experiential-marketing-2026"
+                                                }
+                                      ]
+                            }
+                  ]
+        }) }}
+      />
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026" }]} />
+
       <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-blue-200 mb-4">March 10, 2026 · 15 min read</p>
