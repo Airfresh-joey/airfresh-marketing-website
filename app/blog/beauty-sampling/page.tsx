@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Cosmetics and Beauty Sampling: Creating Product Converts | Air Fresh Marketing',
   description: 'Beauty products sell through trial. Here\'s how cosmetics brands run sampling campaigns that create lifelong customers.',
-  keywords: 'cosmetics sampling, beauty sampling, makeup demos, skincare sampling, beauty marketing, cosmetics events',
+  keywords: 'cosmetics sampling, beauty sampling, makeup demos, skincare sampling, beauty marketing, cosmetics events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/beauty-sampling',
+  },
+
 };
 
 export default function BeautySampling() {

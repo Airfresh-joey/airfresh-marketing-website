@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'B2B Event Staffing | Air Fresh Marketing',
   description: 'B2B events require professional, knowledgeable staff. Here\'s how to staff trade shows, conferences, and business events.',
-  keywords: 'b2b event staffing, trade show staff, conference staffing, business event staff, professional event staff',
+  keywords: 'b2b event staffing, trade show staff, conference staffing, business event staff, professional event staff',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/b2b-event-staffing',
+  },
+
 };
 
 export default function B2BStaffing() {

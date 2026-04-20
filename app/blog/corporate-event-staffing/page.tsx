@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Corporate Event Staffing | Air Fresh Marketing',
   description: 'Corporate events require polished, professional staff. Here\'s how to staff galas, meetings, and corporate functions.',
-  keywords: 'corporate event staffing, corporate event staff, gala staffing, corporate function staff, meeting staff',
+  keywords: 'corporate event staffing, corporate event staff, gala staffing, corporate function staff, meeting staff',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/corporate-event-staffing',
+  },
+
 };
 
 export default function CorporateEventStaffing() {

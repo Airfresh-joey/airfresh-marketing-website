@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Event Staffing: How to Not Screw Up Your Next Event',
     description: 'A brutally honest guide from someone who\'s seen every disaster.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-staffing-guide',
   },
+
 };
 
 export default function EventStaffingGuide() {

@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Hospital and Healthcare Facility Marketing | Air Fresh Marketing',
   description: 'Healthcare environments require specialized approaches. Here\'s how to market in hospitals and medical facilities.',
-  keywords: 'hospital marketing, healthcare marketing, medical facility marketing, health systems marketing',
+  keywords: 'hospital marketing, healthcare marketing, medical facility marketing, health systems marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/hospital-healthcare-marketing',
+  },
+
 };
 
 export default function HospitalMarketing() {

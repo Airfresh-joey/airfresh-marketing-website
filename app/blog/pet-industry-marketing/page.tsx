@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Pet Industry Marketing: Reaching Pet Parents | Air Fresh Marketing',
   description: 'Pet parents are passionate and loyal. Here\'s how to market pet products through experiential campaigns.',
-  keywords: 'pet marketing, pet industry marketing, pet product sampling, pet events, pet brand activation',
+  keywords: 'pet marketing, pet industry marketing, pet product sampling, pet events, pet brand activation',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/pet-industry-marketing',
+  },
+
 };
 
 export default function PetMarketing() {

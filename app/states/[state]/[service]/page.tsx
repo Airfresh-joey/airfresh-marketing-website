@@ -63,20 +63,50 @@ export default async function StateServicePage({ params }: StateServicePageProps
 
   const keywordPhrase = `${service.name} ${state.name}`;
 
+  const faqs = [
+    {
+      question: `How do I hire ${service.name.toLowerCase()} in ${state.name}?`,
+      answer: `Contact AirFresh Marketing for ${service.name.toLowerCase()} in ${state.name}. We provide trained, professional staff across ${state.majorCities.join(', ')} and all other cities statewide. Request a free quote online or call (303) 720-6060.`
+    },
+    {
+      question: `What does ${service.name.toLowerCase()} cost in ${state.name}?`,
+      answer: `${service.name} rates in ${state.name} depend on event duration, team size, and specific requirements. We offer competitive pricing with no hidden fees. Contact us for a customized quote for your ${state.name} campaign.`
+    },
+    {
+      question: `Do you provide ${service.name.toLowerCase()} in ${state.majorCities[0]}?`,
+      answer: `Yes, AirFresh Marketing provides ${service.name.toLowerCase()} in ${state.majorCities[0]} and throughout ${state.name}. We have a local network of trained professionals ready to represent your brand in any ${state.name} market.`
+    },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": `${service.name} in ${state.name}`,
-    "provider": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing",
-      "telephone": "+1-303-720-6060"
-    },
-    "areaServed": {
-      "@type": "State",
-      "name": state.name
-    },
-    "description": service.description
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": `${service.name} in ${state.name}`,
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "telephone": "+1-303-720-6060"
+        },
+        "areaServed": {
+          "@type": "State",
+          "name": state.name
+        },
+        "description": service.description
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -265,6 +295,19 @@ export default async function StateServicePage({ params }: StateServicePageProps
                 </Card>
               ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">{service.name} in {state.name} FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

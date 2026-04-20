@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Influencer Event Activations | Air Fresh Marketing',
   description: 'Combining influencers with live events creates powerful moments. Here\'s how to execute influencer-focused activations.',
-  keywords: 'influencer events, influencer activation, influencer marketing events, creator events, influencer experience',
+  keywords: 'influencer events, influencer activation, influencer marketing events, creator events, influencer experience',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/influencer-event-activations',
+  },
+
 };
 
 export default function InfluencerActivations() {

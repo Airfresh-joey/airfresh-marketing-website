@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Apartment Complex Marketing | Air Fresh Marketing',
   description: 'Reach renters where they live. Here\'s how to execute marketing at apartment complexes and multi-family housing.',
-  keywords: 'apartment marketing, apartment complex marketing, renter marketing, multi-family marketing, residential marketing',
+  keywords: 'apartment marketing, apartment complex marketing, renter marketing, multi-family marketing, residential marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/apartment-complex-marketing',
+  },
+
 };
 
 export default function ApartmentMarketing() {

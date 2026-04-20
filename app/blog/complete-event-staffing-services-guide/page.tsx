@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Event Staffing Services: Complete Process Guide (2026)',
     description: 'What actually happens when you hire an event staffing agency — the complete campaign lifecycle.',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/complete-event-staffing-services-guide',
   },
+
 };
 
 export default function CompleteEventStaffingServicesGuide() {

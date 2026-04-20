@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     title: '15 Guerrilla Marketing Examples That Went Viral',
     description: 'Low-cost, high-impact marketing campaigns that generated massive buzz.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/guerrilla-marketing-examples',
   },
+
 };
 
 export default function GuerrillaMarketingExamples() {

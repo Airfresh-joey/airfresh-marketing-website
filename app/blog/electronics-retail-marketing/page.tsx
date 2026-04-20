@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Electronics Retail Marketing | Air Fresh Marketing',
   description: 'Best Buy, Apple, and electronics retail require tech-savvy staff. Here\'s how to demonstrate technology products.',
-  keywords: 'best buy marketing, electronics retail marketing, tech demos, apple store marketing, consumer electronics',
+  keywords: 'best buy marketing, electronics retail marketing, tech demos, apple store marketing, consumer electronics',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/electronics-retail-marketing',
+  },
+
 };
 
 export default function ElectronicsMarketing() {

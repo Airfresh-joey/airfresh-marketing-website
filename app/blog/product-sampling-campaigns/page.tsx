@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Product Sampling Campaigns: What Actually Works in 2026',
     description: 'After 500+ campaigns, here\'s what we\'ve learned about sampling that drives sales.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/product-sampling-campaigns',
   },
+
 };
 
 export default function ProductSamplingCampaigns() {

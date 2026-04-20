@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Food Sampling: How CPG Brands Drive Trial and Purchase | Air Fresh Marketing',
   description: 'Food sampling remains the most effective way to drive trial. Here\'s the playbook for CPG brands looking to convert tasters to buyers.',
-  keywords: 'food sampling, CPG sampling, grocery sampling, food product demos, food marketing, supermarket sampling',
+  keywords: 'food sampling, CPG sampling, grocery sampling, food product demos, food marketing, supermarket sampling',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/food-sampling',
+  },
+
 };
 
 export default function FoodSampling() {

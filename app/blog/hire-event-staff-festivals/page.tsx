@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'How to Hire Event Staff for Festivals | Air Fresh Marketing',
   description: 'Complete guide to hiring event staff for music festivals, food festivals, and large outdoor events. Learn best practices for staffing, training, and managing festival teams.',
-  keywords: 'festival staffing, event staff, hire festival workers, music festival staff, outdoor event staffing, festival brand ambassadors',
+  keywords: 'festival staffing, event staff, hire festival workers, music festival staff, outdoor event staffing, festival brand ambassadors',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/hire-event-staff-festivals',
+  },
+
 };
 
 export default function HireEventStaffFestivals() {

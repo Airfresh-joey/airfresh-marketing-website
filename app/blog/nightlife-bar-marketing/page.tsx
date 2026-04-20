@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Nightlife and Bar Marketing | Air Fresh Marketing',
   description: 'Nightlife marketing reaches social, influential audiences. Here\'s how to execute bar promotions, club events, and nightlife activations.',
-  keywords: 'nightlife marketing, bar marketing, club promotions, nightlife events, bar activations, alcohol marketing events',
+  keywords: 'nightlife marketing, bar marketing, club promotions, nightlife events, bar activations, alcohol marketing events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/nightlife-bar-marketing',
+  },
+
 };
 
 export default function NightlifeMarketing() {

@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Airport and Travel Marketing | Air Fresh Marketing',
   description: 'Airports offer captive audiences of travelers. Here\'s how to execute effective airport activations and travel marketing.',
-  keywords: 'airport marketing, travel marketing, airport activations, airport sampling, travel brand marketing',
+  keywords: 'airport marketing, travel marketing, airport activations, airport sampling, travel brand marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/airport-travel-marketing',
+  },
+
 };
 
 export default function AirportMarketing() {

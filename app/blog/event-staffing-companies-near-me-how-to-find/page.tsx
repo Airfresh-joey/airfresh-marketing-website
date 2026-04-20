@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'The complete guide to finding, evaluating, and hiring local event staffing companies that deliver consistent quality for your brand activations.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-staffing-companies-near-me-how-to-find',
   },
+
 };
 
 export default function EventStaffingCompaniesNearMe() {

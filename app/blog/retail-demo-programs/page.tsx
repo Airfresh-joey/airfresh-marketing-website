@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Retail Demo Programs | Air Fresh Marketing',
   description: 'In-store demos drive trial and sales. Here\'s how to build and execute effective retail demonstration programs.',
-  keywords: 'retail demo, in store demonstration, product demo retail, demo program, retail sampling',
+  keywords: 'retail demo, in store demonstration, product demo retail, demo program, retail sampling',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/retail-demo-programs',
+  },
+
 };
 
 export default function RetailDemoPrograms() {

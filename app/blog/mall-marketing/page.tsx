@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Mall Marketing and Kiosk Activations | Air Fresh Marketing',
   description: 'Malls offer captive audiences and high foot traffic. Here\'s how to run effective mall marketing programs.',
-  keywords: 'mall marketing, kiosk marketing, mall activation, shopping center marketing, mall sampling, mall events',
+  keywords: 'mall marketing, kiosk marketing, mall activation, shopping center marketing, mall sampling, mall events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/mall-marketing',
+  },
+
 };
 
 export default function MallMarketing() {

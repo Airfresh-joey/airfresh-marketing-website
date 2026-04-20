@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about hiring event staff in Denver — from rates and venues to seasonal strategies and the best staffing agencies in Colorado.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-staffing-denver-complete-guide',
   },
+
 };
 
 export default function EventStaffingDenverGuide() {

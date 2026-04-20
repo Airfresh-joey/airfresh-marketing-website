@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'The Rise of Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026',
     description: 'Smaller activations are driving higher engagement, deeper connections, and better ROI. Here is how to plan and execute micro-experiences that outperform big-budget events.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/micro-experiences-intimate-brand-activations-2026',
   },
+
 };
 
 export default function MicroExperiencesBlog() {

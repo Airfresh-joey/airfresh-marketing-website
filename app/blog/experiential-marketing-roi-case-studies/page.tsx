@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Real experiential marketing ROI case studies with actual numbers. See how brands achieved 5x-12x returns through product sampling, brand activations, and street team campaigns.',
     type: 'article',
     publishedTime: '2026-03-16T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/experiential-marketing-roi-case-studies',
   },
+
 };
 
 export default function ExperientialMarketingROICaseStudies() {

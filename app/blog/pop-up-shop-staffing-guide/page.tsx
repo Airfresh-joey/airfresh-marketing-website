@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Pop-Up Shop Staffing Guide | Air Fresh Marketing',
   description: 'How to staff your pop-up shop for success. Learn about hiring, training, and managing retail activation staff for temporary retail experiences.',
-  keywords: 'pop-up shop staffing, retail activation staff, temporary retail, pop-up store employees, brand activation retail, experiential retail staffing',
+  keywords: 'pop-up shop staffing, retail activation staff, temporary retail, pop-up store employees, brand activation retail, experiential retail staffing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide',
+  },
+
 };
 
 export default function PopUpShopStaffingGuide() {

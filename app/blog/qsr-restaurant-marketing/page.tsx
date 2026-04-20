@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Quick Service Restaurant Marketing | Air Fresh Marketing',
   description: 'QSR brands need high-energy, fast-paced marketing. Here\'s how to execute at McDonald\'s, Chick-fil-A, and fast food locations.',
-  keywords: 'qsr marketing, fast food marketing, restaurant marketing, mcdonalds marketing, quick service marketing',
+  keywords: 'qsr marketing, fast food marketing, restaurant marketing, mcdonalds marketing, quick service marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/qsr-restaurant-marketing',
+  },
+
 };
 
 export default function QSRMarketing() {

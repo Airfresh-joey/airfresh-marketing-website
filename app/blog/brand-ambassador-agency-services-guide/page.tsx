@@ -19,7 +19,10 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Brand Ambassador Agency Services: Complete Guide (2026)',
     description: 'Services, costs, ROI benchmarks, and how to evaluate brand ambassador agencies.',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/brand-ambassador-agency-services-guide',
   },
+
 };
 
 export default function BrandAmbassadorAgencyServicesGuide() {

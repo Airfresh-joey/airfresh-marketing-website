@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
     authors: ['Air Fresh Marketing'],
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/measure-brand-ambassador-roi-2026',
   },
+
 };
 
 export default function MeasureBrandAmbassadorROI() {

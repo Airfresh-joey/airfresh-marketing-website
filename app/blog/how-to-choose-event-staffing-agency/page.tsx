@@ -15,7 +15,10 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
     authors: ['Air Fresh Marketing'],
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/how-to-choose-event-staffing-agency',
   },
+
 };
 
 export default function HowToChooseEventStaffingAgency() {

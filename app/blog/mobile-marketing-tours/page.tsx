@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Mobile Marketing Tours | Air Fresh Marketing',
   description: 'Take your brand on the road. Here\'s how to plan and execute successful mobile marketing tours and roadshows.',
-  keywords: 'mobile marketing tour, brand roadshow, experiential tour, mobile activation, touring promotion',
+  keywords: 'mobile marketing tour, brand roadshow, experiential tour, mobile activation, touring promotion',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/mobile-marketing-tours',
+  },
+
 };
 
 export default function MobileMarketingTours() {

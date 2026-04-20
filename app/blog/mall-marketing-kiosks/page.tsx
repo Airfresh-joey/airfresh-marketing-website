@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Mall Marketing and Kiosk Activations | Air Fresh Marketing',
   description: 'Malls still move products. Here\'s how to execute effective mall marketing, kiosk programs, and common area activations.',
-  keywords: 'mall marketing, kiosk marketing, mall activation, retail mall events, common area marketing',
+  keywords: 'mall marketing, kiosk marketing, mall activation, retail mall events, common area marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/mall-marketing-kiosks',
+  },
+
 };
 
 export default function MallMarketing() {

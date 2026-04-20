@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Promotional Models: The Complete Hiring Guide',
     description: 'From someone who\'s hired thousands - here\'s what actually matters.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/promotional-models-hiring-guide',
   },
+
 };
 
 export default function PromotionalModelsGuide() {

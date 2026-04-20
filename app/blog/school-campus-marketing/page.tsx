@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'School and Campus Marketing | Air Fresh Marketing',
   description: 'Reaching students and families in educational environments. Here\'s how to market at schools and universities.',
-  keywords: 'school marketing, campus marketing, university marketing, college marketing, student marketing',
+  keywords: 'school marketing, campus marketing, university marketing, college marketing, student marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/school-campus-marketing',
+  },
+
 };
 
 export default function SchoolCampusMarketing() {

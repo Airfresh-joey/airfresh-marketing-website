@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Retail Grand Openings: Making Your Launch Day Count | Air Fresh Marketing',
   description: 'Grand openings set the tone for a new location. Here\'s how to create launch events that drive traffic and build community.',
-  keywords: 'grand opening event, store opening, retail launch, store launch event, grand opening marketing, ribbon cutting',
+  keywords: 'grand opening event, store opening, retail launch, store launch event, grand opening marketing, ribbon cutting',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/grand-openings',
+  },
+
 };
 
 export default function GrandOpenings() {

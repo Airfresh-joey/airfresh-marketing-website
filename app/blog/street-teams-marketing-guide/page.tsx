@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Street Teams: The Marketing Channel Nobody Talks About',
     description: 'Not dead - evolved. Here\'s what works in 2026.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/street-teams-marketing-guide',
   },
+
 };
 
 export default function StreetTeamsGuide() {

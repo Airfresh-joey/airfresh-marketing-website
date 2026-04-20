@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Financial Services Marketing Events | Air Fresh Marketing',
   description: 'Financial services face unique marketing challenges. Here\'s how to create compliant, effective experiential campaigns.',
-  keywords: 'financial services marketing, bank marketing events, insurance marketing, fintech marketing, financial brand activation',
+  keywords: 'financial services marketing, bank marketing events, insurance marketing, fintech marketing, financial brand activation',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/financial-services-marketing',
+  },
+
 };
 
 export default function FinancialMarketing() {

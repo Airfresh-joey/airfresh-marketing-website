@@ -14,7 +14,10 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about hiring, training, and managing brand ambassadors.',
     type: 'article',
     publishedTime: '2026-03-01T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/how-to-hire-brand-ambassadors',
   },
+
 };
 
 export default function HowToHireBrandAmbassadors() {

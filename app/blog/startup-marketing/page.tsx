@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Startup Marketing Events: Do More With Less | Air Fresh Marketing',
   description: 'Startups need maximum impact from limited budgets. Here\'s how to execute effective marketing events without enterprise resources.',
-  keywords: 'startup marketing, startup events, tech startup marketing, startup launch events, lean marketing',
+  keywords: 'startup marketing, startup events, tech startup marketing, startup launch events, lean marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/startup-marketing',
+  },
+
 };
 
 export default function StartupMarketing() {

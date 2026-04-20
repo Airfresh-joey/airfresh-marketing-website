@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'How to Write a Brand Ambassador Job Description | Air Fresh Marketing',
   description: 'Attract the right brand ambassador candidates with a compelling job description. Here\'s what to include.',
-  keywords: 'brand ambassador job description, brand ambassador hiring, ba job posting, promotional staff job description',
+  keywords: 'brand ambassador job description, brand ambassador hiring, ba job posting, promotional staff job description',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/brand-ambassador-job-description',
+  },
+
 };
 
 export default function BAJobDescription() {

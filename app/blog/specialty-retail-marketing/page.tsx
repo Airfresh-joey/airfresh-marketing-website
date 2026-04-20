@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Specialty Retail Marketing | Air Fresh Marketing',
   description: 'Specialty retail requires deep expertise. Here\'s how to market in niche retail environments.',
-  keywords: 'specialty retail marketing, boutique marketing, niche retail, specialty store marketing, retail activation',
+  keywords: 'specialty retail marketing, boutique marketing, niche retail, specialty store marketing, retail activation',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/specialty-retail-marketing',
+  },
+
 };
 
 export default function SpecialtyRetailMarketing() {

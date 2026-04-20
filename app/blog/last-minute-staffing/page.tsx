@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Last-Minute Event Staffing: Emergency Coverage | Air Fresh Marketing',
   description: 'Need event staff urgently? Here\'s how we handle last-minute and emergency staffing requests.',
-  keywords: 'last minute event staffing, emergency event staff, urgent staffing, same day event staff, rush staffing',
+  keywords: 'last minute event staffing, emergency event staff, urgent staffing, same day event staff, rush staffing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/last-minute-staffing',
+  },
+
 };
 
 export default function LastMinuteStaffing() {

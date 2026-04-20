@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'The complete guide to planning product sampling campaigns — from format selection and location strategy to staffing, logistics, and ROI measurement.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/product-sampling-campaign-planning-guide',
   },
+
 };
 
 export default function ProductSamplingCampaignPlanningGuide() {

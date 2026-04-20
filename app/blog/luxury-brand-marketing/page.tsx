@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Luxury Brand Marketing and Events | Air Fresh Marketing',
   description: 'Luxury brands demand flawless execution. Here\'s how to staff and execute high-end brand experiences.',
-  keywords: 'luxury marketing, luxury events, high-end brand activation, luxury retail events, premium brand marketing',
+  keywords: 'luxury marketing, luxury events, high-end brand activation, luxury retail events, premium brand marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/luxury-brand-marketing',
+  },
+
 };
 
 export default function LuxuryMarketing() {

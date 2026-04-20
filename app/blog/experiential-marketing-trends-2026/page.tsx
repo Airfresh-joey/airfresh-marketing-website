@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Experiential Marketing Trends 2026 | Air Fresh Marketing',
   description: 'What\'s next in experiential marketing? Here are the trends shaping events, activations, and brand experiences.',
-  keywords: 'experiential marketing trends, event marketing trends 2026, future of experiential, marketing trends',
+  keywords: 'experiential marketing trends, event marketing trends 2026, future of experiential, marketing trends',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/experiential-marketing-trends-2026',
+  },
+
 };
 
 export default function ExperientialTrends() {

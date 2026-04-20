@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about hiring promotional staff for trade shows — from sourcing and vetting to training and on-site management.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/promotional-staff-trade-shows-hiring-guide',
   },
+
 };
 
 export default function PromotionalStaffTradeShows() {

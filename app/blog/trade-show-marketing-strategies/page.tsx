@@ -14,7 +14,10 @@ export const metadata: Metadata = {
     description: 'Proven tactics to maximize your trade show ROI from pre-show to post-show.',
     type: 'article',
     publishedTime: '2026-03-01T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/trade-show-marketing-strategies',
   },
+
 };
 
 export default function TradeShowMarketing() {

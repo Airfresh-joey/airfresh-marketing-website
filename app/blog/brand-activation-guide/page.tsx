@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Brand Activation: What It Is, Why It Matters, and How to Do It Right',
     description: 'Creating experiences that turn consumers into fans.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/brand-activation-guide',
   },
+
 };
 
 export default function BrandActivationGuide() {

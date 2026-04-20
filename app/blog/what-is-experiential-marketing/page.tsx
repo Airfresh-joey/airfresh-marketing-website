@@ -16,7 +16,10 @@ export const metadata: Metadata = {
     type: 'article',
     publishedTime: '2026-03-01T00:00:00Z',
     authors: ['Air Fresh Marketing'],
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/what-is-experiential-marketing',
   },
+
 };
 
 export default function WhatIsExperientialMarketing() {

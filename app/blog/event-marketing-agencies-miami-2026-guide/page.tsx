@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about hiring an event marketing agency in Miami — from services and pricing to neighborhoods, venues, and campaign planning.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-marketing-agencies-miami-2026-guide',
   },
+
 };
 
 export default function EventMarketingAgenciesMiamiGuide() {

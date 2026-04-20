@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'The complete guide to hiring brand ambassadors that make your product launch unforgettable — from staffing strategy to launch-day execution.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/hire-brand-ambassadors-product-launch-2026',
   },
+
 };
 
 export default function HireBrandAmbassadorsProductLaunch() {

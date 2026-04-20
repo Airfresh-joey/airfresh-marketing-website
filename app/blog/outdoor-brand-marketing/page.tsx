@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Outdoor and Adventure Brand Marketing | Air Fresh Marketing',
   description: 'Outdoor brands need to connect with consumers in their element. Here\'s how to market adventure products through experiential campaigns.',
-  keywords: 'outdoor marketing, adventure marketing, outdoor brand activation, hiking brand marketing, outdoor events',
+  keywords: 'outdoor marketing, adventure marketing, outdoor brand activation, hiking brand marketing, outdoor events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/outdoor-brand-marketing',
+  },
+
 };
 
 export default function OutdoorMarketing() {

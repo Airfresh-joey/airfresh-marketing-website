@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Sporting Goods Retail Marketing | Air Fresh Marketing',
   description: 'Dick\'s, REI, and specialty sports retailers need knowledgeable staff. Here\'s how to market in sporting goods.',
-  keywords: 'sporting goods marketing, dicks sporting goods, rei marketing, sports retail marketing, athletic retail',
+  keywords: 'sporting goods marketing, dicks sporting goods, rei marketing, sports retail marketing, athletic retail',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/sporting-goods-marketing',
+  },
+
 };
 
 export default function SportingGoodsMarketing() {

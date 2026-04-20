@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Promotional staff drive engagement at events, trade shows, and brand activations. Learn how to hire, train, and manage event teams that convert attendees into customers.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/promotional-staff-events-hiring-training-guide',
   },
+
 };
 
 export default function PromotionalStaffEventsGuide() {

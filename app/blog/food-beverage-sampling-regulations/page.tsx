@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Food and Beverage Sampling Regulations | Air Fresh Marketing',
   description: 'Food sampling has rules. Here\'s what you need to know about permits, certifications, and regulations for F&B sampling.',
-  keywords: 'food sampling regulations, beverage sampling permits, food handling certification, sampling compliance',
+  keywords: 'food sampling regulations, beverage sampling permits, food handling certification, sampling compliance',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/food-beverage-sampling-regulations',
+  },
+
 };
 
 export default function FBSamplingRegulations() {

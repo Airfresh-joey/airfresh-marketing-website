@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Festival Marketing: How to Win at Coachella, SXSW, and Beyond',
     description: 'What separates winners from wasters at major festivals.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/festival-marketing-guide',
   },
+
 };
 
 export default function FestivalMarketingGuide() {

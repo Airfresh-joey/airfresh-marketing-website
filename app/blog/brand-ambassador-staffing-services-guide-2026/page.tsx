@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Everything you need to know about hiring brand ambassador staffing services — from agency selection and pricing to training, campaign types, and ROI optimization.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/brand-ambassador-staffing-services-guide-2026',
   },
+
 };
 
 export default function BrandAmbassadorStaffingServicesGuide() {

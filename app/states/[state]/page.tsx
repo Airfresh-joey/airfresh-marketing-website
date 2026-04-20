@@ -52,7 +52,30 @@ export default async function StatePage({ params }: StatePageProps) {
     notFound();
   }
 
-  // Structured data with LocalBusiness schema
+  const faqs = [
+    {
+      question: `What event staffing services does AirFresh Marketing offer in ${state.name}?`,
+      answer: `AirFresh Marketing provides brand ambassadors, event staffing, street teams, promotional models, experiential marketing, convention staffing, product sampling, event management, and hospitality staff throughout ${state.name}. We serve ${state.majorCities.join(', ')} and all other cities statewide.`
+    },
+    {
+      question: `How quickly can you staff events in ${state.name}?`,
+      answer: `We maintain a network of trained staff across ${state.name} and can typically deploy teams within 48-72 hours for standard requests. For larger activations in ${state.majorCities[0]} or other major cities, we recommend 2-4 weeks lead time for optimal results.`
+    },
+    {
+      question: `What industries do you serve in ${state.name}?`,
+      answer: `In ${state.name}, we have deep expertise serving the ${state.industries.join(', ')} industries. Our brand ambassadors and event staff understand these sectors and can represent your brand authentically to ${state.name} consumers.`
+    },
+    {
+      question: `How much does event staffing cost in ${state.name}?`,
+      answer: `Event staffing rates in ${state.name} vary based on the type of staff, event duration, and location. Brand ambassadors typically start at $25-35/hour, with specialized roles like promotional models or bilingual staff at higher rates. Contact us for a free custom quote.`
+    },
+    {
+      question: `Do you provide event staff training for ${state.name} campaigns?`,
+      answer: `Yes, all AirFresh Marketing staff in ${state.name} receive comprehensive training including brand-specific product knowledge, customer engagement techniques, and GPS-verified check-ins. We also provide video training modules and on-site team leads for quality assurance.`
+    }
+  ];
+
+  // Structured data with LocalBusiness + FAQPage schema
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -96,6 +119,17 @@ export default async function StatePage({ params }: StatePageProps) {
           "@type": "State",
           "name": state.name
         }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -199,6 +233,19 @@ export default async function StatePage({ params }: StatePageProps) {
               );
             })}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Event Staffing in {state.name} FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

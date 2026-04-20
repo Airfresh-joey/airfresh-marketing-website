@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'The complete framework for measuring and maximizing event staffing ROI — with real formulas, industry benchmarks, and actionable strategies.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-staffing-roi-measuring-success',
   },
+
 };
 
 export default function EventStaffingROI() {

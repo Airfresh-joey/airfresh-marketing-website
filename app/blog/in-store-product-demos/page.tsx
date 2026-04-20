@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'In-Store Product Demos: The Lost Art of Selling at Shelf',
     description: 'How to run retail demos that actually move product.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/in-store-product-demos',
   },
+
 };
 
 export default function InStoreProductDemos() {

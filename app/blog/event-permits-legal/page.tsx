@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Event Permits and Legal Requirements | Air Fresh Marketing',
   description: 'Events require permits and legal compliance. Here\'s what you need to know about event permits, insurance, and legal requirements.',
-  keywords: 'event permits, event insurance, event legal requirements, activation permits, street team permits',
+  keywords: 'event permits, event insurance, event legal requirements, activation permits, street team permits',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-permits-legal',
+  },
+
 };
 
 export default function EventPermits() {

@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Office Building Marketing | Air Fresh Marketing',
   description: 'Reach professionals where they work. Here\'s how to execute marketing in office buildings and corporate campuses.',
-  keywords: 'office marketing, corporate marketing, office building sampling, workplace marketing, b2b sampling',
+  keywords: 'office marketing, corporate marketing, office building sampling, workplace marketing, b2b sampling',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/office-building-marketing',
+  },
+
 };
 
 export default function OfficeBuildingMarketing() {

@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Drug Store and Pharmacy Marketing | Air Fresh Marketing',
   description: 'CVS, Walgreens, and pharmacy retail offer unique marketing opportunities. Here\'s how to reach health-conscious consumers.',
-  keywords: 'cvs marketing, walgreens marketing, pharmacy marketing, drug store marketing, pharmacy demos',
+  keywords: 'cvs marketing, walgreens marketing, pharmacy marketing, drug store marketing, pharmacy demos',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/drug-store-marketing',
+  },
+
 };
 
 export default function PharmacyMarketing() {

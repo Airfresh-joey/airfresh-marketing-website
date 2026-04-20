@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Beach and Outdoor Recreation Marketing | Air Fresh Marketing',
   description: 'Reach consumers at beaches, parks, and outdoor recreation areas. Here\'s how to activate in outdoor spaces.',
-  keywords: 'beach marketing, outdoor marketing, park marketing, recreation marketing, outdoor sampling',
+  keywords: 'beach marketing, outdoor marketing, park marketing, recreation marketing, outdoor sampling',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/beach-outdoor-marketing',
+  },
+
 };
 
 export default function BeachOutdoorMarketing() {

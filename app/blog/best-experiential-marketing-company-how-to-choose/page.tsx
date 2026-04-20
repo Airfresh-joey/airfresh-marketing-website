@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'The definitive guide to evaluating and selecting an experiential marketing company that delivers measurable results — not just impressive proposals.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/best-experiential-marketing-company-how-to-choose',
   },
+
 };
 
 export default function BestExperientialMarketingCompany() {

@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Pharmaceutical and Healthcare Marketing | Air Fresh Marketing',
   description: 'Pharma and healthcare marketing is heavily regulated. Here\'s how to execute compliant, effective medical marketing events.',
-  keywords: 'pharmaceutical marketing, healthcare marketing, medical events, pharma conferences, healthcare trade shows',
+  keywords: 'pharmaceutical marketing, healthcare marketing, medical events, pharma conferences, healthcare trade shows',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/pharmaceutical-healthcare-marketing',
+  },
+
 };
 
 export default function PharmaMarketing() {

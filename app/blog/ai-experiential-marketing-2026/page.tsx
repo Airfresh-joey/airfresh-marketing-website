@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026',
     description: 'How artificial intelligence is reshaping live events, brand activations, and experiential campaigns - with practical steps for implementation.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/ai-experiential-marketing-2026',
   },
+
 };
 
 export default function AIExperientialMarketing2026() {

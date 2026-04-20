@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026',
     description: 'How to plan and execute eco-friendly brand activations that resonate with conscious consumers and actually reduce environmental impact.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/sustainable-experiential-marketing-2026',
   },
+
 };
 
 export default function SustainableExperientialMarketing() {

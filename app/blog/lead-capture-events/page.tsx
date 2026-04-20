@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Lead Capture at Events: Converting Interactions to Data | Air Fresh Marketing',
   description: 'Every event interaction should capture data. Here\'s how to build lead capture into your experiential programs.',
-  keywords: 'event lead capture, lead generation events, event data capture, experiential lead gen',
+  keywords: 'event lead capture, lead generation events, event data capture, experiential lead gen',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/lead-capture-events',
+  },
+
 };
 
 export default function LeadCapture() {

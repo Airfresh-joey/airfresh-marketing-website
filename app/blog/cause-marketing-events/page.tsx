@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Cause Marketing Events | Air Fresh Marketing',
   description: 'Brand + cause = powerful connection. Here\'s how to execute cause marketing events that drive impact and affinity.',
-  keywords: 'cause marketing, cause marketing events, brand purpose events, social impact marketing, charity events',
+  keywords: 'cause marketing, cause marketing events, brand purpose events, social impact marketing, charity events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/cause-marketing-events',
+  },
+
 };
 
 export default function CauseMarketingEvents() {

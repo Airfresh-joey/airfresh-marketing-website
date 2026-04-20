@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Why Choose Air Fresh Marketing | Air Fresh Marketing',
   description: 'What makes Air Fresh different from other staffing agencies? Here\'s what sets us apart after 20 years in the business.',
-  keywords: 'air fresh marketing, why air fresh, event staffing agency, experiential marketing agency, brand ambassador agency',
+  keywords: 'air fresh marketing, why air fresh, event staffing agency, experiential marketing agency, brand ambassador agency',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/why-air-fresh',
+  },
+
 };
 
 export default function WhyAirFresh() {

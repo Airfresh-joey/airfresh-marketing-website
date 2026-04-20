@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Managing Difficult Event Situations | Air Fresh Marketing',
   description: 'Events don\'t always go smoothly. Here\'s how to handle difficult attendees, equipment failures, and event emergencies.',
-  keywords: 'event problem solving, difficult attendees, event emergencies, event troubleshooting, crisis management events',
+  keywords: 'event problem solving, difficult attendees, event emergencies, event troubleshooting, crisis management events',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/managing-difficult-situations',
+  },
+
 };
 
 export default function DifficultSituations() {

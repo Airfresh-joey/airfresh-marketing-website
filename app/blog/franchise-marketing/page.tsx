@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Franchise Marketing Support | Air Fresh Marketing',
   description: 'Franchises need consistent marketing execution across locations. Here\'s how to support franchise marketing programs.',
-  keywords: 'franchise marketing, franchise support, multi-location marketing, franchise events, franchise brand consistency',
+  keywords: 'franchise marketing, franchise support, multi-location marketing, franchise events, franchise brand consistency',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/franchise-marketing',
+  },
+
 };
 
 export default function FranchiseMarketing() {

@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Product Launch Events: The Playbook for Making People Care',
     description: 'How to create launches that generate real momentum.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/product-launch-events',
   },
+
 };
 
 export default function ProductLaunchEventsGuide() {

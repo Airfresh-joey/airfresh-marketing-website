@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Event Photography and Content Capture | Air Fresh Marketing',
   description: 'Events create content opportunities. Here\'s how to capture photos, video, and UGC that extends your event ROI.',
-  keywords: 'event photography, event content, event video, ugc capture, event documentation',
+  keywords: 'event photography, event content, event video, ugc capture, event documentation',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/event-photography-content',
+  },
+
 };
 
 export default function EventPhotography() {

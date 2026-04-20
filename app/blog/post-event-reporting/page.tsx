@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Post-Event Reporting and Analytics | Air Fresh Marketing',
   description: 'Events generate data. Here\'s how to report on experiential campaigns and prove ROI to stakeholders.',
-  keywords: 'event reporting, event analytics, experiential roi reporting, event metrics, campaign reporting',
+  keywords: 'event reporting, event analytics, experiential roi reporting, event metrics, campaign reporting',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/post-event-reporting',
+  },
+
 };
 
 export default function PostEventReporting() {

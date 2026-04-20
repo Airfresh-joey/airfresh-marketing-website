@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Choosing the Right Staffing Agency | Air Fresh Marketing',
   description: 'Not all event staffing agencies are equal. Here\'s how to evaluate and choose the right partner for your needs.',
-  keywords: 'event staffing agency, how to choose staffing agency, staffing agency comparison, experiential staffing partner',
+  keywords: 'event staffing agency, how to choose staffing agency, staffing agency comparison, experiential staffing partner',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/choosing-staffing-agency',
+  },
+
 };
 
 export default function ChoosingAgency() {

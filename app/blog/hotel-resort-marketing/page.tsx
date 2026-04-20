@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Hotel and Resort Marketing | Air Fresh Marketing',
   description: 'Hotels and resorts offer captive audiences of travelers. Here\'s how to activate in hospitality environments.',
-  keywords: 'hotel marketing, resort marketing, hospitality marketing, hotel sampling, travel marketing',
+  keywords: 'hotel marketing, resort marketing, hospitality marketing, hotel sampling, travel marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/hotel-resort-marketing',
+  },
+
 };
 
 export default function HotelResortMarketing() {

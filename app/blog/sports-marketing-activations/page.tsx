@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Sports Marketing Activations: Winning with Fans | Air Fresh Marketing',
   description: 'Sports fans are passionate and loyal. Here\'s how brands create activations that connect with sports audiences.',
-  keywords: 'sports marketing, sports activation, stadium marketing, sports sponsorship activation, fan experience, game day marketing',
+  keywords: 'sports marketing, sports activation, stadium marketing, sports sponsorship activation, fan experience, game day marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/sports-marketing-activations',
+  },
+
 };
 
 export default function SportsMarketing() {

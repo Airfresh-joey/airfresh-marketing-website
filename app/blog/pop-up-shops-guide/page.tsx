@@ -12,7 +12,10 @@ export const metadata: Metadata = {
     title: 'Pop-Up Shops: The Complete Guide to Temporary Retail',
     description: 'How to plan and execute pop-ups that actually work.',
     type: 'article',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/pop-up-shops-guide',
   },
+
 };
 
 export default function PopUpShopsGuide() {

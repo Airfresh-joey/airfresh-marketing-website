@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Senior Living Community Marketing | Air Fresh Marketing',
   description: 'Reaching older adults requires specialized approaches. Here\'s how to market to senior living communities.',
-  keywords: 'senior marketing, senior living marketing, elderly marketing, retirement community marketing, 55+ marketing',
+  keywords: 'senior marketing, senior living marketing, elderly marketing, retirement community marketing, 55+ marketing',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/senior-living-marketing',
+  },
+
 };
 
 export default function SeniorLivingMarketing() {

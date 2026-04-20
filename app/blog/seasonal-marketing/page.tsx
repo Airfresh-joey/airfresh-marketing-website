@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Seasonal Marketing Campaigns: Maximizing Holiday Impact | Air Fresh Marketing',
   description: 'Seasonal campaigns require precise timing and execution. Here\'s how to staff holiday activations, summer campaigns, and seasonal events.',
-  keywords: 'seasonal marketing, holiday marketing, holiday events, summer marketing, seasonal campaigns, holiday activations',
+  keywords: 'seasonal marketing, holiday marketing, holiday events, summer marketing, seasonal campaigns, holiday activations',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/seasonal-marketing',
+  },
+
 };
 
 export default function SeasonalMarketing() {

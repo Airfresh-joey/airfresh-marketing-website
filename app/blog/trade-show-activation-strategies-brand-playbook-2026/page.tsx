@@ -13,7 +13,10 @@ export const metadata: Metadata = {
     description: 'Trade show activation strategies that drive booth traffic, generate qualified leads, and deliver measurable ROI. The complete playbook for brand managers in 2026.',
     type: 'article',
     publishedTime: '2026-03-13T00:00:00Z',
+  },  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/trade-show-activation-strategies-brand-playbook-2026',
   },
+
 };
 
 export default function TradeShowActivationStrategies() {

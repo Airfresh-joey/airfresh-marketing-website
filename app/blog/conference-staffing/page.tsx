@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Conference Staffing: Beyond the Badge Scan | Air Fresh Marketing',
   description: 'Conference staffing is about more than just warm bodies. Here\'s how to staff conferences that generate real ROI.',
-  keywords: 'conference staffing, convention staffing, conference booth staff, event registration staff, conference event staff',
+  keywords: 'conference staffing, convention staffing, conference booth staff, event registration staff, conference event staff',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/conference-staffing',
+  },
+
 };
 
 export default function ConferenceStaffing() {

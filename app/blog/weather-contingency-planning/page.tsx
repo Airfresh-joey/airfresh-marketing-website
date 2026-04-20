@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Weather Contingency Planning for Events | Air Fresh Marketing',
   description: 'Outdoor events face weather risk. Here\'s how to plan for rain, heat, cold, and everything in between.',
-  keywords: 'event weather planning, outdoor event contingency, event rain plan, weather backup plan',
+  keywords: 'event weather planning, outdoor event contingency, event rain plan, weather backup plan',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/weather-contingency-planning',
+  },
+
 };
 
 export default function WeatherPlanning() {

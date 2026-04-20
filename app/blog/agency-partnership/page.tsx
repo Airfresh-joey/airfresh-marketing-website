@@ -7,7 +7,10 @@ import { ArrowRight } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Agency Partnership: Working With Air Fresh | Air Fresh Marketing',
   description: 'Agencies: extend your reach with our nationwide staffing network. Here\'s how to partner with Air Fresh Marketing.',
-  keywords: 'agency partnership, staffing partner, experiential agency, marketing agency staffing, agency support',
+  keywords: 'agency partnership, staffing partner, experiential agency, marketing agency staffing, agency support',  alternates: {
+    canonical: 'https://www.airfreshmarketing.com/blog/agency-partnership',
+  },
+
 };
 
 export default function AgencyPartnership() {
