@@ -244,7 +244,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
         description={pageDescription}
         keywords={`${service.name.toLowerCase()}, ${venue.name} staffing, ${venue.city} trade show staff, convention center staffing`}
         structuredData={structuredData}
-        canonical={`https://airfreshmarketing.com/venues/${venue.slug}/${service.slug}`}
+        canonical={`https://www.airfreshmarketing.com/venues/${venue.slug}/${service.slug}`}
       />
 
       {/* Hero Section */}

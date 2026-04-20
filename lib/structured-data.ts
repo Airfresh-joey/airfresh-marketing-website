@@ -5,8 +5,8 @@ export const organizationSchema = {
   "@type": "Organization",
   "name": "AirFresh Marketing",
   "alternateName": "AirFresh Experiential Marketing Agency",
-  "url": "https://airfreshmarketing.com",
-  "logo": "https://airfreshmarketing.com/favicon.svg",
+  "url": "https://www.airfreshmarketing.com",
+  "logo": "https://www.airfreshmarketing.com/favicon.svg",
   "sameAs": [
     "https://www.linkedin.com/company/airfreshmarketing",
     "https://www.facebook.com/AirFreshMarketing",
@@ -34,7 +34,7 @@ export const organizationSchema = {
 export const localBusinessSchema = {
   "@type": "LocalBusiness",
   "name": "AirFresh Marketing",
-  "image": "https://airfreshmarketing.com/favicon.svg",
+  "image": "https://www.airfreshmarketing.com/favicon.svg",
   "telephone": "+1-303-720-6060",
   "email": "hello@airfreshmarketing.com",
   "address": {
@@ -50,7 +50,7 @@ export const localBusinessSchema = {
     "latitude": 39.7392,
     "longitude": -104.9903
   },
-  "url": "https://airfreshmarketing.com",
+  "url": "https://www.airfreshmarketing.com",
   "priceRange": "$$$",
   "openingHoursSpecification": [
     {
@@ -67,7 +67,7 @@ export const cityLocalBusinessSchema = (cityData: any) => ({
   "@context": "https://schema.org",
   "@type": "LocalBusiness",
   "name": cityData.businessName,
-  "image": "https://airfreshmarketing.com/favicon.svg",
+  "image": "https://www.airfreshmarketing.com/favicon.svg",
   "telephone": cityData.phone,
   "email": "hello@airfreshmarketing.com",
   "address": {
@@ -303,7 +303,7 @@ export const imageObjectSchema = ({
     "@type": "Organization",
     "name": "AirFresh Marketing"
   },
-  "license": "https://airfreshmarketing.com/terms"
+  "license": "https://www.airfreshmarketing.com/terms"
 });
 
 // Gallery schema for event photo collections
@@ -381,7 +381,7 @@ export const articleSchema = (article: {
   "keywords": article.keywords?.join(", ") || "experiential marketing, brand activation, event marketing",
   "mainEntityOfPage": {
     "@type": "WebPage",
-    "@id": "https://airfreshmarketing.com/blog"
+    "@id": "https://www.airfreshmarketing.com/blog"
   }
 });
 
@@ -393,7 +393,7 @@ export const authorSchema = {
   "worksFor": {
     "@type": "Organization",
     "name": "AirFresh Marketing",
-    "url": "https://airfreshmarketing.com"
+    "url": "https://www.airfreshmarketing.com"
   },
   "description": "Experiential marketing expertise serving brands nationwide. Specialists in brand activations, event production, and guerrilla marketing.",
   "knowsAbout": [
@@ -427,7 +427,7 @@ export const webPageSchema = (page: {
   "isPartOf": {
     "@type": "WebSite",
     "name": "AirFresh Marketing",
-    "url": "https://airfreshmarketing.com"
+    "url": "https://www.airfreshmarketing.com"
   },
   "about": {
     "@type": "Thing",
@@ -467,12 +467,12 @@ export const getHomepageSchema = () => ({
     faqSchema,
     authorSchema,
     breadcrumbSchema([
-      { name: "Home", url: "https://airfreshmarketing.com" }
+      { name: "Home", url: "https://www.airfreshmarketing.com" }
     ]),
     webPageSchema({
       title: "AirFresh Marketing - Leading Experiential Marketing Agency",
       description: "Experiential marketing agency specializing in brand activations, event production, and guerrilla marketing campaigns nationwide.",
-      url: "https://airfreshmarketing.com",
+      url: "https://www.airfreshmarketing.com",
       type: "WebSite"
     })
   ]

@@ -58,10 +58,10 @@ export default async function StatePage({ params }: StatePageProps) {
     "@graph": [
       {
         "@type": ["LocalBusiness", "MarketingAgency"],
-        "@id": `https://airfreshmarketing.com/states/${stateSlug}#business`,
+        "@id": `https://www.airfreshmarketing.com/states/${stateSlug}#business`,
         "name": `AirFresh Marketing - ${state.name}`,
         "description": `Professional event staffing, brand ambassadors, and experiential marketing services throughout ${state.name}.`,
-        "url": `https://airfreshmarketing.com/states/${stateSlug}`,
+        "url": `https://www.airfreshmarketing.com/states/${stateSlug}`,
         "telephone": "+1-303-720-6060",
         "email": "hello@airfreshmarketing.com",
         "address": {

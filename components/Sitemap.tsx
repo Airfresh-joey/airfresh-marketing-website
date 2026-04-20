@@ -2,7 +2,7 @@ export default function Sitemap() {
   const sitemap = {
     pages: [
       {
-        url: 'https://airfreshmarketing.com',
+        url: 'https://www.airfreshmarketing.com',
         title: 'Home - Premier Experiential Marketing Agency',
         description: 'Leading experiential marketing agency specializing in brand activations, event marketing, and customer engagement campaigns nationwide',
         lastModified: '2025-09-09',
@@ -10,7 +10,7 @@ export default function Sitemap() {
         keywords: ['experiential marketing', 'brand activation', 'event marketing']
       },
       {
-        url: 'https://airfreshmarketing.com/about',
+        url: 'https://www.airfreshmarketing.com/about',
         title: 'About - 20+ Years of Experiential Marketing Excellence',
         description: 'Learn about AirFresh Marketing\'s 20+ year journey serving 300+ brands across 50+ cities',
         lastModified: '2025-09-09',
@@ -18,7 +18,7 @@ export default function Sitemap() {
         keywords: ['about experiential marketing', 'marketing agency history', 'brand activation experts']
       },
       {
-        url: 'https://airfreshmarketing.com/services',
+        url: 'https://www.airfreshmarketing.com/services',
         title: 'Experiential Marketing Services - Brand Activations & Events',
         description: 'Comprehensive experiential marketing services including brand activations, corporate events, product sampling',
         lastModified: '2025-09-09',
@@ -26,7 +26,7 @@ export default function Sitemap() {
         keywords: ['experiential marketing services', 'brand activation services', 'corporate events']
       },
       {
-        url: 'https://airfreshmarketing.com/talent',
+        url: 'https://www.airfreshmarketing.com/talent',
         title: 'Professional Brand Ambassadors & Event Talent Network',
         description: 'Hire professional brand ambassadors from our network of 5,000+ verified specialists',
         lastModified: '2025-09-09',
@@ -34,7 +34,7 @@ export default function Sitemap() {
         keywords: ['brand ambassadors', 'event staff', 'promotional talent']
       },
       {
-        url: 'https://airfreshmarketing.com/projects/case-studies',
+        url: 'https://www.airfreshmarketing.com/projects/case-studies',
         title: 'Experiential Marketing Case Studies & Success Stories',
         description: 'Explore 500+ case studies showcasing real results from experiential marketing campaigns',
         lastModified: '2025-09-09',
@@ -42,7 +42,7 @@ export default function Sitemap() {
         keywords: ['case studies', 'success stories', 'campaign results']
       },
       {
-        url: 'https://airfreshmarketing.com/contact',
+        url: 'https://www.airfreshmarketing.com/contact',
         title: 'Contact AirFresh Marketing - Get Your Free Consultation',
         description: 'Contact our experiential marketing experts for a free consultation on your next campaign',
         lastModified: '2025-09-09',

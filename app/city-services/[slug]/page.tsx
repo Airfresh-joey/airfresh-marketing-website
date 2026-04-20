@@ -9,6 +9,7 @@ import { serviceTypes } from "@/server/city-services-data";
 import { cityLocations } from "@/server/city-data";
 import { cities as allCitiesData } from "@/server/cities-data";
 import { portfolioCaseStudies } from "@/server/portfolio-case-studies";
+import { getCityServiceContent } from "@/server/city-service-content";
 import type { Metadata } from 'next';
 
 interface CityServicePageProps {
@@ -42,14 +43,19 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
   
   const cityName = formatCityNameMeta(parsed.citySlug);
   const serviceName = parsed.service.name;
-  
+
+  // Check for enriched content
+  const enriched = getCityServiceContent(slug);
+  const title = enriched ? enriched.metaTitle : `${serviceName} ${cityName} | Professional ${serviceName} Services | AirFresh Marketing`;
+  const description = enriched ? enriched.metaDescription : `${serviceName} ${cityName} services from AirFresh Marketing. ${parsed.service.description} Contact us for professional ${serviceName.toLowerCase()} in ${cityName} today.`;
+
   return {
-    title: `${serviceName} in ${cityName}`,
-    description: `Professional ${serviceName.toLowerCase()} in ${cityName}. Local expertise, trained staff, and reliable service for your brand.`,
+    title,
+    description,
     keywords: `${serviceName.toLowerCase()} ${cityName}, ${cityName} ${serviceName.toLowerCase()}, ${parsed.service.keywords.join(', ')}`,
     openGraph: {
       title: `${serviceName} ${cityName} | AirFresh Marketing`,
-      description: `Professional ${serviceName.toLowerCase()} services in ${cityName}.`,
+      description,
       url: `https://www.airfreshmarketing.com/city-services/${slug}`,
       type: 'website',
       images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
@@ -57,7 +63,7 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
     twitter: {
       card: 'summary_large_image',
       title: `${serviceName} ${cityName} | AirFresh Marketing`,
-      description: `Professional ${serviceName.toLowerCase()} services in ${cityName}.`,
+      description,
       images: ['/images/og-image.jpg'],
     },
     alternates: {
@@ -113,7 +119,6 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   }
 
   const { citySlug, serviceSlug } = parsed;
-  const cityName = formatCityName(citySlug);
   const service = serviceTypes.find(s => s.slug === serviceSlug);
 
   if (!service) {
@@ -125,8 +130,12 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
     location => location.city.toLowerCase().replace(/\s+/g, '-') === citySlug
   );
 
+  // Check for enriched city-specific content
+  const enriched = getCityServiceContent(slug);
+  const cityName = enriched ? enriched.cityName : formatCityName(citySlug);
+
   // SEO: Exact keyword phrase format (per Ben's requirements)
-  const keywordPhrase = `${service.name} ${cityName}`;
+  const keywordPhrase = enriched ? enriched.h1 : `${service.name} ${cityName}`;
   const pageTitle = `${keywordPhrase} | Professional ${service.name} Services | AirFresh Marketing`;
   const pageDescription = `${keywordPhrase} services from AirFresh Marketing. ${service.description} Contact us for professional ${service.name.toLowerCase()} in ${cityName} today.`;
 
@@ -160,10 +169,10 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
     "@graph": [
       {
         "@type": ["LocalBusiness", "MarketingAgency"],
-        "@id": `https://airfreshmarketing.com/city-services/${slug}#business`,
+        "@id": `https://www.airfreshmarketing.com/city-services/${slug}#business`,
         "name": `AirFresh Marketing - ${keywordPhrase}`,
         "description": pageDescription,
-        "url": `https://airfreshmarketing.com/city-services/${slug}`,
+        "url": `https://www.airfreshmarketing.com/city-services/${slug}`,
         "telephone": "+1-303-720-6060",
         "email": "hello@airfreshmarketing.com",
         "address": {
@@ -201,7 +210,14 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
       },
       {
         "@type": "FAQPage",
-        "mainEntity": [
+        "mainEntity": enriched ? enriched.faqs.map(faq => ({
+          "@type": "Question" as const,
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer" as const,
+            "text": faq.answer
+          }
+        })) : [
           {
             "@type": "Question",
             "name": `How do I get started with ${service.name.toLowerCase()} in ${cityName}?`,
@@ -236,7 +252,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
           'brand activation'
         ].join(', ')}
         pageType="service"
-        canonical={`https://airfreshmarketing.com/city-services/${slug}`}
+        canonical={`https://www.airfreshmarketing.com/city-services/${slug}`}
         structuredData={structuredData}
       />
 
@@ -261,7 +277,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
             </h1>
             {/* SEO: First sentence with exact keyword phrase */}
             <p className="text-xl text-white/90 mb-8 max-w-3xl mx-auto drop-shadow-lg">
-              {keywordPhrase} services are available year-round from AirFresh Marketing. {service.description}
+              {enriched ? enriched.heroDescription : `${keywordPhrase} services are available year-round from AirFresh Marketing. ${service.description}`}
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
@@ -287,116 +303,264 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         </div>
       </section>
 
-      {/* Service Benefits - SEO: H2 with exact keyword phrase at beginning */}
-      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <Card>
-          <CardHeader>
-            <CardTitle className="text-2xl">
-              <h2>{keywordPhrase} - Why Choose AirFresh Marketing?</h2>
-            </CardTitle>
-          </CardHeader>
-          <CardContent>
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Local Market Expertise</h3>
-                  <p className="text-gray-600">Deep understanding of {cityName}'s unique market dynamics and consumer behaviors</p>
-                </div>
+      {/* Enriched Content Sections (when city-specific content exists) */}
+      {enriched ? (
+        <>
+          {/* Unique body sections with rich prose */}
+          {enriched.sections.map((section, index) => (
+            <section key={index} className={`py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto ${index % 2 === 1 ? 'bg-gray-50' : ''}`}>
+              <div className="prose prose-lg max-w-none">
+                <h2 className="text-3xl font-bold mb-6">{section.heading}</h2>
+                <p className="text-gray-700 leading-relaxed">{section.content}</p>
               </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Experienced Team</h3>
-                  <p className="text-gray-600">Trained professionals with proven track records in {service.name.toLowerCase()}</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Rapid Deployment</h3>
-                  <p className="text-gray-600">Quick mobilization of resources for time-sensitive campaigns in {cityName}</p>
-                </div>
-              </div>
-              <div className="flex items-start space-x-3">
-                <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
-                <div>
-                  <h3 className="font-semibold mb-2">Measurable Results</h3>
-                  <p className="text-gray-600">Data-driven approach with detailed reporting and ROI tracking</p>
-                </div>
-              </div>
-            </div>
-          </CardContent>
-        </Card>
-      </section>
+            </section>
+          ))}
 
-      {/* SEO: Additional content paragraph to reach 350+ words */}
-      <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-        <div className="prose prose-lg max-w-none">
-          <p>
-            {keywordPhrase} is one of the most effective ways to connect with your target audience and drive meaningful engagement. 
-            At AirFresh Marketing, we specialize in providing top-tier {service.name.toLowerCase()} services throughout {cityName} and the surrounding areas. 
-            Our team of experienced professionals understands the unique characteristics of the {cityName} market and tailors every campaign to maximize your brand's impact.
-          </p>
-          <p>
-            Whether you're launching a new product, building brand awareness, or driving foot traffic to your {cityName} location, 
-            our {service.name.toLowerCase()} team delivers results. We've helped hundreds of brands achieve their marketing goals through 
-            strategic activations, engaging consumer interactions, and measurable outcomes. From downtown {cityName} to suburban neighborhoods, 
-            we have the local expertise and national resources to execute campaigns of any scale.
-          </p>
-        </div>
-      </section>
+          {/* Local Venues & Events Grid */}
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center mb-12">
+                {keywordPhrase} - Popular Venues & Events
+              </h2>
+              <div className="grid md:grid-cols-2 gap-8">
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <MapPin className="h-5 w-5 text-primary" />
+                      Top Venues in {enriched.cityName}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {enriched.localVenues.map((venue, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                          <span>{venue}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+                <Card>
+                  <CardHeader>
+                    <CardTitle className="text-xl flex items-center gap-2">
+                      <Star className="h-5 w-5 text-primary" />
+                      Popular Events in {enriched.cityName}
+                    </CardTitle>
+                  </CardHeader>
+                  <CardContent>
+                    <ul className="space-y-3">
+                      {enriched.localEvents.map((event, i) => (
+                        <li key={i} className="flex items-center gap-2">
+                          <CheckCircle className="h-4 w-4 text-green-500 flex-shrink-0" />
+                          <span>{event}</span>
+                        </li>
+                      ))}
+                    </ul>
+                  </CardContent>
+                </Card>
+              </div>
+            </div>
+          </section>
 
-      {/* Stats Section */}
-      <section className="py-16 bg-gray-50">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl font-bold text-center mb-12">
-            {keywordPhrase} - Proven Results
-          </h2>
-          <div className="grid md:grid-cols-4 gap-8">
-            <div className="text-center">
-              <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <div className="text-3xl font-bold mb-2">50,000+</div>
-              <div className="text-gray-600">Consumers Engaged</div>
-            </div>
-            <div className="text-center">
-              <TrendingUp className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <div className="text-3xl font-bold mb-2">425%</div>
-              <div className="text-gray-600">Average ROI</div>
-            </div>
-            <div className="text-center">
-              <Award className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <div className="text-3xl font-bold mb-2">100+</div>
-              <div className="text-gray-600">Successful Campaigns</div>
-            </div>
-            <div className="text-center">
-              <Clock className="h-12 w-12 mx-auto mb-4 text-primary" />
-              <div className="text-3xl font-bold mb-2">24/7</div>
-              <div className="text-gray-600">Support Available</div>
-            </div>
-          </div>
-        </div>
-      </section>
+          {/* Pricing Note */}
+          <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <Card className="border-primary/20 bg-primary/5">
+              <CardContent className="p-6">
+                <h3 className="font-semibold text-lg mb-2">{enriched.cityName} Market Pricing</h3>
+                <p className="text-gray-700">{enriched.pricingNote}</p>
+                <Link href="/pricing" className="text-primary hover:underline mt-2 inline-block font-medium">
+                  View Full Pricing Guide →
+                </Link>
+              </CardContent>
+            </Card>
+          </section>
 
-      {/* Service Areas */}
-      {cityData && (
-        <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
-          <Card>
-            <CardHeader>
-              <CardTitle className="text-2xl">Service Areas in {cityName} Metro</CardTitle>
-            </CardHeader>
-            <CardContent>
-              <div className="grid md:grid-cols-3 gap-4">
-                {cityData.serviceAreas.map((area, index) => (
-                  <div key={index} className="flex items-center space-x-2">
-                    <MapPin className="h-4 w-4 text-primary" />
-                    <span>{area}</span>
-                  </div>
+          {/* Stats Section */}
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center mb-12">
+                {keywordPhrase} - Proven Results
+              </h2>
+              <div className="grid md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">5,000+</div>
+                  <div className="text-gray-600">Vetted Professionals</div>
+                </div>
+                <div className="text-center">
+                  <TrendingUp className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">425%</div>
+                  <div className="text-gray-600">Average ROI</div>
+                </div>
+                <div className="text-center">
+                  <Award className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">300+</div>
+                  <div className="text-gray-600">National Brands Served</div>
+                </div>
+                <div className="text-center">
+                  <Clock className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">48hr</div>
+                  <div className="text-gray-600">Rapid Deployment</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Areas Served */}
+          <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">Areas Served in {enriched.cityName}</CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-3 sm:grid-cols-2 gap-4">
+                  {enriched.areasServed.map((area, index) => (
+                    <div key={index} className="flex items-center space-x-2">
+                      <MapPin className="h-4 w-4 text-primary flex-shrink-0" />
+                      <span>{area}</span>
+                    </div>
+                  ))}
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* FAQ Section - Enriched (10 FAQs for Google rich results) */}
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center mb-12">
+                {keywordPhrase} - Frequently Asked Questions
+              </h2>
+              <div className="space-y-6">
+                {enriched.faqs.map((faq, index) => (
+                  <Card key={index}>
+                    <CardHeader>
+                      <CardTitle className="text-lg font-semibold">{faq.question}</CardTitle>
+                    </CardHeader>
+                    <CardContent>
+                      <p className="text-gray-700 leading-relaxed">{faq.answer}</p>
+                    </CardContent>
+                  </Card>
                 ))}
               </div>
-            </CardContent>
-          </Card>
-        </section>
+            </div>
+          </section>
+        </>
+      ) : (
+        <>
+          {/* Generic Service Benefits - fallback for non-enriched cities */}
+          <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <Card>
+              <CardHeader>
+                <CardTitle className="text-2xl">
+                  <h2>{keywordPhrase} - Why Choose AirFresh Marketing?</h2>
+                </CardTitle>
+              </CardHeader>
+              <CardContent>
+                <div className="grid md:grid-cols-2 gap-6">
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold mb-2">Local Market Expertise</h3>
+                      <p className="text-gray-600">Deep understanding of {cityName}&apos;s unique market dynamics and consumer behaviors</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold mb-2">Experienced Team</h3>
+                      <p className="text-gray-600">Trained professionals with proven track records in {service.name.toLowerCase()}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold mb-2">Rapid Deployment</h3>
+                      <p className="text-gray-600">Quick mobilization of resources for time-sensitive campaigns in {cityName}</p>
+                    </div>
+                  </div>
+                  <div className="flex items-start space-x-3">
+                    <CheckCircle className="h-6 w-6 text-green-500 flex-shrink-0 mt-1" />
+                    <div>
+                      <h3 className="font-semibold mb-2">Measurable Results</h3>
+                      <p className="text-gray-600">Data-driven approach with detailed reporting and ROI tracking</p>
+                    </div>
+                  </div>
+                </div>
+              </CardContent>
+            </Card>
+          </section>
+
+          {/* SEO: Additional content paragraph to reach 350+ words */}
+          <section className="py-12 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+            <div className="prose prose-lg max-w-none">
+              <p>
+                {keywordPhrase} is one of the most effective ways to connect with your target audience and drive meaningful engagement.
+                At AirFresh Marketing, we specialize in providing top-tier {service.name.toLowerCase()} services throughout {cityName} and the surrounding areas.
+                Our team of experienced professionals understands the unique characteristics of the {cityName} market and tailors every campaign to maximize your brand&apos;s impact.
+              </p>
+              <p>
+                Whether you&apos;re launching a new product, building brand awareness, or driving foot traffic to your {cityName} location,
+                our {service.name.toLowerCase()} team delivers results. We&apos;ve helped hundreds of brands achieve their marketing goals through
+                strategic activations, engaging consumer interactions, and measurable outcomes. From downtown {cityName} to suburban neighborhoods,
+                we have the local expertise and national resources to execute campaigns of any scale.
+              </p>
+            </div>
+          </section>
+
+          {/* Stats Section */}
+          <section className="py-16 bg-gray-50">
+            <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+              <h2 className="text-3xl font-bold text-center mb-12">
+                {keywordPhrase} - Proven Results
+              </h2>
+              <div className="grid md:grid-cols-4 gap-8">
+                <div className="text-center">
+                  <Users className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">50,000+</div>
+                  <div className="text-gray-600">Consumers Engaged</div>
+                </div>
+                <div className="text-center">
+                  <TrendingUp className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">425%</div>
+                  <div className="text-gray-600">Average ROI</div>
+                </div>
+                <div className="text-center">
+                  <Award className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">100+</div>
+                  <div className="text-gray-600">Successful Campaigns</div>
+                </div>
+                <div className="text-center">
+                  <Clock className="h-12 w-12 mx-auto mb-4 text-primary" />
+                  <div className="text-3xl font-bold mb-2">24/7</div>
+                  <div className="text-gray-600">Support Available</div>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          {/* Service Areas */}
+          {cityData && (
+            <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+              <Card>
+                <CardHeader>
+                  <CardTitle className="text-2xl">Service Areas in {cityName} Metro</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <div className="grid md:grid-cols-3 gap-4">
+                    {cityData.serviceAreas.map((area, index) => (
+                      <div key={index} className="flex items-center space-x-2">
+                        <MapPin className="h-4 w-4 text-primary" />
+                        <span>{area}</span>
+                      </div>
+                    ))}
+                  </div>
+                </CardContent>
+              </Card>
+            </section>
+          )}
+        </>
       )}
 
       {/* Related Services */}

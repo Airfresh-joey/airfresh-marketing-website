@@ -33,7 +33,7 @@ export default function EventsDirectory() {
       "item": {
         "@type": "Event",
         "name": event.name,
-        "url": `https://airfreshmarketing.com/events/${event.slug}`
+        "url": `https://www.airfreshmarketing.com/events/${event.slug}`
       }
     }))
   };

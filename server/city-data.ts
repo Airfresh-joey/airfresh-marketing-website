@@ -42,7 +42,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -73.9857,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Advertising Agency", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/new-york",
+    website: "https://www.airfreshmarketing.com/city/new-york",
     description: "AirFresh Marketing New York specializes in experiential marketing, brand activations, and event staffing throughout NYC and the tri-state area. We create unforgettable brand experiences in Times Square, Brooklyn, Manhattan, and beyond.",
     openingHours: {
       monday: "09:00-18:00",
@@ -89,7 +89,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -80.1918,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Advertising Agency", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/miami",
+    website: "https://www.airfreshmarketing.com/city/miami",
     description: "AirFresh Marketing Miami delivers innovative experiential marketing and brand activations throughout South Florida. From South Beach to Wynwood, we create memorable brand experiences that resonate with Miami's diverse audience.",
     openingHours: {
       monday: "09:00-18:00",
@@ -136,7 +136,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -118.2437,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Entertainment Marketing", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/los-angeles",
+    website: "https://www.airfreshmarketing.com/city/los-angeles",
     description: "AirFresh Marketing Los Angeles specializes in entertainment industry marketing, celebrity events, and brand activations throughout LA County. From Hollywood to Santa Monica, we create star-studded brand experiences.",
     openingHours: {
       monday: "09:00-18:00",
@@ -183,7 +183,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -87.6298,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Trade Show Marketing", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/chicago",
+    website: "https://www.airfreshmarketing.com/city/chicago",
     description: "AirFresh Marketing Chicago delivers experiential marketing and brand activations throughout the Midwest. From Navy Pier to Millennium Park, we create engaging brand experiences that connect with Chicago's diverse communities.",
     openingHours: {
       monday: "09:00-18:00",
@@ -230,7 +230,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -84.3880,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Sports Marketing Agency", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/atlanta",
+    website: "https://www.airfreshmarketing.com/city/atlanta",
     description: "AirFresh Marketing Atlanta specializes in experiential marketing and brand activations throughout the Southeast. From Midtown to Buckhead, we create impactful brand experiences that resonate with Atlanta's dynamic market.",
     openingHours: {
       monday: "09:00-18:00",
@@ -277,7 +277,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -104.9903,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Outdoor Marketing Specialist", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/denver",
+    website: "https://www.airfreshmarketing.com/city/denver",
     description: "AirFresh Marketing headquarters in Denver leads nationwide experiential marketing campaigns. We specialize in outdoor brand activations, ski resort marketing, and craft beverage promotions throughout Colorado.",
     openingHours: {
       monday: "09:00-18:00",
@@ -324,7 +324,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -122.4194,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Tech Marketing Agency", "Event Management Company", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/san-francisco",
+    website: "https://www.airfreshmarketing.com/city/san-francisco",
     description: "AirFresh Marketing San Francisco specializes in tech industry marketing, startup launches, and innovative brand activations throughout the Bay Area. From Union Square to Silicon Valley, we create cutting-edge brand experiences.",
     openingHours: {
       monday: "09:00-18:00",
@@ -371,7 +371,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -71.0589,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "College Marketing Specialist", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/boston",
+    website: "https://www.airfreshmarketing.com/city/boston",
     description: "AirFresh Marketing Boston delivers experiential marketing and brand activations throughout New England. From Fenway to Harvard Square, we create memorable brand experiences that connect with Boston's educated and diverse audience.",
     openingHours: {
       monday: "09:00-18:00",
@@ -418,7 +418,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -96.7970,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Sports Marketing Agency", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/dallas",
+    website: "https://www.airfreshmarketing.com/city/dallas",
     description: "AirFresh Marketing Dallas specializes in experiential marketing and brand activations throughout Texas. From Deep Ellum to Uptown, we create big brand experiences that match the Texas-sized market opportunity.",
     openingHours: {
       monday: "09:00-18:00",
@@ -465,7 +465,7 @@ export const cityLocations: CityLocation[] = [
     longitude: -122.3321,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Tech Marketing Agency", "Brand Marketing Consultant"],
-    website: "https://airfreshmarketing.com/city/seattle",
+    website: "https://www.airfreshmarketing.com/city/seattle",
     description: "AirFresh Marketing Seattle delivers innovative experiential marketing throughout the Pacific Northwest. From Pike Place to Capitol Hill, we create authentic brand experiences that resonate with Seattle's progressive market.",
     openingHours: {
       monday: "09:00-18:00",
@@ -520,7 +520,7 @@ function createCityLocationFromData(cityData: CityData): CityLocation {
     longitude: cityData.coordinates?.lng || 0,
     primaryCategory: "Marketing Agency",
     additionalCategories: ["Event Management Company", "Brand Marketing Consultant", "Advertising Agency"],
-    website: `https://airfreshmarketing.com/city/${cityData.slug}`,
+    website: `https://www.airfreshmarketing.com/city/${cityData.slug}`,
     description: `AirFresh Marketing ${cityData.city} specializes in experiential marketing, brand activations, and event staffing throughout ${cityData.city} and the surrounding area. We create unforgettable brand experiences tailored to the local market.`,
     openingHours: {
       monday: "09:00-18:00",

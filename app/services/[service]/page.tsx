@@ -1130,7 +1130,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         title={`${service.title} | Professional Services - AirFresh Marketing`}
         description={service.description}
         pageType="service"
-        canonical={`https://airfreshmarketing.com/services/${serviceName}`}
+        canonical={`https://www.airfreshmarketing.com/services/${serviceName}`}
         structuredData={structuredData}
       />
 

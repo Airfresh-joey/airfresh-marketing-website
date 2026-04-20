@@ -47,7 +47,7 @@ export default function IndustryPage() {
         title={industry.title}
         description={industry.metaDescription}
         pageType="service"
-        canonical={`https://airfreshmarketing.com/industries/${industry.slug}`}
+        canonical={`https://www.airfreshmarketing.com/industries/${industry.slug}`}
         structuredData={structuredData}
       />
 

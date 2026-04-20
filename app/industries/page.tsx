@@ -38,7 +38,7 @@ export default function IndustriesPage() {
       "@type": "ListItem",
       "position": index + 1,
       "name": industry.name,
-      "url": `https://airfreshmarketing.com/industries/${industry.slug}`
+      "url": `https://www.airfreshmarketing.com/industries/${industry.slug}`
     }))
   };
 

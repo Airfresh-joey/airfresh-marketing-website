@@ -68,7 +68,7 @@ export default function CaseStudyDetail() {
     "@type": "CreativeWork",
     "name": caseStudy.name,
     "description": caseStudy.description,
-    "url": `https://airfreshmarketing.com/case-studies/${caseStudy.id}`,
+    "url": `https://www.airfreshmarketing.com/case-studies/${caseStudy.id}`,
     "creator": {
       "@type": "Organization",
       "name": "AirFresh Marketing"
@@ -84,7 +84,7 @@ export default function CaseStudyDetail() {
       <SEO
         title={`${caseStudy.name} | Case Study - AirFresh Marketing`}
         description={caseStudy.description}
-        canonical={`https://airfreshmarketing.com/case-studies/${caseStudy.id}`}
+        canonical={`https://www.airfreshmarketing.com/case-studies/${caseStudy.id}`}
         structuredData={structuredData}
       />
 

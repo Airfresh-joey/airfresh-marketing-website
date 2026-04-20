@@ -351,10 +351,10 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
     "@graph": [
       {
         "@type": ["LocalBusiness", "MarketingAgency"],
-        "@id": `https://airfreshmarketing.com/cities/${slug}/${service}#business`,
+        "@id": `https://www.airfreshmarketing.com/cities/${slug}/${service}#business`,
         "name": `AirFresh Marketing - ${city.name} ${serviceData.name}`,
         "description": pageDescription,
-        "url": `https://airfreshmarketing.com/cities/${slug}/${service}`,
+        "url": `https://www.airfreshmarketing.com/cities/${slug}/${service}`,
         "telephone": "+1-303-720-6060",
         "email": "hello@airfreshmarketing.com",
         "address": {
@@ -418,7 +418,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
           `best ${serviceData.name.toLowerCase()} agency ${city.name}`
         ].join(', ')}
         pageType="service"
-        canonical={`https://airfreshmarketing.com/cities/${slug}/${service}`}
+        canonical={`https://www.airfreshmarketing.com/cities/${slug}/${service}`}
         structuredData={structuredData}
       />
 

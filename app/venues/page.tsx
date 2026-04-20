@@ -24,7 +24,7 @@ export default function VenuesDirectory() {
       "item": {
         "@type": "Place",
         "name": venue.name,
-        "url": `https://airfreshmarketing.com/venues/${venue.slug}`
+        "url": `https://www.airfreshmarketing.com/venues/${venue.slug}`
       }
     }))
   };

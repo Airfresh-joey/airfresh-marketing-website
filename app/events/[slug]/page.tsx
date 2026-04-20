@@ -141,7 +141,7 @@ export default async function EventPage({ params }: EventPageProps) {
         description={event.metaDescription}
         keywords={event.keywords.join(', ')}
         structuredData={structuredData}
-        canonical={`https://airfreshmarketing.com/events/${event.slug}`}
+        canonical={`https://www.airfreshmarketing.com/events/${event.slug}`}
       />
 
       {/* Hero Section */}

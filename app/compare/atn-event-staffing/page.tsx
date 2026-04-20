@@ -1,56 +1,67 @@
 import { Metadata } from 'next';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
-import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Mountain, Building } from 'lucide-react';
+import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Alt Terrain - Experiential Agency Comparison',
-  description: 'Compare Air Fresh Marketing vs Alt Terrain: More cities, faster deployment, flexible pricing. See why growing brands choose Air Fresh Marketing.',
-  keywords: 'Air Fresh Marketing vs Alt Terrain, experiential marketing comparison, brand activation agency, Alt Terrain alternative',
+  title: 'Air Fresh Marketing vs ATN Event Staffing - Agency Comparison [2026]',
+  description: 'Compare Air Fresh Marketing vs ATN Event Staffing: GPS check-in tech, video training, nationwide coverage. See why brands are switching to AirFresh.',
+  keywords: 'Air Fresh Marketing vs ATN Event Staffing, event staffing comparison, brand activation agency, ATN Event Staffing alternative',
   openGraph: {
-    title: 'Air Fresh Marketing vs Alt Terrain - Which Agency Fits Your Needs?',
-    description: 'Compare services, coverage, and value. Find your ideal experiential marketing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/alt-terrain',
+    title: 'Air Fresh Marketing vs ATN Event Staffing - Which Agency is Right for You?',
+    description: 'Compare services, technology, and value. Find your ideal event staffing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/atn-event-staffing',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/alt-terrain',
+    canonical: 'https://www.airfreshmarketing.com/compare/atn-event-staffing',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states', competitor: 'NYC & Northeast focus', winner: 'afm' },
-  { feature: 'Years in Business', afm: '15+ years', competitor: '20+ years', winner: 'competitor' },
-  { feature: 'Wild Posting/Wheat Paste', afm: 'Available nationwide', competitor: 'Specialty (NYC)', winner: 'tie' },
-  { feature: 'Street Teams', afm: 'All major markets', competitor: 'Select markets', winner: 'afm' },
-  { feature: 'Campaign Minimums', afm: 'Flexible for all budgets', competitor: 'Higher minimums', winner: 'afm' },
-  { feature: 'Rapid Deployment', afm: '24-48 hours possible', competitor: 'Standard lead times', winner: 'afm' },
-  { feature: 'Event Staffing', afm: 'Full service', competitor: 'Limited', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '10,000+ network', competitor: 'Smaller network', winner: 'afm' },
-  { feature: 'Product Sampling', afm: 'Full service', competitor: 'Available', winner: 'tie' },
-  { feature: 'Real-time Reporting', afm: 'Included', competitor: 'Available', winner: 'tie' },
+  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
+  { feature: 'Staff Network Size', afm: '5,000+ vetted professionals', competitor: 'Large network', winner: 'afm' },
+  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Basic reporting', winner: 'afm' },
+  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'Varies by market', winner: 'afm' },
+  { feature: 'Convention Staffing', afm: 'CES, SEMA, NAB specialization', competitor: 'Available', winner: 'tie' },
+  { feature: 'Brand Ambassadors', afm: 'Trained with proprietary platform', competitor: 'Standard', winner: 'afm' },
+  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Quote-based', winner: 'afm' },
+  { feature: 'Client Portal', afm: 'Real-time reporting dashboard', competitor: 'Post-event reports', winner: 'afm' },
+  { feature: 'Minimum Spend', afm: 'Flexible for all budgets', competitor: 'Higher minimums', winner: 'afm' },
+  { feature: 'Years Experience', afm: '20+ years', competitor: '20+ years', winner: 'tie' },
 ];
 
 const afmAdvantages = [
   {
-    icon: MapPin,
-    title: 'True Nationwide Coverage',
-    description: 'While Alt Terrain focuses on NYC and the Northeast, we execute campaigns in all 50 states with local expertise in every market.',
+    icon: Zap,
+    title: 'Technology-First Approach',
+    description: 'GPS check-in, video training platform, real-time reporting—our proprietary technology ensures accountability and quality at every activation.',
   },
   {
     icon: DollarSign,
-    title: 'Budget-Flexible Programs',
-    description: 'No massive minimums. We work with emerging brands and Fortune 500s alike, scaling programs to fit your budget.',
+    title: 'Published Pricing',
+    description: 'Transparent rates starting at $25/hr, no surprises. Know exactly what you\'re paying before you commit.',
   },
   {
-    icon: Zap,
-    title: 'Rapid Market Activation',
-    description: 'Need to launch in multiple cities fast? Our network enables 24-48 hour deployment when timing is critical.',
+    icon: Award,
+    title: 'Trade Show Specialists',
+    description: 'Deep expertise at CES, SEMA, NAB, MAGIC and other major conventions. We know the venues, the audiences, and the logistics.',
   },
   {
-    icon: Users,
-    title: 'Full-Service Event Staffing',
-    description: 'Beyond street marketing, we provide complete event staffing, trade show teams, and brand ambassador programs.',
+    icon: Clock,
+    title: 'Rapid Deployment',
+    description: '48-hour emergency staffing capability. When you need staff fast, our network and technology make it possible.',
   },
+];
+
+const servicesOffered = [
+  { name: 'Brand Ambassadors', afm: true, atn: true },
+  { name: 'Convention Staffing', afm: true, atn: true },
+  { name: 'GPS Check-In Technology', afm: true, atn: false },
+  { name: 'Video Training Platform', afm: true, atn: false },
+  { name: 'Trade Show Staff', afm: true, atn: true },
+  { name: 'Real-Time Dashboards', afm: true, atn: false },
+  { name: 'Product Sampling', afm: true, atn: true },
+  { name: 'Promotional Models', afm: true, atn: true },
 ];
 
 const marketsCovered = [
@@ -60,18 +71,7 @@ const marketsCovered = [
   'San Francisco', 'Portland', 'Nashville', 'Las Vegas', 'And 200+ more',
 ];
 
-const servicesOffered = [
-  { name: 'Street Teams', afm: true, alt: true },
-  { name: 'Wild Posting', afm: true, alt: true },
-  { name: 'Brand Ambassadors', afm: true, alt: false },
-  { name: 'Event Staffing', afm: true, alt: false },
-  { name: 'Product Sampling', afm: true, alt: true },
-  { name: 'Trade Show Staff', afm: true, alt: false },
-  { name: 'Guerrilla Marketing', afm: true, alt: true },
-  { name: 'Promotional Models', afm: true, alt: false },
-];
-
-export default function CompareAltTerrain() {
+export default function CompareATNEventStaffing() {
   return (
     <main className="min-h-screen bg-white">
       {/* Hero */}
@@ -83,17 +83,17 @@ export default function CompareAltTerrain() {
 
         <div className="relative max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <div className="inline-flex items-center gap-2 bg-white/10 text-white text-sm font-semibold px-4 py-1.5 rounded-full mb-6 backdrop-blur-sm">
-            <Mountain className="w-4 h-4" />
+            <Building className="w-4 h-4" />
             Agency Comparison
           </div>
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Alt Terrain
+              ATN Event Staffing
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Alt Terrain excels in NYC street marketing. Air Fresh Marketing brings that same energy nationwide—plus full-service event staffing capabilities.
+            Both agencies offer nationwide event staffing. See how Air Fresh Marketing&apos;s technology platform, transparent pricing, and trade show expertise give you a competitive edge.
           </p>
         </div>
       </section>
@@ -105,40 +105,40 @@ export default function CompareAltTerrain() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <MapPin className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Nationwide experiential marketing</p>
+              <p className="text-gray-700 font-medium mb-4">Technology-driven event staffing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> All 50 states covered
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS check-in verification
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Full event staffing services
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Mandatory video training
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Flexible budget minimums
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
                 </li>
               </ul>
             </div>
             <div className="p-8 bg-gray-100 rounded-2xl border border-gray-200">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
-                  <Mountain className="w-6 h-6 text-gray-600" />
+                  <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Alt Terrain</h3>
+                <h3 className="text-xl font-bold text-gray-800">ATN Event Staffing</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">NYC-focused street marketing</p>
+              <p className="text-gray-600 font-medium mb-4">Traditional event staffing agency</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Strong NYC presence
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Wild posting expertise
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 20+ years experience
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Northeast focus
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff network
                 </li>
               </ul>
             </div>
@@ -172,7 +172,7 @@ export default function CompareAltTerrain() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Alt Terrain
+                    ATN Event Staffing
                   </th>
                 </tr>
               </thead>
@@ -214,7 +214,7 @@ export default function CompareAltTerrain() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              We offer more services in more markets
+              Technology-enhanced staffing services across every market
             </p>
           </div>
 
@@ -232,8 +232,8 @@ export default function CompareAltTerrain() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">AT</span>
-                    {service.alt ? (
+                    <span className="text-xs text-gray-500">ATN</span>
+                    {service.atn ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -301,10 +301,11 @@ export default function CompareAltTerrain() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Go beyond NYC
+            Ready for smarter staffing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Launch your experiential campaign in any market—or all of them. Get started with a free consultation.
+            See why brands are switching to technology-driven event staffing. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
@@ -313,9 +314,9 @@ export default function CompareAltTerrain() {
                 <ArrowRight className="w-5 h-5" />
               </Button>
             </Link>
-            <Link href="/locations">
+            <Link href="/services">
               <Button size="lg" variant="outline" className="w-full sm:w-auto border-2 border-white/30 text-white hover:bg-white/10 font-bold px-8 py-6 rounded-full text-base">
-                See Our Markets
+                View Our Services
               </Button>
             </Link>
           </div>

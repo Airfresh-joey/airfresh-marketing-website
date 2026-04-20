@@ -58,10 +58,10 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
     "@graph": [
       {
         "@type": ["LocalBusiness", "MarketingAgency"],
-        "@id": `https://airfreshmarketing.com/neighborhoods/${neighborhoodSlug}#business`,
+        "@id": `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}#business`,
         "name": `AirFresh Marketing - ${neighborhood.name}, ${neighborhood.city}`,
         "description": `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`,
-        "url": `https://airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
+        "url": `https://www.airfreshmarketing.com/neighborhoods/${neighborhoodSlug}`,
         "telephone": "+1-303-720-6060",
         "email": "hello@airfreshmarketing.com",
         "address": {

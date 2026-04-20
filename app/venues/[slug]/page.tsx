@@ -79,10 +79,10 @@ export default async function VenuePage({ params }: VenuePageProps) {
     "@graph": [
       {
         "@type": ["LocalBusiness", "MarketingAgency"],
-        "@id": `https://airfreshmarketing.com/venues/${venue.slug}#business`,
+        "@id": `https://www.airfreshmarketing.com/venues/${venue.slug}#business`,
         "name": `AirFresh Marketing - ${venue.name} Staffing`,
         "description": pageDescription,
-        "url": `https://airfreshmarketing.com/venues/${venue.slug}`,
+        "url": `https://www.airfreshmarketing.com/venues/${venue.slug}`,
         "telephone": "+1-303-720-6060",
         "email": "hello@airfreshmarketing.com",
         "address": {
@@ -130,7 +130,7 @@ export default async function VenuePage({ params }: VenuePageProps) {
         description={pageDescription}
         keywords={`${venue.name} staffing, ${venue.city} event staff, ${venue.shortName} trade show staff, convention center staffing, ${venue.city} brand ambassadors`}
         structuredData={structuredData}
-        canonical={`https://airfreshmarketing.com/venues/${venue.slug}`}
+        canonical={`https://www.airfreshmarketing.com/venues/${venue.slug}`}
       />
 
       {/* Hero Section */}

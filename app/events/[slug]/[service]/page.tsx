@@ -162,7 +162,7 @@ export default async function EventServicePage({ params }: EventServicePageProps
         description={pageDescription}
         keywords={`${service.name.toLowerCase()}, ${event.name} staffing, ${event.city} event staff, ${event.category} staffing`}
         structuredData={structuredData}
-        canonical={`https://airfreshmarketing.com/events/${event.slug}/${service.slug}`}
+        canonical={`https://www.airfreshmarketing.com/events/${event.slug}/${service.slug}`}
       />
 
       {/* Hero Section */}

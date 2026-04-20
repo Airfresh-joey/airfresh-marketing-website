@@ -317,7 +317,7 @@ export default function BlogPost({ params }: BlogPostPageProps) {
       <SEO
         title={`${post.title} | Air Fresh Marketing Blog`}
         description={post.excerpt}
-        canonical={`https://airfreshmarketing.com/blog/${post.slug}`}
+        canonical={`https://www.airfreshmarketing.com/blog/${post.slug}`}
         ogImage={post.image}
       />
 

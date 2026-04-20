@@ -10,10 +10,10 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Air Fresh Marketing vs Attack! Marketing - Which Agency is Right for You?',
     description: 'Side-by-side comparison of services, reach, and value. Find the right experiential marketing partner.',
-    url: 'https://airfreshmarketing.com/compare/attack-marketing',
+    url: 'https://www.airfreshmarketing.com/compare/attack-marketing',
   },
   alternates: {
-    canonical: 'https://airfreshmarketing.com/compare/attack-marketing',
+    canonical: 'https://www.airfreshmarketing.com/compare/attack-marketing',
   },
 };
 
