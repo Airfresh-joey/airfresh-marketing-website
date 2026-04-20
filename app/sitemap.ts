@@ -9,6 +9,8 @@ import { states, stateServices } from '@/server/states-data'
 import { industries as industryList, cities as industryCities } from '@/server/industry-city-data'
 import { neighborhoods, neighborhoodServices } from '@/server/neighborhoods-data'
 import { blogPosts } from '@/server/blogPosts'
+import fs from 'fs'
+import path from 'path'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
@@ -73,6 +75,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
         priority: 0.7
       }
     }),
+    // Static blog pages (not in blogPosts array) - auto-discovered from app/blog/ directories
+    ...(() => {
+      const dynamicSlugs = new Set(blogPosts.map(p => p.slug))
+      try {
+        const blogDir = path.join(process.cwd(), 'app', 'blog')
+        return fs.readdirSync(blogDir)
+          .filter(d => d !== '[slug]' && !dynamicSlugs.has(d) && fs.existsSync(path.join(blogDir, d, 'page.tsx')))
+          .map(slug => ({
+            url: `${DOMAIN}/blog/${slug}`,
+            lastModified: today,
+            changeFrequency: 'monthly' as const,
+            priority: 0.7
+          }))
+      } catch { return [] }
+    })(),
     { url: `${DOMAIN}/portfolio`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
     // Note: Individual portfolio pages redirect to /case-studies/, so we don't include them in sitemap
     { url: `${DOMAIN}/case-studies`, lastModified: today, changeFrequency: 'weekly', priority: 0.8 },
@@ -152,6 +169,21 @@ export default function sitemap(): MetadataRoute.Sitemap {
     changeFrequency: 'weekly' as const,
     priority: 0.8
   }))
+
+  // City + service detail pages (cities/[slug]/[service]) - 8 cities × 8 services
+  const cityDetailServiceSlugs = ['brand-ambassadors', 'experiential-marketing', 'street-team-marketing', 'promotional-models', 'convention-staffing', 'product-sampling', 'event-marketing', 'trade-show-marketing']
+  const cityDetailSlugs = ['new-york', 'los-angeles', 'chicago', 'miami', 'denver', 'san-francisco', 'austin', 'atlanta']
+  const cityDetailServicePages: MetadataRoute.Sitemap = []
+  cityDetailSlugs.forEach(city => {
+    cityDetailServiceSlugs.forEach(service => {
+      cityDetailServicePages.push({
+        url: `${DOMAIN}/cities/${city}/${service}`,
+        lastModified: today,
+        changeFrequency: 'monthly' as const,
+        priority: 0.7
+      })
+    })
+  })
 
   // City-service combo pages
   const cityServicePages: MetadataRoute.Sitemap = []
@@ -275,6 +307,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPages = [
     ...staticPages,
     ...cityPages,
+    ...cityDetailServicePages,
     ...cityServicePages,
     ...eventPages,
     ...eventServicePages,
@@ -290,6 +323,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`Sitemap generated with ${allPages.length} URLs:`)
   console.log(`- Static pages: ${staticPages.length}`)
   console.log(`- City pages: ${cityPages.length}`)
+  console.log(`- City detail service pages: ${cityDetailServicePages.length}`)
   console.log(`- City-service pages: ${cityServicePages.length}`)
   console.log(`- Event pages: ${eventPages.length}`)
   console.log(`- Event-service pages: ${eventServicePages.length}`)
