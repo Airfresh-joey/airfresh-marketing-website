@@ -71,9 +71,50 @@ const marketsCovered = [
   'San Francisco', 'Portland', 'Nashville', 'Las Vegas', 'And 200+ more',
 ];
 
+const faqs = [
+  {
+    question: 'What is the difference between Air Fresh Marketing and ATN Event Staffing?',
+    answer: 'Air Fresh Marketing uses proprietary technology including GPS check-in verification, mandatory video training with certification, and real-time reporting dashboards. ATN Event Staffing offers traditional event staffing with basic reporting. AirFresh also publishes transparent rates starting at $25/hr while ATN requires custom quotes.',
+  },
+  {
+    question: 'Is Air Fresh Marketing better than ATN Event Staffing?',
+    answer: 'Both agencies offer nationwide event staffing with 20+ years experience. Air Fresh Marketing differentiates with technology-driven accountability (GPS check-in, video training platform), published pricing transparency, and specialization in major trade shows like CES, SEMA, and NAB. The best choice depends on your specific needs.',
+  },
+  {
+    question: 'How much does Air Fresh Marketing cost compared to ATN Event Staffing?',
+    answer: 'Air Fresh Marketing publishes transparent rates starting at $25/hr with no hidden fees. ATN Event Staffing uses quote-based pricing. AirFresh offers flexible minimums for all budget sizes while ATN typically has higher minimum spend requirements.',
+  },
+];
+
 export default function CompareATNEventStaffing() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+                  { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
+                  { "@type": "ListItem", "position": 3, "name": "ATN Event Staffing", "item": "https://www.airfreshmarketing.com/compare/atn-event-staffing" }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+                }))
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -316,6 +357,23 @@ export default function CompareATNEventStaffing() {
               {link.label}
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

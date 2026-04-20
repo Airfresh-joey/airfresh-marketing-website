@@ -71,9 +71,50 @@ const marketsCovered = [
   'San Francisco', 'Portland', 'Nashville', 'Las Vegas', 'And 200+ more',
 ];
 
+const faqs = [
+  {
+    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
+    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+  },
+  {
+    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
+    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+  },
+  {
+    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
+    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+  },
+];
+
 export default function CompareElev8Staffing() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+                  { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
+                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+                }))
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -316,6 +357,23 @@ export default function CompareElev8Staffing() {
               {link.label}
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
+            ))}
+          </div>
         </div>
       </section>
 

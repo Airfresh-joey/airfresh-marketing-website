@@ -71,9 +71,50 @@ const servicesOffered = [
   { name: 'Promotional Models', afm: true, alt: false },
 ];
 
+const faqs = [
+  {
+    question: 'What is the difference between Air Fresh Marketing and Alt Terrain?',
+    answer: 'Air Fresh Marketing operates nationwide across all 50 states with full-service event staffing, brand ambassadors, trade show teams, and experiential marketing. Alt Terrain specializes in NYC and Northeast street marketing including wild posting and wheat pasting. AirFresh offers broader services and geographic coverage.',
+  },
+  {
+    question: 'Is Air Fresh Marketing better than Alt Terrain for street teams?',
+    answer: 'Alt Terrain has deep expertise in NYC street marketing and wild posting. Air Fresh Marketing offers street teams in all major markets nationwide with flexible budget minimums and 24-48 hour deployment capability. Choose Alt Terrain for NYC-specific wild posting or AirFresh for multi-market street team campaigns.',
+  },
+  {
+    question: 'Can Air Fresh Marketing do wild posting like Alt Terrain?',
+    answer: 'Yes, Air Fresh Marketing offers wild posting and wheat paste campaigns nationwide, not limited to NYC and the Northeast like Alt Terrain. AirFresh also adds full-service event staffing, brand ambassadors, and trade show teams that Alt Terrain does not offer.',
+  },
+];
+
 export default function CompareAltTerrain() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+                  { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
+                  { "@type": "ListItem", "position": 3, "name": "Alt Terrain", "item": "https://www.airfreshmarketing.com/compare/alt-terrain" }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+                }))
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -288,6 +329,23 @@ export default function CompareAltTerrain() {
               <span key={market} className="px-4 py-2 bg-white rounded-full text-sm font-medium text-gray-700 border border-gray-200">
                 {market}
               </span>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
+              </div>
             ))}
           </div>
         </div>

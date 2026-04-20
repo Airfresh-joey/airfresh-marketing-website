@@ -64,9 +64,50 @@ const services = [
   'Field Marketing',
 ];
 
+const faqs = [
+  {
+    question: 'What is the difference between Air Fresh Marketing and Attack! Marketing?',
+    answer: 'Both agencies offer nationwide experiential marketing. Air Fresh Marketing provides faster campaign turnaround (24-48 hours vs 1-2 weeks), flexible budget minimums for businesses of all sizes, and specialized guerrilla marketing expertise. Attack! Marketing has 25+ years experience and focuses primarily on enterprise-level clients.',
+  },
+  {
+    question: 'Is Air Fresh Marketing cheaper than Attack! Marketing?',
+    answer: 'Air Fresh Marketing offers competitive, transparent pricing for businesses of all sizes with flexible minimums. Attack! Marketing typically focuses on enterprise clients with higher minimum spend requirements. AirFresh provides clear upfront quotes while Attack! requires custom pricing requests.',
+  },
+  {
+    question: 'Which agency is better for experiential marketing campaigns?',
+    answer: 'Both agencies are highly capable. Air Fresh Marketing excels in rapid deployment (24-48 hours), guerrilla marketing, and serving both emerging brands and Fortune 500 companies. Attack! Marketing has longer experience (25+ years) and stronger enterprise relationships. Choose based on your timeline, budget, and scale needs.',
+  },
+];
+
 export default function CompareAttackMarketing() {
   return (
     <main className="min-h-screen bg-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{
+          __html: JSON.stringify({
+            "@context": "https://schema.org",
+            "@graph": [
+              {
+                "@type": "BreadcrumbList",
+                "itemListElement": [
+                  { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+                  { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
+                  { "@type": "ListItem", "position": 3, "name": "Attack! Marketing", "item": "https://www.airfreshmarketing.com/compare/attack-marketing" }
+                ]
+              },
+              {
+                "@type": "FAQPage",
+                "mainEntity": faqs.map(faq => ({
+                  "@type": "Question",
+                  "name": faq.question,
+                  "acceptedAnswer": { "@type": "Answer", "text": faq.answer }
+                }))
+              }
+            ]
+          })
+        }}
+      />
       {/* Hero */}
       <section className="relative pt-24 pb-16 sm:pt-32 sm:pb-24 overflow-hidden bg-gradient-to-br from-[#002B5B] via-[#003d7a] to-[#002B5B]">
         <div className="absolute inset-0 pointer-events-none" aria-hidden="true">
@@ -220,6 +261,23 @@ export default function CompareAttackMarketing() {
               <div key={service} className="flex items-center gap-2 px-5 py-3 bg-[#002B5B]/5 rounded-full border border-[#002B5B]/10">
                 <CheckCircle2 className="w-4 h-4 text-[#002B5B]" />
                 <span className="text-sm font-medium text-gray-700">{service}</span>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-20 sm:py-28 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl sm:text-4xl font-extrabold text-gray-900 text-center mb-12">
+            Frequently Asked Questions
+          </h2>
+          <div className="space-y-6">
+            {faqs.map((faq, i) => (
+              <div key={i} className="bg-white rounded-2xl p-8 shadow-sm border border-gray-100">
+                <h3 className="text-lg font-bold text-gray-900 mb-3">{faq.question}</h3>
+                <p className="text-gray-600 leading-relaxed">{faq.answer}</p>
               </div>
             ))}
           </div>

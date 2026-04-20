@@ -96,6 +96,62 @@ export default function RootLayout({
         />
       </head>
       <body className={inter.className}>
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": ["LocalBusiness", "MarketingAgency"],
+              "name": "AirFresh Marketing",
+              "alternateName": "Air Fresh Marketing",
+              "url": "https://www.airfreshmarketing.com",
+              "logo": "https://www.airfreshmarketing.com/images/airfresh-logo.svg",
+              "image": "https://www.airfreshmarketing.com/images/og-image.jpg",
+              "description": "Professional experiential marketing, brand ambassadors, event staffing, and brand activation services nationwide. GPS-verified staff, video training, real-time reporting.",
+              "telephone": "+1-303-720-6060",
+              "email": "hello@airfreshmarketing.com",
+              "address": {
+                "@type": "PostalAddress",
+                "streetAddress": "1580 N. Logan St., Suite 660",
+                "addressLocality": "Denver",
+                "addressRegion": "CO",
+                "postalCode": "80203",
+                "addressCountry": "US"
+              },
+              "geo": {
+                "@type": "GeoCoordinates",
+                "latitude": 39.7392,
+                "longitude": -104.9903
+              },
+              "areaServed": { "@type": "Country", "name": "United States" },
+              "priceRange": "$$-$$$",
+              "openingHoursSpecification": {
+                "@type": "OpeningHoursSpecification",
+                "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+                "opens": "08:00",
+                "closes": "18:00"
+              },
+              "sameAs": [
+                "https://www.linkedin.com/company/airfreshmarketing",
+                "https://www.facebook.com/AirFreshMarketing",
+                "https://twitter.com/AirFreshMktg",
+                "https://www.instagram.com/airfreshmarketing"
+              ],
+              "hasOfferCatalog": {
+                "@type": "OfferCatalog",
+                "name": "Event Staffing & Marketing Services",
+                "itemListElement": [
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Brand Ambassadors" } },
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Event Staffing" } },
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Experiential Marketing" } },
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Convention Staffing" } },
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Product Sampling" } },
+                  { "@type": "Offer", "itemOffered": { "@type": "Service", "name": "Street Teams" } }
+                ]
+              }
+            })
+          }}
+        />
         <Providers>
           <GoogleAnalytics />
           <div className="min-h-screen flex flex-col">
