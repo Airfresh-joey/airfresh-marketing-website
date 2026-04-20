@@ -25,8 +25,8 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
   const stateName = cityData.state;
   
   return {
-    title: `${cityName} Brand Ambassadors & Event Staffing`,
-    description: `Professional brand ambassadors and event staffing in ${cityName}, ${stateName}. Street teams, product sampling, and experiential marketing with proven ROI.`,
+    title: `${cityName} Brand Ambassadors & Event Staffing | AirFresh Marketing`,
+    description: `${cityName} brand ambassadors and event staffing from AirFresh Marketing. Street teams, product sampling, and experiential marketing in ${cityName}, ${stateName} with proven ROI.`,
     keywords: `${cityName} experiential marketing, ${cityName} brand ambassadors, ${cityName} street teams, ${cityName} product sampling, ${cityName} event staffing`,
     openGraph: {
       title: `${cityName} Experiential Marketing | AirFresh Marketing`,
@@ -762,10 +762,18 @@ export default async function CityPage({ params }: CityPageProps) {
         "mainEntity": [
           {
             "@type": "Question",
+            "name": `How much does event staffing cost in ${city.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Event staffing rates in ${city.name} typically range from $25 to $75 per hour depending on the role, experience level, and campaign complexity. AirFresh Marketing provides transparent, all-inclusive pricing that covers recruitment, training, GPS tracking, on-site management, and post-event reporting. Contact us at (303) 720-6060 for a custom quote for your ${city.name} campaign.`
+            }
+          },
+          {
+            "@type": "Question",
             "name": `How do I get started with experiential marketing in ${city.name}?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `Contact AirFresh Marketing for a free consultation. We'll discuss your campaign goals, target audience, and timeline, then provide a customized proposal for your ${city.name} activation.`
+              "text": `Contact AirFresh Marketing for a free consultation. We'll discuss your campaign goals, target audience, and timeline, then provide a customized proposal for your ${city.name} activation. Call (303) 720-6060 or visit airfreshmarketing.com/contact to get started.`
             }
           },
           {
@@ -773,7 +781,39 @@ export default async function CityPage({ params }: CityPageProps) {
             "name": `What makes AirFresh Marketing the best choice for ${city.name} brand activations?`,
             "acceptedAnswer": {
               "@type": "Answer",
-              "text": `With ${city.stats.events} events completed and ${city.stats.ambassadors} trained brand ambassadors in ${city.name}, we deliver proven results. Our local expertise and ${city.stats.samples} samples distributed demonstrate our market leadership.`
+              "text": `With ${city.stats.events} events completed and ${city.stats.ambassadors} trained brand ambassadors in ${city.name}, we deliver proven results. Our proprietary technology platform includes GPS check-in for verified attendance, video training with knowledge quizzes, and real-time reporting dashboards. We accept only the top 5% of applicants and maintain backup staffing in every market.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What makes experiential marketing effective in ${city.name}?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `${city.name}'s diverse demographics, high foot traffic, and active event culture create ideal conditions for experiential marketing. Unlike traditional advertising, experiential marketing creates memorable personal interactions that drive brand affinity. Our ${city.stats.samples} samples distributed across ${city.name} have generated measurable increases in brand awareness and purchase intent.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `How long does it take to plan a ${city.name} marketing campaign?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `We recommend a 4-6 week planning window for standard ${city.name} activations. This allows time for strategy development, permit acquisition, talent recruitment, training, and logistics. Rush campaigns can be executed in as little as 2 weeks. Larger campaigns involving custom builds or multiple locations benefit from 8-12 week lead times.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `Can you staff events at any ${city.name} venue?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `Yes, AirFresh Marketing staffs events throughout ${city.name} — from major convention centers and sports venues to intimate retail locations and outdoor spaces. Our ${city.stats.ambassadors} local ambassadors are familiar with venues across ${city.name}. We handle all permitting, insurance, and regulatory compliance for your activation.`
+            }
+          },
+          {
+            "@type": "Question",
+            "name": `What type of reporting do you provide for ${city.name} campaigns?`,
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": `We deliver comprehensive post-campaign reports within 48 hours including quantitative metrics (samples distributed, interactions, leads captured, social mentions) and qualitative insights. All campaigns include GPS-verified check-ins, timestamped photos, and real-time data collection. You receive detailed ROI analysis showing cost per engagement, reach statistics, and conversion metrics.`
             }
           }
         ]
