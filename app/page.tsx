@@ -477,6 +477,24 @@ export default function Home() {
               </div>
             ))}
           </div>
+
+          {/* Service Page Links */}
+          <div className="mt-16 text-center">
+            <h3 className="text-lg font-semibold text-gray-700 mb-6">Explore Our Services</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/services/brand-ambassadors" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Brand Ambassadors</Link>
+              <Link href="/services/event-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Staffing</Link>
+              <Link href="/services/street-teams" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Street Teams</Link>
+              <Link href="/services/sampling" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Product Sampling</Link>
+              <Link href="/services/convention-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Convention Staffing</Link>
+              <Link href="/services/experiential-marketing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Experiential Marketing</Link>
+              <Link href="/services/retail-activations" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Retail Activations</Link>
+              <Link href="/services/event-management" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Management</Link>
+            </div>
+            <Link href="/services" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
+              View All Services <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
@@ -1041,12 +1059,17 @@ export default function Home() {
             
             className="text-center mt-16"
           >
-            <Link href="/portfolio">
-              <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xl px-12 py-8 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transform hover:scale-105 transition-all duration-300">
-                View All Case Studies
-                <ArrowRight className="ml-3 h-6 w-6" />
-              </Button>
-            </Link>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
+              <Link href="/portfolio">
+                <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xl px-12 py-8 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transform hover:scale-105 transition-all duration-300">
+                  View Portfolio
+                  <ArrowRight className="ml-3 h-6 w-6" />
+                </Button>
+              </Link>
+              <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-700 font-semibold text-lg flex items-center gap-2">
+                Browse Case Studies <ArrowRight className="w-5 h-5" />
+              </Link>
+            </div>
           </div>
         </div>
       </section>
@@ -1076,6 +1099,11 @@ export default function Home() {
                 </div>
               </Link>
             ))}
+          </div>
+          <div className="text-center mb-12">
+            <Link href="/locations" className="inline-flex items-center gap-1 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
+              View All Locations <ArrowRight className="w-4 h-4" />
+            </Link>
           </div>
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-4">
             <Link href="/guides/best-event-staffing-agency" className="group">

@@ -1,4 +1,5 @@
 import type { Metadata } from 'next'
+import Link from 'next/link'
 import { blogPosts } from "@/server/blogPosts"
 import { BlogListClient, BlogNewsletterSection } from "@/components/BlogListClient"
 
@@ -73,6 +74,34 @@ export default function Blog() {
       <BlogListClient posts={blogPosts} />
 
       <BlogNewsletterSection />
+
+      {/* Internal Links Section - SEO */}
+      <section className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore Our Services</h2>
+          <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
+            <Link href="/services/brand-ambassadors" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Brand Ambassadors</Link>
+            <Link href="/services/event-staffing" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Event Staffing</Link>
+            <Link href="/services/street-teams" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Street Teams</Link>
+            <Link href="/services/sampling" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Product Sampling</Link>
+            <Link href="/services/convention-staffing" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Convention Staffing</Link>
+            <Link href="/services/retail-activations" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Retail Activations</Link>
+            <Link href="/services/experiential-marketing" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Experiential Marketing</Link>
+            <Link href="/services/event-management" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Event Management</Link>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <Link href="/services" className="text-cyan-600 hover:text-cyan-700 font-medium">All Services</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-700 font-medium">Case Studies</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/locations" className="text-cyan-600 hover:text-cyan-700 font-medium">Locations</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/pricing" className="text-cyan-600 hover:text-cyan-700 font-medium">Pricing</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/contact" className="text-cyan-600 hover:text-cyan-700 font-medium">Get a Quote</Link>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }
