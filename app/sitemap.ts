@@ -103,6 +103,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/compare/attack-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/atn-event-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/compare/elev8-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
+    { url: `${DOMAIN}/compare/hype-agency`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/cea-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/ignite-productions`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/assist-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/kinetic-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
   ]
 
   // City pages - using /cities/ route

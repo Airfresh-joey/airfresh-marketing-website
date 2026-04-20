@@ -4,89 +4,91 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Elev8 Staffing - Agency Comparison [2026]',
-  description: 'Compare Air Fresh Marketing vs Elev8 Staffing Group: More technology, better training, transparent pricing. See the AirFresh difference.',
-  keywords: 'Air Fresh Marketing vs Elev8 Staffing, event staffing comparison, brand activation agency, Elev8 Staffing alternative',
+  title: 'Air Fresh Marketing vs Assist Marketing - Event Staffing Comparison [2026]',
+  description: 'Air Fresh Marketing vs Assist Marketing compared: proprietary technology platform, GPS-verified check-ins, AI-powered consumer insights, and transparent pricing. See why brands choose AirFresh over Assist Marketing.',
+  keywords: 'Air Fresh Marketing vs Assist Marketing, event staffing comparison, brand activation agency, Assist Marketing alternative, experiential marketing agency, promotional staffing',
   openGraph: {
-    title: 'Air Fresh Marketing vs Elev8 Staffing Group - Which Agency is Right for You?',
-    description: 'Compare services, quality standards, and technology. Find your ideal event staffing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    title: 'Air Fresh Marketing vs Assist Marketing - Which Agency is Right for You?',
+    description: 'Compare technology, services, and value. Proprietary platform vs generic software. Find your ideal event staffing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/assist-marketing',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    canonical: 'https://www.airfreshmarketing.com/compare/assist-marketing',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
-  { feature: 'Staff Vetting Process', afm: 'Multi-step vetting + video certification', competitor: 'Standard screening', winner: 'afm' },
-  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Standard tools', winner: 'afm' },
-  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'On-site orientation', winner: 'afm' },
-  { feature: 'Quality Assurance', afm: 'GPS-verified attendance + real-time monitoring', competitor: 'Post-event reporting', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '5,000+ vetted, trained professionals', competitor: 'Large roster', winner: 'afm' },
-  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes', winner: 'afm' },
-  { feature: 'Client Reporting', afm: 'Real-time dashboards with GPS data', competitor: 'Post-event summaries', winner: 'afm' },
-  { feature: 'Convention Expertise', afm: 'CES, SEMA, NAB specialization', competitor: 'General event staffing', winner: 'afm' },
-  { feature: 'Staffing Volume', afm: 'Scalable to any size', competitor: 'High-volume capability', winner: 'tie' },
+  { feature: 'Technology Platform', afm: 'Proprietary built-in-house', competitor: 'Generic third-party software', winner: 'afm' },
+  { feature: 'GPS Check-In Verification', afm: 'Yes, every activation', competitor: 'Not available', winner: 'afm' },
+  { feature: 'Staff Network Size', afm: '5,000+ vetted professionals', competitor: '50,000+ field staff', winner: 'competitor' },
+  { feature: 'Geographic Coverage', afm: 'All 50 states, 200+ cities', competitor: 'US + Canada', winner: 'competitor' },
+  { feature: 'Staff Employment Model', afm: 'Flexible W-2 & 1099', competitor: 'W-2 model', winner: 'tie' },
+  { feature: 'AI Consumer Insights', afm: 'Built-in AI data tools', competitor: 'Not available', winner: 'afm' },
+  { feature: 'Real-Time Reporting', afm: 'Live dashboards included', competitor: 'Basic post-event reports', winner: 'afm' },
+  { feature: 'Video Training Platform', afm: 'Proprietary with certification', competitor: 'No dedicated platform', winner: 'afm' },
+  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Quote-based only', winner: 'afm' },
+  { feature: 'Website & Digital Presence', afm: 'Custom-built professional platform', competitor: 'Built on Wix', winner: 'afm' },
 ];
 
 const afmAdvantages = [
   {
-    icon: Award,
-    title: 'Quality Over Quantity',
-    description: 'Every staff member completes mandatory video training and certification before representing your brand. No exceptions, no shortcuts.',
-  },
-  {
     icon: Zap,
-    title: 'Proprietary Technology',
-    description: 'GPS check-in verification, video training platform, and real-time reporting dashboards give you complete visibility and accountability.',
+    title: 'Proprietary Technology Platform',
+    description: 'Our custom-built technology stack powers every activation with real-time data, automated workflows, and seamless client communication\u2014no generic off-the-shelf software.',
   },
   {
-    icon: DollarSign,
-    title: 'Transparent Pricing',
-    description: 'Published rates starting at $25/hr with no hidden fees. Know your costs upfront instead of waiting for custom quotes.',
+    icon: MapPin,
+    title: 'GPS-Verified Accountability',
+    description: 'Every staff member checks in with GPS verification so you know your team is on-site, on-time, every time. Assist Marketing offers no equivalent technology.',
+  },
+  {
+    icon: Award,
+    title: 'Advanced Training System',
+    description: 'Our proprietary video training platform with certification ensures every brand ambassador is fully prepared before they represent your brand in the field.',
   },
   {
     icon: Target,
-    title: 'Trade Show Expertise',
-    description: 'Specialized teams for CES, SEMA, NAB, MAGIC, and other major conventions. We understand the unique demands of trade show staffing.',
+    title: 'Data-Driven Insights',
+    description: 'AI-powered consumer data tools and real-time dashboards give you actionable intelligence during and after every campaign\u2014not just a basic recap report.',
   },
 ];
 
 const servicesOffered = [
-  { name: 'Brand Ambassadors', afm: true, elev8: true },
-  { name: 'Event Staffing', afm: true, elev8: true },
-  { name: 'GPS Check-In Technology', afm: true, elev8: false },
-  { name: 'Video Training Platform', afm: true, elev8: false },
-  { name: 'Trade Show Specialists', afm: true, elev8: true },
-  { name: 'Real-Time Dashboards', afm: true, elev8: false },
-  { name: 'Product Sampling', afm: true, elev8: true },
-  { name: 'Promotional Models', afm: true, elev8: true },
+  { name: 'Brand Ambassadors', afm: true, assist: true },
+  { name: 'Street Teams', afm: true, assist: true },
+  { name: 'Promotional Models', afm: true, assist: true },
+  { name: 'Trade Show Staffing', afm: true, assist: true },
+  { name: 'Event Management', afm: true, assist: true },
+  { name: 'Product Sampling', afm: true, assist: true },
+  { name: 'GPS Check-In Technology', afm: true, assist: false },
+  { name: 'Video Training Platform', afm: true, assist: false },
+  { name: 'Real-Time Dashboards', afm: true, assist: false },
+  { name: 'AI Consumer Data Tools', afm: true, assist: false },
 ];
 
 const marketsCovered = [
   'New York', 'Los Angeles', 'Chicago', 'Houston', 'Phoenix',
-  'Philadelphia', 'San Antonio', 'San Diego', 'Dallas', 'Austin',
-  'Denver', 'Miami', 'Atlanta', 'Boston', 'Seattle',
-  'San Francisco', 'Portland', 'Nashville', 'Las Vegas', 'And 200+ more',
+  'Milwaukee', 'Dallas', 'San Diego', 'San Francisco', 'Miami',
+  'Atlanta', 'Denver', 'Seattle', 'Boston', 'Nashville',
+  'Las Vegas', 'Austin', 'Portland', 'Philadelphia', 'And 200+ more',
 ];
 
 const faqs = [
   {
-    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
-    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+    question: 'What is the difference between Air Fresh Marketing and Assist Marketing?',
+    answer: 'The biggest difference is technology. Air Fresh Marketing operates on a proprietary technology platform with GPS check-in verification, AI-powered consumer insights, and real-time reporting dashboards. Assist Marketing relies on generic third-party software and does not offer GPS verification, dedicated video training, or AI data tools. Assist Marketing is based in Menomonee Falls, WI (founded 2010) and has a larger field staff network (50,000+), while AirFresh differentiates with tech-driven accountability and transparent published pricing.',
   },
   {
-    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
-    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+    question: 'Is Air Fresh Marketing better than Assist Marketing for brand activations?',
+    answer: 'Both agencies offer core event staffing services like brand ambassadors, street teams, and product sampling. Air Fresh Marketing excels with proprietary technology that provides GPS-verified attendance, mandatory video training with certification, and live campaign dashboards. Assist Marketing has a larger staff roster and covers Canada in addition to the US, but lacks the technology infrastructure that modern brands increasingly require for measurable ROI.',
   },
   {
-    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
-    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+    question: 'How does Air Fresh Marketing pricing compare to Assist Marketing?',
+    answer: 'Air Fresh Marketing publishes transparent rates with no hidden fees, so you know exactly what you are paying before you commit. Assist Marketing uses quote-based pricing that requires contacting their sales team. AirFresh also offers flexible minimums for businesses of all sizes, making it accessible whether you need a single brand ambassador or a 100-person team.',
   },
 ];
 
-export default function CompareElev8Staffing() {
+export default function CompareAssistMarketing() {
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -100,7 +102,7 @@ export default function CompareElev8Staffing() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
                   { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
-                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                  { "@type": "ListItem", "position": 3, "name": "Assist Marketing", "item": "https://www.airfreshmarketing.com/compare/assist-marketing" }
                 ]
               },
               {
@@ -130,11 +132,11 @@ export default function CompareElev8Staffing() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Elev8 Staffing
+              Assist Marketing
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Elev8 focuses on staffing volume. Air Fresh Marketing combines that scale with proprietary technology, certified training, and transparent pricing for superior results.
+            Both agencies deliver nationwide event staffing. See how Air Fresh Marketing&apos;s proprietary technology platform, GPS verification, and AI-powered insights give you a measurable competitive edge over Assist Marketing.
           </p>
         </div>
       </section>
@@ -146,20 +148,20 @@ export default function CompareElev8Staffing() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Quality + technology-driven staffing</p>
+              <p className="text-gray-700 font-medium mb-4">Technology-driven event staffing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified attendance
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Proprietary tech platform
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified video training
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS check-in verification
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> AI consumer data tools
                 </li>
               </ul>
             </div>
@@ -168,18 +170,18 @@ export default function CompareElev8Staffing() {
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
                   <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Elev8 Staffing Group</h3>
+                <h3 className="text-xl font-bold text-gray-800">Assist Marketing</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">Volume-focused event staffing</p>
+              <p className="text-gray-600 font-medium mb-4">Traditional field marketing agency</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 50,000+ field staff
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> High-volume staffing
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> US + Canada coverage
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff roster
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> W-2 employment model
                 </li>
               </ul>
             </div>
@@ -213,7 +215,7 @@ export default function CompareElev8Staffing() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Elev8 Staffing
+                    Assist Marketing
                   </th>
                 </tr>
               </thead>
@@ -255,7 +257,7 @@ export default function CompareElev8Staffing() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              Quality-assured staffing with technology you can trust
+              Technology-enhanced staffing services across every market
             </p>
           </div>
 
@@ -273,8 +275,8 @@ export default function CompareElev8Staffing() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">E8</span>
-                    {service.elev8 ? (
+                    <span className="text-xs text-gray-500">Assist</span>
+                    {service.assist ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -350,9 +352,6 @@ export default function CompareElev8Staffing() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
-            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
-            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
-            { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
             { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
@@ -388,12 +387,11 @@ export default function CompareElev8Staffing() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Quality staffing, powered by technology
+            Ready for smarter staffing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Experience the difference that GPS verification, certified training, and real-time reporting make. Call us at{' '}
-            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>{' '}
-            or get a free quote today.
+            See why brands are switching to technology-driven event staffing. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

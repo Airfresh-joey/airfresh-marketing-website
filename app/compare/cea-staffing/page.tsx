@@ -4,64 +4,64 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Elev8 Staffing - Agency Comparison [2026]',
-  description: 'Compare Air Fresh Marketing vs Elev8 Staffing Group: More technology, better training, transparent pricing. See the AirFresh difference.',
-  keywords: 'Air Fresh Marketing vs Elev8 Staffing, event staffing comparison, brand activation agency, Elev8 Staffing alternative',
+  title: 'Air Fresh Marketing vs CEA Staffing - Agency Comparison [2026]',
+  description: 'Air Fresh Marketing vs CEA Staffing: full-service experiential marketing with proprietary tech vs staffing-only agency. See why brands choose AirFresh over CEA.',
+  keywords: 'Air Fresh Marketing vs CEA Staffing, CEA Staffing alternative, event staffing comparison, experiential marketing agency, brand activation staffing',
   openGraph: {
-    title: 'Air Fresh Marketing vs Elev8 Staffing Group - Which Agency is Right for You?',
-    description: 'Compare services, quality standards, and technology. Find your ideal event staffing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    title: 'Air Fresh Marketing vs CEA Staffing - Which Agency is Right for You?',
+    description: 'Compare full-service experiential marketing vs staffing-only solutions. Find your ideal event staffing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/cea-staffing',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    canonical: 'https://www.airfreshmarketing.com/compare/cea-staffing',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
-  { feature: 'Staff Vetting Process', afm: 'Multi-step vetting + video certification', competitor: 'Standard screening', winner: 'afm' },
-  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Standard tools', winner: 'afm' },
-  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'On-site orientation', winner: 'afm' },
-  { feature: 'Quality Assurance', afm: 'GPS-verified attendance + real-time monitoring', competitor: 'Post-event reporting', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '5,000+ vetted, trained professionals', competitor: 'Large roster', winner: 'afm' },
-  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes', winner: 'afm' },
-  { feature: 'Client Reporting', afm: 'Real-time dashboards with GPS data', competitor: 'Post-event summaries', winner: 'afm' },
-  { feature: 'Convention Expertise', afm: 'CES, SEMA, NAB specialization', competitor: 'General event staffing', winner: 'afm' },
-  { feature: 'Staffing Volume', afm: 'Scalable to any size', competitor: 'High-volume capability', winner: 'tie' },
+  { feature: 'Service Model', afm: 'Full-service experiential marketing', competitor: 'Staffing-only body shop', winner: 'afm' },
+  { feature: 'Geographic Coverage', afm: 'All 50 states, 50+ cities', competitor: '49+ states, 233,000+ staff network', winner: 'tie' },
+  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards, AI tools', competitor: 'GPS check-in tracking', winner: 'afm' },
+  { feature: 'Staff Training', afm: 'Mandatory certified video training modules', competitor: 'On-site orientation only', winner: 'afm' },
+  { feature: 'Experiential Strategy', afm: 'Full campaign strategy & creative', competitor: 'No strategic planning services', winner: 'afm' },
+  { feature: 'Consumer-Facing Tech', afm: 'AI gamification & engagement tools', competitor: 'Not offered', winner: 'afm' },
+  { feature: 'Client Dashboard', afm: 'Real-time reporting & analytics portal', competitor: 'Post-event recaps', winner: 'afm' },
+  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Quote-based, opaque pricing', winner: 'afm' },
+  { feature: 'W-2 Compliance', afm: 'Full W-2 employment', competitor: 'W-2 compliant', winner: 'tie' },
+  { feature: 'Years in Business', afm: '20+ years', competitor: 'Since ~2008 (17+ years)', winner: 'afm' },
 ];
 
 const afmAdvantages = [
   {
-    icon: Award,
-    title: 'Quality Over Quantity',
-    description: 'Every staff member completes mandatory video training and certification before representing your brand. No exceptions, no shortcuts.',
+    icon: Target,
+    title: 'Full-Service Experiential Partner',
+    description: 'Unlike CEA\'s staffing-only model, Air Fresh Marketing provides end-to-end experiential campaign strategy, creative development, and activation execution\u2014not just bodies on the ground.',
   },
   {
     icon: Zap,
-    title: 'Proprietary Technology',
-    description: 'GPS check-in verification, video training platform, and real-time reporting dashboards give you complete visibility and accountability.',
+    title: 'Proprietary Technology Platform',
+    description: 'GPS check-in, real-time reporting dashboards, AI-powered consumer engagement tools, and gamification tech. CEA offers basic GPS tracking but lacks a comprehensive technology ecosystem.',
+  },
+  {
+    icon: Award,
+    title: 'Certified Training Program',
+    description: 'Every AirFresh staff member completes mandatory video training modules with certification before stepping on-site. CEA relies on day-of orientation, leaving quality to chance.',
   },
   {
     icon: DollarSign,
     title: 'Transparent Pricing',
-    description: 'Published rates starting at $25/hr with no hidden fees. Know your costs upfront instead of waiting for custom quotes.',
-  },
-  {
-    icon: Target,
-    title: 'Trade Show Expertise',
-    description: 'Specialized teams for CES, SEMA, NAB, MAGIC, and other major conventions. We understand the unique demands of trade show staffing.',
+    description: 'Published rates starting at $25/hr with no hidden fees or surprise markups. CEA uses opaque quote-based pricing that makes it difficult to compare costs or budget accurately.',
   },
 ];
 
 const servicesOffered = [
-  { name: 'Brand Ambassadors', afm: true, elev8: true },
-  { name: 'Event Staffing', afm: true, elev8: true },
-  { name: 'GPS Check-In Technology', afm: true, elev8: false },
-  { name: 'Video Training Platform', afm: true, elev8: false },
-  { name: 'Trade Show Specialists', afm: true, elev8: true },
-  { name: 'Real-Time Dashboards', afm: true, elev8: false },
-  { name: 'Product Sampling', afm: true, elev8: true },
-  { name: 'Promotional Models', afm: true, elev8: true },
+  { name: 'Brand Ambassadors', afm: true, cea: true },
+  { name: 'Event Staffing', afm: true, cea: true },
+  { name: 'Product Sampling', afm: true, cea: true },
+  { name: 'Trade Show Staff', afm: true, cea: true },
+  { name: 'Video Training Platform', afm: true, cea: false },
+  { name: 'Real-Time Dashboards', afm: true, cea: false },
+  { name: 'Experiential Marketing Strategy', afm: true, cea: false },
+  { name: 'AI Consumer Engagement Tools', afm: true, cea: false },
 ];
 
 const marketsCovered = [
@@ -73,20 +73,20 @@ const marketsCovered = [
 
 const faqs = [
   {
-    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
-    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+    question: 'What is the difference between Air Fresh Marketing and CEA Staffing?',
+    answer: 'CEA Staffing is primarily a staffing body shop\u2014they supply brand ambassadors and event staff to major brands like Bud Light, Delta, and Amazon Prime, but they don\'t offer experiential marketing strategy, creative development, or consumer-facing technology. Air Fresh Marketing is a full-service experiential partner with proprietary GPS check-in, video training certification, real-time dashboards, and AI-powered consumer engagement tools. AirFresh also publishes transparent pricing starting at $25/hr.',
   },
   {
-    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
-    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+    question: 'Is Air Fresh Marketing better than CEA Staffing?',
+    answer: 'CEA Staffing has an impressive network of 233,000+ staff across 49+ states and works with well-known brands. However, Air Fresh Marketing goes beyond staffing with a complete technology platform, mandatory pre-event training certification, experiential campaign strategy, and transparent published pricing. If you need more than just bodies on the ground\u2014strategy, technology, and accountability\u2014AirFresh is the stronger choice.',
   },
   {
-    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
-    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+    question: 'How much does Air Fresh Marketing cost compared to CEA Staffing?',
+    answer: 'Air Fresh Marketing publishes transparent rates starting at $25/hr with no hidden fees or surprise markups. CEA Staffing uses quote-based pricing that varies by market and program, making it harder to budget accurately. AirFresh offers flexible minimums for all budget sizes, giving you full cost visibility before committing.',
   },
 ];
 
-export default function CompareElev8Staffing() {
+export default function CompareCEAStaffing() {
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -100,7 +100,7 @@ export default function CompareElev8Staffing() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
                   { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
-                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                  { "@type": "ListItem", "position": 3, "name": "CEA Staffing", "item": "https://www.airfreshmarketing.com/compare/cea-staffing" }
                 ]
               },
               {
@@ -130,11 +130,11 @@ export default function CompareElev8Staffing() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Elev8 Staffing
+              CEA Staffing
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Elev8 focuses on staffing volume. Air Fresh Marketing combines that scale with proprietary technology, certified training, and transparent pricing for superior results.
+            CEA Staffing supplies bodies. Air Fresh Marketing delivers experiences. See how our full-service experiential approach, proprietary technology, and certified training program outperform a staffing-only model.
           </p>
         </div>
       </section>
@@ -146,17 +146,20 @@ export default function CompareElev8Staffing() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Quality + technology-driven staffing</p>
+              <p className="text-gray-700 font-medium mb-4">Full-service experiential marketing agency</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified attendance
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> End-to-end experiential strategy
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified video training
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Proprietary tech: GPS, AI, dashboards
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified pre-event staff training
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
@@ -168,18 +171,21 @@ export default function CompareElev8Staffing() {
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
                   <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Elev8 Staffing Group</h3>
+                <h3 className="text-xl font-bold text-gray-800">CEA Staffing</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">Volume-focused event staffing</p>
+              <p className="text-gray-600 font-medium mb-4">Staffing-focused event agency</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 233,000+ staff network
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> High-volume staffing
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 49+ states coverage
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff roster
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> W-2 compliant staffing
+                </li>
+                <li className="flex items-center gap-2 text-sm text-gray-600">
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Major brand clients
                 </li>
               </ul>
             </div>
@@ -213,7 +219,7 @@ export default function CompareElev8Staffing() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Elev8 Staffing
+                    CEA Staffing
                   </th>
                 </tr>
               </thead>
@@ -255,7 +261,7 @@ export default function CompareElev8Staffing() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              Quality-assured staffing with technology you can trust
+              Full-service experiential marketing vs staffing-only solutions
             </p>
           </div>
 
@@ -273,8 +279,8 @@ export default function CompareElev8Staffing() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">E8</span>
-                    {service.elev8 ? (
+                    <span className="text-xs text-gray-500">CEA</span>
+                    {service.cea ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -350,9 +356,6 @@ export default function CompareElev8Staffing() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
-            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
-            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
-            { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
             { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
@@ -388,12 +391,11 @@ export default function CompareElev8Staffing() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Quality staffing, powered by technology
+            Ready for more than just staffing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Experience the difference that GPS verification, certified training, and real-time reporting make. Call us at{' '}
-            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>{' '}
-            or get a free quote today.
+            See why brands are choosing a full-service experiential partner over staffing-only agencies. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

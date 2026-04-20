@@ -4,64 +4,66 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Elev8 Staffing - Agency Comparison [2026]',
-  description: 'Compare Air Fresh Marketing vs Elev8 Staffing Group: More technology, better training, transparent pricing. See the AirFresh difference.',
-  keywords: 'Air Fresh Marketing vs Elev8 Staffing, event staffing comparison, brand activation agency, Elev8 Staffing alternative',
+  title: 'Air Fresh Marketing vs The Hype Agency - Event Staffing Comparison [2026]',
+  description: 'Air Fresh Marketing vs The Hype Agency: GPS check-in verification, AI-powered consumer data, transparent pricing. See why brands choose AirFresh over Hype Agency.',
+  keywords: 'Air Fresh Marketing vs The Hype Agency, event staffing comparison, brand activation agency, Hype Agency alternative, experiential marketing agency',
   openGraph: {
-    title: 'Air Fresh Marketing vs Elev8 Staffing Group - Which Agency is Right for You?',
-    description: 'Compare services, quality standards, and technology. Find your ideal event staffing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    title: 'Air Fresh Marketing vs The Hype Agency - Which Agency is Right for You?',
+    description: 'Compare services, technology, and value. Find your ideal event staffing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/hype-agency',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    canonical: 'https://www.airfreshmarketing.com/compare/hype-agency',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
-  { feature: 'Staff Vetting Process', afm: 'Multi-step vetting + video certification', competitor: 'Standard screening', winner: 'afm' },
-  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Standard tools', winner: 'afm' },
-  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'On-site orientation', winner: 'afm' },
-  { feature: 'Quality Assurance', afm: 'GPS-verified attendance + real-time monitoring', competitor: 'Post-event reporting', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '5,000+ vetted, trained professionals', competitor: 'Large roster', winner: 'afm' },
-  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes', winner: 'afm' },
-  { feature: 'Client Reporting', afm: 'Real-time dashboards with GPS data', competitor: 'Post-event summaries', winner: 'afm' },
-  { feature: 'Convention Expertise', afm: 'CES, SEMA, NAB specialization', competitor: 'General event staffing', winner: 'afm' },
-  { feature: 'Staffing Volume', afm: 'Scalable to any size', competitor: 'High-volume capability', winner: 'tie' },
+  { feature: 'Headquarters', afm: 'Denver, CO', competitor: 'Salem, NH', winner: 'tie' },
+  { feature: 'Geographic Coverage', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
+  { feature: 'Staff Verification', afm: 'GPS check-in verification', competitor: 'No GPS tracking', winner: 'afm' },
+  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Proprietary talent management system', winner: 'afm' },
+  { feature: 'Consumer Data Tools', afm: 'AI-powered consumer data collection', competitor: 'No consumer-facing tech', winner: 'afm' },
+  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes required', winner: 'afm' },
+  { feature: 'Employment Model', afm: 'Flexible staffing model', competitor: 'W-2 employees', winner: 'tie' },
+  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'In-house training program', winner: 'afm' },
+  { feature: 'Client Reporting', afm: 'Real-time reporting dashboard', competitor: 'Post-event recaps', winner: 'afm' },
+  { feature: 'Years in Business', afm: '20+ years', competitor: '20 years (founded 2006)', winner: 'tie' },
 ];
 
 const afmAdvantages = [
   {
-    icon: Award,
-    title: 'Quality Over Quantity',
-    description: 'Every staff member completes mandatory video training and certification before representing your brand. No exceptions, no shortcuts.',
-  },
-  {
-    icon: Zap,
-    title: 'Proprietary Technology',
-    description: 'GPS check-in verification, video training platform, and real-time reporting dashboards give you complete visibility and accountability.',
+    icon: Target,
+    title: 'GPS Check-In Verification',
+    description: 'Every staff member is verified on-site with GPS check-in technology. The Hype Agency has no GPS tracking capability, leaving attendance accountability to manual processes.',
   },
   {
     icon: DollarSign,
-    title: 'Transparent Pricing',
-    description: 'Published rates starting at $25/hr with no hidden fees. Know your costs upfront instead of waiting for custom quotes.',
+    title: 'Transparent Published Pricing',
+    description: 'Our rates start at $25/hr with no hidden fees. The Hype Agency requires custom quotes for every project, making it harder to budget and compare costs upfront.',
   },
   {
-    icon: Target,
-    title: 'Trade Show Expertise',
-    description: 'Specialized teams for CES, SEMA, NAB, MAGIC, and other major conventions. We understand the unique demands of trade show staffing.',
+    icon: Zap,
+    title: 'AI-Powered Consumer Data',
+    description: 'Capture real-time consumer insights with our AI-driven data collection tools. The Hype Agency does not offer consumer-facing technology, limiting data capture at events.',
+  },
+  {
+    icon: Award,
+    title: 'Real-Time Client Dashboards',
+    description: 'Monitor activations live with our real-time reporting dashboard. Track staff check-ins, engagement metrics, and campaign performance as events unfold.',
   },
 ];
 
 const servicesOffered = [
-  { name: 'Brand Ambassadors', afm: true, elev8: true },
-  { name: 'Event Staffing', afm: true, elev8: true },
-  { name: 'GPS Check-In Technology', afm: true, elev8: false },
-  { name: 'Video Training Platform', afm: true, elev8: false },
-  { name: 'Trade Show Specialists', afm: true, elev8: true },
-  { name: 'Real-Time Dashboards', afm: true, elev8: false },
-  { name: 'Product Sampling', afm: true, elev8: true },
-  { name: 'Promotional Models', afm: true, elev8: true },
+  { name: 'Brand Ambassadors', afm: true, competitor: true },
+  { name: 'Experiential Marketing', afm: true, competitor: true },
+  { name: 'GPS Check-In Technology', afm: true, competitor: false },
+  { name: 'AI Consumer Data Tools', afm: true, competitor: false },
+  { name: 'Trade Show Staffing', afm: true, competitor: true },
+  { name: 'Real-Time Dashboards', afm: true, competitor: false },
+  { name: 'Product Sampling', afm: true, competitor: true },
+  { name: 'Street Teams', afm: true, competitor: true },
+  { name: 'Video Training Platform', afm: true, competitor: false },
+  { name: 'Event Production', afm: true, competitor: true },
 ];
 
 const marketsCovered = [
@@ -73,20 +75,20 @@ const marketsCovered = [
 
 const faqs = [
   {
-    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
-    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+    question: 'What is the difference between Air Fresh Marketing and The Hype Agency?',
+    answer: 'Air Fresh Marketing uses proprietary technology including GPS check-in verification, AI-powered consumer data tools, mandatory video training with certification, and real-time reporting dashboards. The Hype Agency, founded in 2006 in Salem, NH, offers a proprietary talent management system and uses W-2 employees but does not provide GPS tracking, consumer-facing data technology, or published transparent pricing.',
   },
   {
-    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
-    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+    question: 'Is Air Fresh Marketing better than The Hype Agency?',
+    answer: 'Both agencies provide nationwide event staffing with roughly 20 years of experience. Air Fresh Marketing differentiates with technology-driven accountability (GPS check-in, AI consumer data, real-time dashboards), published pricing starting at $25/hr, and trade show specialization at CES, SEMA, and NAB. The Hype Agency uses W-2 employees and a proprietary talent management system. The best choice depends on whether you prioritize technology-driven transparency or a W-2 employment model.',
   },
   {
-    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
-    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+    question: 'How much does Air Fresh Marketing cost compared to The Hype Agency?',
+    answer: 'Air Fresh Marketing publishes transparent rates starting at $25/hr with no hidden fees and flexible minimums for all budget sizes. The Hype Agency requires custom quotes for every project and does not publish pricing publicly, making direct cost comparison difficult without requesting proposals from both agencies.',
   },
 ];
 
-export default function CompareElev8Staffing() {
+export default function CompareHypeAgency() {
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -100,7 +102,7 @@ export default function CompareElev8Staffing() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
                   { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
-                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                  { "@type": "ListItem", "position": 3, "name": "The Hype Agency", "item": "https://www.airfreshmarketing.com/compare/hype-agency" }
                 ]
               },
               {
@@ -130,11 +132,11 @@ export default function CompareElev8Staffing() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Elev8 Staffing
+              The Hype Agency
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Elev8 focuses on staffing volume. Air Fresh Marketing combines that scale with proprietary technology, certified training, and transparent pricing for superior results.
+            Both agencies deliver nationwide experiential marketing and event staffing. See how Air Fresh Marketing&apos;s GPS verification, AI-powered data tools, and transparent pricing give you measurable results.
           </p>
         </div>
       </section>
@@ -146,17 +148,17 @@ export default function CompareElev8Staffing() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Quality + technology-driven staffing</p>
+              <p className="text-gray-700 font-medium mb-4">Technology-driven event staffing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified attendance
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS check-in verification
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified video training
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> AI-powered consumer data tools
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
@@ -168,18 +170,18 @@ export default function CompareElev8Staffing() {
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
                   <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Elev8 Staffing Group</h3>
+                <h3 className="text-xl font-bold text-gray-800">The Hype Agency</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">Volume-focused event staffing</p>
+              <p className="text-gray-600 font-medium mb-4">Experiential marketing with W-2 staff</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> High-volume staffing
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> W-2 employee model
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff roster
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Proprietary talent management
                 </li>
               </ul>
             </div>
@@ -213,7 +215,7 @@ export default function CompareElev8Staffing() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Elev8 Staffing
+                    The Hype Agency
                   </th>
                 </tr>
               </thead>
@@ -255,7 +257,7 @@ export default function CompareElev8Staffing() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              Quality-assured staffing with technology you can trust
+              Technology-enhanced staffing services across every market
             </p>
           </div>
 
@@ -273,8 +275,8 @@ export default function CompareElev8Staffing() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">E8</span>
-                    {service.elev8 ? (
+                    <span className="text-xs text-gray-500">Hype</span>
+                    {service.competitor ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -350,9 +352,9 @@ export default function CompareElev8Staffing() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
-            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
-            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
-            { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
+            { href: '/compare/elev8-staffing', label: 'AirFresh vs Elev8 Staffing' },
+            { href: '/compare/attack-marketing', label: 'AirFresh vs Attack Marketing' },
+            { href: '/compare/alt-terrain', label: 'AirFresh vs Alt Terrain' },
             { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
@@ -388,12 +390,11 @@ export default function CompareElev8Staffing() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Quality staffing, powered by technology
+            Ready for smarter staffing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Experience the difference that GPS verification, certified training, and real-time reporting make. Call us at{' '}
-            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>{' '}
-            or get a free quote today.
+            See why brands are switching to technology-driven event staffing. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

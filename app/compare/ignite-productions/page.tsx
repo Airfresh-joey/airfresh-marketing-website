@@ -4,64 +4,68 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Elev8 Staffing - Agency Comparison [2026]',
-  description: 'Compare Air Fresh Marketing vs Elev8 Staffing Group: More technology, better training, transparent pricing. See the AirFresh difference.',
-  keywords: 'Air Fresh Marketing vs Elev8 Staffing, event staffing comparison, brand activation agency, Elev8 Staffing alternative',
+  title: 'Air Fresh Marketing vs Ignite Productions - Experiential Marketing Comparison [2026]',
+  description: 'Air Fresh Marketing vs Ignite Productions: Compare experiential marketing agencies on technology, training, industry expertise, and nationwide reach. See why top brands choose AirFresh.',
+  keywords: 'Air Fresh Marketing vs Ignite Productions, experiential marketing comparison, brand activation agency, Ignite Productions alternative, event staffing agency comparison',
   openGraph: {
-    title: 'Air Fresh Marketing vs Elev8 Staffing Group - Which Agency is Right for You?',
-    description: 'Compare services, quality standards, and technology. Find your ideal event staffing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    title: 'Air Fresh Marketing vs Ignite Productions - Which Experiential Agency Wins?',
+    description: 'Compare technology, training, industry reach, and track record. Find your ideal experiential marketing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/ignite-productions',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    canonical: 'https://www.airfreshmarketing.com/compare/ignite-productions',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
-  { feature: 'Staff Vetting Process', afm: 'Multi-step vetting + video certification', competitor: 'Standard screening', winner: 'afm' },
-  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Standard tools', winner: 'afm' },
-  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'On-site orientation', winner: 'afm' },
-  { feature: 'Quality Assurance', afm: 'GPS-verified attendance + real-time monitoring', competitor: 'Post-event reporting', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '5,000+ vetted, trained professionals', competitor: 'Large roster', winner: 'afm' },
-  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes', winner: 'afm' },
-  { feature: 'Client Reporting', afm: 'Real-time dashboards with GPS data', competitor: 'Post-event summaries', winner: 'afm' },
-  { feature: 'Convention Expertise', afm: 'CES, SEMA, NAB specialization', competitor: 'General event staffing', winner: 'afm' },
-  { feature: 'Staffing Volume', afm: 'Scalable to any size', competitor: 'High-volume capability', winner: 'tie' },
+  { feature: 'Years of Experience', afm: '20+ years (est. 2003)', competitor: '8 years (est. 2018)', winner: 'afm' },
+  { feature: 'Staff Network Size', afm: '5,000+ vetted professionals', competitor: '42,000+ ambassadors', winner: 'competitor' },
+  { feature: 'Technology Platform', afm: 'GPS check-in, AI consumer tools, branded apps, gamification', competitor: '"Spark" platform with GPS check-ins', winner: 'afm' },
+  { feature: 'Industry Expertise', afm: '300+ brands across all verticals', competitor: 'CPG-heavy focus', winner: 'afm' },
+  { feature: 'Staff Training', afm: 'Custom video training modules with certification', competitor: 'Standard onboarding', winner: 'afm' },
+  { feature: 'Event Track Record', afm: '1,000+ events executed', competitor: 'Growing portfolio', winner: 'afm' },
+  { feature: 'Convention Staffing', afm: 'CES, SEMA, NAB specialization', competitor: 'Trade show support available', winner: 'afm' },
+  { feature: 'Consumer Engagement Tech', afm: 'AI-powered tools & branded consumer apps', competitor: 'Standard field reporting', winner: 'afm' },
+  { feature: 'Business Certifications', afm: 'Fully insured, established agency', competitor: 'Veteran-Owned Small Business (VOSB)', winner: 'tie' },
+  { feature: 'Geographic Coverage', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide from Sparks, NV', winner: 'tie' },
 ];
 
 const afmAdvantages = [
   {
-    icon: Award,
-    title: 'Quality Over Quantity',
-    description: 'Every staff member completes mandatory video training and certification before representing your brand. No exceptions, no shortcuts.',
-  },
-  {
-    icon: Zap,
-    title: 'Proprietary Technology',
-    description: 'GPS check-in verification, video training platform, and real-time reporting dashboards give you complete visibility and accountability.',
-  },
-  {
-    icon: DollarSign,
-    title: 'Transparent Pricing',
-    description: 'Published rates starting at $25/hr with no hidden fees. Know your costs upfront instead of waiting for custom quotes.',
+    icon: Clock,
+    title: 'Proven Track Record',
+    description: 'Over 20 years in experiential marketing with 1,000+ events executed for 300+ brands. Our longevity proves sustained results, not just promises.',
   },
   {
     icon: Target,
-    title: 'Trade Show Expertise',
-    description: 'Specialized teams for CES, SEMA, NAB, MAGIC, and other major conventions. We understand the unique demands of trade show staffing.',
+    title: 'Broader Industry Expertise',
+    description: 'While Ignite Productions focuses heavily on CPG, Air Fresh Marketing serves every vertical\u2014tech, automotive, healthcare, entertainment, finance, and more.',
+  },
+  {
+    icon: Zap,
+    title: 'Advanced Technology',
+    description: 'Beyond basic GPS check-ins, AirFresh offers AI-powered consumer engagement tools, branded mobile apps, and gamification features that drive measurable ROI.',
+  },
+  {
+    icon: Award,
+    title: 'Certified Training',
+    description: 'Custom video training modules with mandatory certification ensure every ambassador represents your brand with precision\u2014not generic onboarding.',
   },
 ];
 
 const servicesOffered = [
-  { name: 'Brand Ambassadors', afm: true, elev8: true },
-  { name: 'Event Staffing', afm: true, elev8: true },
-  { name: 'GPS Check-In Technology', afm: true, elev8: false },
-  { name: 'Video Training Platform', afm: true, elev8: false },
-  { name: 'Trade Show Specialists', afm: true, elev8: true },
-  { name: 'Real-Time Dashboards', afm: true, elev8: false },
-  { name: 'Product Sampling', afm: true, elev8: true },
-  { name: 'Promotional Models', afm: true, elev8: true },
+  { name: 'Brand Ambassadors', afm: true, ignite: true },
+  { name: 'Product Sampling', afm: true, ignite: true },
+  { name: 'Trade Show Staffing', afm: true, ignite: true },
+  { name: 'Mobile Tours', afm: true, ignite: true },
+  { name: 'Retail Merchandising', afm: true, ignite: true },
+  { name: 'GPS Check-In Technology', afm: true, ignite: true },
+  { name: 'AI-Powered Consumer Tools', afm: true, ignite: false },
+  { name: 'Branded Consumer Apps', afm: true, ignite: false },
+  { name: 'Gamification Features', afm: true, ignite: false },
+  { name: 'Convention Specialization', afm: true, ignite: false },
+  { name: 'Custom Training Modules', afm: true, ignite: false },
+  { name: 'Real-Time Dashboards', afm: true, ignite: false },
 ];
 
 const marketsCovered = [
@@ -73,20 +77,20 @@ const marketsCovered = [
 
 const faqs = [
   {
-    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
-    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+    question: 'What is the difference between Air Fresh Marketing and Ignite Productions?',
+    answer: 'Air Fresh Marketing has 20+ years of experience across all industries with advanced technology including AI-powered consumer tools, branded apps, and gamification. Ignite Productions, founded in 2018 in Sparks, NV, is a veteran-owned agency with a 42,000+ ambassador network and their "Spark" platform for GPS check-ins, but focuses primarily on CPG brands. AirFresh offers broader industry expertise, custom training modules, and convention specialization at CES, SEMA, and NAB.',
   },
   {
-    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
-    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+    question: 'Is Air Fresh Marketing better than Ignite Productions for experiential marketing?',
+    answer: 'Both agencies provide experiential marketing services nationwide. Air Fresh Marketing stands out with 20+ years of proven results across 300+ brands and 1,000+ events, AI-driven consumer engagement tools, branded mobile apps, and deep convention expertise. Ignite Productions offers a larger raw ambassador network and VOSB certification. The best choice depends on your campaign goals, industry vertical, and technology requirements.',
   },
   {
-    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
-    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+    question: 'How does Air Fresh Marketing technology compare to Ignite Productions Spark platform?',
+    answer: 'Ignite Productions\' "Spark" platform provides GPS check-in functionality for field teams. Air Fresh Marketing goes further with GPS check-in plus AI-powered consumer engagement tools, branded consumer-facing mobile apps, gamification features to boost participation, custom video training with certification, and real-time reporting dashboards. AirFresh\'s technology stack is designed to drive measurable ROI at every touchpoint.',
   },
 ];
 
-export default function CompareElev8Staffing() {
+export default function CompareIgniteProductions() {
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -100,7 +104,7 @@ export default function CompareElev8Staffing() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
                   { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
-                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                  { "@type": "ListItem", "position": 3, "name": "Ignite Productions", "item": "https://www.airfreshmarketing.com/compare/ignite-productions" }
                 ]
               },
               {
@@ -130,11 +134,11 @@ export default function CompareElev8Staffing() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Elev8 Staffing
+              Ignite Productions
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Elev8 focuses on staffing volume. Air Fresh Marketing combines that scale with proprietary technology, certified training, and transparent pricing for superior results.
+            Both agencies deliver experiential marketing nationwide. See how Air Fresh Marketing&apos;s 20+ years of experience, advanced AI technology, and broader industry expertise set us apart from Ignite Productions.
           </p>
         </div>
       </section>
@@ -146,20 +150,20 @@ export default function CompareElev8Staffing() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Quality + technology-driven staffing</p>
+              <p className="text-gray-700 font-medium mb-4">20+ years of full-spectrum experiential marketing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified attendance
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> 1,000+ events for 300+ brands
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified video training
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> AI tools, branded apps & gamification
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Custom video training & certification
                 </li>
               </ul>
             </div>
@@ -168,18 +172,18 @@ export default function CompareElev8Staffing() {
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
                   <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Elev8 Staffing Group</h3>
+                <h3 className="text-xl font-bold text-gray-800">Ignite Productions</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">Volume-focused event staffing</p>
+              <p className="text-gray-600 font-medium mb-4">CPG-focused experiential agency since 2018</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 42,000+ ambassador network
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> High-volume staffing
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> &quot;Spark&quot; platform with GPS check-ins
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff roster
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Veteran-Owned (VOSB certified)
                 </li>
               </ul>
             </div>
@@ -213,7 +217,7 @@ export default function CompareElev8Staffing() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Elev8 Staffing
+                    Ignite Productions
                   </th>
                 </tr>
               </thead>
@@ -255,7 +259,7 @@ export default function CompareElev8Staffing() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              Quality-assured staffing with technology you can trust
+              Advanced experiential marketing services across every market
             </p>
           </div>
 
@@ -273,8 +277,8 @@ export default function CompareElev8Staffing() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">E8</span>
-                    {service.elev8 ? (
+                    <span className="text-xs text-gray-500">IGN</span>
+                    {service.ignite ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -350,9 +354,6 @@ export default function CompareElev8Staffing() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
-            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
-            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
-            { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
             { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
@@ -388,12 +389,11 @@ export default function CompareElev8Staffing() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Quality staffing, powered by technology
+            Ready for experienced experiential marketing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Experience the difference that GPS verification, certified training, and real-time reporting make. Call us at{' '}
-            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>{' '}
-            or get a free quote today.
+            See why brands trust 20+ years of proven results over newer alternatives. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">

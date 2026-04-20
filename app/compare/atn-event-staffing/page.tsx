@@ -350,6 +350,9 @@ export default function CompareATNEventStaffing() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/elev8-staffing', label: 'AirFresh vs Elev8 Staffing' },
+            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
+            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
+            { href: '/compare/ignite-productions', label: 'AirFresh vs Ignite Productions' },
             { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">

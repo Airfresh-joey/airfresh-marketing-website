@@ -4,64 +4,66 @@ import { Button } from '@/components/ui/button';
 import { CheckCircle2, Users, MapPin, Zap, Award, Clock, DollarSign, Target, Star, ArrowRight, Building } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Air Fresh Marketing vs Elev8 Staffing - Agency Comparison [2026]',
-  description: 'Compare Air Fresh Marketing vs Elev8 Staffing Group: More technology, better training, transparent pricing. See the AirFresh difference.',
-  keywords: 'Air Fresh Marketing vs Elev8 Staffing, event staffing comparison, brand activation agency, Elev8 Staffing alternative',
+  title: 'Air Fresh Marketing vs Kinetic Events - Event Staffing Comparison [2026]',
+  description: 'Air Fresh Marketing vs Kinetic Events Staffing: 50+ cities vs 15, GPS-verified check-in, proprietary tech platform. See why brands choose AirFresh nationwide.',
+  keywords: 'Air Fresh Marketing vs Kinetic Events, event staffing comparison, brand activation agency, Kinetic Events Staffing alternative, experiential marketing',
   openGraph: {
-    title: 'Air Fresh Marketing vs Elev8 Staffing Group - Which Agency is Right for You?',
-    description: 'Compare services, quality standards, and technology. Find your ideal event staffing partner.',
-    url: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    title: 'Air Fresh Marketing vs Kinetic Events Staffing - Which Agency is Right for You?',
+    description: 'Compare geographic coverage, technology, and experiential capabilities. Find your ideal event staffing partner.',
+    url: 'https://www.airfreshmarketing.com/compare/kinetic-events',
   },
   alternates: {
-    canonical: 'https://www.airfreshmarketing.com/compare/elev8-staffing',
+    canonical: 'https://www.airfreshmarketing.com/compare/kinetic-events',
   },
 };
 
 const comparison = [
-  { feature: 'Geographic Focus', afm: 'All 50 states, 50+ cities', competitor: 'Nationwide', winner: 'tie' },
-  { feature: 'Staff Vetting Process', afm: 'Multi-step vetting + video certification', competitor: 'Standard screening', winner: 'afm' },
-  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'Standard tools', winner: 'afm' },
-  { feature: 'Staff Training', afm: 'Mandatory video training with certification', competitor: 'On-site orientation', winner: 'afm' },
-  { feature: 'Quality Assurance', afm: 'GPS-verified attendance + real-time monitoring', competitor: 'Post-event reporting', winner: 'afm' },
-  { feature: 'Brand Ambassadors', afm: '5,000+ vetted, trained professionals', competitor: 'Large roster', winner: 'afm' },
-  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Custom quotes', winner: 'afm' },
-  { feature: 'Client Reporting', afm: 'Real-time dashboards with GPS data', competitor: 'Post-event summaries', winner: 'afm' },
-  { feature: 'Convention Expertise', afm: 'CES, SEMA, NAB specialization', competitor: 'General event staffing', winner: 'afm' },
-  { feature: 'Staffing Volume', afm: 'Scalable to any size', competitor: 'High-volume capability', winner: 'tie' },
+  { feature: 'Geographic Coverage', afm: '50+ cities, all 50 states', competitor: '15 US cities only', winner: 'afm' },
+  { feature: 'Technology Platform', afm: 'GPS check-in, video training, real-time dashboards', competitor: 'No proprietary tech platform', winner: 'afm' },
+  { feature: 'Staff Check-In Verification', afm: 'GPS-verified check-in with location proof', competitor: 'No GPS-verified check-in', winner: 'afm' },
+  { feature: 'Staff Employment Model', afm: 'Flexible W-2 and 1099 options', competitor: 'W-2 staffing only', winner: 'afm' },
+  { feature: 'Industry Focus', afm: 'All industries including tech, CPG, automotive', competitor: 'Fintech & biotech demos', winner: 'afm' },
+  { feature: 'Service Scope', afm: 'Full experiential marketing + staffing', competitor: 'Primarily staffing, not full experiential', winner: 'afm' },
+  { feature: 'AI-Powered Features', afm: 'AI matching and smart scheduling', competitor: 'No AI features', winner: 'afm' },
+  { feature: 'Pricing Transparency', afm: 'Published rates, no hidden fees', competitor: 'Quote-based pricing', winner: 'afm' },
+  { feature: 'Convention Specialization', afm: 'CES, SEMA, NAB specialization at scale', competitor: 'Trade show focused but limited markets', winner: 'afm' },
+  { feature: 'Years Experience', afm: '20+ years', competitor: 'Since 2006', winner: 'tie' },
 ];
 
 const afmAdvantages = [
   {
-    icon: Award,
-    title: 'Quality Over Quantity',
-    description: 'Every staff member completes mandatory video training and certification before representing your brand. No exceptions, no shortcuts.',
+    icon: MapPin,
+    title: 'True Nationwide Coverage',
+    description: 'Staff activations in 50+ cities across all 50 states. Kinetic Events operates in just 15 US cities. When your campaign goes national, AirFresh has you covered everywhere.',
   },
   {
     icon: Zap,
-    title: 'Proprietary Technology',
-    description: 'GPS check-in verification, video training platform, and real-time reporting dashboards give you complete visibility and accountability.',
-  },
-  {
-    icon: DollarSign,
-    title: 'Transparent Pricing',
-    description: 'Published rates starting at $25/hr with no hidden fees. Know your costs upfront instead of waiting for custom quotes.',
+    title: 'GPS-Verified Technology',
+    description: 'Proprietary GPS check-in system verifies staff location and arrival time in real time. No more guessing if your team showed up—get proof with every activation.',
   },
   {
     icon: Target,
-    title: 'Trade Show Expertise',
-    description: 'Specialized teams for CES, SEMA, NAB, MAGIC, and other major conventions. We understand the unique demands of trade show staffing.',
+    title: 'Full Experiential Capabilities',
+    description: 'Beyond staffing, AirFresh delivers complete experiential marketing strategy, production, and execution. Kinetic Events focuses primarily on staffing without full experiential services.',
+  },
+  {
+    icon: DollarSign,
+    title: 'Flexible Pricing',
+    description: 'Transparent published rates starting at $25/hr with no hidden fees. Flexible options for every budget size, from single-market activations to nationwide campaigns.',
   },
 ];
 
 const servicesOffered = [
-  { name: 'Brand Ambassadors', afm: true, elev8: true },
-  { name: 'Event Staffing', afm: true, elev8: true },
-  { name: 'GPS Check-In Technology', afm: true, elev8: false },
-  { name: 'Video Training Platform', afm: true, elev8: false },
-  { name: 'Trade Show Specialists', afm: true, elev8: true },
-  { name: 'Real-Time Dashboards', afm: true, elev8: false },
-  { name: 'Product Sampling', afm: true, elev8: true },
-  { name: 'Promotional Models', afm: true, elev8: true },
+  { name: 'Brand Ambassadors', afm: true, kinetic: true },
+  { name: 'Trade Show Staffing', afm: true, kinetic: true },
+  { name: 'Product Demos', afm: true, kinetic: true },
+  { name: 'Promotional Models', afm: true, kinetic: true },
+  { name: 'Street Teams', afm: true, kinetic: true },
+  { name: 'GPS Check-In Technology', afm: true, kinetic: false },
+  { name: 'Video Training Platform', afm: true, kinetic: false },
+  { name: 'Real-Time Dashboards', afm: true, kinetic: false },
+  { name: 'Experiential Marketing Strategy', afm: true, kinetic: false },
+  { name: 'Convention Specialization at Scale', afm: true, kinetic: false },
 ];
 
 const marketsCovered = [
@@ -73,20 +75,20 @@ const marketsCovered = [
 
 const faqs = [
   {
-    question: 'What is the difference between Air Fresh Marketing and Elev8 Staffing?',
-    answer: 'Air Fresh Marketing combines event staffing with proprietary technology including GPS check-in verification, mandatory video training and certification, and real-time reporting dashboards. Elev8 Staffing Group focuses on high-volume staffing with standard screening and post-event reporting. AirFresh also offers published transparent pricing starting at $25/hr.',
+    question: 'What is the difference between Air Fresh Marketing and Kinetic Events Staffing?',
+    answer: 'Air Fresh Marketing offers nationwide coverage in 50+ cities with proprietary technology including GPS-verified check-in, mandatory video training, and real-time reporting dashboards. Kinetic Events Staffing is a San Francisco-based agency founded in 2006 that operates in only 15 US cities with W-2 staffing focused on fintech and biotech product demos. AirFresh provides full experiential marketing services, AI-powered staff matching, and published transparent pricing starting at $25/hr.',
   },
   {
-    question: 'Is Air Fresh Marketing better than Elev8 Staffing Group?',
-    answer: 'Both agencies provide nationwide event staffing at scale. Air Fresh Marketing differentiates with technology-driven quality assurance (GPS-verified attendance, certified video training) and transparent published pricing. Elev8 focuses on volume-based staffing. The best choice depends on whether you prioritize technology and accountability or purely volume.',
+    question: 'Is Air Fresh Marketing better than Kinetic Events Staffing?',
+    answer: 'Both agencies provide quality event staffing, but they differ significantly in scope. Air Fresh Marketing covers 50+ cities nationwide compared to Kinetic Events\' 15 cities. AirFresh uses proprietary GPS check-in technology and AI-powered scheduling that Kinetic Events does not offer. AirFresh also provides full experiential marketing strategy and execution beyond just staffing. The best choice depends on your geographic needs and whether you require technology-driven accountability.',
   },
   {
-    question: 'How does staff quality compare between Air Fresh Marketing and Elev8?',
-    answer: 'Air Fresh Marketing requires every staff member to complete mandatory video training with certification before representing your brand. Staff check in via GPS-enabled app verifying location and time. Elev8 Staffing uses standard screening with on-site orientation. AirFresh maintains a 99%+ on-time arrival rate across all events.',
+    question: 'How does geographic coverage compare between Air Fresh Marketing and Kinetic Events?',
+    answer: 'Air Fresh Marketing operates in 50+ cities across all 50 states with a network of 5,000+ vetted professionals. Kinetic Events Staffing is limited to 15 US cities, primarily on the West Coast around their San Francisco headquarters. For national campaigns or activations outside major coastal markets, AirFresh provides significantly broader coverage.',
   },
 ];
 
-export default function CompareElev8Staffing() {
+export default function CompareKineticEvents() {
   return (
     <main className="min-h-screen bg-white">
       <script
@@ -100,7 +102,7 @@ export default function CompareElev8Staffing() {
                 "itemListElement": [
                   { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
                   { "@type": "ListItem", "position": 2, "name": "Compare", "item": "https://www.airfreshmarketing.com/compare" },
-                  { "@type": "ListItem", "position": 3, "name": "Elev8 Staffing", "item": "https://www.airfreshmarketing.com/compare/elev8-staffing" }
+                  { "@type": "ListItem", "position": 3, "name": "Kinetic Events", "item": "https://www.airfreshmarketing.com/compare/kinetic-events" }
                 ]
               },
               {
@@ -130,11 +132,11 @@ export default function CompareElev8Staffing() {
           <h1 className="text-4xl sm:text-5xl lg:text-6xl font-extrabold text-white tracking-tight leading-[1.1]">
             Air Fresh Marketing vs{' '}
             <span className="text-[#F7931E]">
-              Elev8 Staffing
+              Kinetic Events Staffing
             </span>
           </h1>
           <p className="mt-6 text-lg sm:text-xl text-gray-300 leading-relaxed max-w-2xl mx-auto">
-            Elev8 focuses on staffing volume. Air Fresh Marketing combines that scale with proprietary technology, certified training, and transparent pricing for superior results.
+            Kinetic Events covers 15 cities. Air Fresh Marketing covers 50+. Compare GPS-verified technology, full experiential capabilities, and transparent pricing to see why brands choose AirFresh for nationwide activations.
           </p>
         </div>
       </section>
@@ -146,17 +148,17 @@ export default function CompareElev8Staffing() {
             <div className="p-8 bg-[#002B5B]/5 rounded-2xl border-2 border-[#002B5B]/20">
               <div className="flex items-center gap-3 mb-4">
                 <div className="w-12 h-12 bg-[#002B5B] rounded-xl flex items-center justify-center">
-                  <Award className="w-6 h-6 text-white" />
+                  <Zap className="w-6 h-6 text-white" />
                 </div>
                 <h3 className="text-xl font-bold text-[#002B5B]">Air Fresh Marketing</h3>
               </div>
-              <p className="text-gray-700 font-medium mb-4">Quality + technology-driven staffing</p>
+              <p className="text-gray-700 font-medium mb-4">Nationwide experiential marketing + staffing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified attendance
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> 50+ cities, all 50 states
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-green-500" /> Certified video training
+                  <CheckCircle2 className="w-4 h-4 text-green-500" /> GPS-verified check-in technology
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
                   <CheckCircle2 className="w-4 h-4 text-green-500" /> Published rates from $25/hr
@@ -168,18 +170,18 @@ export default function CompareElev8Staffing() {
                 <div className="w-12 h-12 bg-gray-300 rounded-xl flex items-center justify-center">
                   <Building className="w-6 h-6 text-gray-600" />
                 </div>
-                <h3 className="text-xl font-bold text-gray-800">Elev8 Staffing Group</h3>
+                <h3 className="text-xl font-bold text-gray-800">Kinetic Events Staffing</h3>
               </div>
-              <p className="text-gray-600 font-medium mb-4">Volume-focused event staffing</p>
+              <p className="text-gray-600 font-medium mb-4">San Francisco-based W-2 event staffing</p>
               <ul className="space-y-2">
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Nationwide coverage
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> 15 US cities
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> High-volume staffing
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Founded 2006
                 </li>
                 <li className="flex items-center gap-2 text-sm text-gray-600">
-                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Large staff roster
+                  <CheckCircle2 className="w-4 h-4 text-gray-400" /> Tech-savvy staff for fintech/biotech
                 </li>
               </ul>
             </div>
@@ -213,7 +215,7 @@ export default function CompareElev8Staffing() {
                     </div>
                   </th>
                   <th className="text-center py-4 px-6 text-sm font-semibold text-gray-500 w-1/3">
-                    Elev8 Staffing
+                    Kinetic Events Staffing
                   </th>
                 </tr>
               </thead>
@@ -255,7 +257,7 @@ export default function CompareElev8Staffing() {
               Service Capabilities
             </h2>
             <p className="mt-4 text-lg text-gray-500 max-w-xl mx-auto">
-              Quality-assured staffing with technology you can trust
+              Technology-enhanced staffing services across every market
             </p>
           </div>
 
@@ -273,8 +275,8 @@ export default function CompareElev8Staffing() {
                     )}
                   </div>
                   <div className="flex items-center gap-2">
-                    <span className="text-xs text-gray-500">E8</span>
-                    {service.elev8 ? (
+                    <span className="text-xs text-gray-500">KE</span>
+                    {service.kinetic ? (
                       <CheckCircle2 className="w-5 h-5 text-gray-400" />
                     ) : (
                       <span className="w-5 h-5 rounded-full bg-gray-200" />
@@ -344,16 +346,13 @@ export default function CompareElev8Staffing() {
             { href: '/city-services/las-vegas-convention-staffing', label: 'Convention Staffing Las Vegas' },
             { href: '/city-services/chicago-event-management', label: 'Event Management Chicago' },
             { href: '/city-services/miami-experiential-marketing', label: 'Experiential Marketing Miami' },
+            { href: '/city-services/san-francisco-brand-ambassadors', label: 'Brand Ambassadors San Francisco' },
             { href: '/blog/top-event-staffing-agencies-los-angeles', label: 'Top 10 Agencies in LA' },
             { href: '/blog/top-event-staffing-agencies-new-york', label: 'Top 10 Agencies in NYC' },
             { href: '/blog/top-event-staffing-agencies-las-vegas', label: 'Top 10 Agencies in Las Vegas' },
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
-            { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
-            { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
-            { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
-            { href: '/portfolio', label: 'View Case Studies' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />
@@ -388,12 +387,11 @@ export default function CompareElev8Staffing() {
         </div>
         <div className="relative max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl sm:text-4xl lg:text-5xl font-extrabold text-white mb-5">
-            Quality staffing, powered by technology
+            Ready for truly nationwide staffing?
           </h2>
           <p className="text-lg text-gray-300 mb-10 max-w-xl mx-auto">
-            Experience the difference that GPS verification, certified training, and real-time reporting make. Call us at{' '}
-            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>{' '}
-            or get a free quote today.
+            Don&apos;t limit your campaigns to 15 cities. Get GPS-verified event staffing in 50+ markets. Get a free quote or call us at{' '}
+            <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a>.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link href="/contact">
