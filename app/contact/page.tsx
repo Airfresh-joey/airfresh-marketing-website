@@ -49,22 +49,43 @@ export default function Contact() {
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
 
+  const contactFaqs = [
+    { question: "How do I get a quote from AirFresh Marketing?", answer: "You can get a free quote by filling out the contact form on this page, calling us at (303) 720-6060, or emailing hello@airfreshmarketing.com. We respond to all inquiries within 24 hours with a custom proposal tailored to your event needs." },
+    { question: "What information should I include in my quote request?", answer: "To provide the most accurate quote, include your event date(s), location, number of staff needed, type of service (brand ambassadors, event staff, street teams, etc.), and any special requirements. The more detail you provide, the faster we can prepare your proposal." },
+    { question: "How quickly does AirFresh respond to inquiries?", answer: "We respond to all inquiries within 24 hours during business days (Monday-Friday, 9AM-6PM MST). For urgent requests, call us directly at (303) 720-6060 for immediate assistance." },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "ContactPage",
-    "mainEntity": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing",
-      "telephone": "+1-303-720-6060",
-      "email": "hello@airfreshmarketing.com",
-      "contactPoint": {
-        "@type": "ContactPoint",
-        "telephone": "+1-303-720-6060",
-        "contactType": "customer service",
-        "email": "hello@airfreshmarketing.com",
-        "availableLanguage": "en"
+    "@graph": [
+      {
+        "@type": "ContactPage",
+        "mainEntity": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "telephone": "+1-303-720-6060",
+          "email": "hello@airfreshmarketing.com",
+          "contactPoint": {
+            "@type": "ContactPoint",
+            "telephone": "+1-303-720-6060",
+            "contactType": "customer service",
+            "email": "hello@airfreshmarketing.com",
+            "availableLanguage": "en"
+          }
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": contactFaqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
-    }
+    ]
   };
 
   const form = useForm<ContactFormData>({
@@ -363,6 +384,19 @@ export default function Contact() {
               </CardContent>
             </Card>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Contact FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {contactFaqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

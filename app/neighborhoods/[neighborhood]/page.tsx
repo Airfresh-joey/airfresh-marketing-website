@@ -52,6 +52,21 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
     notFound();
   }
 
+  const faqs = [
+    {
+      question: `What event staffing services are available in ${neighborhood.name}, ${neighborhood.city}?`,
+      answer: `AirFresh Marketing provides brand ambassadors, event staff, promotional models, street teams, product sampling, and more in ${neighborhood.name}, ${neighborhood.city}. Our staff have local knowledge of the area's venues, regulations, and audience demographics.`
+    },
+    {
+      question: `How do I book event staff in ${neighborhood.name}?`,
+      answer: `Contact AirFresh Marketing at (303) 720-6060 or request a free quote online. Tell us about your event date, venue in ${neighborhood.name}, number of staff needed, and any special requirements. We'll provide a custom proposal within 24 hours.`
+    },
+    {
+      question: `What venues does AirFresh staff in ${neighborhood.name}?`,
+      answer: `We staff events at all major venues in ${neighborhood.name} including ${neighborhood.venues.slice(0, 3).join(', ')}, and more. Whether it's a pop-up shop, corporate event, or brand activation, we have experienced local staff ready to represent your brand.`
+    },
+  ];
+
   // Structured data with LocalBusiness schema
   const structuredData = {
     "@context": "https://schema.org",
@@ -82,6 +97,17 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
           "name": `${neighborhood.name}, ${neighborhood.city}`
         },
         "priceRange": "$$$"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
       }
     ]
   };
@@ -173,6 +199,19 @@ export default async function NeighborhoodPage({ params }: NeighborhoodPageProps
             <span key={index} className="bg-primary/10 text-primary px-4 py-2 rounded-full font-medium">
               {type}
             </span>
+          ))}
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Event Staffing in {neighborhood.name} FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
           ))}
         </div>
       </section>

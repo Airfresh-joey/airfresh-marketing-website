@@ -52,8 +52,46 @@ export default function Portfolio() {
 
   const featuredStudy = caseStudiesData.find(s => s.featured);
 
+  const faqs = [
+    { question: "Can I see examples of AirFresh Marketing's work?", answer: "Yes, our portfolio showcases 300+ successful campaigns across industries including tech, CPG, automotive, sports, and entertainment. Each case study includes campaign goals, execution details, and measurable results. Browse our portfolio to see brands like Netflix, Microsoft, and Formula 1." },
+    { question: "What results has AirFresh achieved for clients?", answer: "AirFresh Marketing delivers an average 4.2x ROI across campaigns. We've reached over 5 million consumers, served 300+ brands, and maintain a 98% client satisfaction rate. Each case study in our portfolio includes specific metrics and outcomes." },
+    { question: "What types of campaigns does AirFresh execute?", answer: "We execute brand activations, product sampling, corporate events, trade show marketing, street teams, guerrilla marketing, pop-up experiences, and more. Our portfolio includes examples across all categories so you can see our capabilities in action." },
+  ];
+
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "name": "AirFresh Marketing Portfolio",
+        "description": "Case studies and campaign results from AirFresh Marketing's experiential marketing campaigns.",
+        "url": "https://www.airfreshmarketing.com/portfolio",
+        "publisher": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        }
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen bg-gradient-to-b from-gray-50 to-white">
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
       {/* Preconnect to Vimeo for faster video load */}
       <link rel="preconnect" href="https://player.vimeo.com" />
       <link rel="preconnect" href="https://i.vimeocdn.com" />
@@ -353,6 +391,19 @@ export default function Portfolio() {
               ))}
             </div>
           )}
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Portfolio FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
+        </div>
       </section>
 
       {/* Call to Action */}

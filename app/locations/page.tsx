@@ -55,14 +55,36 @@ export default function Locations() {
     ? cities.filter(city => city.region === selectedRegion)
     : cities;
 
+  const faqs = [
+    { question: "What cities does AirFresh Marketing serve?", answer: "AirFresh Marketing provides experiential marketing and event staffing services in 50+ major cities across the United States, including Denver, New York, Los Angeles, Chicago, Miami, Dallas, San Francisco, Austin, Atlanta, Seattle, Boston, Nashville, Las Vegas, and many more." },
+    { question: "Can AirFresh provide event staff in my city?", answer: "Yes, we have a nationwide network of 1,000+ pre-vetted brand ambassadors and event staff. Even if your city isn't listed on our main locations page, we likely have staff available. Contact us for availability in your specific market." },
+    { question: "How does AirFresh ensure quality in different cities?", answer: "All AirFresh staff go through our standardized vetting, training, and onboarding process regardless of location. Our Denver headquarters coordinates all campaigns centrally, ensuring consistent quality and brand representation across every market." },
+    { question: "Do you offer hyper-local neighborhood-level staffing?", answer: "Yes, we provide hyper-local event staffing in popular neighborhoods across major cities. Our staff have local knowledge of venues, regulations, and audience demographics specific to each neighborhood, ensuring your activation connects with the right audience." },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "AirFresh Marketing",
-    "areaServed": cities.map(city => ({
-      "@type": "City",
-      "name": `${city.name}, ${city.state}`
-    }))
+    "@graph": [
+      {
+        "@type": "Organization",
+        "name": "AirFresh Marketing",
+        "areaServed": cities.map(city => ({
+          "@type": "City",
+          "name": `${city.name}, ${city.state}`
+        }))
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -363,6 +385,19 @@ export default function Locations() {
                 </Link>
               ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Event Staffing Locations FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 

@@ -152,9 +152,62 @@ export default function Services() {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
           { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.airfreshmarketing.com/services" }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What experiential marketing services does AirFresh Marketing offer?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing offers brand activations, product sampling, corporate events, trade show marketing, guerrilla marketing, street teams, brand ambassador staffing, event production, creative development, and analytics reporting. We handle everything in-house from strategy to execution."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does experiential marketing cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Experiential marketing costs vary by scope and service type. Small-scale activations start around $5,000, mid-scale campaigns range from $25,000-$150,000, and large-scale national campaigns can exceed $150,000. Contact us for a free custom quote tailored to your goals and budget."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What cities does AirFresh Marketing serve?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing serves 50+ major cities nationwide including New York, Los Angeles, Chicago, Miami, Dallas, San Francisco, Denver, Austin, Atlanta, Seattle, Boston, Nashville, Las Vegas, and many more. Our Denver headquarters coordinates campaigns across all U.S. markets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can AirFresh staff my event?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We can typically deploy trained event staff within 48-72 hours for most markets. For larger activations or specialized roles, we recommend 2-4 weeks lead time. Our nationwide network of 1,000+ pre-vetted brand ambassadors allows us to scale quickly for any campaign size."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide turnkey event marketing solutions?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, AirFresh Marketing provides full turnkey solutions including production, strategy, creative development, asset procurement, experiential and digital integration, and post-event analytics. We operate as an extension of your team from concept to completion."
+            }
+          }
+        ]
       }
     ]
   };
+
+  const faqs = [
+    { question: "What experiential marketing services does AirFresh Marketing offer?", answer: "AirFresh Marketing offers brand activations, product sampling, corporate events, trade show marketing, guerrilla marketing, street teams, brand ambassador staffing, event production, creative development, and analytics reporting. We handle everything in-house from strategy to execution." },
+    { question: "How much does experiential marketing cost?", answer: "Experiential marketing costs vary by scope and service type. Small-scale activations start around $5,000, mid-scale campaigns range from $25,000-$150,000, and large-scale national campaigns can exceed $150,000. Contact us for a free custom quote tailored to your goals and budget." },
+    { question: "What cities does AirFresh Marketing serve?", answer: "AirFresh Marketing serves 50+ major cities nationwide including New York, Los Angeles, Chicago, Miami, Dallas, San Francisco, Denver, Austin, Atlanta, Seattle, Boston, Nashville, Las Vegas, and many more. Our Denver headquarters coordinates campaigns across all U.S. markets." },
+    { question: "How quickly can AirFresh staff my event?", answer: "We can typically deploy trained event staff within 48-72 hours for most markets. For larger activations or specialized roles, we recommend 2-4 weeks lead time. Our nationwide network of 1,000+ pre-vetted brand ambassadors allows us to scale quickly for any campaign size." },
+    { question: "Do you provide turnkey event marketing solutions?", answer: "Yes, AirFresh Marketing provides full turnkey solutions including production, strategy, creative development, asset procurement, experiential and digital integration, and post-event analytics. We operate as an extension of your team from concept to completion." },
+  ];
 
   return (
     <div className="pt-16">
@@ -337,6 +390,19 @@ export default function Services() {
               View all locations →
             </Link>
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">Experiential Marketing Services FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 
