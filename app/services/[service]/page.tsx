@@ -1725,6 +1725,63 @@ export default function ServicePage({ params }: ServicePageProps) {
               </Card>
             </Link>
           </div>
+          {/* Service-Specific Blog Links */}
+          <div className="mt-8 text-center">
+            <h3 className="text-lg font-semibold text-gray-700 mb-4">From Our Blog</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              {serviceName === 'brand-ambassadors' && (<>
+                <Link href="/blog/brand-ambassador-career" className="text-sm text-primary hover:underline">Brand Ambassador Career Guide</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/brand-ambassador-pay-rates" className="text-sm text-primary hover:underline">Pay Rates Guide</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/brand-ambassador-job-description" className="text-sm text-primary hover:underline">Writing Job Descriptions</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/event-staff-training" className="text-sm text-primary hover:underline">Staff Training Best Practices</Link>
+              </>)}
+              {serviceName === 'street-teams' && (<>
+                <Link href="/blog/street-teams-vs-digital-marketing" className="text-sm text-primary hover:underline">Street Teams vs Digital Marketing</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/street-teams-marketing-guide" className="text-sm text-primary hover:underline">Street Teams Marketing Guide</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/mobile-marketing-tours-explained" className="text-sm text-primary hover:underline">Mobile Marketing Tours</Link>
+              </>)}
+              {serviceName === 'sampling' && (<>
+                <Link href="/blog/product-sampling-campaigns" className="text-sm text-primary hover:underline">Product Sampling Campaigns</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/food-beverage-sampling-regulations" className="text-sm text-primary hover:underline">Sampling Regulations Guide</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/retail-demo-programs" className="text-sm text-primary hover:underline">Retail Demo Programs</Link>
+              </>)}
+              {serviceName === 'convention-staffing' && (<>
+                <Link href="/blog/convention-center-marketing" className="text-sm text-primary hover:underline">Convention Center Marketing</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/trade-show-marketing-strategies" className="text-sm text-primary hover:underline">Trade Show Strategies</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/lead-capture-events" className="text-sm text-primary hover:underline">Lead Capture at Events</Link>
+              </>)}
+              {serviceName === 'experiential-marketing' && (<>
+                <Link href="/blog/experiential-vs-traditional" className="text-sm text-primary hover:underline">Experiential vs Traditional</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/experiential-marketing-budget" className="text-sm text-primary hover:underline">Budgeting Guide</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/experiential-marketing-roi-case-studies" className="text-sm text-primary hover:underline">ROI Case Studies</Link>
+              </>)}
+              {serviceName === 'event-management' && (<>
+                <Link href="/blog/event-permits-legal" className="text-sm text-primary hover:underline">Event Permits & Legal</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/post-event-reporting" className="text-sm text-primary hover:underline">Post-Event Reporting</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/event-marketing-calendar" className="text-sm text-primary hover:underline">Event Marketing Calendar</Link>
+              </>)}
+              {serviceName === 'promotional-models' && (<>
+                <Link href="/blog/event-uniforms-dress-code" className="text-sm text-primary hover:underline">Event Uniforms & Dress Code</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/managing-difficult-situations" className="text-sm text-primary hover:underline">Managing Event Situations</Link>
+                <span className="text-gray-300">|</span>
+                <Link href="/blog/event-photography-content" className="text-sm text-primary hover:underline">Event Photography Guide</Link>
+              </>)}
+            </div>
+          </div>
         </div>
       </section>
 
