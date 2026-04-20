@@ -120,7 +120,7 @@ export default function Services() {
         title="Experiential Marketing Services | Brand Activations & Events - AirFresh"
         description="Professional experiential marketing services including brand activations, corporate events, guerrilla marketing & trade show campaigns nationwide."
         pageType="services"
-        canonical="https://airfreshmarketing.com/services"
+        canonical="https://www.airfreshmarketing.com/services"
         structuredData={structuredData}
       />
 

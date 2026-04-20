@@ -76,7 +76,7 @@ export default function ResourcesPage() {
       <SEO
         title="Free Event Marketing Resources & Guides | AirFresh Marketing"
         description="Download free guides on event staffing, brand ambassador hiring, and event planning. Expert resources from 15+ years of experiential marketing experience."
-        canonical="https://airfreshmarketing.com/resources"
+        canonical="https://www.airfreshmarketing.com/resources"
         structuredData={structuredData}
       />
 

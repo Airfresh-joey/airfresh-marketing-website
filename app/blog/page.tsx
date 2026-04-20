@@ -91,7 +91,7 @@ export default function Blog() {
       <SEO
         title="Blog | Air Fresh Marketing Insights & Case Studies"
         description="Explore expert insights on experiential marketing, street teams, brand ambassadors, and event staffing. Learn from real case studies and industry best practices."
-        canonical="https://airfreshmarketing.com/blog"
+        canonical="https://www.airfreshmarketing.com/blog"
       />
 
       {/* Hero Section */}

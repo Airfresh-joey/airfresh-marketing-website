@@ -36,7 +36,7 @@ export default function VenuesDirectory() {
         description="Find professional event staffing for major US convention centers and venues. McCormick Place, Las Vegas Convention Center, OCCC, and 40+ more venues."
         keywords="convention center staffing, venue staffing, trade show staff, event staff, mccormick place staffing, lvcc staffing, convention staff"
         structuredData={structuredData}
-        canonical="https://airfreshmarketing.com/venues"
+        canonical="https://www.airfreshmarketing.com/venues"
       />
 
       {/* Hero Section */}

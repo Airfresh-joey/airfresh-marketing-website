@@ -24,7 +24,7 @@ export default function HowToChooseEventStaffingAgency() {
     "headline": "How to Choose the Right Event Staffing Agency for Your Next Experiential Marketing Campaign",
     "description": "Learn how to choose the right event staffing agency for experiential marketing campaigns. Compare agency types, spot red flags, evaluate ROI, and find reliable event staff for hire.",
     "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://airfreshmarketing.com/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/logo.png" } },
     "datePublished": "2026-03-13",
     "dateModified": "2026-03-13"
   };

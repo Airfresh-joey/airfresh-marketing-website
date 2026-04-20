@@ -24,7 +24,7 @@ export default function MeasureBrandAmbassadorROI() {
     "headline": "How to Measure Brand Ambassador ROI in 2026: Metrics, KPIs & Attribution",
     "description": "How to measure brand ambassador ROI with proven metrics, KPIs, and attribution models. Learn the frameworks top brands use to track and prove experiential marketing returns.",
     "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://airfreshmarketing.com/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/logo.png" } },
     "datePublished": "2026-03-13",
     "dateModified": "2026-03-13"
   };

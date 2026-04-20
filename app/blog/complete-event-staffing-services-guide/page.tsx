@@ -31,13 +31,13 @@ export default function CompleteEventStaffingServicesGuide() {
     "publisher": {
       "@type": "Organization",
       "name": "Air Fresh Marketing",
-      "url": "https://airfreshmarketing.com"
+      "url": "https://www.airfreshmarketing.com"
     },
     "datePublished": "2026-03-12",
     "dateModified": "2026-03-12",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://airfreshmarketing.com/blog/complete-event-staffing-services-guide"
+      "@id": "https://www.airfreshmarketing.com/blog/complete-event-staffing-services-guide"
     }
   };
 

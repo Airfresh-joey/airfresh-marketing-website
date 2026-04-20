@@ -24,7 +24,7 @@ export default function EventStaffingProductLaunches() {
     "headline": "Event Staffing for Product Launches: The Complete Playbook",
     "description": "Event staffing for product launches requires precise planning from pre-launch preparation through launch day execution to post-event follow-up.",
     "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://airfreshmarketing.com/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/logo.png" } },
     "datePublished": "2026-03-13",
     "dateModified": "2026-03-13"
   };

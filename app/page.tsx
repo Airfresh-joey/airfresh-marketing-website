@@ -22,12 +22,12 @@ export const metadata: Metadata = {
   openGraph: {
     title: "Air Fresh Marketing - Experiential Marketing Agency",
     description: "Experiential marketing agency offering brand ambassadors, event staffing, guerrilla marketing & brand activations nationwide.",
-    url: "https://airfreshmarketing.com",
+    url: "https://www.airfreshmarketing.com",
     siteName: "AirFresh Marketing",
     type: "website",
     locale: "en_US",
     images: [{
-      url: "https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80",
+      url: "/images/og-image.jpg",
       width: 1200,
       height: 630,
       alt: "AirFresh Marketing experiential marketing brand ambassadors event staffing nationwide"
@@ -41,7 +41,7 @@ export const metadata: Metadata = {
     creator: "@AirFreshMktg"
   },
   alternates: {
-    canonical: "https://airfreshmarketing.com"
+    canonical: "https://www.airfreshmarketing.com"
   },
   robots: "index, follow",
   authors: [{ name: "AirFresh Marketing" }]
@@ -56,15 +56,15 @@ export default function Home() {
     "@graph": [
       {
         "@type": "Organization",
-        "@id": "https://airfreshmarketing.com/#organization",
+        "@id": "https://www.airfreshmarketing.com/#organization",
         "name": "AirFresh Marketing",
         "alternateName": "AirFresh Experiential Marketing Agency",
         "description": "Experiential marketing agency specializing in brand activations, event marketing, guerrilla marketing, and customer engagement campaigns nationwide.",
-        "url": "https://airfreshmarketing.com",
+        "url": "https://www.airfreshmarketing.com",
         "logo": "/favicon.svg",
         "sameAs": [
           "https://www.linkedin.com/company/airfreshmarketing",
-          "https://twitter.com/airfreshmarket",
+          "https://twitter.com/AirFreshMktg",
           "https://www.instagram.com/airfreshmarketing",
           "https://www.facebook.com/AirFreshMarketing"
         ],
@@ -78,10 +78,10 @@ export default function Home() {
         },
         "address": {
           "@type": "PostalAddress",
-          "streetAddress": "720 S. Colorado Blvd., Penthouse North",
+          "streetAddress": "1580 N. Logan St., Suite 660",
           "addressLocality": "Denver",
           "addressRegion": "CO",
-          "postalCode": "80246",
+          "postalCode": "80203",
           "addressCountry": "US"
         },
         "areaServed": "US"
@@ -265,19 +265,19 @@ export default function Home() {
       name: "Yvonne H.",
       role: "Senior Marketing Manager, Ent Credit Union",
       content: "Love the money machine idea and really like the idea of capturing data with an experience. Air Fresh brings creative solutions we hadn't considered.",
-      avatar: "/images/testimonials/kristin-quinn.jpg"
+      avatar: "/images/airfresh-logo.svg"
     },
     {
       name: "Andrew P.",
       role: "Director of Sales, Midwest Immersive",
       content: "I saw a few highlighted experiential projects and was extremely impressed at the level of work your company does. I love the work you guys do!",
-      avatar: "/images/testimonials/anonymous-review.jpg"
+      avatar: "/images/airfresh-logo.svg"
     },
     {
       name: "Verified Brand Ambassador",
       role: "PopBookings Review - 5 Stars",
       content: "Communication is always great and pay is next day! I love working for this company. Great company and fantastic staff.",
-      avatar: "/images/testimonials/aimee-ambassador.jpg"
+      avatar: "/images/airfresh-logo.svg"
     }
   ];
 
@@ -378,7 +378,7 @@ export default function Home() {
                 title: "Netflix Cowboy Bebop Launch",
                 image: "/images/clients/netflix-activation-exact.jpg",
                 description: "Immersive pop-up experience generating massive social engagement",
-                link: "/case-studies/netflix-stranger-things-popup"
+                link: "/portfolio"
               },
               {
                 title: "Grubhub NYC Street Team",
@@ -745,8 +745,8 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
-              { value: "300+", label: "Brands Activated" },
-              { value: "25+", label: "Years Experience" },
+              { value: "500+", label: "Brands Activated" },
+              { value: "15+", label: "Years Experience" },
               { value: "50+", label: "Cities Nationwide" },
               { value: "1000+", label: "Events Produced" }
             ].map((stat, index) => (

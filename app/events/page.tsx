@@ -45,7 +45,7 @@ export default function EventsDirectory() {
         description="Find professional event staffing for major US conferences, festivals, sporting events, and conventions. CES, Coachella, Super Bowl, Olympics 2028, and 100+ more events."
         keywords="event staffing, conference staffing, festival staff, trade show staff, super bowl staffing, ces staffing, coachella staffing, olympics 2028 staffing"
         structuredData={structuredData}
-        canonical="https://airfreshmarketing.com/events"
+        canonical="https://www.airfreshmarketing.com/events"
       />
 
       {/* Hero Section */}

@@ -229,7 +229,7 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
     "provider": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
-      "url": "https://airfreshmarketing.com"
+      "url": "https://www.airfreshmarketing.com"
     },
     "areaServed": {
       "@type": "City",

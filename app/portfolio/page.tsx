@@ -60,7 +60,7 @@ export default function Portfolio() {
         title="Portfolio | Award-Winning Experiential Marketing Case Studies - AirFresh"
         description="Explore our portfolio of successful brand activations, experiential marketing campaigns, and event productions. Real results from Fortune 500 brands."
         pageType="portfolio"
-        canonical="https://airfreshmarketing.com/portfolio"
+        canonical="https://www.airfreshmarketing.com/portfolio"
       />
 
       {/* Preconnect to Vimeo for faster video load */}

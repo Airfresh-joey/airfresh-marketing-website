@@ -49,7 +49,7 @@ export default function PremierProteinCaseStudy() {
       <SEO
         title="Premier Protein Case Study | SoCal Street Sampling Campaign"
         description="See how AirFresh Marketing executed a high-energy mobile sampling campaign for Premier Protein across Southern California, distributing 645 cases at beach events, festivals, and 5K races."
-        canonical="https://airfreshmarketing.com/portfolio/premier-protein"
+        canonical="https://www.airfreshmarketing.com/portfolio/premier-protein"
       />
 
       {/* Hero Section with Video */}

@@ -231,7 +231,7 @@ export default function HeroAgencyVideo() {
             }`}
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">300+</div>
+              <div className="text-3xl font-bold text-white">500+</div>
               <div className="text-sm uppercase tracking-wide">Brands Activated</div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-white/20" />

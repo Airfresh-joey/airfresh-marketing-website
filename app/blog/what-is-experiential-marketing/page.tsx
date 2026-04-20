@@ -25,7 +25,7 @@ export default function WhatIsExperientialMarketing() {
     "headline": "What is Experiential Marketing? The Complete 2026 Guide",
     "description": "Learn what experiential marketing is, why it works, and how to create campaigns that drive real results.",
     "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://airfreshmarketing.com/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/logo.png" } },
     "datePublished": "2026-03-01",
     "dateModified": "2026-03-01"
   };

@@ -27,7 +27,7 @@ export default function VenuePartnerships() {
     "@type": "WebPage",
     "name": "Venue Partnerships - AirFresh Marketing",
     "description": "Partner your venue with AirFresh Marketing for brand activations. Earn revenue hosting experiential marketing events at your location.",
-    "url": "https://airfreshmarketing.com/partners/venues"
+    "url": "https://www.airfreshmarketing.com/partners/venues"
   };
 
   const venueTypes = [
@@ -123,7 +123,7 @@ export default function VenuePartnerships() {
         title="Venue Partnerships | Host Brand Activations - AirFresh Marketing"
         description="Partner your venue with AirFresh Marketing for brand activations. Earn revenue hosting experiential marketing events at your location."
         pageType="website"
-        canonical="https://airfreshmarketing.com/partners/venues"
+        canonical="https://www.airfreshmarketing.com/partners/venues"
         structuredData={structuredData}
       />
 

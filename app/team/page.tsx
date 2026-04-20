@@ -71,7 +71,7 @@ export default function TeamPage() {
     "mainEntity": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
-      "url": "https://airfreshmarketing.com",
+      "url": "https://www.airfreshmarketing.com",
       "employee": leadership.map(person => ({
         "@type": "Person",
         "name": person.name,
@@ -90,7 +90,7 @@ export default function TeamPage() {
         title="Our Team | Leadership & Expertise - AirFresh Marketing"
         description="Meet the experienced leadership team behind AirFresh Marketing. 20+ years of experiential marketing expertise driving brand success nationwide."
         pageType="about"
-        canonical="https://airfreshmarketing.com/team"
+        canonical="https://www.airfreshmarketing.com/team"
         structuredData={structuredData}
       />
 

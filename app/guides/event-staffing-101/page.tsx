@@ -110,7 +110,7 @@ export default function EventStaffing101Page() {
       <SEO
         title="Event Staffing 101: Complete Guide to Hiring & Training | AirFresh Marketing"
         description="Master event staffing with our comprehensive guide. Learn how to hire brand ambassadors, train promotional staff, and manage teams for successful activations."
-        canonical="https://airfreshmarketing.com/guides/event-staffing-101"
+        canonical="https://www.airfreshmarketing.com/guides/event-staffing-101"
         structuredData={structuredData}
       />
 

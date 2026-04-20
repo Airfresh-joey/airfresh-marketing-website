@@ -23,7 +23,7 @@ export default function SEO({
   keywords, 
   canonical,
   ogType = 'website',
-  ogImage = 'https://images.unsplash.com/photo-1515187029135-18ee286d815b?ixlib=rb-4.0.3&auto=format&fit=crop&w=1200&q=80',
+  ogImage = '/images/og-image.jpg',
   ogImageAlt = 'AirFresh Marketing experiential marketing brand ambassadors event staffing nationwide',
   ogImageWidth = '1200',
   ogImageHeight = '630',

@@ -52,7 +52,7 @@ export default function CaseStudies() {
         title="Case Studies | Experiential Marketing Success Stories - AirFresh"
         description="Explore our case studies showcasing successful brand activations, experiential marketing campaigns, and event productions. Real results from Fortune 500 brands."
         pageType="portfolio"
-        canonical="https://airfreshmarketing.com/case-studies"
+        canonical="https://www.airfreshmarketing.com/case-studies"
       />
 
       {/* Preconnect to Vimeo for faster video load */}

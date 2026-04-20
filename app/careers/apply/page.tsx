@@ -8,7 +8,7 @@ export default function ApplyPage() {
         title="Apply Now | Join Air Fresh Marketing"
         description="Apply to join Air Fresh Marketing's team of brand ambassadors and event staff. Complete our application to start working with top brands nationwide."
         keywords="apply brand ambassador, event staff application, promotional model jobs, marketing jobs application"
-        canonical="https://airfreshmarketing.com/careers/apply"
+        canonical="https://www.airfreshmarketing.com/careers/apply"
       />
 
       {/* Main Content */}

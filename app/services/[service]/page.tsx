@@ -741,7 +741,7 @@ export default function ServicePage({ params }: ServicePageProps) {
         "provider": {
           "@type": "Organization",
           "name": "AirFresh Marketing",
-          "url": "https://airfreshmarketing.com"
+          "url": "https://www.airfreshmarketing.com"
         },
         "areaServed": "United States",
         "hasOfferCatalog": {

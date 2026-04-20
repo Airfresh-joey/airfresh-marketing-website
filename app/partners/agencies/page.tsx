@@ -27,7 +27,7 @@ export default function AgencyPartnerships() {
     "@type": "WebPage",
     "name": "Agency Partnerships - AirFresh Marketing",
     "description": "Partner with AirFresh Marketing to expand your agency's experiential marketing capabilities. White-label services, nationwide execution, and dedicated support.",
-    "url": "https://airfreshmarketing.com/partners/agencies"
+    "url": "https://www.airfreshmarketing.com/partners/agencies"
   };
 
   const partnershipTiers = [
@@ -168,7 +168,7 @@ export default function AgencyPartnerships() {
         title="Agency Partnerships | White-Label Experiential Marketing - AirFresh"
         description="Partner with AirFresh Marketing to expand your agency's experiential marketing capabilities. White-label services, nationwide execution, and dedicated support."
         pageType="website"
-        canonical="https://airfreshmarketing.com/partners/agencies"
+        canonical="https://www.airfreshmarketing.com/partners/agencies"
         structuredData={structuredData}
       />
 

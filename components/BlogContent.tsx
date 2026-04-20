@@ -105,7 +105,7 @@ Brands with strong ambassador programs see 25% higher customer retention rates a
     "@type": "Blog",
     "name": "AirFresh Marketing Blog - Experiential Marketing Insights",
     "description": "Expert insights on experiential marketing, brand activations, event marketing strategies, and industry trends",
-    "url": "https://airfreshmarketing.com/blog",
+    "url": "https://www.airfreshmarketing.com/blog",
     "author": {
       "@type": "Organization",
       "name": "AirFresh Marketing"

@@ -147,7 +147,7 @@ export default async function EventServicePage({ params }: EventServicePageProps
     "provider": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
-      "url": "https://airfreshmarketing.com"
+      "url": "https://www.airfreshmarketing.com"
     },
     "areaServed": {
       "@type": "City",

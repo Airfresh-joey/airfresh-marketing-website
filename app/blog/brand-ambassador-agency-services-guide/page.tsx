@@ -31,13 +31,13 @@ export default function BrandAmbassadorAgencyServicesGuide() {
     "publisher": {
       "@type": "Organization",
       "name": "Air Fresh Marketing",
-      "url": "https://airfreshmarketing.com"
+      "url": "https://www.airfreshmarketing.com"
     },
     "datePublished": "2026-03-13",
     "dateModified": "2026-03-13",
     "mainEntityOfPage": {
       "@type": "WebPage",
-      "@id": "https://airfreshmarketing.com/blog/brand-ambassador-agency-services-guide"
+      "@id": "https://www.airfreshmarketing.com/blog/brand-ambassador-agency-services-guide"
     }
   };
 

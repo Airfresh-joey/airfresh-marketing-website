@@ -25,7 +25,7 @@ export default function Partners() {
     "@type": "WebPage",
     "name": "Partner Program - AirFresh Marketing",
     "description": "Join AirFresh Marketing's partner program. Venue partnerships, agency collaborations, and referral opportunities for experiential marketing.",
-    "url": "https://airfreshmarketing.com/partners"
+    "url": "https://www.airfreshmarketing.com/partners"
   };
 
   const partnerTypes = [
@@ -134,7 +134,7 @@ export default function Partners() {
         title="Partner Program | Venue & Agency Partnerships - AirFresh Marketing"
         description="Join AirFresh Marketing's partner program. Venue partnerships, agency collaborations, and referral opportunities for experiential marketing."
         pageType="website"
-        canonical="https://airfreshmarketing.com/partners"
+        canonical="https://www.airfreshmarketing.com/partners"
         structuredData={structuredData}
       />
 

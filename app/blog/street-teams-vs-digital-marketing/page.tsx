@@ -24,7 +24,7 @@ export default function StreetTeamsVsDigitalMarketing() {
     "headline": "Street Teams vs Digital Marketing: Why In-Person Still Wins in 2026",
     "description": "Street teams vs digital marketing: a data-driven comparison of cost per acquisition, engagement rates, brand recall, and conversion metrics.",
     "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://airfreshmarketing.com/logo.png" } },
+    "publisher": { "@type": "Organization", "name": "Air Fresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/logo.png" } },
     "datePublished": "2026-03-13",
     "dateModified": "2026-03-13"
   };

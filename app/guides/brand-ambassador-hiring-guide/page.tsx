@@ -84,7 +84,7 @@ export default function BrandAmbassadorHiringGuidePage() {
       <SEO
         title="Brand Ambassador Hiring Guide | How to Find & Hire Top Talent"
         description="Learn how to recruit and hire exceptional brand ambassadors. Expert tips on sourcing, screening, and selecting talent that will represent your brand with excellence."
-        canonical="https://airfreshmarketing.com/guides/brand-ambassador-hiring-guide"
+        canonical="https://www.airfreshmarketing.com/guides/brand-ambassador-hiring-guide"
         structuredData={structuredData}
       />
 

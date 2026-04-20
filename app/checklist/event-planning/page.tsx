@@ -166,7 +166,7 @@ export default function EventPlanningChecklistPage() {
       <SEO
         title="Event Planning Checklist | Free Download | AirFresh Marketing"
         description="Free interactive event planning checklist covering everything from 6 weeks out to post-event follow-up. Never miss a detail at your next brand activation."
-        canonical="https://airfreshmarketing.com/checklist/event-planning"
+        canonical="https://www.airfreshmarketing.com/checklist/event-planning"
         structuredData={structuredData}
       />
 

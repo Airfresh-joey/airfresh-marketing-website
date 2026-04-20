@@ -72,7 +72,7 @@ export default function Locations() {
         title="Nationwide Locations | Experiential Marketing in 50+ Cities - AirFresh"
         description="AirFresh Marketing serves 50+ cities nationwide with experiential marketing services. Find our locations from coast to coast."
         pageType="locations"
-        canonical="https://airfreshmarketing.com/locations"
+        canonical="https://www.airfreshmarketing.com/locations"
         structuredData={structuredData}
       />
 
@@ -270,7 +270,7 @@ export default function Locations() {
                   <MapPin className="w-5 h-5 text-cyan-600 mr-3 mt-1 flex-shrink-0" />
                   <div>
                     <p className="font-semibold text-gray-900">Address</p>
-                    <p className="text-gray-600">720 S. Colorado Blvd., Penthouse North<br />Denver, CO 80246</p>
+                    <p className="text-gray-600">1580 N. Logan St., Suite 660<br />Denver, CO 80203</p>
                   </div>
                 </div>
                 <div className="flex items-start">

@@ -29,7 +29,7 @@ export default function About() {
         "@type": "AboutPage",
         "mainEntity": {
           "@type": "Organization",
-          "@id": "https://airfreshmarketing.com/#organization",
+          "@id": "https://www.airfreshmarketing.com/#organization",
           "name": "AirFresh Marketing",
           "description": "Experiential marketing agency creating memorable brand activations and customer engagement campaigns",
           "founder": {
@@ -154,7 +154,7 @@ export default function About() {
         title="About Us | Premier Experiential Marketing Agency Since 2004 - AirFresh"
         description="Years of experiential marketing excellence. Leading brand ambassadors, event staffing & guerrilla marketing nationwide."
         pageType="about"
-        canonical="https://airfreshmarketing.com/about"
+        canonical="https://www.airfreshmarketing.com/about"
         structuredData={structuredData}
       />
       {/* Hero Section with Semantic HTML and E-E-A-T Signals */}

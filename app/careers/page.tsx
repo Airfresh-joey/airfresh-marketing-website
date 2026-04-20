@@ -206,7 +206,7 @@ export default function CareersPage() {
     "hiringOrganization": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
-      "sameAs": "https://airfreshmarketing.com"
+      "sameAs": "https://www.airfreshmarketing.com"
     },
     "jobLocation": {
       "@type": "Place",
@@ -225,7 +225,7 @@ export default function CareersPage() {
         description="Join AirFresh Marketing's team of brand ambassadors and event staff. Flexible schedules, competitive pay, and opportunities to work with top brands nationwide."
         keywords="brand ambassador jobs, event staff jobs, promotional model jobs, marketing jobs, flexible work, experiential marketing careers"
         structuredData={structuredData}
-        canonical="https://airfreshmarketing.com/careers"
+        canonical="https://www.airfreshmarketing.com/careers"
       />
 
       {/* Preconnect to Vimeo for faster video load */}

@@ -121,7 +121,7 @@ export default async function EventPage({ params }: EventPageProps) {
     "organizer": {
       "@type": "Organization",
       "name": "AirFresh Marketing",
-      "url": "https://airfreshmarketing.com"
+      "url": "https://www.airfreshmarketing.com"
     },
     "performer": {
       "@type": "Organization",

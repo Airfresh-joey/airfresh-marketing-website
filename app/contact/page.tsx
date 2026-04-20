@@ -140,7 +140,7 @@ export default function Contact() {
         title="Get a Free Quote | Experiential Marketing - AirFresh Marketing"
         description="Get a free quote for brand ambassadors, event staffing & experiential marketing. Call 303-720-6060. Nationwide coverage, 20+ years experience."
         pageType="contact"
-        canonical="https://airfreshmarketing.com/contact"
+        canonical="https://www.airfreshmarketing.com/contact"
         structuredData={structuredData}
       />
 

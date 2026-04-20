@@ -48,7 +48,7 @@ export default function IndustriesPage() {
         title="Industries We Serve | Experiential Marketing by Sector - AirFresh Marketing"
         description="Specialized experiential marketing and event staffing for alcohol, automotive, technology, CPG, sports, fashion, healthcare, and financial services industries."
         pageType="service"
-        canonical="https://airfreshmarketing.com/industries"
+        canonical="https://www.airfreshmarketing.com/industries"
         structuredData={structuredData}
       />
 
