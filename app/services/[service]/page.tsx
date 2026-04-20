@@ -1088,6 +1088,14 @@ export default function ServicePage({ params }: ServicePageProps) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Services", "item": "https://www.airfreshmarketing.com/services" },
+          { "@type": "ListItem", "position": 3, "name": service.title, "item": `https://www.airfreshmarketing.com/services/${serviceName}` }
+        ]
+      },
+      {
         "@type": "Service",
         "name": service.title,
         "description": service.description,

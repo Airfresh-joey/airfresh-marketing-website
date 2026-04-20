@@ -209,6 +209,14 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         }
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": service.name, "item": `https://www.airfreshmarketing.com/services/${service.slug}` },
+          { "@type": "ListItem", "position": 3, "name": `${service.name} ${cityName}`, "item": `https://www.airfreshmarketing.com/city-services/${slug}` }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": enriched ? enriched.faqs.map(faq => ({
           "@type": "Question" as const,

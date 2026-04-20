@@ -725,6 +725,14 @@ export default async function CityPage({ params }: CityPageProps) {
     "@context": "https://schema.org",
     "@graph": [
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Locations", "item": "https://www.airfreshmarketing.com/locations" },
+          { "@type": "ListItem", "position": 3, "name": city.name, "item": `https://www.airfreshmarketing.com/cities/${city.slug}` }
+        ]
+      },
+      {
         "@type": ["LocalBusiness", "MarketingAgency"],
         "@id": `https://www.airfreshmarketing.com/cities/${city.slug}#business`,
         "name": `AirFresh Marketing - ${city.name}`,

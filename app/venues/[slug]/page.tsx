@@ -144,6 +144,14 @@ export default async function VenuePage({ params }: VenuePageProps) {
         }
       },
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Venues", "item": "https://www.airfreshmarketing.com/venues" },
+          { "@type": "ListItem", "position": 3, "name": venue.shortName, "item": `https://www.airfreshmarketing.com/venues/${venue.slug}` }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": venueFaqs.map(faq => ({
           "@type": "Question",

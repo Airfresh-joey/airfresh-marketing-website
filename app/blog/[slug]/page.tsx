@@ -319,6 +319,29 @@ export default function BlogPost({ params }: BlogPostPageProps) {
         description={post.excerpt}
         canonical={`https://www.airfreshmarketing.com/blog/${post.slug}`}
         ogImage={post.image}
+        structuredData={{
+          "@context": "https://schema.org",
+          "@graph": [
+            {
+              "@type": "Article",
+              "headline": post.title,
+              "description": post.excerpt,
+              "image": post.image,
+              "author": { "@type": "Organization", "name": "AirFresh Marketing", "url": "https://www.airfreshmarketing.com" },
+              "publisher": { "@type": "Organization", "name": "AirFresh Marketing", "logo": { "@type": "ImageObject", "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg" } },
+              "datePublished": post.date,
+              "mainEntityOfPage": `https://www.airfreshmarketing.com/blog/${post.slug}`
+            },
+            {
+              "@type": "BreadcrumbList",
+              "itemListElement": [
+                { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+                { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.airfreshmarketing.com/blog" },
+                { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.airfreshmarketing.com/blog/${post.slug}` }
+              ]
+            }
+          ]
+        }}
       />
 
       {/* Progress Bar */}

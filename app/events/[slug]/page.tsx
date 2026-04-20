@@ -161,6 +161,14 @@ export default async function EventPage({ params }: EventPageProps) {
     "@graph": [
       eventSchema,
       {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Events", "item": "https://www.airfreshmarketing.com/events" },
+          { "@type": "ListItem", "position": 3, "name": event.name, "item": `https://www.airfreshmarketing.com/events/${event.slug}` }
+        ]
+      },
+      {
         "@type": "FAQPage",
         "mainEntity": eventFaqs.map(faq => ({
           "@type": "Question",
