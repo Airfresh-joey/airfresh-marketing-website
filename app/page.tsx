@@ -61,7 +61,7 @@ export default function Home() {
         "alternateName": "AirFresh Experiential Marketing Agency",
         "description": "Experiential marketing agency specializing in brand activations, event marketing, guerrilla marketing, and customer engagement campaigns nationwide.",
         "url": "https://www.airfreshmarketing.com",
-        "logo": "/favicon.svg",
+        "logo": "https://www.airfreshmarketing.com/images/airfresh-logo.svg",
         "sameAs": [
           "https://www.linkedin.com/company/airfreshmarketing",
           "https://twitter.com/AirFreshMktg",
