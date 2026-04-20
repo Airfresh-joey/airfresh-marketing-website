@@ -20,7 +20,9 @@ export default function Footer() {
 
   const company = [
     { name: "About Us", href: "/about" },
-    { name: "Portfolio", href: "/portfolio" },
+    { name: "Pricing", href: "/pricing" },
+    { name: "Technology", href: "/technology" },
+    { name: "Case Studies", href: "/case-studies" },
     { name: "Events", href: "/events" },
     { name: "Venues", href: "/venues" },
     { name: "Careers", href: "/careers" },
@@ -33,10 +35,12 @@ export default function Footer() {
     { name: "Los Angeles", href: "/cities/los-angeles" },
     { name: "Chicago", href: "/cities/chicago" },
     { name: "Miami", href: "/cities/miami" },
+    { name: "Las Vegas", href: "/cities/las-vegas" },
     { name: "Denver", href: "/cities/denver", isHQ: true },
-    { name: "San Francisco", href: "/cities/san-francisco" },
-    { name: "Austin", href: "/cities/austin" },
+    { name: "Houston", href: "/cities/houston" },
+    { name: "Dallas", href: "/cities/dallas" },
     { name: "Atlanta", href: "/cities/atlanta" },
+    { name: "Phoenix", href: "/cities/phoenix" },
   ];
 
   return (
