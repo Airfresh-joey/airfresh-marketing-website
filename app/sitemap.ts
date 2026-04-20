@@ -102,6 +102,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/natural-products-expo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/world-cup-2026`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/staffing-for/magic-las-vegas`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/sxsw`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/comic-con`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/super-bowl`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
+    { url: `${DOMAIN}/staffing-for/art-basel-miami`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/lollapalooza`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/edc-las-vegas`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Competitor comparison pages (high-intent "vs" keywords)

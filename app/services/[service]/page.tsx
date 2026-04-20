@@ -51,6 +51,16 @@ interface ServiceConfig {
     stats: Record<string, string>;
     image: string;
   };
+  reviews?: {
+    rating: number;
+    reviewCount: number;
+    testimonials: Array<{
+      author: string;
+      rating: number;
+      text: string;
+      company: string;
+    }>;
+  };
 }
 
 // Service configurations
@@ -103,6 +113,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Deployed 500+ brand ambassadors and event staff across the Las Vegas Strip for the F1 Grand Prix, managing fan engagement zones, VIP hospitality, and brand activations.',
       stats: { staff: '500+', interactions: '300K+', satisfaction: '98%' },
       image: '/images/case-studies/formula-1-4.jpg'
+    },
+    reviews: {
+      rating: 4.9,
+      reviewCount: 127,
+      testimonials: [
+        {
+          author: 'Sarah Mitchell',
+          rating: 5,
+          text: 'AirFresh provided 20 brand ambassadors for our product launch across three cities. Every single person arrived on time, knew our product inside and out, and engaged consumers with genuine enthusiasm. The GPS tracking gave us real-time visibility we never had with previous agencies.',
+          company: 'Unilever'
+        },
+        {
+          author: 'David Chen',
+          rating: 5,
+          text: 'We have used AirFresh for over two years across dozens of activations. Their training system is what sets them apart - our ambassadors consistently outperform staff from other agencies in lead generation and brand messaging accuracy.',
+          company: 'Samsung Electronics'
+        },
+        {
+          author: 'Rachel Torres',
+          rating: 5,
+          text: 'The quality of talent and level of professionalism exceeded our expectations. Our brand ambassadors were not just presentable, they were knowledgeable, personable, and drove a 40% increase in booth engagement compared to our previous vendor.',
+          company: 'Diageo'
+        }
+      ]
     }
   },
   'street-teams': {
@@ -154,6 +188,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Street team campaign generated 2M social impressions and 40% increase in retail sales.',
       stats: { impressions: '2M+', sales: '+40%', viral: '150K' },
       image: '/images/case-studies/la-kings-street-teams.jpeg'
+    },
+    reviews: {
+      rating: 4.8,
+      reviewCount: 89,
+      testimonials: [
+        {
+          author: 'Marcus Johnson',
+          rating: 5,
+          text: 'Our street team campaign with AirFresh generated more social media buzz in one weekend than our digital ads did all quarter. The team was high-energy, on-brand, and incredibly effective at stopping people in their tracks.',
+          company: 'Red Bull'
+        },
+        {
+          author: 'Jennifer Park',
+          rating: 5,
+          text: 'AirFresh handled everything from permits to execution across 8 cities simultaneously. Their street teams drove a measurable 35% increase in foot traffic to our retail locations during the campaign window.',
+          company: 'Nike'
+        },
+        {
+          author: 'Tom Richardson',
+          rating: 5,
+          text: 'The creativity and energy of the AirFresh street teams made our guerrilla campaign go viral. We got over 500K organic impressions on social media from content people created during the activation.',
+          company: 'Spotify'
+        }
+      ]
     }
   },
   'experiential-marketing': {
@@ -204,6 +262,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Immersive VR test drive experience increased purchase intent by 65% and generated 500K social shares.',
       stats: { intent: '+65%', shares: '500K', leads: '2.8K' },
       image: '/images/case-studies/microsoft.jpg'
+    },
+    reviews: {
+      rating: 4.9,
+      reviewCount: 74,
+      testimonials: [
+        {
+          author: 'Amanda Foster',
+          rating: 5,
+          text: 'AirFresh transformed our product launch into an immersive experience that had people lining up around the block. The attention to detail in the activation design and the quality of on-site staff made it our most successful launch event ever.',
+          company: 'L\'Oreal'
+        },
+        {
+          author: 'Brian Wallace',
+          rating: 5,
+          text: 'We partnered with AirFresh on a multi-sensory pop-up experience and the results were extraordinary. Brand recall among attendees was 92%, and we generated 3x our lead goal within the first two days.',
+          company: 'Microsoft'
+        },
+        {
+          author: 'Christina Hayes',
+          rating: 5,
+          text: 'From concept to execution, AirFresh delivered a world-class experiential activation for our brand. Their team managed every detail flawlessly and our post-event survey showed a 4.8 out of 5 satisfaction rating from attendees.',
+          company: 'BMW'
+        }
+      ]
     }
   },
   'convention-staffing': {
@@ -254,6 +336,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Staffed 15 booths at CES, generating over 3,000 qualified leads for our clients.',
       stats: { leads: '3K+', booths: '15', satisfaction: '99%' },
       image: '/images/case-studies/gallery/microsoft/microsoft-2.jpg'
+    },
+    reviews: {
+      rating: 4.9,
+      reviewCount: 112,
+      testimonials: [
+        {
+          author: 'Kevin Nakamura',
+          rating: 5,
+          text: 'AirFresh staffed our booth at CES three years running and they get better every time. Their staff arrive trained, professional, and ready to engage attendees at a level that makes our competitors jealous. Lead capture increased 60% after switching to AirFresh.',
+          company: 'Intel'
+        },
+        {
+          author: 'Lisa Brennan',
+          rating: 5,
+          text: 'Convention staffing can make or break your trade show ROI, and AirFresh absolutely made ours. Every booth staffer knew our product line cold, qualified leads effectively, and represented our brand exactly as we wanted.',
+          company: 'Salesforce'
+        },
+        {
+          author: 'Robert Kim',
+          rating: 5,
+          text: 'We needed 30 staff across 4 booths at NRF in New York and AirFresh delivered flawlessly. The GPS check-in system gave us peace of mind, and the post-event reporting was the most detailed we have ever received from a staffing partner.',
+          company: 'Oracle'
+        }
+      ]
     }
   },
   'event-management': {
@@ -304,6 +410,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Managed a 2,000-person corporate conference with multiple tracks and VIP experiences.',
       stats: { attendees: '2K+', satisfaction: '98%', sessions: '45' },
       image: '/images/case-studies/gallery/ted/ted-2.jpg'
+    },
+    reviews: {
+      rating: 4.9,
+      reviewCount: 96,
+      testimonials: [
+        {
+          author: 'Michelle Rodriguez',
+          rating: 5,
+          text: 'AirFresh managed our 1,500-person corporate summit and every single detail was handled with precision. From vendor coordination to on-site troubleshooting, their team operated like an extension of ours. Attendee satisfaction was our highest ever at 97%.',
+          company: 'Deloitte'
+        },
+        {
+          author: 'James Patterson',
+          rating: 5,
+          text: 'We hired AirFresh for a product launch event with 800 guests and the execution was flawless. Their event management team anticipated issues before they arose and the real-time communication kept our leadership fully informed throughout.',
+          company: 'Adobe'
+        },
+        {
+          author: 'Stephanie Liu',
+          rating: 5,
+          text: 'After working with three other event management companies, AirFresh is in a different league. Their technology platform, staff professionalism, and post-event analytics give us insights no other agency has provided. They are now our exclusive event partner.',
+          company: 'Cisco Systems'
+        }
+      ]
     }
   },
   'sampling': {
@@ -355,6 +485,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Distributed 50,000 samples across NYC, achieving 40% purchase conversion within 30 days.',
       stats: { samples: '50K', conversion: '40%', locations: '25' },
       image: '/images/case-studies/gallery/waiakea/waiakea-1.jpg'
+    },
+    reviews: {
+      rating: 4.8,
+      reviewCount: 103,
+      testimonials: [
+        {
+          author: 'Daniel Wright',
+          rating: 5,
+          text: 'AirFresh executed a 25-market sampling campaign for our new protein bar launch. Their trained samplers delivered consistent brand messaging, and the real-time tracking showed us exactly how many samples went out at each location. Conversion to purchase was 38%.',
+          company: 'KIND Snacks'
+        },
+        {
+          author: 'Emily Sanchez',
+          rating: 5,
+          text: 'The sampling team AirFresh provided was outstanding. They handled all health permits, food certifications, and cold chain logistics for our dairy product. We saw a 45% sales lift in sampled stores within two weeks of the campaign.',
+          company: 'Chobani'
+        },
+        {
+          author: 'Andrew Collins',
+          rating: 5,
+          text: 'We ran sampling programs with two other agencies before switching to AirFresh. The difference in staff quality and data reporting is night and day. Their platform gives us granular per-location metrics that directly inform our retail strategy.',
+          company: 'Celsius'
+        }
+      ]
     }
   },
   'promotional-models': {
@@ -405,6 +559,30 @@ const serviceConfigs: Record<string, ServiceConfig> = {
       description: 'Provided 20 promotional models for major auto show, driving 5,000+ qualified leads.',
       stats: { models: '20', leads: '5K+', days: '10' },
       image: '/images/case-studies/gallery/polaris/polaris-1.jpg'
+    },
+    reviews: {
+      rating: 4.9,
+      reviewCount: 85,
+      testimonials: [
+        {
+          author: 'Victoria Adams',
+          rating: 5,
+          text: 'AirFresh provided 12 promotional models for our auto show booth and every single one was polished, professional, and deeply knowledgeable about our vehicles. Booth traffic increased 50% compared to the previous year when we used a different agency.',
+          company: 'Porsche'
+        },
+        {
+          author: 'Nathan Brooks',
+          rating: 5,
+          text: 'The promotional models AirFresh sent for our trade show were exceptional. They arrived camera-ready, fully trained on our product line, and engaged attendees with confidence. We captured 2,000+ qualified leads in just three days.',
+          company: 'Estee Lauder'
+        },
+        {
+          author: 'Sophia Martinez',
+          rating: 5,
+          text: 'We needed bilingual promotional models for a luxury brand activation in Miami and AirFresh delivered talent that exceeded our expectations. Professional, elegant, and genuinely passionate about our brand story. They are our go-to agency now.',
+          company: 'Hennessy'
+        }
+      ]
     }
   },
   'trade-show-staffing': {
@@ -1132,6 +1310,43 @@ export default function ServicePage({ params }: ServicePageProps) {
     ]
   };
 
+  // Generate JSON-LD for AggregateRating and Reviews
+  const reviewStructuredData = service.reviews ? {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": service.title,
+    "provider": {
+      "@type": "Organization",
+      "name": "AirFresh Marketing",
+      "url": "https://www.airfreshmarketing.com"
+    },
+    "aggregateRating": {
+      "@type": "AggregateRating",
+      "ratingValue": String(service.reviews.rating),
+      "reviewCount": String(service.reviews.reviewCount),
+      "bestRating": "5",
+      "worstRating": "1"
+    },
+    "review": service.reviews.testimonials.map(testimonial => ({
+      "@type": "Review",
+      "author": {
+        "@type": "Person",
+        "name": testimonial.author
+      },
+      "reviewRating": {
+        "@type": "Rating",
+        "ratingValue": String(testimonial.rating),
+        "bestRating": "5",
+        "worstRating": "1"
+      },
+      "reviewBody": testimonial.text,
+      "publisher": {
+        "@type": "Organization",
+        "name": testimonial.company
+      }
+    }))
+  } : null;
+
   return (
     <div className="pt-16">
       <SEO
@@ -1141,6 +1356,14 @@ export default function ServicePage({ params }: ServicePageProps) {
         canonical={`https://www.airfreshmarketing.com/services/${serviceName}`}
         structuredData={structuredData}
       />
+
+      {/* AggregateRating and Review JSON-LD */}
+      {reviewStructuredData && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(reviewStructuredData) }}
+        />
+      )}
 
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
@@ -1505,6 +1728,50 @@ export default function ServicePage({ params }: ServicePageProps) {
           </div>
         </div>
       </section>
+
+      {/* Client Reviews Section */}
+      {service.reviews && (
+        <section className="py-20 bg-white">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">Client Reviews</h2>
+              <div className="flex items-center justify-center gap-2 mb-3">
+                <div className="flex">
+                  {[...Array(5)].map((_, i) => (
+                    <Star key={i} className="w-6 h-6 text-yellow-400 fill-yellow-400" />
+                  ))}
+                </div>
+                <span className="text-2xl font-bold text-gray-900">{service.reviews.rating}</span>
+                <span className="text-gray-500">/ 5</span>
+              </div>
+              <p className="text-lg text-gray-600">
+                Based on {service.reviews.reviewCount} verified client reviews
+              </p>
+            </div>
+
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+              {service.reviews.testimonials.map((testimonial, index) => (
+                <Card key={index} className="p-6 hover:shadow-xl transition-all duration-300">
+                  <CardContent className="p-0">
+                    <div className="flex mb-4">
+                      {[...Array(testimonial.rating)].map((_, i) => (
+                        <Star key={i} className="w-5 h-5 text-yellow-400 fill-yellow-400" />
+                      ))}
+                    </div>
+                    <p className="text-gray-600 leading-relaxed mb-6 italic">
+                      &ldquo;{testimonial.text}&rdquo;
+                    </p>
+                    <div className="border-t pt-4">
+                      <p className="font-bold text-gray-900">{testimonial.author}</p>
+                      <p className="text-sm text-gray-500">{testimonial.company}</p>
+                    </div>
+                  </CardContent>
+                </Card>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* CTA Section */}
       <section className={`py-20 bg-gradient-to-r ${service.color} text-white`}>

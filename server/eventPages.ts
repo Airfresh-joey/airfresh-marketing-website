@@ -765,6 +765,602 @@ For premium and luxury fashion brands exhibiting at MAGIC, brand experience stan
     relatedCityName: 'Las Vegas',
     heroImage: '/images/case-studies/gallery/clarins/clarins-1.jpg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 9. SXSW – South by Southwest
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'sxsw',
+    title: 'SXSW Event Staffing Agency | Brand Ambassadors Austin TX',
+    h1: 'SXSW Event Staffing Austin',
+    metaDescription:
+      'SXSW event staffing agency providing brand ambassadors, street teams, hospitality staff, and registration teams for South by Southwest in Austin, TX. Book your SXSW staff today.',
+    city: 'Austin',
+    stateAbbrev: 'TX',
+    venues: ['Austin Convention Center', 'Palmer Events Center', 'Various Downtown Austin Venues'],
+    keywords: [
+      'SXSW staffing agency',
+      'SXSW event staff',
+      'South by Southwest staffing',
+      'SXSW brand ambassadors Austin',
+      'SXSW street teams',
+      'Austin event staffing',
+      'SXSW registration staff',
+      'SXSW hospitality staff',
+      'South by Southwest brand activations',
+      'SXSW promotional staff Austin TX',
+      'festival staffing Austin',
+      'SXSW experiential marketing staff',
+    ],
+    description:
+      'AirFresh Marketing provides professional SXSW event staffing for South by Southwest in Austin, TX. From brand ambassadors and street teams to hospitality and registration staff, our trained teams help brands cut through the noise at one of the world\'s most influential convergence events drawing 400,000+ attendees across music, film, and technology.',
+    bodyContent: `South by Southwest is one of the most dynamic convergence events in the world, bringing together 400,000+ attendees from the music, film, interactive, and technology industries to Austin, TX every March. SXSW is not a single event—it is an ecosystem of keynotes, showcases, screenings, activations, pop-ups, and experiential moments spread across downtown Austin over two weeks. For brands, the challenge is standing out in an environment where every block, every venue, and every sidewalk is competing for attention.
+
+AirFresh Marketing has the operational depth and Austin market expertise to staff brand activations across the distributed SXSW landscape. Whether your activation is inside the Austin Convention Center, at a branded house on Rainey Street, or a guerrilla street team campaign along Congress Avenue, our staff are trained to engage the SXSW audience with authenticity and energy.
+
+**Brand Ambassadors and Street Teams**
+
+SXSW brand activations live and die on the quality of human interaction. The SXSW audience—creative professionals, tech founders, media, musicians, and filmmakers—responds to genuine engagement and rejects anything that feels scripted or corporate. Our SXSW brand ambassadors are selected for their cultural fluency, conversational energy, and ability to represent your brand in a way that feels native to the SXSW environment rather than intrusive.
+
+Street teams at SXSW operate across a sprawling geographic footprint—from the Convention Center district to East Austin, from Sixth Street to South Congress. AirFresh deploys GPS-tracked street teams with route optimization, real-time check-ins, and shift management that ensures consistent coverage across your target zones throughout the day and into the night.
+
+**Hospitality and VIP Activation Staff**
+
+Many of the highest-value SXSW brand moments happen behind closed doors—at branded houses, invite-only lounges, sponsor dinners, and private showcases. AirFresh provides premium hospitality staff for these intimate activations, including guest list management, VIP reception, beverage service coordination, and event flow management. Our hospitality staff deliver the elevated experience that SXSW VIP guests expect.
+
+**Registration and Credentialing Staff**
+
+SXSW's complex badge and wristband system creates significant registration demand for brands hosting official and unofficial events. AirFresh registration staff manage check-in workflows, credential verification, capacity management, and guest experience from arrival through entry. We handle the logistics so your internal team can focus on the content and relationships that matter.
+
+**Multi-Venue Coordination**
+
+Unlike a single-venue trade show, SXSW requires staffing coordination across multiple simultaneous locations—sometimes a dozen or more in a single day. AirFresh provides centralized operations management with dedicated team leads at each venue, real-time communication infrastructure, and the flexibility to shift resources between locations as event dynamics change throughout the day.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Culturally fluent ambassadors who engage the SXSW audience authentically across activations, pop-ups, and branded experiences.' },
+      { title: 'Street Teams', description: 'GPS-tracked street teams deploying across downtown Austin with route optimization and real-time shift management.' },
+      { title: 'Hospitality Staff', description: 'Premium hosts for branded houses, VIP lounges, sponsor dinners, and invite-only showcases throughout SXSW.' },
+      { title: 'Registration Staff', description: 'Check-in and credentialing personnel managing guest lists, badge verification, and capacity flow at SXSW events.' },
+      { title: 'Experiential Activation Staff', description: 'Dedicated staff for interactive brand installations, product demos, and immersive experiences within the SXSW footprint.' },
+      { title: 'Promotional Models', description: 'Professional talent driving awareness, photo moments, and brand visibility across high-traffic SXSW zones.' },
+      { title: 'Event Managers', description: 'On-site team leads coordinating multi-venue deployments with centralized operations and real-time performance tracking.' },
+    ],
+    stats: [
+      { value: '400K+', label: 'Annual SXSW Attendees' },
+      { value: '50+', label: 'Austin Venues Covered' },
+      { value: '99%', label: 'On-Time Arrival Rate' },
+      { value: '10K+', label: 'Staff Deployed Annually' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book SXSW event staffing?',
+        answer: 'We recommend booking SXSW staffing 10–14 weeks in advance, ideally by December or early January for a March event. Austin\'s talent pool is in extremely high demand during SXSW—hundreds of brands activate simultaneously—and the best local staff are reserved months ahead. Early booking also allows time for brand training, route planning for street teams, and venue-specific orientation.',
+      },
+      {
+        question: 'Can you staff multiple SXSW venues and activations simultaneously?',
+        answer: 'Yes. Multi-venue simultaneous deployment is core to our SXSW capability. We routinely manage staffing across 10+ concurrent locations during SXSW, from the Austin Convention Center to branded houses on Rainey Street to pop-ups in East Austin. Each location receives a dedicated team lead, and a central operations manager coordinates across all sites with real-time communication.',
+      },
+      {
+        question: 'Do your SXSW staff understand the tech, music, and film industries?',
+        answer: 'Yes. SXSW attracts a sophisticated, creative audience that responds poorly to generic event staffing. We recruit SXSW staff from Austin\'s creative and tech communities—people who genuinely understand the industries represented at the festival. All staff receive additional brand-specific training covering your product, messaging, and the specific SXSW audience segment you are targeting.',
+      },
+      {
+        question: 'What types of SXSW brand activations do you staff?',
+        answer: 'We staff the full spectrum of SXSW activations: branded houses and lounges, street team campaigns, product sampling programs, interactive installations, official SXSW sponsor activations, unofficial pop-up events, VIP dinners, showcase registrations, and guerrilla marketing campaigns. If it happens during SXSW, we can staff it.',
+      },
+      {
+        question: 'How do you manage street teams across such a large geographic area?',
+        answer: 'All SXSW street team members check in via GPS at shift start and throughout their deployment. We use route optimization to ensure coverage across target zones, provide real-time dashboards showing team locations and engagement metrics, and maintain radio or messaging communication for rapid redeployment as foot traffic patterns shift throughout the day and evening.',
+      },
+      {
+        question: 'Do you provide staffing for SXSW evening and nighttime events?',
+        answer: 'Yes. SXSW runs well into the night with showcases, parties, and brand events continuing until 2 AM or later. AirFresh provides evening and late-night staffing for music showcases, after-parties, branded nightlife activations, and hospitality events. We structure shifts to ensure staff are fresh and energized for nighttime deployments.',
+      },
+    ],
+    logisticsInfo:
+      'South by Southwest takes place annually in March across downtown Austin, TX. The event spans the Austin Convention Center, Palmer Events Center, and hundreds of venues throughout the downtown core including Sixth Street, Rainey Street, East Austin, and South Congress. AirFresh coordinates credentialing, multi-venue transportation logistics, and staff orientation covering the distributed SXSW geography. Austin-based staff are prioritized, with supplemental talent sourced from Dallas, Houston, and San Antonio markets for large-scale deployments.',
+    relatedCitySlug: 'austin',
+    relatedCityName: 'Austin',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 10. San Diego Comic-Con
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'comic-con',
+    title: 'Comic-Con Staffing Agency | San Diego Convention Center',
+    h1: 'Comic-Con Event Staffing San Diego',
+    metaDescription:
+      'Comic-Con event staffing agency providing brand ambassadors, promotional models, booth staff, and costume characters for San Diego Comic-Con International. Book your SDCC staff today.',
+    city: 'San Diego',
+    stateAbbrev: 'CA',
+    venues: ['San Diego Convention Center', 'Petco Park Interactive Zone', 'Gaslamp Quarter Activations'],
+    keywords: [
+      'Comic-Con staffing agency',
+      'SDCC event staff',
+      'San Diego Comic-Con staffing',
+      'Comic-Con brand ambassadors',
+      'Comic-Con booth staff',
+      'Comic-Con promotional models',
+      'San Diego Convention Center staffing',
+      'pop culture event staffing',
+      'Comic-Con costume characters',
+      'SDCC activation staff',
+      'entertainment convention staffing',
+      'Comic-Con experiential marketing',
+    ],
+    description:
+      'AirFresh Marketing provides professional Comic-Con event staffing for San Diego Comic-Con International at the San Diego Convention Center. From brand ambassadors and booth staff to costume characters and promotional models, our teams help brands create unforgettable activations at the world\'s premier pop culture convention attracting 130,000+ attendees.',
+    bodyContent: `San Diego Comic-Con International is the world's largest pop culture convention, drawing 130,000+ passionate attendees to the San Diego Convention Center and surrounding Gaslamp Quarter every July. SDCC is the epicenter of entertainment marketing—studios, streaming platforms, gaming companies, and consumer brands all converge to compete for the attention of the most engaged, influential fan community in existence.
+
+Brand activations at Comic-Con demand a level of authenticity and cultural fluency that generic event staff simply cannot deliver. The SDCC audience knows their fandoms deeply, responds to genuine enthusiasm, and can instantly detect when a brand representative is phoning it in. AirFresh Marketing sources Comic-Con staff who are genuinely embedded in pop culture—people who read comics, watch anime, play games, and live the content your brand is promoting.
+
+**Brand Ambassadors and Booth Staff**
+
+Comic-Con brand ambassadors must bridge the gap between professional brand representation and authentic fan engagement. Our SDCC booth staff are briefed not only on your product and messaging but on the cultural context surrounding your IP, your franchise, or your entertainment property. They can discuss your content with fans in a way that builds genuine excitement rather than delivering scripted talking points to an audience that will see through them immediately.
+
+Booth staff at SDCC manage extraordinary foot traffic volumes—130,000 attendees compressed into a convention center that creates constant high-density flow. Our staff are trained in crowd management awareness, queue engagement (keeping fans entertained during inevitable wait times), and rapid-fire interaction techniques that maximize contacts without sacrificing quality.
+
+**Costume Characters and Cosplay Talent**
+
+Comic-Con is the world capital of cosplay, and brands that deploy costume characters at SDCC create some of the most photographed, shared, and talked-about moments of the entire convention. AirFresh connects brands with professional cosplay talent who can embody your characters with the craftsmanship and performance skill that the SDCC audience demands. From screen-accurate character portrayals to stylized brand mascots, our costume talent creates shareable moments that amplify your activation far beyond the convention floor.
+
+**Promotional Models and Street Teams**
+
+The SDCC activation zone extends well beyond the convention center walls. The Gaslamp Quarter, Petco Park, and surrounding blocks become an open-air brand activation landscape where studios and brands compete for attention through eye-catching street-level campaigns. AirFresh deploys promotional models and street teams across the full SDCC footprint—distributing exclusive merchandise, directing foot traffic to offsite activations, and generating buzz throughout downtown San Diego.
+
+**Experiential Installation Staff**
+
+The most memorable Comic-Con activations are immersive experiences—escape rooms, AR/VR installations, themed environments, and interactive story experiences. AirFresh provides trained experiential staff who manage throughput, maintain narrative integrity, facilitate technology interactions, and ensure every attendee receives a complete, compelling brand experience within your installation.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Pop culture-fluent ambassadors who engage the SDCC fan community with authentic enthusiasm and deep content knowledge.' },
+      { title: 'Booth Staff', description: 'Professional exhibit staff trained in high-density crowd management, queue engagement, and rapid-fire fan interaction.' },
+      { title: 'Costume Characters', description: 'Professional cosplay talent delivering screen-accurate character portrayals and shareable photo moments throughout SDCC.' },
+      { title: 'Promotional Models', description: 'Eye-catching talent for street-level campaigns, exclusive merchandise distribution, and brand visibility across the SDCC footprint.' },
+      { title: 'Experiential Installation Staff', description: 'Trained staff managing immersive brand experiences, AR/VR installations, and interactive narrative environments.' },
+      { title: 'Street Teams', description: 'Mobile teams deployed across the Gaslamp Quarter and surrounding activation zones to drive awareness and direct traffic.' },
+      { title: 'VIP and Press Hosts', description: 'Professional hosts for media previews, influencer events, and exclusive fan experiences within your SDCC activation.' },
+    ],
+    stats: [
+      { value: '130K+', label: 'Annual SDCC Attendees' },
+      { value: '99%', label: 'On-Time Arrival Rate' },
+      { value: '500+', label: 'Events Staffed' },
+      { value: '98%', label: 'Client Satisfaction' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book Comic-Con staffing?',
+        answer: 'We recommend booking SDCC staffing 12–16 weeks in advance, ideally by March or April for a July event. San Diego Comic-Con is the most competitive staffing environment in the entertainment marketing calendar—studios, gaming companies, and consumer brands all compete for the same limited pool of pop culture-savvy talent. Early booking is essential to secure staff with genuine fan credibility.',
+      },
+      {
+        question: 'Do your Comic-Con staff actually know pop culture?',
+        answer: 'Yes. For SDCC, we specifically recruit from communities of genuine fans—people who read comics, follow entertainment news, play games, watch anime, and participate in fan culture. Every staff member receives additional briefing on your specific IP, franchise, or product, but the baseline cultural fluency is non-negotiable for Comic-Con deployment. We provide candidate profiles for client review and approval.',
+      },
+      {
+        question: 'Can you provide professional cosplay talent and costume characters?',
+        answer: 'Yes. AirFresh maintains relationships with professional cosplayers and costume performers in the Southern California market. We can source talent for screen-accurate character portrayals, branded mascot performances, and stylized character interpretations. Costume quality, fit, and performance capability are verified before deployment. Clients receive portfolio materials and can approve talent in advance.',
+      },
+      {
+        question: 'Do you staff activations outside the convention center during SDCC?',
+        answer: 'Absolutely. The SDCC activation landscape extends throughout the Gaslamp Quarter, Petco Park, the Embarcadero, and surrounding streets. We deploy street teams, promotional models, and experiential staff across all active zones—both official SDCC events and the offsite activations that have become a massive part of the Comic-Con experience.',
+      },
+      {
+        question: 'How do you handle the extreme crowd density at Comic-Con?',
+        answer: 'All SDCC staff receive crowd management training covering high-density pedestrian flow, queue entertainment techniques, rapid interaction protocols, and safety awareness for crowded environments. We structure shifts to prevent fatigue in high-intensity conditions and maintain backup staff availability for peak periods. On-site managers monitor crowd conditions and adjust deployment in real time.',
+      },
+      {
+        question: 'Can you staff both the exhibit hall and immersive experiential activations?',
+        answer: 'Yes. We provide staff for traditional exhibit hall booths as well as immersive brand experiences—escape rooms, themed environments, AR/VR installations, and interactive narrative experiences. Experiential staff receive additional training on throughput management, narrative facilitation, and technology interaction protocols specific to your installation.',
+      },
+    ],
+    logisticsInfo:
+      'San Diego Comic-Con International takes place annually in July at the San Diego Convention Center, with activations extending throughout the Gaslamp Quarter, Petco Park, and surrounding blocks. The event runs Wednesday preview night through Sunday. AirFresh coordinates credentialing, parking logistics, and venue orientation for all staff. Southern California-based talent is prioritized, with supplemental recruitment from Los Angeles for specialized roles including cosplay talent and experiential staff.',
+    relatedCitySlug: 'san-diego',
+    relatedCityName: 'San Diego',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 11. Super Bowl Activations
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'super-bowl',
+    title: 'Super Bowl Event Staffing Agency | Brand Activations & Fan Experience',
+    h1: 'Super Bowl Event Staffing and Brand Activations',
+    metaDescription:
+      'Super Bowl event staffing agency providing brand ambassadors, event staff, promotional models, and hospitality teams for Super Bowl brand activations and fan experience. 100K+ attendees. Book now.',
+    city: 'Varies Annually',
+    stateAbbrev: 'US',
+    venues: ['Super Bowl Stadium (Varies)', 'Super Bowl Experience', 'NFL Fan Village', 'Brand Activation Zones'],
+    keywords: [
+      'Super Bowl event staffing',
+      'Super Bowl brand ambassadors',
+      'Super Bowl activation staff',
+      'Super Bowl promotional models',
+      'Super Bowl hospitality staff',
+      'NFL event staffing',
+      'Super Bowl fan experience staff',
+      'Super Bowl experiential marketing',
+      'Super Bowl event agency',
+      'Super Bowl brand activation staffing',
+      'football event staffing',
+      'Super Bowl week staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional Super Bowl event staffing for brand activations, the Super Bowl Experience, and hospitality programs. Our teams deploy across Super Bowl week—from fan villages and sponsor activations to VIP hospitality and game-day experiences—delivering the premium staffing that the biggest event in American sports demands.',
+    bodyContent: `The Super Bowl is the single largest brand activation opportunity in American sports, drawing 100,000+ attendees to the Super Bowl Experience alone and generating a week-long ecosystem of sponsor activations, corporate hospitality events, and fan engagement programs in the host city. For brands with NFL partnerships, Super Bowl advertising investments, or experiential marketing programs, the staffing stakes are as high as the media exposure.
+
+Super Bowl week is not a single event—it is a concentrated burst of high-profile brand moments spanning seven or more days across the host city. From the opening of the Super Bowl Experience on the Saturday before the game to the final whistle on Sunday, every brand touchpoint must be executed flawlessly in front of the most scrutinizing audience in sports marketing. AirFresh Marketing provides the event staff who make that execution possible.
+
+**Super Bowl Experience and Fan Village Staff**
+
+The NFL Super Bowl Experience is the league's official fan festival—a multi-day interactive event that draws 100,000+ visitors through brand activations, interactive games, NFL merchandise zones, and player appearance areas. AirFresh deploys brand ambassadors, activation staff, and engagement teams throughout the Super Bowl Experience footprint, managing high-volume consumer interactions with the energy and professionalism that NFL sponsor brands demand.
+
+Our fan village staff are trained in rapid engagement techniques, queue management for popular activations, lead capture for sponsor brands, and the specific brand guidelines of NFL partner activations. Every interaction is consistent with the premium positioning of the Super Bowl brand.
+
+**Brand Activation and Experiential Staff**
+
+Super Bowl week brand activations range from massive outdoor installations to intimate VIP experiences. Whether your brand is activating with an interactive technology experience, a product sampling campaign, a celebrity appearance event, or an immersive branded environment, AirFresh provides staff who understand the elevated expectations of Super Bowl-level execution. Our activation staff maintain peak performance across multi-day deployments in what is the most competitive brand environment of the year.
+
+**VIP Hospitality and Corporate Entertainment**
+
+Super Bowl corporate hospitality represents some of the highest-value relationship moments in business. AirFresh provides premium hospitality staff for sponsor suites, corporate entertainment programs, pregame VIP events, and executive hosting throughout Super Bowl week. Our hospitality talent is selected for poise, discretion, and the ability to deliver luxury-level service for C-suite guests and high-net-worth attendees.
+
+**Game-Day Operations Staff**
+
+Game day itself requires flawless execution under the pressure of a global television audience. AirFresh provides game-day operations staff for stadium activations, sponsor hospitality areas, credential management, and fan engagement zones within and surrounding the stadium footprint. All game-day staff undergo NFL security protocols and venue-specific orientation before deployment.
+
+**Multi-City Adaptability**
+
+Because the Super Bowl moves to a different host city each year, brands need a staffing partner with national reach and the ability to deploy in any market. AirFresh maintains vetted talent networks in every recent and upcoming Super Bowl host city and provides consistent quality standards regardless of geography.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'High-energy ambassadors for Super Bowl Experience, fan villages, and sponsor activation zones across Super Bowl week.' },
+      { title: 'Event Staff', description: 'Professional event operations staff managing activations, crowd flow, and brand experiences throughout the Super Bowl footprint.' },
+      { title: 'Promotional Models', description: 'Premium talent driving brand visibility, photo moments, and consumer engagement at Super Bowl activations and events.' },
+      { title: 'Hospitality Staff', description: 'White-glove hospitality teams for corporate suites, VIP pregame events, and executive entertainment programs.' },
+      { title: 'Experiential Activation Staff', description: 'Trained staff for interactive brand experiences, technology demos, and immersive installations at Super Bowl activations.' },
+      { title: 'Registration and Credentialing Staff', description: 'Operations staff managing guest check-in, credential verification, and access control for brand-hosted events.' },
+      { title: 'Game-Day Operations Teams', description: 'Stadium-cleared staff for game-day sponsor activations, hospitality areas, and fan engagement within the stadium perimeter.' },
+    ],
+    stats: [
+      { value: '100K+', label: 'Super Bowl Experience Attendees' },
+      { value: '50+', label: 'Markets Nationwide' },
+      { value: '98%', label: 'Client Satisfaction' },
+      { value: '500+', label: 'Events Staffed' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book Super Bowl event staffing?',
+        answer: 'We recommend booking Super Bowl staffing 12–16 weeks before game day, ideally in October or November for a February event. The host city staffing market reaches saturation quickly as hundreds of brands activate simultaneously during Super Bowl week. Early booking secures the best talent and allows adequate time for NFL-specific training, security clearance processing, and venue orientation.',
+      },
+      {
+        question: 'Can you staff brand activations across the entire Super Bowl week?',
+        answer: 'Yes. AirFresh provides staffing for the full Super Bowl week timeline—from early-week brand activations and media events through the Super Bowl Experience (Saturday–Sunday) and game-day activations. We manage multi-day scheduling with fatigue protocols, daily debriefs, and consistent team composition across the full event window.',
+      },
+      {
+        question: 'Do your staff have experience with NFL sponsor activation requirements?',
+        answer: 'Yes. We understand the brand compliance, exclusivity zones, and operational standards that NFL partner activations require. Our client services team reviews sponsor guidelines and ensures all staff training, appearance standards, and operational protocols align with NFL and sponsor brand requirements. Staff undergo security screening as required by venue and league protocols.',
+      },
+      {
+        question: 'Can you deploy in any Super Bowl host city since it changes annually?',
+        answer: 'Yes. AirFresh maintains vetted talent networks in every recent and upcoming Super Bowl host city. Whether the game is in New Orleans, Las Vegas, Phoenix, Miami, Los Angeles, or any future host market, we have established local talent pools and operational infrastructure ready for deployment. We provide consistent quality and management standards regardless of host city.',
+      },
+      {
+        question: 'What hospitality staffing do you provide for Super Bowl corporate events?',
+        answer: 'We provide premium hospitality staff for Super Bowl corporate entertainment including sponsor suites, VIP pregame receptions, partner dinners, executive hospitality lounges, and game-day hosting. Our hospitality talent is vetted for poise, professionalism, and the ability to deliver luxury-level service for high-profile corporate guests and C-suite attendees.',
+      },
+      {
+        question: 'Do you handle game-day stadium staffing?',
+        answer: 'Yes. AirFresh provides game-day staff for sponsor activations, hospitality areas, and fan engagement zones within and surrounding the stadium. All game-day staff undergo required security protocols, venue-specific orientation, and NFL credentialing procedures. We coordinate with stadium operations and sponsor teams to ensure seamless integration on the biggest day in American sports.',
+      },
+    ],
+    logisticsInfo:
+      'The Super Bowl takes place annually in late January or February at a host city that rotates each year. Super Bowl week activations span 7+ days across the host city, with the Super Bowl Experience and game day as anchor events. AirFresh coordinates host city-specific logistics including local talent sourcing, venue credentialing, NFL security protocols, and multi-venue staff transportation. Our national network ensures consistent deployment capability regardless of which city hosts the game.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 12. Art Basel Miami
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'art-basel-miami',
+    title: 'Art Basel Miami Staffing Agency | VIP Hosts & Brand Ambassadors',
+    h1: 'Art Basel Miami Event Staffing',
+    metaDescription:
+      'Art Basel Miami event staffing agency providing brand ambassadors, hospitality staff, promotional models, and VIP hosts for Art Basel Miami Beach and satellite events. Luxury event staffing specialists.',
+    city: 'Miami Beach',
+    stateAbbrev: 'FL',
+    venues: ['Miami Beach Convention Center', 'Design District', 'Wynwood Arts District', 'Various Satellite Event Venues'],
+    keywords: [
+      'Art Basel Miami staffing',
+      'Art Basel event staff',
+      'Miami art week staffing',
+      'Art Basel brand ambassadors',
+      'Art Basel VIP hosts',
+      'Art Basel hospitality staff',
+      'luxury event staffing Miami',
+      'Art Basel promotional models',
+      'Miami Beach Convention Center staffing',
+      'art event staffing agency',
+      'Art Basel Miami Beach staff',
+      'high-end event staffing Miami',
+    ],
+    description:
+      'AirFresh Marketing provides Art Basel Miami Beach event staffing for luxury brands, galleries, and sponsors across Miami Art Week. From VIP hosts and hospitality staff to brand ambassadors and promotional models, our premium talent delivers the sophistication and polish that Art Basel\'s high-net-worth audience demands. 80,000+ attendees across main fair and satellite events.',
+    bodyContent: `Art Basel Miami Beach is the Western Hemisphere's premier art fair and the epicenter of Miami Art Week—a concentrated explosion of art, fashion, luxury, and culture that draws 80,000+ collectors, gallerists, celebrities, influencers, and high-net-worth individuals to Miami Beach every December. For luxury brands, fashion houses, spirits companies, and lifestyle brands, Art Basel Miami represents the most prestigious activation environment of the year.
+
+The Art Basel audience is unlike any other event demographic. They are affluent, aesthetically sophisticated, culturally discerning, and accustomed to luxury-level experiences. Staffing at Art Basel demands talent who can operate credibly in this environment—people with the poise, cultural literacy, and polished presence that high-end brand representation requires. AirFresh Marketing provides exactly that caliber of premium event talent.
+
+**VIP Hosts and Hospitality Staff**
+
+Art Basel Miami is built on exclusivity. The most valuable brand moments happen at invitation-only dinners, collector previews, private viewings, and VIP receptions where the guest list reads like a Forbes profile. AirFresh provides VIP hosts who embody sophistication—managing guest arrivals, facilitating introductions, overseeing beverage service, and maintaining the seamless, unhurried atmosphere that luxury hospitality demands. Our VIP staff are trained in discretion, high-net-worth guest protocols, and the unspoken service standards of luxury brand events.
+
+**Brand Ambassadors for Art Week Activations**
+
+Art Basel brand activations span the full Miami Art Week calendar—from the main fair at the Miami Beach Convention Center to satellite fairs like Untitled, NADA, and Scope, to branded installations in Wynwood and the Design District. AirFresh brand ambassadors for Art Basel are selected for their visual sophistication, cultural awareness, and ability to engage collectors and influencers in a way that elevates rather than interrupts the art fair experience.
+
+**Promotional Models and Luxury Brand Talent**
+
+Fashion, beauty, spirits, and automotive brands activate heavily during Art Basel week, and their talent requirements reflect the luxury positioning of their products. AirFresh provides promotional models and luxury brand representatives who meet the exacting visual and communication standards of premium brand representation. Our Art Basel talent is experienced in high-end environments and carries themselves with the confidence and polish that luxury brand directors expect.
+
+**Multi-Venue Miami Art Week Coverage**
+
+Miami Art Week is not a single event at a single venue. It sprawls across Miami Beach, Wynwood, the Design District, Brickell, and downtown Miami with dozens of fairs, exhibitions, installations, and brand events happening simultaneously. AirFresh provides staffing coordination across the full Art Week geography, with dedicated teams at each venue and centralized operations management ensuring consistent quality from the Convention Center to Collins Avenue to Wynwood Walls.
+
+**Event Flow and Guest Experience Management**
+
+At Art Basel, the guest experience is everything. From the moment a VIP arrives at your event to the final farewell, every touchpoint must feel intentional, elevated, and effortless. AirFresh staff are trained in luxury event flow management—anticipating guest needs, managing transitions between event segments, coordinating with catering and production teams, and ensuring that the guest experience reflects the premium positioning of your brand.`,
+    staffTypes: [
+      { title: 'VIP Hosts', description: 'Sophisticated hosts managing guest arrivals, VIP protocols, and luxury-level hospitality at collector events and private brand activations.' },
+      { title: 'Brand Ambassadors', description: 'Culturally fluent, visually polished ambassadors representing luxury brands across Art Basel fairs and satellite events.' },
+      { title: 'Hospitality Staff', description: 'Premium service staff for invitation-only dinners, private viewings, brand receptions, and collector hospitality programs.' },
+      { title: 'Promotional Models', description: 'High-end talent for fashion, beauty, spirits, and luxury automotive brand activations during Miami Art Week.' },
+      { title: 'Registration and Guest List Staff', description: 'Discreet, professional staff managing invitation verification, VIP check-in, and access control at exclusive events.' },
+      { title: 'Event Flow Coordinators', description: 'Staff managing transitions, timing, and guest experience across multi-segment Art Basel brand events.' },
+      { title: 'Multi-Venue Operations Managers', description: 'On-site team leads coordinating staff across multiple simultaneous Art Week venues and activations.' },
+    ],
+    stats: [
+      { value: '80K+', label: 'Art Basel Miami Attendees' },
+      { value: '98%', label: 'Client Satisfaction' },
+      { value: '150+', label: 'Luxury Events Staffed' },
+      { value: '10K+', label: 'Staff Deployed Annually' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book Art Basel Miami staffing?',
+        answer: 'We recommend booking Art Basel staffing 10–14 weeks in advance, ideally by September or October for a December event. Miami Art Week creates intense staffing demand as hundreds of brands, galleries, and event producers activate simultaneously. The premium talent that Art Basel requires—visually polished, culturally sophisticated, experienced in luxury environments—is limited and books early.',
+      },
+      {
+        question: 'Do your Art Basel staff have experience in luxury and high-end environments?',
+        answer: 'Yes. For Art Basel, we recruit specifically from networks of talent experienced in luxury brand representation, high-end hospitality, and premium event environments. Our Art Basel staff have worked fashion shows, gallery openings, luxury product launches, and private events for high-net-worth clientele. We provide candidate profiles and portfolio materials for client approval before confirming any Art Basel deployment.',
+      },
+      {
+        question: 'Can you staff activations across multiple Miami Art Week venues simultaneously?',
+        answer: 'Yes. Miami Art Week spans the Convention Center, Design District, Wynwood, South Beach, and satellite venues across Miami-Dade County. AirFresh coordinates simultaneous deployments with dedicated team leads at each location and centralized operations management. We routinely staff 5–10+ concurrent Art Week activations for different clients during the same event period.',
+      },
+      {
+        question: 'What types of Art Basel brand activations do you staff?',
+        answer: 'We staff the full range of Art Basel brand activations: collector dinners, VIP receptions, gallery openings, branded installations in Wynwood and the Design District, beachfront activations, rooftop events, pop-up retail experiences, product launches, influencer events, and private brand hospitality programs. Any format that exists during Miami Art Week, we can staff at the quality level it demands.',
+      },
+      {
+        question: 'Do you provide bilingual staff for Art Basel Miami?',
+        answer: 'Yes. Art Basel Miami attracts a significant international audience—collectors and gallerists from Latin America, Europe, and beyond. We provide bilingual (English-Spanish) staff as a standard for most Art Basel deployments and can source staff with Portuguese, French, Italian, and other language capabilities depending on your guest profile and target audience.',
+      },
+      {
+        question: 'How do your staff handle the VIP and celebrity guest environment at Art Basel?',
+        answer: 'Our Art Basel VIP staff are trained in discretion, high-profile guest protocols, and the professional composure required when serving celebrities, collectors, and C-suite executives. They understand that VIP environments demand unobtrusive excellence—anticipating needs without hovering, maintaining confidentiality, and delivering service that feels effortless and natural rather than performative.',
+      },
+    ],
+    logisticsInfo:
+      'Art Basel Miami Beach takes place annually in early December at the Miami Beach Convention Center, with Miami Art Week satellite events spanning the Design District, Wynwood Arts District, South Beach, and venues throughout Miami-Dade County. The main fair runs Thursday through Saturday with VIP preview days Wednesday and Thursday. AirFresh coordinates multi-venue logistics, credentialing for Convention Center access, and transportation for staff deployed across the distributed Art Week geography. Miami-based talent is prioritized, with supplemental recruitment from South Florida and national markets for specialized luxury hospitality roles.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 13. Lollapalooza
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'lollapalooza',
+    title: 'Lollapalooza Staffing Agency | Brand Ambassadors Chicago',
+    h1: 'Lollapalooza Festival Staffing Chicago',
+    metaDescription:
+      'Lollapalooza festival staffing agency providing brand ambassadors, street teams, sampling teams, and festival staff for Lollapalooza at Grant Park, Chicago. 400K+ attendees over 4 days. Book now.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['Grant Park', 'Butler Field', 'Columbia Fields'],
+    keywords: [
+      'Lollapalooza staffing agency',
+      'Lollapalooza event staff',
+      'Lollapalooza brand ambassadors',
+      'festival staffing Chicago',
+      'Lollapalooza sampling teams',
+      'Lollapalooza street teams',
+      'Grant Park event staffing',
+      'Chicago festival staff',
+      'Lollapalooza activation staff',
+      'music festival staffing agency',
+      'Lollapalooza experiential marketing',
+      'Chicago brand ambassador agency',
+    ],
+    description:
+      'AirFresh Marketing provides professional Lollapalooza festival staffing for brand activations at Grant Park in Chicago. From brand ambassadors and street teams to sampling programs and experiential installations, our festival-trained staff help brands connect with 400,000+ attendees across 4 days of one of America\'s premier music festivals.',
+    bodyContent: `Lollapalooza is one of America's premier music festivals, drawing 400,000+ attendees over four days to Grant Park in the heart of downtown Chicago every August. The festival's urban setting—surrounded by Michigan Avenue, the Loop, and the lakefront—creates a uniquely accessible brand activation environment where sponsors can reach a massive, young, engaged audience in a concentrated geographic footprint.
+
+For brands activating at Lollapalooza, the opportunity is enormous. Four days of sustained consumer engagement, 100,000 attendees daily, a demographic skewing 18–34, and the festival's reputation as a cultural tastemaker create ideal conditions for brand sampling, experiential activations, and ambassador-driven awareness campaigns. AirFresh Marketing provides the festival-trained staff who turn that opportunity into measurable results.
+
+**Festival Brand Ambassadors**
+
+Lollapalooza brand ambassadors must match the energy of the festival—enthusiastic, authentic, and tireless across long outdoor shifts in summer heat. Our Lolla ambassadors are recruited from Chicago's vibrant event talent community and selected for their genuine enthusiasm, festival-appropriate personal style, and ability to engage attendees in a high-energy outdoor environment. They deliver your brand messaging while feeling native to the festival experience.
+
+Each ambassador is trained on your campaign objectives, key messaging, engagement mechanics, and success metrics before the festival begins. Whether your activation requires ambassadors driving traffic to a booth, roaming the festival grounds with sampling packs, or facilitating branded photo moments, our teams are briefed and ready from day one.
+
+**Sampling Teams**
+
+Lollapalooza's outdoor festival environment and multi-day duration make it one of the most effective sampling platforms in experiential marketing. Attendees are receptive to beverage, snack, beauty, and consumer product samples—especially when delivered with genuine energy and a memorable brand interaction. AirFresh sampling teams at Lollapalooza are trained in safe product handling, regulatory compliance for food and beverage distribution, and conversation-driven engagement that creates lasting brand impressions beyond the sample itself.
+
+**Street Teams and Guerrilla Activations**
+
+Grant Park's downtown Chicago location means Lollapalooza foot traffic extends well beyond the festival gates—along Michigan Avenue, through the Loop, and into adjacent neighborhoods. AirFresh deploys GPS-tracked street teams across the broader Lollapalooza footprint, intercepting attendees before and after the festival with brand messaging, sampling, and awareness campaigns that extend your reach beyond the paid activation zone.
+
+**Multi-Day Festival Endurance**
+
+Four consecutive days of outdoor festival staffing in August Chicago heat requires deliberate fatigue management. AirFresh structures Lollapalooza shifts with built-in hydration breaks, heat safety protocols, staggered scheduling to prevent burnout, and backup staff availability for each day. Our operations team monitors staff performance daily and makes real-time adjustments to maintain activation quality from Thursday through Sunday.
+
+**Experiential Installation Staff**
+
+Lollapalooza's sponsor activation area hosts some of the most creative experiential installations in the festival circuit. From interactive technology experiences to branded lounges to immersive environments, AirFresh provides trained experiential staff who manage attendee flow, facilitate brand interactions, maintain installation quality, and ensure every consumer touchpoint delivers on your creative vision.`,
+    staffTypes: [
+      { title: 'Festival Brand Ambassadors', description: 'High-energy, festival-native ambassadors engaging 100K daily attendees with authentic enthusiasm and consistent brand messaging.' },
+      { title: 'Sampling Teams', description: 'Certified sampling staff for food, beverage, and consumer product distribution with full regulatory compliance and engaging delivery.' },
+      { title: 'Street Teams', description: 'GPS-tracked mobile teams covering Grant Park and surrounding downtown Chicago zones to extend brand reach beyond festival gates.' },
+      { title: 'Experiential Activation Staff', description: 'Trained staff managing interactive brand installations, technology experiences, and immersive environments within the sponsor area.' },
+      { title: 'Festival Operations Staff', description: 'Logistics and operations support including crowd management, queue facilitation, and activation zone coordination.' },
+      { title: 'Social Content Facilitators', description: 'Staff trained to facilitate UGC moments, direct social sharing, and capture content at branded photo installations.' },
+      { title: 'On-Site Managers', description: 'Dedicated team leads providing real-time staff management, daily performance debriefs, and centralized operations coordination.' },
+    ],
+    stats: [
+      { value: '400K+', label: 'Lollapalooza Attendees (4 Days)' },
+      { value: '99%', label: 'On-Time Arrival Rate' },
+      { value: '150+', label: 'Festivals Staffed' },
+      { value: '50K+', label: 'Samples Distributed per Event' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book Lollapalooza staffing?',
+        answer: 'We recommend booking Lollapalooza staffing 10–14 weeks in advance, ideally by May or June for an August festival. Chicago\'s event talent pool is in high demand during festival season, and the best staff—people with genuine festival energy and outdoor event experience—book early. Early booking also allows time for brand training, heat safety certification, and campaign-specific preparation.',
+      },
+      {
+        question: 'How do your staff handle the heat and multi-day demands of Lollapalooza?',
+        answer: 'All AirFresh staff for Lollapalooza receive heat safety training including hydration protocols, mandatory cooling breaks, heat illness recognition, and buddy check systems. We build heat management into shift schedules, coordinate shade and cooling access within your activation area, and maintain backup staff for each day. Four-day festivals require deliberate fatigue management—we design schedules to keep staff fresh and energized through Sunday.',
+      },
+      {
+        question: 'Can you staff product sampling programs that require food handler certification?',
+        answer: 'Yes. For food and beverage sampling at Lollapalooza, we ensure all relevant staff hold current Illinois food handler certifications and comply with Chicago Department of Public Health requirements. We manage product storage protocols, temperature documentation for regulated products, and proper handling procedures throughout the four-day festival.',
+      },
+      {
+        question: 'Do you deploy street teams beyond the Grant Park festival gates?',
+        answer: 'Yes. Lollapalooza\'s downtown Chicago location creates significant brand activation opportunity beyond the festival perimeter. We deploy GPS-tracked street teams along Michigan Avenue, through the Loop, in the South Loop, and along the lakefront—intercepting attendees traveling to and from the festival with brand messaging, product sampling, and awareness campaigns.',
+      },
+      {
+        question: 'What types of Lollapalooza brand activations do your staff support?',
+        answer: 'Our staff support the full range of Lollapalooza sponsor activations: sampling stations, interactive brand experiences, branded lounges, photo installations, charging stations, experiential technology demos, roaming ambassador campaigns, street team distributions, and VIP hospitality areas within the festival footprint.',
+      },
+      {
+        question: 'Can you provide real-time performance tracking for our Lollapalooza activation?',
+        answer: 'Yes. AirFresh provides GPS check-in tracking for all staff, real-time dashboards showing engagement metrics, daily debrief reports with performance data, and photo documentation throughout the four-day festival. You receive daily summaries and a comprehensive post-event report within 48 hours of festival close.',
+      },
+    ],
+    logisticsInfo:
+      'Lollapalooza takes place annually in early August at Grant Park in downtown Chicago, IL. The festival spans four days (Thursday through Sunday) across multiple stages and activation areas within Grant Park including Butler Field and Columbia Fields. AirFresh coordinates credentialing, staff transportation to the downtown venue, and festival-specific orientation covering access points, activation zones, staff services, and emergency procedures. Chicago-based talent is prioritized with supplemental recruitment from Milwaukee and Indianapolis markets for large-scale deployments.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 14. EDC Las Vegas
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'edc-las-vegas',
+    title: 'EDC Las Vegas Staffing Agency | Festival Brand Ambassadors',
+    h1: 'EDC Las Vegas Festival Staffing',
+    metaDescription:
+      'EDC Las Vegas event staffing agency providing brand ambassadors, sampling teams, promotional models, and festival staff for Electric Daisy Carnival at Las Vegas Motor Speedway. 450K+ attendees over 3 nights.',
+    city: 'Las Vegas',
+    stateAbbrev: 'NV',
+    venues: ['Las Vegas Motor Speedway', 'EDC Festival Grounds', 'Camp EDC'],
+    keywords: [
+      'EDC Las Vegas staffing',
+      'Electric Daisy Carnival staff',
+      'EDC brand ambassadors',
+      'EDC festival staffing',
+      'EDC Las Vegas event staff',
+      'EDC promotional models',
+      'EDC sampling teams',
+      'music festival staffing Las Vegas',
+      'EDC activation staff',
+      'rave event staffing',
+      'electronic music festival staff',
+      'EDC experiential marketing',
+    ],
+    description:
+      'AirFresh Marketing provides professional EDC Las Vegas festival staffing for Electric Daisy Carnival at the Las Vegas Motor Speedway. From brand ambassadors and sampling teams to promotional models and festival staff, our teams are trained for the unique overnight format and high-energy environment of the world\'s largest electronic music festival—450,000+ attendees over 3 nights.',
+    bodyContent: `Electric Daisy Carnival Las Vegas is the world's largest electronic music festival, drawing 450,000+ attendees over three nights to the Las Vegas Motor Speedway every May. EDC's unique overnight format—dusk to dawn, approximately 7 PM to 5:30 AM—creates a brand activation environment unlike anything in the festival industry. The audience is passionate, visually expressive, and deeply immersed in the experience, making EDC one of the most impactful consumer engagement platforms for brands targeting the 18–34 demographic.
+
+EDC Las Vegas brand activations must match the spectacle and energy of the festival itself. This is not a daytime sampling tent environment—it is an all-night sensory experience where brands compete for attention against massive stage productions, laser shows, and art installations. AirFresh Marketing provides festival staff who thrive in this environment, bringing the authentic energy and endurance that overnight festival activation demands.
+
+**Overnight Festival Brand Ambassadors**
+
+EDC's dusk-to-dawn format means brand ambassadors must maintain peak energy and engagement through an entire overnight shift in an outdoor desert environment. AirFresh EDC ambassadors are specifically selected for their ability to perform in nighttime festival conditions—managing energy across 8+ hour overnight shifts, engaging an audience in heightened emotional states, and representing your brand with consistent enthusiasm from sunset to sunrise.
+
+Our EDC brand ambassadors understand the electronic music community. They are familiar with EDC culture, they respect the PLUR ethos (Peace, Love, Unity, Respect) that defines the community, and they engage attendees in a way that enhances rather than interrupts the festival experience. This cultural authenticity is non-negotiable for credible brand presence at EDC.
+
+**Sampling Teams for Overnight Activation**
+
+EDC's overnight format and desert location create extraordinary product sampling opportunity—attendees are energetic, receptive, and actively seeking hydration, energy, and refreshment throughout the night. AirFresh sampling teams at EDC are trained in overnight operation protocols, safe product handling under nighttime conditions, and the high-volume distribution pace that 150,000 nightly attendees demand.
+
+**Promotional Models and Visual Brand Presence**
+
+EDC is the most visually spectacular festival in the world, and brands that match that visual energy stand out in the best possible way. AirFresh provides promotional models for EDC who complement the festival's aesthetic—performers, dancers, LED-enhanced talent, and visually striking brand representatives who draw attention and create photo-worthy moments that attendees share across social media.
+
+**Desert Environment and Safety Protocols**
+
+The Las Vegas Motor Speedway in May means desert heat during load-in hours and cool desert nights during the festival itself. AirFresh provides environment-specific training for all EDC staff covering hydration management, temperature transitions between day prep and overnight operation, fatigue management for overnight shifts, and safety awareness in a large-scale outdoor venue with 150,000+ simultaneous attendees.
+
+**Camp EDC and Extended Activation**
+
+Camp EDC—the on-site camping experience—extends brand activation opportunity beyond the main festival hours. Brands activating at Camp EDC can reach attendees during daytime hours in a more relaxed, community-oriented environment. AirFresh provides dedicated Camp EDC staff for daytime activations, pool parties, community events, and sponsor experiences within the camping footprint.`,
+    staffTypes: [
+      { title: 'Festival Brand Ambassadors', description: 'EDC culture-fluent ambassadors trained for overnight shifts, maintaining peak energy from dusk to dawn in the desert festival environment.' },
+      { title: 'Sampling Teams', description: 'Overnight-trained sampling staff for high-volume product distribution across EDC\'s three-night format with full safety compliance.' },
+      { title: 'Promotional Models', description: 'Visually striking talent complementing EDC\'s spectacular aesthetic and creating shareable brand moments throughout the festival.' },
+      { title: 'Festival Staff', description: 'Operations and activation support staff managing brand experiences, attendee flow, and logistics across the Speedway footprint.' },
+      { title: 'Camp EDC Activation Staff', description: 'Daytime staff for Camp EDC brand activations, pool parties, and community events within the camping footprint.' },
+      { title: 'Social Content Facilitators', description: 'Staff facilitating photo moments, UGC capture, and social sharing at branded installations under EDC\'s spectacular nighttime lighting.' },
+      { title: 'On-Site Operations Managers', description: 'Overnight team leads managing multi-zone staff deployment with real-time tracking and performance management across all three nights.' },
+    ],
+    stats: [
+      { value: '450K+', label: 'EDC Las Vegas Attendees (3 Nights)' },
+      { value: '99%', label: 'On-Time Arrival Rate' },
+      { value: '150+', label: 'Festivals Staffed' },
+      { value: '10K+', label: 'Staff Deployed Annually' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book EDC Las Vegas staffing?',
+        answer: 'We recommend booking EDC staffing 10–14 weeks in advance, ideally by February or March for a May festival. Las Vegas festival talent is in high demand during EDC weekend, and the specialized staff needed for overnight operations—people who can maintain energy from 7 PM to 5:30 AM—require careful selection and advance scheduling. Early booking also allows time for brand training and overnight protocol preparation.',
+      },
+      {
+        question: 'How do your staff handle the overnight dusk-to-dawn format?',
+        answer: 'All EDC staff are specifically selected for overnight operation capability and receive fatigue management training covering sleep schedule adjustment, energy maintenance strategies, hydration protocols for overnight desert conditions, and buddy check systems. We structure overnight shifts with built-in breaks and maintain backup staff for each night. Staff are required to rest during daytime hours before their shifts.',
+      },
+      {
+        question: 'Do your EDC staff understand electronic music culture?',
+        answer: 'Yes. For EDC, we recruit from the electronic music community—people who attend festivals, know the artists, understand PLUR culture, and can engage attendees authentically. Generic event staff who are unfamiliar with EDC culture will be immediately perceived as outsiders by this community. Our staff integrate naturally and represent your brand in a way that respects and enhances the EDC experience.',
+      },
+      {
+        question: 'Can you staff both the main festival and Camp EDC activations?',
+        answer: 'Yes. We provide separate staff teams for overnight main festival activations (7 PM–5:30 AM) and daytime Camp EDC activations. Camp EDC operates on a different schedule and offers brands a more relaxed, community-oriented engagement environment during daytime hours. We coordinate both deployment tracks under unified management.',
+      },
+      {
+        question: 'What sampling programs work best at EDC Las Vegas?',
+        answer: 'Beverage sampling (water, energy drinks, sports drinks, non-alcoholic beverages) performs exceptionally well at EDC given the overnight format, desert environment, and physical activity level of attendees. Gum, mints, snack products, and beauty items (facial mist, wipes) also perform strongly. We help brands optimize their sampling strategy for the unique EDC environment and attendee state.',
+      },
+      {
+        question: 'Do you provide real-time tracking and reporting for EDC activations?',
+        answer: 'Yes. All EDC staff check in via GPS at shift start and throughout their deployment. We provide real-time dashboards showing staff locations and engagement metrics across the Speedway footprint, nightly debrief reports, and a comprehensive post-festival performance report within 48 hours of the final night. Photo and video documentation is captured throughout all three nights.',
+      },
+    ],
+    logisticsInfo:
+      'Electric Daisy Carnival Las Vegas takes place annually in May at the Las Vegas Motor Speedway, approximately 15 miles north of the Las Vegas Strip. The festival runs three nights (Friday, Saturday, Sunday) from approximately 7 PM to 5:30 AM each night. Camp EDC opens Thursday and extends through Monday morning. AirFresh coordinates staff transportation to the Speedway, credential management, overnight logistics planning, and environment-specific orientation covering the facility layout, safety protocols, and overnight operation procedures. Las Vegas-based talent is prioritized with supplemental recruitment for specialized roles.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
