@@ -1,45 +1,88 @@
-'use client'
-
 import Link from 'next/link'
+import { Home, BookOpen, MapPin, Briefcase, Phone, Search } from 'lucide-react'
 import { Button } from '@/components/ui/button'
-import { Home, ArrowLeft, Search } from 'lucide-react'
 
 export default function NotFound() {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex items-center justify-center px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full text-center">
-        <div className="mb-8">
-          <h1 className="text-9xl font-bold text-primary opacity-20">404</h1>
-          <h2 className="text-3xl font-bold text-gray-900 mb-4">Page Not Found</h2>
-          <p className="text-lg text-gray-600 mb-8">
-            The page you're looking for doesn't exist or has been moved.
-          </p>
+    <div className="min-h-screen bg-gradient-to-b from-gray-50 to-white pt-16">
+      <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center">
+        <div className="text-8xl font-black text-cyan-500/20 mb-4">404</div>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
+          Page Not Found
+        </h1>
+        <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto">
+          The page you&apos;re looking for doesn&apos;t exist or has been moved. Let us help you find what you need.
+        </p>
+
+        <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-4 mb-12">
+          <Link
+            href="/"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <Home className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Home</h2>
+            <p className="text-sm text-gray-500 mt-1">Back to homepage</p>
+          </Link>
+
+          <Link
+            href="/services"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <Briefcase className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Our Services</h2>
+            <p className="text-sm text-gray-500 mt-1">Explore marketing solutions</p>
+          </Link>
+
+          <Link
+            href="/locations"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <MapPin className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Locations</h2>
+            <p className="text-sm text-gray-500 mt-1">Find staffing in your city</p>
+          </Link>
+
+          <Link
+            href="/blog"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <BookOpen className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Blog</h2>
+            <p className="text-sm text-gray-500 mt-1">Marketing insights & guides</p>
+          </Link>
+
+          <Link
+            href="/case-studies"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <Search className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Case Studies</h2>
+            <p className="text-sm text-gray-500 mt-1">See our results</p>
+          </Link>
+
+          <Link
+            href="/contact"
+            className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
+          >
+            <Phone className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Contact Us</h2>
+            <p className="text-sm text-gray-500 mt-1">Get a free quote</p>
+          </Link>
         </div>
 
-        <div className="space-y-4">
-          <Button asChild className="w-full">
-            <Link href="/">
-              <Home className="h-4 w-4 mr-2" />
-              Back to Home
-            </Link>
-          </Button>
-
-          <Button asChild variant="outline" className="w-full">
-            <Link href="/services">
-              <Search className="h-4 w-4 mr-2" />
-              Explore Services
-            </Link>
-          </Button>
-
-          <Button asChild variant="ghost" className="w-full">
-            <Link href="/contact">
-              Contact Us
-            </Link>
-          </Button>
-        </div>
-
-        <div className="mt-8 text-sm text-gray-500">
-          <p>If you believe this is an error, please <Link href="/contact" className="text-primary hover:underline">contact us</Link>.</p>
+        <div className="border-t border-gray-200 pt-8">
+          <h3 className="font-bold text-gray-900 mb-4">Popular Resources</h3>
+          <div className="flex flex-wrap justify-center gap-3 text-sm">
+            <Link href="/guides/best-event-staffing-agency" className="text-cyan-600 hover:underline">Best Event Staffing Agency Guide</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/guides/event-staffing-101" className="text-cyan-600 hover:underline">Event Staffing 101</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/pricing" className="text-cyan-600 hover:underline">Pricing</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/event-staffing-near-me" className="text-cyan-600 hover:underline">Event Staffing Near Me</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/compare" className="text-cyan-600 hover:underline">Compare Agencies</Link>
+          </div>
         </div>
       </div>
     </div>
