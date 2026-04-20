@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, Landmark, Car, Building } from "lucide-react";
-import SEO from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 
@@ -460,6 +459,45 @@ export default async function EventPage({ params }: EventPageProps) {
             <Link href="/technology" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Our Technology Platform</Link>
             <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Client Case Studies</Link>
             <Link href="/services/brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium text-center p-3 bg-white rounded-lg shadow-sm">Brand Ambassador Services</Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Related Local Pages */}
+      <section className="py-12 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold mb-6">Explore Event Staffing in {event.city}</h2>
+          <div className="grid md:grid-cols-3 gap-4">
+            <Link href={`/cities/${event.city.toLowerCase().replace(/\s+/g, '-')}`} className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    Event Staffing in {event.city}
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">All services in {event.city}</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href={`/states/${event.state.toLowerCase().replace(/\s+/g, '-')}`} className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    Event Staffing in {event.state}
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">Statewide coverage</p>
+                </CardContent>
+              </Card>
+            </Link>
+            <Link href="/guides/best-event-staffing-agency" className="group">
+              <Card className="hover:shadow-lg transition-shadow h-full">
+                <CardContent className="p-5">
+                  <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">
+                    Best Event Staffing Agency Guide
+                  </h3>
+                  <p className="text-sm text-gray-500 mt-1">2026 comprehensive comparison</p>
+                </CardContent>
+              </Card>
+            </Link>
           </div>
         </div>
       </section>

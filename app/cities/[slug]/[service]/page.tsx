@@ -4,8 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, CheckCircle, Star, Phone, ArrowRight, Users, TrendingUp, Award, Clock, Target, Sparkles, Building, Briefcase, Gift, Megaphone, Calendar, Camera } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import SEO from "@/components/SEO";
-
 interface ServiceCityPageProps {
   params: Promise<{ slug: string; service: string }>;
 }

@@ -5,7 +5,6 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
-import SEO from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import {
   Users,
@@ -1350,12 +1349,9 @@ export default function ServicePage({ params }: ServicePageProps) {
 
   return (
     <div className="pt-16">
-      <SEO
-        title={`${service.title} | Professional Services - AirFresh Marketing`}
-        description={service.description}
-        pageType="service"
-        canonical={`https://www.airfreshmarketing.com/services/${serviceName}`}
-        structuredData={structuredData}
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
 
       {/* AggregateRating and Review JSON-LD */}

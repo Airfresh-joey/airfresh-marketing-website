@@ -3,7 +3,6 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, Phone, ArrowRight, Building, Users } from "lucide-react";
 import Link from "next/link";
-import SEO from "@/components/SEO";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { states, stateServices, getStateBySlug } from "@/server/states-data";
 import type { Metadata } from 'next';

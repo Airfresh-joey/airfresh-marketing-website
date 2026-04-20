@@ -5,7 +5,6 @@ import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
 import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Phone, Star } from "lucide-react";
-import SEO from "@/components/SEO";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 import { portfolioCaseStudies } from "@/server/portfolio-case-studies";
 

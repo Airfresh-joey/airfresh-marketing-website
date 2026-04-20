@@ -4,7 +4,6 @@ import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { MapPin, CheckCircle, Phone, ArrowRight, Users, TrendingUp, Award, Building } from "lucide-react";
 import Link from "next/link";
 import Image from "next/image";
-import SEO from "@/components/SEO";
 import { states, stateServices, getStateBySlug, getStateServiceBySlug } from "@/server/states-data";
 import { portfolioCaseStudies } from "@/server/portfolio-case-studies";
 import type { Metadata } from 'next';

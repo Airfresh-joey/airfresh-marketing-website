@@ -19,6 +19,7 @@ import { Button } from "@/components/ui/button"
 import { Card, CardContent } from "@/components/ui/card"
 import { blogPosts } from "@/server/blogPosts"
 import { ReadProgressBar, ShareButtons, NewsletterSection } from "@/components/BlogPostClient"
+import Breadcrumbs from "@/components/Breadcrumbs"
 
 // ── Static params for pre-rendering all blog posts ──────────────────
 export async function generateStaticParams() {
@@ -244,14 +245,16 @@ export default async function BlogPost(
   const wordCount = post.content.split(' ').length
   const postUrl = `https://www.airfreshmarketing.com/blog/${post.slug}`
 
-  const structuredData = {
+  const articleStructuredData = {
     "@context": "https://schema.org",
     "@graph": [
       {
         "@type": "Article",
         "headline": post.title,
         "description": post.excerpt,
-        "image": post.image,
+        "image": post.image ? `https://www.airfreshmarketing.com${post.image}` : undefined,
+        "datePublished": post.date,
+        "dateModified": post.date,
         "author": {
           "@type": "Organization",
           "name": "AirFresh Marketing",
@@ -265,19 +268,19 @@ export default async function BlogPost(
             "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
           }
         },
-        "datePublished": post.date,
-        "dateModified": post.date,
-        "mainEntityOfPage": postUrl,
-        "wordCount": wordCount,
-        "articleSection": post.category,
-        "keywords": post.tags.join(', ')
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": `https://www.airfreshmarketing.com/blog/${post.slug}`
+        },
+        "inLanguage": "en-US",
+        "keywords": post.tags?.join(", ") || post.category
       },
       {
         "@type": "BreadcrumbList",
         "itemListElement": [
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
           { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.airfreshmarketing.com/blog" },
-          { "@type": "ListItem", "position": 3, "name": post.title, "item": postUrl }
+          { "@type": "ListItem", "position": 3, "name": post.title, "item": `https://www.airfreshmarketing.com/blog/${post.slug}` }
         ]
       }
     ]
@@ -288,7 +291,7 @@ export default async function BlogPost(
       {/* JSON-LD Structured Data */}
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
       />
 
       {/* Progress Bar (client component) */}
@@ -356,6 +359,9 @@ export default async function BlogPost(
           </div>
         </div>
       </section>
+
+      {/* Visible Breadcrumbs */}
+      <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: post.title }]} />
 
       {/* Main Content Area */}
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">

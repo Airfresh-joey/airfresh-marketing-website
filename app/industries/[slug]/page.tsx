@@ -5,7 +5,6 @@ import { notFound } from "next/navigation";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
-import SEO from "@/components/SEO";
 import { industries, getIndustryBySlug } from "@/server/industries-data";
 import { cities as industryCities } from "@/server/industry-city-data";
 import {
