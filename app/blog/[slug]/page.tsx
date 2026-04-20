@@ -349,10 +349,13 @@ export default async function BlogPost(
           {/* Hero Image */}
           <div className="relative rounded-2xl overflow-hidden shadow-2xl animate-fade-in">
             <div className="aspect-[21/9] relative">
-              <img
+              <Image
                 src={post.image}
                 alt={`${post.title} - AirFresh Marketing blog`}
-                className="w-full h-full object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 1280px) 100vw, 1280px"
+                priority
               />
               <div className="absolute inset-0 bg-gradient-to-t from-black/30 via-transparent to-transparent" />
             </div>
@@ -448,10 +451,12 @@ export default async function BlogPost(
                 <Link key={relatedPost.id} href={`/blog/${relatedPost.slug}`}>
                   <Card className="group hover:shadow-xl transition-all duration-300 cursor-pointer h-full overflow-hidden">
                     <div className="aspect-video relative overflow-hidden bg-gray-100">
-                      <img
+                      <Image
                         src={relatedPost.image}
                         alt={`${relatedPost.title} - event marketing insights`}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent" />
                       <Badge className="absolute bottom-3 left-3 bg-white/90 text-gray-900">

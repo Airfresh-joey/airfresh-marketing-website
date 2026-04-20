@@ -2,6 +2,7 @@
 
 import { useState, useMemo, FormEvent } from "react"
 import Link from "next/link"
+import Image from "next/image"
 import {
   Calendar,
   Clock,
@@ -166,10 +167,13 @@ export function BlogListClient({ posts }: { posts: BlogPost[] }) {
             <div className="group relative overflow-hidden rounded-2xl bg-white shadow-xl hover:shadow-2xl transition-all duration-500 cursor-pointer">
               <div className="grid lg:grid-cols-2 gap-0">
                 <div className="relative h-64 lg:h-full overflow-hidden">
-                  <img
+                  <Image
                     src={featuredPost.image}
                     alt={featuredPost.title}
-                    className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                    fill
+                    className="object-cover group-hover:scale-110 transition-transform duration-700"
+                    sizes="(max-width: 1024px) 100vw, 50vw"
+                    priority
                   />
                   <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                   <Badge className="absolute top-4 left-4 bg-cyan-500 text-white border-0">
@@ -275,10 +279,12 @@ export function BlogListClient({ posts }: { posts: BlogPost[] }) {
                 <Link href={`/blog/${post.slug}`}>
                   <article className="group h-full bg-white rounded-xl shadow-lg hover:shadow-2xl transition-all duration-500 overflow-hidden cursor-pointer flex flex-col">
                     <div className="relative h-64 overflow-hidden">
-                      <img
+                      <Image
                         src={post.image}
                         alt={post.title}
-                        className="w-full h-full object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                        fill
+                        className="object-cover object-top group-hover:scale-105 transition-transform duration-700"
+                        sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent opacity-0 group-hover:opacity-100 transition-opacity" />
                       <Badge className="absolute top-4 left-4 bg-white/90 text-gray-900">
