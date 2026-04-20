@@ -99,6 +99,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Competitor comparison pages (high-intent "vs" keywords)
+    { url: `${DOMAIN}/compare`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/compare/alt-terrain`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/attack-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/atn-event-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },

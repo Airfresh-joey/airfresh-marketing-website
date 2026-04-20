@@ -25,6 +25,7 @@ export default function Footer() {
     { name: "Case Studies", href: "/case-studies" },
     { name: "Events", href: "/events" },
     { name: "Venues", href: "/venues" },
+    { name: "Compare Agencies", href: "/compare" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
     { name: "Contact", href: "/contact" },

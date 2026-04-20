@@ -157,6 +157,22 @@ export default function RootLayout({
             })
           }}
         />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "WebSite",
+              "name": "AirFresh Marketing",
+              "url": "https://www.airfreshmarketing.com",
+              "potentialAction": {
+                "@type": "SearchAction",
+                "target": "https://www.airfreshmarketing.com/blog?q={search_term_string}",
+                "query-input": "required name=search_term_string"
+              }
+            })
+          }}
+        />
         <Providers>
           <GoogleAnalytics />
           <div className="min-h-screen flex flex-col">
