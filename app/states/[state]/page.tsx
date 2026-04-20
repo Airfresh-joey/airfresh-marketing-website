@@ -187,12 +187,17 @@ export default async function StatePage({ params }: StatePageProps) {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl font-bold mb-8 text-center">Cities We Serve in {state.name}</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4">
-            {state.majorCities.map((city, index) => (
-              <div key={index} className="flex items-center space-x-2 bg-white p-4 rounded-lg shadow-sm">
-                <MapPin className="h-5 w-5 text-primary" />
-                <span className="font-medium">{city}</span>
-              </div>
-            ))}
+            {state.majorCities.map((city, index) => {
+              const citySlug = city.toLowerCase().replace(/\s+/g, '-');
+              return (
+                <Link key={index} href={`/cities/${citySlug}`} className="group">
+                  <div className="flex items-center space-x-2 bg-white p-4 rounded-lg shadow-sm hover:shadow-md transition-shadow">
+                    <MapPin className="h-5 w-5 text-primary" />
+                    <span className="font-medium group-hover:text-primary transition-colors">{city}</span>
+                  </div>
+                </Link>
+              );
+            })}
           </div>
         </div>
       </section>
