@@ -28,16 +28,46 @@ export default function IndustryPage() {
     notFound();
   }
 
+  const faqs = [
+    {
+      question: `What experiential marketing services does AirFresh offer for the ${industry.name} industry?`,
+      answer: `AirFresh Marketing provides brand ambassadors, event staffing, product sampling, street teams, trade show staff, and experiential activations specifically tailored for ${industry.name.toLowerCase()} brands. We understand the unique marketing challenges and consumer expectations in this sector.`
+    },
+    {
+      question: `How much does ${industry.name.toLowerCase()} event staffing cost?`,
+      answer: `${industry.name} event staffing rates vary by role and market. Brand ambassadors start at $25-45/hour, trade show staff at $30-55/hour, and specialized roles at higher rates. Contact us for a free custom quote for your ${industry.name.toLowerCase()} campaign.`
+    },
+    {
+      question: `Do you have experience with ${industry.name.toLowerCase()} brand activations?`,
+      answer: `Yes, AirFresh Marketing has extensive experience in the ${industry.name.toLowerCase()} sector. We've executed campaigns for leading brands in this space across 50+ cities. Our staff receive industry-specific training to ensure authentic brand representation.`
+    },
+  ];
+
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Service",
-    "name": industry.name + " Marketing Services",
-    "provider": {
-      "@type": "Organization",
-      "name": "AirFresh Marketing"
-    },
-    "description": industry.description,
-    "areaServed": "United States"
+    "@graph": [
+      {
+        "@type": "Service",
+        "name": industry.name + " Marketing Services",
+        "provider": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing"
+        },
+        "description": industry.description,
+        "areaServed": "United States"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": faqs.map(faq => ({
+          "@type": "Question",
+          "name": faq.question,
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": faq.answer
+          }
+        }))
+      }
+    ]
   };
 
   return (
@@ -188,6 +218,19 @@ export default function IndustryPage() {
               </Link>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* FAQ Section */}
+      <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
+        <h2 className="text-3xl font-bold mb-8 text-center">{industry.name} Marketing FAQ</h2>
+        <div className="max-w-3xl mx-auto space-y-6">
+          {faqs.map((faq, index) => (
+            <div key={index} className="border-b border-gray-200 pb-6">
+              <h3 className="text-lg font-semibold mb-2">{faq.question}</h3>
+              <p className="text-gray-600">{faq.answer}</p>
+            </div>
+          ))}
         </div>
       </section>
 
