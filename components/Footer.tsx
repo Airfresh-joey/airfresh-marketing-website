@@ -18,6 +18,7 @@ export default function Footer() {
     { name: "Promotional Models", href: "/services/promotional-models" },
     { name: "Event Staffing Guide", href: "/guides/event-staffing-101" },
     { name: "Hiring Guide", href: "/guides/brand-ambassador-hiring-guide" },
+    { name: "Best Staffing Agency", href: "/guides/best-event-staffing-agency" },
   ];
 
   const company = [
@@ -45,6 +46,8 @@ export default function Footer() {
     { name: "Dallas", href: "/cities/dallas" },
     { name: "Atlanta", href: "/cities/atlanta" },
     { name: "Phoenix", href: "/cities/phoenix" },
+    { name: "San Francisco", href: "/cities/san-francisco" },
+    { name: "All Locations →", href: "/locations" },
   ];
 
   return (
@@ -104,6 +107,8 @@ export default function Footer() {
                 <a
                   href="https://www.linkedin.com/company/airfreshmarketing"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="LinkedIn"
                 >
                   <Linkedin className="w-5 h-5" />
@@ -111,6 +116,8 @@ export default function Footer() {
                 <a
                   href="https://www.facebook.com/AirFreshMarketing"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Facebook"
                 >
                   <Facebook className="w-5 h-5" />
@@ -118,6 +125,8 @@ export default function Footer() {
                 <a
                   href="https://twitter.com/AirFreshmktg"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Twitter"
                 >
                   <Twitter className="w-5 h-5" />
@@ -125,6 +134,8 @@ export default function Footer() {
                 <a
                   href="https://www.instagram.com/airfreshmarketing/"
                   className="w-10 h-10 bg-gray-800 rounded-lg flex items-center justify-center text-gray-400 hover:bg-cyan-500/10 hover:text-cyan-400 transition-all duration-300"
+                  target="_blank"
+                  rel="noopener noreferrer"
                   aria-label="Instagram"
                 >
                   <Instagram className="w-5 h-5" />
