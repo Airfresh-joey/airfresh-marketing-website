@@ -402,6 +402,7 @@ export default function Home() {
                           src={caseStudy.image}
                           alt={`${caseStudy.title} brand activation case study`}
                           fill
+                          sizes="(max-width: 768px) 100vw, 50vw"
                           className="object-cover group-hover:scale-105 transition-transform duration-500"
                         />
                         <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300" />
@@ -826,7 +827,7 @@ export default function Home() {
                   <div className="absolute top-0 right-0 w-32 h-32 bg-gradient-to-br from-cyan-100/50 to-blue-100/50 rounded-bl-full opacity-50 group-hover:opacity-100 transition-opacity duration-300"></div>
                   <CardContent className="p-0 relative">
                     <div className="flex items-center mb-6">
-                      <img className="w-14 h-14 rounded-full mr-4 border-2 border-cyan-200" src={testimonial.avatar} alt={testimonial.name} loading="lazy" />
+                      <Image className="w-14 h-14 rounded-full mr-4 border-2 border-cyan-200" src={testimonial.avatar} alt={testimonial.name} width={56} height={56} loading="lazy" />
                       <div>
                         <h4 className="font-bold text-gray-900 text-lg">{testimonial.name}</h4>
                         <p className="text-sm text-cyan-600 font-medium">{testimonial.role}</p>

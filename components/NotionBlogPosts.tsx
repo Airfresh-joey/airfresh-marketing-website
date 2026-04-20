@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react';
 import { useQuery } from '@tanstack/react-query';
 import Link from 'next/link';
+import Image from 'next/image';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Badge } from '@/components/ui/badge';
 import { Button } from '@/components/ui/button';
@@ -127,16 +128,15 @@ function NotionBlogPostCard({ post }: { post: NotionBlogPost }) {
       {/* Featured Image */}
       {post.featuredImage && (
         <figure className="aspect-video w-full overflow-hidden rounded-t-lg" itemScope itemType="https://schema.org/ImageObject">
-          <img 
-            src={post.featuredImage} 
+          <Image
+            src={post.featuredImage}
             alt={post.title}
             title={`${post.title} - AirFresh Marketing Blog`}
             className="w-full h-full object-cover"
             loading="lazy"
-            decoding="async"
-            width="800"
-            height="450"
-            data-testid={`img-blog-${post.id}`}
+            width={800}
+            height={450}
+            sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
             itemProp="contentUrl"
           />
           <meta itemProp="name" content={post.title} />

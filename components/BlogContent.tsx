@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { Calendar, User, ArrowRight, TrendingUp, Users, Zap } from "lucide-react";
 
 interface BlogPost {
@@ -163,10 +164,13 @@ Brands with strong ambassador programs see 25% higher customer retention rates a
         {blogPosts.map(post => (
           <Card key={post.id} className="h-full hover:shadow-lg transition-shadow">
             <div className="relative">
-              <img 
-                src={post.image} 
+              <Image
+                src={post.image}
                 alt={post.title}
+                width={400}
+                height={192}
                 className="w-full h-48 object-cover rounded-t-lg"
+                sizes="(max-width: 768px) 100vw, (max-width: 1024px) 50vw, 33vw"
               />
               <span className="absolute top-4 left-4 px-3 py-1 bg-blue-600 text-white text-xs font-medium rounded-full">
                 {post.category}
