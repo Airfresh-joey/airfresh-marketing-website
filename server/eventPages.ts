@@ -36,6 +36,242 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 170 ──────────────────────────────────────────────────────
+  {
+    slug: 'winter-x-games',
+    title: 'Winter X Games Staffing | Event Staff for ESPN Winter X Games Aspen',
+    h1: 'Winter X Games Event Staffing Services',
+    metaDescription: 'Winter X Games event staffing for brand activations, VIP hospitality, athlete meet-and-greets, and experiential marketing at Buttermilk Mountain in Aspen, Colorado.',
+    city: 'Aspen',
+    stateAbbrev: 'CO',
+    venues: ['Buttermilk Mountain', 'Aspen Snowmass', 'Aspen Ice Garden'],
+    keywords: ['Winter X Games staffing', 'Winter X Games event staff', 'X Games brand ambassadors', 'extreme sports event staffing', 'Aspen event staffing'],
+    description: 'Air Fresh Marketing provides elite event staffing for the Winter X Games at Buttermilk Mountain in Aspen, Colorado. Our experienced brand ambassadors, VIP hosts, and experiential marketing teams deliver exceptional service across four days of extreme winter sports competition broadcast live on ESPN.',
+    bodyContent: `<h2>Winter X Games Event Staffing for Extreme Sports Excellence</h2>
+<p>Winter X Games event staffing demands teams that thrive in cold-weather conditions while delivering premium brand experiences at one of action sports' most prestigious competitions. Air Fresh Marketing staffs brand activations, sponsor villages, VIP hospitality areas, and athlete experience zones across the Buttermilk Mountain venue complex.</p>
+
+<h2>Brand Activation Staffing at the Winter X Games</h2>
+<p>ESPN's Winter X Games attract major sponsor activations from energy drink brands, automotive companies, apparel lines, and technology firms targeting the coveted 18-34 demographic. Our brand ambassadors engage attendees at interactive sponsor experiences, distribute samples in sub-zero conditions, and drive measurable brand interactions throughout the four-day competition.</p>
+
+<h2>VIP and Hospitality Staffing for X Games Events</h2>
+<p>Premium hospitality areas at the Winter X Games require staffing teams who can deliver white-glove service in alpine conditions. Our VIP hosts manage exclusive viewing decks, coordinate athlete appearances, serve hot beverages and gourmet catering, and ensure corporate guests experience the X Games in comfort and style. From heated luxury tents to mountainside viewing platforms, our teams maintain impeccable service standards at every touchpoint.</p>
+
+<h2>Cold-Weather Event Staffing Expertise</h2>
+<p>Working at 8,000+ feet elevation in January temperatures demands specialized preparation. Air Fresh Marketing provides cold-weather-trained staff equipped for extended outdoor shifts, familiar with altitude considerations, and experienced in maintaining high energy and professionalism despite challenging mountain conditions. Our teams arrive prepared with proper gear and the resilient attitude that extreme sports events demand.</p>
+
+<h2>Why Brands Choose Air Fresh for Winter X Games Staffing</h2>
+<p>With years of experience staffing major sporting events in challenging environments, Air Fresh Marketing delivers reliable, energetic event teams that represent your brand at the highest level. Our Winter X Games staffing solutions cover everything from sponsor booth operations to credential management, allowing your marketing team to focus on strategy while we handle execution on the mountain.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Cold-weather-trained brand reps for sponsor activations and product sampling at Buttermilk Mountain venues.' },
+      { title: 'VIP Hospitality Hosts', description: 'Professional hosts managing premium viewing areas, corporate hospitality suites, and athlete meet-and-greet experiences.' },
+      { title: 'Event Operations Staff', description: 'Logistics teams handling venue setup, credential management, crowd control, and daily operations across the competition venue.' },
+      { title: 'Experiential Marketing Teams', description: 'Interactive activation specialists creating engaging brand experiences for the action sports audience demographic.' }
+    ],
+    stats: [
+      { value: '4 Days', label: 'Competition Duration' },
+      { value: '100K+', label: 'Attendees' },
+      { value: '50+', label: 'Sponsor Activations' },
+      { value: '8,000 ft', label: 'Elevation' }
+    ],
+    faqs: [
+      { question: 'What Winter X Games staffing positions are available?', answer: 'We staff brand ambassadors, VIP hosts, event operations crew, sponsor activation teams, and experiential marketing specialists for all areas of the Winter X Games at Buttermilk Mountain.' },
+      { question: 'Do staff need cold-weather experience for the Winter X Games?', answer: 'Yes. All Winter X Games staff are cold-weather trained and equipped for extended outdoor shifts at high elevation in January conditions. We provide preparation guidelines and ensure all team members are properly outfitted.' },
+      { question: 'How far in advance should I book Winter X Games staffing?', answer: 'We recommend booking 8-12 weeks before the event. Premium positions and experienced cold-weather staff are in high demand for this marquee ESPN event.' }
+    ],
+    logisticsInfo: 'Winter X Games staffing includes pre-event training on venue layout, sponsor activation protocols, cold-weather safety procedures, and ESPN broadcast awareness. Staff receive detailed venue maps, shift schedules, and emergency protocols before arriving in Aspen.',
+    relatedCitySlug: 'denver',
+    relatedCityName: 'Denver',
+    heroImage: '/images/events/winter-x-games.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'chicago-marathon',
+    title: 'Chicago Marathon Staffing | Event Staff for the Bank of America Chicago Marathon',
+    h1: 'Chicago Marathon Event Staffing Services',
+    metaDescription: 'Chicago Marathon event staffing for expo activations, course support, VIP hospitality, and brand experiences along the 26.2-mile route through downtown Chicago.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['Grant Park', 'McCormick Place (Marathon Expo)', 'Michigan Avenue Course'],
+    keywords: ['Chicago Marathon staffing', 'Chicago Marathon event staff', 'marathon brand ambassadors', 'running event staffing', 'Chicago race staffing'],
+    description: 'Air Fresh Marketing provides comprehensive event staffing for the Bank of America Chicago Marathon, one of the six World Marathon Majors. Our teams support brand activations at the marathon expo, course-side sponsor experiences, finish line hospitality, and post-race celebrations across the iconic 26.2-mile route through downtown Chicago.',
+    bodyContent: `<h2>Chicago Marathon Event Staffing for the World Marathon Major</h2>
+<p>Chicago Marathon event staffing covers the full spectrum of race weekend operations—from the massive marathon expo at McCormick Place to course-side brand activations and the electrifying finish line experience in Grant Park. Air Fresh Marketing delivers professional event teams across every touchpoint of this internationally renowned running event.</p>
+
+<h2>Marathon Expo Staffing at McCormick Place</h2>
+<p>The Chicago Marathon Health & Fitness Expo attracts 100,000+ visitors over three days at McCormick Place. Our brand ambassadors and booth staff engage runners and spectators at sponsor exhibits, distribute product samples, demonstrate new running technology, and capture leads for brands targeting the passionate running community. We staff everything from small pop-up displays to elaborate experiential activations.</p>
+
+<h2>Course-Side Brand Activation Staffing</h2>
+<p>Strategic brand placements along the 26.2-mile course through 29 Chicago neighborhoods require mobile staffing teams. Our staff manage hydration stations, cheer zones, product sampling points, and interactive brand experiences that reach both runners and the 1.7 million spectators lining the route. Each team is positioned for maximum brand visibility and audience engagement.</p>
+
+<h2>Finish Line and Post-Race Event Staffing</h2>
+<p>The Grant Park finish area is the emotional heart of the Chicago Marathon. Our hospitality teams manage VIP recovery zones, medal distribution support, sponsor hospitality tents, and the celebration village where 50,000+ runners and their families gather after the race. We provide the warm, professional service that makes the post-race experience as memorable as crossing the finish line.</p>
+
+<h2>Why Choose Air Fresh for Chicago Marathon Staffing</h2>
+<p>As a nationally recognized event staffing agency with deep Chicago market expertise, Air Fresh Marketing understands the logistical complexity of marathon staffing. Our teams navigate multi-site operations spanning the expo, course, and finish area with the coordination and professionalism that marathon sponsors and race organizers demand.</p>`,
+    staffTypes: [
+      { title: 'Expo Brand Ambassadors', description: 'Engaging booth staff for the McCormick Place marathon expo, experienced in fitness and running industry brand activations.' },
+      { title: 'Course-Side Activation Teams', description: 'Mobile event teams managing brand activations, sampling stations, and cheer zones along the 26.2-mile race route.' },
+      { title: 'VIP Hospitality Staff', description: 'Professional hosts for corporate hospitality tents, VIP viewing areas, and post-race celebration venues in Grant Park.' },
+      { title: 'Event Operations Crew', description: 'Logistics staff supporting venue setup, credential management, crowd control, and daily operations across race weekend.' }
+    ],
+    stats: [
+      { value: '50,000+', label: 'Runners' },
+      { value: '1.7M', label: 'Spectators' },
+      { value: '100K+', label: 'Expo Visitors' },
+      { value: '29', label: 'Neighborhoods' }
+    ],
+    faqs: [
+      { question: 'What Chicago Marathon staffing positions do you fill?', answer: 'We provide expo booth staff, course-side brand ambassadors, VIP hospitality hosts, event operations crew, and experiential marketing teams for all aspects of Chicago Marathon race weekend.' },
+      { question: 'How many staff do brands typically need for the Chicago Marathon?', answer: 'Expo-only activations typically need 4-10 staff. Full race-weekend campaigns with expo, course, and finish line presence may require 15-40+ team members depending on activation scope.' },
+      { question: 'When should I book staffing for the Chicago Marathon?', answer: 'We recommend booking 10-14 weeks before race weekend. The Chicago Marathon is a major event and experienced event staff book quickly for this October weekend.' }
+    ],
+    logisticsInfo: 'Chicago Marathon staffing includes pre-event orientation covering expo layout, course map, activation locations, runner safety protocols, and emergency procedures. All staff receive event credentials, detailed schedules, and transportation coordination for multi-site operations.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/events/chicago-marathon.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'daytona-bike-week',
+    title: 'Daytona Bike Week Staffing | Event Staff for Daytona Beach Motorcycle Rally',
+    h1: 'Daytona Bike Week Event Staffing Services',
+    metaDescription: 'Daytona Bike Week event staffing for motorcycle brand activations, vendor village operations, VIP hospitality, and experiential marketing along Main Street and Daytona International Speedway.',
+    city: 'Daytona Beach',
+    stateAbbrev: 'FL',
+    venues: ['Daytona International Speedway', 'Main Street Daytona', 'Destination Daytona', 'Daytona Beach Bandshell'],
+    keywords: ['Daytona Bike Week staffing', 'motorcycle rally event staff', 'Daytona Bike Week brand ambassadors', 'motorcycle event staffing', 'Daytona Beach event staffing'],
+    description: 'Air Fresh Marketing delivers professional event staffing for Daytona Bike Week, the largest motorcycle rally in the eastern United States. Our brand ambassadors, activation teams, and hospitality staff support motorcycle brands, aftermarket companies, and lifestyle sponsors across 10 days of events throughout Daytona Beach, Florida.',
+    bodyContent: `<h2>Daytona Bike Week Event Staffing for America's Premier Motorcycle Rally</h2>
+<p>Daytona Bike Week event staffing requires teams who understand motorcycle culture and can authentically engage with the passionate riding community that descends on Daytona Beach every March. Air Fresh Marketing provides experienced event staff for brand activations, demo rides, vendor villages, and VIP experiences across this legendary 10-day motorcycle celebration.</p>
+
+<h2>Brand Activation Staffing on Main Street Daytona</h2>
+<p>Main Street transforms into motorcycle culture's epicenter during Bike Week, with hundreds of vendors, brand activations, and experiential marketing installations. Our brand ambassadors work Main Street booths, distribute promotional materials, engage riders with product demonstrations, and generate qualified leads for motorcycle brands, parts manufacturers, and lifestyle companies targeting the motorcycle community.</p>
+
+<h2>Speedway and Race Event Staffing</h2>
+<p>The Daytona 200 and other races at Daytona International Speedway attract thousands of racing fans. Our event staff support sponsor activations in the infield, manage VIP hospitality suites, coordinate product sampling throughout the speedway grounds, and ensure brand visibility during the highest-profile racing events of Bike Week.</p>
+
+<h2>Demo Ride and Product Experience Staffing</h2>
+<p>Motorcycle manufacturers offer demo ride experiences that require specialized staffing—registration management, waiver processing, route coordination, and post-ride hospitality. Our teams handle the logistics that let riders focus on the bikes while brands capture valuable lead data and customer feedback.</p>
+
+<h2>Ten-Day Event Staffing Solutions</h2>
+<p>Bike Week's 10-day duration demands reliable staffing with shift rotation and consistent quality. Air Fresh Marketing builds teams that maintain brand standards throughout the extended event, providing fresh, energetic staff for every day of the rally while keeping operational costs manageable through efficient scheduling.</p>`,
+    staffTypes: [
+      { title: 'Motorcycle Brand Ambassadors', description: 'Culturally aligned brand reps who connect authentically with the motorcycle community at Main Street activations and vendor villages.' },
+      { title: 'Demo Ride Coordinators', description: 'Registration and logistics staff managing motorcycle demo ride experiences, waivers, and post-ride hospitality.' },
+      { title: 'VIP Hospitality Hosts', description: 'Professional hospitality staff for speedway suites, corporate entertainment areas, and premium brand experiences.' },
+      { title: 'Event Operations Staff', description: 'Setup, breakdown, and daily operations teams supporting 10-day brand activations across multiple Daytona Beach venues.' }
+    ],
+    stats: [
+      { value: '500K+', label: 'Attendees' },
+      { value: '10 Days', label: 'Event Duration' },
+      { value: '100+', label: 'Vendor Locations' },
+      { value: '82 Years', label: 'Event History' }
+    ],
+    faqs: [
+      { question: 'What Daytona Bike Week staffing roles are available?', answer: 'We provide brand ambassadors, demo ride coordinators, VIP hospitality staff, vendor support teams, and event operations crew for all Bike Week venues including Main Street, Daytona International Speedway, and Destination Daytona.' },
+      { question: 'Do staff need motorcycle knowledge for Daytona Bike Week?', answer: 'We prioritize staff with motorcycle culture familiarity for Bike Week activations. All team members receive brand-specific training, and we match motorcycle enthusiasts to positions where product knowledge creates the most impactful interactions.' },
+      { question: 'How do you staff a 10-day event like Daytona Bike Week?', answer: 'We build rotation schedules with core team members supplemented by shift staff to maintain energy and quality across all 10 days. This approach ensures consistent brand representation while managing team fatigue during this extended event.' }
+    ],
+    logisticsInfo: 'Daytona Bike Week staffing includes multi-venue coordination across Main Street, Daytona International Speedway, Destination Daytona, and satellite locations. Staff receive comprehensive briefings on motorcycle brand positioning, rider engagement protocols, and Florida heat safety procedures.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/events/daytona-bike-week.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'pax-east',
+    title: 'PAX East Staffing | Event Staff for the PAX East Gaming Convention in Boston',
+    h1: 'PAX East Event Staffing Services',
+    metaDescription: 'PAX East event staffing for gaming brand activations, booth demos, cosplay events, and esports tournaments at the Boston Convention and Exhibition Center.',
+    city: 'Boston',
+    stateAbbrev: 'MA',
+    venues: ['Boston Convention and Exhibition Center (BCEC)', 'Westin Boston Waterfront', 'Seaport District Hotels'],
+    keywords: ['PAX East staffing', 'PAX East event staff', 'gaming convention staffing', 'Boston gaming event staffing', 'PAX East brand ambassadors'],
+    description: 'Air Fresh Marketing provides expert event staffing for PAX East, the premier gaming convention on the East Coast. Our gaming-savvy brand ambassadors, booth demo teams, and event operations staff deliver exceptional engagement at the Boston Convention and Exhibition Center, connecting game publishers and hardware brands with 70,000+ passionate gamers.',
+    bodyContent: `<h2>PAX East Event Staffing for the East Coast's Biggest Gaming Convention</h2>
+<p>PAX East event staffing requires teams who speak the language of gaming and can authentically connect with the dedicated community that fills the Boston Convention and Exhibition Center each spring. Air Fresh Marketing provides gaming-knowledgeable brand ambassadors, demo station operators, and event support teams that represent publishers and hardware brands at the highest level.</p>
+
+<h2>Gaming Booth and Demo Station Staffing</h2>
+<p>The PAX East expo hall features hundreds of exhibitors ranging from indie developers to major publishers like Nintendo, Sony, and Microsoft. Our booth staff manage game demo stations, explain gameplay mechanics to attendees, collect feedback for development teams, and maintain demo equipment through three days of intense use by tens of thousands of eager gamers.</p>
+
+<h2>Esports Tournament and Streaming Staffing</h2>
+<p>PAX East hosts competitive gaming tournaments and live streaming events that require specialized production support. Our teams manage tournament registration, player check-in, stage operations, audience management, and the streaming infrastructure that broadcasts PAX competitions to millions of online viewers worldwide.</p>
+
+<h2>Cosplay and Community Event Staffing</h2>
+<p>PAX East's vibrant cosplay community and panel programming need organized event support. Our staff coordinate cosplay contest logistics, manage panel room operations, facilitate meet-and-greet experiences, and ensure the community events that define PAX culture run seamlessly throughout the convention weekend.</p>
+
+<h2>Why Gaming Brands Choose Air Fresh for PAX East</h2>
+<p>Gaming audiences detect inauthenticity instantly. Air Fresh Marketing recruits staff who are genuine gamers—they know the titles, understand the culture, and engage with attendees as fellow enthusiasts. This authentic approach generates deeper brand connections and more meaningful demo experiences than generic event staffing can deliver.</p>`,
+    staffTypes: [
+      { title: 'Gaming Brand Ambassadors', description: 'Gaming-savvy brand reps who authentically engage PAX attendees with product knowledge and genuine gaming enthusiasm.' },
+      { title: 'Demo Station Operators', description: 'Trained booth staff who manage game demonstrations, explain features, collect player feedback, and maintain demo equipment.' },
+      { title: 'Esports Tournament Staff', description: 'Tournament operations teams handling player registration, bracket management, stage production, and streaming support.' },
+      { title: 'Convention Operations Crew', description: 'Setup, logistics, and daily operations staff supporting exhibitor needs across the BCEC convention floor.' }
+    ],
+    stats: [
+      { value: '70K+', label: 'Attendees' },
+      { value: '3 Days', label: 'Convention Duration' },
+      { value: '300+', label: 'Exhibitors' },
+      { value: '#1 East Coast', label: 'Gaming Convention' }
+    ],
+    faqs: [
+      { question: 'What PAX East staffing positions are available?', answer: 'We staff gaming brand ambassadors, demo station operators, esports tournament crew, cosplay event coordinators, booth setup teams, and general convention operations staff for all PAX East exhibitors and events.' },
+      { question: 'Do PAX East staff need gaming experience?', answer: 'We strongly prefer staff with genuine gaming knowledge for booth and demo positions. All team members receive game-specific training from the exhibitor, and we match gaming enthusiasts to positions where their knowledge creates the best attendee experience.' },
+      { question: 'How early should I book PAX East staffing?', answer: 'Book 10-12 weeks before PAX East. Gaming-savvy event staff are in high demand for Boston convention season, and early booking ensures you get experienced team members who deliver the authentic engagement PAX attendees expect.' }
+    ],
+    logisticsInfo: 'PAX East staffing includes pre-event training on game titles, demo station procedures, BCEC venue layout, and PAX-specific community guidelines. Staff receive exhibitor credentials, daily briefing schedules, and coordination details for the multi-day convention.',
+    relatedCitySlug: 'boston',
+    relatedCityName: 'Boston',
+    heroImage: '/images/events/pax-east.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'americas-cup',
+    title: "America's Cup Staffing | Event Staff for the America's Cup Sailing Regatta",
+    h1: "America's Cup Event Staffing Services",
+    metaDescription: "America's Cup event staffing for waterfront brand activations, VIP hospitality, race village operations, and luxury sponsor experiences at the world's oldest international sporting trophy.",
+    city: 'Various',
+    stateAbbrev: 'US',
+    venues: ["America's Cup Race Village", 'Waterfront Fan Zones', 'VIP Hospitality Pavilions', 'Team Bases'],
+    keywords: ["America's Cup staffing", "America's Cup event staff", 'sailing event staffing', 'regatta event staffing', 'luxury sports event staffing'],
+    description: "Air Fresh Marketing provides premium event staffing for America's Cup events in the United States. Our professional brand ambassadors, VIP hospitality teams, and waterfront activation specialists deliver the polished, sophisticated service that America's Cup sponsors, team partners, and luxury brands expect at the world's most prestigious sailing competition.",
+    bodyContent: `<h2>America's Cup Event Staffing for World-Class Sailing</h2>
+<p>America's Cup event staffing demands an elevated level of professionalism matching the prestige of the world's oldest international sporting trophy. Air Fresh Marketing provides sophisticated event teams for the Race Village, VIP hospitality pavilions, sponsor activations, and waterfront fan experiences that surround America's Cup racing.</p>
+
+<h2>Race Village and Fan Zone Staffing</h2>
+<p>The America's Cup Race Village transforms waterfronts into premium entertainment destinations featuring team exhibits, technology showcases, sponsor activations, and live race viewing areas. Our event staff manage guest experiences across the village, from interactive sailing simulators to premium merchandise retail, ensuring every visitor engagement reflects the cup's prestigious brand.</p>
+
+<h2>VIP and Corporate Hospitality Staffing</h2>
+<p>America's Cup hospitality is among the most exclusive in sports. Our VIP hosts manage invitation-only viewing platforms, coordinate multi-course dining experiences with race viewing, facilitate team principal appearances, and deliver the white-glove service that corporate partners expect when entertaining clients at a global sporting event. Every interaction is polished, discreet, and impeccable.</p>
+
+<h2>Luxury Brand Activation Staffing</h2>
+<p>The America's Cup attracts luxury sponsors—watchmakers, automotive marques, premium spirits, and high-end lifestyle brands. Our brand ambassadors match the sophistication of these brands, engaging affluent attendees with product knowledge, refined presentation skills, and the cultural awareness that resonates with an internationally diverse, high-net-worth audience.</p>
+
+<h2>Waterfront Event Operations</h2>
+<p>Waterfront venues present unique logistical challenges—weather exposure, tidal considerations, marine safety requirements, and the coordination of water-based and land-based event elements. Air Fresh Marketing staffs the operational roles that keep America's Cup events running seamlessly along the waterfront, from dock management to emergency response coordination.</p>`,
+    staffTypes: [
+      { title: 'VIP Hospitality Hosts', description: 'Polished, multilingual hospitality professionals for exclusive corporate entertaining and VIP viewing experiences.' },
+      { title: 'Luxury Brand Ambassadors', description: 'Sophisticated brand representatives for premium sponsor activations targeting affluent, internationally diverse audiences.' },
+      { title: 'Race Village Staff', description: 'Engaging event teams managing fan zone experiences, interactive exhibits, and merchandise operations in the Race Village.' },
+      { title: 'Waterfront Operations Crew', description: 'Logistics and safety teams managing the unique requirements of waterfront venue operations and marine-adjacent events.' }
+    ],
+    stats: [
+      { value: '173 Years', label: 'Trophy History' },
+      { value: 'Global', label: 'Audience Reach' },
+      { value: '6+ Teams', label: 'International Challengers' },
+      { value: 'Premium', label: 'Sponsor Tier' }
+    ],
+    faqs: [
+      { question: "What America's Cup staffing positions are available?", answer: "We provide VIP hospitality hosts, luxury brand ambassadors, Race Village event staff, waterfront operations crew, and corporate event coordinators for all America's Cup venues and experiences." },
+      { question: "What level of professionalism is expected at the America's Cup?", answer: "America's Cup staffing demands the highest service standards in sports. Our teams are selected for poise, sophistication, multilingual capability, and experience with luxury brand activations and premium hospitality environments." },
+      { question: "How far in advance should I book America's Cup staffing?", answer: "Book 12-16 weeks ahead. America's Cup events attract premium sponsors who expect top-tier staff, and our most experienced luxury hospitality team members book early for this prestigious event." }
+    ],
+    logisticsInfo: "America's Cup staffing includes extensive pre-event training on sailing terminology, team backgrounds, sponsor brand standards, VIP guest protocols, and waterfront safety procedures. All staff receive premium uniforms, detailed venue credentials, and hospitality service standards documentation.",
+    relatedCitySlug: 'san-francisco',
+    relatedCityName: 'San Francisco',
+    heroImage: '/images/events/americas-cup.jpg',
+    isFeatured: false
+  },
   // ── Batch 165 ──────────────────────────────────────────────────────
   {
     slug: 'coachella',

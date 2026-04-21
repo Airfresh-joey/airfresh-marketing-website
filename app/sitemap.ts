@@ -119,6 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/event-staffing-near-me`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Event staffing hub page
     { url: `${DOMAIN}/staffing-for`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
+    // Batch 170 event pages
+    { url: `${DOMAIN}/staffing-for/winter-x-games`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/chicago-marathon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/daytona-bike-week`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/pax-east`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/americas-cup`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Batch 165 event pages
     { url: `${DOMAIN}/staffing-for/coachella`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/boston-marathon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
