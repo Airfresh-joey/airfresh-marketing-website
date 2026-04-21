@@ -430,6 +430,9 @@ export default async function BlogPost(
             <Link href="/services/event-management" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Management</Link>
             <Link href="/services/street-teams" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Street Teams</Link>
             <Link href="/services/sampling" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Product Sampling</Link>
+            <Link href="/services/promotional-models" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Promotional Models</Link>
+            <Link href="/services/trade-show-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Trade Show Staffing</Link>
+            <Link href="/services/food-beverage-sampling" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Food & Beverage Sampling</Link>
             <Link href="/guides/best-event-staffing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Best Event Staffing Agency Guide</Link>
             <Link href="/guides/event-staffing-101" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Staffing 101 Guide</Link>
             <Link href="/guides/brand-ambassador-hiring-guide" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassador Hiring Guide</Link>
@@ -439,6 +442,63 @@ export default async function BlogPost(
             <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Client Case Studies</Link>
             <Link href="/compare" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Compare Staffing Agencies</Link>
             <Link href="/locations" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">All Service Locations</Link>
+          </div>
+
+          <h3 className="text-xl font-bold mt-10 mb-6 text-gray-900">Specialized Staffing Solutions</h3>
+          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-3">
+            <Link href="/event-staffing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Staffing Agency</Link>
+            <Link href="/brand-ambassador-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Ambassador Agency</Link>
+            <Link href="/experiential-marketing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Experiential Marketing Agency</Link>
+            <Link href="/hire-brand-ambassadors" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Hire Brand Ambassadors</Link>
+            <Link href="/promotional-staffing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Promotional Staffing Agency</Link>
+            <Link href="/corporate-event-staffing" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Corporate Event Staffing</Link>
+            <Link href="/event-marketing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Event Marketing Agency</Link>
+            <Link href="/brand-activation-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Brand Activation Agency</Link>
+            <Link href="/field-marketing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Field Marketing Agency</Link>
+            <Link href="/guerrilla-marketing-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Guerrilla Marketing Agency</Link>
+            <Link href="/product-sampling-agency" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Product Sampling Agency</Link>
+            <Link href="/mobile-marketing-tours" className="text-cyan-600 hover:text-cyan-800 hover:underline text-sm font-medium">Mobile Marketing Tours</Link>
+          </div>
+
+          <h3 className="text-xl font-bold mt-10 mb-6 text-gray-900">Events We Staff</h3>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/staffing-for/ces" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">CES</Link>
+            <Link href="/staffing-for/sema" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">SEMA Show</Link>
+            <Link href="/staffing-for/coachella" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Coachella</Link>
+            <Link href="/staffing-for/f1-las-vegas" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">F1 Las Vegas</Link>
+            <Link href="/staffing-for/super-bowl" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Super Bowl</Link>
+            <Link href="/staffing-for/sxsw" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">SXSW</Link>
+            <Link href="/staffing-for/comic-con" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Comic-Con</Link>
+            <Link href="/staffing-for/art-basel-miami" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Art Basel Miami</Link>
+            <Link href="/staffing-for/nyfw" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">NYFW</Link>
+            <Link href="/staffing-for/dreamforce" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Dreamforce</Link>
+            <Link href="/staffing-for/ultra-music-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Ultra Music Festival</Link>
+            <Link href="/staffing-for/rolling-loud" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Rolling Loud</Link>
+            <Link href="/staffing-for/governors-ball" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Governors Ball</Link>
+            <Link href="/staffing-for/anime-expo" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Anime Expo</Link>
+            <Link href="/staffing-for/edc-las-vegas" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">EDC Las Vegas</Link>
+            <Link href="/staffing-for/world-cup-2026" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">World Cup 2026</Link>
+            <Link href="/staffing-for/lollapalooza" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Lollapalooza</Link>
+            <Link href="/staffing-for/bonnaroo" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Bonnaroo</Link>
+            <Link href="/staffing-for/la-auto-show" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">LA Auto Show</Link>
+            <Link href="/events" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All Events →</Link>
+          </div>
+
+          <h3 className="text-xl font-bold mt-10 mb-6 text-gray-900">Top Markets</h3>
+          <div className="flex flex-wrap gap-2">
+            <Link href="/cities/new-york" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">New York</Link>
+            <Link href="/cities/los-angeles" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Los Angeles</Link>
+            <Link href="/cities/chicago" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Chicago</Link>
+            <Link href="/cities/miami" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Miami</Link>
+            <Link href="/cities/las-vegas" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Las Vegas</Link>
+            <Link href="/cities/denver" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Denver (HQ)</Link>
+            <Link href="/cities/dallas" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Dallas</Link>
+            <Link href="/cities/houston" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Houston</Link>
+            <Link href="/cities/atlanta" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Atlanta</Link>
+            <Link href="/cities/phoenix" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Phoenix</Link>
+            <Link href="/cities/san-francisco" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">San Francisco</Link>
+            <Link href="/cities/orlando" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Orlando</Link>
+            <Link href="/locations" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">All 200+ Cities →</Link>
           </div>
         </div>
 
