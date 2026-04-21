@@ -662,6 +662,43 @@ export default async function EventPage({ params }: EventPageProps) {
         </div>
       </section>
 
+      {/* ─── Browse More Events ──────────────────────────────────── */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Browse More Events We Staff</h2>
+          <div className="flex flex-wrap justify-center gap-2">
+            {eventPages
+              .filter((e) => e.slug !== eventPage.slug)
+              .map((e) => (
+                <Link
+                  key={e.slug}
+                  href={`/staffing-for/${e.slug}`}
+                  className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm"
+                >
+                  {e.h1.replace(' Staffing', '')}
+                </Link>
+              ))}
+            <Link
+              href="/events"
+              className="px-4 py-2 bg-cyan-50 border border-cyan-200 rounded-full text-sm font-medium text-cyan-600 hover:bg-cyan-100 transition-colors"
+            >
+              View All Events →
+            </Link>
+          </div>
+          <div className="mt-8 flex flex-wrap justify-center gap-2">
+            <Link href="/event-staffing-agency" className="text-cyan-600 hover:underline text-sm font-medium">Event Staffing Agency</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/brand-ambassador-agency" className="text-cyan-600 hover:underline text-sm font-medium">Brand Ambassador Agency</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/experiential-marketing-agency" className="text-cyan-600 hover:underline text-sm font-medium">Experiential Marketing Agency</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/compare" className="text-cyan-600 hover:underline text-sm font-medium">Compare Agencies</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/pricing" className="text-cyan-600 hover:underline text-sm font-medium">Pricing</Link>
+          </div>
+        </div>
+      </section>
+
       {/* ─── CTA ─────────────────────────────────────────────────── */}
       <section className="py-20 bg-gradient-to-r from-cyan-600 to-blue-700 text-white">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
