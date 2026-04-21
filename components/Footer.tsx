@@ -68,6 +68,22 @@ export default function Footer() {
     { name: "All Locations →", href: "/locations" },
   ];
 
+  const featuredEvents = [
+    { name: "CES Staffing", href: "/staffing-for/ces" },
+    { name: "SEMA Show", href: "/staffing-for/sema" },
+    { name: "Coachella", href: "/staffing-for/coachella" },
+    { name: "F1 Las Vegas", href: "/staffing-for/f1-las-vegas" },
+    { name: "Super Bowl", href: "/staffing-for/super-bowl" },
+    { name: "World Cup 2026", href: "/staffing-for/world-cup-2026" },
+    { name: "SXSW", href: "/staffing-for/sxsw" },
+    { name: "Comic-Con", href: "/staffing-for/comic-con" },
+    { name: "NYFW", href: "/staffing-for/nyfw" },
+    { name: "Dreamforce", href: "/staffing-for/dreamforce" },
+    { name: "Art Basel Miami", href: "/staffing-for/art-basel-miami" },
+    { name: "NRF Big Show", href: "/staffing-for/nrf-big-show" },
+    { name: "All Events →", href: "/events" },
+  ];
+
   return (
     <footer className="relative bg-gradient-to-b from-gray-900 to-black">
       {/* Decorative Top Border */}
@@ -225,6 +241,25 @@ export default function Footer() {
                   </li>
                 ))}
               </ul>
+            </div>
+          </div>
+
+          {/* Featured Events Row */}
+          <div className="mt-8 pt-8 border-t border-gray-800">
+            <h4 className="text-white font-semibold mb-4 flex items-center gap-2">
+              <span className="w-8 h-px bg-cyan-500"></span>
+              Events We Staff
+            </h4>
+            <div className="flex flex-wrap gap-2">
+              {featuredEvents.map((event) => (
+                <Link
+                  key={event.href}
+                  href={event.href}
+                  className="text-gray-400 hover:text-cyan-400 text-sm transition-colors duration-300 px-3 py-1 border border-gray-700 rounded-full hover:border-cyan-500/30"
+                >
+                  {event.name}
+                </Link>
+              ))}
             </div>
           </div>
 

@@ -509,6 +509,29 @@ export default function Home() {
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
+          <div className="text-center mt-12">
+            <h3 className="text-lg font-semibold text-gray-700 mb-6">Events We Staff</h3>
+            <div className="flex flex-wrap justify-center gap-3">
+              <Link href="/staffing-for/ces" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">CES Staffing</Link>
+              <Link href="/staffing-for/sema" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">SEMA Show</Link>
+              <Link href="/staffing-for/coachella" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Coachella</Link>
+              <Link href="/staffing-for/f1-las-vegas" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">F1 Las Vegas</Link>
+              <Link href="/staffing-for/sxsw" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">SXSW</Link>
+              <Link href="/staffing-for/super-bowl" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Super Bowl</Link>
+              <Link href="/staffing-for/world-cup-2026" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">World Cup 2026</Link>
+              <Link href="/staffing-for/comic-con" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Comic-Con</Link>
+              <Link href="/staffing-for/lollapalooza" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Lollapalooza</Link>
+              <Link href="/staffing-for/nyfw" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">NYFW</Link>
+              <Link href="/staffing-for/art-basel-miami" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Art Basel Miami</Link>
+              <Link href="/staffing-for/dreamforce" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Dreamforce</Link>
+              <Link href="/staffing-for/edc-las-vegas" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">EDC Las Vegas</Link>
+              <Link href="/staffing-for/nrf-big-show" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">NRF Big Show</Link>
+              <Link href="/staffing-for/bonnaroo" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Bonnaroo</Link>
+            </div>
+            <Link href="/events" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
+              View All Events <ArrowRight className="w-4 h-4" />
+            </Link>
+          </div>
         </div>
       </section>
 
