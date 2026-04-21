@@ -3,6 +3,7 @@ import Breadcrumbs from '@/components/Breadcrumbs';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { ArrowRight } from 'lucide-react';
+import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
   title: '2026 World Cup Event Staffing: Brand Activations Guide | Air Fresh Marketing',
@@ -296,25 +297,8 @@ export default function WorldCupEventStaffing() {
             </div>
           </div>
         </div>
-
         {/* Internal Links Section */}
-        <div className="not-prose mt-12 pt-8 border-t border-gray-200">
-          <h3 className="text-lg font-bold text-gray-900 mb-4">Explore More Resources</h3>
-          <div className="grid sm:grid-cols-2 gap-3">
-            <Link href="/services" className="text-sm text-primary hover:underline">Our Services</Link>
-            <Link href="/services/brand-ambassadors" className="text-sm text-primary hover:underline">Brand Ambassador Services</Link>
-            <Link href="/services/street-teams" className="text-sm text-primary hover:underline">Street Teams</Link>
-            <Link href="/services/event-management" className="text-sm text-primary hover:underline">Event Management</Link>
-            <Link href="/services/experiential-marketing" className="text-sm text-primary hover:underline">Experiential Marketing</Link>
-            <Link href="/services/sampling" className="text-sm text-primary hover:underline">Product Sampling</Link>
-            <Link href="/services/promotional-models" className="text-sm text-primary hover:underline">Promotional Models</Link>
-            <Link href="/blog/hire-event-staff-festivals" className="text-sm text-primary hover:underline">Festival Staffing</Link>
-            <Link href="/blog/bilingual-event-staff" className="text-sm text-primary hover:underline">Bilingual Event Staff Guide</Link>
-            <Link href="/blog/hire-event-staff-festivals" className="text-sm text-primary hover:underline">How to Hire Event Staff for Festivals</Link>
-            <Link href="/pricing" className="text-sm text-primary hover:underline">Pricing &amp; Rates</Link>
-            <Link href="/locations" className="text-sm text-primary hover:underline">All Locations</Link>
-          </div>
-        </div>
+        <BlogInternalLinks />
       </div>
     </article>
   );
