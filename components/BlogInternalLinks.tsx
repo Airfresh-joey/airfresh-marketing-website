@@ -127,7 +127,12 @@ export default function BlogInternalLinks() {
         <Link href="/staffing-for/daytona-bike-week" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Daytona Bike Week</Link>
         <Link href="/staffing-for/pax-east" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">PAX East</Link>
         <Link href="/staffing-for/americas-cup" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">America's Cup</Link>
-        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 170+ Events →</Link>
+        <Link href="/staffing-for/national-western-stock-show" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">National Western Stock Show</Link>
+        <Link href="/staffing-for/minnesota-state-fair" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Minnesota State Fair</Link>
+        <Link href="/staffing-for/detroit-grand-prix" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Detroit Grand Prix</Link>
+        <Link href="/staffing-for/la-pride-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">LA Pride Festival</Link>
+        <Link href="/staffing-for/tough-mudder" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Tough Mudder</Link>
+        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 175+ Events →</Link>
       </div>
 
       {/* Top Markets */}

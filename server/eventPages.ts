@@ -36,6 +36,228 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 175 ──────────────────────────────────────────────────────
+  {
+    slug: 'national-western-stock-show',
+    title: 'National Western Stock Show Staffing | Event Staff for NWSS Denver',
+    h1: 'National Western Stock Show Staffing',
+    metaDescription: 'National Western Stock Show staffing provides professional brand ambassadors, event staff, and promotional models for NWSS in Denver, Colorado. Get a free quote today.',
+    city: 'Denver',
+    stateAbbrev: 'CO',
+    venues: ['National Western Complex'],
+    keywords: ['National Western Stock Show staffing', 'NWSS event staff', 'Denver stock show brand ambassadors', 'rodeo event staffing', 'livestock show staff'],
+    description: 'The National Western Stock Show is one of the world\'s largest and longest-running western heritage events, drawing over 700,000 visitors annually to Denver\'s National Western Complex. Running for 16 days each January, NWSS features rodeo competitions, livestock shows, horse shows, trade exhibits, and western culture celebrations.',
+    bodyContent: `The National Western Stock Show has been a Denver tradition since 1906, making it one of America's premier western heritage events. With over 700,000 annual visitors, 15,000+ livestock entries, and hundreds of exhibitors, NWSS is a massive 16-day operation requiring professional event staff across every area of the sprawling National Western Complex.
+
+Air Fresh Marketing is headquartered in Denver and has deep expertise staffing the National Western Stock Show and similar large-scale western events. Our brand ambassadors understand the unique culture of rodeo and livestock events and deliver authentic, engaging experiences for attendees and sponsors alike.
+
+## Staff Types for National Western Stock Show
+
+Our NWSS staffing solutions include brand ambassadors for sponsor activations in the trade show hall, registration and ticketing staff for the multiple venue entrances, hospitality hosts for VIP and premium seating areas at ProRodeo events, product sampling teams for food and beverage brands activating at the event, and promotional models for western wear and equipment brands showcasing products.
+
+## Why Denver Brands Choose Air Fresh for NWSS
+
+As a Denver-headquartered agency, Air Fresh Marketing has unmatched local knowledge and an extensive network of Colorado-based event professionals. We understand the National Western Complex layout, the flow of attendees between the rodeo arena, livestock barns, trade show halls, and food vendors, and we deploy staff who genuinely connect with the western heritage community.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Represent sponsors and brands at trade show booths and activations throughout the complex' },
+      { title: 'Registration & Ticketing Staff', description: 'Manage entry points, ticket scanning, and credential verification across multiple venues' },
+      { title: 'Hospitality & VIP Hosts', description: 'Provide premium service for VIP suites, sponsor lounges, and premium rodeo seating' },
+      { title: 'Product Sampling Teams', description: 'Distribute food, beverage, and product samples throughout vendor areas and concourses' },
+      { title: 'Promotional Models', description: 'Represent western wear, equipment, and lifestyle brands at exhibits and activations' },
+    ],
+    stats: [
+      { value: '700K+', label: 'Annual Visitors' },
+      { value: '16', label: 'Event Days' },
+      { value: '15K+', label: 'Livestock Entries' },
+      { value: '1906', label: 'Founded' },
+    ],
+    faqs: [
+      { question: 'When is the National Western Stock Show?', answer: 'NWSS runs for 16 days each January at the National Western Complex in Denver, Colorado. It typically starts the second Saturday of January.' },
+      { question: 'How many staff do I need for NWSS?', answer: 'This depends on your activation scope. Sponsor booths typically need 2-4 brand ambassadors per shift, while larger activations across the complex may need 10-20+ staff over the 16-day run.' },
+      { question: 'Do staff need western event experience?', answer: 'It helps enormously. Air Fresh recruits from our Denver-local network of professionals who understand western culture and can authentically engage with the NWSS audience.' },
+    ],
+    logisticsInfo: 'The National Western Complex spans multiple buildings including the Stadium Arena, Events Center, Hall of Education, and Expo Hall. Staff must be comfortable navigating between indoor and outdoor spaces in January weather. Parking and transit options include RTD bus routes and dedicated event parking lots.',
+    relatedCitySlug: 'denver',
+    relatedCityName: 'Denver',
+    heroImage: '/images/events/national-western-stock-show.jpg',
+    isFeatured: true,
+  },
+  {
+    slug: 'minnesota-state-fair',
+    title: 'Minnesota State Fair Staffing | Event Staff for the Great Minnesota Get-Together',
+    h1: 'Minnesota State Fair Staffing',
+    metaDescription: 'Minnesota State Fair staffing delivers professional brand ambassadors, sampling teams, and event staff for the Great Minnesota Get-Together. Get a free quote today.',
+    city: 'Saint Paul',
+    stateAbbrev: 'MN',
+    venues: ['Minnesota State Fairgrounds'],
+    keywords: ['Minnesota State Fair staffing', 'state fair event staff', 'Minnesota brand ambassadors', 'fair sampling staff', 'Great Minnesota Get-Together staffing'],
+    description: 'The Minnesota State Fair is the largest state fair in the United States by average daily attendance, drawing nearly 2 million visitors over 12 days each August-September. Known as the Great Minnesota Get-Together, it features food vendors, concerts, competitions, exhibits, and brand activations across 322 acres.',
+    bodyContent: `The Minnesota State Fair attracts nearly 2 million visitors across 12 days, making it the largest state fair in the United States by average daily attendance. Spread across 322 acres of the State Fairgrounds in Falcon Heights near Saint Paul, this beloved tradition features hundreds of food vendors, grandstand concerts, livestock competitions, and brand activations — all requiring massive event staffing operations.
+
+Air Fresh Marketing provides professional staffing solutions for brands activating at the Minnesota State Fair. Whether you're sampling a new food product on-a-stick, launching a brand experience in the Creative Activities building, or managing a booth in the Eco Experience, our trained brand ambassadors deliver results in one of America's most high-energy fair environments.
+
+## Staff Types for Minnesota State Fair
+
+Our Minnesota State Fair staffing includes product sampling teams experienced in high-volume food and beverage distribution, brand ambassadors for sponsor booths and experiential activations, lead capture specialists for exhibitors in commercial buildings, promotional models for automotive, lifestyle, and consumer brands, and crowd engagement teams for interactive installations.
+
+## Navigating the State Fair Environment
+
+The Minnesota State Fair is a unique staffing challenge — 322 acres of outdoor grounds, extreme foot traffic (often exceeding 200,000 visitors per day), variable late-summer weather, and a fairground culture that demands approachable, high-energy staff. Air Fresh deploys teams experienced in outdoor events who can maintain enthusiasm across long fair days.`,
+    staffTypes: [
+      { title: 'Product Sampling Teams', description: 'High-volume food and beverage sampling at vendor booths and activation areas across the fairgrounds' },
+      { title: 'Brand Ambassadors', description: 'Represent brands at exhibits, sponsor activations, and interactive experiences throughout the fair' },
+      { title: 'Lead Capture Specialists', description: 'Collect consumer data and leads at commercial building booths and sponsor activations' },
+      { title: 'Promotional Models', description: 'Engage fairgoers for automotive, lifestyle, and consumer product brands at key locations' },
+      { title: 'Crowd Engagement Teams', description: 'Drive foot traffic and participation at interactive installations and brand experiences' },
+    ],
+    stats: [
+      { value: '2M', label: 'Annual Visitors' },
+      { value: '12', label: 'Event Days' },
+      { value: '322', label: 'Acres' },
+      { value: '200K+', label: 'Peak Daily Attendance' },
+    ],
+    faqs: [
+      { question: 'When is the Minnesota State Fair?', answer: 'The fair runs for 12 days ending on Labor Day, typically late August through early September, at the State Fairgrounds in Falcon Heights near Saint Paul, Minnesota.' },
+      { question: 'How many staff do I need for the Minnesota State Fair?', answer: 'For a single booth or sampling activation, plan for 4-8 staff per shift. Larger multi-location activations across the fairgrounds may need 15-30+ staff per day.' },
+      { question: 'What makes state fair staffing different from other events?', answer: 'State fairs involve extreme foot traffic, outdoor conditions, long operating hours, and a casual fairgoer audience. Staff must be high-energy, weather-ready, and comfortable with very high-volume interactions.' },
+    ],
+    logisticsInfo: 'The Minnesota State Fairgrounds is located in Falcon Heights between Saint Paul and Minneapolis. Staff should plan for outdoor conditions, extensive walking, and 10-12 hour fair days. Public transit via Metro Transit Green Line is recommended as parking is extremely limited during the fair.',
+    relatedCitySlug: 'minneapolis',
+    relatedCityName: 'Minneapolis',
+    heroImage: '/images/events/minnesota-state-fair.jpg',
+  },
+  {
+    slug: 'detroit-grand-prix',
+    title: 'Detroit Grand Prix Staffing | Event Staff for IndyCar Racing in Detroit',
+    h1: 'Detroit Grand Prix Staffing',
+    metaDescription: 'Detroit Grand Prix staffing provides professional brand ambassadors, hospitality staff, and event teams for IndyCar racing in downtown Detroit. Get a free quote today.',
+    city: 'Detroit',
+    stateAbbrev: 'MI',
+    venues: ['Downtown Detroit Street Circuit'],
+    keywords: ['Detroit Grand Prix staffing', 'IndyCar event staff', 'Detroit racing brand ambassadors', 'motorsport event staffing', 'auto racing hospitality staff'],
+    description: 'The Detroit Grand Prix is a premier IndyCar Series race held on a street circuit in downtown Detroit. The multi-day event features IndyCar racing, IMSA sports car competition, support races, concerts, and extensive brand activation areas, drawing over 100,000 motorsport fans to the Motor City each June.',
+    bodyContent: `The Detroit Grand Prix returns IndyCar racing to the streets of downtown Detroit, transforming the Motor City into a world-class racing venue each June. With over 100,000 fans attending the multi-day event featuring IndyCar, IMSA sports car racing, and support series, the Grand Prix requires professional event staff across hospitality suites, sponsor activations, fan zones, and trackside operations.
+
+Air Fresh Marketing provides experienced motorsport event staffing for the Detroit Grand Prix. Our brand ambassadors understand the automotive and racing culture that defines this event and deliver premium hospitality and brand activation experiences for sponsors, corporate hosts, and fan engagement programs.
+
+## Staff Types for Detroit Grand Prix
+
+Our Grand Prix staffing includes hospitality hosts for corporate suites and sponsor hospitality areas along the circuit, brand ambassadors for automotive and lifestyle brand activations in the fan zone, VIP concierge staff for premium ticket holders and sponsor guests, product sampling teams for beverage and consumer brands activating throughout the venue, and registration teams for credential management and fan experience check-ins.
+
+## The Motor City Motorsport Experience
+
+Staffing a street circuit race presents unique challenges — the venue stretches across downtown blocks with multiple access points, hospitality areas, grandstands, and fan zones. Air Fresh deploys staff familiar with motorsport event protocols, noise environments, and the premium hospitality expectations of racing sponsors and corporate clients.`,
+    staffTypes: [
+      { title: 'Hospitality Hosts', description: 'Premium service for corporate suites, sponsor lounges, and VIP hospitality areas along the circuit' },
+      { title: 'Brand Ambassadors', description: 'Represent automotive, lifestyle, and consumer brands at fan zone activations and sponsor exhibits' },
+      { title: 'VIP Concierge Staff', description: 'Provide white-glove service for premium ticket holders, sponsor guests, and corporate clients' },
+      { title: 'Product Sampling Teams', description: 'Distribute beverage and consumer product samples at designated areas throughout the venue' },
+      { title: 'Registration & Credential Staff', description: 'Manage fan experience check-ins, VIP credentials, and hospitality area access control' },
+    ],
+    stats: [
+      { value: '100K+', label: 'Race Fans' },
+      { value: '3', label: 'Race Days' },
+      { value: '200+', label: 'MPH Top Speed' },
+      { value: '1982', label: 'First Detroit GP' },
+    ],
+    faqs: [
+      { question: 'When is the Detroit Grand Prix?', answer: 'The Detroit Grand Prix is typically held in early June on a street circuit in downtown Detroit, Michigan. The event spans a full weekend with practice, qualifying, and race days.' },
+      { question: 'How many staff do I need for the Detroit Grand Prix?', answer: 'Hospitality suites typically need 3-6 staff, while larger fan zone activations may need 8-15 staff. Full-weekend coverage requires planning for 3 days with extended hours.' },
+      { question: 'Do staff need motorsport experience?', answer: 'Experience with motorsport or automotive events is preferred. Staff should be comfortable in loud environments, understand hospitality protocols, and be able to engage knowledgeably with racing fans.' },
+    ],
+    logisticsInfo: 'The Detroit Grand Prix street circuit is in downtown Detroit with access points along the race route. Staff must have proper credentials for each zone. Noise levels are extreme near the track — provide hearing protection. Public transit and designated parking areas are available for staff.',
+    relatedCitySlug: 'detroit',
+    relatedCityName: 'Detroit',
+    heroImage: '/images/events/detroit-grand-prix.jpg',
+  },
+  {
+    slug: 'la-pride-festival',
+    title: 'LA Pride Festival Staffing | Event Staff for Los Angeles Pride',
+    h1: 'LA Pride Festival Staffing',
+    metaDescription: 'LA Pride Festival staffing provides professional brand ambassadors, promotional models, and event staff for Los Angeles Pride celebrations. Get a free quote today.',
+    city: 'Los Angeles',
+    stateAbbrev: 'CA',
+    venues: ['Hollywood Blvd', 'West Hollywood', 'Los Angeles Pride Parade Route'],
+    keywords: ['LA Pride staffing', 'Pride festival event staff', 'Los Angeles Pride brand ambassadors', 'Pride parade staffing', 'LGBTQ+ event staff'],
+    description: 'LA Pride is one of the largest and oldest Pride celebrations in the world, featuring a massive parade through West Hollywood, a multi-day music festival, and brand activations celebrating the LGBTQ+ community. The event draws hundreds of thousands of participants and spectators to Los Angeles each June.',
+    bodyContent: `LA Pride is one of the original Pride celebrations, dating back to 1970, and has grown into one of the largest LGBTQ+ events in the world. The multi-day celebration features a massive parade through West Hollywood, concerts by major artists, community stages, and extensive brand activation areas where companies demonstrate their commitment to the LGBTQ+ community through authentic, engaging experiences.
+
+Air Fresh Marketing provides professional staffing for brands activating at LA Pride. Our diverse team of brand ambassadors brings genuine enthusiasm, cultural competency, and professional event skills to Pride activations — ensuring brands connect authentically with the community while delivering measurable marketing results.
+
+## Staff Types for LA Pride Festival
+
+Our LA Pride staffing includes brand ambassadors representing corporate sponsors and LGBTQ+-owned businesses at activation booths, parade support teams managing floats, product distribution, and crowd engagement along the route, sampling teams for beverage, beauty, and consumer brands in the festival grounds, hospitality staff for VIP viewing areas and sponsor lounges, and street teams distributing branded merchandise and promotional materials throughout West Hollywood.
+
+## Authentic Pride Engagement
+
+Staffing Pride events requires cultural competency and genuine authenticity. Air Fresh recruits brand ambassadors from the LGBTQ+ community and allied individuals who bring personal connection to Pride celebrations. Our staff don't just hand out products — they celebrate alongside attendees and represent brands with pride and authenticity.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Represent sponsors and brands at festival activation booths with authentic community engagement' },
+      { title: 'Parade Support Teams', description: 'Manage floats, distribute products, and engage crowds along the Pride parade route' },
+      { title: 'Product Sampling Teams', description: 'Distribute beverage, beauty, and consumer product samples throughout the festival grounds' },
+      { title: 'Hospitality & VIP Staff', description: 'Manage VIP viewing areas, sponsor lounges, and premium hospitality experiences' },
+      { title: 'Street Teams', description: 'Distribute branded merchandise and promotional materials throughout the celebration area' },
+    ],
+    stats: [
+      { value: '400K+', label: 'Participants' },
+      { value: '3', label: 'Festival Days' },
+      { value: '1970', label: 'Founded' },
+      { value: '150+', label: 'Parade Entries' },
+    ],
+    faqs: [
+      { question: 'When is LA Pride?', answer: 'LA Pride takes place each June during Pride Month, typically the second weekend. Events include the parade through West Hollywood, concerts, and community programming across multiple days.' },
+      { question: 'How many staff do I need for LA Pride activations?', answer: 'Festival booth activations typically need 4-8 staff per shift. Parade float support needs 6-12 staff. Street team campaigns across West Hollywood may need 10-20+ staff.' },
+      { question: 'What makes Pride event staffing unique?', answer: 'Cultural competency is essential. Staff should be members of or genuine allies to the LGBTQ+ community, comfortable in festive environments, and able to represent brands authentically without performative engagement.' },
+    ],
+    logisticsInfo: 'LA Pride events center around West Hollywood and the parade route along Santa Monica Boulevard. Parking is extremely limited — staff should use rideshare or public transit. June weather is warm; provide sunscreen and hydration. Credential requirements vary by activation zone.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/la-pride-festival.jpg',
+  },
+  {
+    slug: 'tough-mudder',
+    title: 'Tough Mudder Staffing | Event Staff for Obstacle Course Racing Events',
+    h1: 'Tough Mudder Staffing',
+    metaDescription: 'Tough Mudder staffing provides professional brand ambassadors, course marshals, and event staff for obstacle course racing events nationwide. Get a free quote today.',
+    city: 'Nationwide',
+    stateAbbrev: 'US',
+    venues: ['Various Venues Nationwide'],
+    keywords: ['Tough Mudder staffing', 'obstacle course event staff', 'OCR brand ambassadors', 'Tough Mudder brand activation', 'fitness event staffing'],
+    description: 'Tough Mudder is one of the world\'s leading obstacle course racing (OCR) series, hosting events across dozens of US cities annually. Each event features 10-12 mile courses with 25+ obstacles, a festival village with brand activations, and a vibrant community of fitness enthusiasts — all requiring extensive professional event staffing.',
+    bodyContent: `Tough Mudder is the world's premier obstacle course racing brand, hosting events across dozens of US cities throughout the year. Each event draws thousands of participants who tackle 10-12 mile courses featuring 25+ obstacles, followed by a massive festival village with beer gardens, food vendors, sponsor activations, and community celebrations. The unique combination of athletic competition and festival atmosphere creates exceptional brand activation opportunities.
+
+Air Fresh Marketing provides professional staffing for Tough Mudder events and sponsor activations nationwide. Our brand ambassadors thrive in the energetic, fitness-focused environment and connect authentically with the highly engaged Tough Mudder community of weekend warriors and fitness enthusiasts.
+
+## Staff Types for Tough Mudder Events
+
+Our Tough Mudder staffing includes brand ambassadors for sponsor activations in the festival village, course marshal support assisting with obstacle safety and participant encouragement, registration and packet pickup teams managing the check-in process for thousands of participants, sampling teams for sports nutrition, beverage, and fitness brands in the finish area, and product demonstration teams showcasing fitness equipment and wellness products.
+
+## Nationwide OCR Staffing Capability
+
+Tough Mudder's national tour means you need a staffing partner with reach across multiple markets. Air Fresh Marketing's network of 5,000+ brand ambassadors in 200+ cities means we can staff your activation consistently whether you're activating at a single event or following the full Tough Mudder circuit.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Represent sponsors at festival village activations, connecting with the fitness-focused community' },
+      { title: 'Course Marshal Support', description: 'Assist with obstacle zones, participant safety, and course encouragement positions' },
+      { title: 'Registration & Packet Pickup', description: 'Manage participant check-in, bib distribution, and timing chip activation' },
+      { title: 'Product Sampling Teams', description: 'Distribute sports nutrition, beverage, and recovery product samples at the finish area' },
+      { title: 'Product Demonstration Staff', description: 'Showcase fitness equipment, wellness products, and lifestyle brands at demo stations' },
+    ],
+    stats: [
+      { value: '5M+', label: 'Total Participants' },
+      { value: '25+', label: 'Obstacles Per Course' },
+      { value: '50+', label: 'US Events/Year' },
+      { value: '12', label: 'Mile Courses' },
+    ],
+    faqs: [
+      { question: 'How many Tough Mudder events happen each year?', answer: 'Tough Mudder hosts 50+ events annually across the United States, typically running March through November. Events are held at outdoor venues including ski resorts, ranches, and recreational areas.' },
+      { question: 'How many staff do I need for a Tough Mudder activation?', answer: 'A typical festival village booth needs 4-6 brand ambassadors per shift. Larger activations with multiple touchpoints (start line, course, finish area, village) may need 10-20 staff.' },
+      { question: 'Do staff need to be athletic?', answer: 'Staff don\'t need to run the course, but fitness-minded individuals who connect authentically with the OCR community perform best. High energy and comfort in outdoor, muddy environments are essential.' },
+    ],
+    logisticsInfo: 'Tough Mudder events are held at outdoor venues that can be muddy and remote. Staff should wear appropriate footwear and clothing. Events run rain or shine. Most venues have limited cell service. Arrive early as parking lots fill quickly on event mornings.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/tough-mudder.jpg',
+  },
   // ── Batch 170 ──────────────────────────────────────────────────────
   {
     slug: 'winter-x-games',
