@@ -353,6 +353,9 @@ export default function CompareKineticEvents() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
+            { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
+            { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
+            { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />
