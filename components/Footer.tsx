@@ -91,7 +91,12 @@ export default function Footer() {
     { name: "PAX West", href: "/staffing-for/pax-west" },
     { name: "Taste of Chicago", href: "/staffing-for/taste-of-chicago" },
     { name: "Essence Fest", href: "/staffing-for/essence-fest" },
-    { name: "All Events →", href: "/events" },
+    { name: "SDCC", href: "/staffing-for/sdcc" },
+    { name: "NBA All-Star", href: "/staffing-for/nba-all-star" },
+    { name: "Kentucky Derby", href: "/staffing-for/kentucky-derby" },
+    { name: "NFL Draft", href: "/staffing-for/nfl-draft" },
+    { name: "E3", href: "/staffing-for/e3" },
+    { name: "All 55+ Events →", href: "/staffing-for" },
   ];
 
   return (
