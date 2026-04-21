@@ -1471,7 +1471,7 @@ export default async function CityPage({ params }: CityPageProps) {
                 <p className="text-sm text-gray-500 mt-1">See how we compare</p>
               </CardContent></Card>
             </Link>
-            {['los-angeles','new-york','chicago','miami','las-vegas','dallas','denver','houston','atlanta','phoenix'].includes(city.slug) && (
+            {['los-angeles','new-york','chicago','miami','las-vegas','dallas','denver','houston','atlanta','phoenix','boston','orlando','philadelphia','new-orleans'].includes(city.slug) && (
               <Link href={`/blog/top-event-staffing-agencies-${city.slug}`} className="group">
                 <Card className="hover:shadow-lg transition-all h-full border-cyan-200 bg-cyan-50/50"><CardContent className="p-5">
                   <h3 className="font-bold text-gray-900 group-hover:text-primary transition-colors">Top 10 Event Staffing Agencies in {city.name}</h3>
