@@ -36,6 +36,286 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 145 ──────────────────────────────────────────────────────
+  {
+    slug: 'pga-championship',
+    title: 'PGA Championship Staffing | Event Staff & Brand Ambassadors',
+    h1: 'PGA Championship Staffing: Brand Ambassadors, Hospitality Teams & Sponsor Activation Support',
+    metaDescription: 'PGA Championship staffing services provide brand ambassadors, VIP hospitality teams, and sponsor activation staff for one of golf\'s four major championships.',
+    city: 'Various',
+    stateAbbrev: 'US',
+    venues: ['Rotating Major Championship Venues', 'Quail Hollow Club', 'Valhalla Golf Club', 'Oak Hill Country Club'],
+    keywords: ['PGA Championship staffing', 'golf event staff', 'PGA hospitality staffing', 'golf tournament brand ambassadors', 'sports event staffing'],
+    description: 'The PGA Championship is one of golf\'s four major championships, attracting 200,000+ spectators and massive corporate hospitality investment. Air Fresh Marketing provides professional event staff for sponsor activations, VIP hospitality, and gallery management.',
+    bodyContent: `## PGA Championship Event Staffing Solutions
+
+The PGA Championship is one of the most prestigious events in professional golf, drawing 200,000+ spectators and significant corporate hospitality investment. As one of golf's four majors, it attracts the world's best players and the brands that want to reach golf's affluent, engaged audience.
+
+### Why Brands Activate at the PGA Championship
+
+The PGA Championship audience represents a premium demographic with high household incomes and strong brand affinity. Corporate hospitality at the PGA Championship is one of the most effective B2B entertainment platforms, and sponsor activations reach engaged consumers in a relaxed, receptive setting.
+
+### Hospitality and VIP Staffing
+
+**Corporate Chalet and Suite Staff** provide white-glove hospitality service in premium venues along the course. They serve gourmet food and beverages, manage guest experiences, and ensure that every corporate client receives personalized attention. Service must be refined yet unobtrusive to match the golf environment.
+
+**Sponsor Hospitality Staff** manage branded hospitality areas for tournament sponsors. They welcome guests, coordinate with catering teams, and ensure sponsor branding is properly displayed and maintained.
+
+### On-Course Staffing
+
+**Gallery Management Staff** control spectator flow along the course, manage crosswalks, and ensure patrons follow gallery etiquette including silence during play and phone policies.
+
+**Sponsor Activation Teams** staff interactive brand experiences at tee boxes, hospitality villages, and spectator areas. They engage fans with product demonstrations, games, and sampling.
+
+**Merchandise and Retail Staff** manage the PGA Championship merchandise pavilion, one of the highest-grossing retail operations in golf. Staff process sales, manage inventory, and assist shoppers during peak traffic.
+
+### Event Operations Support
+
+Air Fresh Marketing provides comprehensive staffing support including registration, parking and transportation coordination, and volunteer management support for the PGA of America's championship operations team.`,
+    staffTypes: ['Brand Ambassadors', 'VIP Hospitality Staff', 'Gallery Management', 'Sponsor Activation Teams', 'Merchandise Staff', 'Event Operations'],
+    stats: [
+      { number: '200,000+', label: 'Weekly Attendance' },
+      { number: '156', label: 'Players in the Field' },
+      { number: '100+', label: 'Years of History' },
+      { number: '$17.5M', label: 'Total Purse' }
+    ],
+    faqs: [
+      { question: 'What types of hospitality staff do you provide for the PGA Championship?', answer: 'We provide corporate chalet servers, VIP concierge staff, hospitality tent hosts, bar staff, and guest services teams trained in the refined service standards expected at major golf championships.' },
+      { question: 'How far in advance should we book PGA Championship staff?', answer: 'Book 10-12 weeks before the tournament. Golf major staffing requires experienced, polished staff who book quickly in whichever market hosts the championship.' },
+      { question: 'Can staff work both spectator-facing and corporate hospitality roles?', answer: 'Yes, we provide separate teams for gallery management and spectator services versus corporate hospitality areas, each trained for their specific responsibilities and dress codes.' },
+      { question: 'Do staff need golf knowledge?', answer: 'For hospitality and sponsor activation roles, basic golf knowledge is expected so staff can engage credibly with golf enthusiasts. We provide golf-specific briefings for all PGA Championship staff.' }
+    ],
+    logisticsInfo: 'The PGA Championship rotates between prestigious courses across the United States. Venue-specific logistics are coordinated 8-10 weeks before the event based on the host course location.',
+    relatedCitySlug: 'charlotte',
+    relatedCityName: 'Charlotte',
+    heroImage: '/images/events/pga-championship.jpg'
+  },
+  {
+    slug: 'comic-con-san-diego',
+    title: 'San Diego Comic-Con Staffing | Event Staff & Brand Ambassadors',
+    h1: 'San Diego Comic-Con Staffing: Brand Ambassadors, Exhibitor Staff & Fan Engagement Teams',
+    metaDescription: 'San Diego Comic-Con staffing services provide brand ambassadors, exhibitor booth staff, and fan engagement teams for activations at SDCC and surrounding offsite events in San Diego.',
+    city: 'San Diego',
+    stateAbbrev: 'CA',
+    venues: ['San Diego Convention Center', 'Petco Park Interactive Zone', 'Gaslamp Quarter Offsite Events', 'Hilton Bayfront'],
+    keywords: ['SDCC staffing', 'San Diego Comic-Con event staff', 'Comic-Con brand ambassadors', 'SDCC booth staff', 'fan convention staffing'],
+    description: 'San Diego Comic-Con is the world\'s largest pop culture convention, attracting 130,000+ attendees and massive media coverage. Air Fresh Marketing provides pop-culture-savvy event staff for exhibitor booths, sponsor activations, and offsite experiences.',
+    bodyContent: `## San Diego Comic-Con Event Staffing Solutions
+
+San Diego Comic-Con (SDCC) is the world's most influential pop culture convention, drawing 130,000+ badge holders plus hundreds of thousands more who participate in offsite activations throughout the Gaslamp Quarter. For studios, streaming services, gaming companies, and consumer brands, SDCC is the premier opportunity to reach passionate fan communities.
+
+### Why SDCC Is Unique for Brand Activations
+
+Comic-Con generates more social media buzz, press coverage, and fan engagement per dollar spent than virtually any other event. A successful SDCC activation can generate millions of media impressions and become a trending topic worldwide. The stakes are high, the competition for attention is fierce, and the audience is deeply knowledgeable.
+
+### Inside the Convention Center
+
+**Exhibitor Booth Staff** represent studios, publishers, toy companies, and technology brands on the exhibition floor. They demonstrate products, manage exclusive merchandise drops, facilitate photo opportunities, and engage with fans who may wait hours to visit specific booths.
+
+**Panel and Screening Support** manage the legendary Hall H and other panel rooms, coordinating audience seating, managing Q&A microphones, and supporting presentation logistics for the most anticipated reveals of the year.
+
+**Artist Alley Staff** assist comic creators in the artist alley section, managing commission queues and facilitating fan interactions with artists.
+
+### Offsite Activations
+
+SDCC's offsite activations have grown to rival the convention itself. Brands build elaborate experiences in the Gaslamp Quarter, Petco Park, and surrounding venues:
+
+**Immersive Experience Staff** guide fans through themed installations, manage entry queues that can stretch for blocks, and create shareable moments within the experience.
+
+**Street Team and Guerrilla Promotion Staff** create buzz throughout San Diego with costume characters, promotional distribution, and mobile brand activations that reach fans beyond the convention center.
+
+**Exclusive Merchandise Drop Staff** manage the controlled release of limited-edition products, handling queues, verifying eligibility, and processing sales for items that sell out in minutes.
+
+### Fan Engagement Essentials
+
+SDCC staff must be genuine pop culture fans who can connect authentically with attendees. Fans immediately detect when staff lack genuine enthusiasm, and scripted interactions fall flat at a convention where passion is the universal language.`,
+    staffTypes: ['Brand Ambassadors', 'Exhibitor Booth Staff', 'Offsite Activation Teams', 'Street Teams', 'Panel Support', 'Merchandise Drop Staff'],
+    stats: [
+      { number: '130,000+', label: 'Badge Holders' },
+      { number: '500,000+', label: 'Offsite Participants' },
+      { number: '55+', label: 'Years of History' },
+      { number: '4', label: 'Days of Programming' }
+    ],
+    faqs: [
+      { question: 'Do SDCC staff need pop culture knowledge?', answer: 'Yes, absolutely. SDCC attendees are deeply knowledgeable fans who expect authentic engagement. We recruit staff with genuine pop culture passion and provide event-specific briefings on key properties and activations.' },
+      { question: 'Can you staff both inside the convention center and offsite events?', answer: 'Yes, we staff exhibitor booths inside the San Diego Convention Center and offsite activations throughout the Gaslamp Quarter, Petco Park area, and surrounding venues with separate dedicated teams.' },
+      { question: 'How far in advance should we book SDCC staff?', answer: 'Book at least 12 weeks before SDCC. This is one of the most competitive staffing events of the year in the San Diego market, and experienced pop culture event staff book very early.' },
+      { question: 'Can you manage exclusive merchandise drops?', answer: 'Yes, we have extensive experience managing controlled-release merchandise events including queue management, eligibility verification, purchase limits, and security coordination for high-demand drops.' }
+    ],
+    logisticsInfo: 'SDCC takes place at the San Diego Convention Center and throughout the Gaslamp Quarter in downtown San Diego. Offsite activations span multiple venues within walking distance of the convention center.',
+    relatedCitySlug: 'san-diego',
+    relatedCityName: 'San Diego',
+    heroImage: '/images/events/comic-con-san-diego.jpg'
+  },
+  {
+    slug: 'austin-city-limits-festival',
+    title: 'Austin City Limits Festival Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Austin City Limits Festival Staffing: Brand Ambassadors, Experiential Teams & Event Support in Austin',
+    metaDescription: 'Austin City Limits Festival staffing services provide brand ambassadors, experiential marketing teams, and event support for ACL activations at Zilker Park in Austin, Texas.',
+    city: 'Austin',
+    stateAbbrev: 'TX',
+    venues: ['Zilker Park', 'ACL Main Stage', 'Honda Stage', 'Miller Lite Stage', 'Barton Springs Area'],
+    keywords: ['ACL Festival staffing', 'Austin City Limits event staff', 'ACL brand ambassadors', 'music festival staffing Austin', 'Zilker Park event staff'],
+    description: 'Austin City Limits Music Festival is one of America\'s premier music festivals, attracting 75,000+ fans per day across two weekends in Austin\'s Zilker Park. Air Fresh Marketing provides professional event staff for brand activations and sponsor experiences.',
+    bodyContent: `## Austin City Limits Festival Event Staffing Solutions
+
+Austin City Limits Music Festival (ACL) is one of America's premier multi-day music festivals, bringing 75,000+ fans per day to Austin's beloved Zilker Park across two consecutive weekends in October. The festival's prime Austin location, diverse musical lineup, and strong local culture make it an ideal activation environment for brands.
+
+### Why Brands Activate at ACL
+
+ACL offers unique advantages for brand activations. Its two-weekend format provides double the activation opportunity of single-weekend festivals. Austin's reputation as a cultural capital attracts a creative, tech-savvy, and brand-receptive audience. And Zilker Park's central Austin location means the festival is woven into the city's fabric rather than isolated at a remote site.
+
+### Festival Grounds Staffing
+
+**Brand Activation Staff** work at sponsor installations throughout Zilker Park. ACL features elaborate brand experiences from major sponsors including automotive, technology, beverage, and lifestyle brands. Staff engage festivalgoers with interactive experiences, product demos, and sampling.
+
+**Sampling and Distribution Teams** manage product sampling for food, beverage, and CPG brands. Austin's health-conscious, foodie culture means sampling activations perform especially well at ACL.
+
+**VIP and Platinum Experience Staff** provide elevated service in premium viewing areas, lounges, and exclusive festival areas. ACL's VIP and Platinum programs attract high-value consumers.
+
+**Art Market and Vendor Staff** support the festival's curated art market featuring local and national artists. Staff assist with sales, packaging, and customer engagement.
+
+### Two-Weekend Staffing Strategy
+
+ACL's unique two-weekend format requires strategic staffing:
+- Some brands use the same staff across both weekends for consistency
+- Others rotate teams to maintain fresh energy
+- Weekend 1 data informs Weekend 2 optimizations
+- Staff working both weekends receive premium compensation
+
+### Austin Market Advantages
+
+Austin's large creative and hospitality workforce provides excellent local talent for festival staffing. The city's established festival culture (SXSW, ACL, Fun Fun Fun Fest) means experienced event staff are available in the market.`,
+    staffTypes: ['Brand Ambassadors', 'Experiential Marketing Staff', 'Sampling Teams', 'VIP Hospitality', 'Art Market Staff', 'Setup & Teardown Crews'],
+    stats: [
+      { number: '75,000+', label: 'Daily Attendance' },
+      { number: '2', label: 'Weekends (6 Days)' },
+      { number: '130+', label: 'Artists' },
+      { number: '46', label: 'Acres of Festival Grounds' }
+    ],
+    faqs: [
+      { question: 'How does the two-weekend format affect staffing?', answer: 'We can staff one or both weekends. Some clients prefer consistent teams across both weekends for brand continuity, while others rotate fresh staff. We offer flexible scheduling for both approaches.' },
+      { question: 'What types of brand activations work best at ACL?', answer: 'Interactive experiences, product sampling (especially food and beverage), charging lounges, photo moments, and sustainability-focused activations resonate strongly with ACL\'s Austin audience.' },
+      { question: 'When should we book ACL Festival staff?', answer: 'Book 8-10 weeks before the festival. Austin\'s strong event staffing market means experienced festival staff are available, but they book quickly for ACL weekends.' },
+      { question: 'Can you provide staff for ACL aftershows and offsite events?', answer: 'Yes, we staff ACL aftershow events at venues throughout Austin in addition to Zilker Park activations, providing comprehensive festival weekend coverage.' }
+    ],
+    logisticsInfo: 'ACL takes place at Zilker Park in central Austin, Texas. The park is easily accessible from downtown Austin with multiple transportation options. Staff staging and parking are coordinated through festival operations.',
+    relatedCitySlug: 'austin',
+    relatedCityName: 'Austin',
+    heroImage: '/images/events/austin-city-limits-festival.jpg'
+  },
+  {
+    slug: 'tribeca-film-festival',
+    title: 'Tribeca Film Festival Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Tribeca Film Festival Staffing: Brand Ambassadors, Guest Services & VIP Hospitality Teams',
+    metaDescription: 'Tribeca Film Festival staffing services provide brand ambassadors, guest services teams, and VIP hospitality staff for screenings, premieres, and sponsor activations across Lower Manhattan.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['BMCC Tribeca PAC', 'Village East by Angelika', 'SVA Theatre', 'Spring Studios', 'Various Tribeca Venues'],
+    keywords: ['Tribeca Film Festival staffing', 'Tribeca Festival event staff', 'film festival brand ambassadors', 'NYC film event staffing', 'Tribeca VIP hospitality'],
+    description: 'The Tribeca Film Festival is one of the world\'s most celebrated film festivals, featuring premieres, panels, and immersive experiences across Lower Manhattan. Air Fresh Marketing provides professional event staff for screenings, sponsor activations, and VIP events.',
+    bodyContent: `## Tribeca Film Festival Event Staffing Solutions
+
+The Tribeca Film Festival has grown from a neighborhood revitalization project into one of the world's most influential film and cultural festivals. Founded by Robert De Niro and Jane Rosenthal, the festival attracts filmmakers, industry professionals, celebrities, and over 600,000 attendees to screenings, premieres, talks, and immersive experiences across Lower Manhattan.
+
+### Why Brands Partner with Tribeca
+
+The Tribeca Film Festival audience represents an affluent, culturally engaged New York demographic that is highly attractive to premium brands. The festival's programming spans film, television, music, gaming, and technology, creating diverse activation opportunities across multiple content verticals.
+
+### Screening and Premiere Staffing
+
+**Guest Services and Ushering Staff** manage the audience experience at film screenings across multiple Tribeca venues. They scan tickets, guide seating, manage late arrivals, and ensure audiences are settled before screenings begin.
+
+**Premiere Night Staff** handle the elevated logistics of premiere screenings, including red carpet management, press coordination, VIP arrival sequencing, and after-party transitions.
+
+**Q&A and Panel Support** manage post-screening conversations with filmmakers, moderator coordination, and audience microphone running for Q&A sessions.
+
+### Sponsor Activation Staffing
+
+**Lounge and Hospitality Staff** manage sponsor-branded lounges where industry professionals, filmmakers, and VIP guests relax between screenings. These spaces are essential networking hubs.
+
+**Interactive Experience Staff** run immersive and interactive sponsor activations that have become a signature part of the Tribeca experience, including VR cinema, gaming showcases, and technology demonstrations.
+
+**Street-Level Activation Teams** engage the public in free programming throughout the Tribeca neighborhood, extending the festival's reach beyond ticketed events.
+
+### Multi-Venue Coordination
+
+Tribeca's distributed venue model across Lower Manhattan requires staffing coordination across 10+ locations simultaneously. Air Fresh Marketing deploys site leads at each venue with centralized coordination to ensure consistent service quality across all festival touchpoints.`,
+    staffTypes: ['Brand Ambassadors', 'Guest Services', 'Premiere Night Staff', 'VIP Hospitality', 'Interactive Experience Staff', 'Multi-Venue Coordinators'],
+    stats: [
+      { number: '600,000+', label: 'Total Attendees' },
+      { number: '200+', label: 'Film Screenings' },
+      { number: '10+', label: 'Venues Across Tribeca' },
+      { number: '12', label: 'Days of Programming' }
+    ],
+    faqs: [
+      { question: 'How many venues does Tribeca use?', answer: 'Tribeca screenings and events take place across 10+ venues in Lower Manhattan. We staff all festival venues with dedicated teams at each location, coordinated through centralized management.' },
+      { question: 'What experience do staff need for a film festival?', answer: 'Staff should have professional event experience, comfort with celebrity and media presence, and appreciation for film and culture. We provide Tribeca-specific training covering festival protocols, venue logistics, and sponsor guidelines.' },
+      { question: 'When should we book Tribeca Festival staff?', answer: 'Book 8-10 weeks before the festival. New York has a deep pool of entertainment industry event staff, but Tribeca\'s multi-week programming and numerous venues create significant demand.' },
+      { question: 'Can you staff premiere after-parties?', answer: 'Yes, we provide separate staffing teams for premiere screenings and their associated after-parties, ensuring fresh, appropriately styled staff for the different energy and format of post-screening celebrations.' }
+    ],
+    logisticsInfo: 'The Tribeca Film Festival takes place across multiple venues in the Tribeca neighborhood and surrounding areas of Lower Manhattan. Staff navigate between venues primarily on foot or via short transit rides.',
+    relatedCitySlug: 'new-york-city',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/tribeca-film-festival.jpg'
+  },
+  {
+    slug: 'electric-daisy-carnival-orlando',
+    title: 'EDC Orlando Staffing | Event Staff & Brand Ambassadors',
+    h1: 'EDC Orlando Staffing: Brand Ambassadors, Experiential Teams & Festival Event Support',
+    metaDescription: 'EDC Orlando staffing services provide brand ambassadors, experiential marketing teams, and event support for Insomniac\'s Electric Daisy Carnival at Tinker Field in Orlando, Florida.',
+    city: 'Orlando',
+    stateAbbrev: 'FL',
+    venues: ['Tinker Field', 'Camping Grounds', 'kineticFIELD', 'circuitGROUNDS', 'neonGARDEN'],
+    keywords: ['EDC Orlando staffing', 'EDC Orlando brand ambassadors', 'Electric Daisy Carnival event staff', 'Orlando festival staffing', 'EDC experiential marketing'],
+    description: 'Electric Daisy Carnival Orlando is Insomniac\'s East Coast flagship festival, bringing 80,000+ electronic music fans to Tinker Field for a multi-day celebration of music, art, and community.',
+    bodyContent: `## EDC Orlando Event Staffing Solutions
+
+Electric Daisy Carnival Orlando (EDC Orlando) is Insomniac Events' premier East Coast electronic music festival, transforming Tinker Field in Orlando into a neon-lit wonderland for 80,000+ fans across multiple days. As the East Coast counterpart to EDC Las Vegas, EDC Orlando attracts major brand sponsors seeking to reach the passionate electronic music community.
+
+### Why Brands Activate at EDC Orlando
+
+EDC Orlando's audience skews young (18-34), highly engaged on social media, and enthusiastic about brand experiences that enhance their festival journey. The electronic music festival demographic is known for embracing brands that contribute positively to the festival experience, making EDC Orlando an ideal activation environment.
+
+### Stage and Production Area Staffing
+
+**Brand Activation Teams** staff sponsor experiences across the festival grounds. EDC's immersive environment means brand activations must match the festival's production quality—staff work within elaborately themed environments that combine music, art, and technology.
+
+**Hydration and Wellness Staff** support the health and safety infrastructure that is critical at electronic music festivals. They manage water stations, cooling areas, and wellness tents that sponsors frequently brand.
+
+**Interactive Art and Experience Staff** guide fans through interactive installations, LED art pieces, and immersive brand experiences that blend with EDC's artistic environment.
+
+### Festival Operations Staffing
+
+**Entry and Security Support** assist with festival entry, ticket scanning, and crowd flow management at one of Orlando's largest annual events.
+
+**Merchandise and Retail Staff** manage the sale of official EDC merchandise and sponsor products throughout the festival grounds.
+
+**Information and Guest Services** help attendees navigate the festival, locate stages and amenities, and address concerns.
+
+### EDC Culture and Staffing
+
+EDC's PLUR culture (Peace, Love, Unity, Respect) influences how staff should engage with attendees. Staff who embody positivity, inclusivity, and genuine enthusiasm for the electronic music community create authentic connections that drive brand engagement.
+
+Air Fresh Marketing recruits festival-experienced staff in the Orlando market who understand EDC's unique energy and can maintain professional standards while embracing the festival's vibrant culture.`,
+    staffTypes: ['Brand Ambassadors', 'Experiential Marketing Staff', 'Wellness & Hydration Teams', 'Interactive Experience Staff', 'Merchandise Staff', 'Guest Services'],
+    stats: [
+      { number: '80,000+', label: 'Attendees Per Day' },
+      { number: '3', label: 'Days of Music' },
+      { number: '5+', label: 'Stages' },
+      { number: '80+', label: 'Artists' }
+    ],
+    faqs: [
+      { question: 'What is the EDC Orlando festival environment like for staff?', answer: 'EDC Orlando runs from afternoon into the early morning hours with high-energy music, elaborate stage productions, and enthusiastic crowds. Staff should be comfortable working at night in a dynamic, loud festival environment.' },
+      { question: 'How early should we book EDC Orlando event staff?', answer: 'Book 8-10 weeks before EDC Orlando. Orlando\'s strong tourism workforce provides good talent availability, but experienced festival staff book quickly for major events.' },
+      { question: 'Can you staff overnight shifts at EDC?', answer: 'Yes, EDC programming runs late into the night. We provide shift scheduling that covers the full duration of festival operations, with appropriate breaks and rotation to maintain staff energy.' },
+      { question: 'What types of brand activations work at EDC?', answer: 'Interactive technology experiences, hydration and wellness activations, photo/video content moments, product sampling, and anything that enhances the festival experience. Authenticity is key—EDC fans respond best to brands that contribute positively to the experience.' }
+    ],
+    logisticsInfo: 'EDC Orlando takes place at Tinker Field in Orlando, FL, conveniently located near downtown Orlando with accessible parking and transportation options.',
+    relatedCitySlug: 'orlando',
+    relatedCityName: 'Orlando',
+    heroImage: '/images/events/edc-orlando.jpg'
+  },
   // ── Batch 140 ──────────────────────────────────────────────────────
   {
     slug: 'bonnaroo-music-festival',
