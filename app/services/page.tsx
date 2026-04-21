@@ -406,6 +406,31 @@ export default function Services() {
         </div>
       </section>
 
+      {/* Staffing Solutions Links */}
+      <section className="py-12 bg-gray-50 border-t border-gray-200">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Staffing Solutions</h2>
+          <div className="flex flex-wrap justify-center gap-3 mb-6">
+            <Link href="/event-staffing-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Staffing Agency</Link>
+            <Link href="/services/trade-show-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Trade Show Staffing</Link>
+            <Link href="/services/convention-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Convention Staffing</Link>
+            <Link href="/services/brand-ambassadors" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Brand Ambassadors</Link>
+            <Link href="/event-staffing-near-me" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Staffing Near Me</Link>
+            <Link href="/services/luxury-brand-marketing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Luxury Brand Marketing</Link>
+            <Link href="/services/retail-activations" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Retail Activations</Link>
+          </div>
+          <div className="flex flex-wrap justify-center gap-4 text-sm">
+            <Link href="/pricing" className="text-cyan-600 hover:text-cyan-700 font-medium">Pricing</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/technology" className="text-cyan-600 hover:text-cyan-700 font-medium">Our Technology</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-700 font-medium">Case Studies</Link>
+            <span className="text-gray-300">|</span>
+            <Link href="/compare" className="text-cyan-600 hover:text-cyan-700 font-medium">Compare Agencies</Link>
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-20 bg-primary text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
