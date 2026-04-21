@@ -157,6 +157,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/services/luxury-brand-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/services/retail-activations`, lastModified: today, changeFrequency: 'monthly', priority: 0.8 },
     { url: `${DOMAIN}/services/trade-show-staffing`, lastModified: today, changeFrequency: 'weekly', priority: 0.85 },
+    { url: `${DOMAIN}/services/food-beverage-sampling`, lastModified: today, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${DOMAIN}/event-staffing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/hire-brand-ambassadors`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/careers/experience-manager`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
@@ -175,7 +176,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   // City + service detail pages (cities/[slug]/[service]) - 8 cities × 8 services
   const cityDetailServiceSlugs = ['brand-ambassadors', 'experiential-marketing', 'street-team-marketing', 'promotional-models', 'convention-staffing', 'product-sampling', 'event-marketing', 'trade-show-marketing']
-  const cityDetailSlugs = ['new-york', 'los-angeles', 'chicago', 'miami', 'denver', 'san-francisco', 'austin', 'atlanta']
+  const cityDetailSlugs = ['new-york', 'los-angeles', 'chicago', 'miami', 'denver', 'san-francisco', 'austin', 'atlanta', 'boston', 'houston', 'philadelphia', 'new-orleans', 'orlando']
   const cityDetailServicePages: MetadataRoute.Sitemap = []
   cityDetailSlugs.forEach(city => {
     cityDetailServiceSlugs.forEach(service => {
