@@ -36,6 +36,230 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 130 ──────────────────────────────────────────────────────
+  {
+    slug: 'summerfest',
+    title: 'Summerfest Staffing | Brand Ambassadors & Event Staff in Milwaukee',
+    h1: 'Summerfest Staffing: Brand Ambassadors and Event Staff for the World\'s Largest Music Festival',
+    metaDescription: 'Summerfest staffing services provide trained brand ambassadors, promotional models, and event staff for activations at Milwaukee\'s legendary music festival. Get a free quote.',
+    city: 'Milwaukee',
+    stateAbbrev: 'WI',
+    venues: ['Henry Maier Festival Park', 'American Family Insurance Amphitheater', 'BMO Harris Pavilion', 'Miller Lite Oasis'],
+    keywords: ['Summerfest staffing', 'Milwaukee event staff', 'Summerfest brand ambassadors', 'music festival staffing Milwaukee', 'Summerfest promotional staff'],
+    description: 'Summerfest is the world\'s largest music festival, spanning 11 days across multiple stages along Milwaukee\'s lakefront. With over 800,000 attendees annually, the festival offers massive brand activation opportunities for sponsors and vendors.',
+    bodyContent: `<h2>Summerfest Staffing Services for Brands and Sponsors</h2>
+<p>Summerfest staffing requires staff who can handle the marathon nature of the world's largest music festival. Running for 11 days with over 800 musical acts across 12 stages, Summerfest attracts a diverse audience of 800,000+ attendees—making it one of the most valuable brand activation venues in the country.</p>
+<p>Air Fresh Marketing provides experienced event staff for Summerfest activations including brand ambassadors, product samplers, registration staff, and VIP hosts. Our Milwaukee-area team understands the festival's unique logistics, from the lakefront venue layout to the daily crowd flow patterns across the Henry Maier Festival Park.</p>
+<h2>Why Brands Activate at Summerfest</h2>
+<p>Unlike single-weekend festivals, Summerfest's 11-day format gives brands extended exposure and the ability to test different activation strategies across multiple days. The festival's broad demographic—families during the day, younger adults in the evening—allows brands to reach multiple audience segments with tailored messaging.</p>
+<p>Major sponsors including American Family Insurance, Miller Lite, and Harley-Davidson maintain significant activations throughout the festival, requiring dozens of trained staff per day.</p>
+<h2>Staffing Roles for Summerfest Activations</h2>
+<ul>
+<li><strong>Brand Ambassadors</strong>: Engage festival-goers at sponsor booths and experiential activations across the grounds</li>
+<li><strong>Product Samplers</strong>: Distribute food, beverage, and product samples to high-traffic areas between stages</li>
+<li><strong>VIP Hosts</strong>: Manage hospitality suites and premium areas at the American Family Insurance Amphitheater</li>
+<li><strong>Registration and Check-In Staff</strong>: Handle wristband distribution, credential verification, and entry management</li>
+<li><strong>Street Teams</strong>: Distribute promotional materials and drive traffic to sponsor activations throughout the festival park</li>
+</ul>
+<h2>Summerfest Staffing Logistics</h2>
+<p>The 11-day festival format requires careful shift planning and staff rotation. Our team manages scheduling across the full festival run, ensuring consistent brand representation without staff burnout. We coordinate parking, credential access, and break schedules to keep your activation running smoothly from gates-open to close each day.</p>`,
+    staffTypes: ['Brand Ambassadors', 'Product Samplers', 'VIP Hosts', 'Registration Staff', 'Street Teams', 'Promotional Models'],
+    stats: [
+      { value: '800K+', label: 'Annual Attendees' },
+      { value: '11', label: 'Festival Days' },
+      { value: '12', label: 'Stages' },
+      { value: '800+', label: 'Musical Acts' }
+    ],
+    faqs: [
+      { q: 'How long does Summerfest last?', a: 'Summerfest runs for 11 days, typically spanning late June through early July, with three consecutive weekends of performances.' },
+      { q: 'What types of brands activate at Summerfest?', a: 'Beverage brands, automotive companies, insurance providers, tech companies, food brands, and lifestyle companies all maintain major activations at Summerfest.' },
+      { q: 'How many staff do I need for a Summerfest activation?', a: 'Most brand activations at Summerfest require 4-10 staff per day depending on booth size and activation complexity. For the full 11-day festival, plan for rotating teams.' },
+      { q: 'When should I book Summerfest staffing?', a: 'Book staffing 6-8 weeks before the festival. Summerfest is the largest event in Milwaukee and demand for experienced event staff is extremely high.' }
+    ],
+    logisticsInfo: 'Summerfest takes place at Henry Maier Festival Park on Milwaukee\'s lakefront. Staff need festival credentials for access, and parking is available at nearby lots. The venue spans 75 acres with multiple stages, vendor areas, and sponsor activation zones.',
+    relatedCitySlug: 'milwaukee',
+    relatedCityName: 'Milwaukee',
+    heroImage: '/images/events/summerfest.jpg'
+  },
+  {
+    slug: 'governors-ball',
+    title: 'Governors Ball Staffing | Brand Ambassadors & Event Staff in NYC',
+    h1: 'Governors Ball Staffing: Brand Ambassadors and Event Staff for NYC\'s Premier Music Festival',
+    metaDescription: 'Governors Ball staffing services provide trained brand ambassadors, promotional models, and event staff for activations at NYC\'s premier music festival. Get a free quote.',
+    city: 'New York City',
+    stateAbbrev: 'NY',
+    venues: ['Flushing Meadows Corona Park', 'Queens, New York City'],
+    keywords: ['Governors Ball staffing', 'NYC music festival staff', 'Governors Ball brand ambassadors', 'Gov Ball event staffing', 'New York festival staff'],
+    description: 'Governors Ball Music Festival is New York City\'s premier outdoor music festival, attracting 150,000+ attendees over three days in Flushing Meadows Corona Park, Queens. The festival features top-tier musical acts alongside extensive food, art, and brand activations.',
+    bodyContent: `<h2>Governors Ball Staffing for Brand Activations in NYC</h2>
+<p>Governors Ball staffing connects brands with New York City's most engaged festival audience. As the city's premier outdoor music festival, Gov Ball attracts 150,000+ attendees over three days—a young, affluent, trend-setting demographic that brands across every category want to reach.</p>
+<p>Air Fresh Marketing provides professional event staff for Governors Ball sponsor activations, experiential booths, VIP areas, and promotional campaigns. Our extensive NYC talent pool ensures you get staff who understand both festival culture and brand representation.</p>
+<h2>Why Brands Choose Governors Ball</h2>
+<p>Governors Ball's location in New York City gives it a unique advantage: the audience includes not just local New Yorkers but visitors from across the tri-state area and beyond. The festival's curated food, art, and lifestyle programming attracts a premium demographic with high spending power.</p>
+<p>Brand activation space at Gov Ball is highly competitive, and sponsors invest significantly in experiential installations. Having the right staff can make the difference between a forgettable booth and a viral brand moment.</p>
+<h2>Key Staffing Roles for Governors Ball</h2>
+<ul>
+<li><strong>Brand Ambassadors</strong>: Staff experiential activations and sponsor booths with engaging, on-brand representatives</li>
+<li><strong>Product Samplers</strong>: Distribute samples of food, beverages, beauty products, and other consumer goods across festival grounds</li>
+<li><strong>VIP Concierge</strong>: Provide premium hospitality in VIP and artist areas</li>
+<li><strong>Social Media Correspondents</strong>: Capture and create real-time social content from the festival floor</li>
+<li><strong>Setup and Teardown Crews</strong>: Handle installation and breakdown of brand activations before and after the festival</li>
+</ul>
+<h2>Governors Ball Logistics and Planning</h2>
+<p>The festival's Flushing Meadows Corona Park location in Queens requires coordination with NYC event logistics—from staff transportation via subway and rideshare to credential pickup procedures. Our team manages all on-ground logistics including staff check-in, shift changes, and real-time communication across the festival grounds.</p>`,
+    staffTypes: ['Brand Ambassadors', 'Product Samplers', 'VIP Concierge', 'Social Media Staff', 'Setup Crews', 'Promotional Models'],
+    stats: [
+      { value: '150K+', label: 'Attendees' },
+      { value: '3', label: 'Festival Days' },
+      { value: '4', label: 'Stages' },
+      { value: '60+', label: 'Musical Acts' }
+    ],
+    faqs: [
+      { q: 'Where is Governors Ball held?', a: 'Governors Ball takes place at Flushing Meadows Corona Park in Queens, New York City. The park is accessible by subway (7 train) and rideshare.' },
+      { q: 'What demographics attend Governors Ball?', a: 'Gov Ball attracts a predominantly 18-35 year old audience from the NYC metro area. Attendees skew young, affluent, and trend-conscious—ideal for lifestyle, fashion, tech, and beverage brands.' },
+      { q: 'How many staff do I need for a Gov Ball activation?', a: 'Typical sponsor activations require 6-15 staff per day. Large-scale experiential installations may need 20+ staff including setup crews, brand ambassadors, and management.' },
+      { q: 'When should I book Gov Ball staffing?', a: 'Book at least 6-8 weeks in advance. NYC festival staffing is extremely competitive and the best talent books early.' }
+    ],
+    logisticsInfo: 'Governors Ball at Flushing Meadows Corona Park is accessible via the 7 subway line. Staff will need festival credentials and should plan for outdoor conditions including potential rain. The festival typically runs from noon to 10 PM each day.',
+    relatedCitySlug: 'new-york-city',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/governors-ball.jpg'
+  },
+  {
+    slug: 'art-basel-miami',
+    title: 'Art Basel Miami Staffing | Brand Ambassadors & Event Staff in Miami',
+    h1: 'Art Basel Miami Staffing: Brand Ambassadors and Event Staff for the World\'s Premier Art Fair',
+    metaDescription: 'Art Basel Miami staffing services provide trained brand ambassadors, promotional models, and event staff for activations during Miami Art Week. Get a free quote.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Miami Beach Convention Center', 'Wynwood Arts District', 'Design District', 'Collins Park'],
+    keywords: ['Art Basel Miami staffing', 'Miami Art Week event staff', 'Art Basel brand ambassadors', 'Miami art fair staffing', 'Art Basel promotional models'],
+    description: 'Art Basel Miami Beach is the premier international art fair in the Americas, drawing 80,000+ collectors, artists, and cultural influencers to Miami Beach each December. The event anchors Miami Art Week, a citywide celebration of art, design, and culture.',
+    bodyContent: `<h2>Art Basel Miami Staffing for Luxury Brand Activations</h2>
+<p>Art Basel Miami staffing demands a unique caliber of event professional. As the premier international art fair in the Americas, Art Basel Miami Beach attracts 80,000+ high-net-worth collectors, gallery owners, artists, and cultural influencers—one of the most affluent and discerning audiences at any event worldwide.</p>
+<p>Air Fresh Marketing provides sophisticated event staff for Art Basel activations, satellite events, gallery openings, brand pop-ups, and VIP experiences throughout Miami Art Week. Our Miami team includes multilingual staff fluent in the art world's language and expectations.</p>
+<h2>Miami Art Week: Beyond the Convention Center</h2>
+<p>While Art Basel Miami Beach is the anchor event at the Miami Beach Convention Center, Art Week encompasses dozens of satellite fairs, gallery openings, brand pop-ups, and private events across Miami. Brands activate everywhere from Wynwood to the Design District to South Beach—each venue requiring staff who match its specific vibe and audience.</p>
+<p>Key satellite events include SCOPE, UNTITLED, NADA, Art Miami, and Design Miami—each attracting their own collector audiences and brand activation opportunities.</p>
+<h2>Staffing Roles for Art Basel Miami</h2>
+<ul>
+<li><strong>VIP Hosts and Concierge</strong>: Manage exclusive viewing rooms, collector lounges, and private event spaces with five-star hospitality</li>
+<li><strong>Brand Ambassadors</strong>: Represent luxury brands at pop-up activations throughout Miami Art Week</li>
+<li><strong>Gallery Assistants</strong>: Support gallery booths with visitor engagement, artwork information, and collector services</li>
+<li><strong>Registration Staff</strong>: Handle credential verification and VIP check-in at the convention center and satellite events</li>
+<li><strong>Promotional Models</strong>: Create visual impact at brand parties, product launches, and nightlife events during Art Week</li>
+</ul>
+<h2>What Makes Art Basel Staffing Different</h2>
+<p>Art Basel events demand staff who can hold conversations about contemporary art, luxury products, and cultural trends. Generic event staff feel immediately out of place in this environment. Our recruitment process for Art Basel specifically screens for cultural literacy, multilingual capabilities (Spanish, Portuguese, and French are especially valuable in Miami), and the polished presentation expected at luxury events.</p>`,
+    staffTypes: ['VIP Hosts', 'Brand Ambassadors', 'Gallery Assistants', 'Registration Staff', 'Promotional Models', 'Concierge'],
+    stats: [
+      { value: '80K+', label: 'Attendees' },
+      { value: '5', label: 'Event Days' },
+      { value: '280+', label: 'Galleries' },
+      { value: '30+', label: 'Satellite Fairs' }
+    ],
+    faqs: [
+      { q: 'When is Art Basel Miami?', a: 'Art Basel Miami Beach takes place annually in early December, typically the first full week of the month. Miami Art Week surrounding events run for approximately 10 days.' },
+      { q: 'What type of staff do brands need for Art Basel?', a: 'Art Basel demands sophisticated, culturally literate staff. VIP hosts, multilingual brand ambassadors, and gallery-experienced assistants are most in demand. Standard promotional staff feel out of place at this event.' },
+      { q: 'How early should I book Art Basel staffing?', a: 'Book Art Basel staffing 8-12 weeks in advance. December in Miami is peak season for events, and the most qualified luxury event staff book early.' },
+      { q: 'Do staff need art world knowledge?', a: 'Yes. Staff should be comfortable discussing contemporary art, design trends, and luxury lifestyle topics. We specifically recruit and train staff for Art Basel\'s unique environment.' }
+    ],
+    logisticsInfo: 'Art Basel Miami Beach is centered at the Miami Beach Convention Center with satellite events across Wynwood, Design District, and South Beach. Staff should be prepared for both indoor gallery environments and outdoor Miami weather. Multilingual capabilities (Spanish, Portuguese, French) are highly valued.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/events/art-basel-miami.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'san-diego-county-fair',
+    title: 'San Diego County Fair Staffing | Brand Ambassadors & Event Staff',
+    h1: 'San Diego County Fair Staffing: Brand Ambassadors and Event Staff for Southern California\'s Biggest Fair',
+    metaDescription: 'San Diego County Fair staffing services provide trained brand ambassadors, promotional models, and event staff for activations at the Del Mar Fairgrounds. Get a free quote.',
+    city: 'Del Mar',
+    stateAbbrev: 'CA',
+    venues: ['Del Mar Fairgrounds', 'Del Mar Arena', 'Grandstand Stage', 'Exhibit Halls'],
+    keywords: ['San Diego County Fair staffing', 'Del Mar Fair event staff', 'San Diego fair brand ambassadors', 'county fair staffing California', 'Del Mar Fairgrounds staff'],
+    description: 'The San Diego County Fair is one of the largest county fairs in the United States, attracting over 1.5 million visitors across its month-long run at the Del Mar Fairgrounds. The fair features rides, concerts, food, exhibits, and extensive brand activation opportunities.',
+    bodyContent: `<h2>San Diego County Fair Staffing for Brands and Exhibitors</h2>
+<p>San Diego County Fair staffing is essential for brands looking to reach Southern California consumers at one of the nation's largest county fairs. With over 1.5 million visitors across its month-long run at the Del Mar Fairgrounds, the fair offers unmatched extended exposure for brand activations, product sampling, and exhibitor support.</p>
+<p>Air Fresh Marketing provides professional event staff for San Diego County Fair activations including brand ambassadors, product demonstrators, booth staff, and promotional teams. Our San Diego-based talent pool ensures reliable, experienced staff throughout the fair's extended schedule.</p>
+<h2>Why the San Diego County Fair Is a Brand Activation Goldmine</h2>
+<p>The month-long format of the San Diego County Fair creates an opportunity unlike any weekend festival. Brands can test messaging, rotate products, and optimize their activation strategy across 20+ operating days. The fair's family-friendly atmosphere and diverse attendance—from young families to seniors—allows brands to reach multiple demographic segments.</p>
+<p>The fair's themed exhibits, concert series, and food competitions create natural foot traffic patterns that experienced brands leverage for maximum sampling and engagement impact.</p>
+<h2>Key Staffing Roles for the San Diego County Fair</h2>
+<ul>
+<li><strong>Brand Ambassadors</strong>: Engage fair-goers at exhibitor booths and sponsor activations across the fairgrounds</li>
+<li><strong>Product Samplers</strong>: Distribute food, beverage, and consumer product samples in high-traffic areas</li>
+<li><strong>Demo Specialists</strong>: Operate product demonstration stations for exhibitors in the exhibit halls</li>
+<li><strong>Ticket and Registration Staff</strong>: Support entry gate operations, will-call, and special event ticket sales</li>
+<li><strong>Survey and Data Capture Staff</strong>: Collect consumer data, conduct market research surveys, and manage contest entries</li>
+</ul>
+<h2>Managing Month-Long Staffing at Del Mar</h2>
+<p>The San Diego County Fair's extended schedule requires a different staffing strategy than weekend events. We build rotating teams that maintain consistency while preventing staff fatigue, coordinate shift scheduling across the full fair run, and provide on-site management to ensure quality remains high from opening day through the final weekend.</p>`,
+    staffTypes: ['Brand Ambassadors', 'Product Samplers', 'Demo Specialists', 'Registration Staff', 'Survey Staff', 'Promotional Models'],
+    stats: [
+      { value: '1.5M+', label: 'Annual Visitors' },
+      { value: '30', label: 'Fair Days' },
+      { value: '100+', label: 'Rides & Attractions' },
+      { value: '500+', label: 'Exhibitors' }
+    ],
+    faqs: [
+      { q: 'How long does the San Diego County Fair run?', a: 'The San Diego County Fair runs for approximately one month, typically from early June through the Fourth of July weekend. It operates Wednesday through Sunday each week.' },
+      { q: 'Where is the San Diego County Fair held?', a: 'The fair takes place at the Del Mar Fairgrounds in Del Mar, California, located along the coast between San Diego and Carlsbad.' },
+      { q: 'How many staff do I need for a county fair activation?', a: 'For the full fair run, plan for 3-6 staff per operating day with rotating teams. Weekend days require more staff than weekdays due to higher attendance.' },
+      { q: 'What types of brands activate at county fairs?', a: 'Food and beverage brands, home improvement companies, automotive dealers, insurance providers, health and wellness brands, and local businesses all maintain successful activations at the San Diego County Fair.' }
+    ],
+    logisticsInfo: 'The Del Mar Fairgrounds is located at 2260 Jimmy Durante Blvd, Del Mar, CA. Staff parking is available in designated lots. The fair operates Wednesday through Sunday during its run, with extended hours on weekends and holidays. Summer heat requires staff to stay hydrated and protected from sun exposure.',
+    relatedCitySlug: 'san-diego',
+    relatedCityName: 'San Diego',
+    heroImage: '/images/events/san-diego-county-fair.jpg'
+  },
+  {
+    slug: 'lollapalooza',
+    title: 'Lollapalooza Staffing | Brand Ambassadors & Event Staff in Chicago',
+    h1: 'Lollapalooza Staffing: Brand Ambassadors and Event Staff for Chicago\'s Iconic Music Festival',
+    metaDescription: 'Lollapalooza staffing services provide trained brand ambassadors, promotional models, and event staff for activations at Chicago\'s Grant Park festival. Get a free quote.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['Grant Park', 'Bud Light Stage', 'T-Mobile Stage', 'Perry\'s Stage', 'Lakeshore Stage'],
+    keywords: ['Lollapalooza staffing', 'Chicago festival event staff', 'Lollapalooza brand ambassadors', 'Lolla staffing services', 'Chicago music festival staff'],
+    description: 'Lollapalooza is one of the most iconic music festivals in the world, drawing 400,000+ attendees over four days in downtown Chicago\'s Grant Park. The festival features 170+ acts across multiple stages alongside extensive brand activations and sponsor experiences.',
+    bodyContent: `<h2>Lollapalooza Staffing for Brands and Sponsors</h2>
+<p>Lollapalooza staffing is critical for brands activating at one of the world's most prestigious music festivals. With 400,000+ attendees across four days in Chicago's Grant Park, Lolla offers unparalleled brand exposure to a young, trend-setting audience in the heart of downtown Chicago.</p>
+<p>Air Fresh Marketing provides professional event staff for Lollapalooza sponsor activations, experiential booths, VIP areas, and promotional campaigns. Our Chicago talent pool includes experienced festival staff who understand the unique demands of Grant Park's urban festival environment.</p>
+<h2>Why Lollapalooza Is a Must for Brand Activations</h2>
+<p>Lollapalooza's downtown Chicago location sets it apart from rural festival settings. Attendees have easy access via public transit, nearby hotels, and downtown restaurants—creating a festival experience that extends beyond the park gates. This urban context means brands can extend their activations to surrounding venues, hotels, and afterparties.</p>
+<p>The festival's 18-34 core demographic, combined with its cultural significance and massive social media footprint (billions of social impressions annually), makes Lollapalooza one of the highest-ROI brand activation opportunities in the festival circuit.</p>
+<h2>Key Staffing Roles for Lollapalooza</h2>
+<ul>
+<li><strong>Brand Ambassadors</strong>: Represent sponsors at experiential activations throughout Grant Park's festival grounds</li>
+<li><strong>Product Samplers</strong>: Distribute beverages, snacks, and consumer products in high-traffic zones between stages</li>
+<li><strong>VIP and Platinum Hosts</strong>: Provide premium hospitality in Lollapalooza's tiered VIP areas</li>
+<li><strong>Street Teams</strong>: Drive awareness and booth traffic with roaming promotional teams across the festival grounds</li>
+<li><strong>Social Media Content Creators</strong>: Capture real-time content from activations for brand social channels</li>
+<li><strong>Setup and Teardown Crews</strong>: Build and break down brand installations before and after the four-day festival</li>
+</ul>
+<h2>Lollapalooza Staffing Logistics</h2>
+<p>Grant Park's downtown location creates unique logistics considerations. Staff must navigate public transit, street closures, and credential checkpoints to reach their positions. Our operations team manages all check-in logistics, provides real-time communication via group messaging, and coordinates shift changes across the massive festival grounds. We also handle weather contingency planning—Chicago summer weather can shift quickly, and outdoor activations need to be prepared for heat, rain, and wind off Lake Michigan.</p>`,
+    staffTypes: ['Brand Ambassadors', 'Product Samplers', 'VIP Hosts', 'Street Teams', 'Social Media Staff', 'Setup Crews'],
+    stats: [
+      { value: '400K+', label: 'Attendees' },
+      { value: '4', label: 'Festival Days' },
+      { value: '9', label: 'Stages' },
+      { value: '170+', label: 'Musical Acts' }
+    ],
+    faqs: [
+      { q: 'Where is Lollapalooza held?', a: 'Lollapalooza takes place in Grant Park in downtown Chicago, Illinois. The festival grounds span the southern portion of the park along Lake Michigan.' },
+      { q: 'How many people attend Lollapalooza?', a: 'Lollapalooza draws approximately 100,000 attendees per day, totaling over 400,000 across the four-day festival.' },
+      { q: 'What brands typically activate at Lollapalooza?', a: 'Major sponsors include T-Mobile, Bud Light, Tito\'s Vodka, Samsung, and numerous fashion, beauty, and lifestyle brands. Competition for activation space is intense.' },
+      { q: 'When should I book Lollapalooza staffing?', a: 'Book staffing 8-10 weeks in advance. Lollapalooza is the largest event in Chicago and experienced festival staff are in extremely high demand.' }
+    ],
+    logisticsInfo: 'Lollapalooza is held in Grant Park, downtown Chicago. Staff access the festival via CTA public transit (closest stops: Roosevelt, Harrison, or Michigan Ave bus routes). No staff parking is available near Grant Park. Festival hours typically run 11 AM to 10 PM. Chicago weather in late July/early August can be hot and humid with potential thunderstorms.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/events/lollapalooza.jpg',
+    isFeatured: true
+  },
   // ── Batch 125 ──────────────────────────────────────────────────────
   {
     slug: "e3",

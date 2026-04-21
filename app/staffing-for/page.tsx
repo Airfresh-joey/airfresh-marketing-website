@@ -37,7 +37,7 @@ export default function EventStaffingIndex() {
     ['nrf-big-show', 'natural-products-expo', 'la-auto-show', 'detroit-auto-show', 'art-basel-miami', 'sema', 'magic-las-vegas', 'nab-show', 'cedia-expo', 'new-york-auto-show', 'chicago-auto-show', 'nra-show', 'namm-show', 'arnold-sports-festival'].includes(e.slug)
   );
   const foodCulture = eventPages.filter(e =>
-    ['taste-of-chicago', 'south-beach-wine-food-festival', 'essence-fest', 'essence-festival', 'nyfw', 'new-york-fashion-week', 'tribeca-festival', 'sundance-film-festival', 'burning-man', 'miami-art-week', 'stagecoach', 'mardi-gras', 'rose-bowl', 'houston-rodeo'].includes(e.slug)
+    ['taste-of-chicago', 'south-beach-wine-food-festival', 'essence-fest', 'essence-festival', 'nyfw', 'new-york-fashion-week', 'tribeca-festival', 'sundance-film-festival', 'burning-man', 'miami-art-week', 'stagecoach', 'mardi-gras', 'rose-bowl', 'houston-rodeo', 'san-diego-county-fair'].includes(e.slug)
   );
   const sportsMajor = eventPages.filter(e =>
     ['super-bowl', 'nba-all-star', 'f1-las-vegas', 'miami-grand-prix', 'kentucky-derby', 'nfl-draft', 'pga-tour', 'world-cup-2026', 'daytona-500', 'indy-500'].includes(e.slug)
