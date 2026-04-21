@@ -540,8 +540,13 @@ export default function Home() {
               <Link href="/staffing-for/detroit-auto-show" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Detroit Auto Show</Link>
               <Link href="/staffing-for/himss" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">HIMSS</Link>
               <Link href="/staffing-for/kcon-la" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">KCON LA</Link>
+              <Link href="/staffing-for/sdcc" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">San Diego Comic-Con</Link>
+              <Link href="/staffing-for/nba-all-star" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">NBA All-Star</Link>
+              <Link href="/staffing-for/kentucky-derby" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Kentucky Derby</Link>
+              <Link href="/staffing-for/nfl-draft" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">NFL Draft</Link>
+              <Link href="/staffing-for/e3" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">E3 / Summer Game Fest</Link>
             </div>
-            <Link href="/events" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
+            <Link href="/staffing-for" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
               View All Events <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
