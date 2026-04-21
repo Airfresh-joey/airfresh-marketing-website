@@ -152,8 +152,31 @@ export default function TeamPage() {
         </div>
       </section>
 
-      {/* Team Values Section */}
+      {/* Our Approach Section */}
       <section className="py-20 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-3xl md:text-4xl font-bold mb-6 text-center text-gray-900">
+            Experiential Marketing Team Built for Results
+          </h2>
+          <div className="prose prose-lg max-w-none text-gray-700">
+            <p>
+              Since 2004, our experiential marketing team has managed thousands of brand activations for companies ranging from Fortune 500 corporations to high-growth startups. What sets the AirFresh leadership team apart is our hands-on approach — every campaign is personally overseen by senior team members who understand both the strategic and operational sides of experiential marketing.
+            </p>
+            <p>
+              Our team&apos;s expertise spans the full spectrum of event staffing and brand activation: from product sampling programs at major retailers like Costco and Whole Foods, to large-scale experiential campaigns at music festivals, sporting events, and trade shows. We&apos;ve built a proprietary technology platform with GPS-verified check-ins and video training certification that ensures consistent quality across every market we serve.
+            </p>
+            <p>
+              Joey Kercher founded AirFresh Marketing with the belief that brand activations should be measurable, accountable, and genuinely engaging. That philosophy drives everything our team does today. We don&apos;t just provide staff — we design experiences that create lasting connections between brands and consumers. Our team has delivered campaigns for Netflix, Microsoft, Google, Formula One, MAC Cosmetics, and hundreds of other brands that demand excellence.
+            </p>
+            <p>
+              Every member of our leadership team brings deep expertise in event logistics, talent management, and marketing strategy. Combined with our network of 500+ trained brand ambassadors across all 50 states, we have the bench strength to execute campaigns of any scale, in any market, on any timeline.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Team Values Section */}
+      <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-sm font-semibold text-cyan-600 uppercase tracking-wide mb-4">OUR VALUES</h2>
@@ -182,7 +205,7 @@ export default function TeamPage() {
       </section>
 
       {/* Brand Ambassador Network Section */}
-      <section className="py-20 bg-white">
+      <section className="py-20 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div>
