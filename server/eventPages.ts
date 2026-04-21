@@ -36,6 +36,267 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 160 ──────────────────────────────────────────────────────
+  {
+    slug: 'kentucky-derby',
+    title: 'Kentucky Derby Staffing | Event Staff for the Run for the Roses at Churchill Downs',
+    h1: 'Kentucky Derby Event Staffing Services',
+    metaDescription: 'Kentucky Derby event staffing for hospitality tents, Millionaires Row, infield activations, and VIP experiences at Churchill Downs in Louisville, Kentucky.',
+    city: 'Louisville',
+    stateAbbrev: 'KY',
+    venues: ['Churchill Downs', 'Louisville Slugger Field', 'Kentucky Exposition Center'],
+    keywords: ['Kentucky Derby staffing', 'Churchill Downs event staff', 'Derby Day staffing', 'horse racing event staff'],
+    description: 'The Kentucky Derby is the most prestigious horse racing event in America, drawing over 150,000 spectators to Churchill Downs on the first Saturday in May. Air Fresh Marketing provides premium event staff for Millionaires Row hospitality suites, infield brand activations, sponsor pavilions, celebrity after-parties, and the full two-week Kentucky Derby Festival leading up to race day.',
+    bodyContent: `## Why the Kentucky Derby Demands Premium Event Staffing
+
+The Kentucky Derby is far more than a horse race—it is a cultural institution that blends athletic competition with high fashion, Southern hospitality, and corporate entertainment at the highest level. Churchill Downs transforms into a massive entertainment complex requiring hundreds of professional staff across distinct venue zones, each with unique service standards and guest expectations.
+
+## Millionaires Row and Premium Hospitality
+
+Millionaires Row represents the pinnacle of Derby Day hospitality, requiring staff who deliver white-glove service to corporate executives, celebrities, and high-net-worth guests. Event staffing professionals manage private suite service, premium bar programs featuring mint juleps and bourbon tastings, and multi-course dining experiences. Staff in these areas must present impeccably and understand the social dynamics of elite corporate entertaining.
+
+## Infield Operations and Brand Activations
+
+The Churchill Downs infield hosts a distinctly different atmosphere, featuring brand activations, concert stages, and casual entertainment targeting younger demographics. Event staffing teams manage sponsor activation booths, beverage distribution across massive crowd zones, and crowd management for infield concert performances. Staff must maintain high energy throughout full-day events in outdoor conditions.
+
+## Derby Festival Event Staffing
+
+The two-week Kentucky Derby Festival preceding race day includes Thunder Over Louisville, the Pegasus Parade, Taste of Derby, and dozens of corporate events. Event staffing professionals support this extended celebration series, providing consistent brand representation across multiple venues and event formats throughout downtown Louisville.
+
+## Fashion and Guest Experience Enhancement
+
+Derby Day's famous fashion culture requires staff who complement the event's sartorial tradition. Event staffing professionals stationed throughout Churchill Downs assist with hat contest registration, photography experiences, and fashion-themed sponsor activations. Staff understanding of Derby etiquette and traditions enhances the authentic cultural experience guests expect.`,
+    staffTypes: [
+      { title: 'VIP Suite Attendants', description: 'White-glove hospitality service for Millionaires Row suites and premium boxes' },
+      { title: 'Brand Ambassadors', description: 'Engaging infield activation staff for sponsor experiences and product sampling' },
+      { title: 'Beverage Specialists', description: 'Expert bartenders crafting mint juleps and premium bourbon cocktails' },
+      { title: 'Guest Services Staff', description: 'Wayfinding, information, and guest experience enhancement across venue zones' }
+    ],
+    stats: [
+      { value: '150,000+', label: 'Derby Day Attendance' },
+      { value: '14', label: 'Days of Derby Festival' },
+      { value: '$3.5B', label: 'Estimated Economic Impact' },
+      { value: '149', label: 'Years of Tradition' }
+    ],
+    faqs: [
+      { question: 'When should I book Kentucky Derby event staffing?', answer: 'Book Derby staffing at least 3-4 months in advance. Premium hospitality positions fill quickly due to the prestige and compensation levels associated with this iconic event.' },
+      { question: 'What dress code applies to Derby event staff?', answer: 'Staff dress codes vary by zone—Millionaires Row requires formal attire, while infield activations allow branded casual wear. All staff should complement the Derby fashion atmosphere.' },
+      { question: 'Do you staff the full Derby Festival or just race day?', answer: 'Air Fresh Marketing provides event staff for the entire two-week Kentucky Derby Festival, including Thunder Over Louisville, the Pegasus Parade, and all associated corporate events.' }
+    ],
+    logisticsInfo: 'Churchill Downs is located in Louisville, Kentucky with limited parking requiring staff shuttle coordination from designated lots. Staff must arrive 2-3 hours before gates open for security screening and position assignment.',
+    relatedCitySlug: 'louisville',
+    relatedCityName: 'Louisville',
+    heroImage: '/images/events/kentucky-derby.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'san-diego-comic-con',
+    title: 'San Diego Comic-Con Staffing | Event Staff for SDCC at the Convention Center',
+    h1: 'San Diego Comic-Con Event Staffing Services',
+    metaDescription: 'San Diego Comic-Con event staffing for exhibitor booths, panel management, offsite activations, and brand experiences throughout SDCC week in the Gaslamp Quarter.',
+    city: 'San Diego',
+    stateAbbrev: 'CA',
+    venues: ['San Diego Convention Center', 'Gaslamp Quarter', 'Petco Park'],
+    keywords: ['Comic-Con staffing', 'SDCC event staff', 'San Diego Comic-Con staffing', 'convention staffing'],
+    description: 'San Diego Comic-Con is the largest pop culture convention in the world, transforming downtown San Diego into an entertainment industry epicenter every July. Air Fresh Marketing provides expert event staff for exhibit hall booths, Hall H panel operations, Gaslamp Quarter offsite activations, and the massive brand experiences that surround this 130,000+ attendee mega-event.',
+    bodyContent: `## Why San Diego Comic-Con Demands Specialized Event Staffing
+
+San Diego Comic-Con is unlike any other convention—it is the global nexus of entertainment marketing where studios, publishers, gaming companies, and brands compete for the attention of the most passionate fans on earth. The intensity, scale, and cultural significance of SDCC demand event staff who understand fandom culture, can manage extreme crowd density, and deliver brand experiences that generate viral social media moments.
+
+## Exhibit Hall Booth Staffing
+
+The SDCC exhibit hall spans over 460,000 square feet of booth space where major entertainment brands create elaborate interactive experiences. Event staffing professionals manage booth traffic flow, operate interactive displays, distribute exclusive merchandise, and engage attendees in brand storytelling. Staff with pop culture knowledge and genuine enthusiasm create authentic connections that convention-savvy attendees appreciate.
+
+## Hall H and Panel Management
+
+Hall H, the legendary 6,500-seat presentation venue, requires specialized staffing for queue management, attendee screening, and panel production support. Event staffing teams manage the notorious Hall H line that forms days in advance, coordinate seat-filling operations, and support production crews during major studio presentations. Staff must handle the intense fan enthusiasm these panels generate.
+
+## Gaslamp Quarter Offsite Activations
+
+The Gaslamp Quarter transforms during SDCC week into an extended convention space featuring brand pop-ups, experiential activations, and immersive installations. Event staffing professionals manage street-level activations, rooftop party experiences, and interactive installations spread across multiple city blocks. Offsite staff navigate intense pedestrian traffic while delivering compelling brand experiences.
+
+## Exclusive Merchandise and Queue Management
+
+SDCC exclusives drive intense demand requiring sophisticated queue management staffing. Event staffing teams operate lottery systems, manage purchase limits, and coordinate distribution for convention exclusives that fans travel across the world to obtain. Professional queue management prevents dangerous crowd situations while maintaining positive fan experiences during high-demand drops.`,
+    staffTypes: [
+      { title: 'Booth Experience Staff', description: 'Pop culture-savvy staff operating interactive exhibits and engaging convention attendees' },
+      { title: 'Queue Management Teams', description: 'Professional line management for Hall H, exclusives, and high-demand activations' },
+      { title: 'Brand Ambassadors', description: 'Enthusiastic representatives for offsite activations and Gaslamp Quarter experiences' },
+      { title: 'Production Support', description: 'Panel and presentation support for studio showcases and media events' }
+    ],
+    stats: [
+      { value: '130,000+', label: 'Annual Attendees' },
+      { value: '460,000', label: 'Exhibit Hall Square Feet' },
+      { value: '4', label: 'Days of Programming' },
+      { value: '$180M+', label: 'Economic Impact' }
+    ],
+    faqs: [
+      { question: 'How far in advance should I book SDCC event staffing?', answer: 'Book San Diego Comic-Con staffing 4-6 months in advance. Experienced convention staff are in extreme demand during SDCC week, and premium talent books early.' },
+      { question: 'Do your staff need pop culture knowledge for SDCC?', answer: 'We specifically recruit staff with genuine pop culture enthusiasm for SDCC activations. Authenticity is critical—Comic-Con attendees immediately recognize staff who lack cultural fluency.' },
+      { question: 'Can you staff offsite SDCC activations outside the convention center?', answer: 'Absolutely. We staff activations throughout the Gaslamp Quarter, Petco Park area, and hotel event spaces that are integral to the SDCC experience.' }
+    ],
+    logisticsInfo: 'San Diego Convention Center is located downtown adjacent to the Gaslamp Quarter. Staff should use public transit or designated parking as road closures affect the area during SDCC week.',
+    relatedCitySlug: 'san-diego',
+    relatedCityName: 'San Diego',
+    heroImage: '/images/events/san-diego-comic-con.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'burning-man',
+    title: 'Burning Man Staffing | Event Staff for Black Rock City in the Nevada Desert',
+    h1: 'Burning Man Event Staffing Services',
+    metaDescription: 'Burning Man event staffing for corporate camps, branded experiences, art installations, and hospitality operations at Black Rock City in the Nevada desert.',
+    city: 'Black Rock City',
+    stateAbbrev: 'NV',
+    venues: ['Black Rock Desert', 'The Playa', 'Center Camp'],
+    keywords: ['Burning Man staffing', 'Black Rock City event staff', 'festival staffing Nevada', 'desert event staffing'],
+    description: 'Burning Man transforms the Nevada desert into Black Rock City, a temporary metropolis of 80,000+ participants focused on art, community, and radical self-expression. Air Fresh Marketing provides specialized event staff for corporate-sponsored camps, branded art installations, hospitality operations, and the growing infrastructure of professional services supporting this iconic gathering.',
+    bodyContent: `## Why Burning Man Requires Specialized Desert Event Staffing
+
+Burning Man presents the most extreme staffing environment in the events industry—a week-long gathering in the harsh Nevada desert where temperatures swing from over 100°F to below freezing, dust storms can occur at any moment, and the nearest city is hours away. Professional event staffing for Burning Man demands staff with extreme environmental resilience, self-sufficiency training, and cultural awareness of the event's unique principles.
+
+## Corporate Camp and Turnkey Operations
+
+The growth of corporate-sponsored camps at Burning Man has created demand for professional event staff managing hospitality operations, catering services, and guest experience coordination. Event staffing professionals support turnkey camp operations that allow corporate guests to experience Burning Man while enjoying premium amenities. Staff must balance professional service delivery with authentic participation in Playa culture.
+
+## Art Installation and Infrastructure Support
+
+Burning Man's massive art installations require support crews for construction, operation, and decommission during the event. Event staffing teams assist artists with installation logistics, manage interactive art experiences for visitors, and coordinate the Leave No Trace cleanup that is fundamental to Burning Man's environmental commitment. Staff must be physically capable and comfortable working in extreme desert conditions.
+
+## Desert Environment Safety and Logistics
+
+The Black Rock Desert environment demands extraordinary logistical preparation from event staffing teams. Staff require comprehensive orientation on heat illness prevention, dust storm protocols, hydration management, and navigation in a city with no permanent landmarks. Event staffing professionals must arrive self-sufficient with food, water, shelter, and supplies for the entire event duration.
+
+## Leave No Trace and MOOP Management
+
+Burning Man's radical environmental commitment requires dedicated cleanup staffing. Event staffing teams implement Matter Out Of Place (MOOP) protocols, manage camp teardown operations, and conduct detailed site inspection ensuring zero environmental impact. Professional MOOP management protects camp placement lottery positions for future events, making thorough cleanup a business-critical staffing function.`,
+    staffTypes: [
+      { title: 'Camp Operations Staff', description: 'Hospitality professionals managing corporate camp logistics and guest experiences' },
+      { title: 'Art Installation Crew', description: 'Physically capable support staff for art construction, operation, and decommission' },
+      { title: 'Safety and Logistics Team', description: 'Desert-trained staff managing hydration, weather response, and emergency coordination' },
+      { title: 'MOOP and Cleanup Crew', description: 'Leave No Trace specialists ensuring zero environmental impact post-event' }
+    ],
+    stats: [
+      { value: '80,000+', label: 'Annual Participants' },
+      { value: '7', label: 'Days on the Playa' },
+      { value: '5 sq mi', label: 'Black Rock City Size' },
+      { value: '10', label: 'Guiding Principles' }
+    ],
+    faqs: [
+      { question: 'How do I staff a corporate camp at Burning Man?', answer: 'Contact us 6+ months before the event. Burning Man staffing requires extensive preparation including ticket acquisition, equipment logistics, and staff orientation on Playa culture and survival skills.' },
+      { question: 'Do event staff need Burning Man tickets?', answer: 'Yes, all staff require Burning Man tickets. We coordinate ticket acquisition through official channels and turnkey camp partnerships as part of our staffing service.' },
+      { question: 'What makes Burning Man staffing different from other festivals?', answer: 'Burning Man requires complete self-sufficiency, extreme weather preparation, cultural fluency with the Ten Principles, and Leave No Trace compliance—far beyond typical festival staffing requirements.' }
+    ],
+    logisticsInfo: 'Black Rock City is located approximately 120 miles north of Reno, Nevada. Staff must arrive self-sufficient and complete comprehensive desert survival orientation before deployment.',
+    relatedCitySlug: 'reno',
+    relatedCityName: 'Reno',
+    heroImage: '/images/events/burning-man.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'rose-bowl',
+    title: 'Rose Bowl Staffing | Event Staff for the Granddaddy of Them All in Pasadena',
+    h1: 'Rose Bowl Event Staffing Services',
+    metaDescription: 'Rose Bowl event staffing for game day hospitality, Rose Parade operations, tailgate management, and corporate events at the Rose Bowl Stadium in Pasadena, California.',
+    city: 'Pasadena',
+    stateAbbrev: 'CA',
+    venues: ['Rose Bowl Stadium', 'Colorado Boulevard', 'Brookside Golf Club'],
+    keywords: ['Rose Bowl staffing', 'Rose Parade event staff', 'Pasadena event staffing', 'college football staffing'],
+    description: 'The Rose Bowl Game and Tournament of Roses Parade represent one of America\'s most cherished New Year\'s Day traditions, drawing over 700,000 parade spectators and 90,000+ stadium attendees to Pasadena. Air Fresh Marketing provides professional event staff for Rose Bowl game day hospitality, Rose Parade route operations, corporate viewing parties, and the celebration events surrounding this iconic January tradition.',
+    bodyContent: `## Why the Rose Bowl Demands Championship-Level Event Staffing
+
+The Rose Bowl is the most storied venue in college football, hosting the "Granddaddy of Them All" alongside major concerts, FIFA matches, and special events throughout the year. Combined with the Tournament of Roses Parade, the Rose Bowl creates a multi-day staffing demand that spans parade route management, stadium hospitality, corporate entertaining, and New Year's celebration events across Pasadena.
+
+## Game Day Stadium Hospitality
+
+Rose Bowl Stadium game day operations require hundreds of event staff across hospitality suites, premium seating areas, and general admission zones. Event staffing professionals manage corporate suite service, premium concourse experiences, and sponsor activation zones. Staff must deliver exceptional service while managing the excitement and crowd energy of a major college football championship environment.
+
+## Tournament of Roses Parade Operations
+
+The Rose Parade along Colorado Boulevard requires massive staffing for grandstand management, route safety, and spectator services along the 5.5-mile route. Event staffing teams manage ticketed grandstand seating, coordinate with parade officials on route clearance, and provide information services to the hundreds of thousands of spectators lining the boulevard. Staff work overnight shifts as spectators camp along the route.
+
+## Tailgate and Pre-Game Experience
+
+The Rose Bowl's expansive grounds host elaborate tailgate operations requiring professional management. Event staffing professionals coordinate reserved tailgate zones, manage sponsor activation areas in Lot H and surrounding spaces, and provide guest services throughout the pre-game experience. Staff ensure tailgate operations comply with venue policies while maximizing fan enjoyment.
+
+## Corporate Event and Concert Staffing
+
+Beyond the annual bowl game, Rose Bowl Stadium hosts major concerts, international soccer matches, and corporate events throughout the year. Event staffing teams provide versatile support across these diverse event formats, adapting service approaches to match the specific audience and atmosphere of each production while maintaining the venue's prestigious standards.`,
+    staffTypes: [
+      { title: 'Stadium Hospitality Staff', description: 'Premium suite and concourse service professionals for game day experiences' },
+      { title: 'Parade Route Operations', description: 'Grandstand management and spectator services along the 5.5-mile parade route' },
+      { title: 'Tailgate Management', description: 'Pre-game experience coordination and sponsor activation support' },
+      { title: 'Guest Services Team', description: 'Wayfinding, information, and fan experience staff across venue zones' }
+    ],
+    stats: [
+      { value: '90,000+', label: 'Stadium Capacity' },
+      { value: '700,000+', label: 'Parade Spectators' },
+      { value: '110+', label: 'Years of Tradition' },
+      { value: '5.5 mi', label: 'Parade Route Length' }
+    ],
+    faqs: [
+      { question: 'When should I book Rose Bowl event staffing?', answer: 'Book Rose Bowl and Rose Parade staffing by October at the latest. New Year\'s Day events compete with other holiday celebrations for experienced event staff.' },
+      { question: 'Do you staff both the parade and the game?', answer: 'Yes, Air Fresh Marketing provides integrated staffing for both the Tournament of Roses Parade and the Rose Bowl Game, with staff positioned at parade grandstands and stadium operations.' },
+      { question: 'Can you staff non-football events at the Rose Bowl?', answer: 'Absolutely. We provide event staffing for concerts, FIFA matches, college football regular season, and corporate events held at Rose Bowl Stadium throughout the year.' }
+    ],
+    logisticsInfo: 'Rose Bowl Stadium is located in Pasadena, California. New Year\'s Day events require overnight staff deployment. Parking is extremely limited—staff must use shuttle services from designated staging areas.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/rose-bowl.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'nba-all-star-weekend',
+    title: 'NBA All-Star Weekend Staffing | Event Staff for Basketball\'s Premier Showcase',
+    h1: 'NBA All-Star Weekend Event Staffing Services',
+    metaDescription: 'NBA All-Star Weekend event staffing for slam dunk contests, celebrity games, sponsor activations, and VIP hospitality events in rotating host cities across America.',
+    city: 'Various',
+    stateAbbrev: 'US',
+    venues: ['Host City Arena', 'Convention Center', 'Downtown Entertainment District'],
+    keywords: ['NBA All-Star staffing', 'All-Star Weekend event staff', 'basketball event staffing', 'NBA event staff'],
+    description: 'NBA All-Star Weekend is professional basketball\'s premier showcase event, rotating annually to major cities across America. Air Fresh Marketing provides elite event staff for the All-Star Game, Slam Dunk Contest, Three-Point Competition, Celebrity Game, sponsor activations, and the extensive schedule of brand events and VIP parties that transform host cities into basketball celebrations.',
+    bodyContent: `## Why NBA All-Star Weekend Demands Elite Event Staffing
+
+NBA All-Star Weekend has evolved into one of the most significant entertainment events in professional sports, generating massive economic impact for host cities and creating an extended weekend of events that blend athletic competition with entertainment, fashion, and brand activation. The rotating host city format requires event staffing partners with national reach and experience across diverse venue types.
+
+## All-Star Game and Competition Events
+
+The All-Star Game, Slam Dunk Contest, Three-Point Competition, and Skills Challenge require arena staffing for premium hospitality, media management, and fan experience operations. Event staffing professionals manage VIP suite service, courtside hospitality, and the exclusive experiences that NBA corporate partners provide to their most valued clients. Staff must deliver championship-level service in high-energy environments.
+
+## Sponsor Activation and Brand Experiences
+
+NBA All-Star Weekend features extensive sponsor activations across host cities, from interactive fan zones to premium brand lounges. Event staffing teams operate brand experience stations, manage product sampling programs, and facilitate social media engagement at installations designed to generate viral content. Staff with basketball culture knowledge and genuine enthusiasm create authentic brand connections.
+
+## Celebrity Events and VIP Hospitality
+
+All-Star Weekend's celebrity game, fashion shows, and exclusive parties require sophisticated hospitality staffing. Event staffing professionals manage VIP access and credentialing, coordinate celebrity meet-and-greet experiences, and deliver premium service at invite-only events attended by entertainment and sports industry leaders. Discretion and professionalism are essential.
+
+## Fan Zone and Community Events
+
+NBA All-Star Weekend includes massive public fan zones featuring interactive basketball experiences, player appearances, and community engagement events. Event staffing teams manage activity stations, coordinate autograph sessions, and facilitate youth basketball clinics. Staff bring infectious basketball enthusiasm while maintaining safe, organized environments for fans of all ages.`,
+    staffTypes: [
+      { title: 'VIP Hospitality Staff', description: 'Premium service professionals for courtside experiences and corporate hospitality suites' },
+      { title: 'Brand Ambassadors', description: 'Basketball-savvy representatives for sponsor activations and fan zone experiences' },
+      { title: 'Event Production Support', description: 'Arena operations and production crew for competition events and entertainment' },
+      { title: 'Celebrity Event Staff', description: 'Discreet, professional staff for exclusive parties and VIP entertainment events' }
+    ],
+    stats: [
+      { value: '100,000+', label: 'Weekend Attendance' },
+      { value: '$200M+', label: 'Host City Economic Impact' },
+      { value: '3', label: 'Days of Events' },
+      { value: '20+', label: 'Official Sponsor Activations' }
+    ],
+    faqs: [
+      { question: 'How far ahead should I book NBA All-Star Weekend staffing?', answer: 'Book All-Star Weekend staffing 4-6 months in advance once the host city is announced. National brands planning activations should begin staffing discussions immediately after location confirmation.' },
+      { question: 'Do you provide staffing in any NBA All-Star host city?', answer: 'Yes, Air Fresh Marketing operates nationwide and provides event staffing in any city selected to host NBA All-Star Weekend, leveraging our national talent network.' },
+      { question: 'Can you staff both official NBA events and unofficial All-Star Weekend parties?', answer: 'We staff the full spectrum of All-Star Weekend events, from official NBA-sanctioned activities to brand-hosted parties, celebrity events, and independent activations throughout the host city.' }
+    ],
+    logisticsInfo: 'NBA All-Star Weekend rotates to different host cities annually. Staff deployment requires coordination with the host arena, convention center, and multiple downtown venues. Security credentialing timelines are strict.',
+    relatedCitySlug: '',
+    relatedCityName: '',
+    heroImage: '/images/events/nba-all-star-weekend.jpg',
+    isFeatured: true
+  },
   // ── Batch 155 ──────────────────────────────────────────────────────
   {
     slug: 'grammy-awards',

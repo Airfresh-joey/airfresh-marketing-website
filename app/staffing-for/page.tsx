@@ -31,7 +31,7 @@ export default function EventStaffingIndex() {
     ['ces', 'sxsw', 'south-by-southwest', 'aws-reinvent', 'e3', 'dreamforce', 'nab-show', 'himss'].includes(e.slug)
   );
   const conventions = eventPages.filter(e =>
-    ['comic-con', 'sdcc', 'comic-con-san-diego', 'nycc', 'anime-expo', 'pax-west', 'kcon-la', 'vidcon', 'complexcon', 'twitchcon', 'fan-expo-dallas'].includes(e.slug)
+    ['comic-con', 'sdcc', 'comic-con-san-diego', 'san-diego-comic-con', 'nycc', 'anime-expo', 'pax-west', 'kcon-la', 'vidcon', 'complexcon', 'twitchcon', 'fan-expo-dallas'].includes(e.slug)
   );
   const tradeShows = eventPages.filter(e =>
     ['nrf-big-show', 'natural-products-expo', 'la-auto-show', 'detroit-auto-show', 'art-basel-miami', 'sema', 'magic-las-vegas', 'nab-show', 'cedia-expo', 'new-york-auto-show', 'chicago-auto-show', 'nra-show', 'namm-show', 'arnold-sports-festival'].includes(e.slug)
