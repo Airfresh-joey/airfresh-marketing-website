@@ -37,10 +37,10 @@ export default function EventStaffingIndex() {
     ['nrf-big-show', 'natural-products-expo', 'la-auto-show', 'detroit-auto-show', 'art-basel-miami', 'sema', 'magic-las-vegas', 'nab-show', 'cedia-expo', 'new-york-auto-show', 'chicago-auto-show', 'nra-show', 'namm-show', 'arnold-sports-festival'].includes(e.slug)
   );
   const foodCulture = eventPages.filter(e =>
-    ['taste-of-chicago', 'south-beach-wine-food-festival', 'essence-fest', 'essence-festival', 'nyfw', 'new-york-fashion-week', 'tribeca-festival', 'tribeca-film-festival', 'sundance-film-festival', 'burning-man', 'miami-art-week', 'stagecoach', 'mardi-gras', 'rose-bowl', 'houston-rodeo', 'san-diego-county-fair', 'kentucky-derby', 'nba-all-star-weekend', 'boston-marathon', 'grammy-awards', 'new-years-eve-times-square', 'state-fair-of-texas', 'national-western-stock-show', 'minnesota-state-fair', 'la-pride-festival'].includes(e.slug)
+    ['taste-of-chicago', 'south-beach-wine-food-festival', 'essence-fest', 'essence-festival', 'nyfw', 'new-york-fashion-week', 'tribeca-festival', 'tribeca-film-festival', 'sundance-film-festival', 'burning-man', 'miami-art-week', 'stagecoach', 'mardi-gras', 'rose-bowl', 'houston-rodeo', 'san-diego-county-fair', 'kentucky-derby', 'nba-all-star-weekend', 'boston-marathon', 'grammy-awards', 'new-years-eve-times-square', 'state-fair-of-texas', 'national-western-stock-show', 'minnesota-state-fair', 'la-pride-festival', 'albuquerque-balloon-fiesta', 'oregon-country-fair'].includes(e.slug)
   );
   const sportsMajor = eventPages.filter(e =>
-    ['super-bowl', 'nba-all-star', 'f1-las-vegas', 'miami-grand-prix', 'kentucky-derby', 'nfl-draft', 'pga-tour', 'pga-championship', 'world-cup-2026', 'daytona-500', 'indy-500', 'boston-marathon', 'chicago-marathon', 'rose-bowl', 'indianapolis-500', 'new-york-marathon', 'us-open-tennis', 'world-series', 'masters-golf-tournament', 'winter-x-games', 'daytona-bike-week', 'americas-cup', 'detroit-grand-prix', 'tough-mudder'].includes(e.slug)
+    ['super-bowl', 'nba-all-star', 'f1-las-vegas', 'miami-grand-prix', 'kentucky-derby', 'nfl-draft', 'pga-tour', 'pga-championship', 'world-cup-2026', 'daytona-500', 'indy-500', 'boston-marathon', 'chicago-marathon', 'rose-bowl', 'indianapolis-500', 'new-york-marathon', 'us-open-tennis', 'world-series', 'masters-golf-tournament', 'winter-x-games', 'daytona-bike-week', 'americas-cup', 'detroit-grand-prix', 'tough-mudder', 'sturgis-motorcycle-rally'].includes(e.slug)
   );
 
   // Catch any not categorized

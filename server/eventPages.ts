@@ -36,6 +36,207 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 180 ──────────────────────────────────────────────────────
+  {
+    slug: 'albuquerque-balloon-fiesta',
+    title: 'Albuquerque Balloon Fiesta Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Albuquerque International Balloon Fiesta Staffing',
+    metaDescription: 'Albuquerque Balloon Fiesta staffing provides professional brand ambassadors, event staff, and promotional teams for the world\'s largest hot air balloon festival. Get a free quote.',
+    city: 'Albuquerque',
+    stateAbbrev: 'NM',
+    venues: ['Balloon Fiesta Park'],
+    keywords: ['Albuquerque Balloon Fiesta staffing', 'balloon fiesta event staff', 'Albuquerque brand ambassadors', 'balloon festival staffing'],
+    description: 'The Albuquerque International Balloon Fiesta is the world\'s largest hot air balloon festival, drawing over 800,000 visitors annually to New Mexico. Air Fresh Marketing provides professional brand ambassadors, sponsor activation teams, and guest experience staff who deliver exceptional service at this iconic 9-day event.',
+    bodyContent: `<p>The <strong>Albuquerque International Balloon Fiesta</strong> is a bucket-list event that transforms the New Mexico sky with over 500 colorful hot air balloons each October. With 800,000+ attendees across 9 days, brands need professional event staff who can handle dawn patrol launches at 6 AM and evening glow events under the stars.</p>
+<p>Air Fresh Marketing provides <strong>trained brand ambassadors, sponsor activation coordinators, and guest experience teams</strong> for the Balloon Fiesta. Our staff understand the unique logistics of this outdoor festival — from managing crowds at launch fields to running VIP gondola club experiences and activating sponsor booths across the massive Balloon Fiesta Park grounds.</p>
+<h2>Albuquerque Balloon Fiesta Staffing Services</h2>
+<p>Our Balloon Fiesta staffing covers every touchpoint of the attendee journey. We provide <strong>launch field safety ambassadors</strong> who manage crowd barriers during mass ascensions, <strong>sponsor booth teams</strong> who engage visitors with interactive brand experiences, and <strong>VIP hospitality staff</strong> who deliver white-glove service at premium viewing chalets.</p>
+<p>Whether you need staff for the <strong>Dawn Patrol, Mass Ascension, Special Shape Rodeo, or Evening Glow</strong>, our teams are trained on Balloon Fiesta protocols and ready to represent your brand at one of America's most photographed events.</p>
+<h2>Why Choose Air Fresh for Balloon Fiesta Staffing?</h2>
+<p>Air Fresh Marketing recruits from our <strong>Albuquerque and Southwest talent network</strong>, ensuring your staff know the local market and can handle the desert climate conditions. With 20+ years of event staffing experience and 5,000+ brand ambassadors nationwide, we deliver reliable, professional teams for the world's premier balloon festival.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Engaging, outgoing staff who represent your brand at sponsor activations and booth experiences throughout Balloon Fiesta Park.' },
+      { title: 'Launch Field Safety Staff', description: 'Trained teams who manage crowd barriers and safety zones during mass ascensions and special shape launches.' },
+      { title: 'VIP Hospitality Teams', description: 'Premium service staff for gondola club chalets, sponsor hospitality tents, and exclusive viewing experiences.' },
+      { title: 'Sponsor Activation Coordinators', description: 'Event professionals who run interactive brand experiences, product sampling, and lead capture at sponsor booths.' }
+    ],
+    stats: [
+      { value: '800K+', label: 'Annual Attendees' },
+      { value: '500+', label: 'Hot Air Balloons' },
+      { value: '9 Days', label: 'Festival Duration' },
+      { value: '#1', label: 'Balloon Festival Worldwide' }
+    ],
+    faqs: [
+      { question: 'When is the Albuquerque Balloon Fiesta?', answer: 'The Albuquerque International Balloon Fiesta takes place annually during the first two weeks of October, running for 9 days at Balloon Fiesta Park.' },
+      { question: 'What time do Balloon Fiesta events start?', answer: 'Dawn Patrol launches begin around 6:00 AM, with Mass Ascension starting at 7:00 AM. Evening Glow events typically begin at dusk, around 6:00 PM.' },
+      { question: 'How far in advance should I book Balloon Fiesta staffing?', answer: 'We recommend booking staffing at least 6-8 weeks before the Balloon Fiesta to ensure availability of our top Albuquerque-based talent.' },
+      { question: 'Do you provide bilingual staff for the Balloon Fiesta?', answer: 'Yes, our Albuquerque talent network includes many bilingual English-Spanish brand ambassadors who can engage the diverse Balloon Fiesta audience.' }
+    ],
+    logisticsInfo: 'Balloon Fiesta Park is located on the north side of Albuquerque off I-25. The event runs from approximately 5:30 AM to 9:00 PM during launch and glow days. Staff should plan for early morning call times and dress in layers for desert temperature swings.',
+    relatedCitySlug: 'albuquerque',
+    relatedCityName: 'Albuquerque',
+    heroImage: '/images/events/balloon-fiesta.jpg'
+  },
+  {
+    slug: 'sturgis-motorcycle-rally',
+    title: 'Sturgis Motorcycle Rally Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Sturgis Motorcycle Rally Staffing',
+    metaDescription: 'Sturgis Motorcycle Rally staffing provides professional brand ambassadors, promotional teams, and event staff for the legendary motorcycle rally in Sturgis, South Dakota. Free quote.',
+    city: 'Sturgis',
+    stateAbbrev: 'SD',
+    venues: ['Sturgis Main Street', 'Buffalo Chip Campground', 'Full Throttle Saloon', 'Sturgis Dragway'],
+    keywords: ['Sturgis Rally staffing', 'Sturgis motorcycle event staff', 'motorcycle rally brand ambassadors', 'Sturgis event staffing'],
+    description: 'The Sturgis Motorcycle Rally is the world\'s largest motorcycle event, attracting 500,000+ riders and enthusiasts to the Black Hills of South Dakota each August. Air Fresh Marketing provides experienced brand ambassadors and event staff for sponsor activations, product demonstrations, and hospitality at this iconic 10-day rally.',
+    bodyContent: `<p>The <strong>Sturgis Motorcycle Rally</strong> is an American legend — a 10-day celebration of motorcycle culture that draws half a million riders to the Black Hills of South Dakota every August. For brands targeting the motorcycle and outdoor lifestyle demographic, Sturgis offers unparalleled access to a passionate, loyal consumer base.</p>
+<p>Air Fresh Marketing provides <strong>experienced brand ambassadors, product demonstration teams, and sponsor activation staff</strong> who thrive in the high-energy, outdoor environment of the Sturgis Rally. Our teams understand motorcycle culture and engage authentically with rally-goers across Main Street venues, campground activations, and concert events.</p>
+<h2>Sturgis Rally Staffing Services</h2>
+<p>Our Sturgis staffing covers activations across the rally's sprawling footprint. We provide <strong>product sampling teams</strong> at vendor villages, <strong>brand ambassadors</strong> at sponsor concert stages, and <strong>demo ride coordinators</strong> for motorcycle manufacturer test ride programs. From the Buffalo Chip to downtown Sturgis, our staff deliver results.</p>
+<p>We also staff <strong>hospitality lounges, VIP areas, and trade show booths</strong> at the rally's indoor venues. Whether your activation is rugged outdoor or premium indoor, our Sturgis teams match your brand energy.</p>
+<h2>Why Choose Air Fresh for Sturgis Rally Staffing?</h2>
+<p>Sturgis requires staff who can work long days in outdoor conditions while maintaining brand energy and professionalism. Air Fresh Marketing recruits <strong>outgoing, weather-hardy team members</strong> from across the Midwest and provides rally-specific training on motorcycle culture, product knowledge, and crowd engagement techniques.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Outgoing, motorcycle-culture-savvy staff who represent brands at sponsor activations across Sturgis venues and campgrounds.' },
+      { title: 'Product Demo Teams', description: 'Trained demonstration staff for motorcycle manufacturers, aftermarket parts, and riding gear test experiences.' },
+      { title: 'Hospitality & VIP Staff', description: 'Premium service teams for sponsor lounges, concert VIP areas, and exclusive rally experiences.' },
+      { title: 'Street Team Promoters', description: 'High-energy promotional teams distributing samples, swag, and brand materials along Main Street and at campgrounds.' }
+    ],
+    stats: [
+      { value: '500K+', label: 'Annual Attendees' },
+      { value: '10 Days', label: 'Rally Duration' },
+      { value: '83+', label: 'Years Running' },
+      { value: '#1', label: 'Motorcycle Event Worldwide' }
+    ],
+    faqs: [
+      { question: 'When is the Sturgis Motorcycle Rally?', answer: 'The Sturgis Rally takes place annually during the first full week of August, typically running for 10 days from the Friday before the first Monday to the following Sunday.' },
+      { question: 'What type of brands activate at Sturgis?', answer: 'Motorcycle manufacturers (Harley-Davidson, Indian, etc.), aftermarket parts companies, energy drinks, whiskey brands, outdoor gear companies, and lifestyle brands targeting the motorcycle demographic.' },
+      { question: 'How far in advance should I book Sturgis staffing?', answer: 'Book at least 8-10 weeks in advance. Sturgis is in a remote location, and securing quality staff requires early planning for travel and accommodation logistics.' },
+      { question: 'Do staff need to travel to Sturgis?', answer: 'Yes, most staff travel from regional hubs. Air Fresh handles recruitment, travel coordination, and accommodation logistics for your Sturgis activation team.' }
+    ],
+    logisticsInfo: 'Sturgis is located in the Black Hills of western South Dakota, about 30 miles from Rapid City Regional Airport. Rally venues spread across multiple locations including Main Street, surrounding campgrounds, and concert venues. Staff housing is arranged in advance due to extreme demand.',
+    relatedCitySlug: 'rapid-city',
+    relatedCityName: 'Rapid City',
+    heroImage: '/images/events/sturgis-rally.jpg'
+  },
+  {
+    slug: 'firefly-music-festival',
+    title: 'Firefly Music Festival Staffing | Event Staff & Brand Ambassadors Delaware',
+    h1: 'Firefly Music Festival Staffing',
+    metaDescription: 'Firefly Music Festival staffing provides professional brand ambassadors, event staff, and promotional teams for the premier East Coast music festival in Dover, Delaware. Free quote.',
+    city: 'Dover',
+    stateAbbrev: 'DE',
+    venues: ['The Woodlands of Dover International Speedway'],
+    keywords: ['Firefly Festival staffing', 'Firefly music festival event staff', 'Dover Delaware brand ambassadors', 'music festival staffing'],
+    description: 'Firefly Music Festival is the East Coast\'s premier multi-day music festival, attracting 80,000+ fans to The Woodlands in Dover, Delaware. Air Fresh Marketing provides professional brand ambassadors, sponsor activation teams, and event support staff for this 4-day music and camping festival.',
+    bodyContent: `<p>The <strong>Firefly Music Festival</strong> brings the biggest names in music to The Woodlands at Dover International Speedway every June. With 80,000+ attendees camping and celebrating over 4 days, Firefly offers brands an immersive festival environment where fans are engaged, relaxed, and receptive to brand experiences.</p>
+<p>Air Fresh Marketing provides <strong>festival-experienced brand ambassadors, sponsor activation teams, and experiential marketing staff</strong> who know how to thrive in the unique environment of a camping music festival. Our Firefly teams work across the festival grounds from main stages to the campground village.</p>
+<h2>Firefly Music Festival Staffing Services</h2>
+<p>Our Firefly staffing covers all festival zones including <strong>main stage areas, the Hub and Lawn stages, sponsor activation villages, and campground activations</strong>. We provide brand ambassadors who distribute samples, engage fans at interactive installations, and capture leads at sponsor booths throughout the festival.</p>
+<p>Whether you need staff for a <strong>brand lounge, product sampling tour through the campgrounds, or a main-stage VIP experience</strong>, our teams deliver the energy and professionalism that festivals demand.</p>
+<h2>Why Choose Air Fresh for Firefly Staffing?</h2>
+<p>Music festivals require staff who can handle long hours, outdoor conditions, and the high-energy atmosphere of live music. Air Fresh Marketing recruits <strong>experienced festival staff from our East Coast talent network</strong> and provides Firefly-specific training on brand messaging, activation protocols, and festival logistics.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Energetic, festival-savvy staff who engage attendees at sponsor activations and brand experiences across The Woodlands.' },
+      { title: 'Sampling Teams', description: 'Outgoing teams who distribute product samples through campgrounds, vendor villages, and stage areas.' },
+      { title: 'VIP & Hospitality Staff', description: 'Premium service teams for artist lounges, sponsor VIP areas, and exclusive backstage experiences.' },
+      { title: 'Experiential Marketing Staff', description: 'Creative event professionals who operate interactive brand installations and immersive activation experiences.' }
+    ],
+    stats: [
+      { value: '80K+', label: 'Annual Attendees' },
+      { value: '4 Days', label: 'Festival Duration' },
+      { value: '120+', label: 'Musical Acts' },
+      { value: '#1', label: 'East Coast Music Festival' }
+    ],
+    faqs: [
+      { question: 'When is Firefly Music Festival?', answer: 'Firefly Music Festival typically takes place in mid-to-late June at The Woodlands of Dover International Speedway in Dover, Delaware.' },
+      { question: 'Is Firefly a camping festival?', answer: 'Yes, Firefly is a camping festival with the majority of attendees staying on-site in various camping tiers from general to premium glamping options.' },
+      { question: 'How far in advance should I book Firefly staffing?', answer: 'We recommend booking at least 6-8 weeks before Firefly to ensure availability of experienced festival staff from our East Coast network.' },
+      { question: 'What brands typically activate at Firefly?', answer: 'Beverage companies, tech brands, fashion labels, streaming services, and lifestyle brands that target the 18-34 festival-going demographic.' }
+    ],
+    logisticsInfo: 'The Woodlands is located at Dover International Speedway in Dover, Delaware, accessible from I-95 and Philadelphia International Airport (about 75 miles). Festival hours typically run noon to midnight with camping areas open 24/7.',
+    relatedCitySlug: 'philadelphia',
+    relatedCityName: 'Philadelphia',
+    heroImage: '/images/events/firefly-festival.jpg'
+  },
+  {
+    slug: 'new-york-auto-show',
+    title: 'New York Auto Show Staffing | Event Staff & Brand Ambassadors NYC',
+    h1: 'New York International Auto Show Staffing',
+    metaDescription: 'New York Auto Show staffing provides professional brand ambassadors, promotional models, and event staff for NYIAS at the Javits Center. Get a free staffing quote today.',
+    city: 'New York City',
+    stateAbbrev: 'NY',
+    venues: ['Jacob K. Javits Convention Center'],
+    keywords: ['New York Auto Show staffing', 'NYIAS event staff', 'auto show brand ambassadors', 'Javits Center staffing'],
+    description: 'The New York International Auto Show (NYIAS) is one of the largest and most prestigious auto shows in North America, drawing over 1 million visitors to the Javits Center. Air Fresh Marketing provides professional brand ambassadors, product specialists, and event staff for automotive brands at this landmark event.',
+    bodyContent: `<p>The <strong>New York International Auto Show</strong> is the premier automotive showcase on the East Coast, filling the massive Jacob K. Javits Convention Center with the latest vehicles, concept cars, and automotive technology. With over 1 million visitors across its 10-day run, NYIAS is a critical marketing opportunity for automotive brands.</p>
+<p>Air Fresh Marketing provides <strong>polished brand ambassadors, automotive product specialists, and lead generation teams</strong> who deliver professional brand representation at the highest level. Our auto show staff are trained on vehicle specifications, brand messaging, and the consultative engagement style that automotive consumers expect.</p>
+<h2>New York Auto Show Staffing Services</h2>
+<p>Our NYIAS staffing includes <strong>booth product specialists</strong> who walk visitors through vehicle features, <strong>lead capture teams</strong> who qualify prospects for dealership follow-up, and <strong>hospitality staff</strong> who manage VIP preview events and media days. We also provide <strong>vehicle presentation narrators</strong> for turntable displays and reveal events.</p>
+<p>From <strong>press preview days to public show dates</strong>, our teams maintain consistent energy and professionalism throughout the full run of the auto show.</p>
+<h2>Why Choose Air Fresh for Auto Show Staffing?</h2>
+<p>Auto shows demand a higher standard of product knowledge and professional presentation than typical events. Air Fresh Marketing provides <strong>multi-day training programs</strong> that prepare our staff on vehicle specifications, competitive positioning, and brand-specific engagement scripts. Our New York talent network includes experienced auto show professionals who have represented major brands at NYIAS, NAIAS, and LA Auto Show.</p>`,
+    staffTypes: [
+      { title: 'Product Specialists', description: 'Knowledgeable brand representatives trained on vehicle specifications, features, and competitive advantages for consultative booth conversations.' },
+      { title: 'Brand Ambassadors', description: 'Polished, professional staff who greet visitors, distribute materials, and create positive first impressions at your auto show exhibit.' },
+      { title: 'Lead Capture Teams', description: 'Trained staff who qualify prospects, capture contact information, and schedule dealership test drives and follow-ups.' },
+      { title: 'VIP & Media Event Staff', description: 'Premium hospitality teams for press preview events, dealer receptions, and VIP experiences during the auto show.' }
+    ],
+    stats: [
+      { value: '1M+', label: 'Annual Visitors' },
+      { value: '10 Days', label: 'Show Duration' },
+      { value: '100+', label: 'Vehicles on Display' },
+      { value: '#1', label: 'East Coast Auto Show' }
+    ],
+    faqs: [
+      { question: 'When is the New York Auto Show?', answer: 'The New York International Auto Show typically takes place in April at the Jacob K. Javits Convention Center in Manhattan, running for approximately 10 days including press preview days.' },
+      { question: 'What training do auto show staff receive?', answer: 'All NYIAS staff complete multi-day training covering vehicle specifications, brand messaging, competitive positioning, and consultative engagement techniques specific to your automotive brand.' },
+      { question: 'How far in advance should I book auto show staffing?', answer: 'We recommend booking at least 8-10 weeks before the auto show to allow time for staff recruitment, training, and brand certification programs.' },
+      { question: 'Do you staff other auto shows besides New York?', answer: 'Yes, Air Fresh provides staffing for major auto shows nationwide including the LA Auto Show, Chicago Auto Show, Detroit Auto Show, and regional automotive events.' }
+    ],
+    logisticsInfo: 'The Javits Center is located on the west side of Manhattan at 11th Avenue and 34th Street. Show hours are typically 10 AM to 10 PM on weekdays and 10 AM to 7 PM on weekends. Staff parking is available at nearby garages or via public transit.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/ny-auto-show.jpg'
+  },
+  {
+    slug: 'oregon-country-fair',
+    title: 'Oregon Country Fair Staffing | Event Staff & Brand Ambassadors Veneta OR',
+    h1: 'Oregon Country Fair Staffing',
+    metaDescription: 'Oregon Country Fair staffing provides professional brand ambassadors, event staff, and promotional teams for the iconic cultural arts festival in Veneta, Oregon. Free quote.',
+    city: 'Veneta',
+    stateAbbrev: 'OR',
+    venues: ['Oregon Country Fair Grounds'],
+    keywords: ['Oregon Country Fair staffing', 'OCF event staff', 'Oregon festival brand ambassadors', 'Veneta event staffing'],
+    description: 'The Oregon Country Fair is a legendary 3-day outdoor arts, crafts, and music festival that draws 45,000+ attendees to the forested fairgrounds near Veneta, Oregon. Air Fresh Marketing provides brand ambassadors and event staff who respect OCF\'s unique culture while delivering professional brand activations.',
+    bodyContent: `<p>The <strong>Oregon Country Fair</strong> is one of the Pacific Northwest's most beloved cultural traditions — a 3-day celebration of arts, crafts, music, and community nestled in the forests outside Veneta, Oregon. With 45,000+ attendees exploring shaded pathways and artisan booths, OCF offers brands a uniquely engaged, creativity-focused audience.</p>
+<p>Air Fresh Marketing provides <strong>culturally aware brand ambassadors, eco-conscious activation teams, and vendor support staff</strong> who understand OCF's distinct values and engage authentically with its community-minded attendees. Our teams blend professionalism with the fair's creative, earthy spirit.</p>
+<h2>Oregon Country Fair Staffing Services</h2>
+<p>Our OCF staffing includes <strong>brand ambassadors for sponsor activations</strong>, <strong>vendor booth support teams</strong>, and <strong>sustainability-focused event staff</strong> who align with the fair's environmental values. We also provide teams for <strong>stage areas, food courts, and community gathering spaces</strong> throughout the forested fairgrounds.</p>
+<p>Whether you need staff for an <strong>artisan-style brand booth, a wellness activation, or a sustainability-focused product demo</strong>, our Oregon Country Fair teams deliver authentic engagement that resonates with this unique audience.</p>
+<h2>Why Choose Air Fresh for Oregon Country Fair Staffing?</h2>
+<p>OCF has a distinct culture that requires staff who can engage respectfully and authentically. Air Fresh Marketing recruits from our <strong>Pacific Northwest talent network</strong>, selecting team members who appreciate the fair's community values and can represent brands without disrupting the organic festival atmosphere. We provide OCF-specific orientation on fair culture, pathways, and engagement etiquette.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Culturally aware, engaging staff who represent brands authentically within Oregon Country Fair\'s unique community atmosphere.' },
+      { title: 'Eco-Conscious Activation Teams', description: 'Sustainability-focused staff who run green brand experiences, zero-waste sampling, and environmental education activations.' },
+      { title: 'Vendor Support Staff', description: 'Experienced teams who assist artisan vendors with booth setup, customer engagement, and sales support.' },
+      { title: 'Guest Experience Coordinators', description: 'Friendly wayfinding staff who help attendees navigate the forested fairgrounds and discover featured activations.' }
+    ],
+    stats: [
+      { value: '45K+', label: 'Annual Attendees' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: '55+', label: 'Years Running' },
+      { value: '300+', label: 'Artisan Booths' }
+    ],
+    faqs: [
+      { question: 'When is the Oregon Country Fair?', answer: 'The Oregon Country Fair takes place annually during the second weekend of July, running Friday through Sunday at the fairgrounds near Veneta, Oregon.' },
+      { question: 'What makes Oregon Country Fair unique for brand activations?', answer: 'OCF has a strong community culture focused on arts, sustainability, and creativity. Successful brand activations respect these values with eco-conscious approaches and authentic engagement styles.' },
+      { question: 'How far in advance should I book OCF staffing?', answer: 'We recommend booking at least 6-8 weeks before the fair to ensure recruitment of Pacific Northwest talent who understand OCF\'s unique culture.' },
+      { question: 'Are there restrictions on brand activations at OCF?', answer: 'OCF has specific vendor and activation guidelines that emphasize sustainability and community alignment. We help brands navigate these requirements during the planning process.' }
+    ],
+    logisticsInfo: 'The Oregon Country Fair is located on 280 forested acres near Veneta, Oregon, about 13 miles west of Eugene. The fairgrounds are accessed via Long Tom Road. Fair hours are typically 11 AM to 7 PM Friday-Sunday.',
+    relatedCitySlug: 'portland',
+    relatedCityName: 'Portland',
+    heroImage: '/images/events/oregon-country-fair.jpg'
+  },
   // ── Batch 175 ──────────────────────────────────────────────────────
   {
     slug: 'national-western-stock-show',
