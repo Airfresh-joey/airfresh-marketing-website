@@ -138,6 +138,30 @@ const competitors = [
     keyDiff: 'Staffing-only, no experiential capabilities',
     priority: false,
   },
+  {
+    slug: '2x4-experiential',
+    name: '2x4 Experiential',
+    tagline: 'Boutique experiential marketing agency',
+    location: 'Limited markets',
+    keyDiff: 'Regional only, no GPS verification or published pricing',
+    priority: false,
+  },
+  {
+    slug: 'fusion-marketing',
+    name: 'Fusion Marketing',
+    tagline: 'Regional event staffing and marketing',
+    location: 'Regional',
+    keyDiff: 'Limited geographic reach, no proprietary tech platform',
+    priority: false,
+  },
+  {
+    slug: 'event-strategy-group',
+    name: 'Event Strategy Group',
+    tagline: 'Corporate event strategy firm',
+    location: 'Nationwide',
+    keyDiff: 'Strategy-only, no execution or staffing capabilities',
+    priority: false,
+  },
 ];
 
 const afmHighlights = [
