@@ -80,6 +80,46 @@ const cities: Record<string, {
     stats: { events: '220+', ambassadors: '90+', samples: '450K+' },
     neighborhoods: ['Midtown', 'Buckhead', 'Atlantic Station', 'Ponce City Market', 'Westside', 'Old Fourth Ward'],
     venues: ['Georgia World Congress Center', 'Mercedes-Benz Stadium', 'State Farm Arena', 'Piedmont Park', 'The BeltLine']
+  },
+  'boston': {
+    name: 'Boston',
+    state: 'MA',
+    image: '/images/cities/boston-activation.jpg',
+    stats: { events: '180+', ambassadors: '70+', samples: '350K+' },
+    neighborhoods: ['Back Bay', 'Fenway', 'Seaport District', 'Faneuil Hall', 'Newbury Street', 'Cambridge'],
+    venues: ['Boston Convention Center', 'Fenway Park', 'TD Garden', 'Boston Common', 'Hynes Convention Center']
+  },
+  'houston': {
+    name: 'Houston',
+    state: 'TX',
+    image: '/images/cities/houston-activation.jpg',
+    stats: { events: '250+', ambassadors: '95+', samples: '500K+' },
+    neighborhoods: ['The Galleria', 'Montrose', 'Downtown', 'Midtown', 'Heights', 'Rice Village'],
+    venues: ['George R. Brown Convention Center', 'NRG Stadium', 'Toyota Center', 'Discovery Green', 'Minute Maid Park']
+  },
+  'philadelphia': {
+    name: 'Philadelphia',
+    state: 'PA',
+    image: '/images/cities/philadelphia-activation.jpg',
+    stats: { events: '160+', ambassadors: '65+', samples: '320K+' },
+    neighborhoods: ['Center City', 'Rittenhouse Square', 'Old City', 'University City', 'Fishtown', 'Northern Liberties'],
+    venues: ['Pennsylvania Convention Center', 'Lincoln Financial Field', 'Wells Fargo Center', 'Reading Terminal Market', 'Citizens Bank Park']
+  },
+  'new-orleans': {
+    name: 'New Orleans',
+    state: 'LA',
+    image: '/images/cities/new-orleans-activation.jpg',
+    stats: { events: '130+', ambassadors: '55+', samples: '280K+' },
+    neighborhoods: ['French Quarter', 'Bourbon Street', 'Garden District', 'Warehouse District', 'Frenchmen Street', 'Magazine Street'],
+    venues: ['Morial Convention Center', 'Caesars Superdome', 'Smoothie King Center', 'Jackson Square', 'City Park']
+  },
+  'orlando': {
+    name: 'Orlando',
+    state: 'FL',
+    image: '/images/cities/orlando-activation.jpg',
+    stats: { events: '200+', ambassadors: '85+', samples: '420K+' },
+    neighborhoods: ['International Drive', 'Downtown Orlando', 'Winter Park', 'Lake Nona', 'Thornton Park', 'Mills 50'],
+    venues: ['Orange County Convention Center', 'Camping World Stadium', 'Amway Center', 'Disney Springs', 'Universal CityWalk']
   }
 };
 
