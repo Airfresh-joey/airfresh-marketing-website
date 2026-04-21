@@ -37,6 +37,192 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Kaaboo Festival — San Diego, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "kaaboo-festival",
+    title: "KAABOO Festival Staffing | Brand Ambassadors & Event Staff San Diego",
+    h1: "KAABOO Festival Staffing",
+    metaDescription: "KAABOO Festival staffing services in San Diego. Professional brand ambassadors, promotional models, and event staff for KAABOO Del Mar activations.",
+    city: "San Diego",
+    stateAbbrev: "CA",
+    venues: ["Petco Park", "Del Mar Fairgrounds"],
+    keywords: ["KAABOO festival staffing", "KAABOO brand ambassadors", "San Diego festival staff", "KAABOO event staffing"],
+    description: "KAABOO Festival combines music, comedy, art, and cuisine in a premium festival experience. The upscale festival atmosphere demands polished brand ambassadors who can engage an affluent, 21+ audience across multi-day activations in San Diego.",
+    bodyContent: `<h2>KAABOO Festival Staffing Services in San Diego</h2>
+<p>KAABOO Festival staffing requires professionals who match the festival's premium positioning. Unlike typical music festivals, KAABOO attracts an affluent, older demographic seeking curated experiences. Brand ambassadors and event staff must reflect this sophisticated atmosphere while delivering high-energy engagement.</p>
+<h3>Why Brands Activate at KAABOO</h3>
+<p>KAABOO's unique blend of music, comedy, contemporary art, and gourmet cuisine creates a multi-sensory environment ideal for brand activations. The 21+ age requirement ensures brands reach decision-makers with disposable income. Sponsorship activations at KAABOO consistently outperform standard festival activations in engagement quality.</p>
+<h3>KAABOO Staffing Roles We Fill</h3>
+<p>Air Fresh Marketing provides professional event staffing for every KAABOO activation need, from VIP lounge hosts to sampling teams distributing premium products. Our staff understand the festival's upscale positioning and engage attendees with sophistication.</p>
+<h3>Staff for KAABOO in San Diego</h3>
+<p>Our <a href="/cities/san-diego">San Diego event staffing team</a> includes professionals experienced with Del Mar venue logistics and the KAABOO demographic. Contact us for <a href="/get-quote">KAABOO staffing quotes</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "VIP Hosts", "Promotional Models", "Sampling Staff", "Registration Staff"],
+    stats: [
+      { label: "Attendance", value: "40,000+" },
+      { label: "Days", value: "3" },
+      { label: "Age Demo", value: "25-54" }
+    ],
+    faqs: [
+      { question: "What type of staff works KAABOO Festival?", answer: "KAABOO requires polished, professional brand ambassadors comfortable in an upscale festival environment. We provide experienced staff familiar with premium brand activations." },
+      { question: "When is KAABOO Festival?", answer: "KAABOO typically takes place in September at Petco Park in San Diego, California." },
+      { question: "Do you provide VIP hospitality staff for KAABOO?", answer: "Yes, we specialize in VIP lounge hosts, bottle service staff, and premium hospitality professionals for KAABOO's VIP areas." }
+    ],
+    logisticsInfo: "Petco Park is located in downtown San Diego's Gaslamp Quarter with extensive parking and public transit access. Staff should plan for warm September weather and extended outdoor shifts.",
+    relatedCitySlug: "san-diego",
+    relatedCityName: "San Diego",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Voodoo Music + Arts Experience — New Orleans, LA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "voodoo-fest",
+    title: "Voodoo Music Festival Staffing | Brand Ambassadors & Event Staff New Orleans",
+    h1: "Voodoo Music Festival Staffing",
+    metaDescription: "Voodoo Music Festival staffing services in New Orleans. Professional brand ambassadors, promotional models, and event staff for Voodoo Fest activations in City Park.",
+    city: "New Orleans",
+    stateAbbrev: "LA",
+    venues: ["City Park", "Festival Grounds at City Park"],
+    keywords: ["Voodoo Fest staffing", "Voodoo Music Festival brand ambassadors", "New Orleans festival staff", "Voodoo event staffing"],
+    description: "Voodoo Music + Arts Experience is New Orleans' premier Halloween-weekend music festival in City Park. The festival's unique blend of music, art, and NOLA culture creates an energetic atmosphere perfect for immersive brand activations.",
+    bodyContent: `<h2>Voodoo Music Festival Staffing Services in New Orleans</h2>
+<p>Voodoo Music Festival staffing demands professionals who embrace the festival's eclectic energy and New Orleans culture. Held over Halloween weekend in the scenic City Park, Voodoo Fest draws a diverse crowd passionate about music, art, and the unique NOLA atmosphere. Brand ambassadors and event staff must match this creative, high-energy vibe.</p>
+<h3>Activating at Voodoo Fest</h3>
+<p>Voodoo Fest's Halloween timing creates unique activation opportunities. Brands that embrace the festive, costumed atmosphere see significantly higher engagement rates. The festival's art installations and interactive zones provide natural settings for experiential marketing.</p>
+<h3>Staffing Roles for Voodoo Fest</h3>
+<p>From sampling teams distributing products along the festival's walkways to brand ambassadors staffing sponsored lounges, Air Fresh Marketing provides experienced festival staff who know how to work the New Orleans crowd.</p>
+<h3>Local New Orleans Staff</h3>
+<p>Our <a href="/cities/new-orleans">New Orleans staffing team</a> includes professionals who know City Park, understand the local culture, and have experience with major NOLA events including <a href="/staffing-for/jazz-fest">Jazz Fest</a> and <a href="/staffing-for/mardi-gras">Mardi Gras</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Street Teams", "Event Staff", "Promotional Models"],
+    stats: [
+      { label: "Attendance", value: "45,000+" },
+      { label: "Days", value: "3" },
+      { label: "Age Demo", value: "18-40" }
+    ],
+    faqs: [
+      { question: "When is Voodoo Music Festival?", answer: "Voodoo Fest takes place over Halloween weekend (late October) in City Park, New Orleans, Louisiana." },
+      { question: "What staffing roles are needed at Voodoo Fest?", answer: "Common roles include brand ambassadors, sampling teams, street teams, and event staff for sponsored activations and VIP areas." },
+      { question: "Do staff need costumes for Voodoo Fest?", answer: "Depending on the brand activation, staff may be asked to wear themed attire or costumes to match the Halloween atmosphere. We coordinate all wardrobe requirements." }
+    ],
+    logisticsInfo: "City Park in New Orleans provides a beautiful but sprawling festival setting. Staff should prepare for potentially warm late-October weather and be familiar with park entry points and transportation options.",
+    relatedCitySlug: "new-orleans",
+    relatedCityName: "New Orleans",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Okeechobee Music Festival — Okeechobee, FL
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "okeechobee-festival",
+    title: "Okeechobee Music Festival Staffing | Brand Ambassadors & Event Staff Florida",
+    h1: "Okeechobee Music Festival Staffing",
+    metaDescription: "Okeechobee Music Festival staffing services in Florida. Professional brand ambassadors, promotional models, and event staff for Okeechobee Fest activations.",
+    city: "Okeechobee",
+    stateAbbrev: "FL",
+    venues: ["Sunshine Grove", "Okeechobee Festival Grounds"],
+    keywords: ["Okeechobee festival staffing", "Okeechobee brand ambassadors", "Florida music festival staff", "Okeechobee event staffing"],
+    description: "Okeechobee Music & Arts Festival brings a unique camping festival experience to South Florida each spring. The immersive, multi-genre lineup and art-forward atmosphere create ideal conditions for creative brand activations.",
+    bodyContent: `<h2>Okeechobee Music Festival Staffing Services in Florida</h2>
+<p>Okeechobee Music Festival staffing requires energetic professionals comfortable in a camping festival environment. Held at Sunshine Grove in rural Okeechobee, this immersive festival combines electronic, hip-hop, rock, and jam bands with interactive art installations. Brand ambassadors must be adaptable, high-energy, and comfortable in an outdoor camping setting.</p>
+<h3>Brand Activation Opportunities</h3>
+<p>Okeechobee's "Be Here Now" philosophy encourages brands to create authentic, experience-first activations. The festival's art-forward audience responds best to interactive, immersive brand experiences rather than traditional promotional approaches.</p>
+<h3>Staffing for Camping Festivals</h3>
+<p>Camping festivals like Okeechobee present unique staffing challenges. Staff may need to be on-site for the full multi-day event, requiring accommodations planning and extended shift scheduling. Air Fresh Marketing handles all logistics for remote festival staffing.</p>
+<h3>Florida Festival Staff</h3>
+<p>Our Florida event staffing network covers Okeechobee and all major Florida festivals including <a href="/staffing-for/ultra-music-festival">Ultra Music Festival</a>, <a href="/staffing-for/tortuga-music-festival">Tortuga Music Festival</a>, and <a href="/staffing-for/welcome-to-rockville">Welcome to Rockville</a>. <a href="/get-quote">Request a quote</a> today.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Street Teams", "Event Staff", "Hospitality Staff"],
+    stats: [
+      { label: "Attendance", value: "30,000+" },
+      { label: "Days", value: "4" },
+      { label: "Setting", value: "Camping" }
+    ],
+    faqs: [
+      { question: "When is Okeechobee Music Festival?", answer: "Okeechobee Festival typically takes place in early March in Okeechobee, Florida." },
+      { question: "Do staff need to camp at Okeechobee?", answer: "Depending on the activation, staff may need on-site accommodations. We coordinate camping passes or nearby hotel arrangements for all staff." },
+      { question: "What brands activate at Okeechobee?", answer: "Beverage brands, lifestyle brands, and tech companies regularly activate at Okeechobee due to the engaged, youthful demographic." }
+    ],
+    logisticsInfo: "Sunshine Grove is located in rural Okeechobee, Florida, approximately 2 hours north of Miami. Staff should plan for warm spring weather, dusty conditions, and limited nearby services.",
+    relatedCitySlug: "miami",
+    relatedCityName: "Miami",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Essence Music Festival (Duplicate-Prevention: Use essence-fest slug already exists)
+  // Using: Day N Vegas — Las Vegas, NV
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "day-n-vegas",
+    title: "Day N Vegas Festival Staffing | Brand Ambassadors & Event Staff Las Vegas",
+    h1: "Day N Vegas Festival Staffing",
+    metaDescription: "Day N Vegas festival staffing services in Las Vegas. Professional brand ambassadors, promotional models, and event staff for Day N Vegas activations.",
+    city: "Las Vegas",
+    stateAbbrev: "NV",
+    venues: ["Las Vegas Festival Grounds", "Downtown Las Vegas"],
+    keywords: ["Day N Vegas staffing", "Day N Vegas brand ambassadors", "Las Vegas festival staff", "Day N Vegas event staffing"],
+    description: "Day N Vegas is a hip-hop and R&B focused music festival held in Las Vegas. The festival attracts a young, culturally engaged audience passionate about hip-hop, streetwear, and urban culture—making it ideal for lifestyle and entertainment brand activations.",
+    bodyContent: `<h2>Day N Vegas Festival Staffing Services</h2>
+<p>Day N Vegas festival staffing requires professionals who understand hip-hop culture and the urban lifestyle demographic. This Las Vegas-based festival brings together the biggest names in hip-hop, R&B, and rap, attracting a young, fashion-forward audience. Brand ambassadors must be culturally fluent and comfortable engaging this specific audience.</p>
+<h3>Why Brands Choose Day N Vegas</h3>
+<p>Day N Vegas offers direct access to the 18-35 hip-hop demographic—one of the most influential consumer segments in the US. Brands in streetwear, sneakers, beverages, tech, and entertainment see exceptional engagement rates at this festival.</p>
+<h3>Activation Types at Day N Vegas</h3>
+<p>Popular activation formats include sneaker customization stations, freestyle booths, DJ experiences, product drops, and lifestyle lounges. Air Fresh Marketing provides staff experienced in hip-hop culture activations who authentically connect with attendees.</p>
+<h3>Las Vegas Festival Staff</h3>
+<p>Our <a href="/cities/las-vegas">Las Vegas staffing team</a> supports all major Las Vegas events including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio Music Festival</a>, <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>, and more. <a href="/get-quote">Get a quote</a> for Day N Vegas staffing.</p>`,
+    staffTypes: ["Brand Ambassadors", "Promotional Models", "Street Teams", "Sampling Staff", "VIP Hosts"],
+    stats: [
+      { label: "Attendance", value: "35,000+" },
+      { label: "Days", value: "3" },
+      { label: "Age Demo", value: "18-35" }
+    ],
+    faqs: [
+      { question: "When is Day N Vegas?", answer: "Day N Vegas typically takes place in November at the Las Vegas Festival Grounds." },
+      { question: "What type of staff works Day N Vegas?", answer: "We provide brand ambassadors, street teams, and promotional staff who understand hip-hop culture and the urban lifestyle audience." },
+      { question: "Do you provide diverse staffing for Day N Vegas?", answer: "Absolutely. We prioritize diverse staffing that authentically represents the event's audience demographics and cultural context." }
+    ],
+    logisticsInfo: "Las Vegas Festival Grounds is near the Las Vegas Strip with extensive hospitality infrastructure. November weather is mild and pleasant for outdoor events.",
+    relatedCitySlug: "las-vegas",
+    relatedCityName: "Las Vegas",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Twitchcon — San Diego, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "twitchcon",
+    title: "TwitchCon Staffing | Brand Ambassadors & Event Staff for TwitchCon",
+    h1: "TwitchCon Staffing",
+    metaDescription: "TwitchCon staffing services in San Diego. Professional brand ambassadors, promotional models, and event staff for TwitchCon gaming convention activations.",
+    city: "San Diego",
+    stateAbbrev: "CA",
+    venues: ["San Diego Convention Center"],
+    keywords: ["TwitchCon staffing", "TwitchCon brand ambassadors", "gaming convention staff", "TwitchCon event staffing"],
+    description: "TwitchCon is the premier convention for the Twitch streaming community, bringing together content creators, gamers, and fans. Brand activations at TwitchCon require staff who understand gaming culture, streaming platforms, and the creator economy.",
+    bodyContent: `<h2>TwitchCon Staffing Services</h2>
+<p>TwitchCon staffing requires professionals who understand the gaming and streaming community. This convention brings together Twitch streamers, content creators, and their passionate fanbases for panels, meet-and-greets, and brand activations. Staff must be comfortable with gaming terminology, streaming culture, and the unique energy of creator-focused events.</p>
+<h3>Brand Activations at TwitchCon</h3>
+<p>TwitchCon offers brands a direct line to the coveted gaming and streaming audience. Successful activations include gaming tournaments, hardware demonstrations, streaming setup showcases, and interactive experiences that generate shareable content for creators.</p>
+<h3>TwitchCon Staffing Roles</h3>
+<p>Key staffing roles at TwitchCon include booth staff who can demo gaming products, crowd managers for streamer meet-and-greets, registration staff for branded events, and brand ambassadors who authentically represent gaming-adjacent brands.</p>
+<h3>San Diego Convention Staff</h3>
+<p>Our <a href="/cities/san-diego">San Diego staffing team</a> has extensive experience at the San Diego Convention Center, having staffed <a href="/staffing-for/comic-con">Comic-Con</a>, <a href="/staffing-for/sdcc">SDCC</a>, and numerous gaming conventions. <a href="/get-quote">Request TwitchCon staffing</a> today.</p>`,
+    staffTypes: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Promotional Models", "Event Coordinators"],
+    stats: [
+      { label: "Attendance", value: "35,000+" },
+      { label: "Days", value: "3" },
+      { label: "Audience", value: "Gamers/Creators" }
+    ],
+    faqs: [
+      { question: "When is TwitchCon?", answer: "TwitchCon typically takes place in October at the San Diego Convention Center, with a European edition held separately." },
+      { question: "Do staff need gaming knowledge for TwitchCon?", answer: "Yes, we prioritize staff with gaming and streaming knowledge who can authentically engage with the TwitchCon audience." },
+      { question: "What brands activate at TwitchCon?", answer: "Gaming hardware brands, energy drinks, snack brands, tech companies, and entertainment studios regularly activate at TwitchCon." }
+    ],
+    logisticsInfo: "San Diego Convention Center is located in the Gaslamp Quarter with excellent transit access. TwitchCon typically runs Friday through Sunday with setup days earlier in the week.",
+    relatedCitySlug: "san-diego",
+    relatedCityName: "San Diego",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Levitate Music Festival — Marshfield, MA
   // ─────────────────────────────────────────────────────────────────
   {
