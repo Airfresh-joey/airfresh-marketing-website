@@ -493,6 +493,7 @@ export default function Home() {
               <Link href="/services/event-management" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Management</Link>
               <Link href="/services/trade-show-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Trade Show Staffing</Link>
               <Link href="/event-staffing-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Staffing Agency</Link>
+              <Link href="/services/food-beverage-sampling" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Food & Beverage Sampling</Link>
             </div>
             <Link href="/services" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
               View All Services <ArrowRight className="w-4 h-4" />
@@ -1096,6 +1097,10 @@ export default function Home() {
               { city: 'Dallas', slug: 'dallas' },
               { city: 'Phoenix', slug: 'phoenix' },
               { city: 'Atlanta', slug: 'atlanta' },
+              { city: 'Boston', slug: 'boston' },
+              { city: 'Orlando', slug: 'orlando' },
+              { city: 'Philadelphia', slug: 'philadelphia' },
+              { city: 'New Orleans', slug: 'new-orleans' },
             ].map(market => (
               <Link key={market.slug} href={`/city-services/${market.slug}-brand-ambassadors`} className="group">
                 <div className="p-4 bg-gray-50 rounded-xl text-center hover:bg-cyan-50 hover:shadow-md transition-all">

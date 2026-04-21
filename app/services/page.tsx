@@ -418,6 +418,8 @@ export default function Services() {
             <Link href="/event-staffing-near-me" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Staffing Near Me</Link>
             <Link href="/services/luxury-brand-marketing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Luxury Brand Marketing</Link>
             <Link href="/services/retail-activations" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Retail Activations</Link>
+            <Link href="/services/food-beverage-sampling" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Food & Beverage Sampling</Link>
+            <Link href="/hire-brand-ambassadors" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Hire Brand Ambassadors</Link>
           </div>
           <div className="flex flex-wrap justify-center gap-4 text-sm">
             <Link href="/pricing" className="text-cyan-600 hover:text-cyan-700 font-medium">Pricing</Link>

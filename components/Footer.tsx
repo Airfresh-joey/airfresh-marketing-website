@@ -17,6 +17,7 @@ export default function Footer() {
     { name: "Product Sampling", href: "/services/sampling" },
     { name: "Promotional Models", href: "/services/promotional-models" },
     { name: "Trade Show Staffing", href: "/services/trade-show-staffing" },
+    { name: "Food & Beverage Sampling", href: "/services/food-beverage-sampling" },
     { name: "Event Staffing Guide", href: "/guides/event-staffing-101" },
     { name: "Hiring Guide", href: "/guides/brand-ambassador-hiring-guide" },
     { name: "Best Staffing Agency", href: "/guides/best-event-staffing-agency" },
@@ -50,6 +51,10 @@ export default function Footer() {
     { name: "Atlanta", href: "/cities/atlanta" },
     { name: "Phoenix", href: "/cities/phoenix" },
     { name: "San Francisco", href: "/cities/san-francisco" },
+    { name: "Boston", href: "/cities/boston" },
+    { name: "Orlando", href: "/cities/orlando" },
+    { name: "Philadelphia", href: "/cities/philadelphia" },
+    { name: "New Orleans", href: "/cities/new-orleans" },
     { name: "All Locations →", href: "/locations" },
   ];
 

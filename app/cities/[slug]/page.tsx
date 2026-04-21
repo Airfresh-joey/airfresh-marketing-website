@@ -624,6 +624,54 @@ const richCities = [
     },
     testimonial: 'Perfect understanding of Pittsburgh\'s neighborhoods and authentic Steel City execution.',
     clients: ['PNC', 'UPMC', 'Heinz']
+  },
+  {
+    slug: 'orlando',
+    name: 'Orlando',
+    state: 'FL',
+    image: '/images/case-studies/gallery/formula1/formula1-2.jpg',
+    alt: 'Orlando convention center and theme park experiential marketing',
+    problems: [
+      'Theme park dominance overshadows brand activations',
+      'Year-round tourist vs. local audience balance',
+      'Massive convention market with high staffing demands'
+    ],
+    solutions: [
+      'Orange County Convention Center trade show staffing',
+      'International Drive tourist corridor activations',
+      'Theme park adjacent brand experiences'
+    ],
+    stats: {
+      events: '200+',
+      ambassadors: '85+',
+      samples: '420K+'
+    },
+    testimonial: 'Seamless convention staffing at OCCC and creative activations throughout the Orlando market.',
+    clients: ['Universal', 'Lockheed Martin', 'Darden Restaurants']
+  },
+  {
+    slug: 'new-orleans',
+    name: 'New Orleans',
+    state: 'LA',
+    image: '/images/case-studies/gallery/mrbeast/mrbeast-1.jpg',
+    alt: 'New Orleans French Quarter and convention center experiential marketing',
+    problems: [
+      'Festival-heavy calendar creates scheduling challenges',
+      'Unique cultural expectations for brand authenticity',
+      'French Quarter logistics and permitting complexity'
+    ],
+    solutions: [
+      'Morial Convention Center trade show staffing',
+      'French Quarter and Magazine Street activations',
+      'Mardi Gras and Jazz Fest brand experiences'
+    ],
+    stats: {
+      events: '130+',
+      ambassadors: '55+',
+      samples: '280K+'
+    },
+    testimonial: 'They understand New Orleans culture and delivered brand activations that felt authentic to the city.',
+    clients: ['Tabasco', 'Entergy', 'Ochsner Health']
   }
 ];
 
