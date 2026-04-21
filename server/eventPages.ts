@@ -2260,6 +2260,241 @@ Like Bonnaroo, Stagecoach features extensive campgrounds where brands can reach 
     relatedCityName: 'Los Angeles',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 26. New York Auto Show
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'new-york-auto-show',
+    title: 'New York Auto Show Staffing Agency | Javits Center Event Staff',
+    h1: 'New York Auto Show Event Staffing',
+    metaDescription:
+      'New York Auto Show staffing agency providing product specialists, booth staff, and promotional models for the NYIAS at the Jacob K. Javits Convention Center.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Jacob K. Javits Convention Center'],
+    keywords: [
+      'New York Auto Show staffing',
+      'NYIAS event staff',
+      'auto show staffing New York',
+      'automotive event staffing',
+      'Javits Center staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the New York International Auto Show at the Javits Center. Our trained product specialists and brand ambassadors drive engagement and qualified leads for automotive brands.',
+    bodyContent: `The New York International Auto Show is one of the largest and most prestigious auto shows in North America, attracting over 1 million visitors to the Jacob K. Javits Convention Center each April. For automotive manufacturers, aftermarket brands, and mobility technology companies, the NYIAS represents a critical opportunity to showcase new models, concept vehicles, and brand positioning to both media and consumers.
+
+AirFresh Marketing has staffed NYIAS exhibitor booths, brand activations, press events, and hospitality suites for automotive brands across the show floor. We understand that auto show staffing demands product knowledge, professional polish, and the ability to engage both automotive enthusiasts and casual consumers in a high-traffic environment.
+
+**Product Specialists and Vehicle Presenters**
+
+Our NYIAS product specialists receive comprehensive training on your vehicle lineup, including key features, specifications, competitive advantages, and available packages. They engage show attendees with knowledgeable presentations, answer technical questions, and create compelling reasons for visitors to explore your vehicles further. Specialists are positioned on turntables, inside vehicles, and throughout your booth footprint.
+
+**Lead Generation Staff**
+
+The NYIAS draws serious car buyers alongside casual attendees. Our lead generation staff qualify visitors based on purchase timeline, current vehicle, and interest level, capturing contact information for your dealership network follow-up. We integrate with major automotive CRM systems to ensure lead data reaches your sales team immediately.
+
+**Booth Engagement and Traffic Flow**
+
+On a show floor with dozens of competing manufacturers, booth traffic and dwell time determine success. Our engagement staff position strategically to draw attendees from aisles, manage traffic flow between vehicle displays, and ensure every visitor has a meaningful interaction with your brand.
+
+**Press Day and Media Staff**
+
+NYIAS press days are critical for earned media coverage. Our media support staff manage journalist registration, executive escort, interview coordination, and press kit distribution during the intense two-day media preview that sets the tone for the entire show.`,
+    staffTypes: [
+      { title: 'Product Specialists', description: 'Vehicle-trained presenters who deliver knowledgeable, engaging presentations on your lineup.' },
+      { title: 'Lead Generation Staff', description: 'Qualification-focused staff who capture buyer data and route leads to dealerships.' },
+      { title: 'Promotional Models', description: 'Professional models for photo opportunities, turntable displays, and premium brand representation.' },
+      { title: 'Press Day Staff', description: 'Media-savvy staff for journalist registration, executive escort, and press event coordination.' },
+      { title: 'Registration Staff', description: 'Guest check-in coordinators for VIP events, dealer previews, and sponsor hospitality.' },
+      { title: 'Booth Engagement Staff', description: 'Aisle-facing staff to drive foot traffic and manage visitor flow through your display.' },
+    ],
+    stats: [
+      { value: '1M+', label: 'NYIAS Annual Visitors' },
+      { value: '1,000+', label: 'Vehicles on Display' },
+      { value: '10 Days', label: 'Public Show Duration' },
+      { value: '50+', label: 'Automotive Brands' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book NYIAS staffing?',
+        answer: 'We recommend booking 10-12 weeks before the New York Auto Show. Automotive product specialists require extensive vehicle training, and our best auto show-experienced staff in the New York market book early. For major OEM displays, 12-16 weeks is ideal.',
+      },
+      {
+        question: 'Do your staff receive automotive product training?',
+        answer: 'Yes. All NYIAS product specialists complete comprehensive training on your vehicle lineup covering features, specifications, trim levels, competitive advantages, and key talking points. We coordinate with your training team and can host training sessions at our facilities or via our video training platform.',
+      },
+      {
+        question: 'Can you staff the media preview days?',
+        answer: 'Yes. We provide experienced media support staff for the two-day press preview, managing journalist credentialing, executive interview scheduling, press conference logistics, and media kit distribution. Press day staff are selected for media relations experience.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting?',
+        answer: 'Yes. All staff check in via GPS at the Javits Center. We provide daily dashboards showing staff arrivals, lead capture counts, and engagement metrics. Post-show reports include comprehensive visitor interaction data and lead qualification summaries.',
+      },
+    ],
+    logisticsInfo:
+      'The New York International Auto Show takes place annually in April at the Jacob K. Javits Convention Center in Manhattan. The show runs approximately 10 public days preceded by 2 media preview days and industry/dealer days. AirFresh coordinates staff from our New York City talent network, manages exhibitor credential processes, and provides on-site management throughout the full show run.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 27. VidCon
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'vidcon',
+    title: 'VidCon Staffing Agency | Creator Economy Event Staff',
+    h1: 'VidCon Event Staffing',
+    metaDescription:
+      'VidCon staffing agency providing brand ambassadors, booth staff, and activation teams for VidCon creator economy events. Experienced staff for influencer and digital media conferences.',
+    city: 'Anaheim',
+    stateAbbrev: 'CA',
+    venues: ['Anaheim Convention Center'],
+    keywords: [
+      'VidCon staffing',
+      'VidCon event staff',
+      'creator economy staffing',
+      'influencer event staffing',
+      'VidCon brand activations',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for VidCon at the Anaheim Convention Center. Our digitally savvy brand ambassadors and activation staff help brands connect with the creator economy audience.',
+    bodyContent: `VidCon is the world's largest event for the creator economy, attracting 55,000+ attendees including digital creators, brands, and fans to the Anaheim Convention Center. For brands targeting Gen Z and millennial audiences through digital media and influencer partnerships, VidCon offers direct access to both the creators who shape online culture and the highly engaged fans who follow them.
+
+AirFresh Marketing has staffed VidCon brand activations, sponsor booths, creator meetups, and experiential installations for brands seeking to connect with the digital-first audience. We understand that VidCon staffing requires a different approach—staff must be social media fluent, camera-ready, and capable of creating content-worthy moments that extend your activation's reach far beyond the convention center.
+
+**Brand Activation and Booth Staff**
+
+VidCon brand activations are designed for social media amplification. Our staff create Instagram/TikTok-worthy moments, facilitate content creation stations, manage meet-and-greet lines for partnered creators, and drive booth engagement with the energy and authenticity that VidCon's audience demands. Every interaction is an opportunity for user-generated content.
+
+**Creator Lounge and VIP Staff**
+
+Many brands host creator lounges, gifting suites, and exclusive events for top-tier influencers. Our VIP staff manage guest lists, coordinate creator arrivals, facilitate product gifting experiences, and ensure every creator interaction is seamless—because a single creator's post about your brand can reach millions.
+
+**Content Capture Staff**
+
+At VidCon, documentation is as important as the activation itself. Our content-focused staff capture photos, video clips, and social media content throughout your activation, creating assets for your marketing team while encouraging attendee UGC through strategic engagement.
+
+**Community Track and Industry Staff**
+
+VidCon's Community and Industry tracks attract different audiences. Our staff are briefed on which track attendees they are engaging and adjust their approach accordingly—enthusiastic fan engagement for the Community track, professional networking support for the Industry track.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Social media-savvy ambassadors who create content-worthy moments and drive digital engagement.' },
+      { title: 'Content Capture Staff', description: 'Photo/video staff who document activations and encourage user-generated content creation.' },
+      { title: 'Creator Lounge Staff', description: 'VIP hosts for influencer gifting suites, creator meetups, and exclusive brand experiences.' },
+      { title: 'Booth Engagement Staff', description: 'Energetic staff to drive foot traffic, manage lines, and facilitate interactive brand experiences.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for sponsored panels, workshops, and private events.' },
+    ],
+    stats: [
+      { value: '55K+', label: 'VidCon Attendees' },
+      { value: '3 Days', label: 'Event Duration' },
+      { value: '200+', label: 'Creator Appearances' },
+      { value: '75+', label: 'Brand Activations' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book VidCon staffing?',
+        answer: 'We recommend booking 6-8 weeks before VidCon. Our Southern California talent pool includes many social media-savvy staff ideal for creator economy events. For brands planning major creator partnership activations, earlier booking allows for specialized training.',
+      },
+      {
+        question: 'Do your VidCon staff understand social media and creator culture?',
+        answer: 'Yes. We specifically recruit digitally native staff for VidCon—team members who are active on TikTok, Instagram, and YouTube, understand creator culture, and can authentically engage with VidCon\'s audience. They know how to create content-worthy moments and encourage UGC.',
+      },
+      {
+        question: 'Can you help manage creator meet-and-greet logistics?',
+        answer: 'Absolutely. Creator meet-and-greets generate some of the longest lines at VidCon. Our staff manage line formation, wristband distribution, flow pacing, and fan engagement during wait times. We coordinate with your creator relations team to ensure talent interactions run smoothly.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting?',
+        answer: 'Yes. All staff check in via GPS at the Anaheim Convention Center. We provide daily dashboards and post-event reports including engagement metrics, content capture counts, and social media amplification data.',
+      },
+    ],
+    logisticsInfo:
+      'VidCon takes place annually in June at the Anaheim Convention Center in Anaheim, California. AirFresh coordinates staff from our Los Angeles and Orange County talent networks, manages event credential distribution, and provides on-site management for all three event days.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 28. NRF (National Retail Federation) Big Show
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'nrf-big-show',
+    title: 'NRF Big Show Staffing Agency | Retail Trade Show Staff NYC',
+    h1: 'NRF Big Show Event Staffing New York',
+    metaDescription:
+      'NRF Big Show staffing agency providing booth staff, product demonstrators, and lead capture specialists for the National Retail Federation conference at the Javits Center in New York.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Jacob K. Javits Convention Center'],
+    keywords: [
+      'NRF Big Show staffing',
+      'NRF event staff',
+      'retail trade show staffing',
+      'NRF booth staff',
+      'National Retail Federation staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the NRF Big Show at the Javits Center in New York. Our retail-savvy staff drive booth engagement and qualified lead generation at the world\'s largest retail conference.',
+    bodyContent: `The NRF Big Show is the world's largest retail trade event, attracting 40,000+ attendees including C-suite retail executives, buyers, and technology decision-makers to the Javits Center each January. For retail technology vendors, point-of-sale companies, e-commerce platforms, and retail service providers, NRF is the single most important event to reach the decision-makers who shape the future of retail.
+
+AirFresh Marketing has staffed NRF exhibitor booths, sponsor activations, and hospitality events with staff who understand the retail industry and can engage senior retail professionals in substantive conversations about your solutions.
+
+**Exhibition Booth Staff**
+
+NRF's massive expo floor demands staff who can differentiate your booth from hundreds of competitors. Our booth staff are selected for their retail industry knowledge, professional presence, and ability to engage VP-level decision-makers. They understand retail pain points—omnichannel challenges, supply chain optimization, customer experience, workforce management—and can position your solutions in context.
+
+**Product Demonstrators**
+
+Retail technology demonstrations at NRF must be compelling and concise—attendees are busy. Our demonstrators deliver focused, value-driven presentations of your platform, highlighting key differentiators and connecting capabilities to the specific challenges that retail executives face. Whether your solution is a POS system, inventory management platform, or customer analytics tool, our demonstrators present it with credibility.
+
+**Lead Capture and Qualification**
+
+At NRF, a single qualified lead can represent a multi-million-dollar deal. Our lead capture specialists are trained to identify decision-makers, qualify against your ICP, and capture detailed notes about the prospect's current challenges and buying timeline. Leads are prioritized for immediate follow-up.
+
+**Innovation Lab and Startup Zone Staff**
+
+NRF's Innovation Lab and Startup Zone attract forward-thinking retail executives exploring emerging technologies. Our staff help emerging brands make maximum impact with limited booth space, driving traffic, managing demos, and capturing leads in the fast-paced startup showcase environment.`,
+    staffTypes: [
+      { title: 'Booth Staff', description: 'Retail-savvy professional staff for expo floor engagement with senior retail executives.' },
+      { title: 'Product Demonstrators', description: 'Trained demonstrators for retail technology platforms, POS systems, and enterprise solutions.' },
+      { title: 'Lead Capture Specialists', description: 'B2B qualification specialists trained on retail industry ICP criteria and enterprise sales cycles.' },
+      { title: 'Hospitality Staff', description: 'VIP event staff for sponsor dinners, executive receptions, and partner meetings.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for breakout sessions, workshops, and private presentations.' },
+    ],
+    stats: [
+      { value: '40K+', label: 'NRF Attendees' },
+      { value: '1,000+', label: 'Exhibiting Companies' },
+      { value: '3 Days', label: 'Conference Duration' },
+      { value: '175+', label: 'Sessions and Workshops' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book NRF staffing?',
+        answer: 'We recommend booking 10-12 weeks before NRF (typically by mid-October for the January show). Demand for qualified trade show staff in New York is extremely high during NRF week. For exhibitors with complex product demonstrations, earlier booking allows more training time.',
+      },
+      {
+        question: 'Do your NRF staff understand retail technology?',
+        answer: 'Yes. We recruit retail-savvy staff from our New York network and train them on your specific solutions. Our NRF team members understand retail industry dynamics, common pain points, and the decision-making processes of enterprise retail organizations.',
+      },
+      {
+        question: 'Can you staff NRF after-hours events?',
+        answer: 'Absolutely. We staff executive dinners, partner receptions, and networking events at New York venues throughout NRF week. Our hospitality staff provide the premium service that enterprise retail relationships demand.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting?',
+        answer: 'Yes. All staff check in via GPS at the Javits Center. We provide daily dashboards with lead capture counts, engagement metrics, and comprehensive post-show reports.',
+      },
+    ],
+    logisticsInfo:
+      'The NRF Big Show takes place annually in January at the Jacob K. Javits Convention Center in New York City. AirFresh coordinates staff from our extensive NYC talent network, manages exhibitor credential processes, and provides on-site management throughout the three-day conference.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
