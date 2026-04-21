@@ -36,6 +36,407 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 125 ──────────────────────────────────────────────────────
+  {
+    slug: "e3",
+    title: "E3 Staffing | Event Staff & Brand Ambassadors",
+    h1: "E3 Event Staffing & Brand Ambassadors",
+    metaDescription: "E3 event staffing and brand ambassadors in Los Angeles. Air Fresh Marketing provides experienced gaming convention staff for booth demos, brand activations, and promotions at E3.",
+    city: "Los Angeles",
+    stateAbbrev: "CA",
+    venues: ["Los Angeles Convention Center"],
+    keywords: ["E3 staffing", "E3 brand ambassadors", "E3 event staff", "gaming convention staffing Los Angeles"],
+    description: "E3 (Electronic Entertainment Expo) is the premier event for the video game industry, attracting tens of thousands of gaming professionals, media, influencers, and fans to the Los Angeles Convention Center. For game publishers, hardware manufacturers, and gaming accessory brands, E3 is the most important event of the year to showcase new titles, hardware, and innovations.",
+    bodyContent: `## Why E3 Matters for Gaming Brands
+
+E3 is where the biggest gaming announcements happen. New console reveals, AAA game trailers, and industry-shaping partnerships debut on the E3 show floor. Every major gaming media outlet covers E3, and millions of gamers worldwide watch livestreams of the presentations. Your booth staff represent your brand to this massive global audience.
+
+### E3 Profile
+- **Attendance**: Tens of thousands of industry professionals and fans
+- **Media**: Every major gaming publication and streaming platform
+- **Exhibitors**: Sony, Microsoft, Nintendo, and hundreds of publishers
+- **Content**: Game demos, press conferences, developer panels, esports
+
+## E3 Staffing Services
+
+### Game Demo Staff
+Our E3 demo staff are experienced gamers who can guide attendees through game demonstrations, explain mechanics and features, and generate genuine excitement about upcoming titles. They understand gaming culture and can adapt their approach for casual and hardcore audiences.
+
+### Booth Theater and Presentation Staff
+E3 booths feature theatrical presentations with large screens and live demonstrations. We provide presentation support staff including stage managers, audience coordinators, and queue management personnel.
+
+### Press and Influencer Coordination
+E3 is a media-intensive event. Dedicated press liaison staff manage media appointments, coordinate exclusive demo sessions for major outlets, and ensure influencers have the access needed to create content.
+
+### Cosplay and Character Performers
+Game characters brought to life through professional cosplay create massive buzz at E3. We coordinate with skilled performers who draw crowds, generate photos, and embody your IP characters on the show floor.
+
+### VIP and Behind-Closed-Doors Staff
+Many E3 presentations happen in private meeting rooms for select press and partners. We provide discreet hospitality staff for these exclusive demonstrations.
+
+## Gaming Industry Expertise
+
+E3 staff must be genuine gamers who understand:
+- Current and upcoming game titles across all platforms
+- Gaming hardware specifications and comparisons
+- Esports scenes and competitive gaming culture
+- Streaming and content creation ecosystems
+- Developer tools and industry technology
+
+## Los Angeles Convention Center Logistics
+
+The LACC is one of the largest convention centers in the western U.S. We coordinate staff badge access, parking, load-in schedules, and break rotations across the massive venue. Our LA-based roster ensures reliable, experienced staff without travel costs.
+
+## Staff Your E3 Booth
+
+Air Fresh Marketing staffs E3 with brand ambassadors who live and breathe gaming. Contact us to build your E3 demo team.`,
+    staffTypes: ["Game Demo Staff", "Presentation Support", "Press Liaisons", "Character Performers", "VIP Staff"],
+    stats: [
+      { value: "50K+", label: "Attendees" },
+      { value: "4", label: "Day Event" },
+      { value: "#1", label: "Gaming Expo" },
+      { value: "Global", label: "Media Coverage" }
+    ],
+    faqs: [
+      {
+        question: "Do E3 staff need to be gamers?",
+        answer: "Yes. E3 attendees are deeply knowledgeable about gaming and will immediately notice staff who lack genuine gaming knowledge. All our E3 staff are active gamers who understand the industry."
+      },
+      {
+        question: "Can you provide staff for private E3 demos?",
+        answer: "Yes, we provide discreet, NDA-compliant staff for behind-closed-doors presentations and exclusive media demonstrations at E3."
+      },
+      {
+        question: "How do you handle the intense E3 schedule?",
+        answer: "E3 days are long and intense. We implement shift rotations, mandatory breaks, and energy management strategies to keep staff performing at peak levels throughout the multi-day event."
+      }
+    ],
+    logisticsInfo: "E3 takes place at the Los Angeles Convention Center in downtown LA. LAX is 30 minutes away. Downtown LA hotels are within walking distance or short rideshare. The convention center is accessible via LA Metro.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/events/e3-staffing.jpg"
+  },
+  {
+    slug: "south-beach-wine-food-festival",
+    title: "South Beach Wine & Food Festival Staffing | Event Staff",
+    h1: "South Beach Wine & Food Festival Event Staffing & Brand Ambassadors",
+    metaDescription: "South Beach Wine & Food Festival event staffing and brand ambassadors in Miami. Air Fresh Marketing provides culinary event staff for activations, tastings, and hospitality at SOBEWFF.",
+    city: "Miami Beach",
+    stateAbbrev: "FL",
+    venues: ["Miami Beach Convention Center", "Various South Beach Venues"],
+    keywords: ["South Beach Wine Food Festival staffing", "SOBEWFF brand ambassadors", "Miami food festival staffing", "wine festival event staff"],
+    description: "The South Beach Wine & Food Festival (SOBEWFF) is one of the premier culinary events in the United States, attracting over 65,000 attendees across five days of tastings, dinners, demonstrations, and parties throughout Miami Beach. For food, beverage, and luxury lifestyle brands, SOBEWFF provides access to affluent foodies, celebrity chefs, and culinary media.",
+    bodyContent: `## Why Brands Activate at SOBEWFF
+
+SOBEWFF combines the prestige of a world-class culinary event with the glamour of South Beach nightlife. The festival attracts an affluent, epicurean audience with high disposable income and strong brand affinity. Celebrity chef appearances, exclusive dinners, and beach-side tastings create premium brand activation environments.
+
+### Festival Profile
+- **Attendance**: 65,000+ across five days
+- **Demographics**: Affluent, 30-55, food and wine enthusiasts
+- **Celebrity chefs**: Guy Fieri, Giada De Laurentiis, Bobby Flay, and many more
+- **Events**: 100+ tastings, dinners, parties, and demonstrations
+- **Media**: Food Network, culinary publications, lifestyle media
+
+## SOBEWFF Staffing Solutions
+
+### Tasting Event Staff
+Grand tastings on the beach feature hundreds of food and beverage stations. Our staff manage sampling stations, pour wines and spirits, present food items, and engage attendees with brand stories and product information.
+
+### Celebrity Chef Event Support
+Celebrity chef demonstrations and dinners require polished hospitality staff who can work alongside culinary celebrities professionally and discreetly.
+
+### VIP and Private Dinner Staff
+Exclusive multi-course dinners and VIP experiences demand luxury hospitality service. Our staff provide white-glove service at intimate, high-end events.
+
+### Beach Activation Teams
+SOBEWFF's iconic beach events need staff comfortable working in sand, sun, and South Beach energy. Our teams manage outdoor tastings, brand lounges, and beach-side experiences.
+
+### Brand Sampling and Hospitality
+Food and beverage brands showcase products throughout the festival. Our TIPS-certified, food handler-certified staff manage tastings, demonstrations, and product education across multiple venues.
+
+## Culinary Event Staffing Expertise
+
+SOBEWFF staff should understand:
+- Wine service, tasting etiquette, and varietal knowledge
+- Food presentation and plating standards
+- Cocktail and spirits knowledge
+- Food allergy awareness and safe handling
+- Luxury hospitality service standards
+- Celebrity event protocol and discretion
+
+## Miami Beach Logistics
+
+February in Miami Beach offers perfect weather but presents logistics challenges including limited parking, island access congestion, and high hotel demand. Our Miami-based staff roster ensures reliable local talent without travel costs.
+
+## Staff Your SOBEWFF Activation
+
+Air Fresh Marketing provides culinary-trained event staff for the South Beach Wine & Food Festival. Our Miami team combines hospitality expertise with genuine food and wine knowledge. Contact us to plan your SOBEWFF staffing.`,
+    staffTypes: ["Tasting Staff", "Hospitality Staff", "VIP Service", "Beach Activation Teams", "Celebrity Event Support"],
+    stats: [
+      { value: "65K+", label: "Total Attendance" },
+      { value: "5", label: "Day Festival" },
+      { value: "100+", label: "Events" },
+      { value: "#1", label: "Culinary Festival" }
+    ],
+    faqs: [
+      {
+        question: "Do SOBEWFF staff need food and wine knowledge?",
+        answer: "Yes, SOBEWFF attendees are sophisticated food and wine enthusiasts. Staff should understand wine varietals, food pairing principles, and culinary terminology to engage this audience credibly."
+      },
+      {
+        question: "Are TIPS and food handler certifications required?",
+        answer: "Yes, all staff serving alcohol must be TIPS-certified, and all staff handling food must have valid food handler certification for Florida."
+      },
+      {
+        question: "How do you handle the outdoor beach events?",
+        answer: "We prepare staff for South Beach conditions—heat, sand, wind, and direct sun exposure. We provide sun protection, hydration supplies, and schedule breaks in shaded areas between beach event shifts."
+      }
+    ],
+    logisticsInfo: "SOBEWFF takes place across Miami Beach venues including the Convention Center and various hotels, restaurants, and beach locations. Miami International Airport (MIA) is 20 minutes away. Staff should plan for beach conditions and varied venue types throughout the five-day festival.",
+    relatedCitySlug: "miami",
+    relatedCityName: "Miami",
+    heroImage: "/images/events/sobewff-staffing.jpg"
+  },
+  {
+    slug: "taste-of-chicago",
+    title: "Taste of Chicago Staffing | Event Staff & Brand Ambassadors",
+    h1: "Taste of Chicago Event Staffing & Brand Ambassadors",
+    metaDescription: "Taste of Chicago event staffing and brand ambassadors in Grant Park. Air Fresh Marketing provides experienced food festival staff for brand activations, sampling, and promotions at Taste of Chicago.",
+    city: "Chicago",
+    stateAbbrev: "IL",
+    venues: ["Grant Park"],
+    keywords: ["Taste of Chicago staffing", "Taste of Chicago brand ambassadors", "Chicago food festival staffing", "Taste of Chicago event staff"],
+    description: "Taste of Chicago is the world's largest outdoor food festival, attracting over 1.5 million visitors to Grant Park across five days each July. The free-admission festival features dozens of Chicago's best restaurants alongside live music, family activities, and brand activations, making it one of the highest-traffic events in the Midwest for consumer brand marketing.",
+    bodyContent: `## Why Brands Activate at Taste of Chicago
+
+With 1.5 million visitors and free admission, Taste of Chicago offers unmatched volume for brand sampling, awareness campaigns, and consumer engagement. The diverse Chicago audience—families, foodies, tourists, and locals of all demographics—provides brands with exposure to a true cross-section of American consumers.
+
+### Festival Highlights
+- **Attendance**: 1.5 million+ across five days
+- **Admission**: Free general admission
+- **Location**: Grant Park in downtown Chicago
+- **Restaurants**: 70+ of Chicago's best restaurants
+- **Demographics**: All ages, diverse, families to young professionals
+
+## Taste of Chicago Staffing Solutions
+
+### High-Volume Sampling Teams
+The massive attendance creates opportunities for enormous sample distribution. Our teams manage high-volume sampling stations that can distribute 5,000-15,000+ samples per day while maintaining quality engagement with each consumer.
+
+### Brand Activation Booth Staff
+Dedicated brand experience areas within Grant Park need engaging staff who can draw people from the massive crowd flow. Our brand ambassadors create interactive experiences that compete for attention in this high-stimulus environment.
+
+### Bilingual Staffing
+Chicago's diverse population means Taste of Chicago attracts significant Spanish, Polish, and Mandarin-speaking audiences. We provide bilingual staff to maximize engagement across language groups.
+
+### Food and Beverage Brand Support
+CPG and food brands activating alongside Chicago's restaurant scene need staff who can position their products credibly in a culinary context. Our food-savvy brand ambassadors provide tastings and product education.
+
+### Street Team and Guerrilla Marketing
+With 1.5 million pedestrians across five days, street teams operating in and around Grant Park achieve massive distribution numbers. Our teams blanket the festival grounds and surrounding Millennium Park and Michigan Avenue areas.
+
+## Managing Massive Crowds
+
+Taste of Chicago's free admission creates extremely dense crowds, especially on weekends and evenings. Our staff are trained for:
+- High-volume engagement in crowded conditions
+- Quick, efficient interactions that serve more people
+- Safety awareness in dense crowd situations
+- Hydration and energy management during hot July days
+- Maintaining positive energy during 8-10 hour shifts
+
+## Chicago Summer Festival Logistics
+
+July in Chicago brings heat, humidity, and occasional thunderstorms. Our logistics planning includes weather contingencies, cooling breaks, indoor backup locations, and flexible scheduling. Grant Park's central location is easily accessible by CTA train and bus, which our staff use to avoid the area's limited parking.
+
+## Book Your Taste of Chicago Team
+
+Air Fresh Marketing's Chicago roster provides experienced food festival staff for Taste of Chicago. Our teams handle high-volume events with efficiency and enthusiasm. Contact us to staff your Taste of Chicago activation.`,
+    staffTypes: ["Sampling Teams", "Brand Ambassadors", "Bilingual Staff", "Street Teams", "Food Brand Support"],
+    stats: [
+      { value: "1.5M+", label: "Total Visitors" },
+      { value: "5", label: "Day Festival" },
+      { value: "FREE", label: "Admission" },
+      { value: "70+", label: "Restaurants" }
+    ],
+    faqs: [
+      {
+        question: "How do you handle the massive crowds at Taste of Chicago?",
+        answer: "We train staff for high-volume engagement with efficient interaction techniques, strategic positioning at high-traffic flow points, and team-based approaches that maximize throughput while maintaining quality conversations."
+      },
+      {
+        question: "Is bilingual staffing available for Taste of Chicago?",
+        answer: "Yes, Chicago's diverse population makes bilingual staffing valuable. We provide Spanish, Polish, and Mandarin-speaking brand ambassadors from our Chicago roster to engage the festival's multicultural audience."
+      },
+      {
+        question: "What weather preparations are needed for a July event in Grant Park?",
+        answer: "July in Chicago brings heat, humidity, and potential thunderstorms. We implement hydration breaks, sun protection, and weather contingency plans. Staff are briefed on indoor shelter locations and protocols for weather-related event pauses."
+      }
+    ],
+    logisticsInfo: "Taste of Chicago takes place in Grant Park in downtown Chicago. O'Hare (ORD) and Midway (MDW) airports serve the area. CTA trains and buses provide direct access to Grant Park. July weather can be hot and humid with occasional storms. Staff should plan for all-outdoor conditions.",
+    relatedCitySlug: "chicago",
+    relatedCityName: "Chicago",
+    heroImage: "/images/events/taste-of-chicago-staffing.jpg"
+  },
+  {
+    slug: "tribeca-festival",
+    title: "Tribeca Festival Staffing | Event Staff & Brand Ambassadors",
+    h1: "Tribeca Festival Event Staffing & Brand Ambassadors",
+    metaDescription: "Tribeca Festival event staffing and brand ambassadors in New York City. Air Fresh Marketing provides experienced film festival staff for brand activations, screenings, and VIP events at Tribeca.",
+    city: "New York",
+    stateAbbrev: "NY",
+    venues: ["Various Tribeca/Manhattan Venues"],
+    keywords: ["Tribeca Festival staffing", "Tribeca film festival brand ambassadors", "NYC festival staffing", "Tribeca event staff"],
+    description: "The Tribeca Festival is one of the world's premier cultural festivals, spanning film, television, music, games, and immersive storytelling across multiple venues in lower Manhattan over 12 days each June. Founded by Robert De Niro, the festival attracts industry professionals, celebrities, media, and culturally engaged audiences—making it a premium activation opportunity for entertainment, technology, and luxury brands.",
+    bodyContent: `## Why Brands Activate at Tribeca
+
+Tribeca represents the intersection of culture, technology, and storytelling. Unlike mainstream festivals, Tribeca's audience is highly curated—industry professionals, content creators, media buyers, and culturally influential New Yorkers. Brand activations at Tribeca reach decision-makers who shape entertainment and media trends.
+
+### Festival Profile
+- **Duration**: 12 days in June
+- **Programming**: Films, TV premieres, podcasts, games, VR/immersive, music
+- **Audience**: Entertainment industry professionals, NYC culturati, media
+- **Celebrity presence**: Major film, TV, and music personalities
+- **Venues**: Multiple locations across lower Manhattan
+
+## Tribeca Festival Staffing Solutions
+
+### Screening and Premiere Staff
+Film screenings and TV premieres need professional front-of-house staff for ticket scanning, audience seating, VIP management, and post-screening Q&A logistics.
+
+### Brand Lounge and Experience Staff
+Sponsors create branded lounges and experience spaces throughout the festival footprint. Our staff manage these premium environments with hospitality polish and brand knowledge.
+
+### VIP and Celebrity Event Staff
+Tribeca attracts major celebrities and industry leaders. We provide discreet, professional staff for VIP events, after-parties, and exclusive brand-hosted gatherings.
+
+### Immersive Experience Operators
+Tribeca's immersive storytelling section features VR, AR, and interactive experiences. We provide technically skilled staff who can operate equipment and guide attendees through emerging media technologies.
+
+### Press and Media Coordination
+With extensive media coverage, brands need staff who can coordinate press interactions, manage media check-in, and facilitate interview logistics.
+
+## Cultural Sophistication Required
+
+Tribeca staff must match the festival's cultural intelligence:
+- Understanding of film, television, and media industries
+- Familiarity with current cultural conversations
+- Professional appearance appropriate for NYC creative industry events
+- Comfort interacting with celebrities and media personalities
+- Ability to discuss brands in culturally relevant terms
+
+## Lower Manhattan Logistics
+
+Tribeca Festival events span multiple venues across downtown Manhattan. Staff must navigate between locations efficiently using subway and walking. Our NYC roster ensures local staff who know the neighborhood intimately.
+
+## Staff Your Tribeca Activation
+
+Air Fresh Marketing provides culturally fluent event staff for the Tribeca Festival. Our New York team brings entertainment industry awareness and luxury hospitality skills to every activation. Contact us to staff your Tribeca Festival presence.`,
+    staffTypes: ["Screening Staff", "Brand Lounge Staff", "VIP Hospitality", "Immersive Tech Operators", "Press Coordination"],
+    stats: [
+      { value: "12", label: "Day Festival" },
+      { value: "200+", label: "Screenings" },
+      { value: "A-List", label: "Celebrity Attendance" },
+      { value: "#1", label: "NYC Film Festival" }
+    ],
+    faqs: [
+      {
+        question: "What makes Tribeca Festival staffing different from other events?",
+        answer: "Tribeca requires culturally sophisticated staff who understand entertainment, media, and technology industries. The audience includes A-list celebrities, studio executives, and influential media professionals who expect premium service and intelligent conversation."
+      },
+      {
+        question: "Can you staff events across multiple Tribeca venues?",
+        answer: "Yes, we coordinate staff across multiple lower Manhattan venues simultaneously. Our NYC-based team knows the neighborhood and can move efficiently between locations throughout the festival's 12-day run."
+      },
+      {
+        question: "Do you provide staff for Tribeca immersive experiences?",
+        answer: "Yes, we provide technically skilled staff who can operate VR headsets, AR installations, and interactive technology experiences. Tribeca's immersive section is increasingly important for tech and entertainment brands."
+      }
+    ],
+    logisticsInfo: "The Tribeca Festival takes place across multiple venues in lower Manhattan including Spring Studios and various theaters and event spaces. JFK, LaGuardia, and Newark airports serve NYC. Staff use subway (1/2/3, A/C/E trains to Tribeca) and walking between nearby venues.",
+    relatedCitySlug: "new-york",
+    relatedCityName: "New York City",
+    heroImage: "/images/events/tribeca-festival-staffing.jpg"
+  },
+  {
+    slug: "sema",
+    title: "SEMA Show Staffing | Event Staff & Brand Ambassadors",
+    h1: "SEMA Show Event Staffing & Brand Ambassadors",
+    metaDescription: "SEMA Show event staffing and brand ambassadors in Las Vegas. Air Fresh Marketing provides experienced automotive aftermarket staff for booth demos, activations, and promotions at the SEMA Show.",
+    city: "Las Vegas",
+    stateAbbrev: "NV",
+    venues: ["Las Vegas Convention Center"],
+    keywords: ["SEMA Show staffing", "SEMA brand ambassadors", "automotive aftermarket staffing", "SEMA event staff"],
+    description: "The SEMA Show is the premier automotive specialty products trade event in the world, attracting over 160,000 industry professionals to the Las Vegas Convention Center each November. For aftermarket automotive brands, performance parts manufacturers, and automotive technology companies, SEMA is the most important trade show of the year.",
+    bodyContent: `## Why SEMA Is the Automotive Aftermarket's Biggest Stage
+
+SEMA (Specialty Equipment Market Association) Show is the definitive showcase for the automotive aftermarket industry. Over 2,400 exhibitors display the latest in performance parts, accessories, restoration products, wheels and tires, tools, and automotive technology to buyers from around the world.
+
+### SEMA Show Profile
+- **Attendance**: 160,000+ industry professionals
+- **Exhibitors**: 2,400+ companies across 1 million square feet
+- **Trade-only**: Open exclusively to industry professionals, media, and exhibitors
+- **Duration**: 4 days in November
+- **Location**: Las Vegas Convention Center (full facility)
+
+## SEMA Show Staffing Services
+
+### Automotive Product Specialists
+Our SEMA booth staff understand automotive aftermarket products—performance parts, suspension systems, exhaust systems, wheels, tires, and accessories. They engage with shop owners, distributors, and enthusiasts using accurate technical language.
+
+### Custom Vehicle Display Staff
+SEMA's famous vehicle builds attract massive attention. We provide staff who can present custom vehicles, discuss modifications and parts used, and drive traffic to your booth through vehicle showcase engagement.
+
+### B2B Sales Support
+SEMA is a buying show. Our staff support your sales team by qualifying leads, scheduling meetings, capturing contact information, and managing booth traffic so your senior sales personnel focus on closing deals.
+
+### Outdoor Vehicle Experience Staff
+SEMA's outdoor sections feature ride-and-drive experiences, off-road courses, and vehicle demonstrations. We provide staff for these dynamic automotive experiences.
+
+### New Product Launch Support
+SEMA is where new aftermarket products debut. We staff product launch presentations with trained specialists who can demonstrate new products and articulate competitive advantages.
+
+## Automotive Aftermarket Knowledge
+
+SEMA staff should understand:
+- Automotive parts categories (performance, restoration, accessories, tools)
+- Vehicle platforms and model-specific compatibility
+- Industry distribution channels (jobbers, WDs, retailers)
+- Installation and fitment considerations
+- Competitive product positioning within aftermarket categories
+
+## Las Vegas Convention Center Logistics
+
+SEMA occupies the entire Las Vegas Convention Center—one of the largest convention spaces in North America. Staff must navigate multiple halls, outdoor demonstration areas, and parking lot activations. Our SEMA-experienced staff know the venue layout and manage the long distances between areas efficiently.
+
+## Staff Your SEMA Booth
+
+Air Fresh Marketing provides automotive-knowledgeable booth staff for the SEMA Show. Our teams combine aftermarket industry knowledge with professional trade show engagement skills. Contact us to staff your SEMA activation.`,
+    staffTypes: ["Product Specialists", "Vehicle Display Staff", "B2B Sales Support", "Outdoor Experience Staff", "Launch Support"],
+    stats: [
+      { value: "160K+", label: "Industry Attendees" },
+      { value: "2,400+", label: "Exhibitors" },
+      { value: "4", label: "Day Show" },
+      { value: "#1", label: "Auto Aftermarket Show" }
+    ],
+    faqs: [
+      {
+        question: "Do SEMA staff need automotive technical knowledge?",
+        answer: "Yes, SEMA is a trade show for automotive industry professionals. Staff must understand aftermarket products, vehicle platforms, and industry terminology to engage credibly with shop owners, distributors, and automotive enthusiasts."
+      },
+      {
+        question: "Is SEMA open to the general public?",
+        answer: "No, SEMA is a trade-only event for industry professionals, media, and exhibitors. Staff must be registered as part of an exhibiting company to access the show floor."
+      },
+      {
+        question: "How large is the SEMA Show venue?",
+        answer: "SEMA occupies the entire Las Vegas Convention Center—over 1 million square feet of exhibit space plus extensive outdoor areas. Staff should wear comfortable shoes and be prepared for significant walking throughout the day."
+      }
+    ],
+    logisticsInfo: "The SEMA Show takes place at the Las Vegas Convention Center on Paradise Road. Harry Reid International Airport (LAS) is 10 minutes away. Staff can stay at nearby Strip hotels or the Las Vegas Convention Center area hotels. November weather in Las Vegas is mild (60-70°F).",
+    relatedCitySlug: "las-vegas",
+    relatedCityName: "Las Vegas",
+    heroImage: "/images/events/sema-show-staffing.jpg"
+  },
   // ── Batch 120 ──────────────────────────────────────────────────────
   {
     slug: "burning-man",
