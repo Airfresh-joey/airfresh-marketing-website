@@ -114,6 +114,30 @@ const competitors = [
     keyDiff: 'High volume/low touch, impersonal service',
     priority: false,
   },
+  {
+    slug: 'allied-experiential',
+    name: 'Allied Experiential',
+    tagline: 'Corporate experiential marketing',
+    location: 'Nationwide',
+    keyDiff: 'Less agile, no published pricing',
+    priority: false,
+  },
+  {
+    slug: 'team-enterprises',
+    name: 'Team Enterprises',
+    tagline: 'Enterprise experiential marketing firm',
+    location: 'Nationwide',
+    keyDiff: 'Higher minimums, slower turnaround',
+    priority: false,
+  },
+  {
+    slug: 'encore-nationwide',
+    name: 'Encore Nationwide',
+    tagline: 'Nationwide event staffing company',
+    location: 'Nationwide',
+    keyDiff: 'Staffing-only, no experiential capabilities',
+    priority: false,
+  },
 ];
 
 const afmHighlights = [
