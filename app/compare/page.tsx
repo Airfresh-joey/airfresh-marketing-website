@@ -162,6 +162,30 @@ const competitors = [
     keyDiff: 'Strategy-only, no execution or staffing capabilities',
     priority: false,
   },
+  {
+    slug: 'sparks-marketing',
+    name: 'Sparks Marketing',
+    tagline: 'Large experiential and trade show agency',
+    location: 'Nationwide',
+    keyDiff: 'Less agile, no published pricing, slower deployment',
+    priority: false,
+  },
+  {
+    slug: 'grammy-staffing',
+    name: 'Grammy Staffing',
+    tagline: 'Entertainment-focused event staffing',
+    location: 'Major markets',
+    keyDiff: 'Narrow industry focus, no proprietary tech platform',
+    priority: false,
+  },
+  {
+    slug: 'next-level-promotions',
+    name: 'Next Level Promotions',
+    tagline: 'Promotional staffing and modeling agency',
+    location: 'Select markets',
+    keyDiff: 'Modeling-focused, limited experiential capabilities',
+    priority: false,
+  },
 ];
 
 const afmHighlights = [
