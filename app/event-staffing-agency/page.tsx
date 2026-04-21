@@ -1143,6 +1143,12 @@ export default function EventStaffingAgencyPage() {
               <Link href="/brand-activation-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Brand Activation Agency
               </Link>
+              <Link href="/field-marketing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Field Marketing Agency
+              </Link>
+              <Link href="/guerrilla-marketing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Guerrilla Marketing Agency
+              </Link>
               <Link href="/compare/atn-event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 vs ATN Event Staffing
               </Link>

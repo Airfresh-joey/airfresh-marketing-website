@@ -922,6 +922,8 @@ export default function CorporateEventStaffingPage() {
               { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
               { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
               { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
+              { href: '/field-marketing-agency', label: 'Field Marketing Agency' },
+              { href: '/guerrilla-marketing-agency', label: 'Guerrilla Marketing Agency' },
               { href: '/services/trade-show-staffing', label: 'Trade Show Staffing' },
               { href: '/services/food-beverage-sampling', label: 'Food & Beverage Sampling' },
             ].map((link) => (

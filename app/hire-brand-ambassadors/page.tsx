@@ -1118,6 +1118,8 @@ export default function HireBrandAmbassadorsPage() {
             <Link href="/corporate-event-staffing" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Corporate Event Staffing</Link>
             <Link href="/event-marketing-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Event Marketing Agency</Link>
             <Link href="/brand-activation-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Brand Activation Agency</Link>
+            <Link href="/field-marketing-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Field Marketing Agency</Link>
+            <Link href="/guerrilla-marketing-agency" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Guerrilla Marketing Agency</Link>
           </div>
         </div>
       </section>

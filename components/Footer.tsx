@@ -39,6 +39,8 @@ export default function Footer() {
     { name: "Corporate Event Staffing", href: "/corporate-event-staffing" },
     { name: "Event Marketing Agency", href: "/event-marketing-agency" },
     { name: "Brand Activation Agency", href: "/brand-activation-agency" },
+    { name: "Field Marketing Agency", href: "/field-marketing-agency" },
+    { name: "Guerrilla Marketing Agency", href: "/guerrilla-marketing-agency" },
     { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },

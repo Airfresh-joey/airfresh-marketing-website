@@ -360,6 +360,8 @@ export default function CompareAssistMarketing() {
             { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
             { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
             { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
+            { href: '/field-marketing-agency', label: 'Field Marketing Agency' },
+            { href: '/guerrilla-marketing-agency', label: 'Guerrilla Marketing Agency' },
             { href: '/compare/mosaic-experiential', label: 'AirFresh vs Mosaic Experiential' },
             { href: '/compare/pro-motion-staffing', label: 'AirFresh vs Pro Motion' },
             { href: '/compare/advantage-solutions', label: 'AirFresh vs Advantage Solutions' },

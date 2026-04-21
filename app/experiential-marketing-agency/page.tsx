@@ -967,6 +967,8 @@ export default function ExperientialMarketingAgencyPage() {
               { label: 'Corporate Event Staffing', href: '/corporate-event-staffing' },
               { label: 'Event Marketing Agency', href: '/event-marketing-agency' },
               { label: 'Brand Activation Agency', href: '/brand-activation-agency' },
+              { label: 'Field Marketing Agency', href: '/field-marketing-agency' },
+              { label: 'Guerrilla Marketing Agency', href: '/guerrilla-marketing-agency' },
               { label: 'Case Studies', href: '/case-studies' },
               { label: 'Technology Platform', href: '/technology' },
               { label: 'Pricing', href: '/pricing' },
