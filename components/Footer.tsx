@@ -86,6 +86,11 @@ export default function Footer() {
     { name: "Governors Ball", href: "/staffing-for/governors-ball" },
     { name: "Anime Expo", href: "/staffing-for/anime-expo" },
     { name: "LA Auto Show", href: "/staffing-for/la-auto-show" },
+    { name: "Sundance", href: "/staffing-for/sundance-film-festival" },
+    { name: "AWS re:Invent", href: "/staffing-for/aws-reinvent" },
+    { name: "PAX West", href: "/staffing-for/pax-west" },
+    { name: "Taste of Chicago", href: "/staffing-for/taste-of-chicago" },
+    { name: "Essence Fest", href: "/staffing-for/essence-fest" },
     { name: "All Events →", href: "/events" },
   ];
 
