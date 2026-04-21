@@ -357,6 +357,8 @@ export default function CompareATNEventStaffing() {
             { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
             { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
             { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
+            { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
+            { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />

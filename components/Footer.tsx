@@ -35,6 +35,8 @@ export default function Footer() {
     { name: "Hire Brand Ambassadors", href: "/hire-brand-ambassadors" },
     { name: "Brand Ambassador Agency", href: "/brand-ambassador-agency" },
     { name: "Experiential Marketing Agency", href: "/experiential-marketing-agency" },
+    { name: "Promotional Staffing Agency", href: "/promotional-staffing-agency" },
+    { name: "Corporate Event Staffing", href: "/corporate-event-staffing" },
     { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },

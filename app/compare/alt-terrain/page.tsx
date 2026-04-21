@@ -377,6 +377,19 @@ export default function CompareAltTerrain() {
               </Button>
             </Link>
           </div>
+          <div className="flex flex-wrap justify-center gap-3 mt-8">
+            {[
+              { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
+              { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
+              { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
+              { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
+              { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="text-white/70 hover:text-cyan-200 text-sm transition-colors">
+                {link.label}
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
     </main>

@@ -747,6 +747,8 @@ export default function FoodBeverageSamplingPage() {
               { href: '/services/experiential-marketing', title: 'Experiential Marketing', desc: 'Immersive brand experiences that drive engagement' },
               { href: '/event-staffing-agency', title: 'Event Staffing Agency', desc: 'Full-service event staffing solutions nationwide' },
               { href: '/hire-brand-ambassadors', title: 'Hire Brand Ambassadors', desc: 'Find and hire professional brand ambassadors' },
+              { href: '/promotional-staffing-agency', title: 'Promotional Staffing Agency', desc: 'Trained promo staff for sampling and events' },
+              { href: '/corporate-event-staffing', title: 'Corporate Event Staffing', desc: 'Professional staff for corporate events and conferences' },
               { href: '/pricing', title: 'Staffing Pricing', desc: 'Transparent pricing for all staffing services' },
               { href: '/contact', title: 'Contact Us', desc: 'Get a custom quote for your sampling campaign' }
             ].map((link, index) => (

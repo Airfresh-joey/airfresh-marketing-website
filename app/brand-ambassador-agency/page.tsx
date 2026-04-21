@@ -1175,6 +1175,12 @@ export default function BrandAmbassadorAgencyPage() {
               <Link href="/event-staffing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Event Staffing Agency
               </Link>
+              <Link href="/promotional-staffing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Promotional Staffing Agency
+              </Link>
+              <Link href="/corporate-event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Corporate Event Staffing
+              </Link>
               <Link href="/pricing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Pricing
               </Link>

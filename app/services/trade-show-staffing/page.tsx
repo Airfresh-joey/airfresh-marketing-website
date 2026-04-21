@@ -658,6 +658,20 @@ export default function TradeShowStaffingPage() {
             </Link>{' '}
             to build a complete experiential marketing strategy.
           </p>
+          <div className="flex flex-wrap justify-center gap-3 mb-8">
+            {[
+              { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
+              { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
+              { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
+              { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
+              { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
+              { href: '/services/food-beverage-sampling', label: 'Food & Beverage Sampling' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="text-indigo-200 hover:text-white text-sm transition-colors">
+                {link.label}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-indigo-900 hover:bg-indigo-50">
               <Link href="/contact" className="flex items-center gap-2">
