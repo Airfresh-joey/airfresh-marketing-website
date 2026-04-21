@@ -532,6 +532,14 @@ export default function Home() {
               <Link href="/staffing-for/governors-ball" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Governors Ball</Link>
               <Link href="/staffing-for/anime-expo" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Anime Expo</Link>
               <Link href="/staffing-for/la-auto-show" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">LA Auto Show</Link>
+              <Link href="/staffing-for/sundance-film-festival" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Sundance</Link>
+              <Link href="/staffing-for/aws-reinvent" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">AWS re:Invent</Link>
+              <Link href="/staffing-for/pax-west" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">PAX West</Link>
+              <Link href="/staffing-for/taste-of-chicago" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Taste of Chicago</Link>
+              <Link href="/staffing-for/essence-fest" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Essence Fest</Link>
+              <Link href="/staffing-for/detroit-auto-show" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">Detroit Auto Show</Link>
+              <Link href="/staffing-for/himss" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">HIMSS</Link>
+              <Link href="/staffing-for/kcon-la" className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-cyan-400 hover:text-cyan-600 transition-colors shadow-sm">KCON LA</Link>
             </div>
             <Link href="/events" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
               View All Events <ArrowRight className="w-4 h-4" />

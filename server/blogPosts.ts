@@ -15,7 +15,7 @@ export interface BlogPost {
 export const blogPosts: BlogPost[] = [
   {
     id: "485",
-    slug: "experiential-marketing-trends-2026-brands-need-to-know",
+    slug: "experiential-marketing-trends-predictions-2026",
     title: "Experiential Marketing Trends 2026: What Brands Need to Know",
     excerpt: "Explore the top experiential marketing trends shaping 2026, from AI-powered personalization and immersive technology to sustainability-focused activations and hybrid event experiences that brands must embrace to stay competitive.",
     content: `# Experiential Marketing Trends 2026: What Brands Need to Know
