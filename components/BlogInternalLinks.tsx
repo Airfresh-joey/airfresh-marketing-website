@@ -98,7 +98,12 @@ export default function BlogInternalLinks() {
         <Link href="/staffing-for/burning-man" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Burning Man</Link>
         <Link href="/staffing-for/new-york-fashion-week" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">NYFW</Link>
         <Link href="/staffing-for/rose-bowl" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Rose Bowl</Link>
-        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 140+ Events →</Link>
+        <Link href="/staffing-for/pga-championship" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">PGA Championship</Link>
+        <Link href="/staffing-for/comic-con-san-diego" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Comic-Con San Diego</Link>
+        <Link href="/staffing-for/austin-city-limits-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">ACL Festival</Link>
+        <Link href="/staffing-for/tribeca-film-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Tribeca Film Festival</Link>
+        <Link href="/staffing-for/electric-daisy-carnival-orlando" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">EDC Orlando</Link>
+        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 145+ Events →</Link>
       </div>
 
       {/* Top Markets */}
