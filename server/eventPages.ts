@@ -36,6 +36,458 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 120 ──────────────────────────────────────────────────────
+  {
+    slug: "burning-man",
+    title: "Burning Man Staffing | Event Staff & Brand Ambassadors",
+    h1: "Burning Man Event Staffing & Brand Ambassadors",
+    metaDescription: "Burning Man event staffing and brand ambassadors in Black Rock City, Nevada. Air Fresh Marketing provides experienced desert festival staff for experiential activations at Burning Man.",
+    city: "Black Rock City",
+    stateAbbrev: "NV",
+    venues: ["Black Rock Desert"],
+    keywords: ["Burning Man staffing", "Burning Man brand activations", "Black Rock City event staff", "Burning Man experience staff"],
+    description: "Burning Man is the world's most iconic gathering of art, self-expression, and radical community, attracting approximately 80,000 participants to the Black Rock Desert in Nevada each August. While Burning Man's culture discourages traditional commercial marketing, select brands create gifted experiences and art installations that align with the community's 10 principles.",
+    bodyContent: `## Understanding Burning Man's Unique Culture
+
+Burning Man operates under 10 principles including radical self-reliance, gifting, decommodification, and leave no trace. Traditional brand activations with logos, sampling, and lead capture are not appropriate here. However, brands can create meaningful experiences by funding art installations, gifting useful items, and supporting the community in ways that align with Burner values.
+
+### What Makes Burning Man Different
+- **No commerce on playa**: Money is not exchanged (except at Center Camp Cafe and for ice)
+- **Gifting economy**: Participants give freely without expectation of return
+- **Decommodification**: Commercial sponsorship and advertising are not allowed
+- **Radical self-reliance**: Participants must bring everything they need to survive
+- **Leave No Trace**: Every speck of matter brought in must be removed
+
+## Appropriate Brand Involvement at Burning Man
+
+### Funded Art Installations
+Brands can fund large-scale art installations without visible branding. The brand's involvement is communicated through PR, social media, and media coverage rather than on-playa signage.
+
+### Gifting Experiences
+Create camps that gift useful experiences—shade structures, charging stations, repair services, wellness treatments—without branding or commercial messaging.
+
+### Artist Support Programs
+Fund artists creating work for the playa. This supports the community while associating the brand with creativity and cultural contribution.
+
+### Post-Event Content Creation
+Document brand-adjacent experiences at Burning Man for post-event marketing content that conveys innovation, creativity, and cultural relevance.
+
+## Desert Staffing Challenges
+
+Burning Man presents the most extreme staffing environment in experiential marketing:
+
+**Extreme Heat**: Daytime temperatures regularly exceed 100°F on the open desert playa with zero shade.
+
+**Dust Storms**: White-out conditions can occur suddenly, reducing visibility to near zero and coating everything in alkaline dust.
+
+**Remote Location**: Black Rock City is hours from the nearest town. There are no stores, no restaurants, and no services.
+
+**Self-Reliance**: Staff must bring their own food, water, shelter, and supplies for the entire week. The staffing agency must coordinate all survival logistics.
+
+**Physical Demands**: Working in the desert for a week requires exceptional physical fitness and mental resilience.
+
+## Staff Requirements for Burning Man
+
+- Minimum one prior Burning Man attendance (understanding the culture is non-negotiable)
+- Physical fitness for extreme desert conditions
+- Self-reliance skills (camping, cooking, vehicle maintenance)
+- Understanding of Burning Man's 10 principles
+- Creative problem-solving abilities
+- Comfort with extreme dust, heat, and unpredictable conditions
+
+## Logistics and Preparation
+
+Staff preparation for Burning Man starts months in advance:
+- Vehicle and RV procurement and preparation
+- Food and water supply planning (1.5 gallons water per person per day minimum)
+- Shelter, shade, and cooling equipment
+- Dust protection gear (goggles, respirators, protective clothing)
+- Communication plan (cell service is unreliable)
+- Credential and early arrival pass coordination
+
+## Contact Air Fresh Marketing
+
+Air Fresh Marketing provides experienced Burning Man staff for art installations, gifting experiences, and brand-aligned activations on the playa. Our team understands both the extreme logistics and the cultural sensitivities of creating meaningful experiences at Burning Man. Contact us to discuss your playa plans.`,
+    staffTypes: ["Experience Staff", "Installation Operators", "Logistics Support", "Content Creators", "Camp Coordinators"],
+    stats: [
+      { value: "80K", label: "Participants" },
+      { value: "7+", label: "Day Event" },
+      { value: "100°F+", label: "Desert Heat" },
+      { value: "#1", label: "Cultural Event" }
+    ],
+    faqs: [
+      {
+        question: "Can brands advertise at Burning Man?",
+        answer: "No. Burning Man's decommodification principle prohibits traditional advertising, branded signage, and commercial marketing on the playa. Brands can participate by funding art installations, creating gifting experiences, or supporting artists without visible branding."
+      },
+      {
+        question: "What are the biggest staffing challenges at Burning Man?",
+        answer: "The extreme desert environment—100°F+ heat, dust storms, total self-reliance, and week-long duration—makes Burning Man the most challenging staffing environment in experiential marketing. Staff must be physically fit, experienced with Burning Man culture, and completely self-sufficient."
+      },
+      {
+        question: "How far in advance should we plan for Burning Man?",
+        answer: "Start planning 6-12 months in advance. Tickets, vehicle passes, early arrival passes, and logistics all require significant lead time. Staff recruitment should begin at least 4-6 months prior."
+      }
+    ],
+    logisticsInfo: "Burning Man takes place in the Black Rock Desert approximately 120 miles north of Reno, Nevada. Reno-Tahoe International Airport (RNO) is the nearest major airport. All supplies, water, food, and shelter must be brought in. The event operates on a leave-no-trace policy. Entry and exit can involve multi-hour waits.",
+    relatedCitySlug: "las-vegas",
+    relatedCityName: "Las Vegas",
+    heroImage: "/images/events/burning-man-staffing.jpg"
+  },
+  {
+    slug: "stagecoach",
+    title: "Stagecoach Staffing | Event Staff & Brand Ambassadors",
+    h1: "Stagecoach Festival Event Staffing & Brand Ambassadors",
+    metaDescription: "Stagecoach Festival event staffing and brand ambassadors in Indio, California. Air Fresh Marketing provides country music festival staff for brand activations, sampling, and promotions.",
+    city: "Indio",
+    stateAbbrev: "CA",
+    venues: ["Empire Polo Club"],
+    keywords: ["Stagecoach staffing", "Stagecoach Festival brand ambassadors", "country music festival staffing", "Stagecoach event staff"],
+    description: "Stagecoach California's Country Music Festival is the largest country music festival in the world, bringing over 75,000 fans per day to the Empire Polo Club in Indio, California each April. Held the weekend after Coachella at the same venue, Stagecoach offers brands direct access to the passionate country music audience with its own distinct culture and consumer profile.",
+    bodyContent: `## Why Brands Activate at Stagecoach
+
+Stagecoach's country music audience is one of the most brand-loyal demographics in the United States. Country music fans demonstrate higher brand loyalty than fans of any other genre, making Stagecoach activations exceptionally effective for building lasting consumer relationships. The festival's party atmosphere and outdoor setting create the perfect environment for brand engagement.
+
+### Stagecoach Audience Profile
+- **Attendance**: 75,000+ per day across three days
+- **Demographics**: 21-45, strong skew toward women, high brand loyalty
+- **Interests**: Country music, western lifestyle, outdoor activities, domestic beer, whiskey
+- **Spending behavior**: High spending on experiences, food, beverage, and merchandise
+- **Social media**: Very active, especially Instagram and TikTok
+
+## Stagecoach Staffing Solutions
+
+### Western-Themed Brand Activations
+Stagecoach's country western aesthetic creates unique activation opportunities. Our brand ambassadors embrace the western theme—wearing boots, hats, and western attire—while representing your brand with authentic country charm.
+
+### Beer and Spirits Sampling
+Domestic beer, bourbon, and whiskey brands see massive engagement at Stagecoach. Our TIPS-certified staff manage branded bars, tasting experiences, and sampling stations throughout the festival grounds.
+
+### Outdoor Lifestyle Brand Activations
+Pickup trucks, outdoor apparel, boots, sunglasses, and western lifestyle brands find their ideal audience at Stagecoach. Our staff demonstrate products in a context where the audience is already living the brand's lifestyle.
+
+### Honky Tonk and Saloon Experience Staff
+Brands create western-themed experience environments at Stagecoach—pop-up saloons, mechanical bull activations, and line dancing experiences. We staff these immersive environments with energetic, entertainment-skilled brand ambassadors.
+
+### Photo and Social Media Activation Staff
+Stagecoach attendees love documenting their festival experience. We staff branded photo activations with props, western backdrops, and Instagram-worthy setups that drive organic social sharing.
+
+## Stagecoach vs. Coachella Staffing
+
+While held at the same venue, Stagecoach and Coachella are very different events:
+
+| Factor | Stagecoach | Coachella |
+|--------|-----------|-----------|
+| Music genre | Country, country rock | Diverse (pop, electronic, hip-hop) |
+| Audience age | Slightly older (25-45) | Younger (21-35) |
+| Brand affinity | Domestic beer, whiskey, western wear | Premium/craft brands, fashion |
+| Activation style | Western themed, casual, party | Trendy, Instagram-focused, eclectic |
+| Staff requirements | Country culture knowledge | Broader pop culture awareness |
+
+## Desert Festival Logistics
+
+Stagecoach shares Coachella's Indio, California location, meaning the same desert logistics apply—extreme heat management, dust mitigation, and limited parking. Our teams are experienced with the Empire Polo Club venue from staffing both festivals and manage all logistics including shuttle transportation, hydration planning, and credential coordination.
+
+## Book Your Stagecoach Team
+
+Air Fresh Marketing staffs Stagecoach with brand ambassadors who understand and love country music culture. Our teams bring authentic western energy to every activation while maintaining professional brand representation. Contact us to plan your Stagecoach activation staffing.`,
+    staffTypes: ["Brand Ambassadors", "TIPS-Certified Bar Staff", "Photo Activation Staff", "Western Experience Staff", "Sampling Teams"],
+    stats: [
+      { value: "75K+", label: "Daily Attendance" },
+      { value: "3", label: "Day Festival" },
+      { value: "#1", label: "Country Festival" },
+      { value: "50+", label: "Artists" }
+    ],
+    faqs: [
+      {
+        question: "How is staffing Stagecoach different from Coachella?",
+        answer: "Stagecoach has a distinct country music culture that requires staff who understand and embrace the western lifestyle. The audience skews slightly older, prefers domestic beer and whiskey over craft beverages, and responds to authentic country charm rather than trendy Instagram aesthetics."
+      },
+      {
+        question: "What types of brands perform best at Stagecoach?",
+        answer: "Domestic beer brands, bourbon and whiskey companies, outdoor lifestyle brands, western wear companies, pickup truck manufacturers, and any brand aligned with the country music lifestyle see exceptional engagement at Stagecoach."
+      },
+      {
+        question: "Can we use the same staff for both Coachella and Stagecoach weekends?",
+        answer: "Yes, many brands activate at both festivals. Having staff who work both events brings venue knowledge and operational continuity. However, the brand activation approach should be tailored to each festival's distinct audience."
+      }
+    ],
+    logisticsInfo: "Stagecoach takes place at the Empire Polo Club in Indio, California, the same venue as Coachella. Palm Springs International Airport (PSP) is 30 minutes away, and Ontario International (ONT) is 90 minutes. Shuttle service runs from designated parking areas. April temperatures in the Coachella Valley regularly exceed 90°F.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/events/stagecoach-staffing.jpg"
+  },
+  {
+    slug: "houston-rodeo",
+    title: "Houston Rodeo Staffing | Event Staff & Brand Ambassadors",
+    h1: "Houston Rodeo Event Staffing & Brand Ambassadors",
+    metaDescription: "Houston Livestock Show and Rodeo event staffing and brand ambassadors. Air Fresh Marketing provides experienced rodeo event staff for brand activations, sampling, and promotions at RodeoHouston.",
+    city: "Houston",
+    stateAbbrev: "TX",
+    venues: ["NRG Park", "NRG Stadium"],
+    keywords: ["Houston Rodeo staffing", "RodeoHouston brand ambassadors", "Houston event staffing", "rodeo event staff"],
+    description: "The Houston Livestock Show and Rodeo is the world's largest livestock exhibition and rodeo, attracting over 2.5 million visitors across 20 days at NRG Park. RodeoHouston combines world-class rodeo competition, major concert performances, carnival entertainment, livestock shows, and massive commercial exhibition space, making it one of the most significant brand activation opportunities in the Southern United States.",
+    bodyContent: `## Why Brands Activate at the Houston Rodeo
+
+With 2.5 million visitors over 20 days, the Houston Rodeo offers more total brand exposure time than almost any other event in America. The extended duration allows brands to test, optimize, and scale activations over multiple weeks rather than a single weekend. Houston's diverse population means the rodeo audience spans demographics, cultures, and income levels.
+
+### Houston Rodeo Profile
+- **Attendance**: 2.5 million+ across 20 days
+- **Venue**: NRG Park complex (stadium, center, arena, and grounds)
+- **Demographics**: All ages, Houston's diverse multicultural population
+- **Programming**: Rodeo competition, concerts, livestock shows, carnival, shopping, BBQ
+- **Economic impact**: Over $400 million to Houston's economy
+
+## RodeoHouston Staffing Solutions
+
+### Commercial Exhibition Staff
+The rodeo's massive commercial exhibition fills NRG Center with hundreds of vendors and brand experiences. Our staff manage booth operations, product demonstrations, and customer engagement across this extensive shopping and experience environment.
+
+### Concert and Entertainment Staff
+NRG Stadium hosts nightly concerts featuring major artists after rodeo competition. We staff branded activations in the stadium concourses and surrounding areas, engaging concert-goers with sampling, giveaways, and interactive experiences.
+
+### Outdoor Grounds Activation Teams
+The NRG Park grounds between buildings create high-traffic areas perfect for brand activations. Our street teams and brand ambassadors engage the crowds moving between the stadium, exhibition halls, carnival, and food areas.
+
+### BBQ and Food Brand Staff
+The World Championship Bar-B-Que Contest is a rodeo highlight. Food and beverage brands staff sampling stations, BBQ sauce tastings, and culinary brand experiences. Staff need food handler certification and comfort working in outdoor Texas heat.
+
+### Livestock and Agricultural Brand Staff
+Agricultural brands, equipment manufacturers, and rural lifestyle companies activate within the livestock exhibition areas. Staff should have some familiarity with agriculture, ranching, and the rural Texas lifestyle.
+
+## 20-Day Staffing Strategy
+
+The rodeo's extended 20-day run creates unique staffing dynamics:
+
+**Weekday vs. Weekend**: Weekday attendance is lower than weekends. Schedule core staff throughout with additional staff for weekend peaks and special concert nights.
+
+**School Days**: Thousands of students visit during school field trip days. Adjust messaging and engagement for younger audiences on these days.
+
+**Concert Impact**: Attendance spikes dramatically on nights with major headliners. Monitor the concert lineup and staff accordingly.
+
+**Staff Rotation**: No single person can work 20 consecutive days. Build a rotation schedule with consistent core staff supplemented by rotating additional team members.
+
+## Texas Heat and Logistics
+
+March in Houston can be warm and humid. Outdoor activations require:
+- Hydration planning and access to water
+- Shade structures for extended outdoor positions
+- Appropriate break schedules in air-conditioned areas
+- NRG Park's size requires efficient staff transportation between venues
+
+## Staff Your RodeoHouston Activation
+
+Air Fresh Marketing provides experienced event staff for the Houston Rodeo across all NRG Park venues. Our Houston-based roster ensures reliable, culturally connected brand ambassadors who understand Texas culture and the unique energy of RodeoHouston. Contact us to plan your rodeo activation staffing.`,
+    staffTypes: ["Exhibition Staff", "Concert Activation Teams", "Street Teams", "Food/BBQ Staff", "Agricultural Brand Staff"],
+    stats: [
+      { value: "2.5M+", label: "Total Visitors" },
+      { value: "20", label: "Day Event" },
+      { value: "$400M+", label: "Economic Impact" },
+      { value: "#1", label: "Largest Rodeo" }
+    ],
+    faqs: [
+      {
+        question: "How do you staff a 20-day event like the Houston Rodeo?",
+        answer: "We build rotating staff schedules with a consistent core team supplemented by additional members. This ensures brand message consistency while preventing burnout. We adjust staffing levels for weekend peaks, special concert nights, and school field trip days."
+      },
+      {
+        question: "What types of brands see the best results at the Houston Rodeo?",
+        answer: "The rodeo's massive, diverse audience supports virtually any consumer brand. Food and beverage, automotive, outdoor lifestyle, Western wear, agricultural, and family entertainment brands all see strong engagement. The key is matching your activation to the right area within the NRG Park complex."
+      },
+      {
+        question: "Is bilingual staffing important for the Houston Rodeo?",
+        answer: "Yes, Houston is one of the most diverse cities in America with a large Hispanic population. Bilingual English/Spanish staff significantly increase engagement reach at the rodeo. We provide bilingual brand ambassadors from our extensive Houston roster."
+      }
+    ],
+    logisticsInfo: "RodeoHouston takes place at NRG Park in Houston, Texas. George Bush Intercontinental Airport (IAH) and William P. Hobby Airport (HOU) both serve the area. NRG Park has extensive parking, and the METRORail has a dedicated NRG Park station. The event runs for 20 days in late February through March.",
+    relatedCitySlug: "houston",
+    relatedCityName: "Houston",
+    heroImage: "/images/events/houston-rodeo-staffing.jpg"
+  },
+  {
+    slug: "mardi-gras",
+    title: "Mardi Gras Staffing | Event Staff & Brand Ambassadors",
+    h1: "Mardi Gras Event Staffing & Brand Ambassadors",
+    metaDescription: "Mardi Gras event staffing and brand ambassadors in New Orleans. Air Fresh Marketing provides experienced staff for brand activations, sampling, and promotions during Mardi Gras season.",
+    city: "New Orleans",
+    stateAbbrev: "LA",
+    venues: ["French Quarter", "St. Charles Avenue", "Bourbon Street"],
+    keywords: ["Mardi Gras staffing", "Mardi Gras brand ambassadors", "New Orleans event staffing", "Mardi Gras event staff"],
+    description: "Mardi Gras in New Orleans is America's greatest street festival, attracting over 1.4 million visitors to the city across two weeks of parades, parties, and celebrations culminating on Fat Tuesday. For beverage brands, food companies, and lifestyle brands, Mardi Gras offers unmatched street-level activation opportunities in one of the most festive environments on earth.",
+    bodyContent: `## Why Brands Activate During Mardi Gras
+
+Mardi Gras combines massive attendance, a festive atmosphere of indulgence and celebration, and an outdoor, walkable environment that is perfect for street-level brand activations. The party atmosphere means consumers are relaxed, open to trying new things, and in a sharing mood—both physically and on social media.
+
+### Mardi Gras By the Numbers
+- **Visitors**: 1.4 million+ during Mardi Gras season
+- **Economic impact**: $1 billion+ to New Orleans economy
+- **Duration**: Two weeks of parades and celebrations
+- **Atmosphere**: Open-air, walkable, festive, indulgent
+- **Demographics**: Wide age range, tourists from across the U.S. and internationally
+
+## Mardi Gras Staffing Solutions
+
+### Street Team Activations
+The parade routes along St. Charles Avenue and through the French Quarter create perfect conditions for street team marketing. Our teams navigate the crowd-filled streets distributing samples, branded beads and throws, and promotional materials to millions of parade watchers.
+
+### Bourbon Street Brand Experiences
+Bourbon Street during Mardi Gras is the epicenter of celebration. We staff branded activations along this iconic street—pop-up bars, sampling stations, and interactive experiences that capture the attention of the nonstop pedestrian traffic.
+
+### Beverage Brand Sampling
+Mardi Gras is inherently a drinking occasion. Beer, spirits, and cocktail mixer brands see exceptional engagement with TIPS-certified sampling staff who manage tastings, branded to-go cups, and bar activations throughout the celebration.
+
+### Parade Viewing Activation Staff
+Brands that secure parade viewing areas or sponsor parade floats need staff to manage VIP guests, distribute branded merchandise, and create memorable parade-watching experiences.
+
+### Hotel and Hospitality Activation Staff
+New Orleans hotels are packed during Mardi Gras. Brands activating in hotel lobbies, rooftop bars, and hospitality suites need sophisticated staff who can engage affluent travelers with premium brand experiences.
+
+## Mardi Gras Staffing Challenges
+
+### Crowd Density
+Mardi Gras crowds are dense and constantly moving. Staff must be comfortable in packed environments and skilled at engaging people who are on the move.
+
+### Extended Hours
+Mardi Gras celebrations run from morning parades through late-night Bourbon Street revelry. Plan for multiple shift rotations to cover the extended activation hours.
+
+### Weather Variability
+February in New Orleans can bring rain, cold fronts, or unexpectedly warm weather. Staff must be prepared for anything.
+
+### Alcohol Environment
+The open-container culture of Mardi Gras means staff interact with intoxicated consumers throughout the day and night. Professional judgment and de-escalation skills are essential.
+
+### Logistics in a Crowded City
+Street closures for parades, packed restaurants, and limited parking create significant logistics challenges. Advance planning for staff transportation, meals, and break locations is critical.
+
+## Mardi Gras Activation Best Practices
+
+**Embrace the Culture**: Activations that incorporate Mardi Gras traditions—beads, masks, music, parades—feel natural and welcome. Activations that ignore the cultural context feel intrusive.
+
+**Go Where the People Are**: Position along major parade routes and near popular gathering spots. The crowds come to you during Mardi Gras—you do not need to seek them out.
+
+**Make It Shareable**: Mardi Gras is one of the most documented events on social media. Create photo-worthy moments that attendees want to share.
+
+**Plan for Volume**: The sheer scale of Mardi Gras means you can distribute enormous quantities of samples and materials. Plan your inventory accordingly.
+
+## Staff Your Mardi Gras Activation
+
+Air Fresh Marketing provides experienced Mardi Gras event staff from our New Orleans and Gulf Coast roster. Our teams understand the unique culture, logistics, and energy of Mardi Gras and bring professional brand representation to this extraordinary celebration. Contact us to plan your Mardi Gras activation.`,
+    staffTypes: ["Street Teams", "Sampling Staff", "Bourbon Street Activations", "VIP Hospitality", "Parade Support"],
+    stats: [
+      { value: "1.4M+", label: "Visitors" },
+      { value: "14+", label: "Days of Events" },
+      { value: "$1B+", label: "Economic Impact" },
+      { value: "#1", label: "Street Festival" }
+    ],
+    faqs: [
+      {
+        question: "When should we book Mardi Gras staffing?",
+        answer: "Book at least 8-12 weeks before Mardi Gras. New Orleans accommodation prices skyrocket during the season, and experienced local staff are in extremely high demand. Early booking ensures access to our best New Orleans talent."
+      },
+      {
+        question: "What types of activations work best during Mardi Gras?",
+        answer: "Beverage sampling, branded beads and throw items, photo activations, and street team engagements along parade routes perform best. Activations that embrace the festive Mardi Gras spirit and offer something fun or useful to celebration-goers see the highest engagement."
+      },
+      {
+        question: "How do you handle the crowds and street closures?",
+        answer: "We plan staff logistics extensively in advance, pre-positioning supplies, coordinating meeting points, and using local knowledge to navigate around parade routes and street closures. Our New Orleans staff know the city intimately and can adapt to the dynamic Mardi Gras environment."
+      }
+    ],
+    logisticsInfo: "Mardi Gras takes place throughout New Orleans with primary activity along St. Charles Avenue parade routes and the French Quarter. Louis Armstrong New Orleans International Airport (MSY) is 20 minutes from downtown. Hotels book months in advance at premium rates. Staff must plan around parade-related street closures.",
+    relatedCitySlug: "miami",
+    relatedCityName: "Miami",
+    heroImage: "/images/events/mardi-gras-staffing.jpg"
+  },
+  {
+    slug: "vidcon",
+    title: "VidCon Staffing | Event Staff & Brand Ambassadors",
+    h1: "VidCon Event Staffing & Brand Ambassadors",
+    metaDescription: "VidCon event staffing and brand ambassadors in Anaheim, California. Air Fresh Marketing provides experienced creator economy convention staff for brand activations and booth operations at VidCon.",
+    city: "Anaheim",
+    stateAbbrev: "CA",
+    venues: ["Anaheim Convention Center"],
+    keywords: ["VidCon staffing", "VidCon brand ambassadors", "creator convention staffing", "VidCon event staff"],
+    description: "VidCon is the world's largest event for digital creators, online video, and the creator economy, attracting over 55,000 attendees to the Anaheim Convention Center each June. For brands targeting Gen Z and young Millennials through influencer marketing and creator partnerships, VidCon provides direct access to the creators, fans, and industry professionals who drive the digital content landscape.",
+    bodyContent: `## Why Brands Invest in VidCon
+
+VidCon sits at the intersection of creator culture and brand marketing. The convention brings together YouTube stars, TikTok creators, Instagram influencers, and their most passionate fans. For brands, VidCon offers the rare opportunity to engage both the creators who influence purchasing decisions and the audiences who follow them.
+
+### VidCon Audience
+- **Attendance**: 55,000+ across three days
+- **Demographics**: Primarily 13-30, heavy Gen Z representation
+- **Tracks**: Community (fans), Creator (content creators), Industry (brands and agencies)
+- **Energy**: Extremely high enthusiasm, fans eager to engage with everything
+- **Social media**: Every moment is documented and shared across platforms
+
+## VidCon Staffing Services
+
+### Exhibition Hall Booth Staff
+The VidCon exhibition hall is packed with brand activations competing for attention from excited fans. Our booth staff bring the energy level needed to stand out in this high-competition environment while managing interactive experiences, product demonstrations, and social media engagement activities.
+
+### Meet-and-Greet Management Staff
+Creator meet-and-greets are VidCon's most anticipated moments. We provide line management, fan coordination, security support, and photo facilitation staff who keep these events running smoothly while maintaining a positive fan experience.
+
+### Content Creation Support Staff
+Brands at VidCon need content. Our content-savvy staff assist with on-site content creation—managing filming logistics, facilitating creator collaborations, capturing behind-the-scenes footage, and ensuring every brand moment is documented for post-event distribution.
+
+### Influencer Hospitality and Coordination
+VidCon is where brands build creator relationships. We provide dedicated influencer hospitality staff who manage creator lounges, facilitate introductions, coordinate gifting suites, and ensure VIP creators have exceptional brand experiences.
+
+### Youth-Appropriate Event Staff
+VidCon's young audience requires staff who are comfortable engaging with teens and young adults in age-appropriate ways. Our staff understand the responsibility of interacting with younger attendees and maintain professional, welcoming engagement.
+
+## Creator Economy Knowledge Required
+
+VidCon staff must understand the digital creator ecosystem:
+- Know major platforms (YouTube, TikTok, Instagram, Twitch) and their cultures
+- Recognize top creators and emerging talent
+- Understand content creation basics (lighting, framing, audio for social video)
+- Speak the language of digital media (subscriber counts, engagement rates, brand deals)
+- Be comfortable on camera (fans will film everything)
+
+## VidCon Exhibition Strategies
+
+**Interactive Over Passive**: Passive booth displays get ignored at VidCon. Create hands-on, participatory experiences that give attendees something to do, make, or take home.
+
+**Content-First Design**: Design your activation to create content. Ring lights, clean backgrounds, branded frames, and fun props encourage attendees to create and share content featuring your brand.
+
+**Creator Integration**: Partner with creators to staff or visit your booth. Creator appearances drive massive foot traffic and generate authentic content.
+
+**Exclusive Merch and Giveaways**: VidCon attendees collect exclusive merchandise. Limited-edition items drive booth traffic and create buzz.
+
+## Convention Center Logistics
+
+The Anaheim Convention Center is a large, well-organized venue near Disneyland. Staff logistics include managing badge access across different VidCon tracks (Community, Creator, Industry), coordinating with convention center security, and planning for the intense energy levels that characterize VidCon's young, enthusiastic audience.
+
+## Staff Your VidCon Activation
+
+Air Fresh Marketing provides digitally fluent brand ambassadors for VidCon activations. Our staff understand creator culture, social media platforms, and the unique energy of VidCon's young audience. Contact us to build your VidCon team.`,
+    staffTypes: ["Booth Staff", "Meet-and-Greet Management", "Content Creation Support", "Influencer Hospitality", "Line Management"],
+    stats: [
+      { value: "55K+", label: "Convention Attendees" },
+      { value: "3", label: "Day Convention" },
+      { value: "#1", label: "Creator Convention" },
+      { value: "Gen Z", label: "Primary Audience" }
+    ],
+    faqs: [
+      {
+        question: "What age group attends VidCon?",
+        answer: "VidCon's Community track attracts primarily teens and young adults (13-25), while the Creator and Industry tracks draw an older demographic (20-40). Staff should be comfortable engaging with younger audiences in age-appropriate ways."
+      },
+      {
+        question: "Do staff need social media knowledge for VidCon?",
+        answer: "Absolutely. VidCon is a digital creator convention. Staff who do not understand YouTube, TikTok, Instagram, and the creator economy will struggle to connect with attendees. We hire brand ambassadors who are active digital content consumers and creators."
+      },
+      {
+        question: "How do we handle the high energy level at VidCon?",
+        answer: "VidCon fans are extremely enthusiastic. Our staff match their energy while maintaining professional composure. We schedule adequate breaks, staff in teams to rotate high-energy positions, and select brand ambassadors who thrive in fast-paced, exciting environments."
+      }
+    ],
+    logisticsInfo: "VidCon takes place at the Anaheim Convention Center in Anaheim, California. John Wayne Airport (SNA) is 15 minutes away, and LAX is approximately 45 minutes. Hotels near the convention center and Disneyland area are readily available. The convention typically runs Thursday through Saturday in June.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/events/vidcon-staffing.jpg"
+  },
   // ── Batch 115 ──────────────────────────────────────────────────────
   {
     slug: "bonnaroo",
