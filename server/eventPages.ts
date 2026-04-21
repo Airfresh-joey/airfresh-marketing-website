@@ -2024,6 +2024,242 @@ Operating at Burning Man demands staff who can handle extreme heat (100°F+), du
     relatedCityName: 'Las Vegas',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 23. CEDIA Expo (Custom Electronics Design & Installation)
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'cedia-expo',
+    title: 'CEDIA Expo Staffing Agency | Smart Home Technology Event Staff',
+    h1: 'CEDIA Expo Event Staffing',
+    metaDescription:
+      'CEDIA Expo staffing agency providing booth staff, product demonstrators, and lead capture specialists for the smart home and custom electronics industry trade show.',
+    city: 'Denver',
+    stateAbbrev: 'CO',
+    venues: ['Colorado Convention Center'],
+    keywords: [
+      'CEDIA Expo staffing',
+      'CEDIA event staff',
+      'smart home trade show staffing',
+      'custom electronics event staff',
+      'CEDIA booth staff Denver',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for CEDIA Expo, the smart home and custom electronics industry\'s leading trade show. Our tech-savvy staff drive meaningful booth engagement and qualified lead generation.',
+    bodyContent: `CEDIA Expo is the premier trade show for the custom electronics and smart home technology industry, attracting 20,000+ integrators, dealers, architects, and designers who spec and install residential technology solutions. For smart home manufacturers and service providers, CEDIA is the single most important event to reach the decision-makers who specify your products.
+
+AirFresh Marketing is headquartered in Denver, giving us unmatched local expertise for CEDIA Expo at the Colorado Convention Center. Our Denver-based talent network provides booth staff, product demonstrators, and lead capture specialists who understand residential technology and can engage the technical audience that attends CEDIA.
+
+**Technical Product Demonstrators**
+
+CEDIA attendees are highly technical professionals who expect substantive product demonstrations. Our demonstrators are selected for technical aptitude and trained extensively on your product line—whether that is whole-home audio systems, lighting control platforms, home theater equipment, security and surveillance solutions, or networking infrastructure. They can engage in technical conversations, answer specification questions, and identify genuine purchase intent.
+
+**Lead Capture and Qualification**
+
+At CEDIA, the quality of leads directly impacts your post-show sales pipeline. Our lead capture specialists qualify visitors against your ideal customer profile—independent integrators, high-volume dealers, design-build firms, or architects. Leads are categorized by project scope, timeline, and decision authority in real time, giving your sales team actionable post-show data.
+
+**Booth Engagement Staff**
+
+For exhibitors in competitive product categories, booth traffic and dwell time directly correlate with show ROI. Our engagement staff draw attendees in from the aisle, manage traffic flow within your booth, and ensure every visitor connects with the right demonstration or sales specialist for their needs.
+
+**Hospitality and Event Staff**
+
+Many CEDIA exhibitors host private dinners, dealer appreciation events, and training sessions during the show week. Our hospitality staff manage VIP events with the professionalism that key dealer and integrator relationships demand.`,
+    staffTypes: [
+      { title: 'Product Demonstrators', description: 'Tech-savvy demonstrators trained on smart home, AV, and custom electronics products.' },
+      { title: 'Lead Capture Specialists', description: 'Qualification-focused staff trained on BANT criteria for the custom electronics industry.' },
+      { title: 'Booth Engagement Staff', description: 'Professional staff to drive booth traffic, manage flow, and facilitate conversations.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for breakout sessions, training events, and dealer meetings.' },
+      { title: 'Hospitality Staff', description: 'VIP event staff for dealer dinners, partner receptions, and private presentations.' },
+    ],
+    stats: [
+      { value: '20K+', label: 'CEDIA Expo Attendees' },
+      { value: '500+', label: 'Exhibiting Companies' },
+      { value: '3 Days', label: 'Show Duration' },
+      { value: '$25B', label: 'Industry Annual Revenue' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book CEDIA Expo staffing?',
+        answer: 'We recommend booking 6-8 weeks before CEDIA. As a Denver-headquartered agency, we have deep local talent access for the Colorado Convention Center. For exhibitors needing technical demonstrators, earlier booking allows more time for product training.',
+      },
+      {
+        question: 'Do your CEDIA staff understand smart home technology?',
+        answer: 'Yes. We recruit tech-savvy staff from our Denver network and screen for familiarity with residential technology, AV systems, and smart home concepts. All CEDIA staff receive your product-specific training before the show floor opens.',
+      },
+      {
+        question: 'Can you provide staff for CEDIA after-hours events?',
+        answer: 'Absolutely. We staff dealer dinners, partner receptions, and private events at Denver venues throughout CEDIA week. Our hospitality staff understand the relationship-driven nature of the custom electronics industry.',
+      },
+      {
+        question: 'Do you provide GPS check-in at CEDIA?',
+        answer: 'Yes. All staff check in via GPS at the Colorado Convention Center. We provide daily dashboards and comprehensive post-show reports with lead capture data, interaction counts, and engagement metrics.',
+      },
+    ],
+    logisticsInfo:
+      'CEDIA Expo takes place annually in September at the Colorado Convention Center in Denver, Colorado. As a Denver-headquartered agency, AirFresh provides local talent, on-site management, and intimate knowledge of the Convention Center layout and logistics.',
+    relatedCitySlug: 'denver',
+    relatedCityName: 'Denver',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 24. Bonnaroo Music & Arts Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'bonnaroo',
+    title: 'Bonnaroo Staffing Agency | Music Festival Event Staff Tennessee',
+    h1: 'Bonnaroo Music Festival Staffing',
+    metaDescription:
+      'Bonnaroo staffing agency providing brand ambassadors, product samplers, and activation staff for Bonnaroo Music & Arts Festival in Manchester, Tennessee.',
+    city: 'Manchester',
+    stateAbbrev: 'TN',
+    venues: ['Great Stage Park', 'The Farm at Great Stage Park'],
+    keywords: [
+      'Bonnaroo staffing',
+      'Bonnaroo event staff',
+      'Bonnaroo brand ambassadors',
+      'music festival staffing Tennessee',
+      'Bonnaroo activation staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for Bonnaroo Music & Arts Festival in Manchester, Tennessee. Our festival-experienced staff maximize your brand activation impact across four days on The Farm.',
+    bodyContent: `Bonnaroo Music & Arts Festival is one of America's most iconic music festivals, drawing 80,000+ attendees to a 700-acre farm in Manchester, Tennessee for four days of music, comedy, and art each June. Known for its passionate, immersive community, Bonnaroo offers brands a captive audience camping on-site for the entire festival��creating deeper engagement opportunities than single-day events.
+
+AirFresh Marketing has staffed Bonnaroo brand activations, sponsor experiences, and sampling programs with staff who understand the unique camping festival environment. We know that Bonnaroo requires staff who can maintain high energy across long days in the Tennessee heat while connecting authentically with an audience that values experiences over advertising.
+
+**Brand Activation Staff**
+
+Bonnaroo's Centeroo entertainment area and surrounding activation zones offer premium brand engagement opportunities. Our brand ambassadors staff sponsor booths, interactive installations, and experiential activations throughout the festival grounds. The camping format means attendees return to activations multiple times across four days—our staff build genuine relationships rather than one-time interactions.
+
+**Product Sampling Programs**
+
+Bonnaroo's captive camping audience makes it ideal for product sampling. Our sampling staff distribute food, beverages, personal care products, and consumer goods with proper handling protocols, inventory management, and real-time count tracking. The festival environment creates high receptivity to trial products, especially those that enhance the camping experience.
+
+**Hospitality and VIP Staff**
+
+Bonnaroo's VIP areas and artist hospitality require staff who can maintain premium service standards in an outdoor festival environment. Our hospitality team manages VIP camping areas, artist lounges, sponsor hospitality tents, and elevated viewing experiences.
+
+**Campground and Guerrilla Marketing**
+
+The Bonnaroo campground is where the community truly lives. Our street teams activate across camping areas with branded giveaways, morning coffee programs, and campground engagement that reaches attendees before they enter the main festival grounds.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Festival-savvy ambassadors for sponsor activations and multi-day brand engagement in Centeroo and campgrounds.' },
+      { title: 'Product Samplers', description: 'Trained sampling staff for food, beverage, and consumer goods distribution across the festival.' },
+      { title: 'VIP Hospitality Staff', description: 'Hospitality staff for VIP areas, artist lounges, and premium viewing experiences.' },
+      { title: 'Street Team Members', description: 'High-energy campground teams for morning activations, product giveaways, and grassroots engagement.' },
+      { title: 'Lead Capture Specialists', description: 'Data collection staff for email signups, app downloads, and survey engagement.' },
+      { title: 'On-Site Managers', description: 'Experienced festival managers for four-day coordination across The Farm.' },
+    ],
+    stats: [
+      { value: '80K+', label: 'Bonnaroo Attendees' },
+      { value: '150+', label: 'Musical Performances' },
+      { value: '4 Days', label: 'Festival Duration' },
+      { value: '700', label: 'Acre Festival Grounds' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book Bonnaroo staffing?',
+        answer: 'We recommend booking 8-10 weeks before Bonnaroo (typically by early April for the June festival). The rural Tennessee location requires advance planning for staff travel and on-site accommodation. For large activations, earlier booking ensures access to festival-experienced talent.',
+      },
+      {
+        question: 'How do you handle staffing logistics at a camping festival?',
+        answer: 'Bonnaroo staff must be prepared for on-site camping or nearby hotel accommodation for the full festival duration. We coordinate travel, accommodation, credential distribution, and on-site logistics for our team. All staff are briefed on camping festival protocols and the unique Bonnaroo environment.',
+      },
+      {
+        question: 'How do you manage the Tennessee heat at Bonnaroo?',
+        answer: 'June in Tennessee means extreme heat and humidity. Our staffing plans include heat management protocols—hydration schedules, shade rotation, sunscreen provisions, and shortened outdoor shifts during peak heat hours. We maintain backup staff ready to rotate in as conditions demand.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting at Bonnaroo?',
+        answer: 'Yes, with adaptations for the festival environment. Staff check in via GPS at their assigned areas on The Farm. Note that cell service can be limited in Manchester—we use a combination of GPS check-in when service is available and on-site manager verification. Post-festival reports include comprehensive engagement data.',
+      },
+    ],
+    logisticsInfo:
+      'Bonnaroo takes place annually in June (Thursday through Sunday) at Great Stage Park in Manchester, Tennessee, approximately 60 miles southeast of Nashville. AirFresh coordinates staff travel from Nashville and surrounding markets, manages festival credential distribution, and provides on-site management for all four festival days. Staff accommodation coordination accounts for limited local lodging near The Farm.',
+    relatedCitySlug: 'nashville',
+    relatedCityName: 'Nashville',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 25. Stagecoach Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'stagecoach',
+    title: 'Stagecoach Festival Staffing Agency | Country Music Event Staff',
+    h1: 'Stagecoach Festival Event Staffing',
+    metaDescription:
+      'Stagecoach Festival staffing agency providing brand ambassadors, product samplers, and activation staff for the country music festival at Empire Polo Club in Indio, California.',
+    city: 'Indio',
+    stateAbbrev: 'CA',
+    venues: ['Empire Polo Club'],
+    keywords: [
+      'Stagecoach staffing',
+      'Stagecoach Festival event staff',
+      'country music festival staffing',
+      'Stagecoach brand ambassadors',
+      'Indio festival staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the Stagecoach Country Music Festival at Empire Polo Club in Indio, California. Our festival-experienced staff maximize your brand activation ROI across three days of country music and culture.',
+    bodyContent: `The Stagecoach Country Music Festival is the world's largest country music festival, attracting 75,000+ attendees across three days at the Empire Polo Club in Indio, California—the same iconic venue that hosts Coachella. For brands targeting the country music audience—one of the most loyal, brand-receptive demographics in live entertainment—Stagecoach represents an unmatched activation opportunity.
+
+AirFresh Marketing has staffed Stagecoach brand activations, sponsor experiences, and product sampling programs with talent from our Los Angeles and Southern California network. We understand that the Stagecoach audience has distinct preferences and engagement styles that differ from Coachella and other music festivals—and successful activations respect those differences.
+
+**Brand Activation Staff**
+
+Stagecoach's brand activation areas offer direct engagement with country music fans who are highly receptive to authentic brand messaging. Our brand ambassadors are selected for their ability to connect naturally with the Stagecoach audience—approachable, enthusiastic, and knowledgeable about your products. The festival's relaxed, social atmosphere creates opportunities for deeper conversations and genuine brand connections.
+
+**Product Sampling Programs**
+
+Country music fans are among the most brand-loyal consumers in the entertainment space. Stagecoach product sampling for beer, spirits, food, lifestyle, and outdoor brands reaches an audience with strong purchase intent. Our sampling staff manage distribution with proper protocols, inventory tracking, and the responsible alcohol service that beverage brands require.
+
+**VIP and Hospitality Staffing**
+
+Stagecoach VIP and Corral experiences attract high-spending attendees who expect premium service. Our hospitality staff manage VIP viewing areas, sponsor lounges, and branded hospitality spaces with the warm, welcoming service style that resonates with the country music community.
+
+**Campground Activations**
+
+Like Bonnaroo, Stagecoach features extensive campgrounds where brands can reach attendees in relaxed, social settings. Our campground teams execute morning coffee programs, product giveaways, and branded experiences that create positive brand associations before attendees enter the main festival area.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Approachable, energetic ambassadors who connect naturally with country music festival audiences.' },
+      { title: 'Product Samplers', description: 'Trained sampling staff for beer, spirits, food, and lifestyle brand distribution programs.' },
+      { title: 'VIP Hospitality Staff', description: 'Premium hospitality staff for VIP areas, sponsor lounges, and Corral experiences.' },
+      { title: 'Campground Teams', description: 'Morning activation staff for campground brand engagement and product giveaways.' },
+      { title: 'Lead Capture Specialists', description: 'Data collection staff for sweepstakes, email signups, and QR code engagement.' },
+      { title: 'On-Site Managers', description: 'Experienced festival managers for multi-day coordination at Empire Polo Club.' },
+    ],
+    stats: [
+      { value: '75K+', label: 'Stagecoach Attendees' },
+      { value: '30+', label: 'Country Music Artists' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: '3', label: 'Performance Stages' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book Stagecoach staffing?',
+        answer: 'We recommend booking 6-8 weeks before Stagecoach (typically by late February for the April festival). Many brands staff both Coachella and Stagecoach, so we coordinate shared talent where appropriate. Early booking secures staff with country music event experience.',
+      },
+      {
+        question: 'Can you staff both Coachella and Stagecoach?',
+        answer: 'Yes. Stagecoach takes place the weekend after Coachella Weekend 2 at the same venue. We provide seamless staffing continuity for brands that activate at both festivals, with shared logistics and talent coordination at Empire Polo Club.',
+      },
+      {
+        question: 'How is Stagecoach audience different from Coachella?',
+        answer: 'The Stagecoach audience skews more country/western lifestyle, with strong brand loyalty and different engagement preferences. Our staff are briefed on the distinct audience demographics and adjusted engagement approaches that resonate with country music fans versus the broader Coachella audience.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting at Stagecoach?',
+        answer: 'Yes. All staff check in via GPS at Empire Polo Club. We provide daily dashboards and post-festival reports with sampling data, interaction counts, lead captures, and photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'Stagecoach takes place annually in late April (Friday through Sunday) at the Empire Polo Club in Indio, California—one week after Coachella Weekend 2. AirFresh coordinates staff from our Los Angeles and Southern California network, manages festival credentials, and provides on-site management for all three festival days.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
