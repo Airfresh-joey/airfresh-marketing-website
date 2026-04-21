@@ -205,6 +205,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/something-in-the-water`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/forecastle-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/electric-zoo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/levitate-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/watershed-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/camp-flog-gnaw`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/when-we-were-young`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/buku-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Competitor comparison pages (high-intent "vs" keywords)

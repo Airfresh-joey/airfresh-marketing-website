@@ -37,6 +37,256 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Levitate Music Festival — Marshfield, MA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'levitate-music-festival',
+    title: 'Levitate Music Festival Staffing | Air Fresh Marketing',
+    h1: 'Levitate Music Festival Staffing',
+    metaDescription: 'Levitate Music Festival staffing services in Marshfield, MA. Professional brand ambassadors and event staff for New England\'s premier surf rock and jam festival.',
+    city: 'Marshfield',
+    stateAbbrev: 'MA',
+    venues: ['Marshfield Fairgrounds'],
+    keywords: ['Levitate Music Festival staffing', 'Marshfield festival staff', 'Levitate brand ambassadors', 'New England festival staffing', 'surf rock festival staff'],
+    description: 'Professional event staffing for Levitate Music Festival in Marshfield, Massachusetts, New England\'s beloved surf rock and jam festival.',
+    bodyContent: `Levitate Music Festival staffing connects brands with one of New England's most beloved festivals. Set at the Marshfield Fairgrounds on Massachusetts' South Shore, Levitate brings together surf rock, jam bands, reggae, and folk music for a laid-back, community-focused weekend.
+
+## Why Brands Activate at Levitate
+
+Levitate's intimate, community-driven atmosphere creates authentic brand engagement opportunities. Unlike massive corporate festivals, Levitate maintains a grassroots feel that attendees treasure. Brands that activate here with the right tone — chill, authentic, community-minded — earn genuine loyalty from this audience.
+
+### The Levitate Audience
+
+Predominantly 25-45, outdoor-oriented, environmentally conscious, and loyal to indie brands. The surf and jam band culture creates a relaxed, receptive atmosphere ideal for lifestyle, outdoor, craft beverage, and wellness brands.
+
+Air Fresh Marketing's New England network provides experienced festival staff who understand Levitate's unique laid-back culture.`,
+    staffTypes: [
+      { title: 'Laid-Back Brand Ambassadors', description: 'Authentic representatives matching Levitate\'s surf-rock culture' },
+      { title: 'Sampling Teams', description: 'Product distribution with a chill, community-focused approach' },
+      { title: 'Content Creators', description: 'Visual storytellers capturing the New England festival vibe' },
+      { title: 'VIP Staff', description: 'Relaxed hospitality for VIP and sponsor areas' },
+      { title: 'Setup & Breakdown', description: 'Physical teams for activation build and teardown' },
+      { title: 'Event Operations', description: 'On-site coordination and logistics management' }
+    ],
+    stats: [
+      { value: '15K+', label: 'Weekend Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '40+', label: 'Artists' },
+      { value: '2', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Levitate Music Festival?', answer: 'Levitate takes place in July at the Marshfield Fairgrounds in Marshfield, Massachusetts.' },
+      { question: 'What brands fit Levitate?', answer: 'Craft beverages, surf/outdoor brands, wellness products, and authentic lifestyle brands with a community focus.' },
+      { question: 'How intimate is Levitate?', answer: 'With 15,000 weekend attendees, Levitate is smaller than mega-festivals, creating more meaningful brand-consumer interactions.' },
+      { question: 'Is Levitate family-friendly?', answer: 'Yes, Levitate is known as a family-friendly festival with dedicated kids areas, making it ideal for family-oriented brand activations.' }
+    ],
+    logisticsInfo: 'Marshfield Fairgrounds is about 30 miles south of Boston. July New England weather is warm (75-85°F). Limited area hotel inventory — staff from Boston can commute.',
+    relatedCitySlug: 'boston',
+    relatedCityName: 'Boston / South Shore',
+    heroImage: '/images/events/levitate-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Watershed Festival — George, WA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'watershed-festival',
+    title: 'Watershed Festival Staffing | Air Fresh Marketing',
+    h1: 'Watershed Festival Staffing',
+    metaDescription: 'Watershed Festival staffing services at The Gorge in George, WA. Professional brand ambassadors and event staff for the Pacific Northwest\'s top country music festival.',
+    city: 'George',
+    stateAbbrev: 'WA',
+    venues: ['The Gorge Amphitheatre'],
+    keywords: ['Watershed Festival staffing', 'Gorge amphitheatre staff', 'Watershed brand ambassadors', 'Pacific Northwest festival staffing', 'country music festival staff'],
+    description: 'Professional event staffing for Watershed Festival at The Gorge Amphitheatre, the Pacific Northwest\'s premier country music camping festival.',
+    bodyContent: `Watershed Festival staffing delivers professional brand activation teams for the Pacific Northwest's biggest country music event. Set at the legendary Gorge Amphitheatre — one of the most scenic concert venues in the world — Watershed draws 25,000+ country fans for a three-day camping festival.
+
+## Why Watershed Is a Special Activation Opportunity
+
+The Gorge Amphitheatre's dramatic Columbia River Gorge backdrop makes Watershed one of the most visually stunning festivals in America. Every photo taken at Watershed looks incredible, making it a dream for brands seeking photogenic activations. Combined with the Pacific Northwest's country music audience, this creates a unique marketing opportunity.
+
+### The Watershed Audience
+
+Pacific Northwest country fans from Washington, Oregon, Idaho, and British Columbia. This audience combines country music passion with the PNW's outdoor lifestyle, craft beverage culture, and environmental consciousness. They camp on-site, creating extended engagement windows.
+
+Air Fresh Marketing's Pacific Northwest network includes experienced festival staff familiar with The Gorge's unique remote venue logistics.`,
+    staffTypes: [
+      { title: 'Country-Culture Brand Ambassadors', description: 'Authentic representatives for PNW country music fans' },
+      { title: 'Campground Activation Teams', description: 'Mobile teams reaching campers at their sites' },
+      { title: 'Beverage Sampling', description: 'TIPS-certified staff for beer and spirits in the camping festival environment' },
+      { title: 'Content Creators', description: 'Photographers capturing activations against the Gorge backdrop' },
+      { title: 'VIP Hospitality', description: 'Premium service for sponsor and VIP areas' },
+      { title: 'Event Operations', description: 'Remote venue logistics coordination' }
+    ],
+    stats: [
+      { value: '25K+', label: 'Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '25+', label: 'Country Acts' },
+      { value: '2', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Watershed Festival?', answer: 'Watershed takes place in August at The Gorge Amphitheatre in George, Washington.' },
+      { question: 'How remote is The Gorge?', answer: 'The Gorge is about 2.5 hours east of Seattle in rural central Washington. Staff logistics require advance planning for transportation and accommodation.' },
+      { question: 'What brands activate at Watershed?', answer: 'Beer and whiskey brands, pickup truck manufacturers, outdoor gear companies, and country lifestyle brands.' },
+      { question: 'Is Watershed a camping festival?', answer: 'Yes, the vast majority of attendees camp on-site for the entire weekend, providing extended activation opportunities.' }
+    ],
+    logisticsInfo: 'The Gorge Amphitheatre is at 754 Silica Rd NW, George, WA — 2.5 hours east of Seattle. Remote location requires advance staff transportation planning. August eastern WA weather is hot and dry (85-100°F).',
+    relatedCitySlug: 'seattle',
+    relatedCityName: 'Seattle / Pacific Northwest',
+    heroImage: '/images/events/watershed-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Camp Flog Gnaw — Los Angeles, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'camp-flog-gnaw',
+    title: 'Camp Flog Gnaw Staffing | Air Fresh Marketing',
+    h1: 'Camp Flog Gnaw Staffing',
+    metaDescription: 'Camp Flog Gnaw staffing services in Los Angeles. Professional brand ambassadors and event staff for Tyler, The Creator\'s iconic carnival-music festival.',
+    city: 'Los Angeles',
+    stateAbbrev: 'CA',
+    venues: ['Dodger Stadium'],
+    keywords: ['Camp Flog Gnaw staffing', 'LA music festival staff', 'Camp Flog Gnaw brand ambassadors', 'Tyler the Creator festival staff', 'LA event staffing'],
+    description: 'Professional event staffing for Camp Flog Gnaw Carnival in Los Angeles, Tyler, The Creator\'s genre-defying music and carnival experience.',
+    bodyContent: `Camp Flog Gnaw staffing provides brands with professional teams for one of the most culturally influential festivals in America. Created by Tyler, The Creator, Camp Flog Gnaw Carnival at Dodger Stadium blends music, carnival rides, food, and fashion into a uniquely creative experience.
+
+## Why Camp Flog Gnaw Is Premium Cultural Territory
+
+Camp Flog Gnaw isn't just a music festival — it's a cultural statement. Tyler, The Creator's creative vision permeates every detail, from the lineup to the carnival aesthetics to the fashion. Brands that activate here gain access to the most culturally influential Gen Z and young millennial audience in Los Angeles.
+
+### The Camp Flog Gnaw Audience
+
+Predominantly 18-30, fashion-forward, culturally influential, and fiercely loyal to authentic brands. This audience sets trends in music, fashion, and culture. They have high social media engagement and strong opinions about which brands belong in their space.
+
+Air Fresh Marketing's LA network includes creative professionals who understand the Camp Flog Gnaw aesthetic and can represent brands authentically.`,
+    staffTypes: [
+      { title: 'Culture-Forward Brand Ambassadors', description: 'Fashion-aware, culturally connected representatives for Gen Z audiences' },
+      { title: 'Carnival Activation Staff', description: 'Staff for interactive carnival-style brand experiences' },
+      { title: 'Content Creators', description: 'Trend-savvy content creators capturing the festival\'s unique aesthetic' },
+      { title: 'Sampling Teams', description: 'Product distribution matching the carnival energy' },
+      { title: 'Fashion-Focused Staff', description: 'Style-conscious team members for fashion and lifestyle activations' },
+      { title: 'Event Operations', description: 'Logistics coordination for Dodger Stadium venue' }
+    ],
+    stats: [
+      { value: '40K+', label: 'Attendance' },
+      { value: '2', label: 'Day Festival' },
+      { value: '40+', label: 'Artists' },
+      { value: '3', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Camp Flog Gnaw?', answer: 'Camp Flog Gnaw typically takes place in November at Dodger Stadium in Los Angeles.' },
+      { question: 'What makes CFG staffing different?', answer: 'The audience is extremely fashion-conscious and culturally influential. Staff must authentically fit the aesthetic or risk being perceived as out of touch.' },
+      { question: 'What brands activate at Camp Flog Gnaw?', answer: 'Fashion labels, streetwear brands, streaming services, sneaker companies, and culturally-forward consumer brands.' },
+      { question: 'Is Camp Flog Gnaw hard to staff?', answer: 'The specific cultural fit requirements make staffing more selective. Book 10+ weeks ahead and work with an agency that understands the LA creative scene.' }
+    ],
+    logisticsInfo: 'Dodger Stadium is at 1000 Vin Scully Ave, Los Angeles. Parking is limited — rideshare recommended. November LA weather is mild (65-75°F). The venue\'s hillside location affects setup logistics.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/camp-flog-gnaw.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // When We Were Young — Las Vegas, NV
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'when-we-were-young',
+    title: 'When We Were Young Festival Staffing | Air Fresh Marketing',
+    h1: 'When We Were Young Festival Staffing',
+    metaDescription: 'When We Were Young festival staffing in Las Vegas. Professional brand ambassadors and event staff for the massive emo, pop-punk, and rock nostalgia festival.',
+    city: 'Las Vegas',
+    stateAbbrev: 'NV',
+    venues: ['Las Vegas Festival Grounds'],
+    keywords: ['When We Were Young staffing', 'Las Vegas festival staff', 'WWWY brand ambassadors', 'emo festival staffing', 'Las Vegas event staff'],
+    description: 'Professional event staffing for When We Were Young Festival at the Las Vegas Festival Grounds, the massive emo, pop-punk, and alternative rock nostalgia festival.',
+    bodyContent: `When We Were Young festival staffing connects brands with one of the most passionately engaged audiences in the festival world. This massive one-day emo, pop-punk, and rock nostalgia festival at the Las Vegas Festival Grounds draws 60,000+ fans reliving their teenage soundtrack.
+
+## Why WWWY Is a Unique Brand Opportunity
+
+When We Were Young taps into powerful nostalgia, reuniting fans with the bands that soundtracked their formative years. This emotional connection extends to brands that were part of that era or authentically align with the culture. The audience is deeply engaged, emotionally invested, and highly social media-active.
+
+### The WWWY Audience
+
+Predominantly 25-40, the millennial generation that grew up on emo and pop-punk. These are now established professionals with significant purchasing power who are reconnecting with their youth culture. They're nostalgic, brand-loyal, and willing to spend on experiences.
+
+Air Fresh Marketing's Las Vegas network includes experienced festival staff who understand the emo/punk culture and deliver authentic brand representation.`,
+    staffTypes: [
+      { title: 'Culture-Savvy Brand Ambassadors', description: 'Staff who authentically understand emo/pop-punk culture' },
+      { title: 'Sampling Teams', description: 'High-volume distribution for 60,000+ single-day attendance' },
+      { title: 'VIP Hospitality', description: 'Premium service for VIP viewing areas and sponsor lounges' },
+      { title: 'Content Creators', description: 'Photographers and videographers capturing the nostalgia energy' },
+      { title: 'Merch & Activation Staff', description: 'Sales and interactive experience teams' },
+      { title: 'Event Operations', description: 'Logistics for the massive single-day festival format' }
+    ],
+    stats: [
+      { value: '60K+', label: 'Daily Attendance' },
+      { value: '1', label: 'Day Festival' },
+      { value: '60+', label: 'Bands' },
+      { value: '3', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is When We Were Young?', answer: 'WWWY typically takes place in October at the Las Vegas Festival Grounds, often running multiple dates.' },
+      { question: 'How big is the WWWY audience?', answer: '60,000+ fans per day, with the festival sometimes running multiple dates to meet demand.' },
+      { question: 'What brands fit WWWY?', answer: 'Energy drinks, fashion brands with punk/emo aesthetic, streaming services, gaming companies, and nostalgia-aligned consumer brands.' },
+      { question: 'Is WWWY staffing demand high?', answer: 'Very high. Las Vegas festival staffing is competitive, and WWWY\'s October timing overlaps with other Vegas events. Book 10+ weeks ahead.' }
+    ],
+    logisticsInfo: 'Las Vegas Festival Grounds is at 311 W Sahara Ave, Las Vegas. Central Strip-adjacent location with good access. October Vegas weather is comfortable (70-80°F). Single-day format means intense, concentrated staffing.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/events/when-we-were-young.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Buku Music + Art Project — New Orleans, LA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'buku-festival',
+    title: 'Buku Music + Art Festival Staffing | Air Fresh Marketing',
+    h1: 'Buku Music + Art Festival Staffing',
+    metaDescription: 'Buku Music + Art festival staffing in New Orleans. Professional brand ambassadors and event staff for New Orleans\' industrial waterfront electronic and hip-hop festival.',
+    city: 'New Orleans',
+    stateAbbrev: 'LA',
+    venues: ['Mardi Gras World'],
+    keywords: ['Buku Festival staffing', 'New Orleans music festival staff', 'Buku brand ambassadors', 'New Orleans event staffing', 'electronic music festival staff NOLA'],
+    description: 'Professional event staffing for Buku Music + Art Project at Mardi Gras World in New Orleans, blending electronic music, hip-hop, and immersive art.',
+    bodyContent: `Buku Music + Art festival staffing delivers brand activation teams for one of the most uniquely New Orleans festival experiences. Set in the industrial waterfront complex of Mardi Gras World, Buku fuses electronic music, hip-hop, and immersive visual art in a gritty, creative atmosphere.
+
+## Why Buku Is a Creative Brand Playground
+
+Buku's industrial setting and art-forward programming create a canvas for creative brand activations that would feel out of place at mainstream festivals. The venue's warehouses, outdoor areas, and waterfront spaces offer diverse activation environments within a single festival footprint.
+
+### The Buku Audience
+
+Predominantly 18-30, culturally progressive, arts-engaged, and digitally native. The audience spans electronic music fans, hip-hop heads, and visual art enthusiasts. They value creativity and authenticity over polish.
+
+Air Fresh Marketing's New Orleans network includes creative event staff who understand the city's unique cultural energy and Buku's industrial-arts aesthetic.`,
+    staffTypes: [
+      { title: 'Creative Brand Ambassadors', description: 'Arts-savvy representatives for the industrial-creative festival atmosphere' },
+      { title: 'Art Installation Staff', description: 'Guides for interactive brand-art experiences' },
+      { title: 'Sampling Teams', description: 'Product distribution across the Mardi Gras World complex' },
+      { title: 'Content Creators', description: 'Visual storytellers capturing Buku\'s unique industrial aesthetic' },
+      { title: 'VIP Staff', description: 'Hospitality for sponsor areas and VIP experiences' },
+      { title: 'Event Operations', description: 'Warehouse venue logistics and coordination' }
+    ],
+    stats: [
+      { value: '20K+', label: 'Attendance' },
+      { value: '2', label: 'Day Festival' },
+      { value: '50+', label: 'Artists' },
+      { value: '4', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Buku Festival?', answer: 'Buku typically takes place in March at Mardi Gras World in New Orleans, Louisiana.' },
+      { question: 'What makes Buku unique?', answer: 'The industrial waterfront setting, fusion of electronic/hip-hop music with immersive art, and gritty New Orleans creative energy.' },
+      { question: 'What brands fit Buku?', answer: 'Streetwear, tech brands, energy drinks, cannabis (where legal), streaming services, and art/design-oriented companies.' },
+      { question: 'Is Buku indoor or outdoor?', answer: 'Both — the Mardi Gras World complex includes warehouses, covered areas, and outdoor waterfront spaces.' }
+    ],
+    logisticsInfo: 'Mardi Gras World is at 1380 Port of New Orleans Pl, New Orleans. Waterfront industrial location along the Mississippi River. March NOLA weather is mild to warm (60-75°F).',
+    relatedCitySlug: 'new-orleans',
+    relatedCityName: 'New Orleans',
+    heroImage: '/images/events/buku-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Aftershock Festival — Sacramento, CA
   // ─────────────────────────────────────────────────────────────────
   {
