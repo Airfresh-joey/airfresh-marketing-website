@@ -37,6 +37,314 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Aftershock Festival — Sacramento, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'aftershock-festival',
+    title: 'Aftershock Festival Staffing | Air Fresh Marketing',
+    h1: 'Aftershock Festival Staffing',
+    metaDescription: 'Aftershock Festival staffing services in Sacramento. Professional brand ambassadors, event staff, and promotional teams for Northern California\'s premier rock festival.',
+    city: 'Sacramento',
+    stateAbbrev: 'CA',
+    venues: ['Discovery Park'],
+    keywords: ['Aftershock Festival staffing', 'Sacramento festival staff', 'Aftershock brand ambassadors', 'Sacramento event staffing', 'rock festival staff California'],
+    description: 'Professional event staffing for Aftershock Festival in Sacramento, Northern California\'s largest rock and metal music festival.',
+    bodyContent: `Aftershock Festival staffing connects brands with 80,000+ rock and metal fans at Sacramento's Discovery Park. As Northern California's largest rock festival, Aftershock draws a passionate, brand-loyal audience over four days of heavy music.
+
+## Why Brands Activate at Aftershock
+
+Aftershock's loyal rock audience is a premium demographic for targeted brand activations. These fans are dedicated, high-spending, and deeply engaged with the brands that align with their lifestyle. Energy drinks, automotive brands, audio equipment, gaming companies, and beverage brands see exceptional ROI at Aftershock.
+
+### The Aftershock Audience
+
+Predominantly 25-45, with strong purchasing power and fierce brand loyalty. Rock and metal fans are known for sticking with brands they trust, making Aftershock activations a long-term investment in customer acquisition.
+
+## Staff Types for Aftershock Festival
+
+### Rock-Culture Brand Ambassadors
+Staff who authentically connect with the rock/metal community. Generic festival staff won't resonate here — you need people who genuinely understand and appreciate the culture.
+
+### High-Volume Sampling Teams
+With 80,000+ attendees, sampling operations need to be efficient and well-coordinated. Our teams handle high-volume distribution while maintaining brand messaging.
+
+### VIP & Sponsor Hospitality
+Premium service for sponsor lounges and VIP areas. Even in a rock festival environment, VIP guests expect professional hospitality.
+
+Air Fresh Marketing's Sacramento and Northern California network delivers authentic, experienced festival staff for Aftershock activations.`,
+    staffTypes: [
+      { title: 'Rock-Culture Brand Ambassadors', description: 'Authentic representatives who connect with the rock/metal community' },
+      { title: 'Sampling Teams', description: 'High-volume product distribution across Discovery Park' },
+      { title: 'VIP Hospitality', description: 'Premium service for sponsor and VIP areas' },
+      { title: 'Street Teams', description: 'Mobile teams covering the festival grounds' },
+      { title: 'Merch & Sales Staff', description: 'Trained retail staff for on-site product sales' },
+      { title: 'Setup & Breakdown', description: 'Physical teams for activation build and teardown' }
+    ],
+    stats: [
+      { value: '80K+', label: 'Total Attendance' },
+      { value: '4', label: 'Day Festival' },
+      { value: '90+', label: 'Bands' },
+      { value: '4', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Aftershock Festival?', answer: 'Aftershock takes place in October at Discovery Park in Sacramento, California.' },
+      { question: 'What brands activate at Aftershock?', answer: 'Energy drinks, automotive, audio equipment, gaming, and beverage brands targeting the rock demographic.' },
+      { question: 'How far ahead should I book?', answer: 'Book 8-10 weeks in advance for the best staff availability.' },
+      { question: 'What makes Sacramento festival staffing unique?', answer: 'October Sacramento weather is ideal (70-80°F). The market has strong festival-experienced staff from the Northern California network.' }
+    ],
+    logisticsInfo: 'Discovery Park is at Garden Hwy & Natomas Park Dr, Sacramento. October weather is warm and dry. Good highway access but parking is limited — shuttle services available.',
+    relatedCitySlug: 'sacramento',
+    relatedCityName: 'Sacramento',
+    heroImage: '/images/events/aftershock-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Faster Horses — Brooklyn, MI
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'faster-horses',
+    title: 'Faster Horses Festival Staffing | Air Fresh Marketing',
+    h1: 'Faster Horses Festival Staffing',
+    metaDescription: 'Faster Horses festival staffing services in Brooklyn, Michigan. Professional brand ambassadors and event staff for the Midwest\'s biggest country music festival.',
+    city: 'Brooklyn',
+    stateAbbrev: 'MI',
+    venues: ['Michigan International Speedway'],
+    keywords: ['Faster Horses staffing', 'Michigan country festival staff', 'Faster Horses brand ambassadors', 'Michigan event staffing', 'country music festival staff'],
+    description: 'Professional event staffing for Faster Horses Festival at Michigan International Speedway, the Midwest\'s premier country music camping festival.',
+    bodyContent: `Faster Horses festival staffing provides brands with professional teams for the Midwest's biggest country music festival. Held at Michigan International Speedway, Faster Horses draws 40,000+ country music fans for a three-day camping festival featuring top country acts.
+
+## Why Faster Horses Is a Key Midwest Activation
+
+Faster Horses fills a critical geographic gap — it's the dominant country music festival between Nashville and the northern Midwest. Fans travel from Michigan, Ohio, Indiana, Illinois, Wisconsin, and beyond, creating a regional audience that's otherwise hard to reach at a single event.
+
+### The Faster Horses Audience
+
+Country music fans with strong brand affinity for pickup trucks, beer, whiskey, outdoor gear, and Americana lifestyle products. The camping format creates extended engagement windows as fans spend the entire weekend on-site.
+
+## Staff Types for Faster Horses
+
+### Country-Culture Brand Ambassadors
+Staff who fit naturally in the country music environment. Authentic connection matters — these fans can spot corporate insincerity instantly.
+
+### Campground Activation Teams
+With 40,000+ fans camping for three days, campground activations reach people during their downtime between sets. Mobile teams roam campgrounds with product samples and brand experiences.
+
+### Beverage Sampling Teams
+Beer and whiskey brands dominate at country festivals. TIPS-certified sampling staff manage high-volume distribution while ensuring responsible service.
+
+Air Fresh Marketing's Midwest network includes experienced country festival staff familiar with the camping festival format.`,
+    staffTypes: [
+      { title: 'Country-Culture Brand Ambassadors', description: 'Authentic representatives for the country music lifestyle audience' },
+      { title: 'Campground Teams', description: 'Mobile activation teams reaching fans at their campsites' },
+      { title: 'Beverage Sampling', description: 'TIPS-certified staff for beer and spirits sampling' },
+      { title: 'VIP Hospitality', description: 'Premium service for sponsor areas and VIP experiences' },
+      { title: 'Street Teams', description: 'Mobile teams on the Speedway festival grounds' },
+      { title: 'Event Operations', description: 'Logistics and coordination for multi-day camping festival' }
+    ],
+    stats: [
+      { value: '40K+', label: 'Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '30+', label: 'Country Acts' },
+      { value: '3', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Faster Horses?', answer: 'Faster Horses takes place in July at Michigan International Speedway in Brooklyn, Michigan.' },
+      { question: 'Is Faster Horses a camping festival?', answer: 'Yes, the majority of attendees camp on-site for the full three-day weekend, creating extended brand activation opportunities.' },
+      { question: 'What brands do well at Faster Horses?', answer: 'Beer and whiskey brands, pickup truck manufacturers, outdoor gear companies, and country lifestyle brands.' },
+      { question: 'How do I reach campers?', answer: 'Mobile campground teams are the most effective way to reach the camping audience during downtime between main stage performances.' }
+    ],
+    logisticsInfo: 'Michigan International Speedway is in Brooklyn, MI (about 90 minutes from Detroit). Rural location requires advance planning for staff transportation and accommodations.',
+    relatedCitySlug: 'detroit',
+    relatedCityName: 'Detroit / Michigan',
+    heroImage: '/images/events/faster-horses.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Something in the Water — Virginia Beach, VA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'something-in-the-water',
+    title: 'Something in the Water Festival Staffing | Air Fresh Marketing',
+    h1: 'Something in the Water Festival Staffing',
+    metaDescription: 'Something in the Water festival staffing services in Virginia Beach. Professional brand ambassadors and event staff for Pharrell\'s beachfront music festival.',
+    city: 'Virginia Beach',
+    stateAbbrev: 'VA',
+    venues: ['Virginia Beach Oceanfront'],
+    keywords: ['Something in the Water staffing', 'Virginia Beach festival staff', 'SITW brand ambassadors', 'Virginia Beach event staffing', 'Pharrell festival staff'],
+    description: 'Professional event staffing for Something in the Water festival at the Virginia Beach Oceanfront, Pharrell Williams\' multi-genre beachfront music festival.',
+    bodyContent: `Something in the Water festival staffing delivers professional brand activation teams for one of the most culturally dynamic music festivals on the East Coast. Created by Pharrell Williams, SITW takes over the Virginia Beach Oceanfront for a multi-genre celebration spanning hip-hop, R&B, rock, gospel, and electronic music.
+
+## Why SITW Is a Premium Brand Platform
+
+Something in the Water carries Pharrell's creative vision, attracting a diverse, culturally influential audience. The beachfront setting and multi-genre lineup draw an audience that spans demographics more effectively than genre-specific festivals. For brands seeking cultural credibility and demographic breadth, SITW is unmatched on the East Coast.
+
+### The SITW Audience
+
+Diverse in age (18-45), ethnicity, and music preference. The Pharrell association attracts creatives, musicians, fashion enthusiasts, and culturally engaged consumers. Strong social media activity and brand receptivity make this audience ideal for experiential activations.
+
+## Staff Types for Something in the Water
+
+### Culturally Diverse Brand Ambassadors
+SITW's diverse audience requires a diverse team. Staff should represent a range of backgrounds, ages, and cultural perspectives to connect authentically across the festival's demographic spectrum.
+
+### Beach Activation Teams
+The oceanfront setting means sand, sun, and outdoor conditions. Staff comfortable in beach environments who can maintain energy through long, hot festival days.
+
+### Social Media Content Creators
+SITW is highly Instagrammable with ocean views and cultural moments. Content creators capture these moments while amplifying brand presence.
+
+Air Fresh Marketing provides SITW staffing from our mid-Atlantic network, delivering culturally aware, beach-ready event staff.`,
+    staffTypes: [
+      { title: 'Culturally Diverse Brand Ambassadors', description: 'Representatives reflecting SITW\'s diverse multi-genre audience' },
+      { title: 'Beach Activation Teams', description: 'Staff experienced in oceanfront festival environments' },
+      { title: 'Content Creators', description: 'Visual storytellers capturing the beachfront festival energy' },
+      { title: 'Sampling Teams', description: 'Product distribution along the Virginia Beach Oceanfront' },
+      { title: 'VIP Hospitality', description: 'Premium service for sponsor and VIP beachfront areas' },
+      { title: 'Event Operations', description: 'Logistics and coordination for beachfront festival setup' }
+    ],
+    stats: [
+      { value: '35K+', label: 'Daily Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '50+', label: 'Artists' },
+      { value: '4', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Something in the Water?', answer: 'SITW typically takes place in April at the Virginia Beach Oceanfront in Virginia Beach, Virginia.' },
+      { question: 'Who created Something in the Water?', answer: 'The festival was created by Pharrell Williams as a celebration of Virginia Beach culture, music, and community.' },
+      { question: 'What makes SITW staffing unique?', answer: 'The beachfront setting and Pharrell\'s cultural vision require staff who are both beach-ready and culturally sophisticated.' },
+      { question: 'What brands do well at SITW?', answer: 'Fashion brands, streaming services, beverage companies, lifestyle brands, and culturally-forward consumer products.' }
+    ],
+    logisticsInfo: 'Virginia Beach Oceanfront stretches along Atlantic Avenue. Beach access for activations requires coordination with festival production. April weather can range from 55-75°F.',
+    relatedCitySlug: 'virginia-beach',
+    relatedCityName: 'Virginia Beach',
+    heroImage: '/images/events/something-in-the-water.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Forecastle Festival — Louisville, KY
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'forecastle-festival',
+    title: 'Forecastle Festival Staffing | Air Fresh Marketing',
+    h1: 'Forecastle Festival Staffing',
+    metaDescription: 'Forecastle Festival staffing services in Louisville. Professional brand ambassadors and event staff for Louisville\'s waterfront music, art, and activism festival.',
+    city: 'Louisville',
+    stateAbbrev: 'KY',
+    venues: ['Waterfront Park'],
+    keywords: ['Forecastle Festival staffing', 'Louisville festival staff', 'Forecastle brand ambassadors', 'Louisville event staffing', 'waterfront festival staff'],
+    description: 'Professional event staffing for Forecastle Festival at Louisville\'s Waterfront Park, a unique blend of music, art, and environmental activism.',
+    bodyContent: `Forecastle Festival staffing delivers professional brand activation teams for Louisville's signature waterfront music and arts festival. Set along the Ohio River at Waterfront Park, Forecastle uniquely blends music, bourbon culture, visual art, and environmental activism.
+
+## Why Forecastle Is a Unique Brand Opportunity
+
+Forecastle's combination of music, bourbon, and activism creates a festival unlike any other. The event partners with environmental organizations, features a robust bourbon lodge, and curates a lineup that spans indie, folk, hip-hop, and electronic music. For brands that align with sustainability, craft culture, or Louisville's vibrant arts scene, Forecastle provides an authentic activation platform.
+
+### The Forecastle Audience
+
+Louisville locals mixed with regional festival-goers from Kentucky, Indiana, Ohio, and Tennessee. The audience is 22-40, environmentally conscious, bourbon-curious, and arts-engaged. They value authenticity and support brands that share their values around sustainability and community.
+
+## Staff Types for Forecastle
+
+### Eco-Conscious Brand Ambassadors
+Given Forecastle's environmental activism focus, brand ambassadors should be knowledgeable about sustainability and comfortable discussing eco-friendly brand initiatives.
+
+### Bourbon Lodge Staff
+Forecastle's famous bourbon lodge requires hospitality-trained staff who understand bourbon culture, can lead tastings, and provide premium service.
+
+### Waterfront Activation Teams
+The riverside setting creates a beautiful but challenging environment. Staff should be comfortable with outdoor conditions and the unique layout of Waterfront Park.
+
+Air Fresh Marketing provides Forecastle staffing from our Southeast network, with staff who understand Louisville's unique blend of bourbon, music, and activism.`,
+    staffTypes: [
+      { title: 'Eco-Conscious Brand Ambassadors', description: 'Sustainability-savvy representatives for the activism-focused festival' },
+      { title: 'Bourbon Lodge Staff', description: 'Hospitality professionals with bourbon culture knowledge' },
+      { title: 'Waterfront Activation Teams', description: 'Staff experienced in riverside outdoor festival environments' },
+      { title: 'Sampling Teams', description: 'Product distribution across Waterfront Park grounds' },
+      { title: 'Content Creators', description: 'Visual storytellers capturing the riverfront festival atmosphere' },
+      { title: 'Event Operations', description: 'Logistics coordination for the waterfront venue' }
+    ],
+    stats: [
+      { value: '30K+', label: 'Weekend Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '60+', label: 'Artists' },
+      { value: '4', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Forecastle Festival?', answer: 'Forecastle takes place in July at Waterfront Park in Louisville, Kentucky.' },
+      { question: 'What makes Forecastle unique?', answer: 'The combination of music, bourbon lodge, visual art, and environmental activism creates a distinctly Louisville festival experience.' },
+      { question: 'What brands fit Forecastle?', answer: 'Bourbon/craft spirits brands, sustainable consumer products, outdoor gear, arts organizations, and eco-conscious lifestyle brands.' },
+      { question: 'Is the bourbon lodge a brand opportunity?', answer: 'Yes, the bourbon lodge is a premium activation space. Bourbon brands and complementary products can create elevated tasting experiences.' }
+    ],
+    logisticsInfo: 'Waterfront Park is along the Ohio River in downtown Louisville. Accessible by car and public transit. July Louisville weather is hot and humid (85-95°F) — staff need heat preparation.',
+    relatedCitySlug: 'louisville',
+    relatedCityName: 'Louisville',
+    heroImage: '/images/events/forecastle-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Electric Zoo — New York, NY
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'electric-zoo',
+    title: 'Electric Zoo Staffing | Air Fresh Marketing',
+    h1: 'Electric Zoo Staffing',
+    metaDescription: 'Electric Zoo staffing services in New York City. Professional brand ambassadors, event staff, and promotional teams for NYC\'s premier electronic music festival.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Randall\'s Island Park'],
+    keywords: ['Electric Zoo staffing', 'NYC electronic music festival staff', 'Electric Zoo brand ambassadors', 'New York event staffing', 'EDM festival staff NYC'],
+    description: 'Professional event staffing for Electric Zoo on Randall\'s Island, New York City\'s premier electronic dance music festival.',
+    bodyContent: `Electric Zoo staffing connects brands with New York City's premier electronic dance music festival audience. Held annually at Randall's Island Park during Labor Day weekend, Electric Zoo draws 30,000+ EDM fans daily for a three-day celebration of electronic music with the Manhattan skyline as backdrop.
+
+## Why Electric Zoo Is Prime Brand Territory
+
+Electric Zoo combines the energy of a major EDM festival with the sophistication and spending power of the New York City market. Unlike EDM festivals in other markets, Electric Zoo attendees are predominantly NYC residents and visitors — a demographic with above-average income, high social media activity, and strong brand engagement habits.
+
+### The Electric Zoo Audience
+
+Predominantly 21-35, urban professionals who are digitally native, fashion-conscious, and experience-driven. They spend premium prices on tickets ($300+) and expect premium brand experiences. The NYC market context means higher expectations for activation quality and creativity.
+
+## Staff Types for Electric Zoo
+
+### High-Energy Brand Ambassadors
+EDM festivals demand staff with infectious energy. Ambassadors should be comfortable in the electronic music environment, able to maintain enthusiasm throughout long festival days, and naturally engaging.
+
+### VIP and Cabana Staff
+Electric Zoo's VIP areas are among the most exclusive in the NYC festival scene. Hospitality staff need to deliver bottle-service-level attention in a festival environment.
+
+### Interactive Experience Staff
+EDM festival attendees are drawn to immersive, technology-forward activations. Staff for interactive experiences need to guide participants through AR, VR, or tech-enhanced brand moments.
+
+### Social Media Amplification Teams
+Electric Zoo generates massive social media content. Dedicated teams encourage UGC, manage branded photo ops, and amplify content in real time.
+
+Air Fresh Marketing's New York City network includes experienced EDM festival staff who deliver the energy and professionalism that Electric Zoo brands demand.`,
+    staffTypes: [
+      { title: 'High-Energy Brand Ambassadors', description: 'Enthusiastic representatives matching Electric Zoo\'s EDM energy' },
+      { title: 'VIP & Cabana Staff', description: 'Premium hospitality for NYC\'s most exclusive festival VIP experience' },
+      { title: 'Interactive Experience Staff', description: 'Tech-comfortable guides for immersive brand activations' },
+      { title: 'Social Media Teams', description: 'Content creators and UGC amplification specialists' },
+      { title: 'Sampling Teams', description: 'Product distribution across Randall\'s Island festival grounds' },
+      { title: 'Event Operations', description: 'Logistics and coordination for island venue setup' }
+    ],
+    stats: [
+      { value: '30K+', label: 'Daily Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '4', label: 'Stages' },
+      { value: '100+', label: 'DJs & Artists' }
+    ],
+    faqs: [
+      { question: 'When is Electric Zoo?', answer: 'Electric Zoo takes place over Labor Day weekend (late August/early September) at Randall\'s Island Park in New York City.' },
+      { question: 'How do staff get to Randall\'s Island?', answer: 'Randall\'s Island is accessible by shuttle bus from Manhattan, the RFK Bridge, and ferry service. Festival provides shuttle logistics.' },
+      { question: 'What brands activate at Electric Zoo?', answer: 'Beverage brands, streaming services, fashion labels, tech companies, energy drinks, and lifestyle brands targeting young NYC professionals.' },
+      { question: 'Is Electric Zoo staffing premium-priced?', answer: 'Yes, NYC market rates apply plus the Labor Day holiday premium. Book early (8+ weeks) for the best rates and staff availability.' }
+    ],
+    logisticsInfo: 'Randall\'s Island Park is between Manhattan, the Bronx, and Queens. Accessible via shuttle, bridge, or ferry. Labor Day weekend weather is typically warm (75-85°F). NYC staffing rates apply.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/electric-zoo.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Welcome to Rockville — Daytona Beach, FL
   // ─────────────────────────────────────────────────────────────────
   {

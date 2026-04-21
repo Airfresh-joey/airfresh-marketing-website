@@ -25,7 +25,7 @@ export const metadata: Metadata = {
 export default function EventStaffingIndex() {
   // Group events by region/type for better organization
   const musicFestivals = eventPages.filter(e =>
-    ['coachella', 'ultra-music-festival', 'edc-las-vegas', 'edc-orlando', 'rolling-loud', 'electric-forest', 'firefly-music-festival', 'bonnaroo', 'austin-city-limits', 'lollapalooza', 'governors-ball', 'life-is-beautiful', 'iheartradio-music-festival', 'outside-lands', 'pitchfork-music-festival', 'jazz-fest', 'cma-fest', 'hangout-fest', 'carolina-country-music-fest', 'riot-fest', 'movement-detroit', 'tortuga-music-festival', 'summerfest', 'boston-calling', 'bottlerock-napa-valley', 'welcome-to-rockville', 'iii-points', 'shaky-knees', 'made-in-america', 'wonderfront'].includes(e.slug)
+    ['coachella', 'ultra-music-festival', 'edc-las-vegas', 'edc-orlando', 'rolling-loud', 'electric-forest', 'firefly-music-festival', 'bonnaroo', 'austin-city-limits', 'lollapalooza', 'governors-ball', 'life-is-beautiful', 'iheartradio-music-festival', 'outside-lands', 'pitchfork-music-festival', 'jazz-fest', 'cma-fest', 'hangout-fest', 'carolina-country-music-fest', 'riot-fest', 'movement-detroit', 'tortuga-music-festival', 'summerfest', 'boston-calling', 'bottlerock-napa-valley', 'welcome-to-rockville', 'iii-points', 'shaky-knees', 'made-in-america', 'wonderfront', 'aftershock-festival', 'faster-horses', 'something-in-the-water', 'forecastle-festival', 'electric-zoo'].includes(e.slug)
   );
   const techConferences = eventPages.filter(e =>
     ['ces', 'sxsw', 'aws-reinvent', 'e3', 'dreamforce', 'nab-show', 'himss'].includes(e.slug)
