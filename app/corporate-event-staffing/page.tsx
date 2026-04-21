@@ -910,6 +910,29 @@ export default function CorporateEventStaffingPage() {
         </div>
       </section>
 
+      {/* Related Services */}
+      <section className="py-12 bg-gray-50">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl font-bold text-gray-900 mb-6">Explore More Staffing Solutions</h2>
+          <div className="flex flex-wrap justify-center gap-3">
+            {[
+              { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
+              { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
+              { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
+              { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
+              { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
+              { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
+              { href: '/services/trade-show-staffing', label: 'Trade Show Staffing' },
+              { href: '/services/food-beverage-sampling', label: 'Food & Beverage Sampling' },
+            ].map((link) => (
+              <Link key={link.href} href={link.href} className="px-4 py-2 bg-white border border-gray-200 rounded-full text-sm font-medium text-gray-700 hover:border-[#00C853] hover:text-[#00C853] transition-colors shadow-sm">
+                {link.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* CTA Section */}
       <section className="py-16 md:py-20 bg-[#001F3F]">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">

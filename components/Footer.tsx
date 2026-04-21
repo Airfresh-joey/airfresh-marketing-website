@@ -37,6 +37,8 @@ export default function Footer() {
     { name: "Experiential Marketing Agency", href: "/experiential-marketing-agency" },
     { name: "Promotional Staffing Agency", href: "/promotional-staffing-agency" },
     { name: "Corporate Event Staffing", href: "/corporate-event-staffing" },
+    { name: "Event Marketing Agency", href: "/event-marketing-agency" },
+    { name: "Brand Activation Agency", href: "/brand-activation-agency" },
     { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },

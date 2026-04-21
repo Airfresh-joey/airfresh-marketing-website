@@ -965,6 +965,8 @@ export default function ExperientialMarketingAgencyPage() {
               { label: 'Hire Brand Ambassadors', href: '/hire-brand-ambassadors' },
               { label: 'Promotional Staffing Agency', href: '/promotional-staffing-agency' },
               { label: 'Corporate Event Staffing', href: '/corporate-event-staffing' },
+              { label: 'Event Marketing Agency', href: '/event-marketing-agency' },
+              { label: 'Brand Activation Agency', href: '/brand-activation-agency' },
               { label: 'Case Studies', href: '/case-studies' },
               { label: 'Technology Platform', href: '/technology' },
               { label: 'Pricing', href: '/pricing' },

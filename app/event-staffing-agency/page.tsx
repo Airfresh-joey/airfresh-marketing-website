@@ -1137,6 +1137,12 @@ export default function EventStaffingAgencyPage() {
               <Link href="/corporate-event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Corporate Event Staffing
               </Link>
+              <Link href="/event-marketing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Event Marketing Agency
+              </Link>
+              <Link href="/brand-activation-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Brand Activation Agency
+              </Link>
               <Link href="/pricing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Pricing
               </Link>
