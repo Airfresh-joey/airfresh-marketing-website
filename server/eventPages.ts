@@ -36,6 +36,215 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 150 ──────────────────────────────────────────────────────
+  {
+    slug: 'us-open-tennis',
+    title: 'US Open Tennis Staffing | Event Staff for USTA Billie Jean King National Tennis Center',
+    h1: 'US Open Tennis Event Staffing Services',
+    metaDescription: 'US Open Tennis event staffing for hospitality suites, fan zones, sponsor activations, and VIP experiences at the USTA Billie Jean King National Tennis Center in Flushing, NY.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['USTA Billie Jean King National Tennis Center', 'Arthur Ashe Stadium', 'Louis Armstrong Stadium'],
+    keywords: ['US Open tennis staffing', 'USTA event staff', 'tennis event staffing', 'US Open hospitality'],
+    description: 'The US Open Tennis Championship draws over 800,000 spectators across two weeks of world-class competition in Flushing Meadows, Queens. Air Fresh Marketing provides professional event staff for corporate hospitality suites, sponsor activations at the grounds, fan experience zones, merchandise operations, and VIP guest services throughout this Grand Slam tournament.',
+    bodyContent: `<h2>US Open Tennis Event Staffing for Every Venue Need</h2>
+<p>As the final Grand Slam of the season, the US Open Tennis Championship is one of the most prestigious sporting events in the world. Air Fresh Marketing delivers experienced event staff across the entire USTA Billie Jean King National Tennis Center campus — from Arthur Ashe Stadium's 23,771 seats to the intimate Grandstand court and the sprawling grounds where fans gather between matches.</p>
+
+<h3>Hospitality Suite & Corporate Box Staff</h3>
+<p>The US Open features some of the most exclusive corporate hospitality experiences in sports. Our trained hospitality professionals manage suite check-in, coordinate catering service, maintain premium beverage stations, and ensure corporate guests enjoy world-class service throughout match days. We staff the Heineken Red Star Cafe, Emirates Lounge, and private corporate suites with dedicated servers, bartenders, and concierge staff.</p>
+
+<h3>Fan Experience & Grounds Staff</h3>
+<p>Beyond the stadiums, the US Open grounds feature food courts, merchandise villages, interactive sponsor activations, and practice court viewing areas. Our fan experience ambassadors help visitors navigate the complex, manage queuing for popular attractions, and ensure every guest maximizes their US Open experience.</p>
+
+<h3>Sponsor Activation Teams</h3>
+<p>Major US Open sponsors including Emirates, Rolex, Chase, and IBM invest heavily in on-site activations. Our brand ambassadors staff interactive sponsor pavilions, product demonstration areas, and digital engagement stations that connect fans with sponsor brands throughout the tournament.</p>
+
+<h3>VIP & Player Hospitality</h3>
+<p>Player lounges, VIP reception areas, and tournament director hospitality spaces require discreet, professional staff who understand the unique demands of an international sporting event. Our teams provide seamless service while respecting the privacy and security protocols that Grand Slam events demand.</p>`,
+    staffTypes: ['Hospitality Suite Staff', 'Brand Ambassadors', 'Fan Experience Hosts', 'VIP Concierge', 'Merchandise Staff', 'Food & Beverage Servers'],
+    stats: [
+      { number: '800,000+', label: 'Annual Attendance' },
+      { number: '2 Weeks', label: 'Tournament Duration' },
+      { number: '23,771', label: 'Arthur Ashe Capacity' },
+      { number: '$65M+', label: 'Total Prize Money' }
+    ],
+    faqs: [
+      { question: 'When does US Open staffing recruitment begin?', answer: 'We begin recruiting US Open event staff in May for the late August/September tournament. Early application ensures placement in preferred roles including hospitality suites, sponsor activations, and VIP areas.' },
+      { question: 'What experience is needed for US Open hospitality roles?', answer: 'US Open hospitality staff should have premium food and beverage service experience, professional appearance, and comfort working in fast-paced, high-profile environments. Previous sporting event experience is preferred but not required.' },
+      { question: 'How long are US Open event staff shifts?', answer: 'Typical US Open shifts run 8-10 hours during day sessions and 6-8 hours for evening sessions. The tournament spans approximately 14 days, and staff can work full-run or partial schedules.' }
+    ],
+    logisticsInfo: 'The USTA Billie Jean King National Tennis Center is located in Flushing Meadows-Corona Park, Queens. Staff access is via dedicated credential entry points separate from public gates. Parking is extremely limited — staff should plan to use the 7 train (Mets-Willets Point station) or shuttle services from designated staging areas.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/us-open-tennis.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'new-orleans-jazz-heritage-festival',
+    title: 'New Orleans Jazz Fest Staffing | Event Staff for Jazz & Heritage Festival',
+    h1: 'New Orleans Jazz & Heritage Festival Event Staffing',
+    metaDescription: 'New Orleans Jazz & Heritage Festival event staffing for food vendors, stage operations, VIP experiences, and brand activations at the Fair Grounds Race Course.',
+    city: 'New Orleans',
+    stateAbbrev: 'LA',
+    venues: ['Fair Grounds Race Course', 'Congo Square Stage', 'Acura Stage', 'Gentilly Stage'],
+    keywords: ['Jazz Fest staffing', 'New Orleans Jazz Festival staff', 'Jazz Heritage Festival event staffing', 'Jazz Fest vendor staff'],
+    description: 'The New Orleans Jazz & Heritage Festival draws 500,000+ attendees over two weekends of music, food, and culture. Air Fresh Marketing provides experienced event staff for food vendor operations, stage and production support, VIP tent experiences, sponsor activations, and the legendary food area that features 70+ local restaurant booths.',
+    bodyContent: `<h2>New Orleans Jazz & Heritage Festival Staffing Solutions</h2>
+<p>Jazz Fest is more than a music festival — it's a celebration of New Orleans culture, cuisine, and community that spans two weekends at the historic Fair Grounds Race Course. Air Fresh Marketing delivers professional event staff who understand the unique spirit of Jazz Fest and can serve its diverse community of music lovers, food enthusiasts, and cultural ambassadors.</p>
+
+<h3>Food Vendor Operations Staff</h3>
+<p>Jazz Fest's food heritage is legendary, with 70+ local restaurant and food vendor booths serving iconic dishes from crawfish bread to cochon de lait po-boys. Our food service staff support vendor operations including food preparation assistance, serving line management, cash handling, and health code compliance across the festival's massive food footprint.</p>
+
+<h3>Stage & Production Support</h3>
+<p>With 14 stages running simultaneously across the Fair Grounds, production support is essential. Our crews assist with stage changeovers, artist hospitality, equipment management, and crowd safety at stages ranging from the 10,000-capacity Acura Stage to intimate cultural pavilions.</p>
+
+<h3>VIP Experience Staff</h3>
+<p>Jazz Fest's VIP and premium experiences include the Big Chief VIP Experience, Krewe of Jazz Fest, and private hospitality tents. Our trained hospitality teams manage VIP entry, coordinate premium food and beverage service, and ensure elevated experiences for premium ticket holders.</p>
+
+<h3>Cultural Heritage & Information Staff</h3>
+<p>Jazz Fest celebrates Louisiana's living cultural traditions through craft demonstrations, cultural exchanges, and heritage exhibits. Our information staff help visitors navigate these experiences, explain cultural significance, and connect attendees with the deeper meaning behind Jazz Fest's programming.</p>`,
+    staffTypes: ['Food Vendor Staff', 'Stage Production Crew', 'VIP Hospitality', 'Brand Ambassadors', 'Information & Wayfinding', 'Crowd Management'],
+    stats: [
+      { number: '500,000+', label: 'Two-Weekend Attendance' },
+      { number: '14', label: 'Music Stages' },
+      { number: '70+', label: 'Food Vendors' },
+      { number: '55+', label: 'Years Running' }
+    ],
+    faqs: [
+      { question: 'When is the New Orleans Jazz & Heritage Festival?', answer: 'Jazz Fest typically runs over two consecutive weekends in late April and early May. The 2026 dates span two three-day weekends at the Fair Grounds Race Course in New Orleans.' },
+      { question: 'What makes Jazz Fest staffing unique?', answer: 'Jazz Fest combines the scale of a major music festival with the food service demands of a culinary event. Staff need comfort working in New Orleans heat and humidity, familiarity with outdoor festival operations, and respect for the event cultural traditions.' },
+      { question: 'Do Jazz Fest staff need food handling certifications?', answer: 'Staff assigned to food vendor support roles should have Louisiana food handler permits or equivalent certifications. Air Fresh Marketing assists with obtaining required certifications during the onboarding process.' }
+    ],
+    logisticsInfo: 'The Fair Grounds Race Course is located at 1751 Gentilly Blvd in New Orleans. Staff must arrive via designated crew entry gates with proper credentials. On-site parking is extremely limited — shuttle service from remote lots is the primary transportation for event staff.',
+    relatedCitySlug: 'new-orleans',
+    relatedCityName: 'New Orleans',
+    heroImage: '/images/events/jazz-fest.jpg'
+  },
+  {
+    slug: 'indianapolis-500',
+    title: 'Indy 500 Staffing | Event Staff for Indianapolis Motor Speedway',
+    h1: 'Indianapolis 500 Event Staffing Services',
+    metaDescription: 'Indianapolis 500 event staffing for hospitality suites, fan zones, sponsor activations, and race day operations at the Indianapolis Motor Speedway.',
+    city: 'Indianapolis',
+    stateAbbrev: 'IN',
+    venues: ['Indianapolis Motor Speedway', 'IMS Pagoda', 'Gasoline Alley', 'Turn 4 Infield'],
+    keywords: ['Indy 500 staffing', 'Indianapolis 500 event staff', 'IMS event staffing', 'race day staffing Indianapolis'],
+    description: 'The Indianapolis 500 is the world\'s largest single-day sporting event, with 300,000+ spectators filling the Indianapolis Motor Speedway on race day. Air Fresh Marketing provides professional event staff for the full Month of May programming including qualifications, Carb Day, the 500 Festival Parade, and race day operations across hospitality suites, sponsor activations, and fan experience zones.',
+    bodyContent: `<h2>Indianapolis 500 Event Staffing Across the Month of May</h2>
+<p>The Greatest Spectacle in Racing demands the greatest event staffing. With 300,000+ fans on race day and weeks of qualifying, practice, and festival events leading up to the green flag, the Indianapolis 500 requires a massive, coordinated staffing operation across the 2.5-mile Indianapolis Motor Speedway oval and its surrounding campus.</p>
+
+<h3>Race Day Hospitality Operations</h3>
+<p>IMS features hundreds of corporate hospitality suites, tower terraces, and premium viewing areas along the 2.5-mile track. Our hospitality staff manage suite service, coordinate catering delivery, maintain premium bar service, and provide concierge-level attention to corporate guests experiencing the Indy 500 from the most exclusive vantage points.</p>
+
+<h3>Sponsor Activation & Fan Zones</h3>
+<p>The IMS infield and surrounding areas host massive sponsor activations from automotive brands, energy companies, and consumer products. Our brand ambassador teams staff interactive displays, product sampling stations, and digital engagement experiences that connect fans with sponsor brands throughout the event grounds.</p>
+
+<h3>Month of May Event Support</h3>
+<p>The Indy 500 isn't just race day — it's an entire month of events including practice sessions, qualifications (Bump Day), Legends Day autograph sessions, the IPL 500 Festival Parade, Carb Day concerts, and the Snake Pit infield music festival. Each event requires dedicated staffing with different skill sets and operational requirements.</p>
+
+<h3>Gasoline Alley & Pit Area Support</h3>
+<p>Behind-the-scenes operations in Gasoline Alley and pit lane areas need credentialed support staff for team hospitality, media management, credential verification, and operational logistics that keep race operations running smoothly.</p>`,
+    staffTypes: ['Hospitality Suite Staff', 'Brand Ambassadors', 'Fan Experience Hosts', 'Credential & Access Control', 'Food & Beverage Service', 'Parking & Traffic Management'],
+    stats: [
+      { number: '300,000+', label: 'Race Day Attendance' },
+      { number: '2.5 Miles', label: 'Track Length' },
+      { number: '33', label: 'Starting Cars' },
+      { number: '109', label: 'Years of Racing' }
+    ],
+    faqs: [
+      { question: 'When does Indy 500 staffing begin?', answer: 'Month of May staffing begins in early May with practice and qualifying sessions. The Indy 500 race is held on the Sunday of Memorial Day weekend. Air Fresh Marketing begins recruiting in March for all May events.' },
+      { question: 'What credentials are needed for IMS event staff?', answer: 'All staff receive IMS-issued credentials appropriate to their role. Hot credentials (pit/garage access) require additional background checks and safety training. Cold credentials cover general grounds and hospitality areas.' },
+      { question: 'How do staff get around the massive IMS facility?', answer: 'The Indianapolis Motor Speedway campus is enormous. Staff should wear comfortable walking shoes and plan for significant distances between assigned areas. Internal shuttle service operates on race day for credentialed personnel.' }
+    ],
+    logisticsInfo: 'Indianapolis Motor Speedway is located at 4790 W 16th St in Speedway, IN. Staff must use designated credential pickup locations and enter through crew gates. Race day traffic management begins at 4 AM — staff should arrive early and follow IMS transportation guidance for crew parking and shuttle access.',
+    relatedCitySlug: 'indianapolis',
+    relatedCityName: 'Indianapolis',
+    heroImage: '/images/events/indy-500.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'san-francisco-outside-lands',
+    title: 'Outside Lands Staffing | Event Staff for Golden Gate Park Music Festival',
+    h1: 'Outside Lands Music Festival Event Staffing',
+    metaDescription: 'Outside Lands music festival event staffing for Golden Gate Park including brand activations, food & wine service, VIP hospitality, and production support in San Francisco.',
+    city: 'San Francisco',
+    stateAbbrev: 'CA',
+    venues: ['Golden Gate Park', 'Polo Field', 'Lindley Meadow', 'Hellman Hollow'],
+    keywords: ['Outside Lands staffing', 'Outside Lands event staff', 'Golden Gate Park festival staffing', 'OSL music festival staff'],
+    description: 'Outside Lands brings 200,000+ music, food, and wine lovers to San Francisco\'s Golden Gate Park over three days each August. Air Fresh Marketing provides professional event staff for the festival\'s unique combination of live music, Gastromagic culinary stage, Wine Lands sommelier experiences, Beer Lands craft tastings, and Grass Lands cannabis experiences.',
+    bodyContent: `<h2>Outside Lands Festival Staffing for San Francisco's Premier Music Event</h2>
+<p>Outside Lands is San Francisco's signature music and culture festival, uniquely blending world-class music across five stages with curated food, wine, beer, cocktail, and cannabis experiences in the stunning setting of Golden Gate Park. Air Fresh Marketing provides experienced event staff who can navigate the festival's diverse programming areas and deliver exceptional experiences across every touchpoint.</p>
+
+<h3>Wine Lands, Beer Lands & Cocktail Experiences</h3>
+<p>Outside Lands is renowned for its elevated beverage programming featuring 40+ wineries, 30+ craft breweries, and curated cocktail experiences. Our trained beverage staff pour tastings, manage queue lines, verify age credentials, and maintain the premium service standard that sets OSL apart from typical music festivals. Staff must hold California RBS (Responsible Beverage Service) certification.</p>
+
+<h3>Gastromagic & Food Area Staff</h3>
+<p>The festival's culinary programming includes Gastromagic (a stage combining live cooking with musical performances), plus 80+ food vendors from Bay Area restaurants. Our food service staff support vendor operations, manage food court crowd flow, and ensure health and safety compliance across the sprawling food areas.</p>
+
+<h3>Grass Lands Experience Staff</h3>
+<p>As one of the first major festivals to feature a licensed cannabis experience, Outside Lands' Grass Lands area requires specially trained staff for age verification, product education, consumption area management, and compliance with California cannabis event regulations.</p>
+
+<h3>Stage & Production Support</h3>
+<p>Five music stages across Golden Gate Park require production assistants, stage managers, artist hospitality staff, and crowd safety teams. Our crews understand festival production workflows and San Francisco's unique weather patterns — the famous August fog can roll in at any moment.</p>`,
+    staffTypes: ['Beverage Service Staff', 'Food Vendor Support', 'Brand Ambassadors', 'VIP Hospitality', 'Stage Production Crew', 'Cannabis Experience Staff'],
+    stats: [
+      { number: '200,000+', label: 'Three-Day Attendance' },
+      { number: '5', label: 'Music Stages' },
+      { number: '80+', label: 'Food Vendors' },
+      { number: '40+', label: 'Wineries Featured' }
+    ],
+    faqs: [
+      { question: 'When is Outside Lands held?', answer: 'Outside Lands takes place over three days in August in Golden Gate Park, San Francisco. The 2026 dates and lineup are typically announced in spring.' },
+      { question: 'Do Outside Lands staff need special certifications?', answer: 'Staff in beverage areas need California RBS certification. Grass Lands staff require additional cannabis service training. Food service staff should have California food handler cards. Air Fresh Marketing assists with certification as needed.' },
+      { question: 'What should staff expect with San Francisco weather?', answer: 'August in Golden Gate Park brings the famous San Francisco fog — temperatures can swing from 75°F in sunshine to 55°F in fog within an hour. Staff should bring layers and be prepared for cool, misty conditions especially during evening sets.' }
+    ],
+    logisticsInfo: 'Golden Gate Park is located in San Francisco between the Richmond and Sunset districts. Staff enter through dedicated crew gates on the park perimeter. No staff parking is available — use MUNI transit (N-Judah line) or staff shuttle from designated pickup points. The park is large — allow extra time to reach assigned areas.',
+    relatedCitySlug: 'san-francisco',
+    relatedCityName: 'San Francisco',
+    heroImage: '/images/events/outside-lands.jpg'
+  },
+  {
+    slug: 'new-york-marathon',
+    title: 'NYC Marathon Staffing | Event Staff for TCS New York City Marathon',
+    h1: 'New York City Marathon Event Staffing Services',
+    metaDescription: 'New York City Marathon event staffing for expo operations, course support, finish line management, and sponsor activations for the world\'s largest marathon.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Fort Wadsworth (Start)', 'Central Park (Finish)', 'Javits Center (Expo)', 'Five Borough Course'],
+    keywords: ['NYC Marathon staffing', 'New York Marathon event staff', 'TCS NYC Marathon staffing', 'marathon event staffing'],
+    description: 'The TCS New York City Marathon is the world\'s largest marathon with 50,000+ runners and 1 million+ spectators lining the 26.2-mile course through all five boroughs. Air Fresh Marketing provides professional event staff for the multi-day marathon expo at Javits Center, course operations across NYC, finish line management in Central Park, and sponsor activations throughout the event.',
+    bodyContent: `<h2>New York City Marathon Event Staffing Across All Five Boroughs</h2>
+<p>The TCS New York City Marathon is the pinnacle of distance running events, sending 50,000+ runners on a 26.2-mile journey from Staten Island through Brooklyn, Queens, the Bronx, and Manhattan before finishing in Central Park. Staffing this event requires coordinating teams across the entire city, from the marathon expo at Javits Center to every water station, medical tent, and cheer zone along the course.</p>
+
+<h3>Marathon Expo at Javits Center</h3>
+<p>The three-day NYC Marathon Expo at the Jacob K. Javits Convention Center is one of the largest running expos in the world, attracting 100,000+ visitors for bib pickup, merchandise shopping, and sponsor activations. Our expo staff manage runner registration, distribute race packets, support sponsor booths, and handle the massive logistics of credential distribution for tens of thousands of runners.</p>
+
+<h3>Course Operations Staff</h3>
+<p>The 26.2-mile course through five boroughs requires hundreds of staff at water stations, fluid stations, medical checkpoints, course marshaling points, and mile markers. Our course operations teams are trained in runner safety, hydration station management, and communication protocols with race operations command.</p>
+
+<h3>Finish Line & Central Park Operations</h3>
+<p>The Central Park finish area is a complex operation: medal distribution, mylar blanket handoff, food and beverage service, gear check return, family reunion area management, and medical tent support. Our finish line teams work in high-pressure, high-emotion environments with the efficiency and care that exhausted runners need.</p>
+
+<h3>Sponsor Activation Teams</h3>
+<p>TCS, New Balance, Gatorade, and other major sponsors invest heavily in marathon activations. Our brand ambassador teams staff sponsor pavilions at the expo, activation zones along the course, and post-race celebration areas in Central Park.</p>`,
+    staffTypes: ['Expo Registration Staff', 'Course Marshals', 'Hydration Station Crew', 'Finish Line Staff', 'Brand Ambassadors', 'Medical Support Assistants'],
+    stats: [
+      { number: '50,000+', label: 'Marathon Runners' },
+      { number: '1M+', label: 'Course Spectators' },
+      { number: '26.2', label: 'Miles Through 5 Boroughs' },
+      { number: '100,000+', label: 'Expo Visitors' }
+    ],
+    faqs: [
+      { question: 'When is the NYC Marathon?', answer: 'The TCS New York City Marathon is held on the first Sunday of November. The marathon expo runs Thursday through Saturday before race day at the Javits Center.' },
+      { question: 'How early do NYC Marathon staff need to arrive on race day?', answer: 'Course and finish line staff typically report at 4-5 AM on race day. The professional women\'s race starts at 8:20 AM, and course operations continue until the last runner finishes, typically by 5-6 PM.' },
+      { question: 'What weather conditions should marathon staff prepare for?', answer: 'Early November in NYC can range from 35°F to 65°F with possible rain. Staff should dress in warm, waterproof layers and bring hand warmers. Shifts are long and primarily outdoors.' }
+    ],
+    logisticsInfo: 'Staff assignments span all five NYC boroughs. Course staff receive specific location assignments and must arrange transportation to their positions using MTA subway and bus routes. The finish area in Central Park is accessible via multiple subway stations. All staff receive NYRR credentials and detailed reporting instructions.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/nyc-marathon.jpg',
+    isFeatured: true
+  },
   // ── Batch 145 ──────────────────────────────────────────────────────
   {
     slug: 'pga-championship',
