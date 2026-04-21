@@ -1116,6 +1116,21 @@ export default function EventStaffingAgencyPage() {
               <Link href="/services/promotional-models" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Promotional Models
               </Link>
+              <Link href="/brand-ambassador-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Brand Ambassador Agency
+              </Link>
+              <Link href="/experiential-marketing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Experiential Marketing Agency
+              </Link>
+              <Link href="/hire-brand-ambassadors" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Hire Brand Ambassadors
+              </Link>
+              <Link href="/services/trade-show-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Trade Show Staffing
+              </Link>
+              <Link href="/services/food-beverage-sampling" className="text-white/70 hover:text-cyan-200 transition-colors">
+                Food & Beverage Sampling
+              </Link>
               <Link href="/pricing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Pricing
               </Link>
