@@ -2495,6 +2495,158 @@ NRF's Innovation Lab and Startup Zone attract forward-thinking retail executives
     relatedCityName: 'New York City',
     heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 29. Chicago Auto Show
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'chicago-auto-show',
+    title: 'Chicago Auto Show Staffing Agency | McCormick Place Event Staff',
+    h1: 'Chicago Auto Show Event Staffing',
+    metaDescription:
+      'Chicago Auto Show staffing agency providing product specialists, brand ambassadors, and event staff for the largest auto show in North America at McCormick Place.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['McCormick Place'],
+    keywords: [
+      'Chicago Auto Show staffing',
+      'CAS event staff',
+      'auto show staffing Chicago',
+      'McCormick Place staffing',
+      'automotive event staff Chicago',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the Chicago Auto Show at McCormick Place—the largest auto show in North America by attendance with 1 million+ visitors annually.',
+    bodyContent: `The Chicago Auto Show is the largest auto show in North America by attendance, welcoming over 1 million visitors to McCormick Place each February. With a century-plus history and unmatched public attendance, the CAS offers automotive brands the most extensive consumer engagement opportunity on the auto show circuit.
+
+AirFresh Marketing provides comprehensive staffing for Chicago Auto Show exhibitors, from product specialists who know your vehicles inside and out to brand ambassadors who create memorable interactions with the show's massive audience.
+
+**Product Specialists**
+
+The Chicago Auto Show's enormous public attendance means your product specialists must sustain high-energy engagement across 10+ days. Our specialists are trained on your full vehicle lineup and can deliver compelling presentations that resonate with the diverse CAS audience—from first-time car buyers to enthusiasts to families.
+
+**Lead Generation Staff**
+
+With over 1 million visitors, the CAS generates significant lead volume. Our lead capture specialists focus on qualifying serious buyers, capturing contact information tied to specific vehicle interest, and segmenting leads for your dealer network. Quality over quantity is our approach.
+
+**Brand Activation Staff**
+
+Many manufacturers create immersive brand experiences beyond their booth—test track activations, VR experiences, lifestyle zones. Our activation staff facilitate these experiences, manage queues, and create engagement moments that strengthen brand affinity.
+
+**Media and Fleet Week Staff**
+
+CAS media preview and fleet/dealer preview days set the tone. Our staff support press events, dealer hospitality, and fleet buyer presentations with professional service tailored to each audience.`,
+    staffTypes: [
+      { title: 'Product Specialists', description: 'Vehicle-trained presenters for 10+ day public show engagement at McCormick Place.' },
+      { title: 'Lead Generation Staff', description: 'Buyer qualification specialists capturing and segmenting leads for dealer networks.' },
+      { title: 'Brand Ambassadors', description: 'Engaging representatives for lifestyle zones, interactive displays, and brand experiences.' },
+      { title: 'Activation Staff', description: 'Experience facilitators for test tracks, VR experiences, and immersive brand installations.' },
+      { title: 'Media Staff', description: 'Press event support, journalist escort, and fleet buyer presentation coordination.' },
+    ],
+    stats: [
+      { value: '1M+', label: 'CAS Annual Visitors' },
+      { value: '1,000+', label: 'Vehicles on Display' },
+      { value: '10+ Days', label: 'Public Show Duration' },
+      { value: '100+', label: 'Years of History' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book Chicago Auto Show staffing?',
+        answer: 'We recommend booking 10-12 weeks before the CAS. The 10+ day show duration requires a larger staff commitment than shorter events. Early booking ensures sufficient trained product specialists for your full show run.',
+      },
+      {
+        question: 'Can you maintain staff quality across 10+ show days?',
+        answer: 'Yes. We build rotation schedules that prevent burnout while maintaining consistency. Core team members anchor each shift with supplemental staff rotating to keep energy high across the full show run.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting?',
+        answer: 'Yes. All staff check in via GPS at McCormick Place daily. We provide dashboards and post-show reports covering engagement data, lead capture metrics, and daily performance tracking.',
+      },
+    ],
+    logisticsInfo:
+      'The Chicago Auto Show takes place annually in February at McCormick Place. AirFresh coordinates staff from our Chicago talent network with on-site management throughout the multi-week show run.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 30. Miami Art Week / Art Basel Miami Beach
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'miami-art-week',
+    title: 'Miami Art Week Staffing Agency | Art Basel Miami Beach Event Staff',
+    h1: 'Miami Art Week Event Staffing',
+    metaDescription:
+      'Miami Art Week and Art Basel staffing providing brand ambassadors, VIP hosts, and activation staff for galleries, brand activations, and satellite events across Miami Beach.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Miami Beach Convention Center', 'Wynwood Arts District', 'Design District', 'Faena Forum'],
+    keywords: [
+      'Miami Art Week staffing',
+      'Art Basel Miami staffing',
+      'art fair event staff',
+      'Miami brand activations',
+      'luxury event staffing Miami',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for Miami Art Week, including Art Basel Miami Beach and the dozens of satellite fairs and brand activations across Miami Beach, Wynwood, and the Design District.',
+    bodyContent: `Miami Art Week is the Western Hemisphere's most prestigious art and cultural event, anchored by Art Basel Miami Beach and accompanied by 20+ satellite fairs and hundreds of brand activations, gallery openings, and private events across Miami. The week draws 83,000+ visitors to Art Basel alone, with total Miami Art Week attendance exceeding 200,000 collectors, curators, celebrities, and culturally engaged consumers.
+
+AirFresh Marketing provides comprehensive staffing for Miami Art Week, from the main Art Basel exhibition at the Miami Beach Convention Center to satellite fairs in Wynwood, brand activations in the Design District, and exclusive events from South Beach to Brickell.
+
+**Art Fair and Gallery Staff**
+
+Art fair environments demand staff with cultural sophistication. Our team members are briefed on art world etiquette, gallery protocols, and the discreet hospitality standards that high-net-worth collectors expect. We provide check-in staff, gallery attendants, and VIP liaison personnel for fairs and private viewings.
+
+**Brand Activation Staff**
+
+Miami Art Week has become the premier brand activation window for luxury, fashion, automotive, spirits, and lifestyle brands. Our brand ambassadors staff pop-up experiences, product launches, and immersive installations that leverage the week's cultural energy. Staff are selected for their sophistication, appearance standards, and ability to engage Miami Art Week's affluent audience.
+
+**VIP and Hospitality Staff**
+
+The social calendar during Art Week is packed with private dinners, cocktail receptions, yacht events, and collector gatherings. Our hospitality staff provide white-glove service at these exclusive events, managing guest lists, coordinating with catering teams, and ensuring every VIP interaction reflects your brand's premium positioning.
+
+**Multi-Venue Coordination**
+
+Art Week events are spread across Miami Beach, Wynwood, Design District, Downtown, and surrounding areas. We coordinate staff across multiple venues simultaneously, managing the logistics of a geographically dispersed activation footprint.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Sophisticated ambassadors for luxury brand activations, product launches, and experiential installations.' },
+      { title: 'VIP Hospitality Staff', description: 'White-glove hosts for private dinners, collector events, yacht parties, and gallery openings.' },
+      { title: 'Gallery Attendants', description: 'Culturally fluent staff for art fair booths, exhibition spaces, and private viewings.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for VIP previews, private events, and satellite fair entrances.' },
+      { title: 'Street Team', description: 'Guerrilla marketing teams for Wynwood, Design District, and South Beach activations.' },
+    ],
+    stats: [
+      { value: '200K+', label: 'Miami Art Week Attendees' },
+      { value: '83K+', label: 'Art Basel MBCC Visitors' },
+      { value: '20+', label: 'Satellite Art Fairs' },
+      { value: '7 Days', label: 'Art Week Duration' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book Miami Art Week staffing?',
+        answer: 'We recommend booking 8-10 weeks before Art Week (typically by late September for the December event). Miami staffing demand peaks dramatically during Art Week. For luxury brands requiring staff with specific appearance and cultural fluency standards, earlier booking is essential.',
+      },
+      {
+        question: 'Can you staff events across multiple Miami neighborhoods simultaneously?',
+        answer: 'Yes. We coordinate staff across Miami Beach Convention Center, Wynwood, Design District, South Beach, and other locations throughout Art Week. Our logistics team manages multi-venue scheduling and transportation between areas.',
+      },
+      {
+        question: 'Do your staff understand art world etiquette?',
+        answer: 'Yes. All Art Week staff receive briefings on gallery protocols, collector interaction etiquette, and the cultural expectations of the art world audience. We select staff with the sophistication and discretion appropriate for high-net-worth environments.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting?',
+        answer: 'Yes. All staff check in via GPS at their assigned venues across Miami. We provide real-time dashboards and comprehensive post-week reports with engagement data across all activation locations.',
+      },
+    ],
+    logisticsInfo:
+      'Miami Art Week takes place annually in early December, with Art Basel Miami Beach as the anchor event at the Miami Beach Convention Center. Events run across Miami Beach, Wynwood, Design District, and downtown Miami. AirFresh coordinates staff from our Miami talent network across all venues.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
