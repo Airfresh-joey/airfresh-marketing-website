@@ -49,6 +49,7 @@ const pillarPages = [
   { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
   { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
   { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },
+  { href: '/hire-brand-ambassadors', label: 'Hire Brand Ambassadors' },
   { href: '/promotional-staffing-agency', label: 'Promotional Staffing Agency' },
   { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
   { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
@@ -318,6 +319,48 @@ export default function CompareNextLevelPromotions() {
               {link.label}
             </Link>
           ))}
+        </div>
+      </section>
+
+      {/* Compare Other Agencies */}
+      <section className="py-16 bg-gray-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl font-bold text-gray-900 mb-8 text-center">Compare Other Event Staffing Agencies</h2>
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+            {[
+              { href: '/compare/atn-event-staffing', label: 'AirFresh vs ATN Event Staffing' },
+              { href: '/compare/elev8-staffing', label: 'AirFresh vs Elev8 Staffing' },
+              { href: '/compare/attack-marketing', label: 'AirFresh vs Attack! Marketing' },
+              { href: '/compare/alt-terrain', label: 'AirFresh vs Alt Terrain' },
+              { href: '/compare/hype-agency', label: 'AirFresh vs The Hype Agency' },
+              { href: '/compare/cea-staffing', label: 'AirFresh vs CEA Staffing' },
+              { href: '/compare/ignite-productions', label: 'AirFresh vs Ignite Productions' },
+              { href: '/compare/assist-marketing', label: 'AirFresh vs Assist Marketing' },
+              { href: '/compare/kinetic-events', label: 'AirFresh vs Kinetic Events' },
+              { href: '/compare/mosaic-experiential', label: 'AirFresh vs Mosaic Experiential' },
+              { href: '/compare/pro-motion-staffing', label: 'AirFresh vs Pro Motion Staffing' },
+              { href: '/compare/advantage-solutions', label: 'AirFresh vs Advantage Solutions' },
+              { href: '/compare/allied-experiential', label: 'AirFresh vs Allied Experiential' },
+              { href: '/compare/team-enterprises', label: 'AirFresh vs Team Enterprises' },
+              { href: '/compare/encore-nationwide', label: 'AirFresh vs Encore Nationwide' },
+              { href: '/compare/2x4-experiential', label: 'AirFresh vs 2x4 Experiential' },
+              { href: '/compare/fusion-marketing', label: 'AirFresh vs Fusion Marketing' },
+              { href: '/compare/event-strategy-group', label: 'AirFresh vs Event Strategy Group' },
+              { href: '/compare/sparks-marketing', label: 'AirFresh vs Sparks Marketing' },
+              { href: '/compare/grammy-staffing', label: 'AirFresh vs Grammy Staffing' },
+              { href: '/compare/lime-media', label: 'AirFresh vs Lime Media' },
+              { href: '/compare/modern-marketing', label: 'AirFresh vs Modern Marketing' },
+              { href: '/compare/nparallel', label: 'AirFresh vs NParallel' },
+            ].map((link) => (
+              <Link
+                key={link.href}
+                href={link.href}
+                className="block p-4 bg-white rounded-lg border border-gray-200 hover:border-[#00C853] hover:shadow-md transition-all text-center"
+              >
+                <span className="text-sm font-medium text-gray-700 hover:text-[#00C853]">{link.label}</span>
+              </Link>
+            ))}
+          </div>
         </div>
       </section>
 

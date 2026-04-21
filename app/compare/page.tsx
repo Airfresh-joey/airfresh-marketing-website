@@ -186,6 +186,30 @@ const competitors = [
     keyDiff: 'Modeling-focused, limited experiential capabilities',
     priority: false,
   },
+  {
+    slug: 'lime-media',
+    name: 'Lime Media',
+    tagline: 'Mobile marketing and experiential media',
+    location: 'Nationwide',
+    keyDiff: 'Mobile-only focus, no published pricing',
+    priority: false,
+  },
+  {
+    slug: 'modern-marketing',
+    name: 'Modern Marketing',
+    tagline: 'Full-service experiential marketing',
+    location: 'Nationwide',
+    keyDiff: 'Slower deployment, no GPS verification',
+    priority: false,
+  },
+  {
+    slug: 'nparallel',
+    name: 'NParallel',
+    tagline: 'Experiential marketing and brand activation',
+    location: 'Select markets',
+    keyDiff: 'Limited geographic coverage, no published pricing',
+    priority: false,
+  },
 ];
 
 const afmHighlights = [
