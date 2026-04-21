@@ -190,6 +190,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/nra-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/riot-fest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/movement-detroit`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/tortuga-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/summerfest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/namm-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/boston-calling`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/bottlerock-napa-valley`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Competitor comparison pages (high-intent "vs" keywords)

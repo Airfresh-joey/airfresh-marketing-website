@@ -14,6 +14,476 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: "530",
+    slug: "event-staffing-for-pharmaceutical-conferences-compliance-guide",
+    title: "Event Staffing for Pharmaceutical Conferences: Compliance and Brand Representation Guide",
+    excerpt: "Event staffing for pharmaceutical conferences requires specialized training in compliance, HIPAA awareness, and medical terminology. Learn how to staff pharma events effectively.",
+    content: `Event staffing for pharmaceutical conferences demands a unique combination of professionalism, compliance awareness, and scientific literacy that sets it apart from standard event staffing. Whether you're exhibiting at HIMSS, the American Medical Association Annual Meeting, or regional pharmaceutical trade shows, your booth staff must understand regulatory boundaries while effectively communicating your brand's value proposition.
+
+## Why Pharmaceutical Conference Staffing Is Different
+
+Pharmaceutical and healthcare conferences operate under strict compliance frameworks that standard event staff may not understand. From FDA regulations around off-label promotion to HIPAA considerations when handling attendee information, the stakes for non-compliance are extraordinarily high. A single misstep by untrained staff can result in regulatory action, legal liability, and significant brand damage.
+
+### Compliance Training Requirements
+
+Every staff member working a pharmaceutical conference needs training in:
+
+- **FDA Promotional Guidelines** — Understanding what claims can and cannot be made about products
+- **HIPAA Awareness** — Proper handling of any health-related information from attendees
+- **Adverse Event Reporting** — Knowing when and how to report adverse events mentioned by healthcare professionals
+- **Fair Balance Requirements** — Ensuring promotional materials present risks alongside benefits
+- **Off-Label Discussion Boundaries** — Understanding strict limitations on discussing unapproved uses
+
+## Staff Roles at Pharmaceutical Conferences
+
+### Medical Science Liaisons (MSLs)
+These specialized staff members have scientific backgrounds and can engage healthcare professionals in meaningful clinical discussions. While they're typically employed by the pharmaceutical company, staffing agencies can provide support staff who understand the MSL function.
+
+### Booth Engagement Specialists
+These staff members serve as the first point of contact, qualifying visitors, scanning badges, and directing healthcare professionals to the appropriate company representatives. They need enough medical knowledge to have intelligent conversations without crossing compliance lines.
+
+### Registration and Logistics Staff
+Behind-the-scenes staff who manage registration, hospitality, and logistics. While they may not engage in product discussions, they still need HIPAA awareness training and professional demeanor appropriate for medical settings.
+
+### Lead Capture Specialists
+Staff trained specifically in badge scanning, data capture, and CRM entry. In pharmaceutical settings, these team members must understand data privacy requirements and proper consent protocols.
+
+## Best Practices for Pharma Event Staffing
+
+### Pre-Event Preparation
+Start planning pharmaceutical conference staffing at least 8-12 weeks before the event. This timeline allows for thorough compliance training, background checks, and certification verification. Air Fresh Marketing recommends a multi-phase training approach that includes online modules, video certification, and live role-playing scenarios.
+
+### On-Site Management
+Always have a compliance-trained on-site manager who can answer questions in real time, handle unexpected situations, and ensure all staff interactions remain within approved messaging frameworks. This person should have direct communication with your medical-legal-regulatory (MLR) team.
+
+### Post-Event Documentation
+Document all staff interactions, lead captures, and any adverse events reported during the conference. This documentation protects your brand and demonstrates compliance diligence to regulators.
+
+## Choosing a Staffing Agency for Pharma Events
+
+Not every staffing agency can handle pharmaceutical conferences. Look for agencies that offer:
+
+- Industry-specific compliance training programs
+- Staff with healthcare or scientific backgrounds
+- Experience with major medical conferences (HIMSS, ASCO, AMA)
+- Proper insurance coverage for healthcare settings
+- Background check capabilities
+- Confidentiality agreement management
+
+Air Fresh Marketing provides pharmaceutical conference staffing with mandatory compliance certification, ensuring every team member understands the unique requirements of healthcare marketing events.
+
+## Cost Considerations
+
+Pharmaceutical conference staffing typically costs 15-30% more than standard trade show staffing due to the specialized training requirements and higher-caliber staff needed. However, this investment protects against the significantly higher cost of compliance violations, which can run into millions of dollars in fines and legal fees.
+
+Budget for compliance training time (typically 4-8 hours per staff member), background checks, and the premium rates commanded by staff with healthcare industry experience. Most agencies charge $45-$75 per hour for pharma-qualified event staff, compared to $35-$55 for general trade show staff.`,
+    image: "/images/blog/pharmaceutical-conference-staffing.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 20, 2026",
+    readTime: "8 min read",
+    category: "Industry Guides",
+    tags: ["pharmaceutical staffing", "healthcare conferences", "compliance", "HIMSS", "trade show staffing", "pharma events"]
+  },
+  {
+    id: "529",
+    slug: "how-to-staff-a-pop-up-shop-complete-guide",
+    title: "How to Staff a Pop-Up Shop: Complete Guide to Temporary Retail Staffing",
+    excerpt: "How to staff a pop-up shop requires careful planning around brand training, scheduling flexibility, and customer experience. This complete guide covers everything from hiring to closing day.",
+    content: `How to staff a pop-up shop is one of the most common questions brands ask when launching temporary retail experiences. Pop-up shops have exploded in popularity as brands seek direct consumer engagement, product testing opportunities, and Instagram-worthy moments that drive both foot traffic and social media buzz. Getting the staffing right can make or break your pop-up's success.
+
+## Understanding Pop-Up Shop Staffing Needs
+
+Pop-up shops differ fundamentally from permanent retail locations. Your staff needs to handle everything from store setup and visual merchandising to customer engagement, point-of-sale operations, and teardown — often within a compressed timeline of days or weeks rather than months.
+
+### Key Roles for Pop-Up Shops
+
+**Brand Ambassadors / Sales Associates**
+The face of your pop-up. These team members need to embody your brand identity, engage visitors authentically, and convert browsers into buyers. They should be able to tell your brand story compellingly while also handling transactions.
+
+**Visual Merchandising Specialists**
+Staff who can set up and maintain the physical environment. Pop-ups often feature unique design elements, interactive installations, and photo-worthy displays that need daily attention and refreshing.
+
+**Point-of-Sale Operators**
+Team members trained on your POS system, whether it's Square, Shopify POS, or a custom solution. They need to handle cash, credit cards, and potentially complex promotions or bundle pricing.
+
+**Social Media Ambassadors**
+Staff dedicated to capturing content, encouraging user-generated posts, managing hashtag campaigns, and maintaining your pop-up's social media presence in real time.
+
+**Door Staff / Queue Management**
+For high-demand pop-ups, you'll need staff to manage lines, control capacity, and create an exciting entrance experience that builds anticipation.
+
+## How Many Staff Do You Need?
+
+The general formula for pop-up shop staffing:
+
+- **Small pop-up (under 500 sq ft)**: 2-3 staff per shift
+- **Medium pop-up (500-1,500 sq ft)**: 4-6 staff per shift
+- **Large pop-up (1,500+ sq ft)**: 6-10+ staff per shift
+- **Always add +1 for an on-site manager**
+
+Factor in breaks, shift transitions, and peak hours. Most pop-ups see heaviest traffic during lunch hours (11am-2pm) and after-work hours (5pm-8pm), so staff accordingly.
+
+## Training Your Pop-Up Team
+
+### Brand Immersion (4-8 hours)
+Every staff member should understand your brand history, values, product line, and target customer. Provide brand decks, product samples, and competitor context so they can speak authentically.
+
+### Product Knowledge (2-4 hours)
+Deep training on every product available at the pop-up, including features, benefits, pricing, ingredients/materials, and common customer questions. Staff should be able to recommend products based on customer needs.
+
+### POS and Operations (2-3 hours)
+Hands-on training with your point-of-sale system, inventory management, opening/closing procedures, and cash handling protocols.
+
+### Customer Experience Scripts (1-2 hours)
+While you don't want robotic interactions, provide conversation frameworks for greeting customers, telling your brand story, handling objections, and closing sales.
+
+## Scheduling Best Practices
+
+Pop-up shops typically run 8-12 hours daily, requiring at least two shifts. Create a schedule that includes:
+
+- 30-minute overlap between shifts for handoff
+- Dedicated setup crew for the first morning (usually 1-2 hours before opening)
+- Closing crew for end-of-day procedures
+- Extra staff on opening day and weekends
+- Backup staff on call for no-shows
+
+## Hiring Timeline
+
+- **6-8 weeks before**: Engage a staffing agency or begin recruiting
+- **4-5 weeks before**: Finalize headcount and roles
+- **2-3 weeks before**: Complete training materials
+- **1-2 weeks before**: Conduct brand training sessions
+- **2-3 days before**: Walkthrough and operational training at the venue
+
+## Working with a Staffing Agency
+
+A professional staffing agency like Air Fresh Marketing can dramatically simplify pop-up shop staffing by providing:
+
+- Pre-vetted, experienced retail and event staff
+- Flexible scheduling with backup staff on standby
+- Payroll, insurance, and HR management
+- On-site management and daily reporting
+- Rapid scaling if your pop-up needs more staff than planned
+
+## Measuring Pop-Up Staff Performance
+
+Track these KPIs to evaluate your team:
+
+- **Conversion rate**: Visitors who make a purchase
+- **Average transaction value**: Upselling effectiveness
+- **Social media engagement**: Content creation and user-generated posts
+- **Customer satisfaction scores**: Post-visit surveys
+- **Email/SMS signups**: Lead capture effectiveness
+- **Foot traffic patterns**: Optimal staffing times
+
+Pop-up shops represent one of the most exciting opportunities in experiential retail. With the right team in place, your temporary store can create lasting brand impressions that drive long-term customer relationships.`,
+    image: "/images/blog/pop-up-shop-staffing.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 19, 2026",
+    readTime: "9 min read",
+    category: "Experiential Marketing",
+    tags: ["pop-up shop", "retail staffing", "brand activation", "temporary retail", "experiential marketing", "pop-up store"]
+  },
+  {
+    id: "528",
+    slug: "brand-ambassador-vs-influencer-marketing-which-drives-more-roi",
+    title: "Brand Ambassador vs Influencer Marketing: Which Drives More ROI in 2026?",
+    excerpt: "Brand ambassador vs influencer marketing is a critical decision for brands allocating experiential budgets. Compare costs, reach, authenticity, and measurable ROI to determine the best approach.",
+    content: `Brand ambassador vs influencer marketing is one of the most debated topics in modern marketing strategy. Both approaches connect brands with consumers through human relationships, but they operate on fundamentally different models with distinct cost structures, reach capabilities, and ROI profiles. Understanding these differences helps brands allocate their experiential marketing budgets for maximum impact.
+
+## Defining the Difference
+
+### Brand Ambassadors
+Brand ambassadors are trained representatives who engage consumers face-to-face at events, retail locations, sampling activations, and trade shows. They work directly for the brand (or through a staffing agency like Air Fresh Marketing), follow specific brand guidelines, and create in-person experiences that drive immediate conversions.
+
+### Influencer Marketing
+Influencers are content creators with established online audiences who promote products through social media posts, stories, videos, and other digital content. They work on contract or per-post basis and reach audiences through their existing follower base.
+
+## Cost Comparison
+
+### Brand Ambassador Costs
+- **Hourly rates**: $35-$65/hr for professional brand ambassadors
+- **Typical activation**: 4-8 hours per day, 1-5 days
+- **Total cost per activation**: $500-$5,000 depending on team size and duration
+- **Cost per face-to-face interaction**: $2-$15
+- **Cost per qualified lead**: $5-$25
+
+### Influencer Marketing Costs
+- **Micro-influencers (10K-50K followers)**: $250-$1,500 per post
+- **Mid-tier (50K-500K followers)**: $1,500-$10,000 per post
+- **Macro-influencers (500K-1M)**: $10,000-$50,000 per post
+- **Mega-influencers (1M+)**: $50,000-$500,000+ per post
+- **Cost per impression**: $0.01-$0.10
+- **Cost per engagement**: $0.50-$5.00
+
+## ROI Analysis
+
+### Brand Ambassador ROI Advantages
+1. **Immediate conversion**: In-person interactions convert at 5-20% vs. 1-3% for influencer posts
+2. **Product trial**: Consumers can touch, taste, and experience products firsthand
+3. **Qualified leads**: Face-to-face conversations capture higher-quality leads
+4. **Real-time feedback**: Ambassadors report consumer reactions instantly
+5. **Controllable messaging**: Staff follow approved scripts and brand guidelines
+6. **Geographic targeting**: Activate exactly where your target audience gathers
+
+### Influencer Marketing ROI Advantages
+1. **Scale**: A single post can reach hundreds of thousands or millions
+2. **Content creation**: Produces reusable branded content
+3. **Social proof**: Leverages trust audiences have in the influencer
+4. **Always-on**: Content continues generating impressions over time
+5. **Audience targeting**: Access specific demographics through niche influencers
+6. **Measurable digital metrics**: Track impressions, clicks, and conversions
+
+## When to Choose Brand Ambassadors
+
+Brand ambassadors deliver superior ROI when:
+
+- **Launching a new product** that benefits from in-person trial
+- **Sampling food or beverages** where taste drives purchase decisions
+- **Attending trade shows** where qualified B2B leads matter
+- **Running retail activations** near point-of-purchase
+- **Building local market presence** in specific cities or regions
+- **Targeting events** where your audience is physically gathered
+
+## When to Choose Influencer Marketing
+
+Influencer marketing wins when:
+
+- **Building brand awareness** at scale across wide demographics
+- **Targeting Gen Z audiences** who trust creator recommendations
+- **Launching digital products** that don't require physical trial
+- **Creating content libraries** for ongoing marketing use
+- **Entering new markets** where you lack physical presence
+- **Running always-on campaigns** that need sustained visibility
+
+## The Hybrid Approach: Best of Both Worlds
+
+The most successful brands in 2026 are combining both strategies. Here's how:
+
+1. **Influencer-led activations**: Invite influencers to your brand ambassador events, creating both in-person engagement and digital content simultaneously
+2. **Ambassador-generated content**: Train your on-the-ground brand ambassadors to capture social content during activations
+3. **Geo-targeted influencer + ambassador campaigns**: Use influencer posts to drive foot traffic to brand ambassador activations
+4. **Event-based collaborations**: Staff your event booth with brand ambassadors while influencers create content from the event
+
+## Measuring Combined ROI
+
+Track these metrics across both channels:
+
+- **Cost per acquisition (CPA)**: Total spend divided by new customers
+- **Customer lifetime value (CLV)**: Long-term value of customers acquired through each channel
+- **Brand recall**: Survey-based measurement of awareness impact
+- **Social sharing rate**: How many consumers share their experience organically
+- **Conversion velocity**: Speed from first touch to purchase
+
+Air Fresh Marketing helps brands build integrated programs that leverage both brand ambassadors and influencer partnerships, maximizing ROI across every consumer touchpoint.`,
+    image: "/images/blog/brand-ambassador-vs-influencer.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 18, 2026",
+    readTime: "9 min read",
+    category: "Marketing Strategy",
+    tags: ["brand ambassador", "influencer marketing", "ROI comparison", "marketing strategy", "experiential marketing", "brand activation"]
+  },
+  {
+    id: "527",
+    slug: "how-to-hire-event-staff-for-corporate-holiday-parties",
+    title: "How to Hire Event Staff for Corporate Holiday Parties: Planning Guide 2026",
+    excerpt: "How to hire event staff for corporate holiday parties requires early planning, role-specific sourcing, and professional vetting. This guide covers timelines, roles, and budgeting for company events.",
+    content: `How to hire event staff for corporate holiday parties is a question that HR teams and event planners start asking every September, and the best ones start even earlier. Corporate holiday parties represent one of the highest-stakes internal events a company hosts each year — they impact employee morale, company culture, and even retention. Getting the staffing right ensures your team has an unforgettable experience.
+
+## Why Professional Event Staff Matter for Holiday Parties
+
+Many companies make the mistake of trying to handle holiday party logistics in-house, asking employees to volunteer for setup, registration, or bartending duties. This approach has several problems:
+
+- **Volunteers can't enjoy the party** — Employees manning stations miss the event they're supposed to be celebrating
+- **Liability concerns** — Untrained staff serving alcohol creates significant liability
+- **Inconsistent service** — Professional staff deliver a polished experience that matches your brand
+- **Burnout** — Asking already-busy employees to plan events adds stress during the busiest time of year
+
+## Essential Staff Roles for Corporate Holiday Parties
+
+### Event Manager
+An on-site manager who coordinates all staff, handles vendor communication, manages the timeline, and troubleshoots issues. This person should arrive 2-3 hours before the event and stay until teardown is complete.
+
+### Registration / Check-In Staff
+For parties with 100+ attendees, dedicated check-in staff create a smooth arrival experience. They can manage guest lists, distribute name tags, hand out gift bags, and direct guests to coat check.
+
+### Bartenders
+Licensed, TIPS-certified bartenders are essential for any event serving alcohol. Plan for 1 bartender per 50-75 guests. Professional bartenders manage drink flow, prevent over-serving, and maintain a clean, organized bar area.
+
+### Servers / Wait Staff
+For plated dinners or passed appetizer service, professional servers ensure seamless food service. Plan for 1 server per 15-20 guests for plated meals, or 1 per 25-30 for buffet assistance and drink service.
+
+### Coat Check Attendants
+Essential for winter holiday parties. Plan for 1-2 attendants for events under 200 people, scaling up for larger gatherings. They should have a reliable system for tracking and returning coats efficiently.
+
+### Photo Booth / Entertainment Attendants
+If your party includes photo booths, games, or interactive stations, dedicated staff keep these running smoothly and encourage participation.
+
+### Setup and Breakdown Crew
+A separate crew for venue setup (tables, chairs, decorations, AV equipment) and post-event teardown saves your event team from physical labor and ensures proper care of rented items.
+
+## Planning Timeline
+
+### 4-6 Months Before
+- Choose your venue and confirm the date
+- Determine headcount and budget
+- Begin staffing agency search
+
+### 3 Months Before
+- Finalize staffing needs and role descriptions
+- Contract with your staffing agency
+- Plan menu and bar service requirements
+
+### 6-8 Weeks Before
+- Staffing agency confirms team assignments
+- Begin creating event timeline and run-of-show
+- Order supplies and rentals
+
+### 2-4 Weeks Before
+- Conduct pre-event briefing with staffing agency
+- Finalize floor plan and staff positions
+- Confirm vendor deliveries and setup times
+
+### Week Of
+- Final walkthrough with venue and staff
+- Distribute event timeline to all team leads
+- Confirm backup staff availability
+
+## Budgeting for Holiday Party Staff
+
+Here's what to expect for staffing costs:
+
+| Role | Hourly Rate | Typical Hours | Cost per Person |
+|------|-------------|---------------|-----------------|
+| Event Manager | $50-$75/hr | 8-10 hrs | $400-$750 |
+| Bartenders | $35-$55/hr | 5-7 hrs | $175-$385 |
+| Servers | $30-$45/hr | 5-7 hrs | $150-$315 |
+| Registration Staff | $30-$40/hr | 3-5 hrs | $90-$200 |
+| Coat Check | $25-$35/hr | 5-7 hrs | $125-$245 |
+| Setup/Breakdown | $25-$35/hr | 3-5 hrs | $75-$175 |
+
+For a company party of 200 employees, expect to spend $3,000-$8,000 on professional event staff, depending on the level of service and your market.
+
+## Tips for a Successful Corporate Holiday Party
+
+1. **Book early** — Holiday season is peak demand for event staff. Book by September for December events.
+2. **Over-staff by 10%** — It's better to have slightly more staff than scramble during the event.
+3. **Provide brand guidelines** — Share your company's dress code expectations, logo usage, and culture notes with the staffing agency.
+4. **Plan for dietary needs** — Brief your serving staff on allergen protocols and menu options.
+5. **Have a clear alcohol policy** — Work with your bartending team on drink limits, last call timing, and procedures for managing intoxicated guests.
+
+Air Fresh Marketing provides full-service corporate event staffing for holiday parties, galas, award ceremonies, and company celebrations of all sizes. Our professional staff are background-checked, trained, and experienced in creating memorable corporate events.`,
+    image: "/images/blog/corporate-holiday-party-staffing.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 17, 2026",
+    readTime: "8 min read",
+    category: "Corporate Events",
+    tags: ["corporate events", "holiday party", "event staffing", "corporate party", "holiday event planning", "company events"]
+  },
+  {
+    id: "526",
+    slug: "cannabis-event-staffing-guide-dispensary-activations-trade-shows",
+    title: "Cannabis Event Staffing Guide: Dispensary Activations and Trade Show Staff",
+    excerpt: "Cannabis event staffing for dispensary activations and trade shows requires industry knowledge, compliance training, and state-specific regulatory awareness. Complete staffing guide for cannabis brands.",
+    content: `Cannabis event staffing has emerged as one of the fastest-growing segments in the experiential marketing industry as legalization continues expanding across the United States. Whether you're activating at a cannabis trade show like MJBizCon, staffing a dispensary grand opening, or running a brand activation at a cannabis-friendly event, the staffing requirements are uniquely complex.
+
+## The Cannabis Event Staffing Landscape in 2026
+
+With 24 states plus DC having legalized recreational cannabis and 38 states allowing medical use, the cannabis event and trade show circuit has exploded. Major events include:
+
+- **MJBizCon** (Las Vegas) — The largest B2B cannabis conference
+- **Hall of Flowers** (California) — Premium cannabis trade show
+- **Cannabis World Congress** (Multiple cities) — Industry expo and conference
+- **Lift & Co. Expo** — Cannabis business summit
+- **Benzinga Cannabis Capital Conference** — Investment-focused
+- **State-specific events** — Each legal state has regional trade shows and consumer events
+
+## Why Cannabis Staffing Is Specialized
+
+### Regulatory Compliance
+Every state has different regulations around cannabis marketing, and what's permissible at a cannabis event in Colorado may violate regulations in California or Michigan. Your staff must understand:
+
+- **Age verification requirements** — Staff must verify every attendee is 21+
+- **Product handling regulations** — Rules about who can handle cannabis products and how
+- **Marketing claim restrictions** — What health or efficacy claims are prohibited
+- **State-specific advertising rules** — Some states restrict how cannabis can be promoted at events
+- **Sampling limitations** — Most states prohibit cannabis sampling at events, though CBD may be permitted
+
+### Industry Knowledge
+Cannabis consumers and industry professionals are knowledgeable and passionate. Staff who lack basic industry understanding will lose credibility immediately. Train your team on:
+
+- Product types (flower, concentrates, edibles, topicals, tinctures)
+- Consumption methods and terminology
+- Major brands and market dynamics
+- Terpene profiles and strain education
+- Extraction methods and product quality indicators
+
+## Staff Roles for Cannabis Events
+
+### Trade Show Booth Staff
+Professional booth staff who can engage B2B attendees, qualify leads, and articulate your brand's positioning in the cannabis space. They need to discuss product lines, distribution capabilities, and business partnerships intelligently.
+
+### Brand Ambassadors for Consumer Events
+Cannabis-friendly brand ambassadors who can connect with consumers authentically. They should be comfortable discussing products, educating consumers about responsible use, and representing your brand's values.
+
+### Budtender-Style Product Educators
+Staff trained specifically to educate consumers about products, similar to how budtenders operate in dispensaries. They can explain effects, recommend products based on preferences, and create personalized consumer experiences.
+
+### Compliance Officers
+On-site staff who ensure all interactions comply with state regulations, verify ages, monitor product handling, and document any compliance concerns.
+
+### Registration and Security
+Events in the cannabis space require rigorous age verification at entry points, plus security staff who understand cannabis-specific protocols.
+
+## Dispensary Grand Opening Staffing
+
+Dispensary openings are high-energy events that require specialized staffing:
+
+- **Queue management staff** — Lines at new dispensary openings can stretch for blocks
+- **Brand ambassadors** — Create an exciting atmosphere and distribute swag
+- **Product educators** — Help first-time customers navigate the menu
+- **Social media staff** — Capture the energy and encourage social sharing
+- **Security** — Professional security trained in cannabis retail environments
+
+## Hiring and Vetting Cannabis Event Staff
+
+### Background Considerations
+Many states require cannabis event workers to pass background checks or hold specific badges/licenses. Work with your staffing agency to ensure all staff meet state requirements.
+
+### Cultural Fit
+Cannabis events have a distinct culture that values authenticity, education, and community. Staff who are genuinely interested in the industry perform significantly better than those who are just working a gig.
+
+### Training Protocol
+Provide at minimum:
+- 2-hour cannabis industry overview
+- State-specific compliance training
+- Brand-specific product education
+- Age verification procedures
+- De-escalation training for high-demand events
+
+## Costs and Budgeting
+
+Cannabis event staffing typically commands premium rates due to specialized training requirements:
+
+- **Cannabis trade show booth staff**: $40-$65/hr
+- **Dispensary opening brand ambassadors**: $35-$55/hr
+- **Compliance officers**: $50-$75/hr
+- **Product educators**: $40-$60/hr
+- **Registration/security**: $30-$50/hr
+
+## Working with Air Fresh Marketing
+
+Air Fresh Marketing provides cannabis event staffing in all legal markets across the United States. Our cannabis-trained staff understand industry terminology, compliance requirements, and the unique culture of the cannabis community. From MJBizCon booth staffing to dispensary grand openings, we deliver professional, knowledgeable teams that represent your brand authentically.
+
+Contact us for a custom cannabis event staffing proposal tailored to your market, event type, and compliance requirements.`,
+    image: "/images/blog/cannabis-event-staffing.jpg",
+    author: "Air Fresh Marketing Team",
+    date: "April 16, 2026",
+    readTime: "9 min read",
+    category: "Industry Guides",
+    tags: ["cannabis staffing", "dispensary events", "MJBizCon", "cannabis trade shows", "cannabis marketing", "event staffing"]
+  },
+  {
     id: "525",
     slug: "washington-dc-brand-ambassador-hiring-guide-government-event-staff",
     title: "Washington DC Brand Ambassador Hiring Guide: Event Staff for the Nation's Capital",

@@ -37,6 +37,429 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Tortuga Music Festival — Fort Lauderdale, FL
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'tortuga-music-festival',
+    title: 'Tortuga Music Festival Staffing | Air Fresh Marketing',
+    h1: 'Tortuga Music Festival Staffing',
+    metaDescription: 'Tortuga Music Festival staffing services in Fort Lauderdale. Professional brand ambassadors, event staff, and promotional teams for beach music festival activations.',
+    city: 'Fort Lauderdale',
+    stateAbbrev: 'FL',
+    venues: ['Fort Lauderdale Beach Park'],
+    keywords: ['Tortuga Music Festival staffing', 'Fort Lauderdale festival staff', 'beach festival brand ambassadors', 'Tortuga event staffing', 'Fort Lauderdale event staff'],
+    description: 'Professional event staffing for Tortuga Music Festival, the premier beach music festival in Fort Lauderdale featuring country, rock, and roots music on the sand.',
+    bodyContent: `Tortuga Music Festival staffing requires experienced professionals who can deliver exceptional brand activations in the unique beach festival environment of Fort Lauderdale. As one of the largest beach music festivals in the country, Tortuga draws over 30,000 attendees daily to Fort Lauderdale Beach Park for three days of country, rock, and roots music with ocean views.
+
+## Why Brands Need Professional Tortuga Staffing
+
+Tortuga Music Festival presents a distinctive marketing opportunity because of its beachfront setting and affluent, outdoor-enthusiast audience. The festival's commitment to ocean conservation and environmental awareness creates a values-driven atmosphere where authentic brand engagement resonates deeply. Professional event staff who understand this unique combination of music, beach culture, and environmental consciousness deliver significantly better results than generic festival workers.
+
+### The Tortuga Audience
+
+Tortuga attracts a premium demographic of 25-45 year old professionals who are passionate about music, the outdoors, and coastal lifestyle. This audience has high disposable income and strong brand loyalty, making them ideal targets for beverage brands, outdoor gear companies, sunscreen and skincare products, automotive brands, and lifestyle companies. Your brand ambassadors need to match this demographic's energy and authenticity.
+
+## Staff Types for Tortuga Music Festival
+
+### Beach Brand Ambassadors
+Outgoing, sun-ready brand ambassadors who can engage festival-goers on the sand. They handle product sampling, lead capture, and creating memorable brand interactions in the beach environment. Experience with outdoor activations and comfort working in heat and sand are essential.
+
+### Sampling Teams
+Product sampling at Tortuga is hugely effective given the captive beachfront audience. Our sampling teams distribute products efficiently while maintaining brand messaging and capturing consumer data. Beverage, sunscreen, and snack brands see particularly strong results.
+
+### VIP Hospitality Staff
+Tortuga's VIP areas require polished hospitality professionals who can deliver premium service. From managing VIP lounges to serving sponsors' branded experiences, these staff members combine festival energy with fine-dining service standards.
+
+### Environmental Activation Staff
+Given Tortuga's strong conservation messaging and partnership with ocean conservation nonprofits, many brands run sustainability-focused activations. Staff trained in environmental messaging help brands align authentically with the festival's values.
+
+## Tortuga Festival Logistics
+
+The beach setting creates unique logistical challenges. Staff need appropriate footwear for sand, sun protection, and hydration planning. Setup and breakdown require extra time due to beach access limitations. Air Fresh Marketing handles all logistics coordination including staff transportation, hydration stations, and weather contingency planning.
+
+Fort Lauderdale's hotel market fills quickly during Tortuga weekend, so early booking is essential for staff accommodations. We recommend confirming all staffing arrangements at least 8-10 weeks before the festival.
+
+## Tortuga Staffing with Air Fresh Marketing
+
+Air Fresh Marketing has extensive experience staffing beach festivals and outdoor events across Florida. Our Fort Lauderdale network includes hundreds of experienced brand ambassadors and event staff who know the beach festival environment. We provide complete staffing solutions including recruitment, training, scheduling, and on-site management for Tortuga Music Festival activations.`,
+    staffTypes: [
+      { title: 'Beach Brand Ambassadors', description: 'Engaging, beach-ready brand representatives for sand-level activations' },
+      { title: 'Sampling Teams', description: 'Product distribution teams optimized for beachfront festival environments' },
+      { title: 'VIP Hospitality Staff', description: 'Premium service professionals for VIP lounges and sponsor areas' },
+      { title: 'Environmental Activation Staff', description: 'Staff trained in sustainability messaging for eco-conscious activations' },
+      { title: 'Registration & Check-In Staff', description: 'Efficient entry management and credential verification teams' },
+      { title: 'Setup & Breakdown Crews', description: 'Physical teams for beach-environment installation and teardown' }
+    ],
+    stats: [
+      { value: '30K+', label: 'Daily Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '90K+', label: 'Total Weekend Attendance' },
+      { value: '3', label: 'Music Stages' }
+    ],
+    faqs: [
+      { question: 'When is Tortuga Music Festival?', answer: 'Tortuga Music Festival typically takes place in April at Fort Lauderdale Beach Park, running Friday through Sunday.' },
+      { question: 'What makes Tortuga staffing unique?', answer: 'The beach setting requires staff comfortable working in sand, heat, and sun while maintaining energy and professionalism throughout long festival days.' },
+      { question: 'How early should I book Tortuga staffing?', answer: 'We recommend booking at least 8-10 weeks in advance due to Fort Lauderdale hotel availability and high demand for experienced festival staff.' },
+      { question: 'What types of brands activate at Tortuga?', answer: 'Beverage brands, sunscreen/skincare companies, outdoor gear brands, automotive companies, and lifestyle brands see the strongest results at Tortuga.' }
+    ],
+    logisticsInfo: 'Fort Lauderdale Beach Park is accessible via A1A. Beach access for setup requires coordination with festival production. Staff should plan for sand, sun exposure, and potential afternoon rain showers typical of South Florida in April.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami / Fort Lauderdale',
+    heroImage: '/images/events/tortuga-music-festival.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Summerfest — Milwaukee, WI
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'summerfest',
+    title: 'Summerfest Staffing | Air Fresh Marketing',
+    h1: 'Summerfest Staffing',
+    metaDescription: 'Summerfest staffing services in Milwaukee. Professional brand ambassadors, event staff, and promotional teams for the world\'s largest music festival activations.',
+    city: 'Milwaukee',
+    stateAbbrev: 'WI',
+    venues: ['Henry Maier Festival Park (Summerfest Grounds)'],
+    keywords: ['Summerfest staffing', 'Milwaukee festival staff', 'Summerfest brand ambassadors', 'Milwaukee event staffing', 'world largest music festival staff'],
+    description: 'Professional event staffing for Summerfest in Milwaukee, the world\'s largest music festival featuring 800+ acts across 12 stages over multiple weekends.',
+    bodyContent: `Summerfest staffing demands experienced event professionals who can sustain energy and deliver results across the world's largest music festival. Held annually at Milwaukee's Henry Maier Festival Park along the Lake Michigan shoreline, Summerfest hosts over 700,000 attendees across multiple weekends, featuring 800+ musical acts on 12 stages.
+
+## Why Summerfest Is a Premier Brand Activation Opportunity
+
+Summerfest's massive scale creates unmatched brand exposure opportunities. Unlike single-weekend festivals, Summerfest runs across multiple weekends (typically three), giving brands extended activation windows and the ability to test and optimize their approach in real time. The festival's diverse musical lineup attracts an equally diverse audience spanning all ages, demographics, and interests.
+
+### The Summerfest Audience
+
+Summerfest draws heavily from the greater Midwest region — Milwaukee, Chicago, Minneapolis, Madison, and surrounding areas. The audience skews slightly older than typical music festivals (25-55), with strong representation of families, couples, and groups of friends. This makes it ideal for mainstream consumer brands, beverage companies, automotive brands, financial services, and food companies.
+
+## Staff Types for Summerfest
+
+### Brand Ambassadors
+High-energy brand ambassadors who can engage diverse audiences across Summerfest's sprawling grounds. With 12 stages and 75+ acres of festival space, strategic placement of brand ambassadors is critical. Our team helps plan activation zones for maximum foot traffic and engagement.
+
+### Sampling Teams
+Summerfest's sheer volume of attendees makes it one of the most effective sampling events in the country. Our sampling teams can distribute thousands of samples daily while capturing consumer data and driving social media engagement. Beverage, snack, and CPG brands see exceptional results.
+
+### Trade Show & Sponsor Booth Staff
+The festival includes significant sponsor villages and branded areas where professional booth staff engage attendees, demonstrate products, and capture leads. Staff need to maintain enthusiasm across long festival days in outdoor conditions.
+
+### Roaming Street Teams
+Mobile teams that cover Summerfest's 75+ acres, engaging attendees between stages and throughout the grounds. Street teams are particularly effective for guerrilla-style activations, flyer distribution, and surprise-and-delight moments.
+
+### VIP & Hospitality Staff
+Summerfest's VIP areas and sponsor hospitality suites require polished, experienced hospitality professionals who can deliver premium experiences while managing high-volume service.
+
+## Multi-Weekend Staffing Strategy
+
+Summerfest's multi-weekend format requires strategic staffing planning:
+
+- **Weekend 1**: Deploy your A-team to establish the activation and work out any kinks
+- **Weekend 2**: Optimize based on Week 1 learnings, potentially adjusting staff count or positioning
+- **Weekend 3**: Maximum efficiency with refined approach and experienced team
+
+This extended format also allows for staff rotation to prevent burnout while maintaining consistent quality.
+
+## Milwaukee Logistics
+
+Milwaukee's festival grounds are centrally located along the lakefront with good transportation access. However, the city's hotel inventory can strain during Summerfest weekends, particularly for the headline weekends. Early booking is essential.
+
+Weather in Milwaukee during late June and July can range from cool lakefront breezes to hot, humid conditions. Staff should be prepared for variable weather with appropriate attire and hydration plans.
+
+## Summerfest Staffing with Air Fresh Marketing
+
+Air Fresh Marketing provides comprehensive Summerfest staffing with our Midwest network of experienced festival staff. From single-weekend activations to full multi-weekend campaigns, we handle recruitment, training, scheduling, and on-site management. Our team understands Summerfest's unique layout and audience dynamics, ensuring your brand activation is positioned for maximum impact.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Energetic representatives covering 75+ acres of festival grounds' },
+      { title: 'Sampling Teams', description: 'High-volume product distribution teams for thousands of daily samples' },
+      { title: 'Sponsor Booth Staff', description: 'Professional booth staff for sponsor villages and branded areas' },
+      { title: 'Roaming Street Teams', description: 'Mobile teams covering the grounds with guerrilla activations' },
+      { title: 'VIP Hospitality Staff', description: 'Premium service for VIP areas and sponsor hospitality suites' },
+      { title: 'Setup & Breakdown Crews', description: 'Multi-weekend installation and daily reset teams' }
+    ],
+    stats: [
+      { value: '700K+', label: 'Total Attendance' },
+      { value: '800+', label: 'Musical Acts' },
+      { value: '12', label: 'Stages' },
+      { value: '75+', label: 'Acres' }
+    ],
+    faqs: [
+      { question: 'When is Summerfest?', answer: 'Summerfest typically runs across three weekends in late June and July at the Henry Maier Festival Park in Milwaukee, Wisconsin.' },
+      { question: 'How many staff do I need for Summerfest?', answer: 'It depends on your activation scope. Single booth activations may need 4-8 staff per day, while multi-location campaigns can require 15-30+ staff per weekend.' },
+      { question: 'Can I staff just one weekend of Summerfest?', answer: 'Yes, we offer flexible staffing for single weekends, multiple weekends, or the entire festival run. Many brands start with one weekend and expand.' },
+      { question: 'What brands typically activate at Summerfest?', answer: 'Major beverage brands, automotive companies, wireless carriers, financial services, food brands, and lifestyle companies regularly activate at Summerfest.' }
+    ],
+    logisticsInfo: 'Henry Maier Festival Park is located on Milwaukee\'s lakefront at 200 N Harbor Dr. Festival grounds open mid-afternoon on weekdays and earlier on weekends. Load-in times are strictly managed by festival production.',
+    relatedCitySlug: 'milwaukee',
+    relatedCityName: 'Milwaukee',
+    heroImage: '/images/events/summerfest.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // NAMM Show — Anaheim, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'namm-show',
+    title: 'NAMM Show Staffing | Air Fresh Marketing',
+    h1: 'NAMM Show Staffing',
+    metaDescription: 'NAMM Show staffing services in Anaheim. Professional booth staff, brand ambassadors, and product demonstrators for the world\'s largest music industry trade show.',
+    city: 'Anaheim',
+    stateAbbrev: 'CA',
+    venues: ['Anaheim Convention Center'],
+    keywords: ['NAMM Show staffing', 'Anaheim trade show staff', 'NAMM brand ambassadors', 'music industry trade show staffing', 'NAMM booth staff'],
+    description: 'Professional event staffing for The NAMM Show in Anaheim, the world\'s largest music products trade show connecting brands with music industry professionals.',
+    bodyContent: `NAMM Show staffing requires a unique blend of music industry knowledge, trade show professionalism, and product demonstration expertise. The National Association of Music Merchants (NAMM) Show at the Anaheim Convention Center is the world's largest music products trade show, attracting over 115,000 attendees from the global music industry.
+
+## Why NAMM Show Staffing Is Specialized
+
+The NAMM Show isn't a typical trade show. Attendees are passionate music professionals — retailers, musicians, producers, educators, and industry executives who live and breathe music. Your booth staff need to speak their language, understand music products, and engage authentically with an audience that can immediately spot inauthenticity.
+
+### The NAMM Audience
+
+NAMM draws music retailers, professional musicians, recording studio owners, music educators, worship leaders, DJs, and music technology enthusiasts. This B2B audience makes purchasing decisions worth millions of dollars during the show. Having knowledgeable, engaging booth staff directly impacts your sales pipeline.
+
+## Staff Types for The NAMM Show
+
+### Product Demonstrators
+Perhaps the most critical role at NAMM. Product demonstrators need to actually play, operate, or demonstrate musical instruments, audio equipment, or music technology. Ideally, these staff members are musicians themselves who can showcase products authentically and answer technical questions.
+
+### Booth Engagement Specialists
+Staff who greet visitors, qualify leads, manage booth flow, and ensure decision-makers connect with the right company representatives. They need enough music industry knowledge to have intelligent conversations while efficiently routing prospects.
+
+### Lead Capture Specialists
+Dedicated staff focused on badge scanning, data capture, and CRM entry. At a show this size, efficient lead capture is essential for post-show follow-up. These team members must be tech-savvy and organized.
+
+### Social Media & Content Staff
+Staff who capture photos, video, and social content throughout the show. NAMM is incredibly photogenic and social media-driven, with many product launches and celebrity appearances creating viral content opportunities.
+
+### Hospitality Staff
+For brands hosting private meetings, dealer dinners, or VIP receptions, professional hospitality staff ensure seamless event execution within the larger NAMM experience.
+
+## NAMM Show Logistics
+
+The Anaheim Convention Center is massive, and NAMM fills every hall plus outdoor areas. Key logistics considerations:
+
+- **Sound levels**: The show floor is incredibly loud with hundreds of exhibitors demoing products simultaneously. Staff need to be able to project their voices and communicate effectively in high-noise environments.
+- **Physical demands**: Staff are on their feet for 8-10 hours on concrete floors. Comfortable footwear and stamina are non-negotiable.
+- **Load-in/load-out**: NAMM has strict union rules for setup and teardown at the Anaheim Convention Center.
+- **Parking and transportation**: The convention center area becomes extremely congested during NAMM. Plan staff transportation carefully.
+
+## Training for NAMM Staff
+
+Minimum training should include:
+
+- Brand and product deep-dive (4-8 hours)
+- Basic music industry terminology and trends
+- Product demonstration practice
+- Competitive landscape overview
+- Lead qualification criteria
+- Badge scanning and CRM procedures
+
+For product demonstrators, add:
+- Hands-on product training with actual units
+- Technical specifications mastery
+- Common customer questions and objections
+- Live demonstration scripts and techniques
+
+## NAMM Staffing with Air Fresh Marketing
+
+Air Fresh Marketing's Southern California network includes experienced trade show professionals with music industry knowledge. We staff NAMM Show booths for musical instrument manufacturers, audio equipment companies, music technology startups, and accessory brands. Our team handles everything from recruitment of musically-inclined staff to on-site management throughout the four-day show.`,
+    staffTypes: [
+      { title: 'Product Demonstrators', description: 'Musically talented staff who can demo instruments, audio gear, and music tech' },
+      { title: 'Booth Engagement Specialists', description: 'Professional greeters who qualify leads and manage booth traffic flow' },
+      { title: 'Lead Capture Specialists', description: 'Tech-savvy staff focused on badge scanning and CRM data entry' },
+      { title: 'Social Media & Content Staff', description: 'Content creators capturing the energy of NAMM for social channels' },
+      { title: 'Hospitality Staff', description: 'Service professionals for VIP meetings and dealer hospitality events' },
+      { title: 'Setup & Breakdown Crews', description: 'Experienced trade show installation teams familiar with Anaheim CC rules' }
+    ],
+    stats: [
+      { value: '115K+', label: 'Attendees' },
+      { value: '2,000+', label: 'Exhibiting Brands' },
+      { value: '4', label: 'Day Show' },
+      { value: '7', label: 'Exhibit Halls' }
+    ],
+    faqs: [
+      { question: 'When is The NAMM Show?', answer: 'The NAMM Show typically takes place in January at the Anaheim Convention Center in Anaheim, California.' },
+      { question: 'Do NAMM booth staff need to be musicians?', answer: 'For product demonstrator roles, musical ability is strongly preferred. For other roles like lead capture and hospitality, music industry knowledge is helpful but not required.' },
+      { question: 'How loud is the NAMM Show floor?', answer: 'Very loud. Hundreds of exhibitors demo products simultaneously. Staff need to project their voices and communicate effectively in high-noise environments.' },
+      { question: 'Is NAMM open to the public?', answer: 'NAMM is a trade-only event. Attendees must be music industry professionals, retailers, or media. Staff must be credentialed through exhibiting companies.' }
+    ],
+    logisticsInfo: 'Anaheim Convention Center is located at 800 W Katella Ave, Anaheim, CA. NAMM has strict union regulations for booth setup. The surrounding area has ample hotels but books quickly for NAMM weekend.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles / Orange County',
+    heroImage: '/images/events/namm-show.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Boston Calling Music Festival — Boston, MA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'boston-calling',
+    title: 'Boston Calling Staffing | Air Fresh Marketing',
+    h1: 'Boston Calling Staffing',
+    metaDescription: 'Boston Calling staffing services in Boston. Professional brand ambassadors, event staff, and promotional teams for New England\'s premier music festival activations.',
+    city: 'Boston',
+    stateAbbrev: 'MA',
+    venues: ['Harvard Athletic Complex'],
+    keywords: ['Boston Calling staffing', 'Boston music festival staff', 'Boston Calling brand ambassadors', 'Boston event staffing', 'New England festival staff'],
+    description: 'Professional event staffing for Boston Calling Music Festival at the Harvard Athletic Complex, New England\'s premier multi-genre music festival.',
+    bodyContent: `Boston Calling staffing provides brands with professional event teams for New England's premier music festival. Held annually at the Harvard Athletic Complex in Allston, Boston Calling draws 40,000+ attendees over Memorial Day Weekend for a diverse lineup spanning rock, hip-hop, indie, and electronic music.
+
+## Why Boston Calling Is a Top Brand Activation Venue
+
+Boston Calling's location in the heart of Boston's academic corridor creates a uniquely educated, affluent audience. The festival attracts college students, young professionals, and music enthusiasts from across New England and the Northeast corridor. This demographic is highly engaged, digitally savvy, and responsive to authentic brand experiences.
+
+### The Boston Calling Audience
+
+The audience skews 21-40, with strong representation from Boston's massive college student population (250,000+ students across Boston/Cambridge), young tech professionals, healthcare workers, and creative class consumers. This audience has high social media engagement and strong brand recall from festival experiences.
+
+## Staff Types for Boston Calling
+
+### Brand Ambassadors
+Energetic, articulate brand ambassadors who can connect with Boston Calling's educated, discerning audience. These staff members need to be comfortable discussing brands intelligently and creating genuine connections rather than relying on flashy tactics.
+
+### Sampling & Distribution Teams
+Festival sampling teams who can distribute products efficiently across the Harvard Athletic Complex grounds. Beverage brands, energy drinks, skincare products, and snack companies see strong results at Boston Calling.
+
+### VIP Experience Staff
+Boston Calling's VIP and Platinum experiences require premium hospitality staff. These team members manage exclusive viewing areas, private bars, and sponsor lounges with the professionalism expected by VIP ticket holders.
+
+### Interactive Activation Staff
+Many brands at Boston Calling create interactive experiences — photo installations, games, product customization stations, and AR/VR experiences. Staff for these activations need to be tech-comfortable and able to guide participants through experiences smoothly.
+
+### Street Teams
+Mobile teams who cover the festival grounds, create buzz, and drive traffic to brand activation areas. Street teams at Boston Calling often incorporate social media challenges and user-generated content campaigns.
+
+## Memorial Day Weekend Considerations
+
+Boston Calling's Memorial Day Weekend timing creates both opportunities and challenges:
+
+- **Pro**: Three-day weekend means attendees are relaxed, spending more time at the festival
+- **Pro**: Early summer weather in Boston is typically pleasant
+- **Challenge**: Hotel rates spike during Memorial Day weekend
+- **Challenge**: Competition with other Memorial Day events for staff availability
+
+Book staffing at least 10-12 weeks in advance to secure the best team members.
+
+## Boston Market Logistics
+
+The Harvard Athletic Complex is accessible via the Boston T (Green Line B to Harvard Ave), making it one of the most transit-accessible festivals in the country. This means staff can commute rather than requiring nearby hotels, reducing costs.
+
+Boston's late May weather averages 65-75°F but can swing from 50°F rain to 85°F sun. Staff should be prepared for variable conditions with layered clothing options.
+
+## Boston Calling Staffing with Air Fresh Marketing
+
+Air Fresh Marketing's Boston network includes experienced festival staff, brand ambassadors, and event professionals throughout New England. We provide complete staffing solutions for Boston Calling activations, from initial planning through on-site management and post-event reporting. Our team understands the Boston market's unique characteristics and delivers staff who resonate with the Northeast audience.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Articulate representatives who connect with Boston\'s educated, savvy audience' },
+      { title: 'Sampling Teams', description: 'Efficient product distribution across the Harvard Athletic Complex' },
+      { title: 'VIP Experience Staff', description: 'Premium hospitality for VIP and Platinum areas' },
+      { title: 'Interactive Activation Staff', description: 'Tech-comfortable staff for interactive brand experiences' },
+      { title: 'Street Teams', description: 'Mobile teams covering festival grounds with guerrilla activations' },
+      { title: 'Event Setup & Teardown', description: 'Physical teams for activation installation and breakdown' }
+    ],
+    stats: [
+      { value: '40K+', label: 'Weekend Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '3', label: 'Music Stages' },
+      { value: '60+', label: 'Artists' }
+    ],
+    faqs: [
+      { question: 'When is Boston Calling?', answer: 'Boston Calling takes place over Memorial Day Weekend (late May) at the Harvard Athletic Complex in Allston, Boston.' },
+      { question: 'What makes Boston Calling\'s audience unique?', answer: 'Boston\'s massive student population and young professional workforce creates a highly educated, digitally engaged audience that responds well to authentic brand experiences.' },
+      { question: 'How do staff get to the venue?', answer: 'The Harvard Athletic Complex is accessible via the Boston T (Green Line B), making it one of the most transit-accessible festivals. Staff can commute easily.' },
+      { question: 'What brands do well at Boston Calling?', answer: 'Tech brands, beverage companies, streaming services, health and wellness brands, and lifestyle companies see strong engagement at Boston Calling.' }
+    ],
+    logisticsInfo: 'Harvard Athletic Complex is located at 65 N Harvard St, Allston, MA. Accessible via MBTA Green Line B. Limited parking available — public transit recommended for staff. Load-in coordinated through festival production.',
+    relatedCitySlug: 'boston',
+    relatedCityName: 'Boston',
+    heroImage: '/images/events/boston-calling.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // BottleRock Napa Valley — Napa, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'bottlerock-napa-valley',
+    title: 'BottleRock Napa Valley Staffing | Air Fresh Marketing',
+    h1: 'BottleRock Napa Valley Staffing',
+    metaDescription: 'BottleRock Napa Valley staffing services. Professional brand ambassadors, event staff, and hospitality teams for Napa\'s premier music, wine, and culinary festival.',
+    city: 'Napa',
+    stateAbbrev: 'CA',
+    venues: ['Napa Valley Expo'],
+    keywords: ['BottleRock Napa Valley staffing', 'Napa festival staff', 'BottleRock brand ambassadors', 'wine country event staffing', 'Napa Valley event staff'],
+    description: 'Professional event staffing for BottleRock Napa Valley, the premier music, wine, food, and brew festival in California\'s wine country.',
+    bodyContent: `BottleRock Napa Valley staffing connects brands with one of the most affluent, experience-seeking festival audiences in America. This three-day festival at the Napa Valley Expo uniquely blends major musical acts with world-class wine, culinary experiences, and craft beverages, creating an upscale festival atmosphere unlike any other.
+
+## Why BottleRock Is Premium Brand Territory
+
+BottleRock Napa Valley attracts an audience that is distinctly more affluent and older than typical music festivals. With general admission tickets priced at $400+ and VIP packages reaching $4,000+, attendees have significant purchasing power. The festival's combination of music, wine, food, and craft culture creates a premium positioning that luxury and lifestyle brands covet.
+
+### The BottleRock Audience
+
+The typical BottleRock attendee is 30-55, with household income well above the national average. They're wine enthusiasts, foodies, and music lovers who value quality experiences. This audience responds to sophisticated brand activations that match the festival's premium aesthetic, not typical festival guerrilla tactics.
+
+## Staff Types for BottleRock Napa Valley
+
+### Premium Brand Ambassadors
+BottleRock demands brand ambassadors who can engage an upscale audience with sophistication and genuine knowledge. These team members should be comfortable discussing wine, food, and premium products with a discerning audience. Professional appearance and articulate communication are non-negotiable.
+
+### Wine & Culinary Experience Staff
+Given BottleRock's focus on wine and food culture, many activations involve wine tastings, culinary demonstrations, or food sampling. Staff for these activations should have hospitality or food service backgrounds, with knowledge of wine terminology and food presentation.
+
+### Hospitality & VIP Staff
+BottleRock's VIP Platinum experience is one of the most exclusive in the festival world, with gourmet dining, premium wine service, and celebrity chef interactions. Staffing these areas requires five-star hospitality professionals who can deliver flawless service.
+
+### Sampling Teams
+Product sampling at BottleRock is effective but must be elevated beyond typical festival sampling. Presentation matters — samples should be served in quality drinkware or attractive packaging, with staff who can speak to product quality and provenance.
+
+### Social Media Content Creators
+BottleRock is visually stunning with Napa's rolling hills as backdrop. Social media staff should be skilled photographers and content creators who can capture the premium aesthetic of both the festival and your brand activation.
+
+## Wine Country Branding Considerations
+
+Brands activating at BottleRock should understand the wine country context:
+
+- **Quality over quantity**: This audience prefers curated experiences over mass sampling
+- **Sustainability matters**: Napa Valley is eco-conscious; sustainable activations resonate strongly
+- **Aesthetic standards**: Visual presentation must match the premium setting
+- **Local partnerships**: Collaborations with local wineries or restaurants amplify authenticity
+- **Weather-appropriate**: Late May in Napa means warm, sunny days (70-90°F)
+
+## BottleRock Logistics
+
+Napa Valley Expo is centrally located in downtown Napa, walkable from many hotels and restaurants. However, Napa's limited hotel inventory means accommodations fill quickly and prices surge during BottleRock weekend. Many staff commute from San Francisco (about 1 hour) or surrounding areas.
+
+The festival has strict noise curfews (10pm nightly) due to residential proximity, which affects activation scheduling. Plan your staffing shifts around the 12pm-10pm operating hours.
+
+## BottleRock Staffing with Air Fresh Marketing
+
+Air Fresh Marketing provides premium event staffing for BottleRock Napa Valley, drawing from our Bay Area and Northern California networks. We specialize in matching brands with staff who embody the sophisticated, wine-country aesthetic that BottleRock demands. From premium brand ambassadors to hospitality professionals, our team delivers the elevated service quality that this festival's audience expects.`,
+    staffTypes: [
+      { title: 'Premium Brand Ambassadors', description: 'Sophisticated representatives for upscale wine country festival audience' },
+      { title: 'Wine & Culinary Staff', description: 'Hospitality professionals with wine and food service backgrounds' },
+      { title: 'VIP Hospitality Staff', description: 'Five-star service professionals for Platinum VIP experiences' },
+      { title: 'Elevated Sampling Teams', description: 'Premium product distribution with quality presentation standards' },
+      { title: 'Content Creators', description: 'Skilled photographers and social media professionals' },
+      { title: 'Event Coordination Staff', description: 'On-site managers and logistics coordinators' }
+    ],
+    stats: [
+      { value: '40K+', label: 'Daily Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '120K+', label: 'Total Weekend Attendance' },
+      { value: '80+', label: 'Musical Acts' }
+    ],
+    faqs: [
+      { question: 'When is BottleRock Napa Valley?', answer: 'BottleRock takes place over Memorial Day Weekend (late May) at the Napa Valley Expo in downtown Napa, California.' },
+      { question: 'Why is BottleRock staffing considered premium?', answer: 'BottleRock\'s affluent audience, upscale setting, and premium ticket prices demand staff who can match the sophisticated atmosphere with professional appearance and articulate engagement.' },
+      { question: 'What types of brands activate at BottleRock?', answer: 'Premium beverage brands, luxury lifestyle companies, wine and spirits brands, gourmet food companies, automotive brands, and wellness companies see the strongest results.' },
+      { question: 'How is BottleRock different from other music festivals?', answer: 'BottleRock uniquely combines major music acts with world-class wine, culinary experiences, and Napa Valley\'s premium aesthetic, attracting an older, more affluent audience than typical festivals.' }
+    ],
+    logisticsInfo: 'Napa Valley Expo is at 575 Third St, Napa, CA. Downtown location is walkable from many hotels. Festival hours are typically 12pm-10pm with strict noise curfew. Napa hotels fill quickly — many staff commute from San Francisco (~1 hour).',
+    relatedCitySlug: 'san-francisco',
+    relatedCityName: 'San Francisco / Bay Area',
+    heroImage: '/images/events/bottlerock-napa.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
   // 1. CES – Consumer Electronics Show
   // ─────────────────────────────────────────────────────────────────
   {
