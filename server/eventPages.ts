@@ -36,6 +36,373 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 155 ──────────────────────────────────────────────────────
+  {
+    slug: 'grammy-awards',
+    title: 'Grammy Awards Staffing | Event Staff for Music\'s Biggest Night at Crypto.com Arena',
+    h1: 'Grammy Awards Event Staffing Services',
+    metaDescription: 'Grammy Awards event staffing for red carpet operations, after-parties, sponsor activations, and VIP hospitality at Crypto.com Arena in Los Angeles and surrounding Grammy Week venues.',
+    city: 'Los Angeles',
+    stateAbbrev: 'CA',
+    venues: ['Crypto.com Arena', 'Los Angeles Convention Center', 'Hollywood Palladium'],
+    keywords: ['Grammy Awards staffing', 'Grammy event staff', 'music awards staffing', 'Grammy after party staff'],
+    description: 'The Grammy Awards is the most prestigious event in the music industry, drawing global attention to Los Angeles every February. Air Fresh Marketing provides professional event staff for Grammy Week activations, red carpet operations, official after-parties, sponsor hospitality suites, and the constellation of brand events surrounding music\'s biggest night.',
+    bodyContent: `## Why Grammy Week Demands Premium Event Staffing
+
+The Grammy Awards extend far beyond the televised ceremony at Crypto.com Arena. Grammy Week encompasses dozens of events—the MusiCares Person of the Year Gala, the Recording Academy's official pre-Grammy parties, label showcase events, and hundreds of brand-sponsored after-parties that transform Los Angeles into the epicenter of the music industry for an entire week.
+
+### Grammy Awards Event Profile
+- **Annual Attendance**: 18,000+ at the ceremony; 100,000+ across Grammy Week events
+- **Venue**: Crypto.com Arena (ceremony), venues across Los Angeles (associated events)
+- **Duration**: Grammy Week spans 5-7 days of events
+- **Audience**: Music industry executives, artists, media, sponsors, and VIP guests
+
+## Grammy Awards Staffing Solutions
+
+### Red Carpet and Arrivals Management
+Our staff manage the high-security, high-pressure red carpet environment—credential verification, celebrity escort services, media positioning, and VIP arrivals coordination. Red carpet staff must perform flawlessly under intense scrutiny with zero margin for error.
+
+### After-Party and Event Hospitality
+Grammy after-parties range from intimate label dinners to massive multi-venue celebrations. We staff these events with experienced hospitality professionals who handle guest list management, VIP table service, bottle service coordination, and the celebrity-adjacent hospitality that defines Grammy nightlife.
+
+### Sponsor Activation Staffing
+Major brands invest millions in Grammy Week activations. Our brand ambassadors staff gifting suites, sponsor lounges, branded photo experiences, and product placement activations that connect brands with music industry tastemakers and influencers.
+
+### MusiCares and Pre-Grammy Event Support
+Official Recording Academy events require staff who understand music industry protocol and the formal atmosphere of charity galas. From auction support to VIP reception services, our team delivers white-glove hospitality for these cornerstone Grammy Week events.
+
+### Venue Management and Production Support
+Grammy Week transforms multiple Los Angeles venues simultaneously. Our production support staff assist with load-in coordination, venue transformation, technical setup, and the rapid turnarounds required when venues host multiple events across the week.
+
+## Grammy Week Staffing Requirements
+
+Staff working Grammy events must understand:
+- Celebrity privacy protocols and no-photography policies
+- Music industry hierarchy and proper guest acknowledgment
+- High-security environment procedures including credential management
+- Formal dress codes ranging from black-tie to creative cocktail
+- Confidentiality requirements around artist appearances and performances
+
+## Los Angeles Venue Expertise
+
+Grammy events span venues across Los Angeles—from the Crypto.com Arena and LA Convention Center to boutique venues in Hollywood, West Hollywood, and Downtown LA. Our Los Angeles-based staff know these venues intimately, reducing orientation time and ensuring smooth operations across the distributed Grammy Week event calendar.
+
+## Staff Your Grammy Week Activations
+
+Air Fresh Marketing provides premium event staffing for Grammy Awards events, after-parties, and brand activations throughout Grammy Week. Contact us to staff your Grammy presence with professionals who understand the music industry's most important week.`,
+    staffTypes: [
+      { title: 'Red Carpet & Arrivals Staff', description: 'Credential verification, celebrity escort, and VIP arrivals management for the red carpet' },
+      { title: 'After-Party Hospitality', description: 'Guest list management, VIP table service, and nightlife hospitality for Grammy celebrations' },
+      { title: 'Brand Ambassadors', description: 'Gifting suite, sponsor lounge, and brand activation staff for Grammy Week sponsor events' },
+      { title: 'Production Support', description: 'Venue setup, load-in coordination, and technical support across Grammy Week venues' }
+    ],
+    stats: [
+      { value: '18,000+', label: 'Ceremony Attendance' },
+      { value: '100+', label: 'Grammy Week Events' },
+      { value: '5-7 Days', label: 'Event Duration' },
+      { value: '#1', label: 'Music Industry Event' }
+    ],
+    faqs: [
+      { question: 'Do Grammy event staff need entertainment industry experience?', answer: 'Yes, Grammy Week staff must understand celebrity protocols, music industry hierarchy, and the high-security environment of awards season events. We source staff with prior entertainment industry and awards show experience.' },
+      { question: 'Can you staff multiple Grammy Week events simultaneously?', answer: 'Absolutely. Grammy Week involves dozens of overlapping events across Los Angeles. We maintain a large Los Angeles roster specifically for awards season, allowing us to staff multiple venues simultaneously.' },
+      { question: 'What is the dress code for Grammy event staff?', answer: 'Dress codes vary by event—black-tie formal for the ceremony and galas, upscale cocktail for after-parties, and branded attire for sponsor activations. We coordinate appropriate attire for each event.' }
+    ],
+    logisticsInfo: 'The Grammy Awards take place annually in late January or February at Crypto.com Arena in downtown Los Angeles. Grammy Week events span venues across LA including Hollywood, West Hollywood, Beverly Hills, and DTLA. LAX and Burbank airports serve the area. Staff should be prepared for multi-venue assignments across the week.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/grammy-awards-staffing.jpg'
+  },
+  {
+    slug: 'world-series',
+    title: 'World Series Staffing | Event Staff for MLB Championship Games and Fan Festivals',
+    h1: 'World Series Event Staffing Services',
+    metaDescription: 'World Series event staffing for MLB championship games, fan festivals, sponsor activations, and corporate hospitality at stadiums across America.',
+    city: 'Various',
+    stateAbbrev: 'US',
+    venues: ['MLB Stadiums Nationwide', 'World Series Fan Festival Venues'],
+    keywords: ['World Series staffing', 'MLB event staff', 'baseball championship staffing', 'World Series hospitality'],
+    description: 'The World Series is Major League Baseball\'s championship showcase, drawing millions of viewers and tens of thousands of in-stadium fans across a best-of-seven series each October. Air Fresh Marketing provides professional event staff for World Series stadium operations, sponsor activations, fan festival programming, corporate hospitality suites, and the brand activations that surround America\'s Fall Classic.',
+    bodyContent: `## Why the World Series Requires Specialized Event Staffing
+
+The World Series transforms host cities into the center of the sports universe for up to two weeks in October. Beyond the games themselves, the World Series generates massive brand activation opportunities—from stadium sponsor activations and fan festivals to corporate watch parties and retail pop-ups throughout the host city.
+
+### World Series Event Profile
+- **Annual Attendance**: 40,000-55,000 per game; 200,000+ across the series
+- **Venues**: Alternating MLB stadiums based on pennant winners
+- **Duration**: 4-7 games over 10-14 days
+- **Audience**: Baseball fans, corporate hospitality guests, sponsors, and media from worldwide
+
+## World Series Staffing Solutions
+
+### Stadium Fan Experience Staff
+Our event staff manage the enhanced World Series fan experience—championship merchandise locations, commemorative photo stations, interactive sponsor activations on stadium concourses, and the special programming that elevates a World Series game beyond a regular season experience.
+
+### Corporate Hospitality and Suite Services
+World Series corporate hospitality commands premium prices and demands premium service. Our hospitality staff manage luxury suite catering, private club access, rooftop event spaces, and the client entertainment experiences that make World Series hospitality packages worth the investment.
+
+### Fan Festival and Outdoor Activations
+MLB's World Series Fan Festival offers interactive experiences, batting cages, pitching speed stations, and memorabilia displays. Our staff operate these attractions, manage queues, and create engaging experiences for fans of all ages attending the festival.
+
+### Sponsor Activation Support
+World Series sponsors deploy significant activations inside and outside stadiums. Brand ambassadors staff sponsor tents, product sampling stations, and interactive brand experiences that reach the massive, engaged audience surrounding each World Series game.
+
+### Merchandise and Retail Operations
+Championship merchandise demand explodes during the World Series. Our retail staff support high-volume sales at stadium locations and temporary retail pop-ups, managing inventory, processing transactions, and handling the surge when a team clinches the championship.
+
+## Multi-City Deployment Capability
+
+Because the World Series alternates between two cities, staffing requires nationwide deployment capability. Air Fresh Marketing maintains event staff in every MLB market, enabling seamless staffing transitions as the series moves between home cities. Our local market expertise in each city ensures staff who know the stadium, the city, and the fan culture.
+
+## World Series Staffing Logistics
+
+World Series staffing requires flexibility for a series that can last 4-7 games across two cities. Build contingency staffing plans for potential Games 5, 6, and 7 while confirming staff for the guaranteed Games 1-4. Advance credential processing through MLB security ensures all staff are cleared before the first pitch.
+
+## Staff Your World Series Activations
+
+Air Fresh Marketing provides professional event staffing for World Series games, fan festivals, and brand activations in every MLB market. Contact us to staff your Fall Classic presence.`,
+    staffTypes: [
+      { title: 'Stadium Fan Experience Staff', description: 'Interactive activations, photo stations, and enhanced game-day experience operations' },
+      { title: 'Corporate Hospitality', description: 'Luxury suite service, private club management, and premium client entertainment' },
+      { title: 'Brand Ambassadors', description: 'Sponsor activations, product sampling, and brand experiences inside and outside the stadium' },
+      { title: 'Retail & Merchandise Staff', description: 'Championship merchandise sales, inventory management, and high-volume retail operations' }
+    ],
+    stats: [
+      { value: '55,000+', label: 'Per Game Attendance' },
+      { value: '4-7', label: 'Championship Games' },
+      { value: '2 Cities', label: 'Multi-City Series' },
+      { value: '#1', label: 'Baseball Championship' }
+    ],
+    faqs: [
+      { question: 'Can you staff World Series events in any MLB city?', answer: 'Yes, Air Fresh Marketing maintains event staff in every MLB market nationwide. We can deploy staff to any World Series host city with local market knowledge and stadium familiarity.' },
+      { question: 'How do you handle the uncertainty of a 4-7 game series?', answer: 'We build contingency staffing plans that confirm staff for guaranteed games while maintaining on-call rosters for potential elimination games. Staff are pre-credentialed for the full series to enable rapid deployment.' },
+      { question: 'Do you staff both the stadium events and off-site activations?', answer: 'Absolutely. We staff in-stadium activations, fan festival operations, corporate watch parties, and any off-site brand events surrounding the World Series in the host city.' }
+    ],
+    logisticsInfo: 'The World Series takes place annually in October at the home stadiums of the American League and National League pennant winners. The series alternates between cities following a 2-3-2 game format. Staff should be prepared for late-night games that can extend past midnight on the East Coast.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/world-series-staffing.jpg'
+  },
+  {
+    slug: 'masters-golf-tournament',
+    title: 'Masters Golf Tournament Staffing | Event Staff for Augusta National and Masters Week',
+    h1: 'Masters Golf Tournament Event Staffing Services',
+    metaDescription: 'Masters Golf Tournament event staffing for corporate hospitality, sponsor activations, and patron services during Masters Week in Augusta, Georgia.',
+    city: 'Augusta',
+    stateAbbrev: 'GA',
+    venues: ['Augusta National Golf Club', 'Augusta Convention Center', 'Masters Week Hospitality Venues'],
+    keywords: ['Masters Tournament staffing', 'Masters golf event staff', 'Augusta National staffing', 'Masters Week hospitality'],
+    description: 'The Masters Tournament at Augusta National Golf Club is the most prestigious event in professional golf, drawing global attention to Augusta, Georgia every April. Air Fresh Marketing provides professional event staff for Masters Week corporate hospitality venues, sponsor activations, brand experiences, and the premium patron services surrounding golf\'s most exclusive championship.',
+    bodyContent: `## Why Masters Week Demands Elite Event Staffing
+
+The Masters Tournament transforms Augusta into the center of the golf world for an entire week in April. While access to Augusta National itself is tightly controlled, the surrounding ecosystem of corporate hospitality houses, sponsor activations, and brand experiences along Washington Road and throughout Augusta creates enormous staffing demand for premium hospitality professionals.
+
+### Masters Tournament Event Profile
+- **Annual Attendance**: 40,000+ patrons daily at Augusta National
+- **Venue**: Augusta National Golf Club (tournament); surrounding venues (hospitality)
+- **Duration**: Masters Week spans Monday practice rounds through Sunday final round
+- **Audience**: Golf enthusiasts, corporate executives, sponsors, and global media
+
+## Masters Week Staffing Solutions
+
+### Corporate Hospitality House Staff
+The hospitality houses along Washington Road are the hub of Masters Week corporate entertainment. Our staff manage guest registration, food and beverage service, shuttle coordination to Augusta National, and the refined hospitality that corporate hosts expect when entertaining clients at golf's most prestigious event.
+
+### Patron Services and Concierge
+Masters patrons expect a premium experience from arrival to departure. Our concierge staff manage transportation logistics, restaurant reservations, tee-time coordination at area courses, and the personalized attention that makes Masters Week memorable for corporate guests.
+
+### Sponsor Activation Brand Ambassadors
+Brands activating during Masters Week need staff who understand golf culture and the demographics of the Masters audience. Our brand ambassadors staff product experiences, sampling activations, and sponsor hospitality with the sophistication this audience demands.
+
+### Event Registration and Credentialing
+Masters Week events require meticulous guest management. Registration staff verify credentials, distribute hospitality badges, manage plus-one lists, and ensure security protocols are followed at every entry point.
+
+### Food and Beverage Service
+Masters Week hospitality features premium catering from southern cuisine to international fare. Our F&B service staff deliver formal plated dinners, casual buffet service, and premium bar programs with the attention to detail that distinguishes excellent hospitality.
+
+## Masters Week Staffing Standards
+
+Staff working Masters Week events must embody:
+- Golf etiquette awareness and tournament protocol understanding
+- Premium hospitality skills appropriate for C-suite corporate guests
+- Professional appearance with conservative, golf-appropriate attire
+- Knowledge of Augusta and surrounding area for guest recommendations
+- Discretion and confidentiality around high-profile corporate guests
+
+## Augusta Market Expertise
+
+Augusta during Masters Week operates differently than any other event market. Hotel inventory is committed years in advance, traffic patterns change dramatically, and the entire city caters to the golf audience. Our regional staff understand the unique Masters Week logistics including parking, shuttle routes, and the timing patterns that affect hospitality house operations throughout tournament days.
+
+## Staff Your Masters Week Presence
+
+Air Fresh Marketing provides premium event staffing for Masters Week hospitality houses, sponsor activations, and corporate entertainment in Augusta. Contact us to staff your Masters presence with professionals who understand golf hospitality.`,
+    staffTypes: [
+      { title: 'Hospitality House Staff', description: 'Guest registration, F&B service, and premium hospitality for corporate entertainment venues' },
+      { title: 'Concierge Services', description: 'Transportation coordination, restaurant reservations, and personalized guest services' },
+      { title: 'Brand Ambassadors', description: 'Sponsor activations and product experiences targeting the premium golf audience' },
+      { title: 'Event Registration', description: 'Credential verification, guest management, and security protocol administration' }
+    ],
+    stats: [
+      { value: '40,000+', label: 'Daily Patrons' },
+      { value: '7 Days', label: 'Masters Week Duration' },
+      { value: '#1', label: 'Golf Tournament Worldwide' },
+      { value: '$200M+', label: 'Economic Impact' }
+    ],
+    faqs: [
+      { question: 'Do you staff inside Augusta National Golf Club?', answer: 'Augusta National manages its own internal operations. Air Fresh Marketing staffs the extensive ecosystem of hospitality houses, sponsor activations, and corporate events surrounding the tournament along Washington Road and throughout Augusta.' },
+      { question: 'How early should I book Masters Week staffing?', answer: 'Masters Week staffing should be confirmed 3-6 months in advance. Augusta accommodations and staff availability are extremely limited during the tournament, and early booking ensures you secure experienced hospitality professionals.' },
+      { question: 'What dress code do Masters Week staff follow?', answer: 'Masters Week events typically require conservative, golf-appropriate professional attire. Specific dress codes vary by venue—formal for evening events, smart casual for daytime hospitality. We coordinate attire with each client.' }
+    ],
+    logisticsInfo: 'The Masters Tournament takes place annually the first full week of April at Augusta National Golf Club in Augusta, Georgia. Augusta Regional Airport (AGS) serves the area, with additional flights into Atlanta (ATL) 2.5 hours away. Accommodations book 6-12 months in advance. Staff should plan for warm spring weather and outdoor hospitality settings.',
+    relatedCitySlug: 'atlanta',
+    relatedCityName: 'Atlanta',
+    heroImage: '/images/events/masters-golf-staffing.jpg'
+  },
+  {
+    slug: 'new-years-eve-times-square',
+    title: 'New Year\'s Eve Times Square Staffing | Event Staff for NYC\'s Ball Drop and NYE Celebrations',
+    h1: 'New Year\'s Eve Times Square Event Staffing Services',
+    metaDescription: 'New Year\'s Eve Times Square event staffing for ball drop events, NYE galas, sponsor activations, and VIP celebrations across New York City on the biggest night of the year.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Times Square', 'One Times Square', 'NYC Hotels and Event Venues'],
+    keywords: ['New Years Eve staffing', 'Times Square event staff', 'NYE party staffing', 'New Years Eve NYC staffing'],
+    description: 'New Year\'s Eve in Times Square is the world\'s most iconic celebration, drawing over one million revelers to the heart of Manhattan and a global television audience of over one billion viewers. Air Fresh Marketing provides professional event staff for Times Square activations, NYE galas, corporate celebrations, sponsor experiences, and the brand events that make New Year\'s Eve in New York the ultimate staffing challenge.',
+    bodyContent: `## Why New Year's Eve in NYC Requires Expert Event Staffing
+
+New Year's Eve in New York City is the single highest-demand staffing night of the year. From the official Times Square Ball Drop celebration and its surrounding sponsor activations to the hundreds of NYE galas, corporate parties, and brand events across Manhattan, every venue needs staff—and the competition for quality event professionals is intense.
+
+### New Year's Eve NYC Event Profile
+- **Times Square Attendance**: 1,000,000+ revelers in Times Square
+- **Broadcast Audience**: 1 billion+ global television viewers
+- **Duration**: Events span from afternoon through post-midnight celebrations
+- **Scope**: Hundreds of simultaneous events across New York City
+
+## New Year's Eve Staffing Solutions
+
+### Times Square Activation Staff
+Brands that activate in the Times Square zone on New Year's Eve reach the most captive audience in the world. Our brand ambassadors staff sponsor viewing areas, branded warming stations, product sampling activations, and the interactive experiences positioned throughout the Times Square celebration zone.
+
+### NYE Gala and Party Staffing
+New York's premier NYE galas and parties demand experienced hospitality professionals. Our event staff manage guest registration, coat check, VIP table service, champagne toast coordination, and the midnight celebration moments that define New Year's Eve nightlife.
+
+### Corporate NYE Celebration Staff
+Corporate New Year's Eve events require staff who deliver professional hospitality while maintaining the celebratory atmosphere. We staff corporate watch parties, client appreciation dinners, and company NYE celebrations at hotels, restaurants, and private event spaces.
+
+### Countdown and Entertainment Support
+From ball drop viewing events to live entertainment programming, our production support staff manage stage operations, artist hospitality, sound and lighting coordination, and the precision timing required for midnight countdown programming.
+
+### Post-Midnight and Late-Night Operations
+New Year's Eve events run late—often until 3-4 AM. Our staff are committed for the full duration, managing late-night bar service, guest departure coordination, venue breakdown, and the safe conclusion of celebrations that extend well past midnight.
+
+## NYE Staffing Logistics and Challenges
+
+New Year's Eve staffing in New York City presents unique challenges:
+- **Transportation**: Street closures around Times Square begin in the afternoon. Staff must arrive early and plan for restricted subway and vehicle access.
+- **Weather**: December 31 in NYC can range from mild to bitterly cold. Outdoor staff need weather-appropriate gear and warming break rotation.
+- **Premium Rates**: NYE is the highest-demand staffing night of the year. Book staff 4-8 weeks in advance to secure quality professionals.
+- **Multi-Venue Coordination**: Many brands run simultaneous NYE events across Manhattan. Our logistics team coordinates staff deployment across multiple venues.
+
+## Security and Crowd Management
+
+Times Square and surrounding areas operate under the highest security protocols of any annual event in America. Staff working in the Times Square zone must clear NYPD security screening and understand the restricted movement zones. We coordinate credentialing with event producers and security teams to ensure seamless access for all staff positions.
+
+## Staff Your New Year's Eve Events
+
+Air Fresh Marketing provides expert event staffing for New Year's Eve celebrations across New York City—from Times Square activations to Manhattan's most exclusive galas. Contact us early to secure premium staff for the biggest night of the year.`,
+    staffTypes: [
+      { title: 'Times Square Activation Staff', description: 'Brand ambassadors for sponsor activations, sampling, and branded experiences in the celebration zone' },
+      { title: 'Gala & Party Hospitality', description: 'Guest registration, VIP service, champagne coordination, and NYE celebration management' },
+      { title: 'Corporate Event Staff', description: 'Professional hospitality for corporate NYE celebrations and client entertainment events' },
+      { title: 'Production Support', description: 'Stage operations, entertainment support, and countdown programming coordination' }
+    ],
+    stats: [
+      { value: '1M+', label: 'Times Square Revelers' },
+      { value: '1B+', label: 'Global TV Viewers' },
+      { value: '100+', label: 'NYC NYE Events' },
+      { value: '#1', label: 'Night of the Year' }
+    ],
+    faqs: [
+      { question: 'How early should I book NYE staffing in New York?', answer: 'Book NYE staffing 4-8 weeks in advance minimum. New Year\'s Eve is the highest-demand staffing night of the year, and quality event professionals commit early. Premium positions near Times Square should be booked even earlier.' },
+      { question: 'Do staff work past midnight on NYE?', answer: 'Yes, all NYE staff are committed for the full event duration. Most NYE events run until 2-4 AM. Rates reflect the extended hours and holiday premium.' },
+      { question: 'Can you staff outdoor events in Times Square in December?', answer: 'Absolutely. We provide staff equipped for cold-weather outdoor events with appropriate layering, warming break schedules, and cold-weather gear. We build weather contingency plans for all outdoor NYE activations.' }
+    ],
+    logisticsInfo: 'New Year\'s Eve events center around Times Square in Midtown Manhattan, with celebrations spanning venues across Manhattan, Brooklyn, and surrounding areas. Street closures begin mid-afternoon in the Times Square zone. JFK, LaGuardia, and Newark airports serve the area. December weather averages 30-40°F with potential for snow.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York',
+    heroImage: '/images/events/new-years-eve-times-square-staffing.jpg'
+  },
+  {
+    slug: 'state-fair-of-texas',
+    title: 'State Fair of Texas Staffing | Event Staff for Fair Park and Big Tex',
+    h1: 'State Fair of Texas Event Staffing Services',
+    metaDescription: 'State Fair of Texas event staffing for sponsor activations, food vendor support, exhibit management, and guest services at Fair Park in Dallas across the 24-day fair season.',
+    city: 'Dallas',
+    stateAbbrev: 'TX',
+    venues: ['Fair Park', 'Cotton Bowl Stadium', 'Creative Arts Building'],
+    keywords: ['State Fair of Texas staffing', 'Dallas fair event staff', 'state fair staffing', 'Big Tex event staff'],
+    description: 'The State Fair of Texas is the largest state fair in the United States, welcoming over 2.5 million visitors across 24 days each fall at historic Fair Park in Dallas. Air Fresh Marketing provides professional event staff for sponsor activations, food vendor operations, exhibit management, entertainment support, and the massive guest services operation required to manage one of America\'s most beloved annual traditions.',
+    bodyContent: `## Why the State Fair of Texas Needs Professional Event Staffing
+
+The State Fair of Texas isn't just a fair—it's a cultural institution that has defined fall in Texas since 1886. With 2.5 million visitors across 24 days, it operates at a scale that exceeds most multi-day festivals. The combination of food competitions, livestock shows, auto exhibitions, concerts, the iconic Red River Rivalry football game, and hundreds of sponsor activations creates staffing demand across every event discipline.
+
+### State Fair of Texas Event Profile
+- **Annual Attendance**: 2.5 million+ visitors across 24 days
+- **Venue**: Fair Park, a 277-acre campus with multiple buildings and outdoor areas
+- **Duration**: 24 consecutive days from late September through mid-October
+- **Audience**: Families, food enthusiasts, Texans, and tourists from across the country
+
+## State Fair of Texas Staffing Solutions
+
+### Sponsor Activation and Brand Experience Staff
+Major brands invest in State Fair of Texas activations that reach millions of fairgoers. Our brand ambassadors staff product sampling booths, interactive brand experiences, contest and giveaway activations, and the data capture operations that justify sponsor investments across the 24-day fair run.
+
+### Food Vendor and Concession Support
+The State Fair of Texas is famous for its creative food offerings—from Fletcher's Corny Dogs to the Big Tex Choice Awards winners. Our food service support staff assist vendors with queue management, order taking, cash handling, and the high-volume operations that peak during weekends and the Red River Rivalry game day.
+
+### Exhibit and Building Management
+Fair Park's exhibition buildings host auto shows, home improvement expos, creative arts competitions, and commercial exhibits. Building management staff direct visitor traffic, manage exhibit booth operations, and provide information services within these massive indoor spaces.
+
+### Entertainment and Stage Support
+Multiple entertainment stages across Fair Park feature live music, comedy, and cultural performances throughout the fair. Stage crew staff manage artist hospitality, sound operations, audience management, and the daily programming schedule across all performance venues.
+
+### Guest Services and Information
+With 277 acres to navigate, fairgoers need help. Information booth staff distributed across Fair Park answer directional questions, provide event schedules, assist with accessibility needs, and help lost children reunite with families. Parking and transportation staff manage the massive vehicle and shuttle operations that move visitors between remote lots and Fair Park gates.
+
+## 24-Day Staffing Operations
+
+The State Fair of Texas's 24-day run creates unique staffing challenges. Staff scheduling must balance consistency—returning staff who know operations—with the rotation needed to prevent burnout across nearly a month of daily operations. Build schedules with a core team supplemented by weekend surge staff for the higher attendance days.
+
+Daily pre-opening briefings keep staff current on special events, gate changes, weather adjustments, and the day's entertainment schedule. Weekday versus weekend staffing ratios typically shift from 60% to full capacity as weekend attendance can double weekday numbers.
+
+## Fair Park Venue Expertise
+
+Fair Park is a National Historic Landmark with Art Deco architecture spanning 277 acres. Staff must know the layout intimately—from the Midway and food areas to the livestock barns, exhibition buildings, and Cotton Bowl Stadium. Our Dallas-based staff bring Fair Park familiarity and the Texas hospitality that fairgoers expect.
+
+## Staff Your State Fair Activations
+
+Air Fresh Marketing provides professional event staffing for the State Fair of Texas across all 24 days of operation. Contact us to build your fair staffing plan with experienced Dallas-area event professionals.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Sponsor activation staff for product sampling, interactive experiences, and brand engagement across Fair Park' },
+      { title: 'Food Service Support', description: 'Vendor assistance, queue management, and concession operations for fair food vendors' },
+      { title: 'Guest Services', description: 'Information booth staff, directional assistance, and accessibility support across 277 acres' },
+      { title: 'Entertainment Support', description: 'Stage crew, artist hospitality, and performance venue management for daily programming' }
+    ],
+    stats: [
+      { value: '2.5M+', label: 'Annual Visitors' },
+      { value: '24 Days', label: 'Fair Duration' },
+      { value: '277 Acres', label: 'Fair Park Campus' },
+      { value: '#1', label: 'Largest US State Fair' }
+    ],
+    faqs: [
+      { question: 'How long does the State Fair of Texas run?', answer: 'The State Fair of Texas runs for 24 consecutive days from late September through mid-October. This extended run requires staffing plans that maintain quality and energy across nearly a month of daily operations.' },
+      { question: 'Do you staff the Red River Rivalry game at the Cotton Bowl?', answer: 'Yes, we staff events surrounding the OU-Texas game at the Cotton Bowl within Fair Park, including sponsor activations, hospitality areas, and the enhanced game-day experience that makes this rivalry game unique within the fair setting.' },
+      { question: 'What is the staffing demand difference between weekdays and weekends?', answer: 'Weekend attendance can be double weekday numbers. We build flexible schedules with a consistent weekday core team supplemented by additional weekend staff to manage the higher volume without sacrificing service quality.' }
+    ],
+    logisticsInfo: 'The State Fair of Texas takes place at Fair Park, located 2 miles east of downtown Dallas. DFW International Airport and Dallas Love Field serve the area. The fair runs from late September through mid-October with daily operations. Dallas weather during the fair ranges from warm early weeks (80s°F) to cooler closing weeks (60-70°F).',
+    relatedCitySlug: 'dallas',
+    relatedCityName: 'Dallas',
+    heroImage: '/images/events/state-fair-texas-staffing.jpg'
+  },
   // ── Batch 150 ──────────────────────────────────────────────────────
   {
     slug: 'us-open-tennis',
