@@ -36,6 +36,325 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 140 ──────────────────────────────────────────────────────
+  {
+    slug: 'bonnaroo-music-festival',
+    title: 'Bonnaroo Music Festival Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Bonnaroo Music Festival Staffing: Brand Ambassadors, Experiential Teams & Event Support',
+    metaDescription: 'Bonnaroo Music Festival staffing services provide brand ambassadors, experiential marketing teams, and event support staff for activations at The Farm in Manchester, Tennessee.',
+    city: 'Manchester',
+    stateAbbrev: 'TN',
+    venues: ['Great Stage Farm (The Farm)', 'What Stage', 'Which Stage', 'That Tent', 'This Tent', 'The Other Tent', 'Centeroo'],
+    keywords: ['Bonnaroo staffing', 'Bonnaroo brand ambassadors', 'music festival event staff Tennessee', 'Bonnaroo experiential marketing', 'festival staffing Manchester TN'],
+    description: 'Bonnaroo Music & Arts Festival draws 80,000+ fans to rural Tennessee each June for four days of music, art, and culture. Air Fresh Marketing provides professional event staff who thrive in the unique festival environment at The Farm.',
+    bodyContent: `## Bonnaroo Music Festival Staffing Solutions
+
+Bonnaroo Music & Arts Festival is one of America's most iconic multi-day music festivals, transforming 700 acres of farmland in Manchester, Tennessee into a vibrant city of music, art, comedy, and community. With 80,000+ attendees camping on-site for four days, Bonnaroo presents unique staffing opportunities and challenges.
+
+### Why Brands Activate at Bonnaroo
+
+Bonnaroo's audience is highly engaged, experience-seeking, and brand-receptive. The festival's camping format means attendees are immersed 24/7, creating extended engagement windows that single-day events cannot match. Sponsors like craft beverage brands, outdoor lifestyle companies, tech products, and sustainable brands find Bonnaroo's audience perfectly aligned with their target demographics.
+
+### Staffing for Bonnaroo's Unique Environment
+
+The Farm presents staffing challenges unlike any traditional venue. Staff work outdoors in June Tennessee heat, navigate a sprawling campus, and engage with audiences from dawn well past midnight. Air Fresh Marketing recruits festival-experienced staff who embrace these conditions and bring authentic energy to every interaction.
+
+**Centeroo Activation Staff** work inside the main festival grounds, managing sponsor booths, experiential installations, and sampling activations. Centeroo is the heartbeat of Bonnaroo, and staff here need high energy and endurance for long festival days.
+
+**Campground Activation Teams** bring brand experiences directly to campers in the camping plazas. Morning coffee activations, afternoon sampling, and evening entertainment create touchpoints throughout the day. Staff must be comfortable navigating camping areas and engaging with relaxed, festival-mode audiences.
+
+**Sustainability and Eco-Initiative Staff** support Bonnaroo's strong environmental mission. They manage recycling stations, promote refillable water programs, and staff sustainability-focused sponsor activations.
+
+### Festival Staffing Logistics
+
+Bonnaroo's rural location requires careful logistics planning. Staff need on-site camping accommodations, transportation coordination, and supplies for multi-day deployment. Air Fresh Marketing handles all logistics so your brand can focus on activation strategy.
+
+We provide shift scheduling that accounts for the festival's unique rhythm—late-night shows, early-morning campground life, and the intense energy peaks during headliner performances.`,
+    staffTypes: ['Brand Ambassadors', 'Experiential Marketing Staff', 'Sampling Teams', 'Sustainability Staff', 'Campground Activation Crews', 'Setup & Teardown Crews'],
+    stats: [
+      { number: '80,000+', label: 'Annual Attendees' },
+      { number: '4', label: 'Days of Programming' },
+      { number: '150+', label: 'Artists & Performers' },
+      { number: '700', label: 'Acres of Festival Grounds' }
+    ],
+    faqs: [
+      { question: 'How do staff handle the multi-day camping format at Bonnaroo?', answer: 'We provide on-site camping accommodations, shift rotations to prevent burnout, and supply kits for staff working in outdoor summer conditions. Our festival-experienced team members thrive in this environment.' },
+      { question: 'What types of brand activations work best at Bonnaroo?', answer: 'Experiential activations, product sampling, charging stations, shaded rest areas, and interactive installations perform exceptionally well. Bonnaroo audiences are open to engaging with brands that add value to their festival experience.' },
+      { question: 'When should we book Bonnaroo event staff?', answer: 'We recommend booking 8-10 weeks before the festival to secure experienced festival staff and coordinate logistics for the rural Tennessee location.' },
+      { question: 'Can you staff both Centeroo and campground activations?', answer: 'Yes, we staff all areas of Bonnaroo including Centeroo activations, campground brand experiences, entry points, and satellite event areas throughout The Farm.' }
+    ],
+    logisticsInfo: 'Bonnaroo takes place at Great Stage Farm in Manchester, Tennessee, approximately 60 miles southeast of Nashville. The rural location requires advance logistics planning for staff transportation, on-site accommodations, and supplies.',
+    relatedCitySlug: 'nashville',
+    relatedCityName: 'Nashville',
+    heroImage: '/images/events/bonnaroo-music-festival.jpg'
+  },
+  {
+    slug: 'boston-marathon',
+    title: 'Boston Marathon Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Boston Marathon Staffing: Brand Ambassadors, Expo Teams & Race Day Event Support',
+    metaDescription: 'Boston Marathon staffing services provide brand ambassadors, expo booth staff, and race day event support for activations along the historic 26.2-mile course and at the expo.',
+    city: 'Boston',
+    stateAbbrev: 'MA',
+    venues: ['Boston Convention and Exhibition Center (Expo)', 'Hopkinton Start Line', 'Copley Square Finish Area', 'Boylston Street', 'Fenway Area'],
+    keywords: ['Boston Marathon staffing', 'Boston Marathon brand ambassadors', 'marathon event staff', 'race day staffing Boston', 'running event staffing'],
+    description: 'The Boston Marathon is the world\'s oldest annual marathon and one of the most prestigious running events globally. Air Fresh Marketing provides professional event staff for expo activations, race day brand experiences, and finish line celebrations.',
+    bodyContent: `## Boston Marathon Event Staffing Solutions
+
+The Boston Marathon is the pinnacle of distance running, attracting 30,000 runners and 500,000+ spectators annually along the iconic 26.2-mile course from Hopkinton to Copley Square in Boston. For brands in the running, fitness, nutrition, and wellness industries, the Boston Marathon is the ultimate activation opportunity.
+
+### Why Brands Invest in Boston Marathon Activations
+
+The Boston Marathon audience represents a premium demographic of fitness-conscious, health-focused consumers with significant purchasing power. Both runners and spectators are passionate about the sport and highly engaged with brands that support the running community.
+
+### Pre-Race Expo Staffing
+
+The John Hancock Sports & Fitness Expo at the Boston Convention and Exhibition Center runs for several days before the race and attracts over 100,000 visitors. Expo staffing needs include:
+
+**Booth Sales and Demo Staff** who can discuss technical running products, demonstrate footwear technology, showcase nutrition products, and engage with knowledgeable runners. Staff with personal running experience add authenticity.
+
+**Registration and Bib Pickup Support** assists the marathon organization with runner check-in, bib distribution, and information services. Efficiency is critical when processing thousands of runners daily.
+
+**Product Sampling Teams** distribute nutrition gels, hydration products, recovery supplements, and other running-related samples. Staff should understand training nutrition to answer questions credibly.
+
+### Race Day Staffing
+
+Race day activations span the entire 26.2-mile course and the finish area:
+
+**Course-Side Brand Teams** staff hydration stations, cheer zones, and spectator engagement areas along the route. These positions require staff who can maintain energy for the full duration of the race.
+
+**Finish Area Activation Staff** manage sponsor tents, recovery zones, and celebration areas near Copley Square. The finish area is the emotional peak of the event, and staff interactions matter enormously.
+
+**VIP and Hospitality Staff** manage exclusive viewing areas, sponsor hospitality tents, and athlete reception areas for invited guests and media.
+
+### Post-Race Celebrations
+
+After-parties, award ceremonies, and sponsor events continue the marathon experience into the evening. Staff transition from high-energy race day mode to polished hospitality service for evening celebrations.`,
+    staffTypes: ['Brand Ambassadors', 'Expo Booth Staff', 'Product Sampling Teams', 'Race Day Support', 'VIP Hospitality', 'Registration Staff'],
+    stats: [
+      { number: '30,000', label: 'Runners Annually' },
+      { number: '500,000+', label: 'Spectators' },
+      { number: '128', label: 'Years of History' },
+      { number: '100,000+', label: 'Expo Visitors' }
+    ],
+    faqs: [
+      { question: 'What types of brands activate at the Boston Marathon?', answer: 'Running shoe and apparel companies, sports nutrition brands, fitness technology firms, healthcare organizations, and financial services sponsors all activate at the Boston Marathon through expo booths, course-side experiences, and hospitality events.' },
+      { question: 'How far in advance should we book Boston Marathon event staff?', answer: 'Book at least 10-12 weeks in advance. The Boston Marathon is a marquee event and experienced event staff in the Boston market book early for Marathon Monday weekend.' },
+      { question: 'Can you staff both the expo and race day?', answer: 'Absolutely. We provide separate teams for the multi-day expo at the BCEC and race day activations along the course and at the finish area, ensuring fresh, energetic staff at every touchpoint.' },
+      { question: 'Do staff need running or fitness experience?', answer: 'For product demonstration and sales roles at the expo, we prioritize staff with running or fitness backgrounds who can speak authentically with marathon participants. General event support roles require standard professional event experience.' }
+    ],
+    logisticsInfo: 'The Boston Marathon expo takes place at the Boston Convention and Exhibition Center in the Seaport District. Race day spans from Hopkinton to Copley Square in Boston. Staff deployment requires coordination across multiple locations along the 26.2-mile route.',
+    relatedCitySlug: 'boston',
+    relatedCityName: 'Boston',
+    heroImage: '/images/events/boston-marathon.jpg'
+  },
+  {
+    slug: 'burning-man',
+    title: 'Burning Man Staffing | Event Staff & Brand Activation Support',
+    h1: 'Burning Man Staffing: Brand Activation Staff, Experiential Teams & Event Support in Black Rock Desert',
+    metaDescription: 'Burning Man staffing services provide experiential marketing teams, brand activation staff, and event support for the unique environment of Black Rock City in the Nevada desert.',
+    city: 'Black Rock City',
+    stateAbbrev: 'NV',
+    venues: ['Black Rock City', 'The Playa', 'Center Camp', 'Esplanade', 'Deep Playa'],
+    keywords: ['Burning Man staffing', 'Burning Man event staff', 'desert festival staffing', 'experiential marketing Burning Man', 'Black Rock City event support'],
+    description: 'Burning Man is the world\'s most unique cultural gathering, bringing 80,000 participants to the Nevada desert to create Black Rock City. Air Fresh Marketing provides event staff prepared for the extreme environment and unique culture of the playa.',
+    bodyContent: `## Burning Man Event Staffing Solutions
+
+Burning Man is unlike any other event on the planet. Each year, approximately 80,000 participants converge on the Black Rock Desert in Nevada to create a temporary city dedicated to art, self-expression, and community. For brands and organizations navigating this unique space, professional event staffing requires a completely different approach.
+
+### Understanding the Burning Man Environment
+
+Burning Man operates on principles of radical self-reliance, gifting economy, and decommodification. Traditional brand activations and overt marketing are not aligned with Burning Man culture. However, there are legitimate staffing needs for art installations, theme camps, organizational infrastructure, and sanctioned event operations.
+
+### Staffing Roles at Burning Man
+
+**Art Installation and Build Crews** support the construction and operation of large-scale art pieces and interactive installations. These roles require physical stamina, basic construction skills, and the ability to work in extreme heat, dust storms, and desert conditions.
+
+**Theme Camp Support Staff** help manage large registered theme camps that provide experiences, workshops, performances, and community services. Staff assist with setup, daily operations, breakdown, and participant engagement.
+
+**Event Operations and Infrastructure Staff** support the organizational backbone of Black Rock City. Roles include gate and perimeter operations, medical support, communications, transportation, and Leave No Trace cleanup crews.
+
+**Safety and Emergency Support** staff work alongside Burning Man's internal safety teams to provide medical assistance, fire safety monitoring, and emergency response support throughout the event.
+
+**Leave No Trace (MOOP) Crews** are critical to Burning Man's environmental commitment. Post-event cleanup crews systematically sweep the entire playa to remove every trace of Black Rock City. This physically demanding work continues for weeks after the event.
+
+### The Unique Challenges of Desert Event Staffing
+
+**Extreme Weather**: Daytime temperatures exceed 100°F while nights can drop to near freezing. Dust storms (whiteouts) can occur without warning. Staff need appropriate gear, hydration protocols, and the ability to work safely in these conditions.
+
+**Remote Location**: Black Rock City is hours from the nearest town with limited services. All food, water, shelter, and supplies must be brought in. Staff logistics require meticulous planning.
+
+**Extended Duration**: Burning Man runs for approximately one week, plus build week before and cleanup after. Staff deployments can span 2-3 weeks total.
+
+**No Cell Service**: Communication relies on radios and the event's internal systems. Staff must be self-sufficient and comfortable operating without constant connectivity.
+
+### Working Within Burning Man Culture
+
+Staff at Burning Man events must understand and respect the community's principles. This means embracing participation over spectation, respecting the gifting economy, and approaching interactions with genuine openness rather than transactional marketing mindsets.
+
+Air Fresh Marketing recruits staff who have Burning Man experience or demonstrated ability to thrive in unconventional, extreme environments. Our team members understand that working at Burning Man requires adaptability, resilience, and authentic engagement with the unique culture of Black Rock City.`,
+    staffTypes: ['Art Installation Crews', 'Theme Camp Support', 'Event Operations Staff', 'Safety & Emergency Support', 'Leave No Trace Crews', 'Build & Strike Teams'],
+    stats: [
+      { number: '80,000', label: 'Annual Participants' },
+      { number: '9', label: 'Days of Event' },
+      { number: '5 sq mi', label: 'Black Rock City Area' },
+      { number: '3+ weeks', label: 'Total Build to Cleanup' }
+    ],
+    faqs: [
+      { question: 'Can brands run traditional marketing activations at Burning Man?', answer: 'Burning Man has strict decommodification principles. Traditional brand marketing is not permitted. However, legitimate staffing needs exist for art installations, sanctioned camps, event operations, and infrastructure support.' },
+      { question: 'How do you prepare staff for desert conditions?', answer: 'We provide comprehensive desert survival briefings, ensure staff have appropriate gear (dust masks, goggles, sun protection, hydration systems), and implement buddy systems and check-in protocols throughout the event.' },
+      { question: 'When should we start planning Burning Man staffing?', answer: 'Begin planning at least 4-6 months in advance. The remote location, extreme environment, and extended duration require extensive logistics preparation and specialized staff recruitment.' },
+      { question: 'Do staff need prior Burning Man experience?', answer: 'We strongly prefer staff with prior Burning Man or similar extreme event experience. At minimum, staff must demonstrate comfort with camping, extreme weather, and the unique cultural environment.' }
+    ],
+    logisticsInfo: 'Burning Man takes place in the Black Rock Desert of northwestern Nevada, approximately 100 miles north of Reno. The remote location requires complete self-reliance for all supplies, food, water, and shelter.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/events/burning-man.jpg'
+  },
+  {
+    slug: 'new-york-fashion-week',
+    title: 'New York Fashion Week Staffing | Event Staff & Brand Ambassadors',
+    h1: 'New York Fashion Week Staffing: Brand Ambassadors, Runway Support & VIP Hospitality',
+    metaDescription: 'New York Fashion Week staffing services provide brand ambassadors, runway production support, VIP hospitality staff, and guest services for NYFW shows and events across Manhattan.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Spring Studios', 'The Shed at Hudson Yards', 'Skylight Clarkson Sq', 'Gotham Hall', 'Various Manhattan Venues'],
+    keywords: ['NYFW staffing', 'New York Fashion Week event staff', 'fashion week brand ambassadors', 'runway event staffing', 'fashion show staffing NYC'],
+    description: 'New York Fashion Week is the pinnacle of the global fashion calendar, attracting designers, celebrities, media, and industry professionals. Air Fresh Marketing provides polished, fashion-forward event staff for runway shows, sponsor activations, and VIP events.',
+    bodyContent: `## New York Fashion Week Event Staffing Solutions
+
+New York Fashion Week is one of the Big Four fashion weeks and the anchor of American fashion. Held twice annually in February and September, NYFW presents hundreds of runway shows, presentations, parties, and brand activations across Manhattan. The event demands event staff who embody the sophistication, style, and energy of the fashion industry.
+
+### Why NYFW Is a Premier Staffing Opportunity
+
+NYFW generates enormous media coverage and social media engagement. Every interaction between staff and guests is potentially visible to a global audience. Brands investing in NYFW activations need staff who look the part, communicate with polish, and deliver flawless experiences under the intense scrutiny of fashion industry insiders.
+
+### Key NYFW Staffing Roles
+
+**Runway Show Production Staff** support backstage operations, front-of-house management, and show execution. Roles include seating managers who ensure editors and buyers are in correct seats, door staff who manage the invitation list, and backstage assistants who support designers and models.
+
+**VIP Hospitality Hosts** manage exclusive lounges, designer meet-and-greets, and after-show receptions. They serve champagne, coordinate gift bag distribution, and ensure high-profile guests receive personalized attention.
+
+**Brand Ambassador Teams** represent fashion labels, beauty brands, and sponsors at activations throughout Fashion Week. Staff must align with the brand's aesthetic, communicate product messaging authentically, and engage with the discerning NYFW audience.
+
+**Guest Services and Registration Staff** manage check-in at runway shows and events, verify invitations, distribute credentials, and provide directional guidance at multi-venue locations.
+
+**Social Media and Content Staff** capture content at events, manage photo opportunities, encourage attendee-generated content, and support influencer activations. Staff should understand fashion social media culture and current trends.
+
+**Personal Shopping and Showroom Staff** assist at designer showrooms and pop-up retail events that run concurrent with NYFW. Knowledge of current collections, designer backgrounds, and fashion terminology is essential.
+
+### Staffing Fashion Week Sponsor Activations
+
+Major NYFW sponsors like beauty brands, luxury automakers, beverage companies, and tech firms create elaborate activations:
+
+**Beauty Pop-Ups** with makeup artists, skin consultants, and product sampling require staff who understand beauty trends and can perform light makeup application or skin analysis.
+
+**Lifestyle Brand Lounges** offer rest areas, refreshments, and exclusive experiences between shows. Staff maintain the luxurious atmosphere and manage access.
+
+**Technology Activations** from fashion tech companies demonstrate virtual try-on, AI styling, or other innovations. Staff need both tech fluency and fashion awareness.
+
+### Appearance Standards for NYFW Staff
+
+Fashion Week demands elevated presentation standards. Staff should be:
+- On-trend in their personal style and grooming
+- Wearing approved outfits that align with the event or brand aesthetic
+- Physically fit and camera-ready (NYFW is heavily photographed)
+- Comfortable in designer or premium clothing and accessories
+- Poised and confident in high-fashion environments
+
+### The NYFW Schedule
+
+Fashion Week runs approximately 7-10 days with shows starting early morning and parties running until late night. Staff schedules must account for split shifts, multiple venues in a single day, and the intense pace of the fashion calendar.
+
+Air Fresh Marketing maintains a roster of fashion-industry-experienced event staff in the New York market who bring the polish, style, and professionalism that NYFW demands. Our team understands the unique culture of Fashion Week and delivers staffing solutions that meet the exacting standards of designers, brands, and media.`,
+    staffTypes: ['Brand Ambassadors', 'Runway Production Staff', 'VIP Hospitality Hosts', 'Guest Services', 'Social Media Staff', 'Showroom Assistants'],
+    stats: [
+      { number: '300+', label: 'Shows & Presentations' },
+      { number: '230,000+', label: 'Attendees Per Season' },
+      { number: '2x', label: 'Annual (Feb & Sep)' },
+      { number: '7-10', label: 'Days of Programming' }
+    ],
+    faqs: [
+      { question: 'What appearance standards do you require for NYFW staff?', answer: 'NYFW staff must meet elevated appearance standards including on-trend personal style, approved wardrobe, immaculate grooming, and a confident presence in high-fashion environments. We provide specific dress code guidance for each client and event.' },
+      { question: 'How early should we book NYFW event staff?', answer: 'Book NYFW staff 8-12 weeks before Fashion Week. Top fashion-experienced event staff in New York book quickly for both February and September seasons.' },
+      { question: 'Can you staff multiple NYFW venues in a single day?', answer: 'Yes, we coordinate multi-venue staffing with transportation logistics and shift scheduling that ensures fresh, polished teams at each location throughout Fashion Week.' },
+      { question: 'Do staff need fashion industry experience?', answer: 'For front-of-house and brand ambassador roles, we strongly prefer staff with fashion industry or luxury brand experience. For production and logistics roles, general professional event experience is sufficient.' }
+    ],
+    logisticsInfo: 'NYFW events take place across Manhattan with shows concentrated at Spring Studios and various other venues in Tribeca, Chelsea, Midtown, and the West Side. Staff must be comfortable navigating multiple NYC venues with efficient transit.',
+    relatedCitySlug: 'new-york-city',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/new-york-fashion-week.jpg'
+  },
+  {
+    slug: 'rose-bowl',
+    title: 'Rose Bowl Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Rose Bowl Staffing: Brand Ambassadors, Tailgate Activation Teams & Game Day Event Support',
+    metaDescription: 'Rose Bowl staffing services provide brand ambassadors, tailgate activation teams, and game day event support for The Granddaddy of Them All and events at Rose Bowl Stadium in Pasadena.',
+    city: 'Pasadena',
+    stateAbbrev: 'CA',
+    venues: ['Rose Bowl Stadium', 'Rose Bowl Loop', 'Brookside Golf Club (Tailgate Area)', 'Colorado Boulevard (Parade Route)'],
+    keywords: ['Rose Bowl staffing', 'Rose Bowl event staff', 'Pasadena event staffing', 'college football staffing', 'Rose Parade staffing'],
+    description: 'The Rose Bowl Game and Tournament of Roses events are among America\'s most iconic sporting and cultural traditions. Air Fresh Marketing provides professional event staff for brand activations, tailgate experiences, and game day operations at Rose Bowl Stadium.',
+    bodyContent: `## Rose Bowl Event Staffing Solutions
+
+The Rose Bowl, known as "The Granddaddy of Them All," is one of college football's most prestigious bowl games. Together with the Tournament of Roses Parade, these New Year's Day events in Pasadena, California attract hundreds of thousands of fans and viewers. Rose Bowl Stadium also hosts major concerts, international soccer matches, and other tentpole events throughout the year.
+
+### Why Brands Activate at the Rose Bowl
+
+The Rose Bowl represents premium sports marketing opportunities. The New Year's Day game draws a national TV audience of millions, while the in-person experience attracts affluent, passionate fans. The iconic setting with the San Gabriel Mountains as backdrop creates visually stunning brand activation opportunities.
+
+### Rose Bowl Game Day Staffing
+
+**Tailgate Activation Teams** staff sponsor activations in the massive tailgate areas surrounding Rose Bowl Stadium. The Brookside tailgate area is legendary, and brands set up elaborate experiences to engage fans hours before kickoff. Staff distribute samples, manage interactive games, capture data, and create memorable pre-game experiences.
+
+**In-Stadium Brand Ambassadors** represent sponsors inside Rose Bowl Stadium. They manage branded concourse areas, distribute promotional items, facilitate fan engagement activities, and staff VIP hospitality suites.
+
+**Game Day Operations Staff** support event logistics including parking management, wayfinding, credential verification, and guest services. With 90,000+ fans converging on Pasadena, efficient operations staffing is essential.
+
+**Hospitality and VIP Staff** manage premium experiences in suites, club areas, and exclusive tents. Rose Bowl VIP events cater to corporate sponsors, university donors, and high-net-worth fans who expect exceptional service.
+
+### Tournament of Roses Parade Staffing
+
+The Rose Parade on New Year's morning draws 700,000+ spectators along Colorado Boulevard:
+
+**Parade Route Brand Teams** staff sponsor viewing areas, distribute promotional items, and engage with spectators along the 5.5-mile route. Staff arrive early morning and work through the parade duration.
+
+**Float and Entry Support** assists with parade logistics, float staging, and participant coordination in the formation area.
+
+**Post-Parade Showcase Staff** manage the float viewing area where spectators can see the floral masterpieces up close after the parade.
+
+### Year-Round Rose Bowl Events
+
+Beyond New Year's Day, Rose Bowl Stadium hosts:
+- **Major Concerts** (artists like Beyonce, Taylor Swift, and Ed Sheeran have played the venue)
+- **International Soccer** (Gold Cup, Copa America, and club friendlies)
+- **UCLA Football** (regular season home games)
+- **The Rose Bowl Flea Market** (monthly, attracting 2,500+ vendors)
+
+Each event type requires staffing tailored to the specific audience and sponsor needs.
+
+### Pasadena Event Staffing Logistics
+
+The Rose Bowl sits in Arroyo Seco, a beautiful but logistically challenging location. Staff need to navigate parking restrictions, shuttle systems, and pedestrian flow patterns. For New Year's Day events, staff typically arrive before dawn and coordinate across parade route and stadium locations.
+
+Air Fresh Marketing's Southern California team includes experienced event staff who know Rose Bowl Stadium intimately. We provide staffing for everything from New Year's Day spectacles to monthly flea markets, ensuring every event at this iconic venue is professionally supported.`,
+    staffTypes: ['Brand Ambassadors', 'Tailgate Activation Teams', 'Game Day Operations', 'VIP Hospitality Staff', 'Parade Route Teams', 'Concert Event Staff'],
+    stats: [
+      { number: '90,000+', label: 'Stadium Capacity' },
+      { number: '700,000+', label: 'Parade Spectators' },
+      { number: '100+', label: 'Years of Tradition' },
+      { number: '30M+', label: 'TV Viewers' }
+    ],
+    faqs: [
+      { question: 'Can you staff both the Rose Parade and Rose Bowl Game?', answer: 'Yes, we coordinate separate teams for the early-morning Rose Parade activations and the afternoon Rose Bowl Game, ensuring fresh, energetic staff at both events on New Year\'s Day.' },
+      { question: 'How early should we book Rose Bowl event staff?', answer: 'For New Year\'s Day events, book at least 10-12 weeks in advance. For other Rose Bowl Stadium events, 6-8 weeks is typically sufficient. Major concert dates in the LA market fill staff schedules quickly.' },
+      { question: 'Do you staff the monthly Rose Bowl Flea Market?', answer: 'Yes, we provide vendor support, customer service, and brand activation staff for the Rose Bowl Flea Market, which attracts 2,500+ vendors and thousands of shoppers each month.' },
+      { question: 'What is the tailgate activation environment like?', answer: 'Rose Bowl tailgates are among the most elaborate in college football. The Brookside area offers extensive space for sponsor activations, and fans arrive 4-6 hours before kickoff, providing extended brand engagement time.' }
+    ],
+    logisticsInfo: 'Rose Bowl Stadium is located at 1001 Rose Bowl Drive in Pasadena, CA. The venue is accessible via the 210 and 134 freeways, with extensive parking and shuttle services for major events.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/rose-bowl.jpg'
+  },
   // ── Batch 135 ──────────────────────────────────────────────────────
   {
     slug: 'ultra-music-festival-miami',
