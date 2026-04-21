@@ -14,6 +14,408 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 770,
+    slug: 'event-staffing-for-cannabis-dispensary-openings-and-brand-launches',
+    title: 'Event Staffing for Cannabis Dispensary Openings and Brand Launches: Budtenders, Brand Reps, and Compliance Staff',
+    excerpt: 'Event staffing for cannabis dispensary openings and brand launches requires compliance-trained staff, knowledgeable budtenders, and brand representatives who navigate the evolving legal cannabis landscape.',
+    content: `Event staffing for cannabis dispensary openings and brand launches operates in one of the most dynamic and heavily regulated event environments. As legal cannabis markets expand across the US, dispensary grand openings, brand launches, industry trade shows, and consumption events need professional staff who understand both event execution and cannabis compliance.
+
+## The Legal Cannabis Event Opportunity
+
+The legal cannabis industry generates over $30 billion annually in the US and continues to grow as more states legalize. Dispensary openings, brand launches, and industry events create staffing demands that combine traditional event management with cannabis-specific requirements.
+
+### Key Staffing Roles
+
+**Brand Ambassadors and Educators** represent cannabis brands at dispensaries, events, and trade shows. They educate consumers about products, strains, consumption methods, and the brand's story. Staff must be knowledgeable about cannabis without making medical claims.
+
+**Budtender Support Staff** assist licensed budtenders during high-traffic events like dispensary openings. They help with crowd management, product information, and customer flow while ensuring all sales transactions are handled by licensed staff.
+
+**Compliance and Age Verification Staff** manage ID checking, age verification, and capacity limits at cannabis events. Every person entering a cannabis retail environment or event must be verified as 21+, and compliance staff ensure this happens consistently.
+
+**Event Operations Staff** handle general event logistics including registration, crowd management, VIP areas, and vendor coordination at cannabis industry events and festivals.
+
+**Security Coordination Staff** work alongside licensed security at cannabis events where product is present. They manage access control, monitor crowd behavior, and support the security plan.
+
+## Types of Cannabis Industry Events
+
+### Dispensary Grand Openings
+High-energy retail events that can draw hundreds of customers. Staffing needs include crowd management, line entertainment, product education, brand promotion, and compliance verification.
+
+### Cannabis Brand Launch Events
+Product launches at dispensaries or event venues where new cannabis brands, strains, or product lines are introduced to consumers and industry buyers.
+
+### Industry Trade Shows (MJBizCon, Hall of Flowers)
+B2B events where cannabis companies showcase products to dispensary buyers, investors, and media. Booth staffing requires industry knowledge and B2B sales skills.
+
+### Cannabis Consumption Events
+In jurisdictions that permit them, social consumption events need staff trained on responsible consumption, dosage awareness, and emergency protocols.
+
+## Compliance Requirements
+
+Cannabis event staffing involves strict compliance:
+- **Age verification** is mandatory for all attendees at cannabis events
+- **No product sampling** in most jurisdictions (unlike food and beverage events)
+- **Advertising restrictions** limit what staff can say and show
+- **State-specific regulations** vary dramatically between legal markets
+- **Track-and-trace** systems must be maintained for all product
+- **No consumption** by staff during events in most jurisdictions
+
+## Training Cannabis Event Staff
+
+Staff training must cover:
+- State and local cannabis regulations applicable to the event
+- Product knowledge (flower, edibles, concentrates, topicals)
+- Responsible consumption messaging and dosage education
+- What NOT to say (medical claims, efficacy promises)
+- Age verification procedures and ID checking
+- Emergency procedures for over-consumption situations
+- Social media guidelines and content restrictions
+
+## Hiring Considerations
+
+When recruiting cannabis event staff, look for:
+- Clean background and compliance with state cannabis worker requirements
+- Genuine knowledge of cannabis products and culture
+- Comfort discussing cannabis products without stigma
+- Professional presentation that aligns with the brand's image
+- Understanding of the regulatory environment
+
+Professional event staffing for cannabis events helps operators navigate the complex intersection of event marketing and cannabis compliance while delivering the engaging consumer experiences that build brand loyalty in this rapidly evolving industry.`,
+    image: '/images/blog/cannabis-dispensary-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 20, 2026',
+    readTime: '7 min read',
+    category: 'Specialized Events',
+    tags: ['cannabis events', 'dispensary openings', 'brand launches', 'compliance staffing', 'event staffing']
+  },
+  {
+    id: 769,
+    slug: 'event-staffing-for-fashion-brand-activations-and-trunk-shows',
+    title: 'Event Staffing for Fashion Brand Activations and Trunk Shows: Stylists, Sales Associates, and Event Hosts',
+    excerpt: 'Event staffing for fashion brand activations and trunk shows requires stylish, fashion-literate brand representatives, personal stylists, and sales associates who elevate the shopping experience.',
+    content: `Event staffing for fashion brand activations and trunk shows places your brand staff at the intersection of retail, hospitality, and style. From luxury trunk shows at department stores to streetwear brand pop-ups and fashion brand experiential activations, these events need staff who embody your brand's aesthetic.
+
+## Why Fashion Events Need Specialized Staff
+
+Fashion is a visual, experiential industry where brand perception is shaped by every detail, including the people representing it. Staff at fashion events must look the part, understand current trends, and communicate brand values through both their appearance and conversation.
+
+### Key Staffing Roles
+
+**Personal Stylists** provide one-on-one styling consultations at trunk shows and shopping events. They help customers select pieces, create outfits, and discover how the brand fits their personal style. Genuine fashion knowledge and the ability to read customers' style preferences are essential.
+
+**Sales Associates for Fashion Events** drive revenue at pop-ups, sample sales, and trunk shows. They manage inventory, process transactions, and create the personalized shopping experience that fashion consumers expect. Product knowledge including fabrication, sizing, and care instructions is important.
+
+**Fashion Event Hosts** welcome guests, manage RSVPs, coordinate with PR teams, and ensure VIP guests receive appropriate attention. They set the tone for the entire event experience.
+
+**Fitting Room Attendants** manage try-on areas at fashion events, return items to the floor, and provide size and style assistance. Efficiency and discretion are key qualities.
+
+**Visual Merchandising Staff** maintain product displays, restock featured items, and ensure the event space remains aesthetically on-brand throughout the event.
+
+**Social Media and Content Staff** capture content, manage photo moments, facilitate influencer interactions, and ensure the event generates social media buzz.
+
+## Types of Fashion Events
+
+### Trunk Shows
+Designer trunk shows at retailers bring the full collection to customers, often with the designer present. Staff coordinate between the designer, retail team, and customers to maximize sales and build brand relationships.
+
+### Pop-Up Retail Experiences
+Temporary fashion retail spaces that create urgency and exclusivity. Staff manage the complete retail experience from setup through final sale.
+
+### Fashion Brand Launch Events
+New brand or collection launches combining retail with entertainment, often targeting influencers and press for maximum coverage.
+
+### Sample Sales
+High-volume, fast-paced retail events moving excess inventory at discounted prices. Staff need speed, organization, and crowd management skills.
+
+### Fashion Trade Shows
+B2B events where fashion brands present to buyers. Staff need wholesale knowledge and the ability to discuss terms, minimums, and delivery schedules.
+
+## Appearance Standards for Fashion Event Staff
+
+Fashion events have the highest appearance standards in the event staffing industry:
+- Staff must be on-trend and style-appropriate for the brand
+- Personal grooming must be impeccable
+- Many brands provide specific wardrobe or uniform guidelines
+- Staff should represent the brand's target demographic aesthetically
+- Accessories and personal style should complement, not compete with, the brand
+
+## Training Fashion Event Staff
+
+Beyond product knowledge, train staff on:
+- Brand history, philosophy, and current season themes
+- Fabrication, construction, and care details for key pieces
+- Competitor awareness and brand positioning
+- Celebrity and influencer wearing the brand
+- Photography and content guidelines
+- Customer engagement approach (consultative, not aggressive)
+
+Professional event staffing for fashion brand activations creates the elevated, on-brand experiences that turn browsers into customers and customers into brand advocates.`,
+    image: '/images/blog/fashion-brand-activation-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 20, 2026',
+    readTime: '7 min read',
+    category: 'Experiential Marketing',
+    tags: ['fashion events', 'trunk shows', 'brand activations', 'stylists', 'event staffing']
+  },
+  {
+    id: 768,
+    slug: 'how-to-build-an-event-staffing-database-and-talent-pool',
+    title: 'How to Build an Event Staffing Database and Talent Pool: Recruiting, Screening, and Retention Strategies',
+    excerpt: 'How to build an event staffing database and talent pool with proven recruiting channels, screening processes, and retention strategies that ensure you always have reliable staff available.',
+    content: `How to build an event staffing database and talent pool is the foundation of any successful event staffing operation. Whether you are a staffing agency scaling up or a brand building an in-house event team, your talent pool determines your ability to deliver quality staff consistently.
+
+## Why Your Talent Pool Is Your Most Valuable Asset
+
+In event staffing, your database of reliable, skilled professionals is your product. The quality of your talent pool directly determines client satisfaction, repeat business, and your reputation. Investing in building and maintaining this pool pays dividends across every event you staff.
+
+## Recruiting Strategies
+
+### Online Channels
+- **Job boards**: Indeed, Glassdoor, and industry-specific boards like EventStaffingJobs.com
+- **Social media**: Instagram and TikTok for brand ambassadors, LinkedIn for corporate event staff
+- **Your own career page**: A well-designed careers section with easy application process
+- **University partnerships**: Hospitality and marketing programs produce excellent event staff candidates
+- **Referral programs**: Current staff referring qualified friends and colleagues
+
+### In-Person Recruiting
+- **Open calls and casting events**: Group screening sessions for multiple candidates
+- **Event industry job fairs**: Targeted recruiting at hospitality and event industry events
+- **Campus recruiting**: On-campus presentations at hospitality and communications programs
+- **Poaching with integrity**: Recruiting talented staff you encounter at events (respect non-competes)
+
+### Building a Diverse Talent Pool
+Diversity in your talent pool is both an ethical imperative and a business advantage. Clients increasingly require diverse teams, and multilingual, multicultural staff create better connections with diverse consumer audiences.
+
+## Screening and Vetting
+
+### Application Process
+Collect comprehensive information including:
+- Professional headshots and full-body photos
+- Resume and relevant experience
+- Availability and geographic range
+- Language skills and special talents
+- Vehicle access and transportation reliability
+- References from previous event work
+
+### Interview Process
+Conduct structured interviews assessing:
+- Communication skills and presentation
+- Reliability and scheduling flexibility
+- Energy level and enthusiasm
+- Problem-solving ability
+- Brand ambassador potential (appearance, personality, poise)
+
+### Background Screening
+Implement appropriate background checks:
+- Criminal background check (required for children's events and certain venues)
+- Identity verification
+- Reference checks with previous employers or clients
+- Drug screening if required by clients or event types
+- Social media review for brand-facing roles
+
+## Database Management
+
+### Technology Platform
+Use a staffing management platform that supports:
+- Searchable staff profiles with photos, skills, and availability
+- Scheduling and shift management
+- Performance ratings and reviews
+- Communication tools (mass texts, emails, push notifications)
+- Geographic filtering for local event staffing
+- Certifications and expiration date tracking
+
+### Profile Completeness
+Maintain comprehensive profiles for each staff member:
+- Physical attributes (height, sizes for uniform ordering)
+- Languages spoken
+- Special skills (bartending, cooking, fitness instruction, etc.)
+- Certifications (TIPS, ServSafe, First Aid, etc.)
+- Client and event history
+- Performance scores and feedback
+
+## Retention Strategies
+
+### Compensation
+- Pay competitive rates that reflect experience and skill level
+- Offer pay increases for returning staff and consistent performers
+- Provide bonuses for referrals, perfect attendance, and client compliments
+- Pay promptly (weekly payment is standard in the industry)
+
+### Professional Development
+- Offer training opportunities that build marketable skills
+- Provide references and recommendations for strong performers
+- Share industry knowledge and career advancement paths
+- Create pathways from entry-level to leadership roles
+
+### Community Building
+- Host team events and appreciation gatherings
+- Create online communities for staff to connect
+- Recognize top performers publicly
+- Build a culture where staff feel valued, not disposable
+
+## Measuring Talent Pool Health
+
+Track these metrics:
+- **Active staff count**: How many staff are available and booking events
+- **Fill rate**: Percentage of positions you can fill from your database
+- **No-show rate**: Indicator of talent pool reliability
+- **Repeat booking rate**: How often clients request specific staff
+- **Time to fill**: How quickly you can staff a new request
+- **Churn rate**: How many staff leave your pool annually
+
+A healthy, growing talent pool is the engine that drives successful event staffing operations. Invest in recruiting, screening, and retaining great people, and your business will grow accordingly.`,
+    image: '/images/blog/staffing-database-talent-pool.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 19, 2026',
+    readTime: '9 min read',
+    category: 'Staffing Strategy',
+    tags: ['talent pool', 'staffing database', 'recruiting', 'staff retention', 'event staffing']
+  },
+  {
+    id: 767,
+    slug: 'event-staffing-for-spa-and-beauty-brand-events',
+    title: 'Event Staffing for Spa and Beauty Brand Events: Product Launches, Beauty Bars, and Influencer Events',
+    excerpt: 'Event staffing for spa and beauty brand events requires skilled estheticians, makeup artists, product specialists, and brand ambassadors who deliver luxurious brand experiences.',
+    content: `Event staffing for spa and beauty brand events is a specialty that combines hospitality, artistry, and product expertise. From beauty brand launch events and influencer gifting suites to spa pop-ups and department store beauty counter activations, the beauty industry needs event staff who can both serve and sell in environments where personal touch drives purchasing.
+
+## The Beauty Event Market
+
+The global beauty industry generates over $500 billion annually, and experiential marketing is a primary driver of brand discovery and loyalty. Consumers want to touch, try, and experience beauty products before purchasing, making events an essential marketing channel for beauty brands.
+
+### Key Staffing Roles
+
+**Licensed Estheticians and Makeup Artists** provide professional beauty services at events. They perform mini facials, makeup applications, skin consultations, and product demonstrations using the brand's products. These staff need valid licenses and insurance in addition to brand training.
+
+**Beauty Brand Ambassadors** represent skincare, cosmetics, and hair care brands at retail events, trade shows, and consumer activations. They need genuine product knowledge and the ability to discuss ingredients, formulations, and application techniques.
+
+**Product Sampling and Counter Staff** manage beauty counter activations at department stores, Sephora, Ulta, and other retail environments. They apply products to customers, explain benefits, and drive sales conversions.
+
+**Influencer Event Hosts** manage beauty brand events targeted at social media influencers and content creators. They coordinate gifting, facilitate content creation, and ensure influencers have everything needed for compelling posts and stories.
+
+**VIP Beauty Lounge Staff** create luxury spa experiences at events including facials, massages, manicures, and hair styling in branded treatment areas.
+
+## Types of Beauty Events
+
+### Product Launch Events
+New product introductions featuring demonstrations, sampling, influencer attendance, and media coverage. Staff showcase the new product's unique features and benefits.
+
+### Beauty Bars and Pop-Up Spas
+Temporary beauty service locations at festivals, hotels, corporate events, and retail spaces. Staff provide complimentary beauty services using the brand's products.
+
+### Beauty Trade Shows (Cosmoprof, IBE)
+Industry events where beauty brands exhibit to buyers, distributors, and media. Booth staff need B2B knowledge alongside product expertise.
+
+### Department Store Counter Events
+Brand-hosted events at beauty counters featuring special promotions, gift-with-purchase, and expert consultations. Staff supplement the regular beauty counter team.
+
+### Influencer Gifting Suites
+Curated experiences where influencers receive products and services in exchange for social media coverage. Staff facilitate smooth, content-friendly experiences.
+
+## Hygiene and Safety Standards
+
+Beauty events have strict hygiene requirements:
+- Individual product applications (no double-dipping)
+- Sanitized tools and disposable applicators
+- Hand washing and sanitizer protocols
+- Allergy awareness and patch testing for sensitive products
+- Proper product storage and temperature control
+- Clean and organized workstations at all times
+
+## Training Beauty Event Staff
+
+Staff training covers:
+- Complete product line knowledge (ingredients, benefits, usage)
+- Application techniques for the brand's key products
+- Skin type and concern assessment
+- Color matching for cosmetics
+- Allergy and sensitivity protocols
+- Brand story, values, and competitive positioning
+- Sales techniques specific to beauty retail
+
+## Measuring Beauty Event ROI
+
+Track products sold, samples distributed, email captures, social media mentions, influencer content generated, and post-event sales lift at retail locations. Beauty brands often see the highest ROI from events that combine professional service (creating a positive emotional association) with product education (enabling informed purchasing).
+
+Professional event staffing for beauty brand events creates the personalized, sensory-rich experiences that drive brand loyalty in an industry where personal connection matters more than any advertisement.`,
+    image: '/images/blog/spa-beauty-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 19, 2026',
+    readTime: '7 min read',
+    category: 'Experiential Marketing',
+    tags: ['beauty events', 'spa events', 'product launches', 'beauty brand ambassadors', 'event staffing']
+  },
+  {
+    id: 766,
+    slug: 'event-staffing-for-museum-and-gallery-events',
+    title: 'Event Staffing for Museum and Gallery Events: Openings, Exhibitions, Fundraisers, and Corporate Rentals',
+    excerpt: 'Event staffing for museum and gallery events requires culturally aware, professional staff for exhibition openings, fundraising galas, corporate rentals, and educational programming at cultural institutions.',
+    content: `Event staffing for museum and gallery events serves cultural institutions that host some of the most sophisticated events in any community. From blockbuster exhibition openings and fundraising galas to corporate rental events and educational programs, museums and galleries need event staff who match the cultural environment.
+
+## The Museum Event Market
+
+Museums and galleries host increasingly diverse events to drive attendance, raise funds, and serve their communities. Beyond traditional openings and galas, cultural institutions now host corporate events, wedding receptions, film screenings, live performances, and immersive experiences that generate significant revenue.
+
+### Key Staffing Roles
+
+**Exhibition Opening Event Staff** manage the high-profile openings of new exhibitions and installations. They greet members and donors, manage VIP areas, coordinate with media, and provide information about the exhibition. Cultural literacy and the ability to discuss art, science, or history at a general level are important.
+
+**Fundraising Gala Staff** provide premium event service for museums' most important revenue-generating events. They manage registration, auction support, table service, VIP reception, and donor relations. See our dedicated guide on nonprofit gala staffing for detailed role descriptions.
+
+**Corporate Rental Event Staff** support private events hosted at museum venues. Companies rent museum spaces for holiday parties, product launches, and client entertainment. Staff manage these events within the museum environment, respecting collection policies while delivering corporate event experiences.
+
+**Docent-Style Guides** provide tours and information during events. While not replacing trained museum docents, event guides can direct guests through galleries, share basic information about collections, and enhance the cultural experience.
+
+**Coat Check and Welcome Staff** manage practical arrival needs with the warmth and professionalism that cultural institutions expect. These are the first staff guests encounter and set the tone for the experience.
+
+**Bar and Catering Service Staff** handle food and beverage service in environments where spills near artwork could be catastrophic. Staff must understand restricted areas, appropriate beverage zones, and the heightened care required in gallery settings.
+
+## Special Considerations for Museum Events
+
+### Collection Protection
+Museums have strict rules about food and beverages near artwork, crowd density in gallery spaces, and prohibited items (large bags, umbrellas, flash photography). All event staff must be briefed on collection protection protocols.
+
+### Environmental Controls
+Museums maintain specific temperature, humidity, and lighting conditions. Event activities must not compromise these controls. Staff should understand which areas have restrictions on heat-generating equipment, additional lighting, or crowd capacity.
+
+### Noise Management
+Gallery spaces are typically quiet environments. Even during events, noise levels should be managed to protect the cultural atmosphere and avoid disturbance to other museum activities.
+
+## Types of Museum Events
+
+### Exhibition Openings
+The signature museum event, often featuring membership previews, press previews, and public opening celebrations. Staff manage multiple events across several days.
+
+### Annual Gala Fundraisers
+High-stakes events that may raise millions. Professional staffing is critical for donor experience and fundraising success.
+
+### After-Hours Events (Museums at Night)
+Evening events targeting younger audiences with cocktails, music, and interactive experiences. Staff need energy and creativity while respecting the museum setting.
+
+### Corporate Rentals
+Private events in museum spaces for 50-500+ guests. Staff bridge corporate event expectations with museum facility requirements.
+
+### Educational Programs
+Workshops, lectures, and family programs that need operations support, registration management, and hospitality services.
+
+## Training for Museum Event Staff
+
+Staff training should cover:
+- Museum-specific rules and collection protection protocols
+- General knowledge of current exhibitions and permanent collection
+- Emergency procedures specific to cultural institutions
+- Restricted areas and access control
+- Appropriate behavior and dress code in cultural settings
+- How to redirect guests who approach or touch artwork
+
+Professional event staffing for museum and gallery events ensures that cultural institutions deliver sophisticated events that match their prestige while protecting the collections and spaces that make these venues special.`,
+    image: '/images/blog/museum-gallery-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 18, 2026',
+    readTime: '7 min read',
+    category: 'Specialized Events',
+    tags: ['museum events', 'gallery openings', 'cultural events', 'fundraising galas', 'event staffing']
+  },
+  {
     id: 765,
     slug: 'event-staffing-for-home-and-garden-expos',
     title: 'Event Staffing for Home and Garden Expos: Product Demos, Booth Staff, and Lead Generation Teams',
