@@ -36,6 +36,400 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 110 ──────────────────────────────────────────────────────
+  {
+    slug: "electric-forest",
+    title: "Electric Forest Staffing | Event Staff & Brand Ambassadors",
+    h1: "Electric Forest Event Staffing & Brand Ambassadors",
+    metaDescription: "Electric Forest event staffing and brand ambassadors in Rothbury, Michigan. Air Fresh Marketing provides experienced festival staff for activations, sampling, and promotions at Electric Forest.",
+    city: "Rothbury",
+    stateAbbrev: "MI",
+    venues: ["Double JJ Resort"],
+    keywords: ["Electric Forest staffing", "Electric Forest brand ambassadors", "Rothbury festival staffing", "Electric Forest event staff"],
+    description: "Electric Forest is one of the most immersive music festivals in the world, transforming the Double JJ Resort in Rothbury, Michigan into a magical wonderland of music, art, and nature. With over 45,000 attendees camping for four days in a uniquely enchanted forest setting, brands have an extraordinary opportunity to create memorable activations that align with the festival's creative, community-driven spirit.",
+    bodyContent: `## Why Brands Activate at Electric Forest
+
+Electric Forest attracts a passionate, engaged audience that values creativity, sustainability, and authentic experiences. The festival's unique forest setting—complete with illuminated trees, interactive art installations, and curated experiences—creates a one-of-a-kind environment for brand activations that feel organic rather than intrusive.
+
+### Festival Demographics
+- **Attendance**: 45,000+ over four days
+- **Age range**: Primarily 21-35
+- **Interests**: Electronic music, jam bands, art, sustainability, wellness
+- **Spending**: High disposable income with willingness to try new products
+- **Camping**: Nearly 100% camping, creating extended brand exposure opportunities
+
+## Staffing Services for Electric Forest
+
+### Brand Activation Staff
+Our experienced festival brand ambassadors understand Electric Forest's unique culture. They engage attendees authentically while representing your brand through sampling, demonstrations, and interactive experiences in the festival's immersive environment.
+
+### Experiential Installation Staff
+Electric Forest is known for its art installations and interactive experiences. We provide trained staff to operate branded installations, guide attendees through immersive brand experiences, and maintain interactive technology throughout the four-day festival.
+
+### Sampling and Distribution Teams
+The camping environment creates multiple touchpoints for product sampling—from morning wellness products to evening refreshments. Our teams strategically distribute samples at high-traffic areas including main stages, the forest walkways, and campground entrances.
+
+### Street Team and Guerrilla Marketing
+Our street teams navigate Electric Forest's unique terrain, engaging attendees along forest pathways, at art installations, and near food vendors with creative guerrilla marketing tactics that complement the festival's aesthetic.
+
+## Electric Forest Activation Logistics
+
+The festival's rural Michigan location requires careful advance planning. Staff must be comfortable camping or commuting from nearby Muskegon hotels. We handle all logistics including staff transportation, camping accommodations, credential coordination, and equipment setup within the festival grounds.
+
+## Build Your Electric Forest Staffing Team
+
+Air Fresh Marketing has staffed brand activations at music festivals nationwide. Our Electric Forest team combines festival culture knowledge with professional brand representation skills. Contact us to build your ideal staffing team for this magical four-day experience.`,
+    staffTypes: ["Brand Ambassadors", "Experiential Staff", "Sampling Teams", "Street Teams", "Installation Operators"],
+    stats: [
+      { value: "45K+", label: "Festival Attendees" },
+      { value: "4", label: "Day Festival" },
+      { value: "100%", label: "Camping Audience" },
+      { value: "200+", label: "Artists Performing" }
+    ],
+    faqs: [
+      {
+        question: "Do Electric Forest staff need to camp on-site?",
+        answer: "Staff can either camp on-site with provided camping accommodations or commute from nearby hotels in Muskegon or Whitehall, approximately 30-45 minutes away. We coordinate all logistics for both options."
+      },
+      {
+        question: "What makes Electric Forest activations different from other festivals?",
+        answer: "Electric Forest's enchanted forest setting creates unique opportunities for immersive, nature-integrated brand experiences. Activations that embrace the festival's artistic, sustainable ethos perform best with this audience."
+      },
+      {
+        question: "How far in advance should we book staff for Electric Forest?",
+        answer: "We recommend booking at least 8-10 weeks before the festival. Electric Forest's rural location means fewer local staff options, so advance planning ensures we secure experienced personnel."
+      }
+    ],
+    logisticsInfo: "Electric Forest takes place at Double JJ Resort in Rothbury, Michigan. The nearest major airports are Gerald R. Ford International (GRR) in Grand Rapids and Muskegon County (MKG). Staff lodging options include on-site camping or hotels in Muskegon. Early credential submission is required for all brand activation staff.",
+    relatedCitySlug: "chicago",
+    relatedCityName: "Chicago",
+    heroImage: "/images/events/electric-forest-staffing.jpg"
+  },
+  {
+    slug: "life-is-beautiful",
+    title: "Life Is Beautiful Staffing | Event Staff & Brand Ambassadors",
+    h1: "Life Is Beautiful Event Staffing & Brand Ambassadors",
+    metaDescription: "Life Is Beautiful event staffing and brand ambassadors in downtown Las Vegas. Air Fresh Marketing provides experienced festival staff for activations, sampling, and promotions at Life Is Beautiful.",
+    city: "Las Vegas",
+    stateAbbrev: "NV",
+    venues: ["Downtown Las Vegas"],
+    keywords: ["Life Is Beautiful staffing", "Life Is Beautiful brand ambassadors", "Las Vegas festival staffing", "Life Is Beautiful event staff"],
+    description: "Life Is Beautiful transforms 18 blocks of downtown Las Vegas into a world-class festival experience blending music, art, comedy, and culinary delights. With over 170,000 attendees across three days, this urban festival offers brands unmatched access to a diverse, affluent audience in one of America's most iconic entertainment destinations.",
+    bodyContent: `## Why Brands Choose Life Is Beautiful
+
+Life Is Beautiful stands apart from traditional music festivals with its unique urban setting in downtown Las Vegas and its multi-disciplinary programming. The festival attracts a sophisticated audience that appreciates art, food, and culture alongside world-class musical performances, making it ideal for premium brand activations.
+
+### Festival Highlights
+- **Attendance**: 170,000+ across three days
+- **Setting**: 18 blocks of downtown Las Vegas streets
+- **Programming**: Music, art installations, comedy, culinary experiences, learning sessions
+- **Demographics**: 25-40 age range, high household income, culturally engaged
+- **Access**: Easy access from Las Vegas Strip hotels and resorts
+
+## Life Is Beautiful Staffing Solutions
+
+### Brand Ambassador Teams
+Our Las Vegas-based brand ambassadors bring energy, professionalism, and festival experience to every activation. They navigate the urban festival environment with ease, engaging attendees at intersections, near stages, and throughout the art districts.
+
+### VIP and Hospitality Staff
+Life Is Beautiful features premium VIP areas and hospitality lounges. We provide trained hospitality staff who deliver luxury service standards for brands hosting VIP experiences, private lounges, and exclusive activations.
+
+### Culinary Activation Staff
+The festival's strong culinary programming creates opportunities for food and beverage brands. Our sampling staff handle food service, product demonstrations, and tasting experiences while maintaining food safety compliance in the outdoor urban environment.
+
+### Art Installation Guides
+Life Is Beautiful features large-scale art installations and murals throughout downtown Las Vegas. We staff interactive branded art experiences with knowledgeable guides who engage attendees and drive social media sharing.
+
+### Street Team Promotions
+The festival's linear street layout creates ideal conditions for street team activations. Our teams work the festival's pedestrian corridors, engaging attendees with product samples, branded giveaways, and interactive experiences.
+
+## Urban Festival Logistics
+
+Life Is Beautiful's downtown Las Vegas location simplifies many logistics challenges. Staff can walk or rideshare from nearby hotels. However, the urban setting means navigating street closures, coordinating with venue security across multiple blocks, and managing extreme desert heat. We handle all staffing logistics including hydration supplies, shade planning, and shift rotations.
+
+## Start Planning Your Life Is Beautiful Activation
+
+Air Fresh Marketing has extensive experience staffing events in Las Vegas and at urban music festivals nationwide. Our local Las Vegas staff roster ensures we can quickly deploy experienced brand ambassadors who know the city and the festival. Contact us to discuss your Life Is Beautiful staffing needs.`,
+    staffTypes: ["Brand Ambassadors", "VIP Hospitality", "Sampling Staff", "Art Installation Guides", "Street Teams"],
+    stats: [
+      { value: "170K+", label: "Total Attendance" },
+      { value: "18", label: "City Blocks" },
+      { value: "3", label: "Day Festival" },
+      { value: "100+", label: "Musical Acts" }
+    ],
+    faqs: [
+      {
+        question: "How does staffing an urban festival differ from a traditional festival?",
+        answer: "Urban festivals like Life Is Beautiful offer easier logistics for staff (nearby hotels, rideshare access, no camping required) but present unique challenges like navigating street closures, managing extreme heat, and coordinating across multiple city blocks."
+      },
+      {
+        question: "Can you provide bilingual staff for Life Is Beautiful?",
+        answer: "Yes, Las Vegas has a diverse population and we maintain a roster of bilingual (English/Spanish) brand ambassadors who can engage Life Is Beautiful's diverse audience. We also have staff fluent in other languages."
+      },
+      {
+        question: "What is the typical shift length for festival staff?",
+        answer: "Standard shifts at Life Is Beautiful are 8-10 hours with scheduled breaks. Given the Las Vegas heat, we build in additional hydration breaks and rotate staff between shaded and exposed positions."
+      }
+    ],
+    logisticsInfo: "Life Is Beautiful takes place in downtown Las Vegas, centered around Fremont Street. Harry Reid International Airport (LAS) is 15 minutes away. Staff can stay at downtown Las Vegas hotels within walking distance. Temperature management and hydration planning are essential for September desert conditions.",
+    relatedCitySlug: "las-vegas",
+    relatedCityName: "Las Vegas",
+    heroImage: "/images/events/life-is-beautiful-staffing.jpg"
+  },
+  {
+    slug: "pax-west",
+    title: "PAX West Staffing | Event Staff & Brand Ambassadors",
+    h1: "PAX West Event Staffing & Brand Ambassadors",
+    metaDescription: "PAX West event staffing and brand ambassadors in Seattle. Air Fresh Marketing provides gaming convention staff for booth demos, brand activations, and promotions at PAX West.",
+    city: "Seattle",
+    stateAbbrev: "WA",
+    venues: ["Seattle Convention Center"],
+    keywords: ["PAX West staffing", "PAX West brand ambassadors", "Seattle gaming convention staffing", "PAX West event staff"],
+    description: "PAX West is one of the largest gaming conventions in North America, attracting over 70,000 gaming enthusiasts to the Seattle Convention Center each Labor Day weekend. For gaming companies, hardware manufacturers, and entertainment brands, PAX West offers direct access to passionate, engaged gamers who influence purchasing decisions across the gaming ecosystem.",
+    bodyContent: `## Why PAX West Is Essential for Gaming Brands
+
+PAX West is not just a convention—it is a pilgrimage for the gaming community. Attendees travel from across the country to play unreleased games, meet developers, watch esports competitions, and discover new products. The energy and enthusiasm at PAX West creates an ideal environment for brands to make lasting impressions.
+
+### Convention Profile
+- **Attendance**: 70,000+ over four days
+- **Audience**: Hardcore gamers, content creators, esports fans, developers
+- **Age range**: Primarily 18-35
+- **Content**: Game demos, panels, esports tournaments, tabletop gaming, indie showcases
+- **Media presence**: Major gaming media outlets, streamers, and YouTube creators
+
+## Gaming Convention Staffing Services
+
+### Booth Demo Staff
+Our PAX West demo staff are experienced gamers who can walk attendees through game demos, explain features, and generate excitement. They understand gaming culture, speak the language of the community, and can adapt their presentation style to casual gamers and hardcore enthusiasts alike.
+
+### Esports Event Staff
+PAX West features live esports tournaments and competitive gaming events. We provide tournament support staff, stage managers, player liaisons, and broadcast support personnel who understand competitive gaming operations.
+
+### Cosplay and Character Performers
+Gaming brands often use costumed characters at PAX West. We coordinate with professional cosplayers and performers who bring game characters to life, creating photo opportunities and social media moments that extend your brand reach beyond the convention floor.
+
+### Line Management and Queue Entertainment
+PAX West is known for long lines at popular booths. Our line management staff keep attendees engaged with trivia, giveaways, and interactive activities while waiting, reducing walkaways and improving the overall experience.
+
+### Streamer and Influencer Liaisons
+We provide dedicated staff to coordinate with content creators attending PAX West, ensuring streamers and influencers have VIP access to your booth, dedicated demo time, and content capture support.
+
+## PAX West Booth Staffing Best Practices
+
+**Know Your Audience**: PAX attendees are knowledgeable and passionate. Staff who cannot discuss gaming topics authentically will lose credibility immediately. We hire gamers to represent gaming brands.
+
+**Demo Station Management**: Efficient demo rotation is crucial at PAX. Staff should manage play times, queue systems, and station resets to maximize the number of attendees who experience your game.
+
+**Merch and Swag Distribution**: Exclusive PAX merch drives booth traffic. Staff should manage distribution strategically—using it to incentivize social media posts, email signups, or full demo completions.
+
+**Content Creator Coordination**: Dedicated influencer coordination staff ensure streamers and YouTubers get priority access and proper brand messaging integration.
+
+## Convention Floor Logistics
+
+The Seattle Convention Center requires early load-in coordination, exhibitor badge management, and compliance with convention center regulations. Our team handles staff credentialing, parking arrangements at nearby garages, and coordination with PAX event management for any special activation requirements.
+
+## Build Your PAX West Team
+
+Air Fresh Marketing staffs gaming conventions nationwide with brand ambassadors who are genuine gamers. Our PAX West teams combine gaming culture knowledge with professional brand representation. Contact us to staff your PAX West booth or activation.`,
+    staffTypes: ["Demo Staff", "Esports Support", "Character Performers", "Line Management", "Influencer Liaisons"],
+    stats: [
+      { value: "70K+", label: "Convention Attendees" },
+      { value: "4", label: "Day Convention" },
+      { value: "500+", label: "Exhibitors" },
+      { value: "#1", label: "Gaming Convention" }
+    ],
+    faqs: [
+      {
+        question: "Do you hire staff who are actual gamers for PAX West?",
+        answer: "Absolutely. All our PAX West staff are active gamers who understand gaming culture, terminology, and community norms. We screen for gaming knowledge during our hiring process to ensure authentic representation."
+      },
+      {
+        question: "Can staff manage game demo stations and troubleshoot technical issues?",
+        answer: "Our demo staff are trained on basic troubleshooting for PC, console, and VR demo stations. For complex technical issues, we coordinate with your development team, but our staff can handle common problems like controller disconnections, software resets, and display issues."
+      },
+      {
+        question: "How do you handle the long lines at popular PAX booths?",
+        answer: "We deploy dedicated line management staff who use queue entertainment (trivia, mini-games, giveaways), clear time estimates, and efficient rotation systems to keep attendees engaged and minimize walkaways."
+      }
+    ],
+    logisticsInfo: "PAX West takes place at the Seattle Convention Center in downtown Seattle. Seattle-Tacoma International Airport (SEA) is 30 minutes south. Downtown Seattle hotels are within walking distance. Staff load-in coordinates with PAX exhibitor services and requires advance badge registration.",
+    relatedCitySlug: "san-francisco",
+    relatedCityName: "San Francisco",
+    heroImage: "/images/events/pax-west-staffing.jpg"
+  },
+  {
+    slug: "essence-festival",
+    title: "Essence Festival Staffing | Event Staff & Brand Ambassadors",
+    h1: "Essence Festival Event Staffing & Brand Ambassadors",
+    metaDescription: "Essence Festival event staffing and brand ambassadors in New Orleans. Air Fresh Marketing provides experienced festival staff for activations, sampling, and promotions at Essence Fest.",
+    city: "New Orleans",
+    stateAbbrev: "LA",
+    venues: ["Caesars Superdome", "Ernest N. Morial Convention Center"],
+    keywords: ["Essence Festival staffing", "Essence Fest brand ambassadors", "New Orleans festival staffing", "Essence Festival event staff"],
+    description: "Essence Festival of Culture is the largest African American cultural event in the United States, attracting over 500,000 attendees to New Orleans each Fourth of July weekend. For brands seeking to connect with Black consumers, Essence Fest offers an unmatched opportunity to engage with an influential, high-spending audience through music, empowerment sessions, beauty experiences, and brand activations.",
+    bodyContent: `## Why Essence Festival Is a Must for Brand Activations
+
+Essence Festival is far more than a music festival—it is a cultural celebration that brings together music, empowerment, entrepreneurship, beauty, wellness, and community. The festival's dual-venue format (nighttime concerts at the Superdome and daytime experiences at the Convention Center) creates multiple touchpoints for brand engagement across four days.
+
+### Audience Profile
+- **Attendance**: 500,000+ across four days
+- **Demographics**: Primarily African American women, 25-54 age range
+- **Household income**: Above national average
+- **Spending behavior**: High discretionary spending, brand loyal, influenced by community recommendations
+- **Travel**: 85% of attendees travel from outside Louisiana, indicating high commitment and spending
+
+## Essence Festival Staffing Solutions
+
+### Brand Activation Staff
+Our brand ambassadors for Essence Fest understand the cultural significance of this event and bring authentic engagement to every interaction. We hire staff who reflect the festival's audience and can connect with attendees in a genuine, culturally relevant way.
+
+### Beauty and Wellness Activation Teams
+The Essence Beauty Carnival is one of the festival's most popular daytime attractions. We provide trained beauty staff for product demonstrations, makeovers, skin consultations, hair styling experiences, and wellness sampling activations.
+
+### Convention Center Experience Staff
+The Ernest N. Morial Convention Center hosts the daytime Essence Experience with hundreds of brand activations, stages, and interactive exhibits. Our staff manage booth operations, product demonstrations, event registration, and attendee engagement across this massive venue.
+
+### VIP and Celebrity Event Staff
+Essence Fest attracts major celebrity appearances and VIP events. We provide discreet, professional hospitality staff for private parties, brand-hosted dinners, and VIP reception events throughout the weekend.
+
+### Nighttime Concert Activation Staff
+The Superdome concerts draw 70,000+ nightly. We staff branded activations in the Superdome concourses and surrounding areas, managing high-volume sampling, giveaway distribution, and interactive brand experiences during concert nights.
+
+## Culturally Relevant Staffing
+
+Essence Festival requires staff who understand and respect the cultural significance of this gathering. Our hiring process for Essence Fest prioritizes:
+
+- **Cultural competency**: Staff who understand the importance and history of Essence Festival
+- **Authentic representation**: Diverse teams that reflect the festival's audience
+- **Community engagement skills**: Staff who can build genuine connections, not just hand out samples
+- **Brand storytelling**: The ability to communicate how brands serve and support the Black community
+
+## New Orleans Event Logistics
+
+New Orleans during Fourth of July weekend is hot, humid, and packed with activity. Our logistics planning addresses:
+
+- **Heat management**: Hydration stations, cooling breaks, and UV protection for outdoor staff
+- **Transportation**: Coordination between the Superdome and Convention Center venues
+- **Hotel accommodations**: Advance booking for staff housing during this peak tourism period
+- **Credential management**: Separate credentials for convention center and Superdome access
+
+## Partner with Air Fresh Marketing for Essence Fest
+
+Air Fresh Marketing has extensive experience staffing major cultural events and festivals in New Orleans and nationwide. Our culturally diverse roster of brand ambassadors ensures authentic representation at Essence Festival. Contact us to discuss your staffing needs for this incredible event.`,
+    staffTypes: ["Brand Ambassadors", "Beauty Activation Staff", "Convention Staff", "VIP Hospitality", "Concert Activation Teams"],
+    stats: [
+      { value: "500K+", label: "Total Attendance" },
+      { value: "4", label: "Day Festival" },
+      { value: "70K+", label: "Nightly Concerts" },
+      { value: "#1", label: "Black Cultural Event" }
+    ],
+    faqs: [
+      {
+        question: "Why is culturally competent staffing important for Essence Festival?",
+        answer: "Essence Festival is the premier celebration of Black culture in America. Brands that show up with staff who understand and respect this significance build genuine connections with attendees. Culturally competent staff drive higher engagement rates and more authentic brand perceptions."
+      },
+      {
+        question: "Can you staff both the Convention Center and Superdome activations?",
+        answer: "Yes, we coordinate staff across both Essence Festival venues. We manage scheduling, transportation between venues, and credential access to ensure seamless operations across the daytime Convention Center experience and nighttime Superdome concerts."
+      },
+      {
+        question: "How do you handle the heat at Essence Festival?",
+        answer: "July in New Orleans requires serious heat management. We implement mandatory hydration breaks, provide cooling supplies, rotate staff between indoor and outdoor positions, and schedule shorter shifts during peak afternoon heat."
+      }
+    ],
+    logisticsInfo: "Essence Festival takes place at the Caesars Superdome and Ernest N. Morial Convention Center in New Orleans. Louis Armstrong New Orleans International Airport (MSY) is 20 minutes from downtown. Staff housing should be booked months in advance due to extreme hotel demand during this Fourth of July weekend event.",
+    relatedCitySlug: "miami",
+    relatedCityName: "Miami",
+    heroImage: "/images/events/essence-festival-staffing.jpg"
+  },
+  {
+    slug: "new-york-fashion-week",
+    title: "New York Fashion Week Staffing | Event Staff & Brand Ambassadors",
+    h1: "New York Fashion Week Event Staffing & Brand Ambassadors",
+    metaDescription: "New York Fashion Week event staffing and brand ambassadors in NYC. Air Fresh Marketing provides experienced fashion event staff for shows, activations, and brand experiences during NYFW.",
+    city: "New York",
+    stateAbbrev: "NY",
+    venues: ["Spring Studios", "The Shed", "Various Manhattan Venues"],
+    keywords: ["New York Fashion Week staffing", "NYFW brand ambassadors", "fashion week event staff", "NYFW event staffing"],
+    description: "New York Fashion Week is the world's premier fashion event, attracting over 230,000 attendees across two weeks of runway shows, brand presentations, pop-up experiences, and industry events throughout Manhattan. For fashion, beauty, luxury, and lifestyle brands, NYFW provides unmatched access to industry decision-makers, media, influencers, and fashion-forward consumers.",
+    bodyContent: `## Why Brands Invest in NYFW Activations
+
+New York Fashion Week generates billions in media impressions and sets trends that influence global consumer behavior. Beyond the runway shows, NYFW has evolved into a brand activation playground where companies create immersive experiences that reach both industry insiders and fashion-conscious consumers.
+
+### NYFW By the Numbers
+- **Attendees**: 230,000+ across all events
+- **Media**: 1,500+ accredited journalists and photographers
+- **Influencers**: Thousands of fashion influencers and content creators
+- **Economic impact**: $900+ million to New York City
+- **Social media**: Billions of impressions across platforms
+
+## NYFW Staffing Services
+
+### Runway Show Staff
+We provide front-of-house staff for runway presentations including guest check-in, seating coordination, VIP management, and gift bag distribution. Our staff understand fashion event etiquette and present with the polish that NYFW demands.
+
+### Brand Pop-Up Experience Staff
+NYFW pop-up shops and brand experiences throughout Manhattan require staff who combine retail expertise with fashion industry knowledge. We provide brand ambassadors for experiential retail activations, product launches, and interactive brand installations.
+
+### VIP and Celebrity Liaison Staff
+NYFW attracts A-list celebrities, top models, and influential editors. We provide discreet, professional VIP liaison staff who manage celebrity arrivals, escort VIPs between events, and ensure seamless hospitality at private brand events.
+
+### Influencer and Press Event Staff
+Brand-hosted dinners, cocktail parties, and influencer events during NYFW require sophisticated hospitality staff. Our team manages guest registration, coat check, gift distribution, and event flow for intimate and large-scale media events.
+
+### Street Style and Guerrilla Marketing Teams
+The streets around NYFW venues are filled with photographers and fashion enthusiasts. Our street teams execute guerrilla marketing activations, product sampling, and brand moments that generate organic social media coverage.
+
+## Fashion Event Staffing Standards
+
+NYFW staffing demands a higher standard of presentation than typical event staffing:
+
+**Appearance**: Staff must meet fashion industry appearance standards. This includes specific grooming requirements, the ability to wear designer or high-fashion uniforms, and a polished, editorial aesthetic.
+
+**Discretion**: Many NYFW events involve celebrities, unreleased collections, and confidential brand information. Staff must sign NDAs and maintain complete discretion.
+
+**Industry Knowledge**: Staff should understand basic fashion terminology, designer names, and industry etiquette. Guests at NYFW events expect staff who are part of the fashion world.
+
+**Multilingual Capabilities**: NYFW attracts international attendees. We provide staff fluent in French, Italian, Mandarin, Spanish, and other languages commonly spoken in the global fashion industry.
+
+## NYFW Venue Logistics
+
+Fashion Week events happen across dozens of Manhattan venues simultaneously. Our logistics team manages:
+
+- **Multi-venue coordination**: Staff deployment across Spring Studios, The Shed, Pier 59, and various pop-up locations
+- **Quick turnarounds**: Staff who can transition between morning shows, afternoon events, and evening parties
+- **Transportation**: Coordination of staff movement between venues via car service during peak Fashion Week traffic
+- **Wardrobe changes**: Managing uniform or outfit changes for staff working multiple events
+
+## Staff Your NYFW Activation
+
+Air Fresh Marketing staffs New York Fashion Week events with experienced professionals who understand the fashion industry's unique demands. From intimate press dinners to large-scale brand activations, our team delivers the polished, sophisticated service that NYFW requires. Contact us to plan your Fashion Week staffing.`,
+    staffTypes: ["Runway Show Staff", "Pop-Up Experience Staff", "VIP Liaisons", "Press Event Staff", "Street Teams"],
+    stats: [
+      { value: "230K+", label: "Total Attendees" },
+      { value: "2", label: "Week Event" },
+      { value: "1,500+", label: "Media Credentials" },
+      { value: "$900M+", label: "Economic Impact" }
+    ],
+    faqs: [
+      {
+        question: "What appearance standards do NYFW staff need to meet?",
+        answer: "NYFW demands staff with a polished, fashion-forward appearance. We select brand ambassadors who meet the aesthetic requirements of each specific client and event, including grooming standards, ability to wear designer uniforms, and an overall editorial presentation."
+      },
+      {
+        question: "Can you provide staff who speak multiple languages for international guests?",
+        answer: "Yes, our New York roster includes brand ambassadors fluent in French, Italian, Spanish, Mandarin, Japanese, Korean, Arabic, and other languages commonly spoken by NYFW's international audience."
+      },
+      {
+        question: "How do you staff multiple NYFW events happening simultaneously?",
+        answer: "We maintain a large roster of fashion event professionals in New York and coordinate scheduling across multiple venues and clients. Our logistics team manages transportation, wardrobe changes, and shift rotations to ensure seamless coverage across all your NYFW activations."
+      }
+    ],
+    logisticsInfo: "New York Fashion Week events take place across multiple Manhattan venues including Spring Studios in Tribeca, The Shed at Hudson Yards, and various locations throughout the city. JFK, LaGuardia, and Newark airports serve the area. Staff transportation between venues is coordinated via car service during Fashion Week.",
+    relatedCitySlug: "new-york",
+    relatedCityName: "New York City",
+    heroImage: "/images/events/nyfw-staffing.jpg"
+  },
   // ─────────────────────────────────────────────────────────────────
   // Arnold Sports Festival — Columbus, OH
   // ─────────────────────────────────────────────────────────────────
