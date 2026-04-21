@@ -37,6 +37,192 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Lovers & Friends Festival — Las Vegas, NV
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "lovers-and-friends-festival",
+    title: "Lovers & Friends Festival Staffing | Brand Ambassadors & Event Staff Las Vegas",
+    h1: "Lovers & Friends Festival Staffing",
+    metaDescription: "Lovers & Friends Festival staffing services in Las Vegas. Professional brand ambassadors, promotional models, and event staff for R&B and hip-hop festival activations.",
+    city: "Las Vegas",
+    stateAbbrev: "NV",
+    venues: ["Las Vegas Festival Grounds"],
+    keywords: ["Lovers and Friends festival staffing", "Las Vegas R&B festival staff", "Lovers Friends brand ambassadors", "hip-hop festival staffing Las Vegas"],
+    description: "Lovers & Friends Festival is a massive R&B and hip-hop nostalgia festival held in Las Vegas. Drawing 50,000+ fans celebrating 90s and 2000s music, the festival offers unique activation opportunities for brands targeting the 25-45 millennial demographic.",
+    bodyContent: `<h2>Lovers & Friends Festival Staffing Services in Las Vegas</h2>
+<p>Lovers & Friends Festival staffing requires brand ambassadors who connect with a millennial audience celebrating R&B and hip-hop nostalgia. This single-day mega-festival consistently sells out, creating high-density activation opportunities for beverage, fashion, beauty, and lifestyle brands targeting the 25-45 demographic.</p>
+<h3>Activation Opportunities at Lovers & Friends</h3>
+<p>The festival's nostalgic theme creates unique brand activation possibilities. Brands that tap into 90s and 2000s nostalgia see exceptional engagement. Photo experiences, throwback-themed sampling, and lifestyle lounges are top-performing activation formats.</p>
+<h3>Why This Audience Matters</h3>
+<p>Lovers & Friends attendees represent a highly valuable consumer segment: established professionals with disposable income who are passionate about music and culture. They're brand-conscious and willing to engage with activations that feel authentic to the event's vibe.</p>
+<h3>Las Vegas Festival Staffing</h3>
+<p>Our <a href="/cities/las-vegas">Las Vegas event staffing team</a> provides experienced professionals for all major Las Vegas festivals including <a href="/staffing-for/edc-las-vegas">EDC</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio</a>, and <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>. <a href="/get-quote">Get a quote</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Promotional Models", "Sampling Staff", "VIP Hosts", "Street Teams"],
+    stats: [
+      { label: "Attendance", value: "50,000+" },
+      { label: "Days", value: "1" },
+      { label: "Age Demo", value: "25-45" }
+    ],
+    faqs: [
+      { question: "When is Lovers & Friends Festival?", answer: "Lovers & Friends takes place in May at the Las Vegas Festival Grounds." },
+      { question: "What brands activate at Lovers & Friends?", answer: "Beverage brands, fashion labels, beauty companies, and lifestyle brands targeting the millennial R&B/hip-hop audience regularly activate at this festival." },
+      { question: "How many staff do I need for Lovers & Friends?", answer: "For a standard brand activation, we recommend 6-10 staff for this high-attendance single-day festival." }
+    ],
+    logisticsInfo: "Las Vegas Festival Grounds is near the Strip with full hospitality infrastructure. Single-day format means intense staffing over 10-12 hours.",
+    relatedCitySlug: "las-vegas",
+    relatedCityName: "Las Vegas",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Firefly Festival (Redundant check: already exists as firefly-music-festival)
+  // Using: Sonic Temple Art + Music Festival — Columbus, OH
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "sonic-temple",
+    title: "Sonic Temple Festival Staffing | Brand Ambassadors & Event Staff Columbus OH",
+    h1: "Sonic Temple Festival Staffing",
+    metaDescription: "Sonic Temple Art + Music Festival staffing services in Columbus, Ohio. Professional brand ambassadors, event staff, and promotional models for rock festival activations.",
+    city: "Columbus",
+    stateAbbrev: "OH",
+    venues: ["Historic Crew Stadium", "MAPFRE Stadium"],
+    keywords: ["Sonic Temple staffing", "Columbus rock festival staff", "Sonic Temple brand ambassadors", "Ohio music festival staffing"],
+    description: "Sonic Temple Art + Music Festival is the Midwest's premier rock and metal festival held in Columbus, Ohio. The multi-day festival draws passionate rock fans for activations perfectly suited to energy drink, automotive, lifestyle, and entertainment brands.",
+    bodyContent: `<h2>Sonic Temple Art + Music Festival Staffing in Columbus</h2>
+<p>Sonic Temple Festival staffing requires high-energy professionals who understand the rock and heavy music community. This Columbus-based festival brings together rock, metal, and alternative fans for a multi-day experience. Brand ambassadors and event staff must match the audience's intensity and authenticity.</p>
+<h3>Brands That Thrive at Rock Festivals</h3>
+<p>Energy drinks, automotive brands, spirits companies, and lifestyle brands with edgy positioning see strong engagement at Sonic Temple. The rock festival audience is fiercely loyal to brands that authentically support their community.</p>
+<h3>Festival Staffing Roles</h3>
+<p>Air Fresh Marketing provides brand ambassadors, sampling teams, merchandise staff, and activation coordinators for Sonic Temple's unique festival environment. Our staff understand the rock festival culture and engage attendees authentically.</p>
+<h3>Ohio Event Staffing</h3>
+<p>Our Midwest staffing network covers Columbus and all major Ohio events. <a href="/get-quote">Request Sonic Temple staffing</a> for your rock festival activation.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Street Teams", "Event Staff", "Merchandise Staff"],
+    stats: [
+      { label: "Attendance", value: "40,000+" },
+      { label: "Days", value: "3" },
+      { label: "Genre", value: "Rock/Metal" }
+    ],
+    faqs: [
+      { question: "When is Sonic Temple Festival?", answer: "Sonic Temple takes place in May at Historic Crew Stadium in Columbus, Ohio." },
+      { question: "What type of staff works rock festivals?", answer: "We provide high-energy brand ambassadors and event staff who authentically connect with the rock and metal community." },
+      { question: "Do you staff other rock festivals?", answer: "Yes, we staff rock festivals nationwide including Welcome to Rockville, Aftershock, Riot Fest, and more." }
+    ],
+    logisticsInfo: "Historic Crew Stadium in Columbus provides stadium infrastructure with outdoor festival grounds. Late May weather is typically warm with potential for rain.",
+    relatedCitySlug: "columbus",
+    relatedCityName: "Columbus",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Just Like Heaven Festival — Long Beach, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "just-like-heaven",
+    title: "Just Like Heaven Festival Staffing | Brand Ambassadors & Event Staff Long Beach CA",
+    h1: "Just Like Heaven Festival Staffing",
+    metaDescription: "Just Like Heaven festival staffing in Long Beach, California. Professional brand ambassadors and event staff for indie music festival activations.",
+    city: "Long Beach",
+    stateAbbrev: "CA",
+    venues: ["Queen Mary Events Park", "Long Beach Waterfront"],
+    keywords: ["Just Like Heaven festival staffing", "Long Beach festival staff", "indie music festival staffing", "JLH festival brand ambassadors"],
+    description: "Just Like Heaven is an indie and alternative music festival on the Long Beach waterfront. The curated single-day festival attracts a discerning music audience that responds to authentic, creative brand activations.",
+    bodyContent: `<h2>Just Like Heaven Festival Staffing in Long Beach</h2>
+<p>Just Like Heaven festival staffing demands brand ambassadors who connect with the indie music community. This carefully curated single-day festival on the Long Beach waterfront draws music fans who value authenticity and creativity. Brand activations must match this aesthetic to succeed.</p>
+<h3>The Indie Festival Audience</h3>
+<p>Just Like Heaven attendees are culturally aware, trend-forward consumers who discover new brands through experiences rather than advertising. They're early adopters who influence their social circles.</p>
+<h3>Activation Best Practices</h3>
+<p>Art-forward installations, sustainable product showcases, and immersive listening experiences outperform traditional sampling at indie festivals. Our staff understand how to engage this audience with subtlety and authenticity.</p>
+<h3>Southern California Staff</h3>
+<p>Our <a href="/cities/los-angeles">Los Angeles staffing team</a> covers Long Beach and all Southern California events including <a href="/staffing-for/coachella">Coachella</a> and <a href="/staffing-for/kaaboo-festival">KAABOO</a>. <a href="/get-quote">Get a quote</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Event Staff", "Promotional Models"],
+    stats: [
+      { label: "Attendance", value: "20,000+" },
+      { label: "Days", value: "1" },
+      { label: "Genre", value: "Indie/Alt" }
+    ],
+    faqs: [
+      { question: "When is Just Like Heaven?", answer: "Just Like Heaven takes place in May at the Queen Mary Events Park in Long Beach, California." },
+      { question: "What makes indie festival staffing different?", answer: "Indie festival audiences value authenticity. Our staff are selected for cultural awareness and ability to engage without being overly promotional." },
+      { question: "Do you cover Long Beach events?", answer: "Yes, our Los Angeles metro staffing team covers all Long Beach and Southern California events." }
+    ],
+    logisticsInfo: "Queen Mary Events Park on the Long Beach waterfront offers scenic ocean views. Staff should prepare for mild coastal weather and waterfront conditions.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Primo Music Festival — check: using Two Step Inn — Georgetown, TX
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "two-step-inn",
+    title: "Two Step Inn Festival Staffing | Brand Ambassadors & Event Staff Georgetown TX",
+    h1: "Two Step Inn Festival Staffing",
+    metaDescription: "Two Step Inn country music festival staffing near Austin, Texas. Professional brand ambassadors and event staff for country festival activations in Georgetown.",
+    city: "Georgetown",
+    stateAbbrev: "TX",
+    venues: ["San Gabriel Park", "Georgetown Festival Grounds"],
+    keywords: ["Two Step Inn staffing", "Georgetown festival staff", "Texas country festival staffing", "Two Step Inn brand ambassadors"],
+    description: "Two Step Inn is a country music festival near Austin, Texas that brings together mainstream and emerging country artists. The family-friendly, boot-scootin' atmosphere creates perfect opportunities for lifestyle, beverage, and outdoor brands.",
+    bodyContent: `<h2>Two Step Inn Festival Staffing Near Austin, Texas</h2>
+<p>Two Step Inn festival staffing requires professionals who embrace country music culture and the Texas lifestyle. Located just north of Austin in Georgetown, this country festival draws fans from across Texas and beyond. Brand ambassadors must be comfortable in cowboy boots and connect authentically with the country music community.</p>
+<h3>Country Festival Activation Opportunities</h3>
+<p>Country music festivals like Two Step Inn attract a loyal, brand-conscious audience. Western wear, bourbon and beer brands, truck manufacturers, and outdoor lifestyle companies see exceptional engagement. The family-friendly atmosphere also creates opportunities for CPG and food brands.</p>
+<h3>Texas Festival Staffing</h3>
+<p>Air Fresh Marketing provides experienced festival staff throughout Texas. Our teams have staffed events at <a href="/staffing-for/austin-city-limits">Austin City Limits</a>, <a href="/staffing-for/houston-rodeo">Houston Rodeo</a>, and festivals across the Lone Star State.</p>
+<h3>Book Festival Staff</h3>
+<p>Our <a href="/cities/austin">Austin staffing team</a> covers Georgetown and the entire Central Texas region. <a href="/get-quote">Request Two Step Inn staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Event Staff", "Hospitality Staff", "Street Teams"],
+    stats: [
+      { label: "Attendance", value: "30,000+" },
+      { label: "Days", value: "2" },
+      { label: "Genre", value: "Country" }
+    ],
+    faqs: [
+      { question: "When is Two Step Inn?", answer: "Two Step Inn takes place in April at San Gabriel Park in Georgetown, Texas, about 30 miles north of Austin." },
+      { question: "What brands activate at country music festivals?", answer: "Western wear, bourbon and beer brands, truck manufacturers, outdoor brands, and CPG companies see strong results at country festivals." },
+      { question: "Do your staff understand country music culture?", answer: "Yes, we recruit staff who are authentic fans of country music and comfortable in the festival's Western atmosphere." }
+    ],
+    logisticsInfo: "San Gabriel Park in Georgetown is a 30-minute drive north of Austin. April weather in Texas can be warm with potential for spring storms.",
+    relatedCitySlug: "austin",
+    relatedCityName: "Austin",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Dreamville Festival — Raleigh, NC
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "dreamville-festival",
+    title: "Dreamville Festival Staffing | Brand Ambassadors & Event Staff Raleigh NC",
+    h1: "Dreamville Festival Staffing",
+    metaDescription: "Dreamville Festival staffing services in Raleigh, North Carolina. Professional brand ambassadors, promotional models, and event staff for J. Cole's Dreamville Fest.",
+    city: "Raleigh",
+    stateAbbrev: "NC",
+    venues: ["Dorothea Dix Park", "Raleigh Festival Grounds"],
+    keywords: ["Dreamville Festival staffing", "Raleigh festival staff", "Dreamville brand ambassadors", "J Cole festival staffing"],
+    description: "Dreamville Festival is J. Cole's signature hip-hop music festival in Raleigh, North Carolina. The festival draws a passionate, young hip-hop audience and offers premium brand activation opportunities for lifestyle, beverage, and entertainment brands.",
+    bodyContent: `<h2>Dreamville Festival Staffing Services in Raleigh</h2>
+<p>Dreamville Festival staffing requires brand ambassadors who authentically connect with the hip-hop community. Founded by rapper J. Cole, this Raleigh-based festival has grown into one of the most anticipated hip-hop events on the East Coast. Staff must understand hip-hop culture and engage the festival's passionate, primarily 18-35 audience.</p>
+<h3>Why Brands Activate at Dreamville</h3>
+<p>Dreamville Festival offers direct access to engaged hip-hop fans in a market outside the typical festival circuit. The Raleigh location draws attendees from across the Southeast, creating activation opportunities for brands targeting the region's young, diverse population.</p>
+<h3>Festival Activation Formats</h3>
+<p>Popular activations at Dreamville include lifestyle lounges, sneaker customization stations, social media content booths, and beverage sampling experiences. The community-focused atmosphere rewards brands that show genuine appreciation for hip-hop culture.</p>
+<h3>North Carolina Event Staffing</h3>
+<p>Our Southeast staffing network covers Raleigh and all major North Carolina events. <a href="/get-quote">Request Dreamville Festival staffing</a> for your activation.</p>`,
+    staffTypes: ["Brand Ambassadors", "Promotional Models", "Sampling Staff", "Street Teams", "VIP Hosts"],
+    stats: [
+      { label: "Attendance", value: "40,000+" },
+      { label: "Days", value: "1" },
+      { label: "Age Demo", value: "18-35" }
+    ],
+    faqs: [
+      { question: "When is Dreamville Festival?", answer: "Dreamville Festival typically takes place in April at Dorothea Dix Park in Raleigh, North Carolina." },
+      { question: "What type of staff works Dreamville?", answer: "We provide culturally fluent brand ambassadors who authentically connect with the hip-hop audience." },
+      { question: "Do you provide diverse staffing for Dreamville?", answer: "Absolutely. We prioritize diverse staffing that reflects the event's audience demographics and cultural context." }
+    ],
+    logisticsInfo: "Dorothea Dix Park is located in central Raleigh with city infrastructure nearby. April weather in North Carolina is typically warm and pleasant.",
+    relatedCitySlug: "raleigh",
+    relatedCityName: "Raleigh",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Kaaboo Festival — San Diego, CA
   // ─────────────────────────────────────────────────────────────────
   {
