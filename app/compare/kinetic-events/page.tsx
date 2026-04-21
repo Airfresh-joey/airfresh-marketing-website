@@ -360,6 +360,9 @@ export default function CompareKineticEvents() {
             { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
             { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
             { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
+            { href: '/compare/mosaic-experiential', label: 'AirFresh vs Mosaic Experiential' },
+            { href: '/compare/pro-motion-staffing', label: 'AirFresh vs Pro Motion' },
+            { href: '/compare/advantage-solutions', label: 'AirFresh vs Advantage Solutions' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />

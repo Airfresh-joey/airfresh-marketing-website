@@ -1143,6 +1143,21 @@ export default function EventStaffingAgencyPage() {
               <Link href="/brand-activation-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Brand Activation Agency
               </Link>
+              <Link href="/compare/atn-event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs ATN Event Staffing
+              </Link>
+              <Link href="/compare/elev8-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Elev8 Staffing
+              </Link>
+              <Link href="/compare/mosaic-experiential" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Mosaic Experiential
+              </Link>
+              <Link href="/compare/pro-motion-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Pro Motion
+              </Link>
+              <Link href="/compare/advantage-solutions" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Advantage Solutions
+              </Link>
               <Link href="/pricing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Pricing
               </Link>

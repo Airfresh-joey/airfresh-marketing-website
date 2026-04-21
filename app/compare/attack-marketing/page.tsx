@@ -319,6 +319,9 @@ export default function CompareAttackMarketing() {
               { href: '/corporate-event-staffing', label: 'Corporate Event Staffing' },
               { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
               { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
+              { href: '/compare/mosaic-experiential', label: 'AirFresh vs Mosaic Experiential' },
+              { href: '/compare/pro-motion-staffing', label: 'AirFresh vs Pro Motion' },
+              { href: '/compare/advantage-solutions', label: 'AirFresh vs Advantage Solutions' },
             ].map((link) => (
               <Link key={link.href} href={link.href} className="text-white/70 hover:text-cyan-200 text-sm transition-colors">
                 {link.label}
