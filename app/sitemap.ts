@@ -160,6 +160,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/services/food-beverage-sampling`, lastModified: today, changeFrequency: 'weekly', priority: 0.85 },
     { url: `${DOMAIN}/event-staffing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/hire-brand-ambassadors`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/brand-ambassador-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/experiential-marketing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/careers/experience-manager`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/careers/technical-intern`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${DOMAIN}/legal/privacy-policy`, lastModified: today, changeFrequency: 'yearly', priority: 0.3 },
