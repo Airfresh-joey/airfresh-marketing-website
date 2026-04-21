@@ -36,6 +36,228 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 135 ──────────────────────────────────────────────────────
+  {
+    slug: 'ultra-music-festival-miami',
+    title: 'Ultra Music Festival Staffing | Brand Ambassadors & Event Staff in Miami',
+    h1: 'Ultra Music Festival Staffing: Brand Ambassadors and Event Staff for Miami\'s Premier EDM Festival',
+    metaDescription: 'Ultra Music Festival staffing services provide trained brand ambassadors, promotional models, and event staff for activations at Miami\'s iconic EDM festival. Get a free quote.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Bayfront Park', 'Main Stage', 'Live Stage', 'Worldwide Stage', 'UMF Radio Stage'],
+    keywords: ['Ultra Music Festival staffing', 'Ultra Miami event staff', 'Ultra brand ambassadors', 'EDM festival staffing Miami', 'Ultra Music Festival promotional staff'],
+    description: 'Ultra Music Festival is one of the world\'s premier electronic dance music festivals, attracting 170,000+ attendees over three days in Miami\'s Bayfront Park. The festival features the biggest names in EDM alongside massive brand activations.',
+    bodyContent: `<h2>Ultra Music Festival Staffing for Brand Activations in Miami</h2>
+<p>Ultra Music Festival staffing requires staff who thrive in the high-energy, visually stunning world of electronic dance music. With 170,000+ attendees across three days in downtown Miami's Bayfront Park, Ultra offers brands massive exposure to a young, affluent, trend-setting audience.</p>
+<p>Air Fresh Marketing provides experienced event staff for Ultra Music Festival activations including brand ambassadors, product samplers, VIP hosts, and promotional teams. Our Miami team knows the festival inside and out—from the Bayfront Park layout to the unique logistics of downtown Miami during Ultra weekend.</p>
+<h2>Why Brands Activate at Ultra Music Festival</h2>
+<p>Ultra's audience skews 18-34, affluent, and heavily active on social media. The festival's visual spectacle—massive LED stages, pyrotechnics, and world-class production—creates a content-rich environment where brand activations benefit from the overall energy and aesthetics. Sponsors like Heineken, FIJI Water, and major tech brands invest significantly in Ultra activations.</p>
+<h2>Key Staffing Roles for Ultra Activations</h2>
+<ul>
+<li><strong>Brand Ambassadors</strong>: High-energy staff who engage festival-goers at sponsor booths and experiential zones across Bayfront Park</li>
+<li><strong>Product Samplers</strong>: Distribute beverages, snacks, and consumer products to the festival crowd between sets</li>
+<li><strong>VIP and Ultra Passport Hosts</strong>: Manage premium areas and exclusive brand experiences for VIP ticket holders</li>
+<li><strong>Promotional Models</strong>: Create visual impact and generate social media content at brand activations</li>
+<li><strong>Setup and Teardown Crews</strong>: Build and break down brand installations in Bayfront Park</li>
+</ul>
+<h2>Ultra Festival Staffing Logistics</h2>
+<p>Ultra's downtown Miami location creates unique logistics: limited parking, heavy traffic, and strict credential controls. Our team coordinates staff transportation, manages credential distribution, and handles the heat and humidity of Miami in March. We plan for extended outdoor exposure and ensure staff stay energized through long festival days.</p>`,
+    staffTypes: ['Brand Ambassadors', 'Product Samplers', 'VIP Hosts', 'Promotional Models', 'Setup Crews', 'Street Teams'],
+    stats: [
+      { value: '170K+', label: 'Attendees' },
+      { value: '3', label: 'Festival Days' },
+      { value: '8', label: 'Stages' },
+      { value: '100+', label: 'Artists' }
+    ],
+    faqs: [
+      { q: 'Where is Ultra Music Festival held?', a: 'Ultra Music Festival takes place at Bayfront Park in downtown Miami, Florida. The waterfront venue provides a stunning backdrop for one of the world\'s largest EDM festivals.' },
+      { q: 'What type of brands activate at Ultra?', a: 'Beverage brands, tech companies, fashion labels, audio equipment manufacturers, and lifestyle brands are the most active sponsors at Ultra Music Festival.' },
+      { q: 'How many staff do I need for Ultra?', a: 'Typical Ultra activations require 6-15 staff per day. Large experiential installations may need 20+ staff including setup crews and management.' },
+      { q: 'When should I book Ultra staffing?', a: 'Book at least 8-10 weeks before the festival. Ultra weekend is one of Miami\'s biggest events and premium event staff book early.' }
+    ],
+    logisticsInfo: 'Ultra Music Festival is at Bayfront Park in downtown Miami. Staff access via public transit (Metromover to Bayfront Park station) is recommended as parking is extremely limited. Festival hours run noon to midnight. Miami\'s March weather is warm and humid—staff need hydration and sun protection.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/events/ultra-music-festival.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'kentucky-derby',
+    title: 'Kentucky Derby Staffing | Brand Ambassadors & Event Staff in Louisville',
+    h1: 'Kentucky Derby Staffing: Brand Ambassadors and Event Staff for America\'s Most Iconic Horse Race',
+    metaDescription: 'Kentucky Derby staffing services provide trained brand ambassadors, promotional models, and event staff for activations at Churchill Downs and Derby Week events. Get a free quote.',
+    city: 'Louisville',
+    stateAbbrev: 'KY',
+    venues: ['Churchill Downs', 'Louisville Downtown', 'NuLu District', 'Whiskey Row'],
+    keywords: ['Kentucky Derby staffing', 'Churchill Downs event staff', 'Derby Day brand ambassadors', 'Louisville event staffing', 'Kentucky Derby promotional staff'],
+    description: 'The Kentucky Derby is America\'s most prestigious horse racing event, drawing 150,000+ spectators to Churchill Downs and hundreds of thousands more to Derby Week celebrations across Louisville. The event combines sport, fashion, and celebration.',
+    bodyContent: `<h2>Kentucky Derby Staffing for Brands and Sponsors</h2>
+<p>Kentucky Derby staffing connects brands with one of America's most culturally significant sporting events. With 150,000+ attendees at Churchill Downs and Derby Week festivities drawing hundreds of thousands more across Louisville, the Kentucky Derby offers unique brand activation opportunities that combine sport, fashion, and Southern hospitality.</p>
+<p>Air Fresh Marketing provides professional event staff for Kentucky Derby activations including brand ambassadors, VIP hospitality staff, product samplers, and promotional teams for both Churchill Downs events and the broader Derby Week celebration.</p>
+<h2>Derby Week: More Than Just Race Day</h2>
+<p>While the Kentucky Derby race itself lasts just two minutes, Derby Week spans nearly two weeks of events: the Kentucky Oaks, Thunder Over Louisville, the Barnstable Brown Gala, Taste of Derby, and countless brand-sponsored parties. Each event presents distinct activation opportunities with different audiences and atmospheres.</p>
+<h2>Key Staffing Roles for Derby Events</h2>
+<ul>
+<li><strong>VIP Hospitality Hosts</strong>: Manage premium hospitality suites, Millionaires Row, and exclusive brand lounges at Churchill Downs</li>
+<li><strong>Brand Ambassadors</strong>: Represent sponsors at the infield, grandstand areas, and Derby Week events throughout Louisville</li>
+<li><strong>Beverage Sampling Staff</strong>: Distribute mint juleps, bourbon brands, and other beverage samples (21+ with TIPS certification)</li>
+<li><strong>Fashion and Lifestyle Models</strong>: Support fashion brand activations—the Derby is as much about hats and fashion as it is about horses</li>
+<li><strong>Registration and Credential Staff</strong>: Manage VIP access, credential verification, and guest list operations</li>
+</ul>
+<h2>Kentucky Derby Staffing Logistics</h2>
+<p>The Derby's unique atmosphere—combining high fashion, bourbon culture, and Southern tradition—requires staff who can navigate both the refined Millionaires Row environment and the energetic infield party. Our team coordinates logistics across multiple Derby Week venues, manages credential access for Churchill Downs events, and ensures staff presentation matches the elegance expected at America's premier horse racing event.</p>`,
+    staffTypes: ['VIP Hospitality Hosts', 'Brand Ambassadors', 'Beverage Sampling Staff', 'Fashion Models', 'Registration Staff', 'Event Coordinators'],
+    stats: [
+      { value: '150K+', label: 'Race Day Attendance' },
+      { value: '10+', label: 'Derby Week Events' },
+      { value: '148', label: 'Years of Tradition' },
+      { value: '$3B+', label: 'Wagering Volume' }
+    ],
+    faqs: [
+      { q: 'When is the Kentucky Derby?', a: 'The Kentucky Derby takes place the first Saturday in May at Churchill Downs in Louisville, Kentucky. Derby Week events span approximately two weeks leading up to race day.' },
+      { q: 'What is the dress code for Derby staff?', a: 'Derby events have elevated dress codes. Staff in premium areas need formal attire (suits, cocktail dresses). Infield activations allow more casual attire. We coordinate wardrobe requirements with each client.' },
+      { q: 'Do staff need alcohol certifications for Derby events?', a: 'Yes. Kentucky requires responsible beverage server training for any staff distributing or serving alcohol. TIPS or equivalent certification is required for all beverage-related roles.' },
+      { q: 'How early should I book Derby staffing?', a: 'Book at least 8-12 weeks in advance. The Kentucky Derby is Louisville\'s biggest event and experienced hospitality staff are in extremely high demand.' }
+    ],
+    logisticsInfo: 'Churchill Downs is located at 700 Central Ave, Louisville, KY. Derby Week creates significant traffic and parking challenges. Staff should use designated shuttle services and arrive early. Weather in early May can be unpredictable—plan for both sun and rain.',
+    relatedCitySlug: 'louisville',
+    relatedCityName: 'Louisville',
+    heroImage: '/images/events/kentucky-derby.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'new-york-auto-show',
+    title: 'New York Auto Show Staffing | Brand Ambassadors & Event Staff in NYC',
+    h1: 'New York Auto Show Staffing: Brand Ambassadors and Product Specialists for the Javits Center',
+    metaDescription: 'New York Auto Show staffing services provide trained brand ambassadors, product specialists, and event staff for OEM and aftermarket activations at the Javits Center. Get a free quote.',
+    city: 'New York City',
+    stateAbbrev: 'NY',
+    venues: ['Jacob K. Javits Convention Center', 'Manhattan', 'New York City'],
+    keywords: ['New York Auto Show staffing', 'NYIAS event staff', 'auto show brand ambassadors NYC', 'Javits Center staffing', 'New York auto show product specialists'],
+    description: 'The New York International Auto Show is one of the largest and most prestigious auto shows in North America, attracting over 1 million visitors to the Jacob K. Javits Convention Center. Major OEMs debut new models and engage consumers through elaborate displays.',
+    bodyContent: `<h2>New York Auto Show Staffing for OEMs and Automotive Brands</h2>
+<p>New York Auto Show staffing is essential for automotive manufacturers and aftermarket brands exhibiting at one of North America's largest auto shows. With over 1 million visitors across its two-week run at the Javits Center, the NYIAS demands highly trained product specialists, brand ambassadors, and support staff who can represent vehicles with expertise and enthusiasm.</p>
+<p>Air Fresh Marketing provides professional auto show staff for New York International Auto Show exhibits including product narrators, lead capture specialists, VIP hosts, and crowd engagement teams. Our NYC talent pool includes experienced auto show professionals who have worked major OEM exhibits.</p>
+<h2>The Scale of the New York Auto Show</h2>
+<p>The NYIAS spans nearly 900,000 square feet of exhibit space across multiple floors of the Javits Center. Major OEMs like Toyota, Ford, BMW, Mercedes-Benz, and Hyundai build elaborate multi-vehicle displays that require teams of 10-30+ staff per brand. Press preview days, industry days, and public show days each require different staffing strategies.</p>
+<h2>Key Staffing Roles for Auto Show Exhibits</h2>
+<ul>
+<li><strong>Product Specialists (Narrators)</strong>: Deliver detailed vehicle presentations to consumers, covering features, specifications, pricing, and competitive advantages</li>
+<li><strong>Lead Capture Specialists</strong>: Collect visitor information and qualify purchase intent for dealership follow-up</li>
+<li><strong>VIP and Media Hosts</strong>: Manage press preview hospitality and VIP guest experiences during industry days</li>
+<li><strong>Crowd Engagement Staff</strong>: Drive traffic to specific vehicles and manage queue lines for popular interactive displays</li>
+<li><strong>Technology Demo Operators</strong>: Staff interactive displays, configurators, and virtual reality experiences on the show floor</li>
+</ul>
+<h2>Auto Show Staffing Logistics at the Javits Center</h2>
+<p>The Javits Center's Manhattan location creates unique staffing logistics. Staff commute via subway and should plan for early call times during the show's 10-day public run. Our team manages credential pickup, wardrobe coordination, and daily briefings to ensure every staff member is prepared for the show floor.</p>`,
+    staffTypes: ['Product Specialists', 'Lead Capture Staff', 'VIP Hosts', 'Crowd Engagement', 'Tech Demo Operators', 'Event Managers'],
+    stats: [
+      { value: '1M+', label: 'Annual Visitors' },
+      { value: '10', label: 'Public Show Days' },
+      { value: '900K', label: 'Sq Ft Exhibit Space' },
+      { value: '50+', label: 'Exhibiting Brands' }
+    ],
+    faqs: [
+      { q: 'How long does the New York Auto Show run?', a: 'The NYIAS typically runs for about two weeks including press preview days, industry days, and 10 public show days at the Jacob K. Javits Convention Center in Manhattan.' },
+      { q: 'What training do auto show product specialists need?', a: 'Product specialists (narrators) complete 3-5 days of intensive OEM training covering vehicle specifications, competitive positioning, and presentation techniques before the show opens.' },
+      { q: 'How many staff does an OEM exhibit need?', a: 'Major OEM exhibits at the NYIAS typically staff 15-30 product specialists per day, plus lead capture staff, technology demo operators, and management. Total staffing can exceed 40 people per day.' },
+      { q: 'When should I book NYIAS staffing?', a: 'Book auto show staffing 10-12 weeks in advance. Experienced auto show narrators are in high demand and OEMs compete for top talent.' }
+    ],
+    logisticsInfo: 'The Javits Center is at 429 11th Ave, Manhattan. Staff should commute via subway (7 train to 34th-Hudson Yards, or A/C/E to 34th St-Penn Station). No staff parking available. Show hours are typically 10 AM-10 PM on public days.',
+    relatedCitySlug: 'new-york-city',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/new-york-auto-show.jpg'
+  },
+  {
+    slug: 'nba-all-star-weekend',
+    title: 'NBA All-Star Weekend Staffing | Brand Ambassadors & Event Staff',
+    h1: 'NBA All-Star Weekend Staffing: Brand Ambassadors and Event Staff for Basketball\'s Biggest Party',
+    metaDescription: 'NBA All-Star Weekend staffing services provide trained brand ambassadors, promotional models, and event staff for All-Star activations, fan zones, and sponsor events. Get a free quote.',
+    city: 'Various',
+    stateAbbrev: '',
+    venues: ['Host Arena', 'NBA All-Star Fan Zone', 'Convention Center', 'Downtown Entertainment District'],
+    keywords: ['NBA All-Star Weekend staffing', 'NBA All-Star event staff', 'basketball event brand ambassadors', 'NBA fan zone staffing', 'All-Star Weekend promotional staff'],
+    description: 'NBA All-Star Weekend is one of the premier sporting events in the United States, combining the All-Star Game, Slam Dunk Contest, Three-Point Contest, and a massive multi-day fan experience. The event draws 100,000+ fans to a rotating host city each February.',
+    bodyContent: `<h2>NBA All-Star Weekend Staffing for Brands and Sponsors</h2>
+<p>NBA All-Star Weekend staffing is critical for brands activating at basketball's biggest celebration. With 100,000+ fans descending on the host city for All-Star events, fan zones, sponsor activations, and celebrity parties, the weekend offers unmatched brand exposure to a young, diverse, and highly engaged audience.</p>
+<p>Air Fresh Marketing provides professional event staff for NBA All-Star Weekend activations including brand ambassadors, VIP hosts, product samplers, and experiential activation teams. Our staff understand the energy and pace of All-Star Weekend and deliver brand experiences that match the excitement.</p>
+<h2>The All-Star Weekend Experience</h2>
+<p>NBA All-Star Weekend is far more than a single game. The multi-day event includes: the Rising Stars game, Skills Challenge, Three-Point Contest, Slam Dunk Contest, the All-Star Game, NBA Crossover fan experience (a massive interactive fan zone), and dozens of brand-sponsored events, parties, and activations across the host city.</p>
+<p>Major sponsors like Kia, State Farm, Mountain Dew, and Nike invest heavily in All-Star Weekend activations, creating elaborate experiential installations that need large, skilled staffing teams.</p>
+<h2>Key Staffing Roles for All-Star Weekend</h2>
+<ul>
+<li><strong>Fan Zone Brand Ambassadors</strong>: Staff experiential activations at NBA Crossover and other fan experience areas</li>
+<li><strong>VIP Event Hosts</strong>: Manage exclusive sponsor events, celebrity parties, and premium hospitality throughout the weekend</li>
+<li><strong>Product Samplers</strong>: Distribute samples at fan zones, watch parties, and entertainment district activations</li>
+<li><strong>Social Media Content Teams</strong>: Capture real-time content from across All-Star Weekend events</li>
+<li><strong>Registration and Credential Staff</strong>: Handle check-in at multiple venues across the host city</li>
+</ul>
+<h2>All-Star Weekend Logistics</h2>
+<p>NBA All-Star Weekend events are spread across multiple venues in the host city, requiring staff coordination across locations. Our team manages multi-venue logistics, transportation between sites, credential access for each venue, and real-time communication to ensure every activation runs smoothly throughout the weekend.</p>`,
+    staffTypes: ['Brand Ambassadors', 'VIP Hosts', 'Product Samplers', 'Social Media Teams', 'Registration Staff', 'Experiential Activation Staff'],
+    stats: [
+      { value: '100K+', label: 'Weekend Visitors' },
+      { value: '4', label: 'Event Days' },
+      { value: '20+', label: 'Official Events' },
+      { value: '$100M+', label: 'Economic Impact' }
+    ],
+    faqs: [
+      { q: 'Where is NBA All-Star Weekend held?', a: 'NBA All-Star Weekend rotates to a different host city each year. The event takes place at the host city\'s NBA arena plus multiple venues across the city for fan experiences and sponsor events.' },
+      { q: 'What brands typically activate at All-Star Weekend?', a: 'Athletic brands (Nike, Jordan, Adidas), automotive (Kia), insurance (State Farm), beverages (Mountain Dew, Pepsi), tech companies, and fashion brands all maintain major activations during All-Star Weekend.' },
+      { q: 'How many staff do I need for All-Star Weekend?', a: 'Staffing needs vary by activation size. Fan zone booths typically need 6-12 staff per day. Multi-venue activations spanning the full weekend may require 20-40+ total staff.' },
+      { q: 'When should I book All-Star Weekend staffing?', a: 'Book 10-12 weeks in advance. All-Star Weekend creates massive staffing demand in the host city and the best event staff book early.' }
+    ],
+    logisticsInfo: 'NBA All-Star Weekend events are spread across multiple venues in the host city. Staff need credentials for each venue they\'re assigned to. Events run from Thursday through Sunday of All-Star Weekend, with some activations starting earlier in the week.',
+    relatedCitySlug: '',
+    relatedCityName: '',
+    heroImage: '/images/events/nba-all-star.jpg',
+    isFeatured: true
+  },
+  {
+    slug: 'south-by-southwest',
+    title: 'SXSW Staffing | Brand Ambassadors & Event Staff in Austin',
+    h1: 'SXSW Staffing: Brand Ambassadors and Event Staff for South by Southwest in Austin',
+    metaDescription: 'SXSW staffing services provide trained brand ambassadors, promotional models, and event staff for activations at South by Southwest in Austin, Texas. Get a free quote.',
+    city: 'Austin',
+    stateAbbrev: 'TX',
+    venues: ['Austin Convention Center', 'Rainey Street', 'East 6th Street', 'Zilker Park', 'Lady Bird Lake'],
+    keywords: ['SXSW staffing', 'South by Southwest event staff', 'SXSW brand ambassadors Austin', 'SXSW promotional staff', 'Austin SXSW event staffing'],
+    description: 'South by Southwest (SXSW) is the world\'s premier convergence of tech, film, and music, attracting 300,000+ registrants and attendees to Austin, Texas each March. The multi-week festival offers unparalleled brand activation opportunities across hundreds of official and unofficial events.',
+    bodyContent: `<h2>SXSW Staffing for Brands and Activations in Austin</h2>
+<p>SXSW staffing connects brands with the most influential convergence of technology, entertainment, and culture in the world. With 300,000+ registrants and attendees across its multi-week run in Austin, SXSW offers brand activation opportunities that range from intimate keynote sponsorships to massive experiential installations spanning entire city blocks.</p>
+<p>Air Fresh Marketing provides professional event staff for SXSW activations including brand ambassadors, product samplers, VIP hosts, tech demo specialists, and experiential activation teams. Our Austin talent pool includes SXSW veterans who understand the festival's unique culture and logistics.</p>
+<h2>The SXSW Ecosystem</h2>
+<p>SXSW is not one event—it's an ecosystem of thousands of events across multiple tracks: Interactive (tech), Film, Music, Comedy, and Education. The festival takes over downtown Austin, transforming hotels, parking lots, and empty storefronts into brand activation venues. Both official SXSW sponsor activations and "unofficial" brand events compete for attendee attention.</p>
+<p>Major tech companies (Google, Amazon, Meta), automotive brands (Porsche, Mercedes), media companies (HBO, Netflix), and consumer brands invest millions in SXSW activations that need sophisticated staffing.</p>
+<h2>Key Staffing Roles for SXSW</h2>
+<ul>
+<li><strong>Tech Demo Specialists</strong>: Staff interactive technology demonstrations at brand houses and convention center activations</li>
+<li><strong>Brand Ambassadors</strong>: Represent sponsors at official events, brand houses, and experiential activations across downtown Austin</li>
+<li><strong>VIP and Guest List Managers</strong>: Handle exclusive event access, RSVP management, and VIP hospitality at brand-hosted events</li>
+<li><strong>Street Teams</strong>: Roam downtown Austin distributing brand materials and driving traffic to activations</li>
+<li><strong>Event Producers and Coordinators</strong>: Manage multi-day brand house operations and coordinate across multiple SXSW venues</li>
+</ul>
+<h2>SXSW Staffing Logistics</h2>
+<p>SXSW's decentralized nature creates unique staffing challenges. Events spread across dozens of venues within a 2-mile radius of downtown Austin. Staff need to navigate between venues quickly, manage credential access at multiple locations, and adapt to the unpredictable March weather in Texas. Our operations team coordinates multi-venue staffing, provides real-time communication, and ensures staff are positioned for maximum brand impact across the sprawling SXSW landscape.</p>`,
+    staffTypes: ['Tech Demo Specialists', 'Brand Ambassadors', 'VIP Hosts', 'Street Teams', 'Event Coordinators', 'Product Samplers'],
+    stats: [
+      { value: '300K+', label: 'Attendees' },
+      { value: '10+', label: 'Festival Days' },
+      { value: '2,000+', label: 'Events' },
+      { value: '3', label: 'Major Tracks' }
+    ],
+    faqs: [
+      { q: 'How long does SXSW last?', a: 'SXSW spans approximately 10 days in March, with Interactive running the first half, Film and Music overlapping in the second half. Brand activations often run the entire duration.' },
+      { q: 'What types of brands activate at SXSW?', a: 'Tech companies, automotive brands, media/entertainment companies, beverage brands, and lifestyle brands all maintain major presences at SXSW. The festival attracts brands seeking to reach early adopters and cultural influencers.' },
+      { q: 'How many staff do I need for SXSW?', a: 'It depends on your activation format. A single brand house needs 8-15 staff per day. Multiple activations across SXSW may require 25-50+ staff with rotating schedules across the festival\'s 10+ days.' },
+      { q: 'When should I book SXSW staffing?', a: 'Book 10-12 weeks in advance. SXSW is Austin\'s largest event and demand for experienced event staff far exceeds supply during the festival.' }
+    ],
+    logisticsInfo: 'SXSW events are centered in downtown Austin around the Convention Center, 6th Street, and Rainey Street districts. Staff parking is extremely limited—rideshare and public transit are recommended. Austin weather in March is variable (50-85°F) with potential rain.',
+    relatedCitySlug: 'austin',
+    relatedCityName: 'Austin',
+    heroImage: '/images/events/sxsw.jpg',
+    isFeatured: true
+  },
   // ── Batch 130 ──────────────────────────────────────────────────────
   {
     slug: 'summerfest',
