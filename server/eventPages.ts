@@ -37,6 +37,326 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Welcome to Rockville — Daytona Beach, FL
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'welcome-to-rockville',
+    title: 'Welcome to Rockville Staffing | Air Fresh Marketing',
+    h1: 'Welcome to Rockville Staffing',
+    metaDescription: 'Welcome to Rockville staffing services in Daytona Beach. Professional brand ambassadors, event staff, and promotional teams for rock festival activations.',
+    city: 'Daytona Beach',
+    stateAbbrev: 'FL',
+    venues: ['Daytona International Speedway'],
+    keywords: ['Welcome to Rockville staffing', 'Daytona Beach festival staff', 'rock festival brand ambassadors', 'Rockville event staffing', 'Daytona event staff'],
+    description: 'Professional event staffing for Welcome to Rockville, the largest rock festival in the U.S. at Daytona International Speedway.',
+    bodyContent: `Welcome to Rockville staffing provides brands with professional event teams for America's largest rock festival. Held at the legendary Daytona International Speedway, Welcome to Rockville draws over 160,000 fans across four days for a massive lineup of rock, metal, and alternative music.
+
+## Why Brands Activate at Welcome to Rockville
+
+Welcome to Rockville has grown into the undisputed heavyweight of American rock festivals. The event's relocation to Daytona International Speedway gave it the space to scale dramatically, and the festival now rivals European rock festivals in attendance and lineup quality. For brands targeting the rock and metal demographic — a loyal, passionate, and high-spending consumer base — Rockville is the premier activation opportunity.
+
+### The Rockville Audience
+
+The audience is predominantly 25-45, with strong male representation (though increasingly diverse). This demographic is brand-loyal, experience-driven, and willing to spend on premium products. Beverage brands, automotive companies, audio equipment manufacturers, energy drinks, and lifestyle brands see exceptional results.
+
+## Staff Types for Welcome to Rockville
+
+### Brand Ambassadors
+High-energy ambassadors who authentically connect with the rock festival audience. Staff should be genuinely comfortable in the rock/metal environment — festival-goers quickly identify and dismiss inauthentic representatives.
+
+### Sampling Teams
+Product sampling teams covering the sprawling Speedway grounds. Beverage and energy drink sampling is particularly effective given the multi-day, high-energy festival format.
+
+### VIP & Hospitality Staff
+Rockville's VIP areas and sponsor lounges require experienced hospitality professionals who can deliver premium service in a festival environment.
+
+### Merch and Sales Staff
+For brands selling products on-site, trained sales staff manage transactions, inventory, and customer service throughout long festival days.
+
+Air Fresh Marketing provides Welcome to Rockville staffing from our extensive Florida network. Our team understands the rock festival environment and delivers staff who authentically connect with this passionate audience.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Rock-culture-savvy representatives who connect authentically with festival fans' },
+      { title: 'Sampling Teams', description: 'High-volume product distribution across Daytona Speedway grounds' },
+      { title: 'VIP Hospitality Staff', description: 'Premium service for sponsor lounges and VIP areas' },
+      { title: 'Merch & Sales Staff', description: 'Trained sales professionals for on-site product transactions' },
+      { title: 'Street Teams', description: 'Mobile teams covering the massive Speedway festival grounds' },
+      { title: 'Setup & Breakdown Crews', description: 'Physical teams for activation installation and teardown' }
+    ],
+    stats: [
+      { value: '160K+', label: 'Total Attendance' },
+      { value: '4', label: 'Day Festival' },
+      { value: '4', label: 'Main Stages' },
+      { value: '170+', label: 'Bands' }
+    ],
+    faqs: [
+      { question: 'When is Welcome to Rockville?', answer: 'Welcome to Rockville typically takes place in May at the Daytona International Speedway in Daytona Beach, Florida.' },
+      { question: 'How big is Welcome to Rockville?', answer: 'It is the largest rock festival in the United States, drawing over 160,000 fans across four days with 170+ bands.' },
+      { question: 'What brands activate at Rockville?', answer: 'Beverage brands, energy drinks, automotive companies, audio equipment, gaming brands, and lifestyle companies targeting the rock demographic.' },
+      { question: 'How far ahead should I book Rockville staffing?', answer: 'We recommend booking at least 8-10 weeks in advance due to high demand for experienced festival staff in Florida.' }
+    ],
+    logisticsInfo: 'Daytona International Speedway is at 1801 W International Speedway Blvd, Daytona Beach. The venue is massive with ample infrastructure. Florida May weather is hot and humid — staff need heat safety preparation.',
+    relatedCitySlug: 'orlando',
+    relatedCityName: 'Orlando / Central Florida',
+    heroImage: '/images/events/welcome-to-rockville.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // III Points — Miami, FL
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'iii-points',
+    title: 'III Points Festival Staffing | Air Fresh Marketing',
+    h1: 'III Points Festival Staffing',
+    metaDescription: 'III Points festival staffing services in Miami. Professional brand ambassadors, event staff, and promotional teams for Miami\'s premier electronic and indie music festival.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Mana Wynwood'],
+    keywords: ['III Points staffing', 'Miami music festival staff', 'III Points brand ambassadors', 'Wynwood event staffing', 'Miami festival staff'],
+    description: 'Professional event staffing for III Points Festival in Miami\'s Wynwood Arts District, featuring cutting-edge electronic, hip-hop, and indie music.',
+    bodyContent: `III Points festival staffing connects brands with Miami's most culturally influential music festival. Held in the iconic Wynwood Arts District, III Points brings together electronic music, hip-hop, indie rock, and visual art in one of America's most dynamic creative neighborhoods.
+
+## Why III Points Is a Cultural Marketing Opportunity
+
+III Points represents the intersection of music, art, and technology that defines modern Miami culture. Unlike mainstream festivals, III Points attracts a tastemaker audience — DJs, artists, tech creatives, and cultural influencers who set trends rather than follow them. Brands that activate at III Points gain credibility with this influential demographic.
+
+### The III Points Audience
+
+The audience skews 21-35, predominantly creative professionals, tech workers, and cultural enthusiasts. They're digitally native, design-conscious, and highly selective about the brands they engage with. Generic activations fall flat here — brands need conceptual, design-forward experiences.
+
+## Staff Types for III Points
+
+### Creative Brand Ambassadors
+III Points demands ambassadors who are themselves part of the creative community. Look for staff with backgrounds in art, music, fashion, or design who can engage naturally with the culturally sophisticated audience.
+
+### Interactive Installation Staff
+Many brands at III Points create art installations or interactive tech experiences. Staff for these activations need to guide participants through immersive experiences while articulating the brand connection.
+
+### Sampling Teams
+Product sampling at III Points works best when presented as an elevated experience. Craft beverages, premium spirits, and design-forward consumer products resonate with this audience.
+
+### Social Media Content Creators
+III Points is Instagram paradise, set against Wynwood's legendary street art. Content creators should be skilled visual storytellers who capture the festival's artistic aesthetic.
+
+Air Fresh Marketing's Miami network includes creative professionals who understand the Wynwood arts scene and deliver authentic brand representation at III Points.`,
+    staffTypes: [
+      { title: 'Creative Brand Ambassadors', description: 'Arts-savvy representatives from Miami\'s creative community' },
+      { title: 'Installation Staff', description: 'Guides for interactive art and tech brand experiences' },
+      { title: 'Sampling Teams', description: 'Elevated product distribution matching the festival\'s premium aesthetic' },
+      { title: 'Content Creators', description: 'Visual storytellers capturing the Wynwood arts festival atmosphere' },
+      { title: 'VIP Hospitality', description: 'Service professionals for sponsor areas and VIP experiences' },
+      { title: 'Event Operations', description: 'Behind-the-scenes logistics and coordination staff' }
+    ],
+    stats: [
+      { value: '25K+', label: 'Daily Attendance' },
+      { value: '2', label: 'Day Festival' },
+      { value: '5', label: 'Stages' },
+      { value: '100+', label: 'Artists' }
+    ],
+    faqs: [
+      { question: 'When is III Points?', answer: 'III Points typically takes place in October or November at Mana Wynwood in Miami\'s Wynwood Arts District.' },
+      { question: 'What makes III Points staffing different?', answer: 'The culturally sophisticated audience requires creative, design-conscious staff who are authentically part of Miami\'s arts and music scene.' },
+      { question: 'What brands do well at III Points?', answer: 'Tech brands, premium spirits, fashion labels, streaming services, and design-forward consumer brands see the strongest engagement.' },
+      { question: 'Where is III Points held?', answer: 'Mana Wynwood, in the heart of Miami\'s Wynwood Arts District, surrounded by world-famous street art and galleries.' }
+    ],
+    logisticsInfo: 'Mana Wynwood is located at 318 NW 23rd St, Miami. The Wynwood neighborhood has limited parking — rideshare is recommended. October/November Miami weather is warm but manageable (75-85°F).',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/events/iii-points.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Shaky Knees — Atlanta, GA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'shaky-knees',
+    title: 'Shaky Knees Festival Staffing | Air Fresh Marketing',
+    h1: 'Shaky Knees Festival Staffing',
+    metaDescription: 'Shaky Knees festival staffing services in Atlanta. Professional brand ambassadors, event staff, and promotional teams for Atlanta\'s premier indie rock festival.',
+    city: 'Atlanta',
+    stateAbbrev: 'GA',
+    venues: ['Central Park Atlanta'],
+    keywords: ['Shaky Knees staffing', 'Atlanta music festival staff', 'Shaky Knees brand ambassadors', 'Atlanta event staffing', 'indie rock festival staff'],
+    description: 'Professional event staffing for Shaky Knees Music Festival in Atlanta, one of the top indie and alternative rock festivals in the United States.',
+    bodyContent: `Shaky Knees festival staffing provides brands with professional event teams for one of the most respected indie rock festivals in the country. Held in Atlanta's Central Park, Shaky Knees draws 40,000+ music fans daily for three days of rock, indie, and alternative music.
+
+## Why Shaky Knees Is an Ideal Brand Activation Platform
+
+Shaky Knees has earned a reputation for curating lineups that balance mainstream appeal with indie credibility. This sweet spot attracts an audience that's more engaged and brand-receptive than ultra-mainstream festivals, while still delivering significant scale. The festival's Atlanta location provides access to the Southeast's largest metro market.
+
+### The Shaky Knees Audience
+
+Attendees are predominantly 22-40, college-educated, and culturally engaged. They discover new music, support independent artists, and extend that independent mindset to the brands they choose. Authentic, non-corporate activations resonate strongly with this audience.
+
+## Staff Types for Shaky Knees
+
+### Brand Ambassadors
+Staff who embody the indie spirit — genuine, approachable, and knowledgeable about music and culture. Hard-sell tactics don't work at Shaky Knees; conversational, authentic engagement does.
+
+### Sampling & Activation Teams
+Product sampling teams positioned throughout Central Park. Craft beverages, emerging brands, and lifestyle products see strong engagement. Staff should be comfortable discussing product stories and brand values.
+
+### Lifestyle Photography Staff
+Shaky Knees has a distinct visual identity. Staff capturing content should understand the festival's aesthetic and create brand content that fits naturally into the festival's visual world.
+
+### VIP Experience Staff
+Premium hospitality for VIP ticket holders. Service should feel elevated but not stuffy, matching Shaky Knees' laid-back-yet-quality vibe.
+
+Air Fresh Marketing's Atlanta network includes experienced festival staff who understand the indie music community and deliver authentic brand representation at Shaky Knees.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Authentic, indie-culture representatives who connect naturally' },
+      { title: 'Sampling Teams', description: 'Product distribution teams with conversational brand storytelling' },
+      { title: 'Content & Photography Staff', description: 'Visual content creators matching the festival\'s indie aesthetic' },
+      { title: 'VIP Experience Staff', description: 'Elevated-yet-approachable hospitality for VIP areas' },
+      { title: 'Street Teams', description: 'Mobile engagement teams covering Central Park festival grounds' },
+      { title: 'Setup & Operations', description: 'Activation build and logistics coordination teams' }
+    ],
+    stats: [
+      { value: '40K+', label: 'Daily Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '60+', label: 'Artists' },
+      { value: '3', label: 'Stages' }
+    ],
+    faqs: [
+      { question: 'When is Shaky Knees?', answer: 'Shaky Knees takes place in early May at Central Park in Atlanta, Georgia.' },
+      { question: 'What\'s the Shaky Knees audience like?', answer: 'Predominantly 22-40, college-educated, culturally engaged indie music fans who value authenticity over corporate polish.' },
+      { question: 'What brands do well at Shaky Knees?', answer: 'Craft beverages, emerging lifestyle brands, streaming services, outdoor gear, and authentic consumer brands see the best engagement.' },
+      { question: 'How is Atlanta weather in May?', answer: 'Atlanta in May is warm (75-85°F) with possible afternoon thunderstorms. Staff should prepare for heat and occasional rain.' }
+    ],
+    logisticsInfo: 'Central Park Atlanta is in the Old Fourth Ward neighborhood, accessible by MARTA transit. May weather is warm with possible storms. Nearby neighborhoods offer accommodation options.',
+    relatedCitySlug: 'atlanta',
+    relatedCityName: 'Atlanta',
+    heroImage: '/images/events/shaky-knees.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Made in America — Philadelphia, PA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'made-in-america',
+    title: 'Made in America Festival Staffing | Air Fresh Marketing',
+    h1: 'Made in America Festival Staffing',
+    metaDescription: 'Made in America festival staffing services in Philadelphia. Professional brand ambassadors and event staff for Jay-Z\'s premier Labor Day music festival.',
+    city: 'Philadelphia',
+    stateAbbrev: 'PA',
+    venues: ['Benjamin Franklin Parkway'],
+    keywords: ['Made in America staffing', 'Philadelphia festival staff', 'MIA festival brand ambassadors', 'Philadelphia event staffing', 'Labor Day festival staff'],
+    description: 'Professional event staffing for Made in America Festival on the Benjamin Franklin Parkway in Philadelphia, the premier Labor Day weekend music festival.',
+    bodyContent: `Made in America festival staffing delivers professional brand activation teams for one of the most culturally significant music festivals in the country. Founded by Jay-Z and held on Philadelphia's iconic Benjamin Franklin Parkway, Made in America draws 50,000+ fans daily for a two-day celebration of music and culture on Labor Day weekend.
+
+## Why Made in America Is a Premium Brand Activation
+
+Made in America carries cultural weight that few festivals can match. Its association with Jay-Z and Roc Nation, its prime Philadelphia Parkway location with the Art Museum as backdrop, and its commitment to social causes create a premium platform for brands seeking cultural credibility.
+
+### The Made in America Audience
+
+The audience is diverse, culturally engaged, and skews 18-35. There's strong representation from Philadelphia, New York, Baltimore, and the broader Northeast corridor. The festival attracts hip-hop, R&B, pop, and electronic music fans who are active on social media and responsive to experiential marketing.
+
+## Staff Types for Made in America
+
+### Brand Ambassadors
+Culturally aware, energetic ambassadors who connect with Made in America's diverse audience. Staff should be comfortable engaging across musical genres and cultural backgrounds.
+
+### Sampling & Distribution Teams
+Product sampling on the Benjamin Franklin Parkway. Beverage brands, skincare, snacks, and lifestyle products are natural fits. Staff handle high-volume distribution while maintaining brand messaging.
+
+### Social Media Teams
+Made in America generates massive social media activity. Content creators capture the festival energy, encourage UGC, and amplify brand presence across platforms.
+
+### VIP & Artist Hospitality
+The festival's VIP and backstage areas require experienced hospitality professionals comfortable working around high-profile artists and industry executives.
+
+Air Fresh Marketing provides Made in America staffing from our Northeast network, delivering experienced festival staff who understand the cultural significance and energy of this iconic event.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Culturally aware representatives for a diverse, engaged festival audience' },
+      { title: 'Sampling Teams', description: 'High-volume product distribution across the Parkway festival grounds' },
+      { title: 'Social Media Content Creators', description: 'Real-time content creation and UGC amplification teams' },
+      { title: 'VIP & Artist Hospitality', description: 'Premium service for VIP areas and artist hospitality lounges' },
+      { title: 'Registration & Access Control', description: 'Professional credentialing and entry management' },
+      { title: 'Event Operations', description: 'Logistics coordination and on-site problem solving' }
+    ],
+    stats: [
+      { value: '50K+', label: 'Daily Attendance' },
+      { value: '2', label: 'Day Festival' },
+      { value: '3', label: 'Stages' },
+      { value: '30+', label: 'Artists' }
+    ],
+    faqs: [
+      { question: 'When is Made in America?', answer: 'Made in America takes place over Labor Day weekend (late August/early September) on the Benjamin Franklin Parkway in Philadelphia.' },
+      { question: 'Who founded Made in America?', answer: 'The festival was founded by Jay-Z and is produced by Roc Nation, giving it unique cultural credibility in the music and entertainment industry.' },
+      { question: 'What brands activate at Made in America?', answer: 'Major beverage brands, fashion labels, tech companies, streaming services, and culturally-forward consumer brands see strong results.' },
+      { question: 'How do I get staff to the venue?', answer: 'Benjamin Franklin Parkway is accessible via SEPTA public transit. The area has limited parking during the festival, so transit or rideshare is recommended for staff.' }
+    ],
+    logisticsInfo: 'Benjamin Franklin Parkway runs from City Hall to the Philadelphia Museum of Art. Accessible via SEPTA bus and subway. Labor Day weekend weather is typically warm (75-85°F). Road closures affect the surrounding area.',
+    relatedCitySlug: 'philadelphia',
+    relatedCityName: 'Philadelphia',
+    heroImage: '/images/events/made-in-america.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Wonderfront — San Diego, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'wonderfront',
+    title: 'Wonderfront Festival Staffing | Air Fresh Marketing',
+    h1: 'Wonderfront Festival Staffing',
+    metaDescription: 'Wonderfront festival staffing services in San Diego. Professional brand ambassadors, event staff, and promotional teams for San Diego\'s waterfront music festival.',
+    city: 'San Diego',
+    stateAbbrev: 'CA',
+    venues: ['San Diego Waterfront Park', 'Embarcadero Marina Park'],
+    keywords: ['Wonderfront staffing', 'San Diego music festival staff', 'Wonderfront brand ambassadors', 'San Diego event staffing', 'waterfront festival staff'],
+    description: 'Professional event staffing for Wonderfront Festival on San Diego\'s waterfront, a multi-genre music festival along the harbor with stunning bay views.',
+    bodyContent: `Wonderfront festival staffing provides brands with professional event teams for San Diego's premier waterfront music experience. Spread across multiple stages along San Diego's stunning harbor, Wonderfront combines music, craft beer, local cuisine, and water activities for a uniquely San Diego festival experience.
+
+## Why Wonderfront Is Growing for Brand Activations
+
+Wonderfront leverages San Diego's greatest asset — its waterfront — creating a festival atmosphere that's distinctly different from inland events. The combination of multiple stages along the bay, water activities between stages, and San Diego's perfect weather creates an experience that attendees describe as more relaxed and enjoyable than larger, more chaotic festivals.
+
+### The Wonderfront Audience
+
+San Diego's demographic mix of military families, biotech professionals, university students, and surf/beach culture creates a diverse, active audience. Attendees are outdoors-oriented, health-conscious, and have above-average household income. The festival also draws visitors from LA, Orange County, and across the Southwest.
+
+## Staff Types for Wonderfront
+
+### Waterfront Brand Ambassadors
+Staff comfortable in a waterfront environment who can engage festival-goers along the harbor walk. The multi-venue, spread-out format means ambassadors need to be mobile and energetic.
+
+### Craft Beverage Sampling Teams
+San Diego is America's craft beer capital, and Wonderfront celebrates that culture. Sampling staff should have knowledge of craft beverages and be comfortable in tasting-room-style interactions.
+
+### Water Activity Activation Staff
+Wonderfront includes kayaking, paddleboarding, and other water activities between stages. Brands activating near water need staff with relevant experience and safety awareness.
+
+### Social Media Content Teams
+The waterfront setting with harbor views and sunset backdrops makes Wonderfront incredibly photogenic. Content creators capture stunning brand content that performs well on social platforms.
+
+Air Fresh Marketing's San Diego team includes experienced festival staff familiar with the waterfront venue layout and San Diego's unique market dynamics.`,
+    staffTypes: [
+      { title: 'Waterfront Brand Ambassadors', description: 'Mobile, energetic representatives for multi-venue harbor walk activations' },
+      { title: 'Craft Beverage Sampling', description: 'Beer/spirits-knowledgeable sampling teams for San Diego\'s craft culture' },
+      { title: 'Water Activity Staff', description: 'Safety-trained staff for water-adjacent brand activations' },
+      { title: 'Content Creators', description: 'Photographers and social staff capturing harbor-view brand content' },
+      { title: 'VIP Hospitality', description: 'Premium service for waterfront VIP viewing areas' },
+      { title: 'Event Operations', description: 'Multi-venue logistics coordination and on-site management' }
+    ],
+    stats: [
+      { value: '30K+', label: 'Weekend Attendance' },
+      { value: '3', label: 'Day Festival' },
+      { value: '7', label: 'Stages' },
+      { value: '80+', label: 'Artists' }
+    ],
+    faqs: [
+      { question: 'When is Wonderfront?', answer: 'Wonderfront typically takes place in November along San Diego\'s waterfront, spanning multiple venues from the Embarcadero to the Convention Center area.' },
+      { question: 'What makes Wonderfront unique?', answer: 'The multi-venue waterfront format, water activities between stages, and San Diego\'s perfect weather create a uniquely relaxed, premium festival experience.' },
+      { question: 'What brands fit Wonderfront?', answer: 'Craft beverage brands, outdoor/active lifestyle companies, sunscreen/skincare, health and wellness brands, and premium consumer products.' },
+      { question: 'How spread out is the festival?', answer: 'Wonderfront spans about 1 mile along the waterfront with stages at multiple venues, connected by a harbor walk. Staff need to be mobile.' }
+    ],
+    logisticsInfo: 'Multiple waterfront venues in downtown San Diego. Accessible via the San Diego Trolley and bus system. November San Diego weather is mild (65-75°F). The spread-out format requires strategic staff placement.',
+    relatedCitySlug: 'san-diego',
+    relatedCityName: 'San Diego',
+    heroImage: '/images/events/wonderfront.jpg',
+    isFeatured: false
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Tortuga Music Festival — Fort Lauderdale, FL
   // ─────────────────────────────────────────────────────────────────
   {
