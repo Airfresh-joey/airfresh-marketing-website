@@ -7250,6 +7250,236 @@ Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303
     relatedCityName: 'Houston',
     heroImage: '/images/hero-experiential.jpg',
   },
+  {
+    slug: 'hangout-fest',
+    title: 'Hangout Music Festival Staffing | Brand Ambassadors Gulf Shores',
+    h1: 'Hangout Music Festival Staffing & Event Staff',
+    metaDescription: 'Hangout Music Festival staffing agency providing brand ambassadors, promotional models, and event staff for activations at Gulf Shores, Alabama.',
+    city: 'Gulf Shores',
+    stateAbbrev: 'AL',
+    venues: ['Gulf Shores Public Beach', 'Hangout Festival Grounds'],
+    keywords: ['Hangout Festival staffing', 'Gulf Shores event staff', 'Hangout Fest brand ambassadors', 'Alabama festival staffing', 'beach festival staff', 'Gulf Shores marketing'],
+    description: 'Professional event staffing for Hangout Music Festival in Gulf Shores, Alabama. Brand ambassadors, promotional models, and experiential marketing staff for beach festival activations.',
+    bodyContent: `**Hangout Music Festival Overview**
+
+Hangout Music Festival transforms the white-sand beaches of Gulf Shores, Alabama into one of the most unique music festival experiences in the country. Held annually on the shores of the Gulf of Mexico, Hangout attracts 40,000+ music fans for three days of performances across multiple stages directly on the beach. The festival's tropical setting and relaxed atmosphere create exceptional opportunities for brand activations and experiential marketing.
+
+**Why Brands Activate at Hangout Fest**
+
+Hangout Fest offers a captive beachside audience with high disposable income and a vacation mindset. The festival's intimate size compared to mega-festivals like Coachella means brands can achieve higher engagement rates and more meaningful consumer interactions. The beach setting creates natural photo opportunities and shareable moments that amplify social media reach.
+
+**Staffing Needs for Hangout Festival**
+
+Beach festival activations require staff who thrive in outdoor, sandy, hot conditions. Brand ambassadors need to maintain energy and professionalism in Gulf Coast heat and humidity while engaging festival-goers who are in full vacation mode. Product sampling staff must manage food safety in high temperatures and UV exposure.
+
+**Types of Brand Activations at Hangout**
+
+Festival sponsors typically deploy branded experience zones with shade structures and interactive elements. Beverage brands create branded bars and sampling stations. Beauty and sunscreen brands offer application stations and product trials. Tech brands set up charging lounges that guarantee foot traffic and engagement time.
+
+**Logistics and Beach Considerations**
+
+The beach venue presents unique logistical challenges: sand affects equipment and signage, tides influence activation footprint, and salt air impacts electronics and printed materials. Experienced festival staff anticipate these challenges and adapt accordingly.
+
+**Why Choose Air Fresh Marketing**
+
+Air Fresh Marketing provides festival-experienced brand ambassadors for Hangout Fest who understand beach activation logistics, Gulf Coast weather, and the relaxed festival culture. Our GPS-verified staff deliver accountability even in challenging outdoor environments.`,
+    staffTypes: ['Brand Ambassadors', 'Promotional Models', 'Product Samplers', 'Event Coordinators', 'Social Media Street Teams', 'Hospitality Staff'],
+    stats: { staffPlaced: '200+', eventsServiced: '15+', satisfactionRate: '99%', yearsExperience: '8+' },
+    faqs: [
+      { question: 'When does Hangout Music Festival take place?', answer: 'Hangout Fest is held annually in mid-May on the beach in Gulf Shores, Alabama, typically running Friday through Sunday.' },
+      { question: 'What types of brands activate at Hangout Fest?', answer: 'Beverage brands, sunscreen/beauty companies, tech brands, automotive companies, and lifestyle brands frequently activate at Hangout due to the affluent, young adult demographic.' },
+      { question: 'How do you handle staffing on the beach?', answer: 'Our staff are trained for outdoor beach conditions including heat management, sand logistics, and UV safety protocols. We provide hydration stations and rotating shift schedules.' },
+      { question: 'What is the minimum staffing commitment?', answer: 'Most Hangout Fest activations require a minimum of 4-6 brand ambassadors per day across the 3-day festival, with event coordinators managing the team.' },
+    ],
+    logisticsInfo: 'Hangout Music Festival takes place on the public beach in Gulf Shores, Alabama. The venue is entirely outdoors on sand, requiring special consideration for equipment, staffing comfort, and weather contingencies. Air Fresh coordinates lodging, transportation, and shift scheduling for multi-day festival staffing.',
+    relatedCitySlug: 'mobile',
+    relatedCityName: 'Mobile',
+    heroImage: '/images/hero-experiential.jpg',
+  },
+  {
+    slug: 'carolina-country-music-fest',
+    title: 'Carolina Country Music Fest Staffing | Myrtle Beach Event Staff',
+    h1: 'Carolina Country Music Fest Staffing & Event Staff',
+    metaDescription: 'Carolina Country Music Fest staffing providing brand ambassadors, sampling teams, and event staff for country music festival activations in Myrtle Beach, SC.',
+    city: 'Myrtle Beach',
+    stateAbbrev: 'SC',
+    venues: ['Burroughs & Chapin Pavilion Place', 'Myrtle Beach Boardwalk'],
+    keywords: ['Carolina Country Music Fest staffing', 'Myrtle Beach event staff', 'country music festival staff', 'CCMF brand ambassadors', 'South Carolina festival staffing'],
+    description: 'Professional event staffing for Carolina Country Music Fest in Myrtle Beach, SC. Brand ambassadors and promotional staff for country music festival brand activations.',
+    bodyContent: `**Carolina Country Music Fest Overview**
+
+Carolina Country Music Fest (CCMF) is the East Coast's premier country music festival, held annually on the beach in Myrtle Beach, South Carolina. The four-day event attracts 30,000+ country music fans with headliners on multiple stages along the oceanfront. CCMF's growth has made it a must-attend for country music fans and a prime activation opportunity for brands targeting this passionate demographic.
+
+**Why Brands Activate at CCMF**
+
+Country music fans are among the most brand-loyal demographics in America. They over-index on beverage brands, automotive purchases, outdoor gear, and lifestyle products. CCMF's beachside setting and multi-day format create extended engagement windows. Festival-goers spend 3-4 days in Myrtle Beach, extending brand exposure beyond the event itself.
+
+**Staffing for Country Music Festivals**
+
+Country music festival staff should understand and appreciate country culture: authenticity, community, and patriotism are core values. Staff who can connect with this audience on a genuine level drive significantly higher engagement rates than generic event staff. Southern hospitality and warm engagement are essential.
+
+**Types of Activations at CCMF**
+
+Beverage brands dominate country music festival activations with branded bar experiences and sampling programs. Boot and western wear brands create try-on experiences. Automotive brands showcase trucks and SUVs. Sunscreen, outdoor lifestyle, and food brands find receptive audiences at the beachside venue.
+
+**Logistics Considerations**
+
+Myrtle Beach's summer heat and humidity require careful staffing planning. Hydration, shade, and shift rotation keep staff performing at peak levels. The beach venue shares many logistical similarities with Hangout Fest.
+
+**Why Choose Air Fresh Marketing**
+
+Air Fresh Marketing provides country-culture-savvy brand ambassadors for CCMF who connect authentically with the festival audience. Our staff are trained for multi-day outdoor events and deliver consistent brand representation throughout the festival weekend.`,
+    staffTypes: ['Brand Ambassadors', 'Sampling Teams', 'Promotional Models', 'Event Coordinators', 'Hospitality Staff', 'Lead Capture Specialists'],
+    stats: { staffPlaced: '150+', eventsServiced: '10+', satisfactionRate: '98%', yearsExperience: '6+' },
+    faqs: [
+      { question: 'When is Carolina Country Music Fest?', answer: 'CCMF takes place annually in June on the beach in Myrtle Beach, South Carolina, running Thursday through Sunday.' },
+      { question: 'What demographics attend CCMF?', answer: 'CCMF attracts primarily 25-54 year old country music fans with above-average household incomes. The audience is brand-loyal and responsive to authentic marketing.' },
+      { question: 'Do you provide bilingual staff for CCMF?', answer: 'While CCMF is primarily English-speaking, we can provide bilingual staff upon request for brands targeting diverse audiences.' },
+      { question: 'How far in advance should I book staff?', answer: 'We recommend booking CCMF staff at least 6-8 weeks in advance to secure top local talent during the busy summer festival season.' },
+    ],
+    logisticsInfo: 'Carolina Country Music Fest takes place on the Myrtle Beach oceanfront. Air Fresh coordinates staff lodging, transportation, and shift scheduling for the multi-day festival.',
+    relatedCitySlug: 'charleston',
+    relatedCityName: 'Charleston',
+    heroImage: '/images/hero-experiential.jpg',
+  },
+  {
+    slug: 'nra-show',
+    title: 'National Restaurant Association Show Staffing | NRA Show Event Staff',
+    h1: 'National Restaurant Association Show Staffing & Event Staff',
+    metaDescription: 'National Restaurant Association Show staffing agency providing booth staff, product demonstrators, and brand ambassadors for NRA Show at McCormick Place, Chicago.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['McCormick Place', 'Chicago Convention Center'],
+    keywords: ['NRA Show staffing', 'National Restaurant Association Show staff', 'Chicago trade show staffing', 'food industry event staff', 'McCormick Place booth staff', 'restaurant industry trade show'],
+    description: 'Professional event staffing for the National Restaurant Association Show at McCormick Place in Chicago. Booth staff, product demonstrators, and brand ambassadors for the food industry\'s largest trade show.',
+    bodyContent: `**National Restaurant Association Show Overview**
+
+The National Restaurant Association Show (NRA Show) is the foodservice industry's most influential annual gathering, held each May at McCormick Place in Chicago. Drawing 55,000+ food industry professionals and featuring 2,000+ exhibitors across 700,000+ square feet, the NRA Show is where the restaurant, hotel, and foodservice industries discover new products, technologies, and trends.
+
+**Why Exhibitors Need Professional Staff**
+
+At a show this large, standing out from 2,000+ competitors requires exceptional booth staff. Professional event staff who understand the foodservice industry can engage qualified buyers, demonstrate products effectively, and capture leads that convert to sales. Generic booth staff who cannot discuss food safety, kitchen operations, or supply chain dynamics will underperform.
+
+**Staffing Needs for NRA Show**
+
+NRA Show exhibitors need product demonstrators who can prepare and present food items, booth hosts who qualify visitors and manage traffic flow, lead capture specialists who identify decision-makers, and culinary talent who can discuss recipes, ingredients, and food trends with industry professionals.
+
+**Types of NRA Show Activations**
+
+Live cooking demonstrations draw crowds and showcase products in action. Tasting stations let buyers experience food and beverage products firsthand. Technology demos show software, equipment, and operational solutions. Educational sessions position brands as thought leaders in the foodservice space.
+
+**McCormick Place Logistics**
+
+McCormick Place is one of the largest convention centers in North America. Staff need to understand the venue's complex layout, union labor rules, and setup/teardown timelines. Experienced Chicago trade show staff navigate these logistics efficiently.
+
+**Why Choose Air Fresh Marketing**
+
+Air Fresh Marketing provides NRA Show staff with food handler certifications, product demonstration experience, and foodservice industry knowledge. Our Chicago network includes trained professionals who have worked McCormick Place events for years.`,
+    staffTypes: ['Product Demonstrators', 'Booth Staff', 'Brand Ambassadors', 'Lead Capture Specialists', 'Culinary Talent', 'Event Coordinators', 'Hospitality Staff'],
+    stats: { staffPlaced: '500+', eventsServiced: '30+', satisfactionRate: '99%', yearsExperience: '12+' },
+    faqs: [
+      { question: 'When is the National Restaurant Association Show?', answer: 'The NRA Show is held annually in May at McCormick Place in Chicago, typically running Saturday through Tuesday.' },
+      { question: 'Do your staff have food handler certifications?', answer: 'Yes. All staff assigned to food demonstration and sampling roles hold current food handler certifications as required by Chicago Department of Health regulations.' },
+      { question: 'Can you provide bilingual booth staff?', answer: 'Absolutely. We provide bilingual English-Spanish staff and can source additional languages for international exhibitors.' },
+      { question: 'What is the minimum booking for NRA Show?', answer: 'Most exhibitors book a minimum of 2-4 staff per day across the 4-day show. Larger booths may require 8-15+ staff.' },
+    ],
+    logisticsInfo: 'The NRA Show takes place annually at McCormick Place in Chicago. Air Fresh coordinates with McCormick Place logistics, union labor requirements, and exhibitor services to ensure smooth staff deployment.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/hero-experiential.jpg',
+  },
+  {
+    slug: 'riot-fest',
+    title: 'Riot Fest Staffing Agency | Chicago Music Festival Event Staff',
+    h1: 'Riot Fest Staffing & Event Staff Chicago',
+    metaDescription: 'Riot Fest staffing agency providing brand ambassadors, sampling teams, and event staff for punk rock and alternative music festival activations in Chicago.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['Douglass Park', 'Chicago'],
+    keywords: ['Riot Fest staffing', 'Chicago music festival staff', 'punk rock festival staffing', 'Riot Fest brand ambassadors', 'alternative music event staff'],
+    description: 'Professional event staffing for Riot Fest in Chicago. Brand ambassadors, sampling teams, and promotional staff for alternative and punk rock music festival brand activations.',
+    bodyContent: `**Riot Fest Overview**
+
+Riot Fest is Chicago's premier alternative and punk rock music festival, held annually in September at Douglass Park on the city's West Side. Drawing 45,000+ music fans daily across three days, Riot Fest combines major headliners with carnival rides, art installations, and a fiercely independent spirit that sets it apart from mainstream music festivals.
+
+**Why Brands Activate at Riot Fest**
+
+Riot Fest attracts a dedicated, passionate audience that values authenticity over corporate polish. This makes it ideal for brands that align with independent, counter-culture, and alternative lifestyles. Energy drinks, craft beverages, streetwear, vinyl records, and music-adjacent brands find highly receptive audiences. The festival's carnival atmosphere creates natural engagement opportunities.
+
+**Staffing for Alternative Music Festivals**
+
+Riot Fest requires staff who understand and respect the alternative music community. Heavy-handed corporate branding will alienate this audience. Ambassadors should be genuine music fans who can talk about bands, connect on cultural references, and represent brands without feeling forced or inauthentic.
+
+**Types of Activations at Riot Fest**
+
+Branded experience lounges with phone charging and shade draw foot traffic. Beverage sampling stations with music-themed activations engage the audience. Merch and vinyl pop-up shops align with the festival culture. Photo ops and interactive installations create shareable social content.
+
+**September Weather in Chicago**
+
+Riot Fest's September timing means variable Chicago weather — warm days, cool evenings, and potential rain. Staff should be prepared for all conditions and maintain energy throughout long festival days.
+
+**Why Choose Air Fresh Marketing**
+
+Air Fresh Marketing provides music-savvy brand ambassadors for Riot Fest who authentically connect with the alternative music community. Our staff understand festival culture and deliver genuine brand engagement.`,
+    staffTypes: ['Brand Ambassadors', 'Sampling Teams', 'Street Team Members', 'Event Coordinators', 'Social Media Teams', 'Merchandise Staff'],
+    stats: { staffPlaced: '200+', eventsServiced: '12+', satisfactionRate: '98%', yearsExperience: '7+' },
+    faqs: [
+      { question: 'When is Riot Fest?', answer: 'Riot Fest takes place annually in mid-September at Douglass Park in Chicago, running Friday through Sunday.' },
+      { question: 'What demographic attends Riot Fest?', answer: 'Riot Fest attracts 18-40 year old alternative music fans who value authenticity, independence, and counter-culture. The audience is highly engaged and brand-responsive when approached authentically.' },
+      { question: 'How should brands approach Riot Fest activations?', answer: 'Authenticity is key. Brands that align with the alternative music community and avoid heavy-handed corporate messaging perform best at Riot Fest.' },
+      { question: 'Do you provide setup and teardown staff?', answer: 'Yes, we can provide setup and teardown crews in addition to brand ambassadors and activation staff.' },
+    ],
+    logisticsInfo: 'Riot Fest takes place at Douglass Park in Chicago. Air Fresh coordinates staff transportation, shift scheduling, and weather contingency planning for the three-day outdoor festival.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/hero-experiential.jpg',
+  },
+  {
+    slug: 'movement-detroit',
+    title: 'Movement Electronic Music Festival Staffing | Detroit Event Staff',
+    h1: 'Movement Electronic Music Festival Staffing & Event Staff',
+    metaDescription: 'Movement Electronic Music Festival staffing providing brand ambassadors, event staff, and experiential marketing teams for techno festival activations in Detroit.',
+    city: 'Detroit',
+    stateAbbrev: 'MI',
+    venues: ['Hart Plaza', 'Downtown Detroit Waterfront'],
+    keywords: ['Movement Festival staffing', 'Detroit electronic music festival staff', 'Movement Detroit brand ambassadors', 'techno festival staffing', 'electronic music event staff'],
+    description: 'Professional event staffing for Movement Electronic Music Festival in Detroit. Brand ambassadors, promotional staff, and experiential marketing teams for electronic music festival activations.',
+    bodyContent: `**Movement Electronic Music Festival Overview**
+
+Movement Electronic Music Festival is the birthplace of techno celebration, held annually over Memorial Day weekend at Hart Plaza on the Detroit waterfront. As the world's largest free electronic music festival for much of its history, Movement draws 100,000+ electronic music fans across three days. The festival is a cultural institution in Detroit and a pilgrimage for electronic music enthusiasts worldwide.
+
+**Why Brands Activate at Movement**
+
+Movement's audience is young, urban, culturally diverse, and deeply passionate about music and nightlife culture. Electronic music fans over-index on fashion, technology, energy drinks, and nightlife brands. The festival's Detroit location adds authenticity and cultural cachet. Brands that respect the electronic music community find exceptionally engaged audiences.
+
+**Staffing for Electronic Music Festivals**
+
+Movement staff should understand electronic music culture: the difference between house, techno, drum & bass, and other subgenres matters to this audience. Staff need high energy for late-night sets, comfort in large crowd environments, and genuine enthusiasm for the music and culture.
+
+**Types of Activations at Movement**
+
+LED-lit brand installations create visual spectacles that match the festival's aesthetic. Listening lounges with premium audio equipment showcase headphone and speaker brands. Technology demos for music production and DJ equipment find passionate audiences. Energy drink and beverage sampling programs drive trial in the high-energy environment.
+
+**Memorial Day Weekend in Detroit**
+
+Movement's late May timing offers pleasant weather but variable conditions. The Hart Plaza waterfront can be windy, and rain is always possible. Staff should be prepared for outdoor conditions from noon through late evening.
+
+**Why Choose Air Fresh Marketing**
+
+Air Fresh Marketing provides electronic music culture-savvy brand ambassadors for Movement who understand the techno community and deliver authentic brand engagement at Detroit's most iconic festival.`,
+    staffTypes: ['Brand Ambassadors', 'Promotional Models', 'Street Team Members', 'Event Coordinators', 'Social Media Teams', 'Experiential Marketing Staff'],
+    stats: { staffPlaced: '250+', eventsServiced: '15+', satisfactionRate: '98%', yearsExperience: '8+' },
+    faqs: [
+      { question: 'When is Movement Electronic Music Festival?', answer: 'Movement takes place annually over Memorial Day weekend (Saturday through Monday) at Hart Plaza in downtown Detroit.' },
+      { question: 'What types of brands do well at Movement?', answer: 'Technology, fashion, energy drinks, headphone/speaker brands, nightlife brands, and lifestyle companies that align with electronic music culture perform best at Movement.' },
+      { question: 'Is Movement a free festival?', answer: 'Movement has transitioned between free and ticketed formats over the years. Recent editions have been ticketed events with daily and weekend pass options.' },
+      { question: 'Do you provide overnight or late-night staff?', answer: 'Yes. Movement events run late into the evening, and we schedule staff for extended shifts and late-night activations as needed.' },
+    ],
+    logisticsInfo: 'Movement takes place at Hart Plaza on the Detroit waterfront. Air Fresh coordinates staff scheduling across the three-day Memorial Day weekend festival, including late-night shift coverage.',
+    relatedCitySlug: 'detroit',
+    relatedCityName: 'Detroit',
+    heroImage: '/images/hero-experiential.jpg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
