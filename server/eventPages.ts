@@ -1786,6 +1786,244 @@ For brands looking to extend their ACL presence beyond Zilker Park, our street t
     relatedCityName: 'Austin',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 20. Outside Lands Music Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'outside-lands',
+    title: 'Outside Lands Staffing Agency | San Francisco Festival Staff',
+    h1: 'Outside Lands Festival Staffing San Francisco',
+    metaDescription:
+      'Outside Lands staffing agency providing brand ambassadors, product samplers, and event staff for OSL Festival at Golden Gate Park in San Francisco. Get your Outside Lands staffing quote.',
+    city: 'San Francisco',
+    stateAbbrev: 'CA',
+    venues: ['Golden Gate Park', 'Polo Fields at Golden Gate Park'],
+    keywords: [
+      'Outside Lands staffing',
+      'OSL festival event staff',
+      'Outside Lands brand ambassadors',
+      'San Francisco festival staffing',
+      'Golden Gate Park event staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for Outside Lands Music & Arts Festival in San Francisco. Our experienced festival staff maximize your brand activation ROI across three days at Golden Gate Park.',
+    bodyContent: `Outside Lands is San Francisco's premier music and arts festival, drawing 220,000+ attendees across three days in August at Golden Gate Park. Known for its unique blend of music, food, wine, beer, art, and comedy, Outside Lands attracts a sophisticated Bay Area audience with high disposable income—making it one of the most valuable brand activation environments on the West Coast festival circuit.
+
+AirFresh Marketing has staffed Outside Lands brand activations, sponsor experiences, and product sampling programs with staff drawn from our deep San Francisco Bay Area talent network. We understand the unique dynamics of a park-based urban festival, from fog-related weather planning to the specific audience demographics that make OSL different from desert or rural music festivals.
+
+**Brand Activation and Sponsor Staff**
+
+Outside Lands' curated brand activation areas—including the Wine Lands, Beer Lands, and GastroMagic stages—offer premium brand placement opportunities. Our brand ambassadors staff sponsor booths, interactive installations, and experiential activations throughout the park. Each team member is trained on your brand messaging and the specific engagement approach that resonates with OSL's culturally aware, environmentally conscious audience.
+
+**Product Sampling Programs**
+
+Outside Lands is a premier food and beverage sampling destination. Our sampling staff manage distribution programs for wine, craft beer, spirits, specialty food, and CPG brands with food-safe handling, responsible alcohol service protocols, and inventory management. We track sampling counts in real time and coordinate with your marketing team on distribution pacing across all three days.
+
+**VIP and Hospitality Staffing**
+
+OSL's VIP and Golden Gate Club experiences demand hospitality staff who can deliver premium service. Our staff manage VIP viewing areas, wine tasting lounges, and premium hospitality experiences with the refined service standards that Bay Area audiences expect.
+
+**Sustainability and Brand Values**
+
+Outside Lands prides itself on sustainability. Our staff are briefed on the festival's environmental initiatives and can authentically communicate sustainability messaging as part of your brand activation.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Bay Area-based ambassadors for sponsor activations and curated brand experiences throughout Golden Gate Park.' },
+      { title: 'Product Samplers', description: 'Trained sampling staff for wine, beer, food, and consumer goods programs across festival grounds.' },
+      { title: 'VIP Hospitality Staff', description: 'Premium hospitality staff for VIP areas, wine tasting experiences, and sponsor lounges.' },
+      { title: 'Lead Capture Specialists', description: 'Data collection staff for email signups, app downloads, and survey engagement at activations.' },
+      { title: 'Sustainability Coordinators', description: 'Staff trained in zero-waste protocols and sustainability messaging for eco-conscious activations.' },
+      { title: 'On-Site Managers', description: 'Experienced festival managers for multi-day coordination across Golden Gate Park venues.' },
+    ],
+    stats: [
+      { value: '220K+', label: 'Total OSL Attendees' },
+      { value: '90+', label: 'Musical Artists' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: '80+', label: 'Food and Drink Vendors' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book Outside Lands staffing?',
+        answer: 'We recommend booking 6-8 weeks before the festival (typically by mid-June for the August event). San Francisco festival staffing demand is high during this period. For large activations requiring 10+ staff, earlier booking ensures access to our best festival-experienced Bay Area talent.',
+      },
+      {
+        question: 'How do you handle San Francisco weather at Outside Lands?',
+        answer: 'August in San Francisco often means fog, wind, and temperatures in the 50s-60s. Our OSL staff are prepared with layered clothing options, and we brief all teams on weather-appropriate attire that still meets brand appearance standards.',
+      },
+      {
+        question: 'Can you staff wine, beer, and spirits activations at Outside Lands?',
+        answer: 'Yes. We provide staff with responsible alcohol service training for wine, craft beer, and spirits sampling. Our team understands Wine Lands and Beer Lands protocols, including pour limits, age verification, wristband systems, and the specific service standards expected in these curated areas.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting at Outside Lands?',
+        answer: 'Yes. All staff check in via GPS at Golden Gate Park. We provide daily real-time dashboards showing staff locations, shift coverage, and engagement metrics. Post-festival reports include sampling counts, interaction data, lead captures, and comprehensive photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'Outside Lands takes place annually in August (Friday through Sunday) at Golden Gate Park in San Francisco, California. AirFresh coordinates staff from our San Francisco Bay Area talent network, manages festival credential processes, and provides on-site management for all three festival days.',
+    relatedCitySlug: 'san-francisco',
+    relatedCityName: 'San Francisco',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 21. Dreamforce (Salesforce Conference)
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'dreamforce',
+    title: 'Dreamforce Staffing Agency | San Francisco Convention Staff',
+    h1: 'Dreamforce Event Staffing San Francisco',
+    metaDescription:
+      'Dreamforce staffing agency providing booth staff, demo specialists, lead capture teams, and hospitality staff for the Salesforce Dreamforce conference in San Francisco.',
+    city: 'San Francisco',
+    stateAbbrev: 'CA',
+    venues: ['Moscone Center', 'Moscone North', 'Moscone South', 'Moscone West'],
+    keywords: [
+      'Dreamforce staffing',
+      'Dreamforce event staff',
+      'Salesforce conference staffing',
+      'Dreamforce booth staff',
+      'tech conference staffing San Francisco',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for Salesforce Dreamforce in San Francisco. From booth staff and product demonstrators to lead capture specialists and hospitality teams, we maximize your Dreamforce investment.',
+    bodyContent: `Dreamforce is the world's largest software conference, attracting 170,000+ attendees to San Francisco each September. As Salesforce's flagship event, Dreamforce represents the most concentrated gathering of enterprise technology decision-makers, making it one of the highest-ROI event staffing opportunities in the B2B space.
+
+AirFresh Marketing has staffed Dreamforce exhibitor booths, sponsor activations, hospitality suites, and satellite events across the Moscone Center complex and surrounding San Francisco venues. We understand that Dreamforce staffing requires technical fluency, B2B communication skills, and the ability to engage C-suite executives and IT decision-makers.
+
+**Exhibition Booth Staff and Product Demonstrators**
+
+The Dreamforce expo floor spans Moscone North, South, and West halls. Competition for attendee attention is intense among thousands of exhibitors. Our booth staff are selected for technical aptitude, professional communication skills, and ability to qualify enterprise prospects efficiently.
+
+Product demonstrators receive extensive pre-event training on your software platform, key use cases, competitive differentiators, and qualification criteria. They credibly discuss technical concepts, answer product questions, and route qualified prospects to your sales team.
+
+**Lead Capture and Qualification**
+
+At Dreamforce, lead quality matters more than quantity. Our lead capture specialists are trained on BANT qualification frameworks customized to your ICP. They scan badges strategically, engage in meaningful qualification conversations, and categorize leads by priority level in real time. We integrate with Salesforce CRM for real-time lead population.
+
+**Hospitality and VIP Event Staff**
+
+Many Dreamforce sponsors host private dinners, cocktail receptions, and executive meetings throughout the week. Our hospitality staff provide VIP guest management, registration coordination, and white-glove service for high-value events where pipeline potential may exceed $50M.
+
+**Dreamforce Campus and Street Team**
+
+The Dreamforce campus extends beyond Moscone Center into surrounding streets. Our street teams distribute branded materials, drive foot traffic to your booth, and create buzz throughout the village.`,
+    staffTypes: [
+      { title: 'Booth Staff', description: 'Professional booth staff with technical aptitude for enterprise software exhibition environments.' },
+      { title: 'Product Demonstrators', description: 'Trained demonstrators who can credibly present your software platform and qualify prospects.' },
+      { title: 'Lead Capture Specialists', description: 'B2B-trained lead qualification staff using BANT frameworks and CRM integration.' },
+      { title: 'Hospitality Staff', description: 'VIP hosts for sponsor dinners, executive receptions, and private meeting coordination.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for breakout sessions, workshops, and sponsor-hosted events.' },
+      { title: 'Street Team', description: 'Brand ambassadors for outdoor Dreamforce campus activations and foot traffic generation.' },
+    ],
+    stats: [
+      { value: '170K+', label: 'Dreamforce Attendees' },
+      { value: '2,700+', label: 'Breakout Sessions' },
+      { value: '4 Days', label: 'Conference Duration' },
+      { value: '$5B+', label: 'Attendee Buying Power' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book Dreamforce staffing?',
+        answer: 'We recommend booking 10-12 weeks before Dreamforce. Demand for qualified tech conference staff in San Francisco peaks during Dreamforce week. For exhibitors needing 8+ staff with technical demonstration skills, earlier booking is essential.',
+      },
+      {
+        question: 'Do your Dreamforce staff have enterprise software experience?',
+        answer: 'Yes. We specifically recruit tech-savvy staff for Dreamforce from our San Francisco Bay Area network, selecting team members with B2B experience, comfort with enterprise technology concepts, and professional presentation skills appropriate for C-suite interactions.',
+      },
+      {
+        question: 'Can you staff both the expo floor and satellite events?',
+        answer: 'Absolutely. We coordinate staff across all Moscone Center halls, the outdoor campus, and satellite events at hotels throughout San Francisco. Many sponsors activate in 3-4 locations simultaneously.',
+      },
+      {
+        question: 'Do you provide GPS check-in and reporting at Dreamforce?',
+        answer: 'Yes. All staff check in via GPS at their assigned venue. We provide daily dashboards showing staff arrivals, lead capture counts, and engagement metrics. Post-event reports include qualification data and ROI analysis.',
+      },
+    ],
+    logisticsInfo:
+      'Dreamforce takes place annually in September at the Moscone Center complex in downtown San Francisco. AirFresh coordinates staff from our Bay Area network, manages credential registration, and provides on-site management across all venues.',
+    relatedCitySlug: 'san-francisco',
+    relatedCityName: 'San Francisco',
+    heroImage: '/images/case-studies/gallery/microsoft/microsoft-1.jpg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 22. Burning Man
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'burning-man',
+    title: 'Burning Man Event Staffing | Black Rock City Brand Activations',
+    h1: 'Burning Man Event Staffing',
+    metaDescription:
+      'Burning Man event staffing for art installations, experiential projects, and creative activations at Black Rock City. Experienced desert event staff for the playa.',
+    city: 'Gerlach',
+    stateAbbrev: 'NV',
+    venues: ['Black Rock Desert', 'Black Rock City'],
+    keywords: [
+      'Burning Man staffing',
+      'Burning Man event staff',
+      'Black Rock City activations',
+      'desert festival staffing',
+      'Burning Man brand experiences',
+    ],
+    description:
+      'AirFresh Marketing provides experienced event staffing for Burning Man art installations and experiential projects at Black Rock City. Our desert-experienced staff support creative projects in the most challenging event environment on Earth.',
+    bodyContent: `Burning Man is the world's most unique cultural gathering, drawing 80,000+ participants to Black Rock City in Nevada's Black Rock Desert. While Burning Man's gifting economy and anti-commercial ethos create a different environment than traditional activations, opportunities exist for brands that approach the playa with authenticity—art installations, sustainability initiatives, and creative collaborations.
+
+AirFresh Marketing has supported Burning Man projects with experienced desert event staff who understand both the logistical demands of operating in an extreme desert environment and the cultural norms that govern brand presence at the event.
+
+**Art Installation and Build Support**
+
+Large-scale art installations are the backbone of the Burning Man experience. Our staff provide build crew support, installation management, interactivity facilitation, and de-installation labor for art projects on the playa.
+
+**Theme Camp Operations**
+
+Theme camps that offer curated experiences need reliable staff to maintain operations across the week. Our team members support camp setup, daily programming, participant engagement, and teardown.
+
+**Sustainability and Leave No Trace**
+
+Burning Man's Leave No Trace mandate is absolute. Our staff are trained in MOOP (Matter Out Of Place) protocols, waste management procedures, and environmental stewardship standards.
+
+**Extreme Environment Logistics**
+
+Operating at Burning Man demands staff who can handle extreme heat (100°F+), dust storms, freezing overnight temperatures, and the physical demands of the desert environment.`,
+    staffTypes: [
+      { title: 'Build Crew', description: 'Physically fit staff for art installation construction, placement, and de-installation on the playa.' },
+      { title: 'Experience Facilitators', description: 'Engaging team members to run interactive experiences, workshops, and programming at theme camps.' },
+      { title: 'Operations Staff', description: 'Camp operations support including setup, daily maintenance, supply management, and breakdown.' },
+      { title: 'Sustainability Coordinators', description: 'MOOP-trained staff for Leave No Trace compliance and environmental stewardship.' },
+      { title: 'Desert Safety Support', description: 'Staff trained in extreme environment protocols, hydration management, and participant safety.' },
+    ],
+    stats: [
+      { value: '80K+', label: 'Burning Man Participants' },
+      { value: '9 Days', label: 'Event Duration' },
+      { value: '400+', label: 'Art Installations' },
+      { value: '1,000+', label: 'Theme Camps' },
+    ],
+    faqs: [
+      {
+        question: 'How is Burning Man staffing different from other events?',
+        answer: 'Burning Man operates in an extreme desert environment with no cell service and limited infrastructure. Our staff are selected for desert experience, physical fitness, self-reliance, and understanding of Burning Man principles. All staff must be self-sufficient with food, water, shelter, and transportation.',
+      },
+      {
+        question: 'Can brands activate at Burning Man?',
+        answer: 'Burning Man has a gifting economy and strong anti-commercial norms. Brand presence must be authentic, creative, and aligned with Burning Man principles. We support art-focused projects and sustainability initiatives that contribute to the community.',
+      },
+      {
+        question: 'How do you handle Burning Man logistics?',
+        answer: 'We coordinate staff transportation to Black Rock City (4+ hours from Reno), credential management, desert survival kit preparation, and communication planning for a zero-cell-service environment.',
+      },
+      {
+        question: 'What about safety in the desert environment?',
+        answer: 'All staff complete desert safety orientation covering heat illness prevention, dust storm protocols, hydration requirements (1.5+ gallons/day), and nighttime safety procedures.',
+      },
+    ],
+    logisticsInfo:
+      'Burning Man takes place annually during the last week of August through Labor Day in the Black Rock Desert near Gerlach, Nevada. AirFresh coordinates staff travel from Reno, manages ticket assistance, and provides pre-event desert survival briefings.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
