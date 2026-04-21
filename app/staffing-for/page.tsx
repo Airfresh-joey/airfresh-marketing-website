@@ -25,16 +25,16 @@ export const metadata: Metadata = {
 export default function EventStaffingIndex() {
   // Group events by region/type for better organization
   const musicFestivals = eventPages.filter(e =>
-    ['coachella', 'ultra-music-festival', 'edc-las-vegas', 'edc-orlando', 'rolling-loud', 'electric-forest', 'firefly-music-festival', 'bonnaroo', 'austin-city-limits', 'lollapalooza', 'governors-ball', 'life-is-beautiful', 'iheartradio-music-festival', 'outside-lands', 'pitchfork-music-festival', 'jazz-fest', 'cma-fest', 'hangout-fest', 'carolina-country-music-fest', 'riot-fest', 'movement-detroit', 'tortuga-music-festival', 'summerfest', 'boston-calling', 'bottlerock-napa-valley', 'welcome-to-rockville', 'iii-points', 'shaky-knees', 'made-in-america', 'wonderfront', 'aftershock-festival', 'faster-horses', 'something-in-the-water', 'forecastle-festival', 'electric-zoo', 'levitate-music-festival', 'watershed-festival', 'camp-flog-gnaw', 'when-we-were-young', 'buku-festival', 'kaaboo-festival', 'voodoo-fest', 'okeechobee-festival', 'day-n-vegas', 'lovers-and-friends-festival', 'sonic-temple', 'just-like-heaven', 'two-step-inn', 'dreamville-festival'].includes(e.slug)
+    ['coachella', 'ultra-music-festival', 'edc-las-vegas', 'edc-orlando', 'rolling-loud', 'electric-forest', 'firefly-music-festival', 'bonnaroo', 'austin-city-limits', 'lollapalooza', 'governors-ball', 'life-is-beautiful', 'iheartradio-music-festival', 'outside-lands', 'pitchfork-music-festival', 'jazz-fest', 'cma-fest', 'hangout-fest', 'carolina-country-music-fest', 'riot-fest', 'movement-detroit', 'tortuga-music-festival', 'summerfest', 'boston-calling', 'bottlerock-napa-valley', 'welcome-to-rockville', 'iii-points', 'shaky-knees', 'made-in-america', 'wonderfront', 'aftershock-festival', 'faster-horses', 'something-in-the-water', 'forecastle-festival', 'electric-zoo', 'levitate-music-festival', 'watershed-festival', 'camp-flog-gnaw', 'when-we-were-young', 'buku-festival', 'kaaboo-festival', 'voodoo-fest', 'okeechobee-festival', 'day-n-vegas', 'lovers-and-friends-festival', 'sonic-temple', 'just-like-heaven', 'two-step-inn', 'dreamville-festival', 'hinterland-music-festival', 'elements-festival', 'beyond-wonderland'].includes(e.slug)
   );
   const techConferences = eventPages.filter(e =>
     ['ces', 'sxsw', 'aws-reinvent', 'e3', 'dreamforce', 'nab-show', 'himss'].includes(e.slug)
   );
   const conventions = eventPages.filter(e =>
-    ['comic-con', 'sdcc', 'nycc', 'anime-expo', 'pax-west', 'kcon-la', 'vidcon', 'complexcon', 'twitchcon'].includes(e.slug)
+    ['comic-con', 'sdcc', 'nycc', 'anime-expo', 'pax-west', 'kcon-la', 'vidcon', 'complexcon', 'twitchcon', 'fan-expo-dallas'].includes(e.slug)
   );
   const tradeShows = eventPages.filter(e =>
-    ['nrf-big-show', 'natural-products-expo', 'la-auto-show', 'detroit-auto-show', 'art-basel-miami', 'sema', 'magic-las-vegas', 'nab-show', 'cedia-expo', 'new-york-auto-show', 'chicago-auto-show', 'nra-show', 'namm-show'].includes(e.slug)
+    ['nrf-big-show', 'natural-products-expo', 'la-auto-show', 'detroit-auto-show', 'art-basel-miami', 'sema', 'magic-las-vegas', 'nab-show', 'cedia-expo', 'new-york-auto-show', 'chicago-auto-show', 'nra-show', 'namm-show', 'arnold-sports-festival'].includes(e.slug)
   );
   const foodCulture = eventPages.filter(e =>
     ['taste-of-chicago', 'south-beach-wine-food-festival', 'essence-fest', 'essence-festival', 'nyfw', 'tribeca-festival', 'sundance-film-festival', 'burning-man', 'miami-art-week', 'stagecoach', 'mardi-gras', 'rose-bowl', 'houston-rodeo'].includes(e.slug)

@@ -37,6 +37,191 @@ export interface EventPageConfig {
 
 export const eventPages: EventPageConfig[] = [
   // ─────────────────────────────────────────────────────────────────
+  // Arnold Sports Festival — Columbus, OH
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "arnold-sports-festival",
+    title: "Arnold Sports Festival Staffing | Brand Ambassadors & Event Staff Columbus OH",
+    h1: "Arnold Sports Festival Staffing",
+    metaDescription: "Arnold Sports Festival staffing services in Columbus, Ohio. Professional brand ambassadors, promotional models, and event staff for Arnold Classic activations.",
+    city: "Columbus",
+    stateAbbrev: "OH",
+    venues: ["Greater Columbus Convention Center", "Ohio Expo Center"],
+    keywords: ["Arnold Sports Festival staffing", "Arnold Classic brand ambassadors", "Columbus fitness expo staff", "Arnold event staffing"],
+    description: "The Arnold Sports Festival is the world's largest multi-sport fitness expo, drawing 250,000+ athletes, fitness enthusiasts, and fans to Columbus, Ohio each March. Brand activations at the Arnold reach a highly engaged audience of fitness consumers.",
+    bodyContent: `<h2>Arnold Sports Festival Staffing Services in Columbus</h2>
+<p>Arnold Sports Festival staffing requires professionals who understand the fitness and supplement industry. This massive multi-day expo features bodybuilding, strongman, CrossFit, martial arts, and dozens of other sports alongside a massive expo hall. Brand ambassadors must be knowledgeable about fitness products and comfortable in an energetic, physically-focused environment.</p>
+<h3>Expo Hall Activation Opportunities</h3>
+<p>The Arnold Expo hall features 1,000+ booths from supplement brands, equipment manufacturers, apparel companies, and fitness tech startups. Competition for attention is fierce, making experienced booth staff essential for standing out.</p>
+<h3>Staffing Roles at the Arnold</h3>
+<p>Common staffing needs include product sampling teams for supplement and nutrition brands, booth staff for equipment demonstrations, promotional models for brand visibility, and lead capture specialists for B2B connections.</p>
+<h3>Columbus Event Staff</h3>
+<p>Our Midwest staffing network provides experienced fitness industry staff for the Arnold and all Columbus events. <a href="/get-quote">Request Arnold Sports Festival staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Promotional Models", "Sampling Staff", "Booth Staff", "Lead Capture"],
+    stats: [
+      { label: "Attendance", value: "250,000+" },
+      { label: "Days", value: "4" },
+      { label: "Exhibitors", value: "1,000+" }
+    ],
+    faqs: [
+      { question: "When is the Arnold Sports Festival?", answer: "The Arnold Sports Festival takes place in late February or early March at the Greater Columbus Convention Center in Columbus, Ohio." },
+      { question: "Do staff need fitness knowledge?", answer: "Yes, we prioritize staff with fitness industry knowledge and active lifestyles who can authentically represent supplement, equipment, and apparel brands." },
+      { question: "How many staff do I need for the Arnold?", answer: "For a standard 10x20 expo booth, we recommend 4-6 staff per shift across the 4-day event." }
+    ],
+    logisticsInfo: "Greater Columbus Convention Center is in downtown Columbus with hotels within walking distance. The Arnold runs Thursday through Sunday with expo hours varying by day.",
+    relatedCitySlug: "columbus",
+    relatedCityName: "Columbus",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Hinterland Music Festival — Saint Charles, IA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "hinterland-music-festival",
+    title: "Hinterland Music Festival Staffing | Brand Ambassadors & Event Staff Iowa",
+    h1: "Hinterland Music Festival Staffing",
+    metaDescription: "Hinterland Music Festival staffing in Iowa. Professional brand ambassadors, promotional models, and event staff for Hinterland activations near Des Moines.",
+    city: "Saint Charles",
+    stateAbbrev: "IA",
+    venues: ["Avenue of the Saints Amphitheater"],
+    keywords: ["Hinterland music festival staffing", "Iowa festival staff", "Hinterland brand ambassadors", "Des Moines festival staffing"],
+    description: "Hinterland Music Festival is a boutique indie and folk music festival in the rolling hills outside Des Moines, Iowa. The intimate, family-friendly atmosphere attracts a loyal Midwest audience perfect for authentic brand activations.",
+    bodyContent: `<h2>Hinterland Music Festival Staffing in Iowa</h2>
+<p>Hinterland Music Festival staffing requires brand ambassadors who connect with the Midwest indie music community. Set on the scenic Avenue of the Saints Amphitheater near Des Moines, Hinterland offers an intimate festival experience that values authenticity over flash. Brand activations succeed here by matching the festival's down-to-earth vibe.</p>
+<h3>Midwest Festival Activations</h3>
+<p>Hinterland draws a loyal audience from Iowa, Nebraska, Missouri, Minnesota, and beyond. Brands targeting the heartland demographic find engaged, receptive consumers at this festival. Craft beverage, outdoor lifestyle, and sustainable product brands perform particularly well.</p>
+<h3>Staffing for Boutique Festivals</h3>
+<p>Smaller festivals like Hinterland require staff who can create intimate, personal interactions. High-pressure sales tactics don't work here. Our brand ambassadors are trained to build genuine connections with festival-goers.</p>
+<h3>Iowa Event Staffing</h3>
+<p>Our Midwest staffing coverage includes Des Moines and surrounding Iowa communities. <a href="/get-quote">Request Hinterland festival staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Event Staff", "Street Teams"],
+    stats: [
+      { label: "Attendance", value: "15,000+" },
+      { label: "Days", value: "3" },
+      { label: "Setting", value: "Outdoor/Camping" }
+    ],
+    faqs: [
+      { question: "When is Hinterland Music Festival?", answer: "Hinterland takes place in early August at the Avenue of the Saints Amphitheater near Saint Charles, Iowa, about 30 minutes south of Des Moines." },
+      { question: "What type of brands activate at Hinterland?", answer: "Craft beverage, outdoor lifestyle, sustainable products, and Midwest regional brands see strong engagement at Hinterland." },
+      { question: "Is Hinterland a camping festival?", answer: "Yes, Hinterland offers camping options. Staff logistics may include on-site accommodations or nearby hotel arrangements." }
+    ],
+    logisticsInfo: "Avenue of the Saints is 30 minutes south of Des Moines in rural Iowa. Staff should prepare for hot August weather and limited nearby services.",
+    relatedCitySlug: "des-moines",
+    relatedCityName: "Des Moines",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Elements Music & Arts Festival — Lakewood, PA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "elements-festival",
+    title: "Elements Music & Arts Festival Staffing | Brand Ambassadors & Event Staff Pennsylvania",
+    h1: "Elements Music & Arts Festival Staffing",
+    metaDescription: "Elements Music & Arts Festival staffing in Pennsylvania. Professional brand ambassadors and event staff for Elements electronic music festival activations.",
+    city: "Lakewood",
+    stateAbbrev: "PA",
+    venues: ["Long Pond, PA", "Pocono Raceway Area"],
+    keywords: ["Elements festival staffing", "Pennsylvania music festival staff", "Elements brand ambassadors", "electronic music festival staffing PA"],
+    description: "Elements Music & Arts Festival is an immersive electronic music and arts camping festival in the Poconos. The festival's emphasis on art installations, sustainability, and community creates a unique environment for mindful brand activations.",
+    bodyContent: `<h2>Elements Music & Arts Festival Staffing in Pennsylvania</h2>
+<p>Elements Festival staffing requires brand ambassadors who appreciate electronic music culture and immersive festival experiences. Set in the scenic Pocono Mountains, Elements combines world-class electronic music with interactive art installations and a strong community ethos. Staff must be comfortable in a camping festival environment and engage authentically with the audience.</p>
+<h3>Art-Forward Activations</h3>
+<p>Elements' commitment to art and sustainability means brands that align with these values see the strongest engagement. Eco-conscious products, wellness brands, and creative technology companies find their ideal audience here.</p>
+<h3>Electronic Music Festival Staffing</h3>
+<p>Our team has staffed electronic music events including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/electric-forest">Electric Forest</a>, <a href="/staffing-for/electric-zoo">Electric Zoo</a>, and <a href="/staffing-for/movement-detroit">Movement Detroit</a>. We understand the unique culture and engagement style of the electronic music community.</p>
+<h3>Pennsylvania Event Staff</h3>
+<p>Our Northeast staffing network covers Pennsylvania festivals and events. <a href="/get-quote">Request Elements Festival staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Event Staff", "Street Teams", "Hospitality Staff"],
+    stats: [
+      { label: "Attendance", value: "15,000+" },
+      { label: "Days", value: "3" },
+      { label: "Setting", value: "Camping" }
+    ],
+    faqs: [
+      { question: "When is Elements Festival?", answer: "Elements Music & Arts Festival takes place in August in the Pocono Mountains of Pennsylvania." },
+      { question: "What brands work well at Elements?", answer: "Eco-conscious, wellness, and lifestyle brands that align with the festival's values of sustainability and community see the best results." },
+      { question: "Do staff need camping accommodations?", answer: "Yes, Elements is a camping festival. We coordinate camping passes or nearby lodging for all staff." }
+    ],
+    logisticsInfo: "Located in the Pocono Mountains about 2 hours from NYC and Philadelphia. Staff should prepare for camping conditions and variable summer weather.",
+    relatedCitySlug: "philadelphia",
+    relatedCityName: "Philadelphia",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Fan Expo Dallas — Dallas, TX
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "fan-expo-dallas",
+    title: "Fan Expo Dallas Staffing | Brand Ambassadors & Event Staff for Dallas Comic Con",
+    h1: "Fan Expo Dallas Staffing",
+    metaDescription: "Fan Expo Dallas staffing services. Professional brand ambassadors, booth staff, and event staff for Fan Expo Dallas comic convention activations.",
+    city: "Dallas",
+    stateAbbrev: "TX",
+    venues: ["Kay Bailey Hutchison Convention Center"],
+    keywords: ["Fan Expo Dallas staffing", "Dallas comic con staff", "Fan Expo brand ambassadors", "Dallas convention staffing"],
+    description: "Fan Expo Dallas (formerly Dallas Comic Con) is the largest pop culture convention in the Southwest, drawing 100,000+ fans of comics, gaming, anime, and entertainment to the Kay Bailey Hutchison Convention Center each year.",
+    bodyContent: `<h2>Fan Expo Dallas Staffing Services</h2>
+<p>Fan Expo Dallas staffing requires professionals who understand pop culture fandom and the convention experience. As the largest fan convention in the Southwest, Fan Expo Dallas attracts passionate fans of comics, movies, TV, gaming, and anime. Brand ambassadors must be culturally literate and comfortable engaging with cosplayers, collectors, and enthusiasts.</p>
+<h3>Convention Activation Opportunities</h3>
+<p>Fan Expo Dallas offers a massive expo hall plus panel rooms, celebrity photo ops, and artist alleys. Brands in entertainment, gaming, food and beverage, and lifestyle find engaged audiences ready to interact with well-executed activations.</p>
+<h3>Experienced Convention Staff</h3>
+<p>Air Fresh Marketing has staffed conventions nationwide including <a href="/staffing-for/comic-con">Comic-Con</a>, <a href="/staffing-for/sdcc">SDCC</a>, <a href="/staffing-for/nycc">NYCC</a>, <a href="/staffing-for/anime-expo">Anime Expo</a>, and <a href="/staffing-for/pax-west">PAX West</a>. Our convention staff understand fan culture and deliver authentic engagement.</p>
+<h3>Dallas Event Staffing</h3>
+<p>Our <a href="/cities/dallas">Dallas staffing team</a> provides experienced professionals for all Dallas-Fort Worth area events. <a href="/get-quote">Request Fan Expo Dallas staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Booth Staff", "Registration Staff", "Promotional Models", "Event Coordinators"],
+    stats: [
+      { label: "Attendance", value: "100,000+" },
+      { label: "Days", value: "3" },
+      { label: "Audience", value: "Pop Culture Fans" }
+    ],
+    faqs: [
+      { question: "When is Fan Expo Dallas?", answer: "Fan Expo Dallas takes place in June at the Kay Bailey Hutchison Convention Center in downtown Dallas, Texas." },
+      { question: "Do staff need pop culture knowledge for Fan Expo?", answer: "Yes, we prioritize staff with genuine pop culture knowledge who can engage authentically with fans of comics, gaming, anime, and entertainment." },
+      { question: "How does Fan Expo Dallas compare to Comic-Con?", answer: "Fan Expo Dallas is the Southwest's largest fan convention with 100,000+ attendance, making it a major activation opportunity second only to San Diego and New York Comic-Cons." }
+    ],
+    logisticsInfo: "Kay Bailey Hutchison Convention Center is in downtown Dallas with extensive hotel and transportation options. June weather is hot—plan for AC transitions between indoor expo and outdoor areas.",
+    relatedCitySlug: "dallas",
+    relatedCityName: "Dallas",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // Neon Garden / Beyond Wonderland — San Bernardino, CA
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: "beyond-wonderland",
+    title: "Beyond Wonderland Staffing | Brand Ambassadors & Event Staff San Bernardino CA",
+    h1: "Beyond Wonderland Staffing",
+    metaDescription: "Beyond Wonderland festival staffing in San Bernardino, California. Professional brand ambassadors and event staff for Insomniac's Beyond Wonderland activations.",
+    city: "San Bernardino",
+    stateAbbrev: "CA",
+    venues: ["NOS Events Center"],
+    keywords: ["Beyond Wonderland staffing", "Beyond Wonderland brand ambassadors", "San Bernardino festival staff", "Insomniac event staffing"],
+    description: "Beyond Wonderland is Insomniac's flagship Southern California electronic music festival at the NOS Events Center. The Alice in Wonderland-themed festival draws 60,000+ EDM fans for immersive, visually stunning brand activation opportunities.",
+    bodyContent: `<h2>Beyond Wonderland Festival Staffing in San Bernardino</h2>
+<p>Beyond Wonderland staffing requires brand ambassadors comfortable in the electronic music festival environment. Produced by Insomniac Events (the same team behind <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>), Beyond Wonderland delivers a visually spectacular experience with the Wonderland theme woven throughout. Staff must match the festival's creative energy and engage with the EDM community authentically.</p>
+<h3>Insomniac Festival Activations</h3>
+<p>Insomniac festivals are known for immersive production value. Brand activations that embrace the creative, whimsical aesthetic of Beyond Wonderland see significantly higher engagement than generic setups. Interactive, visually engaging experiences are essential.</p>
+<h3>Electronic Music Festival Staff</h3>
+<p>Our team specializes in electronic music festival staffing across the Insomniac portfolio including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/edc-orlando">EDC Orlando</a>, and Beyond Wonderland. We understand rave culture, PLUR values, and the unique engagement dynamics of the EDM community.</p>
+<h3>Southern California Staff</h3>
+<p>Our <a href="/cities/los-angeles">Los Angeles area staffing team</a> covers San Bernardino and all Inland Empire events. <a href="/get-quote">Request Beyond Wonderland staffing</a>.</p>`,
+    staffTypes: ["Brand Ambassadors", "Sampling Staff", "Event Staff", "Street Teams", "VIP Hosts"],
+    stats: [
+      { label: "Attendance", value: "60,000+" },
+      { label: "Days", value: "2" },
+      { label: "Genre", value: "EDM" }
+    ],
+    faqs: [
+      { question: "When is Beyond Wonderland?", answer: "Beyond Wonderland SoCal takes place in March at the NOS Events Center in San Bernardino, California." },
+      { question: "What type of brands activate at Beyond Wonderland?", answer: "Beverage brands, tech companies, lifestyle brands, and fashion labels targeting the 18-35 EDM demographic regularly activate at Beyond Wonderland." },
+      { question: "Do you staff other Insomniac events?", answer: "Yes, we provide staffing for Insomniac festivals including EDC Las Vegas, EDC Orlando, Beyond Wonderland, and other events in the portfolio." }
+    ],
+    logisticsInfo: "NOS Events Center is in San Bernardino, about 60 miles east of Los Angeles. Staff should plan for travel time and potentially warm March weather in the Inland Empire.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/hero-experiential.jpg"
+  },
+  // ─────────────────────────────────────────────────────────────────
   // Lovers & Friends Festival — Las Vegas, NV
   // ─────────────────────────────────────────────────────────────────
   {
