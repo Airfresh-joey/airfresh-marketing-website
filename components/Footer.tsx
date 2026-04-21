@@ -81,6 +81,11 @@ export default function Footer() {
     { name: "Dreamforce", href: "/staffing-for/dreamforce" },
     { name: "Art Basel Miami", href: "/staffing-for/art-basel-miami" },
     { name: "NRF Big Show", href: "/staffing-for/nrf-big-show" },
+    { name: "Ultra Music Festival", href: "/staffing-for/ultra-music-festival" },
+    { name: "Rolling Loud", href: "/staffing-for/rolling-loud" },
+    { name: "Governors Ball", href: "/staffing-for/governors-ball" },
+    { name: "Anime Expo", href: "/staffing-for/anime-expo" },
+    { name: "LA Auto Show", href: "/staffing-for/la-auto-show" },
     { name: "All Events →", href: "/events" },
   ];
 
