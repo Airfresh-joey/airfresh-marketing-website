@@ -3917,6 +3917,628 @@ Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303
     relatedCityName: 'Los Angeles',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+  // ─────────────────────────────────────────────────────────────────
+  // 41. HIMSS Global Health Conference
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'himss',
+    title: 'HIMSS Staffing Agency | Healthcare IT Conference Event Staff',
+    h1: 'HIMSS Global Health Conference Staffing',
+    metaDescription:
+      'HIMSS staffing agency providing healthcare-trained brand ambassadors, booth staff, product demonstrators, and lead capture teams for HIMSS Global Health Conference.',
+    city: 'Orlando',
+    stateAbbrev: 'FL',
+    venues: ['Orange County Convention Center', 'Orlando Convention Center'],
+    keywords: [
+      'HIMSS staffing',
+      'HIMSS conference staff',
+      'healthcare conference staffing',
+      'HIMSS brand ambassadors',
+      'healthcare IT event staff',
+      'medical conference staffing agency',
+      'HIMSS booth staff',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for HIMSS Global Health Conference, the largest healthcare IT event in the world. Our healthcare-trained brand ambassadors, booth staff, and product demonstrators help health tech companies maximize their HIMSS investment.',
+    bodyContent: `HIMSS Global Health Conference is the largest and most influential healthcare information technology event in the world, bringing together over 40,000 health IT professionals, hospital administrators, clinicians, and technology vendors for four days of education, innovation showcases, and business networking. The conference attracts decision-makers from every segment of the healthcare industry, from hospital CIOs and CMIOs to health system procurement leaders and clinical informatics specialists.
+
+For healthcare technology companies, HIMSS represents the single most important marketing event of the year. The conference generates billions of dollars in purchase decisions and vendor evaluations, with many health systems using HIMSS as their primary venue for evaluating new technology partnerships. The stakes for exhibitors are extraordinarily high, making professional booth staffing not just important but essential for ROI.
+
+## Why HIMSS Demands Specialized Event Staff
+
+HIMSS is fundamentally different from consumer events or general trade shows. The attendees are highly educated healthcare professionals who expect substantive, knowledgeable interactions. Generic trade show staff who cannot speak intelligently about healthcare workflows, regulatory requirements, EHR integrations, and clinical outcomes will damage your brand credibility with this audience.
+
+The healthcare IT buyer's journey is complex and high-stakes. Hospital technology purchases often involve committees of clinicians, IT professionals, administrators, and procurement specialists. Your HIMSS booth staff need to identify decision-makers, understand where prospects are in the evaluation process, and capture detailed information that enables effective post-show follow-up.
+
+HIMSS attendees are particularly resistant to hard-sell tactics. Healthcare professionals respond to evidence-based presentations, peer validation, and demonstrations of genuine understanding of their clinical and operational challenges. Your booth staff must be able to engage in consultative conversations that demonstrate expertise rather than reciting scripted talking points.
+
+## AirFresh Marketing's HIMSS Staffing Solutions
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides specialized staffing for HIMSS and healthcare conferences nationwide. Our [convention staffing](/services/convention-staffing) teams for HIMSS include staff with healthcare industry backgrounds who can represent your technology solutions with genuine credibility.
+
+### Healthcare-Trained Product Demonstrators
+
+Our HIMSS product demonstrators go through extensive preparation that includes healthcare terminology training, understanding of clinical workflows, HIPAA awareness, and your specific product demonstrations. We recruit staff with healthcare, biotech, or health IT backgrounds whenever possible, ensuring they can engage in substantive conversations about your solution's clinical and operational impact.
+
+### Booth Traffic Management and Lead Qualification
+
+HIMSS booth traffic varies dramatically throughout the conference, with keynote breaks and networking sessions creating surges that can overwhelm unprepared teams. Our booth management staff optimize traffic flow, ensure no prospect waits too long for engagement, and qualify leads using your criteria so sales teams can prioritize high-value follow-ups.
+
+Our [lead capture specialists](/services/convention-staffing) use tablet-based tools to capture detailed prospect information including current technology stack, purchasing timeline, budget authority, and specific pain points. This rich data transforms HIMSS leads from business card collections into actionable sales intelligence.
+
+### Hospitality and Meeting Coordination
+
+Many HIMSS exhibitors host private meetings, dinners, and hospitality events alongside their booth presence. Our hospitality staff manage executive meetings, coordinate transportation to off-site events, and ensure that every C-suite interaction reflects your brand's professionalism and attention to detail.
+
+### Scanner Staff and Data Collection
+
+Badge scanning at HIMSS captures basic attendee information, but our staff supplement scanner data with qualitative notes about each interaction. This combination of quantitative and qualitative data creates the complete picture that healthcare sales teams need for effective post-HIMSS outreach.
+
+## HIMSS Logistics and Operations
+
+The Orange County Convention Center in Orlando is one of the largest convention centers in the United States, and HIMSS utilizes significant floor space across multiple halls. Our team coordinates staff logistics across the expansive venue with [GPS check-in](/technology) ensuring every team member is at their assigned position when the exhibition floor opens.
+
+HIMSS runs Tuesday through Friday, with setup typically beginning the weekend before. We coordinate staff for setup days, rehearse product demonstrations during pre-show hours, and ensure all team members are fully prepared before the first attendee arrives.
+
+Healthcare conference dress codes trend professional, and our staff arrive in business-appropriate attire that aligns with the executive audience. We coordinate with your team on branded elements, badges, and any uniform requirements specific to your booth design.
+
+## Maximizing Your HIMSS Investment
+
+The average HIMSS exhibitor invests six figures or more in booth space, travel, marketing materials, and staff. Maximizing the return on this investment requires booth staff who can convert traffic into qualified opportunities. Our approach focuses on quality interactions over quantity, ensuring that every prospect engagement captures the information your sales team needs for effective follow-up.
+
+We recommend establishing clear lead qualification criteria before HIMSS, with staff trained to categorize leads by urgency, budget authority, and fit. This ensures your sales team can begin outreach to the highest-value prospects immediately after the conference, before competitors' follow-up efforts begin.
+
+Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your HIMSS staffing strategy.`,
+    staffTypes: [
+      {
+        title: 'Healthcare Product Demonstrators',
+        description:
+          'Staff with healthcare industry backgrounds trained on clinical workflows, healthcare terminology, HIPAA compliance, and your specific product demonstrations.',
+      },
+      {
+        title: 'Lead Qualification Specialists',
+        description:
+          'Booth staff trained to identify decision-makers, assess purchasing timelines, and capture detailed prospect data for healthcare sales team follow-up.',
+      },
+      {
+        title: 'Executive Hospitality Staff',
+        description:
+          'Professional hospitality teams for C-suite meetings, private demonstrations, dinners, and off-site HIMSS events.',
+      },
+      {
+        title: 'Booth Traffic Managers',
+        description:
+          'Staff who optimize traffic flow, manage queue times, and ensure efficient booth operations during high-traffic HIMSS periods.',
+      },
+    ],
+    stats: [
+      { value: '40K+', label: 'HIMSS Attendees' },
+      { value: '#1', label: 'Healthcare IT Conference' },
+      { value: '4 Days', label: 'Conference Duration' },
+      { value: '$B+', label: 'Purchase Decisions Influenced' },
+    ],
+    faqs: [
+      {
+        question: 'Do your staff have healthcare industry knowledge?',
+        answer: 'Yes. Our HIMSS teams include staff with healthcare, biotech, and health IT backgrounds. All staff complete healthcare-specific training including terminology, clinical workflows, HIPAA awareness, and your product demonstrations before the conference.',
+      },
+      {
+        question: 'How do you handle lead qualification at HIMSS?',
+        answer: 'We train staff on your specific qualification criteria, use tablet-based capture tools for detailed prospect data, and supplement badge scans with qualitative interaction notes. This creates actionable sales intelligence rather than just contact information.',
+      },
+      {
+        question: 'Can you staff private meetings and hospitality events at HIMSS?',
+        answer: 'Yes. Many exhibitors host executive meetings, dinners, and hospitality events alongside their booth. Our hospitality staff coordinate these events with the professionalism that C-suite healthcare executives expect.',
+      },
+      {
+        question: 'When should we start planning HIMSS staffing?',
+        answer: 'We recommend starting three to four months before HIMSS. This allows time to recruit staff with healthcare backgrounds, complete product training, rehearse demonstrations, and coordinate logistics at the Orange County Convention Center.',
+      },
+    ],
+    logisticsInfo:
+      'HIMSS Global Health Conference takes place annually (typically March) at the Orange County Convention Center in Orlando, Florida. The four-day conference is the largest healthcare IT event worldwide. AirFresh coordinates healthcare-trained staff with full credential management and product demonstration rehearsals.',
+    relatedCitySlug: 'orlando',
+    relatedCityName: 'Orlando',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 42. Sundance Film Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'sundance-film-festival',
+    title: 'Sundance Film Festival Staffing Agency | Sundance Event Staff Park City',
+    h1: 'Sundance Film Festival Staffing',
+    metaDescription:
+      'Sundance Film Festival staffing agency providing brand ambassadors, VIP hospitality staff, experiential marketing teams, and event staff for Sundance activations in Park City, Utah.',
+    city: 'Park City',
+    stateAbbrev: 'UT',
+    venues: ['Park City Main Street', 'Egyptian Theatre', 'Eccles Center', 'Sundance Mountain Resort'],
+    keywords: [
+      'Sundance Film Festival staffing',
+      'Sundance brand ambassadors',
+      'Sundance event staff',
+      'Park City event staffing',
+      'Sundance experiential marketing',
+      'film festival staffing agency',
+      'Sundance VIP hospitality',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for the Sundance Film Festival in Park City, Utah, including brand ambassadors, VIP hospitality staff, experiential marketing teams, and event staff for Sundance brand activations and premiere events.',
+    bodyContent: `The Sundance Film Festival is the most prestigious independent film festival in the world, transforming the mountain town of Park City, Utah into a ten-day epicenter of entertainment, culture, and premium brand activations each January. Founded by Robert Redford, Sundance attracts over 120,000 attendees including A-list celebrities, studio executives, entertainment media, tech moguls, and cultural influencers who represent one of the most affluent and influential audiences in the event marketing landscape.
+
+For brands seeking to align with cultural prestige, creative innovation, and an ultra-premium consumer audience, Sundance offers an activation opportunity that no other event can match. The festival's intimate mountain town setting creates a concentrated environment where celebrities, industry executives, and premium consumers share streets, restaurants, and brand experiences.
+
+## Why Sundance Is a Premium Brand Activation Platform
+
+Sundance attracts a uniquely powerful audience for brand marketers. The festival's attendees include entertainment industry decision-makers, technology executives, venture capitalists, luxury consumers, and cultural influencers whose social media posts and word-of-mouth recommendations carry extraordinary influence.
+
+Park City's intimate scale means that brand activations at Sundance operate in close proximity to celebrity attendees. A well-positioned brand house or activation on Main Street can generate celebrity engagement and paparazzi coverage that amplifies brand visibility exponentially. The media density at Sundance is extraordinary, with entertainment, lifestyle, and business press covering not just films but the cultural experience of the festival.
+
+The January mountain setting creates a unique aesthetic that differentiates Sundance activations from warm-weather festival marketing. Premium winter experiences, heated brand chalets, aprés-ski activations, and mountain-town hospitality create distinctive brand moments that stand out in social media feeds.
+
+Sundance's cultural positioning associates brands with creative innovation, independent thinking, and artistic excellence. For brands seeking to build premium positioning and cultural relevance, this association is immensely valuable.
+
+## AirFresh Marketing's Sundance Staffing Solutions
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides premium staffing for Sundance Film Festival, understanding that this event demands a staffing approach that matches its exclusive atmosphere. Our [brand ambassadors](/services/brand-ambassadors) for Sundance are selected for sophistication, discretion, and the ability to engage naturally with celebrity and executive audiences.
+
+### Premium Brand Ambassadors
+
+Sundance brand ambassadors must project sophistication and cultural awareness while maintaining the warmth and approachability that creates genuine connections. Our Sundance teams are polished communicators who can engage with industry executives, celebrities, and affluent consumers with equal ease. They are trained in celebrity interaction protocols and maintain professional discretion at all times.
+
+### VIP Hospitality and Brand House Staff
+
+Many brands create fully immersive brand houses during Sundance, hosting invite-only events, celebrity gifting suites, panel discussions, and premiere after-parties. Our [hospitality staff](/services/event-management) manage these premium environments with white-glove service, including guest list management, coat check, beverage service, and VIP escort services.
+
+### Experiential Marketing Teams
+
+Sundance [experiential activations](/services/experiential-marketing) must feel organic to the festival's artistic atmosphere. Our teams support branded warming stations, interactive installations, content creation studios, product experience moments, and pop-up retail experiences that align with Sundance's creative sensibility.
+
+### Event and Premiere Support Staff
+
+Film premieres, panel discussions, and private screenings require professional event support including ushering, credential checking, queue management, and VIP seating coordination. Our event staff are trained in the protocols specific to entertainment industry events.
+
+## Park City Mountain Town Logistics
+
+Sundance's Park City location presents unique logistical challenges including winter mountain weather, limited parking, altitude considerations, and the compact geography of Main Street. Our operations team coordinates all logistics including staff transportation from Salt Lake City, cold-weather gear and protocol, and positioning across multiple venues throughout Park City and the surrounding canyons.
+
+January temperatures in Park City regularly drop below zero, and staff must maintain energy and warmth during extended outdoor shifts. We provide cold-weather gear, schedule warming breaks, and recruit from talent networks accustomed to mountain conditions.
+
+The festival's distribution across multiple venues including theaters, brand houses, hotels, and the Sundance Mountain Resort requires flexible staff who can move between locations as programming demands. Our [GPS check-in system](/technology) tracks staff across the dispersed festival footprint.
+
+## Creating Impact at Sundance
+
+Successful Sundance brand activations understand that the festival audience responds to authenticity, creativity, and exclusivity. Heavy-handed branding or aggressive promotional tactics are counterproductive in this sophisticated environment. The most impactful activations create genuine value for attendees through warmth, comfort, unique experiences, and thoughtful hospitality.
+
+Celebrity and influencer engagement at Sundance is organic rather than transactional. Brands that create environments where cultural luminaries naturally want to spend time generate authentic endorsement that no paid placement can replicate. Our staff are trained to facilitate these organic moments with discretion and professionalism.
+
+Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 to discuss your Sundance Film Festival staffing needs.`,
+    staffTypes: [
+      {
+        title: 'Premium Brand Ambassadors',
+        description:
+          'Sophisticated, discreet ambassadors who engage naturally with celebrity, executive, and affluent audiences in Sundance\'s exclusive atmosphere.',
+      },
+      {
+        title: 'Brand House & VIP Staff',
+        description:
+          'White-glove hospitality teams managing brand houses, gifting suites, premiere parties, and invite-only events with celebrity guest protocols.',
+      },
+      {
+        title: 'Experiential Activation Teams',
+        description:
+          'Staff supporting warming stations, interactive installations, content studios, and pop-up experiences aligned with Sundance\'s artistic sensibility.',
+      },
+      {
+        title: 'Premiere & Event Support',
+        description:
+          'Professional event staff for film premieres, panel discussions, screenings, and private events with entertainment industry protocol training.',
+      },
+    ],
+    stats: [
+      { value: '120K+', label: 'Sundance Festival Attendees' },
+      { value: '10 Days', label: 'Festival Duration' },
+      { value: '#1', label: 'Indie Film Festival Worldwide' },
+      { value: 'A-List', label: 'Celebrity & Executive Audience' },
+    ],
+    faqs: [
+      {
+        question: 'How do your staff handle celebrity interactions at Sundance?',
+        answer: 'Our Sundance teams are trained in celebrity interaction protocols including professional discretion, photography policies, and natural engagement techniques. Staff maintain composure and professionalism while creating welcoming environments for high-profile guests.',
+      },
+      {
+        question: 'How do you handle the cold weather and mountain logistics?',
+        answer: 'We provide cold-weather gear, schedule warming breaks, coordinate transportation from Salt Lake City, and recruit staff experienced with mountain conditions. Our GPS system tracks staff across Park City\'s dispersed festival venues.',
+      },
+      {
+        question: 'Can you staff brand houses and gifting suites at Sundance?',
+        answer: 'Yes. Brand houses and gifting suites are our specialty at Sundance. We provide full hospitality teams including guest list management, beverage service, VIP escort, coat check, and celebrity liaison services.',
+      },
+      {
+        question: 'When should we start planning Sundance staffing?',
+        answer: 'We recommend starting four to five months before the January festival. Sundance staffing requires specialized talent recruitment, cold-weather logistics planning, and coordination with Park City venues and the festival organization.',
+      },
+    ],
+    logisticsInfo:
+      'Sundance Film Festival takes place annually in January across Park City, Utah and surrounding mountain venues. The ten-day festival requires cold-weather logistics, transportation from Salt Lake City, and staff deployment across multiple intimate venues. AirFresh coordinates premium staffing with celebrity interaction protocols and mountain operations expertise.',
+    relatedCitySlug: 'denver',
+    relatedCityName: 'Denver',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 43. Tribeca Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'tribeca-festival',
+    title: 'Tribeca Festival Staffing Agency | Tribeca Film Festival Event Staff NYC',
+    h1: 'Tribeca Festival Staffing New York',
+    metaDescription:
+      'Tribeca Festival staffing agency providing brand ambassadors, VIP hospitality, experiential marketing teams, and event staff for Tribeca Festival activations in lower Manhattan.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Tribeca neighborhood', 'Spring Studios', 'Brookfield Place', 'Pier 57'],
+    keywords: [
+      'Tribeca Festival staffing',
+      'Tribeca Film Festival event staff',
+      'Tribeca brand ambassadors',
+      'NYC film festival staffing',
+      'Tribeca experiential marketing',
+      'Tribeca Festival hospitality',
+      'New York festival staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for the Tribeca Festival in New York City, including brand ambassadors, VIP hospitality staff, experiential marketing teams, and event support for Tribeca brand activations and premiere events.',
+    bodyContent: `The Tribeca Festival, founded by Robert De Niro and Jane Rosenthal, has evolved from its origins as a film festival into a multi-disciplinary cultural event encompassing film, television, immersive storytelling, gaming, music, and brand experiences. Held annually in lower Manhattan, Tribeca attracts over 600,000 attendees across its twelve-day run, creating one of New York City's most significant cultural and brand activation moments.
+
+Tribeca's expansion beyond film into television premieres, podcast live recordings, immersive experiences, and brand activations has created a rich landscape for marketers. Major brands including American Express, AT&T, and Procter & Gamble have used Tribeca as a platform for premium brand experiences that reach New York's most culturally engaged consumers.
+
+## The Tribeca Brand Activation Opportunity
+
+Tribeca's location in one of Manhattan's most upscale neighborhoods provides a naturally premium setting for brand activations. The festival's footprint extends across Tribeca, SoHo, and lower Manhattan, with venues ranging from historic theaters to cutting-edge event spaces to open-air installations along the Hudson River waterfront.
+
+The audience combines New York's cultural elite with mainstream entertainment consumers, creating a diverse but consistently affluent attendee base. Tribeca audiences are early adopters of entertainment technology, premium content consumers, and active participants in cultural conversations.
+
+Tribeca's media coverage rivals Sundance for entertainment press attention, and its New York location ensures coverage from fashion, lifestyle, food, and technology publications. Brand activations that generate buzz at Tribeca benefit from the city's unmatched media amplification infrastructure.
+
+The festival's embrace of immersive storytelling through VR, AR, and interactive media creates cutting-edge activation opportunities for technology brands and forward-thinking marketers. The Tribeca Immersive program attracts technology and entertainment press that covers brand innovations alongside festival programming.
+
+## AirFresh Marketing's Tribeca Festival Staffing
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides comprehensive staffing for the Tribeca Festival, leveraging our deep New York City talent network. Our [brand ambassadors](/services/brand-ambassadors) and event staff bring NYC sophistication and cultural fluency to every Tribeca activation.
+
+### NYC Cultural Brand Ambassadors
+
+Our Tribeca ambassadors are recruited from New York's entertainment, arts, and media communities. They bring genuine cultural awareness and the polished communication skills that Tribeca's premium audience expects. Each team member completes [brand-specific training](/technology) that positions them to represent your brand with both professionalism and authentic cultural credibility.
+
+### Premiere and Screening Event Staff
+
+Tribeca's film and television premieres are high-profile events with celebrity attendance, press coverage, and VIP guest management requirements. Our event staff are trained in entertainment industry protocols including red carpet management, celebrity escort, press line coordination, and VIP seating logistics.
+
+### Immersive Experience Teams
+
+Tribeca's pioneering immersive programming creates opportunities for brands to showcase VR, AR, and interactive experiences. Our [experiential marketing](/services/experiential-marketing) teams include staff experienced in guiding audiences through immersive technology experiences, managing headset hygiene and equipment, and facilitating meaningful interactions with cutting-edge brand technology.
+
+### Hospitality and Brand Lounge Staff
+
+Brand lounges and hospitality experiences at Tribeca require New York-caliber service. Our [hospitality teams](/services/event-management) manage branded spaces, coordinate catering, handle guest lists, and ensure every detail reflects the premium standard that Tribeca and your brand demand.
+
+## Manhattan Festival Logistics
+
+Staffing events across lower Manhattan during a twelve-day festival requires expert NYC logistics management. Our New York operations team coordinates staff transportation, manages credentials across multiple venues, and ensures seamless coverage from morning screenings through late-night premiere parties.
+
+NYC labor regulations, union considerations, and the complex logistics of operating in lower Manhattan's dense urban environment all require experienced local management. Our team has deep relationships with NYC venue operators and festival production teams.
+
+Our [GPS check-in system](/technology) tracks staff across Tribeca's multi-venue footprint, from Spring Studios screenings to Pier 57 activations to pop-up experiences throughout the neighborhood. Real-time tracking ensures reliable coverage even as staff move between dispersed locations.
+
+## Maximizing Tribeca Activation Impact
+
+Tribeca's cultural prestige creates opportunities for brands to associate with artistic excellence and creative innovation. The most impactful activations contribute genuinely to the festival experience rather than merely occupying space within it.
+
+We recommend developing activations that align with Tribeca's emphasis on storytelling. Brands that tell compelling stories through immersive experiences, interactive installations, or meaningful cultural programming earn the deepest engagement from the festival's culturally literate audience.
+
+Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your Tribeca Festival staffing needs.`,
+    staffTypes: [
+      {
+        title: 'NYC Cultural Ambassadors',
+        description:
+          'Polished brand ambassadors from New York\'s entertainment and arts communities with the cultural fluency Tribeca\'s premium audience expects.',
+      },
+      {
+        title: 'Premiere & Red Carpet Staff',
+        description:
+          'Event staff trained in entertainment industry protocols including red carpet management, celebrity escort, press coordination, and VIP logistics.',
+      },
+      {
+        title: 'Immersive Tech Experience Teams',
+        description:
+          'Staff experienced in guiding audiences through VR, AR, and interactive experiences with equipment management and audience facilitation skills.',
+      },
+      {
+        title: 'Brand Lounge Hospitality',
+        description:
+          'Premium hospitality teams managing branded spaces, guest lists, catering coordination, and NYC-caliber service throughout the twelve-day festival.',
+      },
+    ],
+    stats: [
+      { value: '600K+', label: 'Tribeca Festival Attendees' },
+      { value: '12 Days', label: 'Festival Duration' },
+      { value: 'NYC', label: 'Premium Manhattan Location' },
+      { value: 'Multi-Media', label: 'Film, TV, Gaming, Immersive' },
+    ],
+    faqs: [
+      {
+        question: 'How long does the Tribeca Festival run?',
+        answer: 'Tribeca runs for approximately twelve days in June, with programming spanning film screenings, television premieres, immersive experiences, live music, and brand activations across multiple lower Manhattan venues.',
+      },
+      {
+        question: 'Can you staff both premiere events and daytime activations?',
+        answer: 'Yes. We deploy separate teams for daytime activations and evening premiere events, each trained for their specific environment. Our GPS system tracks staff across all Tribeca venues from morning screenings through late-night events.',
+      },
+      {
+        question: 'Do you have experience with immersive technology activations?',
+        answer: 'Yes. We staff VR, AR, and interactive experience activations at Tribeca and other events. Our teams are trained in headset management, audience guidance, equipment troubleshooting, and creating meaningful technology experiences for non-technical audiences.',
+      },
+      {
+        question: 'When should we start planning Tribeca Festival staffing?',
+        answer: 'We recommend beginning discussions three to four months before the June festival. This allows time for NYC talent recruitment, entertainment industry protocol training, venue coordination, and credential processing.',
+      },
+    ],
+    logisticsInfo:
+      'Tribeca Festival takes place annually in June across multiple venues in lower Manhattan, New York City. The twelve-day festival spans film, TV, gaming, immersive, and music programming. AirFresh coordinates NYC-based staff with multi-venue credential management, entertainment industry protocols, and GPS tracking across the festival footprint.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 44. AWS re:Invent
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'aws-reinvent',
+    title: 'AWS re:Invent Staffing Agency | re:Invent Las Vegas Event Staff',
+    h1: 'AWS re:Invent Staffing Las Vegas',
+    metaDescription:
+      'AWS re:Invent staffing agency providing tech-trained booth staff, brand ambassadors, product demonstrators, and lead capture teams for AWS re:Invent in Las Vegas.',
+    city: 'Las Vegas',
+    stateAbbrev: 'NV',
+    venues: ['The Venetian Expo', 'Wynn Las Vegas', 'Mandalay Bay', 'MGM Grand', 'Caesars Forum'],
+    keywords: [
+      'AWS re:Invent staffing',
+      'AWS re:Invent event staff',
+      'AWS re:Invent brand ambassadors',
+      'tech conference staffing Las Vegas',
+      'AWS re:Invent booth staff',
+      'cloud computing conference staffing',
+      'Las Vegas tech event staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for AWS re:Invent in Las Vegas, including tech-trained brand ambassadors, booth staff, product demonstrators, lead capture teams, and hospitality staff for the world\'s largest cloud computing conference.',
+    bodyContent: `AWS re:Invent is the world's largest cloud computing conference, bringing together over 60,000 cloud professionals, developers, IT executives, and technology decision-makers to Las Vegas for five days of keynotes, breakout sessions, hands-on labs, and an enormous expo hall featuring hundreds of AWS partners and technology vendors. The conference generates billions of dollars in technology purchasing decisions and has become the essential event for the cloud computing ecosystem.
+
+For technology companies in the AWS partner ecosystem, re:Invent is the most important marketing investment of the year. The conference concentrates the global cloud computing buyer community in one location, creating an unmatched opportunity to demonstrate solutions, generate leads, and build relationships with the decision-makers who drive enterprise technology adoption.
+
+## Why AWS re:Invent Requires Tech-Savvy Staff
+
+re:Invent attendees are among the most technically sophisticated conference audiences in the world. Cloud architects, DevOps engineers, CTOs, and VP-level IT leaders expect booth interactions that go beyond surface-level marketing to address genuine technical questions and real-world use cases. Staff who cannot speak credibly about cloud infrastructure, APIs, deployment models, and integration patterns will quickly lose credibility with this audience.
+
+The competitive intensity at re:Invent's expo hall is extreme. Hundreds of technology vendors compete for attention from attendees who have limited time and specific technology evaluation criteria. Professional booth staff who can quickly qualify prospects, deliver compelling demonstrations, and capture detailed technical requirements are essential for standing out in this environment.
+
+re:Invent's multi-venue Las Vegas format, spreading across The Venetian, Wynn, Mandalay Bay, MGM Grand, and Caesars Forum, creates complex logistical challenges for exhibitors staffing booths and sponsoring events across multiple locations.
+
+## AirFresh Marketing's re:Invent Staffing
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides specialized staffing for AWS re:Invent and technology conferences. Our [trade show staffing](/services/trade-show-staffing) teams for re:Invent include staff with technology industry experience who can represent your cloud solutions with genuine technical credibility.
+
+### Tech-Trained Product Demonstrators
+
+Our re:Invent product demonstrators complete extensive technical training on your solutions, including cloud architecture concepts, integration scenarios, and competitive differentiation. We recruit from Las Vegas's growing technology community and supplement with experienced tech event staff from across our national network.
+
+Each demonstrator completes [video training certification](/technology) that covers your product's technical capabilities, target customer profiles, competitive positioning, and common prospect questions. This preparation enables them to deliver compelling demonstrations that address the specific concerns of cloud technology evaluators.
+
+### Lead Qualification Specialists
+
+re:Invent generates massive booth traffic, but the value of that traffic varies enormously. Our lead qualification teams are trained to quickly assess prospect fit, identify decision-makers versus researchers, and capture the technical and business requirements that enable your sales team to prioritize follow-up effectively.
+
+We use tablet-based lead capture tools configured to your qualification criteria, capturing technical environment details, evaluation timelines, budget parameters, and specific use cases that transform basic contact information into actionable sales intelligence.
+
+### Multi-Venue Event Staff
+
+re:Invent's distribution across multiple Las Vegas mega-venues requires flexible staffing that can cover your booth, sponsor sessions, networking events, and partner activities. Our Las Vegas operations team coordinates staff across all re:Invent venues with [GPS check-in](/technology) providing real-time coverage visibility.
+
+### Hospitality and Networking Event Staff
+
+Many re:Invent exhibitors host customer dinners, partner events, and networking receptions at Las Vegas restaurants and event spaces. Our hospitality teams manage these events with the professionalism that enterprise technology relationships demand.
+
+## Las Vegas Multi-Venue Operations
+
+re:Invent's unique multi-venue format across the Las Vegas Strip creates logistical challenges that require experienced local management. Transportation between venues, credential management across multiple locations, and the sheer scale of the event demand a staffing partner with deep Las Vegas operations expertise.
+
+Our Las Vegas team has extensive experience with re:Invent and other multi-venue Strip conferences. We manage transportation logistics, ensure staff arrive at the correct venue with proper credentials, and maintain communication across dispersed teams throughout each conference day.
+
+The five-day conference duration requires careful shift scheduling to maintain high energy and sharp technical performance throughout. We rotate staff to prevent fatigue while maintaining consistency in prospect relationships.
+
+## Maximizing re:Invent ROI
+
+re:Invent represents a significant investment for exhibitors, and maximizing lead generation is essential for positive ROI. We work with your team to establish clear booth traffic goals, lead quality metrics, and daily performance targets. Our staff report daily results so you can adjust strategy in real time throughout the conference.
+
+Post-show lead follow-up speed is critical in the competitive cloud market. Our detailed lead capture data enables your sales team to begin personalized outreach immediately after re:Invent, before prospects' attention shifts to competing solutions.
+
+Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 to discuss your AWS re:Invent staffing strategy.`,
+    staffTypes: [
+      {
+        title: 'Tech-Trained Demonstrators',
+        description:
+          'Product demonstrators with technology industry experience trained on cloud computing concepts, your specific solutions, and technical competitive differentiation.',
+      },
+      {
+        title: 'Lead Qualification Teams',
+        description:
+          'Staff trained to quickly assess prospect fit, identify decision-makers, and capture technical requirements using tablet-based qualification tools.',
+      },
+      {
+        title: 'Multi-Venue Event Staff',
+        description:
+          'Flexible teams covering expo booths, sponsor sessions, and networking events across re:Invent\'s multiple Las Vegas Strip venues.',
+      },
+      {
+        title: 'Customer Hospitality Staff',
+        description:
+          'Professional hospitality teams for customer dinners, partner events, and networking receptions at Las Vegas venues.',
+      },
+    ],
+    stats: [
+      { value: '60K+', label: 'AWS re:Invent Attendees' },
+      { value: '5 Days', label: 'Conference Duration' },
+      { value: '5 Venues', label: 'Multi-Venue Las Vegas Format' },
+      { value: '#1', label: 'Cloud Computing Conference' },
+    ],
+    faqs: [
+      {
+        question: 'Do your staff understand cloud computing technology?',
+        answer: 'Yes. Our re:Invent teams include staff with technology industry backgrounds who complete extensive training on cloud infrastructure concepts, your specific solutions, and technical competitive positioning. They can engage credibly with CTOs, cloud architects, and DevOps engineers.',
+      },
+      {
+        question: 'How do you handle the multi-venue re:Invent format?',
+        answer: 'We coordinate staff across all re:Invent venues (Venetian, Wynn, Mandalay Bay, MGM Grand, Caesars Forum) with GPS tracking, venue-specific credentials, and transportation logistics. Our Las Vegas team has deep experience with multi-venue Strip conferences.',
+      },
+      {
+        question: 'Can you staff customer dinners and networking events during re:Invent?',
+        answer: 'Yes. We provide hospitality teams for off-site customer dinners, partner events, and networking receptions at Las Vegas restaurants and event spaces throughout the re:Invent week.',
+      },
+      {
+        question: 'When should we start planning re:Invent staffing?',
+        answer: 'We recommend starting three to four months before re:Invent (typically late November/early December). This allows time for technology-focused staff recruitment, product training, demonstration rehearsals, and multi-venue logistics coordination.',
+      },
+    ],
+    logisticsInfo:
+      'AWS re:Invent takes place annually in late November/early December across multiple Las Vegas venues including The Venetian Expo, Wynn, Mandalay Bay, MGM Grand, and Caesars Forum. AirFresh coordinates tech-trained staff with multi-venue credential management, GPS tracking, and transportation logistics across the Las Vegas Strip.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 45. South Beach Wine & Food Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'south-beach-wine-food-festival',
+    title: 'South Beach Wine & Food Festival Staffing Agency | SOBEWFF Event Staff',
+    h1: 'South Beach Wine & Food Festival Staffing',
+    metaDescription:
+      'South Beach Wine & Food Festival staffing agency providing brand ambassadors, hospitality staff, product sampling teams, and event staff for SOBEWFF Miami Beach activations.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Miami Beach Convention Center', 'South Beach', 'Fontainebleau', 'Loews Hotel'],
+    keywords: [
+      'South Beach Wine Food Festival staffing',
+      'SOBEWFF event staff',
+      'SOBEWFF brand ambassadors',
+      'Miami food festival staffing',
+      'wine food festival staffing agency',
+      'SOBEWFF hospitality staff',
+      'Miami Beach food event staff',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for the South Beach Wine & Food Festival (SOBEWFF) in Miami Beach, including brand ambassadors, hospitality staff, product sampling teams, and event support for food and beverage brand activations.',
+    bodyContent: `The South Beach Wine & Food Festival (SOBEWFF) is the premier food and wine event in the United States, attracting over 65,000 attendees across five days of exclusive tastings, celebrity chef demonstrations, grand tastings, and intimate dining experiences along Miami Beach. Produced by Florida International University's Chaplin School of Hospitality, SOBEWFF combines the glamour of South Beach with the culinary excellence of the nation's top chefs and wine producers.
+
+For food and beverage brands, spirit companies, kitchen equipment manufacturers, and lifestyle brands, SOBEWFF represents the most concentrated opportunity to reach affluent food enthusiasts, restaurant industry professionals, celebrity chefs, food media, and culinary influencers in a premium setting that aligns with luxury brand positioning.
+
+## Why SOBEWFF Is Essential for Food & Beverage Brands
+
+SOBEWFF attendees are among the most valuable food and beverage consumers in America. They are affluent, culinary-curious, brand-conscious, and highly influential in their social circles' dining and purchasing decisions. The festival attracts food media from every major publication, creating press coverage opportunities that amplify brand visibility far beyond the event itself.
+
+The celebrity chef ecosystem at SOBEWFF provides unique brand association opportunities. Events featuring chefs like Guy Fieri, Giada De Laurentiis, Bobby Flay, and dozens of other culinary celebrities create premium environments where brands are experienced alongside culinary excellence.
+
+SOBEWFF's South Beach setting adds luxury positioning to every brand interaction. The combination of beachfront venues, five-star hotels, and Miami's glamorous lifestyle culture creates an aspirational context that elevates brand perception.
+
+The festival's structure includes both large-scale grand tastings with thousands of attendees and intimate dinners with fifty or fewer guests, allowing brands to activate at multiple engagement levels from broad awareness to deep personal connections.
+
+## AirFresh Marketing's SOBEWFF Staffing
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides specialized staffing for SOBEWFF and food and beverage events nationwide. Our teams understand the unique requirements of culinary event staffing, from food safety compliance to wine service etiquette to celebrity chef interaction protocols.
+
+### Culinary Event Brand Ambassadors
+
+Our SOBEWFF [brand ambassadors](/services/brand-ambassadors) are selected for their food and beverage knowledge, polished presentation, and ability to engage affluent consumers in conversations about cuisine, ingredients, and culinary experiences. Many have hospitality industry backgrounds from Miami's world-class restaurant and hotel scene.
+
+### Professional Tasting and Sampling Staff
+
+Grand tasting events at SOBEWFF require [sampling staff](/services/sampling) who understand proper food and beverage service etiquette, can describe products knowledgeably, and maintain the premium presentation standards that the festival demands. Our teams are trained in responsible alcohol service, food allergen awareness, and culinary terminology.
+
+### VIP Hospitality Teams
+
+SOBEWFF's intimate dinners and VIP events demand hospitality staff who can deliver five-star service. Our [hospitality teams](/services/event-management) include experienced servers, sommeliers, and event coordinators who manage premium dining experiences with the professionalism that celebrity chef events require.
+
+### Event Logistics and Support Staff
+
+The festival's multi-venue format across Miami Beach requires logistics coordination staff who can manage inventory movement, event setup, guest flow, and coordination between beach venues, convention center events, and hotel ballroom dinners.
+
+## Miami Beach Event Logistics
+
+SOBEWFF events span Miami Beach from the Convention Center to beachfront locations to hotel venues. Our Miami operations team coordinates staff across all locations with [GPS check-in](/technology) and venue-specific training for each event format.
+
+February in Miami Beach brings comfortable outdoor conditions, but beach events present unique challenges including sand, wind, and sun exposure. Our staff arrive prepared for outdoor conditions while maintaining the polished appearance that SOBEWFF's premium brand demands.
+
+Food safety compliance is paramount at SOBEWFF. Our staff complete food handler certification as required and follow strict protocols for food sampling events, including temperature management, allergen communication, and responsible alcohol service.
+
+## Maximizing SOBEWFF Brand Impact
+
+The most successful food and beverage brand activations at SOBEWFF combine sampling with storytelling. Brands that share their origin story, production process, and culinary vision through their tasting experience create deeper connections with SOBEWFF's food-literate audience.
+
+We recommend creating Instagram-worthy tasting presentations that encourage social sharing, while training staff to engage in substantive conversations about your products with food media and industry professionals who can amplify your brand story.
+
+Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your SOBEWFF staffing needs.`,
+    staffTypes: [
+      {
+        title: 'Culinary Brand Ambassadors',
+        description:
+          'Ambassadors with food and beverage knowledge and hospitality backgrounds who engage affluent consumers in culinary conversations.',
+      },
+      {
+        title: 'Professional Tasting Staff',
+        description:
+          'Sampling teams trained in wine service, food presentation, allergen awareness, and responsible alcohol service for grand tasting events.',
+      },
+      {
+        title: 'VIP Dining Hospitality',
+        description:
+          'Five-star hospitality teams for intimate dinners, celebrity chef events, and VIP experiences with professional service standards.',
+      },
+      {
+        title: 'Multi-Venue Logistics Staff',
+        description:
+          'Coordination staff managing inventory, setup, guest flow, and operations across SOBEWFF\'s beachfront, hotel, and convention center venues.',
+      },
+    ],
+    stats: [
+      { value: '65K+', label: 'SOBEWFF Attendees' },
+      { value: '5 Days', label: 'Festival Duration' },
+      { value: '#1', label: 'US Food & Wine Festival' },
+      { value: '100+', label: 'Celebrity Chef Appearances' },
+    ],
+    faqs: [
+      {
+        question: 'Do your staff have food and beverage service experience?',
+        answer: 'Yes. Our SOBEWFF teams include staff with restaurant, hotel, and hospitality backgrounds from Miami\'s world-class service industry. All staff complete food handler certification and training in wine service, food presentation, and responsible alcohol service.',
+      },
+      {
+        question: 'Can you staff both grand tastings and intimate dinners?',
+        answer: 'Yes. We provide different team profiles for different event formats. Grand tasting staff focus on high-volume sampling and brand engagement, while intimate dinner staff deliver five-star personal service.',
+      },
+      {
+        question: 'How do you handle food safety compliance at SOBEWFF?',
+        answer: 'All staff complete food handler certification and follow strict protocols for temperature management, allergen communication, sanitation, and responsible alcohol service. We comply with all local health department and festival food safety requirements.',
+      },
+      {
+        question: 'When should we start planning SOBEWFF staffing?',
+        answer: 'We recommend starting two to three months before the February festival. This allows time to recruit staff with culinary hospitality backgrounds, complete food safety certifications, and coordinate logistics across SOBEWFF\'s multi-venue Miami Beach format.',
+      },
+    ],
+    logisticsInfo:
+      'South Beach Wine & Food Festival takes place annually in February across multiple Miami Beach venues including the Convention Center, beachfront locations, and hotel ballrooms. AirFresh coordinates hospitality-trained staff with food safety certifications, multi-venue GPS tracking, and outdoor event protocols.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
