@@ -171,6 +171,8 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/brand-activation-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/field-marketing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/guerrilla-marketing-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/product-sampling-agency`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
+    { url: `${DOMAIN}/mobile-marketing-tours`, lastModified: today, changeFrequency: 'weekly', priority: 0.95 },
     { url: `${DOMAIN}/careers/experience-manager`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/careers/technical-intern`, lastModified: today, changeFrequency: 'monthly', priority: 0.6 },
     { url: `${DOMAIN}/legal/privacy-policy`, lastModified: today, changeFrequency: 'yearly', priority: 0.3 },

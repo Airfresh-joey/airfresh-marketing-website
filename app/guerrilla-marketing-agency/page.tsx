@@ -367,6 +367,8 @@ export default function GuerrillaMarketingAgencyPage() {
     { title: "Event Marketing Agency", href: "/event-marketing-agency" },
     { title: "Brand Activation Agency", href: "/brand-activation-agency" },
     { title: "Field Marketing Agency", href: "/field-marketing-agency" },
+    { title: "Product Sampling Agency", href: "/product-sampling-agency" },
+    { title: "Mobile Marketing Tours", href: "/mobile-marketing-tours" },
   ];
 
   return (

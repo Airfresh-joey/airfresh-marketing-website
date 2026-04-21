@@ -363,6 +363,8 @@ export default function CompareElev8Staffing() {
             { href: '/brand-activation-agency', label: 'Brand Activation Agency' },
             { href: '/field-marketing-agency', label: 'Field Marketing Agency' },
             { href: '/guerrilla-marketing-agency', label: 'Guerrilla Marketing Agency' },
+            { href: '/product-sampling-agency', label: 'Product Sampling Agency' },
+            { href: '/mobile-marketing-tours', label: 'Mobile Marketing Tours' },
             { href: '/compare/mosaic-experiential', label: 'AirFresh vs Mosaic Experiential' },
             { href: '/compare/pro-motion-staffing', label: 'AirFresh vs Pro Motion' },
             { href: '/compare/advantage-solutions', label: 'AirFresh vs Advantage Solutions' },

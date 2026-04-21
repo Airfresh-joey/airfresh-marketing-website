@@ -406,6 +406,16 @@ export default function FieldMarketingAgencyPage() {
       href: "/guerrilla-marketing-agency",
       description: "Unconventional street-level marketing that captures attention",
     },
+    {
+      title: "Product Sampling Agency",
+      href: "/product-sampling-agency",
+      description: "Nationwide product sampling programs with real-time reporting",
+    },
+    {
+      title: "Mobile Marketing Tours",
+      href: "/mobile-marketing-tours",
+      description: "Multi-city branded vehicle tours and mobile activations",
+    },
   ];
 
   return (

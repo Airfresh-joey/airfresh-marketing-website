@@ -41,6 +41,8 @@ export default function Footer() {
     { name: "Brand Activation Agency", href: "/brand-activation-agency" },
     { name: "Field Marketing Agency", href: "/field-marketing-agency" },
     { name: "Guerrilla Marketing Agency", href: "/guerrilla-marketing-agency" },
+    { name: "Product Sampling Agency", href: "/product-sampling-agency" },
+    { name: "Mobile Marketing Tours", href: "/mobile-marketing-tours" },
     { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },

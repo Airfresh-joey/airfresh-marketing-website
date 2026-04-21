@@ -1118,6 +1118,8 @@ export default function BrandActivationAgencyPage() {
               { href: '/event-marketing-agency', label: 'Event Marketing Agency' },
               { href: '/field-marketing-agency', label: 'Field Marketing Agency' },
               { href: '/guerrilla-marketing-agency', label: 'Guerrilla Marketing Agency' },
+              { href: '/product-sampling-agency', label: 'Product Sampling Agency' },
+              { href: '/mobile-marketing-tours', label: 'Mobile Marketing Tours' },
               { href: '/services/trade-show-staffing', label: 'Trade Show Staffing' },
               { href: '/services/food-beverage-sampling', label: 'Food & Beverage Sampling' },
             ].map((link) => (
