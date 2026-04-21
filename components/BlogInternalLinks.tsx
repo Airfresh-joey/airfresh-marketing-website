@@ -103,7 +103,12 @@ export default function BlogInternalLinks() {
         <Link href="/staffing-for/austin-city-limits-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">ACL Festival</Link>
         <Link href="/staffing-for/tribeca-film-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Tribeca Film Festival</Link>
         <Link href="/staffing-for/electric-daisy-carnival-orlando" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">EDC Orlando</Link>
-        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 145+ Events →</Link>
+        <Link href="/staffing-for/us-open-tennis" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">US Open Tennis</Link>
+        <Link href="/staffing-for/new-orleans-jazz-heritage-festival" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Jazz & Heritage Fest</Link>
+        <Link href="/staffing-for/indianapolis-500" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Indianapolis 500</Link>
+        <Link href="/staffing-for/san-francisco-outside-lands" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Outside Lands SF</Link>
+        <Link href="/staffing-for/new-york-marathon" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">NYC Marathon</Link>
+        <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 150+ Events →</Link>
       </div>
 
       {/* Top Markets */}
