@@ -36,6 +36,242 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 185 ──────────────────────────────────────────────────────
+  {
+    slug: 'memphis-in-may',
+    title: 'Memphis in May Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Memphis in May Staffing',
+    metaDescription: 'Memphis in May staffing provides professional brand ambassadors, event staff, and promotional teams for the month-long Memphis festival including Beale Street Music Festival and World Championship BBQ Cooking Contest.',
+    city: 'Memphis',
+    stateAbbrev: 'TN',
+    venues: ['Tom Lee Park', 'Liberty Park', 'Downtown Memphis'],
+    keywords: ['Memphis in May staffing', 'Beale Street Music Festival staff', 'Memphis event staffing', 'BBQ cooking contest staffing', 'Memphis brand ambassadors'],
+    description: 'Memphis in May is a month-long celebration featuring the Beale Street Music Festival, the World Championship Barbecue Cooking Contest, and the Great American River Run. Air Fresh Marketing provides professional brand ambassadors, sponsor activation teams, and hospitality staff who deliver exceptional service across all Memphis in May events.',
+    bodyContent: `<p><strong>Memphis in May</strong> is one of America's premier month-long festival celebrations, anchored by the legendary Beale Street Music Festival attracting 100,000+ music fans and the World Championship Barbecue Cooking Contest drawing 250+ competitive BBQ teams from around the globe. Brands activating at Memphis in May need staff who can handle the heat — both literally and figuratively.</p>
+
+<h2>Memphis in May Event Staffing Services</h2>
+<p>Our Memphis event staff are experienced with the unique demands of multi-week festival activations. From sampling bourbon alongside championship pitmasters to managing VIP hospitality tents overlooking the Mississippi River, our brand ambassadors bring Southern charm and professional excellence to every interaction.</p>
+
+<h3>Beale Street Music Festival Staffing</h3>
+<p>The Beale Street Music Festival features over 60 acts across four stages over three days. Our staff manage sponsor activations, product sampling, merchandise booths, and VIP experiences while navigating the high-energy crowds that pack Tom Lee Park along the riverfront.</p>
+
+<h3>World Championship BBQ Cooking Contest Staffing</h3>
+<p>The World Championship Barbecue Cooking Contest is the Super Bowl of competitive BBQ. Our brand ambassadors work sampling activations, sponsor booths, and hospitality areas among the 250+ teams and 80,000+ spectators who attend this legendary cookoff.</p>
+
+<h3>Why Memphis in May Brands Choose Air Fresh</h3>
+<p>Memphis in May requires staff who understand the city's culture, music heritage, and BBQ traditions. Our locally sourced brand ambassadors connect authentically with attendees while maintaining professional brand representation throughout the month-long celebration. We handle the logistics of multi-event staffing so your brand shows up strong at every Memphis in May activation.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Charismatic representatives who engage festival-goers and communicate your brand story throughout Memphis in May events.' },
+      { title: 'Sampling Teams', description: 'Professional sampling staff for food, beverage, and product activations at the BBQ Contest and Music Festival.' },
+      { title: 'VIP Hospitality Staff', description: 'Trained hospitality professionals managing VIP tents, sponsor lounges, and premium experiences.' },
+      { title: 'Event Coordinators', description: 'On-site managers coordinating multi-day activations across all Memphis in May venues.' }
+    ],
+    stats: [
+      { value: '100K+', label: 'Music Festival Attendees' },
+      { value: '250+', label: 'BBQ Competition Teams' },
+      { value: '30', label: 'Days of Festival Events' },
+      { value: '80K+', label: 'BBQ Contest Spectators' }
+    ],
+    faqs: [
+      { question: 'When does Memphis in May take place?', answer: 'Memphis in May runs throughout the month of May, with the Beale Street Music Festival and World Championship BBQ Cooking Contest as anchor events during specific weekends.' },
+      { question: 'What types of brands activate at Memphis in May?', answer: 'Food and beverage brands, spirits companies, outdoor recreation brands, automotive companies, and lifestyle brands all find strong activation opportunities across Memphis in May events.' },
+      { question: 'How far in advance should we book Memphis in May staff?', answer: 'We recommend booking 6-8 weeks before the festival. Prime positions for the BBQ Contest and Music Festival fill quickly due to high demand.' },
+      { question: 'Can you staff multiple Memphis in May events?', answer: 'Absolutely. Air Fresh Marketing coordinates staff across all Memphis in May events including the Music Festival, BBQ Contest, and Great American River Run with consistent brand representation.' }
+    ],
+    logisticsInfo: 'Memphis in May events are held primarily in Tom Lee Park and Liberty Park along the Mississippi River in downtown Memphis. Staff should prepare for warm spring weather, outdoor conditions, and large crowds. Parking is limited — we coordinate shuttle logistics for all event staff.',
+    relatedCitySlug: 'nashville',
+    relatedCityName: 'Nashville',
+    heroImage: '/images/events/memphis-in-may.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'portland-rose-festival',
+    title: 'Portland Rose Festival Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Portland Rose Festival Staffing',
+    metaDescription: 'Portland Rose Festival staffing provides professional brand ambassadors, event staff, and promotional teams for Portland\'s premier civic celebration featuring parades, waterfront events, and CityFair.',
+    city: 'Portland',
+    stateAbbrev: 'OR',
+    venues: ['Tom McCall Waterfront Park', 'Portland City Streets', 'Rose Quarter'],
+    keywords: ['Portland Rose Festival staffing', 'Portland event staffing', 'Rose Festival brand ambassadors', 'CityFair staffing', 'Portland parade staffing'],
+    description: 'The Portland Rose Festival is the city\'s signature civic celebration, spanning several weeks with parades, dragon boat races, a carnival midway, and CityFair waterfront festival. Air Fresh Marketing provides professional brand ambassadors, parade teams, and activation staff for this beloved Portland tradition.',
+    bodyContent: `<p>The <strong>Portland Rose Festival</strong> is Portland's premier civic celebration, drawing over 2 million participants and spectators across weeks of events each spring. From the iconic Grand Floral Parade to CityFair on the waterfront, brands activating at the Rose Festival gain access to Portland's engaged, community-minded audience.</p>
+
+<h2>Portland Rose Festival Event Staffing Services</h2>
+<p>Our Portland event staff understand the unique culture of the Rose City. They bring genuine enthusiasm and professionalism to every activation, whether they're working a waterfront sampling booth at CityFair, managing a sponsor float in the Starlight Parade, or running a brand activation during Fleet Week along the Willamette River.</p>
+
+<h3>CityFair Waterfront Staffing</h3>
+<p>CityFair transforms Tom McCall Waterfront Park into Portland's biggest outdoor festival with carnival rides, food vendors, and brand activations. Our staff manage high-traffic sampling stations, interactive brand experiences, and hospitality areas throughout the multi-day waterfront celebration.</p>
+
+<h3>Grand Floral Parade Staffing</h3>
+<p>The Grand Floral Parade is the centerpiece of the Rose Festival, attracting 500,000+ spectators along the parade route. Our brand ambassadors work sponsor floats, distribution points, and street-level activations that engage the enormous parade-day crowds.</p>
+
+<h3>Why Portland Brands Trust Air Fresh</h3>
+<p>Portland audiences value authenticity and sustainability. Our brand ambassadors are briefed on Portland's culture and expectations, ensuring your activation resonates with the local community while delivering measurable brand engagement results. We staff every Rose Festival event from Fleet Week to the Junior Parade.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Engaging representatives who connect with Portland\'s community-focused audience at CityFair and parade events.' },
+      { title: 'Parade Support Staff', description: 'Trained teams managing float activations, street distribution, and crowd engagement along parade routes.' },
+      { title: 'Sampling Teams', description: 'Professional sampling staff for food, beverage, and product activations at CityFair and waterfront events.' },
+      { title: 'Event Coordinators', description: 'Experienced managers coordinating multi-venue activations across the Rose Festival calendar.' }
+    ],
+    stats: [
+      { value: '2M+', label: 'Festival Participants' },
+      { value: '500K+', label: 'Parade Spectators' },
+      { value: '3+', label: 'Weeks of Events' },
+      { value: '100+', label: 'Years of Tradition' }
+    ],
+    faqs: [
+      { question: 'When does the Portland Rose Festival take place?', answer: 'The Portland Rose Festival runs from late May through mid-June, with events spread across several weeks including CityFair, parades, and dragon boat races.' },
+      { question: 'What brands activate at the Portland Rose Festival?', answer: 'Food and beverage brands, outdoor recreation companies, automotive brands, local businesses, and sustainability-focused companies all find excellent activation opportunities at the Rose Festival.' },
+      { question: 'How many staff do we need for CityFair?', answer: 'CityFair activations typically need 4-10 staff per day depending on booth size and activation complexity. We recommend booking 6+ weeks in advance for optimal scheduling.' },
+      { question: 'Can you staff the Starlight Parade?', answer: 'Yes! Our brand ambassadors work sponsor floats, walking units, and distribution teams for both the Starlight Parade and Grand Floral Parade with trained parade-specific safety protocols.' }
+    ],
+    logisticsInfo: 'Portland Rose Festival events are centered around Tom McCall Waterfront Park and downtown Portland streets. Staff should prepare for variable Pacific Northwest spring weather with layers and rain gear. Public transit is recommended as parking is extremely limited during major events.',
+    relatedCitySlug: 'portland',
+    relatedCityName: 'Portland',
+    heroImage: '/images/events/portland-rose-festival.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'san-antonio-stock-show-rodeo',
+    title: 'San Antonio Stock Show & Rodeo Staffing | Event Staff & Brand Ambassadors',
+    h1: 'San Antonio Stock Show & Rodeo Staffing',
+    metaDescription: 'San Antonio Stock Show & Rodeo staffing provides professional brand ambassadors, event staff, and promotional teams for Texas\'s premier rodeo and livestock event at the AT&T Center.',
+    city: 'San Antonio',
+    stateAbbrev: 'TX',
+    venues: ['AT&T Center', 'Freeman Coliseum', 'San Antonio Stock Show Grounds'],
+    keywords: ['San Antonio rodeo staffing', 'San Antonio Stock Show staffing', 'rodeo event staff', 'San Antonio brand ambassadors', 'Texas rodeo staffing'],
+    description: 'The San Antonio Stock Show & Rodeo is one of the largest and most prestigious rodeo and livestock events in the country, attracting over 2 million visitors across its multi-week run. Air Fresh Marketing provides professional brand ambassadors, sponsor activation teams, and hospitality staff for this iconic Texas tradition.',
+    bodyContent: `<p>The <strong>San Antonio Stock Show & Rodeo</strong> is a Texas institution that brings over 2 million visitors to the AT&T Center and Freeman Coliseum complex each February. With world-class rodeo competition, star-studded concert performances, a massive carnival midway, and extensive livestock exhibitions, brands have countless opportunities to engage a passionate Texas audience.</p>
+
+<h2>San Antonio Rodeo Event Staffing Services</h2>
+<p>Our San Antonio event staff bring Texas hospitality and professional brand representation to every rodeo activation. From managing sponsor lounges in the AT&T Center to running product sampling at the carnival midway, our brand ambassadors connect with the rodeo's diverse audience of families, cowboys, and country music fans.</p>
+
+<h3>Rodeo Grounds Activation Staffing</h3>
+<p>The rodeo grounds feature acres of exhibit space, food vendors, and brand activation areas. Our staff manage high-volume sampling, interactive brand experiences, and lead generation activations that capture the attention of 100,000+ daily visitors during peak weekends.</p>
+
+<h3>Concert Series Staffing</h3>
+<p>The San Antonio Stock Show & Rodeo concert series features top-tier country, rock, and pop artists performing nightly. Our brand ambassadors work concert-night activations, VIP hospitality, and sponsor experiences that reach engaged entertainment audiences.</p>
+
+<h3>Why Choose Air Fresh for San Antonio Rodeo Staffing</h3>
+<p>San Antonio rodeo audiences expect genuine Texas warmth and authenticity. Our locally sourced brand ambassadors understand rodeo culture and connect naturally with attendees while delivering your brand message. With multi-week event experience, we maintain staff quality and enthusiasm from opening day through the final ride.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Engaging Texas-based representatives who connect authentically with San Antonio\'s rodeo audience.' },
+      { title: 'Sampling Teams', description: 'Professional sampling staff for food, beverage, and product activations across the rodeo grounds and midway.' },
+      { title: 'VIP Hospitality Staff', description: 'Trained hospitality professionals managing VIP suites, sponsor lounges, and premium concert experiences.' },
+      { title: 'Lead Generation Teams', description: 'Data-focused staff capturing leads and driving conversions at exhibit space activations.' }
+    ],
+    stats: [
+      { value: '2M+', label: 'Annual Visitors' },
+      { value: '18', label: 'Days of Events' },
+      { value: '100K+', label: 'Peak Daily Attendance' },
+      { value: '30+', label: 'Concert Performances' }
+    ],
+    faqs: [
+      { question: 'When does the San Antonio Stock Show & Rodeo take place?', answer: 'The San Antonio Stock Show & Rodeo runs for approximately 18 days in February, with rodeo performances, concerts, and livestock events throughout.' },
+      { question: 'What kinds of brands activate at the San Antonio Rodeo?', answer: 'Western wear, automotive, food and beverage, agricultural, outdoor recreation, and lifestyle brands all find strong activation opportunities. The diverse audience makes it suitable for many brand categories.' },
+      { question: 'How far in advance should we book rodeo staff?', answer: 'We recommend booking 8-10 weeks before the rodeo opens. The multi-week event requires careful staff scheduling, and experienced rodeo event staff are in high demand.' },
+      { question: 'Do you provide bilingual staff for the San Antonio Rodeo?', answer: 'Yes! San Antonio has a large Spanish-speaking population, and we provide bilingual brand ambassadors who can engage attendees in both English and Spanish for maximum reach.' }
+    ],
+    logisticsInfo: 'The San Antonio Stock Show & Rodeo is held at the AT&T Center and Freeman Coliseum complex on the east side of San Antonio. Staff should dress appropriately for a rodeo environment with comfortable footwear for long shifts on varied surfaces. February weather in San Antonio can range from cool to warm.',
+    relatedCitySlug: 'san-antonio',
+    relatedCityName: 'San Antonio',
+    heroImage: '/images/events/san-antonio-stock-show-rodeo.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'tulsa-state-fair',
+    title: 'Tulsa State Fair Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Tulsa State Fair Staffing',
+    metaDescription: 'Tulsa State Fair staffing provides professional brand ambassadors, event staff, and promotional teams for Oklahoma\'s largest annual fair at Expo Square.',
+    city: 'Tulsa',
+    stateAbbrev: 'OK',
+    venues: ['Expo Square', 'Tulsa Fairgrounds', 'River Spirit Expo'],
+    keywords: ['Tulsa State Fair staffing', 'Tulsa event staffing', 'Oklahoma fair staffing', 'Tulsa brand ambassadors', 'state fair event staff'],
+    description: 'The Tulsa State Fair is Oklahoma\'s largest annual event, attracting over 1 million visitors across 11 days of carnival rides, livestock shows, concerts, and exhibit halls. Air Fresh Marketing provides professional brand ambassadors, sampling teams, and event staff who connect with the fair\'s family-friendly Oklahoma audience.',
+    bodyContent: `<p>The <strong>Tulsa State Fair</strong> is Oklahoma's biggest annual celebration, drawing over 1 million visitors to Expo Square for 11 action-packed days each fall. With carnival rides, concert performances, livestock competitions, and hundreds of exhibit booths, brands have diverse activation opportunities to reach a broad Oklahoma audience.</p>
+
+<h2>Tulsa State Fair Event Staffing Services</h2>
+<p>Our Tulsa event staff understand the culture and expectations of Oklahoma fairgoers. They bring genuine friendliness and professional brand representation to every activation, from agricultural exhibit staffing to concert-night product sampling and midway activations.</p>
+
+<h3>Exhibit Hall Staffing</h3>
+<p>Expo Square's exhibit halls host hundreds of commercial and educational exhibits during the fair. Our brand ambassadors manage booth activations, product demonstrations, lead generation, and interactive brand experiences that capture the attention of browsing fairgoers.</p>
+
+<h3>Midway and Outdoor Activation Staffing</h3>
+<p>The Tulsa State Fair midway and outdoor areas see the highest foot traffic during the event. Our sampling teams and brand ambassadors work these high-volume areas to maximize brand impressions and product trial among the fair's diverse audience of families, teens, and adults.</p>
+
+<h3>Why Tulsa Fair Brands Choose Air Fresh</h3>
+<p>Oklahoma audiences value authenticity and genuine interaction. Our locally sourced brand ambassadors are trained to represent your brand while connecting naturally with Tulsa's community. We handle the full staffing lifecycle from recruiting through post-event reporting, so your team can focus on brand strategy while we execute flawlessly on the fairgrounds.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Friendly, professional representatives engaging fairgoers at exhibits, activations, and sampling stations.' },
+      { title: 'Sampling Teams', description: 'Trained sampling staff distributing product samples and collecting consumer feedback across the fairgrounds.' },
+      { title: 'Exhibit Booth Staff', description: 'Knowledgeable staff managing interactive exhibits, product demos, and lead capture in exhibit halls.' },
+      { title: 'Event Coordinators', description: 'On-site managers ensuring smooth daily operations across multi-day fair activations.' }
+    ],
+    stats: [
+      { value: '1M+', label: 'Annual Visitors' },
+      { value: '11', label: 'Days of Fair Events' },
+      { value: '100+', label: 'Exhibit Booths' },
+      { value: '1932', label: 'Year Established' }
+    ],
+    faqs: [
+      { question: 'When does the Tulsa State Fair take place?', answer: 'The Tulsa State Fair runs for 11 days in late September through early October at Expo Square in Tulsa, Oklahoma.' },
+      { question: 'What brands activate at the Tulsa State Fair?', answer: 'Food and beverage companies, agricultural brands, automotive dealers, health and wellness companies, and consumer goods brands all find productive activation opportunities at the Tulsa State Fair.' },
+      { question: 'How many staff do we need for a fair booth?', answer: 'Most fair booth activations require 2-4 staff per shift, with 2 shifts per day over the 11-day run. We recommend discussing your specific activation goals for a custom staffing recommendation.' },
+      { question: 'Can you provide staff for the full 11-day fair run?', answer: 'Yes! We coordinate rotating staff schedules for multi-day and multi-week events. Our team ensures fresh, energetic brand ambassadors are on-site every day of the fair.' }
+    ],
+    logisticsInfo: 'The Tulsa State Fair is held at Expo Square (Tulsa Fairgrounds) in midtown Tulsa. Staff should prepare for variable fall weather in Oklahoma with both warm days and cool evenings. Comfortable footwear is essential for long shifts on the fairgrounds.',
+    relatedCitySlug: 'tulsa',
+    relatedCityName: 'Tulsa',
+    heroImage: '/images/events/tulsa-state-fair.jpg',
+    isFeatured: false
+  },
+  {
+    slug: 'savannah-music-festival',
+    title: 'Savannah Music Festival Staffing | Event Staff & Brand Ambassadors',
+    h1: 'Savannah Music Festival Staffing',
+    metaDescription: 'Savannah Music Festival staffing provides professional brand ambassadors, event staff, and promotional teams for Georgia\'s premier multi-genre music festival across historic Savannah venues.',
+    city: 'Savannah',
+    stateAbbrev: 'GA',
+    venues: ['Savannah Civic Center', 'Lucas Theatre', 'Trustees Garden', 'Various Historic Venues'],
+    keywords: ['Savannah Music Festival staffing', 'Savannah event staffing', 'music festival brand ambassadors', 'Savannah GA event staff', 'Georgia music festival staffing'],
+    description: 'The Savannah Music Festival is Georgia\'s largest music festival, presenting world-class jazz, classical, roots, and world music across multiple historic venues in beautiful Savannah. Air Fresh Marketing provides professional brand ambassadors, hospitality staff, and event teams for this prestigious 17-day celebration.',
+    bodyContent: `<p>The <strong>Savannah Music Festival</strong> is one of America's most respected multi-genre music festivals, presenting 17 days of world-class performances in jazz, classical, Americana, roots, and global music across Savannah's stunning historic venues. With 100+ performances and 70,000+ attendees, brands gain access to a cultured, affluent audience in one of America's most beautiful cities.</p>
+
+<h2>Savannah Music Festival Event Staffing Services</h2>
+<p>Our Savannah event staff bring Southern hospitality and cultural sophistication to every festival activation. From managing VIP receptions at the Lucas Theatre to running sponsor activations in Trustees Garden, our brand ambassadors match the refined atmosphere of this prestigious festival.</p>
+
+<h3>Multi-Venue Festival Staffing</h3>
+<p>The Savannah Music Festival spreads across multiple historic venues throughout the city's legendary Historic District. Our staff coordinate seamlessly between venues, maintaining consistent brand representation whether working an intimate jazz club performance or a large-scale outdoor concert.</p>
+
+<h3>VIP and Hospitality Staffing</h3>
+<p>The Savannah Music Festival attracts a discerning audience that expects premium experiences. Our hospitality-trained brand ambassadors manage sponsor lounges, VIP receptions, and exclusive after-show events with the elegance and professionalism this audience demands.</p>
+
+<h3>Why Savannah Festival Brands Choose Air Fresh</h3>
+<p>Savannah's music festival audience is educated, culturally engaged, and brand-conscious. Our carefully selected brand ambassadors understand how to engage this demographic authentically while representing your brand with sophistication. We provide staffing that elevates your activation to match the festival's prestigious reputation.</p>`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Sophisticated, culturally aware representatives who connect with Savannah\'s discerning festival audience.' },
+      { title: 'VIP Hospitality Staff', description: 'Trained hospitality professionals managing premium sponsor experiences and exclusive receptions.' },
+      { title: 'Venue Liaisons', description: 'Staff coordinating brand activations across multiple historic Savannah venues.' },
+      { title: 'Event Coordinators', description: 'Experienced managers overseeing multi-day, multi-venue staffing operations.' }
+    ],
+    stats: [
+      { value: '70K+', label: 'Festival Attendees' },
+      { value: '100+', label: 'Performances' },
+      { value: '17', label: 'Days of Music' },
+      { value: '10+', label: 'Historic Venues' }
+    ],
+    faqs: [
+      { question: 'When does the Savannah Music Festival take place?', answer: 'The Savannah Music Festival runs for 17 days in late March through mid-April, with performances scheduled throughout each day across multiple venues.' },
+      { question: 'What types of brands sponsor the Savannah Music Festival?', answer: 'Luxury brands, spirits companies, financial services, automotive brands, and cultural organizations find excellent sponsorship opportunities at this prestigious festival.' },
+      { question: 'How many staff do we need for a multi-venue activation?', answer: 'Multi-venue festival activations typically require 6-15 staff depending on the number of venues and activation complexity. We recommend discussing your specific needs for a customized staffing plan.' },
+      { question: 'Do you provide staff familiar with Savannah?', answer: 'Yes! We source brand ambassadors who know Savannah and can navigate between historic district venues efficiently while providing authentic local hospitality.' }
+    ],
+    logisticsInfo: 'Savannah Music Festival events take place across multiple historic venues in downtown Savannah. Staff should be prepared to walk between venues in the Historic District. Spring weather in Savannah is warm and humid — lightweight professional attire is recommended.',
+    relatedCitySlug: 'atlanta',
+    relatedCityName: 'Atlanta',
+    heroImage: '/images/events/savannah-music-festival.jpg',
+    isFeatured: false
+  },
   // ── Batch 180 ──────────────────────────────────────────────────────
   {
     slug: 'albuquerque-balloon-fiesta',

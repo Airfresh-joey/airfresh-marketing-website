@@ -119,6 +119,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/event-staffing-near-me`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Event staffing hub page
     { url: `${DOMAIN}/staffing-for`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
+    // Batch 185 event pages
+    { url: `${DOMAIN}/staffing-for/memphis-in-may`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/portland-rose-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/san-antonio-stock-show-rodeo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/tulsa-state-fair`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
+    { url: `${DOMAIN}/staffing-for/savannah-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Batch 180 event pages
     { url: `${DOMAIN}/staffing-for/albuquerque-balloon-fiesta`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/sturgis-motorcycle-rally`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
