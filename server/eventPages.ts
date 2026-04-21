@@ -2647,6 +2647,650 @@ Art Week events are spread across Miami Beach, Wynwood, Design District, Downtow
     relatedCityName: 'Miami',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+  // ─────────────────────────────────────────────────────────────────
+  // 31. Ultra Music Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'ultra-music-festival',
+    title: 'Ultra Music Festival Staffing Agency | UMF Event Staff Miami',
+    h1: 'Ultra Music Festival Staffing',
+    metaDescription:
+      'Ultra Music Festival staffing agency providing brand ambassadors, VIP hosts, product sampling staff, and experiential marketing teams for UMF Miami activations.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Bayfront Park', 'Virginia Key Beach Park', 'Island Gardens'],
+    keywords: [
+      'Ultra Music Festival staffing',
+      'UMF brand ambassadors',
+      'Ultra Miami event staff',
+      'music festival staffing agency',
+      'Ultra Music Festival experiential marketing',
+      'UMF product sampling',
+      'Miami music festival staff',
+    ],
+    description:
+      'AirFresh Marketing is the leading staffing agency for Ultra Music Festival, providing professional brand ambassadors, VIP hospitality staff, product sampling teams, and experiential marketing activation crews for one of the world\'s premier electronic music festivals in Miami.',
+    bodyContent: `Ultra Music Festival has established itself as one of the world's most iconic electronic dance music events, drawing over 170,000 attendees annually to Miami's Bayfront Park for three days of world-class performances, immersive stage productions, and unforgettable brand activations. Since its founding in 1999, Ultra has grown from a single-day event into a global festival brand that attracts the most passionate and engaged music fans from over 100 countries.
+
+For brands looking to connect with Ultra's highly desirable demographic of 18-to-34-year-old consumers with significant disposable income and strong social media influence, the festival represents an unparalleled marketing opportunity. The energy, excitement, and sensory overload of Ultra create the perfect environment for brand activations that resonate deeply and generate massive organic social sharing.
+
+## Why Ultra Music Festival Is a Premium Brand Activation Opportunity
+
+Ultra Music Festival attracts a uniquely valuable audience for brand marketers. The festival's attendees are predominantly young professionals and college students who are early adopters of technology, fashion, and lifestyle trends. They are highly active on social media, with the average Ultra attendee posting 15 to 20 times during the festival weekend. This creates an incredible amplification effect for brands that create share-worthy activation experiences.
+
+The festival's layout at Bayfront Park in downtown Miami provides multiple activation zones where brands can create immersive experiences. From the main stage area to the RESISTANCE island stage, the Ultra Worldwide tent, and the festival's extensive vendor village, there are numerous opportunities for brands to position themselves in high-traffic areas where attendees naturally congregate between performances.
+
+Ultra's production values set the standard for electronic music festivals worldwide. The festival's legendary main stage features cutting-edge LED technology, pyrotechnics, and sound systems that create an atmosphere of pure sensory immersion. Brands that match this level of production quality in their activations earn instant credibility with Ultra's discerning audience.
+
+## AirFresh Marketing's Ultra Music Festival Staffing Solutions
+
+At [Air Fresh Marketing](https://www.airfreshmarketing.com), we have extensive experience staffing brand activations at Ultra Music Festival and electronic music events across Miami. Our [brand ambassadors](/services/brand-ambassadors) understand the unique culture and energy of the electronic music scene, allowing them to connect authentically with Ultra attendees and represent your brand with genuine enthusiasm.
+
+### Brand Ambassador Programs for Ultra
+
+Our Ultra Music Festival brand ambassadors are specially selected for their energy, social media savvy, and connection to electronic music culture. We recruit from Miami's vibrant nightlife and music scene, ensuring that every ambassador genuinely embodies the festival spirit. Each team member completes mandatory brand training through our [proprietary video training platform](/technology), ensuring they can speak confidently about your products while maintaining the high-energy vibe that Ultra demands.
+
+### VIP and Hospitality Staffing
+
+Ultra's VIP and ULTRA Worldwide areas require staff who can deliver premium hospitality in a festival environment. Our VIP hosts manage exclusive brand lounges, handle check-in and credentialing, serve as concierge staff, and ensure that high-value guests have an exceptional experience. We understand that VIP activations at Ultra often involve brand partnerships worth hundreds of thousands of dollars, and our staff is trained to represent that level of investment.
+
+### Product Sampling and Distribution
+
+The festival environment at Ultra creates ideal conditions for product sampling, particularly for energy drinks, beverages, supplements, wellness products, and technology accessories. Our [product sampling teams](/services/sampling) are trained in responsible distribution practices, crowd management, and creating memorable sampling moments that go beyond simply handing out products. We focus on creating interactions that encourage social sharing and build lasting brand associations.
+
+### Experiential Marketing Activations
+
+Ultra Music Festival is ground zero for cutting-edge [experiential marketing](/services/experiential-marketing) in the music festival space. Our teams support interactive installations, photo activations with AR and VR elements, mobile charging stations with brand integrations, misting stations, and custom-built activation spaces. We provide the human element that transforms a physical installation into a memorable brand experience, with staff trained to guide attendees through each touchpoint of your activation.
+
+## Staffing Logistics for Ultra Music Festival
+
+Ultra Music Festival presents unique logistical challenges that require experienced event staffing partners. The festival operates from noon until midnight over three days, with setup and teardown extending the commitment to nearly a full week. Miami's March weather brings warm temperatures and high humidity, requiring staff who can perform at a high energy level throughout extended shifts.
+
+Security and credential management at Ultra are extremely strict. All staff must be credentialed well in advance, and our [GPS check-in system](/technology) ensures that every team member arrives on time and at the correct entrance point. We coordinate with Ultra's production team and security to ensure smooth staff ingress and egress, which is critical given the festival's downtown Miami location and associated traffic challenges.
+
+Our Miami talent network includes hundreds of experienced festival staff who have worked Ultra in previous years. This institutional knowledge is invaluable for navigating the festival's complex layout, understanding crowd flow patterns, and positioning brand activations for maximum impact.
+
+## Brand Activation Success at Ultra
+
+Successful brand activations at Ultra Music Festival share several common elements. First, they embrace the festival's aesthetic and energy rather than imposing corporate messaging that feels out of place. Second, they offer genuine value to attendees through memorable experiences, useful products, or exclusive content. Third, they create share-worthy moments that attendees want to document and post on social media.
+
+We have supported brand activations at Ultra that generated millions of social media impressions, driven by authentic engagement rather than paid promotion. Our teams are trained to facilitate these organic sharing moments, helping attendees create content with branded elements while ensuring the experience feels natural rather than forced.
+
+The electronic music festival audience is particularly sophisticated when it comes to marketing. They can quickly identify inauthentic activations and will disengage from brands that don't respect the festival culture. Our staff's genuine connection to the music scene ensures that every interaction feels authentic and builds positive brand associations.
+
+## Planning Your Ultra Music Festival Activation
+
+Planning for Ultra Music Festival should begin at least four to six months in advance. Activation spaces within the festival grounds are limited and competitive, and brands that secure premium locations early have a significant advantage. Our team can help you develop your activation concept, determine staffing requirements, and coordinate logistics with Ultra's production team.
+
+Whether you are launching a new product, building brand awareness with the festival demographic, or creating an immersive experience that will dominate social media, [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) has the expertise, talent, and Miami market knowledge to make your Ultra Music Festival activation a success.
+
+Contact us today at (303) 720-6060 or hello@airfreshmarketing.com to start planning your Ultra Music Festival staffing and activation strategy.`,
+    staffTypes: [
+      {
+        title: 'Festival Brand Ambassadors',
+        description:
+          'High-energy ambassadors selected from Miami\'s electronic music scene who authentically connect with Ultra attendees and represent your brand with genuine enthusiasm.',
+      },
+      {
+        title: 'VIP Hospitality Hosts',
+        description:
+          'Premium hospitality staff for Ultra\'s VIP areas, brand lounges, and exclusive experiences, delivering white-glove service in a festival environment.',
+      },
+      {
+        title: 'Product Sampling Teams',
+        description:
+          'Professional samplers trained in festival distribution logistics, crowd management, and creating share-worthy sampling moments for energy drinks, beverages, and lifestyle products.',
+      },
+      {
+        title: 'Experiential Activation Crews',
+        description:
+          'Staff supporting interactive installations, photo activations, AR/VR experiences, charging stations, and custom brand spaces throughout the festival grounds.',
+      },
+    ],
+    stats: [
+      { value: '170K+', label: 'Annual UMF Attendees' },
+      { value: '100+', label: 'Countries Represented' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: '18-34', label: 'Core Demographic Age' },
+    ],
+    faqs: [
+      {
+        question: 'When should I start planning staffing for Ultra Music Festival?',
+        answer: 'We recommend beginning staffing discussions four to six months before Ultra, which takes place annually in late March. This allows time for staff recruitment, brand training, credentialing, and logistics coordination with the festival production team.',
+      },
+      {
+        question: 'What types of brands activate at Ultra Music Festival?',
+        answer: 'Ultra attracts activations from energy drink brands, beverage companies, technology brands, fashion labels, lifestyle products, automotive brands, and streaming platforms. Any brand targeting the 18-34 demographic with disposable income benefits from Ultra\'s engaged audience.',
+      },
+      {
+        question: 'How do you handle the heat and long shifts at Ultra?',
+        answer: 'We schedule staff in rotating shifts with adequate breaks, provide hydration stations, and recruit from our Miami talent pool who are acclimated to the climate. Our GPS check-in system tracks all shift changes to ensure seamless coverage throughout each festival day.',
+      },
+      {
+        question: 'Can you staff activations outside the festival grounds during Ultra week?',
+        answer: 'Yes. Miami Music Week surrounds Ultra with hundreds of satellite events, pool parties, and brand activations throughout Miami Beach and downtown. We staff both inside the festival and at associated events across the city.',
+      },
+    ],
+    logisticsInfo:
+      'Ultra Music Festival takes place annually in late March at Bayfront Park in downtown Miami, Florida. The festival runs three days from approximately noon to midnight. AirFresh coordinates staff from our extensive Miami talent network, handling all credentialing, check-in logistics, and shift scheduling through our proprietary technology platform.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 32. Governors Ball Music Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'governors-ball',
+    title: 'Governors Ball Staffing Agency | Gov Ball NYC Event Staff',
+    h1: 'Governors Ball Music Festival Staffing',
+    metaDescription:
+      'Governors Ball staffing agency providing brand ambassadors, experiential marketing teams, product sampling staff, and VIP hospitality for Gov Ball NYC activations.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Flushing Meadows Corona Park', 'Citi Field Area', 'Queens NYC'],
+    keywords: [
+      'Governors Ball staffing',
+      'Gov Ball brand ambassadors',
+      'Governors Ball event staff NYC',
+      'NYC music festival staffing',
+      'Gov Ball experiential marketing',
+      'Governors Ball product sampling',
+      'New York festival staffing agency',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for Governors Ball Music Festival in New York City, including brand ambassadors, experiential marketing teams, product sampling crews, and VIP hospitality staff for Gov Ball activations.',
+    bodyContent: `Governors Ball Music Festival has cemented its position as New York City's premier outdoor music festival, attracting over 150,000 attendees annually for three days of genre-spanning performances, curated food experiences, and innovative brand activations. Held in the heart of Queens, Gov Ball offers brands an unparalleled opportunity to connect with NYC's influential and trendsetting consumer base in an immersive festival environment.
+
+The festival's diverse lineup spanning hip-hop, indie rock, pop, electronic, and R&B draws a culturally engaged audience that represents the breadth of New York City's music scene. This diversity makes Gov Ball uniquely attractive for brands seeking to reach multiple demographic segments through a single activation platform.
+
+## The Governors Ball Brand Activation Opportunity
+
+New York City is the media capital of the world, and Governors Ball activations benefit from the city's massive concentration of media, influencers, content creators, and cultural tastemakers. A well-executed brand activation at Gov Ball doesn't just reach the 150,000 on-site attendees; it reaches millions through the amplification effect of NYC's cultural influence machine.
+
+Gov Ball's location in Queens places it at the crossroads of New York's most diverse borough, attracting attendees from all five boroughs and the tri-state area. The audience skews young professional with high disposable income, college-educated, and highly engaged on social media platforms including Instagram, TikTok, and Twitter. These characteristics make Gov Ball attendees exceptionally valuable for brands in fashion, food and beverage, technology, beauty, and lifestyle categories.
+
+The festival's partnership with leading food vendors and its commitment to culinary experiences create natural activation opportunities for food and beverage brands. Gov Ball's food village rivals many standalone food festivals, and brands that integrate their activations with the culinary experience generate high engagement and positive sentiment.
+
+## AirFresh Marketing's Gov Ball Staffing Solutions
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) specializes in providing top-tier event staff for Governors Ball Music Festival. Our New York City talent network is one of our largest and most experienced, with hundreds of professional [brand ambassadors](/services/brand-ambassadors) who understand the unique demands of NYC festival environments and the sophisticated expectations of New York consumers.
+
+### Brand Ambassadors for Gov Ball
+
+Our Gov Ball brand ambassadors are recruited from New York City's vibrant cultural scene, ensuring authentic connections with the festival's audience. Each ambassador completes comprehensive brand training through our [video certification platform](/technology) and arrives at the festival fully prepared to represent your brand with professionalism, energy, and genuine enthusiasm.
+
+We specialize in assembling diverse teams that reflect Gov Ball's audience, with ambassadors who can connect across multiple cultural and demographic segments. Whether your activation targets hip-hop fans, indie music lovers, or the food-focused festival crowd, we have the talent to match your brand's target audience.
+
+### Experiential Marketing Teams
+
+Gov Ball is a hotbed for creative [experiential marketing](/services/experiential-marketing) activations. From interactive art installations to branded lounge spaces, photo moments, and immersive brand worlds, the festival provides a canvas for innovative marketing. Our experiential teams include activation managers, brand experience guides, content capture specialists, and technical support staff who ensure your activation runs flawlessly from gates open to festival close.
+
+### Product Sampling Programs
+
+New York City consumers are notoriously selective, making a festival environment where they are relaxed and receptive an ideal sampling opportunity. Our [product sampling teams](/services/sampling) create meaningful sampling experiences at Gov Ball, going beyond simple distribution to create branded moments that generate social sharing and genuine product trial.
+
+### VIP and Hospitality Staff
+
+Gov Ball's VIP areas and brand-sponsored hospitality experiences require staff who can deliver premium service. Our VIP hospitality team manages exclusive lounges, handles guest lists, coordinates with on-site catering, and ensures that every VIP guest has an exceptional festival experience that reflects positively on your brand.
+
+## NYC Festival Staffing Logistics
+
+Staffing a major festival in New York City presents unique challenges that require experienced partners. Transportation logistics in Queens, strict union and permit requirements, NYC labor regulations, and the high standards of New York consumers all demand a staffing agency with deep local expertise.
+
+AirFresh Marketing's New York operations team handles all logistics including staff transportation coordination, meal planning, weather contingencies, and credential management. Our [GPS check-in system](/technology) provides real-time visibility into staff arrivals and positioning, which is critical for multi-zone activations across Gov Ball's expansive festival grounds.
+
+New York's unpredictable June weather requires contingency planning for both extreme heat and rain. Our experienced staff are prepared for all conditions, and we maintain backup team members on standby to ensure full coverage regardless of weather-related challenges.
+
+## Maximizing Your Gov Ball Activation ROI
+
+Successful Gov Ball activations leverage the festival's unique position in the New York cultural landscape. The festival attracts significant press coverage from major media outlets, fashion and lifestyle publications, and music industry platforms. Brands that create newsworthy activations benefit from earned media coverage that amplifies their investment many times over.
+
+We recommend integrating social media capture points throughout your activation, with staff trained to facilitate content creation and encourage sharing. Our team tracks real-time engagement metrics and adjusts activation strategies throughout the festival weekend to maximize impact.
+
+The food and beverage integration at Gov Ball creates special opportunities for brands in the CPG space. Sampling programs that complement the festival's culinary offerings generate higher engagement and more positive associations than standalone sampling activations.
+
+## Start Planning Your Gov Ball Activation
+
+Gov Ball activation spaces are competitive and fill quickly. We recommend beginning discussions at least three to four months before the festival. Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your Governors Ball staffing needs and activation strategy.
+
+Our team will work with you to develop a comprehensive staffing plan that includes ambassador profiles, shift schedules, training programs, and performance metrics tailored to your Gov Ball objectives.`,
+    staffTypes: [
+      {
+        title: 'NYC Brand Ambassadors',
+        description:
+          'Culturally connected brand ambassadors from NYC\'s diverse music and lifestyle scene who authentically engage Gov Ball\'s audience across all demographics.',
+      },
+      {
+        title: 'Experiential Activation Staff',
+        description:
+          'Activation managers, brand experience guides, and technical support teams for immersive installations, interactive experiences, and branded spaces at Gov Ball.',
+      },
+      {
+        title: 'Product Sampling Specialists',
+        description:
+          'Professional sampling teams who create meaningful brand interactions and social sharing moments for food, beverage, and lifestyle products.',
+      },
+      {
+        title: 'VIP Hospitality Team',
+        description:
+          'Premium hospitality staff for VIP lounges, brand-sponsored experiences, and exclusive guest management at Gov Ball.',
+      },
+    ],
+    stats: [
+      { value: '150K+', label: 'Annual Gov Ball Attendees' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: 'NYC', label: 'Media Capital Location' },
+      { value: '60+', label: 'Artists Per Year' },
+    ],
+    faqs: [
+      {
+        question: 'When does Governors Ball take place and when should we start planning?',
+        answer: 'Governors Ball takes place annually in June in Queens, New York City. We recommend beginning staffing discussions three to four months in advance to secure the best talent from our NYC network and complete all brand training and credentialing.',
+      },
+      {
+        question: 'What makes staffing in NYC different from other festival markets?',
+        answer: 'NYC presents unique challenges including strict labor regulations, complex transportation logistics, union requirements, and exceptionally high consumer expectations. Our deep NYC experience ensures we navigate these challenges seamlessly while delivering world-class staff.',
+      },
+      {
+        question: 'Can you staff satellite events during Gov Ball weekend?',
+        answer: 'Absolutely. Gov Ball weekend features numerous aftershows, brand events, and activations across NYC. We staff both the main festival and associated events throughout Manhattan, Brooklyn, and Queens.',
+      },
+      {
+        question: 'How do you handle weather contingencies at Gov Ball?',
+        answer: 'NYC June weather can be unpredictable. We maintain backup staff on standby, provide weather-appropriate gear, and have contingency plans for both extreme heat and rain scenarios. Our GPS check-in system ensures real-time staff tracking regardless of conditions.',
+      },
+    ],
+    logisticsInfo:
+      'Governors Ball Music Festival takes place annually in June at Flushing Meadows Corona Park in Queens, New York City. The festival runs three days with gates opening mid-afternoon and headliners performing until late evening. AirFresh coordinates staff from our extensive NYC talent network with full credential management and transportation logistics.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 33. Life is Beautiful Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'life-is-beautiful',
+    title: 'Life is Beautiful Staffing Agency | LIB Festival Event Staff Las Vegas',
+    h1: 'Life is Beautiful Festival Staffing',
+    metaDescription:
+      'Life is Beautiful festival staffing agency providing brand ambassadors, experiential marketing teams, and event staff for LIB Las Vegas brand activations and sponsorships.',
+    city: 'Las Vegas',
+    stateAbbrev: 'NV',
+    venues: ['Downtown Las Vegas', 'Fremont East District', 'Las Vegas Arts District'],
+    keywords: [
+      'Life is Beautiful staffing',
+      'LIB festival brand ambassadors',
+      'Life is Beautiful event staff',
+      'Las Vegas festival staffing',
+      'LIB experiential marketing',
+      'Downtown Las Vegas festival staff',
+      'Life is Beautiful brand activation',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for Life is Beautiful Festival in downtown Las Vegas, including brand ambassadors, experiential marketing teams, product sampling staff, and VIP hospitality for LIB activations.',
+    bodyContent: `Life is Beautiful Festival has become one of the most culturally significant music, art, food, and ideas festivals in the United States, transforming 18 blocks of downtown Las Vegas into an immersive urban playground that attracts over 180,000 attendees across three days each September. The festival's unique blend of world-class music performances, large-scale art installations, culinary experiences from top chefs, and thought-provoking speaker sessions creates a multi-dimensional activation environment unlike any other festival in the country.
+
+What sets Life is Beautiful apart from traditional music festivals is its integration of art, ideas, and cuisine alongside music. This creates a more intellectually engaged and culturally curious audience that is particularly valuable for brands seeking meaningful connections beyond simple product exposure. LIB attendees come to be inspired, educated, and entertained, making them exceptionally receptive to brand activations that add genuine value to their festival experience.
+
+## The Life is Beautiful Brand Opportunity
+
+Life is Beautiful's downtown Las Vegas location transforms the Fremont East District into an open-air festival unlike anything in the country. Unlike remote festival venues, LIB is set against the backdrop of a major city's urban core, creating a unique atmosphere that blends festival culture with urban sophistication. This setting attracts a slightly older and more affluent demographic than typical music festivals, with a significant concentration of professionals aged 25 to 40 with above-average household income.
+
+The festival's commitment to art and ideas draws a creative class audience that includes designers, entrepreneurs, marketing professionals, and cultural influencers. These attendees are not just consumers; they are tastemakers who drive trends in their social and professional circles. Brands that connect authentically with this audience gain advocates who amplify their message far beyond the festival grounds.
+
+LIB's intimate urban setting creates natural activation opportunities throughout the festival footprint. Brand activations can integrate with the festival's street art murals, pop up alongside curated food experiences, or complement the festival's Learning series of talks and panels. This integration makes brand experiences feel like a natural extension of the festival rather than commercial interruptions.
+
+## AirFresh Marketing's Life is Beautiful Staffing Solutions
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides comprehensive staffing for Life is Beautiful Festival, drawing from our extensive Las Vegas talent network. Our [brand ambassadors](/services/brand-ambassadors) and event staff understand the unique culture of LIB and are trained to represent brands in a way that complements the festival's emphasis on creativity, authenticity, and meaningful experiences.
+
+### Creative Brand Ambassadors
+
+Life is Beautiful demands brand ambassadors who are more than just friendly faces. Our LIB teams are selected for their creativity, cultural awareness, and ability to engage in substantive conversations about your brand. We recruit from Las Vegas's arts and entertainment community, ensuring our staff naturally fit the festival's creative atmosphere and can connect with LIB's discerning audience.
+
+Every team member completes [comprehensive brand training](/technology) that goes beyond product knowledge to include messaging about brand values, sustainability commitments, and creative vision, all of which resonate strongly with the LIB audience.
+
+### Art Installation and Experiential Staff
+
+LIB's massive art installations are one of the festival's defining features, and many brands create activation experiences that incorporate artistic elements. Our [experiential marketing](/services/experiential-marketing) teams support these creative activations with staff who can guide attendees through interactive art experiences, facilitate creative workshops, manage VR and AR installations, and ensure that artistic brand activations operate smoothly throughout the festival.
+
+### Food and Beverage Activation Teams
+
+Life is Beautiful's culinary program features renowned chefs and innovative food concepts, making it an ideal platform for food and beverage brand activations. Our [product sampling teams](/services/sampling) are experienced in festival food service environments and can staff everything from branded tasting experiences to innovative beverage activations and chef collaboration pop-ups.
+
+### VIP and Speaker Series Support
+
+LIB's VIP experiences and its Learning speaker series require staff who can deliver premium service and facilitate intellectual engagement. Our hospitality teams manage VIP lounges, coordinate speaker greenrooms, support panel discussions, and ensure that premium guests have an elevated festival experience.
+
+## Las Vegas Festival Logistics
+
+Despite Las Vegas's reputation as an entertainment capital, staffing a downtown festival presents unique challenges. The September timing means extreme desert heat, with temperatures regularly exceeding 100 degrees during setup and early festival hours. Our Las Vegas staff are acclimated to these conditions, and we implement heat safety protocols including rotating shifts, hydration stations, and shaded rest areas.
+
+The urban setting of Life is Beautiful requires coordination with downtown Las Vegas businesses, city infrastructure, and residential neighbors. Our team works within the festival's operational framework to ensure smooth staff movement throughout the 18-block footprint, with [GPS check-in](/technology) providing real-time tracking across all activation zones.
+
+Las Vegas's position as a hospitality industry hub gives us access to an exceptionally deep talent pool of experienced event professionals. Many of our LIB staff work in Las Vegas's world-class hotels, restaurants, and entertainment venues during the rest of the year, bringing unmatched hospitality skills to the festival environment.
+
+## Maximizing Your LIB Investment
+
+Life is Beautiful's multi-dimensional programming creates opportunities for brands to engage attendees across multiple touchpoints throughout the festival. We recommend developing activations that evolve across the three-day festival, creating reasons for attendees to return to your brand space and deepen their engagement over time.
+
+The festival's emphasis on ideas and learning creates unique content marketing opportunities. Brands that sponsor or participate in the Learning series gain access to thought leadership positioning that extends well beyond the festival weekend. Our staff can facilitate branded content capture, manage audience engagement at panel discussions, and support experiential elements of speaker series activations.
+
+Social media engagement at LIB is heavily driven by the festival's art installations and visually stunning urban setting. We train our teams to identify and facilitate social sharing opportunities at every brand touchpoint, creating organic amplification that multiplies your activation investment.
+
+## Plan Your Life is Beautiful Activation
+
+Life is Beautiful activation opportunities are announced in the spring for the September festival. Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your LIB staffing strategy and activation concept. Our Las Vegas team will help you develop a comprehensive plan that maximizes your impact at one of America's most culturally significant festivals.`,
+    staffTypes: [
+      {
+        title: 'Creative Brand Ambassadors',
+        description:
+          'Culturally aware ambassadors from Las Vegas\'s arts and entertainment community who authentically engage LIB\'s creative and discerning audience.',
+      },
+      {
+        title: 'Art & Experiential Staff',
+        description:
+          'Teams supporting interactive art installations, creative workshops, VR/AR experiences, and artistic brand activations throughout the festival.',
+      },
+      {
+        title: 'F&B Activation Teams',
+        description:
+          'Experienced food and beverage staff for branded tasting experiences, beverage activations, and chef collaboration pop-ups at LIB\'s culinary program.',
+      },
+      {
+        title: 'VIP & Speaker Support',
+        description:
+          'Premium hospitality staff for VIP lounges, speaker greenrooms, panel support, and elevated festival experiences.',
+      },
+    ],
+    stats: [
+      { value: '180K+', label: 'Annual LIB Attendees' },
+      { value: '18 Blocks', label: 'Downtown LV Footprint' },
+      { value: '3 Days', label: 'Festival Duration' },
+      { value: '25-40', label: 'Core Demographic Age' },
+    ],
+    faqs: [
+      {
+        question: 'When does Life is Beautiful take place?',
+        answer: 'Life is Beautiful Festival takes place annually in September in downtown Las Vegas\'s Fremont East District. The three-day festival typically runs Friday through Sunday with events from afternoon into late night.',
+      },
+      {
+        question: 'How does the desert heat affect staffing at LIB?',
+        answer: 'September in Las Vegas can see temperatures exceeding 100°F during daytime hours. We implement comprehensive heat safety protocols including rotating shifts, mandatory hydration breaks, shaded rest areas, and recruiting from our local Las Vegas talent pool who are acclimated to desert conditions.',
+      },
+      {
+        question: 'What makes Life is Beautiful different from other music festivals for brand activations?',
+        answer: 'LIB uniquely combines music, art, food, and ideas programming, attracting a culturally engaged audience of creative professionals and tastemakers. This creates opportunities for brands to engage through multiple dimensions beyond just music festival sponsorship.',
+      },
+      {
+        question: 'Can you provide GPS-verified check-in for staff across the 18-block festival area?',
+        answer: 'Yes. Our GPS check-in system tracks staff arrivals and positioning across all activation zones throughout LIB\'s extensive urban footprint. Real-time dashboards give you visibility into staffing across every area of the festival.',
+      },
+    ],
+    logisticsInfo:
+      'Life is Beautiful Festival takes place annually in September across 18 blocks of downtown Las Vegas\'s Fremont East District. The three-day festival runs from afternoon through late night. AirFresh coordinates staff from our deep Las Vegas talent network with full GPS tracking, heat safety protocols, and multi-zone credential management.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 34. Rolling Loud Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'rolling-loud',
+    title: 'Rolling Loud Staffing Agency | Rolling Loud Miami Event Staff',
+    h1: 'Rolling Loud Festival Staffing',
+    metaDescription:
+      'Rolling Loud staffing agency providing brand ambassadors, product sampling teams, street team staff, and experiential marketing crews for the world\'s largest hip-hop festival.',
+    city: 'Miami',
+    stateAbbrev: 'FL',
+    venues: ['Hard Rock Stadium', 'Miami Gardens', 'Rolling Loud Festival Grounds'],
+    keywords: [
+      'Rolling Loud staffing',
+      'Rolling Loud brand ambassadors',
+      'Rolling Loud event staff Miami',
+      'hip-hop festival staffing agency',
+      'Rolling Loud experiential marketing',
+      'Rolling Loud product sampling',
+      'Miami hip-hop festival staff',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for Rolling Loud Festival, the world\'s largest hip-hop music festival. Our teams include brand ambassadors, product sampling crews, street teams, and experiential marketing staff for Rolling Loud Miami activations.',
+    bodyContent: `Rolling Loud has established itself as the world's largest and most influential hip-hop music festival, drawing over 230,000 attendees annually to Hard Rock Stadium in Miami Gardens for three days of performances from the biggest names in hip-hop, R&B, and rap. The festival has become a cultural institution in the hip-hop community, serving as a launchpad for emerging artists and a must-attend event for hip-hop's most dedicated fans.
+
+For brands targeting the coveted 18-to-35-year-old demographic that drives culture, fashion, and consumer trends, Rolling Loud represents the single most concentrated opportunity to reach highly engaged hip-hop consumers. The festival's audience is deeply connected to streetwear culture, sneaker culture, social media, and the broader hip-hop lifestyle that influences mainstream consumer behavior across virtually every product category.
+
+## Why Rolling Loud Is Essential for Brand Activations
+
+Rolling Loud's audience is among the most culturally influential in the music festival landscape. Hip-hop is the dominant genre in American popular culture, and Rolling Loud attendees are at the epicenter of the trends, styles, and conversations that shape mainstream consumer behavior. The festival attracts a diverse audience that is predominantly Gen Z and Millennial, tech-savvy, fashion-forward, and highly active on social media.
+
+The concentration of cultural influencers at Rolling Loud is remarkable. The festival attracts social media personalities, content creators, fashion designers, music industry professionals, and cultural commentators alongside mainstream fans. Brand activations that resonate with this audience generate authentic cultural buzz that translates into mainstream visibility.
+
+Rolling Loud's Miami location adds another dimension to the brand opportunity. Miami is a global fashion and culture capital, and the festival weekend transforms the city into a hub of brand events, pop-up shops, album release parties, and exclusive experiences that extend the activation opportunity well beyond the festival grounds.
+
+## AirFresh Marketing's Rolling Loud Staffing Expertise
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) brings deep expertise in hip-hop culture and urban event staffing to Rolling Loud Festival. Our [brand ambassadors](/services/brand-ambassadors) are recruited specifically for their connection to hip-hop culture, ensuring that every interaction feels authentic to Rolling Loud's audience rather than forced or out of touch.
+
+### Hip-Hop Culture Brand Ambassadors
+
+Our Rolling Loud brand ambassadors are drawn from Miami's vibrant hip-hop and urban culture scene. They understand the nuances of hip-hop fashion, slang, cultural references, and social dynamics that are essential for authentic engagement at Rolling Loud. Generic festival staff simply cannot connect with this audience at the same level as culturally embedded ambassadors.
+
+Each team member completes [brand-specific training](/technology) that includes cultural sensitivity guidance and authentic communication techniques alongside product knowledge. This ensures they represent your brand credibly within the hip-hop cultural context.
+
+### Street Team Activations
+
+Rolling Loud is the ultimate venue for [street team](/services/street-teams) activations. The festival's culture embraces grassroots marketing, word-of-mouth promotion, and organic brand discovery. Our street teams execute flyering campaigns, social media challenges, guerrilla marketing stunts, and crowd engagement activations that generate authentic buzz both inside and around the festival.
+
+### Product Sampling and Merch Experiences
+
+Streetwear, sneakers, beverages, and lifestyle products are natural fits for Rolling Loud product sampling. Our [sampling teams](/services/sampling) create activation experiences that feel like organic extensions of hip-hop culture rather than corporate promotions. We specialize in creating lines-around-the-block moments for limited-edition product drops, exclusive merch collaborations, and branded experiences that attendees actively seek out.
+
+### Experiential Marketing at Rolling Loud
+
+[Experiential marketing](/services/experiential-marketing) at Rolling Loud needs to match the energy and production value of the festival itself. Our teams support gaming lounges, custom sneaker experiences, recording studio activations, branded photo and video moments, and interactive installations that give attendees experiences worth sharing across social media.
+
+## Festival Staffing Operations
+
+Rolling Loud at Hard Rock Stadium presents significant operational challenges including large crowd management in an outdoor stadium environment, Miami's July heat, and the logistical complexity of serving 75,000 attendees per day. Our experienced festival operations team handles all staffing logistics including transportation coordination, credential management, shift scheduling, and on-site supervision.
+
+Our [GPS check-in system](/technology) is essential for Rolling Loud operations, providing real-time tracking of all staff across the expansive festival grounds. The stadium environment creates multiple zones with different credential requirements, and our system ensures every team member is in the right place at the right time.
+
+Miami's summer heat requires careful staff management including rotating shifts, hydration protocols, and heat illness prevention training. Our local Miami talent is acclimated to the conditions, and we maintain backup staff to ensure full coverage throughout each festival day.
+
+## Authentic Cultural Engagement
+
+The key to successful brand activations at Rolling Loud is authenticity. Hip-hop audiences are extremely perceptive about corporate pandering and will quickly dismiss brands that try to co-opt culture without genuine understanding or respect. Our staffing approach prioritizes cultural authenticity at every level, from ambassador selection to activation design to communication style.
+
+We work with brands to develop activation concepts that add genuine value to the Rolling Loud experience. The most successful activations at hip-hop festivals offer exclusive access, limited products, creative experiences, or genuine utility rather than just branded giveaways. Our teams are trained to create the kind of FOMO-inducing moments that make attendees seek out your brand activation rather than being intercepted by sampling staff.
+
+Social media is the primary amplification channel for Rolling Loud activations. We train all staff in social media facilitation techniques, helping attendees create and share content that features your brand organically. The goal is earned media and authentic engagement rather than forced branded interactions.
+
+## Plan Your Rolling Loud Activation
+
+Rolling Loud Miami typically takes place in July, with brand partnership and activation space selection beginning months in advance. Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your Rolling Loud staffing strategy. Our team will help you develop an activation that authentically connects with hip-hop's most passionate and influential audience.`,
+    staffTypes: [
+      {
+        title: 'Culture-Connected Ambassadors',
+        description:
+          'Brand ambassadors embedded in hip-hop and urban culture who authentically engage Rolling Loud\'s audience with genuine credibility and cultural fluency.',
+      },
+      {
+        title: 'Street Teams',
+        description:
+          'High-energy street team staff for guerrilla marketing, flyering, social media challenges, and grassroots brand activations inside and around the festival.',
+      },
+      {
+        title: 'Product Sampling & Merch Staff',
+        description:
+          'Teams creating limited-edition product drops, exclusive merch experiences, and branded sampling moments that generate authentic cultural buzz.',
+      },
+      {
+        title: 'Experiential Activation Crews',
+        description:
+          'Staff supporting gaming lounges, recording studios, sneaker experiences, branded photo moments, and interactive installations at Rolling Loud.',
+      },
+    ],
+    stats: [
+      { value: '230K+', label: 'Annual Rolling Loud Attendees' },
+      { value: '75K/Day', label: 'Daily Festival Capacity' },
+      { value: '#1', label: 'World\'s Largest Hip-Hop Festival' },
+      { value: '18-35', label: 'Core Demographic Age' },
+    ],
+    faqs: [
+      {
+        question: 'Why is cultural authenticity so important for Rolling Loud activations?',
+        answer: 'Hip-hop audiences are extremely perceptive about corporate pandering and will dismiss brands that don\'t demonstrate genuine cultural understanding. Our ambassadors are recruited from hip-hop culture, ensuring authentic engagement that builds credibility rather than damaging it.',
+      },
+      {
+        question: 'What types of brands succeed at Rolling Loud?',
+        answer: 'Streetwear, sneaker, beverage, gaming, music streaming, and lifestyle brands see the strongest engagement at Rolling Loud. Any brand that genuinely connects with hip-hop culture and offers real value to the audience can succeed with the right activation strategy.',
+      },
+      {
+        question: 'Can you staff both the festival and Miami brand events during Rolling Loud weekend?',
+        answer: 'Yes. Rolling Loud weekend includes numerous brand pop-ups, album release events, and activations across Miami. We staff both the main festival at Hard Rock Stadium and satellite events throughout the city.',
+      },
+      {
+        question: 'How do you handle the large crowd volumes at Rolling Loud?',
+        answer: 'With 75,000 attendees per day, crowd management expertise is essential. Our operations team deploys staff strategically based on crowd flow patterns, uses GPS tracking for real-time positioning, and maintains optimal staff-to-attendee ratios for every activation zone.',
+      },
+    ],
+    logisticsInfo:
+      'Rolling Loud Miami takes place annually in July at Hard Rock Stadium in Miami Gardens, Florida. The three-day festival draws 75,000+ attendees daily. AirFresh coordinates staff from our Miami talent network with full GPS tracking, heat safety protocols, stadium credential management, and multi-zone coverage across the festival grounds.',
+    relatedCitySlug: 'miami',
+    relatedCityName: 'Miami',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+  // ─────────────────────────────────────────────────────────────────
+  // 35. iHeartRadio Music Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'iheartradio-music-festival',
+    title: 'iHeartRadio Music Festival Staffing Agency | iHeart Las Vegas Event Staff',
+    h1: 'iHeartRadio Music Festival Staffing',
+    metaDescription:
+      'iHeartRadio Music Festival staffing agency providing brand ambassadors, VIP hospitality staff, product sampling teams, and experiential marketing crews for iHeart Las Vegas.',
+    city: 'Las Vegas',
+    stateAbbrev: 'NV',
+    venues: ['T-Mobile Arena', 'Las Vegas Festival Grounds', 'Area15'],
+    keywords: [
+      'iHeartRadio Music Festival staffing',
+      'iHeart Las Vegas event staff',
+      'iHeartRadio brand ambassadors',
+      'Las Vegas music festival staffing',
+      'iHeart experiential marketing',
+      'iHeartRadio Music Festival activation',
+      'Las Vegas concert staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for the iHeartRadio Music Festival in Las Vegas, including brand ambassadors, VIP hospitality staff, product sampling teams, and experiential marketing support for iHeart activations.',
+    bodyContent: `The iHeartRadio Music Festival is one of the most prestigious and widely viewed music events in the United States, bringing together the biggest names in music across every genre for two nights of performances at T-Mobile Arena in Las Vegas, plus the Daytime Stage at Las Vegas Festival Grounds. With over 20,000 in-venue attendees and millions more watching through iHeartMedia's massive broadcast and streaming platform, the festival offers brands a unique combination of live event activation and unprecedented media reach.
+
+What makes the iHeartRadio Music Festival uniquely valuable for brand marketers is the integrated broadcast component. Unlike most festivals where brand exposure is limited to on-site attendees and their social media posts, iHeart Festival activations can reach iHeartMedia's audience of over 250 million monthly listeners across 860+ radio stations and digital platforms. This creates a brand activation opportunity with both the intimacy of a live event and the scale of a national media campaign.
+
+## The iHeartRadio Brand Activation Advantage
+
+The iHeartRadio Music Festival occupies a unique position in the event marketing landscape. It is simultaneously a premium live music experience, a nationally broadcast television event, and a digital content platform with massive distribution. Brands that activate at iHeart receive exposure across all three channels, multiplying their investment far beyond what traditional festival sponsorships deliver.
+
+The festival's lineup spans every major genre from pop and rock to hip-hop, country, Latin, and electronic, attracting the broadest possible music audience. This genre diversity makes iHeart Festival ideal for mass-market brands seeking to reach the widest possible consumer demographic through a single event partnership.
+
+T-Mobile Arena provides a premium indoor venue environment that eliminates weather concerns and creates a controlled activation space. The arena setting allows for sophisticated brand installations with reliable power, climate control, and production infrastructure that outdoor festivals cannot match. This enables brands to create high-production-value activations that align with the festival's broadcast-quality standards.
+
+The festival's Las Vegas setting adds the entertainment capital of the world as a backdrop for brand activations. Las Vegas's hospitality infrastructure, transportation networks, and concentration of tourism create a perfect environment for extended brand experiences that complement the main festival events.
+
+## AirFresh Marketing's iHeart Festival Staffing Solutions
+
+[Air Fresh Marketing](https://www.airfreshmarketing.com) provides premium staffing for the iHeartRadio Music Festival, leveraging our deep Las Vegas talent network and extensive experience staffing broadcast-quality events. Our [brand ambassadors](/services/brand-ambassadors) and event staff understand the unique demands of activations that will be seen both in person and on camera, ensuring broadcast-ready professionalism at every moment.
+
+### Broadcast-Ready Brand Ambassadors
+
+The iHeartRadio Music Festival's broadcast component means that brand ambassadors may appear on camera during nationally televised segments. Our iHeart teams are selected for their on-camera presence, polished communication skills, and ability to maintain energy and professionalism under the spotlight of broadcast television. Each ambassador completes [comprehensive training](/technology) that includes media-facing presentation skills alongside brand knowledge.
+
+### VIP and Celebrity Hospitality
+
+The iHeartRadio Music Festival attracts major celebrities, music industry executives, and high-profile media personalities. Our VIP hospitality team manages backstage areas, artist lounges, sponsor hospitality suites, and celebrity meet-and-greet experiences with the discretion and professionalism that these high-stakes environments demand.
+
+### Arena Activation Staff
+
+T-Mobile Arena's premium environment allows for sophisticated brand activations including interactive technology installations, product experience zones, content creation studios, and branded lounges. Our [experiential marketing teams](/services/experiential-marketing) support these activations with staff trained in technology operation, guest flow management, and premium brand experience delivery.
+
+### Daytime Stage and Outdoor Events
+
+The festival's Daytime Stage at Las Vegas Festival Grounds creates additional activation opportunities in an outdoor festival environment. Our teams handle the transition between indoor arena activations and outdoor festival activations with seamless staffing coverage across both venues.
+
+## Las Vegas Premium Event Logistics
+
+Staffing a premium indoor arena event in Las Vegas requires expertise in the city's unique entertainment ecosystem. T-Mobile Arena's union requirements, strict credential protocols, and high security standards all demand an experienced staffing partner with established relationships in the Las Vegas event community.
+
+Our Las Vegas operations team handles all logistics including arena credential management, staff transportation between venues, union coordination, and compliance with T-Mobile Arena's operational requirements. [GPS check-in](/technology) ensures every team member is credentialed and positioned correctly across the multi-venue festival footprint.
+
+The September timing of the iHeartRadio Music Festival coincides with Las Vegas's busy fall convention and entertainment season. Our deep Las Vegas talent network ensures we have access to premium event staff even during the city's highest-demand periods.
+
+## Maximizing Your iHeart Festival Investment
+
+The iHeartRadio Music Festival's broadcast integration creates unique opportunities for brands to extend their activation reach far beyond the arena walls. We work with brands to develop activations that are designed for both in-person engagement and broadcast and social media capture, ensuring maximum return on the festival investment.
+
+Content capture is critical at iHeart Festival. Our teams include staff dedicated to facilitating attendee content creation, supporting professional media crews, and ensuring that branded elements are prominently featured in all content generated during the festival. The broadcast quality of the event demands that every visual element of your activation meets television production standards.
+
+The festival's multi-genre programming means your brand can reach different audience segments across the two festival nights and the Daytime Stage. We help brands develop staffing strategies that adapt messaging and engagement approaches to match the different audiences attending each performance.
+
+## Start Planning Your iHeart Festival Activation
+
+The iHeartRadio Music Festival takes place annually in September in Las Vegas. Brand partnership and activation discussions typically begin in the spring. Contact [Air Fresh Marketing](https://www.airfreshmarketing.com/contact) at (303) 720-6060 or hello@airfreshmarketing.com to discuss your iHeartRadio Music Festival staffing needs. Our Las Vegas team will help you create an activation strategy that maximizes both live engagement and broadcast exposure.`,
+    staffTypes: [
+      {
+        title: 'Broadcast-Ready Ambassadors',
+        description:
+          'Media-trained brand ambassadors with on-camera presence and polished communication skills for activations that may be seen by millions through iHeart\'s broadcast platform.',
+      },
+      {
+        title: 'VIP & Celebrity Hospitality',
+        description:
+          'Discreet, professional hospitality staff for backstage areas, artist lounges, sponsor suites, and celebrity meet-and-greet experiences.',
+      },
+      {
+        title: 'Arena Activation Staff',
+        description:
+          'Teams supporting interactive installations, product experience zones, content creation studios, and branded lounges within T-Mobile Arena\'s premium environment.',
+      },
+      {
+        title: 'Multi-Venue Event Staff',
+        description:
+          'Flexible teams covering both the indoor T-Mobile Arena shows and the outdoor Daytime Stage at Las Vegas Festival Grounds.',
+      },
+    ],
+    stats: [
+      { value: '20K+', label: 'In-Venue Attendees' },
+      { value: '250M+', label: 'iHeartMedia Monthly Listeners' },
+      { value: '860+', label: 'Radio Station Reach' },
+      { value: '2 Nights', label: 'Main Festival Duration' },
+    ],
+    faqs: [
+      {
+        question: 'What makes the iHeartRadio Music Festival different for brand activations?',
+        answer: 'Unlike most festivals, iHeart Festival combines a live event with massive broadcast reach through 860+ radio stations and streaming platforms reaching 250 million monthly listeners. Brand activations get both in-person engagement and national media exposure.',
+      },
+      {
+        question: 'Do your staff need to be camera-ready for the broadcast?',
+        answer: 'Yes. Given the festival\'s broadcast component, our ambassadors are selected for on-camera presence and media professionalism. All staff complete training that includes broadcast-facing presentation skills alongside brand knowledge.',
+      },
+      {
+        question: 'How do you handle staffing across both the arena and outdoor Daytime Stage venues?',
+        answer: 'We deploy separate teams for T-Mobile Arena and Las Vegas Festival Grounds with a coordination manager overseeing both venues. Our GPS check-in system tracks staff across both locations, and we handle all credential management for each venue\'s unique requirements.',
+      },
+      {
+        question: 'When should we begin planning for iHeartRadio Music Festival staffing?',
+        answer: 'We recommend beginning discussions in the spring for the September festival. This allows adequate time for staff recruitment, broadcast-quality training, arena credential processing, and coordination with iHeartMedia\'s production team.',
+      },
+    ],
+    logisticsInfo:
+      'The iHeartRadio Music Festival takes place annually in September at T-Mobile Arena and Las Vegas Festival Grounds in Las Vegas, Nevada. The two-night main event plus Daytime Stage spans a full weekend. AirFresh coordinates staff from our Las Vegas talent network with arena credential management, multi-venue GPS tracking, and broadcast-quality staffing standards.',
+    relatedCitySlug: 'las-vegas',
+    relatedCityName: 'Las Vegas',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
