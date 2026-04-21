@@ -1,4 +1,5 @@
 import Link from "next/link"
+import Image from "next/image"
 import { notFound } from "next/navigation"
 import { portfolioCaseStudies } from "@/server/portfolioCaseStudies"
 import { Button } from "@/components/ui/button"
@@ -288,13 +289,15 @@ export default async function CaseStudyDetail(
                 <Link key={study.id} href={`/case-studies/${study.id}`}>
                   <Card className="group hover:shadow-xl transition-all duration-300">
                     <div className="relative h-48 overflow-hidden">
-                      <img
+                      <Image
                         src={
                           study.heroImage ||
                           "/images/case-studies/gallery/formula1/formula1-2.jpg"
                         }
                         alt={study.name}
-                        className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
+                        fill
+                        className="object-cover group-hover:scale-110 transition-transform duration-700"
+                        sizes="(max-width: 768px) 100vw, 33vw"
                       />
                       <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
                       <Badge className="absolute top-4 left-4 bg-white/90 text-gray-900">

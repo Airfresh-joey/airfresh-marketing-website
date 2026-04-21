@@ -1,6 +1,7 @@
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
+import Image from "next/image";
 import { InteractiveMap } from "@/components/InteractiveMap";
 import {
   Users,
@@ -246,10 +247,13 @@ export default function About() {
               </div>
             </div>
             <div className="relative">
-              <img
+              <Image
                 src="/images/case-studies/williams-racing-2.jpg"
                 alt="AirFresh Marketing team at Williams Racing activation event"
+                width={600}
+                height={400}
                 className="rounded-lg shadow-xl object-cover w-full h-[400px]"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className="absolute -bottom-6 -right-6 bg-primary text-white p-6 rounded-lg shadow-lg">
                 <div className="text-2xl font-bold">300+</div>

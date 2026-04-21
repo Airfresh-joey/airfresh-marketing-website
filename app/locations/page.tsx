@@ -2,6 +2,7 @@
 
 import { useState } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
@@ -104,10 +105,13 @@ export default function Locations() {
       {/* Hero Section */}
       <section className="relative py-20 lg:py-32 overflow-hidden">
         <div className="absolute inset-0">
-          <img
+          <Image
             src="/images/case-studies/netflix-hero.jpg"
             alt="Netflix experiential marketing activation"
-            className="w-full h-full object-cover object-center"
+            fill
+            className="object-cover object-center"
+            sizes="100vw"
+            priority
           />
           <div
             className="absolute inset-0"
@@ -310,10 +314,13 @@ export default function Locations() {
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-2xl opacity-20"></div>
-              <img
+              <Image
                 src="/images/case-studies/gallery/ted/ted-1.jpg"
                 alt="Air Fresh Marketing team"
+                width={600}
+                height={400}
                 className="relative rounded-2xl shadow-2xl w-full h-[400px] object-cover"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
             </div>
           </div>
