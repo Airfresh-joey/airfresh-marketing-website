@@ -36,6 +36,207 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 165 ──────────────────────────────────────────────────────
+  {
+    slug: 'coachella',
+    title: 'Coachella Staffing | Event Staff for the Coachella Valley Music and Arts Festival',
+    h1: 'Coachella Event Staffing Services',
+    metaDescription: 'Coachella event staffing for brand activations, VIP areas, artist hospitality, and experiential marketing at the Empire Polo Club in Indio, California.',
+    city: 'Indio',
+    stateAbbrev: 'CA',
+    venues: ['Empire Polo Club', 'Indio Polo Grounds', 'Palm Springs Convention Center'],
+    keywords: ['Coachella staffing', 'Coachella event staff', 'Coachella brand ambassadors', 'music festival staffing California', 'Coachella experiential marketing'],
+    description: 'Air Fresh Marketing provides premium event staffing for Coachella, the world\'s most iconic music and arts festival. Our experienced brand ambassadors, VIP hosts, and experiential marketing teams deliver exceptional service across two weekends of programming at the Empire Polo Club in Indio, California.',
+    bodyContent: `<h2>Coachella Event Staffing for the World's Premier Music Festival</h2>
+<p>Coachella Valley Music and Arts Festival draws over 250,000 attendees across two weekends each April, making it the most influential music festival on the planet. Brand activations at Coachella command massive budgets and require staffing teams who understand the festival's unique culture, desert climate, and the high expectations of both brands and attendees.</p>
+<p>Air Fresh Marketing has staffed Coachella activations for major brands, providing brand ambassadors who thrive in extreme heat, navigate sprawling festival grounds, and engage with the trendsetting audience that makes Coachella the gold standard of experiential marketing. From sponsor lounges and pop-up experiences to artist hospitality and VIP concierge, our staff deliver the polished, energetic presence that Coachella demands.</p>
+
+<h2>Staffing Services for Coachella Festival Activations</h2>
+<p>Our Coachella staffing covers every aspect of festival operations. Brand activation teams manage product sampling, social media engagement, and immersive experiences in the festival's high-traffic areas. VIP and artist hospitality staff ensure premium guests receive concierge-level service in exclusive areas. Production support teams assist with stage management, crowd flow, and the technical logistics that keep performances running smoothly.</p>
+<p>We also staff Coachella's surrounding events — pool parties, brand houses, and private events throughout the Coachella Valley that extend the festival experience beyond the polo grounds. Our deep roster of Southern California-based event professionals means rapid deployment and local market knowledge.</p>`,
+    staffTypes: [
+      { title: 'Brand Activation Ambassadors', description: 'Engage festivalgoers at sponsor activations with product demos, sampling, and social media campaigns.' },
+      { title: 'VIP & Artist Hospitality Staff', description: 'Provide concierge service in VIP lounges, artist green rooms, and exclusive brand experiences.' },
+      { title: 'Production Support Crew', description: 'Assist with stage operations, crowd management, and technical logistics across festival stages.' },
+      { title: 'Guest Services & Wayfinding', description: 'Help attendees navigate the sprawling festival grounds with friendly, knowledgeable guidance.' },
+    ],
+    stats: [
+      { value: '250K+', label: 'Annual Attendees' },
+      { value: '2', label: 'Festival Weekends' },
+      { value: '$1B+', label: 'Economic Impact' },
+      { value: '160+', label: 'Musical Acts' },
+    ],
+    faqs: [
+      { question: 'When does Coachella take place?', answer: 'Coachella runs over two consecutive weekends in April at the Empire Polo Club in Indio, California, typically from Friday through Sunday each weekend.' },
+      { question: 'What types of brands activate at Coachella?', answer: 'Fashion, beauty, technology, beverage, and lifestyle brands all activate at Coachella with immersive experiences, pop-up shops, and sampling programs.' },
+      { question: 'How does the desert climate affect staffing?', answer: 'Temperatures can exceed 100°F. Our staff are trained in heat management, hydration protocols, and sun protection to perform at peak levels in extreme conditions.' },
+      { question: 'Can you staff Coachella afterparties and brand houses?', answer: 'Yes, we staff the full ecosystem of Coachella events including pool parties, brand houses, private dinners, and pop-ups throughout the Coachella Valley.' },
+    ],
+    logisticsInfo: 'Coachella operations require pre-festival setup beginning Monday of each week, with teardown extending through the following Monday. Staff housing coordination in the Palm Springs area is essential given limited local accommodations. We manage credentials, parking passes, and on-site orientation for all team members.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/events/coachella-staffing.jpg',
+  },
+  {
+    slug: 'boston-marathon',
+    title: 'Boston Marathon Staffing | Event Staff for the World\'s Oldest Annual Marathon',
+    h1: 'Boston Marathon Event Staffing Services',
+    metaDescription: 'Boston Marathon event staffing for expo operations, course support, finish line activations, and sponsor hospitality along the historic 26.2-mile route from Hopkinton to Boston.',
+    city: 'Boston',
+    stateAbbrev: 'MA',
+    venues: ['Boston Convention and Exhibition Center', 'Copley Square', 'Hopkinton Town Common', 'Boylston Street Finish Line'],
+    keywords: ['Boston Marathon staffing', 'Boston Marathon event staff', 'marathon expo staffing', 'running event staffing Boston', 'Boston Marathon brand activation'],
+    description: 'Air Fresh Marketing provides professional event staffing for the Boston Marathon, the world\'s oldest and most prestigious annual marathon. Our teams support expo operations, course hydration stations, sponsor activations, and finish line experiences along the iconic 26.2-mile route.',
+    bodyContent: `<h2>Boston Marathon Event Staffing for America's Most Prestigious Race</h2>
+<p>The Boston Marathon attracts 30,000 qualified runners and over 500,000 spectators each Patriots' Day in April. This world-major marathon requires extensive staffing from the runner expo at the Boston Convention and Exhibition Center through the finish line celebrations on Boylston Street.</p>
+<p>Air Fresh Marketing supplies event staff who understand endurance sports culture, sponsor activation requirements, and the logistics of a point-to-point race spanning 26.2 miles from Hopkinton to Copley Square. Our teams staff hydration stations, medical checkpoints, sponsor activations, and the finish line festival that caps this iconic event.</p>
+
+<h2>Comprehensive Marathon Event Staffing Solutions</h2>
+<p>Our Boston Marathon staffing covers the full event timeline. Pre-race expo staff manage packet pickup, merchandise sales, and sponsor booths across three days at the BCEC. On race day, course support teams staff water stops, cheer zones, and medical aid stations at mile markers along the route. Finish line staff manage medal distribution, mylar blankets, and family reunion areas.</p>
+<p>Sponsor activation teams represent brands at high-visibility locations like the start village, Wellesley scream tunnel, Heartbreak Hill, and the Boylston Street finish. Our staff combine athletic knowledge with professional service to engage the passionate running community.</p>`,
+    staffTypes: [
+      { title: 'Expo & Registration Staff', description: 'Manage packet pickup, bib distribution, and sponsor booth operations at the runner expo.' },
+      { title: 'Course Support Teams', description: 'Staff water stations, cheer zones, and medical checkpoints along the 26.2-mile route.' },
+      { title: 'Finish Line Operations', description: 'Distribute medals, manage recovery areas, and coordinate family reunion logistics at Copley Square.' },
+      { title: 'Sponsor Activation Ambassadors', description: 'Represent brands at key course locations with sampling, engagement, and experiential marketing.' },
+    ],
+    stats: [
+      { value: '30K', label: 'Qualified Runners' },
+      { value: '500K+', label: 'Spectators' },
+      { value: '128', label: 'Years of History' },
+      { value: '26.2', label: 'Miles of Course' },
+    ],
+    faqs: [
+      { question: 'When is the Boston Marathon?', answer: 'The Boston Marathon takes place on Patriots\' Day, the third Monday of April, with the expo running Friday through Sunday at the BCEC.' },
+      { question: 'What makes marathon staffing unique?', answer: 'Marathon staffing spans a linear 26.2-mile course requiring staff positioned at multiple locations with limited access between points once the race begins.' },
+      { question: 'Do you staff the marathon expo?', answer: 'Yes, we provide full expo staffing including packet pickup, merchandise sales, sponsor activations, and information booths across the three-day expo.' },
+      { question: 'How do you handle weather contingencies?', answer: 'April in Boston brings unpredictable weather. Our staff are equipped for rain, cold, heat, and wind with appropriate gear and training for each scenario.' },
+    ],
+    logisticsInfo: 'Boston Marathon staffing requires early-morning deployment — course staff must be in position by 5 AM for the 10 AM elite start. Transportation logistics are critical as the point-to-point course makes repositioning difficult during the race. We coordinate shuttle buses and staff staging areas along the route.',
+    relatedCitySlug: 'boston',
+    relatedCityName: 'Boston',
+    heroImage: '/images/events/boston-marathon-staffing.jpg',
+  },
+  {
+    slug: 'comic-con-new-york',
+    title: 'New York Comic Con Staffing | Event Staff for NYCC at Javits Center',
+    h1: 'New York Comic Con Event Staffing Services',
+    metaDescription: 'New York Comic Con event staffing for exhibitor booths, panel operations, cosplay events, and brand activations at the Javits Center in Manhattan.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Jacob K. Javits Convention Center', 'Madison Square Garden', 'Hudson Yards'],
+    keywords: ['New York Comic Con staffing', 'NYCC event staff', 'comic con staffing NYC', 'convention staffing New York', 'NYCC brand activation'],
+    description: 'Air Fresh Marketing provides expert event staffing for New York Comic Con (NYCC), the East Coast\'s largest pop culture convention. Our teams support exhibitor operations, panel management, cosplay events, and brand activations at the Javits Center in Manhattan.',
+    bodyContent: `<h2>New York Comic Con Event Staffing for the East Coast's Biggest Convention</h2>
+<p>New York Comic Con draws over 200,000 fans across four days each October, filling the Javits Center with the best in comics, anime, gaming, film, and television. NYCC requires massive staffing operations to manage exhibitor halls, panel programming, artist alley, and the brand activations that define the modern convention experience.</p>
+<p>Air Fresh Marketing deploys experienced convention staff who understand pop culture fandom, cosplay etiquette, and the high-energy atmosphere of NYCC. Our teams work exhibitor booths, manage queue lines for exclusive panels, staff brand experiences, and provide the guest services that keep 200,000 attendees moving through the Javits Center efficiently.</p>
+
+<h2>Full-Service Convention Staffing at NYCC</h2>
+<p>Our NYCC staffing covers every convention need. Exhibitor booth staff manage product demonstrations, giveaway distribution, and lead capture for entertainment, gaming, and publishing companies. Panel operations teams manage seating, queue lines, and AV support for programming rooms. Brand activation specialists staff immersive experiences that studios and sponsors use to generate buzz around new releases.</p>
+<p>We also provide cosplay contest support, artist alley assistance, and the specialized crowd management that conventions of this scale demand. Our New York-based talent pool ensures deep bench strength for last-minute staffing needs.</p>`,
+    staffTypes: [
+      { title: 'Exhibitor Booth Staff', description: 'Represent brands and publishers with product demos, giveaways, and fan engagement at exhibition booths.' },
+      { title: 'Panel & Queue Management', description: 'Manage lines, seating, and audience operations for programming panels and exclusive screenings.' },
+      { title: 'Brand Activation Teams', description: 'Staff immersive experiences and promotional activations for studios, gaming companies, and sponsors.' },
+      { title: 'Convention Operations Support', description: 'Provide wayfinding, crowd management, and guest services across the massive Javits Center campus.' },
+    ],
+    stats: [
+      { value: '200K+', label: 'Annual Attendees' },
+      { value: '4', label: 'Convention Days' },
+      { value: '840K', label: 'Sq Ft Exhibition Space' },
+      { value: '500+', label: 'Exhibitors' },
+    ],
+    faqs: [
+      { question: 'When does New York Comic Con take place?', answer: 'NYCC runs over four days in October, typically Thursday through Sunday, at the Jacob K. Javits Convention Center in Manhattan.' },
+      { question: 'What experience do your staff need for comic conventions?', answer: 'Our NYCC staff are familiar with pop culture fandoms, cosplay etiquette, and convention dynamics. Many are genuine fans who bring authentic enthusiasm to their roles.' },
+      { question: 'Can you staff NYCC afterparties and satellite events?', answer: 'Yes, we staff the full NYCC ecosystem including official afterparties, brand events at nearby venues, and private screenings throughout Manhattan.' },
+      { question: 'How early should we book NYCC staffing?', answer: 'We recommend booking NYCC staffing 8-12 weeks in advance, as October is peak convention season and experienced staff are in high demand.' },
+    ],
+    logisticsInfo: 'NYCC operations at Javits Center require early load-in coordination beginning the Monday before the convention. Staff credentials must be processed through ReedPop\'s exhibitor system. We manage shift scheduling across the four-day event to maintain fresh, energetic teams throughout.',
+    relatedCitySlug: 'new-york-city',
+    relatedCityName: 'New York City',
+    heroImage: '/images/events/nycc-staffing.jpg',
+  },
+  {
+    slug: 'south-by-southwest',
+    title: 'SXSW Staffing | Event Staff for South by Southwest in Austin, Texas',
+    h1: 'South by Southwest SXSW Event Staffing Services',
+    metaDescription: 'SXSW event staffing for brand activations, conference sessions, film screenings, and music showcases across South by Southwest venues in Austin, Texas.',
+    city: 'Austin',
+    stateAbbrev: 'TX',
+    venues: ['Austin Convention Center', 'Palmer Events Center', 'Sixth Street District', 'Rainey Street'],
+    keywords: ['SXSW staffing', 'South by Southwest event staff', 'SXSW brand activation', 'Austin event staffing', 'SXSW experiential marketing'],
+    description: 'Air Fresh Marketing provides expert event staffing for South by Southwest (SXSW), the premier convergence of film, music, and interactive technology. Our teams support brand activations, conference operations, music showcases, and experiential marketing across Austin, Texas.',
+    bodyContent: `<h2>SXSW Event Staffing for the World's Most Innovative Festival</h2>
+<p>South by Southwest transforms Austin into a global hub of innovation each March, attracting over 300,000 attendees across its Interactive, Film, and Music conferences. SXSW brand activations are among the most ambitious in the experiential marketing industry, requiring staffing teams who can operate across dozens of venues throughout downtown Austin.</p>
+<p>Air Fresh Marketing delivers SXSW staffing with the versatility this multi-format event demands. Our brand ambassadors engage tech-savvy Interactive attendees, our hospitality staff manage VIP events for Film premieres, and our street teams energize Music showcases across Sixth Street and beyond. We understand that SXSW success requires staff who are culturally fluent, physically resilient, and professionally excellent.</p>
+
+<h2>Multi-Track Staffing Across the SXSW Ecosystem</h2>
+<p>Our SXSW staffing spans the full festival ecosystem. Conference support teams manage registration, session rooms, and speaker hospitality at the Austin Convention Center. Brand house staff operate multi-day pop-up experiences that brands build throughout downtown. Street team ambassadors distribute promotional materials and drive attendance to brand events across the city.</p>
+<p>We also staff SXSW's legendary nightlife programming — official showcases, private label parties, and the sponsor-hosted events that make SXSW as much about networking as content. Our Austin-based team provides the local knowledge essential for navigating this city-wide festival.</p>`,
+    staffTypes: [
+      { title: 'Brand House & Activation Staff', description: 'Staff multi-day brand pop-ups and immersive experiences throughout downtown Austin.' },
+      { title: 'Conference Operations Teams', description: 'Support registration, session management, and speaker hospitality at convention center venues.' },
+      { title: 'Music Showcase & Venue Staff', description: 'Manage door operations, crowd flow, and artist hospitality at music showcase venues.' },
+      { title: 'Street Teams & Promotional Staff', description: 'Execute guerrilla marketing, flyering, and direct engagement campaigns across the festival footprint.' },
+    ],
+    stats: [
+      { value: '300K+', label: 'Annual Attendees' },
+      { value: '10', label: 'Festival Days' },
+      { value: '3', label: 'Conference Tracks' },
+      { value: '2,000+', label: 'Musical Acts' },
+    ],
+    faqs: [
+      { question: 'When does SXSW take place?', answer: 'SXSW runs for approximately 10 days in March, with Interactive and Film conferences opening first and the Music festival extending through the final weekend.' },
+      { question: 'What makes SXSW staffing different from other festivals?', answer: 'SXSW spreads across the entire city with dozens of official and unofficial venues. Staff must navigate Austin independently and represent brands across multiple locations daily.' },
+      { question: 'Can you staff SXSW brand houses?', answer: 'Yes, brand houses are a SXSW specialty. We provide full staffing for multi-day brand experiences including check-in, hospitality, activations, and security coordination.' },
+      { question: 'How early should we book SXSW staffing?', answer: 'SXSW staffing should be booked 10-16 weeks in advance. Austin\'s limited hotel inventory and high demand for experienced staff make early planning essential.' },
+    ],
+    logisticsInfo: 'SXSW operations require staff who can work across multiple venues in a single day, navigating Austin\'s downtown on foot or by rideshare. Badge and credential management varies by venue and event type. We coordinate accommodation logistics for out-of-market staff and manage the complex scheduling that SXSW\'s overlapping programming demands.',
+    relatedCitySlug: 'austin',
+    relatedCityName: 'Austin',
+    heroImage: '/images/events/sxsw-staffing.jpg',
+  },
+  {
+    slug: 'lollapalooza',
+    title: 'Lollapalooza Staffing | Event Staff for Lollapalooza at Grant Park Chicago',
+    h1: 'Lollapalooza Event Staffing Services',
+    metaDescription: 'Lollapalooza event staffing for brand activations, VIP hospitality, merchandise operations, and crowd management at Grant Park in Chicago, Illinois.',
+    city: 'Chicago',
+    stateAbbrev: 'IL',
+    venues: ['Grant Park', 'Buckingham Fountain Area', 'Congress Plaza', 'Butler Field'],
+    keywords: ['Lollapalooza staffing', 'Lollapalooza event staff', 'Lollapalooza brand activation', 'Chicago festival staffing', 'Lollapalooza experiential marketing'],
+    description: 'Air Fresh Marketing provides experienced event staffing for Lollapalooza, Chicago\'s legendary four-day music festival in Grant Park. Our teams deliver brand activation, VIP hospitality, merchandise operations, and guest services for 100,000+ daily attendees.',
+    bodyContent: `<h2>Lollapalooza Event Staffing for Chicago's Iconic Music Festival</h2>
+<p>Lollapalooza fills Grant Park with over 400,000 music fans across four days each late July and early August. As one of the world's most important music festivals, Lollapalooza attracts massive brand investment in activations, sponsorships, and experiential marketing that require top-tier staffing.</p>
+<p>Air Fresh Marketing delivers Lollapalooza staffing that matches the festival's energy and scale. Our brand ambassadors work sponsor activations along the festival's main thoroughfares. Our VIP hospitality teams manage premium experiences for Platinum and VIP ticket holders. Our operations staff support the complex logistics of running a 100,000-person daily event in the heart of downtown Chicago.</p>
+
+<h2>Festival-Scale Staffing Operations at Lollapalooza</h2>
+<p>Our Lollapalooza staffing program covers every operational need. Brand activation teams staff sponsor stages, product sampling areas, and interactive experiences throughout the festival grounds. Merchandise operations teams manage high-volume retail at official Lollapalooza merch tents. Guest services staff provide wayfinding, accessibility assistance, and general information.</p>
+<p>We also staff Lollapalooza's surrounding programming — official aftershows at Chicago venues, sponsor dinners, and media events that extend the festival brand beyond Grant Park. Our Chicago-based team provides local expertise and reliable transportation logistics in the urban festival environment.</p>`,
+    staffTypes: [
+      { title: 'Brand Activation Ambassadors', description: 'Staff sponsor activations, sampling programs, and interactive brand experiences throughout Grant Park.' },
+      { title: 'VIP & Platinum Hospitality', description: 'Deliver premium service in VIP viewing areas, hospitality lounges, and exclusive festival experiences.' },
+      { title: 'Merchandise & Retail Operations', description: 'Manage high-volume merchandise sales at official festival retail locations.' },
+      { title: 'Guest Services & Operations', description: 'Provide wayfinding, accessibility support, and operational logistics across the festival footprint.' },
+    ],
+    stats: [
+      { value: '400K+', label: 'Total Attendees' },
+      { value: '4', label: 'Festival Days' },
+      { value: '8', label: 'Performance Stages' },
+      { value: '170+', label: 'Musical Acts' },
+    ],
+    faqs: [
+      { question: 'When does Lollapalooza take place?', answer: 'Lollapalooza runs for four days in late July or early August at Grant Park in downtown Chicago, typically Thursday through Sunday.' },
+      { question: 'What is the Lollapalooza festival footprint?', answer: 'Lollapalooza occupies a significant portion of Grant Park with eight stages, multiple food areas, sponsor activations, and VIP sections spanning from Congress to Balbo Drive.' },
+      { question: 'How does urban festival staffing differ?', answer: 'Lollapalooza\'s downtown location means staff navigate public transit, city parking, and urban infrastructure rather than the rural settings of many festivals.' },
+      { question: 'Can you staff Lollapalooza aftershows?', answer: 'Yes, we staff official Lollapalooza aftershows at venues throughout Chicago, as well as sponsor events and private parties during the festival week.' },
+    ],
+    logisticsInfo: 'Lollapalooza\'s Grant Park location requires staff to navigate urban transit and strict entry protocols. Load-in begins the week before the festival with build crews working around Chicago Park District regulations. We coordinate CTA transit passes and parking logistics for all staff members.',
+    relatedCitySlug: 'chicago',
+    relatedCityName: 'Chicago',
+    heroImage: '/images/events/lollapalooza-staffing.jpg',
+  },
   // ── Batch 160 ──────────────────────────────────────────────────────
   {
     slug: 'kentucky-derby',
