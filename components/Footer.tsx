@@ -31,6 +31,7 @@ export default function Footer() {
     { name: "Venues", href: "/venues" },
     { name: "Compare Agencies", href: "/compare" },
     { name: "Event Staffing Agency", href: "/event-staffing-agency" },
+    { name: "Hire Brand Ambassadors", href: "/hire-brand-ambassadors" },
     { name: "Event Staffing Near Me", href: "/event-staffing-near-me" },
     { name: "Careers", href: "/careers" },
     { name: "Blog", href: "/blog" },
