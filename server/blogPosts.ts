@@ -14,6 +14,298 @@ export interface BlogPost {
 
 export const blogPosts: BlogPost[] = [
   {
+    id: 780,
+    slug: 'event-staffing-for-weddings-and-private-celebrations',
+    title: 'Event Staffing for Weddings and Private Celebrations: Servers, Coordinators, and Day-of Support',
+    excerpt: 'Event staffing for weddings and private celebrations provides professional servers, day-of coordinators, and event support teams who ensure flawless execution of life milestone celebrations.',
+    content: `Event staffing for weddings and private celebrations fills a massive gap in the event industry. Wedding planners, venues, and families need reliable supplemental staff for servers, bartenders, setup crews, and day-of support that matches the importance of these once-in-a-lifetime moments.
+
+## The Wedding Staffing Market
+
+The US wedding industry generates over $70 billion annually, with the average wedding costing $30,000-$40,000. Weddings and private celebrations have some of the highest service expectations of any event type because they are deeply personal and heavily photographed.
+
+### Key Staffing Roles
+
+**Banquet Servers and Wait Staff** provide table service for seated dinners, manage buffet stations, and ensure guests are well-served throughout the reception. Wedding service requires extra attentiveness, anticipating needs without being intrusive.
+
+**Bartenders and Bar Staff** manage open bars, signature cocktail stations, and beverage service. Wedding bartenders should be efficient (no one wants to wait in line during the cocktail hour) while being personable and festive.
+
+**Day-of Coordinators and Assistants** support the wedding planner or take the lead on day-of logistics. They manage the timeline, coordinate vendors, troubleshoot problems, and ensure the couple and their families can enjoy the celebration without worrying about details.
+
+**Setup and Teardown Crews** transform venues from empty spaces into wedding wonderlands and reverse the process afterward. They handle tables, chairs, linens, centerpieces, lighting, and all the physical infrastructure.
+
+**Valet Parking Attendants** manage guest arrival and departure, especially at venues with limited parking. First and last impressions matter, and valet staff set the tone.
+
+**Coat Check and Guest Services Staff** handle practical needs so guests can focus on celebrating.
+
+## Types of Wedding Events
+
+### Traditional Ceremonies and Receptions
+Full wedding events requiring comprehensive staffing from ceremony setup through reception cleanup. Staff typically work 8-12 hour shifts.
+
+### Rehearsal Dinners
+More intimate events the evening before the wedding. Staffing is similar to a private dinner party with attention to family dynamics and VIP guest care.
+
+### Engagement Parties and Bridal Showers
+Pre-wedding celebrations that set expectations for the main event. Professional staffing at these events showcases what the family can expect for the wedding itself.
+
+### Destination and Outdoor Weddings
+Weddings at non-traditional venues (beaches, vineyards, barns, mountaintops) create unique staffing challenges. Staff must be adaptable to environments without standard kitchen and service infrastructure.
+
+## Service Standards for Wedding Staff
+
+Wedding staffing demands the highest service standards:
+- **Discretion**: Never draw attention away from the couple
+- **Anticipation**: Refill drinks before glasses are empty
+- **Emotional awareness**: Weddings are emotional events requiring sensitivity
+- **Appearance**: Impeccable grooming and proper uniform
+- **Photography awareness**: Stay out of photographer sight lines, be camera-ready when visible
+- **Flexibility**: Timelines shift constantly at weddings
+
+## Working with Wedding Planners
+
+Wedding planners are your primary client contact. Build strong relationships by:
+- Following their timeline precisely
+- Communicating through proper channels (never directly with the couple on logistics)
+- Being solutions-oriented when problems arise
+- Providing experienced staff who understand wedding flow
+- Delivering consistency that builds planner confidence for future referrals
+
+Professional event staffing for weddings and private celebrations helps create the flawless experiences that families remember forever and generates referrals that build long-term business relationships.`,
+    image: '/images/blog/wedding-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 20, 2026',
+    readTime: '7 min read',
+    category: 'Hospitality',
+    tags: ['wedding staffing', 'private events', 'banquet servers', 'event coordinators', 'event staffing']
+  },
+  {
+    id: 779,
+    slug: 'event-staffing-for-pharmacy-and-healthcare-retail-events',
+    title: 'Event Staffing for Pharmacy and Healthcare Retail Events: Flu Shot Clinics, Health Screenings, and Wellness Days',
+    excerpt: 'Event staffing for pharmacy and healthcare retail events requires health-literate, HIPAA-aware support staff for vaccination clinics, health screenings, and wellness programming at pharmacies and retail health.',
+    content: `Event staffing for pharmacy and healthcare retail events supports the growing intersection of retail and healthcare. As pharmacies and retail health clinics expand their service offerings, they need professional event staff who understand healthcare sensitivities while driving consumer engagement.
+
+## The Retail Healthcare Event Opportunity
+
+Major pharmacy chains, retail clinics, and healthcare brands host thousands of events annually. Flu shot clinics, health screenings, wellness days, medication therapy management events, and community health fairs create staffing needs that blend healthcare awareness with retail event skills.
+
+### Key Staffing Roles
+
+**Health Fair Support Staff** manage logistics at community health screening events. They set up stations, guide attendees through screening processes, manage flow between stations, and ensure a positive experience. These staff do not perform medical services but support the healthcare professionals who do.
+
+**Vaccination Clinic Support** assist at flu shot clinics and immunization events by managing patient flow, handling paperwork, confirming appointments, and providing post-vaccination monitoring support. All medical procedures are performed by licensed healthcare professionals.
+
+**Wellness Education Staff** distribute health information, promote wellness programs, and engage community members at health-focused events. They should be comfortable discussing health topics at a general level while knowing when to defer to healthcare professionals.
+
+**Retail Pharmacy Promotion Staff** support in-store promotions for OTC products, new pharmacy services, and health-related retail offerings. They drive awareness and trial while respecting the healthcare context.
+
+**Registration and Check-In Staff** manage patient sign-in, verify insurance information, distribute consent forms, and organize attendee flow at healthcare events.
+
+## Compliance and Regulatory Requirements
+
+Healthcare events have strict compliance requirements:
+- **HIPAA awareness**: Staff handling any patient information must understand basic HIPAA privacy requirements
+- **No medical advice**: Event staff must never provide medical advice or recommendations
+- **Proper referral**: Staff should know how to direct health questions to licensed professionals
+- **Documentation**: Maintain proper records as required by the healthcare organization
+- **Clean environment**: Healthcare events require heightened cleanliness and sanitation standards
+
+## Training for Healthcare Retail Event Staff
+
+Train staff on:
+- Basic health literacy appropriate to the event type
+- HIPAA fundamentals for handling patient interactions
+- Boundaries between event support and healthcare services
+- Emergency procedures specific to healthcare settings
+- Cultural sensitivity for diverse patient populations
+- Proper sanitation and hygiene protocols
+
+Professional event staffing for pharmacy and healthcare retail events helps organizations serve their communities while maintaining the compliance and quality standards that healthcare requires.`,
+    image: '/images/blog/pharmacy-healthcare-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 20, 2026',
+    readTime: '6 min read',
+    category: 'Healthcare Events',
+    tags: ['pharmacy events', 'healthcare retail', 'health fairs', 'wellness events', 'event staffing']
+  },
+  {
+    id: 778,
+    slug: 'event-staffing-for-arts-and-crafts-festivals',
+    title: 'Event Staffing for Arts and Crafts Festivals: Vendor Support, Demonstrations, and Community Engagement',
+    excerpt: 'Event staffing for arts and crafts festivals requires creative, community-oriented staff for vendor support, artist demonstrations, workshop facilitation, and festival operations.',
+    content: `Event staffing for arts and crafts festivals supports one of the most beloved community event formats in America. From major juried art shows and craft fairs to maker festivals and artisan markets, these events need staff who appreciate creativity and can manage the unique logistics of artist-vendor events.
+
+## The Arts Festival Market
+
+Arts and crafts festivals generate billions in economic activity annually. These events range from prestigious juried art shows in major cities to neighborhood craft fairs and seasonal markets. Each requires staffing that supports both the artists who exhibit and the public who attends.
+
+### Key Staffing Roles
+
+**Festival Operations Staff** manage the overall event logistics including vendor check-in, booth assignment, parking coordination, and schedule management. Arts festivals involve coordinating with dozens or hundreds of independent artists, each with unique setup needs.
+
+**Vendor Support and Load-In/Out Staff** help artists set up and break down their booths. Many artists are solo operators who need physical assistance with heavy displays, tent structures, and inventory. Staff should handle artwork with care and respect.
+
+**Information and Wayfinding Staff** guide attendees through festival grounds, provide maps, share schedules for demonstrations and performances, and answer questions about participating artists and vendors.
+
+**Demonstration and Workshop Staff** assist artists leading public demonstrations and hands-on workshops. They manage materials, handle registration, control crowd flow around demo areas, and clean up between sessions.
+
+**Children's Art Area Staff** run kid-friendly creative activities like painting, pottery, and craft projects. These roles require patience, creativity, and background checks for working with children.
+
+**Food and Beverage Staff** manage food vendor areas, beer and wine gardens, and refreshment stations that complement the arts programming.
+
+**Stage and Performance Staff** support live music, spoken word, dance, and other performing arts that often accompany visual arts festivals.
+
+## Types of Arts Festivals
+
+### Juried Art Shows
+Prestigious events where artists apply and are selected by a jury. Staff manage the application and jury process, handle artist communications, and ensure the quality experience that justifies booth fees.
+
+### Maker and DIY Festivals
+Events celebrating handmade, crafted, and independently produced goods. Staff should understand and appreciate the maker movement and its emphasis on craftsmanship and creativity.
+
+### Street Art and Mural Festivals
+Live public art creation events where artists paint murals, create installations, and engage with spectators. Staff manage spectator areas, coordinate artist needs, and facilitate media coverage.
+
+### Holiday and Seasonal Markets
+Christmas markets, fall craft fairs, and spring garden art shows tied to seasonal themes. Staff create festive atmospheres while managing retail and food service operations.
+
+## Working with Artists and Vendors
+
+Arts festival staff should understand:
+- Artists are independent business owners who depend on shows for their livelihood
+- Artwork requires careful handling and protection from weather
+- Booth placement significantly impacts artist sales
+- Festival atmosphere and foot traffic affect artist satisfaction
+- Timely load-in and load-out scheduling prevents artist frustration
+
+Professional event staffing for arts and crafts festivals creates well-organized, welcoming events that serve both the artistic community and the public who support them.`,
+    image: '/images/blog/arts-crafts-festival-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 19, 2026',
+    readTime: '6 min read',
+    category: 'Festival Staffing',
+    tags: ['arts festivals', 'craft fairs', 'vendor support', 'community events', 'event staffing']
+  },
+  {
+    id: 777,
+    slug: 'event-staffing-for-logistics-and-supply-chain-events',
+    title: 'Event Staffing for Logistics and Supply Chain Events: Trade Shows, Technology Demos, and Industry Conferences',
+    excerpt: 'Event staffing for logistics and supply chain events requires technically fluent booth staff, demo teams, and conference support for events showcasing warehousing, transportation, and supply chain technology.',
+    content: `Event staffing for logistics and supply chain events serves an industry that has stepped into the spotlight since the global supply chain disruptions of recent years. Trade shows, technology demonstrations, and industry conferences in the logistics sector attract operations managers, supply chain executives, and technology buyers who evaluate solutions with a practical, ROI-focused mindset.
+
+## The Logistics Event Landscape
+
+The logistics and supply chain industry hosts major events that bring together carriers, shippers, technology providers, warehouse operators, and third-party logistics companies. These events are where multi-million dollar technology purchases are evaluated and business relationships are forged.
+
+### Key Staffing Roles
+
+**Trade Show Booth Staff** represent logistics technology companies, equipment manufacturers, and service providers. They need to discuss warehouse management systems, transportation management platforms, robotics, and automation solutions with knowledgeable industry buyers.
+
+**Technology Demonstration Staff** showcase software platforms, robotics systems, autonomous vehicles, and other logistics technology. Live demonstrations of complex systems require staff with technical aptitude and the ability to troubleshoot during demos.
+
+**Conference Operations Staff** manage programming for conferences covering topics like last-mile delivery, warehouse automation, cold chain logistics, and supply chain resilience.
+
+**Networking Event Staff** facilitate connections at receptions, roundtables, and structured networking sessions where industry professionals discuss shared challenges and evaluate potential partners.
+
+## Major Logistics Events
+
+### MODEX and ProMat
+The largest material handling and supply chain events in North America, featuring thousands of exhibitors showcasing the latest in warehouse technology, robotics, and automation.
+
+### Manifest (Future of Logistics)
+A premier logistics technology conference bringing together startups, enterprise shippers, and investors focused on supply chain innovation.
+
+### CSCMP EDGE Conference
+The Council of Supply Chain Management Professionals' annual event, attracting senior supply chain leaders for education and networking.
+
+### Home Delivery World
+Focused on last-mile delivery challenges and solutions, attracting retailers, carriers, and technology providers.
+
+## Training Logistics Event Staff
+
+Staff training covers:
+- Basic supply chain terminology and concepts
+- Key product features and integration capabilities
+- Competitor landscape and differentiation points
+- Lead qualification for different buyer segments (enterprise, mid-market, startup)
+- ROI calculation frameworks that resonate with operations-focused buyers
+
+Professional event staffing for logistics events helps companies connect with qualified buyers in an industry experiencing rapid technology adoption and transformation.`,
+    image: '/images/blog/logistics-supply-chain-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 19, 2026',
+    readTime: '6 min read',
+    category: 'Trade Shows',
+    tags: ['logistics events', 'supply chain', 'trade shows', 'technology demos', 'event staffing']
+  },
+  {
+    id: 776,
+    slug: 'event-staffing-for-aquarium-and-zoo-events',
+    title: 'Event Staffing for Aquarium and Zoo Events: After-Hours Parties, Education Programs, and Fundraising Galas',
+    excerpt: 'Event staffing for aquarium and zoo events requires animal-aware, safety-conscious teams for after-hours parties, educational programming, fundraisers, and special exhibitions at zoological facilities.',
+    content: `Event staffing for aquarium and zoo events combines the hospitality demands of venue events with the unique considerations of working around live animals and conservation-focused organizations. Zoos and aquariums host increasingly sophisticated events to drive revenue, membership, and community engagement.
+
+## Why Zoos and Aquariums Need Event Staff
+
+Zoological institutions generate significant revenue from private events, after-hours programs, and special exhibitions. These events help fund conservation missions while providing unique venue experiences that no hotel ballroom can match. Professional event staff ensure these events succeed without compromising animal welfare or facility operations.
+
+### Key Staffing Roles
+
+**After-Hours Event Staff** manage cocktail receptions, corporate parties, and social events hosted in zoo or aquarium spaces after public hours. They provide food and beverage service, manage guest flow through animal exhibit areas, and maintain the balance between celebration and animal sensitivity.
+
+**Educational Program Staff** support school field trips, day camps, overnight programs, and educational workshops. They assist educators with logistics, manage student groups, and help facilitate hands-on learning activities.
+
+**Fundraising Gala Staff** provide premium event service for the institution's annual gala and other fundraising events. Zoo and aquarium galas are often unique, immersive experiences held among exhibits, requiring staff who can serve elegantly in non-traditional settings.
+
+**Special Exhibition Support** assist with traveling exhibitions, seasonal events (Zoo Lights, Boo at the Zoo), and new exhibit openings. These events drive attendance spikes that require supplemental staffing.
+
+**Guest Services and Admissions Staff** supplement permanent teams during peak seasons and special events. They manage ticket sales, membership sign-ups, and information services.
+
+## Unique Considerations for Zoo and Aquarium Events
+
+### Animal Welfare Protocols
+All event staff must be briefed on:
+- Noise restrictions near animal habitats
+- Prohibited items (balloons, flash photography, certain foods)
+- Restricted areas and animal safety zones
+- Emergency procedures involving animal containment
+- Guest behavior management around exhibits
+
+### Environmental Sensitivity
+Zoos and aquariums maintain specific environmental conditions. Events must not compromise:
+- Temperature and humidity in aquarium areas
+- Lighting schedules that affect animal behavior
+- Noise levels near sensitive species
+- Water quality near aquatic exhibits
+- Air quality in enclosed exhibit spaces
+
+### Conservation Messaging
+Staff should understand the institution's conservation mission and be prepared to answer basic questions about animals and conservation programs. Events at zoos and aquariums should reinforce, not undermine, the conservation message.
+
+## Types of Zoo and Aquarium Events
+
+### Brew at the Zoo / Wine Events
+Popular adult-oriented events combining animal encounters with beverage tastings. Staff manage bar service while helping guests navigate exhibits responsibly.
+
+### Zoo Lights / Holiday Events
+Seasonal events featuring light displays, entertainment, and themed activities. These high-attendance events need extensive guest services, crowd management, and F&B staffing.
+
+### Corporate Events and Team Building
+Companies rent zoo and aquarium spaces for team building, client entertainment, and corporate celebrations. Staff bridge corporate event expectations with facility-specific protocols.
+
+### Education and Day Camp Programs
+Summer camps and educational programs need staff who can support educators and manage children safely in environments with live animals.
+
+Professional event staffing for zoos and aquariums enables these conservation institutions to generate the revenue that supports their missions while providing guests with unforgettable event experiences in truly unique settings.`,
+    image: '/images/blog/zoo-aquarium-event-staffing.jpg',
+    author: 'Air Fresh Marketing Team',
+    date: 'April 18, 2026',
+    readTime: '7 min read',
+    category: 'Specialized Events',
+    tags: ['zoo events', 'aquarium events', 'animal attractions', 'fundraising galas', 'event staffing']
+  },
+  {
     id: 775,
     slug: 'event-staffing-for-telecom-and-mobile-industry-events',
     title: 'Event Staffing for Telecom and Mobile Industry Events: MWC, CES Mobile, and Carrier Launch Events',
