@@ -1361,6 +1361,431 @@ Camp EDC—the on-site camping experience—extends brand activation opportunity
     relatedCityName: 'Las Vegas',
     heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
   },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 15. New York Fashion Week (NYFW)
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'nyfw',
+    title: 'NYFW Staffing Agency | New York Fashion Week Event Staff',
+    h1: 'New York Fashion Week Staffing',
+    metaDescription:
+      'New York Fashion Week staffing agency providing runway assistants, VIP hosts, brand ambassadors, and event staff for NYFW shows and activations across Manhattan venues.',
+    city: 'New York',
+    stateAbbrev: 'NY',
+    venues: ['Spring Studios', 'The Shed Hudson Yards', 'Skylight Clarkson Square', 'Cipriani Wall Street'],
+    keywords: [
+      'NYFW staffing agency',
+      'New York Fashion Week staff',
+      'fashion week event staffing',
+      'NYFW brand ambassadors',
+      'fashion event staffing New York',
+    ],
+    description:
+      'AirFresh Marketing provides professional staffing for New York Fashion Week shows, presentations, and brand activations across Manhattan. Our polished, fashion-forward staff elevate every touchpoint of your NYFW presence.',
+    bodyContent: `New York Fashion Week is one of the world's most prestigious fashion events, drawing 230,000+ attendees including buyers, editors, influencers, and celebrities across two annual seasons in February and September. The stakes are extraordinary—every interaction reflects your brand's image, and the scrutiny from fashion media is intense.
+
+AirFresh Marketing has staffed NYFW shows, presentations, pop-ups, and after-parties for both established fashion houses and emerging designers. We understand that fashion week staffing requires more than warm bodies—it demands staff who embody the aesthetic, poise, and professionalism that the industry expects.
+
+**Runway Show and Presentation Staff**
+
+Our NYFW runway staff are selected for their polished appearance, composure under pressure, and ability to manage high-profile guests. Front-of-house staff manage seating, credential verification, and VIP reception while maintaining the controlled chaos that characterizes show venues during setup and doors. Backstage support staff coordinate model flow, dresser logistics, and timing with military precision.
+
+For off-site presentations and installations—increasingly popular as brands move beyond the traditional runway format—our staff manage guest flow, explain collection concepts, and capture visitor data in environments that range from intimate showrooms to immersive multi-sensory experiences.
+
+**Brand Activation and Pop-Up Staff**
+
+Fashion week has evolved beyond the runway into a week-long brand activation opportunity. Our staff work pop-up shops, experiential installations, product gifting suites, and influencer events throughout Manhattan. Each team member is trained on your brand story, product details, and the specific engagement approach for each activation format.
+
+**VIP and Hospitality Staff**
+
+NYFW hospitality demands white-glove service. Our VIP hosts manage guest lists, coordinate car services, staff private dinners, and ensure that every high-value attendee receives personalized attention. We staff brand lounges, after-parties, and sponsor hospitality suites with staff who understand the protocols and discretion required at this level.
+
+**Media and PR Support**
+
+Behind every successful NYFW presence is a logistics operation. Our staff support press check-in, media escort, gift bag distribution, and social media content capture. We provide staff trained in media protocols who can interface professionally with editors, photographers, and broadcast crews.`,
+    staffTypes: [
+      { title: 'Runway Show Staff', description: 'Front-of-house ushers, seating managers, and backstage coordinators for fashion shows and presentations.' },
+      { title: 'Brand Ambassadors', description: 'Fashion-forward ambassadors for pop-ups, product launches, and brand activations during fashion week.' },
+      { title: 'VIP Hosts', description: 'Polished hospitality staff for private events, lounges, dinners, and after-parties.' },
+      { title: 'Showroom Staff', description: 'Knowledgeable staff to present collections in showroom and appointment settings.' },
+      { title: 'Event Registration', description: 'Check-in and credential management staff for shows, presentations, and branded events.' },
+      { title: 'Media Liaisons', description: 'Press-savvy staff to manage media check-in, escort press, and coordinate photographer access.' },
+    ],
+    stats: [
+      { value: '230K+', label: 'NYFW Attendees Per Season' },
+      { value: '100+', label: 'Shows Per Season' },
+      { value: '$900M', label: 'Economic Impact Per Season' },
+      { value: '2', label: 'Seasons Annually' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book NYFW staffing?',
+        answer: 'We recommend booking 6-8 weeks before fashion week. NYFW staffing demand is extremely high, and our best fashion-experienced staff book early. For large activations requiring 10+ staff, 8-12 weeks is ideal. However, our 48-hour emergency deployment can help fill last-minute needs.',
+      },
+      {
+        question: 'Do your NYFW staff have fashion industry experience?',
+        answer: 'Yes. Our NYFW roster includes staff with experience in fashion PR, retail luxury brands, modeling agencies, and previous fashion week events. We screen for fashion fluency, professional appearance standards that meet fashion industry expectations, and the composure required for high-pressure show environments.',
+      },
+      {
+        question: 'Can you staff both on-schedule shows and off-site activations?',
+        answer: 'Absolutely. We staff the full spectrum of NYFW events—from official calendar shows at Spring Studios to off-site presentations, brand pop-ups, influencer dinners, and after-parties across Manhattan venues. Our team coordinates across multiple simultaneous events throughout the week.',
+      },
+      {
+        question: 'What about dress code and appearance standards for NYFW?',
+        answer: 'NYFW has the highest appearance standards of any event we staff. We work with your creative team to define the exact dress code, grooming standards, and aesthetic requirements for each event. Staff are briefed on the specific look expected and provide advance photos for your approval.',
+      },
+      {
+        question: 'Do you provide real-time reporting for fashion week events?',
+        answer: 'Yes. All staff check in via GPS at each venue. We provide real-time dashboards showing staff arrivals, shift status, and engagement metrics. Post-event reports include attendance data, guest interactions, media touchpoints, and photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'New York Fashion Week takes place primarily in February and September, with shows and events running approximately 7-10 days each season. Major venues include Spring Studios in Tribeca, The Shed at Hudson Yards, and various locations across Manhattan. AirFresh coordinates staff across multiple simultaneous venues, manages credential distribution, and provides transportation logistics for staff moving between venues throughout each day. Our New York City talent pool includes fashion-experienced staff recruited specifically for NYFW.',
+    relatedCitySlug: 'new-york',
+    relatedCityName: 'New York City',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 16. Essence Festival
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'essence-festival',
+    title: 'Essence Festival Staffing Agency | New Orleans Event Staff',
+    h1: 'Essence Festival Event Staffing New Orleans',
+    metaDescription:
+      'Essence Festival staffing agency providing brand ambassadors, product samplers, and event staff for Essence Fest activations at the Ernest N. Morial Convention Center in New Orleans.',
+    city: 'New Orleans',
+    stateAbbrev: 'LA',
+    venues: ['Ernest N. Morial Convention Center', 'Caesars Superdome', 'New Orleans Convention Center Exhibition Halls'],
+    keywords: [
+      'Essence Festival staffing',
+      'Essence Fest event staff',
+      'Essence Festival brand ambassadors',
+      'New Orleans festival staffing',
+      'Essence Fest activation staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the Essence Festival of Culture in New Orleans. From brand activations in the Convention Center to concert hospitality at the Superdome, our diverse, energetic staff maximize your Essence Fest brand presence.',
+    bodyContent: `The Essence Festival of Culture is the largest annual gathering of Black culture, art, and music in the United States, attracting 500,000+ attendees to New Orleans each July Fourth weekend. For brands, Essence Fest represents an unmatched opportunity to connect with an engaged, affluent audience in an environment of cultural celebration and community.
+
+AirFresh Marketing has staffed Essence Festival brand activations, sponsor booths, product sampling programs, and hospitality events across the Convention Center and surrounding venues. We understand that Essence Fest success requires staff who are not only professional but authentically connected to the culture and energy of the event.
+
+**Convention Center Brand Activations**
+
+The daytime Essence Fest experience at the Ernest N. Morial Convention Center features hundreds of brand activations across the Expo floor. Competition for attendee attention is fierce, and brands that staff their booths with engaging, knowledgeable ambassadors dramatically outperform those relying on basic signage. Our brand ambassadors are trained on your products, promotional offers, and engagement strategies to drive meaningful interactions and data capture.
+
+Whether you are running a beauty demonstration booth, a tech product trial station, a health and wellness activation, or an automotive brand experience, we provide staff who can credibly represent your brand while connecting with Essence attendees in an authentic and engaging way.
+
+**Product Sampling Programs**
+
+Essence Fest is a premier product sampling opportunity, particularly for beauty, health, food and beverage, and consumer goods brands. Our sampling staff are trained in proper distribution techniques, compliance requirements, data capture, and the specific talking points that drive trial-to-purchase conversion. We manage inventory flow, station setup, and real-time sampling counts across your Convention Center footprint.
+
+**Concert and Hospitality Staffing**
+
+The evening concert series at the Caesars Superdome features headline performances that draw the full Essence audience. Our hospitality staff manage VIP suites, sponsor lounges, and branded hospitality areas within the Superdome and surrounding venues. For private events and after-parties, we provide hosts, bartending support staff, check-in coordinators, and guest services personnel.
+
+**Community Engagement Staff**
+
+Many brands use Essence Fest for community-focused activations—health screenings, financial literacy workshops, career development sessions, and mentorship programs. Our staff support these activations with registration management, participant engagement, and program facilitation support that reflects the mission-driven nature of these initiatives.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Engaging, culturally connected ambassadors for brand activations and booth engagement on the Expo floor.' },
+      { title: 'Product Samplers', description: 'Trained sampling staff for beauty, food, beverage, and consumer goods distribution programs.' },
+      { title: 'Hospitality Staff', description: 'VIP hosts and hospitality coordinators for Superdome suites, sponsor lounges, and private events.' },
+      { title: 'Registration Staff', description: 'Check-in and credential management for branded events, workshops, and community activations.' },
+      { title: 'Street Team Members', description: 'High-energy street teams for guerrilla marketing and brand awareness around the Convention Center and French Quarter.' },
+      { title: 'Lead Capture Specialists', description: 'Data collection staff trained in survey administration, QR code engagement, and CRM entry.' },
+    ],
+    stats: [
+      { value: '500K+', label: 'Annual Essence Fest Attendees' },
+      { value: '80+', label: 'Brand Activations' },
+      { value: '4 Days', label: 'Festival Duration' },
+      { value: '$300M+', label: 'Economic Impact' },
+    ],
+    faqs: [
+      {
+        question: 'When should I book staffing for Essence Festival?',
+        answer: 'We recommend booking 8-10 weeks before Essence Fest (typically early to mid-May for the July event). Demand for experienced activation staff in New Orleans spikes dramatically during this period, and our top Essence-experienced staff are reserved early. For large teams of 15+, earlier booking is strongly recommended.',
+      },
+      {
+        question: 'Do your staff have experience with the Essence Fest audience?',
+        answer: 'Yes. We specifically recruit and select staff who understand and connect authentically with the Essence Festival audience. Our Essence roster includes staff with experience in cultural events, beauty brand activations, and community engagement who bring genuine energy and cultural fluency to every interaction.',
+      },
+      {
+        question: 'Can you staff activations across multiple Essence Fest venues simultaneously?',
+        answer: 'Absolutely. We coordinate staff across the Convention Center Expo floor, the Caesars Superdome, surrounding hotel event spaces, and off-site activations throughout New Orleans. Our on-site managers ensure seamless logistics across all your Essence touchpoints.',
+      },
+      {
+        question: 'What about the New Orleans heat and outdoor activations?',
+        answer: 'July in New Orleans means extreme heat and humidity. We prepare our staff with heat safety protocols, hydration planning, and rotation schedules for outdoor deployments. We also advise clients on tent, shade, and cooling station logistics to keep both staff and attendees comfortable during outdoor activations.',
+      },
+      {
+        question: 'Do you provide GPS check-in verification at Essence Fest?',
+        answer: 'Yes. Every staff member checks in via our GPS-enabled app at their assigned venue. You get real-time confirmation of arrivals, shift durations, and a comprehensive post-event report with attendance verification, engagement metrics, and photo documentation from your activation.',
+      },
+    ],
+    logisticsInfo:
+      'The Essence Festival of Culture takes place annually during July Fourth weekend (Thursday through Sunday) in New Orleans, Louisiana. The daytime experience runs at the Ernest N. Morial Convention Center, and evening concerts take place at the Caesars Superdome. AirFresh coordinates staff logistics across both venues plus surrounding hotels and off-site locations, manages credential distribution, and provides New Orleans-experienced talent supplemented by out-of-market staff for large activations. Transportation coordination accounts for the French Quarter proximity and event traffic patterns.',
+    relatedCitySlug: 'new-orleans',
+    relatedCityName: 'New Orleans',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 17. ComplexCon
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'complexcon',
+    title: 'ComplexCon Staffing Agency | Long Beach Event Staff',
+    h1: 'ComplexCon Event Staffing Long Beach',
+    metaDescription:
+      'ComplexCon staffing agency providing brand ambassadors, booth staff, and product launch teams for ComplexCon at the Long Beach Convention Center. Book your ComplexCon staff today.',
+    city: 'Long Beach',
+    stateAbbrev: 'CA',
+    venues: ['Long Beach Convention Center'],
+    keywords: [
+      'ComplexCon staffing',
+      'ComplexCon event staff',
+      'ComplexCon brand ambassadors',
+      'Long Beach convention staffing',
+      'streetwear event staffing',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for ComplexCon in Long Beach. Our culturally connected brand ambassadors and booth staff help brands create buzzworthy activations at the intersection of streetwear, music, food, and art.',
+    bodyContent: `ComplexCon is the premier cultural convention bringing together streetwear, music, food, art, and innovation under one roof at the Long Beach Convention Center. With 60,000+ attendees and some of the most engaged, trend-forward consumers in the country, ComplexCon represents a unique opportunity for brands to connect with culture-driving audiences in an immersive, festival-like environment.
+
+AirFresh Marketing has staffed ComplexCon brand booths, product drops, experiential activations, and hospitality lounges for brands across fashion, sneakers, food and beverage, technology, and entertainment. We know that ComplexCon success requires staff who don't just represent your brand—they live in the culture your brand speaks to.
+
+**Brand Booth and Product Drop Staff**
+
+ComplexCon is famous for exclusive product drops that generate lines wrapping through the convention center. Our booth staff manage crowd flow, product distribution, purchase transactions, and crowd engagement for brands launching limited-edition products. We provide line management specialists, cashier support, inventory control staff, and brand ambassadors who keep energy high even during multi-hour waits.
+
+For standard exhibition booths, our staff drive engagement through product demos, social media content capture, and the kind of authentic brand storytelling that resonates with ComplexCon's discerning audience. We recruit from our Los Angeles talent pool to ensure cultural relevance and genuine enthusiasm for your brand space.
+
+**Experiential Activation Staff**
+
+The most successful ComplexCon brands create experiences, not just booths. Our staff support interactive installations, gaming stations, content creation studios, customization bars, and immersive brand environments. Whether your activation involves a sneaker customization workshop, a music production studio, or an augmented reality experience, we provide staff who can facilitate the experience while naturally weaving in brand messaging.
+
+**Food and Beverage Activation Staff**
+
+ComplexCon's food programming features top chefs and restaurant brands. Our staff support food pop-ups, sampling programs, and culinary brand activations with food-safe handling protocols, queue management, and the operational efficiency needed to serve thousands of hungry attendees throughout the weekend.
+
+**Content and Social Media Staff**
+
+In the ComplexCon environment, social media amplification is as valuable as the in-person interaction. Our staff include social media-savvy team members who capture content, encourage attendee UGC, manage photo ops, and ensure your activation generates the digital reach that extends far beyond the convention center walls.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Culture-connected ambassadors for booth engagement, product education, and authentic brand storytelling.' },
+      { title: 'Product Drop Staff', description: 'Line management, inventory control, and transaction support for exclusive product releases.' },
+      { title: 'Experiential Activation Staff', description: 'Interactive experience facilitators for gaming, customization, and immersive brand installations.' },
+      { title: 'Food Service Staff', description: 'Food-safe sampling staff, queue managers, and operations support for culinary activations.' },
+      { title: 'Social Media & Content Staff', description: 'Content creators and social media engagement specialists to amplify your activation digitally.' },
+      { title: 'VIP Hospitality', description: 'Hosts and concierge staff for brand lounges, influencer suites, and private events.' },
+    ],
+    stats: [
+      { value: '60K+', label: 'ComplexCon Attendees' },
+      { value: '200+', label: 'Brand Exhibitors' },
+      { value: '2 Days', label: 'Event Duration' },
+      { value: '$50M+', label: 'On-Site Sales Volume' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book staff for ComplexCon?',
+        answer: 'We recommend booking 6-8 weeks before ComplexCon. Our LA-based talent pool with streetwear and culture event experience is in high demand during this period. For brands planning major product drops requiring 10+ staff, booking 8-10 weeks out secures your best options.',
+      },
+      {
+        question: 'Do your ComplexCon staff understand streetwear and youth culture?',
+        answer: 'Absolutely. We specifically recruit from our Los Angeles talent pool for ComplexCon, selecting staff who are genuinely engaged in streetwear, sneaker culture, music, and the communities that drive ComplexCon attendance. Authentic cultural connection is non-negotiable for this event.',
+      },
+      {
+        question: 'Can you help manage product drop logistics?',
+        answer: 'Yes. We have extensive experience staffing product drops at ComplexCon and similar events. Our teams manage line formation, crowd control, wristband distribution, purchase limits enforcement, inventory flow, and post-drop crowd management. We coordinate with your operations team and venue security for seamless execution.',
+      },
+      {
+        question: 'What about after-hours events during ComplexCon weekend?',
+        answer: 'ComplexCon weekend extends well beyond the convention center with after-parties, private dinners, pop-up shops, and brand events throughout Long Beach and greater LA. We staff these satellite events with the same professional standards and GPS check-in verification as the main convention.',
+      },
+      {
+        question: 'Do you provide real-time reporting at ComplexCon?',
+        answer: 'Yes. All staff check in via GPS at the Long Beach Convention Center. Our real-time dashboard shows staff arrivals, shift status, and engagement metrics. Post-event reports include foot traffic data, interaction counts, product distribution numbers, and photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'ComplexCon takes place annually in November at the Long Beach Convention Center in Long Beach, California. The event runs Saturday and Sunday with setup beginning Thursday. AirFresh coordinates staff from our extensive Los Angeles metro talent pool, manages credential distribution, and provides on-site management throughout the weekend. Transportation logistics account for Long Beach Convention Center parking limitations and rideshare staging areas.',
+    relatedCitySlug: 'los-angeles',
+    relatedCityName: 'Los Angeles',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 18. PGA Tour Events / Golf Tournament Staffing
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'pga-tour',
+    title: 'PGA Tour Event Staffing Agency | Golf Tournament Staff',
+    h1: 'PGA Tour Event Staffing',
+    metaDescription:
+      'PGA Tour event staffing agency providing hospitality hosts, brand ambassadors, and sponsor activation staff for professional golf tournaments nationwide. Book your PGA Tour staff.',
+    city: 'Various',
+    stateAbbrev: 'US',
+    venues: ['TPC Scottsdale', 'Augusta National', 'Pebble Beach Golf Links', 'TPC Sawgrass', 'Torrey Pines'],
+    keywords: [
+      'PGA Tour staffing',
+      'golf tournament event staff',
+      'PGA event staffing agency',
+      'golf hospitality staffing',
+      'sponsor activation golf',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for PGA Tour events and professional golf tournaments nationwide. From sponsor hospitality suites to on-course brand activations, our polished staff elevate the spectator experience.',
+    bodyContent: `Professional golf tournaments represent some of the most prestigious brand activation opportunities in sports marketing. PGA Tour events attract affluent, engaged audiences—the average PGA Tour spectator has a household income exceeding $100,000 and high brand receptivity in the relaxed, social atmosphere of tournament grounds.
+
+AirFresh Marketing has staffed PGA Tour events, LPGA events, and corporate golf tournaments across the country. We understand that golf event staffing demands a unique combination of professionalism, discretion, hospitality excellence, and the ability to work in outdoor environments for extended periods.
+
+**Sponsor Hospitality Staffing**
+
+Corporate hospitality is the backbone of PGA Tour sponsorship ROI. Our hospitality staff manage sponsor chalets, skyboxes, hospitality tents, and VIP viewing areas with the white-glove service that C-suite guests and key clients expect. Staff responsibilities include guest registration, food and beverage service coordination, VIP escort between viewing locations, and ensuring every sponsor guest has an exceptional experience.
+
+We staff hospitality venues for PGA Tour title sponsors, official partners, and corporate clients who purchase hospitality packages. Our staff understand the protocols of golf hospitality—from maintaining appropriate noise levels during play to managing the flow of guests between the course and hospitality areas.
+
+**On-Course Brand Activations**
+
+The fan experience zones and activation areas on PGA Tour courses offer brands direct engagement with spectators. Our brand ambassadors staff sponsor activations, product sampling stations, interactive experiences, and merchandise areas throughout the tournament grounds. Whether you are running a putting challenge, a product demonstration, a sweepstakes entry station, or a branded photo opportunity, we provide staff who can engage spectators in the relaxed, upscale environment of a professional golf event.
+
+**Registration and Credential Management**
+
+Large PGA Tour events require efficient credential management for sponsors, media, and VIP guests. Our registration staff manage check-in for hospitality guests, distribute credentials, coordinate transportation between parking and hospitality areas, and ensure a smooth arrival experience.
+
+**Volunteer Coordination Support**
+
+Many PGA Tour events rely on thousands of volunteers supplemented by professional staff in key roles. We provide professional staff for positions that require specialized training—hospitality management, brand activation, sponsor interface, and media coordination—while integrating seamlessly with the volunteer workforce.`,
+    staffTypes: [
+      { title: 'Hospitality Hosts', description: 'White-glove hospitality staff for sponsor chalets, skyboxes, and VIP viewing areas.' },
+      { title: 'Brand Ambassadors', description: 'Professional ambassadors for sponsor activations, sampling programs, and fan engagement areas.' },
+      { title: 'Registration Staff', description: 'Check-in coordinators for sponsor hospitality, media credentials, and VIP guest management.' },
+      { title: 'Beverage Service Staff', description: 'Trained beverage staff for hospitality areas, including beer, wine, and spirits service.' },
+      { title: 'Activation Specialists', description: 'Interactive experience facilitators for putting challenges, product demos, and branded games.' },
+      { title: 'On-Site Managers', description: 'Experienced event managers to coordinate staff across the tournament grounds.' },
+    ],
+    stats: [
+      { value: '200K+', label: 'Average PGA Tour Event Attendance' },
+      { value: '45', label: 'PGA Tour Events Annually' },
+      { value: '$100K+', label: 'Average Spectator HHI' },
+      { value: '47', label: 'Tour Stops Nationwide' },
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should I book PGA Tour event staffing?',
+        answer: 'We recommend booking 8-12 weeks before the tournament, especially for marquee events like the WM Phoenix Open, The Players Championship, or major championships. PGA Tour hospitality staffing requires experienced, polished staff, and our best golf-experienced team members book early in the season.',
+      },
+      {
+        question: 'Do your staff understand golf etiquette and tournament protocols?',
+        answer: 'Yes. All PGA Tour staff receive golf-specific orientation covering course etiquette, quiet zones during play, mobile phone policies, spectator movement protocols, and the unique hospitality expectations of golf audiences. We staff only experienced, professional team members at PGA events.',
+      },
+      {
+        question: 'Can you staff events at multiple PGA Tour stops throughout the season?',
+        answer: 'Absolutely. Many of our sponsor clients activate at multiple PGA Tour stops throughout the season. We coordinate consistent branding and service standards across all events, using our 200+ city network to provide local talent at each tour stop while maintaining continuity through traveling on-site managers.',
+      },
+      {
+        question: 'What about weather contingencies at outdoor golf events?',
+        answer: 'PGA Tour events are fully outdoor, and we plan for all weather conditions. Our staffing plans include weather delay protocols, rain gear provisions, heat management strategies, and flexible scheduling to accommodate the weather-dependent nature of professional golf. Staff are briefed on extreme weather procedures aligned with PGA Tour safety protocols.',
+      },
+      {
+        question: 'Do you provide reporting for PGA Tour sponsor activations?',
+        answer: 'Yes. All staff check in via GPS at the tournament venue. We provide daily dashboards showing staff arrivals, interaction counts, and engagement metrics. Post-event reports include hospitality guest counts, activation engagement data, product distribution numbers, and comprehensive photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'PGA Tour events take place at courses across the United States, typically running Wednesday through Sunday with practice rounds Monday-Wednesday and competition Thursday-Sunday. AirFresh coordinates local staffing at each tour stop from our 200+ city talent network, manages tournament credential processes, and provides on-site management throughout the event week. Transportation logistics account for remote course locations, limited parking, and shuttle systems common at PGA Tour venues.',
+    relatedCitySlug: 'phoenix',
+    relatedCityName: 'Phoenix',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
+
+  // ─────────────────────────────────────────────────────────────────
+  // 19. Austin City Limits Music Festival (ACL)
+  // ─────────────────────────────────────────────────────────────────
+  {
+    slug: 'austin-city-limits',
+    title: 'ACL Festival Staffing Agency | Austin City Limits Event Staff',
+    h1: 'Austin City Limits Festival Staffing',
+    metaDescription:
+      'Austin City Limits Festival staffing agency providing brand ambassadors, product samplers, and activation staff for ACL Fest at Zilker Park in Austin, Texas. Get your ACL staffing quote.',
+    city: 'Austin',
+    stateAbbrev: 'TX',
+    venues: ['Zilker Park', 'Zilker Metropolitan Park'],
+    keywords: [
+      'ACL Festival staffing',
+      'Austin City Limits event staff',
+      'ACL Fest brand ambassadors',
+      'Austin festival staffing',
+      'music festival staffing Austin',
+    ],
+    description:
+      'AirFresh Marketing provides professional event staffing for the Austin City Limits Music Festival at Zilker Park. Our energetic, festival-experienced staff maximize your brand activation ROI across two weekends of ACL.',
+    bodyContent: `The Austin City Limits Music Festival is one of America's premier music festivals, hosting 450,000+ attendees across two consecutive weekends in October at Austin's Zilker Park. With 8 stages, 130+ artists, and a vibrant brand activation landscape, ACL represents a major opportunity for brands to connect with music lovers and Austin's influential cultural community.
+
+AirFresh Marketing has staffed ACL brand activations, sponsor experiences, product sampling programs, and VIP hospitality across multiple festival seasons. We understand the unique dynamics of a two-weekend festival—maintaining consistent energy and execution across six days of 12+ hour operations in the Texas outdoor environment.
+
+**Brand Activation Staff**
+
+ACL's brand activation areas are among the most competitive in the festival circuit. Our brand ambassadors staff sponsor booths, interactive installations, and experiential activations throughout Zilker Park. Each team member is trained on your brand messaging, product details, and the specific engagement approach that resonates with ACL's diverse audience of music fans, families, and Austin locals.
+
+Our activation staff are experienced in the outdoor festival environment—they maintain high energy across long shifts, engage naturally with festivalgoers moving between stages, and drive measurable interactions even during headline performances when foot traffic patterns shift dramatically.
+
+**Product Sampling Programs**
+
+ACL's walkways and brand activation areas offer prime product sampling opportunities. Our sampling staff manage distribution for food, beverage, beauty, and consumer goods brands with proper health compliance, inventory management, and real-time count tracking. We understand the unique sampling dynamics of outdoor festivals—managing dusty conditions, maintaining cold chain for beverages, and adjusting distribution rates based on crowd flow patterns between stages.
+
+**VIP and Hospitality Staffing**
+
+ACL's VIP and Platinum experiences require hospitality staff who can deliver premium service in an outdoor festival setting. Our staff manage VIP viewing areas, sponsor hospitality lounges, artist hospitality, and premium food and beverage service. We provide bartenders, hosts, and concierge staff who maintain service standards despite the casual festival atmosphere.
+
+**Street Team and Guerrilla Marketing**
+
+For brands looking to extend their ACL presence beyond Zilker Park, our street teams activate across Austin's entertainment districts during festival weekends. From Sixth Street to South Congress, our teams execute flyering campaigns, product giveaways, and guerrilla marketing activations that capture festivalgoers during off-hours.`,
+    staffTypes: [
+      { title: 'Brand Ambassadors', description: 'Energetic, festival-experienced ambassadors for sponsor activations and brand engagement areas.' },
+      { title: 'Product Samplers', description: 'Trained sampling staff for food, beverage, and consumer goods distribution throughout Zilker Park.' },
+      { title: 'VIP Hospitality Staff', description: 'Premium hospitality staff for VIP areas, artist lounges, and sponsor hospitality experiences.' },
+      { title: 'Street Team Members', description: 'High-energy street teams for guerrilla marketing across Austin during festival weekends.' },
+      { title: 'Lead Capture Specialists', description: 'Data collection staff for sweepstakes, email signups, and survey administration at activations.' },
+      { title: 'On-Site Event Managers', description: 'Experienced festival managers to coordinate staff logistics across the Zilker Park grounds.' },
+    ],
+    stats: [
+      { value: '450K+', label: 'Total ACL Attendees' },
+      { value: '130+', label: 'Musical Artists' },
+      { value: '2 Weekends', label: 'Festival Duration' },
+      { value: '8', label: 'Performance Stages' },
+    ],
+    faqs: [
+      {
+        question: 'How early should I book ACL Festival staffing?',
+        answer: 'We recommend booking 8-10 weeks before the first ACL weekend (typically by mid-August for the October festival). Austin staffing demand peaks during ACL, and our best festival-experienced staff are reserved early. For activations requiring 10+ staff across both weekends, earlier booking is essential.',
+      },
+      {
+        question: 'Can you provide consistent staff across both ACL weekends?',
+        answer: 'Yes. Many brands activate across both weekends, and we prioritize staff continuity so your team has experienced, brand-trained staff for Weekend 2 without starting training over. For critical roles, we can schedule the same individuals across both weekends.',
+      },
+      {
+        question: 'How do you handle the Austin heat during ACL?',
+        answer: 'October in Austin can still be quite warm. Our ACL staffing plans include heat management protocols—hydration schedules, rotation plans for outdoor positions, sunscreen provisions, and rest area coordination. We brief all staff on heat safety and have backup team members ready to rotate in as needed.',
+      },
+      {
+        question: 'What about rain contingencies at ACL?',
+        answer: 'ACL has experienced weather disruptions in past years. Our contracts include weather contingency planning—modified deployment schedules, rain gear provisions, and flexible staffing models that adjust to festival schedule changes. We coordinate with your team and festival organizers to adapt in real time.',
+      },
+      {
+        question: 'Do you provide GPS verification and reporting at ACL?',
+        answer: 'Yes. All staff check in via GPS upon arrival at Zilker Park. We provide daily real-time dashboards showing staff locations, shift status, and engagement metrics. Post-weekend reports include comprehensive data on interactions, sampling counts, lead captures, and photo documentation.',
+      },
+    ],
+    logisticsInfo:
+      'The Austin City Limits Music Festival takes place across two consecutive weekends in October (Friday-Sunday each weekend) at Zilker Metropolitan Park in downtown Austin, Texas. Festival hours are typically 11 AM to 10 PM daily. AirFresh coordinates staff from our Texas talent network, manages festival credential distribution, and provides on-site management for all six festival days. Transportation planning accounts for Zilker Park access restrictions, downtown Austin traffic, and festival shuttle routes.',
+    relatedCitySlug: 'austin',
+    relatedCityName: 'Austin',
+    heroImage: '/images/heroes/event-marketing-brand-activation.jpeg',
+  },
 ];
 
 export function getEventBySlug(slug: string): EventPageConfig | undefined {
