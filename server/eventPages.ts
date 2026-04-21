@@ -36,6 +36,393 @@ export interface EventPageConfig {
 }
 
 export const eventPages: EventPageConfig[] = [
+  // ── Batch 115 ──────────────────────────────────────────────────────
+  {
+    slug: "bonnaroo",
+    title: "Bonnaroo Staffing | Event Staff & Brand Ambassadors",
+    h1: "Bonnaroo Event Staffing & Brand Ambassadors",
+    metaDescription: "Bonnaroo event staffing and brand ambassadors in Manchester, Tennessee. Air Fresh Marketing provides experienced festival staff for activations, sampling, and promotions at Bonnaroo Music & Arts Festival.",
+    city: "Manchester",
+    stateAbbrev: "TN",
+    venues: ["Great Stage Park"],
+    keywords: ["Bonnaroo staffing", "Bonnaroo brand ambassadors", "Manchester Tennessee festival staffing", "Bonnaroo event staff"],
+    description: "Bonnaroo Music & Arts Festival is one of America's most iconic camping festivals, drawing over 80,000 attendees to Great Stage Park in Manchester, Tennessee each June. With four days of music across multiple stages, a vibrant camping community, and a culture of discovery, Bonnaroo offers brands exceptional opportunities to connect with an engaged, adventurous audience.",
+    bodyContent: `## Why Brands Love Bonnaroo
+
+Bonnaroo's camping format means attendees are fully immersed in the festival experience for four days straight. This creates unmatched brand exposure time—your activation is not competing with daily life. Attendees are relaxed, open to discovery, and actively seeking new experiences, making Bonnaroo one of the highest-engagement festivals for brand activations.
+
+### Bonnaroo Audience Profile
+- **Attendance**: 80,000+ across four days
+- **Age range**: 21-35 primary demographic
+- **100% camping**: Extended exposure opportunities from morning to late night
+- **Interests**: Music diversity (rock, electronic, hip-hop, jam), sustainability, community
+- **Spending**: High willingness to engage with and purchase from brands
+
+## Staffing Services for Bonnaroo
+
+### Brand Activation Teams
+Our Bonnaroo staff understand the unique culture of this camping festival. They engage attendees with authentic energy, from early-morning wellness activations to late-night experience zones. Our teams navigate the festival grounds efficiently and maintain enthusiasm through long, hot Tennessee days.
+
+### Sampling and Distribution Crews
+Bonnaroo's camping village and Centeroo entertainment area provide countless sampling touchpoints. Our teams distribute products strategically at campground entrances, food vendor areas, main stage approaches, and high-traffic pathways throughout the grounds.
+
+### Experiential Installation Operators
+Bonnaroo is famous for its immersive art and experience installations. We staff branded experiences including interactive activations, charging lounges, cooling stations, and custom brand environments that draw attendees in and create shareable moments.
+
+### Sustainability Activation Staff
+Bonnaroo has a strong sustainability mission. Brands that align with eco-friendly messaging find strong audience resonance. Our staff can manage recycling initiatives, sustainable product sampling, and environmental education activations.
+
+## Bonnaroo Logistics and Planning
+
+The rural Tennessee location requires comprehensive advance planning. Staff typically camp on-site or stay in nearby Manchester or Tullahoma hotels. We coordinate all transportation, camping supplies, credentialing, and shift schedules well in advance. The June Tennessee heat demands hydration planning, shade access, and conservative shift rotations.
+
+## Book Your Bonnaroo Staffing Team
+
+Air Fresh Marketing has extensive experience staffing multi-day camping festivals. Our Bonnaroo teams are seasoned festival veterans who maintain professionalism and energy throughout the entire four-day experience. Contact us to plan your Bonnaroo activation staffing.`,
+    staffTypes: ["Brand Ambassadors", "Sampling Teams", "Installation Operators", "Street Teams", "Sustainability Staff"],
+    stats: [
+      { value: "80K+", label: "Festival Attendees" },
+      { value: "4", label: "Day Festival" },
+      { value: "150+", label: "Artists" },
+      { value: "100%", label: "Camping" }
+    ],
+    faqs: [
+      {
+        question: "Do staff need to camp at Bonnaroo?",
+        answer: "Most staff camp on-site for the full festival duration, which we facilitate with provided camping supplies and credentials. Limited staff can commute from nearby hotels, but on-site camping ensures reliability and eliminates traffic delays."
+      },
+      {
+        question: "How do you manage the heat at Bonnaroo?",
+        answer: "June in Tennessee can be extremely hot. We implement mandatory hydration breaks, provide cooling supplies, rotate staff between shaded and exposed positions, and schedule shorter shifts during peak afternoon heat. Staff safety is our top priority."
+      },
+      {
+        question: "What types of activations work best at Bonnaroo?",
+        answer: "Activations offering practical value—shade, charging stations, hydration, cooling—perform exceptionally well alongside pure brand experiences. Bonnaroo audiences respond best to brands that enhance their festival experience rather than interrupting it."
+      }
+    ],
+    logisticsInfo: "Bonnaroo takes place at Great Stage Park in Manchester, Tennessee, approximately 60 miles southeast of Nashville. Nashville International Airport (BNA) is the closest major airport. Staff accommodations are typically on-site camping with some hotel options in Manchester and Tullahoma. Load-in begins several days before the festival opens.",
+    relatedCitySlug: "nashville",
+    relatedCityName: "Nashville",
+    heroImage: "/images/events/bonnaroo-staffing.jpg"
+  },
+  {
+    slug: "outside-lands",
+    title: "Outside Lands Staffing | Event Staff & Brand Ambassadors",
+    h1: "Outside Lands Event Staffing & Brand Ambassadors",
+    metaDescription: "Outside Lands event staffing and brand ambassadors in San Francisco. Air Fresh Marketing provides experienced festival staff for activations, sampling, and promotions at Outside Lands in Golden Gate Park.",
+    city: "San Francisco",
+    stateAbbrev: "CA",
+    venues: ["Golden Gate Park"],
+    keywords: ["Outside Lands staffing", "Outside Lands brand ambassadors", "San Francisco festival staffing", "Outside Lands event staff"],
+    description: "Outside Lands Music and Arts Festival transforms San Francisco's Golden Gate Park into a world-class celebration of music, food, wine, beer, art, and comedy over three days each August. With over 220,000 attendees and a reputation as the most culinary-focused music festival in America, Outside Lands attracts an affluent, culturally sophisticated Bay Area audience ideal for premium brand activations.",
+    bodyContent: `## Why Outside Lands Is Premium Brand Territory
+
+Outside Lands draws one of the most affluent and educated festival audiences in the country. The San Francisco Bay Area's tech-driven economy means attendees have high disposable income, early-adopter tendencies, and appreciation for quality products and innovative experiences. This makes Outside Lands exceptional territory for premium, tech, culinary, and lifestyle brand activations.
+
+### Festival Demographics
+- **Attendance**: 220,000+ over three days
+- **Location**: Golden Gate Park, San Francisco
+- **Demographics**: 25-40, high household income, college-educated
+- **Special features**: Wine Lands, Beer Lands, Cheese Lands, GastroMagic culinary stage
+- **Non-camping**: Attendees commute daily from Bay Area homes and hotels
+
+## Outside Lands Staffing Solutions
+
+### Wine and Spirits Activation Staff
+Wine Lands and Beer Lands are signature Outside Lands experiences. We provide TIPS-certified staff who can pour samples, discuss varietals and brewing processes, and drive tasting ticket purchases for premium beverage brands.
+
+### Culinary Experience Teams
+Outside Lands' food programming—from GastroMagic cooking demos to Cheese Lands tastings—requires staff with culinary knowledge and food service skills. Our teams manage sampling stations, cooking demonstrations, and food brand activations throughout the park.
+
+### Tech and Innovation Activation Staff
+Bay Area festivals attract tech brands showcasing new products and services. We provide tech-savvy brand ambassadors who can demonstrate apps, wearable technology, AR/VR experiences, and other innovative products to a highly receptive audience.
+
+### Sustainability and Eco-Activation Teams
+Outside Lands has strong environmental commitments. Our staff manage sustainability-focused activations including composting education, reusable cup programs, and eco-friendly brand experiences that resonate with the environmentally conscious Bay Area audience.
+
+### VIP and Premium Experience Staff
+The festival's VIP areas and premium viewing experiences require hospitality-trained staff who deliver luxury service in a festival environment. Our VIP teams manage access, beverage service, and exclusive brand experiences.
+
+## San Francisco Festival Logistics
+
+Golden Gate Park's urban location offers excellent public transportation access but limited parking. Our staff use Muni, BART, and rideshare to reach the festival. San Francisco's famously unpredictable weather—fog, wind, and afternoon sun can all occur in a single day—requires staff prepared for rapidly changing conditions with layered clothing and weather gear.
+
+## Staff Your Outside Lands Activation
+
+Air Fresh Marketing provides experienced festival staff throughout the Bay Area. Our local San Francisco roster ensures reliable, knowledgeable brand ambassadors who understand both the festival culture and the sophisticated Bay Area audience. Contact us to discuss your Outside Lands staffing needs.`,
+    staffTypes: ["Brand Ambassadors", "Wine/Spirits Staff", "Culinary Teams", "Tech Demo Staff", "VIP Hospitality"],
+    stats: [
+      { value: "220K+", label: "Total Attendance" },
+      { value: "3", label: "Day Festival" },
+      { value: "90+", label: "Musical Acts" },
+      { value: "#1", label: "Culinary Festival" }
+    ],
+    faqs: [
+      {
+        question: "How do staff get to Outside Lands in Golden Gate Park?",
+        answer: "Staff use public transportation (Muni buses, N-Judah train) or rideshare services to reach Golden Gate Park. We coordinate meeting points and provide detailed transportation instructions. Driving and parking are not recommended due to extremely limited parking near the venue."
+      },
+      {
+        question: "What should staff expect from San Francisco weather during the festival?",
+        answer: "August in San Francisco is notoriously unpredictable—mornings are often foggy and cool, afternoons can be sunny or windy, and temperatures typically range from 55-70°F. We require staff to bring layers and prepare for all conditions."
+      },
+      {
+        question: "Are TIPS-certified staff required for Wine Lands activations?",
+        answer: "Yes, all staff pouring or serving alcohol at Outside Lands must have TIPS certification. We ensure all beverage activation staff are properly certified well before the event."
+      }
+    ],
+    logisticsInfo: "Outside Lands takes place in Golden Gate Park in San Francisco. SFO and OAK airports are both within 30-45 minutes. Staff use public transit (Muni, BART) to reach the park. The festival's urban location means no camping—all staff commute daily. Be prepared for cool, foggy San Francisco weather even in August.",
+    relatedCitySlug: "san-francisco",
+    relatedCityName: "San Francisco",
+    heroImage: "/images/events/outside-lands-staffing.jpg"
+  },
+  {
+    slug: "complexcon",
+    title: "ComplexCon Staffing | Event Staff & Brand Ambassadors",
+    h1: "ComplexCon Event Staffing & Brand Ambassadors",
+    metaDescription: "ComplexCon event staffing and brand ambassadors in Long Beach, California. Air Fresh Marketing provides experienced streetwear and culture convention staff for brand activations and booth operations.",
+    city: "Long Beach",
+    stateAbbrev: "CA",
+    venues: ["Long Beach Convention Center"],
+    keywords: ["ComplexCon staffing", "ComplexCon brand ambassadors", "streetwear convention staffing", "ComplexCon event staff"],
+    description: "ComplexCon is the ultimate convergence of streetwear, sneaker culture, music, food, and innovation, attracting over 60,000 attendees to the Long Beach Convention Center each November. For streetwear brands, sneaker companies, music labels, and lifestyle brands, ComplexCon offers direct access to the most influential tastemakers and trend-conscious consumers in youth culture.",
+    bodyContent: `## Why ComplexCon Is the Culture Convention
+
+ComplexCon is not a traditional trade show—it is a cultural moment. The event brings together streetwear brands, sneaker releases, musical performances, celebrity appearances, and emerging designers under one roof. Attendees are passionate, knowledgeable, and influential within their communities, making every interaction at ComplexCon a potential catalyst for brand momentum.
+
+### ComplexCon Audience
+- **Attendance**: 60,000+ over two days
+- **Demographics**: 16-35, highly engaged with streetwear, sneaker, and hip-hop culture
+- **Spending behavior**: Attendees come prepared to spend—exclusive drops and limited releases drive purchases
+- **Influence**: High concentration of content creators, resellers, and community tastemakers
+- **Social media**: Extremely active, documenting every experience for their followers
+
+## ComplexCon Staffing Services
+
+### Booth Staff and Sales Associates
+ComplexCon booths sell product. Your staff need retail skills combined with deep knowledge of streetwear and sneaker culture. They should understand brand positioning, limited edition releases, sizing, and the urgency-driven purchasing behavior of this audience.
+
+### Drop Management and Line Staff
+Exclusive product drops create massive demand and long lines. Our line management staff organize queues, manage raffle systems, distribute wristbands, and maintain order during high-energy drop moments while keeping the experience positive.
+
+### Brand Activation and Experience Staff
+Beyond retail, ComplexCon features immersive brand experiences, customization stations, and interactive installations. We staff these activations with culturally fluent brand ambassadors who can engage the ComplexCon audience authentically.
+
+### Influencer and Content Creator Liaisons
+ComplexCon is filled with content creators documenting every booth and experience. Dedicated influencer liaison staff ensure creators receive VIP treatment, have access to key brand moments, and capture content that extends your ComplexCon presence across social platforms.
+
+### Security and Crowd Management Support
+High-demand drops and celebrity appearances can create intense crowd situations. We provide additional crowd management staff who supplement venue security and maintain safe, organized environments.
+
+## Cultural Fluency Is Non-Negotiable
+
+ComplexCon attendees instantly recognize when staff do not understand the culture. Brand ambassadors at ComplexCon must:
+- Know current streetwear and sneaker trends
+- Understand brand collaborations and release culture
+- Recognize influential figures in the community
+- Speak authentically about products without sounding scripted
+- Dress appropriately for the cultural context
+
+We hire staff who are genuine participants in streetwear and sneaker culture, not just event marketing professionals.
+
+## ComplexCon Booth Logistics
+
+The Long Beach Convention Center is easily accessible from LAX (25 minutes) and downtown LA. We coordinate staff parking, badge pickup, load-in schedules, and inventory management support. For brands managing high-value inventory (limited sneakers, designer pieces), we can provide additional staff specifically for loss prevention and inventory control.
+
+## Build Your ComplexCon Team
+
+Air Fresh Marketing staffs ComplexCon with brand ambassadors who live and breathe streetwear culture. Our LA-based roster includes experienced convention staff who understand the unique energy and expectations of ComplexCon. Contact us to staff your booth, drop, or activation.`,
+    staffTypes: ["Booth Sales Staff", "Drop Management", "Brand Ambassadors", "Influencer Liaisons", "Crowd Management"],
+    stats: [
+      { value: "60K+", label: "Convention Attendees" },
+      { value: "2", label: "Day Convention" },
+      { value: "200+", label: "Brand Exhibitors" },
+      { value: "#1", label: "Culture Convention" }
+    ],
+    faqs: [
+      {
+        question: "Do ComplexCon staff need streetwear/sneaker culture knowledge?",
+        answer: "Absolutely. ComplexCon attendees are extremely knowledgeable about streetwear and sneaker culture. Staff who cannot speak authentically about brands, releases, and trends will hurt rather than help your booth. We specifically recruit staff from within the culture."
+      },
+      {
+        question: "How do you handle product drop lines at ComplexCon?",
+        answer: "We deploy dedicated line management staff who implement organized queue systems, raffle management, and wristband distribution. Our teams maintain positive energy in lines while ensuring fair access and preventing unsafe crowd situations."
+      },
+      {
+        question: "Can staff handle point-of-sale transactions?",
+        answer: "Yes, our booth staff are trained on common POS systems and can process transactions efficiently. We can also provide inventory management support for high-value limited-edition merchandise."
+      }
+    ],
+    logisticsInfo: "ComplexCon takes place at the Long Beach Convention Center, approximately 25 minutes from LAX. Downtown Long Beach hotels are within walking distance. Staff load-in coordinates with ComplexCon exhibitor services. The convention's intense energy and high-value merchandise require alert, reliable staff throughout both days.",
+    relatedCitySlug: "los-angeles",
+    relatedCityName: "Los Angeles",
+    heroImage: "/images/events/complexcon-staffing.jpg"
+  },
+  {
+    slug: "austin-city-limits",
+    title: "Austin City Limits Staffing | Event Staff & Brand Ambassadors",
+    h1: "Austin City Limits Event Staffing & Brand Ambassadors",
+    metaDescription: "Austin City Limits Music Festival event staffing and brand ambassadors in Austin, Texas. Air Fresh Marketing provides experienced festival staff for ACL activations, sampling, and promotions.",
+    city: "Austin",
+    stateAbbrev: "TX",
+    venues: ["Zilker Park"],
+    keywords: ["Austin City Limits staffing", "ACL festival brand ambassadors", "Austin festival staffing", "ACL event staff"],
+    description: "Austin City Limits Music Festival is one of the premier music festivals in the United States, spanning two consecutive three-day weekends in Austin's Zilker Park each October. With over 450,000 attendees across both weekends, ACL offers brands six full days of activation opportunities in one of America's most vibrant cultural cities.",
+    bodyContent: `## Why ACL Is a Brand Activation Powerhouse
+
+Austin City Limits stands out for its two-weekend format, giving brands the rare opportunity to test and optimize activations during weekend one and execute an improved experience during weekend two. This iterative approach, combined with Austin's enthusiastic, culturally engaged population, makes ACL one of the most effective festivals for brand marketing.
+
+### ACL Festival Profile
+- **Attendance**: 450,000+ across two weekends (75,000 daily)
+- **Format**: Two consecutive three-day weekends (six total days)
+- **Location**: Zilker Park in central Austin
+- **Demographics**: 21-40, diverse music tastes, high education levels
+- **Culture**: Austin's "Keep It Weird" ethos rewards creative, authentic brand activations
+
+## ACL Staffing Solutions
+
+### Brand Activation Staff
+Our ACL brand ambassadors bring Austin energy to every interaction. They engage festival-goers with product demonstrations, interactive experiences, and brand storytelling that feels natural in the laid-back but enthusiastic Austin festival environment.
+
+### Food and Beverage Sampling Teams
+ACL's food programming is a major draw. We staff food and beverage brand activations with trained sampling teams who manage high-volume distribution while maintaining quality engagement with each attendee.
+
+### Austin Music Culture Brand Ambassadors
+Austin is the "Live Music Capital of the World." Brand activations that incorporate music culture resonate strongly with ACL attendees. Our staff understand the local music scene and can authentically connect brands with Austin's musical identity.
+
+### Weekend-Over-Weekend Optimization Staff
+ACL's unique two-weekend format allows for optimization. We provide consistent staff across both weekends who can implement improvements based on weekend one performance data, adjusting engagement techniques, positioning, and messaging for maximum weekend two impact.
+
+### VIP and Platinum Experience Staff
+ACL's VIP and Platinum experiences in Zilker Park require premium hospitality staff. Our teams manage exclusive viewing areas, private bars, and VIP-only brand activations with the polish expected by premium ticket holders.
+
+## Two-Weekend Staffing Strategy
+
+The two-weekend format creates unique staffing opportunities:
+
+**Weekend 1**: Deploy your full team, test engagement approaches, gather data on foot traffic patterns, popular messaging, and conversion drivers.
+
+**Between Weekends**: Debrief with staff, review performance metrics, adjust scripts and positioning based on real data.
+
+**Weekend 2**: Execute the optimized activation with refined messaging, improved staff positioning, and proven engagement techniques.
+
+This approach consistently delivers 20-40% improvement in key metrics from weekend one to weekend two.
+
+## Austin Festival Logistics
+
+Zilker Park's central Austin location provides excellent accessibility but creates significant traffic and parking challenges. Our staff use rideshare, the Capital Metro bus system, and bicycle transportation to reach the festival reliably. October weather in Austin can range from hot summer conditions to cooler fall temperatures, requiring flexible wardrobe planning.
+
+## Staff Your ACL Activation
+
+Air Fresh Marketing staffs Austin City Limits with experienced festival professionals from our Texas roster. Our ACL teams combine festival culture expertise with data-driven performance optimization across both weekends. Contact us to plan your ACL staffing for maximum impact.`,
+    staffTypes: ["Brand Ambassadors", "Sampling Teams", "Music Culture Staff", "VIP Hospitality", "Street Teams"],
+    stats: [
+      { value: "450K+", label: "Total Attendance" },
+      { value: "6", label: "Festival Days" },
+      { value: "2", label: "Weekends" },
+      { value: "130+", label: "Musical Acts" }
+    ],
+    faqs: [
+      {
+        question: "Can the same staff work both ACL weekends?",
+        answer: "Yes, we strongly recommend maintaining consistent staff across both weekends. This allows your team to apply weekend one learnings to weekend two execution. We schedule the same core team for both weekends whenever possible."
+      },
+      {
+        question: "How does ACL's two-weekend format benefit brand activations?",
+        answer: "The two-weekend format is a major advantage. Weekend one serves as a live testing ground where you gather real performance data. Between weekends, we debrief and optimize. Weekend two then executes the refined approach, consistently delivering 20-40% better results."
+      },
+      {
+        question: "What is the weather like for ACL in October?",
+        answer: "October in Austin can vary significantly—temperatures may range from 65°F to 95°F. We prepare staff for both warm and cool conditions and monitor weather forecasts daily to adjust hydration and break schedules accordingly."
+      }
+    ],
+    logisticsInfo: "Austin City Limits takes place in Zilker Park in central Austin, Texas. Austin-Bergstrom International Airport (AUS) is 15 minutes from downtown. Staff use rideshare and public transit to reach the festival. Downtown Austin hotels are within 2-3 miles. The festival spans two consecutive three-day weekends in October.",
+    relatedCitySlug: "dallas",
+    relatedCityName: "Dallas",
+    heroImage: "/images/events/acl-staffing.jpg"
+  },
+  {
+    slug: "nycc",
+    title: "New York Comic Con Staffing | Event Staff & Brand Ambassadors",
+    h1: "New York Comic Con Event Staffing & Brand Ambassadors",
+    metaDescription: "New York Comic Con event staffing and brand ambassadors at the Javits Center. Air Fresh Marketing provides experienced convention staff for NYCC booth activations, demos, and promotions.",
+    city: "New York",
+    stateAbbrev: "NY",
+    venues: ["Jacob K. Javits Convention Center"],
+    keywords: ["New York Comic Con staffing", "NYCC brand ambassadors", "Javits Center convention staffing", "NYCC event staff"],
+    description: "New York Comic Con is the largest pop culture convention on the East Coast, attracting over 200,000 attendees to the Jacob K. Javits Convention Center each October. For entertainment brands, gaming companies, publishers, and consumer products, NYCC provides massive exposure to passionate fans who drive cultural conversations and purchasing trends.",
+    bodyContent: `## Why NYCC Matters for Brand Marketing
+
+New York Comic Con has evolved far beyond comics. The convention now encompasses movies, television, gaming, anime, collectibles, and all facets of pop culture entertainment. Major studios use NYCC for exclusive previews and announcements, creating an atmosphere of excitement and discovery that benefits every exhibitor on the show floor.
+
+### NYCC By the Numbers
+- **Attendance**: 200,000+ over four days
+- **Exhibition space**: Millions of square feet across multiple Javits Center halls
+- **Media coverage**: Major entertainment outlets cover NYCC announcements
+- **Social media**: Billions of impressions from cosplayers, fans, and media
+- **Demographics**: All ages, passionate fans with high spending on merchandise and collectibles
+
+## NYCC Staffing Services
+
+### Exhibition Booth Staff
+Our NYCC booth staff are pop culture enthusiasts who can engage with fans about comics, gaming, anime, movies, and entertainment properties. They manage demonstration stations, product showcases, and fan interactions with genuine enthusiasm that resonates with the NYCC audience.
+
+### Cosplay and Character Performers
+NYCC is one of the world's premier cosplay events. We coordinate with professional cosplayers and character performers for branded photo opportunities, character appearances, and immersive booth experiences that draw massive foot traffic.
+
+### Panel and Screening Support Staff
+Many NYCC exhibitors host panels and exclusive screenings. We provide queue management, audience check-in, AV support staff, and screening room attendants who ensure smooth execution of these high-profile events.
+
+### Exclusive Merchandise and Drop Staff
+Limited-edition convention exclusives drive significant traffic and revenue at NYCC. Our staff manage product displays, handle transactions, control inventory for limited items, and manage lines for exclusive drops and signings.
+
+### Artist Alley and Signing Staff
+Creator signings and Artist Alley appearances require staff who manage lines, facilitate interactions between fans and creators, and ensure signing sessions run on schedule.
+
+## Pop Culture Expertise Required
+
+NYCC fans are deeply knowledgeable and passionate. Staff who cannot engage in conversations about IP properties, character backstories, and franchise details will feel out of place. We recruit brand ambassadors who are genuine fans of pop culture and can connect authentically with NYCC attendees across all fandoms.
+
+## Javits Center Logistics
+
+The Jacob K. Javits Convention Center on Manhattan's West Side is one of the largest convention venues in North America. Staff logistics include coordinating badge pickup, navigating the massive venue layout, managing break rotations across multiple halls, and dealing with the intense foot traffic of 50,000+ daily attendees.
+
+### Key Logistics
+- **Badge management**: Early credential pickup to avoid day-of delays
+- **Staff positioning**: Strategic placement within massive exhibition halls
+- **Break coordination**: Rotating breaks to maintain continuous booth coverage
+- **Load-in/load-out**: Coordinating with Javits labor requirements and exhibitor services
+- **Transportation**: Subway access (7 train, A/C/E) is most reliable; vehicle access is limited
+
+## Build Your NYCC Team
+
+Air Fresh Marketing staffs New York Comic Con with brand ambassadors who share the passion of NYCC attendees. Our teams combine convention experience with genuine pop culture knowledge to deliver authentic fan engagement that drives booth traffic, merchandise sales, and social media buzz. Contact us to staff your NYCC activation.`,
+    staffTypes: ["Booth Staff", "Cosplay Performers", "Panel Support", "Merchandise Staff", "Line Management"],
+    stats: [
+      { value: "200K+", label: "Convention Attendees" },
+      { value: "4", label: "Day Convention" },
+      { value: "#1", label: "East Coast Convention" },
+      { value: "1,000+", label: "Exhibitors" }
+    ],
+    faqs: [
+      {
+        question: "Do NYCC staff need pop culture knowledge?",
+        answer: "Yes, NYCC attendees are deeply passionate fans. Staff who can engage authentically about comics, gaming, anime, movies, and pop culture properties dramatically outperform generic event staff. We specifically recruit brand ambassadors with genuine pop culture enthusiasm."
+      },
+      {
+        question: "How do you handle the massive crowds at NYCC?",
+        answer: "The Javits Center during NYCC is intensely crowded. We position staff strategically within and around your booth, implement clear traffic flow patterns, use visual signage, and deploy line management staff for any activations that generate queues."
+      },
+      {
+        question: "Can you provide cosplay performers for our booth?",
+        answer: "Yes, we coordinate with professional cosplayers who can represent your IP characters at NYCC. We handle costume logistics, performer scheduling, and photo opportunity management to maximize the impact of character appearances at your booth."
+      }
+    ],
+    logisticsInfo: "New York Comic Con takes place at the Jacob K. Javits Convention Center on the West Side of Manhattan. JFK, LaGuardia, and Newark airports all serve the area. The Javits Center is accessible via the 7 train (Hudson Yards) and A/C/E trains (34th St-Penn Station). Staff should plan for congested subway conditions during NYCC weekend.",
+    relatedCitySlug: "new-york",
+    relatedCityName: "New York City",
+    heroImage: "/images/events/nycc-staffing.jpg"
+  },
   // ── Batch 110 ──────────────────────────────────────────────────────
   {
     slug: "electric-forest",
