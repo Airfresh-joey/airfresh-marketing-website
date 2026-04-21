@@ -481,7 +481,12 @@ export default async function BlogPost(
             <Link href="/staffing-for/lollapalooza" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Lollapalooza</Link>
             <Link href="/staffing-for/bonnaroo" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Bonnaroo</Link>
             <Link href="/staffing-for/la-auto-show" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">LA Auto Show</Link>
-            <Link href="/events" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All Events →</Link>
+            <Link href="/staffing-for/sdcc" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">San Diego Comic-Con</Link>
+            <Link href="/staffing-for/nba-all-star" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">NBA All-Star</Link>
+            <Link href="/staffing-for/kentucky-derby" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">Kentucky Derby</Link>
+            <Link href="/staffing-for/nfl-draft" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">NFL Draft</Link>
+            <Link href="/staffing-for/e3" className="px-3 py-1 bg-gray-50 border border-gray-200 rounded-full text-xs font-medium text-gray-600 hover:border-cyan-400 hover:text-cyan-600 transition-colors">E3 / Summer Game Fest</Link>
+            <Link href="/staffing-for" className="px-3 py-1 bg-cyan-50 border border-cyan-200 rounded-full text-xs font-medium text-cyan-600 hover:bg-cyan-100 transition-colors">View All 55+ Events →</Link>
           </div>
 
           <h3 className="text-xl font-bold mt-10 mb-6 text-gray-900">Top Markets</h3>
