@@ -157,6 +157,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/compare/sparks-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/grammy-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/next-level-promotions`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/lime-media`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/modern-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/nparallel`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     // Additional pages
     { url: `${DOMAIN}/get-quote`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMAIN}/team`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },

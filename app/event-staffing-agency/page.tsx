@@ -1161,14 +1161,71 @@ export default function EventStaffingAgencyPage() {
               <Link href="/compare/elev8-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 vs Elev8 Staffing
               </Link>
+              <Link href="/compare/attack-marketing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Attack! Marketing
+              </Link>
+              <Link href="/compare/alt-terrain" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Alt Terrain
+              </Link>
+              <Link href="/compare/hype-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs The Hype Agency
+              </Link>
+              <Link href="/compare/cea-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs CEA Staffing
+              </Link>
+              <Link href="/compare/ignite-productions" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Ignite Productions
+              </Link>
+              <Link href="/compare/assist-marketing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Assist Marketing
+              </Link>
+              <Link href="/compare/kinetic-events" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Kinetic Events
+              </Link>
               <Link href="/compare/mosaic-experiential" className="text-white/70 hover:text-cyan-200 transition-colors">
                 vs Mosaic Experiential
               </Link>
               <Link href="/compare/pro-motion-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
-                vs Pro Motion
+                vs Pro Motion Staffing
               </Link>
               <Link href="/compare/advantage-solutions" className="text-white/70 hover:text-cyan-200 transition-colors">
                 vs Advantage Solutions
+              </Link>
+              <Link href="/compare/allied-experiential" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Allied Experiential
+              </Link>
+              <Link href="/compare/team-enterprises" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Team Enterprises
+              </Link>
+              <Link href="/compare/encore-nationwide" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Encore Nationwide
+              </Link>
+              <Link href="/compare/2x4-experiential" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs 2x4 Experiential
+              </Link>
+              <Link href="/compare/fusion-marketing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Fusion Marketing
+              </Link>
+              <Link href="/compare/event-strategy-group" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Event Strategy Group
+              </Link>
+              <Link href="/compare/sparks-marketing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Sparks Marketing
+              </Link>
+              <Link href="/compare/grammy-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Grammy Staffing
+              </Link>
+              <Link href="/compare/next-level-promotions" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Next Level Promotions
+              </Link>
+              <Link href="/compare/lime-media" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Lime Media
+              </Link>
+              <Link href="/compare/modern-marketing" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs Modern Marketing
+              </Link>
+              <Link href="/compare/nparallel" className="text-white/70 hover:text-cyan-200 transition-colors">
+                vs NParallel
               </Link>
               <Link href="/pricing" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Pricing
