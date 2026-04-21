@@ -30,11 +30,12 @@ export default function ClientLogos() {
               key={client.name}
               className="flex items-center justify-center h-24 w-44 hover:scale-105 transition-transform duration-300"
             >
-              <img
+              <Image
                 src={client.logo}
                 alt={`${client.name} logo`}
+                width={160}
+                height={64}
                 className="h-16 w-auto object-contain"
-                style={{ minWidth: '100px', maxWidth: '160px' }}
               />
             </div>
           ))}

@@ -1,6 +1,7 @@
 'use client'
 
 import { use } from 'react';
+import Image from "next/image";
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
@@ -1481,10 +1482,13 @@ export default function ServicePage({ params }: ServicePageProps) {
               </div>
             </div>
             <div className="relative">
-              <img
+              <Image
                 src="/images/case-studies/gallery/1800-tequila/1800-tequila-1.jpg"
                 alt={`${service.title} services by AirFresh Marketing`}
+                width={600}
+                height={400}
                 className="rounded-lg shadow-xl"
+                sizes="(max-width: 1024px) 100vw, 50vw"
               />
               <div className={`absolute -bottom-6 -right-6 bg-gradient-to-r ${service.color} text-white p-6 rounded-lg shadow-lg`}>
                 <div className="text-2xl font-bold">98%</div>
@@ -1506,10 +1510,12 @@ export default function ServicePage({ params }: ServicePageProps) {
           <Card className="overflow-hidden hover:shadow-2xl transition-all duration-300">
             <div className="grid grid-cols-1 lg:grid-cols-2">
               <div className="relative h-64 lg:h-auto">
-                <img
+                <Image
                   src={service.caseStudy.image}
                   alt={`${service.caseStudy.title} - ${service.title} case study by AirFresh Marketing`}
-                  className="w-full h-full object-cover"
+                  fill
+                  className="object-cover"
+                  sizes="(max-width: 1024px) 100vw, 50vw"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/50 to-transparent" />
                 <Badge className="absolute top-4 left-4 bg-white/90 text-gray-900">

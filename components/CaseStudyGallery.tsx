@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from "react"
+import Image from "next/image"
 import { ArrowLeft, ArrowRight } from "lucide-react"
 
 export function CaseStudyGallery({ images, name }: { images: string[]; name: string }) {
@@ -11,11 +12,13 @@ export function CaseStudyGallery({ images, name }: { images: string[]; name: str
   return (
     <div className="mb-12">
       <h2 className="text-3xl font-bold mb-6">Campaign Gallery</h2>
-      <div className="relative rounded-lg overflow-hidden bg-gray-100">
-        <img
+      <div className="relative rounded-lg overflow-hidden bg-gray-100 h-[500px]">
+        <Image
           src={images[activeImageIndex]}
           alt={`${name} - Image ${activeImageIndex + 1}`}
-          className="w-full h-[500px] object-cover"
+          fill
+          className="object-cover"
+          sizes="(max-width: 1024px) 100vw, 66vw"
         />
 
         {images.length > 1 && (
@@ -54,14 +57,16 @@ export function CaseStudyGallery({ images, name }: { images: string[]; name: str
             <button
               key={index}
               onClick={() => setActiveImageIndex(index)}
-              className={`relative rounded-lg overflow-hidden ${
+              className={`relative rounded-lg overflow-hidden h-24 ${
                 index === activeImageIndex ? 'ring-2 ring-primary' : ''
               }`}
             >
-              <img
+              <Image
                 src={img}
                 alt={`Thumbnail ${index + 1}`}
-                className="w-full h-24 object-cover"
+                fill
+                className="object-cover"
+                sizes="(max-width: 768px) 25vw, 16vw"
               />
             </button>
           ))}
