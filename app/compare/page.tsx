@@ -90,6 +90,30 @@ const competitors = [
     keyDiff: 'Only 15 cities, limited coverage',
     priority: false,
   },
+  {
+    slug: 'mosaic-experiential',
+    name: 'Mosaic Experiential',
+    tagline: 'Enterprise experiential marketing',
+    location: 'Nationwide (Acosta Group)',
+    keyDiff: 'Higher minimums, corporate-only focus',
+    priority: false,
+  },
+  {
+    slug: 'pro-motion-staffing',
+    name: 'Pro Motion',
+    tagline: 'Event marketing and staffing',
+    location: 'Nationwide (HQ: Missouri)',
+    keyDiff: 'Limited experiential capabilities',
+    priority: false,
+  },
+  {
+    slug: 'advantage-solutions',
+    name: 'Advantage Solutions',
+    tagline: 'High-volume sampling company',
+    location: 'Nationwide (publicly traded)',
+    keyDiff: 'High volume/low touch, impersonal service',
+    priority: false,
+  },
 ];
 
 const afmHighlights = [

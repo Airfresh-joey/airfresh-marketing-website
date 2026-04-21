@@ -145,6 +145,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/compare/ignite-productions`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/assist-marketing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     { url: `${DOMAIN}/compare/kinetic-events`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/mosaic-experiential`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/pro-motion-staffing`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
+    { url: `${DOMAIN}/compare/advantage-solutions`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
     // Additional pages
     { url: `${DOMAIN}/get-quote`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMAIN}/team`, lastModified: today, changeFrequency: 'monthly', priority: 0.7 },
