@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Trade Show Staffing | Professional Booth Staff & Presenters',
-  description: 'Trade show staffing agency providing trained booth staff, presenters, and lead generators for conventions and expos. Professional trade show talent in 50+ cities nationwide.',
+  description: 'Trade show staffing agency with trained booth staff, presenters, and lead generators for conventions and expos nationwide. GPS-verified teams.',
   keywords: 'trade show staffing, trade show staff, booth staff, trade show models, trade show presenters, expo staffing',
   openGraph: {
     type: 'website',

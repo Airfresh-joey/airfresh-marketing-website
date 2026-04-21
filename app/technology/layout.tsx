@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Event Staffing Technology | GPS Check-In & Real-Time Reporting',
-  description: 'Event staffing technology that eliminates no-shows and drives accountability. GPS check-in, video training with knowledge testing, real-time reporting dashboards, and data capture tools. See how our platform works.',
+  description: 'Event staffing technology with GPS check-in, video training certification, and real-time reporting dashboards. Eliminate no-shows and drive accountability.',
   keywords: 'event staffing technology, brand ambassador GPS tracking, event staff check-in app, staffing platform, event reporting dashboard, brand ambassador training platform, event staffing software, experiential marketing technology',
   openGraph: {
     type: 'website',

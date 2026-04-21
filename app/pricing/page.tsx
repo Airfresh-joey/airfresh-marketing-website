@@ -25,7 +25,7 @@ import {
 export const metadata: Metadata = {
   title: 'Event Staffing & Brand Ambassador Pricing | AirFresh Marketing',
   description:
-    'Event staffing pricing and brand ambassador cost guide. See transparent rate ranges for brand ambassadors ($35-65/hr), trade show staff ($40-70/hr), street teams, promotional models & more.',
+    'Event staffing pricing with transparent rates: brand ambassadors $35-65/hr, trade show staff $40-70/hr, street teams, and promotional models.',
   keywords:
     'event staffing pricing, brand ambassador cost, brand ambassador agency cost, how much does event staffing cost, promotional staff rates, trade show staffing rates, street team pricing, experiential marketing rates',
   openGraph: {
