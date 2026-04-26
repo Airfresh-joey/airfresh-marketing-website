@@ -10,9 +10,7 @@ import {
   User,
   BookOpen,
   Sparkles,
-  ChevronRight,
-  Phone,
-  MessageCircle
+  ChevronRight
 } from "lucide-react"
 import { Badge } from "@/components/ui/badge"
 import { Button } from "@/components/ui/button"
@@ -392,32 +390,43 @@ export default async function BlogPost(
           <ShareButtons title={post.title} />
         </article>
 
-        {/* CTA Section */}
-        <div className="mt-16">
-          <Card className="bg-gradient-to-br from-cyan-600 to-blue-700 text-white overflow-hidden relative">
-            <div className="absolute inset-0 bg-white/5 backdrop-blur-[2px]" />
-            <CardContent className="p-12 relative">
-              <Sparkles className="w-12 h-12 mb-6 text-cyan-200" />
-              <h2 className="text-3xl font-bold mb-4">Ready to Amplify Your Brand?</h2>
-              <p className="text-lg text-cyan-50 mb-8">
-                Let&apos;s create memorable experiences that drive real results for your business.
+        {/* Conversion CTA Cards */}
+        <div className="mt-16 grid md:grid-cols-2 gap-6">
+          {/* CTA Card 1 — Cost Calculator */}
+          <div className="rounded-2xl shadow-lg overflow-hidden" style={{ backgroundColor: '#002B5B' }}>
+            <div className="p-8 md:p-10">
+              <h2 className="text-2xl font-bold text-white mb-3">Estimate Your Event Staffing Cost</h2>
+              <p className="text-blue-100 mb-6 leading-relaxed">
+                Use our free calculator to get an instant estimate for brand ambassadors, trade show staff, and more.
               </p>
-              <div className="flex flex-col sm:flex-row gap-4">
-                <Link href="/contact">
-                  <Button size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-                    <MessageCircle className="w-5 h-5 mr-2" />
-                    Get Started Today
-                  </Button>
-                </Link>
-                <Link href="/contact">
-                  <Button size="lg" variant="outline" className="border-white text-white bg-transparent hover:bg-white/10">
-                    <Phone className="w-5 h-5 mr-2" />
-                    Schedule a Call
-                  </Button>
-                </Link>
-              </div>
-            </CardContent>
-          </Card>
+              <Link href="/cost-calculator">
+                <Button size="lg" className="bg-cyan-500 hover:bg-cyan-400 text-white font-semibold">
+                  Try Cost Calculator &rarr;
+                </Button>
+              </Link>
+            </div>
+          </div>
+
+          {/* CTA Card 2 — Get a Quote */}
+          <div className="rounded-2xl shadow-lg overflow-hidden border-2" style={{ borderColor: '#002B5B' }}>
+            <div className="p-8 md:p-10 bg-white">
+              <h2 className="text-2xl font-bold text-gray-900 mb-3">Ready to Staff Your Next Event?</h2>
+              <p className="text-gray-600 mb-6 leading-relaxed">
+                Get a custom quote in 24 hours. No commitment, no hidden fees.
+              </p>
+              <Link href="/get-quote">
+                <Button size="lg" className="text-white font-semibold" style={{ backgroundColor: '#002B5B' }}>
+                  Get Your Free Quote &rarr;
+                </Button>
+              </Link>
+              <p className="mt-4 text-sm text-gray-500">
+                Or email us at{' '}
+                <a href="mailto:hello@airfreshmarketing.com" className="text-cyan-600 hover:underline font-medium">
+                  hello@airfreshmarketing.com
+                </a>
+              </p>
+            </div>
+          </div>
         </div>
 
         {/* Internal Cross-Links for SEO */}

@@ -4,10 +4,53 @@ import Link from 'next/link';
  * Shared internal linking component for all blog posts (static and dynamic).
  * Provides comprehensive cross-linking to event pages, pillar pages, city pages,
  * and service pages for maximum SEO link equity distribution.
+ * Also includes conversion CTA cards (cost calculator + get a quote).
  */
 export default function BlogInternalLinks() {
   return (
     <div className="not-prose mt-12 pt-8 border-t border-gray-200">
+      {/* Conversion CTA Cards */}
+      <div className="grid md:grid-cols-2 gap-6 mb-10">
+        {/* CTA Card 1 — Cost Calculator */}
+        <div className="rounded-2xl shadow-lg overflow-hidden" style={{ backgroundColor: '#002B5B' }}>
+          <div className="p-8 md:p-10">
+            <h3 className="text-2xl font-bold text-white mb-3">Estimate Your Event Staffing Cost</h3>
+            <p className="text-blue-100 mb-6 leading-relaxed">
+              Use our free calculator to get an instant estimate for brand ambassadors, trade show staff, and more.
+            </p>
+            <Link
+              href="/cost-calculator"
+              className="inline-block px-6 py-3 bg-cyan-500 hover:bg-cyan-400 text-white font-semibold rounded-lg transition-colors"
+            >
+              Try Cost Calculator &rarr;
+            </Link>
+          </div>
+        </div>
+
+        {/* CTA Card 2 — Get a Quote */}
+        <div className="rounded-2xl shadow-lg overflow-hidden border-2" style={{ borderColor: '#002B5B' }}>
+          <div className="p-8 md:p-10 bg-white">
+            <h3 className="text-2xl font-bold text-gray-900 mb-3">Ready to Staff Your Next Event?</h3>
+            <p className="text-gray-600 mb-6 leading-relaxed">
+              Get a custom quote in 24 hours. No commitment, no hidden fees.
+            </p>
+            <Link
+              href="/get-quote"
+              className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-colors hover:opacity-90"
+              style={{ backgroundColor: '#002B5B' }}
+            >
+              Get Your Free Quote &rarr;
+            </Link>
+            <p className="mt-4 text-sm text-gray-500">
+              Or email us at{' '}
+              <a href="mailto:hello@airfreshmarketing.com" className="text-cyan-600 hover:underline font-medium">
+                hello@airfreshmarketing.com
+              </a>
+            </p>
+          </div>
+        </div>
+      </div>
+
       {/* Service & Pillar Pages */}
       <h3 className="text-lg font-bold text-gray-900 mb-4">Explore Our Services</h3>
       <div className="grid sm:grid-cols-2 gap-3 mb-8">

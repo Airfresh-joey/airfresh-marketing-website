@@ -188,8 +188,8 @@ export default function EventStaffingIndex() {
                       </p>
                       <div className="flex flex-wrap gap-1">
                         {event.staffTypes.slice(0, 3).map((type) => (
-                          <Badge key={type} variant="secondary" className="text-xs">
-                            {type}
+                          <Badge key={type.title} variant="secondary" className="text-xs">
+                            {type.title}
                           </Badge>
                         ))}
                         {event.staffTypes.length > 3 && (
