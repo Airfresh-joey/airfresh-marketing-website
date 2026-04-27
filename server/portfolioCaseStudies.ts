@@ -798,21 +798,23 @@ export const portfolioCaseStudies: CaseStudy[] = [
     id: "merrell-outdoor",
     name: "Merrell Outdoor Activations",
     tagline: "Trail Tested",
-    description: "Brand activation and product sampling for Merrell outdoor footwear featuring hiking events, trail activations, and outdoor enthusiast engagement.",
+    description: "Air Fresh Marketing partnered with Merrell to execute a high-energy brand activation campaign in Denver, Colorado, bringing the brand's 'Trail Tested' ethos directly to outdoor enthusiasts. Our team of trained brand ambassadors set up experiential activations at trailheads, outdoor festivals, and retail locations across the Front Range, giving consumers hands-on product trials with Merrell's latest hiking footwear and apparel. Each activation featured guided trail walks, product fitting stations, and interactive brand experiences designed to connect consumers with the Merrell lifestyle. Our ambassadors educated attendees on Merrell's Vibram sole technology, waterproof construction, and sustainability initiatives while capturing leads and driving retail traffic. The campaign generated significant foot traffic at local REI, Dick's Sporting Goods, and independent outdoor retailers, resulting in measurable sell-through increases during the activation period.",
     industry: "Outdoor & Sports",
-    services: ["Brand Activation", "Product Sampling", "Event Marketing"],
+    services: ["Brand Activation", "Product Sampling", "Event Marketing", "Experiential Marketing", "Retail Traffic Driving"],
     markets: ["Denver, CO"],
-    date: "2024",
+    date: "2021",
     stats: {
-      "Events": "25+",
       "Product Trials": "10,000+",
-      "Trail Activations": "50+",
-      "Brand Engagement": "100,000+"
+      "Consumer Engagements": "50,000+",
+      "Retail Partners": "15+",
+      "Campaign Duration": "6 Months"
     },
     category: "Sports",
     featured: false,
     heroImage: "/images/case-studies/merrell-hero.jpg",
-    heroVideo: "651787642"
+    heroVideo: "649976065",
+    videoUrl: "https://player.vimeo.com/video/649976065?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479",
+    images: []
   },
   {
     id: "grubhub-campaign",

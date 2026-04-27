@@ -61,9 +61,10 @@ export default async function CaseStudyDetail(
     notFound()
   }
 
-  // Get images
+  // Get images - if images array is explicitly defined (even empty), use it as-is;
+  // only fall back to heroImage when images is undefined
   const images: string[] =
-    caseStudy.images && caseStudy.images.length > 0
+    caseStudy.images !== undefined
       ? caseStudy.images
       : caseStudy.heroImage
       ? [caseStudy.heroImage]
@@ -72,9 +73,19 @@ export default async function CaseStudyDetail(
   const heroImageUrl =
     caseStudy.heroImage || images[0] || "/images/case-studies/gallery/formula1/formula1-1.jpg"
 
-  const relatedStudies = portfolioCaseStudies
+  const sameCategoryStudies = portfolioCaseStudies
     .filter((study) => study.id !== caseStudy.id && study.category === caseStudy.category)
     .slice(0, 3)
+
+  // If not enough same-category studies, fill with featured studies from other categories
+  const relatedStudies = sameCategoryStudies.length >= 3
+    ? sameCategoryStudies
+    : [
+        ...sameCategoryStudies,
+        ...portfolioCaseStudies
+          .filter((study) => study.id !== caseStudy.id && study.category !== caseStudy.category && study.featured)
+          .slice(0, 3 - sameCategoryStudies.length)
+      ]
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -212,8 +223,27 @@ export default async function CaseStudyDetail(
                 <p className="text-lg text-gray-700 leading-relaxed">{caseStudy.description}</p>
               </div>
 
+              {/* Video Embed */}
+              {caseStudy.videoUrl && (
+                <div className="mb-12">
+                  <h2 className="text-3xl font-bold mb-6">Campaign Video</h2>
+                  <div style={{ padding: "56.25% 0 0 0", position: "relative" }}>
+                    <iframe
+                      src={caseStudy.videoUrl}
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                      title={`${caseStudy.name} Video`}
+                    />
+                  </div>
+                </div>
+              )}
+
               {/* Image Gallery (client component) */}
-              <CaseStudyGallery images={images} name={caseStudy.name} />
+              {images.length > 0 && (
+                <CaseStudyGallery images={images} name={caseStudy.name} />
+              )}
             </div>
 
             {/* Sidebar */}
