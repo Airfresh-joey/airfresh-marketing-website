@@ -2,11 +2,6 @@ User-agent: *
 Allow: /
 
 Disallow: /api/
-Disallow: /thank-you
-Disallow: /legal/voided-check
-Disallow: /legal/wire
-Disallow: /legal/w9
-Disallow: /legal/ach
 
 Sitemap: https://www.airfreshmarketing.com/sitemap.xml
 

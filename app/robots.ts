@@ -6,7 +6,7 @@ export default function robots(): MetadataRoute.Robots {
       {
         userAgent: '*',
         allow: '/',
-        disallow: ['/api/', '/thank-you', '/legal/voided-check', '/legal/wire', '/legal/w9', '/legal/ach'],
+        disallow: ['/api/'],
       },
     ],
     sitemap: 'https://www.airfreshmarketing.com/sitemap.xml',
