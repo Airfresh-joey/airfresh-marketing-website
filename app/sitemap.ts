@@ -549,5 +549,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`- Neighborhood pages: ${neighborhoodMainPages.length}`)
   console.log(`- Neighborhood-service pages: ${neighborhoodServicePages.length}`)
 
-  return allPages
+  const pagesByUrl = new Map<string, MetadataRoute.Sitemap[number]>()
+  allPages.forEach(page => {
+    if (!pagesByUrl.has(page.url)) {
+      pagesByUrl.set(page.url, page)
+    }
+  })
+
+  const uniquePages = Array.from(pagesByUrl.values())
+  const duplicateCount = allPages.length - uniquePages.length
+
+  if (duplicateCount > 0) {
+    console.log(`- Duplicates removed: ${duplicateCount}`)
+  }
+
+  return uniquePages
 }

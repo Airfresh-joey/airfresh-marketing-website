@@ -1,13 +1,13 @@
 User-agent: *
 Allow: /
-Allow: /images/
 
-# Disallow admin/private areas
 Disallow: /api/
-Disallow: /_next/
+Disallow: /thank-you
+Disallow: /legal/voided-check
+Disallow: /legal/wire
+Disallow: /legal/w9
+Disallow: /legal/ach
 
-# Sitemaps
 Sitemap: https://www.airfreshmarketing.com/sitemap.xml
 
-# Canonical host
 Host: https://www.airfreshmarketing.com

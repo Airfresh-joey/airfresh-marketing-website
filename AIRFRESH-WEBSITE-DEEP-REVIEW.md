@@ -50,17 +50,9 @@ The next level is not "more pages." The next level is turning the site into a sh
 
 Recommendation: run a controlled dependency upgrade branch, not `npm audit fix --force` blindly. Prioritize Next, Drizzle, Nodemailer, Multer, AWS-related packages, and Express/server dependencies.
 
-### 2. Build Is Skipping Type Validation
+### 2. Build Type Validation
 
-`next.config.mjs` has:
-
-```ts
-typescript: {
-  ignoreBuildErrors: true,
-}
-```
-
-This lets Vercel ship even if the app has type errors. Since `npm run check` passes now, remove this and make build fail honestly.
+Status: fixed. `next build` now runs TypeScript validation instead of skipping it.
 
 ### 3. Lint Script Is Broken
 
@@ -76,17 +68,17 @@ Recommendation: add a real ESLint config and update the script to `eslint .`, or
 
 The sitemap returns 6,237 URL entries but only 6,125 unique URLs. That means at least 112 duplicate entries.
 
-Recommendation: dedupe in `app/sitemap.ts` before returning. This is a quick technical SEO win.
+Status: fixed. `app/sitemap.ts` now dedupes by canonical URL before returning.
 
 ### 5. Image Config Uses Deprecated `images.domains`
 
-Next warns to move from `images.domains` to `images.remotePatterns`. Do it for tighter remote image security.
+Status: fixed. Remote image hosts now use `images.remotePatterns`.
 
 ### 6. Conflicting Robots Sources
 
 There is both `public/robots.txt` and `app/robots.ts`. The app route is currently the one returned locally, but the static file still blocks `/_next/`, which is bad if it ever ships or is served directly.
 
-Recommendation: delete or align `public/robots.txt`; do not block `/_next/` assets.
+Status: fixed. `public/robots.txt` is aligned with `app/robots.ts` and no longer blocks `/_next/`.
 
 ## Conversion Review
 
@@ -136,7 +128,7 @@ What works:
 
 What should change:
 
-- Dedupe sitemap URLs.
+- Keep monitoring sitemap quality now that duplicates are removed.
 - Check all internal links to `/services/event-staffing` and decide whether it should be a real unique page or canonical alias.
 - Avoid adding more thin/location pages until the existing page set has stronger unique proof.
 - Add more first-party media and case study snippets on city/event pages so they do not feel templated.
@@ -167,12 +159,8 @@ Suggested homepage narrative:
 
 ### This Week
 
-- Remove `ignoreBuildErrors`.
 - Replace broken lint script.
-- Dedupe sitemap.
 - Upgrade high-risk dependencies in a controlled branch.
-- Convert `images.domains` to `remotePatterns`.
-- Align/remove `public/robots.txt`.
 - Decide whether `/services/event-staffing` is a unique page or canonical alias.
 
 ### Next Sprint
