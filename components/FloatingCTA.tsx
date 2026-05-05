@@ -36,7 +36,7 @@ export default function FloatingCTA() {
 
   return (
     <div
-      className={`fixed bottom-8 z-[100] left-1/2 -translate-x-1/2 transition-all duration-300 ease-out ${
+      className={`fixed bottom-4 right-4 z-[100] transition-all duration-300 ease-out sm:bottom-8 sm:left-1/2 sm:right-auto sm:-translate-x-1/2 ${
         isVisible 
           ? 'opacity-100 translate-y-0 scale-100' 
           : 'opacity-0 translate-y-24 scale-90 pointer-events-none'
@@ -46,15 +46,16 @@ export default function FloatingCTA() {
         // Collapsed floating button
         <button
           onClick={() => setIsExpanded(true)}
-          className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white rounded-full px-6 py-4 shadow-2xl flex items-center gap-2 font-bold transition-all duration-300 hover:scale-105 active:scale-95"
+          className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white rounded-full px-4 py-3 shadow-2xl flex items-center gap-2 font-bold transition-all duration-300 hover:scale-105 active:scale-95 sm:px-6 sm:py-4"
         >
           <MessageSquare className="w-5 h-5" />
-          <span>Get A Quote</span>
+          <span className="hidden sm:inline">Get A Quote</span>
+          <span className="sm:hidden">Quote</span>
         </button>
       ) : (
         // Expanded options
         <div
-          className="bg-white rounded-2xl shadow-2xl p-4 min-w-[280px] animate-in fade-in zoom-in-95 duration-200"
+          className="bg-white rounded-2xl shadow-2xl p-4 min-w-[280px] max-w-[calc(100vw-2rem)] animate-in fade-in zoom-in-95 duration-200"
         >
           <div className="flex justify-between items-center mb-4">
             <h3 className="font-bold text-gray-900">Contact Us</h3>

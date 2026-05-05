@@ -41,14 +41,11 @@ export default function HeroAgencyVideo() {
     return () => window.removeEventListener('resize', checkDesktop);
   }, []);
 
-  // Simple fade-in animation using CSS
-  const [isVisible, setIsVisible] = useState(false);
-  useEffect(() => {
-    setIsVisible(true);
-  }, []);
+  // Keep hero copy visible on first paint; animation should not gate the main message.
+  const isVisible = true;
 
   return (
-    <section ref={sectionRef} className="relative min-h-screen flex flex-col overflow-hidden">
+    <section ref={sectionRef} className="relative min-h-[calc(100svh-4rem)] md:min-h-screen flex flex-col overflow-hidden">
       {/* Preconnect hints for Vimeo - desktop only (after detection) */}
       {isDesktop === true && (
         <>
@@ -111,25 +108,25 @@ export default function HeroAgencyVideo() {
         
         {/* Vertical gradient overlay */}
         <div className="absolute inset-0" style={{
-          background: 'linear-gradient(to bottom, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.4) 50%, rgba(0,0,0,0.6) 100%)'
+          background: 'linear-gradient(to bottom, rgba(0,0,0,0.86) 0%, rgba(0,0,0,0.62) 50%, rgba(0,0,0,0.74) 100%)'
         }} />
       </div>
 
       {/* Main Content - CSS animations instead of framer-motion */}
-      <div className="relative flex-1 flex items-center justify-center px-4 z-10">
+      <div className="relative flex-1 flex items-center justify-center px-4 py-8 md:py-0 z-10">
         <div 
           className={`max-w-6xl mx-auto text-center transition-all duration-700 ease-out ${
             isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-8'
           }`}
         >
           {/* Air Fresh Logo */}
-          <div className="mb-12 mt-8">
+          <div className="mb-12 mt-8 hidden md:block">
             <figure itemScope itemType="https://schema.org/ImageObject">
               <Image
                 src="/images/airfresh-logo.svg"
                 alt="AirFresh Marketing logo"
                 title="AirFresh Marketing - Experiential Marketing Agency"
-                className="mx-auto rounded-full shadow-2xl"
+                className="mx-auto h-24 w-24 rounded-full shadow-2xl md:h-48 md:w-48"
                 width={192}
                 height={192}
                 priority
@@ -145,7 +142,7 @@ export default function HeroAgencyVideo() {
 
           {/* Agency Badge */}
           <div 
-            className={`inline-flex items-center gap-2 px-4 py-2 bg-white/10 backdrop-blur-sm rounded-full text-white/90 text-sm font-medium mb-8 transition-all duration-700 delay-100 ${
+            className={`inline-flex items-center gap-2 px-4 py-2 bg-black/30 backdrop-blur-sm rounded-full text-white/95 text-sm font-medium mb-4 md:mb-8 transition-all duration-700 delay-100 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -155,7 +152,7 @@ export default function HeroAgencyVideo() {
 
           {/* Main Headline */}
           <h1
-            className={`text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-6 transition-all duration-700 delay-150 ${
+            className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 md:mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.85)] transition-all duration-700 delay-150 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -167,7 +164,7 @@ export default function HeroAgencyVideo() {
 
           {/* Subheadline */}
           <p 
-            className={`text-xl md:text-2xl text-white/90 max-w-3xl mx-auto mb-12 font-light leading-relaxed transition-all duration-700 delay-200 ${
+            className={`text-base sm:text-lg md:text-2xl text-white/95 max-w-3xl mx-auto mb-6 md:mb-12 font-light leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] transition-all duration-700 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -186,7 +183,7 @@ export default function HeroAgencyVideo() {
               <Button
                 asChild
                 size="lg"
-                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-8 py-6 text-lg font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 hover:scale-105 active:scale-95 group"
+                className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-5 text-base font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 hover:scale-105 active:scale-95 group md:px-8 md:py-6 md:text-lg"
                 data-testid="button-get-strategy-audit"
               >
                 <Link href="/contact">
@@ -199,7 +196,7 @@ export default function HeroAgencyVideo() {
                 asChild
                 size="lg"
                 variant="outline"
-                className="border-2 border-white/30 bg-white/10 backdrop-blur-sm hover:bg-white/20 text-white px-8 py-6 text-lg font-semibold rounded-full transition-all duration-200 hover:scale-105 active:scale-95"
+                className="border-2 border-white/40 bg-black/25 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-5 text-base font-semibold rounded-full transition-all duration-200 hover:scale-105 active:scale-95 md:px-8 md:py-6 md:text-lg"
               >
                 <Link href="/portfolio">
                   View Our Work
@@ -207,41 +204,26 @@ export default function HeroAgencyVideo() {
               </Button>
             </div>
 
-            {/* Looking for Work Button - Below */}
-            <Link
-              href="/careers"
-              className="inline-flex items-center px-6 py-3 text-base font-medium text-white/90 rounded-full transition-all duration-300 hover:bg-white/20 hover:scale-105 active:scale-95 group"
-              style={{
-                background: 'rgba(255, 255, 255, 0.1)',
-                backdropFilter: 'blur(10px)',
-                WebkitBackdropFilter: 'blur(10px)',
-                border: '1px solid rgba(255, 255, 255, 0.2)'
-              }}
-              data-testid="button-looking-for-work-hero"
-            >
-              Looking for Work
-              <ArrowRight className="ml-2 h-4 w-4 group-hover:translate-x-1 transition-transform" />
-            </Link>
           </div>
 
           {/* Trust Indicators */}
           <div 
-            className={`mt-16 flex flex-wrap items-center justify-center gap-8 text-white/80 transition-all duration-700 delay-500 ${
+            className={`mt-8 flex flex-wrap items-center justify-center gap-4 text-white/90 transition-all duration-700 delay-500 md:mt-16 md:gap-8 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">500+</div>
+              <div className="text-2xl font-bold text-white md:text-3xl">500+</div>
               <div className="text-sm uppercase tracking-wide">Brands Activated</div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-white/20" />
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">50+</div>
+              <div className="text-2xl font-bold text-white md:text-3xl">50+</div>
               <div className="text-sm uppercase tracking-wide">Cities Nationwide</div>
             </div>
             <div className="hidden sm:block w-px h-12 bg-white/20" />
             <div className="text-center">
-              <div className="text-3xl font-bold text-white">5000+</div>
+              <div className="text-2xl font-bold text-white md:text-3xl">5000+</div>
               <div className="text-sm uppercase tracking-wide">Brand Ambassadors</div>
             </div>
           </div>
@@ -250,7 +232,7 @@ export default function HeroAgencyVideo() {
 
       {/* Scroll Indicator */}
       <div 
-        className={`absolute bottom-8 left-1/2 -translate-x-1/2 z-10 transition-all duration-700 delay-700 ${
+        className={`absolute bottom-8 left-1/2 z-10 hidden -translate-x-1/2 transition-all duration-700 delay-700 md:block ${
           isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
         }`}
       >

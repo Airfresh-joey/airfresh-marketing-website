@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useCallback } from "react";
+import { useState, useCallback, useEffect } from "react";
 import { useForm } from "react-hook-form";
 import { useRouter } from "next/navigation";
 import { zodResolver } from "@hookform/resolvers/zod";
@@ -27,8 +27,12 @@ import {
 // Simplified form schema - no company field
 const contactFormSchema = z.object({
   name: z.string().min(1, "Name is required"),
+  company: z.string().optional(),
   email: z.string().email("Please enter a valid email"),
   phone: z.string().optional(),
+  market: z.string().optional(),
+  eventDate: z.string().optional(),
+  budget: z.string().optional(),
   inquiryType: z.string().optional(),
   message: z.string().min(1, "Please tell us about your project"),
 });
@@ -48,6 +52,7 @@ export default function Contact() {
   const { toast } = useToast();
   const router = useRouter();
   const [isSubmitting, setIsSubmitting] = useState(false);
+  const [plannerSource, setPlannerSource] = useState("");
 
   const contactFaqs = [
     { question: "How do I get a quote from AirFresh Marketing?", answer: "You can get a free quote by filling out the contact form on this page, calling us at (303) 720-6060, or emailing hello@airfreshmarketing.com. We respond to all inquiries within 24 hours with a custom proposal tailored to your event needs." },
@@ -99,12 +104,43 @@ export default function Contact() {
     resolver: zodResolver(contactFormSchema),
     defaultValues: {
       name: "",
+      company: "",
       email: "",
       phone: "",
+      market: "",
+      eventDate: "",
+      budget: "",
       inquiryType: "",
       message: "",
     },
   });
+
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search);
+    const plannerMessage = urlParams.get("message");
+    const plannerMarket = urlParams.get("market");
+    const plannerDate = urlParams.get("date");
+    const plannerBudget = urlParams.get("budget");
+
+    setPlannerSource(urlParams.get("source") || "");
+
+    if (plannerMessage) {
+      form.setValue("message", plannerMessage, { shouldValidate: true });
+      form.setValue("inquiryType", "quote");
+    }
+
+    if (plannerMarket && plannerMarket !== "your target market") {
+      form.setValue("market", plannerMarket);
+    }
+
+    if (plannerDate && plannerDate !== "your target date") {
+      form.setValue("eventDate", plannerDate);
+    }
+
+    if (plannerBudget) {
+      form.setValue("budget", plannerBudget);
+    }
+  }, [form]);
 
   const onSubmit = useCallback(async (data: ContactFormData) => {
     setIsSubmitting(true);
@@ -113,14 +149,19 @@ export default function Contact() {
       const response = await fetch("https://formspree.io/f/myznknaa", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({
-          name: data.name,
-          email: data.email,
-          phone: data.phone ? formatPhoneNumber(data.phone) : "",
-          inquiryType: data.inquiryType || "General",
-          message: data.message,
-          _source: "airfreshmarketing.com",
-        }),
+          body: JSON.stringify({
+            name: data.name,
+            company: data.company || "",
+            email: data.email,
+            phone: data.phone ? formatPhoneNumber(data.phone) : "",
+            market: data.market || "",
+            eventDate: data.eventDate || "",
+            budget: data.budget || "",
+            inquiryType: data.inquiryType || "Proposal Request",
+            message: data.message,
+            _source: "airfreshmarketing.com",
+            _plannerSource: plannerSource,
+          }),
       });
 
       if (!response.ok) throw new Error("Failed to submit form");
@@ -147,7 +188,7 @@ export default function Contact() {
     } finally {
       setIsSubmitting(false);
     }
-  }, [form, toast]);
+  }, [form, plannerSource, router, toast]);
 
   const stats = [
     { icon: Users, number: "300+", label: "Brands Served" },
@@ -184,10 +225,10 @@ export default function Contact() {
             {/* Left: Copy */}
             <div className="text-white">
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 leading-tight drop-shadow-[0_2px_4px_rgba(0,0,0,0.8)]">
-                Let's Work <span className="text-cyan-400">Together</span>
+                Let's Plan Your <span className="text-cyan-400">Campaign</span>
               </h1>
               <p className="text-xl md:text-2xl mb-8 leading-relaxed drop-shadow-[0_1px_2px_rgba(0,0,0,0.8)]">
-                Ready to create unforgettable brand experiences? Tell us about your project and we'll get back to you within 24 hours.
+                Tell us the market, timeline, and goal. We'll come back with a proposal built for the campaign you need to win.
               </p>
 
               <div className="space-y-3 mb-8">
@@ -217,23 +258,39 @@ export default function Contact() {
 
             {/* Right: Form */}
             <div className="bg-white rounded-2xl p-8 shadow-2xl">
-              <h2 className="text-2xl font-bold text-gray-900 mb-6">Get a Free Quote</h2>
+              <h2 className="text-2xl font-bold text-gray-900 mb-6">Request a Campaign Proposal</h2>
 
               <Form {...form}>
                 <form onSubmit={form.handleSubmit(onSubmit)} className="space-y-5">
-                  <FormField
-                    control={form.control}
-                    name="name"
-                    render={({ field }) => (
-                      <FormItem>
-                        <FormLabel>Your Name <span className="text-red-500">*</span></FormLabel>
-                        <FormControl>
-                          <Input placeholder="John Smith" {...field} className="h-12" />
-                        </FormControl>
-                        <FormMessage />
-                      </FormItem>
-                    )}
-                  />
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <FormField
+                      control={form.control}
+                      name="name"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Your Name <span className="text-red-500">*</span></FormLabel>
+                          <FormControl>
+                            <Input placeholder="John Smith" {...field} className="h-12" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="company"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Company</FormLabel>
+                          <FormControl>
+                            <Input placeholder="Brand or agency" {...field} className="h-12" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
                   <div className="grid grid-cols-1 sm:grid-cols-2 gap-4">
                     <FormField
@@ -288,10 +345,12 @@ export default function Contact() {
                             </SelectTrigger>
                           </FormControl>
                           <SelectContent>
-                            <SelectItem value="quote">Request a Quote</SelectItem>
+                            <SelectItem value="quote">Request a Proposal</SelectItem>
                             <SelectItem value="brand-ambassadors">Brand Ambassadors</SelectItem>
                             <SelectItem value="event-staffing">Event Staffing</SelectItem>
                             <SelectItem value="street-teams">Street Teams</SelectItem>
+                            <SelectItem value="product-sampling">Product Sampling</SelectItem>
+                            <SelectItem value="trade-show">Trade Show / Convention</SelectItem>
                             <SelectItem value="general">General Inquiry</SelectItem>
                           </SelectContent>
                         </Select>
@@ -299,6 +358,50 @@ export default function Contact() {
                       </FormItem>
                     )}
                   />
+
+                  <div className="grid grid-cols-1 sm:grid-cols-3 gap-4">
+                    <FormField
+                      control={form.control}
+                      name="market"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Market</FormLabel>
+                          <FormControl>
+                            <Input placeholder="City or region" {...field} className="h-12" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="eventDate"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Event Date</FormLabel>
+                          <FormControl>
+                            <Input type="date" {...field} className="h-12" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+
+                    <FormField
+                      control={form.control}
+                      name="budget"
+                      render={({ field }) => (
+                        <FormItem>
+                          <FormLabel>Budget</FormLabel>
+                          <FormControl>
+                            <Input placeholder="$25k - $50k" {...field} className="h-12" />
+                          </FormControl>
+                          <FormMessage />
+                        </FormItem>
+                      )}
+                    />
+                  </div>
 
                   <FormField
                     control={form.control}
@@ -323,7 +426,7 @@ export default function Contact() {
                     className="w-full h-14 text-lg font-semibold"
                     disabled={isSubmitting}
                   >
-                    {isSubmitting ? "Sending..." : "Get My Free Quote"}
+                    {isSubmitting ? "Sending..." : "Request My Proposal"}
                     {!isSubmitting && <ArrowRight className="ml-2 h-5 w-5" />}
                   </Button>
                 </form>
@@ -407,23 +510,6 @@ export default function Contact() {
         </div>
       </section>
 
-      {/* Looking for Work Banner */}
-      <section className="py-12 bg-gray-900">
-        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="flex flex-col md:flex-row items-center justify-between gap-6">
-            <div className="text-white text-center md:text-left">
-              <h3 className="text-2xl font-bold mb-2">Looking for Work?</h3>
-              <p className="text-gray-300">Join our nationwide team of brand ambassadors and event staff.</p>
-            </div>
-            <Button asChild size="lg" className="bg-cyan-400 text-gray-900 hover:bg-cyan-300 font-semibold whitespace-nowrap">
-              <a href="https://airfreshconnect.com" target="_blank" rel="noopener noreferrer">
-                Apply Now
-                <ArrowRight className="ml-2 h-5 w-5" />
-              </a>
-            </Button>
-          </div>
-        </div>
-      </section>
     </div>
   );
 }

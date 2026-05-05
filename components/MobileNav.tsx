@@ -77,19 +77,11 @@ export default function MobileNav({ navLinks, serviceLinks }: MobileNavProps) {
               )
             ))}
             <div className="px-3 py-2 space-y-2">
-              <Link
-                href="/careers"
-                className="block px-3 py-2 rounded-md text-base font-medium text-white hover:bg-gray-800 hover:text-cyan-400"
-                data-testid="button-looking-for-work-mobile"
-                onClick={() => setMobileMenuOpen(false)}
-              >
-                Looking for Work
-              </Link>
               <Button
                 asChild
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg"
               >
-                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Get Started</Link>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Request Proposal</Link>
               </Button>
             </div>
           </div>

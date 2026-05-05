@@ -29,6 +29,13 @@ const serviceMetadata: Record<string, { title: string; description: string; keyw
     schemaName: 'Event Management & Staffing Services',
     schemaDescription: 'Professional event management and staffing for corporate events, trade shows, product launches, and brand activations. Turnkey logistics and coordination in 50+ cities.',
   },
+  'event-staffing': {
+    title: 'Event Staffing | Professional Event Staff | AirFresh Marketing',
+    description: 'Professional event staffing for corporate events, trade shows, product launches, brand activations, and experiential campaigns in 50+ cities nationwide.',
+    keywords: 'event staffing, event staff, corporate event staff, trade show staff, promotional staff',
+    schemaName: 'Event Staffing Services',
+    schemaDescription: 'Professional event staffing for corporate events, trade shows, product launches, brand activations, and experiential campaigns in 50+ cities nationwide.',
+  },
   'sampling': {
     title: 'Product Sampling | Sampling Campaigns | AirFresh Marketing',
     description: 'Product sampling campaigns that drive trial and conversion at retail, events, and on the street. Trained brand ambassadors in 50+ cities with compliance and real-time reporting.',
@@ -52,6 +59,10 @@ const serviceMetadata: Record<string, { title: string; description: string; keyw
   },
 }
 
+const serviceAliases: Record<string, string> = {
+  'event-staffing': 'event-management',
+}
+
 interface LayoutProps {
   children: React.ReactNode
   params: Promise<{ service: string }>
@@ -59,7 +70,7 @@ interface LayoutProps {
 
 export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
   const { service } = await params
-  const meta = serviceMetadata[service]
+  const meta = serviceMetadata[service] ?? serviceMetadata[serviceAliases[service]]
   
   if (!meta) {
     return { title: 'Service | AirFresh Marketing' }
@@ -89,7 +100,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
 
 export default async function ServiceLayout({ children, params }: { children: React.ReactNode; params: Promise<{ service: string }> }) {
   const { service } = await params
-  const meta = serviceMetadata[service]
+  const meta = serviceMetadata[service] ?? serviceMetadata[serviceAliases[service]]
 
   const structuredData = meta ? {
     "@context": "https://schema.org",

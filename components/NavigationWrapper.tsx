@@ -86,16 +86,9 @@ export default function NavigationWrapper() {
                 </Link>
               )
             ))}
-            <Link
-              href="/careers"
-              className="text-white hover:text-cyan-400 font-medium transition-all duration-200"
-              data-testid="button-looking-for-work-header"
-            >
-              Looking for Work
-            </Link>
             <Link href="/contact">
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
-                Contact
+                Request Proposal
               </Button>
             </Link>
           </div>

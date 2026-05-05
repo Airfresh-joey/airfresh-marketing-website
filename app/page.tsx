@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import HeroAgencyVideo from "@/components/HeroAgencyVideo";
 import ClientLogos from "@/components/ClientLogos";
+import ActivationPlanner from "@/components/ActivationPlanner";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -296,6 +297,8 @@ export default function Home() {
 
         {/* Client Logos */}
         <ClientLogos />
+
+        <ActivationPlanner />
 
       {/* Video Section - Premium Design with Multiple Videos */}
       <section className="relative py-32 bg-gradient-to-b from-white via-gray-50 to-white">

@@ -839,9 +839,14 @@ const serviceConfigs: Record<string, ServiceConfig> = {
   }
 };
 
+const serviceAliases: Record<string, string> = {
+  'event-staffing': 'event-management',
+};
+
 export default function ServicePage({ params }: ServicePageProps) {
   const { service: serviceName } = use(params);
-  const service = serviceConfigs[serviceName as keyof typeof serviceConfigs];
+  const resolvedServiceName = serviceAliases[serviceName] ?? serviceName;
+  const service = serviceConfigs[resolvedServiceName as keyof typeof serviceConfigs];
 
   if (!service) {
     notFound();
@@ -1261,7 +1266,7 @@ export default function ServicePage({ params }: ServicePageProps) {
     ]
   };
 
-  const faqs = serviceFAQs[serviceName] || [];
+  const faqs = serviceFAQs[resolvedServiceName] || [];
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -1601,7 +1606,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 return (
                   <Link
                     key={city}
-                    href={`/city-services/${citySlug}-${serviceName}`}
+                    href={`/city-services/${citySlug}-${resolvedServiceName}`}
                     className="group"
                   >
                     <Card className="hover:shadow-lg transition-all duration-300 hover:-translate-y-1">
@@ -1638,7 +1643,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 return (
                   <Link
                     key={city}
-                    href={`/city-services/${citySlug}-${serviceName}`}
+                    href={`/city-services/${citySlug}-${resolvedServiceName}`}
                     className="text-gray-600 hover:text-primary transition-colors flex items-center group"
                   >
                     <MapPin className="h-3 w-3 mr-1 text-gray-400 group-hover:text-primary" />
@@ -1735,7 +1740,7 @@ export default function ServicePage({ params }: ServicePageProps) {
           <div className="mt-8 text-center">
             <h3 className="text-lg font-semibold text-gray-700 mb-4">From Our Blog</h3>
             <div className="flex flex-wrap justify-center gap-3">
-              {serviceName === 'brand-ambassadors' && (<>
+              {resolvedServiceName === 'brand-ambassadors' && (<>
                 <Link href="/blog/brand-ambassador-career" className="text-sm text-primary hover:underline">Brand Ambassador Career Guide</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/brand-ambassador-pay-rates" className="text-sm text-primary hover:underline">Pay Rates Guide</Link>
@@ -1744,42 +1749,42 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/event-staff-training" className="text-sm text-primary hover:underline">Staff Training Best Practices</Link>
               </>)}
-              {serviceName === 'street-teams' && (<>
+              {resolvedServiceName === 'street-teams' && (<>
                 <Link href="/blog/street-teams-vs-digital-marketing" className="text-sm text-primary hover:underline">Street Teams vs Digital Marketing</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/street-teams-marketing-guide" className="text-sm text-primary hover:underline">Street Teams Marketing Guide</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/mobile-marketing-tours-explained" className="text-sm text-primary hover:underline">Mobile Marketing Tours</Link>
               </>)}
-              {serviceName === 'sampling' && (<>
+              {resolvedServiceName === 'sampling' && (<>
                 <Link href="/blog/product-sampling-campaigns" className="text-sm text-primary hover:underline">Product Sampling Campaigns</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/food-beverage-sampling-regulations" className="text-sm text-primary hover:underline">Sampling Regulations Guide</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/retail-demo-programs" className="text-sm text-primary hover:underline">Retail Demo Programs</Link>
               </>)}
-              {serviceName === 'convention-staffing' && (<>
+              {resolvedServiceName === 'convention-staffing' && (<>
                 <Link href="/blog/convention-center-marketing" className="text-sm text-primary hover:underline">Convention Center Marketing</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/trade-show-marketing-strategies" className="text-sm text-primary hover:underline">Trade Show Strategies</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/lead-capture-events" className="text-sm text-primary hover:underline">Lead Capture at Events</Link>
               </>)}
-              {serviceName === 'experiential-marketing' && (<>
+              {resolvedServiceName === 'experiential-marketing' && (<>
                 <Link href="/blog/experiential-vs-traditional" className="text-sm text-primary hover:underline">Experiential vs Traditional</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/experiential-marketing-budget" className="text-sm text-primary hover:underline">Budgeting Guide</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/experiential-marketing-roi-case-studies" className="text-sm text-primary hover:underline">ROI Case Studies</Link>
               </>)}
-              {serviceName === 'event-management' && (<>
+              {resolvedServiceName === 'event-management' && (<>
                 <Link href="/blog/event-permits-legal" className="text-sm text-primary hover:underline">Event Permits & Legal</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/post-event-reporting" className="text-sm text-primary hover:underline">Post-Event Reporting</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/event-marketing-calendar" className="text-sm text-primary hover:underline">Event Marketing Calendar</Link>
               </>)}
-              {serviceName === 'promotional-models' && (<>
+              {resolvedServiceName === 'promotional-models' && (<>
                 <Link href="/blog/event-uniforms-dress-code" className="text-sm text-primary hover:underline">Event Uniforms & Dress Code</Link>
                 <span className="text-gray-300">|</span>
                 <Link href="/blog/managing-difficult-situations" className="text-sm text-primary hover:underline">Managing Event Situations</Link>

@@ -21,8 +21,8 @@ import {
 
 export default function IndustryPage() {
   const params = useParams();
-  const slug = params.slug as string;
-  const industry = getIndustryBySlug(slug);
+  const industrySlug = params.industry as string;
+  const industry = getIndustryBySlug(industrySlug);
 
   if (!industry) {
     notFound();
@@ -259,5 +259,4 @@ export default function IndustryPage() {
     </div>
   );
 }
-
 

@@ -3,12 +3,12 @@ import { industries } from '@/server/industries-data'
 
 interface LayoutProps {
   children: React.ReactNode
-  params: Promise<{ slug: string }>
+  params: Promise<{ industry: string }>
 }
 
 export async function generateMetadata({ params }: LayoutProps): Promise<Metadata> {
-  const { slug } = await params
-  const industry = industries.find(i => i.slug === slug)
+  const { industry: industrySlug } = await params
+  const industry = industries.find(i => i.slug === industrySlug)
   
   if (!industry) {
     return { title: 'Industry | AirFresh Marketing' }
@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       type: 'website',
       title,
       description,
-      url: `https://www.airfreshmarketing.com/industries/${slug}`,
+      url: `https://www.airfreshmarketing.com/industries/${industrySlug}`,
       images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],
     },
     twitter: {
@@ -34,7 +34,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
       description,
     },
     alternates: {
-      canonical: `https://www.airfreshmarketing.com/industries/${slug}`,
+      canonical: `https://www.airfreshmarketing.com/industries/${industrySlug}`,
     },
   }
 }
