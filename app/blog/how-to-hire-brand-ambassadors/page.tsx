@@ -320,7 +320,7 @@ export default function HowToHireBrandAmbassadors() {
           <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card><CardContent className="p-4"><Link href="/blog/what-is-experiential-marketing" className="text-purple-600 hover:underline font-medium">What is Experiential Marketing? →</Link><p className="text-sm text-gray-600 mt-2">Complete guide to immersive brand experiences.</p></CardContent></Card>
-            <Card><CardContent className="p-4"><Link href="/cities/new-york/brand-ambassadors" className="text-purple-600 hover:underline font-medium">Brand Ambassadors in New York →</Link><p className="text-sm text-gray-600 mt-2">Find talent in the nation's largest market.</p></CardContent></Card>
+            <Card><CardContent className="p-4"><Link href="/city-services/new-york-city-brand-ambassadors" className="text-purple-600 hover:underline font-medium">Brand Ambassadors in New York →</Link><p className="text-sm text-gray-600 mt-2">Find talent in the nation's largest market.</p></CardContent></Card>
           </div>
         </section>
         {/* Internal Links Section */}

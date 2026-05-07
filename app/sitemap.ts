@@ -384,21 +384,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8
   }))
 
-  // City + service detail pages (cities/[slug]/[service]) - 8 cities × 8 services
-  const cityDetailServiceSlugs = ['brand-ambassadors', 'experiential-marketing', 'street-team-marketing', 'promotional-models', 'convention-staffing', 'product-sampling', 'event-marketing', 'trade-show-marketing']
-  const cityDetailSlugs = ['new-york', 'los-angeles', 'chicago', 'miami', 'denver', 'san-francisco', 'austin', 'atlanta', 'boston', 'houston', 'philadelphia', 'new-orleans', 'orlando']
-  const cityDetailServicePages: MetadataRoute.Sitemap = []
-  cityDetailSlugs.forEach(city => {
-    cityDetailServiceSlugs.forEach(service => {
-      cityDetailServicePages.push({
-        url: `${DOMAIN}/cities/${city}/${service}`,
-        lastModified: today,
-        changeFrequency: 'monthly' as const,
-        priority: 0.7
-      })
-    })
-  })
-
   // City-service combo pages
   const cityServicePages: MetadataRoute.Sitemap = []
   const allCitySlugs = new Set<string>()
@@ -521,7 +506,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   const allPages = [
     ...staticPages,
     ...cityPages,
-    ...cityDetailServicePages,
     ...cityServicePages,
     ...eventPages,
     ...eventServicePages,
@@ -537,7 +521,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`Sitemap generated with ${allPages.length} URLs:`)
   console.log(`- Static pages: ${staticPages.length}`)
   console.log(`- City pages: ${cityPages.length}`)
-  console.log(`- City detail service pages: ${cityDetailServicePages.length}`)
   console.log(`- City-service pages: ${cityServicePages.length}`)
   console.log(`- Event pages: ${eventPages.length}`)
   console.log(`- Event-service pages: ${eventServicePages.length}`)

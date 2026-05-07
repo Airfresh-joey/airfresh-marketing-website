@@ -149,6 +149,22 @@ const nextConfig = {
       { source: '/portfolio/peelz-citrus', destination: '/case-studies', permanent: true },
       // Catch-all for any other portfolio slugs
       { source: '/portfolio/:slug', destination: '/case-studies/:slug', permanent: true },
+      // NYC canonical service redirects. Keep these exact so /new-york-city-* never loops.
+      { source: '/city-services/new-york-brand-ambassadors', destination: '/city-services/new-york-city-brand-ambassadors', permanent: true },
+      { source: '/city-services/new-york-experiential-marketing', destination: '/city-services/new-york-city-experiential-marketing', permanent: true },
+      { source: '/city-services/new-york-street-teams', destination: '/city-services/new-york-city-street-teams', permanent: true },
+      { source: '/city-services/new-york-promotional-models', destination: '/city-services/new-york-city-promotional-models', permanent: true },
+      { source: '/city-services/new-york-sampling', destination: '/city-services/new-york-city-sampling', permanent: true },
+      { source: '/city-services/new-york-convention-staffing', destination: '/city-services/new-york-city-convention-staffing', permanent: true },
+      { source: '/city-services/new-york-event-management', destination: '/city-services/new-york-city-event-management', permanent: true },
+      { source: '/cities/new-york/brand-ambassadors', destination: '/city-services/new-york-city-brand-ambassadors', permanent: true },
+      { source: '/cities/new-york/experiential-marketing', destination: '/city-services/new-york-city-experiential-marketing', permanent: true },
+      { source: '/cities/new-york/street-team-marketing', destination: '/city-services/new-york-city-street-teams', permanent: true },
+      { source: '/cities/new-york/promotional-models', destination: '/city-services/new-york-city-promotional-models', permanent: true },
+      { source: '/cities/new-york/product-sampling', destination: '/city-services/new-york-city-sampling', permanent: true },
+      { source: '/cities/new-york/convention-staffing', destination: '/city-services/new-york-city-convention-staffing', permanent: true },
+      { source: '/cities/new-york/trade-show-marketing', destination: '/city-services/new-york-city-convention-staffing', permanent: true },
+      { source: '/cities/new-york/event-marketing', destination: '/city-services/new-york-city-event-management', permanent: true },
       // City+service routes → city-services combined slug format
       { source: '/cities/:city/brand-ambassadors', destination: '/city-services/:city-brand-ambassadors', permanent: true },
       { source: '/cities/:city/event-marketing', destination: '/city-services/:city-event-management', permanent: true },
@@ -168,7 +184,6 @@ const nextConfig = {
       { source: '/services/product-sampling', destination: '/services/sampling', permanent: true },
       // Common city slug variations
       { source: '/cities/new-york', destination: '/cities/new-york-city', permanent: true },
-      { source: '/cities/new-york/:service', destination: '/city-services/new-york-city-:service', permanent: true },
       // NOTE: Removed '/city-services/new-york-:service' redirect - it was causing infinite loops
       // because 'new-york-city-brand-ambassadors' matched as service='city-brand-ambassadors'
       // Old industry slug redirects (industry-city-data.ts was updated to match industries-data.ts)

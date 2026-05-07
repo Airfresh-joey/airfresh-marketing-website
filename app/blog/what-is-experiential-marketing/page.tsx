@@ -185,7 +185,7 @@ export default function WhatIsExperientialMarketing() {
         <section className="mt-16">
           <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
           <div className="grid md:grid-cols-2 gap-6">
-            <Card><CardContent className="p-4"><Link href="/cities/new-york/experiential-marketing" className="text-cyan-600 hover:underline font-medium">New York Experiential Marketing Guide →</Link><p className="text-sm text-gray-600 mt-2">Everything you need to know about activations in NYC.</p></CardContent></Card>
+            <Card><CardContent className="p-4"><Link href="/city-services/new-york-city-experiential-marketing" className="text-cyan-600 hover:underline font-medium">New York Experiential Marketing Guide →</Link><p className="text-sm text-gray-600 mt-2">Everything you need to know about activations in NYC.</p></CardContent></Card>
             <Card><CardContent className="p-4"><Link href="/services/brand-ambassadors" className="text-cyan-600 hover:underline font-medium">How to Hire Brand Ambassadors →</Link><p className="text-sm text-gray-600 mt-2">Find the right people to represent your brand.</p></CardContent></Card>
           </div>
         </section>

@@ -283,7 +283,7 @@ export default function WorldCupEventStaffing() {
             <h3 className="text-xl font-bold text-gray-900 mb-3">World Cup Host City Staffing</h3>
             <p className="text-gray-600 mb-6">We provide event staff and brand ambassadors in every US World Cup host city. Select a city to learn more about local staffing options.</p>
             <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-3">
-              <Link href="/city-services/new-york-brand-ambassadors" className="text-sm text-teal-600 hover:underline font-medium">Brand Ambassadors New York</Link>
+              <Link href="/city-services/new-york-city-brand-ambassadors" className="text-sm text-teal-600 hover:underline font-medium">Brand Ambassadors New York</Link>
               <Link href="/city-services/los-angeles-brand-ambassadors" className="text-sm text-teal-600 hover:underline font-medium">Brand Ambassadors Los Angeles</Link>
               <Link href="/city-services/miami-brand-ambassadors" className="text-sm text-teal-600 hover:underline font-medium">Brand Ambassadors Miami</Link>
               <Link href="/city-services/dallas-brand-ambassadors" className="text-sm text-teal-600 hover:underline font-medium">Brand Ambassadors Dallas</Link>

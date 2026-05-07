@@ -107,7 +107,7 @@ const cityLinks = [
 ];
 
 const popularServices = [
-  { label: 'Brand Ambassadors New York', href: '/city-services/new-york-brand-ambassadors' },
+  { label: 'Brand Ambassadors New York', href: '/city-services/new-york-city-brand-ambassadors' },
   { label: 'Experiential Marketing Los Angeles', href: '/city-services/los-angeles-experiential-marketing' },
   { label: 'Street Teams Chicago', href: '/city-services/chicago-street-teams' },
   { label: 'Product Sampling Miami', href: '/city-services/miami-sampling' },
@@ -115,7 +115,7 @@ const popularServices = [
   { label: 'Event Management Austin', href: '/city-services/austin-event-management' },
   { label: 'Promotional Models Denver', href: '/city-services/denver-promotional-models' },
   { label: 'Guerrilla Marketing Atlanta', href: '/city-services/atlanta-guerilla-marketing' },
-  { label: 'Brand Ambassadors San Francisco', href: '/city-services/san-francisco-marketing-mascots' },
+  { label: 'Brand Ambassadors San Francisco', href: '/city-services/san-francisco-brand-ambassadors' },
   { label: 'Brand Ambassadors Seattle', href: '/city-services/seattle-brand-ambassadors' },
 ];
 

@@ -283,7 +283,7 @@ export default function TradeShowMarketing() {
           <h2 className="text-2xl font-bold mb-6">Related Articles</h2>
           <div className="grid md:grid-cols-2 gap-6">
             <Card><CardContent className="p-4"><Link href="/blog/how-to-hire-brand-ambassadors" className="text-orange-600 hover:underline font-medium">How to Hire Brand Ambassadors →</Link><p className="text-sm text-gray-600 mt-2">Find the right people to staff your booth.</p></CardContent></Card>
-            <Card><CardContent className="p-4"><Link href="/cities/las-vegas/convention-staffing" className="text-orange-600 hover:underline font-medium">Las Vegas Convention Staffing →</Link><p className="text-sm text-gray-600 mt-2">Staff for CES, NAB, and Las Vegas shows.</p></CardContent></Card>
+            <Card><CardContent className="p-4"><Link href="/city-services/las-vegas-convention-staffing" className="text-orange-600 hover:underline font-medium">Las Vegas Convention Staffing →</Link><p className="text-sm text-gray-600 mt-2">Staff for CES, NAB, and Las Vegas shows.</p></CardContent></Card>
           </div>
         </section>
         {/* Internal Links Section */}
