@@ -4,6 +4,7 @@ import { useState } from "react";
 import Link from "next/link";
 import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
+import { trackCTAClick } from "@/lib/analytics";
 
 interface NavLink {
   href: string;
@@ -81,7 +82,15 @@ export default function MobileNav({ navLinks, serviceLinks }: MobileNavProps) {
                 asChild
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg"
               >
-                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>Request Proposal</Link>
+                <Link
+                  href="/get-quote"
+                  onClick={() => {
+                    trackCTAClick("Request Proposal", "mobile_navigation");
+                    setMobileMenuOpen(false);
+                  }}
+                >
+                  Request Proposal
+                </Link>
               </Button>
             </div>
           </div>

@@ -86,7 +86,7 @@ export default function NavigationWrapper() {
                 </Link>
               )
             ))}
-            <Link href="/contact">
+            <Link href="/get-quote">
               <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
                 Request Proposal
               </Button>

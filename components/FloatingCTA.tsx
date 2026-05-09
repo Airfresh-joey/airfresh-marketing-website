@@ -4,6 +4,7 @@ import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { Button } from '@/components/ui/button';
 import { Phone, MessageSquare, X } from 'lucide-react';
+import { trackCTAClick, trackPhoneClick } from '@/lib/analytics';
 
 export default function FloatingCTA() {
   const [isVisible, setIsVisible] = useState(false);
@@ -45,7 +46,10 @@ export default function FloatingCTA() {
       {!isExpanded ? (
         // Collapsed floating button
         <button
-          onClick={() => setIsExpanded(true)}
+          onClick={() => {
+            trackCTAClick('Quote Expand', 'floating_cta');
+            setIsExpanded(true);
+          }}
           className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white rounded-full px-4 py-3 shadow-2xl flex items-center gap-2 font-bold transition-all duration-300 hover:scale-105 active:scale-95 sm:px-6 sm:py-4"
         >
           <MessageSquare className="w-5 h-5" />
@@ -61,6 +65,7 @@ export default function FloatingCTA() {
             <h3 className="font-bold text-gray-900">Contact Us</h3>
             <button
               onClick={() => setIsExpanded(false)}
+              aria-label="Close contact options"
               className="text-gray-400 hover:text-gray-600 transition-colors"
             >
               <X className="w-5 h-5" />
@@ -68,26 +73,31 @@ export default function FloatingCTA() {
           </div>
 
           <div className="space-y-3">
-            <Link href="/contact">
-              <Button
-                className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white"
-                size="lg"
+            <Button
+              asChild
+              className="w-full bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white"
+              size="lg"
+            >
+              <Link
+                href="/get-quote"
+                onClick={() => trackCTAClick('Request A Quote', 'floating_cta')}
               >
                 <MessageSquare className="w-4 h-4 mr-2" />
                 Request A Quote
-              </Button>
-            </Link>
+              </Link>
+            </Button>
 
-            <a href="tel:+13037206060">
-              <Button
-                variant="outline"
-                className="w-full border-2 border-cyan-600 text-cyan-600 hover:bg-cyan-50"
-                size="lg"
-              >
+            <Button
+              asChild
+              variant="outline"
+              className="w-full border-2 border-cyan-600 text-cyan-600 hover:bg-cyan-50"
+              size="lg"
+            >
+              <a href="tel:+13037206060" onClick={() => trackPhoneClick('floating_cta')}>
                 <Phone className="w-4 h-4 mr-2" />
                 Call (303) 720-6060
-              </Button>
-            </a>
+              </a>
+            </Button>
           </div>
 
           <p className="text-xs text-gray-500 mt-4 text-center">

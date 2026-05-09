@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { useRouter } from 'next/navigation'
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
@@ -16,6 +16,13 @@ import {
   SelectValue,
 } from "@/components/ui/select"
 import Link from "next/link"
+import { captureLeadAttribution, type LeadAttribution } from "@/lib/lead-attribution"
+import {
+  trackEmailClick,
+  trackEvent,
+  trackLeadGeneration,
+  trackPhoneClick
+} from "@/lib/analytics"
 
 import {
   Users,
@@ -69,6 +76,19 @@ const staffRoleOptions = [
   { id: 'street-teams', label: 'Street Teams' },
 ]
 
+const initialAttribution: LeadAttribution = {
+  utm_source: '',
+  utm_medium: '',
+  utm_campaign: '',
+  utm_content: '',
+  utm_term: '',
+  gclid: '',
+  fbclid: '',
+  referrer: '',
+  landing_page: '',
+  source_page: '',
+}
+
 export default function GetQuote() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
@@ -92,9 +112,21 @@ export default function GetQuote() {
   const [isSubmitting, setIsSubmitting] = useState(false)
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [step, setStep] = useState(1)
+  const [attribution, setAttribution] = useState<LeadAttribution>(initialAttribution)
+
+  useEffect(() => {
+    const capturedAttribution = captureLeadAttribution()
+    setAttribution(capturedAttribution)
+    trackEvent('quote_form_view', 'lead_form', capturedAttribution.utm_source || 'direct')
+  }, [])
 
   const handleInputChange = (field: keyof FormData, value: string) => {
     setFormData(prev => ({ ...prev, [field]: value }))
+  }
+
+  const goToStep = (nextStep: number) => {
+    setStep(nextStep)
+    trackEvent('quote_step_view', 'lead_form', `step_${nextStep}`)
   }
 
   const handleRoleToggle = (roleId: string) => {
@@ -117,11 +149,22 @@ export default function GetQuote() {
         body: JSON.stringify({
           ...formData,
           _subject: `New Quote Request: ${formData.eventType} in ${formData.eventLocation}`,
+          _source: attribution.utm_source || 'direct',
+          _medium: attribution.utm_medium || '',
+          _campaign: attribution.utm_campaign || '',
+          _content: attribution.utm_content || '',
+          _term: attribution.utm_term || '',
+          _gclid: attribution.gclid || '',
+          _fbclid: attribution.fbclid || '',
+          _referrer: attribution.referrer || '',
+          _landingPage: attribution.landing_page || '',
+          _sourcePage: attribution.source_page || '',
         }),
       });
       
       if (response.ok) {
-        // Redirect to thank you page
+        trackEvent('quote_form_submit', 'lead_form', `${formData.eventType || 'unknown'}:${formData.eventLocation || 'unknown'}`)
+        trackLeadGeneration('quote_request', 250)
         router.push('/thank-you')
       } else {
         alert("Something went wrong. Please try again or email us directly.")
@@ -214,7 +257,8 @@ export default function GetQuote() {
                 {[1, 2, 3, 4].map((s) => (
                   <div key={s} className="flex items-center">
                     <button
-                      onClick={() => s < step && setStep(s)}
+                      type="button"
+                      onClick={() => s < step && goToStep(s)}
                       className={`w-10 h-10 rounded-full flex items-center justify-center font-semibold transition-all ${
                         step === s 
                           ? 'bg-orange-500 text-white shadow-lg' 
@@ -322,7 +366,7 @@ export default function GetQuote() {
                       <div className="pt-4 flex justify-end">
                         <Button 
                           type="button" 
-                          onClick={() => setStep(2)}
+                          onClick={() => goToStep(2)}
                           disabled={!canProceedStep1}
                           className="bg-orange-500 hover:bg-orange-600"
                         >
@@ -423,12 +467,12 @@ export default function GetQuote() {
                         </Select>
                       </div>
                       <div className="pt-4 flex justify-between">
-                        <Button type="button" variant="outline" onClick={() => setStep(1)}>
+                        <Button type="button" variant="outline" onClick={() => goToStep(1)}>
                           Back
                         </Button>
                         <Button 
                           type="button" 
-                          onClick={() => setStep(3)}
+                          onClick={() => goToStep(3)}
                           disabled={!canProceedStep2}
                           className="bg-orange-500 hover:bg-orange-600"
                         >
@@ -513,12 +557,12 @@ export default function GetQuote() {
                         </div>
                       </div>
                       <div className="pt-4 flex justify-between">
-                        <Button type="button" variant="outline" onClick={() => setStep(2)}>
+                        <Button type="button" variant="outline" onClick={() => goToStep(2)}>
                           Back
                         </Button>
                         <Button 
                           type="button" 
-                          onClick={() => setStep(4)}
+                          onClick={() => goToStep(4)}
                           disabled={!canProceedStep3}
                           className="bg-orange-500 hover:bg-orange-600"
                         >
@@ -586,7 +630,7 @@ export default function GetQuote() {
                         </Select>
                       </div>
                       <div className="pt-4 flex justify-between">
-                        <Button type="button" variant="outline" onClick={() => setStep(3)}>
+                        <Button type="button" variant="outline" onClick={() => goToStep(3)}>
                           Back
                         </Button>
                         <Button 
@@ -645,7 +689,7 @@ export default function GetQuote() {
                 AirFresh Marketing has served over 300 brands including Fortune 500 companies, fast-growing startups, and leading agencies. Our nationwide network of 1,000+ pre-vetted event professionals covers 50+ major U.S. markets, ensuring you get experienced local talent wherever your activation takes place. All staff are background-checked, trained on your brand messaging, and supported by on-site team leads.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Prefer to speak with someone directly? Call us at <a href="tel:+13037206060" className="text-primary hover:underline font-medium">(303) 720-6060</a> or email <a href="mailto:hello@airfreshmarketing.com" className="text-primary hover:underline font-medium">hello@airfreshmarketing.com</a>. Our team is available Monday through Friday, 9AM to 6PM MST.
+                Prefer to speak with someone directly? Call us at <a href="tel:+13037206060" onClick={() => trackPhoneClick('get_quote_footer')} className="text-primary hover:underline font-medium">(303) 720-6060</a> or email <a href="mailto:hello@airfreshmarketing.com" onClick={() => trackEmailClick('get_quote_footer')} className="text-primary hover:underline font-medium">hello@airfreshmarketing.com</a>. Our team is available Monday through Friday, 9AM to 6PM MST.
               </p>
             </div>
           </div>
