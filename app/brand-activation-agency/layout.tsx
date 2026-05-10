@@ -1,9 +1,9 @@
 import type { Metadata } from "next";
 
 export const metadata: Metadata = {
-  title: "Brand Activation Agency | Experiential Brand Activations",
+  title: "Brand Activation Agency | Pop-Ups, Sampling & Street Teams",
   description:
-    "Brand activation agency creating immersive pop-ups, in-store activations, mobile tours, and experiential campaigns. Professional teams in 50+ cities.",
+    "Brand activation agency for pop-ups, sampling campaigns, mobile tours, in-store activations, and street teams. Nationwide staff, lead capture, and live reporting.",
   alternates: {
     canonical: "https://www.airfreshmarketing.com/brand-activation-agency",
   },

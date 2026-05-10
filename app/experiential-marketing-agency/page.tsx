@@ -533,8 +533,8 @@ export default function ExperientialMarketingAgencyPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-4">
               Need a custom experiential concept or a combination of activation types?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
-                Contact our strategy team
+              <Link href="/get-quote" className="text-cyan-600 hover:underline font-medium">
+                Request a campaign proposal
               </Link>{' '}
               to discuss your brand objectives. Explore our{' '}
               <Link href="/services/experiential-marketing" className="text-cyan-600 hover:underline font-medium">
@@ -844,7 +844,7 @@ export default function ExperientialMarketingAgencyPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="border-cyan-300 text-cyan-700 hover:bg-cyan-50">
-                <Link href="/contact">
+                <Link href="/get-quote">
                   <Globe className="w-4 h-4 mr-2" />
                   Request a Custom Market
                 </Link>
@@ -911,8 +911,8 @@ export default function ExperientialMarketingAgencyPage() {
               dedicated field managers ensuring every consumer interaction reflects your brand at its best.
               Whether you are comparing us to other agencies or evaluating experiential marketing for the first
               time, we invite you to{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline">
-                schedule a strategy call
+              <Link href="/get-quote" className="text-cyan-600 hover:underline">
+                request a campaign proposal
               </Link>{' '}
               to experience the AirFresh difference firsthand.
             </p>
@@ -1025,9 +1025,9 @@ export default function ExperientialMarketingAgencyPage() {
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg"
             >
-              <Link href="/contact">
+              <Link href="/get-quote">
                 <Phone className="w-5 h-5 mr-2" />
-                Schedule a Strategy Call
+                Request a Strategy Proposal
               </Link>
             </Button>
           </div>

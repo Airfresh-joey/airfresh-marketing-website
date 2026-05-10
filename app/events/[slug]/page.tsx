@@ -237,7 +237,7 @@ export default async function EventPage({ params }: EventPageProps) {
               </div>
               <div className="mt-8 flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                  <Link href="/contact">
+                  <Link href="/get-quote">
                     Get Staffing Quote
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -514,7 +514,7 @@ export default async function EventPage({ params }: EventPageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href="/contact">
+              <Link href="/get-quote">
                 Get Free Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>

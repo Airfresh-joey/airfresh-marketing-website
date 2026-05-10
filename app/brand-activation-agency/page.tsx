@@ -590,10 +590,10 @@ export default function BrandActivationAgencyPage() {
               </Link>{" "}
               or{" "}
               <Link
-                href="/contact"
+                href="/get-quote"
                 className="text-[#00C853] hover:underline font-medium"
               >
-                contact our strategy team
+                request a strategy proposal
               </Link>{" "}
               to discuss your brand objectives. We also offer specialized{" "}
               <Link
@@ -1152,10 +1152,10 @@ export default function BrandActivationAgencyPage() {
               Get a Free Activation Proposal
             </Link>
             <Link
-              href="/contact"
+              href="/get-quote"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
             >
-              Schedule a Strategy Call
+              Request a Strategy Proposal
             </Link>
           </div>
           <p className="mt-8 text-gray-400 text-sm">

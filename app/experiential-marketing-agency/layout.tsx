@@ -2,19 +2,19 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Experiential Marketing Agency | Brand Activations Nationwide',
-  description: 'Experiential marketing agency creating unforgettable brand activations, product launches, and consumer engagement campaigns. 20+ years, 50+ cities.',
+  description: 'Experiential marketing agency for brand activations, pop-ups, product launches, trade shows, and lead capture campaigns. Nationwide staff and reporting.',
   keywords: 'experiential marketing agency, experiential marketing company, brand activation agency, experiential events, brand experience agency, experiential marketing services',
   openGraph: {
     type: 'website',
     title: 'Experiential Marketing Agency | AirFresh Marketing',
-    description: 'Experiential marketing agency delivering immersive brand activations, product launches, and consumer engagement campaigns in 50+ cities nationwide.',
+    description: 'Experiential marketing agency for brand activations, pop-ups, product launches, trade shows, and lead capture campaigns. Nationwide staff and reporting.',
     url: 'https://www.airfreshmarketing.com/experiential-marketing-agency',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630, alt: 'AirFresh Marketing Experiential Marketing Agency' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Experiential Marketing Agency | AirFresh Marketing',
-    description: 'Experiential marketing agency creating immersive brand activations in 50+ US cities. 500+ campaigns delivered for 300+ brands since 2004.',
+    description: 'Experiential marketing agency for brand activations, pop-ups, product launches, trade shows, and lead capture campaigns nationwide.',
   },
   alternates: {
     canonical: 'https://www.airfreshmarketing.com/experiential-marketing-agency',

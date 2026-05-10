@@ -117,6 +117,13 @@ const nextConfig = {
       { source: '/brand-surveys-and-market-sampling', destination: '/services', permanent: true },
       { source: '/interactive-vending-machine', destination: '/services', permanent: true },
       { source: '/production-map', destination: '/locations', permanent: true },
+      // Search Console opportunities: older high-impression blog URLs should resolve to live, relevant pages.
+      { source: '/blog/event-staffing-texas-complete-market-guide-2026', destination: '/blog/texas-event-marketing-guide', permanent: true },
+      { source: '/blog/brand-ambassador-programs-college-campuses', destination: '/blog/college-marketing', permanent: true },
+      { source: '/blog/festival-brand-activation-los-angeles', destination: '/blog/festival-marketing-guide', permanent: true },
+      { source: '/blog/guerrilla-marketing-ideas-that-actually-work-real-examples', destination: '/blog/guerrilla-marketing-examples', permanent: true },
+      { source: '/blog/experiential-marketing-case-studies', destination: '/blog/experiential-marketing-roi-case-studies', permanent: true },
+      { source: '/blog/top-event-staffing-agencies-trade-shows-2026', destination: '/blog/promotional-staff-trade-shows-hiring-guide', permanent: true },
       // Critical 404 fixes from Google Ads audit (Feb 2026)
       { source: '/street-team', destination: '/services/street-teams', permanent: true },
       { source: '/locations/:city', destination: '/cities/:city', permanent: true },
