@@ -363,7 +363,7 @@ export default function EventStaffingNearMePage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/contact"
+                href="/get-quote?source=event-staffing-near-me&intent=hero"
                 className="bg-cyan-500 hover:bg-cyan-400 text-white px-8 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
               >
                 Get a Free Quote
@@ -506,10 +506,10 @@ export default function EventStaffingNearMePage() {
           <div className="mt-10 text-center">
             <p className="text-gray-600">
               Need a custom staffing solution?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
-                Contact us
+              <Link href="/get-quote?source=event-staffing-near-me&intent=custom-staffing" className="text-cyan-600 hover:underline font-medium">
+                request a custom quote
               </Link>{' '}
-              to discuss your specific requirements, or read our comprehensive{' '}
+              for your specific requirements, or read our comprehensive{' '}
               <Link href="/guides/best-event-staffing-agency" className="text-cyan-600 hover:underline font-medium">
                 guide to choosing the best event staffing agency
               </Link>.
@@ -795,8 +795,8 @@ export default function EventStaffingNearMePage() {
           <div className="text-center mt-8">
             <p className="text-gray-600">
               Do not see your city listed?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
-                Contact us
+              <Link href="/get-quote?source=event-staffing-near-me&intent=unlisted-city" className="text-cyan-600 hover:underline font-medium">
+                request a quote
               </Link>{' '}
               — we expand into new markets regularly and can often source talent in smaller markets for specific campaigns.
               You can also explore our{' '}
@@ -911,7 +911,7 @@ export default function EventStaffingNearMePage() {
 
             <p className="mt-8">
               Ready to find event staffing near you? AirFresh Marketing makes it simple.{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/get-quote?source=event-staffing-near-me&intent=seo-body" className="text-cyan-600 hover:underline font-medium">
                 Request a free quote
               </Link>{' '}
               and we will match you with pre-vetted local event staff in your city within 24 hours. Or call our team
@@ -967,7 +967,7 @@ export default function EventStaffingNearMePage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
-              href="/contact"
+              href="/get-quote?source=event-staffing-near-me&intent=final-cta"
               className="bg-cyan-500 hover:bg-cyan-400 text-white px-10 py-4 rounded-lg font-semibold text-lg transition-colors inline-flex items-center justify-center"
             >
               Get a Free Quote
