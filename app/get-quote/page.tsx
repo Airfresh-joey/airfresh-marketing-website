@@ -129,12 +129,12 @@ export default function GetQuote() {
     trackEvent('quote_step_view', 'lead_form', `step_${nextStep}`)
   }
 
-  const handleRoleToggle = (roleId: string) => {
+  const handleRoleSelection = (roleId: string, isSelected: boolean) => {
     setFormData(prev => ({
       ...prev,
-      staffRoles: prev.staffRoles.includes(roleId)
-        ? prev.staffRoles.filter(r => r !== roleId)
-        : [...prev.staffRoles, roleId]
+      staffRoles: isSelected
+        ? Array.from(new Set([...prev.staffRoles, roleId]))
+        : prev.staffRoles.filter(r => r !== roleId)
     }))
   }
 
@@ -537,17 +537,16 @@ export default function GetQuote() {
                           {staffRoleOptions.map((role) => (
                             <div
                               key={role.id}
-                              className={`flex items-center space-x-3 p-3 rounded-lg border-2 cursor-pointer transition-all ${
+                              className={`flex items-center space-x-3 p-3 rounded-lg border-2 transition-all ${
                                 formData.staffRoles.includes(role.id)
                                   ? 'border-orange-500 bg-orange-50'
                                   : 'border-gray-200 hover:border-gray-300'
                               }`}
-                              onClick={() => handleRoleToggle(role.id)}
                             >
                               <Checkbox
                                 id={role.id}
                                 checked={formData.staffRoles.includes(role.id)}
-                                onCheckedChange={() => handleRoleToggle(role.id)}
+                                onCheckedChange={(checked) => handleRoleSelection(role.id, checked === true)}
                               />
                               <label htmlFor={role.id} className="text-sm cursor-pointer flex-1">
                                 {role.label}
