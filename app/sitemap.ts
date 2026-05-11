@@ -14,6 +14,63 @@ import path from 'path'
 
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
+const redirectSourcePaths = new Set([
+  '/projects/case-studies',
+  '/about-us',
+  '/contact-us',
+  '/projects',
+  '/talent',
+  '/join',
+  '/convention-centers',
+  '/brand-ambassadors',
+  '/street-team-marketing',
+  '/experiential-marketing',
+  '/promotional-models',
+  '/event-staff',
+  '/event-staffing',
+  '/privacy',
+  '/terms',
+  '/convention-staffing',
+  '/marketing-mascots',
+  '/guerilla-marketing',
+  '/nationwide-brand-ambassadors',
+  '/video-production',
+  '/discovery-call',
+  '/joey-calendar',
+  '/brand-ambassador-order-form',
+  '/brand-surveys-and-market-sampling',
+  '/interactive-vending-machine',
+  '/production-map',
+  '/blog/event-staffing-texas-complete-market-guide-2026',
+  '/blog/brand-ambassador-programs-college-campuses',
+  '/blog/festival-brand-activation-los-angeles',
+  '/blog/guerrilla-marketing-ideas-that-actually-work-real-examples',
+  '/blog/experiential-marketing-case-studies',
+  '/blog/top-event-staffing-agencies-trade-shows-2026',
+  '/street-team',
+  '/case-studies/netflix',
+  '/case-studies/microsoft',
+  '/services/product-sampling',
+  '/cities/new-york',
+])
+
+const redirectSourcePatterns = [
+  /^\/projects\/[^/]+$/,
+  /^\/locations\/[^/]+$/,
+  /^\/locations\/brand-ambassadors-[^/]+$/,
+  /^\/city-services\/.+-street-team-marketing$/,
+  /^\/portfolio\/[^/]+$/,
+  /^\/city-services\/new-york-(?:brand-ambassadors|experiential-marketing|street-teams|promotional-models|sampling|convention-staffing|event-management)$/,
+  /^\/cities\/new-york\/(?:brand-ambassadors|experiential-marketing|street-team-marketing|promotional-models|product-sampling|convention-staffing|trade-show-marketing|event-marketing)$/,
+  /^\/cities\/[^/]+\/(?:brand-ambassadors|event-marketing|experiential-marketing|trade-show-marketing|convention-staffing|promotional-models|street-teams|sampling|event-staffing|trade-show-staff|street-team-marketing|product-sampling)$/,
+  /^\/industries\/(?:tech|healthcare|financial|retail|sports|entertainment|beauty|real-estate|food-beverage)\/[^/]+$/,
+]
+
+function isRedirectSourceUrl(url: string) {
+  const pathname = new URL(url).pathname.replace(/\/$/, '') || '/'
+  return redirectSourcePaths.has(pathname) || redirectSourcePatterns.some(pattern => pattern.test(pathname))
+}
+
 // Services available for events and venues
 const eventServices = [
   'brand-ambassadors',
@@ -532,15 +589,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
   console.log(`- Neighborhood pages: ${neighborhoodMainPages.length}`)
   console.log(`- Neighborhood-service pages: ${neighborhoodServicePages.length}`)
 
+  const indexablePages = allPages.filter(page => !isRedirectSourceUrl(page.url))
+  const redirectedSourceCount = allPages.length - indexablePages.length
+
+  if (redirectedSourceCount > 0) {
+    console.log(`- Redirect sources removed: ${redirectedSourceCount}`)
+  }
+
   const pagesByUrl = new Map<string, MetadataRoute.Sitemap[number]>()
-  allPages.forEach(page => {
+  indexablePages.forEach(page => {
     if (!pagesByUrl.has(page.url)) {
       pagesByUrl.set(page.url, page)
     }
   })
 
   const uniquePages = Array.from(pagesByUrl.values())
-  const duplicateCount = allPages.length - uniquePages.length
+  const duplicateCount = indexablePages.length - uniquePages.length
 
   if (duplicateCount > 0) {
     console.log(`- Duplicates removed: ${duplicateCount}`)
