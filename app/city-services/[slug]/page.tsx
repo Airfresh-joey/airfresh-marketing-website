@@ -138,6 +138,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
   const keywordPhrase = enriched ? enriched.h1 : `${service.name} ${cityName}`;
   const pageTitle = `${keywordPhrase} | Professional ${service.name} Services | AirFresh Marketing`;
   const pageDescription = `${keywordPhrase} services from AirFresh Marketing. ${service.description} Contact us for professional ${service.name.toLowerCase()} in ${cityName} today.`;
+  const quoteHref = (intent: string) => `/get-quote?source=${slug}&intent=${intent}`;
 
   // Get hero image for service with fallback
   const serviceImages: Record<string, string> = {
@@ -281,7 +282,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
             </p>
             <div className="flex flex-wrap justify-center gap-4 mb-8">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href={`/contact?source=${slug}`}>
+                <Link href={quoteHref('hero')}>
                   Get Free Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
                 </Link>
@@ -695,7 +696,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-              <Link href={`/contact?source=${slug}`}>
+              <Link href={quoteHref('final-cta')}>
                 Get Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
