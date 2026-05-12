@@ -48,7 +48,10 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code commit `e95501e` (`fix: route ambassador quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-e2gc4xld0-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/hire-brand-ambassadors`: all six quote-intent links point to `/get-quote?source=hire-brand-ambassadors&intent=...`.
+- Verified `/get-quote?source=hire-brand-ambassadors&intent=hero` loads the quote funnel H1.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA routing and quote funnel audit on `/event-staffing-agency`, `/services`, and dynamic city/service pages.
