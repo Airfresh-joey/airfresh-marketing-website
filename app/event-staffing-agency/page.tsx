@@ -439,7 +439,7 @@ export default function EventStaffingAgencyPage() {
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg shadow-xl"
               >
-                <Link href="/contact">
+                <Link href="/get-quote?source=event-staffing-agency&intent=hero">
                   <Zap className="w-5 h-5 mr-2" />
                   Get a Free Staffing Quote
                 </Link>
@@ -593,7 +593,7 @@ export default function EventStaffingAgencyPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Need a combination of staff types or a custom solution?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/get-quote?source=event-staffing-agency&intent=custom-solution" className="text-cyan-600 hover:underline font-medium">
                 Contact our team
               </Link>{' '}
               to discuss your specific requirements. You can also explore our{' '}
@@ -661,7 +661,7 @@ export default function EventStaffingAgencyPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-6 text-lg shadow-xl"
             >
-              <Link href="/contact">
+              <Link href="/get-quote?source=event-staffing-agency&intent=process-brief">
                 Start Your Staffing Brief
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
@@ -916,7 +916,7 @@ export default function EventStaffingAgencyPage() {
                 pricing page
               </Link>{' '}
               for detailed rate ranges by role and market, or{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline">
+              <Link href="/get-quote?source=event-staffing-agency&intent=pricing-custom-quote" className="text-cyan-600 hover:underline">
                 request a custom quote
               </Link>{' '}
               for your specific campaign.
@@ -924,7 +924,7 @@ export default function EventStaffingAgencyPage() {
 
             <p className="mt-8">
               Ready to work with a proven event staffing agency?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/get-quote?source=event-staffing-agency&intent=seo-body" className="text-cyan-600 hover:underline font-medium">
                 Request a free quote
               </Link>{' '}
               from AirFresh Marketing and we will deliver a detailed staffing proposal within one business day.
@@ -1064,7 +1064,7 @@ export default function EventStaffingAgencyPage() {
               size="lg"
               className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              <Link href="/contact">
+              <Link href="/get-quote?source=event-staffing-agency&intent=final-cta">
                 <Zap className="w-6 h-6 mr-3" />
                 Get My Free Quote
                 <ArrowRight className="w-6 h-6 ml-3" />

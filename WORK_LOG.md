@@ -55,3 +55,20 @@ Checks:
 
 Next actions:
 - Continue CTA routing and quote funnel audit on `/event-staffing-agency`, `/services`, and dynamic city/service pages.
+
+## 2026-05-12 06:58 MDT
+
+Goal: push the next highest-intent quote funnel routing fix after `/hire-brand-ambassadors`.
+
+Shipped candidate:
+- Updated `/event-staffing-agency` so six quote-intent CTAs route directly to `/get-quote` instead of `/contact`.
+- Added source/intent query parameters for hero, custom solution, process brief, pricing custom quote, SEO body, and final CTA clicks.
+- Kept non-quote/internal informational links focused on their destination pages.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA routing and quote funnel audit on `/services`, `/services/food-beverage-sampling`, `/services/trade-show-staffing`, and dynamic city/service pages.
