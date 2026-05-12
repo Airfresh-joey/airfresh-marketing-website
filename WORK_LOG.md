@@ -242,7 +242,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `2a3be0f` (`fix: route trade show quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-4jw6dgx84-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/services/trade-show-staffing`: visible quote-intent links route to `/get-quote?source=trade-show-staffing&intent=hero`, `venue-location`, `mid-page`, `final-cta`, and `final-text`; footer Contact remains `/contact`.
+- Verified `/get-quote?source=trade-show-staffing&intent=hero` loads the quote funnel and preserves `lead_source=trade-show-staffing` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/services/trade-show-staffing` resolves to the `www` custom domain and contains the attributed CTA URLs.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.
