@@ -229,3 +229,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.
+
+## 2026-05-12 15:33 MDT
+
+Goal: continue quote-funnel attribution on the next high-intent static service page.
+
+Shipped candidate:
+- Updated `/services/trade-show-staffing` so five quote-intent CTAs route directly into `/get-quote` instead of `/contact`.
+- Added consistent `source=trade-show-staffing` and intent values for hero, venue-location, mid-page, final CTA, and final text quote paths.
+- Left informational links such as case studies, event management, pricing, related service links, and the phone `tel:` action unchanged.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.

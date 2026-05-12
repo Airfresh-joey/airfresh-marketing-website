@@ -27,6 +27,8 @@ import {
 } from "lucide-react";
 
 export default function TradeShowStaffingPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=trade-show-staffing&intent=${intent}`;
+
   const stats = [
     { value: '1,000+', label: 'Trade Shows Staffed' },
     { value: '50+', label: 'US Cities Covered' },
@@ -215,7 +217,7 @@ export default function TradeShowStaffingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href={quoteHref('hero')} className="flex items-center gap-2">
                   Get a Free Staffing Quote <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -394,7 +396,7 @@ export default function TradeShowStaffingPage() {
             <p className="text-gray-600">
               Don&apos;t see your venue listed? We staff trade shows at convention centers, hotels, and
               event spaces in all 50 states.{' '}
-              <Link href="/contact" className="text-indigo-600 hover:text-indigo-800 underline font-medium">
+              <Link href={quoteHref('venue-location')} className="text-indigo-600 hover:text-indigo-800 underline font-medium">
                 Contact us
               </Link>{' '}
               to discuss your event location.
@@ -453,7 +455,7 @@ export default function TradeShowStaffingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-indigo-600 hover:bg-indigo-50">
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href={quoteHref('mid-page')} className="flex items-center gap-2">
                 Request a Free Quote <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
@@ -674,7 +676,7 @@ export default function TradeShowStaffingPage() {
           </div>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-indigo-900 hover:bg-indigo-50">
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href={quoteHref('final-cta')} className="flex items-center gap-2">
                 Get Your Free Staffing Quote <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
@@ -690,7 +692,7 @@ export default function TradeShowStaffingPage() {
               (303) 720-6060
             </a>{' '}
             or{' '}
-            <Link href="/contact" className="text-white hover:text-indigo-200 underline">
+            <Link href={quoteHref('final-text')} className="text-white hover:text-indigo-200 underline">
               request a quote online
             </Link>
           </p>
