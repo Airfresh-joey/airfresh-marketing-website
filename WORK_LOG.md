@@ -133,14 +133,17 @@ Next actions:
 Goal: continue high-intent quote CTA routing on the next priority product sampling/service page.
 
 Shipped candidate:
-- Updated `/services/food-beverage-sampling` so nine sampling campaign quote-intent CTAs route directly into `/get-quote` instead of `/contact` or unattributed quote links.
+- Updated `/services/food-beverage-sampling` so 10 sampling campaign quote-intent CTAs route directly into `/get-quote` instead of `/contact` or unattributed quote links.
 - Added consistent `source=food-beverage-sampling` and intent values for hero, secondary hero, retail-needs, mid-page, why-choose, city-not-listed, related-card, final CTA, final secondary, and final text quote paths.
 - Left true navigation links such as pricing, city/service links, and the phone `tel:` action untouched.
 
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code commit `e914eeb` (`fix: route sampling quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-2btffg4k8-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/services/food-beverage-sampling`: all 10 sampling quote/campaign/contact-intent links route to `/get-quote?source=food-beverage-sampling&intent=...` while footer/navigation Contact remains `/contact`.
+- Verified `/get-quote?source=food-beverage-sampling&intent=hero` loads the quote funnel and preserves `lead_source=food-beverage-sampling` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/services/trade-show-staffing`, venue pages, and dynamic event-service pages.
