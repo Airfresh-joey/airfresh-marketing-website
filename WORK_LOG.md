@@ -267,3 +267,20 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.
+
+## 2026-05-12 17:18 MDT
+
+Goal: continue converting proof/case-study traffic into attributed quote-funnel sessions.
+
+Shipped candidate:
+- Updated the case-studies hub final “Start Your Project” CTA from `/contact` to `/get-quote?source=case-studies&intent=final-cta`.
+- Updated dynamic case-study detail pages (`/case-studies/[id]`) so the final “Start Your Project” CTA routes to `/get-quote?source=case-study-${caseStudy.id}&intent=final-cta`.
+- Kept portfolio/view-more-work navigation unchanged.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.

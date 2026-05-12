@@ -307,7 +307,7 @@ export default function CaseStudies() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href="/contact">
+              <Link href="/get-quote?source=case-studies&intent=final-cta">
                 Start Your Project
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>

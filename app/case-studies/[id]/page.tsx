@@ -357,12 +357,12 @@ export default async function CaseStudyDetail(
             Let&apos;s discuss how we can help achieve similar results for your brand.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
-              <Button size="lg" variant="secondary">
+            <Button asChild size="lg" variant="secondary">
+              <Link href={`/get-quote?source=case-study-${caseStudy.id}&intent=final-cta`}>
                 Start Your Project
                 <ArrowRight className="w-4 h-4 ml-2" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
             <Link href="/portfolio">
               <Button
                 size="lg"
