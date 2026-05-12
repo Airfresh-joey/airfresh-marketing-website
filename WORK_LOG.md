@@ -221,7 +221,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `5c9d197` (`fix: route comparison quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-44gqyz6ur-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/compare/advantage-solutions`: visible “Request a Quote” and “Get a Free Quote” links route to `/get-quote?source=compare-advantage-solutions&intent=related-request-quote` and `intent=final-cta`.
+- Verified live on `https://www.airfreshmarketing.com/compare`: final “Get a Free Quote” routes to `/get-quote?source=compare&intent=final-cta`.
+- Verified `/get-quote?source=compare-advantage-solutions&intent=final-cta` loads the quote funnel and preserves `lead_source=compare-advantage-solutions` plus `lead_intent=final-cta` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.
