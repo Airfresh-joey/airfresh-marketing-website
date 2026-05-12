@@ -90,3 +90,19 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA routing on `/services`, `/services/food-beverage-sampling`, `/services/trade-show-staffing`, and event/venue dynamic pages.
+
+## 2026-05-12 08:34 MDT
+
+Goal: continue high-intent attribution work after sitemap verification, starting with event pages showing Search Console opportunity.
+
+Shipped candidate:
+- Updated dynamic event pages (`/events/[slug]`) so hero and final quote CTAs route to `/get-quote` with per-event source/intent attribution.
+- This covers pages like `/events/adobe-max-2026-los-angeles`, which showed high impressions and low CTR in the latest GSC pass, so any quote clicks can now be tied back to the exact event page and CTA location.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on dynamic event-service pages and venue pages.
