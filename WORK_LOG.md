@@ -147,3 +147,21 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/services/trade-show-staffing`, venue pages, and dynamic event-service pages.
+
+## 2026-05-12 11:21 MDT
+
+Goal: continue the quote-funnel routing sweep on high-scale dynamic event-service pages.
+
+Shipped candidate:
+- Updated `/events/[slug]/[service]` so hero, sidebar custom quote, and final quote CTAs route directly to `/get-quote` instead of `/contact`.
+- Added source/intent attribution with both event and service slugs, e.g. `source=events-adobe-max-2026-los-angeles-brand-ambassadors` plus intent values for hero, sidebar custom quote, and final CTA.
+- This covers 1,024 event-service pages generated in the build, including event-specific brand ambassador, event staff, promotional model, and trade show staff combinations.
+- Preserved the concurrent neighborhood-page CTA routing improvement so `/neighborhoods/[neighborhood]` hero and final CTAs now route to attributed `/get-quote` URLs instead of `/contact`.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on venue pages and `/services/trade-show-staffing`.
