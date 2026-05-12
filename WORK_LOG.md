@@ -199,7 +199,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `9aa0b8d` (`fix: route venue quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-cnrqm64xk-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/venues/las-vegas-convention-center`: both visible quote CTAs route to `/get-quote?source=venue-las-vegas-convention-center&intent=hero` and `intent=final-cta`.
+- Verified live on `https://www.airfreshmarketing.com/venues/las-vegas-convention-center/brand-ambassadors`: hero, sidebar, and final quote CTAs route to `/get-quote?source=venue-las-vegas-convention-center-brand-ambassadors&intent=...`.
+- Verified `/get-quote?source=venue-las-vegas-convention-center-brand-ambassadors&intent=hero` loads the quote funnel and preserves `lead_source=venue-las-vegas-convention-center-brand-ambassadors` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.
