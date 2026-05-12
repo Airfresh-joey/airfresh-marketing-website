@@ -427,7 +427,7 @@ export default function CompareElev8Staffing() {
             or get a free quote today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="/get-quote?source=compare-elev8-staffing&intent=final-cta">
               <Button size="lg" className="w-full sm:w-auto bg-[#F7931E] hover:bg-[#e8850f] text-white font-bold px-8 py-6 rounded-full text-base flex items-center justify-center gap-2">
                 Get a Free Quote
                 <ArrowRight className="w-5 h-5" />

@@ -207,3 +207,21 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.
+
+## 2026-05-12 14:09 MDT
+
+Goal: continue quote-funnel attribution on comparison pages where competitor-evaluation visitors are close to requesting pricing.
+
+Shipped candidate:
+- Updated the `/compare` hub plus all 24 competitor comparison pages so final “Get a Free Quote” CTAs route directly into `/get-quote` instead of `/contact`.
+- Added source/intent attribution for each comparison page, e.g. `source=compare-advantage-solutions&intent=final-cta`.
+- Updated comparison-page related “Request a Quote” links to `/get-quote` with `intent=related-request-quote` where present.
+- This covers 37 high-intent quote links across the comparison section while leaving service, pricing, portfolio, and other informational links unchanged.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.

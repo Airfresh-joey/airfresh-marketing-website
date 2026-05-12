@@ -504,7 +504,7 @@ export default function CompareEventStrategyGroup() {
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
             { href: '/portfolio', label: 'View Case Studies' },
-            { href: '/contact', label: 'Request a Quote' },
+            { href: '/get-quote?source=compare-event-strategy-group&intent=related-request-quote', label: 'Request a Quote' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">
               <ArrowRight className="w-4 h-4 flex-shrink-0" />
@@ -529,7 +529,7 @@ export default function CompareEventStrategyGroup() {
             <a href="tel:3037206060" className="text-[#F7931E] hover:underline">(303) 720-6060</a> or request your free quote today.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <Link href="/contact">
+            <Link href="/get-quote?source=compare-event-strategy-group&intent=final-cta">
               <Button size="lg" className="w-full sm:w-auto bg-[#F7931E] hover:bg-[#e8850f] text-white font-bold px-8 py-6 rounded-full text-base flex items-center justify-center gap-2">
                 Get a Free Quote
                 <ArrowRight className="w-5 h-5" />
