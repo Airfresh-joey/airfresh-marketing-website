@@ -34,3 +34,21 @@ Checks:
 
 Next actions:
 - Continue the CTA sweep on other high-intent service pages after this deploy verifies.
+
+## 2026-05-12 06:06 MDT
+
+Goal: keep pushing the quote funnel / CTA routing work nonstop, starting with the next high-intent page from the prior audit.
+
+Shipped candidate:
+- Updated `/hire-brand-ambassadors` so six quote-intent CTAs route directly to `/get-quote` instead of `/contact`.
+- Added source/intent query parameters for hero, process CTA, mid-page CTA, pricing custom quote, SEO body, and final CTA clicks.
+- Left navigational/non-quote Contact links alone.
+- Resumed the recurring `Air Fresh Website Growth Codex Loop` cron every 120 minutes with the website-only growth/conversion priority stack.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA routing and quote funnel audit on `/event-staffing-agency`, `/services`, and dynamic city/service pages.

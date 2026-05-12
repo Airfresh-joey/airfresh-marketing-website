@@ -362,7 +362,7 @@ export default function HireBrandAmbassadorsPage() {
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg shadow-xl"
               >
-                <Link href="/contact">
+                <Link href="/get-quote?source=hire-brand-ambassadors&intent=hero">
                   <Zap className="w-5 h-5 mr-2" />
                   Get a Free Quote
                 </Link>
@@ -595,7 +595,7 @@ export default function HireBrandAmbassadorsPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-6 text-lg shadow-xl"
             >
-              <Link href="/contact">
+              <Link href="/get-quote?source=hire-brand-ambassadors&intent=process-cta">
                 Hire Brand Ambassadors Now
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
@@ -621,7 +621,7 @@ export default function HireBrandAmbassadorsPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg"
             >
-              <Link href="/contact">
+              <Link href="/get-quote?source=hire-brand-ambassadors&intent=mid-page-cta">
                 <Zap className="w-5 h-5 mr-2" />
                 Request a Free Quote
               </Link>
@@ -780,7 +780,7 @@ export default function HireBrandAmbassadorsPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="border-cyan-300 text-cyan-700 hover:bg-cyan-50">
-                <Link href="/contact">
+                <Link href="/get-quote?source=hire-brand-ambassadors&intent=pricing-custom-quote">
                   Get a Custom Quote
                 </Link>
               </Button>
@@ -1007,7 +1007,7 @@ export default function HireBrandAmbassadorsPage() {
 
             <p className="mt-8">
               Ready to hire brand ambassadors for your next campaign?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/get-quote?source=hire-brand-ambassadors&intent=seo-body" className="text-cyan-600 hover:underline font-medium">
                 Request a free quote
               </Link>{' '}
               from AirFresh Marketing and receive a detailed staffing proposal within one business day. Or call our
@@ -1154,7 +1154,7 @@ export default function HireBrandAmbassadorsPage() {
               size="lg"
               className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              <Link href="/contact">
+              <Link href="/get-quote?source=hire-brand-ambassadors&intent=final-cta">
                 <Zap className="w-6 h-6 mr-3" />
                 Get My Free Quote
                 <ArrowRight className="w-6 h-6 ml-3" />
