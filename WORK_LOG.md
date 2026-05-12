@@ -165,3 +165,20 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on venue pages and `/services/trade-show-staffing`.
+
+## 2026-05-12 11:23 MDT
+
+Goal: extend quote-funnel attribution to the remaining high-scale neighborhood service SEO pages.
+
+Shipped candidate:
+- Updated `/neighborhoods/[neighborhood]/[service]` so hero and final “Get Free Quote” CTAs route directly into `/get-quote` instead of `/contact`.
+- Added per-page source/intent attribution such as `source=neighborhood-soho-brand-ambassadors&intent=hero` and `intent=final-cta`.
+- This covers 175 neighborhood-service landing pages for hyper-local brand ambassador, event staffing, promotional model, street team, and product sampling searches.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on venue pages and `/services/trade-show-staffing`.
