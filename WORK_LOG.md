@@ -126,3 +126,21 @@ Checks:
 
 Next actions:
 - Continue high-intent CTA routing on `/services/food-beverage-sampling`, `/services/trade-show-staffing`, and venue/event-service pages.
+
+
+## 2026-05-12 10:08 MDT
+
+Goal: continue high-intent quote CTA routing on the next priority product sampling/service page.
+
+Shipped candidate:
+- Updated `/services/food-beverage-sampling` so nine sampling campaign quote-intent CTAs route directly into `/get-quote` instead of `/contact` or unattributed quote links.
+- Added consistent `source=food-beverage-sampling` and intent values for hero, secondary hero, retail-needs, mid-page, why-choose, city-not-listed, related-card, final CTA, final secondary, and final text quote paths.
+- Left true navigation links such as pricing, city/service links, and the phone `tel:` action untouched.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/services/trade-show-staffing`, venue pages, and dynamic event-service pages.

@@ -31,6 +31,8 @@ import {
 } from "lucide-react";
 
 export default function FoodBeverageSamplingPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=food-beverage-sampling&intent=${intent}`;
+
   const stats = [
     { value: '1M+', label: 'Samples Distributed' },
     { value: '200+', label: 'Markets Covered' },
@@ -238,12 +240,12 @@ export default function FoodBeverageSamplingPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-50">
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href={quoteHref('hero')} className="flex items-center gap-2">
                   Get a Free Sampling Quote <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link href="/get-quote">Start Your Campaign</Link>
+                <Link href={quoteHref('hero-secondary')}>Start Your Campaign</Link>
               </Button>
             </div>
           </div>
@@ -416,7 +418,7 @@ export default function FoodBeverageSamplingPage() {
             <p className="text-gray-600">
               We also staff sampling events at farmers markets, food halls, convenience stores, natural
               food co-ops, and independent retailers nationwide.{' '}
-              <Link href="/contact" className="text-orange-600 hover:text-orange-800 underline font-medium">
+              <Link href={quoteHref('retail-needs')} className="text-orange-600 hover:text-orange-800 underline font-medium">
                 Contact us
               </Link>{' '}
               to discuss your retail sampling needs.
@@ -438,7 +440,7 @@ export default function FoodBeverageSamplingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-orange-600 hover:bg-orange-50">
-              <Link href="/get-quote" className="flex items-center gap-2">
+              <Link href={quoteHref('mid-page')} className="flex items-center gap-2">
                 Get Your Custom Quote <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
@@ -629,7 +631,7 @@ export default function FoodBeverageSamplingPage() {
           <div className="mt-12 text-center">
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-50">
-                <Link href="/contact" className="flex items-center gap-2">
+                <Link href={quoteHref('why-choose')} className="flex items-center gap-2">
                   Start Your Campaign <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
@@ -674,7 +676,7 @@ export default function FoodBeverageSamplingPage() {
           <div className="mt-8 text-center">
             <p className="text-gray-600">
               Don&apos;t see your city?{' '}
-              <Link href="/contact" className="text-orange-600 hover:text-orange-800 underline font-medium">
+              <Link href={quoteHref('city-not-listed')} className="text-orange-600 hover:text-orange-800 underline font-medium">
                 Contact us
               </Link>{' '}
               — we likely have certified sampling staff in your market.
@@ -750,7 +752,7 @@ export default function FoodBeverageSamplingPage() {
               { href: '/promotional-staffing-agency', title: 'Promotional Staffing Agency', desc: 'Trained promo staff for sampling and events' },
               { href: '/corporate-event-staffing', title: 'Corporate Event Staffing', desc: 'Professional staff for corporate events and conferences' },
               { href: '/pricing', title: 'Staffing Pricing', desc: 'Transparent pricing for all staffing services' },
-              { href: '/contact', title: 'Contact Us', desc: 'Get a custom quote for your sampling campaign' }
+              { href: quoteHref('related-card'), title: 'Get a Sampling Quote', desc: 'Get a custom quote for your sampling campaign' }
             ].map((link, index) => (
               <Link
                 key={index}
@@ -795,12 +797,12 @@ export default function FoodBeverageSamplingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button size="lg" className="bg-white text-orange-900 hover:bg-orange-50">
-              <Link href="/contact" className="flex items-center gap-2">
+              <Link href={quoteHref('final-cta')} className="flex items-center gap-2">
                 Get Your Free Sampling Quote <ArrowRight className="w-4 h-4" />
               </Link>
             </Button>
             <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link href="/get-quote" className="flex items-center gap-2">
+              <Link href={quoteHref('final-secondary')} className="flex items-center gap-2">
                 Start Your Campaign
               </Link>
             </Button>
@@ -811,7 +813,7 @@ export default function FoodBeverageSamplingPage() {
               (303) 720-6060
             </a>{' '}
             or{' '}
-            <Link href="/contact" className="text-white hover:text-orange-200 underline">
+            <Link href={quoteHref('final-text')} className="text-white hover:text-orange-200 underline">
               request a quote online
             </Link>
           </p>
