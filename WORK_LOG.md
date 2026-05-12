@@ -106,3 +106,20 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on dynamic event-service pages and venue pages.
+
+## 2026-05-12 08:44 MDT
+
+Goal: make the quote funnel preserve the new `source` / `intent` CTA attribution parameters through submission.
+
+Shipped candidate:
+- Extended `lib/lead-attribution.ts` to capture and persist `source` and `intent` query params as `lead_source` and `lead_intent`.
+- Updated `/get-quote` Formspree payload to send `_leadSource` and `_leadIntent` with each quote request.
+- This makes prior CTA routing work measurable by exact landing page and CTA placement, instead of relying only on the full source URL.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue high-intent CTA routing on `/services/food-beverage-sampling`, `/services/trade-show-staffing`, and venue/event-service pages.

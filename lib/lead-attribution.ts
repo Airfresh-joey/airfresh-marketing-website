@@ -4,6 +4,8 @@ export interface LeadAttribution {
   utm_campaign: string;
   utm_content: string;
   utm_term: string;
+  lead_source: string;
+  lead_intent: string;
   gclid: string;
   fbclid: string;
   referrer: string;
@@ -19,6 +21,8 @@ const emptyAttribution = (): LeadAttribution => ({
   utm_campaign: "",
   utm_content: "",
   utm_term: "",
+  lead_source: "",
+  lead_intent: "",
   gclid: "",
   fbclid: "",
   referrer: "",
@@ -65,6 +69,8 @@ export function captureLeadAttribution(): LeadAttribution {
   const utm_campaign = urlParams.get("utm_campaign") || current.utm_campaign;
   const utm_content = urlParams.get("utm_content") || current.utm_content;
   const utm_term = urlParams.get("utm_term") || current.utm_term;
+  const lead_source = urlParams.get("source") || current.lead_source;
+  const lead_intent = urlParams.get("intent") || current.lead_intent;
 
   if (!utm_source && gclid) {
     utm_source = "google";
@@ -88,6 +94,8 @@ export function captureLeadAttribution(): LeadAttribution {
     utm_campaign,
     utm_content,
     utm_term,
+    lead_source,
+    lead_intent,
     gclid,
     fbclid,
     referrer,
