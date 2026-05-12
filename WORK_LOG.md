@@ -250,3 +250,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.
+
+## 2026-05-12 16:56 MDT
+
+Goal: continue quote-funnel attribution on high-scale state SEO pages.
+
+Shipped candidate:
+- Updated dynamic state pages (`/states/[state]`) so hero and final “Get Free Quote” CTAs route directly into `/get-quote` instead of `/contact`.
+- Updated dynamic state-service pages (`/states/[state]/[service]`) so hero and final quote CTAs route into `/get-quote` with both state and service slugs in attribution.
+- Added source/intent patterns such as `source=state-california&intent=hero` and `source=state-california-brand-ambassadors&intent=final-cta`, covering 51 state pages plus 459 state-service pages.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.

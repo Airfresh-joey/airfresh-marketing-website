@@ -62,6 +62,7 @@ export default async function StateServicePage({ params }: StateServicePageProps
   }
 
   const keywordPhrase = `${service.name} ${state.name}`;
+  const quoteHref = (intent: string) => `/get-quote?source=state-${stateSlug}-${serviceSlug}&intent=${intent}`;
 
   const faqs = [
     {
@@ -133,7 +134,7 @@ export default async function StateServicePage({ params }: StateServicePageProps
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-                <Link href="/contact">Get Free Quote</Link>
+                <Link href={quoteHref("hero")}>Get Free Quote</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
                 <a href="tel:+13037206060">
@@ -322,7 +323,7 @@ export default async function StateServicePage({ params }: StateServicePageProps
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-              <Link href="/contact">Get Free Quote</Link>
+              <Link href={quoteHref("final-cta")}>Get Free Quote</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <a href="tel:+13037206060">Call: 303-720-6060</a>
