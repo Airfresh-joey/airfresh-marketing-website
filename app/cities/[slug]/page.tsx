@@ -767,6 +767,7 @@ export default async function CityPage({ params }: CityPageProps) {
 
   const pageTitle = `${city.name} Experiential Marketing & Brand Activation | AirFresh Marketing`;
   const pageDescription = `Professional experiential marketing services in ${city.name}, ${city.state}. Brand ambassadors, street teams, product sampling, and guerrilla marketing campaigns with proven ROI.`;
+  const quoteHref = (intent: string) => `/get-quote?source=${city.slug}&intent=${intent}`;
 
   // Generate structured data with ImageObject
   const structuredData = {
@@ -913,7 +914,7 @@ export default async function CityPage({ params }: CityPageProps) {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                  <Link href={`/contact?source=${city.slug}`}>
+                  <Link href={quoteHref('hero')}>
                     <Sparkles className="w-5 h-5 mr-2" />
                     Get {city.name} Quote
                   </Link>
@@ -1500,13 +1501,13 @@ export default async function CityPage({ params }: CityPageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href={`/contact?source=${city.slug}`}>
+              <Link href="tel:+13037206060">
                 <Phone className="w-5 h-5 mr-2" />
                 Call (303) 720-6060
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              <Link href={`/contact?source=${city.slug}`}>
+              <Link href={quoteHref('final-cta')}>
                 Get Free {city.name} Quote
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>

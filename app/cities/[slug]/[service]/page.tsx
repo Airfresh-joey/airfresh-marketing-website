@@ -383,6 +383,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
   
   const pageTitle = `${city.name} ${serviceData.title} | AirFresh Marketing`;
   const pageDescription = `Professional ${serviceData.name.toLowerCase()} in ${city.name}, ${city.state}. ${city.stats.ambassadors} trained professionals, ${city.stats.events} events completed. Get a free quote today.`;
+  const quoteHref = (intent: string) => `/get-quote?source=${slug}-${service}&intent=${intent}`;
   
   const structuredData = {
     "@context": "https://schema.org",
@@ -484,7 +485,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                  <Link href={`/contact?source=${slug}-${service}`}>
+                  <Link href={quoteHref('hero')}>
                     <Sparkles className="w-5 h-5 mr-2" />
                     Get Free {city.name} Quote
                   </Link>
@@ -618,7 +619,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
                     Tell us about your {serviceData.name.toLowerCase()} needs and get a customized quote within 24 hours.
                   </p>
                   <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 mb-4">
-                    <Link href={`/contact?source=${slug}-${service}`}>
+                    <Link href={quoteHref('sidebar')}>
                       Request Quote
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -673,7 +674,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href={`/contact?source=${slug}-${service}`}>
+              <Link href={quoteHref('final-cta')}>
                 Get Free Quote
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
