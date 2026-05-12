@@ -283,17 +283,17 @@ export default async function CaseStudyDetail(
 
                   <div className="mt-6 space-y-3">
                     {caseStudy.googleDriveUrl && (
-                      <a
-                        href={caseStudy.googleDriveUrl}
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full"
-                      >
-                        <Button className="w-full">
+                      <Button asChild className="w-full">
+                        <a
+                          href={caseStudy.googleDriveUrl}
+                          target="_blank"
+                          rel="noopener noreferrer"
+                          aria-label={`Open ${caseStudy.name} assets in Google Drive`}
+                        >
                           <ExternalLink className="w-4 h-4 mr-2" />
                           View Assets
-                        </Button>
-                      </a>
+                        </a>
+                      </Button>
                     )}
 
                     <Button variant="outline" className="w-full">
