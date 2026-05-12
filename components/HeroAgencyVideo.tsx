@@ -186,7 +186,7 @@ export default function HeroAgencyVideo() {
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-5 text-base font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 hover:scale-105 active:scale-95 group md:px-8 md:py-6 md:text-lg"
                 data-testid="button-get-strategy-audit"
               >
-                <Link href="/contact">
+                <Link href="/get-quote?source=homepage&intent=hero-strategy-audit">
                   Get Your Strategy Audit
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
