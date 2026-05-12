@@ -185,3 +185,21 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on venue pages and `/services/trade-show-staffing`.
+
+## 2026-05-12 12:55 MDT
+
+Goal: continue high-scale quote-funnel routing on venue SEO pages.
+
+Shipped candidate:
+- Updated dynamic venue pages (`/venues/[slug]`) so hero and final quote CTAs route directly into `/get-quote` instead of `/contact`.
+- Updated dynamic venue-service pages (`/venues/[slug]/[service]`) so hero, sidebar custom quote, and final quote CTAs route to `/get-quote`.
+- Added source/intent attribution with venue and service slugs, e.g. `source=venue-las-vegas-convention-center-brand-ambassadors` plus `intent=hero`, `sidebar-custom-quote`, or `final-cta`.
+- This covers 46 venue landing pages and 552 generated venue-service pages in the current build.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/services/trade-show-staffing`, `/pricing`, and remaining high-intent static service pages.
