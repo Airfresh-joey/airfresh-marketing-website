@@ -356,7 +356,10 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `6008f9b` (`fix: route trust page ctas to quote funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-akdfubuna-joey-5223s-projects.vercel.app`, custom domain verified at `https://www.airfreshmarketing.com`.
+- Verified live on `/about`, `/team`, and `/tools/roi-calculator`: all changed CTAs now point to attributed `/get-quote?source=...&intent=...` URLs.
+- Verified `/get-quote?source=roi-calculator&intent=final-consultation` loads the quote funnel and preserves `lead_source=roi-calculator` plus `lead_intent=final-consultation` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/staffing-for`, `/staffing-for/[event]`, `/technology`, and high-impression blog/internal link modules.
