@@ -545,7 +545,9 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed to `main`.
+- Deployed production with Vercel CLI: `https://afm-website-koqjd23nk-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/experiential-marketing-agency` exposes all seven attributed quote links and `/get-quote?source=experiential-marketing-agency&intent=hero-campaign-proposal` loads the quote funnel without submitting a lead.
 
 Next actions:
-- Commit, push, and verify production after Vercel deploy.
 - Continue CTA attribution sweep on `/brand-activation-agency` remaining resource CTA and `/experiential-marketing-agency` adjacent service pages if Search Console access remains unavailable.
