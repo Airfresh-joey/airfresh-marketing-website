@@ -293,7 +293,7 @@ Shipped candidate:
 - Updated the `/services` hub hero and final conversion CTAs from `/contact` to `/get-quote?source=services&intent=...`.
 - Updated the `/events` directory custom event/secondary Olympics CTAs to `/get-quote?source=events-directory&intent=...` while leaving phone and event-detail navigation alone.
 - Updated dynamic industry pages (`/industries/[industry]`) so hero/final quote CTAs preserve `source=industry-${industrySlug}` with hero/final intent.
-- Updated dynamic industry-city pages (`/industries/[industry]/[city]`) so the hero quote CTA preserves both industry and city slugs, covering 320 generated local industry pages.
+- Updated dynamic industry-city pages (`/industries/[industry]/[city]`) so hero and final quote CTAs preserve both industry and city slugs, covering 320 generated local industry pages.
 
 Checks:
 - `npm run check` passed.
