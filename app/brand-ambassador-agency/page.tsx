@@ -38,6 +38,8 @@ import {
 } from 'lucide-react'
 
 export default function BrandAmbassadorAgencyPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=brand-ambassador-agency&intent=${intent}`
+
   const faqStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -385,7 +387,7 @@ export default function BrandAmbassadorAgencyPage() {
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg shadow-xl"
               >
-                <Link href="/get-quote">
+                <Link href={quoteHref('hero')}>
                   <Zap className="w-5 h-5 mr-2" />
                   Get a Free Quote
                 </Link>
@@ -396,7 +398,7 @@ export default function BrandAmbassadorAgencyPage() {
                 variant="outline"
                 className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg"
               >
-                <a href="tel:303-720-6060">
+                <a href="tel:+13037206060">
                   <Phone className="w-5 h-5 mr-2" />
                   (303) 720-6060
                 </a>
@@ -535,7 +537,7 @@ export default function BrandAmbassadorAgencyPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Need a specific type of brand ambassador or a custom combination?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href={quoteHref('custom-ambassador-type')} className="text-cyan-600 hover:underline font-medium">
                 Contact our team
               </Link>{' '}
               to discuss your requirements. You can also explore our{' '}
@@ -605,7 +607,7 @@ export default function BrandAmbassadorAgencyPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-6 text-lg shadow-xl"
             >
-              <Link href="/contact">
+              <Link href={quoteHref('campaign-brief')}>
                 Start Your Campaign Brief
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
@@ -986,7 +988,7 @@ export default function BrandAmbassadorAgencyPage() {
                 pricing page
               </Link>{' '}
               for detailed rate ranges by role and market, or{' '}
-              <Link href="/get-quote" className="text-cyan-600 hover:underline">
+              <Link href={quoteHref('pricing-custom-quote')} className="text-cyan-600 hover:underline">
                 request a custom quote
               </Link>{' '}
               for your specific campaign.
@@ -994,11 +996,11 @@ export default function BrandAmbassadorAgencyPage() {
 
             <p className="mt-8">
               Ready to partner with a proven brand ambassador agency?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
+              <Link href={quoteHref('seo-body-proposal')} className="text-cyan-600 hover:underline font-medium">
                 Contact AirFresh Marketing
               </Link>{' '}
               and receive a detailed staffing proposal within one business day. Or call our team directly at{' '}
-              <a href="tel:303-720-6060" className="text-cyan-600 hover:underline font-medium">
+              <a href="tel:+13037206060" className="text-cyan-600 hover:underline font-medium">
                 (303) 720-6060
               </a>{' '}
               to discuss your upcoming campaign. You can also explore our{' '}
@@ -1129,7 +1131,7 @@ export default function BrandAmbassadorAgencyPage() {
               size="lg"
               className="bg-white text-cyan-600 hover:bg-gray-100 font-bold text-lg px-10 py-7 shadow-2xl hover:shadow-3xl transform hover:scale-105 transition-all duration-300"
             >
-              <Link href="/get-quote">
+              <Link href={quoteHref('final-cta')}>
                 <Zap className="w-6 h-6 mr-3" />
                 Get My Free Quote
                 <ArrowRight className="w-6 h-6 ml-3" />
@@ -1141,10 +1143,10 @@ export default function BrandAmbassadorAgencyPage() {
               variant="outline"
               className="border-white/40 text-white hover:bg-white/10 text-lg px-10 py-7"
             >
-              <Link href="/contact">
+              <a href="tel:+13037206060">
                 <Phone className="w-5 h-5 mr-2" />
                 Contact Us
-              </Link>
+              </a>
             </Button>
           </div>
           <div className="mt-10 flex flex-wrap justify-center gap-6 text-cyan-100 text-sm">

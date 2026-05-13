@@ -572,3 +572,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/brand-ambassador-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
+
+## 2026-05-13 12:20 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/brand-ambassador-agency`, the next page called out by the prior run.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper with `source=brand-ambassador-agency` and unique intent values.
+- Updated six quote-intent CTAs from bare `/get-quote` or `/contact` routes to attributed quote-funnel URLs: hero, custom ambassador type, campaign brief, pricing custom quote, SEO body proposal, and final CTA.
+- Normalized visible phone CTAs to direct `tel:+13037206060` links while leaving footer/global Contact navigation unchanged.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production.
+
+Next actions:
+- Continue CTA attribution on `/product-sampling-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
