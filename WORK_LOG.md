@@ -482,7 +482,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `7089fbe` (`fix: attribute technology demo ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-iffh3vivo-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/technology`: hero and final demo CTAs route to attributed `/get-quote?source=technology&intent=...` URLs, and the visible phone CTA routes to `tel:+13037206060`.
+- Verified `/get-quote?source=technology&intent=hero-demo` loads the quote funnel and preserves `lead_source=technology` plus `lead_intent=hero-demo` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/technology` 308-redirects to `https://www.airfreshmarketing.com/technology`.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
