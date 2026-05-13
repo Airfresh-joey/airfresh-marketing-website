@@ -19,6 +19,9 @@ import {
 } from "lucide-react";
 
 export default function FieldMarketingAgencyPage() {
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=field-marketing-agency&intent=${intent}`;
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -488,13 +491,13 @@ export default function FieldMarketingAgencyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/get-quote"
+                href={quoteHref("hero-field-marketing-quote")}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
               >
                 Get a Free Field Marketing Quote
               </Link>
               <a
-                href="tel:303-720-6060"
+                href="tel:+13037206060"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5 mr-2" />
@@ -689,10 +692,10 @@ export default function FieldMarketingAgencyPage() {
               </Link>{" "}
               or{" "}
               <Link
-                href="/contact"
+                href={quoteHref("custom-strategy-team")}
                 className="text-[#00C853] hover:underline font-medium"
               >
-                contact our strategy team
+                request a field marketing strategy plan
               </Link>{" "}
               to discuss a tailored approach.
             </p>
@@ -948,7 +951,7 @@ export default function FieldMarketingAgencyPage() {
               </ul>
               <div className="mt-8">
                 <Link
-                  href="/get-quote"
+                  href={quoteHref("pricing-brand-ambassadors")}
                   className="block w-full text-center px-6 py-3 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold rounded-lg transition-colors"
                 >
                   Get a Quote
@@ -1002,7 +1005,7 @@ export default function FieldMarketingAgencyPage() {
               </ul>
               <div className="mt-8">
                 <Link
-                  href="/get-quote"
+                  href={quoteHref("pricing-trade-show-staff")}
                   className="block w-full text-center px-6 py-3 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold rounded-lg transition-colors"
                 >
                   Get a Quote
@@ -1053,7 +1056,7 @@ export default function FieldMarketingAgencyPage() {
               </ul>
               <div className="mt-8">
                 <Link
-                  href="/get-quote"
+                  href={quoteHref("pricing-street-teams")}
                   className="block w-full text-center px-6 py-3 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold rounded-lg transition-colors"
                 >
                   Get a Quote
@@ -1420,14 +1423,14 @@ export default function FieldMarketingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("final-field-marketing-proposal")}
               className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Get a Free Proposal
               <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a
-              href="tel:303-720-6060"
+              href="tel:+13037206060"
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
             >
               <Phone className="w-5 h-5 mr-2" />

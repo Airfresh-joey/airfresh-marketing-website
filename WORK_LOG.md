@@ -551,3 +551,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution sweep on `/brand-activation-agency` remaining resource CTA and `/experiential-marketing-agency` adjacent service pages if Search Console access remains unavailable.
+
+## 2026-05-13 11:06 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/field-marketing-agency`, the next major service page called out by the prior run.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper for `/field-marketing-agency` with `source=field-marketing-agency` and unique intent values.
+- Updated six quote-intent CTAs from bare `/get-quote` or `/contact` routes to attributed quote-funnel URLs: hero, custom strategy, three pricing cards, and final proposal.
+- Normalized visible phone CTAs to direct `tel:+13037206060` links and preserved navigational Contact links elsewhere.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production.
+
+Next actions:
+- Continue CTA attribution on `/brand-ambassador-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
