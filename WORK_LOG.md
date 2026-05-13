@@ -585,7 +585,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production.
+- Committed and pushed code/work-log commit `666026e` (`fix: attribute brand ambassador agency ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-k96oo84gd-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/brand-ambassador-agency` exposes all six attributed quote links with `source=brand-ambassador-agency` and distinct `intent` values; visible phone CTAs route to `tel:+13037206060`.
+- Verified `/get-quote?source=brand-ambassador-agency&intent=hero` loads the quote funnel and preserves `lead_source=brand-ambassador-agency` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/brand-ambassador-agency` 308-redirects to the `www` custom domain.
 
 Next actions:
 - Continue CTA attribution on `/product-sampling-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
