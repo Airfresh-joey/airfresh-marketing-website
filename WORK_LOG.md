@@ -319,3 +319,21 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on `/pricing`, `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.
+
+
+## 2026-05-12 20:50 MDT
+
+Goal: route pricing-page quote intent directly into the attributed quote funnel.
+
+Shipped candidate:
+- Updated `/pricing` so three quote-intent CTAs route to `/get-quote?source=pricing&intent=...` instead of `/contact`.
+- Added attribution for hero, freelance comparison, and final CTA clicks.
+- Left informational navigation such as rate tables, locations, resources, and services unchanged.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production.
+
+Next actions:
+- Continue CTA attribution on `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.
