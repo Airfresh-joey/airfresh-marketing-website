@@ -437,7 +437,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `75ed608` (`fix: attribute promotional staffing ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-9e0lqhg0z-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/promotional-staffing-agency`: all seven quote-intent links now include `source=promotional-staffing-agency` with distinct intent values; visible phone CTAs route to `tel:+13037206060`.
+- Verified apex `https://airfreshmarketing.com/promotional-staffing-agency` resolves to the `www` custom domain.
+- Verified `/get-quote?source=promotional-staffing-agency&intent=hero` loads the quote funnel and preserves `lead_source=promotional-staffing-agency` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
