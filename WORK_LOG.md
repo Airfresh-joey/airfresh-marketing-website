@@ -627,7 +627,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production, then fill in commit/deploy verification.
+- Committed and pushed code/work-log commit `57aaf86` (`fix: attribute retail activation ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-kgdfamezi-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/services/retail-activations` exposes both attributed retail quote links with `source=retail-activations` and distinct `intent` values, while the case studies link remains informational.
+- Verified `/get-quote?source=retail-activations&intent=hero-get-started` loads the quote funnel and preserves `lead_source=retail-activations` plus `lead_intent=hero-get-started` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/services/retail-activations` 308-redirects to the `www` custom domain.
 
 Next actions:
 - Continue CTA attribution on `/services/luxury-brand-marketing`, `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
