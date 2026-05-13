@@ -503,7 +503,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, production deploy, and live custom-domain verification.
+- Committed and pushed code/work-log commit `fee8679` (`fix: attribute mobile tour ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-gfhxxy12y-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/mobile-marketing-tours`: all six proposal/recommendation/planning/strategy quote CTAs route to `/get-quote?source=mobile-marketing-tours&intent=...` with distinct intent values.
+- Verified `/get-quote?source=mobile-marketing-tours&intent=hero-tour-proposal` loads the quote funnel and preserves `lead_source=mobile-marketing-tours` plus `lead_intent=hero-tour-proposal` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/mobile-marketing-tours` resolves to `https://www.airfreshmarketing.com/mobile-marketing-tours`.
 
 Next actions:
 - Continue CTA attribution on `/field-marketing-agency`, service pages with remaining quote-intent `/contact` links, and high-impression blog/internal link modules.
