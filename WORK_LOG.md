@@ -564,7 +564,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production.
+- Committed and pushed code/work-log commit `00df500` (`fix: attribute field marketing ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-o9iku4pzl-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and verified on `https://www.airfreshmarketing.com`.
+- Verified live `/field-marketing-agency` exposes all six attributed quote links with `source=field-marketing-agency` and distinct `intent` values; visible section phone CTAs route to `tel:+13037206060`.
+- Verified `/get-quote?source=field-marketing-agency&intent=hero-field-marketing-quote` loads the quote funnel and preserves `lead_source=field-marketing-agency` plus `lead_intent=hero-field-marketing-quote` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/field-marketing-agency` resolves to the `www` custom domain.
 
 Next actions:
 - Continue CTA attribution on `/brand-ambassador-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
