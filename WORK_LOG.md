@@ -532,3 +532,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/field-marketing-agency`, `/brand-ambassador-agency`, and remaining high-intent service pages with bare `/get-quote` links.
+
+## 2026-05-13 09:47 MDT
+
+Goal: continue high-intent quote CTA routing and attribution on the next major service landing page.
+
+Shipped candidate:
+- Updated `/experiential-marketing-agency` so seven quote-intent CTAs use attributed `/get-quote` URLs instead of the bare quote path.
+- Added a local `quoteHref()` helper with `source=experiential-marketing-agency` and unique intent values for hero, activation-type body, process, custom-market, partner-selection, and final CTA clicks.
+- Preserved informational/internal links and phone CTA behavior; no fake lead submissions.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, and verify production after Vercel deploy.
+- Continue CTA attribution sweep on `/brand-activation-agency` remaining resource CTA and `/experiential-marketing-agency` adjacent service pages if Search Console access remains unavailable.

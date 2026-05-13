@@ -40,6 +40,9 @@ import {
 } from 'lucide-react'
 
 export default function ExperientialMarketingAgencyPage() {
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=experiential-marketing-agency&intent=${intent}`
+
   const structuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -381,7 +384,7 @@ export default function ExperientialMarketingAgencyPage() {
                 size="lg"
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-8 py-6 text-lg shadow-xl"
               >
-                <Link href="/get-quote">
+                <Link href={quoteHref('hero-campaign-proposal')}>
                   <Zap className="w-5 h-5 mr-2" />
                   Get a Free Campaign Proposal
                 </Link>
@@ -533,7 +536,7 @@ export default function ExperientialMarketingAgencyPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600 mb-4">
               Need a custom experiential concept or a combination of activation types?{' '}
-              <Link href="/get-quote" className="text-cyan-600 hover:underline font-medium">
+              <Link href={quoteHref('activation-type-custom-proposal')} className="text-cyan-600 hover:underline font-medium">
                 Request a campaign proposal
               </Link>{' '}
               to discuss your brand objectives. Explore our{' '}
@@ -599,7 +602,7 @@ export default function ExperientialMarketingAgencyPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-6 text-lg shadow-xl"
             >
-              <Link href="/get-quote">
+              <Link href={quoteHref('process-campaign-brief')}>
                 Start Your Campaign Brief
                 <ArrowRight className="w-5 h-5 ml-2" />
               </Link>
@@ -844,7 +847,7 @@ export default function ExperientialMarketingAgencyPage() {
                 </Link>
               </Button>
               <Button asChild variant="outline" className="border-cyan-300 text-cyan-700 hover:bg-cyan-50">
-                <Link href="/get-quote">
+                <Link href={quoteHref('custom-market-request')}>
                   <Globe className="w-4 h-4 mr-2" />
                   Request a Custom Market
                 </Link>
@@ -911,7 +914,7 @@ export default function ExperientialMarketingAgencyPage() {
               dedicated field managers ensuring every consumer interaction reflects your brand at its best.
               Whether you are comparing us to other agencies or evaluating experiential marketing for the first
               time, we invite you to{' '}
-              <Link href="/get-quote" className="text-cyan-600 hover:underline">
+              <Link href={quoteHref('partner-selection-body')} className="text-cyan-600 hover:underline">
                 request a campaign proposal
               </Link>{' '}
               to experience the AirFresh difference firsthand.
@@ -1014,7 +1017,7 @@ export default function ExperientialMarketingAgencyPage() {
               size="lg"
               className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold px-10 py-6 text-lg shadow-xl"
             >
-              <Link href="/get-quote">
+              <Link href={quoteHref('final-campaign-proposal')}>
                 <Zap className="w-5 h-5 mr-2" />
                 Get a Free Campaign Proposal
               </Link>
@@ -1025,7 +1028,7 @@ export default function ExperientialMarketingAgencyPage() {
               variant="outline"
               className="border-white/30 text-white hover:bg-white/10 px-8 py-6 text-lg"
             >
-              <Link href="/get-quote">
+              <Link href={quoteHref('final-strategy-proposal')}>
                 <Phone className="w-5 h-5 mr-2" />
                 Request a Strategy Proposal
               </Link>
