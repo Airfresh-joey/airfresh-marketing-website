@@ -363,3 +363,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/staffing-for`, `/staffing-for/[event]`, `/technology`, and high-impression blog/internal link modules.
+
+## 2026-05-12 23:26 MDT
+
+Goal: continue quote-funnel attribution on the high-intent `/staffing-for` event-staffing directory and event detail template.
+
+Shipped candidate:
+- Updated `/staffing-for` so hero and final quote CTAs route to `/get-quote?source=staffing-for&intent=...` instead of unattributed quote links.
+- Updated dynamic `/staffing-for/[event]` pages so urgency, hero, featured case-study, sidebar quote, and final quote CTAs route into `/get-quote` instead of `/contact`.
+- Added per-event attribution such as `source=staffing-for-ces&intent=hero`, while preserving true `Contact Us` navigation and phone `tel:` actions.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/technology` and high-impression blog/internal link modules.

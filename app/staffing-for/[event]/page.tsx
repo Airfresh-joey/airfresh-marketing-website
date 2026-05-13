@@ -187,6 +187,7 @@ export default async function EventPage({ params }: EventPageProps) {
   };
 
   const isFeatured = eventPage.isFeatured === true;
+  const quoteHref = (intent: string) => `/get-quote?source=staffing-for-${slug}&intent=${intent}`;
 
   return (
     <div className="pt-16 min-h-screen">
@@ -202,7 +203,7 @@ export default async function EventPage({ params }: EventPageProps) {
           <div className="max-w-7xl mx-auto flex items-center justify-center gap-2">
             <AlertCircle className="w-5 h-5 flex-shrink-0" />
             <span className="font-semibold text-sm md:text-base">{eventPage.urgencyNote}</span>
-            <Link href="/contact" className="underline font-bold ml-2 whitespace-nowrap">
+            <Link href={quoteHref('urgency-book-now')} className="underline font-bold ml-2 whitespace-nowrap">
               Book Now
             </Link>
           </div>
@@ -254,7 +255,7 @@ export default async function EventPage({ params }: EventPageProps) {
               </div>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
-                  <Link href="/contact">
+                  <Link href={quoteHref('hero')}>
                     Get Staffing Quote
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -310,7 +311,7 @@ export default async function EventPage({ params }: EventPageProps) {
                   satisfaction rate. This is not a claim — it is a documented track record.
                 </p>
                 <Button asChild className="bg-cyan-600 hover:bg-cyan-700 text-white">
-                  <Link href="/contact">
+                  <Link href={quoteHref('featured-case-study')}>
                     Work With the Team That Did It
                     <ArrowRight className="w-4 h-4 ml-2" />
                   </Link>
@@ -355,7 +356,7 @@ export default async function EventPage({ params }: EventPageProps) {
                     Tell us your event dates and staffing needs. We respond within 24 hours.
                   </p>
                   <Button asChild className="w-full bg-cyan-500 hover:bg-cyan-600 text-white">
-                    <Link href="/contact">
+                    <Link href={quoteHref('sidebar-quote')}>
                       Request Quote
                       <ArrowRight className="w-4 h-4 ml-2" />
                     </Link>
@@ -712,7 +713,7 @@ export default async function EventPage({ params }: EventPageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-700 hover:bg-gray-100">
-              <Link href="/contact">
+              <Link href={quoteHref('final-cta')}>
                 Get a Free Staffing Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
