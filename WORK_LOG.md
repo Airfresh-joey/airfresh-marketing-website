@@ -393,8 +393,12 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `154b2c3` (`fix: attribute guerrilla marketing ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-gyc3o4cqx-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/guerrilla-marketing-agency`: hero, pricing, and final quote CTAs route to attributed `/get-quote?source=guerrilla-marketing-agency&intent=...` URLs; visible phone CTAs route to `tel:+13037206060`.
+- Verified `/get-quote?source=guerrilla-marketing-agency&intent=hero` loads the quote funnel and preserves `lead_source=guerrilla-marketing-agency` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/guerrilla-marketing-agency` resolves to the `www` custom domain and contains the attributed CTA URL plus direct phone links.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/technology`, `/event-marketing-agency`, `/promotional-staffing-agency`, and high-impression blog/internal link modules.
 
