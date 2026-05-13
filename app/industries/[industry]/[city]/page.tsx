@@ -53,6 +53,8 @@ export default async function IndustryCityPage({ params }: IndustryCityPageProps
     notFound();
   }
 
+  const quoteHref = (intent: string) => `/get-quote?source=industry-${industrySlug}-${citySlug}&intent=${intent}`;
+
   // Find related case studies
   const relatedCaseStudies = portfolioCaseStudies.filter(cs => 
     cs.industry?.toLowerCase().includes(industry.name.toLowerCase().split(' ')[0]) ||
@@ -111,7 +113,7 @@ export default async function IndustryCityPage({ params }: IndustryCityPageProps
             </p>
             <div className="flex flex-wrap gap-4">
               <Button asChild size="lg" className="bg-white text-primary hover:bg-gray-100">
-                <Link href="/contact">Get Free Quote</Link>
+                <Link href={quoteHref('hero')}>Get Free Quote</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white/10">
                 <a href="tel:+13037206060"><Phone className="mr-2 h-5 w-5" />303-720-6060</a>

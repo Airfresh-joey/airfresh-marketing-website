@@ -119,7 +119,9 @@ const popularServices = [
   { label: 'Brand Ambassadors Seattle', href: '/city-services/seattle-brand-ambassadors' },
 ];
 
-export default function Services() {
+export default function ServicesPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=services&intent=${intent}`;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -235,7 +237,7 @@ export default function Services() {
               designed to achieve higher engagement rates and create lasting emotional connections with your customers.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/contact">Start Your Project</Link>
+              <Link href={quoteHref('hero')}>Start Your Project</Link>
             </Button>
           </header>
         </article>
@@ -452,7 +454,7 @@ export default function Services() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Get Started Today</Link>
+              <Link href={quoteHref('final-cta')}>Get Started Today</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-white text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white">
               <Link href="/case-studies">View Our Work</Link>

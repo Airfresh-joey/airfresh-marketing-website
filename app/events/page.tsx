@@ -20,6 +20,7 @@ export default function EventsDirectory() {
   const featuredEvents = getFeaturedEvents();
   const tier1Events = getTier1Events();
   const tier2Events = getTier2Events();
+  const quoteHref = (intent: string) => `/get-quote?source=events-directory&intent=${intent}`;
 
   const structuredData = {
     "@context": "https://schema.org",
@@ -231,7 +232,7 @@ export default function EventsDirectory() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-              <Link href="/contact">Contact Us</Link>
+              <Link href={quoteHref('olympics-secondary')}>Contact Us</Link>
             </Button>
           </div>
         </div>
@@ -242,12 +243,12 @@ export default function EventsDirectory() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
           <h2 className="text-3xl font-bold mb-6">Don't See Your Event?</h2>
           <p className="text-lg text-gray-600 mb-8 max-w-2xl mx-auto">
-            We staff events of all sizes across the United States. Contact us for a custom
+            We staff events of all sizes across the United States. Request a custom
             staffing solution for your conference, festival, or activation.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg">
-              <Link href="/contact">Get a Custom Quote</Link>
+              <Link href={quoteHref('custom-event')}>Get a Custom Quote</Link>
             </Button>
             <Button asChild size="lg" variant="outline">
               <a href="tel:3037206060">Call (303) 720-6060</a>

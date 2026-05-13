@@ -284,3 +284,21 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on `/pricing`, `/services`, and remaining high-intent static service pages.
+
+## 2026-05-12 18:10 MDT
+
+Goal: keep moving high-intent service/event/industry visitors into the attributed quote funnel.
+
+Shipped candidate:
+- Updated the `/services` hub hero and final conversion CTAs from `/contact` to `/get-quote?source=services&intent=...`.
+- Updated the `/events` directory custom event/secondary Olympics CTAs to `/get-quote?source=events-directory&intent=...` while leaving phone and event-detail navigation alone.
+- Updated dynamic industry pages (`/industries/[industry]`) so hero/final quote CTAs preserve `source=industry-${industrySlug}` with hero/final intent.
+- Updated dynamic industry-city pages (`/industries/[industry]/[city]`) so the hero quote CTA preserves both industry and city slugs, covering 320 generated local industry pages.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/pricing`, `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.

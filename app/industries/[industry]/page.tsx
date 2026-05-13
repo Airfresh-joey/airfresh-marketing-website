@@ -28,6 +28,8 @@ export default function IndustryPage() {
     notFound();
   }
 
+  const quoteHref = (intent: string) => `/get-quote?source=industry-${industrySlug}&intent=${intent}`;
+
   const faqs = [
     {
       question: `What experiential marketing services does AirFresh offer for the ${industry.name} industry?`,
@@ -98,7 +100,7 @@ export default function IndustryPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/contact">Get a Quote</Link>
+                <Link href={quoteHref('hero')}>Get a Quote</Link>
               </Button>
               <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
                 <a href="tel:+13037206060">
@@ -245,7 +247,7 @@ export default function IndustryPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">
+              <Link href={quoteHref('final-cta')}>
                 Get a Free Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Link>
