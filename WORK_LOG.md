@@ -469,3 +469,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
+
+## 2026-05-13 05:57 MDT
+
+Goal: continue quote-funnel attribution on the high-intent technology proof page.
+
+Shipped candidate:
+- Updated `/technology` so the hero “See a Demo” CTA routes to `/get-quote?source=technology&intent=hero-demo` instead of the general contact page.
+- Updated the final “Schedule a Demo” CTA to `/get-quote?source=technology&intent=final-demo` so demo/quote intent is measurable through the quote funnel.
+- Normalized the visible phone CTA to `tel:+13037206060` for consistent direct call routing.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
