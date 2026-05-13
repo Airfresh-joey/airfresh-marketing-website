@@ -156,9 +156,9 @@ export default function HeroAgencyVideo() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            <span className="block">Experiential Marketing</span>
+            <span className="block">Event Staffing, Brand Ambassadors</span>
             <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              That Turns Fans into Superfans
+              and Experiential Marketing Nationwide
             </span>
           </h1>
 
@@ -168,9 +168,20 @@ export default function HeroAgencyVideo() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            We craft immersive experiential marketing campaigns that spark emotional connections,
-            drive brand loyalty, and transform one-time customers into lifelong advocates.
+            We staff and execute street teams, product sampling, trade shows, festivals, and retail activations with trained brand ambassadors, field managers, and measurable recap reporting.
           </p>
+
+          <div
+            className={`mb-6 flex flex-wrap justify-center gap-2 text-xs font-semibold uppercase tracking-wide text-white/95 transition-all duration-700 delay-250 md:mb-10 md:text-sm ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
+            {['Street Teams', 'Brand Ambassadors', 'Event Staffing', 'Product Sampling'].map((item) => (
+              <span key={item} className="rounded-full border border-white/25 bg-black/30 px-3 py-2 backdrop-blur-sm">
+                {item}
+              </span>
+            ))}
+          </div>
 
           {/* CTA Buttons */}
           <div 
@@ -186,8 +197,8 @@ export default function HeroAgencyVideo() {
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-5 text-base font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 hover:scale-105 active:scale-95 group md:px-8 md:py-6 md:text-lg"
                 data-testid="button-get-strategy-audit"
               >
-                <Link href="/get-quote?source=homepage&intent=hero-strategy-audit">
-                  Get Your Strategy Audit
+                <Link href="/get-quote?source=homepage&intent=hero-event-staffing-quote">
+                  Get an Event Staffing Quote
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
               </Button>

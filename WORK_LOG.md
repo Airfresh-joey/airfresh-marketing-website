@@ -445,3 +445,23 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
+
+## 2026-05-13 04:45 MDT
+
+Goal: improve homepage conversion and make the homepage proposal-builder path land in the dedicated quote funnel instead of the general contact form.
+
+Shipped candidate:
+- Sharpened the homepage hero above-fold positioning around event staffing, brand ambassadors, street teams, product sampling, and experiential marketing.
+- Changed the primary hero CTA from a vague strategy-audit ask to `Get an Event Staffing Quote` with `source=homepage&intent=hero-event-staffing-quote` attribution.
+- Routed the homepage `ActivationPlanner` / proposal-builder CTA to `/get-quote` with `source=activation-planner&intent=proposal-builder` plus planner details.
+- Added `/get-quote` prefill support for planner query params so service type, city, date, staff count, budget, roles, and planner summary carry into the quote form without submitting a fake lead.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Local browser verification confirmed the homepage H1/CTA updates and the proposal-builder link target.
+- Local quote-funnel verification confirmed planner params prefill step 2 fields (`Sampling Campaign`, `Denver`, `2026-07-04`) without submitting a lead.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.

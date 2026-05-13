@@ -119,6 +119,63 @@ export default function GetQuote() {
   useEffect(() => {
     const capturedAttribution = captureLeadAttribution()
     setAttribution(capturedAttribution)
+
+    const params = new URLSearchParams(window.location.search)
+    const service = params.get('service') || ''
+    const teamCount = Number.parseInt(params.get('team') || '', 10)
+    const budgetLabel = params.get('budget') || ''
+    const eventDate = params.get('date') || ''
+    const eventTypeByService: Record<string, string> = {
+      'Brand Activation': 'brand-activation',
+      'Product Sampling': 'sampling-campaign',
+      'Trade Show': 'trade-show',
+      'Street Team': 'brand-activation',
+      'Pop-Up / Tour': 'product-launch',
+      'Event Support': 'corporate-event',
+    }
+    const roleByService: Record<string, string[]> = {
+      'Brand Activation': ['brand-ambassadors', 'event-managers'],
+      'Product Sampling': ['sampling-teams', 'product-demonstrators'],
+      'Trade Show': ['trade-show-staff', 'registration-staff'],
+      'Street Team': ['street-teams', 'brand-ambassadors'],
+      'Pop-Up / Tour': ['brand-ambassadors', 'event-managers'],
+      'Event Support': ['registration-staff', 'hospitality'],
+    }
+    const budgetByPlannerLabel: Record<string, string> = {
+      'Under $10k': '5k-10k',
+      '$10k - $25k': '10k-25k',
+      '$25k - $50k': '25k-50k',
+      '$50k - $100k': '50k-100k',
+      '$100k+': '100k+',
+    }
+    const staffBucket = Number.isNaN(teamCount)
+      ? ''
+      : teamCount <= 5
+        ? '1-5'
+        : teamCount <= 10
+          ? '6-10'
+          : teamCount <= 20
+            ? '11-20'
+            : teamCount <= 50
+              ? '21-50'
+              : '50+'
+
+    const prefilled: Partial<FormData> = {
+      eventType: eventTypeByService[service] || '',
+      eventLocation: params.get('market') || '',
+      eventDate: /^\d{4}-\d{2}-\d{2}$/.test(eventDate) ? eventDate : '',
+      staffCount: staffBucket,
+      budget: budgetByPlannerLabel[budgetLabel] || '',
+      description: params.get('message') || '',
+      hearAboutUs: params.get('source') ? 'other' : '',
+      staffRoles: roleByService[service] || [],
+    }
+
+    setFormData(prev => ({
+      ...prev,
+      ...Object.fromEntries(Object.entries(prefilled).filter(([, value]) => Array.isArray(value) ? value.length > 0 : Boolean(value))),
+    }))
+
     trackEvent('quote_form_view', 'lead_form', capturedAttribution.utm_source || 'direct')
   }, [])
 

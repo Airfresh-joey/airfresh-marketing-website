@@ -168,6 +168,7 @@ export default function ActivationPlanner() {
 
     const params = new URLSearchParams({
       source: "activation-planner",
+      intent: "proposal-builder",
       service: selectedService.label,
       market: marketLabel,
       date: dateLabel,
@@ -182,7 +183,7 @@ export default function ActivationPlanner() {
       fieldTeam,
       timeline,
       deliverables,
-      proposalHref: `/contact?${params.toString()}`,
+      proposalHref: `/get-quote?${params.toString()}`,
     };
   }, [budget, eventDate, footprint, goal, market, service, teamSize, timing]);
 
@@ -420,7 +421,7 @@ export default function ActivationPlanner() {
                   </Link>
                 </Button>
                 <p className="mt-3 text-center text-sm text-gray-400">
-                  Sends your planner summary into the contact form so the first reply can be specific.
+                  Sends your planner summary into the quote form so the first reply can be specific.
                 </p>
               </div>
             </div>
