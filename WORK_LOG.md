@@ -606,7 +606,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production.
+- Committed and pushed code/work-log commit `e72a77c` (`fix: attribute product sampling ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-e1zsm7wyq-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/product-sampling-agency` exposes all five attributed sampling quote links with `source=product-sampling-agency` and distinct `intent` values; visible phone CTAs route to `tel:+13037206060`.
+- Verified `/get-quote?source=product-sampling-agency&intent=hero-sampling-proposal` loads the quote funnel and preserves `lead_source=product-sampling-agency` plus `lead_intent=hero-sampling-proposal` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/product-sampling-agency` 308-redirects to the `www` custom domain.
 
 Next actions:
 - Continue CTA attribution on remaining service pages with bare quote links and high-intent blog CTAs.
