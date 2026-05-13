@@ -23,6 +23,8 @@ import {
 } from "lucide-react";
 
 export default function RetailActivationsPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=retail-activations&intent=${intent}`;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -108,12 +110,12 @@ export default function RetailActivationsPage() {
               shoppers into buyers.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
-                <Link href="/contact" className="flex items-center gap-2">
+              <Button asChild size="lg" className="bg-white text-blue-900 hover:bg-blue-50">
+                <Link href={quoteHref('hero-get-started')} className="flex items-center gap-2">
                   Get Started <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/case-studies">View Case Studies</Link>
               </Button>
             </div>
@@ -239,8 +241,8 @@ export default function RetailActivationsPage() {
           <p className="text-xl text-blue-100 mb-8">
             Let's create an in-store activation that drives real results
           </p>
-          <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
-            <Link href="/contact" className="flex items-center gap-2">
+          <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-blue-50">
+            <Link href={quoteHref('final-consultation')} className="flex items-center gap-2">
               Get a Free Consultation <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>

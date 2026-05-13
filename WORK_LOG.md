@@ -614,3 +614,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on remaining service pages with bare quote links and high-intent blog CTAs.
+
+## 2026-05-13 14:45 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/services/retail-activations`, a service page still sending buyer CTAs to `/contact`.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper with `source=retail-activations` and unique intent values.
+- Routed the hero “Get Started” and final “Get a Free Consultation” CTAs directly to `/get-quote` with source/intent attribution instead of `/contact`.
+- Converted the retail page buttons to the Radix-safe `Button asChild` anchor pattern while preserving the case studies link.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production, then fill in commit/deploy verification.
+
+Next actions:
+- Continue CTA attribution on `/services/luxury-brand-marketing`, `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
