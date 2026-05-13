@@ -524,7 +524,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy, and live custom-domain verification.
+- Committed and pushed code/work-log commit `e974033` (`fix: attribute brand activation ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-55wdbia1g-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/brand-activation-agency`: all five activation/proposal CTAs route to `/get-quote?source=brand-activation-agency&intent=...` with distinct intent values.
+- Verified `/get-quote?source=brand-activation-agency&intent=hero-activation-proposal` loads the quote funnel and preserves `lead_source=brand-activation-agency` plus `lead_intent=hero-activation-proposal` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/brand-activation-agency` 308-redirects to `https://www.airfreshmarketing.com/brand-activation-agency`.
 
 Next actions:
 - Continue CTA attribution on `/field-marketing-agency`, `/brand-ambassador-agency`, and remaining high-intent service pages with bare `/get-quote` links.
