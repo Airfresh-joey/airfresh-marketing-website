@@ -669,7 +669,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production.
+- Committed and pushed code/work-log commit `a76d95b` (`fix: attribute dynamic service ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-d2id0sul1-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/services/brand-ambassadors` exposes the hero and final dynamic service CTAs as `/get-quote?source=brand-ambassadors&intent=...` while preserving the global nav quote link.
+- Verified `/get-quote?source=brand-ambassadors&intent=hero-staffing-quote` loads the quote funnel and preserves `lead_source=brand-ambassadors` plus `lead_intent=hero-staffing-quote` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/services/brand-ambassadors` 308-redirects to the `www` custom domain.
 
 Next actions:
 - Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
