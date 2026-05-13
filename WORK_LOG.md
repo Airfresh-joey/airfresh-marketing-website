@@ -593,3 +593,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/product-sampling-agency`, remaining service pages with bare quote links, and high-intent blog CTAs.
+
+## 2026-05-13 13:30 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/product-sampling-agency`, the next page called out by the prior run.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper with `source=product-sampling-agency` and unique intent values.
+- Updated five sampling proposal/quote CTAs from bare `/get-quote` links to attributed quote-funnel URLs: hero proposal, custom sampling strategy, pricing custom quote, and both final proposal CTAs.
+- Normalized visible phone CTAs to direct `tel:+13037206060` links while preserving informational/internal links.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production.
+
+Next actions:
+- Continue CTA attribution on remaining service pages with bare quote links and high-intent blog CTAs.

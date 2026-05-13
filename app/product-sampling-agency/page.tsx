@@ -19,6 +19,9 @@ import {
 } from "lucide-react";
 
 export default function ProductSamplingAgencyPage() {
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=product-sampling-agency&intent=${intent}`;
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -450,13 +453,13 @@ export default function ProductSamplingAgencyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/get-quote"
+                href={quoteHref("hero-sampling-proposal")}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
               >
                 Get a Free Sampling Proposal
               </Link>
               <a
-                href="tel:303-720-6060"
+                href="tel:+13037206060"
                 className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
               >
                 <Phone className="w-5 h-5 mr-2" />
@@ -637,7 +640,7 @@ export default function ProductSamplingAgencyPage() {
               </Link>{" "}
               or{" "}
               <Link
-                href="/get-quote"
+                href={quoteHref("custom-sampling-strategy")}
                 className="text-[#00C853] hover:underline font-medium"
               >
                 request a sampling proposal
@@ -1121,7 +1124,7 @@ export default function ProductSamplingAgencyPage() {
                 </Link>{" "}
                 for detailed rate information or{" "}
                 <Link
-                  href="/get-quote"
+                  href={quoteHref("pricing-custom-quote")}
                   className="text-[#00C853] hover:underline"
                 >
                   request a custom quote
@@ -1593,13 +1596,13 @@ export default function ProductSamplingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("final-free-sampling-proposal")}
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Get a Free Sampling Proposal
             </Link>
             <Link
-              href="/get-quote"
+              href={quoteHref("final-request-sampling-proposal")}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
             >
               Request a Sampling Proposal
@@ -1608,7 +1611,7 @@ export default function ProductSamplingAgencyPage() {
           <p className="mt-8 text-gray-400 text-sm">
             Or call us directly at{" "}
             <a
-              href="tel:303-720-6060"
+              href="tel:+13037206060"
               className="text-[#00C853] hover:underline"
             >
               (303) 720-6060
