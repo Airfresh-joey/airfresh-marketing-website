@@ -402,6 +402,9 @@ export default function MobileMarketingToursPage() {
     },
   ];
 
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=mobile-marketing-tours&intent=${intent}`;
+
   const pillarLinks = [
     { href: "/event-staffing-agency", label: "Event Staffing Agency" },
     { href: "/hire-brand-ambassadors", label: "Hire Brand Ambassadors" },
@@ -498,7 +501,7 @@ export default function MobileMarketingToursPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/get-quote"
+                href={quoteHref("hero-tour-proposal")}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
               >
                 Get a Free Tour Proposal
@@ -674,12 +677,12 @@ export default function MobileMarketingToursPage() {
               can develop a custom tour concept that matches your objectives,
               timeline, and budget.{" "}
               <Link
-                href="/contact"
+                href={quoteHref("tour-format-consultation")}
                 className="text-[#00C853] hover:underline font-medium"
               >
-                Contact us
+                Get a tour recommendation
               </Link>{" "}
-              for a free consultation.
+              and a free consultation.
             </p>
           </div>
         </div>
@@ -722,7 +725,7 @@ export default function MobileMarketingToursPage() {
 
           <div className="mt-14 text-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("route-planning")}
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Start Planning Your Tour
@@ -1547,7 +1550,7 @@ export default function MobileMarketingToursPage() {
               { href: "/case-studies", label: "Case Studies" },
               { href: "/pricing", label: "Pricing" },
               { href: "/contact", label: "Contact Us" },
-              { href: "/get-quote", label: "Get a Quote" },
+              { href: quoteHref("related-links-quote"), label: "Get a Quote" },
             ].map((link) => (
               <Link
                 key={link.href}
@@ -1577,13 +1580,13 @@ export default function MobileMarketingToursPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("final-tour-proposal")}
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Get a Free Tour Proposal
             </Link>
             <Link
-              href="/contact"
+              href={quoteHref("strategy-call")}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
             >
               Schedule a Strategy Call

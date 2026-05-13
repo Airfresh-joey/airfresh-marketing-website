@@ -490,3 +490,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
+
+## 2026-05-13 07:12 MDT
+
+Goal: continue high-intent CTA attribution on `/mobile-marketing-tours` after the technology proof-page pass.
+
+Shipped candidate:
+- Added a `quoteHref()` helper for `/mobile-marketing-tours` so quote/proposal CTAs consistently route to `/get-quote?source=mobile-marketing-tours&intent=...`.
+- Updated the hero tour proposal CTA, tour-format recommendation link, route-planning CTA, related-links quote pill, final tour proposal CTA, and strategy-call CTA to carry distinct quote-funnel intent values.
+- Left navigational `Contact Us` and direct phone links alone.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, production deploy, and live custom-domain verification.
+
+Next actions:
+- Continue CTA attribution on `/field-marketing-agency`, service pages with remaining quote-intent `/contact` links, and high-impression blog/internal link modules.
