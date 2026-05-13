@@ -380,3 +380,21 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on `/technology` and high-impression blog/internal link modules.
+
+## 2026-05-13 00:40 MDT
+
+Goal: continue quote-funnel attribution on high-intent service pages that still had unattributed quote CTAs or phone CTAs routed through `/contact`.
+
+Shipped candidate:
+- Updated `/guerrilla-marketing-agency` so the hero, pricing, and final quote CTAs route to `/get-quote?source=guerrilla-marketing-agency&intent=...` instead of unattributed quote links.
+- Changed visible phone CTA buttons from `/contact` to direct `tel:+13037206060` actions.
+- Converted the changed CTA buttons to the project-preferred `Button asChild` pattern.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/technology`, `/event-marketing-agency`, `/promotional-staffing-agency`, and high-impression blog/internal link modules.
+

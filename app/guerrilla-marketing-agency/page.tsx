@@ -405,21 +405,22 @@ export default function GuerrillaMarketingAgencyPage() {
               measurable ROI.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 mb-10">
-              <Link href="/get-quote">
-                <Button className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-8 py-6 text-lg rounded-lg">
+              <Button asChild className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-8 py-6 text-lg rounded-lg">
+                <Link href="/get-quote?source=guerrilla-marketing-agency&intent=hero">
                   Get a Guerrilla Marketing Quote
                   <ArrowRight className="ml-2 h-5 w-5" />
-                </Button>
-              </Link>
-              <Link href="/contact">
-                <Button
-                  variant="outline"
-                  className="border-white text-white hover:bg-white/10 font-bold px-8 py-6 text-lg rounded-lg"
-                >
+                </Link>
+              </Button>
+              <Button
+                asChild
+                variant="outline"
+                className="border-white text-white hover:bg-white/10 font-bold px-8 py-6 text-lg rounded-lg"
+              >
+                <a href="tel:+13037206060">
                   <Phone className="mr-2 h-5 w-5" />
                   (303) 720-6060
-                </Button>
-              </Link>
+                </a>
+              </Button>
             </div>
             <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
               <div className="text-center">
@@ -700,12 +701,12 @@ export default function GuerrillaMarketingAgencyPage() {
             </div>
           </div>
           <div className="text-center mt-10">
-            <Link href="/get-quote">
-              <Button className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-8 py-6 text-lg rounded-lg">
+            <Button asChild className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-8 py-6 text-lg rounded-lg">
+              <Link href="/get-quote?source=guerrilla-marketing-agency&intent=pricing-custom-quote">
                 Get Custom Pricing
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
+              </Link>
+            </Button>
           </div>
         </div>
       </section>
@@ -1088,21 +1089,22 @@ export default function GuerrillaMarketingAgencyPage() {
             noise. Get a custom guerrilla marketing proposal within 24 hours.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-8">
-            <Link href="/get-quote">
-              <Button className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-10 py-6 text-lg rounded-lg">
+            <Button asChild className="bg-[#00C853] hover:bg-[#00E676] text-black font-bold px-10 py-6 text-lg rounded-lg">
+              <Link href="/get-quote?source=guerrilla-marketing-agency&intent=final-cta">
                 Get Your Free Guerrilla Marketing Quote
                 <ArrowRight className="ml-2 h-5 w-5" />
-              </Button>
-            </Link>
-            <Link href="/contact">
-              <Button
-                variant="outline"
-                className="border-white text-white hover:bg-white/10 font-bold px-10 py-6 text-lg rounded-lg"
-              >
+              </Link>
+            </Button>
+            <Button
+              asChild
+              variant="outline"
+              className="border-white text-white hover:bg-white/10 font-bold px-10 py-6 text-lg rounded-lg"
+            >
+              <a href="tel:+13037206060">
                 <Phone className="mr-2 h-5 w-5" />
                 Call (303) 720-6060
-              </Button>
-            </Link>
+              </a>
+            </Button>
           </div>
           <p className="text-gray-400 text-sm">
             No commitment required. Proposals delivered within 24 hours. Serving all 50 states.
