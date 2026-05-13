@@ -15,6 +15,8 @@ import {
   ArrowRight
 } from "lucide-react";
 
+const quoteHref = (intent: string) => `/get-quote?source=team&intent=${intent}`;
+
 // Leadership team data
 const leadership = [
   {
@@ -281,7 +283,7 @@ export default function TeamPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100">
-              <Link href="/contact">Start a Project</Link>
+              <Link href={quoteHref('final-cta')}>Start a Project</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
               <Link href="/about">Learn More About Us</Link>

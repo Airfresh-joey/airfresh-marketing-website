@@ -38,6 +38,8 @@ interface ROIResults {
   costPerImpression: number
 }
 
+const quoteHref = (intent: string) => `/get-quote?source=roi-calculator&intent=${intent}`
+
 export default function ROICalculator() {
   const [budget, setBudget] = useState<number>(10000)
   const [eventType, setEventType] = useState<string>('trade-show')
@@ -320,7 +322,7 @@ export default function ROICalculator() {
                   </div>
 
                   {/* CTA */}
-                  <Link href="/contact" className="block">
+                  <Link href={quoteHref('results-custom-quote')} className="block">
                     <Button className="w-full bg-white text-blue-600 hover:bg-blue-50 font-semibold py-6 text-lg">
                       Get a Custom Quote
                       <ArrowRight className="w-5 h-5 ml-2" />
@@ -347,7 +349,7 @@ export default function ROICalculator() {
                 The most successful experiential campaigns combine strong staff training, strategic location selection, and integrated digital amplification to maximize every dollar spent. Brands that invest in professional event staffing through agencies like AirFresh Marketing see 30-50% higher engagement rates compared to using untrained temporary workers, directly impacting lead quality and conversion rates.
               </p>
               <p className="text-gray-700 leading-relaxed">
-                Use this calculator to estimate your campaign's potential returns, then <a href="/contact" className="text-primary hover:underline font-medium">contact our team</a> for a detailed proposal with custom projections based on your specific goals, target audience, and market conditions.
+                Use this calculator to estimate your campaign's potential returns, then <a href={quoteHref('seo-body')} className="text-primary hover:underline font-medium">request a custom quote</a> for a detailed proposal with custom projections based on your specific goals, target audience, and market conditions.
               </p>
             </div>
           </div>
@@ -401,7 +403,7 @@ export default function ROICalculator() {
               Our team of experiential marketing experts will help you create campaigns that deliver real results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
+              <Link href={quoteHref('final-consultation')}>
                 <Button size="lg" className="bg-white text-blue-600 hover:bg-blue-50 px-8">
                   Request a Consultation
                 </Button>

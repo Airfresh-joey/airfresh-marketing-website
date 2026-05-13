@@ -26,6 +26,8 @@ const stats = [
   { number: "1000+", label: "Events Produced" }
 ];
 
+const quoteHref = (intent: string) => `/get-quote?source=about&intent=${intent}`;
+
 const values = [
   {
     icon: Heart,
@@ -193,7 +195,7 @@ export default function About() {
               Our focus on <strong>client satisfaction</strong> and <strong>trained brand ambassadors</strong> make us a trusted choice for experiential marketing.
             </p>
             <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-              <Link href="/contact">Start Your Project</Link>
+              <Link href={quoteHref('hero')}>Start Your Project</Link>
             </Button>
           </header>
         </article>
@@ -420,7 +422,7 @@ export default function About() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" variant="secondary">
-              <Link href="/contact">Get Started Today</Link>
+              <Link href={quoteHref('final-cta')}>Get Started Today</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-primary">
               <Link href="/services">View Our Services</Link>

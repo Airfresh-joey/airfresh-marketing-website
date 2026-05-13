@@ -341,3 +341,22 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.
+
+
+## 2026-05-12 22:06 MDT
+
+Goal: continue quote-funnel attribution on remaining high-intent trust/tool pages after the pricing sweep.
+
+Shipped candidate:
+- Updated `/about` so the hero “Start Your Project” and final “Get Started Today” CTAs route to `/get-quote?source=about&intent=...` instead of `/contact`.
+- Updated `/team` so the final “Start a Project” CTA routes to `/get-quote?source=team&intent=final-cta`.
+- Updated `/tools/roi-calculator` so results, SEO body, and final consultation CTAs route into `/get-quote?source=roi-calculator&intent=...` instead of the general contact page.
+- Left informational service/about links and normal navigation untouched.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/staffing-for`, `/staffing-for/[event]`, `/technology`, and high-impression blog/internal link modules.
