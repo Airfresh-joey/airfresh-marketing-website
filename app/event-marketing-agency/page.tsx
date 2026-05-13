@@ -192,16 +192,16 @@ export default function EventMarketingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
             <Link
-              href="/get-quote"
+              href="/get-quote?source=event-marketing-agency&intent=hero"
               className="bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold py-4 px-8 rounded-lg text-lg transition-colors"
             >
               Get a Free Quote
             </Link>
             <Link
-              href="/contact"
+              href="tel:+13037206060"
               className="border-2 border-[#00C853] text-[#00C853] hover:bg-[#00C853] hover:text-[#001F3F] font-bold py-4 px-8 rounded-lg text-lg transition-colors"
             >
-              Contact Our Team
+              Call Our Team
             </Link>
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
@@ -997,10 +997,10 @@ export default function EventMarketingAgencyPage() {
           <p className="text-center text-gray-500 mt-8">
             Don&apos;t see your city?{" "}
             <Link
-              href="/contact"
+              href="/get-quote?source=event-marketing-agency&intent=unlisted-city"
               className="text-[#00C853] hover:underline font-semibold"
             >
-              Contact us
+              Get a custom quote
             </Link>{" "}
             &mdash; we cover 50+ markets across the United States and can
             deploy event marketing teams to virtually any location.
@@ -1315,10 +1315,10 @@ export default function EventMarketingAgencyPage() {
                 customer loyalty through face-to-face engagement can achieve
                 exceptional results with a strategic event marketing program.{" "}
                 <Link
-                  href="/contact"
+                  href="/get-quote?source=event-marketing-agency&intent=industry-fit"
                   className="text-[#00C853] hover:underline"
                 >
-                  Contact our team
+                  Get a custom event marketing plan
                 </Link>{" "}
                 to discuss how event marketing can drive results in your
                 specific industry.
@@ -1370,16 +1370,16 @@ export default function EventMarketingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-10">
             <Link
-              href="/get-quote"
+              href="/get-quote?source=event-marketing-agency&intent=final-cta"
               className="bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold py-4 px-10 rounded-lg text-lg transition-colors"
             >
               Get a Free Quote
             </Link>
             <Link
-              href="/contact"
+              href="tel:+13037206060"
               className="border-2 border-white text-white hover:bg-white hover:text-[#001F3F] font-bold py-4 px-10 rounded-lg text-lg transition-colors"
             >
-              Schedule a Call
+              Call (303) 720-6060
             </Link>
           </div>
           <div className="text-gray-300 space-y-2">
@@ -1390,7 +1390,7 @@ export default function EventMarketingAgencyPage() {
             <p>
               Phone:{" "}
               <a
-                href="tel:3037206060"
+                href="tel:+13037206060"
                 className="text-[#00C853] hover:underline"
               >
                 (303) 720-6060

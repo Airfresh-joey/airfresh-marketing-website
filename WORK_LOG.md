@@ -402,3 +402,20 @@ Checks:
 Next actions:
 - Continue CTA attribution on `/technology`, `/event-marketing-agency`, `/promotional-staffing-agency`, and high-impression blog/internal link modules.
 
+## 2026-05-13 01:58 MDT
+
+Goal: continue quote-funnel attribution on the next high-intent service page after the guerrilla marketing sweep.
+
+Shipped candidate:
+- Updated `/event-marketing-agency` so hero, unlisted-city, industry-fit, and final quote CTAs route to `/get-quote?source=event-marketing-agency&intent=...` instead of unattributed quote/contact paths.
+- Changed above-fold and final phone/schedule-call actions to direct `tel:+13037206060` links so call-intent visitors are not detoured through `/contact`.
+- Preserved informational internal links and normal footer/navigation behavior.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/promotional-staffing-agency`, `/technology`, and high-impression blog/internal link modules.
+
