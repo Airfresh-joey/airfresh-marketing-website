@@ -648,7 +648,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `efb5d17` (`fix: attribute luxury marketing ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-9chii9jlr-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/services/luxury-brand-marketing` exposes both attributed consultation quote links with `source=luxury-brand-marketing` and distinct `intent` values, while the portfolio link remains informational.
+- Verified `/get-quote?source=luxury-brand-marketing&intent=hero-private-consultation` loads the quote funnel and preserves `lead_source=luxury-brand-marketing` plus `lead_intent=hero-private-consultation` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/services/luxury-brand-marketing` resolves to the `www` custom domain.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
