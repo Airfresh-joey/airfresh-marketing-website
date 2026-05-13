@@ -635,3 +635,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/services/luxury-brand-marketing`, `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
+
+## 2026-05-13 15:58 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/services/luxury-brand-marketing`, the next service page called out by the prior run.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper with `source=luxury-brand-marketing` and unique intent values.
+- Routed the hero consultation CTA and final private consultation CTA directly to `/get-quote` with source/intent attribution instead of `/contact`.
+- Converted the affected luxury-page buttons to the Radix-safe `Button asChild` anchor pattern while preserving the portfolio link as informational.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.

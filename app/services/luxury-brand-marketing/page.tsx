@@ -21,6 +21,8 @@ import {
 } from "lucide-react";
 
 export default function LuxuryBrandMarketingPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=luxury-brand-marketing&intent=${intent}`;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -104,12 +106,12 @@ export default function LuxuryBrandMarketingPage() {
               prestige and sophistication.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-amber-500 text-black hover:bg-amber-400">
-                <Link href="/contact" className="flex items-center gap-2">
+              <Button size="lg" className="bg-amber-500 text-black hover:bg-amber-400" asChild>
+                <Link href={quoteHref("hero-private-consultation")} className="flex items-center gap-2">
                   Schedule a Consultation <ArrowRight className="w-4 h-4" />
                 </Link>
               </Button>
-              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+              <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
                 <Link href="/portfolio">View Our Work</Link>
               </Button>
             </div>
@@ -261,8 +263,8 @@ export default function LuxuryBrandMarketingPage() {
           <p className="text-xl text-gray-300 mb-8">
             Let's discuss how we can create exclusive moments for your luxury brand
           </p>
-          <Button size="lg" className="bg-amber-500 text-black hover:bg-amber-400">
-            <Link href="/contact" className="flex items-center gap-2">
+          <Button size="lg" className="bg-amber-500 text-black hover:bg-amber-400" asChild>
+            <Link href={quoteHref("final-private-consultation")} className="flex items-center gap-2">
               Request a Private Consultation <ArrowRight className="w-4 h-4" />
             </Link>
           </Button>
