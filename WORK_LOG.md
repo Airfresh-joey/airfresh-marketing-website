@@ -423,3 +423,21 @@ Checks:
 Next actions:
 - Continue CTA attribution on `/promotional-staffing-agency`, `/technology`, and high-impression blog/internal link modules.
 
+
+
+## 2026-05-13 03:17 MDT
+
+Goal: continue quote-funnel attribution on the next high-intent service page after the event marketing sweep.
+
+Shipped candidate:
+- Updated `/promotional-staffing-agency` so seven quote-intent CTAs route to `/get-quote?source=promotional-staffing-agency&intent=...` instead of unattributed quote/contact paths.
+- Added attribution for hero, custom staffing, pricing custom quote, unlisted city, FAQ pricing, FAQ specialized role, and final CTA clicks.
+- Changed visible phone CTA buttons from `/contact` to direct `tel:+13037206060` links so call-intent visitors are not detoured through the contact page.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.

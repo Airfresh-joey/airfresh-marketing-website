@@ -218,13 +218,13 @@ export default function PromotionalStaffingAgencyPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/get-quote"
+                  href="/get-quote?source=promotional-staffing-agency&intent=hero"
                   className="inline-block bg-[#00C853] hover:bg-[#00E676] text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors duration-200"
                 >
                   Get a Free Quote
                 </Link>
                 <Link
-                  href="/contact"
+                  href="tel:+13037206060"
                   className="inline-block border-2 border-white hover:bg-white hover:text-[#001F3F] text-white font-semibold px-8 py-4 rounded-lg text-center transition-colors duration-200"
                 >
                   Call (303) 720-6060
@@ -644,7 +644,7 @@ export default function PromotionalStaffingAgencyPage() {
               </div>
               <div className="text-center md:text-right">
                 <Link
-                  href="/get-quote"
+                  href="/get-quote?source=promotional-staffing-agency&intent=custom-staffing"
                   className="inline-block bg-[#00C853] hover:bg-[#00E676] text-white font-semibold px-8 py-4 rounded-lg transition-colors duration-200"
                 >
                   Request Custom Staff
@@ -1088,7 +1088,7 @@ export default function PromotionalStaffingAgencyPage() {
                 View Full Pricing Details
               </Link>
               <Link
-                href="/get-quote"
+                href="/get-quote?source=promotional-staffing-agency&intent=pricing-custom-quote"
                 className="inline-block bg-[#00C853] hover:bg-[#00E676] text-white font-semibold px-8 py-3 rounded-lg transition-colors duration-200"
               >
                 Get a Custom Quote
@@ -1125,7 +1125,7 @@ export default function PromotionalStaffingAgencyPage() {
           <p className="text-center text-gray-500 mt-8">
             Do not see your city? We likely cover it.{" "}
             <Link
-              href="/contact"
+              href="/get-quote?source=promotional-staffing-agency&intent=unlisted-city"
               className="text-[#00C853] font-medium hover:underline"
             >
               Contact us
@@ -1516,7 +1516,7 @@ export default function PromotionalStaffingAgencyPage() {
                 </Link>{" "}
                 for detailed rate information or{" "}
                 <Link
-                  href="/get-quote"
+                  href="/get-quote?source=promotional-staffing-agency&intent=faq-pricing"
                   className="text-[#00C853] hover:underline"
                 >
                   request a custom quote
@@ -1554,7 +1554,7 @@ export default function PromotionalStaffingAgencyPage() {
                 specifically for your brand and event objectives. If you need a
                 specialized role not listed here,{" "}
                 <Link
-                  href="/contact"
+                  href="/get-quote?source=promotional-staffing-agency&intent=faq-specialized-role"
                   className="text-[#00C853] hover:underline"
                 >
                   contact us
@@ -1678,13 +1678,13 @@ export default function PromotionalStaffingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href="/get-quote?source=promotional-staffing-agency&intent=final-cta"
               className="inline-block bg-[#00C853] hover:bg-[#00E676] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors duration-200"
             >
               Get a Free Quote
             </Link>
             <Link
-              href="/contact"
+              href="tel:+13037206060"
               className="inline-block border-2 border-white hover:bg-white hover:text-[#001F3F] text-white font-semibold px-10 py-4 rounded-lg text-lg transition-colors duration-200"
             >
               Call (303) 720-6060
