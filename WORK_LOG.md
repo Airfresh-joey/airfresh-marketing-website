@@ -414,8 +414,12 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `53792ff` (`fix: attribute event marketing ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-ozuqyv1zt-joey-5223s-projects.vercel.app`, custom domain verified at `https://www.airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/event-marketing-agency`: hero, unlisted-city, industry-fit, and final quote CTAs route to attributed `/get-quote?source=event-marketing-agency&intent=...` URLs; call CTAs route to `tel:+13037206060`.
+- Verified apex `https://airfreshmarketing.com/event-marketing-agency` resolves to the `www` custom domain and contains the attributed CTA URLs plus direct phone links.
+- Verified `/get-quote?source=event-marketing-agency&intent=hero` loads the quote funnel and preserves `lead_source=event-marketing-agency` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/promotional-staffing-agency`, `/technology`, and high-impression blog/internal link modules.
 
