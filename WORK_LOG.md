@@ -333,7 +333,11 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
-- Pending: commit, push, deploy/verify production.
+- Committed and pushed code/work-log commit `09548fb` (`fix: route pricing quote ctas to funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-e688sxuuw-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/pricing`: hero, freelance comparison, and final quote CTAs route to `/get-quote?source=pricing&intent=...`.
+- Verified apex `https://airfreshmarketing.com/pricing` resolves to the `www` custom domain and contains the attributed CTA URLs.
+- Verified `/get-quote?source=pricing&intent=hero` loads the quote funnel and preserves `lead_source=pricing` plus `lead_intent=hero` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
 - Continue CTA attribution on `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.
