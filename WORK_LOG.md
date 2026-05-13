@@ -302,3 +302,20 @@ Checks:
 Next actions:
 - Commit, push, deploy/verify production.
 - Continue CTA attribution on `/pricing`, `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.
+
+## 2026-05-12 19:37 MDT
+
+Goal: continue static high-intent service page CTA attribution after the industry/event sweep.
+
+Shipped candidate:
+- Updated `/corporate-event-staffing` so four quote-intent CTAs route to `/get-quote?source=corporate-event-staffing&intent=...` instead of unattributed quote/contact paths.
+- Added attribution for hero, city-coverage, trust-section, and final CTA paths.
+- Changed visible “Call (303) 720-6060” actions from `/contact` to direct `tel:+13037206060` links so phone-intent users are not detoured through the contact page.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, deploy/verify production.
+- Continue CTA attribution on `/pricing`, `/team`, `/about`, ROI/checklist tools, and high-impression blog posts that still use quote-intent `/contact` links.

@@ -206,13 +206,13 @@ export default function CorporateEventStaffingPage() {
               </p>
               <div className="flex flex-col sm:flex-row gap-4">
                 <Link
-                  href="/get-quote"
+                  href="/get-quote?source=corporate-event-staffing&intent=hero"
                   className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-white font-semibold rounded-lg transition-colors text-lg"
                 >
                   Get a Free Quote
                 </Link>
                 <Link
-                  href="/contact"
+                  href="tel:+13037206060"
                   className="inline-flex items-center justify-center px-8 py-4 border-2 border-white text-white hover:bg-white hover:text-[#001F3F] font-semibold rounded-lg transition-colors text-lg"
                 >
                   Call (303) 720-6060
@@ -728,8 +728,8 @@ export default function CorporateEventStaffingPage() {
 
           <p className="text-gray-500 mt-8 text-center">
             Do not see your city? We cover 50+ markets nationwide.{" "}
-            <Link href="/contact" className="text-[#00C853] hover:underline">
-              Contact us
+            <Link href="/get-quote?source=corporate-event-staffing&intent=city-coverage" className="text-[#00C853] hover:underline">
+              Tell us your city
             </Link>{" "}
             to discuss your location.
           </p>
@@ -795,7 +795,7 @@ export default function CorporateEventStaffingPage() {
               Ready to experience the difference? Join 300+ brands that trust Air Fresh Marketing for corporate event staffing.
             </p>
             <Link
-              href="/get-quote"
+              href="/get-quote?source=corporate-event-staffing&intent=trust-section-cta"
               className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-white font-semibold rounded-lg transition-colors text-lg"
             >
               Request a Corporate Staffing Quote
@@ -948,13 +948,13 @@ export default function CorporateEventStaffingPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href="/get-quote?source=corporate-event-staffing&intent=final-cta"
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-white font-semibold rounded-lg transition-colors text-lg"
             >
               Get a Free Corporate Staffing Quote
             </Link>
             <Link
-              href="/contact"
+              href="tel:+13037206060"
               className="inline-flex items-center justify-center px-10 py-4 border-2 border-white text-white hover:bg-white hover:text-[#001F3F] font-semibold rounded-lg transition-colors text-lg"
             >
               Call (303) 720-6060
