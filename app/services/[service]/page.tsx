@@ -853,6 +853,7 @@ export default function ServicePage({ params }: ServicePageProps) {
   }
 
   const IconComponent = service.icon;
+  const quoteHref = (intent: string) => `/get-quote?source=${serviceName}&intent=${intent}`;
 
   // FAQ data for each service
   const serviceFAQs: Record<string, Array<{question: string, answer: string}>> = {
@@ -1412,7 +1413,7 @@ export default function ServicePage({ params }: ServicePageProps) {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-primary hover:bg-primary/90">
-                <Link href="/get-quote">Get a Staffing Quote</Link>
+                <Link href={quoteHref('hero-staffing-quote')}>Get a Staffing Quote</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white">
                 <Link href="/portfolio">View Our Work</Link>
@@ -1850,7 +1851,7 @@ export default function ServicePage({ params }: ServicePageProps) {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-              <Link href="/get-quote">Request a Proposal</Link>
+              <Link href={quoteHref('final-proposal')}>Request a Proposal</Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-white border-white hover:bg-white hover:text-gray-900">
               <Link href="/services">View All Services</Link>

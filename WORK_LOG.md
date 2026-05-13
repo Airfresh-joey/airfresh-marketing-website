@@ -656,3 +656,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
+
+## 2026-05-13 17:11 MDT
+
+Goal: continue high-intent quote-funnel attribution on dynamic `/services/[service]` landing pages, which still had bare quote links on core service pages.
+
+Shipped candidate:
+- Added a local `quoteHref()` helper to `app/services/[service]/page.tsx` using the requested service slug as `source`.
+- Updated the hero “Get a Staffing Quote” and final “Request a Proposal” CTAs to route to `/get-quote` with distinct `intent` values instead of bare quote links.
+- Preserved informational links such as portfolio and all-services navigation; no fake lead submissions.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy/verify production.
+
+Next actions:
+- Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
