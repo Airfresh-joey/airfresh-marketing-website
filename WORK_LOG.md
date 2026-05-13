@@ -461,7 +461,11 @@ Checks:
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Local browser verification confirmed the homepage H1/CTA updates and the proposal-builder link target.
 - Local quote-funnel verification confirmed planner params prefill step 2 fields (`Sampling Campaign`, `Denver`, `2026-07-04`) without submitting a lead.
+- Committed and pushed code/work-log commit `79f7f30` (`feat: route homepage planner into quote funnel`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-f3o9oxly4-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com`.
+- Verified live on `https://www.airfreshmarketing.com/`: H1 now leads with event staffing + brand ambassadors, hero CTA is `Get an Event Staffing Quote`, and the proposal-builder CTA routes to attributed `/get-quote?source=activation-planner&intent=proposal-builder`.
+- Verified `/get-quote?source=activation-planner&intent=proposal-builder&service=Product+Sampling&market=Denver&date=2026-07-04&team=12&budget=$10k+-+$25k&message=Planner+summary` preserves `lead_source=activation-planner` and `lead_intent=proposal-builder` in localStorage and prefills quote form event fields without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/` 308-redirects to `https://www.airfreshmarketing.com/`.
 
 Next actions:
-- Commit, push, deploy/verify production.
 - Continue CTA attribution on `/technology`, `/field-marketing-agency`, `/mobile-marketing-tours`, and high-impression blog/internal link modules.
