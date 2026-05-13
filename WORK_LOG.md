@@ -511,3 +511,20 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/field-marketing-agency`, service pages with remaining quote-intent `/contact` links, and high-impression blog/internal link modules.
+
+## 2026-05-13 08:33 MDT
+
+Goal: continue high-intent quote-funnel attribution on `/brand-activation-agency`.
+
+Shipped candidate:
+- Added a page-level `quoteHref()` helper for `/brand-activation-agency`.
+- Updated five activation/proposal CTAs from bare `/get-quote` links to `/get-quote?source=brand-activation-agency&intent=...`.
+- Preserved navigational service links and direct phone CTAs; no fake lead submissions.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Pending: commit, push, deploy, and live custom-domain verification.
+
+Next actions:
+- Continue CTA attribution on `/field-marketing-agency`, `/brand-ambassador-agency`, and remaining high-intent service pages with bare `/get-quote` links.

@@ -1,6 +1,9 @@
 import Link from "next/link";
 
 export default function BrandActivationAgencyPage() {
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=brand-activation-agency&intent=${intent}`;
+
   const serviceSchema = {
     "@context": "https://schema.org",
     "@type": "Service",
@@ -405,7 +408,7 @@ export default function BrandActivationAgencyPage() {
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Link
-                href="/get-quote"
+                href={quoteHref("hero-activation-proposal")}
                 className="inline-flex items-center justify-center px-8 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
               >
                 Get a Free Activation Proposal
@@ -590,7 +593,7 @@ export default function BrandActivationAgencyPage() {
               </Link>{" "}
               or{" "}
               <Link
-                href="/get-quote"
+                href={quoteHref("activation-format-strategy-proposal")}
                 className="text-[#00C853] hover:underline font-medium"
               >
                 request a strategy proposal
@@ -644,7 +647,7 @@ export default function BrandActivationAgencyPage() {
 
           <div className="mt-14 text-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("process-campaign-brief")}
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Start Your Campaign Brief
@@ -1146,13 +1149,13 @@ export default function BrandActivationAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Link
-              href="/get-quote"
+              href={quoteHref("final-activation-proposal")}
               className="inline-flex items-center justify-center px-10 py-4 bg-[#00C853] hover:bg-[#00E676] text-[#001F3F] font-bold text-lg rounded-lg transition-colors"
             >
               Get a Free Activation Proposal
             </Link>
             <Link
-              href="/get-quote"
+              href={quoteHref("final-strategy-proposal")}
               className="inline-flex items-center justify-center px-8 py-4 border-2 border-white/30 text-white hover:bg-white/10 font-bold text-lg rounded-lg transition-colors"
             >
               Request a Strategy Proposal
