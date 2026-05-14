@@ -26,6 +26,8 @@ const industryIcons: Record<string, typeof Wine> = {
 };
 
 export default function IndustriesPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=industries&intent=${intent}`;
+
   const structuredData = {
     "@context": "https://schema.org",
     "@graph": [
@@ -139,10 +141,10 @@ export default function IndustriesPage() {
             Don&apos;t See Your Industry?
           </h2>
           <p className="text-xl mb-8 opacity-90">
-            We have experience across virtually every industry. Contact us to discuss your specific needs.
+            We have experience across virtually every industry. Request a custom quote to discuss your specific staffing, sampling, or activation needs.
           </p>
           <Button asChild size="lg" variant="secondary">
-            <Link href="/contact">
+            <Link href={quoteHref('custom-industry-quote')}>
               Get a Custom Quote
               <ArrowRight className="ml-2 h-5 w-5" />
             </Link>

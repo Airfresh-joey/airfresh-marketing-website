@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 09:52 MDT
+
+Goal: continue remaining high-intent guide/location CTAs that still routed quote-intent visitors to the general contact page.
+
+Shipped candidate:
+- Updated `/industries` final “Get a Custom Quote” CTA to `/get-quote?source=industries&intent=custom-industry-quote` and tightened the supporting copy around staffing, sampling, and activation needs.
+- Updated `/locations` headquarters and final project CTAs to attributed quote-funnel links with `source=locations` and distinct intent values, using the preferred `Button asChild` pattern.
+- Updated `/guides/event-staffing-101` final “Get a Free Quote” CTA to `/get-quote?source=guide-event-staffing-101&intent=final-free-quote` while preserving the phone CTA.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Verify production custom domain after push/deploy.
+- Continue high-intent CTA attribution on the remaining guide pages and evaluate `/locations` for an above-fold quote CTA or stronger city-selector conversion path.
+
 ## 2026-05-14 08:36 MDT
 
 Goal: continue the high-intent CTA routing sweep from the prior next actions by capturing resource and portfolio readers who were still sent to the general contact page from buyer-intent CTAs.

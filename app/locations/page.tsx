@@ -51,6 +51,7 @@ const regions = [
 
 export default function Locations() {
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null);
+  const quoteHref = (intent: string) => `/get-quote?source=locations&intent=${intent}`;
 
   const filteredCities = selectedRegion
     ? cities.filter(city => city.region === selectedRegion)
@@ -305,12 +306,12 @@ export default function Locations() {
                   </div>
                 </div>
               </div>
-              <Link href="/contact">
-                <Button size="lg" className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
+              <Button asChild size="lg" className="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-700 hover:to-blue-700">
+                <Link href={quoteHref('headquarters-get-in-touch')}>
                   Get in Touch
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
             </div>
             <div className="relative">
               <div className="absolute inset-0 bg-gradient-to-r from-cyan-500 to-blue-600 rounded-2xl blur-2xl opacity-20"></div>
@@ -427,12 +428,12 @@ export default function Locations() {
               and national reach to make your experiential marketing campaign a success.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary">
+              <Button asChild size="lg" variant="secondary">
+                <Link href={quoteHref('final-start-project')}>
                   Start Your Project
                   <ArrowRight className="w-4 h-4 ml-2" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
               <Link href="/portfolio">
                 <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-cyan-600">
                   View Our Work

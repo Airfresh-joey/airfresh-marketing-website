@@ -1139,7 +1139,7 @@ export default function EventStaffing101Page() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link
-              href="/contact"
+              href="/get-quote?source=guide-event-staffing-101&intent=final-free-quote"
               className="inline-flex items-center bg-white text-cyan-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-cyan-50 transition-colors shadow-lg"
             >
               Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" />
