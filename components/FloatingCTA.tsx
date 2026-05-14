@@ -79,7 +79,7 @@ export default function FloatingCTA() {
               size="lg"
             >
               <Link
-                href="/get-quote"
+                href="/get-quote?source=homepage-floating-cta&intent=request-quote"
                 onClick={() => trackCTAClick('Request A Quote', 'floating_cta')}
               >
                 <MessageSquare className="w-4 h-4 mr-2" />

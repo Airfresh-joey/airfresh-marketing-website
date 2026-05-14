@@ -1,5 +1,25 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 12:22 MDT
+
+Goal: continue `/get-quote` and high-intent CTA routing cleanup by attributing global quote entry points that previously landed on the quote form without source/intent context.
+
+Shipped candidate:
+- Updated the desktop navigation “Request Proposal” CTA to `/get-quote?source=site-navigation&intent=desktop-request-proposal`.
+- Updated the mobile navigation “Request Proposal” CTA to `/get-quote?source=site-navigation&intent=mobile-request-proposal`.
+- Updated the homepage floating quote CTA to `/get-quote?source=homepage-floating-cta&intent=request-quote` while preserving the direct phone action.
+
+Checks:
+- Repo/live pre-audit confirmed the global nav and homepage floating quote CTAs still used bare `/get-quote` before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Deployment and live verification pending in this run.
+
+Next actions:
+- Continue high-intent `/contact` cleanup on `/portfolio/premier-protein`, `/hire-brand-ambassadors` inline consultation copy, and any other non-footer CTAs that represent buyer intent rather than general contact or partnerships.
+
 ## 2026-05-14 11:06 MDT
 
 Goal: continue high-intent guide CTA attribution by moving remaining quote-intent guide CTAs from general contact into the quote funnel.

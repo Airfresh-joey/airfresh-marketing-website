@@ -83,7 +83,7 @@ export default function MobileNav({ navLinks, serviceLinks }: MobileNavProps) {
                 className="w-full bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg"
               >
                 <Link
-                  href="/get-quote"
+                  href="/get-quote?source=site-navigation&intent=mobile-request-proposal"
                   onClick={() => {
                     trackCTAClick("Request Proposal", "mobile_navigation");
                     setMobileMenuOpen(false);
