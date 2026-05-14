@@ -14,6 +14,11 @@ Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code commit `fdc4465` (`fix: attribute guide quote ctas`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-lu9850csk-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/guides/best-event-staffing-agency` and `/guides/brand-ambassador-hiring-guide` expose the new attributed quote-funnel links on the custom domain.
+- Verified both guide quote URLs preserve `lead_source`/`lead_intent` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/guides/best-event-staffing-agency` 308-redirects to the `www` canonical URL.
 
 Next actions:
 - Continue quote-intent `/contact` cleanup on high-intent non-footer CTAs such as `/portfolio/premier-protein`, `/hire-brand-ambassadors` inline consultation copy, and any partner pages that should represent buyer intent rather than partnership intake.
