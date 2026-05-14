@@ -18,6 +18,8 @@ import {
 } from "lucide-react";
 
 export default function PremierProteinCaseStudy() {
+  const quoteHref = "/get-quote?source=portfolio-premier-protein&intent=final-sampling-campaign";
+
   const eventBreakdown = [
     { date: "April 26", location: "Belmont Pier, Long Beach", cases: 125 },
     { date: "April 27", location: "Our LA Voices Concert", cases: 125 },
@@ -257,11 +259,11 @@ export default function PremierProteinCaseStudy() {
               Let&apos;s create a sampling campaign that puts your product directly in consumers&apos; hands.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary" className="w-full sm:w-auto" data-testid="button-contact">
+              <Button asChild size="lg" variant="secondary" className="w-full sm:w-auto" data-testid="button-contact">
+                <Link href={quoteHref}>
                   Get Started
-                </Button>
-              </Link>
+                </Link>
+              </Button>
               <Link href="/portfolio">
                 <Button size="lg" variant="outline" className="w-full sm:w-auto bg-transparent border-white text-white hover:bg-white hover:text-cyan-600" data-testid="button-portfolio">
                   View More Case Studies

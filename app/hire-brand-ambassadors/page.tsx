@@ -30,6 +30,8 @@ import {
 } from 'lucide-react'
 
 export default function HireBrandAmbassadorsPage() {
+  const quoteHref = (intent: string) => `/get-quote?source=hire-brand-ambassadors&intent=${intent}`;
+
   const faqStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'FAQPage',
@@ -525,10 +527,10 @@ export default function HireBrandAmbassadorsPage() {
           <div className="mt-12 text-center">
             <p className="text-gray-600">
               Not sure which type of brand ambassador is right for your campaign?{' '}
-              <Link href="/contact" className="text-cyan-600 hover:underline font-medium">
-                Contact our team
+              <Link href={quoteHref('ambassador-type-recommendation')} className="text-cyan-600 hover:underline font-medium">
+                get a personalized staffing recommendation
               </Link>{' '}
-              for a personalized recommendation. You can also read our{' '}
+              for your campaign. You can also read our{' '}
               <Link href="/blog/brand-ambassador-job-description" className="text-cyan-600 hover:underline font-medium">
                 brand ambassador job description guide
               </Link>{' '}

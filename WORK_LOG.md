@@ -1,5 +1,25 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 13:36 MDT
+
+Goal: continue high-intent `/contact` cleanup from the prior next action by moving remaining buyer-intent case-study and ambassador recommendation CTAs into the attributed quote funnel.
+
+Shipped candidate:
+- Updated `/portfolio/premier-protein` final “Get Started” CTA from `/contact` to `/get-quote?source=portfolio-premier-protein&intent=final-sampling-campaign`.
+- Updated `/hire-brand-ambassadors` inline “Contact our team” recommendation link into clearer quote-funnel copy and `/get-quote?source=hire-brand-ambassadors&intent=ambassador-type-recommendation`.
+- Preserved footer/navigation Contact links and partner/candidate-intent contact paths.
+
+Checks:
+- Repo/live pre-audit confirmed the target pages still exposed `/contact` links and did not expose the new attributed quote URLs before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Commit, push, deploy, and verify production custom domain for this pass.
+- Continue remaining high-intent `/contact` cleanup on non-footer static CTAs; leave partner applications, candidate apply CTAs, and true contact/navigation links on `/contact`.
+
 ## 2026-05-14 12:22 MDT
 
 Goal: continue `/get-quote` and high-intent CTA routing cleanup by attributing global quote entry points that previously landed on the quote form without source/intent context.
