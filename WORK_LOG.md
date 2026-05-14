@@ -13,10 +13,13 @@ Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Codex CLI was unavailable on this machine (`codex: command not found`), so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `09526f5` (`fix: route blog ctas to quote funnel`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-8850siz8p-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/blog/bilingual-event-staff`, `/blog/what-is-experiential-marketing`, and `/blog` expose the new attributed quote-funnel links on the custom domain.
+- Verified `https://airfreshmarketing.com/blog/bilingual-event-staff` 308-redirects to the `www` canonical URL, and `/get-quote?source=blog-bilingual-event-staff&intent=article-cta` preserves `lead_source`/`lead_intent` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, and verify live production blog CTA routing on `https://www.airfreshmarketing.com`.
-- Next pass: continue high-intent CTA attribution on `/resources`, `/portfolio`, and any remaining quote-intent non-blog pages still using `/contact`.
+- Continue high-intent CTA attribution on `/resources`, `/portfolio`, and any remaining quote-intent non-blog pages still using `/contact`.
 
 ## 2026-05-13 20:59 MDT
 
