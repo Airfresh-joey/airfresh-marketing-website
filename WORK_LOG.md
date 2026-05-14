@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 11:06 MDT
+
+Goal: continue high-intent guide CTA attribution by moving remaining quote-intent guide CTAs from general contact into the quote funnel.
+
+Shipped candidate:
+- Updated `/guides/best-event-staffing-agency` final “Get a Free Quote” CTA to `/get-quote?source=guide-best-event-staffing-agency&intent=final-free-quote`.
+- Updated `/guides/brand-ambassador-hiring-guide` final “Get a Free Quote” CTA to `/get-quote?source=guide-brand-ambassador-hiring&intent=final-free-quote`.
+- Normalized both visible phone CTAs to direct `tel:+13037206060` links.
+
+Checks:
+- Live pre-audit confirmed both guide final quote CTAs still routed to `/contact` before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Continue quote-intent `/contact` cleanup on high-intent non-footer CTAs such as `/portfolio/premier-protein`, `/hire-brand-ambassadors` inline consultation copy, and any partner pages that should represent buyer intent rather than partnership intake.
+
 ## 2026-05-14 09:52 MDT
 
 Goal: continue remaining high-intent guide/location CTAs that still routed quote-intent visitors to the general contact page.

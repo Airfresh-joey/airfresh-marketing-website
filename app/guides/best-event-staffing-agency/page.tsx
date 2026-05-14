@@ -51,6 +51,9 @@ export const metadata: Metadata = {
 };
 
 export default function BestEventStaffingAgencyPage() {
+  const quoteHref = (intent: string) =>
+    `/get-quote?source=guide-best-event-staffing-agency&intent=${intent}`;
+
   const articleStructuredData = {
     '@context': 'https://schema.org',
     '@type': 'Article',
@@ -1038,13 +1041,13 @@ export default function BestEventStaffingAgencyPage() {
           </p>
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-6">
             <Link
-              href="/contact"
+              href={quoteHref("final-free-quote")}
               className="inline-flex items-center bg-white text-orange-600 px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-50 transition-colors shadow-lg"
             >
               Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" />
             </Link>
             <a
-              href="tel:3037206060"
+              href="tel:+13037206060"
               className="inline-flex items-center bg-orange-700 text-white px-8 py-4 rounded-lg font-bold text-lg hover:bg-orange-800 transition-colors"
             >
               <Phone className="w-5 h-5 mr-2" /> (303) 720-6060
