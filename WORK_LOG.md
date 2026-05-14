@@ -13,9 +13,13 @@ Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `d339a09` (`fix: attribute industry location guide quote ctas`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-3k7it4t2d-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/industries`, `/locations`, and `/guides/event-staffing-101` expose the new attributed quote-funnel links on the custom domain.
+- Verified `/get-quote?source=locations&intent=final-start-project` preserves `lead_source`/`lead_intent` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/industries` 308-redirects to the `www` canonical URL.
 
 Next actions:
-- Verify production custom domain after push/deploy.
 - Continue high-intent CTA attribution on the remaining guide pages and evaluate `/locations` for an above-fold quote CTA or stronger city-selector conversion path.
 
 ## 2026-05-14 08:36 MDT
