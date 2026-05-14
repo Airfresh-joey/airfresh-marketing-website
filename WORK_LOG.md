@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 08:36 MDT
+
+Goal: continue the high-intent CTA routing sweep from the prior next actions by capturing resource and portfolio readers who were still sent to the general contact page from buyer-intent CTAs.
+
+Shipped candidate:
+- Updated the `/resources` final consultation CTA from `/contact` to `/get-quote?source=resources&intent=final-free-consultation`.
+- Updated the `/portfolio` final “Start Your Project” CTA from `/contact` to `/get-quote?source=portfolio&intent=final-start-project`.
+- Converted both CTA buttons to the repo’s preferred `Button asChild` pattern so the anchor is the actionable element.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Deploy and verify custom-domain DOM for `/resources`, `/portfolio`, and `/get-quote` attribution persistence.
+- Continue remaining high-intent guide/location CTAs that still route buyer intent to `/contact`.
+
 ## 2026-05-13 22:13 MDT
 
 Goal: continue the high-intent CTA routing sweep by capturing static blog readers who were still being sent to the general contact page from buyer-intent article CTAs.

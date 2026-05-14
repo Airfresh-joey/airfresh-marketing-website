@@ -59,6 +59,8 @@ const stats = [
   { number: '50', label: 'States Covered' }
 ];
 
+const quoteHref = (intent: string) => `/get-quote?source=resources&intent=${intent}`;
+
 export default function ResourcesPage() {
   const structuredData = {
     "@context": "https://schema.org",
@@ -240,12 +242,12 @@ export default function ResourcesPage() {
           <p className="text-xl text-orange-100 mb-8 max-w-2xl mx-auto">
             Let's turn these strategies into real results. Get a free consultation with our event marketing experts.
           </p>
-          <Link href="/contact">
-            <Button size="lg" variant="secondary" className="bg-white text-orange-600 hover:bg-orange-50">
+          <Button asChild size="lg" variant="secondary" className="bg-white text-orange-600 hover:bg-orange-50">
+            <Link href={quoteHref('final-free-consultation')}>
               Get Free Consultation
               <ArrowRight className="w-5 h-5 ml-2" />
-            </Button>
-          </Link>
+            </Link>
+          </Button>
         </div>
       </section>
     </>

@@ -36,6 +36,8 @@ const getCategories = (studies: any[]) => {
   return Array.from(categoriesSet);
 };
 
+const quoteHref = (intent: string) => `/get-quote?source=portfolio&intent=${intent}`;
+
 export default function Portfolio() {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [hoveredCard, setHoveredCard] = useState<string | null>(null);
@@ -425,12 +427,12 @@ export default function Portfolio() {
               Let's collaborate to bring your brand vision to life with experiential marketing that delivers real results.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Link href="/contact">
-                <Button size="lg" variant="secondary" className="group">
+              <Button asChild size="lg" variant="secondary" className="group">
+                <Link href={quoteHref('final-start-project')}>
                   Start Your Project
                   <ArrowUpRight className="w-4 h-4 ml-2 group-hover:translate-x-1 group-hover:-translate-y-1 transition-transform" />
-                </Button>
-              </Link>
+                </Link>
+              </Button>
               <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-primary">
                 <Eye className="w-4 h-4 mr-2" />
                 Download Portfolio PDF
