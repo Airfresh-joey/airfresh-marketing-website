@@ -117,7 +117,7 @@ export default function DifficultSituations() {
             <h2 className="text-2xl font-bold mb-4">Experienced Event Staff</h2>
             <p className="mb-6 text-red-200">Air Fresh trains staff to handle any situation professionally.</p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-managing-difficult-situations&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -115,7 +115,7 @@ export default function ConventionMarketing() {
             <h2 className="text-2xl font-bold mb-4">Convention Staff?</h2>
             <p className="mb-6 text-indigo-200">Air Fresh staffs major convention center events nationwide.</p>
             <Button asChild size="lg" className="bg-white text-indigo-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-convention-center-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

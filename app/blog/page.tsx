@@ -97,7 +97,7 @@ export default function Blog() {
             <span className="text-gray-300">|</span>
             <Link href="/pricing" className="text-cyan-600 hover:text-cyan-700 font-medium">Pricing</Link>
             <span className="text-gray-300">|</span>
-            <Link href="/contact" className="text-cyan-600 hover:text-cyan-700 font-medium">Get a Quote</Link>
+            <Link href="/get-quote?source=blog-index&intent=empty-state-quote" className="text-cyan-600 hover:text-cyan-700 font-medium">Get a Quote</Link>
           </div>
         </div>
       </section>

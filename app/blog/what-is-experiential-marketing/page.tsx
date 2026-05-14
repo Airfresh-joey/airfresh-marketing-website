@@ -158,7 +158,7 @@ export default function WhatIsExperientialMarketing() {
               </tbody>
             </table>
           </div>
-          <p className="text-gray-700">For a detailed quote on your specific campaign, <Link href="/contact" className="text-cyan-600 hover:underline">contact our team</Link>.</p>
+          <p className="text-gray-700">For a detailed quote on your specific campaign, <Link href="/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta" className="text-cyan-600 hover:underline">contact our team</Link>.</p>
         </section>
 
         <section id="measuring" className="mb-16">
@@ -176,7 +176,7 @@ export default function WhatIsExperientialMarketing() {
           <h2 className="text-2xl font-bold mb-4">Ready to Create Your Own Experience?</h2>
           <p className="mb-6 text-cyan-100">Air Fresh Marketing has delivered 1,000+ successful experiential campaigns for brands like Netflix, Microsoft, Red Bull, and Pepsi.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100"><Link href="/contact">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/portfolio">View Our Work</Link></Button>
           </div>
         </section>

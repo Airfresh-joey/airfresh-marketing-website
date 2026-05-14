@@ -112,7 +112,7 @@ export default function EventUniforms() {
             <h2 className="text-2xl font-bold mb-4">Uniform Guidance Included</h2>
             <p className="mb-6 text-gray-300">Air Fresh helps manage uniform requirements for events.</p>
             <Button asChild size="lg" className="bg-white text-gray-800 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-event-uniforms-dress-code&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

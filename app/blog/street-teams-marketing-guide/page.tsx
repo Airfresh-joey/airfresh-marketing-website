@@ -253,7 +253,7 @@ export default function StreetTeamsGuide() {
             <h2 className="text-2xl font-bold mb-4">Ready to Hit the Streets?</h2>
             <p className="mb-6 text-yellow-100">Air Fresh Marketing runs street team campaigns in 50+ markets nationwide. From product sampling to guerrilla activations, we handle strategy, staffing, and execution so you can focus on results.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Free Street Team Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-street-teams-marketing-guide&intent=article-cta">Get a Free Street Team Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

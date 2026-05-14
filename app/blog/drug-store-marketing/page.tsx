@@ -109,7 +109,7 @@ export default function PharmacyMarketing() {
             <h2 className="text-2xl font-bold mb-4">Drug Store Demo Staff?</h2>
             <p className="mb-6 text-blue-200">Air Fresh provides health-focused demonstrators for pharmacy retail.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-drug-store-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -111,7 +111,7 @@ export default function SpecialtyRetailMarketing() {
             <h2 className="text-2xl font-bold mb-4">Specialty Retail Staff?</h2>
             <p className="mb-6 text-violet-200">Air Fresh matches expert ambassadors to specialty retail.</p>
             <Button asChild size="lg" className="bg-white text-violet-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-specialty-retail-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

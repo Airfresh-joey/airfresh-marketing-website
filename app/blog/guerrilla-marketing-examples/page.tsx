@@ -288,7 +288,7 @@ export default function GuerrillaMarketingExamples() {
           <h2 className="text-2xl font-bold mb-4">Ready to Go Guerrilla?</h2>
           <p className="mb-6 text-green-100">Air Fresh Marketing has executed guerrilla and <Link href="/services/street-teams" className="underline">street team campaigns</Link> for brands nationwide. From flash mobs to pop-up experiences, we help you create buzz without breaking the bank.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100"><Link href="/contact">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-guerrilla-marketing-examples&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services/experiential-marketing">Our Services</Link></Button>
           </div>
         </section>

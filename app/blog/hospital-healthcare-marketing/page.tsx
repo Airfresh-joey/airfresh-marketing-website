@@ -118,7 +118,7 @@ export default function HospitalMarketing() {
             <h2 className="text-2xl font-bold mb-4">Healthcare Marketing Staff?</h2>
             <p className="mb-6 text-blue-200">Air Fresh provides compliant staff for healthcare activations.</p>
             <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-              <Link href="/contact">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-hospital-healthcare-marketing&intent=article-cta">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

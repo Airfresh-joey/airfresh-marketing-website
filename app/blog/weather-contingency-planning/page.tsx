@@ -113,7 +113,7 @@ export default function WeatherPlanning() {
             <h2 className="text-2xl font-bold mb-4">Weather-Ready Teams</h2>
             <p className="mb-6 text-sky-200">Air Fresh prepares staff for all weather conditions.</p>
             <Button asChild size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-weather-contingency-planning&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

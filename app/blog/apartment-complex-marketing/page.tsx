@@ -119,7 +119,7 @@ export default function ApartmentMarketing() {
             <h2 className="text-2xl font-bold mb-4">Apartment Programs?</h2>
             <p className="mb-6 text-teal-200">Air Fresh executes apartment marketing programs.</p>
             <Button asChild size="lg" className="bg-white text-cyan-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-apartment-complex-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

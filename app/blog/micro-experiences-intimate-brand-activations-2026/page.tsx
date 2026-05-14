@@ -334,7 +334,7 @@ export default function MicroExperiencesBlog() {
             <h2 className="text-2xl font-bold mb-4">Ready to Go Small and Win Big?</h2>
             <p className="mb-6 text-orange-100">Air Fresh Marketing staffs intimate brand activations and micro-experiences across the country. From single-market tests to national micro-experience programs, we provide the trained, personable brand ambassadors who make small events feel extraordinary.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Plan Your Micro-Experience <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-micro-experiences-intimate-brand-activations-2026&intent=article-cta">Plan Your Micro-Experience <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

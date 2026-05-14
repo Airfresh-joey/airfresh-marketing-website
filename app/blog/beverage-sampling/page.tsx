@@ -128,7 +128,7 @@ export default function BeverageSampling() {
             <h2 className="text-2xl font-bold mb-4">Need Beverage Sampling Staff?</h2>
             <p className="mb-6 text-sky-100">Air Fresh runs beverage sampling programs nationwide. Let's talk about your launch or ongoing program.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-beverage-sampling&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

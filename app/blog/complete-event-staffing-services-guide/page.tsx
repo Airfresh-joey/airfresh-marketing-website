@@ -606,7 +606,7 @@ export default function CompleteEventStaffingServicesGuide() {
           <p className="mb-6 text-blue-100">Air Fresh Marketing provides full-service event staffing across 100+ markets nationwide. From 2-person sampling activations to 500+ person national campaigns, we handle talent sourcing, training, logistics, on-site management, and comprehensive reporting — so every event delivers measurable results.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-complete-event-staffing-services-guide&intent=article-cta">Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
               <Link href="/case-studies">View Our Case Studies</Link>

@@ -121,7 +121,7 @@ export default function ConferenceStaffing() {
             <h2 className="text-2xl font-bold mb-4">Need Conference Staff?</h2>
             <p className="mb-6 text-slate-300">Air Fresh provides trained conference staff for trade shows and industry events nationwide.</p>
             <Button asChild size="lg" className="bg-white text-slate-800 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-conference-staffing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

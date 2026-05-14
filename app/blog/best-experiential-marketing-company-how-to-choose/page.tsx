@@ -211,7 +211,7 @@ export default function BestExperientialMarketingCompany() {
             <p className="mb-6 text-purple-100">Air Fresh Marketing combines national reach with local execution across 50+ markets. Our brand ambassadors are vetted, trained, and performance-tracked — because your brand deserves more than warm bodies in branded shirts. Let us show you what a results-driven experiential marketing company looks like.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-                <Link href="/contact">Start the Conversation <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-best-experiential-marketing-company-how-to-choose&intent=article-cta">Start the Conversation <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/portfolio">See Our Work</Link>

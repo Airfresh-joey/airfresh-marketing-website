@@ -114,7 +114,7 @@ export default function TransitMarketing() {
             <h2 className="text-2xl font-bold mb-4">Transit Marketing Staff?</h2>
             <p className="mb-6 text-gray-300">Air Fresh provides trained teams for transit activations.</p>
             <Button asChild size="lg" className="bg-white text-gray-800 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-transit-commuter-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

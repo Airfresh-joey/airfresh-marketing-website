@@ -110,7 +110,7 @@ export default function MallMarketing() {
             <h2 className="text-2xl font-bold mb-4">Need Mall Marketing Staff?</h2>
             <p className="mb-6 text-pink-100">Air Fresh provides trained staff for mall activations, kiosks, and retail events.</p>
             <Button asChild size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-mall-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

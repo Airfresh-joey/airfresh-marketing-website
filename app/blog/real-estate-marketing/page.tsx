@@ -115,7 +115,7 @@ export default function RealEstateMarketing() {
             <h2 className="text-2xl font-bold mb-4">Real Estate Event Staff?</h2>
             <p className="mb-6 text-slate-300">Air Fresh provides polished professionals for property events.</p>
             <Button asChild size="lg" className="bg-white text-slate-800 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-real-estate-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -114,7 +114,7 @@ export default function BrandAmbassadorPay() {
             <h2 className="text-2xl font-bold mb-4">Get a Quote</h2>
             <p className="mb-6 text-green-200">Air Fresh provides transparent, competitive pricing.</p>
             <Button asChild size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
-              <Link href="/contact">Request Rates <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-brand-ambassador-pay-rates&intent=article-cta">Request Rates <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -201,7 +201,7 @@ export default function PromotionalStaffEventsGuide() {
             <p className="mb-6 text-blue-100">Air Fresh Marketing provides vetted, trained promotional staff for brand activations, trade shows, sampling campaigns, and experiential marketing events nationwide. Tell us what you need and we will build the right team.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/contact">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-promotional-staff-events-hiring-training-guide&intent=article-cta">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/services/brand-ambassadors">Our Staffing Services</Link>

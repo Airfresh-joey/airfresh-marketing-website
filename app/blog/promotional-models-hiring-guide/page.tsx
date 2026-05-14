@@ -278,7 +278,7 @@ export default function PromotionalModelsGuide() {
             <h2 className="text-2xl font-bold mb-4">Need Promotional Models?</h2>
             <p className="mb-6 text-pink-100">We provide trained, vetted promotional talent for trade shows, events, sampling campaigns, and brand activations nationwide. Tell us about your event and we'll put together a custom staffing proposal.</p>
             <Button asChild size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-promotional-models-hiring-guide&intent=article-cta">Get a Free Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

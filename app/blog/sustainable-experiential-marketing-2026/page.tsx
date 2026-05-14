@@ -408,7 +408,7 @@ export default function SustainableExperientialMarketing() {
             <h2 className="text-2xl font-bold mb-4">Ready to Make Your Next Activation Sustainable?</h2>
             <p className="mb-6 text-green-100">Air Fresh Marketing helps brands plan and execute eco-friendly experiential campaigns with local staffing, sustainable materials, and measurable environmental impact. Let's build something your audience and the planet will thank you for.</p>
             <Button asChild size="lg" className="bg-white text-green-700 hover:bg-gray-100">
-              <Link href="/contact">Let's Plan Your Green Activation <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-sustainable-experiential-marketing-2026&intent=article-cta">Let's Plan Your Green Activation <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

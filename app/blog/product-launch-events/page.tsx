@@ -273,7 +273,7 @@ export default function ProductLaunchEventsGuide() {
             <h2 className="text-2xl font-bold mb-4">Planning a Product Launch?</h2>
             <p className="mb-6 text-cyan-100">Air Fresh Marketing provides professional event staff for product launches, from intimate reveals to major announcements. We help make sure your launch creates the momentum your product deserves.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Get Launch Event Staffing <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-product-launch-events&intent=article-cta">Get Launch Event Staffing <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

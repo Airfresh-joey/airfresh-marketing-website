@@ -115,7 +115,7 @@ export default function WorkingWithAFM() {
             <h2 className="text-2xl font-bold mb-4">Let's Work Together</h2>
             <p className="mb-6 text-purple-200">Air Fresh is ready to support your next event.</p>
             <Button asChild size="lg" className="bg-white text-violet-700 hover:bg-gray-100">
-              <Link href="/contact">Contact Us <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-working-with-air-fresh&intent=article-cta">Contact Us <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

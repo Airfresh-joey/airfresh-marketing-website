@@ -116,7 +116,7 @@ export default function SportsMarketing() {
             <h2 className="text-2xl font-bold mb-4">Need Sports Event Staff?</h2>
             <p className="mb-6 text-green-100">Air Fresh staffs stadium activations, tailgates, and sports events nationwide.</p>
             <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-sports-marketing-activations&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

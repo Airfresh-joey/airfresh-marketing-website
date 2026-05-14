@@ -248,7 +248,7 @@ export default function CollegeMarketing() {
             <h2 className="text-2xl md:text-3xl font-bold mb-4">Want to Reach College Students?</h2>
             <p className="mb-6 text-orange-100 text-lg leading-relaxed">Air Fresh Marketing runs campus marketing programs at universities nationwide — from ambassador recruitment and training to full-scale event activations and product sampling campaigns.</p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100 font-semibold">
-              <Link href="/contact">Start Your Campus Program <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-college-marketing&intent=article-cta">Start Your Campus Program <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

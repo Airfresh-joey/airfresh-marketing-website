@@ -110,7 +110,7 @@ export default function MobileMarketingTours() {
             <h2 className="text-2xl font-bold mb-4">Planning a Tour?</h2>
             <p className="mb-6 text-orange-200">Air Fresh supports mobile tours with national staffing.</p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-mobile-marketing-tours&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -110,7 +110,7 @@ export default function OutdoorMarketing() {
             <h2 className="text-2xl font-bold mb-4">Marketing Outdoor Products?</h2>
             <p className="mb-6 text-stone-300">Air Fresh connects you with authentic outdoor ambassadors.</p>
             <Button asChild size="lg" className="bg-white text-stone-800 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-outdoor-brand-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

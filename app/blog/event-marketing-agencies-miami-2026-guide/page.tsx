@@ -225,7 +225,7 @@ export default function EventMarketingAgenciesMiamiGuide() {
             <p className="mb-6 text-blue-100">Air Fresh Marketing operates an extensive network of trained brand ambassadors, promotional models, and event staff across South Florida. From trade show staffing to sampling activations on Lincoln Road, we deliver results in Miami.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/contact">Get a Miami Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-event-marketing-agencies-miami-2026-guide&intent=article-cta">Get a Miami Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/services">See All Services</Link>

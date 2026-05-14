@@ -111,7 +111,7 @@ export default function GamingMarketing() {
             <h2 className="text-2xl font-bold mb-4">Gaming Event Staff?</h2>
             <p className="mb-6 text-violet-200">Air Fresh provides authentic gaming ambassadors who actually play.</p>
             <Button asChild size="lg" className="bg-white text-violet-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-gaming-esports-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

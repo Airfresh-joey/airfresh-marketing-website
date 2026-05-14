@@ -117,7 +117,7 @@ export default function FBSamplingRegulations() {
             <h2 className="text-2xl font-bold mb-4">Compliant Sampling Staff</h2>
             <p className="mb-6 text-amber-200">Air Fresh provides certified food and beverage staff.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-food-beverage-sampling-regulations&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -110,7 +110,7 @@ export default function BilingualStaff() {
             <h2 className="text-2xl font-bold mb-4">Need Bilingual Staff?</h2>
             <p className="mb-6 text-red-200">Air Fresh provides culturally-fluent bilingual brand ambassadors.</p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-bilingual-event-staff&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

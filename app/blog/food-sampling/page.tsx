@@ -120,7 +120,7 @@ export default function FoodSampling() {
             <h2 className="text-2xl font-bold mb-4">Need Food Sampling Staff?</h2>
             <p className="mb-6 text-amber-100">Air Fresh provides trained food demonstrators for retail and event sampling nationwide.</p>
             <Button asChild size="lg" className="bg-white text-amber-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-food-sampling&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

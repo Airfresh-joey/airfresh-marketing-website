@@ -246,7 +246,7 @@ export default function ProductSamplingCampaigns() {
 
         <div className="not-prose mt-8">
           <Button asChild size="lg" className="bg-amber-600 hover:bg-amber-700 text-white">
-            <Link href="/contact">Get a Free Sampling Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
+            <Link href="/get-quote?source=blog-product-sampling-campaigns&intent=article-cta">Get a Free Sampling Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
           </Button>
         </div>
         {/* Internal Links Section */}

@@ -120,7 +120,7 @@ export default function BeachOutdoorMarketing() {
             <h2 className="text-2xl font-bold mb-4">Outdoor Marketing Staff?</h2>
             <p className="mb-6 text-cyan-200">Air Fresh provides energetic staff for outdoor activations.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-beach-outdoor-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

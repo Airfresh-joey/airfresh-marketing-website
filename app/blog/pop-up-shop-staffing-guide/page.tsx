@@ -264,7 +264,7 @@ export default function PopUpShopStaffingGuide() {
             <h2 className="text-2xl font-bold mb-4">Planning a Pop-Up?</h2>
             <p className="mb-6 text-orange-200">Air Fresh Marketing provides pop-up staffing nationwide — from flagship NYC locations to mall kiosks and mobile activations.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Get Pop-Up Staffing <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-pop-up-shop-staffing-guide&intent=article-cta">Get Pop-Up Staffing <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

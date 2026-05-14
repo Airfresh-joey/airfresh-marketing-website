@@ -116,7 +116,7 @@ export default function WarehouseMarketing() {
             <h2 className="text-2xl font-bold mb-4">Warehouse Demo Staff?</h2>
             <p className="mb-6 text-blue-200">Air Fresh provides high-energy teams for club store demos.</p>
             <Button asChild size="lg" className="bg-white text-blue-700 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-warehouse-club-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

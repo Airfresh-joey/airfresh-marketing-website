@@ -112,7 +112,7 @@ export default function PostEventReporting() {
             <h2 className="text-2xl font-bold mb-4">Reporting Included</h2>
             <p className="mb-6 text-indigo-200">Air Fresh provides comprehensive post-event reporting.</p>
             <Button asChild size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
-              <Link href="/contact">Learn More <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-post-event-reporting&intent=article-cta">Learn More <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

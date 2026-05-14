@@ -310,7 +310,7 @@ export default function HowToHireBrandAmbassadors() {
           <h2 className="text-2xl font-bold mb-4">Need Brand Ambassadors?</h2>
           <p className="mb-6 text-purple-100">Air Fresh Marketing provides trained, vetted brand ambassadors in 50+ markets nationwide. From product sampling to trade show staffing, we handle recruitment, training, and management so you can focus on results.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-gray-100"><Link href="/contact">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-how-to-hire-brand-ambassadors&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services/brand-ambassadors">Our Brand Ambassador Services</Link></Button>
           </div>
         </section>

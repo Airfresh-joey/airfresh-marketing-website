@@ -228,7 +228,7 @@ export default function HireBrandAmbassadorsProductLaunch() {
             <p className="mb-6 text-orange-100">Air Fresh Marketing has staffed over 500 product launches nationwide with brand ambassadors who drive real results. From strategy and training to launch-day execution and post-launch support, we handle the staffing so you can focus on your product.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-                <Link href="/contact">Get a Custom Staffing Plan <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-hire-brand-ambassadors-product-launch-2026&intent=article-cta">Get a Custom Staffing Plan <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/services">Explore Our Services</Link>

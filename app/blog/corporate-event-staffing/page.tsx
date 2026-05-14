@@ -112,7 +112,7 @@ export default function CorporateEventStaffing() {
             <h2 className="text-2xl font-bold mb-4">Corporate Event Coming?</h2>
             <p className="mb-6 text-gray-400">Air Fresh provides polished corporate event staff.</p>
             <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-corporate-event-staffing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

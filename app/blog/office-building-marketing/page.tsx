@@ -111,7 +111,7 @@ export default function OfficeBuildingMarketing() {
             <h2 className="text-2xl font-bold mb-4">Office Marketing Staff?</h2>
             <p className="mb-6 text-blue-200">Air Fresh provides professional staff for office activations.</p>
             <Button asChild size="lg" className="bg-white text-indigo-800 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-office-building-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

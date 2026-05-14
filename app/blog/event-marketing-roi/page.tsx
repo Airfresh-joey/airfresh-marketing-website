@@ -128,7 +128,7 @@ export default function EventMarketingROI() {
             <h2 className="text-2xl font-bold mb-4">Need Help Measuring Event ROI?</h2>
             <p className="mb-6 text-slate-300">Air Fresh builds measurement into every campaign. Let's talk about making your events accountable.</p>
             <Button asChild size="lg" className="bg-white text-slate-900 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-event-marketing-roi&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

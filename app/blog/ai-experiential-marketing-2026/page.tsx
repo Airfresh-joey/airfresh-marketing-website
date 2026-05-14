@@ -331,7 +331,7 @@ export default function AIExperientialMarketing2026() {
             <h2 className="text-2xl font-bold mb-4">Ready to Bring AI-Powered Activations to Life?</h2>
             <p className="mb-6 text-blue-200">Air Fresh Marketing combines cutting-edge AI tools with the best brand ambassadors in the business. From predictive staffing to real-time engagement analytics, we help brands execute smarter, more measurable experiential campaigns nationwide.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Let&apos;s Talk About Your Next Activation <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-ai-experiential-marketing-2026&intent=article-cta">Let&apos;s Talk About Your Next Activation <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

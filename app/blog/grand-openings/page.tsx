@@ -115,7 +115,7 @@ export default function GrandOpenings() {
             <h2 className="text-2xl font-bold mb-4">Planning a Grand Opening?</h2>
             <p className="mb-6 text-teal-100">Air Fresh provides complete staffing for retail grand openings nationwide.</p>
             <Button asChild size="lg" className="bg-white text-teal-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-grand-openings&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

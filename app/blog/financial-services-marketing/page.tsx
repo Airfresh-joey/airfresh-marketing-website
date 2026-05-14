@@ -116,7 +116,7 @@ export default function FinancialMarketing() {
             <h2 className="text-2xl font-bold mb-4">Financial Services Marketing?</h2>
             <p className="mb-6 text-blue-200">Air Fresh provides compliance-trained event staff.</p>
             <Button asChild size="lg" className="bg-white text-blue-800 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-financial-services-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

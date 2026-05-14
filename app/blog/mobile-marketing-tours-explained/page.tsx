@@ -285,7 +285,7 @@ export default function MobileMarketingToursExplained() {
             <h2 className="text-2xl font-bold mb-4">Ready to Hit the Road?</h2>
             <p className="mb-6 text-blue-200">Air Fresh Marketing plans and staffs mobile marketing tours nationwide. From vehicle sourcing to route planning to local market staffing, we handle every detail.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Plan Your Tour <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-mobile-marketing-tours-explained&intent=article-cta">Plan Your Tour <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -215,7 +215,7 @@ export default function EventStaffingCompaniesNearMe() {
             <p className="mb-6 text-blue-100">Air Fresh Marketing provides professional event staffing in 50+ cities across the United States. Our brand ambassadors, promotional models, and event staff are locally based, professionally vetted, and trained for your specific activation. Whether you need staff for a trade show, product sampling, corporate event, or brand activation, we have the local talent to make it happen.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/contact">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-event-staffing-companies-near-me-how-to-find&intent=article-cta">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/locations">See Our Markets</Link>

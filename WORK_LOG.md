@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-13 22:13 MDT
+
+Goal: continue the high-intent CTA routing sweep by capturing static blog readers who were still being sent to the general contact page from buyer-intent article CTAs.
+
+Shipped candidate:
+- Updated 123 buyer-intent static blog article CTAs from `/contact` to attributed `/get-quote` links using `source=blog-<slug>` and `intent=article-cta`.
+- Updated the blog index empty-state “Get a Quote” link to `/get-quote?source=blog-index&intent=empty-state-quote`.
+- Left the candidate-facing “Apply Now” CTA on `/blog/brand-ambassador-career` on `/contact` instead of routing job seekers into the quote funnel.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Codex CLI was unavailable on this machine (`codex: command not found`), so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Commit, push, and verify live production blog CTA routing on `https://www.airfreshmarketing.com`.
+- Next pass: continue high-intent CTA attribution on `/resources`, `/portfolio`, and any remaining quote-intent non-blog pages still using `/contact`.
+
 ## 2026-05-13 20:59 MDT
 
 Goal: continue high-intent venue conversion work after the quote-prefill pass, starting with the `/venues` directory called out in prior next actions.

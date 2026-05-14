@@ -118,7 +118,7 @@ export default function InfluencerEvents() {
             <h2 className="text-2xl font-bold mb-4">Planning an Influencer Event?</h2>
             <p className="mb-6 text-purple-100">Air Fresh provides staffing for influencer events, brand trips, and creator activations.</p>
             <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-gray-100">
-              <Link href="/contact">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-influencer-events&intent=article-cta">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

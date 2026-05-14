@@ -111,7 +111,7 @@ export default function MilitaryMarketing() {
             <h2 className="text-2xl font-bold mb-4">Military Market Access?</h2>
             <p className="mb-6 text-slate-300">Air Fresh has experience with military base activations.</p>
             <Button asChild size="lg" className="bg-white text-slate-900 hover:bg-gray-100">
-              <Link href="/contact">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-military-base-marketing&intent=article-cta">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

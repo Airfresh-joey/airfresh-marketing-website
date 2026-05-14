@@ -117,7 +117,7 @@ export default function BAJobDescription() {
             <h2 className="text-2xl font-bold mb-4">Skip the Hiring Hassle?</h2>
             <p className="mb-6 text-blue-200">Air Fresh handles recruitment so you don't have to.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-              <Link href="/contact">Get Staffing Help <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-brand-ambassador-job-description&intent=article-cta">Get Staffing Help <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

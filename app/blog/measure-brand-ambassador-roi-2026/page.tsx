@@ -410,7 +410,7 @@ export default function MeasureBrandAmbassadorROI() {
           <h2 className="text-2xl font-bold mb-4">Ready to Build an ROI-Driven Ambassador Program?</h2>
           <p className="mb-6 text-blue-100">Air Fresh Marketing builds brand ambassador programs with measurement baked in from day one. Our post-event reporting, lead capture systems, and attribution tracking help you prove ROI to stakeholders and optimize performance campaign over campaign.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-blue-700 hover:bg-gray-100"><Link href="/contact">Get a Free Campaign Consultation<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-blue-700 hover:bg-gray-100"><Link href="/get-quote?source=blog-measure-brand-ambassador-roi-2026&intent=article-cta">Get a Free Campaign Consultation<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services">Our Services</Link></Button>
           </div>
         </section>

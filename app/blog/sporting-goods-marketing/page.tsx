@@ -110,7 +110,7 @@ export default function SportingGoodsMarketing() {
             <h2 className="text-2xl font-bold mb-4">Sporting Goods Demo Staff?</h2>
             <p className="mb-6 text-red-200">Air Fresh connects you with authentic athlete ambassadors.</p>
             <Button asChild size="lg" className="bg-white text-red-600 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-sporting-goods-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

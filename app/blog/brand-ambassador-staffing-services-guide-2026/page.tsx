@@ -195,7 +195,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
             <p className="mb-6 text-blue-100">Air Fresh Marketing provides professional brand ambassador staffing services in over 50 markets nationwide. From single-day retail demos to multi-month national tours, our team delivers the talent and expertise your brand needs.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
-                <Link href="/contact">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-brand-ambassador-staffing-services-guide-2026&intent=article-cta">Get a Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/services/brand-ambassadors">See Our Services</Link>

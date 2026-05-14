@@ -621,7 +621,7 @@ export default function BrandAmbassadorAgencyServicesGuide() {
           <p className="mb-6 text-teal-100">Air Fresh Marketing provides trained, vetted brand ambassadors in 100+ markets nationwide. With 20,000+ ambassadors, a proprietary training platform, and a Fortune 500 track record spanning 25+ years, we deliver the brand ambassador services that turn live marketing into your highest-performing channel.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-teal-700 hover:bg-gray-100">
-              <Link href="/contact">Get a Free Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-brand-ambassador-agency-services-guide&intent=article-cta">Get a Free Proposal <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10">
               <Link href="/case-studies">View Our Case Studies</Link>

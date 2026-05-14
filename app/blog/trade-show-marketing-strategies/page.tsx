@@ -273,7 +273,7 @@ export default function TradeShowMarketing() {
           <h2 className="text-2xl font-bold mb-4">Need Trade Show Staff?</h2>
           <p className="mb-6 text-orange-100">Air Fresh Marketing provides professional trade show staff for exhibitions nationwide. From booth brand ambassadors to product demonstrators, we help you maximize your trade show investment.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100"><Link href="/contact">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-trade-show-marketing-strategies&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services/convention-staffing">Convention Staffing Services</Link></Button>
           </div>
         </section>

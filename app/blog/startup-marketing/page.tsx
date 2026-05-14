@@ -111,7 +111,7 @@ export default function StartupMarketing() {
             <h2 className="text-2xl font-bold mb-4">Startup Event Support?</h2>
             <p className="mb-6 text-orange-100">Air Fresh offers startup-friendly staffing options.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-startup-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

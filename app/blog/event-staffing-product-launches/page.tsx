@@ -384,7 +384,7 @@ export default function EventStaffingProductLaunches() {
           <h2 className="text-2xl font-bold mb-4">Launching a New Product?</h2>
           <p className="mb-6 text-orange-100">Air Fresh Marketing has staffed product launches for consumer electronics, CPG brands, tech companies, and beverage brands across the country. From single-city reveals to multi-market simultaneous launches, we provide the trained, vetted staff and on-site management that protect your investment.</p>
           <div className="flex flex-col sm:flex-row gap-4">
-            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100"><Link href="/contact">Get a Launch Staffing Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
+            <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-event-staffing-product-launches&intent=article-cta">Get a Launch Staffing Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services">Our Services</Link></Button>
           </div>
         </section>

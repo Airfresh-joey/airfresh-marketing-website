@@ -110,7 +110,7 @@ export default function HomeImprovementMarketing() {
             <h2 className="text-2xl font-bold mb-4">Home Improvement Demo Staff?</h2>
             <p className="mb-6 text-orange-200">Air Fresh provides knowledgeable demonstrators for hardware retail.</p>
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-home-improvement-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

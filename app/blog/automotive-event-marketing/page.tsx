@@ -123,7 +123,7 @@ export default function AutomotiveMarketing() {
             <h2 className="text-2xl font-bold mb-4">Need Automotive Event Staff?</h2>
             <p className="mb-6 text-zinc-300">Air Fresh provides trained automotive specialists for auto shows, ride-and-drives, and dealership events.</p>
             <Button asChild size="lg" className="bg-white text-zinc-900 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-automotive-event-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -305,7 +305,7 @@ export default function EventStaffingROI() {
             <p className="mb-6 text-emerald-100">Air Fresh Marketing does not just provide brand ambassadors — we provide measurable results. Every campaign includes real-time reporting, post-event ROI analysis, and actionable insights that prove your investment and optimize future performance.</p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button asChild size="lg" className="bg-white text-emerald-600 hover:bg-gray-100">
-                <Link href="/contact">Get Your Custom ROI Projection <ArrowRight className="w-5 h-5 ml-2" /></Link>
+                <Link href="/get-quote?source=blog-event-staffing-roi-measuring-success&intent=article-cta">Get Your Custom ROI Projection <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
                 <Link href="/services">See Our Services</Link>

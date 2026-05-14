@@ -111,7 +111,7 @@ export default function DTCMarketing() {
             <h2 className="text-2xl font-bold mb-4">DTC Brand Going Physical?</h2>
             <p className="mb-6 text-pink-100">Air Fresh helps DTC brands execute IRL marketing.</p>
             <Button asChild size="lg" className="bg-white text-pink-600 hover:bg-gray-100">
-              <Link href="/contact">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-dtc-brand-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

@@ -116,7 +116,7 @@ export default function CannabisMarketing() {
             <h2 className="text-2xl font-bold mb-4">Need Cannabis Event Staff?</h2>
             <p className="mb-6 text-lime-100">Air Fresh provides compliant staffing for dispensary events, trade shows, and cannabis brand activations in legal markets.</p>
             <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100">
-              <Link href="/contact">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-cannabis-marketing-events&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>

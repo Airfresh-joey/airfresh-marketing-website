@@ -119,7 +119,7 @@ export default function ChurchMarketing() {
             <h2 className="text-2xl font-bold mb-4">Faith Community Activation?</h2>
             <p className="mb-6 text-indigo-200">Air Fresh approaches faith communities with respect.</p>
             <Button asChild size="lg" className="bg-white text-purple-700 hover:bg-gray-100">
-              <Link href="/contact">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
+              <Link href="/get-quote?source=blog-faith-community-marketing&intent=article-cta">Let's Talk <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
           </div>
         </div>
