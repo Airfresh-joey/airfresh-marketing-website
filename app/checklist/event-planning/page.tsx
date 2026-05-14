@@ -206,7 +206,7 @@ export default function EventPlanningChecklistPage() {
             Professional event planners and experiential marketers rely on structured checklists to ensure consistent execution across campaigns. At AirFresh Marketing, we have refined this checklist through 1,000+ successful events for brands like Netflix, Microsoft, and Formula One. Each item represents a critical action that directly impacts your event's success and return on investment.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Use this checklist as your roadmap: start with the planning phase four to six weeks out, then work through staffing logistics, final preparations, day-of execution, and post-event reporting. Check off each item as you complete it to track your progress. Need professional help with your next event? <a href="/contact" className="text-primary hover:underline font-medium">Contact AirFresh Marketing</a> for turnkey event staffing and management.
+            Use this checklist as your roadmap: start with the planning phase four to six weeks out, then work through staffing logistics, final preparations, day-of execution, and post-event reporting. Check off each item as you complete it to track your progress. Need professional help with your next event? <a href="/get-quote?source=event-planning-checklist&intent=body-event-staffing-help" className="text-primary hover:underline font-medium">get an AirFresh event staffing quote</a> for turnkey staffing and management.
           </p>
         </div>
       </section>

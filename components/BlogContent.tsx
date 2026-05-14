@@ -223,7 +223,7 @@ Brands with strong ambassador programs see 25% higher customer retention rates a
           that drive real business results.
         </p>
         <Button asChild size="lg" className="group">
-          <Link href="/contact">
+          <Link href="/get-quote?source=blog-index&intent=success-story-consultation">
             Get Your Free Consultation
             <ArrowRight className="h-4 w-4 ml-2 group-hover:translate-x-1 transition-transform" />
           </Link>

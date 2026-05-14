@@ -7,6 +7,8 @@ import Link from 'next/link';
  * Also includes conversion CTA cards (cost calculator + get a quote).
  */
 export default function BlogInternalLinks() {
+  const quoteHref = '/get-quote?source=blog-internal-links&intent=quote-card';
+
   return (
     <div className="not-prose mt-12 pt-8 border-t border-gray-200">
       {/* Conversion CTA Cards */}
@@ -35,7 +37,7 @@ export default function BlogInternalLinks() {
               Get a custom quote in 24 hours. No commitment, no hidden fees.
             </p>
             <Link
-              href="/get-quote"
+              href={quoteHref}
               className="inline-block px-6 py-3 text-white font-semibold rounded-lg transition-colors hover:opacity-90"
               style={{ backgroundColor: '#002B5B' }}
             >

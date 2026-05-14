@@ -1,5 +1,22 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-13 18:23 MDT
+
+Goal: continue the quote-funnel attribution sweep on scalable blog/resource conversion paths.
+
+Shipped candidate:
+- Updated the shared `BlogInternalLinks` quote card used across many static blog posts so the quote CTA keeps visitors in `/get-quote` with `source=blog-internal-links` and `intent=quote-card` attribution instead of an untagged bare funnel link.
+- Updated the blog index success-story CTA from `/contact` to `/get-quote?source=blog-index&intent=success-story-consultation`.
+- Updated the event planning checklist body CTA from `/contact` to an attributed quote-funnel link with clearer event-staffing quote copy.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, and verify the production custom domain after Vercel deploys.
+- Continue routing remaining high-intent resource, review-widget, and navigation-adjacent quote CTAs with source/intent attribution while leaving true Contact navigation alone.
+
 ## 2026-05-10 22:13 MDT
 
 Goal: improve quote funnel conversion on the main `/get-quote` path.
