@@ -91,6 +91,23 @@ const initialAttribution: LeadAttribution = {
   source_page: '',
 }
 
+const titleCaseFromSlug = (slug: string) =>
+  slug
+    .split('-')
+    .filter(Boolean)
+    .map(word => word.length <= 3 ? word.toUpperCase() : word.charAt(0).toUpperCase() + word.slice(1))
+    .join(' ')
+
+const inferEventNameFromSource = (leadSource: string) => {
+  const staffingForPrefix = 'staffing-for-'
+
+  if (!leadSource.startsWith(staffingForPrefix)) {
+    return ''
+  }
+
+  return titleCaseFromSlug(leadSource.slice(staffingForPrefix.length))
+}
+
 export default function GetQuote() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
@@ -157,6 +174,7 @@ export default function GetQuote() {
     ]
     const sourceIntentKey = `${leadSource} ${leadIntent}`.toLowerCase()
     const inferredPageIntent = pageIntentRules.find(rule => rule.match.test(sourceIntentKey))
+    const inferredEventName = inferEventNameFromSource(leadSource)
     const budgetByPlannerLabel: Record<string, string> = {
       'Under $10k': '5k-10k',
       '$10k - $25k': '10k-25k',
@@ -178,6 +196,7 @@ export default function GetQuote() {
 
     const prefilled: Partial<FormData> = {
       eventType: eventTypeByService[service] || inferredPageIntent?.eventType || '',
+      eventName: params.get('event') || inferredEventName,
       eventLocation: params.get('market') || '',
       eventDate: /^\d{4}-\d{2}-\d{2}$/.test(eventDate) ? eventDate : '',
       staffCount: staffBucket,
