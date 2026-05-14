@@ -17,10 +17,16 @@ Checks:
 - Local production server verification confirmed `/blog/what-is-experiential-marketing` uses `/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta`.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `5c901b8` (`fix: render event body links with quote attribution`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-fhuqwh7tg-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/staffing-for/arnold-sports-festival` renders real body HTML/internal links, no longer exposes escaped `&lt;a href` text, and includes `/get-quote?source=staffing-for-arnold-sports-festival&intent=body-event-page-cta` on the custom domain.
+- Verified live `/blog/what-is-experiential-marketing` exposes `/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta` on the custom domain.
+- Verified the event body quote URL preserves `lead_source=staffing-for-arnold-sports-festival` and `lead_intent=body-event-page-cta` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/staffing-for/arnold-sports-festival` 308-redirects to the `www` canonical URL.
 
 Next actions:
-- Commit, push, deploy, and verify production custom domain for this pass.
 - Continue high-intent CTA cleanup on remaining buyer-intent non-footer `/contact` links, while leaving partner/candidate/general navigation links alone.
+- Review `/get-quote` prefill behavior for these event-page body CTAs and expand source/intent inference if the staffing-for event class should preselect a more specific event type/staff role.
 
 ## 2026-05-14 13:36 MDT
 
