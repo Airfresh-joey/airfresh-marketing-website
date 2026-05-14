@@ -61,35 +61,18 @@ export async function generateStaticParams() {
   return eventPages.map((e) => ({ event: e.slug }));
 }
 
-// Render body content that uses **bold** markdown-style markers
-function BodyContent({ text }: { text: string }) {
-  const paragraphs = text.split('\n\n').filter(Boolean);
+// Render trusted static event body HTML and preserve attribution on embedded quote CTAs.
+function BodyContent({ text, sourceSlug }: { text: string; sourceSlug: string }) {
+  const quoteHref = `/get-quote?source=staffing-for-${encodeURIComponent(sourceSlug)}&intent=body-event-page-cta`;
+  const html = text
+    .replace(/href="\/get-quote"/g, `href="${quoteHref}"`)
+    .replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+
   return (
-    <div className="space-y-4">
-      {paragraphs.map((paragraph, i) => {
-        // Heading lines start with **text**
-        if (paragraph.startsWith('**') && paragraph.endsWith('**')) {
-          return (
-            <h3 key={i} className="text-xl font-bold text-gray-900 mt-6 mb-2">
-              {paragraph.replace(/\*\*/g, '')}
-            </h3>
-          );
-        }
-        // Inline bold within paragraph
-        const parts = paragraph.split(/(\*\*[^*]+\*\*)/g);
-        return (
-          <p key={i} className="text-gray-700 leading-relaxed">
-            {parts.map((part, j) =>
-              part.startsWith('**') && part.endsWith('**') ? (
-                <strong key={j}>{part.replace(/\*\*/g, '')}</strong>
-              ) : (
-                part
-              )
-            )}
-          </p>
-        );
-      })}
-    </div>
+    <div
+      className="space-y-4 text-gray-700 [&_a]:font-semibold [&_a]:text-cyan-600 [&_a]:no-underline hover:[&_a]:text-cyan-700 [&_h2]:mt-8 [&_h2]:mb-4 [&_h2]:text-2xl [&_h2]:font-bold [&_h2]:text-gray-900 [&_h3]:mt-6 [&_h3]:mb-3 [&_h3]:text-xl [&_h3]:font-bold [&_h3]:text-gray-900 [&_p]:leading-relaxed"
+      dangerouslySetInnerHTML={{ __html: html }}
+    />
   );
 }
 
@@ -343,7 +326,7 @@ export default async function EventPage({ params }: EventPageProps) {
               <h2 className="text-3xl font-bold mb-6 text-gray-900">
                 Professional {eventPage.h1} Services
               </h2>
-              <BodyContent text={eventPage.bodyContent} />
+              <BodyContent text={eventPage.bodyContent} sourceSlug={slug} />
             </div>
 
             {/* Sidebar */}

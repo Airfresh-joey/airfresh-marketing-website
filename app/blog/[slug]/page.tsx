@@ -242,6 +242,7 @@ export default async function BlogPost(
 
   const wordCount = post.content.split(' ').length
   const postUrl = `https://www.airfreshmarketing.com/blog/${post.slug}`
+  const quoteHref = `/get-quote?source=blog-${encodeURIComponent(post.slug)}&intent=article-cta`
 
   const articleStructuredData = {
     "@context": "https://schema.org",
@@ -414,7 +415,7 @@ export default async function BlogPost(
               <p className="text-gray-600 mb-6 leading-relaxed">
                 Get a custom quote in 24 hours. No commitment, no hidden fees.
               </p>
-              <Link href="/get-quote">
+              <Link href={quoteHref}>
                 <Button size="lg" className="text-white font-semibold" style={{ backgroundColor: '#002B5B' }}>
                   Get Your Free Quote &rarr;
                 </Button>

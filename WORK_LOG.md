@@ -1,5 +1,27 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 15:08 MDT
+
+Goal: continue quote-funnel and internal-link cleanup by fixing event-page body copy that contained escaped static HTML links and adding attribution to the dynamic blog quote card.
+
+Shipped candidate:
+- Updated `/staffing-for/[event]` body rendering to render trusted static event `bodyContent` HTML instead of escaping it as literal text, restoring in-copy event/city/service internal links across the generated event staffing pages.
+- Rewrote embedded bare `/get-quote` links inside event body content at render time to `/get-quote?source=staffing-for-{event-slug}&intent=body-event-page-cta`.
+- Updated dynamic blog article quote cards to route to `/get-quote?source=blog-{slug}&intent=article-cta` instead of a bare quote URL.
+
+Checks:
+- Live pre-audit confirmed `/staffing-for/arnold-sports-festival` was exposing escaped `&lt;a href` text before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Local production server verification confirmed `/staffing-for/arnold-sports-festival` now renders real body headings/links and rewrites the body quote CTA with source/intent attribution.
+- Local production server verification confirmed `/blog/what-is-experiential-marketing` uses `/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta`.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Commit, push, deploy, and verify production custom domain for this pass.
+- Continue high-intent CTA cleanup on remaining buyer-intent non-footer `/contact` links, while leaving partner/candidate/general navigation links alone.
+
 ## 2026-05-14 13:36 MDT
 
 Goal: continue high-intent `/contact` cleanup from the prior next action by moving remaining buyer-intent case-study and ambassador recommendation CTAs into the attributed quote funnel.
