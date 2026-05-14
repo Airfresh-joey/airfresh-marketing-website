@@ -122,6 +122,8 @@ export default function GetQuote() {
 
     const params = new URLSearchParams(window.location.search)
     const service = params.get('service') || ''
+    const leadSource = params.get('source') || ''
+    const leadIntent = params.get('intent') || ''
     const teamCount = Number.parseInt(params.get('team') || '', 10)
     const budgetLabel = params.get('budget') || ''
     const eventDate = params.get('date') || ''
@@ -141,6 +143,20 @@ export default function GetQuote() {
       'Pop-Up / Tour': ['brand-ambassadors', 'event-managers'],
       'Event Support': ['registration-staff', 'hospitality'],
     }
+    const pageIntentRules: Array<{ match: RegExp; eventType: string; staffRoles: string[] }> = [
+      { match: /(trade-show|convention|conference|expo|ces|nrf|himss|dreamforce)/, eventType: 'trade-show', staffRoles: ['trade-show-staff', 'registration-staff', 'brand-ambassadors'] },
+      { match: /(sampling|food-beverage|product-sampling|demo|demonstrator)/, eventType: 'sampling-campaign', staffRoles: ['sampling-teams', 'product-demonstrators', 'brand-ambassadors'] },
+      { match: /(street-team|street-teams|guerrilla|college|campus)/, eventType: 'brand-activation', staffRoles: ['street-teams', 'brand-ambassadors'] },
+      { match: /(brand-ambassador|ambassadors|promotional-staffing|promo)/, eventType: 'brand-activation', staffRoles: ['brand-ambassadors', 'promo-models'] },
+      { match: /(retail|in-store|store)/, eventType: 'retail', staffRoles: ['product-demonstrators', 'brand-ambassadors'] },
+      { match: /(festival|concert|coachella|lollapalooza|bonnaroo|edc|sxsw|rolling-loud)/, eventType: 'festival', staffRoles: ['brand-ambassadors', 'event-managers'] },
+      { match: /(sports|super-bowl|world-cup|f1|nba|nfl|stadium)/, eventType: 'sports-event', staffRoles: ['brand-ambassadors', 'event-managers'] },
+      { match: /(corporate|event-staffing|staffing|registration|hospitality)/, eventType: 'corporate-event', staffRoles: ['registration-staff', 'hospitality', 'event-managers'] },
+      { match: /(product-launch|launch|pop-up|mobile-marketing-tour|tour)/, eventType: 'product-launch', staffRoles: ['brand-ambassadors', 'event-managers'] },
+      { match: /(activation|experiential|field-marketing|luxury|technology)/, eventType: 'brand-activation', staffRoles: ['brand-ambassadors', 'event-managers'] },
+    ]
+    const sourceIntentKey = `${leadSource} ${leadIntent}`.toLowerCase()
+    const inferredPageIntent = pageIntentRules.find(rule => rule.match.test(sourceIntentKey))
     const budgetByPlannerLabel: Record<string, string> = {
       'Under $10k': '5k-10k',
       '$10k - $25k': '10k-25k',
@@ -161,14 +177,14 @@ export default function GetQuote() {
               : '50+'
 
     const prefilled: Partial<FormData> = {
-      eventType: eventTypeByService[service] || '',
+      eventType: eventTypeByService[service] || inferredPageIntent?.eventType || '',
       eventLocation: params.get('market') || '',
       eventDate: /^\d{4}-\d{2}-\d{2}$/.test(eventDate) ? eventDate : '',
       staffCount: staffBucket,
       budget: budgetByPlannerLabel[budgetLabel] || '',
       description: params.get('message') || '',
       hearAboutUs: params.get('source') ? 'other' : '',
-      staffRoles: roleByService[service] || [],
+      staffRoles: roleByService[service] || inferredPageIntent?.staffRoles || [],
     }
 
     setFormData(prev => ({
@@ -305,6 +321,34 @@ export default function GetQuote() {
               <p className="text-xl text-gray-600">
                 Tell us about your event and staffing needs. We'll provide a detailed quote within 24 hours.
               </p>
+            </div>
+          </div>
+        </section>
+
+        <section className="-mt-4 pb-4 md:-mt-8 md:pb-8">
+          <div className="container mx-auto px-4">
+            <div className="mx-auto grid max-w-4xl gap-3 rounded-2xl border border-white/70 bg-white/90 p-4 shadow-lg backdrop-blur md:grid-cols-3 md:p-6">
+              <div className="flex items-start gap-3">
+                <Clock className="mt-1 h-5 w-5 text-orange-500" />
+                <div>
+                  <p className="font-semibold text-gray-900">24-hour response</p>
+                  <p className="text-sm text-gray-600">A real producer reviews your market, dates, and staff count.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Shield className="mt-1 h-5 w-5 text-orange-500" />
+                <div>
+                  <p className="font-semibold text-gray-900">Nationwide vetted teams</p>
+                  <p className="text-sm text-gray-600">Brand ambassadors, street teams, trade show staff, and field managers.</p>
+                </div>
+              </div>
+              <div className="flex items-start gap-3">
+                <Zap className="mt-1 h-5 w-5 text-orange-500" />
+                <div>
+                  <p className="font-semibold text-gray-900">Faster scoped quotes</p>
+                  <p className="text-sm text-gray-600">We use your page context to pre-select relevant event and staffing fields.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>

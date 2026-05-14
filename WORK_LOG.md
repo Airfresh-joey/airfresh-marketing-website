@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-13 19:40 MDT
+
+Goal: improve the `/get-quote` conversion path and make high-intent CTA attribution immediately useful inside the quote form.
+
+Shipped candidate:
+- Added source/intent inference on `/get-quote` so attributed links from service, event, staffing, sampling, retail, festival, sports, tour, and brand-activation pages pre-select the closest event type and staff roles when visitors advance to event/staffing steps.
+- Added a compact trust strip under the quote hero highlighting 24-hour response, nationwide vetted teams, and faster scoped quotes.
+- Preserved existing UTM/source/intent localStorage attribution and Formspree payload fields; no fake lead was submitted.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Local browser verification confirmed `/get-quote?source=event-staffing-agency&intent=hero` stores `lead_source`/`lead_intent` and pre-selects `Corporate Event` after step 1.
+
+Next actions:
+- Commit, push, and verify production custom domain after Vercel deploys.
+- Next pass: continue improving `/get-quote` and high-intent CTA routing, especially any bare quote links that still lack source/intent.
+
 ## 2026-05-13 18:23 MDT
 
 Goal: continue the quote-funnel attribution sweep on scalable blog/resource conversion paths.
