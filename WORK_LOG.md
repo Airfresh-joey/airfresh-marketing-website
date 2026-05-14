@@ -12,9 +12,13 @@ Shipped candidate:
 Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Committed and pushed code/work-log commit `74ce9c8` (`fix: attribute venues quote ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-p1spvl1os-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/venues` has the convention center event staffing title/canonical and exposes both venue-attributed quote links with `source=venues` and distinct intent values.
+- Verified `/get-quote?source=venues&intent=hero-venue-staffing-quote` loads the quote funnel and preserves `lead_source=venues` plus `lead_intent=hero-venue-staffing-quote` in `localStorage.afm_attribution` without submitting a lead.
+- Verified apex `https://airfreshmarketing.com/venues` 308-redirects to `https://www.airfreshmarketing.com/venues`.
 
 Next actions:
-- Commit, push, and verify production custom domain after Vercel deploys.
 - Continue CTA attribution on `/industries`, `/portfolio`, `/resources`, and high-intent blog CTAs that still route buyer intent to `/contact`.
 
 ## 2026-05-13 19:40 MDT
