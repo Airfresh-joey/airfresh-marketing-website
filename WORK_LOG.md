@@ -1,5 +1,22 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-13 20:59 MDT
+
+Goal: continue high-intent venue conversion work after the quote-prefill pass, starting with the `/venues` directory called out in prior next actions.
+
+Shipped candidate:
+- Added page-level SEO metadata for `/venues` targeting convention center event staffing and venue staffing nationwide, with an explicit canonical to `https://www.airfreshmarketing.com/venues`.
+- Added an above-the-fold hero CTA, “Get Venue Staffing Quote,” routing directly to `/get-quote?source=venues&intent=hero-venue-staffing-quote`.
+- Updated the final “Get Free Quote” CTA from `/contact` to `/get-quote?source=venues&intent=final-free-quote`, preserving the direct phone CTA and informational trade show staffing link.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+
+Next actions:
+- Commit, push, and verify production custom domain after Vercel deploys.
+- Continue CTA attribution on `/industries`, `/portfolio`, `/resources`, and high-intent blog CTAs that still route buyer intent to `/contact`.
+
 ## 2026-05-13 19:40 MDT
 
 Goal: improve the `/get-quote` conversion path and make high-intent CTA attribution immediately useful inside the quote form.

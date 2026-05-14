@@ -1,3 +1,4 @@
+import type { Metadata } from "next";
 import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
@@ -6,6 +7,16 @@ import Image from "next/image";
 import { MapPin, Building, ArrowRight, Users, Star, Square } from "lucide-react";
 
 import { venues, getFeaturedVenues, getVenuesByTier } from "@/server/venues-data";
+
+export const metadata: Metadata = {
+  title: "Convention Center Event Staffing | Venue Staffing Nationwide | AirFresh Marketing",
+  description: "Convention center event staffing for trade shows, conferences, expos, and venue activations nationwide. Get vetted brand ambassadors and event staff for major US venues.",
+  alternates: {
+    canonical: "https://www.airfreshmarketing.com/venues",
+  },
+};
+
+const quoteHref = (intent: string) => `/get-quote?source=venues&intent=${intent}`;
 
 export default function VenuesDirectory() {
   const featuredVenues = getFeaturedVenues();
@@ -52,6 +63,19 @@ export default function VenuesDirectory() {
               Professional event staffing for America's largest convention centers and venues.
               From McCormick Place to the Las Vegas Convention Center, we've got you covered.
             </p>
+            <div className="flex flex-col sm:flex-row gap-4 justify-center">
+              <Button asChild size="lg" className="bg-white text-indigo-700 hover:bg-indigo-50">
+                <Link href={quoteHref("hero-venue-staffing-quote")}>
+                  Get Venue Staffing Quote
+                  <ArrowRight className="w-4 h-4 ml-2" />
+                </Link>
+              </Button>
+              <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
+                <Link href="/services/trade-show-staffing">
+                  Explore Trade Show Staffing
+                </Link>
+              </Button>
+            </div>
           </div>
         </div>
       </section>
@@ -197,7 +221,7 @@ export default function VenuesDirectory() {
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button asChild size="lg" className="bg-white text-indigo-600 hover:bg-gray-100">
-              <Link href="/contact">
+              <Link href={quoteHref("final-free-quote")}>
                 Get Free Quote
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
