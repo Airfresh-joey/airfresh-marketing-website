@@ -13,9 +13,13 @@ Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `8d0d121` (`fix: attribute resource portfolio quote ctas`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-7zs8myg8c-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/resources` and `/portfolio` expose the new attributed quote-funnel links on the custom domain.
+- Verified `/get-quote?source=resources&intent=final-free-consultation` and `/get-quote?source=portfolio&intent=final-start-project` preserve `lead_source`/`lead_intent` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/resources` 308-redirects to the `www` canonical URL.
 
 Next actions:
-- Deploy and verify custom-domain DOM for `/resources`, `/portfolio`, and `/get-quote` attribution persistence.
 - Continue remaining high-intent guide/location CTAs that still route buyer intent to `/contact`.
 
 ## 2026-05-13 22:13 MDT
