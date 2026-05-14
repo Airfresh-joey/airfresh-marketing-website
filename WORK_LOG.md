@@ -5,7 +5,8 @@
 Goal: continue high-intent `/contact` cleanup from the prior next action by moving remaining buyer-intent case-study and ambassador recommendation CTAs into the attributed quote funnel.
 
 Shipped candidate:
-- Updated `/portfolio/premier-protein` final “Get Started” CTA from `/contact` to `/get-quote?source=portfolio-premier-protein&intent=final-sampling-campaign`.
+- Updated `/portfolio/premier-protein` legacy route handling so it 308-redirects to the live `/case-studies/premier-protein-sampling` page instead of the non-existent `/case-studies/premier-protein` URL created by the catch-all portfolio redirect.
+- Updated the unreachable `/portfolio/premier-protein` fallback page’s final “Get Started” CTA to `/get-quote?source=portfolio-premier-protein&intent=final-sampling-campaign` so it stays attributed if that static page is ever restored.
 - Updated `/hire-brand-ambassadors` inline “Contact our team” recommendation link into clearer quote-funnel copy and `/get-quote?source=hire-brand-ambassadors&intent=ambassador-type-recommendation`.
 - Preserved footer/navigation Contact links and partner/candidate-intent contact paths.
 

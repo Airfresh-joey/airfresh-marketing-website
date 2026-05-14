@@ -149,6 +149,7 @@ const nextConfig = {
       { source: '/portfolio/mrbeast', destination: '/case-studies/mrbeast-events', permanent: true },
       { source: '/portfolio/grubhub', destination: '/case-studies/grubhub-campaign', permanent: true },
       { source: '/portfolio/netflix', destination: '/case-studies/netflix-activations', permanent: true },
+      { source: '/portfolio/premier-protein', destination: '/case-studies/premier-protein-sampling', permanent: true },
       // Portfolio slugs without matching case studies - redirect to main page
       { source: '/portfolio/apple-camp-grizzly', destination: '/case-studies', permanent: true },
       { source: '/portfolio/nissan-nfl-draft', destination: '/case-studies', permanent: true },
