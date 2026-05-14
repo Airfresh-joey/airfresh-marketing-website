@@ -15,7 +15,12 @@ Checks:
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
-- Deployment and live verification pending in this run.
+- Committed and pushed code commit `3337fef` (`fix: attribute global quote ctas`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-ew7hsemur-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live homepage desktop nav exposes `/get-quote?source=site-navigation&intent=desktop-request-proposal` on the custom domain.
+- Verified live homepage floating quote CTA exposes `/get-quote?source=homepage-floating-cta&intent=request-quote` after expansion on the custom domain.
+- Verified `/get-quote?source=site-navigation&intent=desktop-request-proposal` preserves `lead_source=site-navigation` and `lead_intent=desktop-request-proposal` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/` 308-redirects to the `www` canonical URL.
 
 Next actions:
 - Continue high-intent `/contact` cleanup on `/portfolio/premier-protein`, `/hire-brand-ambassadors` inline consultation copy, and any other non-footer CTAs that represent buyer intent rather than general contact or partnerships.
