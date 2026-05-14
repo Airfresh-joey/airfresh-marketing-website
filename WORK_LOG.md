@@ -1,5 +1,30 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 16:52 MDT
+
+Goal: improve the quote funnel for high-intent event staffing pages by carrying event-page context deeper into `/get-quote`.
+
+Shipped candidate:
+- Updated `/get-quote` attribution prefill logic so CTAs with `source=staffing-for-{event-slug}` automatically prefill the Event Name field from the event slug.
+- Preserved explicit planner/query values as higher priority: `event=` overrides inferred event names, existing service-based mappings still override generic source/intent inference, and no fake leads were submitted.
+- Example: `/get-quote?source=staffing-for-arnold-sports-festival&intent=body-event-page-cta` now opens Step 2 with Event Type `Festival / Concert` and Event Name `Arnold Sports Festival`.
+
+Checks:
+- Live pre-audit confirmed the event-page quote URL preserved attribution but did not surface the event name before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Local production server verification confirmed the Arnold Sports Festival quote path prefills Event Type and Event Name after moving to Step 2 without submitting a lead.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code commit `2c8e320` (`fix: prefill event page quote names`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-5mneon98v-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live custom domain `/get-quote?source=staffing-for-arnold-sports-festival&intent=body-event-page-cta&v=2c8e320` prefills Event Type `Festival / Concert` and Event Name `Arnold Sports Festival` after Step 1, with attribution stored as `lead_source=staffing-for-arnold-sports-festival` and `lead_intent=body-event-page-cta` in `localStorage.afm_attribution`.
+- Verified `https://airfreshmarketing.com/get-quote?...` 308-redirects to the `www` canonical URL.
+
+Next actions:
+- Extend quote-form contextual prefill to `/events/{slug}` and venue/event-service source patterns where source slugs can safely infer an event, venue, or market.
+- Continue high-intent `/contact` cleanup on non-footer buyer CTAs while leaving partner/candidate/general contact links alone.
+
 ## 2026-05-14 15:08 MDT
 
 Goal: continue quote-funnel and internal-link cleanup by fixing event-page body copy that contained escaped static HTML links and adding attribution to the dynamic blog quote card.
