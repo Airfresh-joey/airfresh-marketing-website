@@ -15,10 +15,14 @@ Checks:
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `ad240b6` (`fix: link homepage netflix proof card`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-o89yhc2ve-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live custom-domain homepage DOM exposes the Netflix proof card with title `Netflix Premiere Events`, supporting copy, and href `/case-studies/netflix-activations`.
+- Verified `https://airfreshmarketing.com/?v=ad240b6-apex` 308-redirects to the `www` canonical URL.
 
 Next actions:
-- Verify production homepage DOM after deploy exposes `/case-studies/netflix-activations` for the Netflix proof card.
 - Continue homepage proof/CTA cleanup and high-intent `/contact` cleanup where buyer paths still go to generic pages.
+- Audit the case-study index and homepage proof section for other generic or mismatched proof-card destinations.
 
 ## 2026-05-15 00:55 MDT
 
