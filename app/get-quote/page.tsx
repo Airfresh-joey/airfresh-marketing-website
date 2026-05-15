@@ -108,6 +108,11 @@ const inferEventNameFromSource = (leadSource: string) => {
   return titleCaseFromSlug(leadSource.slice(staffingForPrefix.length))
 }
 
+const formatAttributionLabel = (value: string) =>
+  value
+    ? titleCaseFromSlug(value.replace(/^(blog|events|staffing-for|venue|neighborhood|state)-/, ''))
+    : ''
+
 export default function GetQuote() {
   const [formData, setFormData] = useState<FormData>({
     firstName: '',
@@ -255,11 +260,21 @@ export default function GetQuote() {
           _referrer: attribution.referrer || '',
           _landingPage: attribution.landing_page || '',
           _sourcePage: attribution.source_page || '',
+          _quoteContext: [
+            attribution.lead_source ? `source=${attribution.lead_source}` : '',
+            attribution.lead_intent ? `intent=${attribution.lead_intent}` : '',
+            formData.eventName ? `event=${formData.eventName}` : '',
+            formData.eventType ? `eventType=${formData.eventType}` : '',
+          ].filter(Boolean).join('; '),
         }),
       });
       
       if (response.ok) {
-        trackEvent('quote_form_submit', 'lead_form', `${formData.eventType || 'unknown'}:${formData.eventLocation || 'unknown'}`)
+        trackEvent(
+          'quote_form_submit',
+          'lead_form',
+          `${formData.eventType || 'unknown'}:${formData.eventLocation || 'unknown'}:${attribution.lead_source || 'direct'}:${attribution.lead_intent || 'unknown'}`
+        )
         trackLeadGeneration('quote_request', 250)
         router.push('/thank-you')
       } else {
@@ -340,6 +355,36 @@ export default function GetQuote() {
               <p className="text-xl text-gray-600">
                 Tell us about your event and staffing needs. We'll provide a detailed quote within 24 hours.
               </p>
+              {(attribution.lead_source || attribution.lead_intent || formData.eventName || formData.eventType) && (
+                <div className="mt-6 rounded-2xl border border-orange-200 bg-white/85 p-4 text-left shadow-sm backdrop-blur">
+                  <p className="text-sm font-semibold uppercase tracking-wide text-orange-600">Quote context captured</p>
+                  <p className="mt-1 text-sm text-gray-700">
+                    We preserved your page context so the request reaches the right producer with fewer repeat questions.
+                  </p>
+                  <div className="mt-3 flex flex-wrap gap-2 text-sm">
+                    {attribution.lead_source && (
+                      <span className="rounded-full bg-orange-50 px-3 py-1 text-orange-700">
+                        Source: {formatAttributionLabel(attribution.lead_source)}
+                      </span>
+                    )}
+                    {attribution.lead_intent && (
+                      <span className="rounded-full bg-blue-50 px-3 py-1 text-blue-700">
+                        Intent: {formatAttributionLabel(attribution.lead_intent)}
+                      </span>
+                    )}
+                    {formData.eventName && (
+                      <span className="rounded-full bg-green-50 px-3 py-1 text-green-700">
+                        Event: {formData.eventName}
+                      </span>
+                    )}
+                    {formData.eventType && (
+                      <span className="rounded-full bg-slate-100 px-3 py-1 text-slate-700">
+                        Type: {formatAttributionLabel(formData.eventType)}
+                      </span>
+                    )}
+                  </div>
+                </div>
+              )}
             </div>
           </div>
         </section>

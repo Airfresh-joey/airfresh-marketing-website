@@ -1,5 +1,28 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-15 04:39 MDT
+
+Goal: strengthen `/get-quote` conversion clarity and attribution handoff so high-intent CTA traffic visibly carries source/intent context into the quote workflow.
+
+Shipped candidate:
+- Added a contextual “Quote context captured” card to the quote page when source/intent or inferred event details are present.
+- Displays human-readable source, intent, event, and event type chips without submitting or exposing a fake lead.
+- Added a compact `_quoteContext` field to the Formspree JSON payload so source, intent, inferred event, and event type arrive together for easier lead triage.
+- Enriched the quote-submit analytics label with `lead_source` and `lead_intent` alongside event type/location.
+
+Checks:
+- Live pre-audit confirmed `/get-quote?source=staffing-for-coachella&intent=body-event-page-cta` already stored source/intent and inferred Coachella/Festival; no fake lead submitted.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Local browser verification on port 3010 confirmed the new context card renders Source: Coachella, Intent: Body Event Page CTA, Event: Coachella, Type: Festival, and `localStorage.afm_attribution` preserves source/intent.
+- Reverted generated `tsconfig.tsbuildinfo` and `next-env.d.ts` after checks/dev verification.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Commit recorded with this shipment (`feat: surface quote attribution context`).
+
+Next actions:
+- After deployment, verify the production custom domain renders the context card on a cache-busted `/get-quote` attribution URL.
+- Continue high-intent `/contact` cleanup and quote form trust/friction improvements.
+
 ## 2026-05-15 03:25 MDT
 
 Goal: strengthen above-the-fold homepage internal links by turning the hero positioning chips into clickable service paths for high-intent visitors and crawlers.
