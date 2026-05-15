@@ -15,10 +15,15 @@ Checks:
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `c6f4e50` (`fix: route staffing directory custom plan cta`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-myyo0jith-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live `/staffing-for?v=c6f4e50` exposes the new `Get a Custom Event Plan` CTA with `/get-quote?source=staffing-for&intent=custom-event-plan` on the custom domain.
+- Verified `https://airfreshmarketing.com/staffing-for?v=c6f4e50` 308-redirects to the `www` canonical URL.
+- Verified `/get-quote?source=staffing-for&intent=custom-event-plan&v=c6f4e50` preserves `lead_source=staffing-for` and `lead_intent=custom-event-plan` in `localStorage.afm_attribution` without submitting a lead.
 
 Next actions:
-- Commit, push, deploy, and verify production custom domain for this pass.
 - Continue high-intent `/contact` cleanup on other non-footer buyer CTAs while leaving partner/candidate/general contact paths alone.
+- Review remaining index/directory pages for secondary CTAs that should either route into attributed quote URLs or become true informational navigation.
 
 ## 2026-05-14 16:52 MDT
 
