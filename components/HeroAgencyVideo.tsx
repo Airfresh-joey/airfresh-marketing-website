@@ -176,10 +176,20 @@ export default function HeroAgencyVideo() {
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            {['Street Teams', 'Brand Ambassadors', 'Event Staffing', 'Product Sampling'].map((item) => (
-              <span key={item} className="rounded-full border border-white/25 bg-black/30 px-3 py-2 backdrop-blur-sm">
-                {item}
-              </span>
+            {[
+              { label: 'Street Teams', href: '/services/street-teams' },
+              { label: 'Brand Ambassadors', href: '/brand-ambassador-agency' },
+              { label: 'Event Staffing', href: '/event-staffing-agency' },
+              { label: 'Product Sampling', href: '/product-sampling-agency' },
+            ].map((item) => (
+              <Link
+                key={item.href}
+                href={item.href}
+                className="rounded-full border border-white/25 bg-black/30 px-3 py-2 backdrop-blur-sm transition-colors hover:border-cyan-300/70 hover:bg-cyan-400/15 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-cyan-300"
+                aria-label={`Explore AirFresh ${item.label} services`}
+              >
+                {item.label}
+              </Link>
             ))}
           </div>
 

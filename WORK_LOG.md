@@ -1,5 +1,26 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-15 03:25 MDT
+
+Goal: strengthen above-the-fold homepage internal links by turning the hero positioning chips into clickable service paths for high-intent visitors and crawlers.
+
+Shipped candidate:
+- Converted the homepage hero chips for Street Teams, Brand Ambassadors, Event Staffing, and Product Sampling from static text into accessible links.
+- Routed the chips to high-intent service pages: `/services/street-teams`, `/brand-ambassador-agency`, `/event-staffing-agency`, and `/product-sampling-agency`.
+- Preserved the existing hero quote CTA attribution to `/get-quote?source=homepage&intent=hero-event-staffing-quote` and the above-fold proof stats.
+
+Checks:
+- Live pre-audit confirmed the hero service chips were static text while the primary quote CTA already carried source/intent attribution.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Commit recorded with this shipment (`feat: link homepage hero service chips`).
+
+Next actions:
+- Verify production custom-domain DOM exposes the four hero chip links after deploy.
+- Continue homepage/service-page conversion cleanup by auditing any remaining visible buyer CTAs that still go to generic `/contact`.
+
 ## 2026-05-15 02:09 MDT
 
 Goal: tighten homepage proof-section conversion by sending the featured Netflix card to the dedicated case study instead of the generic portfolio index.
