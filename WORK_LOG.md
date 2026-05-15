@@ -965,3 +965,24 @@ Checks:
 
 Next actions:
 - Continue CTA attribution on `/industries`, `/venues`, and high-intent blog CTAs that still route buyer intent to `/contact`.
+
+## 2026-05-14 23:55 MDT
+
+Goal: render blog post markdown links as real anchors (they were being shown as literal `[text](/url)` text on every blog article), and attribute embedded body `/get-quote` CTAs.
+
+Shipped candidate:
+- `app/blog/[slug]/page.tsx` `processInlineFormatting` now converts `[label](href)` markdown links into real anchor tags with internal-vs-external handling and a styled underline. Italic regex tightened to avoid eating bold markers.
+- `renderContent` now accepts `slug` and rewrites embedded bare `](/get-quote)` to `](/get-quote?source=blog-<slug>&intent=body-blog-cta)` before rendering, restoring buyer-intent attribution inside article bodies.
+- This affects ~58 in-body quote CTAs and ~190 in-body internal `/services/...` links across the blog corpus.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed.
+- Committed and pushed code commit `a61bdd4` (`fix: render blog markdown links and attribute quote ctas`).
+- Deployed production via Vercel project `afm-website`: deployment `https://afm-website-m0tk9grkk-joey-5223s-projects.vercel.app`, aliased to `airfreshmarketing.com` and resolving on `www.airfreshmarketing.com`.
+- Verified live `/blog/sports-stadium-brand-activations-guide`: 0 raw markdown link tokens remaining, 28 real `/services/...` anchors in-article, embedded body quote CTA = `/get-quote?source=blog-sports-stadium-brand-activations-guide&intent=body-blog-cta`, and "Activate at your stadium" now renders as an anchor rather than literal text.
+- Verified apex `airfreshmarketing.com/blog/...` 308-redirects to the `www` custom domain.
+
+Next actions:
+- Audit homepage hero/H1 conversion clarity and proof-above-fold pass.
+- Continue GSC opportunity pass on pages with impressions, low CTR, and positions 4–15.
