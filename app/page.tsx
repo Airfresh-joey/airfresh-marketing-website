@@ -359,10 +359,10 @@ export default function Home() {
                 link: "/case-studies/skinny-mixes"
               },
               {
-                title: "Netflix Cowboy Bebop Launch",
+                title: "Netflix Premiere Events",
                 image: "/images/clients/netflix-activation-exact.jpg",
-                description: "Immersive pop-up experience generating massive social engagement",
-                link: "/portfolio"
+                description: "Hollywood red carpet staffing, VIP flow, and fan experience support",
+                link: "/case-studies/netflix-activations"
               },
               {
                 title: "Grubhub NYC Street Team",

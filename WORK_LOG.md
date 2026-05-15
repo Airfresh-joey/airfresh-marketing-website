@@ -1,5 +1,25 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-15 02:09 MDT
+
+Goal: tighten homepage proof-section conversion by sending the featured Netflix card to the dedicated case study instead of the generic portfolio index.
+
+Shipped candidate:
+- Updated the homepage featured proof card from the generic “Netflix Cowboy Bebop Launch” portfolio link to the live `/case-studies/netflix-activations` case study.
+- Aligned the visible card title and description with the actual Netflix case-study page: Hollywood red carpet staffing, VIP flow, and fan experience support.
+- Preserved the surrounding Skinny Mixes and Grubhub proof cards.
+
+Checks:
+- Live pre-audit confirmed the homepage Netflix proof card routed to `/portfolio` while `/case-studies/netflix-activations` returned 200 on the custom domain.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Verify production homepage DOM after deploy exposes `/case-studies/netflix-activations` for the Netflix proof card.
+- Continue homepage proof/CTA cleanup and high-intent `/contact` cleanup where buyer paths still go to generic pages.
+
 ## 2026-05-15 00:55 MDT
 
 Goal: strengthen sitewide internal linking to high-intent service landing pages from the global navigation while preserving quote-funnel attribution.
