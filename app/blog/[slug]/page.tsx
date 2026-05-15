@@ -62,10 +62,24 @@ export async function generateMetadata(
 
 // ── Markdown content rendering (server-side) ────────────────────────
 
+function escapeHtmlAttr(value: string): string {
+  return value
+    .replace(/&/g, '&amp;')
+    .replace(/"/g, '&quot;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+}
+
 function processInlineFormatting(text: string): string {
   return text
+    .replace(/\[([^\]]+)\]\(([^)\s]+)\)/g, (_m, label: string, href: string) => {
+      const isExternal = /^https?:\/\//i.test(href)
+      const safeHref = escapeHtmlAttr(href)
+      const target = isExternal ? ' target="_blank" rel="noopener noreferrer"' : ''
+      return `<a href="${safeHref}"${target} class="text-cyan-600 underline decoration-cyan-300 underline-offset-4 hover:text-cyan-700 hover:decoration-cyan-500 font-medium transition-colors">${label}</a>`
+    })
     .replace(/\*\*(.*?)\*\*/g, '<strong class="font-bold text-gray-900">$1</strong>')
-    .replace(/\*(.*?)\*/g, '<em class="italic text-gray-700">$1</em>')
+    .replace(/(^|[^*])\*([^*\n]+?)\*(?!\*)/g, '$1<em class="italic text-gray-700">$2</em>')
 }
 
 function renderH2(text: string, key: number) {
@@ -147,7 +161,11 @@ function renderParagraph(text: string, key: number) {
   )
 }
 
-function renderContent(content: string) {
+function renderContent(content: string, slug?: string) {
+  if (slug) {
+    const attributed = `/get-quote?source=blog-${encodeURIComponent(slug)}&intent=body-blog-cta`
+    content = content.replace(/\]\(\/get-quote\)/g, `](${attributed})`)
+  }
   const lines = content.split('\n')
   const elements: React.ReactElement[] = []
   let currentSection: string[] = []
@@ -369,7 +387,7 @@ export default async function BlogPost(
       <section className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <article>
           {/* Article Content */}
-          {renderContent(post.content)}
+          {renderContent(post.content, post.slug)}
 
           {/* Tags Section */}
           <div className="mt-16 pt-8 border-t-2 border-gray-100">
