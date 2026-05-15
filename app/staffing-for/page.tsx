@@ -216,7 +216,7 @@ export default function EventStaffingIndex() {
           </h2>
           <p className="text-xl text-white/90 mb-8">
             Air Fresh Marketing provides staffing for events of all sizes across the country.
-            Contact us for a custom staffing plan tailored to your event.
+            Share a few details and we&apos;ll map a custom staffing plan tailored to your event.
           </p>
           <div className="flex flex-wrap justify-center gap-4">
             <Button asChild size="lg" className="bg-white text-cyan-700 hover:bg-gray-100">
@@ -225,8 +225,8 @@ export default function EventStaffingIndex() {
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="text-white border-white/40 hover:bg-white/10">
-              <Link href="/contact">
-                Contact Us
+              <Link href="/get-quote?source=staffing-for&intent=custom-event-plan">
+                Get a Custom Event Plan
               </Link>
             </Button>
           </div>

@@ -1,5 +1,25 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 18:58 MDT
+
+Goal: continue high-intent CTA routing cleanup on the major-event staffing directory by moving buyer-intent custom-plan traffic into `/get-quote` with source/intent attribution.
+
+Shipped candidate:
+- Updated the `/staffing-for` final CTA section so the secondary buyer CTA now routes to `/get-quote?source=staffing-for&intent=custom-event-plan` instead of the generic `/contact` page.
+- Rewrote the supporting copy from generic contact language to quote-funnel language: “Share a few details and we'll map a custom staffing plan tailored to your event.”
+- Preserved the existing primary `/get-quote?source=staffing-for&intent=final-cta` path and left true navigation/footer contact links untouched.
+
+Checks:
+- Live pre-audit confirmed `/staffing-for` still exposed a final-section “Contact Us” buyer CTA to `/contact` before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Commit, push, deploy, and verify production custom domain for this pass.
+- Continue high-intent `/contact` cleanup on other non-footer buyer CTAs while leaving partner/candidate/general contact paths alone.
+
 ## 2026-05-14 16:52 MDT
 
 Goal: improve the quote funnel for high-intent event staffing pages by carrying event-page context deeper into `/get-quote`.
