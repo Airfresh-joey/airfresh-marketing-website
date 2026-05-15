@@ -4293,7 +4293,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Staffing Roles at the Arnold</h3>
 <p>Common staffing needs include product sampling teams for supplement and nutrition brands, booth staff for equipment demonstrations, promotional models for brand visibility, and lead capture specialists for B2B connections.</p>
 <h3>Columbus Event Staff</h3>
-<p>Our Midwest staffing network provides experienced fitness industry staff for the Arnold and all Columbus events. <a href="/get-quote">Request Arnold Sports Festival staffing</a>.</p>`,
+<p>Our Midwest staffing network provides experienced fitness industry staff for the Arnold and all Columbus events. <a href="/get-quote?source=staffing-for-arnold-sports-festival&amp;intent=body-event-page-cta">Request Arnold Sports Festival staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Promotional Models', description: 'Professional promotional models for your event' },
@@ -4336,7 +4336,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Staffing for Boutique Festivals</h3>
 <p>Smaller festivals like Hinterland require staff who can create intimate, personal interactions. High-pressure sales tactics don't work here. Our brand ambassadors are trained to build genuine connections with festival-goers.</p>
 <h3>Iowa Event Staffing</h3>
-<p>Our Midwest staffing coverage includes Des Moines and surrounding Iowa communities. <a href="/get-quote">Request Hinterland festival staffing</a>.</p>`,
+<p>Our Midwest staffing coverage includes Des Moines and surrounding Iowa communities. <a href="/get-quote?source=staffing-for-hinterland-music-festival&amp;intent=body-event-page-cta">Request Hinterland festival staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4378,7 +4378,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Electronic Music Festival Staffing</h3>
 <p>Our team has staffed electronic music events including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/electric-forest">Electric Forest</a>, <a href="/staffing-for/electric-zoo">Electric Zoo</a>, and <a href="/staffing-for/movement-detroit">Movement Detroit</a>. We understand the unique culture and engagement style of the electronic music community.</p>
 <h3>Pennsylvania Event Staff</h3>
-<p>Our Northeast staffing network covers Pennsylvania festivals and events. <a href="/get-quote">Request Elements Festival staffing</a>.</p>`,
+<p>Our Northeast staffing network covers Pennsylvania festivals and events. <a href="/get-quote?source=staffing-for-elements-festival&amp;intent=body-event-page-cta">Request Elements Festival staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4421,7 +4421,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Experienced Convention Staff</h3>
 <p>Air Fresh Marketing has staffed conventions nationwide including <a href="/staffing-for/comic-con">Comic-Con</a>, <a href="/staffing-for/sdcc">SDCC</a>, <a href="/staffing-for/nycc">NYCC</a>, <a href="/staffing-for/anime-expo">Anime Expo</a>, and <a href="/staffing-for/pax-west">PAX West</a>. Our convention staff understand fan culture and deliver authentic engagement.</p>
 <h3>Dallas Event Staffing</h3>
-<p>Our <a href="/cities/dallas">Dallas staffing team</a> provides experienced professionals for all Dallas-Fort Worth area events. <a href="/get-quote">Request Fan Expo Dallas staffing</a>.</p>`,
+<p>Our <a href="/cities/dallas">Dallas staffing team</a> provides experienced professionals for all Dallas-Fort Worth area events. <a href="/get-quote?source=staffing-for-fan-expo-dallas&amp;intent=body-event-page-cta">Request Fan Expo Dallas staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Booth Staff', description: 'Professional booth staff for your event' },
@@ -4464,7 +4464,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Electronic Music Festival Staff</h3>
 <p>Our team specializes in electronic music festival staffing across the Insomniac portfolio including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/edc-orlando">EDC Orlando</a>, and Beyond Wonderland. We understand rave culture, PLUR values, and the unique engagement dynamics of the EDM community.</p>
 <h3>Southern California Staff</h3>
-<p>Our <a href="/cities/los-angeles">Los Angeles area staffing team</a> covers San Bernardino and all Inland Empire events. <a href="/get-quote">Request Beyond Wonderland staffing</a>.</p>`,
+<p>Our <a href="/cities/los-angeles">Los Angeles area staffing team</a> covers San Bernardino and all Inland Empire events. <a href="/get-quote?source=staffing-for-beyond-wonderland&amp;intent=body-event-page-cta">Request Beyond Wonderland staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4507,7 +4507,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Why This Audience Matters</h3>
 <p>Lovers & Friends attendees represent a highly valuable consumer segment: established professionals with disposable income who are passionate about music and culture. They're brand-conscious and willing to engage with activations that feel authentic to the event's vibe.</p>
 <h3>Las Vegas Festival Staffing</h3>
-<p>Our <a href="/cities/las-vegas">Las Vegas event staffing team</a> provides experienced professionals for all major Las Vegas festivals including <a href="/staffing-for/edc-las-vegas">EDC</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio</a>, and <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>. <a href="/get-quote">Get a quote</a>.</p>`,
+<p>Our <a href="/cities/las-vegas">Las Vegas event staffing team</a> provides experienced professionals for all major Las Vegas festivals including <a href="/staffing-for/edc-las-vegas">EDC</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio</a>, and <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>. <a href="/get-quote?source=staffing-for-lovers-and-friends-festival&amp;intent=body-event-page-cta">Get a quote</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Promotional Models', description: 'Professional promotional models for your event' },
@@ -4551,7 +4551,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Festival Staffing Roles</h3>
 <p>Air Fresh Marketing provides brand ambassadors, sampling teams, merchandise staff, and activation coordinators for Sonic Temple's unique festival environment. Our staff understand the rock festival culture and engage attendees authentically.</p>
 <h3>Ohio Event Staffing</h3>
-<p>Our Midwest staffing network covers Columbus and all major Ohio events. <a href="/get-quote">Request Sonic Temple staffing</a> for your rock festival activation.</p>`,
+<p>Our Midwest staffing network covers Columbus and all major Ohio events. <a href="/get-quote?source=staffing-for-sonic-temple&amp;intent=body-event-page-cta">Request Sonic Temple staffing</a> for your rock festival activation.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4594,7 +4594,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Activation Best Practices</h3>
 <p>Art-forward installations, sustainable product showcases, and immersive listening experiences outperform traditional sampling at indie festivals. Our staff understand how to engage this audience with subtlety and authenticity.</p>
 <h3>Southern California Staff</h3>
-<p>Our <a href="/cities/los-angeles">Los Angeles staffing team</a> covers Long Beach and all Southern California events including <a href="/staffing-for/coachella">Coachella</a> and <a href="/staffing-for/kaaboo-festival">KAABOO</a>. <a href="/get-quote">Get a quote</a>.</p>`,
+<p>Our <a href="/cities/los-angeles">Los Angeles staffing team</a> covers Long Beach and all Southern California events including <a href="/staffing-for/coachella">Coachella</a> and <a href="/staffing-for/kaaboo-festival">KAABOO</a>. <a href="/get-quote?source=staffing-for-just-like-heaven&amp;intent=body-event-page-cta">Get a quote</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4636,7 +4636,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Texas Festival Staffing</h3>
 <p>Air Fresh Marketing provides experienced festival staff throughout Texas. Our teams have staffed events at <a href="/staffing-for/austin-city-limits">Austin City Limits</a>, <a href="/staffing-for/houston-rodeo">Houston Rodeo</a>, and festivals across the Lone Star State.</p>
 <h3>Book Festival Staff</h3>
-<p>Our <a href="/cities/austin">Austin staffing team</a> covers Georgetown and the entire Central Texas region. <a href="/get-quote">Request Two Step Inn staffing</a>.</p>`,
+<p>Our <a href="/cities/austin">Austin staffing team</a> covers Georgetown and the entire Central Texas region. <a href="/get-quote?source=staffing-for-two-step-inn&amp;intent=body-event-page-cta">Request Two Step Inn staffing</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4679,7 +4679,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Festival Activation Formats</h3>
 <p>Popular activations at Dreamville include lifestyle lounges, sneaker customization stations, social media content booths, and beverage sampling experiences. The community-focused atmosphere rewards brands that show genuine appreciation for hip-hop culture.</p>
 <h3>North Carolina Event Staffing</h3>
-<p>Our Southeast staffing network covers Raleigh and all major North Carolina events. <a href="/get-quote">Request Dreamville Festival staffing</a> for your activation.</p>`,
+<p>Our Southeast staffing network covers Raleigh and all major North Carolina events. <a href="/get-quote?source=staffing-for-dreamville-festival&amp;intent=body-event-page-cta">Request Dreamville Festival staffing</a> for your activation.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Promotional Models', description: 'Professional promotional models for your event' },
@@ -4722,7 +4722,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>KAABOO Staffing Roles We Fill</h3>
 <p>Air Fresh Marketing provides professional event staffing for every KAABOO activation need, from VIP lounge hosts to sampling teams distributing premium products. Our staff understand the festival's upscale positioning and engage attendees with sophistication.</p>
 <h3>Staff for KAABOO in San Diego</h3>
-<p>Our <a href="/cities/san-diego">San Diego event staffing team</a> includes professionals experienced with Del Mar venue logistics and the KAABOO demographic. Contact us for <a href="/get-quote">KAABOO staffing quotes</a>.</p>`,
+<p>Our <a href="/cities/san-diego">San Diego event staffing team</a> includes professionals experienced with Del Mar venue logistics and the KAABOO demographic. Contact us for <a href="/get-quote?source=staffing-for-kaaboo-festival&amp;intent=body-event-page-cta">KAABOO staffing quotes</a>.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'VIP Hosts', description: 'Professional vip hosts for your event' },
@@ -4808,7 +4808,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Staffing for Camping Festivals</h3>
 <p>Camping festivals like Okeechobee present unique staffing challenges. Staff may need to be on-site for the full multi-day event, requiring accommodations planning and extended shift scheduling. Air Fresh Marketing handles all logistics for remote festival staffing.</p>
 <h3>Florida Festival Staff</h3>
-<p>Our Florida event staffing network covers Okeechobee and all major Florida festivals including <a href="/staffing-for/ultra-music-festival">Ultra Music Festival</a>, <a href="/staffing-for/tortuga-music-festival">Tortuga Music Festival</a>, and <a href="/staffing-for/welcome-to-rockville">Welcome to Rockville</a>. <a href="/get-quote">Request a quote</a> today.</p>`,
+<p>Our Florida event staffing network covers Okeechobee and all major Florida festivals including <a href="/staffing-for/ultra-music-festival">Ultra Music Festival</a>, <a href="/staffing-for/tortuga-music-festival">Tortuga Music Festival</a>, and <a href="/staffing-for/welcome-to-rockville">Welcome to Rockville</a>. <a href="/get-quote?source=staffing-for-okeechobee-festival&amp;intent=body-event-page-cta">Request a quote</a> today.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Sampling Staff', description: 'Professional sampling staff for your event' },
@@ -4852,7 +4852,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>Activation Types at Day N Vegas</h3>
 <p>Popular activation formats include sneaker customization stations, freestyle booths, DJ experiences, product drops, and lifestyle lounges. Air Fresh Marketing provides staff experienced in hip-hop culture activations who authentically connect with attendees.</p>
 <h3>Las Vegas Festival Staff</h3>
-<p>Our <a href="/cities/las-vegas">Las Vegas staffing team</a> supports all major Las Vegas events including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio Music Festival</a>, <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>, and more. <a href="/get-quote">Get a quote</a> for Day N Vegas staffing.</p>`,
+<p>Our <a href="/cities/las-vegas">Las Vegas staffing team</a> supports all major Las Vegas events including <a href="/staffing-for/edc-las-vegas">EDC Las Vegas</a>, <a href="/staffing-for/iheartradio-music-festival">iHeartRadio Music Festival</a>, <a href="/staffing-for/life-is-beautiful">Life is Beautiful</a>, and more. <a href="/get-quote?source=staffing-for-day-n-vegas&amp;intent=body-event-page-cta">Get a quote</a> for Day N Vegas staffing.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Promotional Models', description: 'Professional promotional models for your event' },
@@ -4895,7 +4895,7 @@ Air Fresh Marketing has extensive experience staffing major cultural events and 
 <h3>TwitchCon Staffing Roles</h3>
 <p>Key staffing roles at TwitchCon include booth staff who can demo gaming products, crowd managers for streamer meet-and-greets, registration staff for branded events, and brand ambassadors who authentically represent gaming-adjacent brands.</p>
 <h3>San Diego Convention Staff</h3>
-<p>Our <a href="/cities/san-diego">San Diego staffing team</a> has extensive experience at the San Diego Convention Center, having staffed <a href="/staffing-for/comic-con">Comic-Con</a>, <a href="/staffing-for/sdcc">SDCC</a>, and numerous gaming conventions. <a href="/get-quote">Request TwitchCon staffing</a> today.</p>`,
+<p>Our <a href="/cities/san-diego">San Diego staffing team</a> has extensive experience at the San Diego Convention Center, having staffed <a href="/staffing-for/comic-con">Comic-Con</a>, <a href="/staffing-for/sdcc">SDCC</a>, and numerous gaming conventions. <a href="/get-quote?source=staffing-for-twitchcon&amp;intent=body-event-page-cta">Request TwitchCon staffing</a> today.</p>`,
     staffTypes: [
       { title: 'Brand Ambassadors', description: 'Professional brand ambassadors for your event' },
       { title: 'Booth Staff', description: 'Professional booth staff for your event' },
