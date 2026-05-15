@@ -18,9 +18,11 @@ Checks:
 - Reverted generated `tsconfig.tsbuildinfo` and `next-env.d.ts` after checks/dev verification.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
 - Commit recorded with this shipment (`feat: surface quote attribution context`).
+- Pushed code commit `3dc8c9b` to `origin/main` and deployed production via Vercel project `afm-website`: `https://afm-website-3ftfsvwhu-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live custom-domain browser DOM on `/get-quote?source=staffing-for-coachella&intent=body-event-page-cta&v=3dc8c9b` renders the context card with Source: Coachella, Intent: Body Event Page CTA, Event: Coachella, Type: Festival, and preserves attribution in `localStorage.afm_attribution`.
+- Verified `https://airfreshmarketing.com/get-quote?v=3dc8c9b-apex` 308-redirects to the `www` canonical host.
 
 Next actions:
-- After deployment, verify the production custom domain renders the context card on a cache-busted `/get-quote` attribution URL.
 - Continue high-intent `/contact` cleanup and quote form trust/friction improvements.
 
 ## 2026-05-15 03:25 MDT
