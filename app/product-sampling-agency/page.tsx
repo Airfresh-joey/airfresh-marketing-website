@@ -1491,7 +1491,7 @@ export default function ProductSamplingAgencyPage() {
                 href: "/guerrilla-marketing-agency",
               },
               { label: "Pricing", href: "/pricing" },
-              { label: "Get a Quote", href: "/get-quote" },
+              { label: "Get a Quote", href: quoteHref("related-links-quote") },
               { label: "Contact Us", href: "/contact" },
               { label: "Case Studies", href: "/case-studies" },
             ].map((link) => (

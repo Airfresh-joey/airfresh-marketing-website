@@ -1,5 +1,25 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-14 20:11 MDT
+
+Goal: continue quote-funnel attribution cleanup by removing remaining bare `/get-quote` buyer links from two high-intent service landing pages.
+
+Shipped candidate:
+- Updated `/brand-activation-agency` related-links “Get a Quote” CTA from bare `/get-quote` to `/get-quote?source=brand-activation-agency&intent=related-links-quote`.
+- Updated `/product-sampling-agency` related-links “Get a Quote” CTA from bare `/get-quote` to `/get-quote?source=product-sampling-agency&intent=related-links-quote`.
+- Preserved true Contact navigation links and existing primary/final quote CTAs.
+
+Checks:
+- Live pre-audit confirmed each page exposed one bare `/get-quote` buyer CTA before this pass.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Continue buyer-intent CTA attribution cleanup where quote CTAs still use generic destinations, especially remaining service/category pages.
+- Audit high-intent `/contact` CTAs that say “Get Started,” “Schedule,” or “Request” and convert only true buyer quote intents into attributed `/get-quote` paths.
+
 ## 2026-05-14 18:58 MDT
 
 Goal: continue high-intent CTA routing cleanup on the major-event staffing directory by moving buyer-intent custom-plan traffic into `/get-quote` with source/intent attribution.

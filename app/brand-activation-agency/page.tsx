@@ -1089,7 +1089,7 @@ export default function BrandActivationAgencyPage() {
               },
               { label: "Pricing", href: "/pricing" },
               { label: "Contact Us", href: "/contact" },
-              { label: "Get a Quote", href: "/get-quote" },
+              { label: "Get a Quote", href: quoteHref("related-links-quote") },
               { label: "Case Studies", href: "/case-studies" },
             ].map((link) => (
               <Link
