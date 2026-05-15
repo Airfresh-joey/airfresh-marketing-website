@@ -15,9 +15,13 @@ Checks:
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Committed and pushed code/work-log commit `06a473e` (`feat: surface high-intent service pages in nav`).
+- Deployed production via Vercel project `afm-website`: `https://afm-website-cixlepx13-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live custom-domain nav DOM exposes `/event-staffing-agency`, `/brand-ambassador-agency`, `/product-sampling-agency`, `/experiential-marketing-agency`, `/services/trade-show-staffing`, and `/brand-activation-agency` from `nav a`.
+- Verified live desktop Request Proposal CTA still routes to `/get-quote?source=site-navigation&intent=desktop-request-proposal` and `/get-quote` stores `lead_source=site-navigation` plus `lead_intent=desktop-request-proposal` in `localStorage.afm_attribution` without submitting a lead.
+- Verified `https://airfreshmarketing.com/?navcheck=06a473e-prod` redirects to the `www` canonical URL.
 
 Next actions:
-- Verify the deployed global nav exposes the new service links in desktop and mobile DOM.
 - Continue high-intent `/contact` cleanup on non-footer buyer CTAs while leaving partner/candidate/general contact paths alone.
 - Audit GSC/impression opportunities if credentials are available; otherwise continue safe internal-link and quote-attribution passes.
 
