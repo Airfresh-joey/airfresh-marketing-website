@@ -14,12 +14,18 @@ const navLinks = [
 ];
 
 const serviceLinks = [
+  { href: "/event-staffing-agency", label: "Event Staffing Agency" },
+  { href: "/brand-ambassador-agency", label: "Brand Ambassador Agency" },
   { href: "/services/brand-ambassadors", label: "Brand Ambassadors" },
   { href: "/services/street-teams", label: "Street Teams" },
-  { href: "/services/experiential-marketing", label: "Experiential Marketing" },
-  { href: "/services/convention-staffing", label: "Convention Staffing" },
-  { href: "/services/event-management", label: "Event Management" },
+  { href: "/product-sampling-agency", label: "Product Sampling Agency" },
   { href: "/services/sampling", label: "Product Sampling" },
+  { href: "/experiential-marketing-agency", label: "Experiential Marketing Agency" },
+  { href: "/services/experiential-marketing", label: "Experiential Marketing" },
+  { href: "/services/trade-show-staffing", label: "Trade Show Staffing" },
+  { href: "/services/convention-staffing", label: "Convention Staffing" },
+  { href: "/brand-activation-agency", label: "Brand Activation Agency" },
+  { href: "/services/event-management", label: "Event Management" },
   { href: "/services/promotional-models", label: "Promotional Models" }
 ];
 
@@ -88,11 +94,9 @@ export default function NavigationWrapper() {
                 </Link>
               )
             ))}
-            <Link href={navQuoteHref}>
-              <Button className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
-                Request Proposal
-              </Button>
-            </Link>
+            <Button asChild className="bg-cyan-500 hover:bg-cyan-600 text-white rounded-lg px-6 py-2 shadow-lg shadow-cyan-500/20 hover:shadow-cyan-500/30 transition-all duration-300">
+              <Link href={navQuoteHref}>Request Proposal</Link>
+            </Button>
           </div>
 
           {/* Mobile menu - client component */}

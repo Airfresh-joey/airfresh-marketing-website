@@ -1,5 +1,26 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-15 00:55 MDT
+
+Goal: strengthen sitewide internal linking to high-intent service landing pages from the global navigation while preserving quote-funnel attribution.
+
+Shipped candidate:
+- Expanded the desktop/mobile Services navigation data to expose high-intent SEO/conversion pages: Event Staffing Agency, Brand Ambassador Agency, Product Sampling Agency, Experiential Marketing Agency, Trade Show Staffing, and Brand Activation Agency.
+- Kept existing service links in place so users can still reach dynamic service pages from navigation.
+- Updated the desktop Request Proposal CTA to use the shadcn/Radix `Button asChild` anchor pattern while preserving `/get-quote?source=site-navigation&intent=desktop-request-proposal` attribution.
+
+Checks:
+- Live pre-audit confirmed `/get-quote?source=cron-audit&intent=verify` loads on the custom domain without submitting a lead.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+
+Next actions:
+- Verify the deployed global nav exposes the new service links in desktop and mobile DOM.
+- Continue high-intent `/contact` cleanup on non-footer buyer CTAs while leaving partner/candidate/general contact paths alone.
+- Audit GSC/impression opportunities if credentials are available; otherwise continue safe internal-link and quote-attribution passes.
+
 ## 2026-05-14 20:11 MDT
 
 Goal: continue quote-funnel attribution cleanup by removing remaining bare `/get-quote` buyer links from two high-intent service landing pages.
