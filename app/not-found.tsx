@@ -61,12 +61,12 @@ export default function NotFound() {
           </Link>
 
           <Link
-            href="/contact"
+            href="/get-quote?source=not-found&intent=404-free-quote"
             className="group p-6 bg-white rounded-xl border border-gray-200 hover:border-cyan-400 hover:shadow-lg transition-all"
           >
             <Phone className="w-8 h-8 text-cyan-600 mb-3 mx-auto" />
-            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Contact Us</h2>
-            <p className="text-sm text-gray-500 mt-1">Get a free quote</p>
+            <h2 className="font-bold text-gray-900 group-hover:text-cyan-600 transition-colors">Get a Free Quote</h2>
+            <p className="text-sm text-gray-500 mt-1">Tell us about your event</p>
           </Link>
         </div>
 
