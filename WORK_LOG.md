@@ -16,9 +16,12 @@ Checks:
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
 - Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
 - Commit recorded with this shipment (`feat: link homepage hero service chips`).
+- Pushed to `origin/main` and deployed production via Vercel project `afm-website`: `https://afm-website-fyi5njh2c-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and resolving on `https://www.airfreshmarketing.com`.
+- Verified live custom-domain DOM exposes the four hero service chip links with accessible labels and the expected hrefs.
+- Verified all four chip destinations return 200 on the custom domain: `/services/street-teams`, `/brand-ambassador-agency`, `/event-staffing-agency`, and `/product-sampling-agency`.
+- Verified `https://airfreshmarketing.com/?v=8b4657e-apex` 308-redirects to the `www` canonical URL.
 
 Next actions:
-- Verify production custom-domain DOM exposes the four hero chip links after deploy.
 - Continue homepage/service-page conversion cleanup by auditing any remaining visible buyer CTAs that still go to generic `/contact`.
 
 ## 2026-05-15 02:09 MDT
