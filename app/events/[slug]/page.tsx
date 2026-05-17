@@ -8,62 +8,45 @@ import { MapPin, Calendar, Users, ArrowRight, CheckCircle, Star, Phone, Hotel, L
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { usaEvents, getEventBySlug } from "@/server/usa-events-data";
 
-// Helper to convert date strings to ISO 8601 format (with time component for Google compliance)
-function toISO8601(dateStr: string | undefined, year?: number): string {
-  if (!dateStr) return new Date().toISOString();
-  
-  // Try to parse dates like "February 8, 2026" or "July 14 - July 30, 2028"
-  const months: Record<string, string> = {
-    'january': '01', 'february': '02', 'march': '03', 'april': '04',
-    'may': '05', 'june': '06', 'july': '07', 'august': '08',
-    'september': '09', 'october': '10', 'november': '11', 'december': '12',
-    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'jun': '06',
-    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
-  };
-  
-  // Handle range dates - take the first date
-  const firstDate = dateStr.split('-')[0].trim();
-  
-  // Try to match "Month Day, Year" or "Month Day"
-  const match = firstDate.match(/([a-zA-Z]+)\s+(\d+),?\s*(\d{4})?/);
-  if (match) {
-    const month = months[match[1].toLowerCase()];
-    const day = match[2].padStart(2, '0');
-    const yr = match[3] || year || new Date().getFullYear();
-    // Return full ISO 8601 datetime format (Google requires time component)
-    return `${yr}-${month}-${day}T00:00:00`;
-  }
-  
-  // Fallback - return current date in ISO format
-  return new Date().toISOString();
-}
+// Helper to convert AirFresh event date strings to ISO 8601 format for Google Event rich results.
+function parseEventDateRange(dateStr: string | undefined): { startDate: string; endDate?: string } {
+  const fallback = "2026-01-01T00:00:00";
+  if (!dateStr) return { startDate: fallback };
 
-// Helper to get end date from range (returns ISO 8601 datetime)
-function getEndDate(dateStr: string | undefined, year?: number): string | null {
-  if (!dateStr || !dateStr.includes('-')) return null;
-  
   const months: Record<string, string> = {
-    'january': '01', 'february': '02', 'march': '03', 'april': '04',
-    'may': '05', 'june': '06', 'july': '07', 'august': '08',
-    'september': '09', 'october': '10', 'november': '11', 'december': '12',
-    'jan': '01', 'feb': '02', 'mar': '03', 'apr': '04', 'jun': '06',
-    'jul': '07', 'aug': '08', 'sep': '09', 'oct': '10', 'nov': '11', 'dec': '12'
+    january: "01", february: "02", march: "03", april: "04",
+    may: "05", june: "06", july: "07", august: "08",
+    september: "09", october: "10", november: "11", december: "12",
+    jan: "01", feb: "02", mar: "03", apr: "04", jun: "06",
+    jul: "07", aug: "08", sep: "09", oct: "10", nov: "11", dec: "12"
   };
-  
-  const parts = dateStr.split('-');
-  if (parts.length < 2) return null;
-  
-  const secondDate = parts[1].trim();
-  const match = secondDate.match(/([a-zA-Z]+)\s+(\d+),?\s*(\d{4})?/);
-  if (match) {
-    const month = months[match[1].toLowerCase()];
-    const day = match[2].padStart(2, '0');
-    const yr = match[3] || year || new Date().getFullYear();
-    // Return full ISO 8601 datetime format with end of day time
-    return `${yr}-${month}-${day}T23:59:59`;
+
+  const firstDateSet = dateStr.split("/")[0].trim();
+  const year = firstDateSet.match(/\b(20\d{2})\b/)?.[1] || "2026";
+  const firstMonth = firstDateSet.match(/January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec/i)?.[0];
+  if (!firstMonth) return { startDate: fallback };
+
+  const startDayMatch = firstDateSet.match(new RegExp(`${firstMonth}\\s+(\\d{1,2})`, "i"));
+  const startDay = startDayMatch?.[1] || (firstDateSet.match(/late/i) ? "20" : "1");
+  const startDate = `${year}-${months[firstMonth.toLowerCase()]}-${startDay.padStart(2, "0")}T00:00:00`;
+
+  const secondMonthMatch = firstDateSet.match(/-\s*(January|February|March|April|May|June|July|August|September|October|November|December|Jan|Feb|Mar|Apr|Jun|Jul|Aug|Sep|Oct|Nov|Dec)\s+(\d{1,2})/i);
+  if (secondMonthMatch) {
+    return {
+      startDate,
+      endDate: `${year}-${months[secondMonthMatch[1].toLowerCase()]}-${secondMonthMatch[2].padStart(2, "0")}T23:59:59`
+    };
   }
-  
-  return null;
+
+  const sameMonthEndMatch = firstDateSet.match(/\b\d{1,2}\s*-\s*(\d{1,2})\b/);
+  if (sameMonthEndMatch) {
+    return {
+      startDate,
+      endDate: `${year}-${months[firstMonth.toLowerCase()]}-${sameMonthEndMatch[1].padStart(2, "0")}T23:59:59`
+    };
+  }
+
+  return { startDate };
 }
 
 interface EventPageProps {
@@ -96,8 +79,7 @@ export default async function EventPage({ params }: EventPageProps) {
   }
 
   // Parse dates for structured data (ISO 8601 format required by Google)
-  const startDateISO = toISO8601(event.dates || event.month);
-  const endDateISO = getEndDate(event.dates);
+  const eventDates = parseEventDateRange(event.dates || event.month);
   
   const eventFaqs = [
     {
@@ -126,7 +108,7 @@ export default async function EventPage({ params }: EventPageProps) {
     "@type": "Event",
     "name": event.name,
     "description": event.description,
-    "startDate": startDateISO,
+    "startDate": eventDates.startDate,
     "eventStatus": "https://schema.org/EventScheduled",
     "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
     "location": {
@@ -152,8 +134,8 @@ export default async function EventPage({ params }: EventPageProps) {
   };
 
   // Add endDate if it's a multi-day event
-  if (endDateISO) {
-    eventSchema.endDate = endDateISO;
+  if (eventDates.endDate) {
+    eventSchema.endDate = eventDates.endDate;
   }
 
   const structuredData = {

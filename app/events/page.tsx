@@ -32,9 +32,10 @@ export default function EventsDirectory() {
       "@type": "ListItem",
       "position": index + 1,
       "item": {
-        "@type": "Event",
-        "name": event.name,
-        "url": `https://www.airfreshmarketing.com/events/${event.slug}`
+        "@type": "WebPage",
+        "name": `${event.name} Event Staffing`,
+        "url": `https://www.airfreshmarketing.com/events/${event.slug}`,
+        "description": `Professional event staffing services for ${event.name} in ${event.city}, ${event.state}.`
       }
     }))
   };
