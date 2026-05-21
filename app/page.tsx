@@ -243,6 +243,21 @@ export default function Home() {
     }
   ];
 
+  const rapidRankingPages = [
+    { href: "/event-staffing-agency", label: "Event Staffing Agency", note: "Nationwide event staff, lead capture, and on-site support" },
+    { href: "/brand-ambassador-agency", label: "Brand Ambassador Agency", note: "Trained promotional teams for launches, demos, and retail" },
+    { href: "/promotional-staffing-agency", label: "Promotional Staffing Agency", note: "Flexible promotional staff for sampling and field marketing" },
+    { href: "/services/trade-show-staffing", label: "Trade Show Staffing", note: "Booth staff, badge scanning, demos, and show-floor support" },
+    { href: "/city-services/denver-brand-ambassadors", label: "Denver Brand Ambassadors", note: "Local Colorado talent for events, retail, and sampling" },
+    { href: "/city-services/denver-sampling", label: "Denver Product Sampling", note: "In-store, street-level, and event sampling teams" },
+    { href: "/city-services/las-vegas-convention-staffing", label: "Las Vegas Trade Show Staffing", note: "Convention, expo, booth, and hospitality staffing" },
+    { href: "/city-services/las-vegas-brand-ambassadors", label: "Las Vegas Brand Ambassadors", note: "High-volume event teams for Strip, expo, and festival activations" },
+    { href: "/city-services/los-angeles-brand-ambassadors", label: "Los Angeles Brand Ambassadors", note: "Launch, retail, and entertainment-market activation staff" },
+    { href: "/city-services/san-diego-guerilla-marketing", label: "San Diego Guerrilla Marketing", note: "Street teams, buzz campaigns, and local-market activation" },
+    { href: "/city-services/new-york-city-brand-ambassadors", label: "New York City Brand Ambassadors", note: "Street teams, pop-ups, launch events, and retail support" },
+    { href: "/city-services/miami-brand-ambassadors", label: "Miami Brand Ambassadors", note: "Event, nightlife, beverage, and festival activation teams" }
+  ];
+
   const testimonials = [
     {
       name: "Claire M.",
@@ -492,6 +507,28 @@ export default function Home() {
             <Link href="/services" className="inline-flex items-center gap-1 mt-6 text-cyan-600 hover:text-cyan-700 font-medium text-sm">
               View All Services <ArrowRight className="w-4 h-4" />
             </Link>
+          </div>
+
+          {/* Rapid ranking links: high-intent pages from the monthly SEO analysis */}
+          <div className="mt-16 rounded-3xl border border-cyan-100 bg-gradient-to-br from-cyan-50 via-white to-blue-50 p-8 shadow-sm">
+            <div className="text-center mb-8">
+              <Badge className="mb-3 bg-cyan-100 text-cyan-700 hover:bg-cyan-100">High-Intent Service Hubs</Badge>
+              <h3 className="text-2xl md:text-3xl font-bold text-gray-900 mb-3">Popular Event Staffing, Brand Ambassador & Sampling Pages</h3>
+              <p className="text-gray-600 max-w-3xl mx-auto">
+                Fast access to the commercial service and city pages brands search for when they need staff, ambassadors, sampling teams, and trade show support.
+              </p>
+            </div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+              {rapidRankingPages.map((page) => (
+                <Link key={page.href} href={page.href} className="group rounded-2xl border border-gray-100 bg-white p-5 shadow-sm transition-all hover:-translate-y-1 hover:border-cyan-300 hover:shadow-md">
+                  <span className="block font-semibold text-gray-900 group-hover:text-cyan-700">{page.label}</span>
+                  <span className="mt-2 block text-sm text-gray-600">{page.note}</span>
+                  <span className="mt-3 inline-flex items-center text-sm font-medium text-cyan-600">
+                    View page <ArrowRight className="ml-1 h-4 w-4" />
+                  </span>
+                </Link>
+              ))}
+            </div>
           </div>
           <div className="text-center mt-12">
             <h3 className="text-lg font-semibold text-gray-700 mb-6">Events We Staff</h3>

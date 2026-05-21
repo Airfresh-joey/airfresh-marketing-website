@@ -100,6 +100,17 @@ const citySlugs = citiesData.map(city => city.slug)
 // City service types - use actual service slugs from city-services-data.ts
 const cityServiceTypes = serviceTypes.map(s => s.slug)
 
+const highIntentCityServicePages = new Set([
+  'denver-brand-ambassadors',
+  'denver-sampling',
+  'las-vegas-convention-staffing',
+  'las-vegas-brand-ambassadors',
+  'los-angeles-brand-ambassadors',
+  'san-diego-guerilla-marketing',
+  'new-york-city-brand-ambassadors',
+  'miami-brand-ambassadors',
+])
+
 export default function sitemap(): MetadataRoute.Sitemap {
   const today = new Date().toISOString().split('T')[0]
 
@@ -453,11 +464,14 @@ export default function sitemap(): MetadataRoute.Sitemap {
   // Generate city-service URLs
   allCitySlugs.forEach(citySlug => {
     cityServiceTypes.forEach(serviceSlug => {
+      const cityServiceSlug = `${citySlug}-${serviceSlug}`
+      const isHighIntent = highIntentCityServicePages.has(cityServiceSlug)
+
       cityServicePages.push({
-        url: `${DOMAIN}/city-services/${citySlug}-${serviceSlug}`,
+        url: `${DOMAIN}/city-services/${cityServiceSlug}`,
         lastModified: today,
         changeFrequency: 'weekly' as const,
-        priority: 0.7
+        priority: isHighIntent ? 0.9 : 0.7
       })
     })
   })
