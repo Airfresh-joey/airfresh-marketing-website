@@ -7,6 +7,7 @@ const NewsletterForm = dynamic(() => import("./NewsletterForm"));
 
 export default function Footer() {
   const currentYear = new Date().getFullYear();
+  const footerQuoteHref = "/get-quote?source=site-footer&intent=final-get-started";
 
   const services = [
     { name: "Brand Ambassadors", href: "/services/brand-ambassadors" },
@@ -309,7 +310,7 @@ export default function Footer() {
                 </div>
                 <div className="flex flex-col sm:flex-row gap-4 md:justify-end">
                   <Link
-                    href="/contact"
+                    href={footerQuoteHref}
                     className="inline-flex items-center justify-center px-6 py-3 bg-cyan-500 hover:bg-cyan-600 text-white font-semibold rounded-lg transition-all duration-300 shadow-lg shadow-cyan-500/25 hover:shadow-cyan-500/40"
                   >
                     Get Started

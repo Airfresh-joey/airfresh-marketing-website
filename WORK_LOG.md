@@ -1,5 +1,23 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-23 08:08 MDT
+
+Goal: capture buyer-intent traffic from the global footer CTA and route it directly into the attributed quote funnel instead of the general contact page.
+
+Shipped candidate:
+- Updated the footer “Ready to Create Something Amazing?” Get Started CTA from `/contact` to `/get-quote?source=site-footer&intent=final-get-started`.
+- Preserved the footer Contact navigation link and Join Our Team link, keeping general navigation/candidate paths separate from buyer-intent quote flow.
+
+Checks:
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after build verification.
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- Commit recorded with this shipment (`fix: route footer cta to quote funnel`).
+
+Next actions:
+- Verify production footer DOM after Vercel deploy and confirm `/get-quote` stores `site-footer` / `final-get-started` attribution without submitting a fake lead.
+
 ## 2026-05-15 04:39 MDT
 
 Goal: strengthen `/get-quote` conversion clarity and attribution handoff so high-intent CTA traffic visibly carries source/intent context into the quote workflow.
