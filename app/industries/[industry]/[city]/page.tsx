@@ -69,12 +69,12 @@ export default async function IndustryCityPage({ params }: IndustryCityPageProps
     },
     {
       name: 'Event Staffing',
-      slug: 'event-staffing',
+      slug: 'event-management',
       description: `Experienced event staff for ${industry.name.toLowerCase()} conferences and trade shows`
     },
     {
       name: 'Trade Show Staff',
-      slug: 'trade-show-staff',
+      slug: 'convention-staffing',
       description: `Expert trade show representatives for ${industry.name.toLowerCase()} exhibitions`
     },
     {
@@ -136,11 +136,18 @@ export default async function IndustryCityPage({ params }: IndustryCityPageProps
               </CardHeader>
               <CardContent>
                 <p className="text-gray-600 mb-4">{service.description}</p>
-                <Link href={`/cities/${citySlug}/${service.slug}`}>
-                  <Button variant="outline" className="w-full">
-                    Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                <div className="flex flex-col sm:flex-row gap-2">
+                  <Button asChild variant="outline" className="flex-1">
+                    <Link href={`/city-services/${citySlug}-${service.slug}`}>
+                      Learn More <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
                   </Button>
-                </Link>
+                  <Button asChild className="flex-1">
+                    <Link href={quoteHref(`service-${service.slug}`)}>
+                      Get Quote <ArrowRight className="ml-2 h-4 w-4" />
+                    </Link>
+                  </Button>
+                </div>
               </CardContent>
             </Card>
           ))}
