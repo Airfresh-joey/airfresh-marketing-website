@@ -29,7 +29,7 @@ const serviceLinks = [
   { href: "/services/promotional-models", label: "Promotional Models" }
 ];
 
-const navQuoteHref = "/get-quote?source=site-navigation&intent=desktop-request-proposal";
+const navQuoteHref = "/get-quote?source=site-navigation&intent=desktop-event-staffing-proposal";
 
 // Server component for the static nav structure
 export default function NavigationWrapper() {
