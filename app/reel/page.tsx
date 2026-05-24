@@ -102,7 +102,9 @@ export default function ReelPage() {
       const iframe = document.getElementById("hero-vimeo");
       if (iframe && (window as any).Vimeo) {
         const player = new (window as any).Vimeo.Player(iframe);
-        player.setPlaybackRate(1.5).catch(() => {});
+        player.ready().then(() => {
+          player.setPlaybackRate(1.5).catch(() => {});
+        });
       }
     };
     document.head.appendChild(script);
@@ -116,7 +118,7 @@ export default function ReelPage() {
           <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2">
             <iframe
               id="hero-vimeo"
-              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7"
+              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1&api=1#t=7"
               className="absolute top-0 left-0 w-full h-full"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
