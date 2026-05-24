@@ -1,5 +1,24 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-24 08:02 MDT
+
+Goal: move high-visibility proof/navigation paths toward the stronger case-study hub while keeping the legacy full portfolio available.
+
+Shipped candidate:
+- Updated the global desktop/mobile navigation label from `Portfolio` to `Case Studies` and routed it to `/case-studies`.
+- Updated the homepage hero secondary CTA from `/portfolio` to `/case-studies` with clearer `View Case Studies` copy.
+- Updated the lower homepage proof-section primary CTA to `/case-studies`, leaving a secondary `Browse Full Portfolio` link to preserve access to `/portfolio`.
+
+Checks:
+- Codex CLI was unavailable on this machine, so the pass was completed manually under the AFM growth workflow.
+- `npm run check` passed.
+- `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
+- Reverted generated `tsconfig.tsbuildinfo` after checks.
+- Pending: commit/push, production deploy, and live custom-domain DOM verification.
+
+Next actions:
+- Verify production homepage/nav expose `/case-studies` for the proof CTAs and confirm `/case-studies` returns 200 on the custom domain.
+
 ## 2026-05-23 08:08 MDT
 
 Goal: capture buyer-intent traffic from the global footer CTA and route it directly into the attributed quote funnel instead of the general contact page.

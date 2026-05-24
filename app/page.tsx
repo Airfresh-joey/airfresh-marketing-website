@@ -1138,14 +1138,14 @@ export default function Home() {
             className="text-center mt-16"
           >
             <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
-              <Link href="/portfolio">
+              <Link href="/case-studies">
                 <Button size="lg" className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white font-bold text-xl px-12 py-8 rounded-2xl shadow-2xl hover:shadow-cyan-500/25 transform hover:scale-105 transition-all duration-300">
-                  View Portfolio
+                  View Case Studies
                   <ArrowRight className="ml-3 h-6 w-6" />
                 </Button>
               </Link>
-              <Link href="/case-studies" className="text-cyan-600 hover:text-cyan-700 font-semibold text-lg flex items-center gap-2">
-                Browse Case Studies <ArrowRight className="w-5 h-5" />
+              <Link href="/portfolio" className="text-cyan-600 hover:text-cyan-700 font-semibold text-lg flex items-center gap-2">
+                Browse Full Portfolio <ArrowRight className="w-5 h-5" />
               </Link>
             </div>
           </div>

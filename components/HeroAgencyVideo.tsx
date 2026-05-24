@@ -219,8 +219,8 @@ export default function HeroAgencyVideo() {
                 variant="outline"
                 className="border-2 border-white/40 bg-black/25 backdrop-blur-sm hover:bg-white/20 text-white px-6 py-5 text-base font-semibold rounded-full transition-all duration-200 hover:scale-105 active:scale-95 md:px-8 md:py-6 md:text-lg"
               >
-                <Link href="/portfolio">
-                  View Our Work
+                <Link href="/case-studies">
+                  View Case Studies
                 </Link>
               </Button>
             </div>

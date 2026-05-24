@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 import MobileNav from "./MobileNav";
 
 const navLinks = [
-  { href: "/portfolio", label: "Portfolio" },
+  { href: "/case-studies", label: "Case Studies" },
   { href: "/services", label: "Services", hasDropdown: true },
   { href: "/technology", label: "Technology" },
   { href: "/locations", label: "Locations" },
