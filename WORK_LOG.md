@@ -14,10 +14,13 @@ Checks:
 - `npm run check` passed.
 - `npm run build` passed; generated 6,133 sitemap URLs and 6,303 static pages.
 - Reverted generated `tsconfig.tsbuildinfo` after checks.
-- Pending: commit/push, production deploy, and live custom-domain DOM verification.
+- Rebased over remote commit `7864bad` and pushed code commit `eb05f5b` (`feat: route proof CTAs to case studies`) to `origin/main`.
+- Deployed production via Vercel project `afm-website`: `https://afm-website-cfp185e1d-joey-5223s-projects.vercel.app`, aliased to `https://airfreshmarketing.com` and `https://www.airfreshmarketing.com`.
+- Verified live custom-domain DOM exposes `Case Studies` nav, `View Case Studies` CTAs to `/case-studies`, and secondary `Browse Full Portfolio` to `/portfolio`.
+- Verified `https://www.airfreshmarketing.com/case-studies?proofcase=eb05f5b` returns 200 and apex redirects to the `www` canonical host.
 
 Next actions:
-- Verify production homepage/nav expose `/case-studies` for the proof CTAs and confirm `/case-studies` returns 200 on the custom domain.
+- Continue high-intent proof/funnel cleanup by converting remaining legacy `/portfolio` proof links on service, city, and comparison pages to the strongest matching case-study or `/case-studies` destination where appropriate.
 
 ## 2026-05-23 08:08 MDT
 
