@@ -89,8 +89,6 @@ const landscapeVideos = [
   { id: "394235535", title: "SXSW – Let's Taco Bout It" },
   { id: "722724000", title: "Coca-Cola Special Olympics Orlando" },
   { id: "649976065", title: "Merrell Footwear – Brand Hero" },
-  { id: "651787642", title: "Merrell AFM Front Page" },
-  { id: "1157974198", title: "Immerse Forge – Red Rocks" },
 ];
 
 export const metadata = {
