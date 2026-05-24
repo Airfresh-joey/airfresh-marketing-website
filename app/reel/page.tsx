@@ -68,6 +68,29 @@ const portraitVideos = [
   "1183200321",
   "1183200306",
   "1183200225",
+  "1183200241",
+  "1183200250",
+  "1183200263",
+  "1183200279",
+  "1183200291",
+  "1183200346",
+  "1183200407",
+  "1183200432",
+];
+
+const landscapeVideos = [
+  { id: "394084617", title: "Air Fresh x Premier Protein – SoCal Streets" },
+  { id: "394233666", title: "Clif Bar x Peachtree Road Racers" },
+  { id: "394086862", title: "Mac x Air Fresh Marketing" },
+  { id: "395332645", title: "Air Fresh Marketing AIMCO" },
+  { id: "395306497", title: "Visible Rock at Red Rocks" },
+  { id: "394241898", title: "Bring Your Brand to Life" },
+  { id: "394237435", title: "We Bring Brands to People" },
+  { id: "394235535", title: "SXSW – Let's Taco Bout It" },
+  { id: "722724000", title: "Coca-Cola Special Olympics Orlando" },
+  { id: "649976065", title: "Merrell Footwear – Brand Hero" },
+  { id: "651787642", title: "Merrell AFM Front Page" },
+  { id: "1157974198", title: "Immerse Forge – Red Rocks" },
 ];
 
 export const metadata = {
@@ -138,8 +161,37 @@ export default function ReelPage() {
         </div>
       </section>
 
-      {/* Portrait video scroll — FIFA production */}
+      {/* Landscape videos — multi-client brand work */}
       <section className="py-12 bg-gray-950">
+        <div className="max-w-7xl mx-auto px-4">
+          <h2 className="text-2xl font-bold text-white mb-2">Brand Activations</h2>
+          <p className="text-white/50 text-sm mb-8">
+            Premier Protein · Clif Bar · Merrell · Coca-Cola · SXSW · Red Rocks and more
+          </p>
+          <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
+            {landscapeVideos.map((v) => (
+              <div key={v.id} className="flex-none w-72 snap-start">
+                <div className="relative w-full rounded-xl overflow-hidden" style={{ paddingTop: "56.25%" }}>
+                  <iframe
+                    src={`https://player.vimeo.com/video/${v.id}?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&muted=1`}
+                    className="absolute inset-0 w-full h-full"
+                    frameBorder="0"
+                    allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                    referrerPolicy="strict-origin-when-cross-origin"
+                    allowFullScreen
+                    loading="lazy"
+                    title={v.title}
+                  />
+                </div>
+                <p className="text-white/50 text-xs mt-2 truncate">{v.title}</p>
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Portrait video scroll — FIFA production */}
+      <section className="py-12 border-t border-white/10">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-2xl font-bold text-white mb-2">Latest Production</h2>
           <p className="text-white/50 text-sm mb-8">
