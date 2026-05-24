@@ -29,6 +29,7 @@ export interface USAEvent {
   heroImage: string;
   featured?: boolean;
   tier: 1 | 2 | 3;
+  videos?: string[];
 }
 
 export const usaEvents: USAEvent[] = [
@@ -885,7 +886,16 @@ export const usaEvents: USAEvent[] = [
     typicalRoles: ["Brand Ambassadors", "VIP Hosts", "Bilingual Staff", "Promotional Models", "Event Coordinators"],
     heroImage: "/images/case-studies/gallery/duracell/duracell-3.jpg",
     featured: true,
-    tier: 1
+    tier: 1,
+    videos: [
+      "1183200412",
+      "1183200399",
+      "1183200379",
+      "1183200366",
+      "1183200321",
+      "1183200306",
+      "1183200225"
+    ]
   },
   {
     id: "fifa-world-cup-2026-atlanta",

@@ -383,6 +383,36 @@ export default async function EventPage({ params }: EventPageProps) {
         </div>
       </section>
 
+      {/* Video Showcase */}
+      {event.videos && event.videos.length > 0 && (
+        <section className="py-16 bg-gray-900">
+          <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <h2 className="text-3xl font-bold text-white text-center mb-4">See Our Work in Action</h2>
+            <p className="text-gray-400 text-center mb-10 max-w-2xl mx-auto">
+              Real activations. Real results. AirFresh teams delivering on-brand experiences at major events.
+            </p>
+            <div className="flex gap-4 overflow-x-auto pb-4 snap-x snap-mandatory">
+              {event.videos.map((videoId) => (
+                <div key={videoId} className="flex-none w-48 snap-start">
+                  <div className="relative w-full" style={{ paddingTop: '177.78%' }}>
+                    <iframe
+                      src={`https://player.vimeo.com/video/${videoId}?badge=0&autopause=0&player_id=0&app_id=58479&loop=1&muted=1`}
+                      className="absolute inset-0 w-full h-full rounded-xl"
+                      frameBorder="0"
+                      allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                      referrerPolicy="strict-origin-when-cross-origin"
+                      allowFullScreen
+                      loading="lazy"
+                      title={`AirFresh Marketing activation video`}
+                    />
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
+
       {/* All Services for This Event */}
       <section className="py-12 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
