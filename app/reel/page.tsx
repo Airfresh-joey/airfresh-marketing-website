@@ -1,5 +1,8 @@
+"use client";
+
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 
 const clients = [
   {
@@ -91,14 +94,20 @@ const landscapeVideos = [
   { id: "649976065", title: "Merrell Footwear – Brand Hero" },
 ];
 
-export const metadata = {
-  title: "Our Work | AirFresh Marketing",
-  description:
-    "AirFresh Marketing reel — brand activations, event staffing, and experiential marketing across 300+ clients.",
-  robots: { index: false },
-};
-
 export default function ReelPage() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://player.vimeo.com/api/player.js";
+    script.onload = () => {
+      const iframe = document.getElementById("hero-vimeo");
+      if (iframe && (window as any).Vimeo) {
+        const player = new (window as any).Vimeo.Player(iframe);
+        player.setPlaybackRate(1.5).catch(() => {});
+      }
+    };
+    document.head.appendChild(script);
+  }, []);
+
   return (
     <div className="min-h-screen bg-black text-white pt-16">
       {/* Hero video */}
@@ -106,7 +115,8 @@ export default function ReelPage() {
         <div className="absolute inset-0 bg-black">
           <div className="absolute top-1/2 left-1/2 min-w-full min-h-full w-[177.78vh] h-[56.25vw] -translate-x-1/2 -translate-y-1/2">
             <iframe
-              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1"
+              id="hero-vimeo"
+              src="https://player.vimeo.com/video/395306497?badge=0&autopause=0&player_id=0&app_id=58479&background=1&autoplay=1&muted=1&loop=1&playsinline=1&dnt=1#t=7"
               className="absolute top-0 left-0 w-full h-full"
               frameBorder="0"
               allow="autoplay; fullscreen; picture-in-picture"
