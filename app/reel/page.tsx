@@ -129,36 +129,6 @@ export default function ReelPage() {
         </div>
       </section>
 
-      {/* Client grid */}
-      <section className="py-16 px-4 max-w-7xl mx-auto">
-        <h2 className="text-2xl font-bold text-white mb-2">Featured Clients</h2>
-        <p className="text-white/50 text-sm mb-8">
-          From Formula One hospitality to grassroots street teams — we've done it all.
-        </p>
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-          {clients.map((client) => (
-            <Link key={client.name} href={client.href}>
-              <div className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-gray-900 cursor-pointer">
-                <Image
-                  src={client.image}
-                  alt={client.name}
-                  fill
-                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
-                <div className="absolute bottom-0 left-0 right-0 p-3">
-                  <p className="text-cyan-400 text-[10px] font-semibold uppercase tracking-wider mb-0.5">
-                    {client.category}
-                  </p>
-                  <p className="text-white font-bold text-sm leading-tight">{client.name}</p>
-                  <p className="text-white/60 text-[11px] mt-0.5">{client.stat}</p>
-                </div>
-              </div>
-            </Link>
-          ))}
-        </div>
-      </section>
-
       {/* Landscape videos — multi-client brand work */}
       <section className="py-12 bg-gray-950">
         <div className="max-w-7xl mx-auto px-4">
@@ -213,6 +183,36 @@ export default function ReelPage() {
               </div>
             ))}
           </div>
+        </div>
+      </section>
+
+      {/* Client grid */}
+      <section className="py-16 px-4 max-w-7xl mx-auto">
+        <h2 className="text-2xl font-bold text-white mb-2">Featured Clients</h2>
+        <p className="text-white/50 text-sm mb-8">
+          From Formula One hospitality to grassroots street teams — we've done it all.
+        </p>
+        <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+          {clients.map((client) => (
+            <Link key={client.name} href={client.href}>
+              <div className="group relative rounded-xl overflow-hidden aspect-[4/3] bg-gray-900 cursor-pointer">
+                <Image
+                  src={client.image}
+                  alt={client.name}
+                  fill
+                  className="object-cover group-hover:scale-105 transition-transform duration-500 opacity-80 group-hover:opacity-100"
+                />
+                <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+                <div className="absolute bottom-0 left-0 right-0 p-3">
+                  <p className="text-cyan-400 text-[10px] font-semibold uppercase tracking-wider mb-0.5">
+                    {client.category}
+                  </p>
+                  <p className="text-white font-bold text-sm leading-tight">{client.name}</p>
+                  <p className="text-white/60 text-[11px] mt-0.5">{client.stat}</p>
+                </div>
+              </div>
+            </Link>
+          ))}
         </div>
       </section>
 
