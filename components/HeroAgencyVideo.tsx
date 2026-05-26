@@ -142,7 +142,7 @@ export default function HeroAgencyVideo() {
 
           {/* Agency Badge */}
           <div 
-            className={`inline-flex items-center gap-2 px-4 py-2 bg-black/30 backdrop-blur-sm rounded-full text-white/95 text-sm font-medium mb-4 md:mb-8 transition-all duration-700 delay-100 ${
+            className={`inline-flex items-center gap-2 px-4 py-2 bg-black/30 backdrop-blur-sm rounded-full text-white/95 text-sm font-medium mb-4 md:mb-6 transition-all duration-700 delay-100 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
@@ -150,25 +150,41 @@ export default function HeroAgencyVideo() {
             <span>Experiential Marketing Agency</span>
           </div>
 
-          {/* Main Headline */}
+          {/* Above-fold social proof — named brand trust signal */}
+          <div
+            className={`mb-4 md:mb-8 text-white/70 text-xs sm:text-sm uppercase tracking-widest font-medium transition-all duration-700 delay-125 ${
+              isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+            }`}
+          >
+            Trusted by{' '}
+            <span className="text-white/90 font-semibold">Netflix</span>
+            {' · '}
+            <span className="text-white/90 font-semibold">Sweetgreen</span>
+            {' · '}
+            <span className="text-white/90 font-semibold">Premier Protein</span>
+            {' · '}
+            <span className="text-white/90 font-semibold">500+ brands nationwide</span>
+          </div>
+
+          {/* Main Headline — leads with primary keyword */}
           <h1
             className={`text-4xl sm:text-5xl md:text-7xl lg:text-8xl font-bold text-white mb-4 md:mb-6 drop-shadow-[0_3px_12px_rgba(0,0,0,0.85)] transition-all duration-700 delay-150 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            <span className="block">Event Staffing, Brand Ambassadors</span>
+            <span className="block">Experiential Marketing Agency</span>
             <span className="block bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
-              and Experiential Marketing Nationwide
+              Brand Ambassadors &amp; Event Staffing
             </span>
           </h1>
 
-          {/* Subheadline */}
+          {/* Subheadline — reinforces nationwide, fast, proven value prop */}
           <p 
             className={`text-base sm:text-lg md:text-2xl text-white/95 max-w-3xl mx-auto mb-6 md:mb-12 font-light leading-relaxed drop-shadow-[0_2px_8px_rgba(0,0,0,0.85)] transition-all duration-700 delay-200 ${
               isVisible ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
             }`}
           >
-            We staff and execute street teams, product sampling, trade shows, festivals, and retail activations with trained brand ambassadors, field managers, and measurable recap reporting.
+            Nationwide coverage. 24-hour response. Proven results. We staff and execute brand ambassador programs, product sampling, trade shows, and experiential campaigns across 50+ markets.
           </p>
 
           <div
@@ -207,7 +223,7 @@ export default function HeroAgencyVideo() {
                 className="bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-600 hover:to-blue-700 text-white px-6 py-5 text-base font-semibold rounded-full shadow-2xl shadow-cyan-500/25 hover:shadow-cyan-500/40 transition-all duration-200 hover:scale-105 active:scale-95 group md:px-8 md:py-6 md:text-lg"
                 data-testid="button-get-strategy-audit"
               >
-                <Link href="/get-quote?source=homepage&intent=hero-event-staffing-quote">
+                <Link href="/get-quote?source=homepage&intent=hero">
                   Get an Event Staffing Quote
                   <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
                 </Link>
