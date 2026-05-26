@@ -1164,3 +1164,25 @@ Checks:
 Next actions:
 - Audit homepage hero/H1 conversion clarity and proof-above-fold pass.
 - Continue GSC opportunity pass on pages with impressions, low CTR, and positions 4–15.
+
+## 2026-05-26 MDT
+
+Goal: batch-route all remaining /portfolio proof CTAs to /case-studies sitewide (follow-up from 2026-05-24 next actions).
+
+Audit: 38 /portfolio href occurrences found outside app/portfolio/. 3 intentional kept. 35 fixed.
+
+Shipped (32 files, 38 changes, commit 994565a):
+- 18 compare pages: href /portfolio -> /case-studies (label said View Case Studies all along)
+- events and venues service pages: View All Case Studies -> /case-studies
+- cities/[slug] and cities/[slug]/[service]: hero portfolio CTA -> /case-studies
+- city-services, services, luxury, locations, Hero.tsx: proof CTAs -> /case-studies
+- 4 blog pages: proof CTAs -> /case-studies
+- case-studies/[id]: Back to Portfolio -> Back to Case Studies + /case-studies
+- Intentional: homepage Browse Full Portfolio -> /portfolio secondary kept
+
+Build: passed 6304 static pages. Deployed to production. Verified live.
+
+Next actions:
+- GSC opportunity pass: pages with impressions 10-200, position 4-15, CTR under 2 pct
+- Audit /get-quote internal link opportunities on neighborhood/state service pages
+- Above-fold case studies proof section on high-intent city pages
