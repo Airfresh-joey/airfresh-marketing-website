@@ -44,6 +44,13 @@ const nextConfig = {
   // Security headers
   async headers() {
     return [
+      // Prevent API routes from being indexed by search engines
+      {
+        source: '/api/:path*',
+        headers: [
+          { key: 'X-Robots-Tag', value: 'noindex, nofollow' },
+        ],
+      },
       // Allow iframe embedding for portfolio page (for proposal-dashboard integration)
       {
         source: '/portfolio',
