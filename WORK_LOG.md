@@ -1,5 +1,26 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-25 MDT (CTA attribution audit — industries & venues)
+
+Goal: verify and confirm CTA attribution on /industries and /venues page families per growth workflow task.
+
+Audit findings:
+- `/industries/page.tsx`: already has `quoteHref = (intent) => \`/get-quote?source=industries&intent=${intent}\`` applied to final "Get a Custom Quote" CTA (intent=custom-industry-quote). No bare /get-quote or /contact buyer CTAs remain.
+- `/industries/[industry]/page.tsx`: already has `quoteHref = (intent) => \`/get-quote?source=industry-${industrySlug}&intent=${intent}\`` applied to hero CTA (intent=hero) and final CTA (intent=final-cta). No bare buyer CTAs remain.
+- `/industries/[industry]/[city]/page.tsx`: already attributed with `source=industry-${industrySlug}-${citySlug}` for hero, service, and final CTAs.
+- `/venues/page.tsx`: already has `quoteHref = (intent) => \`/get-quote?source=venues&intent=${intent}\`` applied to hero CTA (intent=hero-venue-staffing-quote) and final CTA (intent=final-free-quote).
+- `/venues/[slug]/page.tsx`: already attributed with `source=venue-${venue.slug}` for hero (intent=hero) and final (intent=final-cta) CTAs.
+- `/venues/[slug]/[service]/page.tsx`: already attributed with `source=venue-${venue.slug}-${service.slug}` for hero (intent=hero), sidebar (intent=sidebar-custom-quote), and final (intent=final-cta) CTAs.
+
+No file changes were needed — all attributions were already in place from prior passes (industries: 2026-05-14, venues: 2026-05-13).
+
+Checks:
+- Cleared stale Turbopack .next cache (caused pre-existing build failure), then `npm run build` passed cleanly — generated all static pages including 46+ venues and 8+ industry pages.
+- Confirmed zero bare `/get-quote` or `/contact` buyer-intent hrefs remain in any industries or venues page file.
+
+Next actions:
+- Continue attribution cleanup on any remaining pages not yet audited (compare pages, neighborhoods, etc.)
+
 ## 2026-05-25 MDT
 
 Goal: audit and improve the homepage hero/above-fold section for conversion clarity — keyword-rich H1, named social proof above fold, cleaner sub-headline value prop, and corrected hero CTA attribution.
