@@ -1,5 +1,24 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-25 MDT
+
+Goal: audit and improve the homepage hero/above-fold section for conversion clarity — keyword-rich H1, named social proof above fold, cleaner sub-headline value prop, and corrected hero CTA attribution.
+
+Shipped candidate (file: `components/HeroAgencyVideo.tsx`):
+- **H1 reordered:** Line 1 now leads with `Experiential Marketing Agency` (primary keyword first); line 2 is `Brand Ambassadors & Event Staffing`. Previous order buried "Experiential Marketing" at the end of line 2.
+- **Above-fold social proof added:** Inserted a named brand trust line — "Trusted by Netflix · Sweetgreen · Premier Protein · 500+ brands nationwide" — directly below the agency badge and above the H1. No social proof existed above fold before.
+- **Sub-headline rewritten:** Now opens with `Nationwide coverage. 24-hour response. Proven results.` before listing services, explicitly reinforcing the three value pillars buyers care about.
+- **Hero CTA attribution corrected:** Primary CTA updated from `/get-quote?source=homepage&intent=hero-event-staffing-quote` to `/get-quote?source=homepage&intent=hero` per attribution standard.
+
+Checks:
+- `npm run build` passed; all static pages generated successfully.
+- Committed `43b5867` (`fix: homepage hero conversion clarity and above-fold proof pass`) and pushed to `origin/main`.
+- Vercel auto-deploy triggered on push to `main` → will alias to `https://www.airfreshmarketing.com`.
+
+Next actions:
+- Verify live DOM on `https://www.airfreshmarketing.com` confirms H1 text "Experiential Marketing Agency" is on line 1, trust line renders above the H1, and CTA href is `/get-quote?source=homepage&intent=hero`.
+- Continue legacy `/portfolio` proof-link cleanup on service, city, and comparison pages (carried from 2026-05-24 next actions).
+
 ## 2026-05-24 08:02 MDT
 
 Goal: move high-visibility proof/navigation paths toward the stronger case-study hub while keeping the legacy full portfolio available.
