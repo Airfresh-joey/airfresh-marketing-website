@@ -128,7 +128,7 @@ export default function WhatIsExperientialMarketing() {
           <div className="space-y-8">
             <div className="border-l-4 border-cyan-500 pl-6"><h3 className="text-xl font-bold mb-2">Netflix Cowboy Bebop Launch</h3><p className="text-gray-700 mb-3">Netflix created immersive pop-up experiences in major cities featuring sets from the show, photo opportunities, and themed merchandise.</p><p className="text-sm text-gray-500">Result: Millions of social impressions and trending hashtags.</p></div>
             <div className="border-l-4 border-cyan-500 pl-6"><h3 className="text-xl font-bold mb-2">Red Bull Stratos</h3><p className="text-gray-700 mb-3">Red Bull sponsored Felix Baumgartner's record-breaking jump from the edge of space. The live-streamed event perfectly embodied the brand's positioning.</p><p className="text-sm text-gray-500">Result: 8 million concurrent YouTube viewers.</p></div>
-            <div className="border-l-4 border-cyan-500 pl-6"><h3 className="text-xl font-bold mb-2">Air Fresh Marketing Sampling Campaign</h3><p className="text-gray-700 mb-3">Working with brands like Skinny Mixes, <Link href="/portfolio" className="text-cyan-600 hover:underline">Air Fresh Marketing</Link> deployed brand ambassadors across gyms and health food stores nationwide.</p><p className="text-sm text-gray-500">Result: Significant increase in brand awareness and retail velocity.</p></div>
+            <div className="border-l-4 border-cyan-500 pl-6"><h3 className="text-xl font-bold mb-2">Air Fresh Marketing Sampling Campaign</h3><p className="text-gray-700 mb-3">Working with brands like Skinny Mixes, <Link href="/case-studies" className="text-cyan-600 hover:underline">Air Fresh Marketing</Link> deployed brand ambassadors across gyms and health food stores nationwide.</p><p className="text-sm text-gray-500">Result: Significant increase in brand awareness and retail velocity.</p></div>
           </div>
         </section>
 
@@ -177,7 +177,7 @@ export default function WhatIsExperientialMarketing() {
           <p className="mb-6 text-cyan-100">Air Fresh Marketing has delivered 1,000+ successful experiential campaigns for brands like Netflix, Microsoft, Red Bull, and Pepsi.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-cyan-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-what-is-experiential-marketing&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
-            <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/portfolio">View Our Work</Link></Button>
+            <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/case-studies">View Our Work</Link></Button>
           </div>
         </section>
 

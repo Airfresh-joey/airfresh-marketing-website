@@ -1416,7 +1416,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                 <Link href={quoteHref('hero-staffing-quote')}>Get a Staffing Quote</Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="bg-white text-gray-900 border-gray-900 hover:bg-gray-900 hover:text-white">
-                <Link href="/portfolio">View Our Work</Link>
+                <Link href="/case-studies">View Our Work</Link>
               </Button>
             </div>
           </div>
@@ -1541,7 +1541,7 @@ export default function ServicePage({ params }: ServicePageProps) {
                   ))}
                 </div>
 
-                <Link href="/portfolio">
+                <Link href="/case-studies">
                   <Button className="group">
                     View More Case Studies
                     <ArrowRight className="w-4 h-4 ml-2 group-hover:translate-x-1 transition-transform" />

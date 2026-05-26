@@ -680,8 +680,8 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
               </Link>
             </Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent text-white border-white hover:bg-white/10">
-              <Link href="/portfolio">
-                View {city.name} Portfolio
+              <Link href="/case-studies">
+                View {city.name} Case Studies
               </Link>
             </Button>
           </div>

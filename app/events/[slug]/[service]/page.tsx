@@ -388,7 +388,7 @@ export default async function EventServicePage({ params }: EventServicePageProps
               ))}
           </div>
           <div className="text-center mt-8">
-            <Link href="/portfolio">
+            <Link href="/case-studies">
               <Button variant="outline" size="lg">
                 View All Case Studies
                 <ArrowRight className="ml-2 h-5 w-5" />

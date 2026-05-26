@@ -504,7 +504,7 @@ export default function CompareTeamEnterprises() {
             { href: '/compare/nparallel', label: 'AirFresh vs NParallel' },
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
-            { href: '/portfolio', label: 'View Case Studies' },
+            { href: '/case-studies', label: 'View Case Studies' },
             { href: '/get-quote?source=compare-team-enterprises&intent=related-request-quote', label: 'Request a Quote' },
           ].map((link) => (
             <Link key={link.href} href={link.href} className="text-[#002B5B] hover:text-[#F7931E] font-medium transition-colors flex items-center gap-1.5">

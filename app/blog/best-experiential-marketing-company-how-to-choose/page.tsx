@@ -214,7 +214,7 @@ export default function BestExperientialMarketingCompany() {
                 <Link href="/get-quote?source=blog-best-experiential-marketing-company-how-to-choose&intent=article-cta">Start the Conversation <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link href="/portfolio">See Our Work</Link>
+                <Link href="/case-studies">See Our Work</Link>
               </Button>
             </div>
           </div>

@@ -112,7 +112,7 @@ export default function LuxuryBrandMarketingPage() {
                 </Link>
               </Button>
               <Button size="lg" variant="outline" className="border-white text-white hover:bg-white/10" asChild>
-                <Link href="/portfolio">View Our Work</Link>
+                <Link href="/case-studies">View Our Work</Link>
               </Button>
             </div>
           </div>

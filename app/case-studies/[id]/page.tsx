@@ -158,10 +158,10 @@ export default async function CaseStudyDetail(
         {/* Content Overlay */}
         <div className="relative z-20 w-full p-8 lg:p-16">
           <div className="max-w-7xl mx-auto">
-            <Link href="/portfolio">
+            <Link href="/case-studies">
               <Button variant="ghost" className="text-white hover:text-gray-300 mb-6 -ml-2">
                 <ArrowLeft className="w-4 h-4 mr-2" />
-                Back to Portfolio
+                Back to Case Studies
               </Button>
             </Link>
 
@@ -363,7 +363,7 @@ export default async function CaseStudyDetail(
                 <ArrowRight className="w-4 h-4 ml-2" />
               </Link>
             </Button>
-            <Link href="/portfolio">
+            <Link href="/case-studies">
               <Button
                 size="lg"
                 variant="outline"

@@ -434,7 +434,7 @@ export default function Locations() {
                   <ArrowRight className="w-4 h-4 ml-2" />
                 </Link>
               </Button>
-              <Link href="/portfolio">
+              <Link href="/case-studies">
                 <Button size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white hover:text-cyan-600">
                   View Our Work
                 </Button>

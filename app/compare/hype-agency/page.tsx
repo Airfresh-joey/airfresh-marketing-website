@@ -351,7 +351,7 @@ export default function CompareHypeAgency() {
             { href: '/blog/top-event-staffing-agencies-las-vegas', label: 'Top 10 Agencies in Las Vegas' },
             { href: '/pricing', label: 'View Our Pricing' },
             { href: '/technology', label: 'Our Technology Platform' },
-            { href: '/portfolio', label: 'View Case Studies' },
+            { href: '/case-studies', label: 'View Case Studies' },
             { href: '/event-staffing-agency', label: 'Event Staffing Agency' },
             { href: '/brand-ambassador-agency', label: 'Brand Ambassador Agency' },
             { href: '/experiential-marketing-agency', label: 'Experiential Marketing Agency' },

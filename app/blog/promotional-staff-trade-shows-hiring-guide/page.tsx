@@ -222,7 +222,7 @@ export default function PromotionalStaffTradeShows() {
                 <Link href="/get-quote?source=blog-promotional-staff-trade-shows-hiring-guide&intent=article-cta">Get a Trade Show Staffing Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
               </Button>
               <Button asChild size="lg" variant="outline" className="border-white text-white hover:bg-white/10">
-                <Link href="/portfolio">See Our Work</Link>
+                <Link href="/case-studies">See Our Work</Link>
               </Button>
             </div>
           </div>

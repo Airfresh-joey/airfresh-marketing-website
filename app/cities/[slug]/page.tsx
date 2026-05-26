@@ -920,8 +920,8 @@ export default async function CityPage({ params }: CityPageProps) {
                   </Link>
                 </Button>
                 <Button asChild size="lg" variant="outline" className="bg-white/10 backdrop-blur-sm text-white border-white/30 hover:bg-white/20">
-                  <Link href="/portfolio">
-                    View {city.name} Portfolio
+                  <Link href="/case-studies">
+                    View {city.name} Case Studies
                   </Link>
                 </Button>
               </div>

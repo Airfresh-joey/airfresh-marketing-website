@@ -94,7 +94,7 @@ export default function Hero() {
             variant="outline"
             className="border-white/30 bg-white/10 backdrop-blur-md text-white hover:bg-white/20 px-8 py-6 text-lg font-semibold"
           >
-            <Link href="/portfolio">View Our Work</Link>
+            <Link href="/case-studies">View Our Work</Link>
           </Button>
         </div>
         
