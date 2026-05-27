@@ -29,11 +29,7 @@ export default function W9Page() {
           <div className="space-y-4">
             <div className="flex justify-between py-3 border-b border-gray-200">
               <span className="text-gray-600 font-medium">Legal Business Name</span>
-              <span className="text-gray-900 font-semibold">Humming Agent Ai, LLC</span>
-            </div>
-            <div className="flex justify-between py-3 border-b border-gray-200">
-              <span className="text-gray-600 font-medium">DBA</span>
-              <span className="text-gray-900 font-semibold">Air Fresh Marketing</span>
+              <span className="text-gray-900 font-semibold">Air Fresh Marketing, LLC</span>
             </div>
             <div className="flex justify-between py-3 border-b border-gray-200">
               <span className="text-gray-600 font-medium">Federal Tax ID (EIN)</span>
@@ -53,14 +49,23 @@ export default function W9Page() {
           </div>
         </div>
 
-        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6">
+        <div className="bg-amber-50 border border-amber-200 rounded-lg p-6 mb-6">
           <p className="text-amber-800 text-sm">
-            <strong>Need a signed W9?</strong> Contact us at{' '}
+            <strong>Need a signed W9?</strong> Download the completed W9 below or contact us at{' '}
             <a href="mailto:accounting@airfreshmarketing.com" className="underline">
               accounting@airfreshmarketing.com
-            </a>{' '}
-            to request a completed W9 form.
+            </a>.
           </p>
+        </div>
+
+        <div className="text-center mb-8">
+          <a
+            href="/AirFresh-W9.pdf"
+            download="AirFresh-W9.pdf"
+            className="inline-flex items-center gap-2 bg-cyan-600 hover:bg-cyan-700 text-white font-semibold px-6 py-3 rounded-lg transition-colors"
+          >
+            ⬇ Download W9 (PDF)
+          </a>
         </div>
 
         <div className="mt-12 text-center">
