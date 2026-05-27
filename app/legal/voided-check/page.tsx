@@ -36,11 +36,11 @@ export default function VoidedCheckPage() {
             </div>
             <div className="flex justify-between py-3 border-b border-gray-200">
               <span className="text-gray-600 font-medium">Account Holder</span>
-              <span className="text-gray-900 font-semibold">Humming Agent Ai, LLC</span>
+              <span className="text-gray-900 font-semibold">Air Fresh Marketing, LLC</span>
             </div>
             <div className="flex justify-between py-3 border-b border-gray-200">
               <span className="text-gray-600 font-medium">Account Number</span>
-              <span className="text-gray-900 font-mono font-semibold">700792891</span>
+              <span className="text-gray-900 font-mono font-semibold">409103236</span>
             </div>
             <div className="flex justify-between py-3 border-b border-gray-200">
               <span className="text-gray-600 font-medium">ACH Routing Number</span>
