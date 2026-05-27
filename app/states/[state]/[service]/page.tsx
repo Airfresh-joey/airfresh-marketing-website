@@ -289,7 +289,7 @@ export default async function StateServicePage({ params }: StateServicePageProps
                     <h3 className="font-bold text-lg mb-1">{caseStudy.name}</h3>
                     <p className="text-sm text-gray-500 mb-2">{caseStudy.industry}</p>
                     <p className="text-gray-600 text-sm line-clamp-2 mb-4">{caseStudy.tagline}</p>
-                    <Link href={`/portfolio/${caseStudy.id}`}>
+                    <Link href={`/case-studies/${caseStudy.id}`}>
                       <Button variant="outline" size="sm" className="w-full">View Case Study</Button>
                     </Link>
                   </CardContent>

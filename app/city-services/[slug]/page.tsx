@@ -665,7 +665,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
                   <p className="text-gray-600 mb-4 line-clamp-2">
                     {caseStudy.tagline}
                   </p>
-                  <Link href={`/portfolio/${caseStudy.id}`}>
+                  <Link href={`/case-studies/${caseStudy.id}`}>
                     <Button variant="outline" className="w-full">
                       View Case Study
                       <ArrowRight className="ml-2 h-4 w-4" />

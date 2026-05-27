@@ -183,7 +183,7 @@ export default async function IndustryCityPage({ params }: IndustryCityPageProps
                 </CardHeader>
                 <CardContent>
                   <p className="text-gray-600 text-sm mb-4">{cs.tagline}</p>
-                  <Link href={`/portfolio/${cs.id}`}>
+                  <Link href={`/case-studies/${cs.id}`}>
                     <Button variant="outline" size="sm" className="w-full">
                       View Case Study
                     </Button>
