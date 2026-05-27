@@ -1186,3 +1186,34 @@ Next actions:
 - GSC opportunity pass: pages with impressions 10-200, position 4-15, CTR under 2 pct
 - Audit /get-quote internal link opportunities on neighborhood/state service pages
 - Above-fold case studies proof section on high-intent city pages
+
+## 2026-05-27 MDT
+
+Goal: complete the /portfolio → /case-studies routing migration by catching dynamic template-literal links missed in the 2026-05-26 batch pass.
+
+Audit: 5 dynamic page components still used `/portfolio/${id}` template literals for "View Case Study" card buttons. These affected case-study cards on:
+- ~6,300 city-service pages
+- ~460 state-service pages
+- ~550 venue-service pages
+- ~1,024 event-service pages
+- ~320 industry-city pages
+
+Shipped (5 files, commit d7f47a0):
+- app/city-services/[slug]/page.tsx
+- app/states/[state]/[service]/page.tsx
+- app/venues/[slug]/[service]/page.tsx
+- app/events/[slug]/[service]/page.tsx
+- app/industries/[industry]/[city]/page.tsx
+
+All 5 files changed `/portfolio/${id}` → `/case-studies/${id}` on case-study card buttons.
+
+Checks:
+- npm run build passed (6304 static pages, 0 errors).
+- Committed d7f47a0, rebased, pushed to origin/main.
+- Deployed to Vercel production: https://afm-website-2bl89er4l-joey-5223s-projects.vercel.app
+- Verified live: /city-services/denver-brand-ambassadors, /states/colorado/brand-ambassadors, /venues/mccormick-place-chicago/brand-ambassadors all return /case-studies/{id} on case-study card links. Zero /portfolio/{id} links remaining across all tested dynamic pages.
+
+Next actions:
+- GSC opportunity pass: pages with impressions 10-200, position 4-15, CTR under 2%
+- Audit /get-quote internal link opportunities on neighborhood/state pages
+- Above-fold proof section (case studies) on high-intent city pages
