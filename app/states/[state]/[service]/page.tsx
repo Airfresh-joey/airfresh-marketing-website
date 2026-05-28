@@ -222,6 +222,23 @@ export default async function StateServicePage({ params }: StateServicePageProps
         </div>
       </section>
 
+      {/* Mid-body CTA */}
+      <section className="py-10 bg-primary/5 border-y border-primary/10">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6">
+          <div>
+            <p className="text-lg font-semibold text-gray-900">
+              Ready to hire {service.name.toLowerCase()} in {state.name}?
+            </p>
+            <p className="text-gray-600 mt-1">
+              Tell us about your campaign and get a free quote within 24 hours.
+            </p>
+          </div>
+          <Button asChild size="lg" className="shrink-0">
+            <Link href={quoteHref("mid-body")}>Get Free Quote</Link>
+          </Button>
+        </div>
+      </section>
+
       {/* Cities Served */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
