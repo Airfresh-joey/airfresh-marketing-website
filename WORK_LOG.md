@@ -1217,3 +1217,27 @@ Next actions:
 - GSC opportunity pass: pages with impressions 10-200, position 4-15, CTR under 2%
 - Audit /get-quote internal link opportunities on neighborhood/state pages
 - Above-fold proof section (case studies) on high-intent city pages
+
+## 2026-05-28 MDT
+
+Goal: Add mid-body /get-quote CTA banner to all 459 state-service pages to increase funnel touchpoints.
+
+Audit: state/service pages had only 2 quote CTAs (hero + final-cta). All 459 pages lacked a mid-body conversion point between "Why Choose Us" and "Cities Served."
+
+Shipped (1 file, commit 6f077ba):
+- app/states/[state]/[service]/page.tsx
+- Inserted a light-branded CTA banner between "Why Choose Us" and "Cities Served" sections
+- Copy: "Ready to hire {service} in {state}? Tell us about your campaign and get a free quote within 24 hours."
+- Links to /get-quote?source=state-{state}-{service}&intent=mid-body (trackable in GA)
+- Adds 3rd quote touchpoint: hero + mid-body (new) + final-cta
+
+Checks:
+- npm run build passed (6305 pages, 0 errors)
+- Committed 6f077ba, pushed to origin/main
+- Deployed to Vercel production: https://afm-website-6c9z2vcd2-joey-5223s-projects.vercel.app
+- Verified live: /states/colorado/brand-ambassadors returns "Ready to hire", "Tell us about", "mid-body" intent param ✓
+
+Next actions:
+- Same mid-body CTA pattern on venues/[slug]/[service] pages (~550 pages — currently only hero + final-cta)
+- Same pattern on events/[slug]/[service] pages (~1,024 pages — has sidebar but no mid-body banner)
+- GSC opportunity pass: pages 4-15 position with impressions 10-200, CTR < 2%
