@@ -35,7 +35,7 @@ export default function CloudchipSFPage() {
     return (
       <iframe
         src="/training/cloudchipr-sf.html"
-        style={{ position: 'fixed', inset: 0, width: '100%', height: '100%', border: 'none' }}
+        style={{ position: 'fixed', inset: 0, width: '100%', height: '100%', border: 'none', zIndex: 9999 }}
         title="Cloudchipr SF Activation — BA Lead Training Guide"
       />
     )
