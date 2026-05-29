@@ -441,6 +441,24 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
         </div>
       </section>
 
+      {/* Mid-Body CTA Banner */}
+      <section className="py-12 bg-indigo-900 text-white">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold mb-3">
+            Ready to staff your event at {venue.shortName}?
+          </h2>
+          <p className="text-indigo-200 mb-6 max-w-2xl mx-auto">
+            Tell us about your campaign and get a free quote within 24 hours. We staff events at {venue.name} year-round.
+          </p>
+          <Button asChild size="lg" className="bg-cyan-500 hover:bg-cyan-600 text-white">
+            <Link href={quoteHref('mid-body')}>
+              Get a Free Quote
+              <ArrowRight className="w-4 h-4 ml-2" />
+            </Link>
+          </Button>
+        </div>
+      </section>
+
       {/* Case Studies Section */}
       <section className="py-16 bg-gray-50">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
