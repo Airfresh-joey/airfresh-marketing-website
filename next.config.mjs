@@ -95,10 +95,15 @@ const nextConfig = {
         destination: 'https://www.airfreshmarketing.com/:path*',
         permanent: true,
       },
-      // Cloudchipr SF training guide — pure HTML gate, no React dependency
+      // Cloudchipr SF training guide — clean URLs (no .html)
       {
         source: '/cloudchipr-sf',
-        destination: '/training/cloudchipr-sf-gate.html',
+        destination: '/training/cloudchipr-sf.html',
+        permanent: false,
+      },
+      {
+        source: '/training/cloudchipr-sf',
+        destination: '/training/cloudchipr-sf.html',
         permanent: false,
       },
       { source: '/projects/case-studies', destination: '/case-studies', permanent: true },
