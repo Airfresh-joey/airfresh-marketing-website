@@ -1,5 +1,30 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-29 MDT
+
+Goal: Add mid-body /get-quote CTA banner to all 552 venue-service pages to increase funnel touchpoints.
+
+Audit: venue/service pages had only 2 quote CTAs (hero + final-cta). All 552 pages lacked a mid-body conversion point between "Service Details" and "Case Studies."
+
+Shipped (1 file, commit aa68be2):
+- app/venues/[slug]/[service]/page.tsx
+- Inserted a dark indigo CTA banner between Service Details and Case Studies sections
+- Copy: "Ready to staff your event at {venue.shortName}? Tell us about your campaign and get a free quote within 24 hours."
+- Links to /get-quote?source=venue-{slug}-{service}&intent=mid-body (trackable in GA)
+- Adds 3rd quote touchpoint: hero + mid-body (new) + final-cta
+- Matches state-service CTA pattern shipped 2026-05-28
+
+Checks:
+- npm run build passed (6305 static pages, 0 errors)
+- Committed aa68be2, pushed to origin/main
+- Deployed to Vercel production: https://afm-website-agg0hj109-joey-5223s-projects.vercel.app
+- Verified live: /venues/mccormick-place-chicago/brand-ambassadors returns "Ready to staff your event", "mid-body" intent param ✓
+
+Next actions:
+- Same mid-body CTA pattern on events/[slug]/[service] pages (~1,024 pages — has sidebar but no mid-body banner)
+- GSC opportunity pass: pages 4-15 position with impressions 10-200, CTR < 2%
+- /get-quote internal link audit on neighborhood pages
+
 ## 2026-05-25 MDT (CTA attribution audit — industries & venues)
 
 Goal: verify and confirm CTA attribution on /industries and /venues page families per growth workflow task.
