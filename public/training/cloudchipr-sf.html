@@ -8,26 +8,25 @@
   * { margin: 0; padding: 0; box-sizing: border-box; }
   body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
-    background: #fff;
+    background: #f1f5f9;
     color: #1e293b;
-    font-size: 15px;
-    line-height: 1.6;
+    font-size: 14px;
+    line-height: 1.5;
     -webkit-print-color-adjust: exact;
     print-color-adjust: exact;
   }
 
   /* PAGE SETUP */
   .page {
-    width: 8.5in;
-    min-height: 11in;
+    width: 100%;
+    max-width: 760px;
+    min-height: auto;
     margin: 0 auto;
     background: #fff;
-    padding: 0.55in 0.6in;
-    page-break-after: always;
+    padding: 20px 24px;
     display: flex;
     flex-direction: column;
   }
-  .page:last-child { page-break-after: avoid; }
 
   /* HEADER */
   .cover-header {
@@ -35,8 +34,8 @@
     align-items: center;
     justify-content: space-between;
     border-bottom: 2px solid #0a96b2;
-    padding-bottom: 18px;
-    margin-bottom: 32px;
+    padding-bottom: 10px;
+    margin-bottom: 16px;
   }
   .brand-badge {
     display: flex;
@@ -51,9 +50,9 @@
   /* COVER HERO */
   .cover-hero {
     background: linear-gradient(135deg, #0a96b2 0%, #0c7a9e 60%, #086b8a 100%);
-    border-radius: 12px;
-    padding: 44px 48px;
-    margin-bottom: 32px;
+    border-radius: 10px;
+    padding: 24px 28px;
+    margin-bottom: 16px;
     position: relative;
     overflow: hidden;
   }
