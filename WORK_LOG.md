@@ -1,6 +1,38 @@
 # Air Fresh Website Growth Work Log
 
-## 2026-05-30 MDT (Run 3)
+## 2026-05-30 MDT (Run 4)
+
+Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3).
+
+Audit:
+- 125 static blog pages in app/blog/; 90 of them had zero links to the money pages (/event-staffing-agency, /brand-ambassador-agency, /product-sampling-agency, /brand-activation-agency, /promotional-staffing-agency, /experiential-marketing-agency)
+- 35 already had money-page links from prior passes
+- Many posts linking to generic /services instead of targeted money pages
+
+Shipped (commit 6e77a31) — first pass of 10 posts:
+- choosing-staffing-agency: intro → /event-staffing-agency, /brand-ambassador-agency, /promotional-staffing-agency; closing → /event-staffing-agency
+- event-staff-training: intro → /brand-ambassador-agency + /event-staffing-agency; new closing sentence → /event-staffing-agency
+- experiential-marketing-budget: intro → /experiential-marketing-agency; staffing bullet → /event-staffing-agency; invest section → /brand-activation-agency
+- last-minute-staffing: intro → /event-staffing-agency + /promotional-staffing-agency
+- experiential-marketing-trends-2026: intro → /experiential-marketing-agency; staffing bullets → /brand-ambassador-agency + /brand-activation-agency
+- b2b-event-marketing: intro → /event-staffing-agency; ambassador mention → /brand-ambassador-agency
+- hire-brand-ambassadors-product-launch-2026: upgraded 2× /services → /brand-ambassador-agency + /event-staffing-agency
+- promotional-models-hiring-guide: brand ambassador definition → /brand-ambassador-agency
+- product-launch-events: ambassador role → /brand-ambassador-agency; staffing paragraph → /event-staffing-agency
+- trade-show-activation-strategies-brand-playbook-2026: upgraded 2× /services → /event-staffing-agency
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 6e77a31, pushed to origin/main
+- Vercel auto-deploy triggered
+- Live verification: curl https://www.airfreshmarketing.com/blog/choosing-staffing-agency confirmed event-staffing-agency, brand-ambassador-agency, promotional-staffing-agency in HTML ✓
+
+Next actions:
+- Priority #3 continued: 80 blog posts still lack money-page internal links — continue adding 10/run until full coverage
+- Priority #4: FAQ schema expansion — add FAQPage JSON-LD to top 10 highest-traffic service pages
+
+
 
 Goal: GSC click efficiency — tighten fallback title + meta description on all ~5,700 non-enriched city-service pages (Priority #2).
 
