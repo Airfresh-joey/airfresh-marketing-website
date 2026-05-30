@@ -98,7 +98,7 @@ export default function PopUpShopStaffingGuide() {
         <h2>Essential Pop-Up Shop Roles</h2>
         
         <h3>Brand Ambassadors / Sales Associates</h3>
-        <p>Your front-line team handles customer interactions:</p>
+        <p>Your front-line team handles customer interactions. Sourcing through a professional <Link href="/brand-ambassador-agency" className="text-orange-600 hover:underline">brand ambassador agency</Link> gives you access to vetted talent with real retail experience:</p>
         <ul>
           <li>Greeting and engaging visitors</li>
           <li>Product demonstrations and education</li>
@@ -146,7 +146,7 @@ export default function PopUpShopStaffingGuide() {
         <p>Staff who genuinely connect with your brand perform dramatically better than those who don't. Look for candidates who already use similar products or share your brand values.</p>
 
         <h3>3. Energy Management</h3>
-        <p>Pop-ups can swing from dead quiet to overwhelming in minutes. Staff need to maintain consistent energy and enthusiasm regardless of traffic levels.</p>
+        <p>Pop-ups can swing from dead quiet to overwhelming in minutes. Staff need to maintain consistent energy and enthusiasm regardless of traffic levels. This is why many brands rely on an <Link href="/experiential-marketing-agency" className="text-orange-600 hover:underline">experiential marketing agency</Link> to source staff who thrive in dynamic retail environments.</p>
 
         <h3>4. Problem-Solving</h3>
         <p>Temporary retail means improvisation. The payment system goes down. The A/C fails. A difficult customer appears. Your team needs to handle it without calling headquarters every time.</p>
@@ -192,7 +192,7 @@ export default function PopUpShopStaffingGuide() {
         <h2>Compensation for Pop-Up Staff</h2>
         <p>Pop-up retail commands higher rates than traditional retail:</p>
         <ul>
-          <li><strong>Brand ambassadors:</strong> $18-28/hour</li>
+          <li><strong><Link href="/event-staffing-agency" className="text-orange-600 hover:underline">Event staffing agency</Link> rate for brand ambassadors:</strong> $18-28/hour</li>
           <li><strong>Sales-focused staff:</strong> $20-30/hour (often plus commission)</li>
           <li><strong>Pop-up managers:</strong> $28-45/hour</li>
           <li><strong>Setup/teardown crews:</strong> $22-35/hour</li>

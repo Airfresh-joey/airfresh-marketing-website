@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/experiential-marketing-trends-2026',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function ExperientialTrends() {

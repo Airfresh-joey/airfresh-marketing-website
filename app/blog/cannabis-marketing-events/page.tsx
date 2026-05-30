@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/cannabis-marketing-events',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function CannabisMarketing() {

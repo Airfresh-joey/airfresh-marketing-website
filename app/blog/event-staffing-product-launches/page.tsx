@@ -84,7 +84,7 @@ export default function EventStaffingProductLaunches() {
         <section id="why-launches-different" className="mb-16">
           <h2 className="text-3xl font-bold mb-6">Why Product Launches Require Different Staffing Than Regular Events</h2>
 
-          <p className="text-gray-700 mb-6">A product sampling at a grocery store and a product launch event might both involve <Link href="/services/brand-ambassadors" className="text-orange-600 hover:underline">brand ambassadors</Link> talking about a product. But the staffing requirements are fundamentally different in several critical ways.</p>
+          <p className="text-gray-700 mb-6">A product sampling at a grocery store and a product launch event might both involve <Link href="/brand-ambassador-agency" className="text-orange-600 hover:underline">brand ambassadors</Link> talking about a product. But the staffing requirements are fundamentally different in several critical ways.</p>
 
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <Card className="border-orange-200">
@@ -124,7 +124,7 @@ export default function EventStaffingProductLaunches() {
 
           <ul className="space-y-3 mb-8">
             <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700"><strong>Define staffing roles and headcount.</strong> Map every position needed: product demonstrators, crowd engagement, VIP hosts, media liaisons, logistics support, and team leads. Over-staff by 15 to 20% for contingency.</span></li>
-            <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700"><strong>Select your staffing agency.</strong> Choose an <Link href="/blog/how-to-choose-event-staffing-agency" className="text-orange-600 hover:underline">event staffing agency</Link> with specific product launch experience. Ask for case studies from comparable launches.</span></li>
+            <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700"><strong>Select your staffing agency.</strong> Choose an <Link href="/event-staffing-agency" className="text-orange-600 hover:underline">event staffing agency</Link> with specific product launch experience. Ask for case studies from comparable launches.</span></li>
             <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700"><strong>Create the product knowledge document.</strong> Compile everything staff need to know: features, benefits, pricing, competitive positioning, target audience, FAQs, and key talking points.</span></li>
             <li className="flex items-start gap-3"><CheckCircle className="w-5 h-5 text-green-500 mt-0.5 flex-shrink-0" /><span className="text-gray-700"><strong>Design the consumer journey.</strong> Map how consumers will move through the activation from arrival to departure. Assign staff roles at each touchpoint.</span></li>
           </ul>
@@ -382,7 +382,7 @@ export default function EventStaffingProductLaunches() {
         {/* CTA */}
         <section className="bg-gradient-to-r from-orange-600 to-red-700 text-white p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-4">Launching a New Product?</h2>
-          <p className="mb-6 text-orange-100">Air Fresh Marketing has staffed product launches for consumer electronics, CPG brands, tech companies, and beverage brands across the country. From single-city reveals to multi-market simultaneous launches, we provide the trained, vetted staff and on-site management that protect your investment.</p>
+          <p className="mb-6 text-orange-100">Air Fresh Marketing is an <Link href="/experiential-marketing-agency" className="underline">experiential marketing agency</Link> that has staffed product launches for consumer electronics, CPG brands, tech companies, and beverage brands across the country. From single-city reveals to multi-market simultaneous launches, we provide the trained, vetted staff and on-site management that protect your investment.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-orange-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-event-staffing-product-launches&intent=article-cta">Get a Launch Staffing Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services">Our Services</Link></Button>

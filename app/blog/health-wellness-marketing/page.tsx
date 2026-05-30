@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/health-wellness-marketing',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function WellnessMarketing() {
@@ -84,7 +86,7 @@ export default function WellnessMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Health and wellness is a crowded space full of dubious claims. Consumers are rightfully skeptical. The brands that win build trust through authentic connection, not hype.</p>
+        <p>Health and wellness is a crowded space full of dubious claims. Consumers are rightfully skeptical. The brands that win build trust through authentic connection, not hype. An <Link href="/experiential-marketing-agency" className="text-green-700 hover:underline">experiential marketing agency</Link> focused on wellness can design activations that lead with education and credibility.</p>
         <h2>Wellness Activation Venues</h2>
         <ul>
           <li><strong>Gyms and fitness studios:</strong> Captive audience already investing in health</li>
@@ -96,7 +98,7 @@ export default function WellnessMarketing() {
         <h2>What Works in Wellness</h2>
         <p><strong>Education over selling:</strong> Teach, don't pitch. Share knowledge generously.</p>
         <p><strong>Trials that demonstrate:</strong> Let the product speak for itself.</p>
-        <p><strong>Credible ambassadors:</strong> Actual practitioners, not just attractive faces.</p>
+        <p><strong>Credible ambassadors:</strong> Actual practitioners, not just attractive faces. Recruiting through a <Link href="/brand-ambassador-agency" className="text-green-700 hover:underline">brand ambassador agency</Link> that screens for relevant wellness backgrounds is essential in this category.</p>
         <p><strong>Transparency:</strong> Ingredients, sourcing, science. No hiding.</p>
         <h2>Staff Profile</h2>
         <ul>
@@ -109,7 +111,7 @@ export default function WellnessMarketing() {
         <div className="not-prose">
           <div className="bg-gradient-to-r from-green-500 to-emerald-500 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">Marketing Wellness Products?</h2>
-            <p className="mb-6 text-green-100">Air Fresh provides wellness-focused brand ambassadors.</p>
+            <p className="mb-6 text-green-100">Air Fresh provides wellness-focused <Link href="/brand-ambassador-agency" className="underline">brand ambassadors</Link> and <Link href="/product-sampling-agency" className="underline">product sampling</Link> teams for health and wellness brands nationwide.</p>
             <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100">
               <Link href="/get-quote?source=blog-health-wellness-marketing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>

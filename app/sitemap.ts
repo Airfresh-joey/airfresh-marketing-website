@@ -12,6 +12,26 @@ import { blogPosts } from '@/server/blogPosts'
 import fs from 'fs'
 import path from 'path'
 
+// Build a set of blog slugs that have robots noindex in their static page.tsx files.
+// These are thin/low-value pages that should exist but not consume crawl budget.
+function getNoindexBlogSlugs(): Set<string> {
+  const noindexSlugs = new Set<string>()
+  try {
+    const blogDir = path.join(process.cwd(), 'app', 'blog')
+    const entries = fs.readdirSync(blogDir)
+    for (const slug of entries) {
+      if (slug === '[slug]') continue
+      const pagePath = path.join(blogDir, slug, 'page.tsx')
+      if (!fs.existsSync(pagePath)) continue
+      const content = fs.readFileSync(pagePath, 'utf-8')
+      if (content.includes('index: false')) {
+        noindexSlugs.add(slug)
+      }
+    }
+  } catch { /* ignore */ }
+  return noindexSlugs
+}
+
 const DOMAIN = 'https://www.airfreshmarketing.com'
 
 const redirectSourcePaths = new Set([
@@ -41,6 +61,12 @@ const redirectSourcePaths = new Set([
   '/brand-surveys-and-market-sampling',
   '/interactive-vending-machine',
   '/production-map',
+  // Utility/non-indexable pages - should exist but not consume crawl budget
+  '/thank-you',
+  '/legal/wire',
+  '/legal/voided-check',
+  '/legal/ach',
+  '/legal/w9',
   '/blog/event-staffing-texas-complete-market-guide-2026',
   '/blog/brand-ambassador-programs-college-campuses',
   '/blog/festival-brand-activation-los-angeles',
@@ -114,6 +140,9 @@ const highIntentCityServicePages = new Set([
 export default function sitemap(): MetadataRoute.Sitemap {
   const today = new Date().toISOString().split('T')[0]
 
+  // Blog slugs with noindex meta - exclude from sitemap to focus crawl budget
+  const noindexBlogSlugs = getNoindexBlogSlugs()
+
   // Static pages
   const staticPages: MetadataRoute.Sitemap = [
     { url: `${DOMAIN}/`, lastModified: today, changeFrequency: 'daily', priority: 1.0 },
@@ -129,8 +158,10 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/pricing`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/contact`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMAIN}/blog`, lastModified: today, changeFrequency: 'weekly', priority: 0.7 },
-    // Blog posts - dynamically generated from blogPosts data
-    ...blogPosts.map(post => {
+    // Blog posts - dynamically generated from blogPosts data, excluding noindex thin pages
+    ...blogPosts
+      .filter(post => !noindexBlogSlugs.has(post.slug))
+      .map(post => {
       let lastMod = today
       try {
         const d = new Date(post.date)
@@ -149,7 +180,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       try {
         const blogDir = path.join(process.cwd(), 'app', 'blog')
         return fs.readdirSync(blogDir)
-          .filter(d => d !== '[slug]' && !dynamicSlugs.has(d) && fs.existsSync(path.join(blogDir, d, 'page.tsx')))
+          .filter(d => d !== '[slug]' && !dynamicSlugs.has(d) && !noindexBlogSlugs.has(d) && fs.existsSync(path.join(blogDir, d, 'page.tsx')))
           .map(slug => ({
             url: `${DOMAIN}/blog/${slug}`,
             lastModified: today,
@@ -243,26 +274,17 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/electric-daisy-carnival-orlando`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Batch 140 event pages
     { url: `${DOMAIN}/staffing-for/bonnaroo-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/boston-marathon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/burning-man`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/new-york-fashion-week`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/rose-bowl`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Batch 135 event pages
     { url: `${DOMAIN}/staffing-for/ultra-music-festival-miami`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/kentucky-derby`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/new-york-auto-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/nba-all-star-weekend`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/south-by-southwest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Batch 130 event pages
     { url: `${DOMAIN}/staffing-for/summerfest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/governors-ball`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/art-basel-miami`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/san-diego-county-fair`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/lollapalooza`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     // Venue/event-specific staffing pages (high-intent keywords)
     { url: `${DOMAIN}/staffing-for/ces`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/sema`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/coachella`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/f1-las-vegas`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
     { url: `${DOMAIN}/staffing-for/nab-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/natural-products-expo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
@@ -271,8 +293,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/sxsw`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/comic-con`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/super-bowl`, lastModified: today, changeFrequency: 'monthly', priority: 0.9 },
-    { url: `${DOMAIN}/staffing-for/art-basel-miami`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/lollapalooza`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/edc-las-vegas`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/nyfw`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/essence-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
@@ -281,23 +301,19 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/austin-city-limits`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/outside-lands`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/dreamforce`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/burning-man`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/cedia-expo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/bonnaroo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/stagecoach`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/new-york-auto-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/vidcon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/nrf-big-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/chicago-auto-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/miami-art-week`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/ultra-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/governors-ball`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/life-is-beautiful`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/rolling-loud`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/iheartradio-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/anime-expo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/edc-orlando`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/firefly-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/electric-forest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/la-auto-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/himss`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
@@ -312,14 +328,12 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/detroit-auto-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/sdcc`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/nba-all-star`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/kentucky-derby`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/nfl-draft`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/e3`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/miami-grand-prix`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/jazz-fest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/daytona-500`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/cma-fest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/rose-bowl`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/mardi-gras`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/nycc`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/pitchfork-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
@@ -331,7 +345,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/riot-fest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/movement-detroit`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/tortuga-music-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/summerfest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/namm-show`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/boston-calling`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/bottlerock-napa-valley`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
@@ -365,26 +378,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
     { url: `${DOMAIN}/staffing-for/elements-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/fan-expo-dallas`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/staffing-for/beyond-wonderland`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/electric-forest`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/life-is-beautiful`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/pax-west`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/essence-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/new-york-fashion-week`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/bonnaroo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/outside-lands`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/complexcon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/austin-city-limits`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/nycc`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/burning-man`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/stagecoach`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/houston-rodeo`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/mardi-gras`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/vidcon`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/e3`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/south-beach-wine-food-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/taste-of-chicago`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/tribeca-festival`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
-    { url: `${DOMAIN}/staffing-for/sema`, lastModified: today, changeFrequency: 'monthly', priority: 0.85 },
     { url: `${DOMAIN}/events`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     { url: `${DOMAIN}/venues`, lastModified: today, changeFrequency: 'weekly', priority: 0.9 },
     // Competitor comparison pages (high-intent "vs" keywords)

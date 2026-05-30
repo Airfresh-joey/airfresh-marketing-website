@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/b2b-event-staffing',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function B2BStaffing() {
@@ -84,7 +86,7 @@ export default function B2BStaffing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>B2B events are different. Attendees are professionals evaluating vendors. Your staff needs to match that environment - polished, knowledgeable, capable of real business conversations.</p>
+        <p>B2B events are different. Attendees are professionals evaluating vendors. Your staff needs to match that environment — polished, knowledgeable, capable of real business conversations. A specialized <Link href="/event-staffing-agency" className="text-blue-700 hover:underline">event staffing agency</Link> with B2B experience knows how to source staff who can hold their own in that room.</p>
         <h2>B2B Staff Requirements</h2>
         <ul>
           <li><strong>Professional demeanor:</strong> Business appropriate in every way</li>
@@ -101,7 +103,7 @@ export default function B2BStaffing() {
         <p><strong>Executive dinners:</strong> Intimate, high-touch events.</p>
         <h2>Staff Roles</h2>
         <ul>
-          <li>Booth ambassadors (engagement and qualification)</li>
+          <li><Link href="/brand-ambassador-agency" className="text-blue-700 hover:underline">Brand ambassadors</Link> (engagement and qualification)</li>
           <li>Demo specialists (product knowledge)</li>
           <li>Registration/check-in staff</li>
           <li>Hospitality and hosting</li>
@@ -111,7 +113,7 @@ export default function B2BStaffing() {
         <div className="not-prose">
           <div className="bg-gradient-to-r from-slate-700 to-blue-800 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">B2B Event Coming Up?</h2>
-            <p className="mb-6 text-slate-300">Air Fresh provides professional staff for business events.</p>
+            <p className="mb-6 text-slate-300">Air Fresh is an <Link href="/experiential-marketing-agency" className="underline">experiential marketing agency</Link> that provides professional staff for B2B events, trade shows, and conferences nationwide.</p>
             <Button asChild size="lg" className="bg-white text-blue-800 hover:bg-gray-100">
               <Link href="/get-quote?source=blog-b2b-event-staffing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>

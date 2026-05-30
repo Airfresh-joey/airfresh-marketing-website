@@ -84,7 +84,7 @@ export default function GrandOpenings() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>A grand opening is more than a ribbon cutting. It's your first chance to introduce your brand to a new community, create word of mouth, and establish the traffic patterns that will define your location's success.</p>
+        <p>A grand opening is more than a ribbon cutting. It's your first chance to introduce your brand to a new community, create word of mouth, and establish the traffic patterns that will define your location's success. Working with an <Link href="/event-staffing-agency" className="text-teal-700 hover:underline">event staffing agency</Link> ensures you have enough trained hands for every moment of launch day.</p>
         <h2>Pre-Opening Buzz</h2>
         <ul>
           <li>Local media outreach (newspapers, radio, local blogs)</li>
@@ -94,7 +94,7 @@ export default function GrandOpenings() {
           <li>Email collection for early access</li>
         </ul>
         <h2>Day-Of Essentials</h2>
-        <p><strong>Door greeters:</strong> First face customers see. Energy and enthusiasm mandatory.</p>
+        <p><strong>Door greeters:</strong> First face customers see. Energy and enthusiasm mandatory. Your <Link href="/brand-ambassador-agency" className="text-teal-700 hover:underline">brand ambassadors</Link> set the tone the moment someone walks through the door.</p>
         <p><strong>Product experts:</strong> Staff who can showcase the best of what you offer.</p>
         <p><strong>Crowd management:</strong> If you're successful, you'll need flow control.</p>
         <p><strong>Content capture:</strong> Professional photos/video of the moment.</p>
@@ -105,6 +105,9 @@ export default function GrandOpenings() {
           <li>Opening day discounts</li>
           <li>Prize drawings and giveaways</li>
           <li>Free samples or tastings</li>
+          </ul>
+          <p>Brands with physical products can layer in <Link href="/product-sampling-agency" className="text-teal-700 hover:underline">product sampling</Link> to drive immediate trial — the most powerful conversion tool you have on day one.</p>
+          <ul>
           <li>Entertainment (DJ, live music, activities)</li>
         </ul>
         <h2>Extended Grand Opening</h2>

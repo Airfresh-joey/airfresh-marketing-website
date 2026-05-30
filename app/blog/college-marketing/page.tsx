@@ -140,7 +140,7 @@ export default function CollegeMarketing() {
 
         <h2>Building a Campus Brand Ambassador Program</h2>
 
-        <p>The most effective college marketing strategy uses students themselves as the channel. A well-run <Link href="/blog/how-to-hire-brand-ambassadors" className="text-orange-600 hover:text-orange-700">brand ambassador program</Link> on campus is the closest thing to a marketing cheat code that exists.</p>
+        <p>The most effective college marketing strategy uses students themselves as the channel. A well-run <Link href="/brand-ambassador-agency" className="text-orange-600 hover:text-orange-700">brand ambassador program</Link> on campus is the closest thing to a marketing cheat code that exists.</p>
 
         <p>Here&apos;s how to build one that works:</p>
 
@@ -184,7 +184,7 @@ export default function CollegeMarketing() {
 
         <h2>Real Talk: Product Sampling on Campus</h2>
 
-        <p><Link href="/blog/product-sampling-campaigns" className="text-orange-600 hover:text-orange-700">Product sampling</Link> remains one of the highest-converting tactics in college marketing — when done right.</p>
+        <p><Link href="/product-sampling-agency" className="text-orange-600 hover:text-orange-700">Product sampling</Link> remains one of the highest-converting tactics in college marketing — when done right. A specialized <Link href="/event-staffing-agency" className="text-orange-600 hover:text-orange-700">event staffing company</Link> can source campus-savvy staff who genuinely connect with student audiences.</p>
 
         <p>The key differentiator is context. Handing someone a sample as they rush to class is forgettable. Setting up a branded experience at the student center during lunch, with engaging staff, a social media component, and a reason to stop — that&apos;s memorable.</p>
 

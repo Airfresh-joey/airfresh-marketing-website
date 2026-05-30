@@ -252,7 +252,7 @@ export default function GuerrillaMarketingExamples() {
             <div className="border-l-4 border-green-500 pl-6">
               <span className="text-green-600 font-bold text-sm">EXAMPLE #14</span>
               <h3 className="text-2xl font-bold mb-3">Fiji Water Girl at Golden Globes</h3>
-              <p className="text-gray-700 mb-4">A Fiji Water brand ambassador strategically photobombed celebrities on the Golden Globes red carpet, appearing in countless photos. The "Fiji Water Girl" became a meme and the most talked-about part of the event.</p>
+              <p className="text-gray-700 mb-4">A Fiji Water <Link href="/brand-ambassador-agency" className="text-green-700 hover:underline">brand ambassador</Link> strategically photobombed celebrities on the Golden Globes red carpet, appearing in countless photos. The "Fiji Water Girl" became a meme and the most talked-about part of the event.</p>
               <div className="bg-gray-50 p-4 rounded-lg">
                 <p className="text-sm"><strong>Why it worked:</strong> Hijacked a major cultural moment, meme-worthy content, cost of one brand ambassador vs. millions for traditional sponsorship.</p>
                 <p className="text-sm mt-2"><strong>Results:</strong> #1 trending topic, billions of impressions, more coverage than actual sponsors.</p>
@@ -286,7 +286,7 @@ export default function GuerrillaMarketingExamples() {
         {/* CTA */}
         <section className="bg-gradient-to-r from-green-600 to-teal-600 text-white p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-4">Ready to Go Guerrilla?</h2>
-          <p className="mb-6 text-green-100">Air Fresh Marketing has executed guerrilla and <Link href="/services/street-teams" className="underline">street team campaigns</Link> for brands nationwide. From flash mobs to pop-up experiences, we help you create buzz without breaking the bank.</p>
+          <p className="mb-6 text-green-100">Air Fresh Marketing is an <Link href="/experiential-marketing-agency" className="underline">experiential marketing agency</Link> that has executed guerrilla and street team campaigns for brands nationwide. From flash mobs to pop-up experiences, we help you create buzz without breaking the bank. Our <Link href="/event-staffing-agency" className="underline">event staffing company</Link> can supply the talent you need to pull it off.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-green-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-guerrilla-marketing-examples&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services/experiential-marketing">Our Services</Link></Button>

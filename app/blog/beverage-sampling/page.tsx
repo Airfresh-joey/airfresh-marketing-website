@@ -84,7 +84,7 @@ export default function BeverageSampling() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>In beverages, trial is everything. No amount of advertising convinces like actually tasting the product. That's why beverage sampling remains one of the most effective marketing tactics in the industry.</p>
+        <p>In beverages, trial is everything. No amount of advertising convinces like actually tasting the product. That's why <Link href="/product-sampling-agency" className="text-blue-700 hover:underline">product sampling</Link> remains one of the most effective marketing tactics in the industry.</p>
         <p>But there's sampling, and there's effective sampling. The difference is massive.</p>
         <h2>Where to Sample Beverages</h2>
         <p><strong>Retail (grocery, convenience):</strong> Sample where people can immediately purchase. The gap between trial and buy should be steps, not miles.</p>
@@ -112,7 +112,7 @@ export default function BeverageSampling() {
           <li>Sampling hours may be restricted</li>
           <li>Some states prohibit or heavily restrict</li>
         </ul>
-        <p>Work with your agency to navigate local regulations. Getting this wrong can mean fines or worse.</p>
+        <p>Work with your <Link href="/event-staffing-agency" className="text-blue-700 hover:underline">event staffing agency</Link> to navigate local regulations. Getting this wrong can mean fines or worse.</p>
         <h2>The Conversion Bridge</h2>
         <p>Every sampling interaction needs a bridge to purchase:</p>
         <ul>
@@ -126,7 +126,7 @@ export default function BeverageSampling() {
         <div className="not-prose">
           <div className="bg-gradient-to-r from-sky-500 to-blue-600 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">Need Beverage Sampling Staff?</h2>
-            <p className="mb-6 text-sky-100">Air Fresh runs beverage sampling programs nationwide. Let's talk about your launch or ongoing program.</p>
+            <p className="mb-6 text-sky-100">Air Fresh runs beverage <Link href="/product-sampling-agency" className="underline">sampling campaigns</Link> nationwide with trained <Link href="/brand-ambassador-agency" className="underline">brand ambassadors</Link> who know how to drive trial-to-purchase conversion. Let's talk about your launch or ongoing program.</p>
             <Button asChild size="lg" className="bg-white text-blue-600 hover:bg-gray-100">
               <Link href="/get-quote?source=blog-beverage-sampling&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>

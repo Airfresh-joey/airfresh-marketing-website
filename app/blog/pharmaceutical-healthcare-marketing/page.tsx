@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/pharmaceutical-healthcare-marketing',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function PharmaMarketing() {

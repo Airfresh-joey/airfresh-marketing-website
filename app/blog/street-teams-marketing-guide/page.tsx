@@ -137,7 +137,7 @@ export default function StreetTeamsGuide() {
 
         <p><strong>Typical street team costs:</strong></p>
         <ul>
-          <li>Brand ambassadors: $25-40/hour per person</li>
+          <li><Link href="/brand-ambassador-agency" className="text-yellow-700 hover:underline">Brand ambassadors</Link>: $25-40/hour per person</li>
           <li>Team lead/supervisor: $40-60/hour</li>
           <li>Equipment (tent, table, signage): $500-2,000/day</li>
           <li>Samples/giveaways: varies wildly</li>
@@ -171,9 +171,9 @@ export default function StreetTeamsGuide() {
 
         <p><strong>Local launches and market entry.</strong> Opening a new location? Entering a new market? Street teams can seed awareness faster than any digital campaign. You're literally putting your brand in front of every relevant person in that area.</p>
 
-        <p><strong>Product sampling.</strong> If your product is better experienced than described, street teams are perfect. Let people try it. The product does the selling.</p>
+        <p><strong>Product sampling.</strong> If your product is better experienced than described, street teams are perfect. Let people try it. A professional <Link href="/product-sampling-agency" className="text-yellow-700 hover:underline">product sampling</Link> team knows how to turn tasters into buyers. The product does the selling — but the ambassador closes the deal.</p>
 
-        <p><strong>Events and festivals.</strong> Huge concentrated audiences of your target demographic, already in a receptive mood. Perfect for brand ambassadors to create moments.</p>
+        <p><strong>Events and festivals.</strong> Huge concentrated audiences of your target demographic, already in a receptive mood. Perfect for brand ambassadors to create moments. Working with an experienced <Link href="/event-staffing-agency" className="text-yellow-700 hover:underline">event staffing agency</Link> ensures you have the right people deployed at the right moments.</p>
 
         <p><strong>College marketing.</strong> Gen Z ignores digital ads but responds to IRL experiences. Campus street teams remain one of the most effective ways to reach students.</p>
 

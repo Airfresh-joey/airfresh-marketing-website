@@ -12,6 +12,8 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog/luxury-brand-marketing',
   },
 
+
+  robots: { index: false, follow: false },
 };
 
 export default function LuxuryMarketing() {
@@ -84,7 +86,7 @@ export default function LuxuryMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Luxury marketing operates by different rules. The audience has high expectations. Competition is fierce. And every touchpoint either reinforces or undermines the premium positioning.</p>
+        <p>Luxury marketing operates by different rules. The audience has high expectations. Competition is fierce. And every touchpoint either reinforces or undermines the premium positioning. A seasoned <Link href="/experiential-marketing-agency" className="text-amber-700 hover:underline">experiential marketing agency</Link> with luxury brand experience understands how to create events that feel effortless and exclusive.</p>
         <h2>Luxury Event Types</h2>
         <ul>
           <li><strong>Private client events:</strong> Exclusive experiences for top customers</li>
@@ -96,7 +98,7 @@ export default function LuxuryMarketing() {
         <h2>The Luxury Standard</h2>
         <p>Luxury event staff must:</p>
         <ul>
-          <li>Present impeccably (grooming, attire, posture)</li>
+          <li>Present impeccably — only <Link href="/brand-ambassador-agency" className="text-amber-700 hover:underline">brand ambassadors</Link> who carry themselves with genuine poise and sophistication should represent luxury labels</li>
           <li>Speak with sophistication</li>
           <li>Anticipate needs without being intrusive</li>
           <li>Know the brand heritage and product</li>
@@ -114,7 +116,7 @@ export default function LuxuryMarketing() {
         <div className="not-prose">
           <div className="bg-gradient-to-r from-amber-700 to-yellow-700 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">Luxury Event Staff?</h2>
-            <p className="mb-6 text-amber-200">Air Fresh provides polished professionals for luxury brands.</p>
+            <p className="mb-6 text-amber-200">Air Fresh provides polished professionals for luxury brands. Our <Link href="/event-staffing-agency" className="underline">event staffing company</Link> maintains a curated roster of staff experienced in high-end hospitality, fashion, and luxury retail.</p>
             <Button asChild size="lg" className="bg-white text-amber-700 hover:bg-gray-100">
               <Link href="/get-quote?source=blog-luxury-brand-marketing&intent=article-cta">Get Started <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>
