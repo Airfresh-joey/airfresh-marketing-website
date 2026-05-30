@@ -36,7 +36,9 @@ export const losAngelesContent: Record<string, CityServiceContent> = {
       'Dolby Theatre',
       'Rose Bowl',
       'The Forum',
-      'Santa Monica Pier'
+      'Santa Monica Pier',
+      'Venice Beach Boardwalk',
+      'Sunset Strip'
     ],
     localEvents: [
       'E3 (Electronic Entertainment Expo)',
@@ -140,7 +142,9 @@ export const losAngelesContent: Record<string, CityServiceContent> = {
       'Dolby Theatre',
       'Rose Bowl',
       'The Forum',
-      'Santa Monica Pier'
+      'Santa Monica Pier',
+      'Venice Beach Boardwalk',
+      'Sunset Strip'
     ],
     localEvents: [
       'Coachella Valley Music and Arts Festival',
@@ -244,7 +248,9 @@ export const losAngelesContent: Record<string, CityServiceContent> = {
       'Dolby Theatre',
       'Rose Bowl',
       'The Forum',
-      'Santa Monica Pier'
+      'Santa Monica Pier',
+      'Venice Beach Boardwalk',
+      'Sunset Strip'
     ],
     localEvents: [
       'Grammy Awards',
@@ -348,7 +354,9 @@ export const losAngelesContent: Record<string, CityServiceContent> = {
       'Dolby Theatre',
       'Rose Bowl',
       'The Forum',
-      'Santa Monica Pier'
+      'Santa Monica Pier',
+      'Venice Beach Boardwalk',
+      'Sunset Strip'
     ],
     localEvents: [
       'LA Auto Show',
@@ -452,7 +460,9 @@ export const losAngelesContent: Record<string, CityServiceContent> = {
       'Dolby Theatre',
       'Rose Bowl',
       'The Forum',
-      'Santa Monica Pier'
+      'Santa Monica Pier',
+      'Venice Beach Boardwalk',
+      'Sunset Strip'
     ],
     localEvents: [
       'E3 (Electronic Entertainment Expo)',

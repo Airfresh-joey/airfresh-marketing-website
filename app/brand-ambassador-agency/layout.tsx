@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
   title: 'Brand Ambassador Agency | Hire Trained Brand Ambassadors',
-  description: 'Brand ambassador agency providing trained, vetted brand ambassadors for events, trade shows, and product launches. GPS-verified staff in 50+ cities.',
+  description: 'Top-rated brand ambassador agency — vetted, GPS-verified staff for events, trade shows & product launches in 50+ cities. 24-hr quotes. 300+ brands activated since 2004.',
   keywords: 'brand ambassador agency, brand ambassador company, brand ambassador services, hire brand ambassadors, brand ambassador staffing agency, professional brand ambassadors',
   openGraph: {
     type: 'website',

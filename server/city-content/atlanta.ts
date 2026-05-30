@@ -36,7 +36,9 @@ export const atlantaContent: Record<string, CityServiceContent> = {
       'Centennial Olympic Park',
       'Fox Theatre',
       'The Eastern',
-      'Cobb Galleria Centre'
+      'Cobb Galleria Centre',
+      'Ponce City Market',
+      'Krog Street Market'
     ],
     localEvents: [
       'Dragon Con',
@@ -138,7 +140,9 @@ export const atlantaContent: Record<string, CityServiceContent> = {
       'Centennial Olympic Park',
       'Fox Theatre',
       'The Eastern',
-      'Cobb Galleria Centre'
+      'Cobb Galleria Centre',
+      'Ponce City Market',
+      'Krog Street Market'
     ],
     localEvents: [
       'Dragon Con',
@@ -240,7 +244,9 @@ export const atlantaContent: Record<string, CityServiceContent> = {
       'Centennial Olympic Park',
       'Fox Theatre',
       'The Eastern',
-      'Cobb Galleria Centre'
+      'Cobb Galleria Centre',
+      'Ponce City Market',
+      'Krog Street Market'
     ],
     localEvents: [
       'Dragon Con',
@@ -342,7 +348,9 @@ export const atlantaContent: Record<string, CityServiceContent> = {
       'Centennial Olympic Park',
       'Fox Theatre',
       'The Eastern',
-      'Cobb Galleria Centre'
+      'Cobb Galleria Centre',
+      'Ponce City Market',
+      'Krog Street Market'
     ],
     localEvents: [
       'Dragon Con',
@@ -444,7 +452,9 @@ export const atlantaContent: Record<string, CityServiceContent> = {
       'Centennial Olympic Park',
       'Fox Theatre',
       'The Eastern',
-      'Cobb Galleria Centre'
+      'Cobb Galleria Centre',
+      'Ponce City Market',
+      'Krog Street Market'
     ],
     localEvents: [
       'Dragon Con',

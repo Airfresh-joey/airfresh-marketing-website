@@ -36,7 +36,9 @@ export const chicagoContent: Record<string, CityServiceContent> = {
       'Wrigley Field',
       'Art Institute of Chicago',
       'Merchandise Mart',
-      'Huntington Bank Pavilion'
+      'Huntington Bank Pavilion',
+      'Grant Park',
+      'Millennium Park'
     ],
     localEvents: [
       'Lollapalooza',
@@ -140,7 +142,9 @@ export const chicagoContent: Record<string, CityServiceContent> = {
       'Wrigley Field',
       'Merchandise Mart',
       'Art Institute of Chicago',
-      'Huntington Bank Pavilion'
+      'Huntington Bank Pavilion',
+      'Grant Park',
+      'Millennium Park'
     ],
     localEvents: [
       'Lollapalooza',
@@ -244,7 +248,9 @@ export const chicagoContent: Record<string, CityServiceContent> = {
       'Wrigley Field',
       'Art Institute of Chicago',
       'Merchandise Mart',
-      'Huntington Bank Pavilion'
+      'Huntington Bank Pavilion',
+      'Grant Park',
+      'Millennium Park'
     ],
     localEvents: [
       'Lollapalooza',
