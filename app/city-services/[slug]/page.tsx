@@ -46,12 +46,15 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
 
   // Check for enriched content
   const enriched = getCityServiceContent(slug);
-  // Use absolute title to prevent Next.js template from appending "| AirFresh Marketing" again
-  // (both enriched and fallback titles already contain the brand suffix)
+  // Use absolute title to prevent Next.js template from appending "| AirFresh Marketing" again.
+  // Fallback title: clean "Service City | AirFresh Marketing" (≤60 chars for full Google display).
   const absoluteTitle = enriched
     ? enriched.metaTitle
-    : `${serviceName} ${cityName} | Professional ${serviceName} Services | AirFresh Marketing`;
-  const description = enriched ? enriched.metaDescription : `${serviceName} ${cityName} services from AirFresh Marketing. ${parsed.service.description} Contact us for professional ${serviceName.toLowerCase()} in ${cityName} today.`;
+    : `${serviceName} ${cityName} | AirFresh Marketing`;
+  // Fallback description: concise, keyword-first, <155 chars, strong CTR hook.
+  const description = enriched
+    ? enriched.metaDescription
+    : `${parsed.service.title} in ${cityName} · AirFresh Marketing. 500+ national brands served. GPS-tracked staff, 24-hr response. Free quote.`;
 
   return {
     title: { absolute: absoluteTitle },
