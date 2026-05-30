@@ -156,7 +156,7 @@ export default function BrandActivationGuide() {
         <p><strong>Example 1: The Sports Drink Launch</strong></p>
         <p>A new sports drink brand wanted to establish credibility with serious athletes. Instead of sponsoring a major event (expensive, cluttered), we identified local running clubs, CrossFit boxes, and cycling groups.</p>
 
-        <p>We showed up at their regular meetups with product, a recovery tent, and brand ambassadors who were themselves competitive athletes. We sampled, but more importantly, we created utility - providing hydration and recovery support for their workouts.</p>
+        <p>We showed up at their regular meetups with product, a recovery tent, and <Link href="/brand-ambassador-agency" className="text-violet-600 hover:underline">brand ambassadors</Link> who were themselves competitive athletes. We sampled, but more importantly, we created utility - providing hydration and recovery support for their workouts.</p>
 
         <p>Over 6 months, we hit 200+ local groups across 5 markets. Total reach was modest (maybe 15,000 people), but these were the right 15,000 - serious athletes who influence their communities. The brand is now the unofficial hydration choice for dozens of local athletics groups, with organic advocacy that no ad campaign could buy.</p>
 
@@ -226,13 +226,13 @@ export default function BrandActivationGuide() {
 
         <h2>Getting Started With Brand Activation</h2>
 
-        <p>If you're new to experiential marketing, here's my advice:</p>
+        <p>If you're new to working with an <Link href="/experiential-marketing-agency" className="text-violet-600 hover:underline">experiential marketing agency</Link>, here's my advice:</p>
 
         <p><strong>Start with a hypothesis.</strong> "We believe that if our target audience experiences X, they will feel Y and do Z." Now you have something to test and measure.</p>
 
         <p><strong>Pick one market.</strong> Don't try to go national immediately. Prove the concept in one market, learn, iterate, then scale.</p>
 
-        <p><strong>Invest in people.</strong> The staff executing your activation are your brand to the consumer. Don't cheap out here. Better to do a smaller activation with great people than a big one with mediocre staff.</p>
+        <p><strong>Invest in people.</strong> The staff executing your activation are your brand to the consumer. Don't cheap out here. Better to do a smaller activation with great people than a big one with mediocre staff. A skilled <Link href="/event-staffing-agency" className="text-violet-600 hover:underline">event staffing company</Link> can help you find the right talent for your audience and activation style.</p>
 
         <p><strong>Plan for capture.</strong> How will you continue the relationship after the moment ends? Email, app, social follow - something. Don't let the connection die.</p>
 

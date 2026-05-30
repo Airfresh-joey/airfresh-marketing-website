@@ -131,7 +131,7 @@ export default function ProductSamplingCampaigns() {
 
         <p>One of our most successful campaigns was for a premium cold brew coffee. Instead of just handing out samples, we set up a "cold brew tasting station" - like a wine tasting, but for coffee. Different roast profiles, tasting notes, the whole thing.</p>
 
-        <p>People spent 3-5 minutes at the station instead of 10 seconds grabbing a sample. They learned about the product. They talked to our brand ambassadors. They posted on Instagram (free reach). And they remembered the brand weeks later.</p>
+        <p>People spent 3-5 minutes at the station instead of 10 seconds grabbing a sample. They learned about the product. They talked to our brand ambassadors. They posted on Instagram (free reach). And they remembered the brand weeks later. This is what a well-run <Link href="/product-sampling-agency" className="text-amber-600 hover:underline">product sampling</Link> program looks like in practice.</p>
 
         <p>Same product cost per sample. Dramatically different results.</p>
 
@@ -170,7 +170,7 @@ export default function ProductSamplingCampaigns() {
 
         <p>I've seen the exact same campaign succeed wildly with one team and fail completely with another. The difference? The people running it.</p>
 
-        <p>A good <Link href="/services/brand-ambassadors" className="text-amber-600 hover:underline">brand ambassador</Link> doesn't just hand out samples. They:</p>
+        <p>A good <Link href="/brand-ambassador-agency" className="text-amber-600 hover:underline">brand ambassador</Link> doesn't just hand out samples. They:</p>
 
         <ul>
           <li>Read the crowd and approach the right people</li>

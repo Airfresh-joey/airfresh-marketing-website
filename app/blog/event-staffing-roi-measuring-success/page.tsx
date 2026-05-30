@@ -63,7 +63,7 @@ export default function EventStaffingROI() {
 
         <h3>Direct Sales ROI (Product Sampling and Retail Demos)</h3>
 
-        <p>For campaigns where brand ambassadors drive immediate purchases — product sampling at retail, in-store demonstrations, pop-up shop activations — measurement is relatively straightforward:</p>
+        <p>For campaigns where <Link href="/brand-ambassador-agency" className="text-emerald-600 hover:underline">brand ambassadors</Link> drive immediate purchases — product sampling at retail, in-store demonstrations, pop-up shop activations — measurement is relatively straightforward:</p>
 
         <p><strong>Direct Sales ROI = (Incremental Sales During Campaign Period - Total Staffing Investment) / Total Staffing Investment x 100</strong></p>
 
@@ -85,7 +85,7 @@ export default function EventStaffingROI() {
 
         <p><strong>Pipeline ROI = (Qualified Leads x Expected Close Rate x Average Deal Size - Total Staffing Cost) / Total Staffing Cost x 100</strong></p>
 
-        <p>For example: your event staffing agency provides 8 brand ambassadors for a 3-day industry conference. Total cost: $18,000 (staffing, training, travel). Your team captures 240 qualified leads with an expected close rate of 12% and an average deal size of $15,000.</p>
+        <p>For example: your <Link href="/event-staffing-agency" className="text-emerald-600 hover:underline">event staffing agency</Link> provides 8 brand ambassadors for a 3-day industry conference. Total cost: $18,000 (staffing, training, travel). Your team captures 240 qualified leads with an expected close rate of 12% and an average deal size of $15,000.</p>
 
         <p>Pipeline value: 240 x 0.12 x $15,000 = $432,000<br />
         Pipeline ROI: ($432,000 - $18,000) / $18,000 x 100 = 2,300%</p>
@@ -94,7 +94,7 @@ export default function EventStaffingROI() {
 
         <h3>Brand Awareness ROI (Experiential Activations)</h3>
 
-        <p>Brand awareness campaigns present the biggest measurement challenge. Your brand ambassadors at a music festival or street team activation are building awareness, not driving immediate transactions. But &quot;awareness&quot; still has quantifiable value.</p>
+        <p>Brand awareness campaigns present the biggest measurement challenge. Your brand ambassadors at a music festival or street team activation are building awareness, not driving immediate transactions. But &quot;awareness&quot; still has quantifiable value. An experienced <Link href="/experiential-marketing-agency" className="text-emerald-600 hover:underline">experiential marketing agency</Link> can help you build the measurement infrastructure to capture these softer returns.</p>
 
         <p>The framework we use:</p>
 

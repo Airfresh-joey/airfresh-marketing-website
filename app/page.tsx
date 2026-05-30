@@ -60,14 +60,15 @@ export default function Home() {
         "@id": "https://www.airfreshmarketing.com/#organization",
         "name": "AirFresh Marketing",
         "alternateName": "AirFresh Experiential Marketing Agency",
+        "foundingDate": "2004",
         "description": "Experiential marketing agency specializing in brand activations, event marketing, guerrilla marketing, and customer engagement campaigns nationwide.",
         "url": "https://www.airfreshmarketing.com",
         "logo": "https://www.airfreshmarketing.com/images/airfresh-logo.svg",
         "sameAs": [
-          "https://www.linkedin.com/company/airfreshmarketing",
+          "https://www.linkedin.com/company/air-fresh-marketing",
           "https://twitter.com/AirFreshMktg",
           "https://www.instagram.com/airfreshmarketing",
-          "https://www.facebook.com/AirFreshMarketing"
+          "https://www.facebook.com/airfreshmarketing"
         ],
         "contactPoint": {
           "@type": "ContactPoint",
@@ -152,17 +153,23 @@ export default function Home() {
     {
       icon: Sparkles,
       title: "Create Memorable Brand Experiences",
-      description: "Transform customer interactions into unforgettable experiential marketing moments that drive brand loyalty and engagement through innovative activations and immersive experiences."
+      description: "Transform customer interactions into unforgettable experiential marketing moments that drive brand loyalty and engagement through innovative activations and immersive experiences.",
+      href: "/experiential-marketing-agency",
+      linkText: "Explore Experiential Marketing"
     },
     {
       icon: Heart,
       title: "Build Lasting Customer Relationships Through Experiential Marketing",
-      description: "Convert customers into passionate brand advocates through strategic experiential campaigns, product sampling, and authentic brand interactions that create lasting emotional connections."
+      description: "Convert customers into passionate brand advocates through strategic experiential campaigns, product sampling, and authentic brand interactions that create lasting emotional connections.",
+      href: "/brand-ambassador-agency",
+      linkText: "Meet Our Brand Ambassadors"
     },
     {
       icon: Users,
       title: "Engage Audiences Like Never Before",
-      description: "Our network of fully-aligned brand ambassadors trained to embody your company's message is STACKED!"
+      description: "Our network of fully-aligned brand ambassadors trained to embody your company's message is STACKED!",
+      href: "/event-staffing-agency",
+      linkText: "See Event Staffing Solutions"
     }
   ];
 
@@ -472,6 +479,13 @@ export default function Home() {
                     <p className="text-gray-600 leading-relaxed text-lg">
                       {service.description}
                     </p>
+                    {service.href && (
+                      <div className="mt-6">
+                        <Link href={service.href} className="inline-flex items-center gap-1 text-cyan-600 hover:text-cyan-700 font-semibold text-sm">
+                          {service.linkText} <ArrowRight className="w-4 h-4" />
+                        </Link>
+                      </div>
+                    )}
                   </CardContent>
                 </Card>
               </div>
@@ -839,10 +853,10 @@ export default function Home() {
           </div>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 mb-16">
             {[
-              { value: "500+", label: "Brands Activated" },
-              { value: "15+", label: "Years Experience" },
+              { value: "300+", label: "Brands Activated" },
+              { value: "20+", label: "Years Since 2004" },
               { value: "50+", label: "Cities Nationwide" },
-              { value: "1000+", label: "Events Produced" }
+              { value: "GPS-Verified", label: "Staff Check-Ins" }
             ].map((stat, index) => (
               <div
                 key={index}

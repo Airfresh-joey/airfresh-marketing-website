@@ -138,7 +138,7 @@ export default function FestivalMarketingGuide() {
         <p><strong>Sampling/street team presence</strong></p>
         <p>Cost: $20K - $100K for a multi-day activation</p>
         <p>You get: People distributed through the festival interacting with attendees</p>
-        <p>Reality: Can be highly effective for the right products. Beverage brands especially thrive with this approach.</p>
+        <p>Reality: Can be highly effective for the right products. Beverage brands especially thrive with this approach. Working with a professional <Link href="/product-sampling-agency" className="text-pink-600 hover:underline">product sampling</Link> partner ensures your team can move volume while staying on-brand.</p>
 
         <p><strong>Guerrilla/unofficial presence</strong></p>
         <p>Cost: $10K - $50K typically</p>
@@ -180,7 +180,7 @@ export default function FestivalMarketingGuide() {
         <p>Physical construction, technology integration, staff recruitment. This takes longer than you think. Festival deadlines are firm.</p>
 
         <p><strong>1-2 months out: Staff and train</strong></p>
-        <p>Festival staffing is its own discipline. You need people with energy, resilience, and the ability to stay positive through heat, crowds, and long days. Training needs to happen early enough to iterate.</p>
+        <p>Festival staffing is its own discipline. You need people with energy, resilience, and the ability to stay positive through heat, crowds, and long days. Training needs to happen early enough to iterate. Partnering with an experienced <Link href="/event-staffing-agency" className="text-pink-600 hover:underline">event staffing agency</Link> gives you access to pre-vetted talent who have worked festival environments before.</p>
 
         <p><strong>Week of: Execute</strong></p>
         <p>Setup, daily briefings, real-time optimization. Things will go wrong. Having a team that can adapt matters more than having a perfect plan.</p>
@@ -190,7 +190,7 @@ export default function FestivalMarketingGuide() {
 
         <h2>Festival Staffing: The Make or Break</h2>
 
-        <p>I've spent enough time in this article on strategy. Let me talk about the single biggest tactical success factor: <Link href="/services/event-staffing" className="text-pink-600 hover:underline">staffing</Link>.</p>
+        <p>I've spent enough time in this article on strategy. Let me talk about the single biggest tactical success factor: staffing. An <Link href="/experiential-marketing-agency" className="text-pink-600 hover:underline">experiential marketing agency</Link> with deep festival roots will already have the right people on their roster.</p>
 
         <p>Festival staffing is brutal. Your team is working 10-14 hour days in challenging conditions. Crowds, heat, noise, chaos. And they need to maintain energy and enthusiasm the entire time.</p>
 
