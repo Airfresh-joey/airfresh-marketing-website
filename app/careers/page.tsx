@@ -218,11 +218,62 @@ export default function CareersPage() {
     "employmentType": "PART_TIME"
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What does a typical event look like?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Events vary widely — sampling at grocery stores, engaging crowds at festivals, demonstrating tech at trade shows, or representing brands at sporting events. Most shifts are 4-8 hours with full briefings and training provided."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How often can I work?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "It's completely flexible. Some ambassadors work weekly events, others pick up shifts monthly. You choose opportunities that fit your schedule. We post available events regularly and you can accept or decline based on availability."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much can I expect to earn?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Pay typically ranges from $20-35/hour depending on event type and location. Specialty events, trade shows, and multi-day activations often pay more. Some events also include tips, bonuses, or product perks."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do I need previous experience?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "No prior experience required. We value enthusiasm, reliability, and great communication skills. If you're outgoing, professional, and excited to represent top brands, we want to hear from you. Full training is provided."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What brands will I work with?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our clients include Fortune 500 companies and beloved consumer brands. Past clients include Netflix, MrBeast, Google, Microsoft, MAC Cosmetics, Formula One, and many more exciting brands."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Preconnect to Vimeo for faster video load */}
