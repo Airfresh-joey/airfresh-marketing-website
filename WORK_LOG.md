@@ -1,6 +1,35 @@
 # Air Fresh Website Growth Work Log
 
-## 2026-05-30 MDT (Run 5)
+## 2026-05-30 MDT (Run 6)
+
+Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 continued — batch 3).
+
+Audit:
+- 72 blog posts still lacked money-page links after Run 5
+- Selected 8 highest-intent posts for this run (event staffing, festival staffing, ROI measurement, Miami guide, pop-ups)
+
+Shipped (commit 086bbab) — 8 posts:
+- event-staffing-companies-near-me-how-to-find: intro → /event-staffing-agency; h3 National Agencies → /brand-ambassador-agency
+- event-staffing-denver-complete-guide: 2× /services upgraded → /event-staffing-agency; work-with-agency → /brand-ambassador-agency
+- hire-event-staff-festivals: intro → /event-staffing-agency; brand ambassador section → /brand-ambassador-agency
+- promotional-staff-events-hiring-training-guide: 2× /services → /promotional-staffing-agency
+- measure-brand-ambassador-roi-2026: /services → /experiential-marketing-agency; pro-tip → /brand-ambassador-agency
+- event-marketing-roi: intro → /experiential-marketing-agency; track section → /event-staffing-agency
+- event-marketing-agencies-miami-2026-guide: intro 2-pack → /event-staffing-agency + /experiential-marketing-agency; brand ambassador section → /brand-ambassador-agency
+- pop-up-shops-guide: opening → /brand-ambassador-agency; staffing section → /event-staffing-agency
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 086bbab, pushed to origin/main
+- Vercel auto-deploy triggered
+- Live verification: curl https://www.airfreshmarketing.com/blog/event-staffing-companies-near-me-how-to-find confirmed event-staffing-agency (13×) and brand-ambassador-agency (9×) in HTML ✓
+
+Next actions:
+- Priority #3 continued: ~64 blog posts still lack money-page internal links — continue 8-10/run until full coverage
+- Priority #4: FAQ schema expansion — add FAQPage JSON-LD to top 10 highest-traffic service pages
+
+
 
 Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 continued — batch 2).
 
