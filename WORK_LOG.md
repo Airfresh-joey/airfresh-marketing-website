@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-30 MDT (Run 3)
+
+Goal: GSC click efficiency — tighten fallback title + meta description on all ~5,700 non-enriched city-service pages (Priority #2).
+
+Audit:
+- Non-enriched city-service page fallback title was: `${serviceName} ${cityName} | Professional ${serviceName} Services | AirFresh Marketing`
+  Often 65-85 chars — Google truncates titles at ~60, hiding the brand suffix and reducing CTR
+- Non-enriched fallback description was: `${serviceName} ${cityName} services from AirFresh Marketing. ${parsed.service.description} Contact us for...`
+  Always 220-270 chars — Google truncates at ~155, never showing the full value prop. No CTR hook.
+- Also noted: 2151d06 (Run 2) was pushed but Vercel hadn't yet deployed the updated SSG pages (stale cache). This run's push forces a fresh Vercel build that includes both the absolute title fix AND the new meta improvements.
+
+Shipped (commit 96c868b):
+- app/city-services/[slug]/page.tsx: New fallback title template: `${serviceName} ${cityName} | AirFresh Marketing` (39-55 chars, always fully displayed in SERP)
+- app/city-services/[slug]/page.tsx: New fallback description: `${service.title} in ${cityName} · AirFresh Marketing. 500+ national brands served. GPS-tracked staff, 24-hr response. Free quote.` (134-147 chars, keyword-first, concrete value props, strong CTA)
+- 10 enriched city markets (NYC, LA, Miami, Chicago, Las Vegas, Denver, Houston, Dallas, Phoenix, Atlanta) are unchanged — their custom metaTitle/metaDescription are preserved.
+- Also pushed empty commit d736b72 to trigger Vercel redeploy for the prior absolute-title fix (2151d06).
+
+Verified in local build (.next/server/app/city-services/):
+- albuquerque-event-management: title="Event Management Albuquerque | AirFresh Marketing" ✓
+- charlotte-promotional-models: title="Promotional Models Charlotte | AirFresh Marketing" ✓
+- albuquerque-event-management: description="Full-Service Event Management in Albuquerque · AirFresh Marketing. 500+ national brands served. GPS-tracked staff, 24-hr response. Free quote." ✓
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 96c868b, pushed to origin/main
+- Vercel deploy in progress (large SSG build — 15-25 min propagation time)
+
+Next actions:
+- Priority #3: Internal link audit — blog posts should link to commercial service pages with descriptive anchor text; add 2-3 internal links per blog post to /event-staffing-agency, /brand-ambassadors, /product-sampling, etc.
+
 ## 2026-05-30 MDT (Run 2)
 
 Goal: Fix double brand suffix on ALL city-service pages (Priority #1 — missed pages from Run 1).
