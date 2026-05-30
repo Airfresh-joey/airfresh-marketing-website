@@ -86,7 +86,7 @@ export default function BrandAmbassadorPay() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Understanding market rates helps you budget properly and attract quality talent. Here's what you should expect to pay in 2026.</p>
+        <p>Understanding market rates helps you budget properly and attract quality talent. Here's what you should expect to pay in 2026. If you're planning a campaign, our <Link href="/brand-ambassador-agency" className="text-green-600 hover:underline">brand ambassador agency</Link> provides transparent, all-in pricing — and our <Link href="/promotional-staffing-agency" className="text-green-600 hover:underline">promotional staffing specialists</Link> can match the right talent tier to your budget and goals.</p>
         <h2>Standard Rates (Major Markets)</h2>
         <ul>
           <li><strong>Entry-level brand ambassador:</strong> $20-25/hour</li>

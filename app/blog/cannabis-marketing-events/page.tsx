@@ -87,7 +87,7 @@ export default function CannabisMarketing() {
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
         <p>Cannabis is legal in some form in most states, but marketing it remains heavily restricted. No traditional advertising in most cases. No social media ads. No mainstream sponsorships. So how do cannabis brands build awareness?</p>
-        <p>Events and experiences.</p>
+        <p>Events and experiences. Partnering with a compliant <Link href="/brand-activation-agency" className="text-lime-600 hover:underline">brand activation agency</Link> that understands the regulatory landscape is critical — the right <Link href="/event-staffing-agency" className="text-lime-600 hover:underline">event staffing team</Link> can execute dispensary events, industry trade shows, and lifestyle activations that build brand equity without running afoul of state regulations.</p>
         <h2>The Regulatory Reality</h2>
         <p>Every state has different rules. Common restrictions:</p>
         <ul>

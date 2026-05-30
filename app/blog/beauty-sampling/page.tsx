@@ -86,7 +86,7 @@ export default function BeautySampling() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Nobody buys skincare or makeup without trying it first. Color, texture, scent, feel - these are personal. That's why beauty brands invest heavily in sampling and demonstration.</p>
+        <p>Nobody buys skincare or makeup without trying it first. Color, texture, scent, feel - these are personal. That's why beauty brands invest heavily in sampling and demonstration. A skilled <Link href="/product-sampling-agency" className="text-rose-600 hover:underline">product sampling agency</Link> can deploy trained beauty specialists across retail counters, pop-up events, and festivals — turning curious browsers into loyal customers.</p>
         <h2>Where Beauty Brands Sample</h2>
         <p><strong>Department store counters:</strong> The traditional model. High-touch, expert application, immediate purchase. Labor-intensive but high conversion.</p>
         <p><strong>Sephora/Ulta events:</strong> Built-in beauty audience. Events create excitement beyond everyday shopping.</p>

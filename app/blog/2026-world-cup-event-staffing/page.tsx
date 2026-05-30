@@ -95,7 +95,7 @@ export default function WorldCupEventStaffing() {
 
         <p>For marketers and brand managers, the question is not whether to activate around the World Cup. The question is how to staff those activations with the right people, in the right cities, at the right time. That is exactly what this guide covers.</p>
 
-        <p>At <Link href="/" className="text-teal-600 hover:underline">Air Fresh Marketing</Link>, we have staffed major sporting events, festivals, and multi-city brand activations for over a decade. Here is everything you need to know about <strong>2026 World Cup event staffing</strong> -- from the types of staff you will need to a city-by-city breakdown of every US venue.</p>
+        <p>At <Link href="/" className="text-teal-600 hover:underline">Air Fresh Marketing</Link>, we have staffed major sporting events, festivals, and multi-city brand activations for over a decade. Our <Link href="/event-staffing-agency" className="text-teal-600 hover:underline">event staffing agency</Link> deploys <Link href="/brand-ambassador-agency" className="text-teal-600 hover:underline">brand ambassadors</Link> and promotional teams across all 11 US host cities. Here is everything you need to know about <strong>2026 World Cup event staffing</strong> -- from the types of staff you will need to a city-by-city breakdown of every US venue.</p>
 
         <h2>Why the 2026 World Cup Is a Once-in-a-Generation Activation Opportunity</h2>
 

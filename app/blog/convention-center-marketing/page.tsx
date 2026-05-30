@@ -86,7 +86,7 @@ export default function ConventionMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Convention centers host the biggest events: CES, SXSW, Comic-Con, industry expos with tens of thousands of attendees. The scale creates both opportunity and complexity.</p>
+        <p>Convention centers host the biggest events: CES, SXSW, Comic-Con, industry expos with tens of thousands of attendees. The scale creates both opportunity and complexity. Success starts with the right staffing mix — from <Link href="/brand-ambassador-agency" className="text-indigo-600 hover:underline">brand ambassadors</Link> working the floor to <Link href="/event-staffing-agency" className="text-indigo-600 hover:underline">event staff specialists</Link> managing lead capture, demos, and crowd flow across sprawling multi-day shows.</p>
         <h2>Major US Convention Centers</h2>
         <ul>
           <li><strong>Las Vegas Convention Center:</strong> CES, NAB, countless trade shows</li>

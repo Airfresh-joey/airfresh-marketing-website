@@ -86,7 +86,7 @@ export default function BACareer() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Brand ambassador work can be a flexible side gig or the start of a real career. Here's how to make the most of it.</p>
+        <p>Brand ambassador work can be a flexible side gig or the start of a real career. Here's how to make the most of it. If you're a brand looking to hire, our <Link href="/brand-ambassador-agency" className="text-teal-600 hover:underline">brand ambassador agency</Link> connects you with vetted, experienced talent for <Link href="/event-staffing-agency" className="text-teal-600 hover:underline">event staffing</Link> nationwide.</p>
         <h2>Getting Started</h2>
         <ul>
           <li><strong>Build your profile:</strong> Professional headshots, resume, experience summary</li>
