@@ -1,5 +1,34 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-30 MDT (Run 2)
+
+Goal: Fix double brand suffix on ALL city-service pages (Priority #1 — missed pages from Run 1).
+
+Audit: Run 1 (commit b4f4d68) fixed double brand suffix on layout-level pages (/about, /contact, /team, /careers). However, city-service pages (`app/city-services/[slug]/page.tsx`) had a separate bug: both the enriched city content `metaTitle` values (e.g., `'Brand Ambassadors New York City | Professional Staffing | AirFresh Marketing'`) and the non-enriched fallback title strings already contained `| AirFresh Marketing`, but `generateMetadata` returned `title: title` which triggered the root layout template to append another `| AirFresh Marketing`. Result: all ~6,305 city-service pages showed doubled suffix live.
+
+Confirmed double on live site before fix:
+- /city-services/new-york-city-brand-ambassadors: "Brand Ambassadors New York City | Professional Staffing | AirFresh Marketing | AirFresh Marketing"
+- /city-services/chicago-street-teams: "Street Teams Chicago | Professional Staffing | AirFresh Marketing | AirFresh Marketing"
+- Affects all 10 enriched city modules (NYC, LA, Miami, Chicago, Las Vegas, Denver, Houston, Dallas, Phoenix, Atlanta) and ~5,700+ non-enriched fallback pages.
+
+Shipped (commit 2151d06):
+- app/city-services/[slug]/page.tsx: Changed `title: title` → `title: { absolute: absoluteTitle }` in generateMetadata so Next.js bypasses the template and uses the title string as-is.
+
+Result (verified in local build .next/server/app/city-services/*.html):
+- /city-services/new-york-city-brand-ambassadors → "Brand Ambassadors New York City | Professional Staffing | AirFresh Marketing" ✓
+- /city-services/new-york-city-street-teams → "Street Teams New York City | Professional Staffing | AirFresh Marketing" ✓
+- /city-services/albuquerque-event-management → "Event Management Albuquerque | Professional Event Management Services | AirFresh Marketing" ✓
+- /city-services/charlotte-promotional-models → "Promotional Models Charlotte | Professional Promotional Models Services | AirFresh Marketing" ✓
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 2151d06, pushed to origin/main
+- Vercel deploy triggered; CDN propagation in progress (live verification pending CDN flush ~5-10 min)
+
+Next actions:
+- GSC click efficiency pass (Priority #2): identify city-service + event pages with high impressions / low CTR, rewrite top 10 worst title/meta offenders
+
 ## 2026-05-30 MDT
 
 Goal: Fix double brand suffix in page titles (Priority #1).
