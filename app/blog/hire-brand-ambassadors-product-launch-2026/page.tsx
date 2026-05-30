@@ -67,7 +67,7 @@ export default function HireBrandAmbassadorsProductLaunch() {
 
         <h3>8-12 Weeks Before Launch: Strategy and Agency Selection</h3>
 
-        <p>This is when you should be engaging an <Link href="/services" className="text-orange-600 hover:text-orange-700">event staffing agency</Link>. Not just requesting a quote — having a strategic conversation about what your launch needs. The right agency will want to understand your product, your target consumer, your competitive landscape, and your definition of success before they recommend a single person.</p>
+        <p>This is when you should be engaging a <Link href="/brand-ambassador-agency" className="text-orange-600 hover:text-orange-700">brand ambassador agency</Link>. Not just requesting a quote — having a strategic conversation about what your launch needs. The right agency will want to understand your product, your target consumer, your competitive landscape, and your definition of success before they recommend a single person.</p>
 
         <p>At this stage, you should be defining:</p>
         <ul>
@@ -124,7 +124,7 @@ export default function HireBrandAmbassadorsProductLaunch() {
 
         <p>Ask your prospective agency specifically about product launch experience. How many launches have they staffed in the past year? What categories? What were the results? Can they share case studies or client references from launches specifically?</p>
 
-        <p>A general <Link href="/services" className="text-orange-600 hover:text-orange-700">event staffing agency</Link> can probably staff your launch adequately. An agency with deep product launch experience will staff it strategically — understanding the unique pressure, the compressed timeline, and the outsized importance of every consumer interaction.</p>
+        <p>A general <Link href="/event-staffing-agency" className="text-orange-600 hover:text-orange-700">event staffing agency</Link> can probably staff your launch adequately. An agency with deep product launch experience will staff it strategically — understanding the unique pressure, the compressed timeline, and the outsized importance of every consumer interaction.</p>
 
         <h3>Training Infrastructure</h3>
 

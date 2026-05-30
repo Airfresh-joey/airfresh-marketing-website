@@ -86,7 +86,7 @@ export default function ChoosingAgency() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>The difference between a great event and a disaster often comes down to the staffing agency you choose. Here's how to evaluate your options.</p>
+        <p>The difference between a great event and a disaster often comes down to the staffing agency you choose. Whether you need a full-service <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link>, dedicated <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassadors</Link>, or a <Link href="/promotional-staffing-agency" className="text-blue-600 hover:text-blue-700">promotional staffing agency</Link>, here's how to evaluate your options.</p>
         <h2>Questions to Ask</h2>
         <ul>
           <li>How do you recruit and vet staff?</li>
@@ -113,7 +113,7 @@ export default function ChoosingAgency() {
           <li>Responsive, professional communication</li>
         </ul>
         <h2>The Test</h2>
-        <p>Start with a small project. See how they perform before committing to larger programs. Performance on a small gig predicts performance on big ones.</p>
+        <p>Start with a small project. See how they perform before committing to larger programs. Performance on a small gig predicts performance on big ones. Air Fresh Marketing is a nationally recognized <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> serving 500+ brands — we welcome the scrutiny.</p>
         <hr className="my-12" />
         <div className="not-prose">
           <div className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white p-8 rounded-xl">

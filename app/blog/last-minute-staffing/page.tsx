@@ -86,7 +86,7 @@ export default function LastMinuteStaffing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Events don't always go according to plan. Staff get sick. Headcount increases. Timelines accelerate. When you need staff fast, you need a partner who can deliver.</p>
+        <p>Events don't always go according to plan. Staff get sick. Headcount increases. Timelines accelerate. When you need staff fast, you need a <Link href="/event-staffing-agency" className="text-amber-700 hover:text-red-700">event staffing agency</Link> who can deliver — and a <Link href="/promotional-staffing-agency" className="text-amber-700 hover:text-red-700">promotional staffing agency</Link> with a deep bench of pre-vetted talent ready to mobilize.</p>
         <h2>Why Last-Minute Happens</h2>
         <ul>
           <li>Original staffing agency falls through</li>

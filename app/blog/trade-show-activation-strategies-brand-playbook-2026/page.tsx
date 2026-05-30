@@ -111,7 +111,7 @@ export default function TradeShowActivationStrategies() {
 
         <p>Sales reps on a trade show floor tend to spend too long with each prospect (optimizing for depth when the goal is reach), gravitate toward friendly conversations rather than systematic lead qualification, and burn out by mid-afternoon because trade show floor work is a fundamentally different kind of performance than sales calls or client meetings.</p>
 
-        <p>Professional trade show staff from a specialized <Link href="/services" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> are trained for the specific demands of convention floor work — they can run high-energy interactions for 8 hours, they qualify leads using your specific criteria, they follow your activation script while adapting to each individual conversation, and they produce the volume of qualified interactions that justifies your trade show investment.</p>
+        <p>Professional trade show staff from a specialized <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> are trained for the specific demands of convention floor work — they can run high-energy interactions for 8 hours, they qualify leads using your specific criteria, they follow your activation script while adapting to each individual conversation, and they produce the volume of qualified interactions that justifies your trade show investment.</p>
 
         <p>The ideal approach combines professional trade show staff with a small number of subject matter experts from your team. Your product engineers or senior salespeople handle the deep-dive conversations with highly qualified prospects, while the professional staff manage the flow of booth traffic, initial qualification, and activation facilitation.</p>
 
@@ -173,7 +173,7 @@ export default function TradeShowActivationStrategies() {
 
         <h2>Working With an Event Staffing Agency for Trade Shows</h2>
 
-        <p>For brands exhibiting at multiple trade shows per year, working with a dedicated <Link href="/services" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> produces significantly better results than managing staffing internally. Here is why:</p>
+        <p>For brands exhibiting at multiple trade shows per year, working with a dedicated <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> produces significantly better results than managing staffing internally. Here is why:</p>
 
         <p><strong>Consistent quality across markets.</strong> If you exhibit in Las Vegas in January, Chicago in March, and Orlando in June, an agency maintains vetted talent networks in all three cities. You get consistent training standards and brand representation regardless of geography, without the logistical nightmare of managing local recruitment in each market yourself.</p>
 

@@ -111,7 +111,7 @@ export default function PromotionalModelsGuide() {
 
         <p><strong>Promotional models</strong> - The classic role. Attractive, approachable people who draw attention to a brand, product, or booth. They're there partly for visual appeal, but the good ones are also skilled at engagement and conversation.</p>
 
-        <p><strong>Brand ambassadors</strong> - Similar to promo models, but with more emphasis on product knowledge and brand storytelling. Less about appearance, more about communication skills. (We have a <Link href="/blog/how-to-hire-brand-ambassadors" className="text-pink-600 hover:underline">separate guide on brand ambassadors</Link> if that's what you're looking for.)</p>
+        <p><strong>Brand ambassadors</strong> - Similar to promo models, but with more emphasis on product knowledge and brand storytelling. Less about appearance, more about communication skills. (We have a <Link href="/brand-ambassador-agency" className="text-pink-600 hover:underline">brand ambassador agency</Link> page if that's what you're looking for — as well as a <Link href="/blog/how-to-hire-brand-ambassadors" className="text-pink-600 hover:underline">separate guide on hiring brand ambassadors</Link>.)</p>
 
         <p><strong>Trade show models</strong> - Promo models specifically trained for exhibition environments. They know how to work a booth, qualify leads, scan badges, and keep energy high for 8+ hour days.</p>
 

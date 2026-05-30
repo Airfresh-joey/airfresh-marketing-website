@@ -86,7 +86,7 @@ export default function StaffTraining() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>The difference between a good event and a great one often comes down to training. Well-trained staff create better experiences, drive better results, and represent your brand better.</p>
+        <p>The difference between a good event and a great one often comes down to training. Well-trained <Link href="/brand-ambassador-agency" className="text-green-600 hover:text-green-700">brand ambassadors</Link> and <Link href="/event-staffing-agency" className="text-green-600 hover:text-green-700">event staff</Link> create better experiences, drive better results, and represent your brand better.</p>
         <h2>Training Components</h2>
         <ul>
           <li><strong>Brand overview:</strong> Who is this brand, what do they stand for?</li>
@@ -108,6 +108,7 @@ export default function StaffTraining() {
           <li>Simple roles: 24 hours before + day-of brief</li>
           <li>Always: Written brief they can reference</li>
         </ul>
+        <p>When you partner with a professional <Link href="/event-staffing-agency" className="text-green-600 hover:text-green-700">event staffing agency</Link>, comprehensive training is included as part of the service — your team arrives prepared to represent your brand from the first interaction.</p>
         <hr className="my-12" />
         <div className="not-prose">
           <div className="bg-gradient-to-r from-green-600 to-teal-600 text-white p-8 rounded-xl">

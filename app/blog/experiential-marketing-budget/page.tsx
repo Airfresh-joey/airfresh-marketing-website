@@ -86,10 +86,10 @@ export default function ExperientialBudgeting() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Experiential budgets vary wildly - from $5K local activations to multi-million dollar campaigns. Here's how to think about budgeting.</p>
+        <p>Experiential budgets vary wildly - from $5K local activations to multi-million dollar campaigns. When planning your <Link href="/experiential-marketing-agency" className="text-green-600 hover:text-green-700">experiential marketing</Link> spend, the single most important line item is staffing — it determines whether your activation actually converts. Here's how to think about budgeting.</p>
         <h2>Budget Components</h2>
         <ul>
-          <li><strong>Staffing:</strong> Typically 25-40% of budget</li>
+          <li><strong>Staffing:</strong> Typically 25-40% of budget — invest here first. Quality <Link href="/event-staffing-agency" className="text-green-600 hover:text-green-700">event staffing</Link> directly drives ROI.</li>
           <li><strong>Venue/space:</strong> 15-30% of budget</li>
           <li><strong>Production/build:</strong> 20-35% of budget</li>
           <li><strong>Product/samples:</strong> Variable by campaign</li>
@@ -102,7 +102,7 @@ export default function ExperientialBudgeting() {
         <p><strong>$100K-500K:</strong> National campaigns, custom builds, major events.</p>
         <p><strong>$500K+:</strong> Flagship experiences, major sponsorships, extensive programs.</p>
         <h2>Where to Invest vs. Cut</h2>
-        <p><strong>Invest in:</strong> Staff quality, strategic locations, measurement.</p>
+        <p><strong>Invest in:</strong> Staff quality (your <Link href="/brand-activation-agency" className="text-green-600 hover:text-green-700">brand activation</Link> lives or dies with your people), strategic locations, measurement.</p>
         <p><strong>Cut carefully:</strong> Production flourishes, excessive swag, low-traffic times.</p>
         <h2>ROI Mindset</h2>
         <ul>
