@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Gym and Fitness Center Marketing | Air Fresh Marketing',
+  title: 'Gym and Fitness Center Marketing',
   description: 'Reach active consumers at gyms and fitness centers. Here\'s how to activate in fitness environments.',
   keywords: 'gym marketing, fitness center marketing, fitness marketing, gym sampling, health club marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/gym-fitness-marketing',

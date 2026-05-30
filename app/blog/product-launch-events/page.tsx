@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Product Launch Events: The Playbook for Making People Care | Air Fresh Marketing',
+  title: 'Product Launch Events: The Playbook for Making People Care',
   description: 'Most product launches fail to generate momentum. Here\'s how to plan and execute launch events that actually create buzz, drive coverage, and move product.',
   keywords: 'product launch event, launch event planning, product launch party, launch event ideas, product launch marketing, product release event',
   openGraph: {

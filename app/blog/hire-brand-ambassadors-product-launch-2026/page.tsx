@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'How to Hire Brand Ambassadors for Your Product Launch in 2026 | Air Fresh Marketing',
+  title: 'How to Hire Brand Ambassadors for Your Product Launch in 2026',
   description: 'Brand ambassador staffing for product launches requires strategic planning, the right event staffing agency, and proven experiential marketing tactics. Learn the complete process for hiring brand ambassadors that drive launch-day results.',
   keywords: 'brand ambassador staffing, event staffing agency, experiential marketing, hire brand ambassadors product launch, product launch staffing, brand ambassador agency, product launch event staff',
   openGraph: {

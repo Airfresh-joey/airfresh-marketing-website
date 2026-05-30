@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Farmer\'s Market Marketing | Air Fresh Marketing',
+  title: 'Farmer\'s Market Marketing',
   description: 'Farmer\'s markets offer unique sampling opportunities. Here\'s how to reach health-conscious consumers at local markets.',
   keywords: 'farmers market marketing, farmers market sampling, local market activation, organic brand marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/farmers-market-marketing',

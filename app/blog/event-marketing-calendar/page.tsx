@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Marketing Calendar: Planning Your Year | Air Fresh Marketing',
+  title: 'Event Marketing Calendar: Planning Your Year',
   description: 'When to run experiential campaigns for maximum impact. A month-by-month marketing calendar.',
   keywords: 'event marketing calendar, experiential marketing timing, marketing calendar, seasonal marketing events',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/event-marketing-calendar',

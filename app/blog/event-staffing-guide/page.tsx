@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing: How to Not Screw Up Your Next Event | Air Fresh Marketing',
+  title: 'Event Staffing: How to Not Screw Up Your Next Event',
   description: 'A brutally honest guide to event staffing from someone who\'s seen every possible disaster. How to hire, train, and manage event staff that actually performs.',
   keywords: 'event staffing, event staff, hire event staff, event staffing agency, event staffing services, promotional event staff',
   openGraph: {

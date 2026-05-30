@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Experiential Marketing for Startups | Air Fresh Marketing',
+  title: 'Experiential Marketing for Startups',
   description: 'Startups can use experiential marketing to punch above their weight. Here\'s how to do it on a budget.',
   keywords: 'startup experiential marketing, startup event marketing, guerrilla marketing startups, startup brand awareness',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/startup-experiential-marketing',

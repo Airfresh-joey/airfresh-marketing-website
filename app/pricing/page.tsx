@@ -23,7 +23,7 @@ import {
 } from 'lucide-react'
 
 export const metadata: Metadata = {
-  title: 'Event Staffing & Brand Ambassador Pricing | AirFresh Marketing',
+  title: 'Event Staffing & Brand Ambassador Pricing',
   description:
     'Event staffing pricing with transparent rates: brand ambassadors $35-65/hr, trade show staff $40-70/hr, street teams, and promotional models.',
   keywords:

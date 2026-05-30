@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Nonprofit Event Marketing and Fundraising | Air Fresh Marketing',
+  title: 'Nonprofit Event Marketing and Fundraising',
   description: 'Nonprofits need to maximize event impact with limited budgets. Here\'s how to staff fundraisers, galas, and awareness campaigns.',
   keywords: 'nonprofit marketing, fundraising events, charity events, nonprofit event staff, cause marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/nonprofit-event-marketing',

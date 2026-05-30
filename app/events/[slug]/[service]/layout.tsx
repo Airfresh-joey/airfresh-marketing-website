@@ -23,7 +23,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const serviceName = serviceNames[service] || service.replace(/-/g, ' ')
   
   if (!event) {
-    return { title: `${serviceName} | AirFresh Marketing` }
+    return { title: `${serviceName}` }
   }
   
   const title = `${serviceName} for ${event.name}`

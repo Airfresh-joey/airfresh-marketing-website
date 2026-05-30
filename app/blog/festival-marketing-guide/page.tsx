@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Festival Marketing: How to Win at Coachella, SXSW, and Beyond | Air Fresh Marketing',
+  title: 'Festival Marketing: How to Win at Coachella, SXSW, and Beyond',
   description: 'Festival marketing done right generates massive ROI. Done wrong, it\'s an expensive party. Here\'s what separates the winners from the wasters.',
   keywords: 'festival marketing, coachella marketing, sxsw marketing, music festival marketing, festival brand activation, festival sponsorship',
   openGraph: {

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Church and Religious Venue Marketing | Air Fresh Marketing',
+  title: 'Church and Religious Venue Marketing',
   description: 'Faith-based communities offer unique marketing opportunities. Here\'s how to respectfully engage with religious venues.',
   keywords: 'church marketing, faith based marketing, religious marketing, community marketing, church events',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/faith-community-marketing',

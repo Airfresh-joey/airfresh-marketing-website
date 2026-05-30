@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Franchise Marketing Support | Air Fresh Marketing',
+  title: 'Franchise Marketing Support',
   description: 'Franchises need consistent marketing execution across locations. Here\'s how to support franchise marketing programs.',
   keywords: 'franchise marketing, franchise support, multi-location marketing, franchise events, franchise brand consistency',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/franchise-marketing',

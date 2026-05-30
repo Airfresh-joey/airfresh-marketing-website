@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Product Sampling Campaign Planning: A Step-by-Step Strategy Guide | Air Fresh Marketing',
+  title: 'Product Sampling Campaign Planning: A Step-by-Step Strategy Guide',
   description: 'Product sampling campaigns drive trial, build brand awareness, and convert shoppers at the point of purchase. Learn how to plan, staff, and optimize a product sampling program that delivers measurable ROI.',
   keywords: 'product sampling campaigns, product sampling strategy, in-store sampling, product demo, sampling program, product sampling agency, brand sampling, retail sampling',
   openGraph: {

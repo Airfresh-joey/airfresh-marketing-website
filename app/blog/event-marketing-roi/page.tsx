@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Marketing ROI: How to Actually Measure It | Air Fresh Marketing',
+  title: 'Event Marketing ROI: How to Actually Measure It',
   description: 'Event marketing ROI is notoriously hard to measure. Here are the frameworks and formulas that actually work, from someone who\'s measured hundreds of campaigns.',
   keywords: 'event marketing ROI, experiential marketing ROI, event ROI calculation, measure event success, event marketing metrics',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/event-marketing-roi',

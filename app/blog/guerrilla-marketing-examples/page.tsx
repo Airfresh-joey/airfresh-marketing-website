@@ -7,7 +7,7 @@ import { ArrowRight, Zap, Target, TrendingUp, DollarSign, Share2, Camera, Megaph
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: '15 Guerrilla Marketing Examples That Went Viral (2026) | Air Fresh Marketing',
+  title: '15 Guerrilla Marketing Examples That Went Viral (2026)',
   description: 'Discover the best guerrilla marketing examples and learn how to create low-cost, high-impact campaigns that generate massive buzz for your brand.',
   keywords: 'guerrilla marketing examples, guerrilla marketing ideas, street marketing, ambient advertising, creative marketing campaigns, viral marketing examples',
   openGraph: {

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Direct-to-Consumer Brand Marketing | Air Fresh Marketing',
+  title: 'Direct-to-Consumer Brand Marketing',
   description: 'DTC brands are going physical. Here\'s how digital-native brands can execute IRL marketing effectively.',
   keywords: 'dtc marketing, direct to consumer marketing, digital native brands, dtc retail, dtc brand activation',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/dtc-brand-marketing',

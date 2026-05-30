@@ -6,7 +6,7 @@ import { ArrowRight, GraduationCap, Users, Megaphone, Calendar, Target, Trending
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'College Marketing: How to Reach Students on Campus in 2026 | Air Fresh Marketing',
+  title: 'College Marketing: How to Reach Students on Campus in 2026',
   description: 'College students ignore ads but respond to experiences. Learn proven campus marketing strategies including brand ambassador programs, event activations, sampling campaigns, and peer-to-peer tactics that actually work.',
   keywords: 'college marketing, campus marketing, university marketing, student marketing, college brand ambassadors, campus events, college sampling, Gen Z marketing, campus activation, student ambassador program',
   openGraph: {

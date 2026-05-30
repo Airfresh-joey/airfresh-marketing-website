@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Promotional Staff for Events: How to Hire, Train, and Manage Teams That Deliver Results | Air Fresh Marketing',
+  title: 'Promotional Staff for Events: How to Hire, Train, and Manage Teams That Deliver Results',
   description: 'Promotional staff drive engagement at events, trade shows, and brand activations. Learn how to hire, train, and manage event teams that convert attendees into customers.',
   keywords: 'promotional staff, event staffing agency, brand ambassadors, hire promotional staff, promotional models, event staff training, promotional staffing agency, event marketing staff',
   openGraph: {

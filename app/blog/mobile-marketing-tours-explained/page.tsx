@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Mobile Marketing Tours Explained | Air Fresh Marketing',
+  title: 'Mobile Marketing Tours Explained',
   description: 'Everything you need to know about mobile marketing tours. Learn how branded vehicles, experiential trucks, and traveling activations can expand your brand reach.',
   keywords: 'mobile marketing tour, experiential truck, branded vehicle, traveling activation, mobile brand experience, tour marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/mobile-marketing-tours-explained',

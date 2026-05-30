@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026 | Air Fresh Marketing',
+  title: 'Sustainable Event Marketing: The Complete Guide to Eco-Friendly Brand Activations in 2026',
   description: 'Sustainable event marketing is no longer optional. Learn how to plan carbon-neutral activations, eliminate waste, meet Gen Z expectations, and build brand loyalty through eco-friendly experiential marketing.',
   keywords: 'sustainable event marketing, eco-friendly brand activations, green event planning, carbon-neutral events, zero-waste activations, sustainable experiential marketing, green marketing 2026',
   openGraph: {

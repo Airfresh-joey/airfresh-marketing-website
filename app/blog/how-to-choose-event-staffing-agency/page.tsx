@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, AlertTriangle, Users, DollarSign, Search, Shie
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'How to Choose the Right Event Staffing Agency for Your Next Campaign (2026) | Air Fresh Marketing',
+  title: 'How to Choose the Right Event Staffing Agency for Your Next Campaign (2026)',
   description: 'Learn how to choose the right event staffing agency for experiential marketing campaigns. Compare agency types, spot red flags, evaluate ROI, and find reliable event staff for hire.',
   keywords: 'event staffing agency, experiential marketing staffing, brand ambassador agency, event staff for hire, choose event staffing agency, experiential marketing agency, hire event staff',
   openGraph: {

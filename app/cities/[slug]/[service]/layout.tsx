@@ -13,7 +13,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const serviceType = serviceTypes.find(s => s.slug === service)
   
   if (!city || !serviceType) {
-    return { title: 'City Services | AirFresh Marketing' }
+    return { title: 'City Services' }
   }
   
   const title = `${serviceType.name} in ${city.city}, ${city.state}`

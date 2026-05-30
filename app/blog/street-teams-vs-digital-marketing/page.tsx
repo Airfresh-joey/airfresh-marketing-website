@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, Users, Monitor, TrendingUp, Target, Zap, Heart
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Street Teams vs Digital Marketing: Why In-Person Still Wins in 2026 | Air Fresh Marketing',
+  title: 'Street Teams vs Digital Marketing: Why In-Person Still Wins in 2026',
   description: 'Street teams vs digital marketing: a data-driven comparison of cost per acquisition, engagement rates, brand recall, and conversion metrics. Learn why in-person marketing outperforms digital for brand building and when to use each channel.',
   keywords: 'street teams vs digital marketing, in-person marketing vs digital, street team marketing, experiential vs digital marketing, brand ambassador vs online ads, in-person marketing ROI, street marketing effectiveness',
   openGraph: {

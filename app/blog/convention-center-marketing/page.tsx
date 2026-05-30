@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Convention Center Marketing and Events | Air Fresh Marketing',
+  title: 'Convention Center Marketing and Events',
   description: 'Convention centers host massive audiences. Here\'s how to staff and execute marketing activations at major venues.',
   keywords: 'convention center marketing, convention events, expo marketing, convention staffing, venue activations',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/convention-center-marketing',

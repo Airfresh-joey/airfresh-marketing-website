@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, Target, Users, Lightbulb, BarChart, Calendar, 
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Trade Show Marketing: 15 Strategies That Actually Work (2026) | Air Fresh Marketing',
+  title: 'Trade Show Marketing: 15 Strategies That Actually Work (2026)',
   description: 'Learn proven trade show marketing strategies to maximize your exhibition ROI. Pre-show, at-show, and post-show tactics from industry experts.',
   keywords: 'trade show marketing, trade show strategies, exhibition marketing, trade show tips, trade show booth ideas, trade show lead generation',
   openGraph: {

@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Agency | Professional Event Staff Nationwide | AirFresh Marketing',
+  title: 'Event Staffing Agency | Professional Event Staff Nationwide',
   description: 'Event staffing agency providing trained brand ambassadors, promotional models, and event staff in 50+ cities. GPS-verified check-ins, 300+ brands served since 2004.',
   keywords: 'event staffing agency, event staffing company, event staffing services, hire event staff, professional event staffing',
   openGraph: {

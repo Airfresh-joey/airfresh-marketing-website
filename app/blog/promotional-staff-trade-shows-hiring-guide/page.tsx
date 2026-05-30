@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Promotional Staff for Trade Shows: The Complete Hiring Guide for 2026 | Air Fresh Marketing',
+  title: 'Promotional Staff for Trade Shows: The Complete Hiring Guide for 2026',
   description: 'Promotional staff for trade shows can make or break your exhibition ROI. Learn how to hire, train, and manage trade show promotional staff that drive booth traffic, capture leads, and convert attendees into customers.',
   keywords: 'promotional staff for trade shows, trade show staff, trade show staffing agency, hire trade show staff, trade show promotional models, trade show brand ambassadors, convention staffing, exhibition staff',
   openGraph: {

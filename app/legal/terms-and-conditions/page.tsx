@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Terms and Conditions | AirFresh Marketing',
+  title: 'Terms and Conditions',
   description: 'Terms and conditions for AirFresh Marketing services including event staffing, brand activations, and experiential marketing.',
   openGraph: {
     type: 'website',

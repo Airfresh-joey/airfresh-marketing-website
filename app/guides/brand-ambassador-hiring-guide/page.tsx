@@ -39,7 +39,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Brand Ambassador Hiring Guide 2026: How to Find & Hire the Best Brand Ambassadors | AirFresh Marketing',
+  title: 'Brand Ambassador Hiring Guide 2026: How to Find & Hire the Best Brand Ambassadors',
   description: 'Brand ambassador hiring guide covering how to find, interview, hire, and manage brand ambassadors for events, sampling campaigns, trade shows, and brand activations. Includes costs, training tips, ROI measurement, and top agencies.',
   keywords: 'brand ambassador hiring, how to hire brand ambassadors, brand ambassador agency, brand ambassador cost, find brand ambassadors',
   openGraph: {

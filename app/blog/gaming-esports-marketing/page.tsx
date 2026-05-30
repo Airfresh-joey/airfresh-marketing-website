@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Gaming and Esports Marketing | Air Fresh Marketing',
+  title: 'Gaming and Esports Marketing',
   description: 'Gaming audiences are young, engaged, and ad-resistant. Here\'s how to reach gamers through experiential marketing.',
   keywords: 'gaming marketing, esports marketing, video game events, gaming conventions, esports activations',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/gaming-esports-marketing',

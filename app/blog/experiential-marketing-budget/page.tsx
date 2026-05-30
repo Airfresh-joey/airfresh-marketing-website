@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Budgeting for Experiential Marketing | Air Fresh Marketing',
+  title: 'Budgeting for Experiential Marketing',
   description: 'How much should you spend on experiential marketing? Here\'s how to build and manage experiential budgets.',
   keywords: 'experiential marketing budget, event marketing budget, activation budget, marketing budget planning',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/experiential-marketing-budget',

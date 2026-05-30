@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Pharmaceutical and Healthcare Marketing | Air Fresh Marketing',
+  title: 'Pharmaceutical and Healthcare Marketing',
   description: 'Pharma and healthcare marketing is heavily regulated. Here\'s how to execute compliant, effective medical marketing events.',
   keywords: 'pharmaceutical marketing, healthcare marketing, medical events, pharma conferences, healthcare trade shows',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/pharmaceutical-healthcare-marketing',

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Startup Marketing Events: Do More With Less | Air Fresh Marketing',
+  title: 'Startup Marketing Events: Do More With Less',
   description: 'Startups need maximum impact from limited budgets. Here\'s how to execute effective marketing events without enterprise resources.',
   keywords: 'startup marketing, startup events, tech startup marketing, startup launch events, lean marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/startup-marketing',

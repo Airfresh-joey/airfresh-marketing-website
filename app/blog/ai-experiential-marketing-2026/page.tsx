@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026 | Air Fresh Marketing',
+  title: 'AI-Powered Experiential Marketing: How AI Is Transforming Brand Activations in 2026',
   description: 'AI-powered experiential marketing is reshaping brand activations in 2026. Learn how artificial intelligence drives personalization, predictive analytics, engagement metrics, and more at live events.',
   keywords: 'AI experiential marketing, AI brand activations, artificial intelligence events, AI event marketing, AI personalization events, predictive analytics events, computer vision marketing, AI chatbots events, virtual brand ambassadors',
   openGraph: {

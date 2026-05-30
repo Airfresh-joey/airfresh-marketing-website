@@ -23,7 +23,7 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: { params: Promise<{ id: string }> }): Promise<Metadata> {
   const { id } = await params
   const study = portfolioCaseStudies.find((s) => s.id === id)
-  if (!study) return { title: 'Case Study | AirFresh Marketing' }
+  if (!study) return { title: 'Case Study' }
 
   const title = `${study.name} | Case Study | AirFresh Marketing`
   const description = study.description.length > 160

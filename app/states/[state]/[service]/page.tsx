@@ -22,7 +22,7 @@ export async function generateMetadata({ params }: StateServicePageProps): Promi
   }
   
   return {
-    title: `${service.name} in ${state.name} | AirFresh Marketing`,
+    title: `${service.name} in ${state.name}`,
     description: `${service.name} services throughout ${state.name}. Local expertise across all major cities.`,
     openGraph: {
       type: 'website',

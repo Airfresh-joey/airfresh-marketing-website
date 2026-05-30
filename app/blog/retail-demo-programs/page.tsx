@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Retail Demo Programs | Air Fresh Marketing',
+  title: 'Retail Demo Programs',
   description: 'In-store demos drive trial and sales. Here\'s how to build and execute effective retail demonstration programs.',
   keywords: 'retail demo, in store demonstration, product demo retail, demo program, retail sampling',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/retail-demo-programs',

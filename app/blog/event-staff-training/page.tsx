@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staff Training Best Practices | Air Fresh Marketing',
+  title: 'Event Staff Training Best Practices',
   description: 'Good training is the difference between great events and disasters. Here\'s how to train event staff effectively.',
   keywords: 'event staff training, brand ambassador training, promotional staff training, event training best practices',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/event-staff-training',

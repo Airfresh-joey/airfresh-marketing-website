@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Automotive Event Marketing: Driving Sales Through Experience | Air Fresh Marketing',
+  title: 'Automotive Event Marketing: Driving Sales Through Experience',
   description: 'Auto shows and ride-and-drive events sell cars. Here\'s how automotive brands create experiences that move metal.',
   keywords: 'automotive event marketing, auto show marketing, ride and drive events, car launch event, automotive experiential, dealership events',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/automotive-event-marketing',

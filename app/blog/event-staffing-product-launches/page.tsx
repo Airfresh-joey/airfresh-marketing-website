@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, AlertTriangle, Users, Clock, Calendar, Rocket,
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing for Product Launches: The Complete Playbook | Air Fresh Marketing',
+  title: 'Event Staffing for Product Launches: The Complete Playbook',
   description: 'Event staffing for product launches requires precise planning from pre-launch preparation through launch day execution to post-event follow-up. Get the complete playbook for staffing successful product launch events.',
   keywords: 'event staffing product launch, product launch event staff, launch day staffing, product launch brand ambassadors, experiential marketing product launch, launch event planning, product release staffing',
   openGraph: {

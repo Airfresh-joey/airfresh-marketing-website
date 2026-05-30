@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing ROI: Measuring Success for Your Marketing Campaign | Air Fresh Marketing',
+  title: 'Event Staffing ROI: Measuring Success for Your Marketing Campaign',
   description: 'Event staffing ROI measurement separates smart experiential marketing investments from wasted budget. Learn the formulas, benchmarks, and frameworks that prove your event staffing agency delivers real returns.',
   keywords: 'event staffing ROI, event staffing agency, brand ambassador staffing, experiential marketing ROI, event marketing metrics, staffing ROI measurement, experiential marketing measurement',
   openGraph: {

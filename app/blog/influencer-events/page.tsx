@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Influencer Events: Creating Content Moments That Scale | Air Fresh Marketing',
+  title: 'Influencer Events: Creating Content Moments That Scale',
   description: 'Influencer events turn one activation into thousands of content pieces. Here\'s how to design experiences that influencers actually want to share.',
   keywords: 'influencer events, influencer marketing events, influencer trip, brand trip, influencer activation, creator event',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/influencer-events',

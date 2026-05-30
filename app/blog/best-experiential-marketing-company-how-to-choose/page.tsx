@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Best Experiential Marketing Company: How to Choose the Right Agency in 2026 | Air Fresh Marketing',
+  title: 'Best Experiential Marketing Company: How to Choose the Right Agency in 2026',
   description: 'Experiential marketing company selection determines whether your brand activation succeeds or fails. Learn the 12 criteria smart brands use to evaluate and hire the best experiential marketing agency for their campaigns.',
   keywords: 'experiential marketing company, brand ambassador agency, experiential marketing agency, best experiential marketing companies, event staffing agency, brand activation agency, experiential marketing firm, hiring experiential marketing company',
   openGraph: {

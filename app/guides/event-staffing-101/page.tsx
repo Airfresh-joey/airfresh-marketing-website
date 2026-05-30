@@ -43,7 +43,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing 101: The Complete Guide to Hiring Event Staff [2026] | AirFresh Marketing',
+  title: 'Event Staffing 101: The Complete Guide to Hiring Event Staff [2026]',
   description: 'Event staffing guide covering everything you need to know about hiring event staff, types of event staff, costs, how to choose an agency, measuring ROI, and avoiding common mistakes. The definitive resource for marketing professionals.',
   keywords: 'event staffing, event staffing guide, how to hire event staff, event staffing companies, event staff types, event staffing costs',
   openGraph: {

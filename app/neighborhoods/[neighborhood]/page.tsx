@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: NeighborhoodPageProps): Promi
   }
   
   return {
-    title: `Event Staffing in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`,
+    title: `Event Staffing in ${neighborhood.name}, ${neighborhood.city}`,
     description: `Professional event staffing and brand ambassadors in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable service.`,
     openGraph: {
       type: 'website',

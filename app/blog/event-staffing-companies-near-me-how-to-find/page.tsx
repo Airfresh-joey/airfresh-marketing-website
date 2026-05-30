@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Companies Near Me: How to Find and Hire the Best in 2026 | Air Fresh Marketing',
+  title: 'Event Staffing Companies Near Me: How to Find and Hire the Best in 2026',
   description: 'Event staffing companies near me is one of the most searched phrases by brands planning activations, product sampling, and trade shows. Learn how to evaluate local event staffing agencies and find the right partner for your market.',
   keywords: 'event staffing companies near me, event staffing near me, local event staffing, event staffing agency, find event staffing company, event staff near me, hire event staff, event staffing services',
   openGraph: {

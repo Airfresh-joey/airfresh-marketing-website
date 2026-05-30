@@ -12,7 +12,7 @@ export async function generateMetadata({ params }: { params: Promise<{ event: st
 
   if (!eventPage) {
     return {
-      title: 'Event Staffing | AirFresh Marketing',
+      title: 'Event Staffing',
       description: 'Professional event staffing and brand ambassadors nationwide. AirFresh Marketing.',
     };
   }

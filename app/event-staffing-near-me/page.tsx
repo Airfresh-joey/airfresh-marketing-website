@@ -27,7 +27,7 @@ import {
 import { cities } from '@/server/cities-data';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Near Me - Find Local Event Staff in Your City | AirFresh Marketing',
+  title: 'Event Staffing Near Me - Find Local Event Staff in Your City',
   description:
     'Event staffing near me — find professional brand ambassadors, event staff, and promotional teams in your city. AirFresh Marketing provides GPS-verified, video-trained event staff in 40+ cities nationwide. Get a free quote today.',
   keywords:

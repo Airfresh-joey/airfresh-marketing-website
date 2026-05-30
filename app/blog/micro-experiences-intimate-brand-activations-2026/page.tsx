@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026 | Air Fresh Marketing',
+  title: 'Micro-Experiences: Why Intimate Brand Activations Are Outperforming Large-Scale Events in 2026',
   description: 'Micro-experiences and intimate brand activations are outperforming large-scale events in 2026. Learn why smaller activations drive higher engagement, deeper brand connections, and better ROI.',
   keywords: 'micro-experiences, intimate brand activations, small-scale brand events, micro-activations, brand experience marketing, experiential marketing 2026, pop-up experiences, community activations, FOMO marketing, brand engagement strategy',
   openGraph: {

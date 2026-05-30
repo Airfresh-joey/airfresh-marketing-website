@@ -33,7 +33,7 @@ import {
 } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'Best Event Staffing Agency 2026 - How to Choose the Right Partner | AirFresh Marketing',
+  title: 'Best Event Staffing Agency 2026 - How to Choose the Right Partner',
   description: 'Best event staffing agency guide for 2026. Compare top event staffing companies, pricing, features, and learn exactly how to choose the right event staffing agency near me for brand activations, trade shows, and experiential marketing campaigns.',
   keywords: 'best event staffing agency, top event staffing companies, event staffing agency near me, event staffing services, hire event staff, brand ambassador staffing agency, promotional staffing agency, experiential marketing staffing, trade show staffing agency, event staffing companies',
   openGraph: {

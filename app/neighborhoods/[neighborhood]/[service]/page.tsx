@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: NeighborhoodServicePageProps)
   }
   
   return {
-    title: `${service.name} in ${neighborhood.name}, ${neighborhood.city} | AirFresh Marketing`,
+    title: `${service.name} in ${neighborhood.name}, ${neighborhood.city}`,
     description: `Professional ${service.name.toLowerCase()} in ${neighborhood.name}, ${neighborhood.city}. Local expertise and reliable staff.`,
     openGraph: {
       type: 'website',

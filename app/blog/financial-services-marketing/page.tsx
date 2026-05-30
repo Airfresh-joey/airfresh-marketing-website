@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Financial Services Marketing Events | Air Fresh Marketing',
+  title: 'Financial Services Marketing Events',
   description: 'Financial services face unique marketing challenges. Here\'s how to create compliant, effective experiential campaigns.',
   keywords: 'financial services marketing, bank marketing events, insurance marketing, fintech marketing, financial brand activation',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/financial-services-marketing',

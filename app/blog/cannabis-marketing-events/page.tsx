@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Cannabis Marketing Events: Navigating the Green Rush | Air Fresh Marketing',
+  title: 'Cannabis Marketing Events: Navigating the Green Rush',
   description: 'Cannabis marketing faces unique restrictions. Here\'s how brands create compliant, effective events and activations.',
   keywords: 'cannabis marketing, cannabis events, dispensary marketing, cannabis brand activation, 420 marketing, cannabis sampling',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/cannabis-marketing-events',

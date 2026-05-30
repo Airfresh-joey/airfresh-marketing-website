@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Trade Show Activation Strategies: The Brand Manager\'s Playbook for 2026 | Air Fresh Marketing',
+  title: 'Trade Show Activation Strategies: The Brand Manager\'s Playbook for 2026',
   description: 'Trade show activation strategies that drive booth traffic, generate qualified leads, and deliver measurable ROI. The complete playbook for brand managers in 2026.',
   keywords: 'trade show activation, experiential marketing, event staffing agency, trade show booth staffing, brand activation, trade show marketing, convention staffing, trade show ROI',
   openGraph: {

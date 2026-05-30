@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Promotional Models: The Complete Hiring Guide (From Someone Who\'s Hired Thousands) | Air Fresh Marketing',
+  title: 'Promotional Models: The Complete Hiring Guide (From Someone Who\'s Hired Thousands)',
   description: 'Everything you need to know about hiring promotional models - rates, what to look for, common mistakes, and how to run a successful promo model program.',
   keywords: 'promotional models, promo models, hire promotional models, promotional model agency, promo model rates, trade show models',
   openGraph: {

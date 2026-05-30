@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Privacy Policy | AirFresh Marketing',
+  title: 'Privacy Policy',
   description: 'Privacy policy for AirFresh Marketing. Learn how we collect, use, and protect your personal information.',
   openGraph: {
     type: 'website',

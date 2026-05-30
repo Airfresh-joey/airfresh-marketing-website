@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'In-Store Product Demos: The Lost Art of Selling at Shelf | Air Fresh Marketing',
+  title: 'In-Store Product Demos: The Lost Art of Selling at Shelf',
   description: 'In-store demos drive 5-10x sales lift when done right. Most brands do them wrong. Here\'s how to run retail demonstrations that actually move product.',
   keywords: 'in-store product demos, retail product demonstrations, in-store sampling, retail demos, product demonstration, store demo events',
   openGraph: {

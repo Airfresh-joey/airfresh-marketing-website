@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, TrendingUp, DollarSign, Users, Target, BarChar
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Brand Ambassador Agency Services: What to Expect, Costs & ROI Guide (2026) | Air Fresh Marketing',
+  title: 'Brand Ambassador Agency Services: What to Expect, Costs & ROI Guide (2026)',
   description: 'Comprehensive guide to brand ambassador agency services — what they include, how much they cost, typical ROI benchmarks, and how to evaluate agencies. Based on 25+ years and 5,000+ campaigns.',
   keywords: 'brand ambassador agency, brand ambassador services, brand ambassador agency cost, experiential marketing agency, brand ambassador company, hire brand ambassador agency, brand activation agency, promotional staffing agency',
   openGraph: {

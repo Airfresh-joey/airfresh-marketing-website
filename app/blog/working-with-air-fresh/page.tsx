@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Working With Air Fresh Marketing | Air Fresh Marketing',
+  title: 'Working With Air Fresh Marketing',
   description: 'Here\'s what to expect when you partner with Air Fresh Marketing for your event staffing and experiential marketing needs.',
   keywords: 'air fresh marketing, event staffing partner, work with air fresh, experiential agency',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/working-with-air-fresh',

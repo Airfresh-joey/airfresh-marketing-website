@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const industry = industries.find(i => i.slug === industrySlug)
   
   if (!industry) {
-    return { title: 'Industry | AirFresh Marketing' }
+    return { title: 'Industry' }
   }
   
   const title = `${industry.name} Marketing | Experiential & Event Services`

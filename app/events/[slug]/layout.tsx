@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const event = usaEvents.find(e => e.slug === slug)
   
   if (!event) {
-    return { title: 'Event | AirFresh Marketing' }
+    return { title: 'Event' }
   }
   
   const title = event.title || `${event.name} Event Staffing & Marketing`

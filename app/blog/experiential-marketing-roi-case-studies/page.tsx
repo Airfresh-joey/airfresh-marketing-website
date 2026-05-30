@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Experiential Marketing ROI: 7 Case Studies That Prove the Numbers | Air Fresh Marketing',
+  title: 'Experiential Marketing ROI: 7 Case Studies That Prove the Numbers',
   description: 'Real experiential marketing ROI case studies with actual numbers. See how brands achieved 5x-12x returns through product sampling, brand activations, pop-up events, and street team campaigns.',
   keywords: 'experiential marketing ROI, experiential marketing case study, brand activation ROI, product sampling ROI, event marketing results, experiential marketing examples, brand activation case study, pop-up shop ROI, street team ROI, experiential marketing statistics',
   openGraph: {

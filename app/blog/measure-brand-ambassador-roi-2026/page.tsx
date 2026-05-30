@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, Users, DollarSign, BarChart, TrendingUp, Targe
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'How to Measure Brand Ambassador ROI in 2026: Metrics, KPIs & Attribution | Air Fresh Marketing',
+  title: 'How to Measure Brand Ambassador ROI in 2026: Metrics, KPIs & Attribution',
   description: 'How to measure brand ambassador ROI with proven metrics, KPIs, and attribution models. Learn cost per acquisition, engagement rates, and conversion tracking frameworks used by top brands in 2026.',
   keywords: 'brand ambassador ROI, measure brand ambassador performance, brand ambassador KPIs, experiential marketing ROI, brand ambassador metrics, event marketing attribution, ambassador program ROI',
   openGraph: {

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'B2B Event Marketing: Turning Handshakes into Deals | Air Fresh Marketing',
+  title: 'B2B Event Marketing: Turning Handshakes into Deals',
   description: 'B2B events are about relationships and pipeline. Here\'s how to staff and execute events that generate qualified leads.',
   keywords: 'B2B event marketing, trade show lead generation, B2B trade shows, corporate event marketing, B2B brand activation, conference marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/b2b-event-marketing',

@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, Clock, Users, FileText, BarChart3, Phone, Brie
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Services: From First Brief to Final Report — The Complete Process (2026) | Air Fresh Marketing',
+  title: 'Event Staffing Services: From First Brief to Final Report — The Complete Process (2026)',
   description: 'A step-by-step walkthrough of professional event staffing services — what happens when you hire an agency, the complete campaign lifecycle, and how to get the best results from your event staffing investment.',
   keywords: 'event staffing services, event staffing agency, professional event staffing, experiential marketing staffing, promotional staffing, event staffing company, trade show staffing services, brand activation staffing',
   openGraph: {

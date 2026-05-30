@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Pop-Up Shop Staffing Guide | Air Fresh Marketing',
+  title: 'Pop-Up Shop Staffing Guide',
   description: 'How to staff your pop-up shop for success. Learn about hiring, training, and managing retail activation staff for temporary retail experiences.',
   keywords: 'pop-up shop staffing, retail activation staff, temporary retail, pop-up store employees, brand activation retail, experiential retail staffing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide',

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Experiential Marketing vs. Traditional Advertising | Air Fresh Marketing',
+  title: 'Experiential Marketing vs. Traditional Advertising',
   description: 'How does experiential marketing compare to traditional advertising? Here\'s when to choose each.',
   keywords: 'experiential vs advertising, experiential marketing comparison, traditional advertising alternative, marketing comparison',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/experiential-vs-traditional',

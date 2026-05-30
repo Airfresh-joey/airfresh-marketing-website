@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Denver: The Complete Guide to Hiring Event Staff in Colorado | Air Fresh Marketing',
+  title: 'Event Staffing Denver: The Complete Guide to Hiring Event Staff in Colorado',
   description: 'Event staffing Denver companies help brands execute trade shows, product sampling, and experiential marketing across Colorado. Learn rates, venues, and how to hire the best Denver event staff for your next activation.',
   keywords: 'event staffing Denver, Denver event staff, Denver brand ambassadors, event staffing agency Denver, Denver trade show staffing, Colorado event staffing, Denver promotional staff, hire event staff Denver',
   openGraph: {

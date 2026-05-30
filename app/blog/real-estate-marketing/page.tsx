@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Real Estate Marketing Events: Open Houses and Beyond | Air Fresh Marketing',
+  title: 'Real Estate Marketing Events: Open Houses and Beyond',
   description: 'Real estate events require polished professionals. Here\'s how to staff open houses, launches, and community events.',
   keywords: 'real estate marketing, open house staff, real estate events, property launch, residential marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/real-estate-marketing',

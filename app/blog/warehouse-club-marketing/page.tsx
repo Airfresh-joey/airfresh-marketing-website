@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Warehouse and Big Box Retail Marketing | Air Fresh Marketing',
+  title: 'Warehouse and Big Box Retail Marketing',
   description: 'Costco, Sam\'s, BJ\'s - warehouse clubs have unique dynamics. Here\'s how to win at big box retail.',
   keywords: 'costco marketing, warehouse club marketing, big box retail, sams club marketing, wholesale marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/warehouse-club-marketing',

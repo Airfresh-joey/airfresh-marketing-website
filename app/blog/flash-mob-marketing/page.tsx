@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Flash Mobs for Marketing: Are They Still Worth It? | Air Fresh Marketing',
+  title: 'Flash Mobs for Marketing: Are They Still Worth It?',
   description: 'Flash mobs were huge. Are they still effective? Here\'s an honest look at when flash mob marketing works - and when it doesn\'t.',
   keywords: 'flash mob marketing, flash mob advertising, brand flash mob, marketing flash mob, corporate flash mob, surprise marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/flash-mob-marketing',

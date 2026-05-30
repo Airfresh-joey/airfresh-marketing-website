@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Marketing Agencies Miami: Your Guide to the Best Services in 2026 | Air Fresh Marketing',
+  title: 'Event Marketing Agencies Miami: Your Guide to the Best Services in 2026',
   description: 'Event marketing agencies in Miami specialize in experiential activations, brand ambassador staffing, and product sampling across South Florida. Learn how to choose the right Miami event marketing partner.',
   keywords: 'event marketing agencies Miami, Miami event staffing, Miami brand ambassadors, South Florida event marketing, Miami experiential marketing, event staffing agency Miami, Miami product sampling',
   openGraph: {

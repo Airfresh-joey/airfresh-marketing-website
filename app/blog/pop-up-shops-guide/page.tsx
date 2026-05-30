@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Pop-Up Shops: The Complete Guide to Temporary Retail | Air Fresh Marketing',
+  title: 'Pop-Up Shops: The Complete Guide to Temporary Retail',
   description: 'Pop-up shops let you test markets, create buzz, and sell direct without permanent retail commitment. Here\'s how to plan and execute a pop-up that actually works.',
   keywords: 'pop-up shop, pop-up store, temporary retail, pop-up retail, how to start a pop-up shop, pop-up shop ideas',
   openGraph: {

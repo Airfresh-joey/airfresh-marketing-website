@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'School and Campus Marketing | Air Fresh Marketing',
+  title: 'School and Campus Marketing',
   description: 'Reaching students and families in educational environments. Here\'s how to market at schools and universities.',
   keywords: 'school marketing, campus marketing, university marketing, college marketing, student marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/school-campus-marketing',

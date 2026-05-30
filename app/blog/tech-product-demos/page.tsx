@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Tech Product Demonstrations: Converting Skeptics to Believers | Air Fresh Marketing',
+  title: 'Tech Product Demonstrations: Converting Skeptics to Believers',
   description: 'Tech products need to be experienced. Here\'s how to run product demos that turn skeptics into buyers.',
   keywords: 'tech product demo, product demonstration, technology marketing, software demo, hardware demo, product launch demo',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/tech-product-demos',

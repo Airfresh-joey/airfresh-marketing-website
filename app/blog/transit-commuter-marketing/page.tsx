@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Transit and Commuter Marketing | Air Fresh Marketing',
+  title: 'Transit and Commuter Marketing',
   description: 'Transit environments offer daily reach to commuters. Here\'s how to execute subway, bus, and train station marketing.',
   keywords: 'transit marketing, commuter marketing, subway marketing, train station marketing, public transit advertising',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/transit-commuter-marketing',

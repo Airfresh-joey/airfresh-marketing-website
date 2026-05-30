@@ -8,7 +8,7 @@ import { ArrowRight, CheckCircle, TrendingUp, Users, Sparkles, Target, BarChart,
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'What is Experiential Marketing? The Complete 2026 Guide | Air Fresh Marketing',
+  title: 'What is Experiential Marketing? The Complete 2026 Guide',
   description: 'Learn what experiential marketing is, why it works, and how to create campaigns that drive real results. Examples, costs, and ROI metrics included.',
   keywords: 'what is experiential marketing, experiential marketing definition, experiential marketing examples, brand experience marketing, immersive marketing, event marketing',
   openGraph: {

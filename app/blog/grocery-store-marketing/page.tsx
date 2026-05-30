@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Grocery Store Marketing and Demos | Air Fresh Marketing',
+  title: 'Grocery Store Marketing and Demos',
   description: 'Grocery stores are where purchase decisions happen. Here\'s how to run effective in-store marketing programs.',
   keywords: 'grocery store marketing, supermarket marketing, grocery demos, in-store marketing, grocery sampling',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/grocery-store-marketing',

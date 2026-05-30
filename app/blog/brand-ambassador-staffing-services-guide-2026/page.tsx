@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Brand Ambassador Staffing Services: The Complete Guide for 2026 | Air Fresh Marketing',
+  title: 'Brand Ambassador Staffing Services: The Complete Guide for 2026',
   description: 'Brand ambassador staffing services connect brands with trained professionals who drive engagement at events, retail locations, and experiential campaigns. Learn how to choose the right staffing agency and maximize ROI.',
   keywords: 'brand ambassador staffing services, brand ambassador agency, hire brand ambassadors, event staffing agency, brand ambassador company, brand ambassador staffing, experiential marketing staffing',
   openGraph: {

@@ -1,7 +1,7 @@
 import { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'ACH Payment Information | Air Fresh Marketing',
+  title: 'ACH Payment Information',
   description: 'ACH and direct deposit payment information for Air Fresh Marketing. Bank routing and account details for electronic payments.',
   robots: { index: false, follow: false },
   openGraph: {

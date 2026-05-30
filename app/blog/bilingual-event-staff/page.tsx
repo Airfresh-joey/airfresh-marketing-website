@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Bilingual Event Staff: Spanish-Speaking Brand Ambassadors | Air Fresh Marketing',
+  title: 'Bilingual Event Staff: Spanish-Speaking Brand Ambassadors',
   description: 'Reaching Hispanic audiences requires bilingual staff who understand the culture. Here\'s how to find qualified Spanish-speaking brand ambassadors.',
   keywords: 'bilingual event staff, spanish speaking brand ambassadors, hispanic marketing staff, bilingual promotional staff',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/bilingual-event-staff',

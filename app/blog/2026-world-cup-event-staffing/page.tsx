@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: '2026 World Cup Event Staffing: Brand Activations Guide | Air Fresh Marketing',
+  title: '2026 World Cup Event Staffing: Brand Activations Guide',
   description: '2026 World Cup event staffing and brand activation guide. Hire brand ambassadors, promotional staff, and event teams for FIFA World Cup activations across 11 US host cities.',
   keywords: '2026 world cup event staffing, world cup brand ambassadors, fifa world cup activations, world cup promotional staff, world cup marketing, world cup brand activation, world cup street teams, bilingual event staff world cup',
   openGraph: {

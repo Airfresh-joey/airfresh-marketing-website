@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Military Base Marketing | Air Fresh Marketing',
+  title: 'Military Base Marketing',
   description: 'Reaching military personnel and families requires special access. Here\'s how to market on military installations.',
   keywords: 'military marketing, military base marketing, armed forces marketing, military family marketing, base activation',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/military-base-marketing',

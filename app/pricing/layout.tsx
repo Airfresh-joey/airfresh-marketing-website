@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Event Staffing & Brand Ambassador Pricing | AirFresh Marketing',
+  title: 'Event Staffing & Brand Ambassador Pricing',
   description: 'Event staffing pricing and brand ambassador cost guide. See transparent rate ranges for brand ambassadors ($35-65/hr), trade show staff ($40-70/hr), street teams, promotional models & more.',
   keywords: 'event staffing pricing, brand ambassador cost, brand ambassador agency cost, how much does event staffing cost, promotional staff rates, trade show staffing rates, street team pricing, experiential marketing rates',
   openGraph: {

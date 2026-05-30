@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Health and Wellness Marketing: Authentic Connection | Air Fresh Marketing',
+  title: 'Health and Wellness Marketing: Authentic Connection',
   description: 'Health and wellness consumers demand authenticity. Here\'s how to market wellness products through experiential campaigns.',
   keywords: 'wellness marketing, health marketing, fitness marketing, wellness events, health product sampling',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/health-wellness-marketing',

@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Department Store Marketing | Air Fresh Marketing',
+  title: 'Department Store Marketing',
   description: 'Macy\'s, Nordstrom, and department stores offer premium positioning. Here\'s how to execute in department retail.',
   keywords: 'macys marketing, nordstrom marketing, department store marketing, retail activation, department store demos',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/department-store-marketing',

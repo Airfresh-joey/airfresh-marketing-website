@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Brand Ambassador Pay Rates: 2026 Guide | Air Fresh Marketing',
+  title: 'Brand Ambassador Pay Rates: 2026 Guide',
   description: 'What should you pay brand ambassadors? Here\'s a comprehensive guide to event staffing rates in 2026.',
   keywords: 'brand ambassador pay, event staff rates, promotional model pay, ba salary, event staffing costs',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/brand-ambassador-pay-rates',

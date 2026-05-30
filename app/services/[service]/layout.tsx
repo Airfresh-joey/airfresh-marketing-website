@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 
 const serviceMetadata: Record<string, { title: string; description: string; keywords: string; schemaName: string; schemaDescription: string }> = {
   'brand-ambassadors': {
-    title: 'Brand Ambassadors | Professional Brand Representatives | AirFresh Marketing',
+    title: 'Brand Ambassadors | Professional Brand Representatives',
     description: 'Brand ambassadors for events, product launches, and experiential marketing campaigns. Trained, vetted staff in 50+ cities representing your brand with GPS-verified check-ins.',
     keywords: 'brand ambassadors, brand representatives, promotional staff, product ambassadors',
     schemaName: 'Brand Ambassador Services',
@@ -23,35 +23,35 @@ const serviceMetadata: Record<string, { title: string; description: string; keyw
     schemaDescription: 'Full-service experiential marketing campaigns and brand activations including strategy, creative, staffing, and analytics. Turnkey execution in 50+ US cities.',
   },
   'event-management': {
-    title: 'Event Management | Event Staffing | AirFresh Marketing',
+    title: 'Event Management | Event Staffing',
     description: 'Event management and professional event staffing for corporate events, trade shows, product launches, and brand activations. Turnkey logistics in 50+ cities nationwide.',
     keywords: 'event management, event staffing, corporate events, event production',
     schemaName: 'Event Management & Staffing Services',
     schemaDescription: 'Professional event management and staffing for corporate events, trade shows, product launches, and brand activations. Turnkey logistics and coordination in 50+ cities.',
   },
   'event-staffing': {
-    title: 'Event Staffing | Professional Event Staff | AirFresh Marketing',
+    title: 'Event Staffing | Professional Event Staff',
     description: 'Professional event staffing for corporate events, trade shows, product launches, brand activations, and experiential campaigns in 50+ cities nationwide.',
     keywords: 'event staffing, event staff, corporate event staff, trade show staff, promotional staff',
     schemaName: 'Event Staffing Services',
     schemaDescription: 'Professional event staffing for corporate events, trade shows, product launches, brand activations, and experiential campaigns in 50+ cities nationwide.',
   },
   'sampling': {
-    title: 'Product Sampling | Sampling Campaigns | AirFresh Marketing',
+    title: 'Product Sampling | Sampling Campaigns',
     description: 'Product sampling campaigns that drive trial and conversion at retail, events, and on the street. Trained brand ambassadors in 50+ cities with compliance and real-time reporting.',
     keywords: 'product sampling, sampling campaigns, demo marketing, in-store sampling',
     schemaName: 'Product Sampling Campaign Services',
     schemaDescription: 'Product sampling campaigns at retail locations, events, and street-level activations. Trained brand ambassadors with compliance tracking and real-time reporting in 50+ cities.',
   },
   'promotional-models': {
-    title: 'Promotional Models | Event Models | AirFresh Marketing',
+    title: 'Promotional Models | Event Models',
     description: 'Promotional models for trade shows, events, and brand activations. Professional, experienced talent available nationwide with GPS check-ins and real-time event dashboards.',
     keywords: 'promotional models, event models, trade show models, brand models',
     schemaName: 'Promotional Model Services',
     schemaDescription: 'Professional promotional models for trade shows, events, and brand activations. Experienced talent available nationwide with GPS check-ins and event reporting dashboards.',
   },
   'convention-staffing': {
-    title: 'Convention Staffing | Trade Show Staff | AirFresh Marketing',
+    title: 'Convention Staffing | Trade Show Staff',
     description: 'Convention staffing and trade show staff for booth engagement, registration, lead capture, and event support. Trained professionals in 50+ cities with real-time reporting.',
     keywords: 'convention staffing, trade show staff, booth staff, expo staffing',
     schemaName: 'Convention & Trade Show Staffing Services',
@@ -73,7 +73,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const meta = serviceMetadata[service] ?? serviceMetadata[serviceAliases[service]]
   
   if (!meta) {
-    return { title: 'Service | AirFresh Marketing' }
+    return { title: 'Service' }
   }
   
   return {

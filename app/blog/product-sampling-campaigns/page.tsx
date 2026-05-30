@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Product Sampling Campaigns: What Actually Works in 2026 | Air Fresh Marketing',
+  title: 'Product Sampling Campaigns: What Actually Works in 2026',
   description: 'After running 500+ sampling campaigns, here\'s what we\'ve learned about product sampling that actually drives sales - not just free product giveaways.',
   keywords: 'product sampling, sampling campaigns, product sampling marketing, in-store sampling, event sampling, sampling ROI',
   openGraph: {

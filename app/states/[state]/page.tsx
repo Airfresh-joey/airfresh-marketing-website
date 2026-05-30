@@ -20,7 +20,7 @@ export async function generateMetadata({ params }: StatePageProps): Promise<Meta
   }
   
   return {
-    title: `Event Staffing & Marketing Services in ${state.name} | AirFresh Marketing`,
+    title: `Event Staffing & Marketing Services in ${state.name}`,
     description: `Professional event staffing and brand ambassadors in ${state.name}. Serving all major cities with local expertise.`,
     openGraph: {
       type: 'website',

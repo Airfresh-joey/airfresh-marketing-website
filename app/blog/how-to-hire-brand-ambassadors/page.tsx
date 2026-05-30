@@ -7,7 +7,7 @@ import { ArrowRight, CheckCircle, Users, DollarSign, Search, ClipboardCheck, Meg
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'How to Hire Brand Ambassadors: A Complete Guide (2026) | Air Fresh Marketing',
+  title: 'How to Hire Brand Ambassadors: A Complete Guide (2026)',
   description: 'Learn how to hire brand ambassadors for your marketing campaigns. Find out where to source talent, what to look for, costs, training tips, and management best practices.',
   keywords: 'how to hire brand ambassadors, brand ambassador hiring, brand ambassador agency, hire promotional staff, find brand ambassadors, brand ambassador cost',
   openGraph: {

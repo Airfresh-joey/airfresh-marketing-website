@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Entertainment and Media Marketing | Air Fresh Marketing',
+  title: 'Entertainment and Media Marketing',
   description: 'Movie premieres, album launches, and media events need star-quality staff. Here\'s how to execute entertainment marketing events.',
   keywords: 'entertainment marketing, movie premiere staff, media events, entertainment PR, red carpet events',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/entertainment-media-marketing',

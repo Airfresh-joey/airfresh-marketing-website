@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Street Teams: The Marketing Channel Nobody Talks About Anymore | Air Fresh Marketing',
+  title: 'Street Teams: The Marketing Channel Nobody Talks About Anymore',
   description: 'Street teams aren\'t dead - they\'ve evolved. Here\'s how modern street marketing works, what it costs, and why some brands are seeing 10x ROI.',
   keywords: 'street teams, street marketing, street team marketing, guerrilla marketing team, street promotion, flyer distribution',
   openGraph: {

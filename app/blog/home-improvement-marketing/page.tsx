@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Home Improvement Store Marketing | Air Fresh Marketing',
+  title: 'Home Improvement Store Marketing',
   description: 'Home Depot, Lowe\'s, and hardware stores offer unique marketing opportunities. Here\'s how to reach DIYers and contractors.',
   keywords: 'home depot marketing, lowes marketing, hardware store marketing, home improvement marketing, contractor marketing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/home-improvement-marketing',

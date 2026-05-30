@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Specialty Retail Marketing | Air Fresh Marketing',
+  title: 'Specialty Retail Marketing',
   description: 'Specialty retail requires deep expertise. Here\'s how to market in niche retail environments.',
   keywords: 'specialty retail marketing, boutique marketing, niche retail, specialty store marketing, retail activation',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/specialty-retail-marketing',

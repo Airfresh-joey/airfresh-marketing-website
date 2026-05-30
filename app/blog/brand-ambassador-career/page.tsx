@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Building a Brand Ambassador Career | Air Fresh Marketing',
+  title: 'Building a Brand Ambassador Career',
   description: 'Want to become a brand ambassador? Here\'s how to build a successful career in experiential marketing.',
   keywords: 'brand ambassador career, how to become brand ambassador, promotional modeling career, event staffing career',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/brand-ambassador-career',

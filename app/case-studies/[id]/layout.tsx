@@ -11,7 +11,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const caseStudy = enhancedCaseStudies.find(cs => cs.id === id)
   
   if (!caseStudy) {
-    return { title: 'Case Study | AirFresh Marketing' }
+    return { title: 'Case Study' }
   }
   
   const title = `${caseStudy.client} Case Study | ${caseStudy.title}`

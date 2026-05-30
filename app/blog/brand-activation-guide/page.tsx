@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Brand Activation: What It Is, Why It Matters, and How to Do It Right | Air Fresh Marketing',
+  title: 'Brand Activation: What It Is, Why It Matters, and How to Do It Right',
   description: 'Brand activation creates memorable experiences that turn consumers into fans. Learn what works, what doesn\'t, and how to measure ROI on experiential campaigns.',
   keywords: 'brand activation, brand activation examples, brand activation ideas, what is brand activation, experiential brand activation, consumer activation',
   openGraph: {

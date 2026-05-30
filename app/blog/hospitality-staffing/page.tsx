@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Hospitality Staffing: Hotels, Restaurants, and Events | Air Fresh Marketing',
+  title: 'Hospitality Staffing: Hotels, Restaurants, and Events',
   description: 'Hospitality staffing requires a special touch. Here\'s how to find and manage staff for hotels, restaurants, and hospitality events.',
   keywords: 'hospitality staffing, hotel event staff, restaurant event staff, hospitality marketing, hotel activations',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/hospitality-staffing',

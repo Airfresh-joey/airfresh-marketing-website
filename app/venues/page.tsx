@@ -9,7 +9,7 @@ import { MapPin, Building, ArrowRight, Users, Star, Square } from "lucide-react"
 import { venues, getFeaturedVenues, getVenuesByTier } from "@/server/venues-data";
 
 export const metadata: Metadata = {
-  title: "Convention Center Event Staffing | Venue Staffing Nationwide | AirFresh Marketing",
+  title: "Convention Center Event Staffing | Venue Staffing Nationwide",
   description: "Convention center event staffing for trade shows, conferences, expos, and venue activations nationwide. Get vetted brand ambassadors and event staff for major US venues.",
   alternates: {
     canonical: "https://www.airfreshmarketing.com/venues",

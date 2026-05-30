@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Fashion and Apparel Marketing Events | Air Fresh Marketing',
+  title: 'Fashion and Apparel Marketing Events',
   description: 'Fashion marketing is visual, aspirational, and fast-moving. Here\'s how to staff runway shows, retail events, and brand activations.',
   keywords: 'fashion marketing, apparel marketing, fashion events, retail fashion, runway shows, fashion activations',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/fashion-apparel-marketing',

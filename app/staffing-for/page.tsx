@@ -7,7 +7,7 @@ import { eventPages } from '@/server/eventPages';
 import type { Metadata } from 'next';
 
 export const metadata: Metadata = {
-  title: 'Event Staffing Services for Major Events & Festivals | Air Fresh Marketing',
+  title: 'Event Staffing Services for Major Events & Festivals',
   description: 'Event staffing services for 50+ major events including CES, SXSW, Coachella, Comic-Con, and more. Professional brand ambassadors, promotional models, and event staff nationwide.',
   keywords: 'event staffing, festival staffing, conference staffing, trade show staffing, brand ambassadors for events, event staff agency',
   openGraph: {

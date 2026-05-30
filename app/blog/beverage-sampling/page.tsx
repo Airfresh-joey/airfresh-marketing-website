@@ -6,7 +6,7 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Beverage Sampling Campaigns: The Complete Guide | Air Fresh Marketing',
+  title: 'Beverage Sampling Campaigns: The Complete Guide',
   description: 'Beverage sampling drives trial like nothing else. Here\'s how to plan sampling campaigns that convert tasters to buyers.',
   keywords: 'beverage sampling, drink sampling, beverage marketing, alcohol sampling, energy drink sampling, beverage brand activation',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/beverage-sampling',
