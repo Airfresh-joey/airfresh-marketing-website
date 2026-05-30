@@ -1,5 +1,45 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-30 MDT
+
+Goal: Fix double brand suffix in page titles (Priority #1).
+
+Audit: Root layout defines `title.template = '%s | AirFresh Marketing'`. Six layout files included `| AirFresh Marketing` in their `title:` string, causing the template to double-append the brand — e.g. "Experiential Marketing Agency Since 2004 | About AirFresh Marketing | AirFresh Marketing".
+
+Confirmed doubles via live curl before fix:
+- /about: "Experiential Marketing Agency Since 2004 | About AirFresh Marketing | AirFresh Marketing"
+- /contact: "Event Staffing Quote | Contact AirFresh Marketing | AirFresh Marketing"
+- /team: "Experiential Marketing Team | Meet AirFresh Marketing | AirFresh Marketing"
+- /careers/experience-manager: "Experience Manager | AirFresh Marketing Careers | AirFresh Marketing"
+- /careers/technical-intern: "Technical Intern | AirFresh Marketing Careers | AirFresh Marketing"
+
+Shipped (commit b4f4d68):
+- app/about/layout.tsx: stripped `| About AirFresh Marketing` suffix
+- app/contact/layout.tsx: stripped `| Contact AirFresh Marketing` suffix
+- app/team/layout.tsx: stripped `| Meet AirFresh Marketing` suffix
+- app/careers/layout.tsx: added `title.template = '%s | AirFresh Marketing'` + clean default to fix inheritance chain for all career sub-pages
+- app/careers/experience-manager/layout.tsx: stripped `| AirFresh Marketing Careers` suffix
+- app/careers/technical-intern/layout.tsx: stripped `| AirFresh Marketing Careers` suffix
+
+Result (verified in local build .next/server/app/*.html):
+- /about → "Experiential Marketing Agency Since 2004 | AirFresh Marketing" ✓
+- /contact → "Event Staffing Quote | AirFresh Marketing" ✓
+- /team → "Experiential Marketing Team | AirFresh Marketing" ✓
+- /careers → "Brand Ambassador Jobs & Event Staff Careers | AirFresh Marketing" ✓
+- /careers/experience-manager → "Experience Manager | AirFresh Marketing" ✓
+- /careers/technical-intern → "Technical Intern | AirFresh Marketing" ✓
+- /careers/apply → "Apply Now | Join Our Team | AirFresh Marketing" ✓
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed b4f4d68, pushed to origin/main
+- Vercel deployed; /contact live-verified immediately ✓
+- /about and /team CDN cache propagating (fixed in build output)
+
+Next actions:
+- GSC click efficiency pass (Priority #2): identify city-service + event pages with high impressions / low CTR, rewrite top 10 worst title/meta offenders
+
 ## 2026-05-29 MDT
 
 Goal: Add mid-body /get-quote CTA banner to all 552 venue-service pages to increase funnel touchpoints.
