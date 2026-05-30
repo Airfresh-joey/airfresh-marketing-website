@@ -1,7 +1,10 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Brand Ambassador Jobs & Event Staff Careers',
+  title: {
+    default: 'Brand Ambassador Jobs & Event Staff Careers',
+    template: '%s | AirFresh Marketing',
+  },
   description: 'Brand ambassador jobs and event staff careers at AirFresh Marketing. Flexible schedules, $20-35/hour pay, work with top brands like Netflix and Google nationwide.',
   keywords: 'brand ambassador jobs, promotional model jobs, event staff careers, experiential marketing jobs, how to become a brand ambassador',
   openGraph: {

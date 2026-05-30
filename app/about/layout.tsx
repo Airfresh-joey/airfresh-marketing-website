@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 
 export const metadata: Metadata = {
-  title: 'Experiential Marketing Agency Since 2004 | About AirFresh Marketing',
+  title: 'Experiential Marketing Agency Since 2004',
   description: 'Experiential marketing agency with 20+ years experience. 300+ brands activated across 50+ cities with brand ambassadors, event staffing, and more.',
   keywords: 'experiential marketing agency, brand activation company, event marketing agency, about airfresh marketing',
   openGraph: {
