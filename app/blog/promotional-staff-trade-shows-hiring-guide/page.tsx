@@ -61,11 +61,11 @@ export default function PromotionalStaffTradeShows() {
 
         <p>Trade shows compress hundreds of potential interactions into a few hours. Attendees are overwhelmed, distracted, and moving fast. The average booth visit lasts 3-5 minutes — not 30 minutes or an hour like a scheduled sales call. Your promotional staff need to accomplish in those 3-5 minutes what a sales rep typically does in a full meeting: capture attention, establish relevance, qualify interest, deliver a concise value message, and capture contact information for follow-up.</p>
 
-        <p>Professional <Link href="/services" className="text-orange-600 hover:text-orange-700">promotional staff for trade shows</Link> are trained specifically for this environment. They understand how to attract foot traffic without being pushy, how to qualify attendees quickly, how to deliver a brand message in 60 seconds, and how to smoothly capture lead data while maintaining an authentic conversation. These are learned skills, not natural talents.</p>
+        <p>Professional staff sourced from an <Link href="/event-staffing-agency" className="text-orange-600 hover:text-orange-700">event staffing agency</Link> are trained specifically for this environment. They understand how to attract foot traffic without being pushy, how to qualify attendees quickly, how to deliver a brand message in 60 seconds, and how to smoothly capture lead data while maintaining an authentic conversation. These are learned skills, not natural talents.</p>
 
         <h3>Energy and Endurance Matter</h3>
 
-        <p>A three-day trade show with 8-10 hour days is physically and mentally exhausting. By day two, most internal team members are running on coffee and diminishing enthusiasm. Professional trade show staff are conditioned for this environment. They maintain energy, enthusiasm, and engagement throughout the entire show because this is what they do — it is their profession, not a disruption to their regular work.</p>
+        <p>A three-day trade show with 8-10 hour days is physically and mentally exhausting. By day two, most internal team members are running on coffee and diminishing enthusiasm. Professional <Link href="/brand-ambassador-agency" className="text-orange-600 hover:text-orange-700">brand ambassadors</Link> are conditioned for this environment. They maintain energy, enthusiasm, and engagement throughout the entire show because this is what they do — it is their profession, not a disruption to their regular work.</p>
 
         <h3>Cost Comparison: Internal Staff vs. Professional Promotional Staff</h3>
 
@@ -119,7 +119,7 @@ export default function PromotionalStaffTradeShows() {
 
         <p>You have three main sourcing options:</p>
 
-        <p><strong>Option A: Trade show staffing agency (recommended).</strong> A specialized <Link href="/services" className="text-orange-600 hover:text-orange-700">event staffing agency</Link> with a vetted talent pool in your show's city is the most reliable option. They handle sourcing, vetting, training coordination, and on-site management. The best agencies maintain performance data on every staff member, so they can match the right people to your specific needs.</p>
+        <p><strong>Option A: Trade show staffing agency (recommended).</strong> A specialized <Link href="/event-staffing-agency" className="text-orange-600 hover:text-orange-700">event staffing agency</Link> with a vetted talent pool in your show's city is the most reliable option. They handle sourcing, vetting, training coordination, and on-site management. The best agencies maintain performance data on every staff member, so they can match the right people to your specific needs.</p>
 
         <p><strong>Option B: Freelance platforms.</strong> Sites that connect brands with freelance brand ambassadors offer more direct control but less quality assurance. You handle vetting, training, and on-site management yourself. This option works for experienced exhibitors who have strong internal training programs and on-site management capability.</p>
 

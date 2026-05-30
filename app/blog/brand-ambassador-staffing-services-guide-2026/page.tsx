@@ -91,7 +91,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
 
         <h3>1. Industry Experience</h3>
 
-        <p>Look for agencies with a track record in your specific industry. A staffing company that excels at <Link href="/services/convention-staffing" className="text-blue-600 hover:text-blue-700">trade show staffing</Link> may not have the same expertise for <Link href="/services/sampling" className="text-blue-600 hover:text-blue-700">product sampling campaigns</Link> at retail.</p>
+        <p>Look for agencies with a track record in your specific industry. A staffing company that excels at <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing</Link> may not have the same expertise for <Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">product sampling campaigns</Link> at retail.</p>
 
         <h3>2. Talent Pool Depth</h3>
 
@@ -145,7 +145,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
 
         <h3>In-Store Product Sampling</h3>
 
-        <p>Ambassadors set up demonstrations at retail locations like Costco, Target, Whole Foods, or specialty retailers. They engage shoppers, offer samples, and drive purchase at the point of sale. <Link href="/blog/product-sampling-campaigns" className="text-blue-600 hover:text-blue-700">Product sampling campaigns</Link> remain one of the highest-ROI experiential tactics.</p>
+        <p>Ambassadors set up demonstrations at retail locations like Costco, Target, Whole Foods, or specialty retailers. They engage shoppers, offer samples, and drive purchase at the point of sale. <Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">Product sampling campaigns</Link> remain one of the highest-ROI experiential tactics.</p>
 
         <h3>Trade Show and Convention Staffing</h3>
 
@@ -157,7 +157,7 @@ export default function BrandAmbassadorStaffingServicesGuide() {
 
         <h3>Experiential Marketing Events</h3>
 
-        <p>Large-scale <Link href="/services/experiential-marketing" className="text-blue-600 hover:text-blue-700">experiential marketing</Link> activations require coordinated teams of ambassadors across multiple touchpoints — from check-in to engagement stations to social media integration.</p>
+        <p>Large-scale <Link href="/experiential-marketing-agency" className="text-blue-600 hover:text-blue-700">experiential marketing</Link> activations require coordinated teams of ambassadors across multiple touchpoints — from check-in to engagement stations to social media integration.</p>
 
         <h3>Mobile Marketing Tours</h3>
 

@@ -84,12 +84,12 @@ export default function CorporateEventStaffing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Corporate events reflect your company. Whether it's a client gala, shareholder meeting, or employee celebration, the staff you hire becomes an extension of your brand.</p>
+        <p>Corporate events reflect your company. Whether it's a client gala, shareholder meeting, or employee celebration, the staff you hire becomes an extension of your brand. A professional <Link href="/event-staffing-agency" className="text-blue-700 hover:underline">event staffing agency</Link> ensures you get polished, reliable people who represent your company with excellence.</p>
         <h2>Corporate Event Types</h2>
         <ul>
           <li><strong>Galas and dinners:</strong> Formal, high-touch hospitality</li>
           <li><strong>Shareholder meetings:</strong> Registration, logistics, AV support</li>
-          <li><strong>Product launches:</strong> Brand representation and demos</li>
+          <li><strong>Product launches:</strong> <Link href="/brand-ambassador-agency" className="text-blue-700 hover:underline">Brand ambassadors</Link> and demo staff</li>
           <li><strong>Holiday parties:</strong> Creating memorable experiences</li>
           <li><strong>Team offsites:</strong> Facilitation and logistics support</li>
         </ul>
@@ -110,7 +110,7 @@ export default function CorporateEventStaffing() {
         <div className="not-prose">
           <div className="bg-gradient-to-r from-gray-800 to-slate-900 text-white p-8 rounded-xl">
             <h2 className="text-2xl font-bold mb-4">Corporate Event Coming?</h2>
-            <p className="mb-6 text-gray-400">Air Fresh provides polished corporate event staff.</p>
+            <p className="mb-6 text-gray-400">Air Fresh provides polished corporate <Link href="/event-staffing-agency" className="text-gray-200 underline hover:text-white">event staffing</Link> nationwide. <Link href="/get-quote" className="text-gray-200 underline hover:text-white">Get a free quote</Link> for your next event.</p>
             <Button asChild size="lg" className="bg-white text-gray-900 hover:bg-gray-100">
               <Link href="/get-quote?source=blog-corporate-event-staffing&intent=article-cta">Get a Quote <ArrowRight className="w-5 h-5 ml-2" /></Link>
             </Button>

@@ -140,7 +140,7 @@ export default function TradeShowMarketing() {
 
             <div>
               <h3 className="text-xl font-bold mb-3">5. Train Your Booth Staff</h3>
-              <p className="text-gray-700 mb-4">Your <Link href="/services/convention-staffing" className="text-orange-600 hover:underline">trade show staff</Link> are the face of your company. They need to know:</p>
+              <p className="text-gray-700 mb-4">Your <Link href="/event-staffing-agency" className="text-orange-600 hover:underline">event staffing company</Link> provides the face of your company at the booth. They need to know:</p>
               <ul className="text-gray-600 space-y-2 ml-4">
                 <li>• Product knowledge (features, benefits, differentiators)</li>
                 <li>• Qualification questions to ask</li>
@@ -170,7 +170,7 @@ export default function TradeShowMarketing() {
 
             <div>
               <h3 className="text-xl font-bold mb-3">7. Staff Your Booth Strategically</h3>
-              <p className="text-gray-700 mb-4">Mix sales experts with trained <Link href="/services/brand-ambassadors" className="text-orange-600 hover:underline">brand ambassadors</Link>. Ambassadors handle initial engagement and qualification; sales experts handle serious conversations and deal discussions.</p>
+              <p className="text-gray-700 mb-4">Mix sales experts with trained <Link href="/brand-ambassador-agency" className="text-orange-600 hover:underline">brand ambassadors</Link>. Ambassadors handle initial engagement and qualification; sales experts handle serious conversations and deal discussions.</p>
               <p className="text-gray-700">Rotate staff every 2-3 hours to maintain energy. Tired staff = weak engagement.</p>
             </div>
 
@@ -198,7 +198,7 @@ export default function TradeShowMarketing() {
                 <li>• Expert consultations or assessments</li>
                 <li>• Exclusive content or research</li>
                 <li>• Raffle entries for premium prizes (requiring meaningful engagement)</li>
-                <li>• <Link href="/services/sampling" className="text-orange-600 hover:underline">Product samples</Link> if applicable</li>
+                <li>• <Link href="/product-sampling-agency" className="text-orange-600 hover:underline">Product sampling campaigns</Link> if applicable</li>
               </ul>
             </div>
           </div>

@@ -51,7 +51,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <p>That skepticism is understandable — but it is also outdated. The brands winning with experiential marketing in 2026 are not guessing about returns. They are measuring everything from cost-per-sample to post-event purchase lift to earned media value, and the numbers tell a compelling story.</p>
 
-        <p>We have spent over a decade executing <Link href="/services" className="text-teal-600 hover:text-teal-700">experiential marketing campaigns</Link> across industries and markets. These seven case studies represent the types of returns we see repeatedly when campaigns are planned with clear KPIs, executed by trained professionals, and measured rigorously.</p>
+        <p>We have spent over a decade executing <Link href="/experiential-marketing-agency" className="text-teal-600 hover:text-teal-700">experiential marketing campaigns</Link> across industries and markets. These seven case studies represent the types of returns we see repeatedly when campaigns are planned with clear KPIs, executed by trained professionals, and measured rigorously.</p>
 
         <h2>Why Experiential Marketing ROI Is Different from Digital ROI</h2>
 
@@ -77,7 +77,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>We deployed trained <Link href="/blog/brand-ambassador-staffing-services-guide-2026" className="text-teal-600 hover:text-teal-700">brand ambassadors</Link> to 180 high-traffic locations over six weekends. Each ambassador was trained on the product story, nutritional differentiators, and competitive positioning — not just handed a tray and told to smile. They ran live demos during peak shopping hours (Saturday 11am-3pm and Sunday 12pm-4pm), pairing samples with a $1-off coupon that had a unique tracking code.</p>
+        <p>We deployed trained <Link href="/brand-ambassador-agency" className="text-teal-600 hover:text-teal-700">brand ambassadors</Link> to 180 high-traffic locations over six weekends. Each ambassador was trained on the product story, nutritional differentiators, and competitive positioning — not just handed a tray and told to smile. They ran live demos during peak shopping hours (Saturday 11am-3pm and Sunday 12pm-4pm), pairing samples with a $1-off coupon that had a unique tracking code.</p>
 
         <h3>The Results</h3>
 
@@ -103,7 +103,7 @@ export default function ExperientialMarketingROICaseStudies() {
 
         <h3>The Campaign</h3>
 
-        <p>Instead of the standard booth-with-a-demo approach, we helped them design an interactive activation that required attendees to engage with the product in a meaningful way. We staffed the booth with six <Link href="/services/trade-show-staffing" className="text-teal-600 hover:text-teal-700">trained trade show brand ambassadors</Link> who specialized in B2B conversations — not just crowd gatherers, but professionals who could qualify prospects in real time and route them to the right sales engineer.</p>
+        <p>Instead of the standard booth-with-a-demo approach, we helped them design an interactive activation that required attendees to engage with the product in a meaningful way. We staffed the booth with six <Link href="/event-staffing-agency" className="text-teal-600 hover:text-teal-700">trained trade show brand ambassadors</Link> sourced through our <Link href="/experiential-marketing-agency" className="text-teal-600 hover:text-teal-700">experiential marketing agency</Link>, specialists who could qualify prospects in real time and route them to the right sales engineer.</p>
 
         <p>The activation included a supply chain simulation where attendees could see how the software handled disruptions in real time. Completing the simulation required 8-10 minutes of genuine product interaction, which naturally filtered out tire-kickers.</p>
 

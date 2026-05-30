@@ -69,7 +69,7 @@ export default function ProductSamplingCampaignPlanningGuide() {
 
         <h3>Generates Immediate Sales</h3>
 
-        <p>Unlike awareness campaigns that take weeks or months to show results, <Link href="/services/sampling" className="text-blue-600 hover:text-blue-700">product sampling at retail</Link> drives same-day purchases. Many brands see a 200-500% sales lift in stores during active sampling campaigns.</p>
+        <p>Unlike awareness campaigns that take weeks or months to show results, <Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">product sampling campaigns</Link> drive same-day purchases. Many brands see a 200-500% sales lift in stores during active sampling programs.</p>
 
         <h2>Step 1: Define Your Sampling Objectives</h2>
 
@@ -84,7 +84,7 @@ export default function ProductSamplingCampaignPlanningGuide() {
           <li><strong>Support a retail promotion</strong> or seasonal push</li>
         </ul>
 
-        <p>Your objectives determine everything from location selection to staffing requirements to success metrics. Write them down and share them with your <Link href="/services/brand-ambassadors" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> before campaign planning begins.</p>
+        <p>Your objectives determine everything from location selection to staffing requirements to success metrics. Write them down and share them with your <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> before campaign planning begins.</p>
 
         <h2>Step 2: Choose Your Sampling Format</h2>
 
@@ -149,7 +149,7 @@ export default function ProductSamplingCampaignPlanningGuide() {
 
         <h3>Hire Through a Professional Agency</h3>
 
-        <p>Working with a professional <Link href="/blog/brand-ambassador-staffing-services-guide-2026" className="text-blue-600 hover:text-blue-700">brand ambassador staffing agency</Link> ensures you get trained, reliable, and brand-appropriate talent. Look for agencies with experience in your product category and target markets.</p>
+        <p>Working with a professional <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassador staffing</Link> agency ensures you get trained, reliable, and brand-appropriate talent. Look for agencies with experience in your product category and target markets.</p>
 
         <h3>Define Your Ideal Ambassador Profile</h3>
 

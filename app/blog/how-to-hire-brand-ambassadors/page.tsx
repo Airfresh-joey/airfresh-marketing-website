@@ -72,7 +72,7 @@ export default function HowToHireBrandAmbassadors() {
         
         <section id="what-is" className="mb-16">
           <h2 className="text-3xl font-bold mb-6">What Does a Brand Ambassador Do?</h2>
-          <p className="text-lg text-gray-700 mb-6">A <strong>brand ambassador</strong> is a person hired to represent your brand in a positive light, increasing brand awareness and driving sales through authentic engagement with consumers.</p>
+          <p className="text-lg text-gray-700 mb-6">A <strong><Link href="/brand-ambassador-agency" className="text-purple-600 hover:underline">brand ambassador</Link></strong> is a person hired to represent your brand in a positive light, increasing brand awareness and driving sales through authentic engagement with consumers.</p>
           
           <p className="text-gray-700 mb-6">Unlike traditional advertising, brand ambassadors create human connections. They're the face and voice of your brand at events, in stores, on the street, and increasingly on social media.</p>
 
@@ -98,7 +98,7 @@ export default function HowToHireBrandAmbassadors() {
           <div className="grid md:grid-cols-2 gap-4 mb-6">
             <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Product Launches</h4><p className="text-gray-600 text-sm">Create buzz and drive trial with enthusiastic product experts.</p></CardContent></Card>
             <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Trade Shows & Conventions</h4><p className="text-gray-600 text-sm">Staff your booth with knowledgeable, engaging professionals.</p></CardContent></Card>
-            <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Sampling Campaigns</h4><p className="text-gray-600 text-sm">Turn product samples into brand experiences.</p></CardContent></Card>
+            <Card><CardContent className="p-4"><h4 className="font-bold mb-2"><Link href="/product-sampling-agency" className="text-purple-600 hover:underline">Product Sampling</Link> Campaigns</h4><p className="text-gray-600 text-sm">Turn product samples into brand experiences.</p></CardContent></Card>
             <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Retail Promotions</h4><p className="text-gray-600 text-sm">Drive in-store conversions with trained demonstrators.</p></CardContent></Card>
             <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Festival Activations</h4><p className="text-gray-600 text-sm">Engage massive audiences with on-brand energy.</p></CardContent></Card>
             <Card><CardContent className="p-4"><h4 className="font-bold mb-2">Street Marketing</h4><p className="text-gray-600 text-sm">Bring your brand directly to target consumers.</p></CardContent></Card>
@@ -308,7 +308,7 @@ export default function HowToHireBrandAmbassadors() {
         {/* CTA */}
         <section className="bg-gradient-to-r from-purple-600 to-indigo-600 text-white p-8 rounded-xl">
           <h2 className="text-2xl font-bold mb-4">Need Brand Ambassadors?</h2>
-          <p className="mb-6 text-purple-100">Air Fresh Marketing provides trained, vetted brand ambassadors in 50+ markets nationwide. From product sampling to trade show staffing, we handle recruitment, training, and management so you can focus on results.</p>
+          <p className="mb-6 text-purple-100">Air Fresh Marketing provides trained, vetted <Link href="/brand-ambassador-agency" className="text-white underline hover:text-purple-100">brand ambassadors</Link> in 50+ markets nationwide. From <Link href="/product-sampling-agency" className="text-white underline hover:text-purple-100">product sampling</Link> to trade show staffing, we handle recruitment, training, and management so you can focus on results.</p>
           <div className="flex flex-col sm:flex-row gap-4">
             <Button asChild size="lg" className="bg-white text-purple-600 hover:bg-gray-100"><Link href="/get-quote?source=blog-how-to-hire-brand-ambassadors&intent=article-cta">Get a Free Quote<ArrowRight className="w-5 h-5 ml-2" /></Link></Button>
             <Button asChild size="lg" variant="outline" className="bg-transparent border-white text-white hover:bg-white/10"><Link href="/services/brand-ambassadors">Our Brand Ambassador Services</Link></Button>

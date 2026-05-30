@@ -129,7 +129,7 @@ export default function EventStaffingGuide() {
 
         <p>There are <strong>task staff</strong> - people who can follow instructions, show up on time, and execute a specific role. Check-in desk, coat check, directing traffic, basic sampling. They need to be reliable and presentable, but they don't need to be stars.</p>
 
-        <p>Then there are <strong>engagement staff</strong> - people who can represent your brand, have meaningful conversations with strangers, and create memorable experiences. Product demonstrators, brand ambassadors, sales support. They need personality, product knowledge, and genuine enthusiasm.</p>
+        <p>Then there are <strong>engagement staff</strong> - people who can represent your brand, have meaningful conversations with strangers, and create memorable experiences. Product demonstrators, <Link href="/brand-ambassador-agency" className="text-blue-700 hover:underline">brand ambassadors</Link>, sales support. They need personality, product knowledge, and genuine enthusiasm.</p>
 
         <p>The mistake is hiring task staff rates ($18-25/hour) and expecting engagement staff performance ($35-50/hour). Or worse, hiring engagement staff and wasting them on task work.</p>
 
@@ -246,7 +246,7 @@ export default function EventStaffingGuide() {
           <li>You're comfortable with the liability exposure</li>
         </ul>
 
-        <p><strong>An agency makes sense if:</strong></p>
+        <p><strong>An <Link href="/event-staffing-agency" className="text-blue-700 hover:underline">event staffing agency</Link> makes sense if:</strong></p>
         <ul>
           <li>You need multiple events or multiple markets</li>
           <li>You need more than 10 people</li>
