@@ -1366,3 +1366,28 @@ Next actions:
 - Same mid-body CTA pattern on venues/[slug]/[service] pages (~550 pages — currently only hero + final-cta)
 - Same pattern on events/[slug]/[service] pages (~1,024 pages — has sidebar but no mid-body banner)
 - GSC opportunity pass: pages 4-15 position with impressions 10-200, CTR < 2%
+
+## 2026-05-30 MDT
+
+Goal: Add mid-body /get-quote CTA banner to all 608 industry-city pages to increase funnel touchpoints.
+
+Audit: industry/city pages (/industries/[industry]/[city]) had only 2 quote CTAs (hero + final-cta). All 608 pages lacked a mid-body conversion point between "Why Choose Us" and "Case Studies."
+
+Shipped (1 file, commit f873497):
+- app/industries/[industry]/[city]/page.tsx
+- Inserted indigo CTA banner between "Why Choose Us" and "Case Studies" sections
+- Copy: "Ready to hire {industry} event staff in {city}? Tell us about your campaign and get a free quote within 24 hours."
+- Links to /get-quote?source=industry-{industry}-{city}&intent=mid-body (trackable in GA)
+- Adds 3rd quote touchpoint: hero + mid-body (new) + final-cta
+- Consistent design with identical banners already live on 459 state-service pages
+
+Checks:
+- npm run build passed (6305 static pages, 0 errors)
+- Committed f873497, pushed to origin/main
+- Deployed to Vercel production
+- Verified live: /industries/healthcare-pharma/new-york returns indigo mid-body section with intent=mid-body param in page source ✓
+
+Next actions:
+- GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2%
+- Above-fold case study proof section on top city-service pages (brand-ambassadors + top 5 cities)
+- /get-quote form: audit UTM param persistence from source/intent query params into form submission
