@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-30 MDT (Run 5)
+
+Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 continued — batch 2).
+
+Audit:
+- 79 blog posts still lacked money-page links after Run 4
+- Selected next 9 high-traffic posts for this run
+
+Shipped (commit aea62b9):
+- 2026-world-cup-event-staffing: intro → /event-staffing-agency + /brand-ambassador-agency; staffing section → /promotional-staffing-agency
+- ai-experiential-marketing-2026: intro → /experiential-marketing-agency; predictive staffing section → /promotional-staffing-agency
+- automotive-event-marketing: intro → /event-staffing-agency + /brand-ambassador-agency
+- beauty-sampling: intro → /product-sampling-agency
+- bilingual-event-staff: intro → /brand-ambassador-agency + /event-staffing-agency
+- brand-ambassador-career: intro → /brand-ambassador-agency + /event-staffing-agency
+- brand-ambassador-pay-rates: intro → /brand-ambassador-agency + /promotional-staffing-agency
+- cannabis-marketing-events: intro → /brand-activation-agency + /event-staffing-agency
+- convention-center-marketing: intro → /brand-ambassador-agency + /event-staffing-agency
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed aea62b9, pushed to origin/main
+- Vercel auto-deploy triggered
+- Live verification: curl https://www.airfreshmarketing.com/blog/brand-ambassador-pay-rates confirmed brand-ambassador-agency (9×) and promotional-staffing-agency (5×) in HTML ✓
+
+Next actions:
+- Priority #3 continued: ~70 blog posts still lack money-page internal links — continue 9-10/run until full coverage
+- Priority #4: FAQ schema expansion — add FAQPage JSON-LD to top 10 highest-traffic service pages
+
+
 ## 2026-05-30 MDT (Run 4)
 
 Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3).
