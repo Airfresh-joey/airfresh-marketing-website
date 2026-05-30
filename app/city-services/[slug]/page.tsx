@@ -46,11 +46,15 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
 
   // Check for enriched content
   const enriched = getCityServiceContent(slug);
-  const title = enriched ? enriched.metaTitle : `${serviceName} ${cityName} | Professional ${serviceName} Services | AirFresh Marketing`;
+  // Use absolute title to prevent Next.js template from appending "| AirFresh Marketing" again
+  // (both enriched and fallback titles already contain the brand suffix)
+  const absoluteTitle = enriched
+    ? enriched.metaTitle
+    : `${serviceName} ${cityName} | Professional ${serviceName} Services | AirFresh Marketing`;
   const description = enriched ? enriched.metaDescription : `${serviceName} ${cityName} services from AirFresh Marketing. ${parsed.service.description} Contact us for professional ${serviceName.toLowerCase()} in ${cityName} today.`;
 
   return {
-    title,
+    title: { absolute: absoluteTitle },
     description,
     keywords: `${serviceName.toLowerCase()} ${cityName}, ${cityName} ${serviceName.toLowerCase()}, ${parsed.service.keywords.join(', ')}`,
     openGraph: {
