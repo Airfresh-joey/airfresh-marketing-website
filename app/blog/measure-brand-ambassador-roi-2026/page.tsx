@@ -77,7 +77,7 @@ export default function MeasureBrandAmbassadorROI() {
 
           <p>The good news is that brand ambassador ROI measurement has matured dramatically. In 2026, the tools, frameworks, and attribution models available make it possible to track the impact of every ambassador interaction with precision that would have seemed impossible five years ago. The bad news is that most brands are still measuring the wrong things, or worse, not measuring anything at all.</p>
 
-          <p>This guide gives you a complete measurement framework: the metrics that matter, the KPIs to set, the attribution models to use, and the real-world benchmarks to compare against. Whether you are running a single-day product sampling or a multi-month national campaign, this is how you prove that your <Link href="/services" className="text-blue-600 hover:underline">experiential marketing investment</Link> is delivering real returns.</p>
+          <p>This guide gives you a complete measurement framework: the metrics that matter, the KPIs to set, the attribution models to use, and the real-world benchmarks to compare against. Whether you are running a single-day product sampling or a multi-month national campaign, this is how you prove that your <Link href="/experiential-marketing-agency" className="text-blue-600 hover:underline">experiential marketing agency</Link> investment is delivering real returns.</p>
         </div>
 
         {/* Section 1 */}
@@ -298,7 +298,7 @@ export default function MeasureBrandAmbassadorROI() {
           <Card className="bg-blue-50 border-blue-200">
             <CardContent className="p-6">
               <h4 className="font-bold text-blue-900 mb-2">Pro Tip: Build Your Tracking Stack Before Launch</h4>
-              <p className="text-blue-800">The biggest measurement mistake brands make is retroactively trying to measure a campaign that was not designed for measurement. Work with your <Link href="/services" className="text-blue-600 hover:underline">experiential marketing agency</Link> to build tracking into the campaign design from day one. Every touchpoint should have a measurement mechanism planned before a single ambassador is deployed.</p>
+              <p className="text-blue-800">The biggest measurement mistake brands make is retroactively trying to measure a campaign that was not designed for measurement. Work with your <Link href="/brand-ambassador-agency" className="text-blue-600 hover:underline">brand ambassador agency</Link> to build tracking into the campaign design from day one. Every touchpoint should have a measurement mechanism planned before a single ambassador is deployed.</p>
             </CardContent>
           </Card>
         </section>

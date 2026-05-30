@@ -51,7 +51,7 @@ export default function PromotionalStaffEventsGuide() {
 
         <p>Yet most brands treat staffing as an afterthought — something to figure out after the venue is booked and the creative is finalized. This is a costly mistake. The quality of your promotional team determines whether your event investment produces real business outcomes or just looks good on Instagram.</p>
 
-        <p>This guide covers everything brand managers and marketing directors need to know about hiring, training, and managing promotional staff for events — from defining the right role profiles to working with an <Link href="/services" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> that delivers consistent quality across markets.</p>
+        <p>This guide covers everything brand managers and marketing directors need to know about hiring, training, and managing promotional staff for events — from defining the right role profiles to working with a <Link href="/promotional-staffing-agency" className="text-blue-600 hover:text-blue-700">promotional staffing agency</Link> that delivers consistent quality across markets.</p>
 
         <h2>Promotional Staff Roles: Understanding What You Actually Need</h2>
 
@@ -103,7 +103,7 @@ export default function PromotionalStaffEventsGuide() {
 
         <h3>Step 5: Work With a Professional Staffing Agency</h3>
 
-        <p>For most brands, the most efficient path to high-quality promotional staff is partnering with an <Link href="/services" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> that maintains a vetted, trained talent network. A good agency handles recruitment, screening, background checks, training coordination, scheduling, and backup staffing — eliminating the operational burden that derails marketing teams who try to hire directly.</p>
+        <p>For most brands, the most efficient path to high-quality promotional staff is partnering with an <Link href="/promotional-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> that maintains a vetted, trained talent network. A good agency handles recruitment, screening, background checks, training coordination, scheduling, and backup staffing — eliminating the operational burden that derails marketing teams who try to hire directly.</p>
 
         <h2>Training Promotional Staff: The Investment That Multiplies Your Event ROI</h2>
 

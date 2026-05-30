@@ -84,9 +84,9 @@ export default function EventMarketingROI() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Every event marketer dreads the question: "What was the ROI?"</p>
-        <p>It's hard because events drive value in ways that don't fit neatly into spreadsheets. Brand perception. Relationships. Word of mouth. These matter, but they're hard to quantify.</p>
-        <p>After years of struggling with this, I've developed frameworks that actually work. Not perfect measurement - that doesn't exist - but rigorous enough to justify budgets and optimize spend.</p>
+        <p>Every event marketer dreads the question: &quot;What was the ROI?&quot;</p>
+        <p>It&apos;s hard because events drive value in ways that don&apos;t fit neatly into spreadsheets. Brand perception. Relationships. Word of mouth. These matter, but they&apos;re hard to quantify.</p>
+        <p>After years of struggling with this, I&apos;ve developed frameworks that actually work. Not perfect measurement - that doesn&apos;t exist - but rigorous enough to justify budgets and optimize spend. Whether you&apos;re working with an <Link href="/experiential-marketing-agency" className="text-white/90 hover:text-white underline">experiential marketing agency</Link> or running events in-house, these frameworks apply.</p>
         <h2>The ROI Framework</h2>
         <p>Start by categorizing what you're measuring:</p>
         <p><strong>Direct revenue:</strong> Sales made at or directly attributable to the event. Easiest to measure.</p>
@@ -110,7 +110,7 @@ export default function EventMarketingROI() {
           <li>Email signups</li>
           <li>Sales at event</li>
         </ul>
-        <p>Track religiously. No data = no ROI calculation.</p>
+        <p>Track religiously. No data = no ROI calculation. <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">Professional event staffing agencies</Link> can help you design data capture workflows that make measurement straightforward.</p>
         <h2>The 6-Month Window</h2>
         <p>Event ROI doesn't crystallize immediately. A lead from a trade show might not close for 6 months. Brand lift takes time to translate to sales.</p>
         <p>Set up tracking windows: immediate (at-event), 30-day, 90-day, 6-month. Real ROI emerges over time.</p>

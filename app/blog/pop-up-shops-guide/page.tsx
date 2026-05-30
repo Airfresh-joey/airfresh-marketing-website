@@ -93,7 +93,7 @@ export default function PopUpShopsGuide() {
         
         <p>Three years ago, a DTC mattress company asked us to help staff their first pop-up. They'd been online-only, doing fine with digital marketing, but they wanted to see if physical retail could be part of their future.</p>
 
-        <p>We set up in a vacant storefront in Austin for 30 days. Nothing fancy - clean white walls, their mattresses displayed, and a team of brand ambassadors trained to handle the full sales process.</p>
+        <p>We set up in a vacant storefront in Austin for 30 days. Nothing fancy - clean white walls, their mattresses displayed, and a team of <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassadors</Link> trained to handle the full sales process.</p>
 
         <p>They sold $340,000 in mattresses. In a month. From a temporary space with minimal buildout.</p>
 
@@ -199,7 +199,7 @@ export default function PopUpShopsGuide() {
           <li>Report on customer feedback and questions</li>
         </ul>
 
-        <p>The biggest staffing mistake: treating pop-up staffing like regular retail hiring. Pop-up staff need to be more proactive, more adaptable, and more capable of representing the brand without the support systems of a permanent store.</p>
+        <p>The biggest staffing mistake: treating pop-up staffing like regular retail hiring. Pop-up staff need to be more proactive, more adaptable, and more capable of representing the brand without the support systems of a permanent store. An experienced <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">event staffing agency</Link> that specializes in pop-ups will have a pre-vetted talent pool ready to activate quickly.</p>
 
         <h2>The Pop-Up Playbook</h2>
 
