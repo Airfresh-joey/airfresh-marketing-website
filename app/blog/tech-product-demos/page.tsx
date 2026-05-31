@@ -116,7 +116,7 @@ export default function TechProductDemos() {
           <li>Sales skills (qualification, closing)</li>
           <li>Patience (explaining the same thing 200 times/day)</li>
         </ul>
-        <p>This is harder to find than general event staff. Budget accordingly.</p>
+        <p>This is harder to find than general event staff. Budget accordingly. Look for a specialist <Link href="/event-staffing-agency" className="text-indigo-600 underline">event staffing agency</Link> with demonstrated experience placing tech-savvy <Link href="/brand-ambassador-agency" className="text-indigo-600 underline">brand ambassadors</Link> at trade shows and product launches — they maintain rosters of technically fluent, sales-oriented demonstrators you won't find through general staffing channels.</p>
         <hr className="my-12" />
         <div className="not-prose">
           <div className="bg-gradient-to-r from-indigo-600 to-violet-600 text-white p-8 rounded-xl">

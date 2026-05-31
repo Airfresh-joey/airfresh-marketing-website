@@ -279,7 +279,7 @@ export default function MicroExperiencesBlog() {
 
         <p><strong>Develop a playbook, then replicate.</strong> The first two or three micro-experiences are your development phase. You refine the format, timing, messaging, and staffing model. Once you have a proven formula, you create a detailed playbook that can be executed by trained teams in any market. Same quality, different geography.</p>
 
-        <p><strong>Build a national roster.</strong> This is where working with a staffing partner like Air Fresh becomes essential. We maintain trained brand ambassador teams in over 50 markets. Once we train the first team and document the experience standards, we can replicate the staffing model nationally without sacrificing quality.</p>
+        <p><strong>Build a national roster.</strong> This is where working with a staffing partner like Air Fresh becomes essential. We maintain trained <Link href="/brand-ambassador-agency" className="text-indigo-600 underline">brand ambassador</Link> teams in over 50 markets through our <Link href="/experiential-marketing-agency" className="text-indigo-600 underline">experiential marketing agency</Link> network. Once we train the first team and document the experience standards, we can replicate the staffing model nationally without sacrificing quality.</p>
 
         <p><strong>Run concurrent activations.</strong> With a proven playbook and trained teams in multiple markets, you can run micro-experiences simultaneously. Five cities in one weekend, each hosting two sessions. That is 10 activations reaching 250-500 people in a single weekend, all with the intimacy and quality of a small event.</p>
 

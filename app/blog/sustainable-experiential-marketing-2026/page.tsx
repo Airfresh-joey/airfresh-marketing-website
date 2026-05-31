@@ -139,7 +139,7 @@ export default function SustainableExperientialMarketing() {
 
         <p>This is the part most people get backwards. Carbon offsets should be your last resort, not your first strategy. Start by actually reducing emissions:</p>
 
-        <p><strong>Hire local.</strong> This is one of the most impactful and most overlooked sustainability strategies in experiential marketing. When you source brand ambassadors and event staff from the local market, you eliminate travel emissions entirely. No flights, no hotel stays, no rental cars. A national staffing agency with local teams in every major market isn't just operationally efficient - it's significantly greener than flying a crew around the country.</p>
+        <p><strong>Hire local.</strong> This is one of the most impactful and most overlooked sustainability strategies in experiential marketing. When you source <Link href="/brand-ambassador-agency" className="text-indigo-600 underline">brand ambassadors</Link> and event staff from the local market, you eliminate travel emissions entirely. No flights, no hotel stays, no rental cars. A <Link href="/event-staffing-agency" className="text-indigo-600 underline">national event staffing agency</Link> with local teams in every major market isn't just operationally efficient - it's significantly greener than flying a crew around the country.</p>
 
         <p><strong>Design for reusability.</strong> Build your activation infrastructure to be used across multiple events. Modular display systems, durable signage that works across markets, and reusable structural elements cost more upfront but dramatically reduce both waste and the need to manufacture new materials for every campaign.</p>
 

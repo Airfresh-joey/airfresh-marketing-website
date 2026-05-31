@@ -163,7 +163,7 @@ export default function InStoreProductDemos() {
 
         <p>I'll be blunt: most demo staffing is bad.</p>
 
-        <p>The typical retail demo agency hires anyone with a pulse, gives them 5 minutes of training, and sends them into stores. They're paid minimum wage or close to it. They have no real connection to the brand. They're there to put in hours, not to sell product.</p>
+        <p>The typical retail demo agency hires anyone with a pulse, gives them 5 minutes of training, and sends them into stores. They're paid minimum wage or close to it. They have no real connection to the brand. They're there to put in hours, not to sell product. A dedicated <Link href="/product-sampling-agency" className="text-indigo-600 underline">product sampling agency</Link> with brand-trained demonstrators delivers consistently better results.</p>
 
         <p>And brands wonder why their demos don't perform.</p>
 
@@ -176,7 +176,7 @@ export default function InStoreProductDemos() {
           <li>Reliability - shows up on time, properly groomed, ready to work</li>
         </ul>
 
-        <p>This profile exists, but it costs more than minimum wage to attract. Brands that pay $35-45/hour for quality demonstrators consistently outperform brands paying $20/hour for warm bodies.</p>
+        <p>Brands that pay $35-45/hour for quality demonstrators consistently outperform brands paying $20/hour for warm bodies. The best approach is to partner with an <Link href="/event-staffing-agency" className="text-indigo-600 underline">event staffing agency</Link> that maintains a pre-vetted roster of high-performers who specialize in retail demo programs.</p>
 
         <h2>Building a Demo Program That Scales</h2>
 
