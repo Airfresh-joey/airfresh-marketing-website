@@ -1,5 +1,37 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 10)
+
+Goal: City page depth — add enriched content for Nashville (Priority #5 continued).
+
+Audit:
+- 13th city enriched; selected Nashville as highest-leverage unenriched Southern market
+- Nashville: 1.9M+ metro, 16M annual visitors, Music City Center (2.1M sq ft convention center), CMA Fest 85K+ daily attendees, HCA Healthcare / Bridgestone / Nissan North America corporate market
+- Nashville had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit f4cc10c) — new file server/city-content/nashville.ts:
+- nashville-brand-ambassadors: Broadway, The Gulch, 12 South, Germantown, East Nashville neighborhoods; Music City Center, Bridgestone Arena, Nissan Stadium, Ryman Auditorium, Grand Ole Opry venues; CMA Fest, ACM Awards, Nashville Pride, Music City Food+Wine events; $22-$38/hr pricing; 6 FAQs; 12 areasServed
+- nashville-experiential-marketing: 16M annual visitors tourism hook; Broadway corridor; CMA Fest multi-stage activation strategy; Metro Nashville permitting guidance; 4 FAQs
+- nashville-event-staffing: Music City Center 1,000+ annual conventions framing; HCA/Bridgestone/Nissan North America/Dollar General corporate market; JW Marriott/Omni/Grand Hyatt/Thompson Nashville coverage; 4 FAQs
+- nashville-promotional-models: Music City Center trade show focus; hospitality suite staffing at Bridgestone Arena/Nissan Stadium; luxury hotel network (JW Marriott, Thompson, Grand Hyatt, Gaylord Opryland); 4 FAQs
+- nashville-convention-staffing: Music City Center 2.1M sq ft campus; Gaylord Opryland Resort; healthcare-capital-of-South framing; Southern Baptist Convention; 5 FAQs
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: nashville-brand-ambassadors.html contains CMA Fest (38x), Music City Center (34x), The Gulch (10x), Germantown (10x) ✓
+- Committed f4cc10c, pushed to origin/main
+- Vercel auto-deploy triggered; CDN propagating (15-25 min Vercel SSG deploy)
+- Live HTTP 200 confirmed; title "Brand Ambassadors Nashville | AirFresh Marketing" ✓
+
+Status after this run:
+- 13 cities now have enriched city-service content (65 enriched pages total)
+- 145 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Boston, San Francisco, Philadelphia, San Diego, Portland
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 9)
 
 Goal: City page depth — add neighborhood names, local venues, and specific event types to thin city-service pages (Priority #5).
