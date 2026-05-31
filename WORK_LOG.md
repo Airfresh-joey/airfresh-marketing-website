@@ -1,5 +1,38 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 9)
+
+Goal: City page depth — add neighborhood names, local venues, and specific event types to thin city-service pages (Priority #5).
+
+Audit:
+- 11 cities already had enriched content (Denver, Austin, Atlanta, Chicago, Dallas, Houston, Las Vegas, Los Angeles, Miami, New York City, Phoenix) = 55 enriched pages
+- All remaining 147 cities used thin fallback templates (generic service descriptions, no local knowledge)
+- Selected Seattle as the highest-leverage unenriched market: 760K+ population, home to Amazon/Microsoft/Expedia, strong tech/outdoor/festival culture, distinct neighborhood personalities
+- Seattle had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 213bf11) — new file server/city-content/seattle.ts:
+- seattle-brand-ambassadors: Capitol Hill, Fremont, Ballard, South Lake Union neighborhoods; Climate Pledge Arena, Lumen Field, Pike Place Market venues; Seafair, Bumbershoot, PAX West, SIFF events; $24-$42/hr pricing; 6 FAQs; 12 areasServed
+- seattle-experiential-marketing: Amazon/Microsoft/Expedia corporate event focus; Meydenbauer Center (Bellevue) coverage; tech-literate staff callout; 4 FAQs
+- seattle-street-teams: Fremont Sunday Market, Ballard Farmers Market, Broadway corridor deployment zones; festival season section; 4 FAQs
+- seattle-event-management: Bell Harbor, MoPOP, Seattle Center Exhibition Hall venues; PAX West/ECCC consumer event coverage; 5 FAQs
+- seattle-convention-staffing: PAX West, Emerald City Comic Con, WSCC focus; bilingual capability callout; 5 FAQs
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 213bf11, pushed to origin/main
+- Vercel auto-deploy triggered
+- Local build verified: seattle-brand-ambassadors.html contains enriched neighborhood/venue/event content ✓
+- Live HTTP 200 confirmed; CDN propagating enriched body content (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 12 cities now have enriched city-service content (60 enriched pages total)
+- 146 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Nashville, Boston, San Francisco, Philadelphia, San Diego
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-30 MDT (Run 8)
 
 Goal: FAQ schema expansion — add FAQPage JSON-LD to remaining service pages without it (Priority #4).
