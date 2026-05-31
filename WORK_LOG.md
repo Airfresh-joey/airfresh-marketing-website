@@ -1,5 +1,38 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 12)
+
+Goal: City page depth — add enriched content for Boston (Priority #5 continued).
+
+Audit:
+- 14th city enriched; selected Boston as highest-leverage unenriched Northeast market
+- Boston: 4.9M metro, world-class universities (Harvard/MIT/BU/Northeastern), biotech capital (Kendall Square), healthcare giants (Mass General Brigham, Dana-Farber), Financial corridor (Fidelity/State Street/Liberty Mutual)
+- BCEC (516K sq ft) + Hynes Convention Center = two major convention facilities, hundreds of conventions annually
+- Boston Marathon (500K+ spectators), Boston Calling, Head of the Charles Regatta, Natural Products Expo East, BIO International
+- Boston had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit d23c331) — new file server/city-content/boston.ts:
+- boston-brand-ambassadors: Back Bay, Seaport, Cambridge, Fenway-Kenmore, Harvard Square neighborhoods; BCEC, Hynes, Fenway Park, TD Garden, Faneuil Hall venues; Boston Marathon, Boston Calling, Head of the Charles events; $25-$45/hr pricing; 6 FAQs including biotech/pharma callout; 12 areasServed
+- boston-experiential-marketing: Harvard/MIT/biotech ecosystem hook; Marathon weekend activation strategy; Seaport Innovation District, Rose Kennedy Greenway, Newbury Street activation zones; Head of the Charles (400K spectators); university campus marketing (35+ colleges); 4 FAQs
+- boston-event-staffing: BCEC + Hynes convention market framing; Fidelity/State Street/Liberty Mutual corporate event demand; Longwood Medical Area healthcare conference staffing; FDA-compliant pharma staffing callout; Fenway/TD Garden consumer events; 4 FAQs
+- boston-convention-staffing: BCEC 516K sq ft convention campus; Hynes Convention Center Back Bay; healthcare/life sciences convention specialization (Kendall Square = world's highest biotech density); Natural Products Expo East / BIO International coverage; 5 FAQs
+- boston-promotional-models: Background-matching approach (life sciences for pharma events, tech-adjacent for software events); luxury hotel network (Fairmont Copley Plaza, Boston Harbor Hotel, InterContinental, Mandarin Oriental); $30-$65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: boston-brand-ambassadors.html contains Boston Marathon (28×), BCEC (24×), Kendall Square (14×), Fenway (12×), Head of the Charles (8×) ✓
+- Committed d23c331, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/boston-brand-ambassadors; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 14 cities now have enriched city-service content (70 enriched pages total)
+- 144 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for San Francisco, Philadelphia, San Diego, Portland
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 11)
 
 Goal: Add mid-body /get-quote CTA banner to all ~6,300 city-service pages — the largest page group and last page type missing a 3rd funnel touchpoint.
