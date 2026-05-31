@@ -36,6 +36,69 @@ export default function LuxuryBrandMarketingPage() {
     "serviceType": ["Luxury Brand Marketing", "VIP Events", "High-End Activations", "Premium Brand Experiences"]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What is luxury brand experiential marketing?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Luxury brand experiential marketing creates exclusive, high-touch brand experiences designed specifically for affluent and high-net-worth audiences. These activations go beyond traditional advertising by immersing consumers in curated environments that embody the brand's prestige, craftsmanship, and lifestyle values. AirFresh Marketing designs and executes luxury experiential programs including VIP product launches, private shopping events, editorial activations, and white-glove brand ambassador programs for fashion, beauty, fine spirits, automotive, and hospitality brands.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How is luxury brand staffing different from standard event staffing?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Luxury brand staffing requires a significantly higher level of polish, discretion, and brand sophistication than standard event staffing. AirFresh Marketing's luxury brand ambassadors are selected for exceptional presentation, articulate communication, and the ability to build genuine rapport with high-net-worth clientele. They receive brand immersion training that covers heritage storytelling, product expertise, and white-glove service protocols. Standard event staffing prioritizes volume and efficiency; luxury staffing prioritizes exclusivity and experiential quality.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What types of luxury brands do you work with?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AirFresh Marketing has experience executing experiential campaigns for luxury brands across fashion houses, fine jewelry, premium automotive, luxury hospitality and hotels, high-end beauty and skincare, fine spirits and wine, private aviation, and luxury real estate. Our talent pool includes brand ambassadors with backgrounds in fine dining, high-end retail, hospitality, and luxury concierge services who understand how to engage affluent consumers.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is a VIP launch event and how do you execute one?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A VIP launch event is an exclusive product or brand unveiling designed for a curated guest list of media, influencers, retail buyers, and high-value customers. AirFresh Marketing handles every staffing element of a VIP launch including brand-trained ambassadors, registration and guest management staff, product demonstration specialists, and VIP concierge personnel. We ensure every guest touchpoint reflects the brand's luxury positioning and that key media and influencer guests receive personalized attention.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you protect brand prestige during experiential activations?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Protecting brand prestige starts with rigorous staff selection and training. AirFresh Marketing vets luxury brand ambassadors for professional presentation, communication skills, and cultural alignment with the brand. Every ambassador receives brand-specific training covering approved messaging, tone of voice, visual standards, and non-disclosure protocols. We also work closely with brand teams to establish clear guidelines for photography, media interactions, and guest experience so every activation reflects the brand's premium positioning.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you execute luxury activations at major events like Art Basel, NYFW, or Coachella?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. AirFresh Marketing has experience staffing luxury brand activations at premier cultural events including Art Basel Miami Beach, New York Fashion Week, Cannes, Coachella, and major PGA, polo, and yacht club events. These high-visibility activations require advance planning, credentialing experience, and talent who can navigate high-profile environments with discretion. Our national talent network and event logistics expertise ensure seamless execution at any prestige venue or marquee event.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much does luxury experiential marketing staffing cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Luxury brand ambassador and experiential staffing rates typically start at $55 per hour and can range to $150 or more per hour for senior talent with specialized brand knowledge, bilingual capabilities, or VIP hosting expertise. Rates vary based on market, event prestige level, duration, and specific skill requirements. AirFresh Marketing provides transparent all-inclusive project pricing that covers talent sourcing, luxury brand training, event management, and post-event reporting.",
+        },
+      },
+    ],
+  };
+
   const stats = [
     { value: '200+', label: 'Luxury Activations' },
     { value: '$50M+', label: 'Brand Value Created' },
@@ -85,6 +148,10 @@ export default function LuxuryBrandMarketingPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}

@@ -38,6 +38,69 @@ export default function RetailActivationsPage() {
     "serviceType": ["Retail Marketing", "In-Store Activations", "Product Demonstrations", "Customer Experience"]
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    mainEntity: [
+      {
+        "@type": "Question",
+        name: "What are retail activations?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Retail activations are in-store marketing programs where brand representatives engage shoppers at the point of purchase through live product demonstrations, sampling, and interactive experiences. They are designed to drive immediate trial and conversion by placing your brand directly in front of buyers at the moment they are making a purchase decision. AirFresh Marketing deploys trained retail activation staff at major chains including Target, Walmart, Costco, Whole Foods, and 50+ other retailers nationwide.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How much do retail activations cost?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Retail activation costs vary based on the number of locations, program duration, staffing type, and retailer requirements. In-store demo staff typically range from $28 to $45 per hour, while trained product specialists with technical knowledge can range from $40 to $65 per hour. Multi-location programs and ongoing retail tours receive volume pricing. AirFresh Marketing provides all-inclusive quotes covering staff sourcing, brand-specific training, GPS-verified check-ins, and post-event reporting with no hidden fees.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "What is the difference between a retail activation and a product demo?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "A product demo is a component of a retail activation where staff physically demonstrate how a product works to engage shoppers. A retail activation is the broader program that may include product demos, sampling, interactive displays, endcap management, and brand storytelling. AirFresh Marketing designs full retail activation programs that combine demonstrations, sampling, and engagement tactics to maximize shopper interaction and conversion rates.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Which retailers do you work with for in-store activations?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AirFresh Marketing has established relationships and experience activating in major US retailers including Target, Walmart, Costco, Whole Foods Market, Sam's Club, Kroger, Publix, Safeway, HEB, Meijer, Wegmans, and Sprouts. We understand the compliance requirements, vendor policies, and shopper traffic patterns at each retailer, which allows our staff to execute more effectively and generate stronger results.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How far in advance should I book retail activation staff?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "We recommend booking retail activation staff 2 to 4 weeks in advance for standard programs to allow adequate time for staff sourcing, brand training, and retailer coordination. For large-scale national retail programs spanning 50+ locations, 4 to 8 weeks lead time ensures optimal staff quality. Rush bookings can be accommodated in as little as 48 to 72 hours in most major markets for urgent activations.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "How do you measure retail activation ROI?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "AirFresh Marketing measures retail activation ROI through multiple metrics including units sampled or demonstrated, shopper interactions per hour, trial-to-purchase conversion rates, sales lift during activation versus non-activation days, and consumer feedback scores. Our staff submit real-time digital reports with photos and engagement data. Post-program analytics compare activation performance across locations, staff, and time periods so brands can optimize future programs.",
+        },
+      },
+      {
+        "@type": "Question",
+        name: "Can you run retail activations at multiple locations simultaneously?",
+        acceptedAnswer: {
+          "@type": "Answer",
+          text: "Yes. AirFresh Marketing specializes in multi-location retail activation programs, deploying trained staff across 50+ US cities simultaneously through a single account management team. Our centralized technology platform provides real-time visibility into every location, including GPS-verified staff check-ins, digital recaps, and unified reporting dashboards. This eliminates the coordination complexity of managing multiple local vendors.",
+        },
+      },
+    ],
+  };
+
   const stats = [
     { value: '500+', label: 'Retail Activations' },
     { value: '40%', label: 'Avg Sales Lift' },
@@ -87,6 +150,10 @@ export default function RetailActivationsPage() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}
