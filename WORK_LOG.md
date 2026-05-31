@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 13)
+
+Goal: City page depth — add enriched content for San Francisco (Priority #5 continued).
+
+Audit:
+- 15th city enriched; selected San Francisco as highest-leverage unenriched West Coast tech market
+- SF: 4.7M Bay Area metro, world's technology capital (Salesforce, Twitter/X, Lyft, Airbnb, Dropbox, Stripe HQ), Moscone Center (700K+ sq ft), Dreamforce (170K+ attendees — world's largest software conference), RSA Conference, GDC, Outside Lands (220K attendees), SF Pride (1M+ spectators)
+- SF had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 1d96778) — new file server/city-content/san-francisco.ts:
+- san-francisco-brand-ambassadors: SoMa, Union Square, Mission District, Castro, Haight-Ashbury neighborhoods; Moscone Center, Chase Center, Oracle Park, Golden Gate Park venues; Dreamforce, Outside Lands, SF Pride, RSA Conference events; $28-$55/hr pricing; 6 FAQs including tech-literacy callout; 12 areasServed
+- san-francisco-experiential-marketing: Innovation capital framing; Dreamforce hotel takeovers, SoMa venue pop-ups, Salesforce Park activations; sustainability/zero-waste activation callout for SF's environmental culture; SF permitting guidance (SFMTA, SF Rec & Park, Port of SF); 4 FAQs
+- san-francisco-event-staffing: Moscone 700K+ sq ft convention hub; Dreamforce/RSA/GDC corporate conference market; SF-headquartered company corporate event demand (Salesforce, Lyft, Airbnb, Dropbox, Stripe); Chase Center, Oracle Park consumer event coverage; 4 FAQs
+- san-francisco-convention-staffing: Moscone North/South/West specialist framing; Dreamforce 170K attendees B2B tech convention focus; tech-literate ambassador callout for enterprise software events; UCSF/Genentech/South SF biotech corridor healthcare convention coverage; 5 FAQs
+- san-francisco-promotional-models: Tech-literate model differentiator (enterprise SaaS/cloud backgrounds); Dreamforce hospitality suite staffing; Union Square luxury retail (Four Seasons, Fairmont, St. Regis, Ritz-Carlton); $30-$75/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: san-francisco-brand-ambassadors.html title="Brand Ambassadors San Francisco | Professional Staffing | AirFresh Marketing" ✓; Dreamforce content in FAQ JSON-LD ✓
+- Committed 1d96778, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/san-francisco-brand-ambassadors and /city-services/san-francisco-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 15 cities now have enriched city-service content (75 enriched pages total)
+- 143 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Philadelphia, San Diego, Portland, Detroit, Minneapolis
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 12)
 
 Goal: City page depth — add enriched content for Boston (Priority #5 continued).
