@@ -1,5 +1,35 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 14)
+
+Goal: City page depth — add enriched content for Philadelphia (Priority #5 continued).
+
+Audit:
+- 16th city enriched; selected Philadelphia as highest-leverage unenriched Northeast market
+- Philadelphia: 6.2M metro, Fortune 500 HQ (Comcast, Independence Blue Cross, Aramark, Urban Outfitters), Pennsylvania Convention Center (679K sq ft — one of the largest in the Northeast), world's oldest/largest indoor flower show, Made in America Festival (600K+ attendees), South Philly Sports Complex (Lincoln Financial Field + Citizens Bank Park + Wells Fargo Center adjacent)
+- Philadelphia had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 380a4f5) — new file server/city-content/philadelphia.ts:
+- philadelphia-brand-ambassadors: Rittenhouse Square, Fishtown, Northern Liberties, University City, South Philly neighborhoods; PCC, Lincoln Financial, Citizens Bank Park, Reading Terminal Market venues; Made in America, Philly Flower Show, Penn Relays, Odunde events; $22-$42/hr pricing; 6 FAQs including healthcare/pharma callout; 12 areasServed
+- philadelphia-experiential-marketing: City of Brotherly Love authenticity framing; Benjamin Franklin Parkway (Made in America, Wawa Welcome America 1M+ attendees), Penn's Landing waterfront, Xfinity Live! sports complex; permitting via Mayor's Office of Special Events + Streets Department; Comcast/Penn Medicine corporate market; 4 FAQs
+- philadelphia-event-staffing: Pennsylvania Convention Center (679K sq ft, 300+ events/yr); South Philly Sports Complex triple-venue campus (Lincoln Financial + Citizens Bank Park + Wells Fargo); Fortune 500 corporate market (Comcast, IBC, Aramark); healthcare conference market (Penn Medicine, Jefferson, CHOP); 4 FAQs
+- philadelphia-convention-staffing: PCC specialist framing (Hall A-F, Broad Street Atrium, union jurisdiction knowledge); Philadelphia Auto Show (200K+ attendees), Philadelphia Flower Show (250K+) anchors; healthcare/life sciences convention specialization (Penn Medicine, Jefferson, CHOP, University City Science Center); 5 FAQs
+- philadelphia-promotional-models: Background-matched model approach (healthcare, financial services, tech, automotive); PCC Auto Show specialists; luxury hotel network (Four Seasons at Comcast Center, Ritz-Carlton, Loews, Kimmel Center); $28-$65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (0 errors)
+- Committed 380a4f5, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/philadelphia-brand-ambassadors and /city-services/philadelphia-convention-staffing
+
+Status after this run:
+- 16 cities now have enriched city-service content (80 enriched pages total)
+- 142 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for San Diego, Portland, Detroit, Minneapolis, Charlotte
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 13)
 
 Goal: City page depth — add enriched content for San Francisco (Priority #5 continued).
