@@ -1,5 +1,30 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 11)
+
+Goal: Add mid-body /get-quote CTA banner to all ~6,300 city-service pages — the largest page group and last page type missing a 3rd funnel touchpoint.
+
+Audit: city-service pages (/city-services/[slug]) had only 2 quote CTAs (hero + final-cta). State (459), industry-city (608), venue (552), and events (1,024) pages already had the mid-body banner pattern. City-service pages were the last major group missing it.
+
+Shipped (commit 3695c00):
+- app/city-services/[slug]/page.tsx
+- Inserted indigo CTA banner between Related Services and Case Studies sections
+- Copy: "Ready to hire {service.name} in {cityName}? Tell us about your campaign and get a free quote within 24 hours."
+- Links to /get-quote?source={slug}&intent=mid-body (trackable in GA/GSC)
+- Adds 3rd quote touchpoint: hero + mid-body (new) + final-cta
+
+Checks:
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 3695c00, pushed to origin/main
+- Deployed to Vercel production (8m build)
+- Verified live: /city-services/denver-brand-ambassadors returns "intent=mid-body" + "Get a Free Quote" in page source ✓
+
+Next actions:
+- GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% (title/H1 rewrites)
+- /get-quote form: audit UTM param persistence — do source/intent params survive into form submission?
+- Above-fold case study proof section on top city-service pages (brand-ambassadors + top 5 cities)
+- Enrich next city batch: Boston, San Francisco, Philadelphia, San Diego
+
 ## 2026-05-31 MDT (Run 10)
 
 Goal: City page depth — add enriched content for Nashville (Priority #5 continued).
