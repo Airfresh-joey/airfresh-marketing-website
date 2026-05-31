@@ -1,6 +1,35 @@
 # Air Fresh Website Growth Work Log
 
-## 2026-05-30 MDT (Run 7)
+## 2026-05-30 MDT (Run 8)
+
+Goal: FAQ schema expansion — add FAQPage JSON-LD to remaining service pages without it (Priority #4).
+
+Audit:
+- Scanned all top-level service pages for existing FAQPage JSON-LD
+- 14+ major service pages already had FAQPage schema from prior work
+- 2 valuable service pages were missing it: /services/retail-activations and /services/luxury-brand-marketing
+- All other pages missing FAQPage (careers/apply, team, case-studies) are non-commercial and low-priority for FAQ schema
+
+Shipped (commit ab5f34a) — 2 pages:
+- app/services/retail-activations/page.tsx: Added 7-question FAQPage JSON-LD covering: what retail activations are, cost ($28-$65/hr), activation vs demo difference, which retailers, booking lead times, ROI measurement, multi-location capability
+- app/services/luxury-brand-marketing/page.tsx: Added 7-question FAQPage JSON-LD covering: what luxury experiential marketing is, luxury vs standard staffing, brand types, VIP launch events, brand prestige protection, activations at Art Basel/NYFW/Coachella, cost ($55-$150+/hr)
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed ab5f34a, pushed to origin/main
+- Vercel auto-deploy triggered
+- Live verification: both pages return HTTP 200; FAQPage confirmed in .next build artifacts (1 match each)
+
+Status after this run:
+- All major commercial service pages now have FAQPage JSON-LD ✅
+- FAQ schema coverage complete across: event-staffing-agency, brand-ambassador-agency, product-sampling-agency, experiential-marketing-agency, promotional-staffing-agency, brand-activation-agency, guerrilla-marketing-agency, corporate-event-staffing, event-marketing-agency, mobile-marketing-tours, hire-brand-ambassadors, field-marketing-agency, event-staffing-near-me, technology, services/food-beverage-sampling, services/trade-show-staffing, services/retail-activations, services/luxury-brand-marketing
+
+Next actions:
+- Priority #5: City page depth — add neighborhood names, local venues, specific event types to the top 20 city-service pages that are thin
+
+
+
 
 Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 — batch 4, indexed-only cleanup pass).
 
