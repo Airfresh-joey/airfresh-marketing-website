@@ -640,6 +640,24 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         </div>
       </section>
 
+      {/* Mid-Body CTA Banner */}
+      <section className="py-14 bg-indigo-50">
+        <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-2xl md:text-3xl font-bold text-indigo-900 mb-4">
+            Ready to hire {service.name} in {cityName}?
+          </h2>
+          <p className="text-indigo-700 text-lg mb-8">
+            Tell us about your campaign and get a free quote within 24 hours.
+          </p>
+          <Link href={quoteHref('mid-body')}>
+            <Button size="lg" className="bg-indigo-600 hover:bg-indigo-700 text-white px-8 py-4 text-lg">
+              Get a Free Quote
+              <ArrowRight className="ml-2 h-5 w-5" />
+            </Button>
+          </Link>
+        </div>
+      </section>
+
       {/* Case Studies Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-4">
