@@ -1,5 +1,38 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-30 MDT (Run 7)
+
+Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 — batch 4, indexed-only cleanup pass).
+
+Audit:
+- Identified all 62 remaining blog posts without money-page links
+- Filtered to indexed-only posts (noindex posts deprioritized — only 5 indexed posts remained without links)
+- All 5 indexed posts shipped this run
+
+Shipped (commit 6565762) — 5 indexed posts:
+- in-store-product-demos: demo staffing para → /product-sampling-agency; quality demonstrators para → /event-staffing-agency
+- tech-product-demos: demo staff requirements → /event-staffing-agency + /brand-ambassador-agency
+- mobile-marketing-tours-explained: staffing intro → /brand-ambassador-agency + /event-staffing-agency
+- micro-experiences-intimate-brand-activations-2026: national roster para → /brand-ambassador-agency + /experiential-marketing-agency
+- sustainable-experiential-marketing-2026: hire local para → /brand-ambassador-agency + /event-staffing-agency
+
+Checks:
+- npm run check passed
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 6565762, pushed to origin/main
+- Vercel auto-deploy triggered
+- Live verification: curl https://www.airfreshmarketing.com/blog/in-store-product-demos confirmed product-sampling-agency (9×) and event-staffing-agency (13×) in HTML ✓
+
+Status after this run:
+- ALL indexed blog posts now have money-page internal links ✅
+- 57 noindex blog posts remain without money-page links (deprioritized — not indexed, minimal SEO value)
+
+Next actions:
+- Priority #4: FAQ schema expansion — add FAQPage JSON-LD to top 10 highest-traffic service pages if not already present
+- Priority #3 (noindex): optionally re-index + link the most valuable noindex blog posts
+
+
+
 ## 2026-05-30 MDT (Run 6)
 
 Goal: Internal link audit — blog posts → commercial service (money) pages (Priority #3 continued — batch 3).
