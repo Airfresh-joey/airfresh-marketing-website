@@ -1,5 +1,37 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-05-31 MDT (Run 15)
+
+Goal: City page depth — add enriched content for San Diego (Priority #5 continued).
+
+Audit:
+- 17th city enriched; selected San Diego as highest-leverage unenriched Southern California market
+- San Diego: 3.3M metro, home of Comic-Con International (130K+ badge holders, ~200K total attendees — world's premier pop culture convention), nation's second-largest biotech cluster (Pfizer, Illumina, Dexcom, Janssen, 900+ life sciences companies), largest US military installation complex (Naval Base San Diego, Camp Pendleton, MCAS Miramar), 35M annual visitors
+- SDCC (615K+ sq ft) = 5th-largest convention city in the US; Del Mar Fairgrounds (1M+ visitors/year); Petco Park; Pechanga Arena
+- San Diego had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit a29eae2) — new file server/city-content/san-diego.ts:
+- san-diego-brand-ambassadors: Gaslamp Quarter, Little Italy, Pacific Beach, La Jolla, Barrio Logan neighborhoods; SDCC, Petco Park, Del Mar Fairgrounds, Pechanga Arena venues; Comic-Con, County Fair, San Diego Pride, KAABOO events; military/biotech dual-market callout; bilingual Spanish-English and Japanese-English callout; $22-$40/hr pricing; 6 FAQs; 16 areasServed
+- san-diego-experiential-marketing: Comic-Con week pop-up/hotel takeover strategy; Del Mar Fairgrounds (1M+ visitors), Pacific Beach boardwalk, Liberty Station, Balboa Park; City of San Diego Special Events Office permitting; year-round climate advantage (266 sunny days); 4 FAQs
+- san-diego-event-staffing: SDCC 615K sq ft; Comic-Con Hall H queue management; Naval Base SD + Camp Pendleton + MCAS Miramar military event market; Pfizer/Illumina/Dexcom/Janssen biotech corporate events; Qualcomm/Sony Electronics tech sector; 4 FAQs
+- san-diego-convention-staffing: Hall A-H expert framing; Comic-Con/TwitchCon pop culture specialist; BIO International + pharmaceutical national sales meetings; Hotel del Coronado + Manchester Grand Hyatt + Marriott Marquis hotel convention coverage; bilingual staff; 5 FAQs
+- san-diego-promotional-models: background-matched (automotive, pharma, pop culture, luxury); Hotel del Coronado + Fairmont Grand Del Mar + Lodge at Torrey Pines luxury hotel network; Comic-Con promotional model specialists; SDCC International Boat Show marine product specialists; $28-$65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: san-diego-brand-ambassadors.html title="Brand Ambassadors San Diego | Professional Staffing | AirFresh Marketing" ✓; Comic-Con content in FAQ JSON-LD ✓; Del Mar Fairgrounds in areasServed ✓
+- Committed a29eae2, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/san-diego-brand-ambassadors and /city-services/san-diego-convention-staffing
+
+Status after this run:
+- 17 cities now have enriched city-service content (85 enriched pages total)
+- 141 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Portland, Detroit, Minneapolis, Charlotte, Tampa
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 14)
 
 Goal: City page depth — add enriched content for Philadelphia (Priority #5 continued).
