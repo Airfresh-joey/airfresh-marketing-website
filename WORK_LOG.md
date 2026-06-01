@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 19)
+
+Goal: City page depth — add enriched content for Charlotte NC (Priority #5 continued).
+
+Audit:
+- 21st city enriched; selected Charlotte as highest-leverage unenriched Southeast market
+- Charlotte: 2.7M metro, NASCAR capital of the world (Charlotte Motor Speedway, 90%+ of Cup teams within 50mi, NASCAR Hall of Fame), second-largest US banking center (Bank of America global HQ, Wells Fargo major campus, Truist, Duke Energy HQ, LPL Financial), Charlotte Convention Center (550K sq ft, 200+ events/yr), Bank of America Stadium (74,867 cap, Carolina Panthers), Spectrum Center (19,077 cap, Charlotte Hornets), LPL Financial Focus Conference (7,000+ advisors — Charlotte's largest annual convention), Atrium Health (Top 10 US healthcare system, Charlotte HQ)
+- Charlotte had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 6f67bcc) — new file server/city-content/charlotte.ts:
+- charlotte-brand-ambassadors: NASCAR capital framing; Charlotte Motor Speedway/Bank of America Stadium/Spectrum Center/Charlotte Convention Center/NASCAR Hall of Fame venues; Coca-Cola 600/NASCAR Induction/Charlotte SHOUT!/Panthers/Hornets events; bilingual Spanish-English callout (fast-growing SE Latino community); $22-40/hr pricing; 6 FAQs; 15 areasServed (incl. Rock Hill SC / Fort Mill SC cross-state)
+- charlotte-experiential-marketing: NASCAR + banking dual-identity framing; South End/NoDa/Plaza Midwood/Uptown activation zones; Charlotte Center City Partners/CDOT/NoDa Business Association permitting; Fortune 500 B2B experiential for BoA/Wells Fargo/Duke Energy/Truist; 4 FAQs
+- charlotte-event-management: Charlotte Convention Center (550K sq ft, 200+ events/yr); Bank of America Stadium/Spectrum Center sports venue complex; financial services corporate event market (BoA, Wells Fargo, Truist, LPL Financial); Atrium Health/Novant Health healthcare conference staffing with HIPAA awareness; NASCAR Hall of Fame + Charlotte Motor Speedway race weekend event staffing; 4 FAQs
+- charlotte-convention-staffing: CCC Hall A-E specialist framing; LPL Financial Focus Conference (7,000+ advisors — flagship Charlotte convention); financial services/healthcare/tech triple-industry specialty; NASCAR Hall of Fame event staffing; bilingual Spanish + Portuguese callout; $25-48/hr pricing; 5 FAQs
+- charlotte-promotional-models: NASCAR motorsports activation specialists (Coca-Cola 600 fan zones, sponsor suites); financial services event models (BoA/Wells Fargo compliance-aware presentations); luxury hotel network (JW Marriott Charlotte, Westin, Omni, Kimpton Tryon Park); $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: charlotte-brand-ambassadors.html title="Brand Ambassadors Charlotte | Professional Staffing | AirFresh Marketing" ✓; NASCAR/BoA/Wells Fargo/Charlotte Motor Speedway/Charlotte Convention Center 142× in brand-ambassadors page ✓; FAQPage JSON-LD confirmed ✓
+- Committed 6f67bcc, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/charlotte-brand-ambassadors and /city-services/charlotte-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 21 cities now have enriched city-service content (105 enriched pages total)
+- 137 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Tampa, Baltimore, St. Louis, Cincinnati
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 18)
 
 Goal: City page depth — add enriched content for Minneapolis (Priority #5 continued).
