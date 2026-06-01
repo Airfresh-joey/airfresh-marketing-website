@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 18)
+
+Goal: City page depth — add enriched content for Minneapolis (Priority #5 continued).
+
+Audit:
+- 20th city enriched; selected Minneapolis as highest-leverage unenriched Upper Midwest market
+- Minneapolis: 3.7M metro, global HQ of Target, Best Buy, General Mills, 3M, Land O'Lakes, Cargill, Ameriprise Financial, U.S. Bancorp — 18 Fortune 500 companies; Minneapolis Convention Center (475K sq ft, 200+ events/yr); US Bank Stadium (Super Bowl LII 2018, NCAA Final Four 2019); Target Field, Target Center; Minnesota State Fair (2M+ attendees — largest by total attendance in the US); Medtronic/Boston Scientific — world's medtech capital; Mall of America (40M+ visitors/yr)
+- Minneapolis had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit de0ff0d) — new file server/city-content/minneapolis.ts:
+- minneapolis-brand-ambassadors: Fortune 500 consumer goods capital framing; US Bank Stadium/Target Field/Target Center/Minneapolis Convention Center/Minnesota State Fairgrounds venues; Minnesota State Fair (2M+ attendees)/Soundset/Basilica Block Party/Twin Cities Marathon events; bilingual Somali/Hmong/Spanish callout (unique Minnesota linguistic diversity); $22-40/hr pricing; 6 FAQs; 15 areasServed
+- minneapolis-experiential-marketing: Fortune 500 HQ cluster dual B2B/B2C framing (Target/Best Buy/General Mills/3M corporate event + consumer reach); Chain of Lakes outdoor activation strategy; North Loop premium pop-up zone; State Fair as nation's most cost-effective consumer sampling event; MPRB/City of Minneapolis Special Events/Nicollet Mall BID permitting guidance; 4 FAQs
+- minneapolis-event-management: MCC 475K sq ft/200+ events/yr; medical device industry convention framing (world's medtech capital — Medtronic/Boston Scientific/St. Jude/Abbott/500+ medtech companies); US Bank Stadium/Target Field/Target Center/Xcel Energy Center sports venue complex; Fortune 500 corporate event market; FDA-aware healthcare event staffing; 4 FAQs
+- minneapolis-convention-staffing: MCC Halls A-G specialist framing; medical device convention expertise (Medtronic/Boston Scientific/Abbott — physician/procurement buyer audiences); Radisson Blu MOA/Mystic Lake Casino/Hilton Minneapolis/Hyatt Regency hotel circuit; retail industry conventions (Target/Best Buy HQ market advantage); $25-48/hr pricing; 5 FAQs
+- minneapolis-promotional-models: background-matched talent for medical device/retail/financial services; Loews Minneapolis/W Minneapolis Foshay/Hotel Ivy luxury venue network; US Bank Stadium hospitality suite staffing; State Fair consumer activation talent; $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: minneapolis-brand-ambassadors.html title="Brand Ambassadors Minneapolis | Professional Staffing | AirFresh Marketing" ✓; Minnesota State Fair 38×, Minneapolis Convention Center 22×, Medtronic 6× in convention page ✓; FAQPage JSON-LD confirmed
+- Committed de0ff0d, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/minneapolis-brand-ambassadors and /city-services/minneapolis-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 20 cities now have enriched city-service content (100 enriched pages total)
+- 138 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Charlotte, Tampa, Baltimore, St. Louis
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 17)
 
 Goal: City page depth — add enriched content for Detroit (Priority #5 continued).
