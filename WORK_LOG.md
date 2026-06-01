@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 20)
+
+Goal: City page depth — add enriched content for Tampa FL (Priority #5 continued).
+
+Audit:
+- 22nd city enriched; selected Tampa as highest-leverage unenriched Gulf Coast / Florida market
+- Tampa: 3.2M metro, Super Bowl host city (Super Bowl XVIII, XXV, XXXV, LV 2021), Raymond James Stadium (65,890 cap, Buccaneers), Amalie Arena (19,092 cap, Lightning — 3× Stanley Cup), Tampa Convention Center (600K+ sq ft), Gasparilla Pirate Festival (300,000+ attendees — one of US's largest single-day public events), Florida State Fair (500,000+ over 12 days), Seminole Hard Rock Hotel & Casino Tampa, Citigroup Tampa campus (one of its largest US operations), Raymond James Financial global HQ (St. Pete), Jabil Fortune 500 global HQ, Moffitt Cancer Center (NCI Comprehensive Cancer Center), MacDill AFB (CENTCOM + SOCOM), Ybor City National Historic Landmark District (birthplace of American cigar industry)
+- Tampa had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit f9118b6) — new file server/city-content/tampa.ts:
+- tampa-brand-ambassadors: Super Bowl LV legacy + Gasparilla (300K+ attendees) dual-identity framing; Raymond James Stadium/Amalie Arena/Tampa Convention Center/Florida State Fairgrounds/Seminole Hard Rock/Bayshore Boulevard venues; Gasparilla/Florida State Fair/Outback Bowl/Lightning/Buccaneers events; bilingual Spanish-English callout (Cuban-American/Puerto Rican heritage, Ybor City roots); Latin heritage narrative; MacDill AFB employer market; $22-40/hr pricing; 6 FAQs; 15 areasServed
+- tampa-experiential-marketing: Water Street Tampa ($3B development) + Ybor City National Historic Landmark + Armature Works activation zones; 300 sunny days outdoor advantage; Florida State Fair 500K+ attendees; City of Tampa Special Events Office/Hillsborough County Parks/Ybor City Development Corporation/FL ABT permitting breakdown; Super Bowl activation infrastructure legacy; 4 FAQs
+- tampa-event-staffing: Tampa Convention Center (600K+ sq ft, waterfront); Buccaneers/Lightning/Rays triple pro sports complex; Gasparilla 300K+ + Florida State Fair 500K+ festival staffing; Moffitt Cancer Center/BayCare/Tampa General healthcare conventions; MacDill AFB (CENTCOM/SOCOM) industry days; Seminole Hard Rock corporate meetings; $22-48/hr pricing; 4 FAQs
+- tampa-convention-staffing: TCC specialist (200K sq ft Exhibit Hall + Grand Ballroom); healthcare vertical (Moffitt/BayCare/Tampa General/AdventHealth), technology vertical (Jabil/ReliaQuest/TD SYNNEX/WillowTree), financial services vertical (Raymond James/Citigroup/USAA); Seminole Hard Rock pharma national sales meetings; Gulf Coast hotel circuit (JW Marriott Water Street/Grand Hyatt/Westin Waterside); $25-48/hr; 5 FAQs
+- tampa-promotional-models: background-matched approach (healthcare, financial services, automotive/motorsports, defense); JW Marriott Water Street/Grand Hyatt/Tampa EDITION/Seminole Hard Rock luxury hotel network; Gasparilla Festival + Raymond James Stadium game-day specialists; SPARKMAN WHARF outdoor venue; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: tampa-brand-ambassadors.html — Gasparilla 66×, Tampa Convention Center 14×, Raymond James Stadium 14×, Amalie Arena 12× in HTML ✓; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed f9118b6, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/tampa-brand-ambassadors and /city-services/tampa-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 22 cities now have enriched city-service content (110 enriched pages total)
+- 136 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Baltimore, St. Louis, Cincinnati, Pittsburgh
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 19)
 
 Goal: City page depth — add enriched content for Charlotte NC (Priority #5 continued).
