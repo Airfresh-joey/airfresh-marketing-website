@@ -1882,3 +1882,31 @@ Next actions:
 - GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
 - Venues/[slug]/[service] pages: add mid-body /get-quote CTA banner (same pattern as states + industry-city)
 - Above-fold case study proof section on top city-service pages
+
+## 2026-06-01 MDT
+
+Goal: Add above-fold social proof trust strip to all city-service pages to close the trust gap immediately after the hero.
+
+Audit:
+- ~1,600 city-service pages (e.g. /city-services/new-york-city-brand-ambassadors) had ZERO above-fold trust signals between the hero and the first body content section
+- All other high-intent pages (homepage, /get-quote, state-service, industry-city) already had trust proof
+- City-service pages are the highest-traffic / highest-intent organic landing pages
+
+Shipped (1 file, commit 306d93a):
+- app/city-services/[slug]/page.tsx
+- Inserted compact white trust strip immediately below hero section
+- 5 stats: 4.9/5 avg client rating | 300+ national brands served | 5,000+ vetted staff | 24-hr quote turnaround | 20+ years experience
+- Responsive: all 5 show on desktop, mobile wraps naturally with pipe dividers hidden
+- No new imports needed — all Lucide icons already in scope
+- Applies to all ~1,600 pages instantly (single template)
+
+Checks:
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 306d93a, pushed to origin/main
+- Deployed to Vercel production: https://afm-website-llf75pd84-joey-5223s-projects.vercel.app
+- Verified live: /city-services/new-york-city-brand-ambassadors returns "avg client rating", "national brands served", "vetted staff nationwide", "quote turnaround", "experiential marketing" ✓
+
+Next actions:
+- GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
+- Add same trust strip to /city/[slug] city landing pages (currently also trust-bare above fold)
+- Above-fold case study proof on homepage: replace static text descriptions with mini client logo + result line
