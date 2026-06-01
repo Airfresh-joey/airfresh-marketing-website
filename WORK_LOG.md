@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 16)
+
+Goal: City page depth — add enriched content for Portland (Priority #5 continued).
+
+Audit:
+- 18th city enriched; selected Portland as highest-leverage unenriched Pacific Northwest market
+- Portland: 2.5M metro, global HQ of Nike, North American HQ of Adidas, Columbia Sportswear, Intel (Hillsboro), Oregon Convention Center (255K sq ft, 600K+ attendees/yr), Portland Rose Festival (1M+ visitors), Oregon Brewers Festival (80K+ attendees), Portland Saturday Market (largest continually-operating open-air market in the US)
+- Portland had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 71f9b6f) — new file server/city-content/portland.ts:
+- portland-brand-ambassadors: Pearl District, Alberta Arts District, Mississippi Avenue, Division Street, Hawthorne neighborhoods; Oregon Convention Center, Moda Center, Providence Park, Tom McCall Waterfront Park, Portland Saturday Market venues; Rose Festival, Oregon Brewers Festival, Waterfront Blues Fest, Feast Portland events; Nike/Adidas corporate market framing; bilingual Spanish+Vietnamese callout; sustainability-forward brand values; $22-$40/hr pricing; 6 FAQs; 14 areasServed
+- portland-experiential-marketing: authenticity/sustainability framing for America's most eco-conscious consumer market; Tom McCall Waterfront Park, Pioneer Courthouse Square, Pearl District pop-up strategy; Rose Festival full activation approach; Portland Parks & Recreation + PBOT + Pioneer Sq permitting breakdown; zero-waste activation design section; 4 FAQs
+- portland-event-staffing: OCC 255K sq ft + 600K attendees/yr; Moda Center + Providence Park sports event staffing; Nike/Adidas/Columbia Sportswear/Intel corporate event market; Trail Blazers/Timbers/Thorns (NWSL) activations; Portland Expo Center 330K sq ft; 4 FAQs
+- portland-convention-staffing: OCC Exhibit Halls A-D + Columbia Ballroom specialist framing; outdoor/athletic industry specialty (Nike HQ, Adidas HQ, Columbia HQ — only market globally with this density); Portland Expo Center North Portland; bilingual + sustainability callouts; $25-$48/hr pricing; 5 FAQs
+- portland-promotional-models: outdoor lifestyle authenticity framing (fit/credible over conventional promotional); Nike/Adidas launch event specialists; outdoor gear demo model roster with technical product knowledge; OMSI + Portland Art Museum + Ecotrust Building luxury venue network; $28-$65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: portland-brand-ambassadors.html title="Brand Ambassadors Portland | Professional Staffing | AirFresh Marketing" ✓; Rose Festival 36×, Oregon Convention Center 22×, Pearl District 20× in HTML ✓; FAQPage JSON-LD confirmed
+- Committed 71f9b6f, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/portland-brand-ambassadors and /city-services/portland-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 18 cities now have enriched city-service content (90 enriched pages total)
+- 140 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Detroit, Minneapolis, Charlotte, Tampa
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-05-31 MDT (Run 15)
 
 Goal: City page depth — add enriched content for San Diego (Priority #5 continued).
