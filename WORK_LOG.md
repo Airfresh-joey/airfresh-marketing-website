@@ -1761,3 +1761,31 @@ Next actions:
 - GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2%
 - Above-fold case study proof section on top city-service pages (brand-ambassadors + top 5 cities)
 - /get-quote form: audit UTM param persistence from source/intent query params into form submission
+
+## 2026-05-31 MDT
+
+Goal: Fix missing brand suffix "| AirFresh Marketing" on all industries/[industry] and industries/[industry]/[city] pages.
+
+Audit: 
+- /industries/technology → "Technology Marketing | Experiential & Event Services" ❌ NO brand suffix
+- /industries/technology/san-francisco → "Technology Event Marketing in San Francisco, CA" ❌ NO brand suffix
+- ~618 total pages affected (10 industry landing + 608 industry-city pages)
+- Root cause: industries/[industry]/layout.tsx was setting title as a plain string, which broke Next.js template inheritance from the root layout (template: '%s | AirFresh Marketing')
+- When an intermediate layout sets a plain string title, it resets/drops the template for its descendants
+
+Shipped (1 file, commit b371e26):
+- app/industries/[industry]/layout.tsx
+- Changed title from a plain string to { default: '...| AirFresh Marketing', template: '%s | AirFresh Marketing' }
+- This fixes the [industry] landing page (uses default) AND all 608 [city] child pages (uses template)
+- Also updated openGraph and twitter title fields to include explicit brand suffix
+
+Checks:
+- npm run check passed (0 TypeScript errors)
+- npm run build passed (6305 static pages, 0 errors)
+- Committed b371e26, pushed to origin/main
+- Vercel deploy in progress
+
+Next actions:
+- GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
+- Venues/[slug]/[service] pages: add mid-body /get-quote CTA banner (same pattern as states + industry-city)
+- Above-fold case study proof section on top city-service pages
