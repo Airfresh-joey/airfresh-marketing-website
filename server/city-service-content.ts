@@ -41,6 +41,7 @@ import { bostonContent } from './city-content/boston';
 import { sanFranciscoContent } from './city-content/san-francisco';
 import { philadelphiaContent } from './city-content/philadelphia';
 import { sanDiegoContent } from './city-content/san-diego';
+import { portlandContent } from './city-content/portland';
 
 // Combine all city content into a single lookup
 const allCityServiceContent: Record<string, CityServiceContent> = {
@@ -60,6 +61,7 @@ const allCityServiceContent: Record<string, CityServiceContent> = {
   ...sanFranciscoContent,
   ...philadelphiaContent,
   ...sanDiegoContent,
+  ...portlandContent,
 };
 
 export function getCityServiceContent(slug: string): CityServiceContent | undefined {
