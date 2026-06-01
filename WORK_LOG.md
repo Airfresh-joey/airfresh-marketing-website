@@ -1,5 +1,35 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 21)
+
+Goal: City page depth — add enriched content for Baltimore MD (Priority #5 continued).
+
+Audit:
+- 23rd city enriched; selected Baltimore as highest-leverage unenriched Mid-Atlantic/East Coast market
+- Baltimore: 2.9M metro, Johns Hopkins (world's top-ranked hospital + 42K employees), NSA/CISA/US Cyber Command HQ at Fort Meade (Leidos/SAIC/Northrop Grumman defense corridor), Baltimore Convention Center (300K+ sq ft, Halls A-B-C), M&T Bank Stadium (71,008 cap, Ravens — 2× Super Bowl champs), Camden Yards (45,971 cap, Orioles — "most beautiful ballpark in MLB"), Pimlico Race Course (Preakness Stakes 130K+ attendees), Artscape (350,000+ attendees — largest FREE arts festival in the United States), Under Armour global HQ (Port Covington, 235-acre waterfront development), T. Rowe Price global HQ, McCormick & Company global HQ (Hunt Valley), NIH 20mi away, FDA 30mi away
+- Baltimore had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 9734db1) — new file server/city-content/baltimore.ts:
+- baltimore-brand-ambassadors: Johns Hopkins/healthcare capital + NSA/Fort Meade/defense corridor dual-identity framing; M&T Bank Stadium/Camden Yards/Pimlico/CFG Bank Arena/Maryland State Fairgrounds venues; Preakness Stakes/Artscape (350K+)/Maryland State Fair/Otakon/Ravens/Orioles events; bilingual Spanish-English callout; Under Armour brand market framing; $22-42/hr pricing; 6 FAQs; 15 areasServed
+- baltimore-experiential-marketing: Inner Harbor (14M visitors/yr) + Fells Point/Federal Hill/Canton activation zones; Artscape 350K+ + Preakness 130K+ dual-anchor events; Johns Hopkins/Under Armour Port Covington/Fort Meade B2B framing; Baltimore City DOT/Special Events Office/Maryland Stadium Authority permitting breakdown; 4 FAQs
+- baltimore-event-staffing: BCC (300K+ sq ft, Halls A/B/C) specialist; M&T Bank Stadium/Camden Yards Eutaw Street/Pimlico sports staffing; pharma NSM market with FDA/Sunshine Act compliance (Johns Hopkins/MedStar/LifeBridge); IBEW union coordination context; $22-48/hr pricing; 4 FAQs
+- baltimore-convention-staffing: BCC Hall A/B/C specialist; healthcare/pharma vertical (Johns Hopkins + NIH 20mi + FDA 30mi = highest US clinician density); government/defense (NSA/CISA/Fort Meade, Leidos/SAIC/Booz Allen); financial services (T. Rowe Price/Brown Advisory/Franklin Templeton); $25-48/hr pricing; 5 FAQs
+- baltimore-promotional-models: background-matched (healthcare/clinical for pharma NSMs, athletic for Under Armour, financial for T. Rowe Price); Preakness Stakes Black-Eyed Susan infield + grandstand VIP specialists; Four Seasons Baltimore/Sagamore Pendry/Kimpton Monaco luxury hotel network; $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 9734db1, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/baltimore-brand-ambassadors and /city-services/baltimore-convention-staffing; FAQPage JSON-LD confirmed (2 matches) ✓; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 23 cities now have enriched city-service content (115 enriched pages total)
+- 135 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for St. Louis, Cincinnati, Pittsburgh, Indianapolis
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 20)
 
 Goal: City page depth — add enriched content for Tampa FL (Priority #5 continued).
