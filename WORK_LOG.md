@@ -1,5 +1,36 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 17)
+
+Goal: City page depth — add enriched content for Detroit (Priority #5 continued).
+
+Audit:
+- 19th city enriched; selected Detroit as highest-leverage unenriched Midwest/Great Lakes market
+- Detroit: 4.4M metro, global HQ of Ford Motor Company (Dearborn), General Motors (Renaissance Center), Stellantis (Auburn Hills); North American International Auto Show (NAIAS) at Huntington Place (723K sq ft — largest convention center in Michigan) draws 800K+ attendees; Movement Electronic Music Festival (100K+ at Hart Plaza — world's largest electronic music event); Detroit Jazz Festival (300K+ — world's largest FREE jazz festival); Eastern Market (largest historic public market in US — 80K Flower Day, 20K weekly Saturday Market)
+- Detroit had 9 city-service page combinations; enriched 5 highest-value services
+
+Shipped (commit 52d4e97) — new file server/city-content/detroit.ts:
+- detroit-brand-ambassadors: Motor City authenticity framing; NAIAS/Huntington Place/Ford Field/Little Caesars Arena/Comerica Park/Hart Plaza/Eastern Market/GM RenCen venues; NAIAS/Movement/Detroit Jazz Festival/Flower Day/Woodward Dream Cruise events; Arab-American (Dearborn) bilingual callout; $22-40/hr pricing; 6 FAQs; 15 areasServed
+- detroit-experiential-marketing: Automotive capital authenticity framing (working-class directness, substance over flash); Hart Plaza/Michigan Central Station (Ford campus)/GM RenCen/Eastern Market/Belle Isle activation zones; Big Three Fortune 500 B2B experiential framing; Detroit tech resurgence (Microsoft/Amazon/Google/Bedrock); permitting via Mayor's Office of Special Events; 4 FAQs
+- detroit-event-management: NAIAS vehicle reveal staffing (globally televised = highest professionalism standard); Ford/GM/Stellantis Fortune 500 corporate event market; Henry Ford Health/DMC/Beaumont healthcare conference staffing; Huntington Place 723K sq ft + Ford Field/Little Caesars Arena/Comerica Park sports complex; 4 FAQs
+- detroit-convention-staffing: Huntington Place specialist framing (NAIAS + SAE World Congress automotive engineering + healthcare); automotive product specialist roster (engineering/automotive sales backgrounds); Suburban Collection Showplace + Rock Financial Showplace (Novi) suburban market coverage; $25-48/hr pricing; 5 FAQs
+- detroit-promotional-models: NAIAS automotive show model standards (globally-televised manufacturer reveal requirements); Ford/GM/Stellantis executive corporate host/hostess; Shinola Hotel/Siren Hotel/Detroit Foundation Hotel luxury venue network; Concours d'Elegance of America luxury automotive event; $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: detroit-brand-ambassadors.html title="Brand Ambassadors Detroit | Professional Staffing | AirFresh Marketing" ✓; Huntington Place 36×, NAIAS 26×, Eastern Market 22×, Movement Electronic 14× in HTML ✓; FAQPage JSON-LD confirmed
+- Committed 52d4e97, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/detroit-brand-ambassadors and /city-services/detroit-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 19 cities now have enriched city-service content (95 enriched pages total)
+- 139 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Minneapolis, Charlotte, Tampa, Baltimore
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 16)
 
 Goal: City page depth — add enriched content for Portland (Priority #5 continued).
