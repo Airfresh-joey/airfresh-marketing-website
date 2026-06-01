@@ -311,6 +311,43 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
         </div>
       </section>
 
+      {/* Social Proof Trust Strip — immediately below hero, above content */}
+      <section className="bg-white border-b border-gray-100 py-4 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <Star className="h-4 w-4 text-yellow-400 fill-yellow-400" />
+              <span className="font-semibold text-gray-900">4.9/5</span>
+              <span>avg client rating</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Award className="h-4 w-4 text-primary" />
+              <span className="font-semibold text-gray-900">300+</span>
+              <span>national brands served</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Users className="h-4 w-4 text-primary" />
+              <span className="font-semibold text-gray-900">5,000+</span>
+              <span>vetted staff nationwide</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Clock className="h-4 w-4 text-primary" />
+              <span className="font-semibold text-gray-900">24-hr</span>
+              <span>quote turnaround</span>
+            </div>
+            <div className="hidden md:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <CheckCircle className="h-4 w-4 text-green-500" />
+              <span className="font-semibold text-gray-900">20+ years</span>
+              <span>in experiential marketing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Enriched Content Sections (when city-specific content exists) */}
       {enriched ? (
         <>
