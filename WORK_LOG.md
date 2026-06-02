@@ -1,5 +1,39 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 22)
+
+Goal: City page depth — add enriched content for St. Louis MO (Priority #5 continued).
+
+Audit:
+- 24th city enriched; selected St. Louis as highest-leverage unenriched Midwest market (next on list after Baltimore)
+- St. Louis: 2.8M metro, Anheuser-Busch North American HQ (world's largest brewer, founded 1852 in Soulard), Centene Fortune 500 (70K+ employees, Clayton HQ), Edward Jones global HQ (Maryland Heights, 19K+ branch offices, 10K+ advisor conference), Emerson Electric global HQ (Ferguson), Boeing major defense campus, BJC Healthcare Missouri's largest employer (36K+ employees), Washington University in St. Louis (top-15 medical school)
+- America's Center Convention Complex (502K sq ft exhibit space, Halls A–E, 70K-seat Dome at America's Center), Busch Stadium (45,494 cap, Cardinals — 11× World Series), Enterprise Center (19,150 cap, Blues — 2019 Stanley Cup), CityPark (22,500 cap, St. Louis City SC — new MLS 2023), Chaifetz Arena (11K cap, SLU)
+- Mardi Gras in Soulard (100K+ attendees — one of nation's largest Mardi Gras outside New Orleans), Fair Saint Louis (150K+/day on Arch grounds), Gateway Arch National Park (4M+ visitors/yr), Forest Park (1,371 acres — larger than Central Park, 5 free world-class institutions)
+- Ritz-Carlton Clayton, Four Seasons Hotel St. Louis (riverfront, Arch-adjacent), Hyatt Regency at The Arch (910 rooms), Marriott St. Louis Grand (1,667 rooms, connected to America's Center), St. Louis Union Station Hotel (1894 National Historic Landmark Grand Hall)
+- Bosnian-American community (Bevo Mill — largest Bosnian population outside Europe), growing Latino community
+
+Shipped (commit 2eacb02) — new file server/city-content/st-louis.ts:
+- st-louis-brand-ambassadors: Anheuser-Busch/beverage capital + Centene/BJC healthcare + Edward Jones/Emerson/Boeing Fortune 500 framing; Busch Stadium/Enterprise Center/CityPark/Chaifetz Arena/America's Center/Gateway Arch/Soulard/Forest Park venues; Mardi Gras Soulard (100K+)/Fair Saint Louis (150K+/day)/Cardinals/Blues/City SC events; Bosnian-English + Spanish-English bilingual callouts; Missouri ATC alcohol sampling compliance; $22-40/hr pricing; 6 FAQs; 15 areasServed
+- st-louis-experiential-marketing: Gateway Arch NPS activation permit guidance (30-day NPS window); Soulard Mardi Gras activation strategy; Forest Park 5-institution free venue activation; Ballpark Village Cardinals-season opportunity; Cortex Innovation District tech B2B framing; City of St. Louis Special Events Permit + NPS + St. Louis County Parks permitting breakdown; 4 FAQs
+- st-louis-event-management: America's Center (502K sq ft + 70K Dome) Teamster labor jurisdiction explanation; Edward Jones Advisor Conference (10K+ advisors) framing; Centene/Boeing/BJC NSM market; BJC/WashU FDA-compliant pharma NSM staffing; Busch Stadium 81+ home games + Enterprise Center 41+ Blues games + CityPark MLS; $22-48/hr pricing; 4 FAQs
+- st-louis-convention-staffing: America's Center Halls A–E + Dome specialist; Teamster jurisdiction guidance; Edward Jones financial services convention specialty; BJC/WashU healthcare-background-matched staff; Boeing/Scott AFB defense industry awareness; Marriott St. Louis Grand / Westin / Hyatt Regency Arch / Ritz-Carlton Clayton hotel circuit; $25-48/hr pricing; 5 FAQs
+- st-louis-promotional-models: background-matched (healthcare for BJC/WashU, financial for Edward Jones, beverage for Anheuser-Busch, defense for Boeing); Ritz-Carlton Clayton/Four Seasons/Hyatt Regency Arch/Union Station Grand Hall luxury hotel network; Cardinals Ballpark Village + Blues Enterprise Center + Mardi Gras Soulard sports/festival specialists; Missouri ATC-compliant alcohol sampling staff; $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: st-louis-brand-ambassadors.html — Soulard 32×, Mardi Gras 24×, Busch Stadium 24×, America's Center 28×, Anheuser-Busch 14×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed 2eacb02, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/st-louis-brand-ambassadors and /city-services/st-louis-convention-staffing ✓
+
+Status after this run:
+- 24 cities now have enriched city-service content (120 enriched pages total)
+- 134 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Cincinnati, Pittsburgh, Indianapolis, New Orleans
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 21)
 
 Goal: City page depth — add enriched content for Baltimore MD (Priority #5 continued).
