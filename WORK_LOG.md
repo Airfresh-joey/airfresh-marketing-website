@@ -1,5 +1,41 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-02 MDT (Run 28)
+
+Goal: City page depth — add enriched content for Salt Lake City UT (Priority #5 continued).
+
+Audit:
+- 30th city enriched; selected Salt Lake City as highest-leverage unenriched Mountain West market (next on list per Run 27 WORK_LOG)
+- Salt Lake City: 2.7M Wasatch Front metro, 2034 Winter Olympics host city (officially awarded), Utah Hockey Club (NHL debut 2024-25 — first NHL team in Utah history), Utah Jazz (NBA), Real Salt Lake (MLS)
+- Silicon Slopes: 80-mile tech corridor, 6,500+ tech companies; Qualtrics ($8B SAP acquisition), Domo (Nasdaq), Pluralsight (Vista $3.5B), Instructure/Canvas LMS (global HQ), Goldman Sachs (2,000+ employees), American Express (3,000+ employees), Adobe/Dell/eBay-PayPal campuses
+- Salt Palace Convention Center (515,000 sq ft, Halls A-D); Outdoor Retailer (world's largest outdoor trade show, 50K+ biannual); Sundance Film Festival (Park City, 100K+, January)
+- Unique Utah talent: returned LDS missionaries — genuinely multilingual in 60+ languages (Spanish, Portuguese, Japanese, Mandarin, Korean, Arabic, French, German, etc.)
+- Grand America Hotel (AAA Five Diamond); Montage Deer Valley/Stein Eriksen Lodge/St. Regis Deer Valley luxury resort circuit
+- Days of '47 Pioneer Day (July 24 — 400K+ spectators); Utah Arts Festival (60K+); Twilight Concert Series (100K+ summer); Silicon Slopes Summit (10K+)
+- Life sciences: ARUP Laboratories (4K+ employees), Myriad Genetics (global HQ, NASDAQ), University of Utah Health
+- Nine world-class ski resorts within 45 min of downtown
+
+Shipped (commit 66e4b63) — new file server/city-content/salt-lake-city.ts:
+- salt-lake-city-brand-ambassadors: 2034 Winter Olympics + Silicon Slopes dual framing; Delta Center (Jazz + Utah HC NHL)/Rice-Eccles/America First Field; Outdoor Retailer/Sundance/Days of '47 events; Utah multilingual LDS talent pool; Utah DABC alcohol sampling compliance; $22-40/hr; 6 FAQs; 15 areasServed
+- salt-lake-city-experiential-marketing: Outdoor Retailer + nine ski resort natural backdrop; Sundance Main Street activation; Liberty Park/Twilight Concert Series/Pioneer Park/Temple Square/City Creek Center; SLC Parks + Town of Park City permitting; 2034 Olympics roadmap CTA; 4 FAQs
+- salt-lake-city-event-management: Salt Palace Halls A-D; pharmaceutical NSM FDA Sunshine Act–compliant (ARUP/Myriad/UofU Health); Goldman Sachs/AmEx corporate events; Grand America/Deer Valley luxury events; $22-48/hr; 3 FAQs
+- salt-lake-city-convention-staffing: Salt Palace Halls A-D specialist; outdoor athlete credential standard for Outdoor Retailer; Silicon Slopes tech-literate vertical; 60+ language multilingual pool; FDA life sciences vertical; $25-48/hr; 5 FAQs
+- salt-lake-city-promotional-models: Background-matched (tech/outdoor/finance/healthcare/luxury/Sundance); Grand America (Five Diamond)/Montage/Stein Eriksen (Forbes 5-Star)/St. Regis/Waldorf Astoria Park City luxury circuit; Sundance celebrity-adjacent staffing; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6308 static pages, 0 errors)
+- Committed 66e4b63, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/salt-lake-city-brand-ambassadors and /city-services/salt-lake-city-convention-staffing ✓
+
+Status after this run:
+- 30 cities now have enriched city-service content (150 enriched pages total)
+- 128 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Orlando, Austin (verify), Nashville (verify), then move into next tier
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-02 MDT (Run 27)
 
 Goal: City page depth — add enriched content for Kansas City MO (Priority #5 continued).
