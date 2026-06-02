@@ -1,5 +1,77 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-02 MDT (Run 27)
+
+Goal: City page depth — add enriched content for Kansas City MO (Priority #5 continued).
+
+Audit:
+- 29th city enriched; selected Kansas City as highest-leverage unenriched Midwest/heartland market (next on list per Run 26 WORK_LOG)
+- Kansas City: 2.2M metro, three consecutive Super Bowl championships (Chiefs LVII/LVIII/LIX — first team in NFL history), Arrowhead Stadium (76,416 cap — NFL record crowd noise 142.2 dB), Bartle Hall / KC Convention Center (388,800 sq ft exhibit space)
+- Fortune 500 HQs: Hallmark Cards global HQ (Crown Center, 28,000+ employees), H&R Block global HQ (downtown KCMO), Garmin International global HQ (Olathe KS — GPS/navigation leader, $5B+ revenue, 19,000+ employees), Oracle Health/Cerner (North Kansas City — world's largest health IT company, 28,000+ global employees), Burns & McDonnell global HQ (#1 ENR engineering firm)
+- Healthcare: Children's Mercy Hospital (top-10 US children's hospital), KU Health System, Saint Luke's Health System — 50,000+ healthcare workers metro
+- American Royal World Series of Barbecue (65,000+ attendees — world's largest BBQ competition); Plaza Art Fair (200,000+ attendees); First Fridays Crossroads (10,000+/month); 2023 NFL Draft (300,000+ — largest single-event crowd in KC history)
+- Bistate market: KCMO (Missouri) + Johnson County KS (Garmin/Sprint-T-Mobile/AMC Theatres); IATSE Local 31 union jurisdiction; Overland Park Convention Center (142,000 sq ft, suburban JoCo)
+
+Shipped (commit a79ae7f) — new file server/city-content/kansas-city.ts:
+- kansas-city-brand-ambassadors: Chiefs three-peat framing (LVII/LVIII/LIX — NFL first); Arrowhead (76,416)/Kauffman/T-Mobile/Children's Mercy Park venues; American Royal BBQ (65K+)/Plaza Art Fair (200K+)/First Fridays/NFL Draft (300K+) events; bistate MO+KS market; Hallmark/H&R Block/Garmin/Oracle Health Fortune 500 depth; Missouri ATC + Kansas ABC dual-state sampling compliance; bilingual Spanish-English; $22-40/hr; 6 FAQs; 15 areasServed
+- kansas-city-experiential-marketing: Chiefs tailgate culture framing (Truman Sports Complex lots A–K, 5+ hr pre-game window); Country Club Plaza Art Fair + First Fridays Crossroads + City Market activation strategy; KC Streetcar activation integration; KCMO Special Events + Plaza Association + Crossroads Community Association permitting; 4 FAQs
+- kansas-city-event-management: Bartle Hall (388,800 sq ft) + Municipal Auditorium (10,700) + Music Hall (2,400) specialist; IATSE Local 31 union coordination; Kauffman Center ($413M) corporate venue; Oracle Health/Cerner healthcare IT NSM market; FDA Sunshine Act compliance; $22-48/hr; 3 FAQs
+- kansas-city-convention-staffing: Bartle Hall Hall A–D specialist; 5-vertical approach (healthcare IT, engineering, technology/GPS/Garmin, financial services, consumer goods); Loews KC skybridge hotel; Overland Park Convention Center (142K sq ft, JoCo) coverage; Mandarin/Korean-English callout; $25-48/hr; 5 FAQs
+- kansas-city-promotional-models: background-matched (healthcare IT/pharma, engineering, creative/Hallmark, sports-authentic/Chiefs, BBQ-fluent/American Royal); Westin Crown Center/InterContinental/The Fontaine luxury hotel network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: kansas-city-brand-ambassadors.html — Arrowhead 18×, American Royal 19×, Garmin 16×, Super Bowl 10×; FAQPage JSON-LD confirmed ✓
+- Committed a79ae7f, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/kansas-city-brand-ambassadors and /city-services/kansas-city-convention-staffing ✓
+
+Status after this run:
+- 29 cities now have enriched city-service content (145 enriched pages total)
+- 129 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Salt Lake City, Raleigh, Columbus
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
+## 2026-06-02 MDT (Run 26)
+
+Goal: City page depth — add enriched content for New Orleans LA (Priority #5 continued).
+
+Audit:
+- 28th city enriched; selected New Orleans as highest-leverage unenriched Southern events/convention market (next on list after Indianapolis)
+- New Orleans: 18M annual visitors, Ernest N. Morial Convention Center (1.1M sq ft — 6th largest in US, Halls A–J, 140 meeting rooms, Great Hall 4,000 cap, skywalk to Hilton New Orleans Riverside), Caesars Superdome (73,208 cap — most Super Bowls hosted in NFL history, Saints), Smoothie King Center (18,500 cap, Pelicans)
+- Mardi Gras Season (1M+ visitors), Jazz Fest (500,000+ at Fair Grounds Race Course, two weekends), Essence Festival of Culture (500,000+ — largest African American cultural event in US, Caesars Superdome), French Quarter Festival (600,000+ — largest FREE music festival in the South), Sugar Bowl (75,000+, January 1)
+- Ochsner Health System (Louisiana's largest health system, 40+ hospitals, 36,000+ employees), Tulane Medical Center, UMC New Orleans — major pharma NSM market
+- Entergy Corporation (Fortune 500, global HQ New Orleans), Shell/Chevron/Halliburton/Baker Hughes Gulf of Mexico operations — energy industry B2B convention market
+- IATSE Local 298 (New Orleans stagehands) union jurisdiction at ENMCC and Caesars Superdome
+- National WWII Museum (one of the most-visited museums in US, 600,000+ visitors/yr) — premier Warehouse District event venue
+- Roosevelt New Orleans (Waldorf Astoria), Ritz-Carlton New Orleans, Four Seasons New Orleans (2021), Hyatt Regency (1,193 rooms, connected to ENMCC), JW Marriott
+- Neighborhood depth: French Quarter, Warehouse/Arts District, Garden District/Magazine Street, Marigny/Frenchmen Street, Bywater, Tremé, Mid-City, Uptown/St. Charles Avenue
+- Bilingual: French-English (Louisiana Creole heritage) + Spanish-English (growing Latino community, Kenner/Metairie/Westbank) + Portuguese (oil/gas industry delegations)
+
+Shipped (commit 3e6007e) — new file server/city-content/new-orleans.ts:
+- new-orleans-brand-ambassadors: ENMCC (1.1M sq ft, 6th largest US) / Caesars Superdome / Smoothie King Center framing; Mardi Gras (1M+)/Jazz Fest (500K+)/Essence Festival (500K+)/French Quarter Festival (600K+)/Sugar Bowl (75K+) full events calendar; Ochsner/Entergy Fortune 500 corporate market; bilingual French-English + Spanish-English callout; Louisiana ATC alcohol sampling compliance; $22-40/hr; 6 FAQs; 15 areasServed
+- new-orleans-experiential-marketing: Mardi Gras parade route activation strategy (Endymion/Bacchus/Orpheus/Rex/Zulu); Jazz Fest hospitality tent program (50+ Fortune 500 corporate tents at Fair Grounds); Essence Festival 30-block sponsor activation footprint; National WWII Museum/Warehouse District framing; NORDC/French Quarter Management District/DPW/City Parks permit breakdown; 4 FAQs
+- new-orleans-event-management: ENMCC Halls A–J + Great Hall (4,000 cap, 140 meeting rooms) specialist; IATSE Local 298 union coordination explanation; pharmaceutical NSM market (FDA Sunshine Act/Open Payments); oil/gas energy industry (Shell/Chevron/Halliburton/Entergy); Hyatt Regency (1,193 rooms, skywalk to ENMCC); $22-48/hr; 4 FAQs
+- new-orleans-convention-staffing: ENMCC Hall A (400K sq ft) specialist framing; 5-vertical industry approach (healthcare/pharma for ADA/AHA/NSMs, tech for Cisco Live 20K+, legal for ABA, oil-gas/Gulf of Mexico, food/hospitality); Roosevelt Waldorf Astoria/Ritz-Carlton/Four Seasons/Windsor Court luxury hotel circuit; bilingual + Portuguese callout; $25-48/hr; 5 FAQs
+- new-orleans-promotional-models: background-matched approach (pharma/clinical FDA Sunshine Act-trained for NSMs, culturally fluent for Essence Festival, high-energy for Mardi Gras, sophisticated for Jazz Fest tents); Roosevelt/Ritz-Carlton/Four Seasons/Windsor Court luxury venue network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: new-orleans-brand-ambassadors.html — Mardi Gras 42×, Jazz Fest 36×, Ernest N. Morial 24×, Essence Festival confirmed; FAQPage JSON-LD confirmed ✓
+- Committed 3e6007e, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/new-orleans-brand-ambassadors and /city-services/new-orleans-convention-staffing ✓
+
+Status after this run:
+- 28 cities now have enriched city-service content (140 enriched pages total)
+- 130 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Kansas City, Salt Lake City, Raleigh, Columbus
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-02 MDT (Run 25)
 
 Goal: City page depth — add enriched content for Indianapolis IN (Priority #5 continued).
