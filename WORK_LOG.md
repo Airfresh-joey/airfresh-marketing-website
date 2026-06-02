@@ -1,5 +1,43 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-02 MDT (Run 24)
+
+Goal: City page depth — add enriched content for Pittsburgh PA (Priority #5 continued).
+
+Audit:
+- 26th city enriched; selected Pittsburgh as highest-leverage unenriched Northeast/Rust Belt market (next on list after Cincinnati)
+- Pittsburgh: 2.4M metro, UPMC (90K+ employees, 40+ hospitals, $26B+ revenue — one of top-5 academic medical centers in US), Carnegie Mellon University (ranked #1 globally for AI/computer science), University of Pittsburgh, PNC Financial Services global HQ (Tower at PNC Plaza — world's most energy-efficient skyscraper), PPG Industries global HQ (world's largest paint/coatings company, $18B+ revenue, 50K+ employees), Dick's Sporting Goods global HQ (Coraopolis), U.S. Steel HQ, Highmark Health HQ ($25B health insurance)
+- Allegheny Health Network (14 hospitals, 10K+ physicians, Drexel academic partner); 100+ AI/autonomous vehicle companies (Aurora/Waymo/Argo AI/Carnegie Robotics ecosystem)
+- David L. Lawrence Convention Center (313K sq ft exhibit, 53 meeting rooms, world's largest LEED Gold convention center, cable-stayed architecture landmark); PPG Paints Arena (18,387 cap, Penguins — 5x Stanley Cup)
+- Acrisure Stadium (68,400 cap, Steelers — 6x Super Bowl champions, most in NFL history); PNC Park (38,747 cap, Pirates — consistently #1 most beautiful ballpark in MLB)
+- Roberto Clemente Bridge (pedestrian festival zone on game days — 100K+ in North Shore sports district); North Shore sports district (Acrisure + PNC Park + Stage AE)
+- Three Rivers Arts Festival (750,000+ attendees — Pennsylvania's largest annual outdoor arts event); Picklesburgh (Strip District, 100,000+); Pittsburgh Marathon (30,000+); Pittsburgh Vintage Grand Prix; Three Rivers Regatta
+- Strip District Saturday Market (30,000+ weekend visitors, Penn Avenue corridor, Wholey's Fish Market, PA Macaroni Co. since 1902, Pittsburgh Public Market)
+- Omni William Penn Hotel (1916 National Historic Landmark, Grand Ballroom seats 1,000); Fairmont Pittsburgh; Carnegie Music Hall (1895, 1,989-seat Oakland); Soldiers & Sailors Memorial Hall
+- Neighborhood depth: Strip District, Lawrenceville (Butler Street), Shadyside (Walnut Street), Squirrel Hill, South Side Works (Carson Street), Oakland, Mount Washington, North Shore
+
+Shipped (commit ebb2937) — new file server/city-content/pittsburgh.ts:
+- pittsburgh-brand-ambassadors: UPMC/CMU healthcare-AI capital framing; Acrisure Stadium (6x Super Bowl)/PNC Park (#1 MLB beauty)/PPG Paints Arena (5x Stanley Cup) sports trifecta; Three Rivers Arts Festival (750K+)/Picklesburgh (100K+)/Strip District Saturday Market activation depth; Strip District/Lawrenceville/Shadyside/Squirrel Hill/South Side/Mount Washington neighborhood depth; PA PLCB alcohol sampling compliance; bilingual Spanish/Mandarin/Korean callout; $22-40/hr pricing; 6 FAQs; 15 areasServed
+- pittsburgh-experiential-marketing: North Shore Roberto Clemente Bridge pedestrian festival zone on game days; Strip District Saturday Market pop-up strategy; Three Rivers Arts Festival Pittsburgh Cultural Trust coordination; CMU/UPMC B2B innovation experiential; DLCC world's largest LEED Gold framing; City of Pittsburgh Office of Special Events + SEA North Shore approval process; 4 FAQs
+- pittsburgh-event-management: DLCC 313K sq ft/53 meeting rooms specialist; HIMSS 40K+ healthcare IT framing; UPMC/AHN pharma NSM market (FDA Sunshine Act + HIPAA protocols); PNC/PPG/Dick's/Highmark Fortune 500 corporate event market; IATSE Local 3 union jurisdiction explanation; Omni William Penn/Fairmont/Carnegie Music Hall luxury venue circuit; $22-48/hr; 3 FAQs
+- pittsburgh-convention-staffing: DLCC cable-stayed architecture + 1.5M sq ft complex specialist; HIMSS/AIA anchor conventions; healthcare/life sciences vertical (UPMC+AHN); AI/robotics vertical (CMU #1 + 100+ AV companies + Pittsburgh Tech Council); tech-literate CMU/Pitt alumni staff callout; Wyndham Grand/Westin/Airport Marriott hotel convention circuit; $25-48/hr; 5 FAQs
+- pittsburgh-promotional-models: background-matched approach (healthcare/clinical for UPMC, finance/accounting for PNC/Highmark, technical for CMU/AI industry, athletic/sports for Steelers/Pirates/Penguins); Omni William Penn/Fairmont/Carnegie Music Hall/Soldiers & Sailors luxury venue network; North Shore game-day activation specialists with PA PLCB compliance; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: pittsburgh-brand-ambassadors.html — UPMC 22×, Acrisure 28×, PNC Park 28×, David L. Lawrence 10×, Carnegie Mellon 4×; FAQPage JSON-LD confirmed (1 match) ✓
+- Committed ebb2937, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/pittsburgh-brand-ambassadors and /city-services/pittsburgh-convention-staffing; enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 26 cities now have enriched city-service content (130 enriched pages total)
+- 132 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Indianapolis, New Orleans, Kansas City, Salt Lake City
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 23)
 
 Goal: City page depth — add enriched content for Cincinnati OH (Priority #5 continued).
