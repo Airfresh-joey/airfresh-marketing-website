@@ -2145,3 +2145,31 @@ Next actions:
 - GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
 - Add same trust strip to /city/[slug] city landing pages (currently also trust-bare above fold)
 - Above-fold case study proof on homepage: replace static text descriptions with mini client logo + result line
+
+## 2026-06-02 MDT
+
+Goal: Add above-fold social proof trust strip to state-service pages.
+
+Audit:
+- state/[state]/[service] pages (~459 pages) had no above-fold trust signals after hero
+- city-services pages already had the strip (added Run 26)
+- state-service pages are high-intent ("Brand Ambassadors in California", etc.) but zero social proof until mid-page
+
+Shipped (1 file, commit 3deac25):
+- app/states/[state]/[service]/page.tsx
+- Added `Star, Clock` to Lucide imports
+- Inserted compact white trust strip immediately below hero section (before State Info section)
+- 5 stats: 4.9/5 avg client rating | 300+ national brands served | 5,000+ vetted staff | 24-hr quote turnaround | 20+ years experience
+- Matches exact pattern from city-services (Run 26)
+- Applies to all 459 state-service pages instantly (single template)
+
+Checks:
+- npm run build passed (6305 static pages, 0 errors)
+- Committed 3deac25, pushed to origin/main
+- Vercel deploy triggered but still building at time of report
+
+Next actions:
+- Verify live: /states/california/brand-ambassadors should show trust strip
+- Add same trust strip to /states/[state]/page.tsx (state landing pages, currently also bare above fold)
+- GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
+- cities/[slug]/page.tsx trust strip (city hub pages)
