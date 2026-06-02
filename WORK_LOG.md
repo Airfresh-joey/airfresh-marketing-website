@@ -1,5 +1,40 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-02 MDT (Run 29)
+
+Goal: City page depth — add enriched content for Orlando FL (Priority #5 continued).
+
+Audit:
+- 31st city enriched; selected Orlando as highest-leverage unenriched Florida/Southeast tourism-convention market (next on list per Run 28 WORK_LOG)
+- Orlando: 75M annual visitors (most-visited US tourist destination), Orange County Convention Center (2.1M sq ft exhibit space — 2nd largest in US), 130,000+ hotel rooms (highest in Florida), $6B+ annual meetings industry economic impact
+- AdventHealth global HQ Altamonte Springs (83,000+ employees, 50+ hospitals — largest faith-based nonprofit health system in US); Medical City Lake Nona (UCF Health, Nemours Children's, UCF College of Medicine, Orlando VA, Tavistock biotech campus)
+- IBS/Design & Construction Week (100,000+ trade, February); PGA Merchandise Show (40,000+ golf industry, January); Premiere Orlando (65,000+ beauty, June); HIMSS Global Health Conference (40,000+ healthcare IT); MegaCon (120,000+, spring)
+- Walt Disney World (50M+ annual visitors, 4 theme parks, 40+ hotels, EPCOT Food & Wine Festival millions); Universal Orlando (Epic Universe 2025); Kia Center (Orlando Magic NBA); Camping World Stadium (65,890 cap)
+- EA Sports / Electronic Arts Tiburon Studios (Maitland — Madden/EA Sports FC franchise); Darden Restaurants global HQ (Olive Garden, LongHorn, Capital Grille — Lake Buena Vista area); UCF (70,000+ students — largest/2nd largest US university by enrollment)
+- Orlando's Puerto Rican community: 300,000+ — largest PR population of any US city outside Puerto Rico; large Brazilian-American community (Kissimmee/Osceola corridor) → bilingual Spanish/Portuguese/Haitian Creole callout
+- Key NSM hotels: Rosen Shingle Creek (1,501 rooms, 445K sq ft meeting space), Gaylord Palms (1,406 rooms, Kissimmee), Caribe Royale (1,350 suites), Hyatt Regency Orlando (1,641 rooms — OCCC walkway), JW Marriott Grande Lakes, Four Seasons/Waldorf Astoria
+
+Shipped (commit 1b93639) — new file server/city-content/orlando.ts:
+- orlando-brand-ambassadors: OCCC (2.1M sq ft, 2nd largest US) + IBS/PGA Show/Premiere/HIMSS/MegaCon trade show framing; AdventHealth (83K employees, largest faith-based nonprofit health system); EA Sports/Darden/UCF corporate market; Walt Disney World 50M+ / Universal Epic Universe 2025 theme park district; 75M annual visitors; Florida ABT alcohol sampling compliance; bilingual Spanish/Portuguese/Haitian Creole callout; $22-42/hr; 6 FAQs; 15 areasServed
+- orlando-experiential-marketing: EPCOT Food & Wine Festival + I-Drive corridor + Disney Springs activation strategy; Lake Eola Park + Thornton Park + Mills 50 + Winter Park Park Ave neighborhood zones; City of Orlando Special Events permitting guide; 4 FAQs
+- orlando-event-management: OCCC North/South/West Buildings specialist; Rosen Shingle Creek + Gaylord Palms pharmaceutical NSM market; AdventHealth/HCA/UCF Health/Nemours healthcare event staffing; FDA Sunshine Act / Open Payments compliance; $22-48/hr; 3 FAQs
+- orlando-convention-staffing: 5-vertical industry approach (construction/IBS, golf/PGA Show, healthcare/HIMSS, consumer/MegaCon, beauty/Premiere Orlando); OCCC Hall A-D specialist; bilingual Spanish/Portuguese callout; $25-48/hr; 5 FAQs
+- orlando-promotional-models: background-matched (pharma/clinical, construction, golf, beauty professional, theme park entertainment talent pool); Four Seasons/Waldorf Astoria/Ritz-Carlton Grande Lakes luxury hotel network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6314 static pages, 0 errors)
+- Committed 1b93639, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/orlando-brand-ambassadors and /city-services/orlando-convention-staffing ✓
+
+Status after this run:
+- 31 cities now have enriched city-service content (155 enriched pages total)
+- 127 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Austin (verify if exists — city-content/austin.ts present, check quality), Nashville (verify), then Jacksonville FL, Oklahoma City, Memphis
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-02 MDT (Run 28)
 
 Goal: City page depth — add enriched content for Salt Lake City UT (Priority #5 continued).
