@@ -930,6 +930,43 @@ export default async function CityPage({ params }: CityPageProps) {
         </div>
       </section>
 
+      {/* Social Proof Trust Strip */}
+      <section className="bg-white border-b border-gray-100 py-4 shadow-sm">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap items-center justify-center gap-6 md:gap-10 text-sm text-gray-600">
+            <div className="flex items-center gap-2">
+              <Star className="w-4 h-4 text-yellow-400 fill-yellow-400" />
+              <span className="font-semibold text-gray-900">4.9/5</span>
+              <span>avg client rating</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Award className="w-4 h-4 text-primary" />
+              <span className="font-semibold text-gray-900">300+</span>
+              <span>national brands served</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Users className="w-4 h-4 text-primary" />
+              <span className="font-semibold text-gray-900">5,000+</span>
+              <span>vetted staff nationwide</span>
+            </div>
+            <div className="hidden sm:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <Clock className="w-4 h-4 text-primary" />
+              <span className="font-semibold text-gray-900">24-hr</span>
+              <span>quote turnaround</span>
+            </div>
+            <div className="hidden md:block h-4 w-px bg-gray-200" />
+            <div className="flex items-center gap-2">
+              <CheckCircle className="w-4 h-4 text-green-500" />
+              <span className="font-semibold text-gray-900">20+ years</span>
+              <span>in experiential marketing</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Local Stats Section */}
       <section className="py-16 bg-gradient-to-r from-cyan-600 to-blue-600 text-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
