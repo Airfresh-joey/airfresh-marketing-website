@@ -251,6 +251,148 @@ export const industries: Industry[] = [
     ],
     heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
   },
+  // ── New SEO-targeted verticals ─────────────────────────────────────────────
+
+  {
+    id: "tech-saas",
+    slug: "tech-saas",
+    name: "Tech & SaaS",
+    title: "Tech & SaaS Event Marketing | Conference Staffing & Product Demos",
+    metaDescription: "Specialized experiential marketing for tech and SaaS brands. Demo specialists, brand ambassadors, and field marketing teams for product launches, conferences, and demand-gen campaigns nationwide.",
+    keywords: ["tech event marketing", "SaaS field marketing", "software product demos", "tech conference staffing", "B2B event marketing", "demand gen campaigns"],
+    heroTitle: "Tech & SaaS Event Marketing",
+    heroSubtitle: "Demo Specialists and Field Teams That Turn Interest Into Pipeline",
+    description: "AirFresh Marketing helps tech and SaaS companies convert event audiences into qualified leads. From CES and Dreamforce to smaller demand-gen road shows, our teams are trained on your product, your ICP, and your conversion goals so every interaction moves prospects down the funnel.",
+    challenges: ["Explaining complex software to non-technical audiences", "Standing out in saturated conference expo halls", "Capturing high-quality leads at scale", "Aligning field teams with sales messaging"],
+    solutions: ["Product-specific training for every rep", "Interactive demo scripting and objection guides", "CRM-integrated lead capture tools", "Real-time performance dashboards shared with your sales team"],
+    services: ["Product Demo Specialists", "Conference Booth Staff", "Demand-Gen Road Shows", "Lead Qualification Teams", "Launch Event Staffing", "Developer Advocacy Support"],
+    caseStudyIds: ["microsoft-nrf-activation"],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Tech Events Staffed", value: "300+" },
+      { label: "Product Demos Delivered", value: "1M+" },
+      { label: "Tech Clients Served", value: "75+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "food-beverage",
+    slug: "food-beverage",
+    name: "Food & Beverage",
+    title: "Food & Beverage Sampling & Activation | Event Marketing Agency",
+    metaDescription: "Full-service food and beverage sampling programs, in-store demos, and festival activations. TIPS-certified staff, compliance-ready, and experienced across grocery, food service, and DTC brands.",
+    keywords: ["food and beverage sampling", "F&B brand activation", "grocery store demos", "food festival staffing", "beverage event marketing", "product sampling programs"],
+    heroTitle: "Food & Beverage Sampling & Activation",
+    heroSubtitle: "Drive Trial, Build Loyalty, and Move Units at the Point of Taste",
+    description: "AirFresh Marketing executes product sampling, pop-up tastings, and large-scale festival activations for food and beverage brands. Our staff are trained on your flavor profiles, nutritional claims, and brand story so every sample is a sales conversation.",
+    challenges: ["Consistent brand story across hundreds of demo locations", "Regulatory compliance for alcohol and health claims", "Perishable product logistics at scale", "Measuring trial-to-purchase conversion"],
+    solutions: ["Centralized brand training with digital certification", "TIPS-certified staff for all alcohol activations", "Cold-chain logistics coordination", "POS data integration and post-event sales lift reporting"],
+    services: ["In-Store Product Sampling", "Festival & Event Activations", "Bar & Restaurant Takeovers", "Launch Events & Media Tastings", "Grocery Demo Programs", "Brand Ambassador Teams"],
+    caseStudyIds: ["coca-cola-music-festival"],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Samples Distributed", value: "25M+" },
+      { label: "F&B Brands Served", value: "200+" },
+      { label: "Retail Locations", value: "10K+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "finance-insurance",
+    slug: "finance-insurance",
+    name: "Finance & Insurance",
+    title: "Finance & Insurance Field Marketing | Event Staffing & Lead Generation",
+    metaDescription: "Professional field marketing for finance and insurance brands. Brand ambassadors, lead generation teams, and event staff for fintech launches, banking activations, and insurance enrollment campaigns.",
+    keywords: ["finance event marketing", "insurance field marketing", "fintech brand ambassadors", "banking activation staffing", "financial services lead generation", "enrollment event staff"],
+    heroTitle: "Finance & Insurance Field Marketing",
+    heroSubtitle: "Compliant, Professional Teams That Build Trust and Generate Leads",
+    description: "AirFresh Marketing provides polished, compliance-aware field marketing staff for banks, insurers, fintech companies, and wealth management firms. Our teams are trained to represent your brand with precision, handle sensitive conversations professionally, and deliver measurable lead volume.",
+    challenges: ["Strict compliance and disclosure requirements", "Building consumer trust in a skeptical environment", "High-net-worth client service expectations", "Tracking cost-per-lead across field activations"],
+    solutions: ["Compliance script review and approval workflows", "Trust-building communication training", "White-glove hospitality protocols", "Closed-loop lead attribution to your CRM"],
+    services: ["Enrollment & Sign-Up Events", "Financial Product Launch Staff", "Branch Opening Activations", "Fintech Conference Teams", "Trade Show Booth Staff", "Lead Generation Campaigns"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Financial Events Staffed", value: "150+" },
+      { label: "Banking & Fintech Clients", value: "60+" },
+      { label: "Leads Generated", value: "500K+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "retail-cpg",
+    slug: "retail-cpg",
+    name: "Retail & CPG",
+    title: "Retail & CPG Sampling Programs | In-Store Activation & Field Marketing",
+    metaDescription: "National retail activation and CPG sampling programs. Drive trial, capture shopper data, and lift sales at the shelf with AirFresh Marketing's trained in-store demo teams and street sampling crews.",
+    keywords: ["CPG sampling programs", "retail activation agency", "in-store product demos", "shopper marketing staff", "consumer goods field marketing", "national sampling programs"],
+    heroTitle: "Retail & CPG Sampling Programs",
+    heroSubtitle: "Turn Shelf Space Into Market Share With Hands-On Sampling",
+    description: "AirFresh Marketing operates national in-store demo programs and retail activations for CPG brands across grocery, drug, club, mass, and specialty retail channels. Our trained brand educators drive trial and capture real-time consumer feedback that informs your product and marketing decisions.",
+    challenges: ["Retailer relationship and compliance requirements", "Scaling consistent execution across 100+ locations", "Capturing shopper insights in real time", "Measuring ROI and sales lift at the SKU level"],
+    solutions: ["Dedicated retail channel expertise for each major banner", "Standardized training with retailer-specific modules", "Tablet-based data collection with brand dashboard access", "Pre/post scan data analysis and sales lift reporting"],
+    services: ["In-Store Demo Programs", "Grocery & Club Sampling", "Mass Retail Activations", "DTC Pop-Up Shops", "Street Sampling Teams", "Shopper Research Programs"],
+    caseStudyIds: ["coca-cola-music-festival"],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Retail Locations Serviced", value: "10K+" },
+      { label: "Samples Distributed", value: "25M+" },
+      { label: "CPG Brands Served", value: "200+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "entertainment-media",
+    slug: "entertainment-media",
+    name: "Entertainment & Media",
+    title: "Entertainment & Media Activations | Experiential Marketing for Studios & Networks",
+    metaDescription: "Experiential marketing and event staffing for entertainment and media brands. Fan activations, premiere events, streaming campaign staffing, and pop-culture experiential for studios, networks, and streaming platforms.",
+    keywords: ["entertainment event marketing", "media brand activation", "film premiere staffing", "streaming campaign staff", "fan engagement events", "pop-up entertainment experiences"],
+    heroTitle: "Entertainment & Media Activations",
+    heroSubtitle: "Create Superfans With Immersive Brand Experiences",
+    description: "AirFresh Marketing designs and staffs experiential campaigns for studios, networks, streaming platforms, live entertainment companies, and media brands. From world-premiere activations to ongoing fan engagement programs, we create the memorable moments that build loyal audiences and generate social buzz.",
+    challenges: ["Generating organic social coverage from live activations", "Managing large, passionate fan crowds safely", "Coordinating talent appearances and brand protocols", "Maintaining brand secrecy for unreleased projects"],
+    solutions: ["Social-first activation design with shareable moments built in", "Crowd management trained staff and flow planning", "Talent liaison and green room coordination", "NDA compliance protocols and secure briefing processes"],
+    services: ["Premiere & Launch Activations", "Fan Zone Experiences", "Streaming Campaign Pop-Ups", "Convention & Comic-Con Booths", "Brand Ambassador Programs", "Tour & Road Show Staffing"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Entertainment Events Staffed", value: "400+" },
+      { label: "Fans Engaged", value: "50M+" },
+      { label: "Media & Studio Clients", value: "60+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+  {
+    id: "cannabis",
+    slug: "cannabis",
+    name: "Cannabis & CBD",
+    title: "Cannabis & CBD Marketing | Dispensary Events & Brand Activations",
+    metaDescription: "Compliance-trained event staffing and brand activation for cannabis and CBD brands. Dispensary grand openings, trade show booth staff, product educators, and experiential campaigns in legal markets nationwide.",
+    keywords: ["cannabis event marketing", "dispensary event staff", "CBD brand ambassadors", "cannabis brand activation", "marijuana trade show staffing", "cannabis consumer education"],
+    heroTitle: "Cannabis & CBD Marketing",
+    heroSubtitle: "Professional, Compliant Teams for the Regulated Cannabis Market",
+    description: "AirFresh Marketing provides compliance-trained brand ambassadors and event staff for cannabis brands, multi-state operators, and CBD companies. We understand state-by-state regulatory landscapes and build activations that educate consumers, represent your brand professionally, and drive dispensary traffic.",
+    challenges: ["State-by-state compliance requirements differ significantly", "Consumer education and stigma reduction", "Age verification and responsible use protocols", "Limited traditional advertising channels increasing reliance on events"],
+    solutions: ["Market-specific compliance training per state", "Educational storytelling frameworks for staff", "Digital age-gate verification at all activations", "Heavy investment in experiential as a primary growth channel"],
+    services: ["Dispensary Grand Openings", "Cannabis Trade Show Staff", "Product Education Teams", "Brand Ambassador Programs", "Sampling Events (where permitted)", "Industry Conference Staffing"],
+    caseStudyIds: [],
+    stats: [
+      { label: "Years Experience", value: "20+" },
+      { label: "Cannabis Events Staffed", value: "100+" },
+      { label: "Dispensary Openings", value: "50+" },
+      { label: "States Covered", value: "20+" },
+      { label: "Cities Nationwide", value: "50+" }
+    ],
+    heroImage: "/images/case-studies/gallery/formula1/formula1-14.jpg"
+  },
+
+  // ── Existing non-targeted verticals ────────────────────────────────────────
   {
     id: "real-estate-property",
     slug: "real-estate-property",
