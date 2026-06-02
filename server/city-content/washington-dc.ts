@@ -173,6 +173,255 @@ export const washingtonDcContent: Record<string, CityServiceContent> = {
     ],
   },
 
+  'washington-dc-event-management': {
+    slug: 'washington-dc-event-management',
+    cityName: 'Washington DC',
+    stateName: 'District of Columbia',
+    serviceName: 'Event Management',
+    h1: 'Event Management Washington DC',
+    metaTitle: 'Event Management Washington DC | Corporate Event Staffing | AirFresh Marketing',
+    metaDescription:
+      'Event Management Washington DC from AirFresh Marketing. Professional event staffing for Walter E. Washington Convention Center, Gaylord National, Kennedy Center, Capitol Hill receptions, and government contractor corporate events across the DC metro.',
+    heroDescription:
+      'Event Management in Washington DC demands a workforce that understands the city\'s unique professional culture — a market where your event staff may interact with cabinet secretaries, members of Congress, Fortune 500 C-suites, foreign ambassadors, and the most credentialed professional audience in the United States. AirFresh Marketing provides comprehensive event management staffing for every segment of the Washington DC event economy: large-scale convention programs at the Walter E. Washington Convention Center, pharmaceutical national sales meetings at the Gaylord National Resort, corporate receptions at the Ronald Reagan Building and Kennedy Center, Northern Virginia defense contractor corporate events, and Maryland suburban hotel conferences for healthcare and technology industry clients.',
+    sections: [
+      {
+        heading: 'Event Management Washington DC: Walter E. Washington Convention Center and the Association Economy',
+        content:
+          'Washington DC is the world\'s most association-dense city — home to 2,800+ national trade associations, advocacy organizations, and nonprofit headquarters that generate the largest concentration of annual meeting demand of any convention market in the United States. The Walter E. Washington Convention Center (2.3 million gross sq ft, 703,000 sq ft exhibit space across Halls A–E, 198 meeting rooms, direct skybridge to the Marriott Marquis DC) hosts 1,000+ events annually, anchoring an $800M+ annual conventions economy. AirFresh event management staffing at the Walter E. Washington Convention Center covers the full event operations spectrum: pre-event registration crew setup and attendee data system integration, badge printing and fulfillment station management, general session seating and flow management, exhibit hall orientation and navigation staff, breakout session room monitors, VIP hospitality and Green Room hosts, sponsor activation support staff, and post-event load-out coordination. For HIMSS (Healthcare Information & Management Systems Society, 40,000+ attendees every other year at the convention center), AirFresh deploys 200+ event management staff across the five-day program — including healthcare-literate badge check crews, exhibit floor brand ambassador teams, clinical informatics session monitors, and pharmaceutical exhibitor support staff with FDA Sunshine Act compliance documentation. The Congressional Black Caucus Annual Legislative Conference (20,000+ attendees, September) and American Bar Association Annual Meeting require event management staff with formal professional presentation and the civic literacy appropriate for senior government and legal leadership audiences.',
+      },
+      {
+        heading: 'Event Management Washington DC: Gaylord National, Northern Virginia Corporate Events, and Pharmaceutical NSMs',
+        content:
+          'Washington DC\'s event management geography extends well beyond the District itself to encompass a ring of major event venues in the Maryland and Virginia suburbs that generate substantial pharmaceutical NSM, government contractor, and corporate meeting demand. The Gaylord National Resort & Convention Center (National Harbor MD, 470,000 sq ft of meeting space, 2,000 rooms — the largest hotel convention center in the mid-Atlantic region) is one of the premier pharmaceutical national sales meeting destinations on the East Coast. AirFresh provides full-service pharmaceutical NSM event management staffing at Gaylord National: registration desk crews with CRM integration, general session AV support staff, breakout room monitor teams, hospitality ambassadors for exhibit area pharmaceutical product displays, FDA Sunshine Act-compliant documentation support, and evening event and dine-around coordination staff. All Gaylord National pharma NSM staffing includes Open Payments documentation briefing and FCPA compliance orientation. Northern Virginia\'s defense contractor and technology corporate campuses — Booz Allen Hamilton (Tysons), Leidos (Reston), SAIC (Reston), General Dynamics (Falls Church), Lockheed Martin (Bethesda MD), and Amazon Web Services Government (Arlington area) — generate substantial corporate event management staffing demand for product launches, leadership conferences, government technology showcases, and federal contract award events. The Ronald Reagan Building and International Trade Center (1.1 million sq ft, Pennsylvania Avenue NW — the largest federal building in Washington DC after the Pentagon) is the premier venue for bipartisan policy conferences, trade association leadership summits, and government-adjacent corporate events — hosting 10,000+ events annually.',
+      },
+    ],
+    localVenues: [
+      'Walter E. Washington Convention Center (2.3M sq ft)',
+      'Marriott Marquis Washington DC (1,175 rooms, skybridge)',
+      'Gaylord National Resort & Convention Center (National Harbor)',
+      'Ronald Reagan Building and International Trade Center',
+      'Kennedy Center for the Performing Arts',
+      'Omni Shoreham Hotel (836 rooms, Woodley Park)',
+      'Capital One Arena (Washington Capitals/Wizards)',
+      'Nationals Park (Washington Nationals)',
+      'MGM National Harbor',
+      'Ritz-Carlton Georgetown / Four Seasons Georgetown',
+    ],
+    localEvents: [
+      'HIMSS Annual Conference (40,000+ attendees)',
+      'Congressional Black Caucus Annual Legislative Conference',
+      'Pharmaceutical National Sales Meetings (Gaylord National)',
+      'American Bar Association Annual Meeting',
+      'National Book Festival (Convention Center, September)',
+      'Washington Nationals Home Season (Nationals Park)',
+      'Kennedy Center Honors and Performing Arts Season',
+      'National Cherry Blossom Festival Events',
+      'Washington Capitals NHL Season (Capital One Arena)',
+      'Gaylord National Holiday Events (ICE!)',
+    ],
+    pricingNote:
+      'Event management staffing in Washington DC ranges from $22 to $55 per hour depending on role complexity, required professional credentials, security clearance awareness requirements, and event prestige.',
+    areasServed: [
+      'Downtown DC (Convention Center / K Street)',
+      'Capitol Hill / Union Station',
+      'Georgetown',
+      'The Wharf / Southwest Waterfront',
+      'Navy Yard / Capitol Riverfront',
+      'National Harbor MD / Oxon Hill',
+      'Gaylord National (National Harbor)',
+      'Tysons Corner / McLean VA',
+      'Arlington VA / Crystal City',
+      'Reston VA / Herndon VA',
+      'Bethesda MD / Rockville MD',
+      'College Park MD (University of Maryland)',
+    ],
+    faqs: [
+      {
+        question: 'How far in advance should we book event management staffing for Washington DC?',
+        answer:
+          'For conventions at the Walter E. Washington Convention Center, AirFresh recommends booking 8-12 weeks in advance for standard events. For events coinciding with peak DC periods — Cherry Blossom Festival (late March/April), Congressional Black Caucus weekend (September), HIMSS years (even years, spring), and major political events tied to congressional sessions — 12-16 weeks advance notice is recommended. Pharmaceutical NSMs at Gaylord National should book 10-14 weeks ahead. Call (303) 720-6060 to check availability.',
+      },
+      {
+        question: 'Do you provide FDA Sunshine Act-compliant staffing for pharmaceutical NSMs in Washington DC?',
+        answer:
+          'Yes. Pharmaceutical national sales meeting staffing is a core Washington DC service for AirFresh. We provide full FDA Sunshine Act compliance support — including Open Payments documentation protocols, staff training on aggregate spend reporting, and HCP interaction logging support — for pharmaceutical NSMs at Gaylord National, Marriott Marquis DC, Omni Shoreham, and the DC convention circuit. Our pharma NSM staff have backgrounds appropriate for healthcare professional audiences.',
+      },
+      {
+        question: 'Can you staff government contractor corporate events in Northern Virginia?',
+        answer:
+          'Yes. AirFresh serves the full Northern Virginia government contractor corridor for corporate event management: Tysons Corner (Booz Allen Hamilton, Leidos, DXC Technology), Reston (SAIC, Volkswagen Group NA), Falls Church (General Dynamics, Northrop Grumman office), and Arlington (Boeing, Amazon Web Services Government area). Our Northern Virginia event staff have professional credentials appropriate for defense industry corporate environments and are familiar with federal contractor event protocols.',
+      },
+    ],
+  },
+
+  'washington-dc-convention-staffing': {
+    slug: 'washington-dc-convention-staffing',
+    cityName: 'Washington DC',
+    stateName: 'District of Columbia',
+    serviceName: 'Convention Staffing',
+    h1: 'Convention Staffing Washington DC',
+    metaTitle: 'Convention Staffing Washington DC | Trade Show Staff | AirFresh Marketing',
+    metaDescription:
+      'Convention Staffing Washington DC from AirFresh Marketing. Professional trade show staff, registration crews, and exhibit booth brand ambassadors for Walter E. Washington Convention Center, Gaylord National Resort, and the DC metro convention circuit.',
+    heroDescription:
+      'Convention Staffing Washington DC means staffing the most association-dense convention market in the world — a city of 2,800+ national trade association headquarters, 20+ federal agencies generating year-round conference demand, and the Walter E. Washington Convention Center (703,000 sq ft exhibit space, the largest convention center in the mid-Atlantic region). AirFresh Marketing provides professional convention staffing for every facet of the DC convention economy: trade show brand ambassadors, exhibit booth demonstration staff, registration and badge check crews, lead retrieval specialists, and convention floor navigators with deep Walter E. Washington Convention Center institutional knowledge.',
+    sections: [
+      {
+        heading: 'Convention Staffing Washington DC: Walter E. Washington Convention Center Specialist Knowledge',
+        content:
+          'The Walter E. Washington Convention Center — spanning 2.3 million gross square feet across a full city block in the Mt. Vernon Square/Shaw neighborhood — is the East Coast\'s largest convention center and the anchor of Washington DC\'s association meeting economy. Exhibit Hall A–E provides 703,000 sq ft of contiguous column-free exhibit space; 198 meeting rooms support concurrent breakout programming; and the 40,000-seat general session capacity (combined halls) accommodates the largest political and association conventions in the nation. The convention center is directly connected via enclosed skybridge to the Marriott Marquis Washington DC (1,175 rooms, 105,000 sq ft meeting space) — the largest hotel in the District — and is served by the Mt. Vernon Sq/7th St–Convention Center Metro station (Green and Yellow Lines) with direct access from all DC neighborhoods and the Northern Virginia and Maryland suburbs. AirFresh maintains convention staffing specialists with institutional knowledge of the Walter E. Washington Convention Center: Hall A–E floor plan configurations, loading dock access on L Street NW and 9th Street NW, registration hall layout variations by event type, Marriott Marquis skybridge protocols, and the Convention Center Metro station passenger flow patterns during peak arrival windows. Convention clients include HIMSS (healthcare IT, 40,000+ attendees), Congressional Black Caucus Annual Legislative Conference (20,000+), NAB Show DC, Specialty Food Association (Summer Fancy Food Show), National Association of Convenience Stores (NACS), and hundreds of federal agency and nonprofit association annual meetings.',
+      },
+      {
+        heading: 'Convention Staffing Washington DC: Gaylord National, Maryland Suburbs, and the Multi-Market Convention Circuit',
+        content:
+          'Washington DC\'s convention staffing geography extends across a multi-market circuit that includes major venue clusters in the Maryland suburbs (National Harbor, Bethesda, Rockville, College Park) and Northern Virginia (Tysons Corner, Arlington, Reston). The Gaylord National Resort & Convention Center (National Harbor MD, 470,000 sq ft meeting space, 2,000 rooms) is one of the premier pharmaceutical NSM and large-format convention venues on the East Coast — hosting pharmaceutical national sales meetings, government agency leadership summits, and corporate conventions for the DC defense and technology market. AirFresh convention staffing at Gaylord National includes registration crews, general session support, exhibit hall brand ambassadors, badge check teams, and FDA Sunshine Act-compliant documentation support for pharmaceutical programs. The Omni Shoreham Hotel (836 rooms, Woodley Park DC — one of DC\'s historic grand hotels) hosts national political party conventions, association annual meetings, and government-adjacent corporate events requiring convention staffing with formal professional presentation. The Walter E. Washington Convention Center\'s primary industry verticals align directly with AirFresh\'s convention staffing specializations: (1) Healthcare IT / Life Sciences — HIMSS, pharmaceutical NSMs, health policy conferences; (2) Government Affairs / Policy — federal agency conferences, advocacy organization annual meetings, congressional staff professional development; (3) Technology — cybersecurity conferences, federal IT contractor events, government cloud computing summits; (4) Food & Beverage — Specialty Food Association, restaurant industry events, food policy conferences; (5) Legal / Professional Services — ABA, state bar association meetings, legal technology conferences.',
+      },
+    ],
+    localVenues: [
+      'Walter E. Washington Convention Center (703K sq ft exhibit)',
+      'Marriott Marquis Washington DC (1,175 rooms, skybridge connected)',
+      'Gaylord National Resort & Convention Center (National Harbor)',
+      'Omni Shoreham Hotel (836 rooms, Woodley Park)',
+      'Ronald Reagan Building and International Trade Center',
+      'Capital Hilton (DC midtown)',
+      'Hyatt Regency Washington on Capitol Hill',
+      'Mayflower Hotel Washington DC',
+      'Grand Hyatt Washington DC',
+      'MGM National Harbor Convention Space',
+    ],
+    localEvents: [
+      'HIMSS Annual Conference & Exhibition (40,000+ attendees)',
+      'Congressional Black Caucus Annual Legislative Conference',
+      'National Association of Broadcasters (NAB Show DC)',
+      'Summer Fancy Food Show (Specialty Food Association)',
+      'American Bar Association Annual Meeting',
+      'National Association of Convenience Stores (NACS)',
+      'Pharmaceutical National Sales Meetings (Gaylord National)',
+      'Federal agency and government contractor conferences (year-round)',
+      'National Book Festival (Convention Center, September)',
+      'Healthcare Policy and Finance Industry Conferences',
+    ],
+    pricingNote:
+      'Convention staffing rates in Washington DC range from $25 to $52 per hour depending on role complexity, industry vertical, required professional credentials, and event scale.',
+    areasServed: [
+      'Walter E. Washington Convention Center (Mt. Vernon Sq)',
+      'Marriott Marquis Washington DC',
+      'Capitol Hill / Hyatt Regency Capitol Hill',
+      'Georgetown / Foggy Bottom',
+      'National Harbor MD (Gaylord National)',
+      'Tysons Corner VA (Fairfax County)',
+      'Arlington VA / Crystal City',
+      'Reston VA / Herndon VA',
+      'Bethesda MD / Rockville MD',
+      'College Park MD (University of Maryland)',
+      'Omni Shoreham / Woodley Park',
+      'Downtown DC K Street / McPherson Square',
+    ],
+    faqs: [
+      {
+        question: 'What is the largest convention AirFresh has staffed at the Walter E. Washington Convention Center?',
+        answer:
+          'AirFresh has staffed large-format conventions at the Walter E. Washington Convention Center including HIMSS (40,000+ attendees over five days, requiring 200+ event support staff) and multi-day political conventions in the 15,000–25,000 attendee range. For the Walter E. Washington Convention Center\'s Hall A–E combined capacity (up to 40,000 for general sessions), AirFresh scales registration crews, badge check teams, and exhibit floor support to match the convention\'s specific attendee flow and event program requirements.',
+      },
+      {
+        question: 'Can you provide bilingual convention staffing for Washington DC events?',
+        answer:
+          'Yes. Washington DC is one of the most linguistically diverse convention markets in the United States — hosting international delegations from the World Bank, IMF, diplomatic missions, and global policy conferences. AirFresh provides bilingual Spanish-English convention staff and can source French, Amharic, Vietnamese, Korean, Mandarin, and Arabic language capabilities for diplomatic receptions, multicultural association events, and international government conferences at DC venues.',
+      },
+      {
+        question: 'How do you handle security clearance-related requirements for government contractor convention events?',
+        answer:
+          'AirFresh maintains security-clearance-aware protocols for government contractor and federal agency convention staffing in the Washington DC and Northern Virginia corridor. While AirFresh staff do not hold security clearances, we ensure all convention staff complete appropriate background screening, sign applicable NDAs for sensitive corporate environments, and follow event-specific access control protocols established by defense contractor and federal agency clients.',
+      },
+      {
+        question: 'Do you staff conventions at Gaylord National Resort?',
+        answer:
+          'Yes. Gaylord National Resort & Convention Center (National Harbor MD) is one of our primary Maryland convention venues. AirFresh provides full convention staffing services at Gaylord National — registration crews, exhibit hall brand ambassadors, badge check teams, general session support, and hospitality hosts for pharmaceutical NSMs, government agency summits, and corporate conventions. Gaylord National\'s 470,000 sq ft of meeting space accommodates conventions ranging from 500-person incentive programs to 5,000-person NSMs.',
+      },
+    ],
+  },
+
+  'washington-dc-promotional-models': {
+    slug: 'washington-dc-promotional-models',
+    cityName: 'Washington DC',
+    stateName: 'District of Columbia',
+    serviceName: 'Promotional Models',
+    h1: 'Promotional Models Washington DC',
+    metaTitle: 'Promotional Models Washington DC | Event Talent | AirFresh Marketing',
+    metaDescription:
+      'Promotional Models Washington DC from AirFresh Marketing. Professional event models for Walter E. Washington Convention Center, Georgetown, The Wharf, pharmaceutical conventions, defense contractor events, and corporate activations across the DC metro.',
+    heroDescription:
+      'Promotional Models in Washington DC must operate at an entirely different professional standard than any other American market — a city where your event talent shares rooms with senators, cabinet officials, Fortune 500 executives, and foreign heads of state. AirFresh Marketing provides Washington DC promotional models and event talent who combine the physical presence and interpersonal polish required for premium brand representation with the policy literacy, professional credentials, and communication sophistication demanded by DC\'s uniquely elevated event culture. From pharmaceutical convention hosts at the Walter E. Washington Convention Center and Gaylord National to luxury brand activations at Georgetown boutiques and The Wharf waterfront to defense contractor corporate event hosts in the Northern Virginia corridor — our DC talent roster is built for Washington\'s high-stakes professional environment.',
+    sections: [
+      {
+        heading: 'Promotional Models Washington DC: Convention Hosts, Government Affairs Events, and Policy Conference Talent',
+        content:
+          'Washington DC\'s promotional model market is defined by the extraordinary professional credential requirements that flow from the city\'s government, policy, and association-heavy event calendar. The DC convention circuit — anchored by HIMSS (40,000+ healthcare IT professionals), the Congressional Black Caucus Annual Legislative Conference, ABA Annual Meeting, National Book Festival, and hundreds of federal agency and trade association annual meetings — demands promotional models and event hosts with professional backgrounds that provide credibility when interacting with credentialed attendee audiences. AirFresh maintains a Washington DC promotional model roster with professional backgrounds in healthcare and life sciences (appropriate for HIMSS and pharmaceutical NSM contexts), government affairs and policy (for K Street association events and congressional reception hosting), legal and financial services (for ABA and financial services association events), and technology and cybersecurity (for federal IT contractor and government technology events). Pharmaceutical convention host roles in the Washington DC market require FDA Sunshine Act compliance awareness — understanding how to conduct appropriate, non-promotional interactions with healthcare professional (HCP) attendees in conference settings. Our DC pharmaceutical convention hosts are briefed on Open Payments documentation and HCP interaction protocols before every pharmaceutical event deployment.',
+      },
+      {
+        heading: 'Promotional Models Washington DC: Georgetown, The Wharf, Embassy Events, and Luxury Brand Activations',
+        content:
+          'Washington DC\'s consumer and luxury promotional model market extends across several distinct activation environments, each with distinctive talent requirements. Georgetown — DC\'s most prestigious neighborhood, home to Georgetown University, the M Street luxury retail corridor, and an resident demographic with median household income exceeding $125,000 — is DC\'s premier upscale consumer promotional model deployment zone. Georgetown brand activations at Apple, Anthropologie, luxury independent boutiques, and premium food and beverage establishments require promotional models with the polished, fashion-forward presentation and warm customer service demeanor expected by Georgetown\'s affluent consumer audience. The Wharf (Southwest DC Waterfront) — the $3.6 billion mixed-use development featuring The Anthem (6,000 capacity concert venue), boutique hotels (InterContinental, Canopy by Hilton), 75+ dining and retail concepts, and a year-round waterfront events calendar — has become Washington DC\'s most dynamic new consumer promotional model deployment environment. Embassy Row and Dupont Circle\'s diplomatic reception circuit — 177 foreign embassies in the District of Columbia — generates demand for multilingual promotional models with the cultural diplomacy skills to represent brands at receptions attended by foreign officials, international business leaders, and Washington\'s diplomatic community. AirFresh maintains multilingual promotional models for the DC diplomatic reception market in Spanish, French, Portuguese, Mandarin, Japanese, and Arabic.',
+      },
+    ],
+    localVenues: [
+      'Walter E. Washington Convention Center',
+      'Gaylord National Resort & Convention Center',
+      'Kennedy Center for the Performing Arts',
+      'Ronald Reagan Building and International Trade Center',
+      'The Anthem / The Wharf Waterfront',
+      'Georgetown M Street / Wisconsin Ave corridor',
+      'Capital One Arena (Capitals/Wizards)',
+      'Nationals Park (Washington Nationals)',
+      'Omni Shoreham Hotel (Woodley Park)',
+      'Mayflower Hotel / Grand Hyatt Washington DC',
+    ],
+    localEvents: [
+      'HIMSS Annual Conference & Exhibition',
+      'Pharmaceutical National Sales Meetings (Gaylord National)',
+      'Congressional Reception Season (Capitol Hill)',
+      'National Cherry Blossom Festival (Georgetown / Tidal Basin)',
+      'Kennedy Center Honors and Galas',
+      'Embassy Row Diplomatic Reception Season',
+      'Washington Nationals Home Games (Navy Yard)',
+      'The Wharf Summer Music and Events',
+      'ABA Annual Meeting (Washington Marriott Marquis)',
+      'Congressional Black Caucus Annual Gala',
+    ],
+    pricingNote:
+      'Promotional model rates in Washington DC range from $30 to $70 per hour depending on professional background, language skills, event prestige, and credential requirements.',
+    areasServed: [
+      'Downtown DC / K Street',
+      'Georgetown (M Street / Wisconsin Ave)',
+      'Capitol Hill / Embassy Row',
+      'The Wharf / Southwest Waterfront',
+      'Dupont Circle / Adams Morgan',
+      'Navy Yard / Capitol Riverfront',
+      'National Harbor MD (Gaylord National)',
+      'Tysons Corner VA',
+      'Arlington VA',
+      'Bethesda MD',
+    ],
+    faqs: [
+      {
+        question: 'How much do promotional models cost in Washington DC?',
+        answer:
+          'Promotional model rates in Washington DC range from $30 to $70 per hour depending on professional background, required credentials, event prestige, and language skills. Government affairs-literate convention hosts and FDA Sunshine Act-aware pharmaceutical event talent command higher rates ($45-70/hr) due to specialized credential requirements. Georgetown luxury brand activation models and Embassy Row diplomatic reception hosts typically range $35-60/hr. Contact AirFresh at (303) 720-6060 for a customized Washington DC quote.',
+      },
+      {
+        question: 'Do you provide multilingual promotional models for DC diplomatic and embassy events?',
+        answer:
+          'Yes. Washington DC\'s 177 foreign embassies and extensive diplomatic reception circuit create strong demand for multilingual promotional models. AirFresh maintains DC talent with professional fluency in Spanish, French, Portuguese, Mandarin, Japanese, German, and Arabic. Embassy Row and Dupont Circle diplomatic reception staffing is one of our most distinctive Washington DC specializations.',
+      },
+      {
+        question: 'Can your DC promotional models handle pharmaceutical convention hosting roles?',
+        answer:
+          'Yes. AirFresh maintains Washington DC promotional models with healthcare and life sciences professional backgrounds appropriate for pharmaceutical convention hosting — including HIMSS, pharmaceutical NSMs at Gaylord National, medical device industry events, and health policy conferences. All pharmaceutical event hosts receive FDA Sunshine Act compliance briefing and Open Payments documentation protocols before deployment.',
+      },
+    ],
+  },
+
   'washington-dc-event-staffing': {
     slug: 'washington-dc-event-staffing',
     cityName: 'Washington DC',
