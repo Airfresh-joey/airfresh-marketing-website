@@ -1,5 +1,41 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-02 MDT (Run 25)
+
+Goal: City page depth — add enriched content for Indianapolis IN (Priority #5 continued).
+
+Audit:
+- 27th city enriched; selected Indianapolis as highest-leverage unenriched Midwest/heartland market (next on list after Pittsburgh)
+- Indianapolis: 2.1M metro, Eli Lilly global HQ (world's top-5 pharma company, $28B+ annual revenue, 140+ years in Indianapolis, 10,000+ local employees), Elevance Health (formerly Anthem — one of the largest US health insurers, global HQ Downtown Indianapolis), Simon Property Group global HQ (world's largest mall REIT), Roche Diagnostics Indiana HQ, OneAmerica Financial HQ, Salesforce major Indiana campus
+- IU Health (Indiana's largest health system, 40+ hospitals, 37,000+ employees), Eskenazi Health, Community Health Network, Franciscan Health — massive pharma convention market
+- Indiana Convention Center (566,567 sq ft, 7 exhibit halls, 71 meeting rooms, skywalk connection to Lucas Oil Stadium and 11 Downtown hotels with 4,700+ rooms — highest hotel-to-convention ratio in North America)
+- Indianapolis Motor Speedway (world's largest spectator venue, 300,000+ Indianapolis 500 attendees — world's largest single-day sporting event), Lucas Oil Stadium (67,000 cap, Colts — directly connected to ICC), Gainbridge Fieldhouse (18,165 cap, Pacers), Victory Field (AAA)
+- Gen Con (70,000+ attendees over 4 days — North America's largest tabletop gaming convention), FFA National Convention (65,000+ youth attendees — world's largest agricultural youth convention), Indiana State Fair (1M+ attendees, 17 days), Indiana Black Expo Summer Celebration (300,000+), NCAA Final Four (most-frequent Indianapolis host), Big Ten Men's and Women's Basketball Tournaments, NFL Scouting Combine, Big Ten Football Championship
+- Mass Ave Arts District, Broad Ripple Village, Fountain Square (1928 Art Deco Theater), Irvington, Carmel Arts & Design District (Palladium concert hall), Indianapolis Cultural Trail (8-mile urban bike/pedestrian loop connecting 6 cultural districts), White River State Park (250 acres, Eiteljorg Museum, Indiana State Museum, NCAA Hall of Champions, Victory Field, Indianapolis Zoo)
+- JW Marriott Indianapolis (1,005 rooms, directly connected to ICC), Conrad Indianapolis, Hyatt Regency Indianapolis, Omni Severin Hotel (1913, Downtown), Westin Indianapolis, Marriott Downtown, Alexander Hotel
+
+Shipped (commit a7b12a1) — new file server/city-content/indianapolis.ts:
+- indianapolis-brand-ambassadors: Eli Lilly/Elevance Health/Simon Fortune 500 pharma-insurance capital framing; IMS (300K+ 500)/Lucas Oil (Colts)/Gainbridge (Pacers) sports trifecta; Gen Con (70K+)/Indiana State Fair (1M+)/FFA National Convention (65K+) events; Mass Ave/Broad Ripple/Fountain Square/Speedway/Carmel neighborhood depth; Indiana ATC alcohol sampling compliance; bilingual Spanish-English callout; $22-40/hr pricing; 6 FAQs; 15 areasServed
+- indianapolis-experiential-marketing: Indianapolis 500 race-week IMS activation strategy (Pagoda Plaza, Snake Pit, Turn 1 Fan Village, Gasoline Alley, 500 Festival Parade); White River State Park/Mass Ave/Cultural Trail/Fountain Square urban activation zones; Gen Con hotel-takeover and street-team strategy; pharma B2B experiential (Eli Lilly/FDA Sunshine Act); NCAA Final Four + Big Ten activation; Indianapolis DPW/State Museum/IMS commercial licensing permit guidance; 4 FAQs
+- indianapolis-event-management: ICC (566K sq ft) + Lucas Oil Stadium skywalk connection specialist; JW Marriott (1,005 rooms) as primary pharma NSM HQ; FFA National Convention (65K+) and Gen Con event staffing; Big Ten and NCAA Final Four hospitality; FDA Sunshine Act NSM compliance; $22-48/hr pricing; 3 FAQs
+- indianapolis-convention-staffing: ICC Halls A–H + Sagamore Ballroom + Indiana Ballroom specialist knowledge; 4-vertical industry approach (life sciences/pharma, gaming/Gen Con, agriculture/FFA, sports/NCAA); Indiana Black Expo Summer Celebration (300K+); NFL Combine staffing; bilingual Spanish-English; $25-48/hr pricing; 5 FAQs
+- indianapolis-promotional-models: background-matched approach (pharma/clinical for Lilly/AZ/Roche events, motorsports-credible for IMS race week, gaming-fluent for Gen Con, agricultural-background for FFA); JW Marriott/Conrad/Hyatt Regency/Omni Severin luxury hotel network; $28-65/hr pricing; 3 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Local build verified: indianapolis-brand-ambassadors.html — Eli Lilly 18×, Gen Con 38×, Indiana Convention Center 24×, Indianapolis 500 20×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed a7b12a1, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/indianapolis-brand-ambassadors and /city-services/indianapolis-convention-staffing ✓
+
+Status after this run:
+- 27 cities now have enriched city-service content (135 enriched pages total)
+- 131 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for New Orleans, Kansas City, Salt Lake City, Raleigh
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-02 MDT (Run 24)
 
 Goal: City page depth — add enriched content for Pittsburgh PA (Priority #5 continued).
