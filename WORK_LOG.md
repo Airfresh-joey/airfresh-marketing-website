@@ -1,5 +1,40 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-01 MDT (Run 23)
+
+Goal: City page depth — add enriched content for Cincinnati OH (Priority #5 continued).
+
+Audit:
+- 25th city enriched; selected Cincinnati as highest-leverage unenriched Midwest market (next on list after St. Louis)
+- Cincinnati: 2.3M metro, global HQ of Procter & Gamble (world's largest CPG company — Tide, Pampers, Gillette, Bounty, Crest, Febreze; founded Cincinnati 1837), Kroger global HQ (largest US supermarket chain, 2,700+ stores, $150B+ annual revenue), Fifth Third Bank HQ (1,100+ branches), Cincinnati Financial HQ, Western & Southern Financial Group HQ, American Financial Group HQ, Great American Insurance HQ
+- Duke Energy Convention Center (200K sq ft exhibit, 35 meeting rooms, Grand Ballroom, skywalk to Hyatt Regency); Cincinnati Children's Hospital Medical Center (consistently #2-3 nationally); UC Health; TriHealth; Mercy Health
+- Paycor Stadium (65,515 cap, Bengals), Great American Ball Park (42,319 cap, Reds — oldest professional baseball team in the US, founded 1882), TQL Stadium (26,000 cap, FC Cincinnati MLS)
+- Oktoberfest Zinzinnati (500K+ attendees — largest Oktoberfest outside Munich), Taste of Cincinnati (500K+ — Memorial Day, one of Midwest's largest food festivals), Cincinnati Music Festival (180K+ at Paycor Stadium — one of largest African-American cultural music events in US), BLINK Cincinnati (1.5M+ visitors, major light installation festival every 2 years)
+- Over-the-Rhine (OTR) — largest intact urban Italianate architecture district in US, Cincinnati's premier entertainment/dining neighborhood; Findlay Market (Ohio's oldest continuously operating public market, founded 1855, 12K+ Saturday shoppers); Rhinegeist Brewery (100K sq ft 1895 converted bottling house)
+- Hilton Cincinnati Netherland Plaza (1931 Art Deco National Historic Landmark, French Baroque Grand Ballroom), 21c Museum Hotel, Hyatt Regency Cincinnati (486 rooms, skywalk to DECC), Marriott Downtown at The Phelps, AC Hotel Cincinnati
+- Northern KY coverage: Northern Kentucky Convention Center (Covington KY), Newport on the Levee, BB&T Arena at NKU; Boone, Kenton, Campbell counties
+
+Shipped (commit e935ead) — new file server/city-content/cincinnati.ts:
+- cincinnati-brand-ambassadors: P&G/Kroger/Fifth Third Fortune 500 consumer goods framing; Great American Ball Park/Paycor Stadium/TQL Stadium/Duke Energy Convention Center/Findlay Market venues; Oktoberfest Zinzinnati (500K+)/Taste of Cincinnati (500K+)/Cincinnati Music Festival (180K+) events; Over-the-Rhine neighborhood depth; Ohio DLLCR alcohol sampling compliance; bilingual Spanish-English callout; $22-40/hr pricing; 6 FAQs; 15 areasServed (incl. Northern KY cross-state coverage)
+- cincinnati-experiential-marketing: P&G consumer goods test market framing (Cincinnati as America's most-used consumer research test market); OTR/Findlay Market urban activation strategy; Oktoberfest Zinzinnati + BLINK Cincinnati + Taste of Cincinnati festival activation guide; Mayor's Office Special Events + Hamilton County + Cincinnati Parks Board permitting breakdown; 4 FAQs
+- cincinnati-event-management: DECC (200K sq ft, 35 meeting rooms, Grand Ballroom) + Paycor Stadium + GABP + TQL Stadium venue framing; P&G/Kroger NSM market; Cincinnati Children's/UC Health/TriHealth/Mercy Health pharma-aware staffing; FDA Sunshine Act compliance callout; Northern KY Convention Center coverage; $22-48/hr pricing; 4 FAQs
+- cincinnati-convention-staffing: DECC Hall A-C + Grand Ballroom specialist framing; consumer goods (P&G/Kroger) + healthcare (Cincinnati Children's/UC Health) + financial services (Fifth Third/Western & Southern) triple-industry specialty; Hilton Netherland Plaza/Hyatt Regency/21c Museum Hotel luxury hotel circuit; bilingual + tech sector growth section; $25-48/hr pricing; 5 FAQs
+- cincinnati-promotional-models: Fortune 500 background-matched approach (CPG/consumer science for P&G, retail/food for Kroger, finance/accounting for Fifth Third/Western & Southern, healthcare for Cincinnati Children's/UC Health); Hilton Netherland Plaza/21c/Hyatt Regency luxury hotel network; Oktoberfest/Music Festival/sports venue specialists; Ohio DLLCR alcohol sampling staff; $28-65/hr pricing; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (6305 static pages, 0 errors)
+- Committed e935ead, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/cincinnati-brand-ambassadors and /city-services/cincinnati-convention-staffing; FAQPage JSON-LD confirmed (2 matches in built artifact); enriched SSG propagating (15-25 min Vercel SSG deploy)
+
+Status after this run:
+- 25 cities now have enriched city-service content (125 enriched pages total)
+- 133 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Add enriched content for Pittsburgh, Indianapolis, New Orleans, Kansas City
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-01 MDT (Run 22)
 
 Goal: City page depth — add enriched content for St. Louis MO (Priority #5 continued).
