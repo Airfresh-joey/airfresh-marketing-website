@@ -4,7 +4,7 @@ import { Card, CardContent } from "@/components/ui/card";
 import { Badge } from "@/components/ui/badge";
 import Link from "next/link";
 import Image from "next/image";
-import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, Building } from "lucide-react";
+import { MapPin, Square, Users, ArrowRight, CheckCircle, Phone, Building, Star, Clock, Award, Shield } from "lucide-react";
 import { venues, getVenueBySlug } from "@/server/venues-data";
 import { portfolioCaseStudies } from "@/server/portfolio-case-studies";
 import type { Metadata } from 'next';
@@ -298,6 +298,23 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
                 </Button>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Trust Strip */}
+      <section className="bg-white border-b border-gray-100 py-4">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <div className="flex flex-wrap justify-center gap-x-6 gap-y-3 text-sm text-gray-600">
+            <span className="flex items-center gap-1.5"><Star className="w-4 h-4 text-orange-400 fill-orange-400" /><strong className="text-gray-900">4.9/5</strong> avg client rating</span>
+            <span className="hidden sm:inline text-gray-300">|</span>
+            <span className="flex items-center gap-1.5"><Award className="w-4 h-4 text-blue-500" /><strong className="text-gray-900">300+</strong> national brands served</span>
+            <span className="hidden sm:inline text-gray-300">|</span>
+            <span className="flex items-center gap-1.5"><Users className="w-4 h-4 text-green-500" /><strong className="text-gray-900">5,000+</strong> vetted staff nationwide</span>
+            <span className="hidden sm:inline text-gray-300">|</span>
+            <span className="flex items-center gap-1.5"><Clock className="w-4 h-4 text-purple-500" /><strong className="text-gray-900">24-hr</strong> quote turnaround</span>
+            <span className="hidden sm:inline text-gray-300">|</span>
+            <span className="flex items-center gap-1.5"><Shield className="w-4 h-4 text-indigo-500" /><strong className="text-gray-900">20+ years</strong> experience</span>
           </div>
         </div>
       </section>
