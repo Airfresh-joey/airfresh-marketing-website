@@ -1,5 +1,44 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-03 MDT (Run 31)
+
+Goal: City page depth — add enriched content for Oklahoma City OK (Priority #5 continued).
+
+Audit:
+- 33rd city enriched; selected Oklahoma City as highest-leverage unenriched southern plains / energy sector market (next on list per Run 30 WORK_LOG)
+- OKC: 1.4M metro, Fortune 500 energy capital: Devon Energy (global HQ, Devon Tower — Oklahoma's tallest building), Chesapeake Energy (largest natural gas producer OKC HQ), Continental Resources (Harold Hamm shale revolution company, private OKC HQ), ONEOK (Fortune 500, $15B+ revenue)
+- Love's Travel Stops (private, OKC global HQ, $20B+ revenue, 40,000+ employees, 600+ US locations — one of largest family-owned businesses in America), Hobby Lobby (private, OKC global HQ, $5B+ revenue, 900+ stores, 40,000+ employees — largest US arts & crafts retailer)
+- Tinker AFB (Midwest City, adjacent OKC — largest Air Force logistics center in the United States, 26,000+ military/civilian/contractor personnel — OKC's single largest employer; Boeing/Northrop Grumman/Lockheed Martin/L3Harris contractors)
+- Oklahoma City Convention Center (opened 2021, 200,000 sq ft, Halls A-C — $288M investment; skybridge to Omni OKC Hotel 605 rooms, 76,000 sq ft meeting space) — top-40 US convention market
+- State Fair of Oklahoma (1M+ attendees, 11 days, September — most important mass-market activation event in the state), Festival of the Arts (700,000+, Myriad Gardens, April), OKC National Memorial Marathon (25,000+)
+- Paycom Center (18,203 cap, OKC Thunder NBA — 41+ home games), Scissortail Park (70 acres, downtown, opened 2019), Bricktown Entertainment District (5M+ annual visitors)
+- OU Health Sciences Center (OUHSC — one of 4 US campuses with all health colleges co-located), INTEGRIS Health (Oklahoma's largest health system, 13 hospitals, 8,000+ employees) — major pharmaceutical NSM market
+- Oklahoma's unique Native American heritage (38 federally recognized tribes HQ'd in Oklahoma) — Red Earth Cultural Festival, Chickasaw Cultural Center
+- WinStar World Casino (Thackerville, 70mi south — world's largest casino, major corporate event venue)
+- Oklahoma ABLE Commission compliance for alcohol sampling; bilingual Spanish-English callout (Capitol Hill neighborhood, 40%+ Hispanic)
+
+Shipped (commit af92a60) — new file server/city-content/oklahoma-city.ts:
+- oklahoma-city-brand-ambassadors: Devon Energy/Chesapeake/Continental/ONEOK Fortune 500 energy capital framing; Love's + Hobby Lobby private HQ anchors; Tinker AFB (largest USAF logistics center) military-industrial employer; OKCC (200K sq ft, 2021)/Paycom Center (Thunder)/State Fairgrounds/Scissortail Park/Bricktown venues; State Fair (1M+)/Festival of Arts (700K+)/OKC Memorial Marathon (25K+) events; OU Health/INTEGRIS pharma NSM market; Oklahoma ABLE Commission alcohol sampling compliance; bilingual Spanish-English callout; $20-38/hr; 6 FAQs; 14 areasServed
+- oklahoma-city-experiential-marketing: Bricktown Canal 1-mile activation corridor (5M+ annual visitors); Scissortail Park (70-acre new urban park, 2019); Myriad Botanical Gardens/Bicentennial Park (Festival of Arts 700K+); State Fair of Oklahoma ABLE permit coordination; Red Earth Native American Cultural Festival (38 federally recognized tribes in OK); Tinker AFB/Devon/Chesapeake corporate B2B framing; OKC Office of Arts & Cultural Affairs + Bricktown Association permitting breakdown; 4 FAQs
+- oklahoma-city-event-management: OKCC (200K sq ft, 45K sq ft ballroom, 30+ breakout rooms) + Omni OKC skybridge specialist; Embassy Suites Medical Center (OUHSC adjacent — primary pharma NSM hotel); Devon/Chesapeake/Love's/Hobby Lobby corporate event market; Tinker AFB defense industry days; FDA Sunshine Act pharma NSM staffing; $22-48/hr; 3 FAQs
+- oklahoma-city-convention-staffing: OKCC Halls A-C specialist (200K sq ft, opened 2021); 4-vertical industry approach (energy/petroleum/OIPA, healthcare/pharma/OSMA, defense/aerospace/Tinker, government/Oklahoma state agencies); WinStar World Casino (world's largest, 70mi south) regional coverage; Skirvin Hilton (1910 National Historic Landmark) + Embassy Suites medical center + Omni hotel circuit; bilingual callout; $25-48/hr; 5 FAQs
+- oklahoma-city-promotional-models: background-matched (petroleum engineering/energy finance for Devon/Chesapeake/Continental, pharma/clinical for OU Health/INTEGRIS, retail/supply chain for Love's/Hobby Lobby, sports-authentic for Thunder/Paycom Center); National Cowboy & Western Heritage Museum + Omni OKC + Skirvin Hilton + WinStar luxury venue network; Oklahoma ABLE Commission alcohol sampling compliance; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 OKC city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: oklahoma-city-brand-ambassadors.html — State Fair 50×, Devon Energy 14×, Tinker AFB 20×, Paycom Center 10×, Chesapeake Energy 4×; FAQPage JSON-LD confirmed ✓
+- Committed af92a60, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/oklahoma-city-brand-ambassadors and /city-services/oklahoma-city-convention-staffing ✓
+
+Status after this run:
+- 33 cities now have enriched city-service content (165 enriched pages total)
+- 125 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Memphis TN, Louisville KY, Richmond VA, Albuquerque NM
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-03 MDT (Run 30)
 
 Goal: City page depth — add enriched content for Jacksonville FL (Priority #5 continued).
