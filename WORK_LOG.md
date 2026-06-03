@@ -1,5 +1,47 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-03 MDT (Run 30)
+
+Goal: City page depth — add enriched content for Jacksonville FL (Priority #5 continued).
+
+Audit:
+- 32nd city enriched; selected Jacksonville as highest-leverage unenriched Northeast Florida / Southeast market (next on list per Run 29 WORK_LOG)
+- Jacksonville: Florida's largest city by land area, most populous city in the Southeastern US (1.6M metro); commands entire North Florida region
+- NAS Jacksonville + Naval Station Mayport: one of largest US naval complexes, 30,000+ active-duty/civilian/contractor personnel — unique military-professional talent pool
+- FIS / Fidelity National Information Services (global HQ, Jacksonville) — one of world's largest fintech companies, $14B+ annual revenue, 55,000+ employees, Fortune 500
+- CSX Transportation (global HQ, 500 Water Street, Downtown Jacksonville) — one of 3 largest US railroads, $13B+ annual revenue, 20,000+ employees
+- Fidelity National Financial (global HQ) — largest US title insurance company; Deutsche Bank Jacksonville (2,000+ employees — Deutsche Bank's largest US non-NYC office)
+- Mayo Clinic Florida (Jacksonville campus — 500-acre, 5,000+ employees, Jacksonville's most prestigious employer, one of world's top hospital brands)
+- Baptist Health Jacksonville (7 hospitals, 12,000+ employees, largest independent NE Florida health system); UF Health Jacksonville (teaching hospital, 800+ beds)
+- THE PLAYERS Championship at TPC Sawgrass (Ponte Vedra Beach, 200,000+ weekly attendance, 35M+ global broadcast viewers — golf's unofficial 5th major)
+- Georgia-Florida Football Classic ("World's Largest Outdoor Cocktail Party") at EverBank Stadium (85,000+ fans, largest annual Jacksonville event)
+- EverBank Stadium (62,000 cap, Jacksonville Jaguars NFL); TaxSlayer Gator Bowl (65,000+); Jacksonville Jazz Festival (100,000+, Metropolitan Park, May)
+- St. Johns Town Center (1.5M sq ft, highest-grossing SE outdoor lifestyle retail center); Prime Osborn Convention Center (78,000 sq ft, historic 1919 Union Terminal)
+- VyStar Credit Union (one of largest FL credit unions, major Jacksonville employer); Landstar System / One Call / Regency Centers Fortune 500 HQs
+- 25-mile Jacksonville Beaches corridor: Jacksonville Beach, Neptune Beach, Atlantic Beach, Ponte Vedra Beach — affluent coastal consumer activation zone
+
+Shipped (commit bbbdd7f) — new file server/city-content/jacksonville.ts:
+- jacksonville-brand-ambassadors: FIS/CSX/Mayo Clinic Fortune 500 capital framing; EverBank Stadium (62K)/VyStar Arena/Prime Osborn/TPC Sawgrass/St. Johns Town Center venues; Georgia-Florida Classic (85K+)/THE PLAYERS (200K+)/Jazz Festival (100K+)/Gator Bowl events; military talent pool (NAS Jax + Mayport — unique SE advantage); Florida ABT alcohol sampling compliance; bilingual callout; $20-38/hr; 6 FAQs; 14 areasServed
+- jacksonville-experiential-marketing: Georgia-Florida Classic game-day activation (World's Largest Outdoor Cocktail Party framing); THE PLAYERS Championship TPC Sawgrass corporate tent strategy (200K+ attendance, 35M+ global viewers); Metropolitan Park/Southbank Riverwalk/Five Points urban activation zones; year-round mild climate advantage; City of Jacksonville Special Events permitting guide; 4 FAQs
+- jacksonville-event-management: Prime Osborn Convention Center (78K sq ft, historic 1919 Union Terminal + Hyatt Regency skybridge) specialist; pharmaceutical NSM (Mayo Clinic/Baptist Health FDA Sunshine Act-compliant); military/defense industry days (NAS Jax/Mayport, NAVSEA/NAVAIR, Lockheed/Northrop/L3Harris/BAE); FIS/CSX/Deutsche Bank corporate events; $22-48/hr; 3 FAQs
+- jacksonville-convention-staffing: Prime Osborn Hall specialist; 5-vertical industry approach (fintech/FIS, healthcare/Mayo Clinic, transportation/CSX, defense/NAS Jax/NAVSEA, consumer/Home & Garden Show/Boat Show); military-background staff specialty callout; Sawgrass Marriott/Ponte Vedra Inn & Club luxury hotel coverage; $25-48/hr; 5 FAQs
+- jacksonville-promotional-models: THE PLAYERS Championship TPC Sawgrass corporate tent specialists (golf-credible, C-suite appropriate); military-background promotional staff roster (unique Jacksonville advantage); pharmaceutical NSM FDA Sunshine Act-compliant staffing; coastal lifestyle talent framing; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (5617 city-service HTML files, 0 errors)
+- Local build verified: jacksonville-brand-ambassadors.html — EverBank 36×, FAQPage JSON-LD confirmed ✓
+- Committed bbbdd7f, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/jacksonville-brand-ambassadors and /city-services/jacksonville-convention-staffing ✓
+
+Status after this run:
+- 32 cities now have enriched city-service content (160 enriched pages total)
+- 126 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Oklahoma City, Memphis, Louisville KY, Richmond VA
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-02 MDT (Run 29)
 
 Goal: City page depth — add enriched content for Orlando FL (Priority #5 continued).
@@ -2316,3 +2358,35 @@ Next actions:
 - Add same trust strip to /states/[state]/page.tsx (state landing pages, currently also bare above fold)
 - GSC opportunity pass: pages at position 4-15 with impressions 10-200, CTR < 2% → rewrite titles/meta
 - cities/[slug]/page.tsx trust strip (city hub pages)
+
+## 2026-06-03 MDT
+
+Goal: Register two orphaned blog pages in blogPosts.ts + add trust strip to all venue-service pages.
+
+Audit:
+- Two blog pages existed as dedicated Next.js pages but were NOT in server/blogPosts.ts:
+  - app/blog/event-staffing-101-roles-rates-how-to-hire/page.tsx (run 29 era)
+  - app/blog/trade-show-marketing-strategy/page.tsx (run 29 era)
+  - Both had CTAs, structured data, FAQ schema — but invisible to blog listing, sitemap.ts, and [slug]/generateStaticParams
+- venue/[slug]/[service] pages (~552 pages) had no above-fold trust signals
+
+Shipped (commit 64a1376, 4 files):
+1. server/blogPosts.ts — inserted ids 1741 and 1742:
+   - event-staffing-101-roles-rates-how-to-hire (Event Staffing, June 1 2026)
+   - trade-show-marketing-strategy (Trade Shows, June 1 2026)
+   - Both now appear in blog listing, sitemap, pre-rendered via [slug] static params
+2. app/venues/[slug]/[service]/page.tsx — added trust strip below hero:
+   - Star, Clock, Award, Shield icons added
+   - 5 stats: 4.9/5 rating, 300+ brands, 5k+ staff, 24-hr quote, 20+ years
+   - Applies to all 552 venue-service pages instantly
+
+Checks:
+- npm run build passed (6,314 static pages, 0 errors)
+- Committed 64a1376, pushed to origin/main
+- Vercel deploy triggered
+
+Next actions:
+- Verify live: /blog/event-staffing-101-roles-rates-how-to-hire and /blog/trade-show-marketing-strategy in blog listing
+- Verify live: /venues/mccormick-place-chicago/brand-ambassadors trust strip
+- GSC opportunity pass: pages position 4-15, impressions 10-200, CTR < 2% -> rewrite titles/meta
+- /states/[state]/page.tsx trust strip (state hub pages still bare above fold)
