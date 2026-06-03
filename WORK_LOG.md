@@ -1,6 +1,53 @@
 # Air Fresh Website Growth Work Log
 
-## 2026-06-03 MDT (Run 31)
+## 2026-06-03 MDT (Run 32)
+
+Goal: City page depth — add enriched content for Memphis TN (Priority #5 continued).
+
+Audit:
+- 34th city enriched; selected Memphis TN as highest-leverage unenriched Mid-South market (next on list per Run 31 WORK_LOG)
+- Memphis: 1.3M metro, commercial capital of the Mid-South (West Tennessee + DeSoto County MS + Crittenden County AR tri-state)
+- FedEx (global HQ, Fortune 500 #66, 30,000+ Memphis employees; FedEx World Air Hub at MEM = single busiest air cargo hub on earth, ~40% of all US air cargo nightly; 1.7M packages/night)
+- AutoZone (global HQ, Downtown Memphis — Fortune 500, $15.6B+ revenue, 6,200+ stores, 100,000+ employees; Liberty Bowl title sponsor)
+- International Paper (global HQ, Memphis — Fortune 500, $20B+ revenue, world's largest paper/packaging company, 65,000+ employees)
+- St. Jude Children's Research Hospital (332 N. Lauderdale — globally recognized, $2.7B+ annual budget, 4,000+ employees; ALSAC national HQ also Memphis)
+- Methodist Le Bonheur Healthcare (Memphis — Mid-South's largest health system, 14,000+ employees, 12 hospitals)
+- Baptist Memorial Health Care (Memphis HQ, 14 hospitals across TN/MS/AR)
+- University of Tennessee Health Science Center (UTHSC, 3,000+ students, 1,000+ faculty — Medicine, Pharmacy, Dentistry, Nursing)
+- Memphis in May International Festival: Beale Street Music Festival (100,000+, Tom Lee Park, 3 days) + World Championship Barbecue Cooking Contest (100,000+ attendance, world's largest pork BBQ competition, 250+ teams)
+- Graceland (3764 Elvis Presley Blvd — one of US's most-visited private homes, 600,000+ annual visitors, 30+ countries; Elvis Week August 75,000+ fans)
+- FedExForum (18,119 cap, Memphis Grizzlies NBA, 41+ home games)
+- Liberty Bowl Memorial Stadium (58,500 cap): AutoZone Liberty Bowl (40,000+ New Year's Eve) + Southern Heritage Classic (55,000+ HBCU football classic — one of largest African American sporting events in US)
+- Memphis Convention Center (reopened 2021 after $175M renovation, 300,000 sq ft, 120,000 sq ft exhibit hall, 57 meeting rooms)
+- Peabody Memphis (149 Union Ave — Tennessee's most iconic hotel, Grand Ballroom 10,000 sq ft, famous Duck March; primary pharmaceutical NSM luxury venue)
+- Beale Street Historic District (3M+ annual visitors, year-round activation corridor, birthplace of American blues)
+- DeSoto County MS (Southaven, Olive Branch, Horn Lake — fastest-growing county in Mississippi, 180,000+ residents, Nike/Target/Williams-Sonoma/Ashley Furniture Fortune 500 DC corridor)
+- Tennessee ABC alcohol sampling compliance; FDA Sunshine Act / Open Payments pharmaceutical compliance
+- St. Jude Memphis Marathon Weekend (27,000+ runners, December — largest fundraising marathon in the South)
+
+Shipped (commit ff2cb75) — new file server/city-content/memphis.ts:
+- memphis-brand-ambassadors: FedEx/AutoZone/International Paper Fortune 500 logistics capital framing; St. Jude globally recognized nonprofit + Methodist Le Bonheur + Baptist Mid-South healthcare cluster; FedExForum (18,119)/Liberty Bowl (58,500)/AutoZone Park/Graceland/Memphis Convention Center/Tom Lee Park venues; Memphis in May (Beale Street Music Fest 100K+ + BBQ Contest 100K+)/Southern Heritage Classic (55K+)/Liberty Bowl (40K+)/Elvis Week (75K+)/St. Jude Marathon events; Beale Street (3M+) year-round corridor; DeSoto County MS tri-state coverage; Tennessee ABC alcohol sampling compliance; bilingual Spanish-English callout; $20-38/hr; 6 FAQs; 14 areasServed
+- memphis-experiential-marketing: Beale Street Merchants Association activation strategy (3M+ annual visitors, 2-block pedestrian entertainment corridor); Tom Lee Park Memphis in May activation (200K+ cumulative from Music Fest + BBQ Contest); Graceland adjacent activation during Elvis Week/Birthday Week; Overton Park/Cooper-Young (50K+ September festival); South Main Arts District pop-up zone; Shelby Farms Park (4,500 acres — largest urban park in US); Tennessee ABC §57-3-806 sampling compliance; Mid-South 1.8M tri-state consumer radius; 4 FAQs
+- memphis-event-management: Memphis Convention Center (300K sq ft, reopened 2021) Hall/Ballroom specialist; FedEx corporate event staffing (world-class operational standards); St. Jude/ALSAC pharmaceutical NSM market (FDA Sunshine Act); Methodist Le Bonheur/Baptist/UTHSC clinical employer cluster; FedExForum/Liberty Bowl/AutoZone Park sports venue events; Peabody Memphis (Grand Ballroom) prestige events; Southern Heritage Classic corporate hospitality; $22-48/hr; 3 FAQs
+- memphis-convention-staffing: Memphis Convention Center specialist (120K sq ft exhibit, 57 rooms, Grand Ballroom 25K sq ft, Sheraton skywalk); 4-vertical industry approach (logistics/FedEx, healthcare/pharmaceutical, consumer goods/distribution, government/education); Mid-South Farm & Gin Show (7,000+) + Home and Garden Show (15,000+) anchor conventions; DeSoto County MS Fortune 500 DC corridor coverage (Nike/Target/Williams-Sonoma/Ashley Furniture); Peabody Memphis/Embassy Suites/Marriott Memphis East hotel circuit; bilingual callout; $25-48/hr; 5 FAQs
+- memphis-promotional-models: background-matched (logistics/FedEx-aware, automotive/AutoZone-fluent, healthcare/clinical for St. Jude/Methodist/Baptist pharmaceutical NSMs, culturally fluent for Graceland/Elvis Week international audience); Peabody Memphis (Tennessee's most iconic hotel)/Central Station (South Main)/Four Points/Embassy Suites luxury venue network; Graceland adjacent international activation specialists; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Memphis city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: memphis-brand-ambassadors.html — FedEx 52×, Graceland 12×, FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed ff2cb75, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/memphis-brand-ambassadors and /city-services/memphis-convention-staffing ✓
+
+Status after this run:
+- 34 cities now have enriched city-service content (170 enriched pages total)
+- 124 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Louisville KY, Richmond VA, Albuquerque NM, Tucson AZ
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
+
 
 Goal: City page depth — add enriched content for Oklahoma City OK (Priority #5 continued).
 
