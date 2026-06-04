@@ -1,5 +1,49 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 39)
+
+Goal: City page depth — add enriched content for Bakersfield CA (Priority #5 continued).
+
+Audit:
+- 41st city enriched; selected Bakersfield CA as highest-leverage unenriched southern San Joaquin Valley / energy capital market (next on list per Run 38 WORK_LOG)
+- Bakersfield: 600,000 metro, Kern County — California's single highest oil-producing county, ~70% of all California oil output
+- California Resources Corporation (CRC — California's largest oil producer by volume, NYSE: CRC, Bakersfield metro HQ)
+- Chevron (major San Joaquin Valley operations — Kern River Oil Field, Lost Hills, Cymric; thousands of local employees)
+- Aera Energy (Shell-ExxonMobil JV, second-largest California oil producer)
+- Grimmway Farms (Arvin CA, Kern County — world's largest producer of carrots; Cal-Organic Farms subsidiary; $750M+ annual revenue)
+- Bolthouse Farms (Bakersfield — world's most recognized baby carrot brand, #1 US carrot brand, $1B+ revenue)
+- Wonderful Company (Shafter CA, Kern County — Wonderful Pistachios, POM Wonderful, FIJI Water, Halos mandarins)
+- Kern County Fair (Kern County Fairgrounds — California's oldest continuously operating county fair est. 1875; 300,000+ attendees over 12 days, late September–October)
+- Mechanics Bank Arena (formerly Rabobank Arena; 11,116 cap; Bakersfield Condors ECHL, NHL Edmonton Oilers affiliate; 150+ events/year)
+- Bakersfield Convention Center (adjacent to arena — county's primary convention venue)
+- Buck Owens' Crystal Palace (2800 Buck Owens Blvd — one of America's most celebrated honky-tonk venues; live country music multiple nights weekly; Bakersfield Sound heritage anchor)
+- Kern Medical (Kern County Level II Trauma Center, county teaching hospital, primary pharmaceutical NSM venue)
+- Adventist Health Bakersfield + Dignity Health Mercy Hospitals (Mercy Southwest + Mercy Hospital Bakersfield) + Kaiser Permanente Bakersfield
+- 51%+ Hispanic/Latino population — bilingual Spanish-English standard across all activations
+- California ABC (Department of Alcoholic Beverage Control) alcohol sampling compliance
+- CSUB (California State University Bakersfield — 11,000+ students, Big West, Roadrunners; Mechanics Bank Arena as primary arena)
+
+Shipped (commit b22ebea) — new file server/city-content/bakersfield.ts:
+- bakersfield-brand-ambassadors: CRC/Chevron/Aera Energy California energy capital framing; Grimmway (world's largest carrot producer)/Bolthouse ($1B+ brand)/Wonderful Company agribusiness anchors; Kern County Fair (300,000+)/Mechanics Bank Arena (11,116 Condors)/Bakersfield Convention Center/Buck Owens Crystal Palace venues; Western Farm Show + World Ag Expo (Tulare, 100K+, 60mi N) trade show circuit; Kern Medical/Adventist Health/Dignity Health pharma NSM market; bilingual Spanish-English standard (51%+ Latino); California ABC sampling compliance; $20-36/hr; 6 FAQs; 12 areasServed
+- bakersfield-experiential-marketing: Kern County Fair multi-zone activation strategy (Grandstand/exhibit halls/food sampling/midway); Mechanics Bank Arena Condors game-night fan engagement; Buck Owens Crystal Palace heritage brand experience (western lifestyle, spirits, country music brands); Chester Ave/Ming Ave/Marketplace at River Walk neighborhood zones; San Joaquin Valley agricultural B2B circuit; Kern County energy corridor B2B (Oildale/Taft CA/Lost Hills); City of Bakersfield + Kern County permits + California ABC; 4 FAQs
+- bakersfield-event-management: Bakersfield Convention Center + Mechanics Bank Arena specialist; Kern Medical/Adventist Health/Dignity Health pharma NSM (FDA Sunshine Act); CRC/Chevron/Aera Energy corporate events; Grimmway/Bolthouse/Wonderful agribusiness functions; Hotel Bakersfield/Padre Hotel luxury circuit; $22-48/hr; 3 FAQs
+- bakersfield-convention-staffing: 4-vertical approach (energy/oil-gas/CRC/Chevron, agriculture/food-processing/Grimmway/Bolthouse, healthcare/pharma/Kern Medical/Dignity Health, government/education/Kern County/CSUB); STEM-credentialed energy staff specialty; Western Farm Show + World Ag Expo circuit coverage; Hotel Bakersfield/Padre Hotel/DoubleTree/Marriott hotel circuit; bilingual Spanish-English standard; $25-48/hr; 5 FAQs
+- bakersfield-promotional-models: background-matched (petroleum engineering/energy for CRC/Chevron/Aera Energy, agri/produce-industry/bilingual for Grimmway/Bolthouse, pharma/clinical FDA Sunshine Act for Kern Medical/Dignity Health, western-lifestyle/country-music-fluent for Buck Owens Crystal Palace); Hotel Bakersfield/Padre Hotel/DoubleTree/Marriott luxury venue network; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Bakersfield city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: bakersfield-brand-ambassadors.html — Kern County Fair 32×, Mechanics Bank 38×, Bolthouse 20×, California Resources 18×, Buck Owens 18×; FAQPage JSON-LD confirmed ✓
+- Committed b22ebea, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/bakersfield-brand-ambassadors and /city-services/bakersfield-convention-staffing ✓
+
+Status after this run:
+- 41 cities now have enriched city-service content (205 enriched pages total)
+- 117 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Reno NV, Colorado Springs CO, Stockton CA, Spokane WA
+
 ## 2026-06-04 MDT (Run 38)
 
 Goal: City page depth — add enriched content for Fresno CA (Priority #5 continued).
