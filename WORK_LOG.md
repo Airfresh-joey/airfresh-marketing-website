@@ -1,5 +1,47 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-03 MDT (Run 34)
+
+Goal: City page depth — add enriched content for Richmond VA (Priority #5 continued).
+
+Audit:
+- 36th city enriched; selected Richmond VA as highest-leverage unenriched Mid-Atlantic / Southeast capital-city market (next on list per Run 33 WORK_LOG)
+- Richmond VA: 1.3M MSA, Virginia's state capital, anchoring a Central Virginia trade area spanning the Richmond-Petersburg corridor, Northern Neck, and Charlottesville-to-Hampton Roads arc
+- CarMax (global HQ, Goochland County adjacent Richmond — Fortune 500, world's largest used-car retailer, $35B+ annual revenue, 30,000+ employees nationally)
+- Dominion Energy (global HQ, 120 Tredegar St, Downtown Richmond — Fortune 500, $14B+ annual revenue, 7M+ customers in 16 states — Virginia's largest publicly traded company by revenue)
+- Altria Group (global HQ, 6601 W. Broad St, Richmond — Fortune 500, parent of Philip Morris USA; $25B+ annual revenue)
+- VCU Health System (1,000+ licensed beds, NCI-designated Massey Cancer Center, 700+ physician faculty — Central Virginia's academic medical center)
+- Bon Secours Mercy Health Virginia (Virginia's second-largest health system, 25,000+ healthcare workers metro)
+- Richmond Raceway (58,000 cap — NASCAR Cup Series spring and fall race weekends, 80,000-100,000 fans per weekend)
+- Richmond Folk Festival (Brown's Island, 150,000+, October — one of nation's largest free folk and world music festivals)
+- Dominion Energy Riverrock (Brown's Island, 40,000+, May — outdoor sports/music festival)
+- Scott's Addition (40+ craft breweries, cideries, distilleries in 1 sq mile — one of America's most celebrated craft beverage districts)
+- Greater Richmond Convention Center (700,000 sq ft, Hall A/B, Grand Ballroom 3,000 cap, 170+ rooms, Marriott Richmond Downtown skywalk)
+- Virginia State Bar Annual Meeting (GRCC, June — 5,000+ attorneys) anchor legal convention
+- Virginia ABC alcohol sampling compliance; bilingual Spanish-English + Vietnamese-English callout
+
+Shipped (commit 2ca83b6) — new file server/city-content/richmond.ts:
+- richmond-brand-ambassadors: CarMax/Dominion Energy/Altria Fortune 500 framing; VCU Health/Bon Secours pharma NSM market; Richmond Raceway (58K, NASCAR)/GRCC/Brown's Island/Siegel Center/Altria Theater/VMFA venues; Richmond Folk Festival (150K+)/Riverrock (40K+)/Richmond Marathon/RVA Beer Week events; Scott's Addition (40+ craft breweries) Virginia ABC-compliant spirits-fluent staff; bilingual callout; $20-38/hr; 6 FAQs; 14 areasServed
+- richmond-experiential-marketing: Brown's Island / James River waterfront activation strategy (Folk Festival 150K+, Riverrock 40K+); Scott's Addition craft brewery district pop-ups; Carytown/The Fan/Shockoe Slip neighborhood zones; James River Park System outdoor-lifestyle framing; City of Richmond DOT / Parks / James River Advisory Council permitting; 4 FAQs
+- richmond-event-management: GRCC (700K sq ft, Hall A/B, Grand Ballroom, 170+ rooms, Marriott skywalk) specialist; VCU Health/Bon Secours pharma NSM (FDA Sunshine Act); CarMax/Dominion/Altria Fortune 500 corporate events; Richmond Raceway NASCAR hospitality (Champions Club, fan zone, Victory Lane); Altria Theater (3,565 cap, 1927 NHL)/Science Museum/VMFA/Maymont luxury circuit; 3 FAQs
+- richmond-convention-staffing: GRCC Hall A/B Grand Ballroom specialist; 4-vertical approach (healthcare/pharma/VCU Health, government-legal/Virginia State Bar, corporate/CarMax/Dominion, technology/innovation); Marriott Richmond Downtown + Omni Richmond + Westin Richmond + Hilton Richmond hotel circuit; bilingual Spanish-English + Vietnamese-English; $25-48/hr; 5 FAQs
+- richmond-promotional-models: background-matched (Fortune 500/CarMax-Dominion-Altria, healthcare/pharma FDA Sunshine Act-compliant, NASCAR/motorsports-credible, craft-beverage-fluent/Scott's Addition, arts-fluent/VMFA-Folk Festival); Omni Richmond/Altria Theater/Science Museum/VMFA/Maymont luxury venue network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (Richmond city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: richmond-brand-ambassadors.html — Richmond Raceway 36×, CarMax 22×, Dominion Energy 20×, Altria 14×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed 2ca83b6, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/richmond-brand-ambassadors and /city-services/richmond-convention-staffing ✓
+
+Status after this run:
+- 36 cities now have enriched city-service content (180 enriched pages total)
+- 122 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Albuquerque NM, Tucson AZ, Baton Rouge LA, El Paso TX
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-03 MDT (Run 33)
 
 Goal: City page depth — add enriched content for Louisville KY (Priority #5 continued).
