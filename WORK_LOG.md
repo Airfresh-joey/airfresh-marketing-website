@@ -1,5 +1,52 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 40)
+
+Goal: City page depth — add enriched content for Reno NV (Priority #5 continued).
+
+Audit:
+- 42nd city enriched; selected Reno NV as highest-leverage unenriched Mountain West / Northern Nevada market (next on list per Run 39 WORK_LOG)
+- Reno-Sparks: 500,000+ metro, "The Biggest Little City in the World," commercial capital of Northern Nevada
+- Tesla Gigafactory 1 (Sparks NV, TRIC — Tesla's first purpose-built gigafactory, 10,000+ employees; produces Model 3/Y drive units, battery packs, energy storage; one of the largest building footprints in the world)
+- Panasonic Energy of North America (Gigafactory co-tenant — 2170 cylindrical lithium-ion battery cells for Tesla; 2,000+ employees)
+- Switch (The Citadel campus, 3M+ sq ft — world's largest data center campus outside government facilities; Tier 5 Platinum; 1,000+ Fortune 1000 clients including Google/AWS/Microsoft/Apple)
+- Tahoe Reno Industrial Center (TRIC, Storey County — 107,000-acre industrial park, world's largest by area; Tesla, Switch, Panasonic, Walmart, Google, Apple all located there)
+- Renown Health (Northern Nevada's largest not-for-profit health system — Renown Regional Medical Center 808 beds Level II Trauma, Renown South Meadows, Renown Children's Hospital; 7,000+ employees)
+- Saint Mary's Regional Medical Center (Dignity Health/CommonSpirit, 380 beds, major Northern Nevada acute care)
+- Hot August Nights (August, six days, 250,000+ — world's premier vintage automobile and classic rock and roll festival; 5,000+ registered classic vehicles; multiple venues across Reno-Sparks)
+- Reno Rodeo (June — one of 10 largest PRCA professional rodeos in US; 100,000+ over nine performances)
+- Great Reno Balloon Race (September — world's largest free hot-air balloon event; 100,000+ over three days)
+- National Championship Air Races (Reno-Stead, September — fastest motorsport in the world; 60,000+)
+- Artown (July — 75+ events, 300,000+ attendees, largest monthlong urban arts festival in the United States)
+- Burning Man (Black Rock City, 80 miles north — 80,000+ global attendees; Reno is primary supply/staging city)
+- University of Nevada, Reno (22,000+ students; Mackay Stadium 30,000 cap; Lawlor Events Center 11,200 cap)
+- National Bowling Stadium (78 lanes — world's largest dedicated tournament bowling facility; USBC Open Championships 80,000+ entries, 4+ months annually)
+- Grand Sierra Resort (2,000 rooms, 160,000 sq ft meeting space); Peppermill Reno (1,635 rooms — preferred pharma NSM resort); Atlantis Casino Resort Spa (974 rooms); Whitney Peak Hotel (non-gaming, Downtown)
+- Nevada Gaming Control Board alcohol/gaming compliance for casino activations
+- 26%+ Hispanic/Latino population (one of fastest-growing demographic segments in Northern Nevada)
+- Nevada: world's fifth-largest gold-producing jurisdiction; major mining convention market
+
+Shipped (commit a179a94) — new file server/city-content/reno.ts:
+- reno-brand-ambassadors: Tesla Gigafactory (10K+)/Switch (world's largest data center campus)/Panasonic Energy tech corridor; Hot August Nights (250K+)/Reno Rodeo (100K+)/Great Reno Balloon Race (100K+)/National Championship Air Races/Artown (300K+)/Burning Man (80K+, 80mi); Renown Health + Saint Mary's pharma NSM; Nevada Gaming Control Board compliance; bilingual Spanish-English (26%+ Latino); $20-38/hr; 6 FAQs; 10 areasServed
+- reno-experiential-marketing: Hot August Nights multi-venue strategy (Sparks Nugget/Grand Sierra/Virginia Street Casino Corridor); Reno Rodeo + BBQ Cook-Off; Great Reno Balloon Race Dawn Patrol/Mass Ascension; Artown (Wingfield Park/Pioneer Center/Nevada Museum of Art); Truckee River Whitewater Park; Midtown Reno corridor; NV Gaming Control Board + City of Reno/Sparks permit guide; 4 FAQs
+- reno-event-management: Reno-Sparks Convention Center (200K+ sq ft) + Grand Sierra Resort (160K sq ft) + Peppermill Reno (preferred NSM resort, non-smoking meeting floors) specialist; Renown Health/Saint Mary's pharma NSM (FDA Sunshine Act); Tesla/Switch tech corporate events; $22-48/hr; 3 FAQs
+- reno-convention-staffing: 4-vertical approach (technology/advanced manufacturing/Tesla-Switch, healthcare/pharma/Renown, mining/natural resources/Nevada gold industry, gaming technology); National Bowling Stadium (78 lanes, USBC Open 4+ months, 80K+ entries); $25-48/hr; 5 FAQs
+- reno-promotional-models: background-matched (EV/STEM for Tesla, pharma/clinical FDA Sunshine Act for Renown/Saint Mary's, Nevada Gaming Control Board-compliant casino models, classic car/Hot August Nights specialists, western lifestyle/Reno Rodeo, Sierra Nevada outdoor/skiing); Ritz-Carlton Lake Tahoe + Edgewood Tahoe (Forbes 4-Star) luxury circuit; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Reno city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: reno-brand-ambassadors.html — Tesla 30×, Hot August Nights 20×; FAQPage JSON-LD confirmed ✓
+- Committed a179a94, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/reno-brand-ambassadors and /city-services/reno-convention-staffing ✓
+
+Status after this run:
+- 42 cities now have enriched city-service content (210 enriched pages total)
+- 116 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Colorado Springs CO, Stockton CA, Spokane WA, Corpus Christi TX
+
 ## 2026-06-04 MDT (Run 39)
 
 Goal: City page depth — add enriched content for Bakersfield CA (Priority #5 continued).
