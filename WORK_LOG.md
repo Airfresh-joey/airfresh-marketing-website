@@ -1,5 +1,45 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 38)
+
+Goal: City page depth — add enriched content for Fresno CA (Priority #5 continued).
+
+Audit:
+- 40th city enriched; selected Fresno CA as highest-leverage unenriched Central California / San Joaquin Valley market (next on list per Run 37 WORK_LOG)
+- Fresno: 1.1M metro, commercial capital of the San Joaquin Valley — the most productive agricultural region on earth; generates $50B+ annual agricultural output
+- World Ag Expo (International Agri-Center, Tulare CA, 50 miles south — world's largest agricultural exposition, 100,000+ attendees, 2,750+ exhibitors, 2.6 million sq ft of exhibits; February) — premier B2B agribusiness activation event in North America
+- Western Farm Show (Fresno Convention Center — leading ag equipment/precision agriculture trade show, 10,000+ industry attendees)
+- Big Fresno Fair (Fresno Fairgrounds — 350,000+ attendees, 10 October days — California's fourth-largest county fair)
+- Clovis Rodeo (Clovis CA, April — 75,000+ over 5 performances — one of California's largest professional rodeos)
+- California State University Fresno (Fresno State — 25,000+ students; Bulldog Stadium 41,031 cap; Save Mart Center 15,596 cap — Valley's largest indoor arena; Mountain West Conference)
+- Fresno Grizzlies (Chukchansi Park, downtown, 12,500 cap — Triple-A affiliate of Colorado Rockies; 70 home games/season)
+- Valley Children's Hospital (Madera, 9300 Valley Children's Place — one of the most respected children's hospitals in the western US; 358 beds; 3,000+ employees — primary pharma NSM venue for Central California)
+- Community Medical Centers (Fresno — largest health system in San Joaquin Valley; Community Regional Medical Center / Clovis Community Medical Center / Fresno Heart & Surgical)
+- Sun-Maid Growers (Kingsburg, global HQ — world's most recognized raisin brand), Foster Farms (Livingston/Fresno — major West Coast poultry producer), Harris Ranch Beef Company (Coalinga, one of largest integrated cattle operations in US), Wonderful Company (Wonderful Pistachios, POM Wonderful, Fiji Water — major Central Valley agribusiness)
+- 50%+ Hispanic/Latino population — majority-Latino major California city; large Sikh-Punjabi agricultural and business community in Fresno and Kings counties
+- California ABC (Department of Alcoholic Beverage Control) alcohol sampling compliance; California AB5 labor law compliance callout
+
+Shipped (commit 3f2adf0) — new file server/city-content/fresno.ts:
+- fresno-brand-ambassadors: World Ag Expo (world's largest ag expo)/Western Farm Show/Big Fresno Fair (350K+)/Clovis Rodeo (75K+)/Bulldog Stadium (41K)/Chukchansi Park/Save Mart Center; Valley Children's Hospital + Community Medical Centers pharma NSM market; bilingual Spanish-English (50%+ Latino) + Punjabi-English (Sikh-Punjabi farming community); California ABC sampling compliance; Sun-Maid/Foster Farms/Harris Ranch/Wonderful Company agribusiness employers; $20-36/hr; 6 FAQs; 12 areasServed
+- fresno-experiential-marketing: Bulldog Stadium game-day tailgate activation strategy (Fowler Ave/Shaw Ave corridors); Big Fresno Fair fairgrounds; Chukchansi Park baseball season; Tower District + Fulton + River Park + Fig Garden + Woodward Park neighborhood zones; World Ag Expo B2B Tulare activation; Fresno County + City of Clovis + California ABC permit guide; 4 FAQs
+- fresno-event-management: Fresno Convention Center (150K sq ft, 24 rooms, DoubleTree skywalk) specialist; Valley Children's Hospital/Community Medical Centers pharma NSM (FDA Sunshine Act); Sun-Maid/Foster Farms/Wonderful corporate events; California AB5 labor law compliance callout; $22-48/hr; 3 FAQs
+- fresno-convention-staffing: 4-vertical approach (agriculture/ag trade shows, healthcare/pharma, government/California agencies, food processing/distribution); bilingual Spanish-English + Punjabi-English standard; Fresno Convention Center Hall A + World Ag Expo 50mi circuit; DoubleTree/Marriott/Hilton Garden Inn/Hyatt Place hotel circuit; $25-48/hr; 5 FAQs
+- fresno-promotional-models: background-matched (Fresno State College of Ag/FFA alumni for agribusiness, pre-med/nursing for pharma NSMs, bilingual Spanish-English + Punjabi-English, Bulldog game-day specialists, California ABC-certified); Chukchansi Gold Resort (35mi N) + DoubleTree + Fresno Marriott luxury network; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Fresno city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: fresno-brand-ambassadors.html — World Ag Expo 22×, Valley Children's 32×, Big Fresno Fair 18×, Bulldog Stadium 16×; FAQPage JSON-LD confirmed ✓
+- Committed 3f2adf0, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/fresno-brand-ambassadors and /city-services/fresno-convention-staffing ✓
+
+Status after this run:
+- 40 cities now have enriched city-service content (200 enriched pages total)
+- 118 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Bakersfield CA, Reno NV, Colorado Springs CO, Stockton CA
+
 ## 2026-06-04 MDT (Run 37)
 
 Goal: City page depth — add enriched content for Baton Rouge LA (Priority #5 continued).
