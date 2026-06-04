@@ -2656,3 +2656,41 @@ Next actions:
 - Verify live: /venues/mccormick-place-chicago/brand-ambassadors trust strip
 - GSC opportunity pass: pages position 4-15, impressions 10-200, CTR < 2% -> rewrite titles/meta
 - /states/[state]/page.tsx trust strip (state hub pages still bare above fold)
+
+## 2026-06-05 MDT (Run 37)
+
+Goal: City page depth — add enriched content for El Paso TX (Priority #5 continued).
+
+Audit:
+- 44th city enriched; selected El Paso TX as highest-leverage unenriched border/military/bilingual market
+- El Paso: 900K city, 2.7M binational metro with Ciudad Juárez (Chihuahua, Mexico) — one of the largest binational urban metros on any border in the world
+- Fort Bliss (1.1M acres, largest US Army installation by land area in continental US; 40K+ active-duty soldiers, 1st Armored Division HQ; $9.6B annual economic impact — dominant El Paso employer)
+- 80%+ Hispanic/Latino population — most bilingual large city in the US; $2B+ annual cross-border retail spending from Juárez
+- $50B+ annual two-way cross-border trade through Bridge of the Americas, Ysleta/Zaragoza, Stanton Street ports
+- UTEP (22,000+ students, Carnegie R1, Sun Belt Conference; Sun Bowl Stadium 52K cap; Don Haskins Center 12,222 cap)
+- University Medical Center El Paso (340 beds, Level II Trauma, county teaching hospital); Las Palmas Del Sol Healthcare (HCA, 2 campuses); Hospitals of Providence (Tenet, 4 campuses); Texas Tech TTUHSC El Paso (Paul L. Foster School of Medicine)
+- El Paso Convention Center (128,000 sq ft) + Border Security Expo (4,000+ federal law enforcement attendees annually)
+- Neon Desert Music Festival (Downtown, 20,000+, May); El Paso Chihuahuas AAA Baseball (Southwest University Park, 9,500 cap); El Paso Locomotive FC (USL Championship, top-10 attendance)
+- Tony the Tiger Sun Bowl (December, 50,000+); White Sands Missile Range (1 hour north, 5,000+ employees)
+
+Shipped (commit 1a9a435) — new file server/city-content/el-paso.ts:
+- el-paso-brand-ambassadors: Fort Bliss military economy (40K+ troops, 1st AD, William Beaumont AMC, BAE/GD/Raytheon contractors); binational bilingual market ($2B+ cross-border retail, 80%+ Hispanic, Chihuahuan/Norteño Spanish dialect specificity, Juárez binational framing); UTEP/healthcare NSM/events calendar; $18-36/hr; 5 FAQs; 12 areasServed
+- el-paso-experiential-marketing: Binational cross-border consumer activations (Cielo Vista Mall, Sunland Park, Fountains at Farah — cross-border shoppers); Neon Desert Music Festival; Locomotive FC + Chihuahuas sports activations; Fort Bliss military community activations; 3 FAQs
+- el-paso-event-management: El Paso Convention Center (128K sq ft, Border Security Expo); pharmaceutical NSM at Marriott/Hilton/Hyatt for UMC/Las Palmas/Providence/TTUHSC; bilingual cross-border corporate events; $22-48/hr; 3 FAQs
+- el-paso-convention-staffing: 4-vertical approach (defense/border security, healthcare/pharma, cross-border commercial, education/government); Border Security Expo (4,000+ federal LE); bilingual trade show staff as baseline; $25-48/hr; 3 FAQs
+- el-paso-promotional-models: Background-matched (bilingual Chihuahuan/Norteño Spanish, Fort Bliss military community, pharmaceutical FDA Sunshine Act compliant, UTEP campus); cross-border retail activation specialists; $28-65/hr; 3 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 El Paso city-service HTML files confirmed, 6,314 total pages, 0 errors)
+- Local build verified: el-paso-brand-ambassadors.html — Fort Bliss 56×, bilingual 36×, UTEP 40×, Ciudad Juárez 14×; FAQPage JSON-LD confirmed ✓
+- Committed 1a9a435, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/el-paso-brand-ambassadors and /city-services/el-paso-convention-staffing ✓
+
+Status after this run:
+- 44 cities now have enriched city-service content (220 enriched pages total)
+- 112 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Fresno CA, Bakersfield CA, Baton Rouge LA, San Jose CA
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
