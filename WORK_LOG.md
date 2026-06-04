@@ -1,5 +1,49 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 35)
+
+Goal: City page depth — add enriched content for Albuquerque NM (Priority #5 continued).
+
+Audit:
+- 37th city enriched; selected Albuquerque NM as highest-leverage unenriched Mountain West / Southwest market (next on list per Run 34 WORK_LOG)
+- Albuquerque: 940,000 metro, New Mexico's largest city and I-25/I-40 crossroads hub anchoring Central New Mexico
+- Sandia National Laboratories (Kirtland AFB, SE Albuquerque — 17,000+ employees, $4.1B+ annual budget — DOE/NNSA national lab, one of world's foremost nuclear security research institutions)
+- Kirtland Air Force Base (24,000+ military/civilian/contractor personnel — Air Force Nuclear Weapons Center, AFRL Space Vehicles Directorate; $4.8B+ annual economic impact)
+- Intel New Mexico (Rio Rancho, Sandoval County — 11,000+ employees, Fab 11X/Fab 22 — one of Intel's largest global semiconductor manufacturing facilities; $20B+ cumulative investment)
+- Presbyterian Healthcare Services (9 hospitals, 10,000+ employees — New Mexico's largest private employer); Lovelace Health System (HCA Healthcare, 6 hospitals); UNM Health Sciences Center (NCI-designated Cancer Center)
+- Albuquerque International Balloon Fiesta (750,000–800,000+ total attendance — most-photographed event in the world, largest balloon festival in North America)
+- New Mexico State Fair (Expo NM — 1M+ attendees over 17 September days — largest single annual event in New Mexico)
+- Gathering of Nations Powwow (Tingley Coliseum, 150,000+ — world's largest Native American powwow, 500+ tribes)
+- New Mexico United FC (USL Championship, 13,500 cap — among highest-attended lower-division soccer clubs in North America)
+- 47%+ Hispanic/Latino demographic — one of most genuinely bilingual major US metros
+- 19 neighboring Pueblo nations and tribal communities (Sandia Pueblo, Isleta Pueblo, Santa Ana Pueblo et al.)
+- Isleta Resort & Casino (Isleta Pueblo, 15mi south — 1,000+ rooms, Isleta Amphitheater 12,500 cap)
+- Sandia Resort & Casino (Sandia Pueblo, NE foothills — 228 rooms, Twin Peaks Ballroom)
+- Los Poblanos Historic Inn (Los Ranchos de Albuquerque — Forbes 4-Star, lavender estate)
+- Albuquerque Convention Center (167,000 sq ft, Hall A/B, 32 meeting rooms, Kiva Auditorium 2,067 seats)
+
+Shipped (commit 588efeb) — new file server/city-content/albuquerque.ts:
+- albuquerque-brand-ambassadors: Sandia National Labs/Kirtland AFB defense-research capital framing; Intel NM (Rio Rancho, 11K employees) tech manufacturing anchor; Presbyterian Healthcare/Lovelace/UNM Health Sciences pharma NSM market; Balloon Fiesta (750K+, world's most-photographed event)/NM State Fair (1M+)/Gathering of Nations (150K+ powwow)/NM United FC events; bilingual Spanish-English callout (47%+ Hispanic demographic); Indigenous cultural competency callout (19 neighboring Pueblo nations); NM Alcohol & Gaming Division compliance; $20-38/hr; 6 FAQs; 12 areasServed
+- albuquerque-experiential-marketing: Balloon Fiesta Corporate Hospitality Zone + Mass Ascension sunrise activation strategy; Old Town Albuquerque (1706, 2M+ annual visitors) historic district; Nob Hill/Route 66 corridor; National Hispanic Cultural Center; Gathering of Nations cultural activation; Expo NM/NM State Fair Commission + City of Albuquerque Parks permit guidance; 4 FAQs
+- albuquerque-event-management: ACC (167K sq ft, Hall A/B, 32 rooms, Kiva Auditorium) specialist; Isleta Resort (1,000+ rooms) + Sandia Resort (Twin Peaks Ballroom) venue circuit; Presbyterian/UNM pharmaceutical NSM (FDA Sunshine Act); Sandia Labs/Intel NM corporate events; 3 FAQs
+- albuquerque-convention-staffing: ACC Hall A/B specialist; 4-vertical approach (healthcare/pharma, government-defense/Sandia/LANL/NNSA, energy-environmental, education-tech/UNM-Intel); Expo NM trade show coverage; bilingual + STEM-credentialed UNM/NM Tech staff callout; Hyatt Regency/Sheraton/Hotel Albuquerque/Sandia Resort hotel circuit; $25-48/hr; 5 FAQs
+- albuquerque-promotional-models: background-matched (defense/tech for Sandia/Intel, pharma/clinical for Presbyterian/Lovelace/UNM FDA Sunshine Act, bilingual for majority-Hispanic market, Indigenous cultural competency, Balloon Fiesta sunrise specialists); Los Poblanos (Forbes 4-Star)/Hyatt Regency/Isleta Resort/Sandia Resort luxury venue network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (Albuquerque city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: albuquerque-brand-ambassadors.html — Balloon Fiesta 46×, Kirtland AFB 18×, Sandia National Laboratories 14×, Presbyterian Healthcare 12×; FAQPage JSON-LD confirmed ✓
+- Committed 588efeb, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/albuquerque-brand-ambassadors and /city-services/albuquerque-convention-staffing ✓
+
+Status after this run:
+- 37 cities now have enriched city-service content (185 enriched pages total)
+- 121 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Tucson AZ, Baton Rouge LA, El Paso TX, Fresno CA
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-03 MDT (Run 34)
 
 Goal: City page depth — add enriched content for Richmond VA (Priority #5 continued).
