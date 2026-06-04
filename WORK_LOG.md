@@ -1,5 +1,51 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 37)
+
+Goal: City page depth — add enriched content for Baton Rouge LA (Priority #5 continued).
+
+Audit:
+- 39th city enriched; selected Baton Rouge LA as highest-leverage unenriched Gulf South / Louisiana capital market (next on list per Run 36 WORK_LOG)
+- Baton Rouge: 870,000 metro, Louisiana's state capital and second-largest city
+- ExxonMobil Baton Rouge Complex (2801 Scenic Hwy — ExxonMobil's Baton Rouge Refinery + Chemical Plant + Plastics Plant combined = largest integrated petroleum refinery/chemical complex in the United States; 500K+ bbl/day refining capacity; 3,000+ employees/contractors)
+- Turner Industries Group (private, global HQ Baton Rouge — one of North America's largest industrial construction/maintenance/fabrication firms; $3B+ revenue; 25,000+ employees; primary contractor at ExxonMobil, Dow, BASF, LyondellBasell across the Louisiana Petrochemical Corridor)
+- Dow Chemical Plaquemine (10mi SW — Dow Inc.'s largest single Western Hemisphere manufacturing facility; 40+ production units; 5,000+ employees); BASF Geismar; Albemarle Baton Rouge (lithium chemicals, EV battery supply chain); Entergy Louisiana (utility HQ, 1.1M customers)
+- LSU Tiger Stadium (102,321 capacity — largest in the SEC, 4th largest stadium in the United States; Death Valley night game atmosphere; 7 home games per fall season)
+- Pete Maravich Assembly Center (PMAC, 13,495 cap); Alex Box Stadium (9,048 cap); LSU 37,000+ students, $450M+ research
+- Southern University (Baton Rouge — one of largest HBCUs in the US, 6,000+ students, SWAC)
+- Our Lady of the Lake Regional Medical Center (FMOLHS, 1,000+ beds — Louisiana's largest hospital; primary pharma NSM venue in Greater Baton Rouge)
+- Woman's Hospital (Louisiana's leading women's and neonatal health hospital; major pharma NSM venue)
+- Pennington Biomedical Research Center (LSU system — world-renowned obesity/metabolic disease research; 500+ staff; $30M+ NIH funding)
+- Baton Rouge River Center (82,000 sq ft exhibit hall + 17,000 sq ft ballroom + 23 meeting rooms + Marriott skybridge, Downtown)
+- L'Auberge Casino Resort Baton Rouge (1,000 rooms, 30,000 sq ft meeting space — premier NSM and corporate gala venue)
+- Hilton Baton Rouge Capitol Center (historic 1927 Heidelberg Hotel); Embassy Suites Baton Rouge; Marriott Baton Rouge
+- Spanish Town Mardi Gras (50,000+, Saturday before Fat Tuesday — Louisiana's most irreverent Mardi Gras celebration)
+- Baton Rouge Blues Festival (50,000+, Downtown, April — birthplace of Buddy Guy, Slim Harpo, Lightnin' Slim, Tabby Thomas)
+- Louisiana Legislature annual session (February–June) — year-round government/legal convention market
+- Louisiana ATC Title 26 alcohol sampling compliance; bilingual Spanish-English + Vietnamese-English callouts
+
+Shipped (commit 3ce2d3f) — new file server/city-content/baton-rouge.ts:
+- baton-rouge-brand-ambassadors: ExxonMobil (largest US integrated refinery/chem complex)/Turner Industries (private HQ)/Dow Plaquemine/BASF/Albemarle Petrochemical Corridor capital framing; LSU Tiger Stadium (102,321/SEC largest)/PMAC/Alex Box/River Center/L'Auberge venues; Spanish Town Mardi Gras (50K+)/Blues Festival (50K+)/Louisiana Marathon/Greek Festival events; FMOLHS/Our Lady of the Lake/Woman's Hospital pharma NSM market; Pennington Biomedical/Southern University; bilingual Spanish-English + Vietnamese-English callout; Louisiana ATC Title 26 compliance; $20-38/hr; 6 FAQs; 12 areasServed
+- baton-rouge-experiential-marketing: LSU Tiger Stadium game-day tailgate activation (100K+ fans, 6–8 hr window, Victory Hill/Indian Mounds/Parade Grounds zones); Spanish Town Mardi Gras street experience; Blues Festival Downtown riverfront; L'Auberge Casino luxury brand activations; Perkins Road Overpass Arts Market; City of Baton Rouge/EBR Special Events permit + LSU Office of Student Life approvals; 4 FAQs
+- baton-rouge-event-management: River Center (82K sq ft, 23 rooms, Marriott skybridge) + L'Auberge (1,000 rooms, 30K sq ft) specialist; Our Lady of the Lake/Woman's Hospital pharma NSM (FDA Sunshine Act); ExxonMobil/Turner Industries corporate events; Louisiana Legislature session events at Hilton Capitol Center; Pennington Biomedical clinical research symposia; $22-48/hr; 3 FAQs
+- baton-rouge-convention-staffing: River Center Hall specialist; 4-vertical approach (petrochemical/industrial engineering/AIChE, healthcare/pharma FMOLHS, state government/legal/Louisiana Bar, academic/athletics/LSU); L'Auberge + Marriott + Embassy Suites + Hilton Capitol Center hotel circuit; STEM-credentialed petrochemical staff; bilingual callout; Louisiana ATC sampling credentials; $25-48/hr; 5 FAQs
+- baton-rouge-promotional-models: background-matched (pharmaceutical/clinical for Our Lady of the Lake NSMs, petrochemical/STEM for ExxonMobil/Turner, SEC game-day/high-energy for Tiger Stadium tailgates, Louisiana cultural-festival fluent for Mardi Gras/Blues Festival); L'Auberge Casino Resort/Hilton Capitol Center/Marriott/Embassy Suites luxury venue network; Louisiana ATC-certified for alcohol sampling; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Baton Rouge city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: baton-rouge-brand-ambassadors.html — ExxonMobil 28×, Tiger Stadium 28×, L'Auberge 8×; FAQPage JSON-LD confirmed ✓
+- Committed 3ce2d3f, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/baton-rouge-brand-ambassadors and /city-services/baton-rouge-convention-staffing ✓
+
+Status after this run:
+- 39 cities now have enriched city-service content (195 enriched pages total)
+- 119 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Fresno CA, Bakersfield CA, Reno NV, Colorado Springs CO
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-04 MDT (Run 36)
 
 Goal: City page depth — add enriched content for Tucson AZ (Priority #5 continued).
