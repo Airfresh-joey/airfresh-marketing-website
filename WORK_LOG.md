@@ -1,5 +1,45 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 36)
+
+Goal: City page depth — add enriched content for Tucson AZ (Priority #5 continued).
+
+Audit:
+- 38th city enriched; selected Tucson AZ as highest-leverage unenriched Southwest defense/aerospace/trade market (next on list per Run 35 WORK_LOG)
+- Tucson: 1.1M metro, Arizona's second-largest city, anchoring Southern Arizona from Nogales AZ/Mexico border (63mi south) to Sierra Vista/Fort Huachuca (60mi SE)
+- Raytheon Missiles & Defense (global HQ, Tucson — RTX subsidiary, world's largest missile systems manufacturer: Patriot, Tomahawk, AMRAAM, Javelin, Stinger, HARM, SM-3, AIM-9X; 15,000+ Tucson employees — single largest private employer in Southern Arizona)
+- Davis-Monthan AFB (6,000+ active-duty/civilian/contractor; 309th AMARG "The Boneyard" — world's largest aircraft storage facility, 4,400+ aircraft on 2,600 Sonoran Desert acres)
+- Fort Huachuca (Sierra Vista AZ, 60mi SE — US Army Intelligence Center of Excellence, 10,000+ personnel, $2.1B+ economic impact)
+- Tucson Gem, Mineral & Fossil Showcase (TGMS — world's largest gem and mineral trade event, 40+ venues, 50,000+ buyers from 50+ countries, $120M+ economic impact, January–February)
+- University of Arizona (50,000+ students, $2B+ annual research, Big 12, Arizona Stadium 55,000 cap, McKale Center 14,545 cap, NCI-designated UA Cancer Center, Tech Parks Arizona 2,400+ employees)
+- Banner University Medical Center Tucson (UA College of Medicine, NCI Cancer Center, Level 1 Trauma); Tucson Medical Center (551 beds); Carondelet Health (Dignity Health); Ventana Medical Systems (Roche, global pathology leader)
+- 42%+ Hispanic/Latino population; Tohono O'odham and Pascua Yaqui tribal communities; Nogales AZ/Mexico border corridor ($30B+ annual trade)
+- Major events: Tucson Rodeo (47,000+, oldest continuous outdoor rodeo 1925); 4th Avenue Street Fair (100,000+, spring/fall); Tucson Meet Yourself (120,000+, 70+ cultures); El Tour de Tucson (7,000–9,000 cyclists); Pima County Fair (500,000+); Tucson Festival of Books (130,000+)
+- JW Marriott Tucson Starr Pass Resort (575 rooms, 100K sq ft); Loews Ventana Canyon Resort; Miraval Arizona (Forbes 4-Star); Westin La Paloma (487 rooms); Hacienda del Sol (National Historic Landmark); El Conquistador Tucson Hilton (428 rooms, 75K sq ft)
+- Tucson Convention Center (205,000 sq ft; Exhibit Hall 50,000 sq ft; Arena 9,100 cap; 32 meeting rooms)
+
+Shipped (commit 52e3272) — new file server/city-content/tucson.ts:
+- tucson-brand-ambassadors: Raytheon (15K+, world's largest missile manufacturer) + Davis-Monthan AFB (The Boneyard) defense capital framing; TGMS Gem Show (world's largest, 50K+ buyers, 40+ venues, $120M+)/Tucson Rodeo/4th Avenue Street Fair/Tucson Meet Yourself/Pima County Fair events; UA campus + McKale/Arizona Stadium; Banner/TMC/Carondelet/Ventana pharmaceutical NSM; bilingual 42%+ Hispanic + Nogales border; $20-38/hr; 6 FAQs; 12 areasServed
+- tucson-experiential-marketing: TGMS multilingual trade activation (50+ countries, 6 languages); 4th Ave + Meet Yourself + Pima Fair consumer calendar; UA game-day activations; Catalina Foothills luxury resort circuit; City of Tucson permit guide; 4 FAQs
+- tucson-event-management: TCC + JW Marriott Starr Pass + Loews Ventana Canyon + Miraval pharmaceutical NSM specialist; Raytheon/Davis-Monthan defense corporate events; TGMS 40-venue distributed management; $22-48/hr; 3 FAQs
+- tucson-convention-staffing: TCC + TGMS 40-venue circuit; 4-vertical approach (defense/aerospace, healthcare/pharma, technology/UA, minerals/gems — unique to Tucson); multilingual TGMS (Spanish/Mandarin/German/Portuguese/Japanese/Italian); $25-48/hr; 5 FAQs
+- tucson-promotional-models: background-matched (STEM-credentialed for Raytheon, pharmaceutical for Banner/TMC, gemology-aware multilingual for TGMS, bilingual Sonoran Spanish, outdoor/endurance, luxury resort); $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Tucson city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: tucson-brand-ambassadors.html — Raytheon 24×, TGMS/Gem Show 46×, University of Arizona 30×, Davis-Monthan 20×; FAQPage JSON-LD confirmed ✓
+- Committed 52e3272, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/tucson-brand-ambassadors and /city-services/tucson-convention-staffing ✓
+
+Status after this run:
+- 38 cities now have enriched city-service content (190 enriched pages total)
+- 120 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Baton Rouge LA, El Paso TX, Fresno CA, Bakersfield CA
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-04 MDT (Run 35)
 
 Goal: City page depth — add enriched content for Albuquerque NM (Priority #5 continued).
