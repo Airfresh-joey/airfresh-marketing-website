@@ -1,5 +1,59 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-03 MDT (Run 33)
+
+Goal: City page depth — add enriched content for Louisville KY (Priority #5 continued).
+
+Audit:
+- 35th city enriched; selected Louisville KY as highest-leverage unenriched Kentucky / Mid-South market (next on list per Run 32 WORK_LOG)
+- Louisville: 1.4M metro, Kentucky's largest city, commercial capital of the Bluegrass State
+- UPS (global HQ, Louisville — Fortune 500, 40,000+ Louisville-area employees; UPS Worldport at SDF = world's largest fully automated package sorting facility, 115 packages/second, 130+ aircraft nightly)
+- Humana (global HQ, 500 W. Main St — Fortune 500 #64 by revenue, $90B+ annual revenue, 55,000+ employees — one of three largest US health insurance companies; premier pharma NSM market)
+- Yum! Brands (global HQ, Louisville — KFC/Pizza Hut/Taco Bell, 55,000+ restaurants in 155+ countries, $7B+ system revenue)
+- Brown-Forman Corporation (global HQ, Louisville — Jack Daniel's, Woodford Reserve, Old Forester, Herradura; $4B+ revenue; NYSE: BF.B)
+- GE Appliances (Appliance Park, Louisville — 10,000+ employees, $9B+ annual revenue, Haier-owned since 2016)
+- Papa John's International (global HQ, Louisville metro — 5,400+ locations worldwide)
+- Kindred Healthcare (Louisville HQ, 50,000+ employees), Norton Healthcare (7 hospitals, 18,000+ employees), Baptist Healthcare System (11 hospitals KY/IN)
+- Kentucky Derby (Churchill Downs, 700 Central Ave — 150,000+ on-track, 16M+ global TV viewers, 140+ countries; first Saturday in May since 1875)
+- Kentucky Oaks (100,000+ on Friday before Derby)
+- Kentucky Derby Festival — 70+ events over two weeks, 1.5M+ participants across Greater Louisville (largest event series of any city its size in the US)
+- Thunder Over Louisville (Waterfront Park, 500,000+ — America's largest annual fireworks and air show; opens Kentucky Derby Festival)
+- Bourbon & Beyond (Highland Festival Grounds — world's largest bourbon and music festival, 100,000+ over four days, September)
+- Kentucky State Fair (Kentucky Exposition Center, 600,000+ over 11 days, August — one of most-attended state fairs in US)
+- St. James Court Art Show (350,000+ — consistently top-10 US outdoor art show, Old Louisville, October)
+- KFC Yum! Center (22,090 cap — one of largest mid-market arenas in US; 200+ events/year)
+- National Farm Machinery Show (300,000+, Kentucky Exposition Center, February — world's largest indoor farm machinery show)
+- Mid-America Trucking Show / MATS (70,000+, Kentucky Exposition Center, March — North America's largest trucking show)
+- Kentucky International Convention Center (KICC, 237,000 sq ft, Hall A-C, 52 meeting rooms; skywalk to Marriott Louisville Downtown + Hyatt Regency Louisville)
+- Kentucky Bourbon Trail (Bardstown KY, Clermont, Loretto, Lawrenceburg, Versailles) — premier bourbon brand experiential corridor
+- Forecastle Festival (40,000+/day, Waterfront Park, July)
+- NuLu Fest (50,000+, East Market District, September)
+- Southern Indiana coverage (New Albany IN, Jeffersonville IN, Clarksville IN — Clark + Floyd counties, 140,000+ residents)
+- Elizabethtown KY (45mi south, Fort Knox adjacent), Bardstown KY (40mi south, bourbon capital), Lexington KY (80mi east)
+- Kentucky ABC alcohol sampling compliance; bilingual Spanish-English callout (Portland/Shively/South Louisville Latino community)
+
+Shipped (commit e2b8799) — new file server/city-content/louisville.ts:
+- louisville-brand-ambassadors: UPS Worldport/Humana/Yum! Brands/GE Appliances/Brown-Forman/Papa John's Fortune 500 capital framing; Churchill Downs (150K+)/KFC Yum! Center (22K)/KICC/Kentucky Exposition Center/Slugger Field/Cardinal Stadium/Waterfront Park venues; Kentucky Derby (150K+)/Thunder Over Louisville (500K+)/Bourbon & Beyond (100K+)/Kentucky State Fair (600K+)/St. James Court Art Show (350K+)/Forecastle/NuLu Fest events; Bardstown KY bourbon trail + Southern Indiana (New Albany/Jeffersonville) cross-state; Kentucky ABC alcohol sampling compliance; bilingual Spanish-English callout; $20-38/hr; 6 FAQs; 14 areasServed
+- louisville-experiential-marketing: Kentucky Derby Festival two-week activation window strategy (70+ events, 1.5M+ participants); Churchill Downs sponsor pavilion + hotel circuit (Galt House/Brown/Seelbach/Omni/21c); Thunder Over Louisville (500K+) Waterfront Park pop-up; Bourbon & Beyond (100K+) Highland Festival Grounds brand pavilions; NuLu/Butchertown/Highlands/Waterfront/Big Four Bridge year-round zones; Kentucky Bourbon Trail distillery adjacent activation; Louisville Metro Gov + Derby Festival Inc + Waterfront Development Corp permit guide; 4 FAQs
+- louisville-event-management: KICC (237K sq ft, Hall A-C, 52 rooms, skywalk) specialist; Humana pharmaceutical NSM market (FDA Sunshine Act compliant); UPS/GE Appliances/Yum! Brands corporate events; Churchill Downs hospitality suite management (Millionaires Row/Jockey Club/Turf Club); KFC Yum! Center + Lynn Family Stadium + Cardinal Stadium sports venue staffing; Kentucky Exposition Center (1.2M sq ft) National Farm Machinery Show + MATS trade shows; $22-48/hr; 3 FAQs
+- louisville-convention-staffing: KICC + Kentucky Exposition Center 4-vertical approach (healthcare/pharma for Humana NSMs, agriculture/NFMS 300K+, transportation/MATS 70K+, food-beverage-spirits/bourbon trade); Galt House (1,300 rooms, 100K sq ft)/Omni (612 rooms)/Marriott/Hyatt/Brown/Seelbach/21c hotel circuit; NFMS agricultural-background staff + MATS CDL-aware staff specialty; Kentucky ABC bourbon trade compliance; bilingual Spanish-English callout; $25-48/hr; 5 FAQs
+- louisville-promotional-models: background-matched (pharma/clinical for Humana NSMs/UofL Health, bourbon-fluent for Brown-Forman/Jim Beam/Heaven Hill, Churchill Downs Derby Week VIP suite specialists, consumer goods for Yum! Brands/Papa John's/GE Appliances); Galt House/Brown (Hot Brown bar)/Seelbach (Oak Room)/Omni Urban Bourbon/21c luxury venue network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (Louisville city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: louisville-brand-ambassadors.html — Churchill Downs, Kentucky Derby, UPS, Humana, Thunder Over Louisville, Bourbon & Beyond, FAQPage JSON-LD confirmed ✓
+- Committed e2b8799, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/louisville-brand-ambassadors and /city-services/louisville-convention-staffing ✓
+
+Status after this run:
+- 35 cities now have enriched city-service content (175 enriched pages total)
+- 123 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Richmond VA, Albuquerque NM, Tucson AZ, Baton Rouge LA
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
 ## 2026-06-03 MDT (Run 32)
 
 Goal: City page depth — add enriched content for Memphis TN (Priority #5 continued).
