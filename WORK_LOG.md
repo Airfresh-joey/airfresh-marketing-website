@@ -1,5 +1,45 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 45)
+
+Goal: City page depth — add enriched content for Laredo TX (Priority #5 continued).
+
+Audit:
+- 47th city enriched; selected Laredo TX as highest-leverage unenriched US-Mexico border / international trade market (next on list per Run 44 WORK_LOG)
+- Laredo: 280,000 US pop / 650,000+ binational metro, #1 US inland port by cargo value (handles ~40% of all US-Mexico overland trade)
+- World Trade Bridge (FM 1472/IH-35 North — 4M+ commercial truck crossings/year; facilitates $300B+ annual US-Mexico trade — largest commercial land border crossing in the Western Hemisphere)
+- Four international bridges: Gateway to the Americas (Bridge 1), Juárez-Lincoln (Bridge 2), World Trade Bridge, Columbia-Solidarity Bridge
+- Washington's Birthday Celebration (12 days, February — 400,000+ attendance — world's largest WBC; continuous since 1898; Jalapeño Festival [20K+], WBC Grand Parade [50K+ spectators], International Bridge Ceremony, Society of Martha Washington Colonial Ball)
+- Eagle Ford Shale (Webb County southwestern edge — Laredo Petroleum [NYSE: LPI], ConocoPhillips Webb County ops, Centennial Resource/Jagged Peak, Penn Virginia)
+- Laredo Medical Center (HCA Healthcare, 326 beds — primary pharma NSM venue) + Doctors Hospital of Laredo (500+ beds) + CHRISTUS Laredo
+- 96%+ Hispanic/Latino population — most Hispanic major US city; Spanish is the dominant daily business and consumer language
+- Texas A&M International University (TAMIU, 8,000+ students — College of Nursing and Health Sciences, A.R. Sanchez Business School, Tesoro Arena 5,600 cap)
+- Mall Del Norte (1.1M sq ft — one of highest revenue/sq ft enclosed malls in US due to Mexico retail tourism; $2B+ annual cross-border retail purchasing)
+- Laredo Energy Arena (10,000+ cap — Laredo Heat SC USL League One, Laredo Jackrabbits AHL-affiliated hockey, concerts)
+- Added Laredo to cities-data.ts (was missing — required for generateStaticParams to build 9 service-specific HTML pages)
+- TABC alcohol sampling compliance; bilingual Spanish-English standard
+
+Shipped (commit 111575b) — new file server/city-content/laredo.ts:
+- laredo-brand-ambassadors: World Trade Bridge (#1 US inland port, $300B+ annual trade)/Washington's Birthday Celebration (400K+, world's largest WBC)/Eagle Ford Shale Webb County anchors; Laredo Medical Center (HCA 326 beds)/Doctors Hospital (500+ beds)/CHRISTUS Laredo pharma NSM; 96%+ Hispanic bilingual Spanish-English standard (Spanish-dominant daily language); TAMIU (8K+ students); Mall Del Norte Mexico retail tourism; Laredo Energy Arena; TABC compliance; $20-38/hr; 6 FAQs; 10 areasServed
+- laredo-experiential-marketing: WBC Jalapeño Festival (20K+)/WBC Grand Parade (50K+ spectators)/WBC Carnival Grounds activation strategy; Mall Del Norte Mexico cross-border retail tourism ($2B+) — in-store Spanish-dominant sampling strategy; World Trade Bridge B2B customs technology and logistics trade event corridor; City of Laredo permit guide + TABC; 4 FAQs
+- laredo-event-management: Laredo Civic Center (Downtown, Rio Grande) + Laredo Energy Arena (10K+) specialist; Laredo Medical Center/Doctors Hospital pharma NSM (FDA Sunshine Act); Eagle Ford Webb County energy corporate events; US CBP/Border Patrol appreciation events; Webb County government civic events; bilingual Spanish-English standard; $22-48/hr; 3 FAQs
+- laredo-convention-staffing: 4-vertical approach (international trade-logistics/customs tech/maquiladora/Border Trade Alliance, healthcare-pharma/FDA Sunshine Act, energy-Eagle Ford/petroleum engineering, government-border security/CBP/Border Patrol); TABC-certified; World Trade Bridge customs technology expos; bilingual; $25-48/hr; 5 FAQs
+- laredo-promotional-models: background-matched (international trade-logistics-aware for customs tech shows, Eagle Ford petroleum engineering for energy corporate events, pharma/clinical FDA Sunshine Act-compliant bilingual for Laredo Medical/Doctors Hospital, Mexico retail tourism-fluent for Mall Del Norte/Laredo Outlet Shoppes cross-border campaigns, TABC-certified spirits/wine); Laredo Marriott/Hilton Garden Inn luxury venue circuit; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Laredo city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: laredo-brand-ambassadors.html — 20 keyword signal matches (World Trade Bridge/Washington's Birthday/Eagle Ford/Laredo Medical/TABC/96% Hispanic); FAQPage JSON-LD confirmed ✓
+- Committed 111575b, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/laredo-brand-ambassadors and /city-services/laredo-convention-staffing ✓
+
+Status after this run:
+- 47 cities now have enriched city-service content (235 enriched pages total)
+- 111 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Anchorage AK, Boise ID, Lincoln NE, Chandler AZ
+
 ## 2026-06-05 MDT (Run 44)
 
 Goal: City page depth — add enriched content for Corpus Christi TX (Priority #5 continued).
