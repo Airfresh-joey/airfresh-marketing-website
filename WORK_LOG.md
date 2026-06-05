@@ -3044,3 +3044,42 @@ Status after this run:
 Next actions:
 - Priority #5 continued: Arlington TX, Fort Worth TX, Aurora CO, Anaheim CA (highest-traffic unenriched cities)
 - Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
+## 2026-06-05 MDT (Run 44)
+
+Goal: City page depth — add enriched content for Arlington TX (Priority #5 — DFW Metroplex hub, highest-leverage unenriched market).
+
+Audit:
+- 46th city enriched; Arlington TX selected as highest-leverage unenriched market in the DFW mid-cities corridor
+- Arlington is the entertainment and sports capital of the DFW Metroplex — home to AT&T Stadium (Dallas Cowboys, 100,000+ cap, world's largest domed stadium), Globe Life Field (Texas Rangers, 40,518 cap, 2023 World Series Champions), Esports Stadium Arlington (100,000 sq ft, largest dedicated esports arena in the United States), and Six Flags Over Texas (original Six Flags park, 3M+ annual visitors)
+- Geographic midpoint between Dallas (20 miles east) and Fort Worth (20 miles west) — DFW mid-cities hub serving 7.5M person Metroplex (4th largest US metro)
+- University of Texas at Arlington (UTA — 40,000+ students, Carnegie R1, one of most ethnically diverse public universities in US; College Park Center 7,000 cap)
+- Texas Health Arlington Memorial (369 beds, Level III Trauma), Medical City Arlington (HCA, Level II Trauma, 369 beds), Baylor Scott & White Orthopedic and Spine Hospital — pharmaceutical NSM market
+- Bell Textus (helicopter manufacturing), Lockheed Martin (F-35 production), AT&T, General Dynamics, L3Harris — DFW defense/corporate sector
+- Arlington Convention Center (70,000+ sq ft, directly adjacent to Globe Life Field and Esports Stadium)
+- International Bowling Campus (USBC/PBA/BPAA HQ, 621 Six Flags Drive — 52-lane competition center, national championships)
+- FIFA World Cup 2026 (11 matches scheduled for AT&T Stadium, June–July 2026)
+- TABC (Texas Alcoholic Beverage Commission) compliance required for all spirits/sampling activations in Texas — addressed in all applicable pages
+
+Shipped (commit 18902d9) — new file server/city-content/arlington.ts:
+- arlington-brand-ambassadors: AT&T Stadium Cowboys game-day (80-acre tailgate ecosystem, 100,000+ capacity), Globe Life Field Rangers season (81+ home games), Esports Stadium gaming brand ambassadors, Six Flags 3M+ visitors, UTA 40K+ students, bilingual Spanish-English (Tarrant County 27%+ Hispanic), pharma NSM market, DFW Metroplex full coverage; $18-38/hr; 5 FAQs; 10 areasServed
+- arlington-experiential-marketing: AT&T Stadium tailgate immersive experiences, Globe Life Field Boardwalk (accessible to non-ticket holders), Esports Stadium VR/gaming activations, Six Flags consumer sampling, Parks at Arlington and Lincoln Square retail, UTA campus activations; 3 FAQs
+- arlington-event-management: Arlington Convention Center (70K+ sq ft, Entertainment District), pharma NSMs (Texas Health/Medical City/BSW), Bell/Lockheed/AT&T corporate events, AT&T Stadium/Globe Life Field/Esports Stadium large-scale event management, USBC International Bowling Campus, FIFA World Cup 2026 (11 matches); $22-50/hr; 3 FAQs
+- arlington-convention-staffing: Arlington Convention Center, Esports Stadium gaming industry conventions, International Bowling Campus (USBC national championships), DFW Metroplex full circuit (Dallas Convention Center 1.8M sq ft, Fort Worth Convention Center, Gaylord Texan 490K sq ft, Dallas Market Center), pharma/medical device/aerospace trade show specialization; $20-48/hr; 3 FAQs
+- arlington-promotional-models: TABC-certified spirits sampling, auto show models (DFW Auto Show 400K+ visitors), gaming-literate esports event talent, pharma NSM FDA Sunshine Act compliant, AT&T Stadium/Globe Life Field sponsor talent, bilingual Spanish-English; $25-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean, 0 errors)
+- npm run build passed (6,314 total pages, 0 errors) — Arlington pages confirmed in .next/server/app/city-services/
+- Local build verified: arlington-brand-ambassadors.html — AT&T Stadium ✓, Globe Life Field ✓, Esports Stadium ✓, Six Flags ✓, UTA ✓, FIFA World Cup 2026 ✓; FAQPage JSON-LD confirmed ✓
+- Committed 18902d9, pushed to origin/main
+- Live HTTP 200 confirmed: /city-services/arlington-brand-ambassadors ✓, /city-services/arlington-convention-staffing ✓
+- H1 confirmed live: "Brand Ambassadors Arlington" ✓
+
+Status after this run:
+- 46 cities now have enriched city-service content (230 enriched pages total)
+- 105 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Fort Worth TX, Aurora CO, Anaheim CA (highest-traffic unenriched cities)
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
