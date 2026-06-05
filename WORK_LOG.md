@@ -1,5 +1,49 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 44)
+
+Goal: City page depth — add enriched content for Corpus Christi TX (Priority #5 continued).
+
+Audit:
+- 46th city enriched; selected Corpus Christi TX as highest-leverage unenriched South Texas / Coastal Bend market (next on list per Run 43 WORK_LOG)
+- Corpus Christi: 450,000 metro, 4th-largest Texas city, South Texas's premier port city and #1 US crude oil export hub
+- Naval Air Station Corpus Christi (largest naval aviation training base in the United States — 11,000+ military/civilian; 92nd Naval Air Station training pipeline producing 550+ pilots/year; Corpus Christi Army Depot adjacent; Coastal Bend's single largest employer)
+- Port of Corpus Christi (#1 crude oil export seaport in the United States — 1.5M+ bbl/day; 4th busiest US seaport by total tonnage; 20+ deep-water berths; $13B+ capital investment underway)
+- Valero Energy CC West Refinery (325,000+ bbl/day); Flint Hills Resources-Koch Industries East Plant (290,000+ bbl/day); Citgo Petroleum CC (250,000+ bbl/day) — combined ~900K+ bbl/day, largest refining concentration outside Houston Ship Channel
+- Christus Spohn Health System (Memorial 432 beds + Shoreline 316 beds + South 365 beds + 30+ clinics — dominant Coastal Bend health system, 11-county service area)
+- Driscoll Children's Hospital (South Texas's only freestanding children's hospital, 190+ beds, Level II Pediatric Trauma, 26-county service area)
+- Texas A&M University-Corpus Christi (12,000+ students, island campus Oso Bay, NCAA Division I Islanders)
+- American Bank Center (Arena 10,400 cap + Exhibit Hall 33,000+ sq ft + Auditorium 2,500 seats — directly on Corpus Christi Bay)
+- Selena Quintanilla-Pérez (born/raised/died in CC; Selena Museum; Mirador de la Flor; Selena Forever Weekend 30,000+ fans)
+- Corpus Christi Hooks (Whataburger Field, 5,000 cap — Double-A Central, Astros affiliate)
+- USS Lexington Museum (WWII aircraft carrier, Inner Harbor — 600,000+ annual visitors)
+- Texas State Aquarium (North Beach — 600,000+ annual visitors)
+- Buc Days (200,000+, late April–May); WindFest (March — windsurfing capital NA); Bay Fest (20,000+/day, October)
+- 64%+ Hispanic/Latino population — bilingual Spanish-English standard; Tejano cultural identity
+- Padre Island National Seashore (world's longest undeveloped barrier island); Port Aransas TX (22mi NE, resort market)
+- TABC alcohol sampling compliance
+
+Shipped (commit 0d82800) — new file server/city-content/corpus-christi.ts:
+- corpus-christi-brand-ambassadors: NAS Corpus Christi (11K+, largest US naval aviation training base)/Port of Corpus Christi (#1 US crude oil export seaport)/Valero-Flint Hills-Citgo refining corridor; Selena Forever Weekend (30K+)/Buc Days/American Bank Center/Whataburger Field venues; Christus Spohn Health (3 campuses)/Driscoll Children's Hospital (26-county area) pharma NSM market; bilingual Spanish-English (64%+ Hispanic); TABC compliance; $20-38/hr; 6 FAQs; 10 areasServed
+- corpus-christi-experiential-marketing: Shoreline Drive/Bayfront activation (Selena Mirador/USS Lexington/Texas State Aquarium); Selena legacy heritage brand activations (US Hispanic market); Buc Days (200K+)/WindFest/Bay Fest (20K+/day)/Great Texas Birding Classic; Padre Island/Port Aransas Cinnamon Shore resort circuit; City of Corpus Christi Special Events + TABC permit guide; 4 FAQs
+- corpus-christi-event-management: American Bank Center (Arena 10.4K/Exhibit Hall 33K sq ft/Auditorium 2.5K) + Omni CC Bayfront (470 rooms) specialist; Christus Spohn/Driscoll pharmaceutical NSM (FDA Sunshine Act); Valero/Flint Hills/Citgo energy corporate events; NAS Corpus Christi Navy Ball/military functions; $22-48/hr; 3 FAQs
+- corpus-christi-convention-staffing: American Bank Center Exhibit Hall specialist; 4-vertical (energy/petrochemical/API South Texas, healthcare/pharma/Christus Spohn/Driscoll, defense/NAS CC/AUSA, maritime/agriculture); bilingual Spanish-English standard; TAMUCC coverage; Laredo TX (150mi west, busiest US inland port) regional reach; $25-48/hr; 5 FAQs
+- corpus-christi-promotional-models: background-matched (pharmaceutical/clinical for Christus Spohn/Driscoll FDA Sunshine Act NSMs, energy/petroleum for Valero/Flint Hills/Citgo, military-community-fluent for NAS CC, coastal/marine for Texas State Aquarium/Port Aransas, Selena/Tejano cultural heritage-fluent for US Hispanic market); Omni CC/Marriott Bayfront/Cinnamon Shore Port Aransas luxury circuit; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Corpus Christi city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: corpus-christi-brand-ambassadors.html — Christus Spohn 38×, NAS Corpus Christi 28×, Driscoll 22×, Selena 14×, Whataburger Field 10×, Valero 8×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed 0d82800, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/corpus-christi-brand-ambassadors and /city-services/corpus-christi-convention-staffing ✓
+
+Status after this run:
+- 46 cities now have enriched city-service content (230 enriched pages total)
+- 112 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Laredo TX, Anchorage AK, Boise ID, Lincoln NE
+
 ## 2026-06-05 MDT (Run 43)
 
 Goal: City page depth — add enriched content for Spokane WA (Priority #5 continued).
