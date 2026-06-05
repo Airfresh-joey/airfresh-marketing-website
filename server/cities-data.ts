@@ -79,6 +79,7 @@ export const cities: CityData[] = [
   { city: "Chesapeake", state: "Virginia", slug: "chesapeake", population: "250K", marketSize: "Small", industries: ["Agriculture", "Manufacturing", "Healthcare"] },
   { city: "Colorado Springs", state: "Colorado", slug: "colorado-springs", population: "500K", marketSize: "Medium", industries: ["Military", "Tech", "Tourism"] },
   { city: "Corpus Christi", state: "Texas", slug: "corpus-christi", population: "320K", marketSize: "Small", industries: ["Energy", "Shipping", "Tourism"] },
+  { city: "Laredo", state: "Texas", slug: "laredo", population: "260K", marketSize: "Small", industries: ["International Trade", "Energy", "Retail"] },
   { city: "Durham", state: "North Carolina", slug: "durham", population: "285K", marketSize: "Medium", industries: ["Healthcare", "Tech", "Education"] },
   { city: "El Paso", state: "Texas", slug: "el-paso", population: "680K", marketSize: "Medium", industries: ["Military", "Healthcare", "Manufacturing"] },
   { city: "Garland", state: "Texas", slug: "garland", population: "245K", marketSize: "Medium", industries: ["Manufacturing", "Tech", "Healthcare"] },
