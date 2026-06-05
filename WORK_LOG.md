@@ -1,5 +1,46 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 42)
+
+Goal: City page depth — add enriched content for Stockton CA (Priority #5 continued).
+
+Audit:
+- 44th city enriched; selected Stockton CA as highest-leverage unenriched San Joaquin Valley / Central California inland port market (next on list per Run 41 WORK_LOG)
+- Stockton: 800,000 metro, San Joaquin County seat, inland deepwater port city on the San Joaquin River Delta
+- Port of Stockton (California's only inland deepwater seaport, 40+ miles from Pacific — one of westernmost inland seaports in US; 3M+ tons cargo/year; primary maritime industry event venue)
+- Stockton–Tracy–Lathrop logistics triangle: 40M+ sq ft warehouse/distribution space; Amazon (Tracy, 3,000+ workers), Target (Tracy, 1,500+), Walmart (Lathrop, 1,200+), Home Depot (Tracy), FedEx (Stockton Ground hub), UPS
+- Stockton Arena (248 W. Fremont St, Downtown — 11,000 cap; Stockton Kings NBA G League, 160+ events/year)
+- Banner Island Ballpark (5,000 cap — Stockton Ports, Class-A SF Giants affiliate, 70 home games/season)
+- San Joaquin County Fair (1658 S. Airport Way, June — 300,000+ over 10 days; California's 3rd-largest county fair)
+- Lodi Wine Country (SR-12, 12 miles north — Lodi AVA, 85+ wineries, 110,000+ acres; Lodi Wine & Food Festival, ZinFest)
+- University of the Pacific (3601 Pacific Ave — California's oldest chartered university, est. 1851; 6,000+ students; Brubeck Institute; McGeorge School of Law; Alex G. Spanos Center 6,150 cap; Stagg Stadium 30,000 cap)
+- Dignity Health St. Joseph's Medical Center (350+ beds) + Dameron Hospital + San Joaquin General Hospital (Level II Trauma) pharma NSM market
+- 42%+ Hispanic/Latino population — bilingual Spanish-English standard
+- One of largest Southeast Asian-American communities in CA: Cambodian-American, Hmong, Vietnamese, Filipino-American
+- California ABC (Department of Alcoholic Beverage Control) alcohol sampling compliance callout
+- Weber Point Events Center (Downtown waterfront, outdoor amphitheater 3,000+ cap — summer concert series)
+
+Shipped (commit b47e8d0) — new file server/city-content/stockton.ts:
+- stockton-brand-ambassadors: Port of Stockton deepwater inland seaport framing; Tracy–Lathrop distribution corridor (Amazon/Target/Walmart/FedEx/UPS logistics hub); Stockton Arena (11K, Kings)/Banner Island Ballpark (Ports)/San Joaquin Fairgrounds/Weber Point waterfront venues; San Joaquin County Fair (300K+)/Lodi Wine Country/Stockton Kings/Stockton Ports events; Dignity Health/Dameron/San Joaquin General pharma NSM market; bilingual Spanish-English standard (42%+ Hispanic) + multilingual SE Asian callout (Khmer/Hmong/Vietnamese/Tagalog); California ABC compliance; $20-36/hr; 6 FAQs; 10 areasServed
+- stockton-experiential-marketing: Downtown waterfront/Weber Point activation strategy; Stockton Arena + Banner Island Ballpark fan zone zones; San Joaquin County Fair activation guide; Lodi Wine Country lifestyle brand corridor (85+ wineries, 12mi north); City of Stockton Office of Economic Development special event permit + California ABC process; 4 FAQs
+- stockton-event-management: Stockton Arena + Banner Island Ballpark + DoubleTree–Courtyard Marriott hotel circuit specialist; Dignity Health/Dameron pharma NSM (FDA Sunshine Act); Tracy–Lathrop logistics corporate events (Amazon/Target/Walmart distribution center employee recognition); UOP academic events; $22-48/hr; 3 FAQs
+- stockton-convention-staffing: San Joaquin County Fairgrounds + Stockton Arena convention specialist; 4-vertical approach (agriculture/agribusiness/San Joaquin Valley produce, logistics/supply chain/Tracy corridor, healthcare/pharma/Dignity Health, education/law/UOP-McGeorge); bilingual + SE Asian multilingual staff; California ABC-certified; $25-48/hr; 5 FAQs
+- stockton-promotional-models: background-matched (pharma/pre-med/nursing for Dignity Health NSMs, wine-educated/sommelier for Lodi Wine Country, logistics-industry-aware for Amazon/Target/Walmart DCs, sports-fluent for Kings/Ports arena activations, bilingual Spanish-English + Khmer/Hmong/Vietnamese/Tagalog multilingual); DoubleTree Stockton/Holiday Inn/Courtyard Marriott luxury circuit; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Stockton city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: stockton-brand-ambassadors.html — San Joaquin County Fair 32×, Stockton Arena 32×, Port of Stockton 16×, Stockton Kings 16×, University of the Pacific 20×; FAQPage JSON-LD confirmed ✓
+- Committed b47e8d0, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/stockton-brand-ambassadors and /city-services/stockton-convention-staffing ✓
+
+Status after this run:
+- 44 cities now have enriched city-service content (220 enriched pages total)
+- 114 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Spokane WA, Corpus Christi TX, Laredo TX, Anchorage AK
+
 ## 2026-06-04 MDT (Run 41)
 
 Goal: City page depth — add enriched content for Colorado Springs CO (Priority #5 continued).
