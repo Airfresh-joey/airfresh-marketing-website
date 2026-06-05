@@ -1,5 +1,47 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 46)
+
+Goal: City page depth — add enriched content for Anchorage AK (Priority #5 continued).
+
+Audit:
+- 48th city enriched; selected Anchorage AK as highest-leverage unenriched market (next on list per Run 45 WORK_LOG)
+- Anchorage: 300,000 residents = 41% of Alaska's entire state population in one metro; Alaska's commercial, financial, and logistical capital
+- Ted Stevens Anchorage International Airport (ANC) — #4 cargo airport in the world by landed cargo weight; 8,000+ cargo flights/month; FedEx, UPS, DHL, Amazon Air, Cargolux, Nippon Cargo, Cathay Pacific Cargo, Atlas Air hub
+- Iditarod Trail Sled Dog Race Ceremonial Start (4th Ave Downtown — 80,000+ in-person spectators; global media to 50+ countries; early March; "The Last Great Race on Earth")
+- Fur Rendezvous Winter Carnival (Rondy — 100,000+ attendance, 10+ days, late February — Anchorage's oldest and largest winter festival since 1936)
+- Alaska State Fair (Palmer, 45mi north, 330,000+ attendance, 12 days late August — Alaska's largest annual event)
+- Joint Base Elmendorf-Richardson (JBER — 673,280 acres, 13,000+ active-duty, 11th Air Force HQ, F-22 3rd Wing, 1st Stryker Brigade 25th ID)
+- Hilcorp Alaska (Alaska's largest private employer, 1,700+ employees) + ConocoPhillips Alaska (200,000+ bbl/day North Slope, Downtown ANC HQ)
+- Dena'ina Civic and Convention Center (49,000 sq ft, 2,500-seat main hall — Alaska's largest convention facility)
+- Providence Alaska Medical Center (401 beds, Level II Trauma — Southcentral Alaska's largest hospital)
+- Alaska Regional Hospital (HCA Healthcare, 250 beds) + Alaska Native Medical Center (ANTHC, 173 beds, 65,000+ Alaska Native patients)
+- Alaska Federation of Natives Annual Convention (AFN — 3,000+ delegates)
+- Alaska Oil and Gas Association (AOGA) Annual Conference (Dena'ina, January)
+- Alaska Native cultural competency callout: ANCSA structures, Elders-first protocol — unique national differentiator
+- Alyeska Resort Girdwood (1,600+ skiable acres — Alaska's premier ski resort, corporate retreat circuit)
+
+Shipped (commit 4bdc3eb) — new file server/city-content/anchorage.ts:
+- anchorage-brand-ambassadors: Iditarod Ceremonial Start (80K+ spectators)/Fur Rendezvous (100K+)/Alaska State Fair (330K+); JBER/Hilcorp/ConocoPhillips/SLB oil & gas corporate; Providence Alaska/Alaska Regional/ANMC pharma NSM; Ted Stevens ANC #4 world cargo hub; AMCO compliance; $22-42/hr; 6 FAQs; 10 areasServed
+- anchorage-experiential-marketing: Iditarod 4th Ave activation (cold-weather kit/heated tents standard); Rondy multi-event strategy; Alaska State Fair pavilion guide; City of Anchorage + ANC airport + AMCO permit guide; 4 FAQs
+- anchorage-event-management: Dena'ina Convention Center specialist; AOGA/AFN conventions; Providence Alaska/Alaska Regional pharma NSM (FDA Sunshine Act); JBER military gala (base-access credentialed); Hotel Captain Cook/Marriott/Hilton circuit; $22-50/hr; 4 FAQs
+- anchorage-convention-staffing: 4-vertical (oil & gas/AOGA, defense/JBER, healthcare/pharma/Sunshine Act, Alaska Native/AFN/ANCSA); North Slope-familiar UAA engineering alumni pipeline; Alaska Native cultural competency unique national differentiator; AMCO standard; $25-55/hr; 5 FAQs
+- anchorage-promotional-models: North Slope oil industry familiar/genuine Alaska outdoor lifestyle/pharma clinical FDA Sunshine Act/JBER-protocol-fluent/AMCO-certified; Iditarod sponsor cold-weather activation bundle; Hotel Captain Cook/Hilton/Alyeska Resort luxury circuit; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean, 0 errors)
+- npm run build passed (6,324 static pages — 9 Anchorage city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: anchorage-brand-ambassadors.html — Iditarod 28×, Fur Rendezvous 28×, Alaska State Fair 20×, Joint Base Elmendorf 12×, Alaska Regional Hospital 10×; FAQPage JSON-LD confirmed ✓
+- Committed 4bdc3eb, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/anchorage-brand-ambassadors and /city-services/anchorage-convention-staffing ✓
+
+Status after this run:
+- 48 cities now have enriched city-service content (240 enriched pages total)
+- 110 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Boise ID, Lincoln NE, Chandler AZ, Scottsdale AZ
+
 ## 2026-06-05 MDT (Run 45)
 
 Goal: City page depth — add enriched content for Laredo TX (Priority #5 continued).
