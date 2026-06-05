@@ -2959,3 +2959,42 @@ Status after this run:
 Next actions:
 - Priority #5 continued: Fresno CA, Bakersfield CA, Baton Rouge LA, San Jose CA
 - Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
+## 2026-06-05 MDT (Run 38)
+
+Goal: City page depth — add enriched content for San Jose CA (Priority #5 continued).
+
+Audit:
+- 45th city enriched; San Jose selected as highest-leverage unenriched market (1M population, $500B+ annual metro economic output, Silicon Valley capital)
+- Cisco Systems (HQ, $57B revenue, 80K+ employees; Cisco Live 25K+ attendees), Adobe (HQ, $19B), Zoom ($4.4B), PayPal ($29B HQ), eBay ($10B HQ) anchor downtown tech campus cluster
+- Intel (Santa Clara HQ, $54B revenue), Nvidia (Santa Clara HQ, $60B+ revenue; GTC AI Conference 300K+ online), Broadcom ($36B HQ) define semiconductor leadership
+- Apple (Cupertino), Google (Mountain View), Meta (Menlo Park) provide South Bay spillover demand
+- San Jose Convention Center (550K sq ft, 8 exhibit halls): Cisco Live (25K), NVIDIA GTC (300K online), RSA Conference (40K), Intel Innovation, SAP Sapphire, VMware Explore
+- SAP Center (17,562-seat arena; San Jose Sharks NHL; 41 home games annually; tech-sector sponsors: Cisco, SAP, Adobe, Intel, PayPal)
+- Santana Row (15M annual visitors, $130K+ median HHI, Louis Vuitton/Gucci/Apple/Lululemon) + Westfield Valley Fair (#1 revenue mall in Northern California)
+- Tet Festival San Jose (150,000+; Eastside; largest West Coast Tet after Garden Grove), Japantown Obon (50K+; 1 of 3 remaining US Japantowns), Silicon Valley Pride (75K+)
+- Most ethnically diverse major US city: Asian American 37%+, Hispanic/Latino 30%+; multilingual coverage: Mandarin/Cantonese/Vietnamese/Spanish/Hindi/Punjabi/Korean/Tagalog
+- Pharmaceutical/biotech: Intuitive Surgical (Sunnyvale, $7B+), Stanford Health Care (600+ beds, Top 10 national), El Camino Health (Mountain View)
+- San Jose International Auto Show (100K+; McEnery Convention Center); PayPal Park / MLS Earthquakes; Levi's Stadium (Santa Clara, 68.5K cap, 49ers)
+
+Shipped (commit b4f7075) — new file server/city-content/san-jose.ts:
+- san-jose-brand-ambassadors: Full Silicon Valley tech economy; Cisco Live/NVIDIA GTC/RSA convention market; SAP Center Sharks game-day; Santana Row consumer; multilingual (Mandarin/Cantonese/Vietnamese/Spanish/Hindi/Punjabi); $20-40/hr; 5 FAQs; 12 areasServed
+- san-jose-experiential-marketing: Santana Row pop-ups; Westfield Valley Fair; PayPal Park/Earthquakes game-day; developer experience events (hackathons, tech campus activations); Tet Festival, Japantown Obon, Silicon Valley Pride community events; 3 FAQs
+- san-jose-event-management: San Jose Convention Center hotel campus (Marriott 510 rooms, Hilton 353 rooms, AC Hotel); Cisco/Adobe/SAP campus buyouts; pharma NSM (Intuitive Surgical, Stanford Health); $25-50/hr; 3 FAQs
+- san-jose-convention-staffing: Cisco Live (25K), NVIDIA GTC (300K+ online), RSA, Intel Innovation, SAP Sapphire, VMware Explore, Fortinet, ServiceNow; B2B lead capture / Salesforce CRM integration; technical background screening; Santa Clara CC coverage; $28-55/hr; 3 FAQs
+- san-jose-promotional-models: San Jose International Auto Show (100K+); Santana Row/Westfield luxury activations; Silicon Valley affluent consumer ($130K+ median HHI); multilingual/bilingual talent; FDA Sunshine Act pharma compliance; BMW/Mercedes/Porsche/Tesla dealership events; $30-70/hr; 3 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean, 0 errors)
+- npm run build passed (6,314 static pages, 0 errors)
+- Live HTTP 200 confirmed: /city-services/san-jose-brand-ambassadors ✓, /city-services/san-jose-convention-staffing ✓
+- H1 confirmed live: "Brand Ambassadors San Jose" ✓
+- Committed b4f7075, pushed to origin/main
+
+Status after this run:
+- 45 cities now have enriched city-service content (225 enriched pages total)
+- 106 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Arlington TX, Fort Worth TX, Aurora CO, Anaheim CA (highest-traffic unenriched cities)
+- Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
