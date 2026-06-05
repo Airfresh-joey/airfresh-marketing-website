@@ -1,5 +1,51 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 43)
+
+Goal: City page depth — add enriched content for Spokane WA (Priority #5 continued).
+
+Audit:
+- 45th city enriched; selected Spokane WA as highest-leverage unenriched Pacific Northwest / Inland Northwest market (next on list per Run 42 WORK_LOG)
+- Spokane: 600,000 metro, Eastern Washington's largest city, commercial hub of the Inland Northwest (Eastern WA + Northern ID + NE Oregon + Western MT)
+- Lilac Bloomsday Run (first Sunday in May — 50,000+ registered participants, 100,000+ spectators; world's largest timed road race by official timing finishers; 12km/7.46mi course from Riverside Ave through Spokane River Gorge)
+- Hoopfest (last weekend of June — 500,000+ attendance; world's largest 3-on-3 basketball tournament; 6,000+ teams, 24,000+ players, 450+ courts across 45 downtown blocks)
+- Spokane Interstate Fair (Spokane County Fair & Expo Center, 404 N. Havana — late September, 10 days; 200,000+ attendees; Eastern Washington's premier county fair)
+- Fairchild Air Force Base (Airway Heights, 35mi west — 4,200+ active duty, 8,000+ total; 92nd Air Refueling Wing KC-135R; $1.3B+ annual economic impact; Eastern WA's largest employer)
+- Providence Sacred Heart Medical Center (W 101 8th Ave — 646 beds, Level II Trauma, Inland Northwest's largest hospital)
+- MultiCare Deaconess Hospital + Spokane VA Medical Center + WSU Spokane (Elson S. Floyd College of Medicine + College of Pharmacy) pharmaceutical NSM market
+- Gonzaga University (502 E. Boone Ave — 7,000+ students; nationally ranked Bulldogs basketball; McCarthey Athletic Center 6,000 cap; Gonzaga Law School)
+- Eastern Washington University (Cheney, 12mi west — 12,000+ students; EWU Eagles FCS football)
+- Avista Corporation (NYSE: AVA — Spokane HQ, 400,000+ customers WA/ID/OR/MT; 2,000+ local employees)
+- Itron Inc (Liberty Lake WA — Fortune 1000, 8,000+ global employees, smart meters/energy management)
+- Schweitzer Engineering Laboratories (Pullman WA, 60mi south — 5,000+ global employees, power protection technology)
+- Northern Quest Resort & Casino (Kalispel Tribe, Airway Heights — 250 rooms, 10,000-seat outdoor amphitheater, 21,000 sq ft conference center)
+- The Historic Davenport Hotel (National Historic Landmark 1914 — 716+ rooms, Grand Ballroom; 4 properties)
+- Spokane Convention Center (334 W. Spokane Falls Blvd — 100,000+ sq ft, 28 meeting rooms, DoubleTree walkway)
+- Coeur d'Alene ID (30mi east — 160,000+ metro, Forbes 4-Star Coeur d'Alene Resort, 35,000 sq ft conference center)
+- Washington State LCB alcohol sampling compliance; Eastern WA wine appellations (Walla Walla AVA, Columbia Valley AVA, Yakima Valley)
+- Northwest Winterfest (Riverfront Park, Nov–Jan — 500,000+ visits, Spokane's largest winter festival)
+
+Shipped (commit 7a4c6c1) — new file server/city-content/spokane.ts:
+- spokane-brand-ambassadors: Hoopfest (500K+, world's largest 3-on-3 tournament)/Bloomsday (50K+ participants, world's largest timed road race)/Spokane Interstate Fair (200K+) event calendar; Fairchild AFB (4,200+ active duty, $1.3B+)/Gonzaga (nationally ranked Bulldogs)/EWU economic anchors; Providence Sacred Heart (646 beds, Level II Trauma)/MultiCare Deaconess/WSU Spokane medical campus pharma NSM market; WA LCB alcohol sampling compliance; $20-38/hr; 6 FAQs; 10 areasServed
+- spokane-experiential-marketing: Hoopfest 45-block multi-zone activation strategy (sponsored courts/Start Line/Main Stage/neighborhood zones); Bloomsday course activation (Start Line Sponsor Village/Mile 3 Hydration/Doomsday Hill Cheer Zone/Finish Festival); Northern Quest Amphitheater (10,000-seat, 150K+ annual); Riverfront Park Northwest Winterfest (500K+ visits); City of Spokane + Run Bloomsday Association + WA LCB permit guide; 4 FAQs
+- spokane-event-management: Spokane Convention Center (100K+ sq ft, 28 rooms, DoubleTree walkway) + Northern Quest Conference Center (21K sq ft) specialist; Providence/MultiCare/WSU Spokane pharmaceutical NSM (FDA Sunshine Act); Fairchild AFB military event staffing; Avista Corporation corporate events; Historic Davenport Hotel (National Historic Landmark) gala staffing; $22-48/hr; 3 FAQs
+- spokane-convention-staffing: SCC specialist; 4-vertical approach (healthcare/pharma/Providence/WSU Spokane, government-defense/Fairchild/Hanford DOE, technology-energy/Avista/Itron/Schweitzer, agriculture-forestry-natural resources/Pacific Northwest); STEM-credentialed pipeline from Gonzaga/WSU/EWU; WA LCB consumer expo compliance; Coeur d'Alene Resort (35K sq ft, 30mi east) coverage; $25-48/hr; 5 FAQs
+- spokane-promotional-models: background-matched (pharma/clinical FDA Sunshine Act for Providence/Northern Quest NSMs, outdoor/sports/active-lifestyle for Hoopfest/Bloomsday/Mt. Spokane activations, STEM-credentialed engineering for Avista/Itron/Schweitzer, military-community-fluent for Fairchild AFB, WA LCB-endorsed Eastern WA wine/spirits specialists); Northern Quest Resort/Davenport Hotel/Coeur d'Alene Resort (Forbes 4-Star) luxury venue network; Idaho ABC compliance for CDA Resort activations; $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Spokane city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: spokane-brand-ambassadors.html — Hoopfest 36×, Bloomsday 36×, Gonzaga 30×, Fairchild 22×, Providence Sacred Heart 22×; FAQPage JSON-LD confirmed ✓
+- Committed 7a4c6c1, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/spokane-brand-ambassadors and /city-services/spokane-convention-staffing ✓
+
+Status after this run:
+- 45 cities now have enriched city-service content (225 enriched pages total)
+- 113 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Corpus Christi TX, Laredo TX, Anchorage AK, Boise ID
+
 ## 2026-06-05 MDT (Run 42)
 
 Goal: City page depth — add enriched content for Stockton CA (Priority #5 continued).
