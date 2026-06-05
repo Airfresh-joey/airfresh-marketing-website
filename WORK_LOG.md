@@ -1,5 +1,52 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-04 MDT (Run 41)
+
+Goal: City page depth — add enriched content for Colorado Springs CO (Priority #5 continued).
+
+Audit:
+- 43rd city enriched; selected Colorado Springs CO as highest-leverage unenriched Mountain West military/aerospace market (next on list per Run 40 WORK_LOG)
+- Colorado Springs: 750,000 metro, Military City USA and Olympic City USA, El Paso County
+- NORAD/USNORTHCOM (Peterson Space Force Base — North American Aerospace Defense Command; both commands share Peterson SFB)
+- Cheyenne Mountain Space Force Station (original NORAD Cheyenne Mountain Complex, 2,000+ feet underground, alternate command center, 1,000+ personnel)
+- US Space Command (USSPACECOM, reactivated 2019, Peterson SFB — one of only 11 unified combatant commands, 1,400+ and growing)
+- Fort Carson (SE Colorado Springs — 35,000+ active-duty/civilian/contractor; 4th Infantry Division; Mountain Post; $3.7B+ annual economic impact)
+- US Air Force Academy (5,700-acre campus, 4,400 cadets, Falcon Stadium 46,692 cap, 1.5M+ annual visitors)
+- Schriever Space Force Base (24mi east, primary US Space Force operational mission base, 8,000+)
+- Defense contractor ecosystem: Lockheed Martin (2,000+ local), Northrop Grumman, Raytheon (1,000+), General Dynamics IT (1,500+), L3Harris, Leidos, SAIC, Booz Allen Hamilton, MITRE
+- Space Symposium (The Broadmoor, April — world's premier space industry conference; 15,000+ from 50+ nations; Space Foundation HQ Colorado Springs)
+- Pikes Peak International Hill Climb — Race to the Clouds (late June/July — 12.42 miles, 156 turns, 14,115-ft summit; 80,000+; 100+ years; global TV, 60+ countries; one of world's most famous motorsport events)
+- Colorado Balloon Classic (Memorial Park, Labor Day weekend — 80,000+, 100+ balloons)
+- Pikes Peak or Bust Rodeo (Norris-Penrose Event Center, August — PRCA, 50,000+)
+- The Broadmoor (1 Lake Avenue — Colorado's only Forbes 5-Star hotel; 740 rooms; 180,000+ sq ft meeting space; International Center; primary pharmaceutical NSM and Space Symposium venue)
+- UCHealth Memorial Hospital Central (438 beds, Level I Trauma, Southern Colorado flagship)
+- Penrose-St. Francis Health Services (Centura Health, 522 beds, Penrose + St. Francis Medical Center)
+- US Olympic & Paralympic Committee HQ + 30+ National Governing Bodies based in Colorado Springs
+- US Olympic & Paralympic Museum (Downtown, 2020, TIME 100 Best Places, 500,000+ annual visitors)
+- Garden of the Gods (2M+ annual visitors — 300-ft red-rock formations, National Natural Landmark)
+- Cheyenne Mountain Resort (316 rooms, 35,000 sq ft meeting), Colorado Springs Convention Center (200K sq ft, 100K sq ft exhibit hall)
+
+Shipped (commit 77e4a80) — new file server/city-content/colorado-springs.ts:
+- colorado-springs-brand-ambassadors: NORAD/USNORTHCOM/US Space Command/Fort Carson (35K+)/USAFA defense-capital framing; Space Symposium (15K+, 50+ nations)/Pikes Peak Hill Climb (80K+)/Colorado Balloon Classic (80K+)/Pikes Peak or Bust Rodeo (50K+) events; UCHealth Memorial Level I Trauma + Penrose-St. Francis (Centura Health) pharma NSM market; The Broadmoor (Forbes 5-Star)/CSCC/Cheyenne Mountain Resort/Norris-Penrose/Falcon Stadium venues; defense contractor ecosystem (Lockheed/Northrop/Raytheon/GDITA/L3Harris); USOC + USOP Museum Olympic City framing; $20-38/hr; 6 FAQs; 10 areasServed
+- colorado-springs-experiential-marketing: Space Symposium B2B activation (The Broadmoor International Center, 15K+ C-suite/government audience); Pikes Peak Hill Climb multi-zone strategy (start line/mid-mountain/Summit House 14,115ft/Glen Cove Fan Zone); Colorado Balloon Classic (Memorial Park, 80K+ family platform); Garden of the Gods permit process + commercial zones; US Olympic & Paralympic Museum brand activations; City of Colorado Springs Parks permit guide (45-90 day lead); 4 FAQs
+- colorado-springs-event-management: The Broadmoor (Forbes 5-Star, 180K+ sq ft) + CSCC specialist; UCHealth Memorial/Penrose-St. Francis pharma NSM (FDA Sunshine Act); Space Symposium management; Fort Carson Mountain Post/Elkhorn Conference Center military event staffing; $22-48/hr; 3 FAQs
+- colorado-springs-convention-staffing: CSCC + Broadmoor International Center specialist; 4-vertical approach (defense/aerospace/space-tech for Space Symposium/Fort Carson/Peterson SFB, healthcare/pharma for UCHealth/Centura NSMs, sports/Olympic for USOC/NGB events, tourism/hospitality); STEM-credentialed aerospace/defense staff; full hotel circuit (Broadmoor/Cheyenne Mountain/Marriott/Antlers); Pueblo CO coverage (45mi south); $25-48/hr; 5 FAQs
+- colorado-springs-promotional-models: background-matched (STEM-credentialed aerospace/defense for Space Symposium, pharmaceutical/clinical FDA Sunshine Act for UCHealth/Penrose NSMs, motorsport-credible outdoor-athletes for Pikes Peak Hill Climb, military-community-fluent for Fort Carson/USAFA, Olympic-credentialed sports-background for USOC events); The Broadmoor/Cheyenne Mountain/Antlers luxury venue network; $28-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- npm run build passed (9 Colorado Springs city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: colorado-springs-brand-ambassadors.html — Space Symposium 28×, Fort Carson 38×, NORAD 14×, The Broadmoor 24×, Pikes Peak 40×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed 77e4a80, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/colorado-springs-brand-ambassadors and /city-services/colorado-springs-convention-staffing ✓
+
+Status after this run:
+- 43 cities now have enriched city-service content (215 enriched pages total)
+- 115 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Stockton CA, Spokane WA, Corpus Christi TX, Laredo TX
+
 ## 2026-06-04 MDT (Run 40)
 
 Goal: City page depth — add enriched content for Reno NV (Priority #5 continued).
