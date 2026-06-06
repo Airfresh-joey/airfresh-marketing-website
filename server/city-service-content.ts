@@ -77,6 +77,7 @@ import { stocktonContent } from './city-content/stockton';
 import { spokaneContent } from './city-content/spokane';
 import { sanJoseContent } from './city-content/san-jose';
 import { arlingtonContent } from './city-content/arlington';
+import { fortWorthContent } from './city-content/fort-worth';
 import { corpusChristiContent } from './city-content/corpus-christi';
 import { laredoContent } from './city-content/laredo';
 import { anchorageContent } from './city-content/anchorage';
@@ -136,6 +137,7 @@ const allCityServiceContent: Record<string, CityServiceContent> = {
   ...spokaneContent,
   ...sanJoseContent,
   ...arlingtonContent,
+  ...fortWorthContent,
   ...corpusChristiContent,
   ...laredoContent,
   ...anchorageContent,
