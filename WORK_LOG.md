@@ -3257,3 +3257,33 @@ Status after this run:
 Next actions:
 - Priority #5 continued: Fort Worth TX, Aurora CO, Anaheim CA (highest-traffic unenriched cities)
 - Priority #6: Case study internal links — ensure all case study pages link back to relevant service pages
+
+## 2026-06-06 MDT (Run 45)
+
+Goal: City page depth — add enriched content for Fort Worth TX (Priority #1 — next unenriched city after Arlington TX Run 44).
+
+Audit:
+- 47th city enriched; Fort Worth TX selected as highest-leverage next unenriched market
+- Fort Worth is the 12th-largest US city and 5th-largest in Texas (960,000+ population)
+- Key venues: Dickies Arena (14,000 cap), Fort Worth Stockyards (1M+ annual visitors), Fort Worth Convention Center (250,000+ sq ft), Will Rogers Memorial Center (100,000+ sq ft), Sundance Square (35-block downtown), Texas Motor Speedway (181,600 cap, 25 mi north — NASCAR/INDYCAR)
+- Major employers: Lockheed Martin (~20,000 FW employees, F-35 production), Bell Textus (~7,500), BNSF Railway (HQ, 37,000+ US employees), American Airlines (HQ), Alcon (HQ, .4B revenue)
+- Hospital triangle: Texas Health Harris Methodist FW (726 beds Level II Trauma), BSW All Saints (537 beds), JPS Health Network (537 beds Level I Trauma)
+- TCU (11,500+ students, Big 12, Amon Carter Stadium 44,008 cap)
+- Fort Worth Stock Show and Rodeo (23 days January, 1M+ attendees — worlds largest indoor rodeo)
+- TABC certification required for all spirits/sampling in Texas
+- Tarrant County 35%+ Hispanic/Latino; large Vietnamese American community
+
+Shipped (commit 9e7fe07):
+- fort-worth-brand-ambassadors: Dickies Arena, Stockyards, Sundance Square, bilingual staff, pharma NSMs, corporate; 5 FAQs
+- fort-worth-experiential-marketing: Stockyards/Billy Bobs, Dickies Arena, Museum District, TCU, Magnolia Ave; 3 FAQs
+- fort-worth-event-management: FW Convention Center, Will Rogers, Texas Motor Speedway, Dickies Arena Stock Show, pharma/corporate; 3 FAQs
+- fort-worth-convention-staffing: FW Convention Center, Will Rogers, defense/aerospace specialization, DFW circuit; 3 FAQs
+- fort-worth-promotional-models: TABC spirits, NASCAR/INDYCAR motorsport, pharma Alcon, bilingual/Vietnamese; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean)
+- Committed 9e7fe07, pushed, Vercel production deployment triggered
+
+Status: 47 cities enriched (235 enriched pages). 104 cities remain on thin templates.
+
+Next: Aurora CO, Anaheim CA (next unenriched cities); blog internal links
