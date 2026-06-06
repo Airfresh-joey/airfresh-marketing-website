@@ -1,5 +1,53 @@
 # Air Fresh Website Growth Work Log
 
+## 2026-06-05 MDT (Run 47)
+
+Goal: City page depth — add enriched content for Boise ID (Priority #5 continued).
+
+Audit:
+- 49th city enriched; selected Boise ID as highest-leverage unenriched Rocky Mountain tech hub / Pacific Northwest gateway market (next on list per Run 46 WORK_LOG)
+- Boise / Treasure Valley: 800,000+ residents, consistently top-10 fastest-growing large metro in the US for 10+ years
+- Micron Technology (global HQ, 8000 S. Federal Way Boise — only remaining US manufacturer of DRAM + NAND flash memory; 6,000+ Treasure Valley employees; NYSE: MU)
+- HP Inc Boise campus (SuppliesPoint — major laser printer/ink R&D facility, 1,000+ engineers)
+- Clearwater Analytics (NYSE: CWAN, 1,400+ employees, downtown Boise tower — cloud investment management SaaS)
+- Cradlepoint by Ericsson (Boise HQ — leading enterprise 5G networking platform, acquired by Ericsson 2020)
+- Albertsons Companies (global HQ 250 Parkcenter Blvd — 2,200+ stores, 34 states, 300,000+ national employees)
+- Idaho Power / IDACORP (Boise HQ — regulated utility, 600,000+ customers, Idaho and Oregon)
+- Western Idaho Fair (Expo Idaho, late August–Labor Day — 220,000+ attendance, Idaho's largest annual fair)
+- Treefort Music Fest (Downtown Boise, March — 25,000+, 500+ performances across 20+ venues, 5 days — largest indie music festival in mountain west)
+- Snake River Stampede (Ford Idaho Center Nampa, July — PRCA Top-25 professional rodeo, 40,000+ over 5 performances)
+- Boise State Broncos / Big 12 (Albertsons Stadium 36,387 cap blue turf, consistent sellouts, nationally televised ESPN/FOX)
+- Idaho Shakespeare Festival (Warm Springs Ave amphitheater — 5,000 outdoor cap, May–September, 35,000+ annual)
+- Jaialdi Basque Festival (Basque Block, 20,000+ every 5 years — largest Basque community per capita in US outside Basque Country)
+- St. Luke's Health System (Idaho's largest not-for-profit system — St. Luke's Boise Medical Center 414 beds + St. Luke's Meridian 198 beds + 6 other Idaho/Oregon campuses; 17,000+ employees)
+- Saint Alphonsus Regional Medical Center (Trinity Health, 381 beds, Level II Trauma, Mountain States Tumor Institute)
+- Bogus Basin Mountain Recreation Area (16 miles north of downtown — 2,600 skiable acres, 200,000+ annual visitors)
+- Boise Front Ridge-to-Rivers trail system (190+ miles, accessible within 2 miles of downtown)
+- Idaho State Liquor Division (ISLD) alcohol sampling compliance callout
+- Boise Centre (575 W. Bannock — 75,000+ sq ft, Boise Centre East expansion 2019)
+- Ford Idaho Center complex (Nampa, 20mi west — 10,500-cap arena + 500,000 sq ft expo complex)
+
+Shipped (commit d3cb2bd) — new file server/city-content/boise.ts:
+- boise-brand-ambassadors: Micron Technology (6K+, only US DRAM/NAND manufacturer)/HP Inc/Clearwater Analytics/Cradlepoint tech corridor; Western Idaho Fair (220K+)/Treefort Music Fest (25K+, 500+ performances)/Snake River Stampede (PRCA Top-25, 40K+)/BSU Broncos Big 12 Albertsons Stadium; St. Luke's Boise (414 beds)/Saint Alphonsus (381 beds) pharma NSM market; Albertsons Companies/Idaho Power corporate events; Basque Block cultural callout; ISLD compliance; $20-38/hr; 6 FAQs; 10 areasServed
+- boise-experiential-marketing: Western Idaho Fair fairgrounds multi-zone strategy; Treefort Music Fest 20-venue city-wide activation guide (Egyptian Theatre/Esther Simplot Park/Neurolux/Pengilly's); Snake River Stampede rodeo western heritage activation; BSU Albertsons Stadium game-day tailgate zone (University Dr/Capitol Blvd/The Grove Plaza); Bogus Basin ski season + Boise Greenbelt outdoor activation; City of Boise Special Events permit + ISLD guide; 4 FAQs
+- boise-event-management: Boise Centre (75K+ sq ft, 30 rooms) + Boise Centre East + The Grove Hotel (Riverside Grand Ballroom 700 cap) specialist; St. Luke's Boise/Saint Alphonsus pharma NSM (FDA Sunshine Act); Micron/Albertsons/Idaho Power corporate events; Idaho Legislature state capital circuit; BSU commencement/ExtraMile Arena; $22-48/hr; 3 FAQs
+- boise-convention-staffing: Boise Centre specialist; 4-vertical approach (technology/semiconductor/Micron-HP, healthcare/pharma/FDA Sunshine Act, agriculture/Idaho Farm Bureau/Treasure Valley Ag Expo, government/state association/Idaho Legislature); STEM-credentialed BSU engineering alumni pool; Ford Idaho Center Nampa coverage; ISLD consumer expo credentials; $25-48/hr; 5 FAQs
+- boise-promotional-models: background-matched (STEM-credentialed BSU engineering for Micron/HP launches, pharma/health science for St. Luke's/Saint Alphonsus NSMs, outdoor-athlete-genuine trail/ski/fly fishing for outdoor gear brands, western heritage rodeo-fluent for Snake River Stampede, Basque cultural competency callout, ISLD-certified spirits/wine/craft beer); Sun Valley luxury circuit (150mi NE); $28-60/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean, 0 errors)
+- npm run build passed (6,325 static pages — 9 Boise city-service HTML files confirmed in .next/server/app/city-services/)
+- Local build verified: boise-brand-ambassadors.html — Micron 26×, St. Luke's 26×, Western Idaho Fair 22×, Snake River Stampede 18×, Treefort 16×, Albertsons Stadium 8×; FAQPage JSON-LD confirmed (2 matches) ✓
+- Committed d3cb2bd, pushed to origin/main
+- Live HTTP 200 confirmed on /city-services/boise-brand-ambassadors and /city-services/boise-convention-staffing ✓
+
+Status after this run:
+- 49 cities now have enriched city-service content (245 enriched pages total)
+- 109 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Lincoln NE, Chandler AZ, Scottsdale AZ, Gilbert AZ
+
 ## 2026-06-05 MDT (Run 46)
 
 Goal: City page depth — add enriched content for Anchorage AK (Priority #5 continued).
