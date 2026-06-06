@@ -3287,3 +3287,38 @@ Checks:
 Status: 47 cities enriched (235 enriched pages). 104 cities remain on thin templates.
 
 Next: Aurora CO, Anaheim CA (next unenriched cities); blog internal links
+
+## 2026-06-06 MDT (Run 45)
+
+Goal: City page depth — add enriched content for Fort Worth TX (Priority #5 — DFW Metroplex western anchor, 13th-largest US city).
+
+Audit:
+- 47th city enriched; Fort Worth TX (935,000+ residents) is the western anchor of the DFW Metroplex
+- Fort Worth Stockyards National Historic District (1.8M+ annual visitors, twice-daily longhorn cattle drive — only one in the world), Texas Motor Speedway (75,000+, NASCAR Cup/Xfinity/Truck/IndyCar), Dickies Arena (14,000 cap, opened 2019), Fort Worth Convention Center (258,000+ sq ft), Will Rogers Memorial Center (85+ acres, Fort Worth Stock Show and Rodeo 1M+ visitors), Billy Bob's Texas (6,000 capacity, world's largest honky-tonk)
+- Fortune 500 HQs: BNSF Railway (35,000+ employees), American Airlines (25,000+ DFW-area), Bell Textron (10,000+, V-22 Osprey/Bell 505), Alcon (global eye care HQ, 3,000+)
+- Healthcare NSM market: Texas Health Harris Methodist Fort Worth (726 beds, Level II Trauma), Cook Children's Medical Center (479 beds, nationally ranked pediatric), JPS Health Network (Level I Trauma)
+- TCU (11,000+ students, Big 12, Amon G. Carter Stadium 45,000+ capacity)
+- Fort Worth Cultural District (Kimbell, Amon Carter, Modern Art Museum)
+- TABC compliance required for spirits/sampling in Texas — covered throughout
+- National Cutting Horse Association World Championship Futurity (Will Rogers, December — largest cutting horse event in the world, 4M+ purse)
+
+Shipped (commit 6b3b114) — new file server/city-content/fort-worth.ts:
+- fort-worth-brand-ambassadors: Stockyards 1.8M visitors, twice-daily cattle drive, Billy Bob's Texas, TMS motorsports, Dickies Arena, Stock Show and Rodeo 1M+ visitors, TCU, BNSF/AmericanAirlines/Bell/Alcon corporate, pharma NSM, bilingual Spanish-English, TABC; 18-38/hr; 5 FAQs; 10 areasServed
+- fort-worth-experiential-marketing: Stockyards Western heritage, Cowtown Coliseum PRCA rodeo, TMS NASCAR/IndyCar, Stock Show commercial exhibits, Sundance Square, Cultural District, West 7th; 3 FAQs
+- fort-worth-event-management: Fort Worth Convention Center 258K sq ft, Dickies Arena 14K, Will Rogers 85 acres, TMS corporate chalets, pharma NSMs (Texas Health, Cook Children's, Alcon), BNSF/American Airlines corporate; 22-50/hr; 3 FAQs
+- fort-worth-convention-staffing: FWCC, Will Rogers 700+ commercial exhibitors (Stock Show), NCHA World Championship Futurity, aerospace/defense (Bell+Lockheed corridor), pharma (Alcon HQ), agricultural trade shows, Gaylord Texan 490K sq ft; 20-48/hr; 3 FAQs
+- fort-worth-promotional-models: TABC spirits sampling (Billy Bob's, Stockyards), TMS motorsports, Fort Worth Auto Show, pharma NSM staff, bilingual; 25-65/hr; 4 FAQs
+
+Checks:
+- npm run check passed (TypeScript clean, 0 errors)
+- fortWorthContent wired into city-service-content.ts (import line 80, spread line 140)
+- Committed 6b3b114, pushed to origin/main
+- Vercel deploy triggered
+
+Status after this run:
+- 47 cities now have enriched city-service content (235 enriched pages total)
+- 104 cities remain on thin fallback templates
+
+Next actions:
+- Priority #5 continued: Aurora CO, Anaheim CA, Henderson NV
+- Priority #6: Case study internal links
