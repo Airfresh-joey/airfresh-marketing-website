@@ -113,7 +113,7 @@ export default function PromotionalModelsGuide() {
 
         <p><strong>Brand ambassadors</strong> - Similar to promo models, but with more emphasis on product knowledge and brand storytelling. Less about appearance, more about communication skills. (We have a <Link href="/brand-ambassador-agency" className="text-pink-600 hover:underline">brand ambassador agency</Link> page if that's what you're looking for — as well as a <Link href="/blog/how-to-hire-brand-ambassadors" className="text-pink-600 hover:underline">separate guide on hiring brand ambassadors</Link>.)</p>
 
-        <p><strong>Trade show models</strong> - Promo models specifically trained for exhibition environments. They know how to work a booth, qualify leads, scan badges, and keep energy high for 8+ hour days.</p>
+        <p><strong>Trade show models</strong> - Promo models specifically trained for exhibition environments. They know how to work a booth, qualify leads, scan badges, and keep energy high for 8+ hour days. If your primary need is trade show and convention staffing, see our <Link href="/event-staffing-agency" className="text-pink-600 hover:underline">event staffing agency</Link> page.</p>
 
         <p><strong>Spokesmodels</strong> - The most demanding role. These are people who can present from a stage, do media interviews, and serve as the face of a brand. Requires exceptional communication skills on top of everything else.</p>
 
@@ -177,7 +177,7 @@ export default function PromotionalModelsGuide() {
 
         <p>A few notes on these rates:</p>
 
-        <p>These are what the talent takes home, not what you'll pay an agency. If you're working with an agency (which I obviously recommend, but I'm biased), expect to pay 40-60% on top for recruitment, coordination, insurance, and backup coverage.</p>
+        <p>These are what the talent takes home, not what you'll pay an agency. If you're working with an agency (which I obviously recommend, but I'm biased), expect to pay 40-60% on top for recruitment, coordination, insurance, and backup coverage. For a full breakdown of what to budget, see our <Link href="/pricing" className="text-pink-600 hover:underline">event staffing pricing guide</Link>.</p>
 
         <p>Rates vary significantly by market. NYC, LA, and Miami command premiums. Secondary markets are more affordable.</p>
 
@@ -253,7 +253,7 @@ export default function PromotionalModelsGuide() {
           <li>You want someone else handling the liability</li>
         </ul>
 
-        <p>The agency markup - typically 40-60% - pays for recruitment infrastructure, backup guarantees, insurance, and management overhead. For big campaigns, it's usually worth it. For a single local event? Maybe not.</p>
+        <p>The agency markup - typically 40-60% - pays for recruitment infrastructure, backup guarantees, insurance, and management overhead. For big campaigns, it's usually worth it. For a single local event? Maybe not. Our <Link href="/promotional-staffing-agency" className="text-pink-600 hover:underline">promotional staffing agency</Link> team handles both national campaigns and single-market activations — see what we offer.</p>
 
         <h2>What Makes Air Fresh Different</h2>
 
