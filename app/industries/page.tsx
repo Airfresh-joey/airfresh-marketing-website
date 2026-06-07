@@ -90,6 +90,51 @@ export default function IndustriesPage() {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
           { "@type": "ListItem", "position": 2, "name": "Industries", "item": "https://www.airfreshmarketing.com/industries" }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What industries does AirFresh Marketing specialize in?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "AirFresh Marketing specializes in experiential marketing and event staffing across tech & SaaS, food & beverage, healthcare & pharma, automotive, finance & insurance, retail & CPG, entertainment & media, cannabis, and many more verticals. Each program is staffed by brand-trained talent with relevant industry experience."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do you provide industry-specific brand ambassadors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. AirFresh recruits and trains brand ambassadors with background knowledge in your specific industry. For example, tech product demos are staffed by tech-savvy talent, while food & beverage sampling programs use staff experienced in consumer sampling and tasting events."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AirFresh handle multi-city industry campaigns simultaneously?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Absolutely. AirFresh Marketing operates a nationwide network across 50+ U.S. cities, enabling coordinated multi-market rollouts for any industry. A single account manager oversees all markets, ensuring consistent brand messaging and execution quality nationwide."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How quickly can AirFresh staff an industry event?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For most industries, AirFresh can mobilize qualified staff within 24–72 hours for last-minute needs. For large-scale or specialized industry programs (pharmaceutical, automotive, cannabis), we recommend booking 2–4 weeks in advance to ensure proper training and compliance preparation."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What makes AirFresh different from a general staffing agency?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Unlike general staffing agencies, AirFresh focuses exclusively on experiential marketing and brand activation. We provide industry-specific talent vetting, brand immersion training, real-time field management, and post-event ROI reporting — making us a true marketing partner, not just a temp agency."
+            }
+          }
+        ]
       }
     ]
   };
