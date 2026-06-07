@@ -15,64 +15,81 @@ export const metadata: Metadata = {
 };
 
 export default function PopUpShopStaffingGuide() {
+  const structuredData = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "Pop-Up Shop Staffing Guide",
+        "description": "How to staff your pop-up shop for success. Learn about hiring, training, and managing retail activation staff for temporary retail experiences.",
+        "datePublished": "2026-03-14",
+        "dateModified": "2026-03-14",
+        "author": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "publisher": {
+          "@type": "Organization",
+          "name": "AirFresh Marketing",
+          "logo": {
+            "@type": "ImageObject",
+            "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
+          }
+        },
+        "mainEntityOfPage": {
+          "@type": "WebPage",
+          "@id": "https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide"
+        },
+        "inLanguage": "en-US",
+        "keywords": "pop-up shop staffing, retail activation staff, temporary retail, pop-up store employees, brand activation retail, experiential retail staffing"
+      },
+      {
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
+          { "@type": "ListItem", "position": 2, "name": "Blog", "item": "https://www.airfreshmarketing.com/blog" },
+          { "@type": "ListItem", "position": 3, "name": "Pop-Up Shop Staffing Guide", "item": "https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide" }
+        ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How many staff do I need for a pop-up shop?",
+            "acceptedAnswer": { "@type": "Answer", "text": "For a small pop-up under 500 sq ft, plan for 2 staff during regular hours and 3–4 during peak times. Medium spaces (500–1,500 sq ft) need 3–4 staff normally and 5–6 at peak. Large spaces over 1,500 sq ft require 4–6 base staff and 8–10 during peak hours or events. Never staff below 2 people — one for customer engagement and one for transactions." }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does pop-up shop staffing cost?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Pop-up retail commands higher rates than traditional retail. Brand ambassadors and sales associates typically cost $18–28/hour. Sales-focused staff run $20–30/hour (often plus commission). Pop-up managers range from $28–45/hour, and setup/teardown crews bill at $22–35/hour. Rates vary by market, skill level, and activation complexity." }
+          },
+          {
+            "@type": "Question",
+            "name": "What qualities should I look for in pop-up shop staff?",
+            "acceptedAnswer": { "@type": "Answer", "text": "The top qualities for pop-up staff are retail intuition (reading customer intent), brand authenticity (genuine connection to your product), energy management (staying consistent through quiet and busy periods), problem-solving (handling on-the-fly challenges without escalation), and content instincts (creating shareable moments on camera). Experienced event staffing agencies pre-screen candidates for all of these." }
+          },
+          {
+            "@type": "Question",
+            "name": "Should I hire pop-up staff through an agency or directly?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Hiring through a brand ambassador or event staffing agency gives you access to vetted talent with real pop-up experience, backup coverage for no-shows, payroll and compliance handling, and training support. Direct hiring can work for long-term runs but is risky for short activations where there's no time to vet and onboard quickly. Agencies are the preferred choice for pop-ups under 4 weeks." }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I train pop-up staff quickly?",
+            "acceptedAnswer": { "@type": "Answer", "text": "Effective pop-up staff training covers four areas: product training (features, FAQs, objection handling), brand training (story, voice, visual identity, hashtags), operational training (POS system, inventory, opening/closing checklists), and experience training (customer journey, engagement scripts, content creation). Even a 2–3 hour pre-launch session covering these basics dramatically improves performance versus no formal training." }
+          }
+        ]
+      }
+    ]
+  };
+
   return (
     <article className="pt-16 min-h-screen bg-white">
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify({
-                  "@context": "https://schema.org",
-                  "@graph": [
-                            {
-                                      "@type": "Article",
-                                      "headline": "Pop-Up Shop Staffing Guide",
-                                      "description": "How to staff your pop-up shop for success. Learn about hiring, training, and managing retail activation staff for temporary retail experiences.",
-                                      "datePublished": "2026-03-14",
-                                      "dateModified": "2026-03-14",
-                                      "author": {
-                                                "@type": "Organization",
-                                                "name": "AirFresh Marketing",
-                                                "url": "https://www.airfreshmarketing.com"
-                                      },
-                                      "publisher": {
-                                                "@type": "Organization",
-                                                "name": "AirFresh Marketing",
-                                                "logo": {
-                                                          "@type": "ImageObject",
-                                                          "url": "https://www.airfreshmarketing.com/images/airfresh-logo.svg"
-                                                }
-                                      },
-                                      "mainEntityOfPage": {
-                                                "@type": "WebPage",
-                                                "@id": "https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide"
-                                      },
-                                      "inLanguage": "en-US",
-                                      "keywords": "pop-up shop staffing, retail activation staff, temporary retail, pop-up store employees, brand activation retail, experiential retail staffing"
-                            },
-                            {
-                                      "@type": "BreadcrumbList",
-                                      "itemListElement": [
-                                                {
-                                                          "@type": "ListItem",
-                                                          "position": 1,
-                                                          "name": "Home",
-                                                          "item": "https://www.airfreshmarketing.com"
-                                                },
-                                                {
-                                                          "@type": "ListItem",
-                                                          "position": 2,
-                                                          "name": "Blog",
-                                                          "item": "https://www.airfreshmarketing.com/blog"
-                                                },
-                                                {
-                                                          "@type": "ListItem",
-                                                          "position": 3,
-                                                          "name": "Pop-Up Shop Staffing Guide",
-                                                          "item": "https://www.airfreshmarketing.com/blog/pop-up-shop-staffing-guide"
-                                                }
-                                      ]
-                            }
-                  ]
-        }) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
       />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Pop-Up Shop Staffing Guide" }]} />
 
