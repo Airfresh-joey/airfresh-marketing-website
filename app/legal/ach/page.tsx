@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
-    title: 'ACH Payment Information | Air Fresh Marketing',
+    title: 'ACH Payment Information',
     description: 'ACH and direct deposit payment information for Air Fresh Marketing.',
     url: 'https://www.airfreshmarketing.com/legal/ach',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

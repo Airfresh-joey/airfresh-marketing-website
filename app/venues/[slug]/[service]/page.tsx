@@ -190,7 +190,7 @@ export async function generateMetadata({ params }: VenueServicePageProps): Promi
     description: `Professional ${service.name.toLowerCase()} for ${venue.shortName} in ${venue.city}, ${venue.state}. Experienced event staff. Get a quote.`,
     keywords: `${service.name.toLowerCase()} ${venue.shortName}, ${venue.city} ${service.name.toLowerCase()}, ${venue.name} staffing`,
     openGraph: {
-      title: `${service.name} at ${venue.shortName} | AirFresh Marketing`,
+      title: `${service.name} at ${venue.shortName}`,
       description: `Professional ${service.name.toLowerCase()} for ${venue.name} in ${venue.city}.`,
       url: `https://www.airfreshmarketing.com/venues/${slug}/${serviceSlug}`,
       type: 'website',
@@ -198,7 +198,7 @@ export async function generateMetadata({ params }: VenueServicePageProps): Promi
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${service.name} at ${venue.shortName} | AirFresh Marketing`,
+      title: `${service.name} at ${venue.shortName}`,
       description: `Professional ${service.name.toLowerCase()} for ${venue.name}.`,
       images: ['/images/og-image.jpg'],
     },

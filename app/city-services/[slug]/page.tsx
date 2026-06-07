@@ -47,10 +47,10 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
   // Check for enriched content
   const enriched = getCityServiceContent(slug);
   // Use absolute title to prevent Next.js template from appending "| AirFresh Marketing" again.
-  // Fallback title: clean "Service City | AirFresh Marketing" (≤60 chars for full Google display).
+  // Fallback title: clean "Service City" (≤60 chars for full Google display).
   const absoluteTitle = enriched
     ? enriched.metaTitle
-    : `${serviceName} ${cityName} | AirFresh Marketing`;
+    : `${serviceName} ${cityName}`;
   // Fallback description: concise, keyword-first, <155 chars, strong CTR hook.
   const description = enriched
     ? enriched.metaDescription
@@ -61,7 +61,7 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
     description,
     keywords: `${serviceName.toLowerCase()} ${cityName}, ${cityName} ${serviceName.toLowerCase()}, ${parsed.service.keywords.join(', ')}`,
     openGraph: {
-      title: `${serviceName} ${cityName} | AirFresh Marketing`,
+      title: `${serviceName} ${cityName}`,
       description,
       url: `https://www.airfreshmarketing.com/city-services/${slug}`,
       type: 'website',
@@ -69,7 +69,7 @@ export async function generateMetadata({ params }: CityServicePageProps): Promis
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${serviceName} ${cityName} | AirFresh Marketing`,
+      title: `${serviceName} ${cityName}`,
       description,
       images: ['/images/og-image.jpg'],
     },
@@ -143,7 +143,7 @@ export default async function CityServicePage({ params }: CityServicePageProps) 
 
   // SEO: Exact keyword phrase format (per Ben's requirements)
   const keywordPhrase = enriched ? enriched.h1 : `${service.name} ${cityName}`;
-  const pageTitle = `${keywordPhrase} | Professional ${service.name} Services | AirFresh Marketing`;
+  const pageTitle = `${keywordPhrase} | Professional ${service.name} Services`;
   const pageDescription = `${keywordPhrase} services from AirFresh Marketing. ${service.description} Contact us for professional ${service.name.toLowerCase()} in ${cityName} today.`;
   const quoteHref = (intent: string) => `/get-quote?source=${slug}&intent=${intent}`;
 

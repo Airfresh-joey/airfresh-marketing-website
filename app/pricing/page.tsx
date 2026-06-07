@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     'event staffing pricing, brand ambassador cost, brand ambassador agency cost, how much does event staffing cost, promotional staff rates, trade show staffing rates, street team pricing, experiential marketing rates',
   openGraph: {
     type: 'website',
-    title: 'Event Staffing & Brand Ambassador Pricing | AirFresh Marketing',
+    title: 'Event Staffing & Brand Ambassador Pricing',
     description:
       'Transparent pricing for brand ambassadors, event staffing, trade show staff, street teams, and promotional models nationwide. Get rate ranges and a custom quote.',
     url: 'https://www.airfreshmarketing.com/pricing',
@@ -46,7 +46,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Event Staffing & Brand Ambassador Pricing | AirFresh Marketing',
+    title: 'Event Staffing & Brand Ambassador Pricing',
     description:
       'Transparent pricing for brand ambassadors, event staffing, trade show staff & more. See rate ranges and get a custom quote.',
     site: '@AirFreshMktg',

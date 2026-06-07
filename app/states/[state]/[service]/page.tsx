@@ -26,7 +26,7 @@ export async function generateMetadata({ params }: StateServicePageProps): Promi
     description: `${service.name} services throughout ${state.name}. Local expertise across all major cities.`,
     openGraph: {
       type: 'website',
-      title: `${service.name} in ${state.name} | AirFresh Marketing`,
+      title: `${service.name} in ${state.name}`,
       description: `Professional ${service.name.toLowerCase()} services across ${state.name}.`,
       url: `https://www.airfreshmarketing.com/states/${stateSlug}/${serviceSlug}`,
       images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

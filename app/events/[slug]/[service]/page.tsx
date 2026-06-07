@@ -135,7 +135,7 @@ export default async function EventServicePage({ params }: EventServicePageProps
     notFound();
   }
 
-  const pageTitle = `${service.name} for ${event.name} | AirFresh Marketing`;
+  const pageTitle = `${service.name} for ${event.name}`;
   const pageDescription = `Professional ${service.name.toLowerCase()} staffing for ${event.name} in ${event.city}, ${event.state}. ${service.description}`;
 
   const structuredData = {

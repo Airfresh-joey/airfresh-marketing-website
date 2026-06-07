@@ -65,7 +65,7 @@ export default function ResourcesPage() {
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "CollectionPage",
-    "name": "Event Marketing Resources | AirFresh Marketing",
+    "name": "Event Marketing Resources",
     "description": "Free guides, checklists, and resources to help you plan successful brand activations and experiential marketing campaigns.",
     "publisher": {
       "@type": "Organization",

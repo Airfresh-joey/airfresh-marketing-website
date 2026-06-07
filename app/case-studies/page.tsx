@@ -51,7 +51,7 @@ export default function CaseStudies() {
     "@graph": [
       {
         "@type": "CollectionPage",
-        "name": "Case Studies | AirFresh Marketing",
+        "name": "Case Studies",
         "description": "Explore AirFresh Marketing's experiential marketing case studies showcasing successful brand activations, event staffing, and campaign results.",
         "url": "https://www.airfreshmarketing.com/case-studies",
         "publisher": {

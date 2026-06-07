@@ -32,13 +32,13 @@ export async function generateMetadata(
   const post = blogPosts.find((p) => p.slug === slug)
 
   if (!post) {
-    return { title: 'Article Not Found | Air Fresh Marketing Blog' }
+    return { title: 'Article Not Found' }
   }
 
   const url = `https://www.airfreshmarketing.com/blog/${post.slug}`
 
   return {
-    title: `${post.title} | Air Fresh Marketing Blog`,
+    title: `${post.title}`,
     description: post.excerpt,
     alternates: { canonical: url },
     openGraph: {

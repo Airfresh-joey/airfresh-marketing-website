@@ -9,7 +9,7 @@ export const metadata: Metadata = {
     canonical: 'https://www.airfreshmarketing.com/blog',
   },
   openGraph: {
-    title: 'Experiential Marketing Blog | AirFresh Marketing',
+    title: 'Experiential Marketing Blog',
     description: 'Expert insights on experiential marketing, street teams, and brand activation strategies that drive real results.',
     url: 'https://www.airfreshmarketing.com/blog',
     type: 'website',
@@ -17,7 +17,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Experiential Marketing Blog | AirFresh Marketing',
+    title: 'Experiential Marketing Blog',
     description: 'Expert insights on experiential marketing, street teams, and brand activation strategies.',
   },
 }

@@ -29,7 +29,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     description: `${cityName} brand ambassadors and event staffing from AirFresh Marketing. Street teams, product sampling, and experiential marketing in ${cityName}, ${stateName} with proven ROI.`,
     keywords: `${cityName} experiential marketing, ${cityName} brand ambassadors, ${cityName} street teams, ${cityName} product sampling, ${cityName} event staffing`,
     openGraph: {
-      title: `${cityName} Experiential Marketing | AirFresh Marketing`,
+      title: `${cityName} Experiential Marketing`,
       description: `Professional experiential marketing services in ${cityName}, ${stateName}. Brand ambassadors, street teams, and product sampling.`,
       url: `https://www.airfreshmarketing.com/cities/${slug}`,
       type: 'website',
@@ -37,7 +37,7 @@ export async function generateMetadata({ params }: CityPageProps): Promise<Metad
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${cityName} Experiential Marketing | AirFresh Marketing`,
+      title: `${cityName} Experiential Marketing`,
       description: `Professional experiential marketing services in ${cityName}, ${stateName}.`,
       images: ['/images/og-image.jpg'],
     },
@@ -765,7 +765,7 @@ export default async function CityPage({ params }: CityPageProps) {
     city = generateDefaultCityData(basicCityData);
   }
 
-  const pageTitle = `${city.name} Experiential Marketing & Brand Activation | AirFresh Marketing`;
+  const pageTitle = `${city.name} Experiential Marketing & Brand Activation`;
   const pageDescription = `Professional experiential marketing services in ${city.name}, ${city.state}. Brand ambassadors, street teams, product sampling, and guerrilla marketing campaigns with proven ROI.`;
   const quoteHref = (intent: string) => `/get-quote?source=${city.slug}&intent=${intent}`;
 

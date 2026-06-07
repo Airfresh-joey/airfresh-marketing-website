@@ -381,7 +381,7 @@ export default async function ServiceCityPage({ params }: ServiceCityPageProps) 
   
   const ServiceIcon = serviceData.icon;
   
-  const pageTitle = `${city.name} ${serviceData.title} | AirFresh Marketing`;
+  const pageTitle = `${city.name} ${serviceData.title}`;
   const pageDescription = `Professional ${serviceData.name.toLowerCase()} in ${city.name}, ${city.state}. ${city.stats.ambassadors} trained professionals, ${city.stats.events} events completed. Get a free quote today.`;
   const quoteHref = (intent: string) => `/get-quote?source=${slug}-${service}&intent=${intent}`;
   

@@ -22,7 +22,7 @@ import {
 } from "lucide-react";
 
 export const metadata: Metadata = {
-  title: "Industries We Serve | Experiential Marketing by Vertical | AirFresh Marketing",
+  title: "Industries We Serve | Experiential Marketing by Vertical",
   description: "AirFresh Marketing delivers specialized experiential marketing and event staffing for tech, food & beverage, healthcare, automotive, retail, entertainment, finance, cannabis, and more.",
   alternates: {
     canonical: "https://www.airfreshmarketing.com/industries",

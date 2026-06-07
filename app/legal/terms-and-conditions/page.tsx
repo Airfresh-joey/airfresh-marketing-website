@@ -5,7 +5,7 @@ export const metadata: Metadata = {
   description: 'Terms and conditions for AirFresh Marketing services including event staffing, brand activations, and experiential marketing.',
   openGraph: {
     type: 'website',
-    title: 'Terms and Conditions | AirFresh Marketing',
+    title: 'Terms and Conditions',
     description: 'Terms and conditions for AirFresh Marketing services including event staffing, brand activations, and experiential marketing.',
     url: 'https://www.airfreshmarketing.com/legal/terms-and-conditions',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

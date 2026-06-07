@@ -21,7 +21,7 @@ export const metadata: Metadata = {
   description: "Experiential marketing agency with brand ambassadors, event staffing, and brand activations in 50+ cities nationwide. 500+ campaigns delivered.",
   keywords: "experiential marketing, brand ambassadors, event staffing, guerrilla marketing, brand activations, product sampling, street teams",
   openGraph: {
-    title: "Experiential Marketing Agency | Brand Ambassadors & Event Staffing | AirFresh Marketing",
+    title: "Experiential Marketing Agency | Brand Ambassadors & Event Staffing",
     description: "Experiential marketing agency with brand ambassadors, event staffing, and brand activations in 50+ cities nationwide. 500+ campaigns delivered.",
     url: "https://www.airfreshmarketing.com",
     siteName: "AirFresh Marketing",

@@ -8,7 +8,7 @@ export const metadata: Metadata = {
   description: 'Event staffing agency comparisons: AirFresh vs ATN, Elev8, Attack Marketing, and top agencies. GPS check-in, transparent pricing, nationwide.',
   keywords: 'event staffing agency comparison, best event staffing company, brand ambassador agency comparison, AirFresh Marketing vs competitors',
   openGraph: {
-    title: 'Event Staffing Agency Comparisons | AirFresh Marketing',
+    title: 'Event Staffing Agency Comparisons',
     description: 'Compare AirFresh Marketing to top event staffing agencies nationwide.',
     url: 'https://www.airfreshmarketing.com/compare',
   },

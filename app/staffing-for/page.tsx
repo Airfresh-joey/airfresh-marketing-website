@@ -12,7 +12,7 @@ export const metadata: Metadata = {
   keywords: 'event staffing, festival staffing, conference staffing, trade show staffing, brand ambassadors for events, event staff agency',
   openGraph: {
     type: 'website',
-    title: 'Event Staffing for 50+ Major Events | AirFresh Marketing',
+    title: 'Event Staffing for 50+ Major Events',
     description: 'Professional event staffing for CES, SXSW, Coachella, Comic-Con, and 50+ major events nationwide.',
     url: 'https://www.airfreshmarketing.com/staffing-for',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

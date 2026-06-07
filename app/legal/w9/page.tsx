@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
-    title: 'W9 Information | Air Fresh Marketing',
+    title: 'W9 Information',
     description: 'W9 tax information for Air Fresh Marketing.',
     url: 'https://www.airfreshmarketing.com/legal/w9',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

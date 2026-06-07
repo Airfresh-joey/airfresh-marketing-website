@@ -6,7 +6,7 @@ export const metadata: Metadata = {
   robots: { index: false, follow: false },
   openGraph: {
     type: 'website',
-    title: 'Voided Check Information | Air Fresh Marketing',
+    title: 'Voided Check Information',
     description: 'Voided check and bank verification information for Air Fresh Marketing.',
     url: 'https://www.airfreshmarketing.com/legal/voided-check',
     images: [{ url: '/images/og-image.jpg', width: 1200, height: 630 }],

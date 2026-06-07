@@ -25,7 +25,7 @@ export async function generateMetadata({ params }: { params: Promise<{ id: strin
   const study = portfolioCaseStudies.find((s) => s.id === id)
   if (!study) return { title: 'Case Study' }
 
-  const title = `${study.name} | Case Study | AirFresh Marketing`
+  const title = `${study.name} | Case Study`
   const description = study.description.length > 160
     ? study.description.slice(0, 157) + '...'
     : study.description

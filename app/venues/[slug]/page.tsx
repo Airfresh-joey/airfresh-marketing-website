@@ -27,7 +27,7 @@ export async function generateMetadata({ params }: VenuePageProps): Promise<Meta
     description: `Professional event staffing for ${venue.shortName} in ${venue.city}. Trade show staff, brand ambassadors, and convention staffing.`,
     keywords: `${venue.shortName} staffing, ${venue.city} event staff, ${venue.name} brand ambassadors, convention staffing ${venue.city}`,
     openGraph: {
-      title: `${venue.shortName} Event Staffing | AirFresh Marketing`,
+      title: `${venue.shortName} Event Staffing`,
       description: `Professional event staffing for ${venue.name} in ${venue.city}.`,
       url: `https://www.airfreshmarketing.com/venues/${slug}`,
       type: 'website',
@@ -35,7 +35,7 @@ export async function generateMetadata({ params }: VenuePageProps): Promise<Meta
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${venue.shortName} Event Staffing | AirFresh Marketing`,
+      title: `${venue.shortName} Event Staffing`,
       description: `Professional event staffing for ${venue.name} in ${venue.city}.`,
       images: ['/images/og-image.jpg'],
     },
@@ -71,7 +71,7 @@ export default async function VenuePage({ params }: VenuePageProps) {
     notFound();
   }
 
-  const pageTitle = `${venue.name} Staffing | Event Staff for ${venue.shortName} | AirFresh Marketing`;
+  const pageTitle = `${venue.name} Staffing | Event Staff for ${venue.shortName}`;
   const pageDescription = `Professional event staffing for ${venue.name} in ${venue.city}, ${venue.state}. Trade show staff, brand ambassadors, and hospitality teams for conventions and events at ${venue.shortName}.`;
   const quoteHref = (intent: string) => `/get-quote?source=venue-${venue.slug}&intent=${intent}`;
 
