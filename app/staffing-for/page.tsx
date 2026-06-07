@@ -60,6 +60,53 @@ export default function EventStaffingIndex() {
     categories.push({ name: 'More Events', icon: '⭐', events: other, description: 'Additional premier events we staff nationwide' });
   }
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of events does Air Fresh Marketing staff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air Fresh Marketing provides professional event staffing for 50+ major events across the U.S., including music festivals (Coachella, Lollapalooza, SXSW), tech conferences (CES, AWS re:Invent, Dreamforce), sporting championships (Super Bowl, NBA All-Star), trade shows, pop culture conventions (Comic-Con, Anime Expo), and food and film festivals."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book event staffing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For major national events like Coachella, CES, or the Super Bowl, we recommend booking event staff 4–8 weeks in advance. For smaller regional events, 2–3 weeks is typically sufficient. The earlier you book, the better the staff selection and scheduling flexibility."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What kinds of staff can Air Fresh provide for events?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Air Fresh provides brand ambassadors, promotional models, product demo specialists, street team members, lead generation staff, booth hosts, bilingual event staff, and experiential marketing talent. All staff are professionally trained and vetted before deployment."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Does Air Fresh Marketing staff events nationwide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. Air Fresh Marketing operates in 200+ cities across the United States. Whether your event is in Los Angeles, New York, Chicago, Miami, Las Vegas, or a secondary market, we can source and deploy qualified event staff locally."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does event staffing cost for major events?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Event staffing costs vary by event type, location, staff roles, and hours needed. Most activations range from $500 for a single-day brand ambassador to $10,000+ for full multi-day event coverage. Visit our pricing page or request a free custom quote to get an accurate estimate for your event."
+        }
+      }
+    ]
+  };
+
   const structuredData = {
     "@context": "https://schema.org",
     "@type": "ItemList",
@@ -92,6 +139,10 @@ export default function EventStaffingIndex() {
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}
