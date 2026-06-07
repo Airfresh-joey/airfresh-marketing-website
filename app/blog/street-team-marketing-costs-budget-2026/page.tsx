@@ -125,7 +125,11 @@ export default function StreetTeamCostsGuide() {
           Street team marketing is one of the most cost-effective ways to reach consumers where they
           live — at transit hubs, college campuses, retail corridors, festivals, and events. But
           budgeting for a street team campaign requires understanding all the cost components, not
-          just the hourly rate for team members.
+          just the hourly rate for team members. Working with an established{' '}
+          <Link href="/field-marketing-agency" className="text-blue-600 hover:text-blue-700">
+            field marketing agency
+          </Link>{' '}
+          is often more cost-efficient than building an in-house team from scratch.
         </p>
 
         <p>
@@ -234,7 +238,11 @@ export default function StreetTeamCostsGuide() {
         <h3>Single-Day Street Team Activation</h3>
         <p>
           Scenario: 6 team members + 1 lead supervisor, 8-hour shift, mid-market city (Denver,
-          Atlanta, Nashville).
+          Atlanta, Nashville). See our{' '}
+          <Link href="/pricing" className="text-blue-600 hover:text-blue-700">
+            pricing page
+          </Link>{' '}
+          for full program estimates.
         </p>
         <ul>
           <li>Team labor: 6 members x $22/hr x 8 hrs = $1,056</li>

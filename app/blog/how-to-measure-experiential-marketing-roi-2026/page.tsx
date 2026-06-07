@@ -174,7 +174,10 @@ export default function ExperientialMarketingROIGuide() {
         <ul>
           <li>
             <strong>Consumer interactions (contacts):</strong> Number of individual consumers
-            meaningfully engaged by brand ambassadors. Industry standard: 30-60 interactions/hour
+            meaningfully engaged by{' '}
+            <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">
+              brand ambassadors
+            </Link>. Industry standard: 30-60 interactions/hour
             at retail; 50-100+ at high-traffic festivals. Measured via ambassador tally counters or
             digital interaction logging apps.
           </li>
@@ -361,9 +364,13 @@ export default function ExperientialMarketingROIGuide() {
 
         <p>
           Example: A product sampling campaign at 20 grocery stores costs $40,000 (staffing, product,
-          logistics, management). IRI scan data shows $180,000 in incremental sales lift in activated
-          stores over 8 weeks vs. matched control stores. ROI = ($180,000 - $40,000) / $40,000 x 100
-          = 350% ROI.
+          logistics, management). For campaigns of this scale,{' '}
+          <Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">
+            product sampling agencies
+          </Link>{' '}
+          typically handle all logistics and reporting. IRI scan data shows $180,000 in incremental
+          sales lift in activated stores over 8 weeks vs. matched control stores. ROI = ($180,000 -
+          $40,000) / $40,000 x 100 = 350% ROI.
         </p>
 
         <p>
