@@ -66,6 +66,43 @@ export default function CaseStudies() {
           { "@type": "ListItem", "position": 1, "name": "Home", "item": "https://www.airfreshmarketing.com" },
           { "@type": "ListItem", "position": 2, "name": "Case Studies", "item": "https://www.airfreshmarketing.com/case-studies" }
         ]
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What results can I expect from an experiential marketing campaign?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Based on our 300+ campaigns, clients typically see a 4.2x average ROI, with over 5 million consumers reached across activations. Results vary by industry and campaign scope, but our case studies show consistent gains in brand awareness, product trial, and direct sales lift."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How does AirFresh Marketing measure experiential marketing success?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "We track KPIs including consumer impressions, product samples distributed, social media engagement, lead capture rates, and post-event sales lift. Every campaign includes a detailed results report with before-and-after metrics so you can see the full ROI picture."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What industries do your experiential marketing case studies cover?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Our portfolio spans CPG, food & beverage, technology, automotive, healthcare, beauty, finance, and retail. We have case studies for product sampling campaigns, trade show staffing, brand activations, mobile tours, and corporate events across 50+ U.S. markets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can AirFresh Marketing handle large-scale national campaigns?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes. We have a vetted network of 5,000+ brand ambassadors and event staff across all 50 states, allowing us to scale campaigns from a single-city activation to a simultaneous 50-city national tour. Our case studies include multi-market rollouts for Fortune 500 brands."
+            }
+          }
+        ]
       }
     ]
   };
