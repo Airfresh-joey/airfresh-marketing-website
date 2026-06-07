@@ -40,11 +40,62 @@ export default function VenuesDirectory() {
     }))
   };
 
+  const faqData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "Can AirFresh Marketing staff events at any convention center?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. AirFresh Marketing provides professional event staffing at convention centers, expo halls, and trade show venues nationwide. With active talent pools in 50+ cities, we can staff your event at major venues including McCormick Place in Chicago, Javits Center in New York, Orange County Convention Center, Las Vegas Convention Center, and hundreds of regional venues. If your venue is not listed, contact us and we will confirm coverage within 24 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What types of staff does AirFresh provide at convention centers?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AirFresh Marketing supplies a full range of convention center event staff including brand ambassadors, trade show booth staff, lead capture specialists, product demonstrators, registration and credentialing staff, crowd gatherers, promotional models, bilingual staff, and on-site field managers. All staff complete brand-specific training before each event and check in via GPS-verified mobile apps."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book convention center event staffing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "We recommend booking 2–4 weeks in advance for standard trade show booth staffing and 4–8 weeks for large-scale multi-day events or activations requiring 10+ staff. AirFresh Marketing can often accommodate last-minute requests within 48–72 hours in most major markets. Rush bookings may carry a small premium. Contact us early to guarantee the best talent selection for your convention."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How does AirFresh ensure staff arrive on time and prepared at convention venues?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Every AirFresh staff member checks in via GPS-verified mobile app, confirming on-time arrival at the correct convention center location. Before the event, staff complete video-based brand training with product knowledge quizzes. A dedicated field manager is assigned to multi-staff activations to oversee on-site performance. Clients receive real-time reporting and a post-event recap with photos and metrics within 24 hours of event completion."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What does convention center event staffing cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Convention center staffing rates depend on the role, market, and campaign length. Trade show booth staff typically range from $40–$70 per hour, brand ambassadors from $35–$65 per hour, and lead capture specialists from $45–$75 per hour. Rates in high-cost markets like New York, Las Vegas, and San Francisco are at the higher end. AirFresh Marketing provides all-inclusive quotes covering recruitment, training, GPS check-ins, management, and reporting. Request a free custom quote for your specific venue and event."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqData) }}
       />
 
       {/* Hero Section */}
