@@ -1,4 +1,3 @@
-import type { Metadata } from 'next';
 import { Card, CardContent } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
@@ -20,14 +19,6 @@ import {
   Clapperboard,
   Leaf
 } from "lucide-react";
-
-export const metadata: Metadata = {
-  title: "Industries We Serve | Experiential Marketing by Vertical",
-  description: "AirFresh Marketing delivers specialized experiential marketing and event staffing for tech, food & beverage, healthcare, automotive, retail, entertainment, finance, cannabis, and more.",
-  alternates: {
-    canonical: "https://www.airfreshmarketing.com/industries",
-  },
-};
 
 // Priority verticals shown at the top of the hub
 const PRIORITY_SLUGS = [
