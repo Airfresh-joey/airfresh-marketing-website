@@ -74,6 +74,52 @@ export default function ConferenceStaffing() {
                   ]
         }) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I staff a conference booth effectively?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Effective conference booth staffing requires a layered team: greeters at the entrance to engage passersby and qualify interest, product specialists for demos and technical questions, lead qualifiers trained to identify decision-makers using a framework like BANT (Budget, Authority, Need, Timeline), and ideally a senior host for VIP meetings. Rotate staff every 90–120 minutes to maintain energy and engagement quality."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many staff do I need for a trade show or conference booth?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A standard 10x10 booth typically needs 2–3 staff. A 20x20 or larger booth with demos needs 4–6. For high-traffic conferences with thousands of daily attendees, budget for 6–10 staff per day in staggered shifts. Always have at least one team lead for groups of 4 or more. Factor in break coverage — staff need 10-minute breaks every 2 hours to maintain peak engagement."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What qualifications should conference event staff have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For B2B conferences, prioritize staff with business communication skills, the ability to discuss ROI and business value, industry familiarity, and CRM/lead capture experience. For consumer conferences, look for outgoing personalities with strong product knowledge and high-volume engagement skills. Always require prior conference or trade show experience — conference staffing has a higher skill floor than general event work."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I measure conference staffing ROI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Track qualified leads captured (not just badge scans), meetings booked on-site, pipeline generated (leads x estimated close rate x average deal size), and cost per qualified lead. Compare these against staffing costs to calculate ROI. The best-performing conference teams track leads in real-time using CRM apps and submit a same-day summary to the sales team while conversations are still fresh."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Can I hire conference staff last minute?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Yes, but expect trade-offs. Last-minute conference staffing (under 2 weeks) limits talent options, especially for specialized roles like bilingual staff or industry-knowledgeable demonstrators. Rush bookings also typically carry a 15–25% premium. For major conferences and trade shows, book 4–8 weeks in advance to access the full talent pool and allow adequate time for brand-specific training."
+            }
+          }
+        ]
+      }) }} />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Conference Staffing: Beyond the Badge Scan" }]} />
 
       <header className="bg-gradient-to-r from-slate-600 to-gray-800 text-white py-16">

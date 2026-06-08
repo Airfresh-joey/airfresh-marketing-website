@@ -79,6 +79,52 @@ export default function EventStaffingGuide() {
                   ]
         }) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do I hire reliable event staff?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Hire through a reputable event staffing agency that maintains a vetted talent roster. Key vetting criteria: confirmed prior event experience, professional references, background check completion, and a documented training process. Always request staff profiles before the event and conduct a briefing call. Never book staff solely on price — reliability is worth the premium."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What are the most common event staffing mistakes?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most common event staffing mistakes are: (1) booking too late and getting bottom-of-roster talent, (2) skipping the pre-event briefing, (3) understaffing to save money and burning out good staff, (4) no on-site team lead for events over 4 staff, (5) failing to communicate brand guidelines and KPIs before event day. Each of these is avoidable with planning."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How many event staff do I need?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A general rule: 1 staff member per 50–75 attendees for general activations, 1 per 25–30 for high-engagement demos, and 1 team lead for every 4–6 staff. For trade show booths, staff based on foot traffic peaks, not averages. It's better to have one extra staff than to run thin — you can always cut hours, but you can't add presence during a peak moment."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should I include in an event staff briefing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A complete event staff briefing should cover: brand background and key messages, product knowledge and demo scripts, target audience and engagement approach, KPIs and how they'll be tracked, dress code and appearance standards, on-site schedule and break rotation, escalation contacts for problems, and what to do if attendance is higher or lower than expected."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between event staffing and event management?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event staffing provides the people — brand ambassadors, demo specialists, team leads, and promotional staff who execute at the event. Event management covers logistics, venue coordination, vendor management, and overall event production. Many brands use a staffing agency for talent and a separate event management firm for logistics, or hire a full-service experiential agency that does both."
+            }
+          }
+        ]
+      }) }} />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Event Staffing: How to Not Screw Up Your Next Event" }]} />
 
       <header className="bg-gradient-to-r from-blue-600 to-indigo-700 text-white py-16">
