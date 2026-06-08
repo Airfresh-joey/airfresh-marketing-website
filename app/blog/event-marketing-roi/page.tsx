@@ -103,8 +103,8 @@ export default function EventMarketingROI() {
         <ul>
           <li>Leads/contacts captured</li>
           <li>Meetings booked</li>
-          <li>Samples distributed</li>
-          <li>Demo completions</li>
+          <li><Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">Samples distributed</Link></li>
+          <li><Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">Demo completions</Link> (tracked by brand ambassadors on-site)</li>
           <li>App downloads</li>
           <li>Social mentions</li>
           <li>Email signups</li>
@@ -113,6 +113,7 @@ export default function EventMarketingROI() {
         <p>Track religiously. No data = no ROI calculation. <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">Professional event staffing agencies</Link> can help you design data capture workflows that make measurement straightforward.</p>
         <h2>The 6-Month Window</h2>
         <p>Event ROI doesn't crystallize immediately. A lead from a trade show might not close for 6 months. Brand lift takes time to translate to sales.</p>
+        <p>For B2B-focused activations, <Link href="/corporate-event-staffing" className="text-blue-600 hover:text-blue-700">corporate event staffing</Link> plays a key role — having staff who can qualify leads in real time dramatically improves what your 90-day and 6-month numbers look like.</p>
         <p>Set up tracking windows: immediate (at-event), 30-day, 90-day, 6-month. Real ROI emerges over time.</p>
         <h2>Making the Case</h2>
         <p>When presenting event ROI:</p>
