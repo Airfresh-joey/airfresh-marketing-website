@@ -221,13 +221,13 @@ export default function SustainableExperientialMarketing() {
 
         <p>Local hiring is the single most effective carbon reduction strategy in experiential marketing. Here's how to do it well:</p>
 
-        <p><strong>Build local talent networks in advance.</strong> You can't scramble to find quality local staff two weeks before an activation. Building a reliable roster of vetted brand ambassadors in each market takes time and investment. This is one of the core advantages of working with a national staffing agency that already has local teams - the infrastructure exists.</p>
+        <p><strong>Build local talent networks in advance.</strong> You can't scramble to find quality local staff two weeks before an activation. Building a reliable roster of vetted <Link href="/brand-ambassador-agency" className="text-indigo-600 underline">brand ambassadors</Link> in each market takes time and investment. This is one of the core advantages of working with a national staffing agency that already has local teams - the infrastructure exists.</p>
 
         <p><strong>Invest in virtual training.</strong> The main objection to local hiring is quality control. If you're used to bringing your own trained team, how do you ensure local staff meet the same standard? The answer is comprehensive virtual training. Detailed brand guides, video training modules, virtual rehearsals, and clear performance standards allow you to maintain quality without flying trainers to every market.</p>
 
         <p><strong>Use team leads strategically.</strong> You don't need to hire everyone locally. A hybrid model works well: send one or two experienced team leads who know the program inside and out, and fill the rest of the positions with trained local talent. This balances quality control with sustainability.</p>
 
-        <p><strong>Consider transportation to the event itself.</strong> Even with local staff, how they get to the event matters. Encourage public transit, provide bike parking, coordinate carpools, or choose venues accessible by public transportation. Some clients now offer transit stipends for event staff as part of their green initiatives.</p>
+        <p><strong>Consider transportation to the event itself.</strong> Even with local staff, how they get to the event matters. Encourage public transit, provide bike parking, coordinate carpools, or choose venues accessible by public transportation. Some clients now offer transit stipends for <Link href="/event-staffing-agency" className="text-indigo-600 underline">event staff</Link> as part of their green initiatives.</p>
 
         <h2>Measuring Environmental Impact of Events</h2>
 
@@ -266,7 +266,7 @@ export default function SustainableExperientialMarketing() {
 
         <p><strong>The Zero-Waste Beverage Tour</strong></p>
 
-        <p>A major beverage brand ran a 15-city sampling tour with a zero-waste commitment. Every element of the activation was designed with end-of-life in mind. Sampling cups were compostable. Display structures were built from reclaimed wood and recycled aluminum that traveled in reusable shipping crates. Staff uniforms were made from recycled materials and returned at the end of the tour for recycling. A dedicated waste team at each stop sorted and processed all waste on-site.</p>
+        <p>A major beverage brand ran a 15-city <Link href="/product-sampling-agency" className="text-indigo-600 underline">sampling tour</Link> with a zero-waste commitment. Every element of the activation was designed with end-of-life in mind. Sampling cups were compostable. Display structures were built from reclaimed wood and recycled aluminum that traveled in reusable shipping crates. Staff uniforms were made from recycled materials and returned at the end of the tour for recycling. A dedicated waste team at each stop sorted and processed all waste on-site.</p>
 
         <p>The result? They achieved a 94% waste diversion rate across the entire tour. And they used that number in their marketing - not as a vague claim, but as a verified, specific data point. Consumer response was overwhelmingly positive. Social media sentiment around the brand improved measurably during the tour, with sustainability being the most frequently mentioned positive attribute.</p>
 
