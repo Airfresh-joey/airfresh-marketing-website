@@ -74,6 +74,52 @@ export default function EventMarketingROI() {
                   ]
         }) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How do you calculate event marketing ROI?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event marketing ROI is calculated as: (Revenue Attributed – Event Cost) ÷ Event Cost × 100. For example, if you spend $20,000 on an activation and attribute $80,000 in pipeline or direct sales, your ROI is 300%. For brand awareness events, use cost-per-impression and compare to equivalent digital CPM benchmarks."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What metrics should I track for experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key experiential marketing metrics include: total impressions (foot traffic × dwell time), leads captured, cost-per-lead, conversion rate from lead to customer, social media reach (UGC, mentions, hashtag usage), brand recall lift (via post-event survey), and net revenue or pipeline generated within 90–180 days of the event."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is a good ROI for experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Industry benchmarks suggest that well-executed experiential marketing campaigns deliver a 3x–5x ROI over 6 months. AirFresh Marketing campaigns average a 4.2x return. Consumer sampling events typically see 20–30% trial-to-purchase conversion rates, while trade show activations generate $35–$100 cost-per-lead depending on the industry."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How long does it take to see ROI from event marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Most experiential marketing ROI materializes within 30–180 days depending on your sales cycle. Direct-to-consumer sampling events can show purchase lift within 2–4 weeks. B2B trade show leads typically convert over 60–90 days. Brand awareness gains from large activations can take 3–6 months to show measurable lifts in brand recall surveys."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you attribute revenue to a live event?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Common attribution methods include: unique promo codes distributed at events, post-event email nurture sequences with tracked UTM links, CRM tagging of contacts who attended events, post-purchase surveys asking 'how did you hear about us?', and geo-targeted digital retargeting to event attendees. Multi-touch attribution models give the most complete picture."
+            }
+          }
+        ]
+      }) }} />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Event Marketing ROI: How to Actually Measure It" }]} />
 
       <header className="bg-gradient-to-r from-slate-700 to-slate-900 text-white py-16">

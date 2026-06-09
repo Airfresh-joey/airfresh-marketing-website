@@ -80,8 +80,52 @@ export default function ProductSamplingCampaigns() {
         }) }}
       />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Product Sampling Campaigns: What Actually Works in 2026" }]} />
-
-      {/* Hero */}
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How much does a product sampling campaign cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Product sampling campaign costs vary based on scope: a single-city, single-day sampling event typically runs $3,000–$8,000 including staff, materials, and permits. A multi-city sampling tour across 10 markets can range from $50,000–$200,000. Key cost drivers include number of sampling staff, sample product cost per unit, event permits, and branded activation materials."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the conversion rate for product sampling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Well-executed product sampling campaigns achieve 20–35% trial-to-purchase conversion rates. Studies show that 73% of consumers say they are likely to buy a product after sampling it. Follow-up coupon codes or QR links provided at the sampling event can track direct purchases and typically convert at 15–25%."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Where are the best locations for product sampling?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "High-performing locations for product sampling include grocery store entrances, farmers markets, fitness studios, college campuses, transit hubs, music festivals, and street-level retail corridors. The best location depends on your target demographic — CPG food brands thrive near grocery retailers, while fitness supplements perform better near gyms and outdoor events."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I measure the success of a product sampling campaign?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Measure product sampling success using: units sampled, consumer interactions logged, coupon redemption rate, social media mentions generated, post-event survey recall scores, and retail sales lift in sampled markets vs. control markets. AirFresh Marketing provides real-time field reports and post-campaign analytics dashboards for every sampling program."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Do I need permits for product sampling events?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Permit requirements vary by location. Public spaces like parks, sidewalks, and transit areas typically require a temporary use permit or street vending permit. Private retail locations require landlord approval. Sampling alcoholic beverages requires state liquor authority permits. AirFresh Marketing handles permit sourcing and compliance as part of every sampling program."
+            }
+          }
+        ]
+      }) }} />
       <header className="bg-gradient-to-r from-amber-500 to-orange-600 text-white py-16">
         <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
           <p className="text-amber-200 mb-4">March 1, 2026 · 12 min read</p>
