@@ -79,6 +79,55 @@ export default function PromotionalModelsGuide() {
                   ]
         }) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much do promotional models cost to hire?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Promotional model rates typically range from $28–$75/hour depending on the market, role complexity, and experience level. Trade show models and product demonstrators requiring deep product knowledge command higher rates ($45–$75/hour) than general brand ambassadors ($28–$45/hour). Major markets like New York, Los Angeles, and Chicago run higher than secondary markets. Agency fees for sourcing, vetting, training, and management are separate and typically add 20–35% on top of hourly staff rates."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What is the difference between a promotional model and a brand ambassador?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Promotional models are typically hired for appearance-focused roles at trade shows, product launches, and live events — they draw attention, distribute materials, and create positive brand impressions. Brand ambassadors are usually hired for consumer engagement roles requiring deeper product knowledge, sampling, lead capture, or sales conversion. In practice, the terms overlap significantly. The key distinction is depth of brand knowledge required: brand ambassadors generally receive more product training and are measured on conversion metrics, while promo models are measured on reach and engagement volume."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I find reliable promotional models for my event?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "The most reliable way to hire promotional models is through a specialized promotional staffing agency with a vetted local talent roster. Ask agencies: How many active staff do you have in this market? What does your vetting process include? Can I review staff profiles before confirming? Do you provide on-site supervision? Avoid relying solely on freelance marketplaces where vetting is limited. A good agency conducts in-person or video interviews, background checks, and maintains ongoing relationships with their talent so they know who actually shows up and performs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What should I include in a promotional model brief?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "A strong promo model brief includes: event details (date, location, hours), role description and key responsibilities, required product knowledge points, dress code and appearance guidelines, conversation scripts or key talking points, lead capture or distribution goals, on-site contact information, and compensation. The more specific the brief, the better the performance. Agencies should receive the brief at least one week before the event to allow staff preparation and training — ideally two weeks for complex product demonstrations."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Can promotional models work nationwide or only in one city?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "National promotional staffing agencies like Air Fresh Marketing maintain active talent rosters across 200+ U.S. markets and can staff promotional model programs in multiple cities simultaneously from a single point of contact. This is more efficient than sourcing separate local agencies per city, as it ensures consistent vetting standards, unified briefing, and a single account manager. Ask any national agency for specific headcount in each of your target markets — agencies with genuine local rosters can answer this immediately."
+              }
+            }
+          ]
+        }) }}
+      />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Promotional Models: The Complete Hiring Guide (From Someone Who's Hired Thousands)" }]} />
 
       <header className="bg-gradient-to-r from-pink-500 to-rose-600 text-white py-16">

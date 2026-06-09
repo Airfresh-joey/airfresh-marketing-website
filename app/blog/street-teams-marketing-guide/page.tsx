@@ -79,6 +79,55 @@ export default function StreetTeamsGuide() {
                   ]
         }) }}
       />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          "@context": "https://schema.org",
+          "@type": "FAQPage",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "How much does a street team marketing campaign cost?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Street team marketing costs typically range from $500–$5,000+ per day depending on team size, market, and campaign complexity. A standard 4-person street team in a mid-size market runs $800–$1,500/day including staff, management, and materials distribution. Multi-city campaigns with 10+ staff and real-time reporting dashboards can run $3,000–$8,000/day. Key cost drivers: number of staff, hours, market size (NYC/LA run 20–30% higher), whether you need printed materials, and how much supervisor coverage is required."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "What does a street team actually do?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Modern street teams are trained brand representatives who engage consumers in high-traffic locations — festivals, transit hubs, retail districts, college campuses, and sporting events. Activities include product sampling, flyer/collateral distribution, digital lead capture, QR code activations, product demonstrations, and guerrilla marketing stunts. Unlike traditional flyering, modern street teams are measured on engagements, conversions, and brand impressions — not just materials distributed. Good street teams create genuine conversations, not just handoffs."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How many people do I need for a street team?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Most brand activations use 4–8 person street teams. A 4-person team (3 reps + 1 lead) covers a single high-traffic zone effectively and produces 200–500 consumer engagements per day. Larger markets or multi-zone campaigns use 8–15 person teams. For city-wide coverage, 10+ person teams with a roving supervisor are standard. The right team size depends on your geography, daily engagement targets, and materials volume. Your agency should recommend based on your specific activation footprint — not just sell you more bodies."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "Are street teams still effective in 2026?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Yes — street teams are experiencing a resurgence as brands seek genuine human connection in an increasingly digital world. Modern street teams are far more effective than their 2000s predecessors: they use GPS tracking, digital lead capture, real-time photo reporting, and engagement analytics. Brands in CPG, beverage, entertainment, tech, and cannabis are achieving 5–15x ROI on well-executed street team campaigns. The key is professional staff, strong briefing, and clear success metrics — not just sending people out with flyers."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "How do I hire a street team marketing agency?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Look for agencies with verifiable case studies in your industry, an active vetted staff roster in your target market, GPS tracking and real-time reporting capabilities, and clear pricing. Ask: How many active street team staff do you have in my city? What reporting do I get during and after the campaign? How do you handle cancellations and no-shows? Can I see sample activation photos from recent campaigns? Specialized experiential marketing agencies like Air Fresh Marketing operate street teams in 200+ U.S. markets with trained, GPS-verified staff and post-campaign reporting dashboards."
+              }
+            }
+          ]
+        }) }}
+      />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Street Teams: The Marketing Channel Nobody Talks About Anymore" }]} />
 
       <header className="bg-gradient-to-r from-yellow-500 to-orange-500 text-white py-16">
