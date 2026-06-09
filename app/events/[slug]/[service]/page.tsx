@@ -154,11 +154,62 @@ export default async function EventServicePage({ params }: EventServicePageProps
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `How do I hire ${service.name.toLowerCase()} for ${event.name}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `To hire ${service.name.toLowerCase()} for ${event.name} in ${event.city}, submit a brief at airfreshmarketing.com/get-quote with your event dates, staff count, and campaign goals. AirFresh Marketing maintains pre-vetted talent in ${event.city} and confirms bookings within 24–48 hours.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What does it cost to staff ${service.name.toLowerCase()} at ${event.name}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `${service.name} staffing for ${event.name} starts at $35/hour per staff member. All-inclusive pricing covers recruitment, custom video brand training, GPS-verified check-ins, on-site coordination, and post-event reporting. Contact AirFresh Marketing for a tailored quote based on your specific event needs.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `How far in advance should I book staff for ${event.name}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Book ${service.name.toLowerCase()} for ${event.name} at least 2–4 weeks in advance for standard activations, and 6–8 weeks ahead for large-scale or multi-day events. AirFresh Marketing can handle rush bookings within 48–72 hours in ${event.city} when staff availability permits.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `Does AirFresh Marketing staff events like ${event.name} across the country?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Yes. AirFresh Marketing provides ${service.name.toLowerCase()} in ${event.city} and 50+ major U.S. markets. Whether your event is a single activation in ${event.state} or a multi-city tour, we deploy pre-trained, GPS-verified staff with consistent quality standards nationwide.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What qualifications do ${service.name.toLowerCase()} have for events like ${event.name}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `AirFresh Marketing ${service.name.toLowerCase()} pass background checks, complete custom video-based brand training with scored quizzes, and check in via GPS-verified mobile app on event day. Our staff are selected for professionalism, communication skills, and relevant event experience — delivering consistent, high-quality engagement at every activation.`
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}

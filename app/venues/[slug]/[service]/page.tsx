@@ -237,11 +237,62 @@ export default async function VenueServicePage({ params }: VenueServicePageProps
     }
   };
 
+  const faqSchema = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": `How do I hire ${service.name.toLowerCase()} for an event at ${venue.shortName}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `To hire ${service.name.toLowerCase()} for ${venue.name} in ${venue.city}, contact AirFresh Marketing with your event dates, staffing needs, and budget. We maintain pre-vetted talent in ${venue.city} and can typically confirm bookings within 24–48 hours. Visit airfreshmarketing.com/get-quote to submit your brief.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What does ${service.name.toLowerCase()} cost at ${venue.shortName}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `${service.name} rates for events at ${venue.name} typically start at $35/hour per staff member, with pricing varying based on role complexity, event duration, and advance notice. AirFresh Marketing provides all-inclusive quotes covering recruitment, training, GPS-verified check-ins, and post-event reporting.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `How far in advance should I book ${service.name.toLowerCase()} for ${venue.shortName}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `We recommend booking ${service.name.toLowerCase()} for ${venue.name} at least 2–4 weeks in advance for standard events, and 4–8 weeks for large conferences or multi-day activations. AirFresh Marketing can accommodate rush bookings within 48–72 hours in ${venue.city} when availability allows.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `Does AirFresh Marketing provide ${service.name.toLowerCase()} throughout ${venue.city}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `Yes. AirFresh Marketing staffs events across ${venue.city} and ${venue.state}, including ${venue.name} and other major venues. We maintain active talent networks in 50+ U.S. cities so you get locally experienced staff no matter where your event is held.`
+        }
+      },
+      {
+        "@type": "Question",
+        "name": `What training do ${service.name.toLowerCase()} receive before working at ${venue.shortName}?`,
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": `All ${service.name.toLowerCase()} hired through AirFresh Marketing complete custom video-based brand training with scored quizzes before every event. Training covers your brand messaging, product details, venue logistics, and campaign KPIs. Staff check in via GPS-verified mobile app on event day, and a field manager oversees on-site quality assurance.`
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqSchema) }}
       />
 
       {/* Hero Section */}
