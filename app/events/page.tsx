@@ -40,11 +40,62 @@ export default function EventsDirectory() {
     }))
   };
 
+  const faqStructuredData = {
+    "@context": "https://schema.org",
+    "@type": "FAQPage",
+    "mainEntity": [
+      {
+        "@type": "Question",
+        "name": "What types of events does AirFresh Marketing staff?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "AirFresh Marketing staffs a wide range of events including trade shows, music festivals, sporting events, corporate conferences, product launches, consumer expos, conventions, and brand activations. We cover events of all sizes — from intimate brand pop-ups to mega-events like the Super Bowl, Coachella, and CES."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How far in advance should I book event staffing?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "For major national events (Super Bowl, Coachella, CES, etc.), we recommend booking 4–8 weeks in advance to secure the best talent. For mid-size conferences and festivals, 2–3 weeks is typically sufficient. We also handle last-minute staffing requests — contact us and we'll do our best to accommodate urgent needs within 48–72 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "How much does event staffing cost?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Event staffing costs vary based on event size, location, staff roles, and duration. Brand ambassadors and promotional staff typically range from $25–$45/hour. Trade show staff and specialized event personnel range from $30–$60/hour. Multi-day events and large crew deployments receive volume pricing. Request a free quote for your specific event and we'll provide a detailed cost breakdown within 24 hours."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "Do you provide event staff nationwide?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Yes. AirFresh Marketing maintains a roster of trained event staff in 50+ US cities including New York, Los Angeles, Chicago, Miami, Las Vegas, Atlanta, Denver, Dallas, Houston, San Francisco, and more. For events in smaller markets, we can deploy staff from our nearest hub city."
+        }
+      },
+      {
+        "@type": "Question",
+        "name": "What is included in AirFresh Marketing's event staffing service?",
+        "acceptedAnswer": {
+          "@type": "Answer",
+          "text": "Our full-service event staffing includes talent sourcing and vetting, brand-specific training, on-site supervision, GPS-verified check-ins, real-time reporting, and a post-event performance report delivered within 48 hours. All staff are background-checked, professionally dressed, and coached on your brand messaging before activation day."
+        }
+      }
+    ]
+  };
+
   return (
     <div className="pt-16 min-h-screen">
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(faqStructuredData) }}
       />
 
       {/* Hero Section */}
