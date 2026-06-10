@@ -15,7 +15,9 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     .join(' ')
   
   return {
-    title: `${title} | AirFresh Marketing Blog`,
+    // Use absolute to bypass blog-level template ('%s | AirFresh Marketing')
+    // and prevent double brand suffix on dynamic [slug] pages
+    title: { absolute: `${title} | AirFresh Marketing Blog` },
     description: `Read about ${title.toLowerCase()} and get expert insights on experiential marketing, brand activations, and event staffing.`,
     openGraph: {
       title: `${title} | AirFresh Marketing Blog`,
@@ -26,7 +28,7 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | AirFresh Blog`,
+      title: `${title} | AirFresh Marketing Blog`,
     },
     alternates: {
       canonical: `https://www.airfreshmarketing.com/blog/${slug}`,
