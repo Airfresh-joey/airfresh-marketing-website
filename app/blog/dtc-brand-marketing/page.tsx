@@ -50,6 +50,51 @@ export default function DTCMarketing() {
                                       "keywords": "dtc marketing, direct to consumer marketing, digital native brands, dtc retail, dtc brand activation"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is DTC brand marketing and how does it work?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "DTC (direct-to-consumer) brand marketing bypasses traditional retail by connecting brands directly with consumers through experiential activations, sampling, pop-ups, and ambassador programs."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How can experiential marketing help a DTC brand grow?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Experiential marketing drives trial, word-of-mouth, and social sharing — key growth levers for DTC brands. Live activations let consumers experience your product directly, accelerating purchase decisions."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of staff does AirFresh provide for DTC campaigns?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh provides brand ambassadors, product demonstrators, street teams, and event managers who can represent your DTC brand at retail locations, pop-ups, festivals, and consumer events."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does a DTC brand activation cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Costs vary based on market, duration, staff count, and campaign scope. AirFresh offers transparent custom quotes — most DTC activations start at a few thousand dollars for a single-day local event."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can AirFresh staff DTC campaigns in multiple cities simultaneously?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh has a national network allowing us to run coordinated multi-market DTC campaigns simultaneously with consistent brand representation across all locations."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

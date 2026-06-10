@@ -50,6 +50,51 @@ export default function EntertainmentMarketing() {
                                       "keywords": "entertainment marketing, movie premiere staff, media events, entertainment PR, red carpet events"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of entertainment events does AirFresh Marketing staff?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh Marketing provides experienced staff for movie premieres, album launches, press junkets, fan meet-and-greets, award shows, and red carpet events nationwide."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How many event staff do I need for an entertainment event?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Staff counts depend on event size and format. A small press junket might need 5–10 staff, while a large movie premiere or award show can require 50+. We build custom crew plans for every event."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can you source staff experienced with celebrity talent?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh specializes in talent handlers, press wranglers, and VIP hosts who are comfortable around celebrities and understand discretion and high-pressure environments."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should I book entertainment event staff?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "We recommend booking at least 3–4 weeks out for standard events and 6–8 weeks for large premieres or award shows. Last-minute requests are handled case by case."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does AirFresh Marketing work nationwide for entertainment events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. We staff entertainment events across all major U.S. markets including Los Angeles, New York, Atlanta, Chicago, Miami, and beyond."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

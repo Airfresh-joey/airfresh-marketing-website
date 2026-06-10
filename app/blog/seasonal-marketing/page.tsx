@@ -50,6 +50,51 @@ export default function SeasonalMarketing() {
                                       "keywords": "seasonal marketing, holiday marketing, holiday events, summer marketing, seasonal campaigns, holiday activations"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is seasonal marketing and why is it important?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Seasonal marketing aligns campaigns with holidays, weather shifts, or cultural moments to capitalize on heightened consumer spending and attention during peak periods."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "When should I start planning a seasonal marketing campaign?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Start planning 8–12 weeks before your target season. For major holidays like Christmas or back-to-school, 3–4 months of lead time ensures you can secure staff, venues, and materials."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of seasonal activations does AirFresh Marketing support?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh supports holiday pop-ups, gift-with-purchase sampling, Black Friday staffing, summer festival activations, back-to-school demos, and Valentine's Day brand moments."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do I staff a seasonal campaign across multiple cities?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh's national network allows you to deploy coordinated seasonal campaigns in multiple markets simultaneously. We handle local recruiting, training, and management in every city."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can AirFresh help with last-minute seasonal staffing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "We do our best to accommodate urgent requests, but seasonal periods book fast. We recommend reaching out at least 4–6 weeks before any peak holiday activation."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

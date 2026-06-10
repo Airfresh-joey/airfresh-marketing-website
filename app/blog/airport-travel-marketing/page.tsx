@@ -50,6 +50,51 @@ export default function AirportMarketing() {
                                       "keywords": "airport marketing, travel marketing, airport activations, airport sampling, travel brand marketing"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is airport marketing and why is it effective?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Airport marketing places brand activations, sampling, or ambassador interactions in airports where travelers are a captive, high-income audience with time to engage — making it highly effective for awareness and trial."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does AirFresh Marketing staff airport brand activations?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh provides brand ambassadors and experiential staff for airport activations, sampling programs, and travel retail promotions at major airports nationwide."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What permits are needed for airport marketing activations?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Airport marketing requires permits from airport authority and often TSA coordination. AirFresh helps navigate these requirements and has experience executing in major airports across the U.S."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What brands benefit most from airport marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Travel accessories, luxury goods, consumer tech, CPG brands, and financial services benefit most from airport activations, given the high-income, frequent-traveler demographic."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should airport marketing be planned?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Airport activations require more lead time due to permitting — plan 6–10 weeks out minimum. AirFresh can guide you through the full process from permits to staff deployment."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {
