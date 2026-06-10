@@ -85,7 +85,7 @@ export default function DTCMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>DTC brands built empires on Facebook and Instagram. Now those channels are expensive and crowded. Smart DTC brands are rediscovering physical marketing.</p>
+        <p>DTC brands built empires on Facebook and Instagram. Now those channels are expensive and crowded. Smart DTC brands are rediscovering physical marketing — and working with an <Link href="/experiential-marketing-agency" className="text-primary hover:underline font-medium">experiential marketing agency</Link> to bridge digital-first strategies with IRL impact.</p>
         <h2>Why DTC Needs IRL</h2>
         <ul>
           <li><strong>CAC crisis:</strong> Digital acquisition costs have skyrocketed</li>
@@ -94,10 +94,10 @@ export default function DTCMarketing() {
           <li><strong>Retail expansion:</strong> Preparing for wholesale channels</li>
         </ul>
         <h2>DTC Physical Playbook</h2>
-        <p><strong>Pop-ups:</strong> Test markets and build buzz without permanent commitment.</p>
-        <p><strong>Sampling programs:</strong> Get product in hands at scale.</p>
+        <p><strong>Pop-ups:</strong> Test markets and build buzz without permanent commitment. A dedicated <Link href="/brand-activation-agency" className="text-primary hover:underline font-medium">brand activation agency</Link> can handle everything from permitting to staffing.</p>
+        <p><strong>Sampling programs:</strong> Get product in hands at scale. Our <Link href="/product-sampling-agency" className="text-primary hover:underline font-medium">product sampling agency</Link> deploys trained brand reps in grocery stores, gyms, events, and high-traffic venues nationwide.</p>
         <p><strong>Event presence:</strong> Shows, festivals, conferences where target customers gather.</p>
-        <p><strong>Retail partnerships:</strong> Support retail launches with in-store activation.</p>
+        <p><strong>Retail partnerships:</strong> Support retail launches with in-store activation and <Link href="/hire-brand-ambassadors" className="text-primary hover:underline font-medium">brand ambassadors</Link> who can educate shoppers and drive trial.</p>
         <h2>Staff Considerations</h2>
         <ul>
           <li>Match the brand aesthetic and voice</li>

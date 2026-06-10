@@ -85,17 +85,17 @@ export default function SeasonalMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Seasonal marketing offers compressed windows of opportunity. Black Friday. Summer travel season. Back-to-school. The holidays. Miss the window and you wait another year.</p>
+        <p>Seasonal marketing offers compressed windows of opportunity. Black Friday. Summer travel season. Back-to-school. The holidays. Miss the window and you wait another year. That's why partnering with a <Link href="/promotional-staffing-agency" className="text-primary hover:underline font-medium">promotional staffing agency</Link> that can flex up quickly is critical for seasonal success.</p>
         <h2>Key Seasonal Opportunities</h2>
         <ul>
-          <li><strong>Holiday season:</strong> Nov-Dec retail push, corporate events, gift marketing</li>
+          <li><strong>Holiday season:</strong> Nov-Dec retail push, <Link href="/corporate-event-staffing" className="text-primary hover:underline font-medium">corporate events</Link>, gift marketing</li>
           <li><strong>Summer:</strong> Outdoor events, festivals, travel marketing</li>
           <li><strong>Back-to-school:</strong> Campus activations, family retail</li>
           <li><strong>Spring break:</strong> Travel destinations, beverage, youth marketing</li>
           <li><strong>Sports seasons:</strong> NFL, NBA, MLB, college - ongoing opportunities</li>
         </ul>
         <h2>Seasonal Staffing Challenges</h2>
-        <p><strong>Surge demand:</strong> Everyone needs staff at the same times. Book early.</p>
+        <p><strong>Surge demand:</strong> Everyone needs staff at the same times. Book early — our <Link href="/event-staffing-agency" className="text-primary hover:underline font-medium">event staffing agency</Link> recommends locking in your team 6-8 weeks before peak season.</p>
         <p><strong>Condensed training:</strong> Fast ramp-up for short campaigns.</p>
         <p><strong>Extended hours:</strong> Holiday events run long. Plan for fatigue.</p>
         <p><strong>Weather variables:</strong> Outdoor seasonal events need backup plans.</p>

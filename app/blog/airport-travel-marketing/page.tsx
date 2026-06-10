@@ -85,7 +85,7 @@ export default function AirportMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Airports are unique marketing environments. Travelers are captive, often have time to kill, and are in a mindset of discovery and indulgence. Smart brands take advantage.</p>
+        <p>Airports are unique marketing environments. Travelers are captive, often have time to kill, and are in a mindset of discovery and indulgence. Smart brands take advantage — and experienced <Link href="/brand-ambassador-agency" className="text-primary hover:underline font-medium">brand ambassador agencies</Link> know how to navigate the unique permitting and security requirements airports demand.</p>
         <h2>Airport Opportunities</h2>
         <ul>
           <li><strong>Terminal activations:</strong> Sampling, demos, brand experiences in common areas</li>
@@ -103,9 +103,9 @@ export default function AirportMarketing() {
         </ul>
         <h2>Travel Brand Opportunities</h2>
         <ul>
-          <li>Tourism boards reaching arriving travelers</li>
+          <li>Tourism boards reaching arriving travelers — <Link href="/field-marketing-agency" className="text-primary hover:underline font-medium">field marketing</Link> teams can staff multiple airports simultaneously</li>
           <li>Hotels and hospitality brands</li>
-          <li>Travel accessories and convenience products</li>
+          <li>Travel accessories and convenience products — ideal for <Link href="/product-sampling-agency" className="text-primary hover:underline font-medium">product sampling</Link> programs</li>
           <li>Food and beverage (travelers spend freely)</li>
           <li>Tech and entertainment for flight time</li>
         </ul>

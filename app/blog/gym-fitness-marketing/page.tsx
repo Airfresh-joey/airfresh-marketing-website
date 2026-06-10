@@ -85,7 +85,7 @@ export default function GymMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Gyms offer captive audiences of health-focused consumers. They're there regularly, at predictable times, in a mindset receptive to health and performance products.</p>
+        <p>Gyms offer captive audiences of health-focused consumers. They're there regularly, at predictable times, in a mindset receptive to health and performance products. A <Link href="/product-sampling-agency" className="text-primary hover:underline font-medium">product sampling agency</Link> specializing in fitness venues can dramatically reduce your cost-per-trial versus digital channels.</p>
         <h2>Gym Marketing Types</h2>
         <ul>
           <li><strong>Lobby sampling:</strong> Catch members coming and going</li>
@@ -102,8 +102,8 @@ export default function GymMarketing() {
         <p><strong>Tech:</strong> Wearables, fitness apps, headphones.</p>
         <h2>Gym Partnerships</h2>
         <ul>
-          <li>Major chains (LA Fitness, Planet Fitness, Equinox)</li>
-          <li>Boutique studios (SoulCycle, Barry's, CrossFit)</li>
+          <li>Major chains (LA Fitness, Planet Fitness, Equinox) — our <Link href="/field-marketing-agency" className="text-primary hover:underline font-medium">field marketing agency</Link> has relationships across national gym networks</li>
+          <li>Boutique studios (SoulCycle, Barry's, CrossFit) — <Link href="/brand-ambassador-agency" className="text-primary hover:underline font-medium">brand ambassadors</Link> who are themselves fitness enthusiasts perform best here</li>
           <li>Corporate fitness centers</li>
           <li>University rec centers</li>
         </ul>
