@@ -76,6 +76,51 @@ export default function GuerrillaMarketingExamples() {
                                                           "item": "https://www.airfreshmarketing.com/blog/guerrilla-marketing-examples"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is guerrilla marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Guerrilla marketing is an unconventional marketing strategy that uses surprise, creativity, and low-cost tactics to create high-impact brand impressions in public spaces. Examples include flash mobs, street art installations, ambient advertising, and unexpected pop-up experiences that generate word-of-mouth and social media sharing."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What are the best examples of guerrilla marketing campaigns?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Famous guerrilla marketing examples include Red Bull's extreme event activations, IKEA's public space installations, Airbnb's street-level stunts, and countless CPG brands running surprise product sampling events in high-traffic areas. The best campaigns combine cultural relevance, shareability, and a strong brand message that resonates with the target audience."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does a guerrilla marketing campaign cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Guerrilla marketing campaigns can be executed on budgets ranging from $500 for a small street team activation to $50,000+ for a large-scale multi-city stunt. The core appeal is high ROI relative to spend — creative execution, timing, and location selection matter more than budget size."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is the difference between guerrilla marketing and experiential marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Guerrilla marketing relies on surprise and unconventional tactics in public spaces, while experiential marketing is broader and includes any strategy that creates direct consumer interaction with a brand. Experiential marketing often includes guerrilla elements but also encompasses planned events, branded pop-ups, product sampling, and trade show activations."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you execute a guerrilla marketing campaign?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "To execute a guerrilla marketing campaign: choose a high-traffic public location, develop a creative concept that surprises and delights, staff the activation with trained brand ambassadors, encourage social sharing with a clear hashtag or photo opportunity, and measure results through impressions, social mentions, and leads generated."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

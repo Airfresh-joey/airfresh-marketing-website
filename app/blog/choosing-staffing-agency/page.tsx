@@ -71,6 +71,51 @@ export default function ChoosingAgency() {
                                                           "item": "https://www.airfreshmarketing.com/blog/choosing-staffing-agency"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What should I look for when choosing an event staffing agency?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "When choosing an event staffing agency, look for national reach with local market knowledge, a vetted roster of trained brand ambassadors, GPS check-in and real-time reporting capabilities, client references from similar industry campaigns, and transparent pricing with no hidden fees."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do I evaluate an event staffing agency before hiring?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Evaluate an event staffing agency by reviewing their case studies and past campaign results, asking about their staff vetting process, requesting sample reporting dashboards, checking their turnaround time for staffing requests, and verifying they carry proper liability insurance and worker compliance."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What questions should I ask an event staffing agency?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Key questions to ask include: How do you vet and train your brand ambassadors? What industries have you staffed before? How do you handle last-minute cancellations? What does your reporting and accountability process look like? Can you provide references from similar campaigns?"
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does it cost to hire an event staffing agency?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Event staffing agency costs vary by role and market. Brand ambassadors typically range from $25–$45/hour, with team leads and specialized staff at higher rates. Most agencies charge a management or markup fee of 30–50% on top of staff rates. Always request a full itemized quote."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is the difference between a staffing agency and an experiential marketing agency?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "A staffing agency provides the personnel for your events, while an experiential marketing agency handles both the creative strategy and the staff execution. Full-service experiential agencies like AirFresh Marketing offer concept development, logistics, brand ambassador staffing, and post-event reporting in one integrated package."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}
