@@ -75,6 +75,52 @@ export default function BAJobDescription() {
                   ]
         }) }}
       />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What should be in a brand ambassador job description?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A strong brand ambassador job description includes: job title and pay rate, event type and location, required appearance/presentation standards, product knowledge and training expectations, key responsibilities (sampling, lead capture, social posting), required experience or certifications (e.g., TIPS certification for alcohol events), and how to apply. Clear, specific descriptions attract more qualified candidates and reduce no-shows."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much do brand ambassadors get paid?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brand ambassador pay rates typically range from $20–$40/hour for standard promotional work, $25–$55/hour for trade show staff, and $30–$65/hour for highly trained product specialists or bilingual ambassadors. Rates vary by market, experience level, and event complexity. Major metro markets like New York, Los Angeles, and San Francisco typically pay at the high end of these ranges."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What skills should a brand ambassador have?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Top brand ambassador skills include outgoing personality and comfort approaching strangers, clear verbal communication and product storytelling, product knowledge retention and accurate FAQ responses, professional appearance and brand standard adherence, lead capture efficiency (using apps or paper forms), reliability and punctuality, and — for appropriate events — alcohol beverage service training (TIPS/BASSET certification)."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between a brand ambassador and a promotional model?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Promotional models are hired primarily for their appearance to attract foot traffic at events. Brand ambassadors are trained to represent a specific brand, communicate product benefits, answer consumer questions, capture leads, and drive conversion. Most modern marketing programs require brand ambassadors rather than promotional models — the goal is measurable engagement, not just attention."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I find qualified brand ambassadors for my campaign?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The fastest way to find qualified brand ambassadors is through a national event staffing agency like Air Fresh Marketing, which maintains vetted talent rosters in 50+ U.S. cities. Agencies handle sourcing, interviewing, background checks, training, and day-of management. For brands running multi-market campaigns, an agency partner ensures consistent brand representation across every market simultaneously."
+            }
+          }
+        ]
+      }) }} />
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "How to Write a Brand Ambassador Job Description" }]} />
 
       <header className="bg-gradient-to-r from-blue-500 to-indigo-600 text-white py-16">

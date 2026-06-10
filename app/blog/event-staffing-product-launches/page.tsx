@@ -38,6 +38,52 @@ export default function EventStaffingProductLaunches() {
     <article className="pt-16 min-h-screen bg-white">
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "Event Staffing for Product Launches: The Complete Playbook" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "How far in advance should I hire event staff for a product launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "For product launches, hire event staff 3–6 weeks in advance to allow time for brand training, product knowledge reviews, and logistics coordination. For high-profile national launches with simultaneous multi-city activations, 6–8 weeks is ideal. Last-minute requests (under 2 weeks) are possible but risk reduced talent quality and higher costs."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of event staff do I need for a product launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "A product launch typically requires brand ambassadors to engage consumers and communicate key product messages, product demonstrators for hands-on trial moments, lead capture specialists to collect contact info and survey data, and optionally promotional models or street teams for awareness-building before the event. For retail launch activations, sampling staff and in-store demonstrators are the primary roles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do I train event staff on my new product before launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Effective product launch staff training involves a digital brand brief covering key messages, product benefits, target consumer, FAQs and objection handling, and compliance requirements. Pair this with a live or virtual training call 48–72 hours before the event. On launch day, a brand manager or agency field manager should conduct a final 15-minute briefing before doors open."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What should event staff say during a product launch?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event staff at product launches should open with a brand-approved conversation starter, deliver a concise 30-second product pitch (the 'elevator pitch'), offer a sample or demo moment, handle common objections with pre-approved responses, and close with a call to action — coupon distribution, lead form completion, or a purchase direction. Scripted talking points ensure message consistency across all staff and markets."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does event staffing for a product launch cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event staffing for a product launch costs $25–$55/hour per staff member depending on the market, role complexity, and experience level. A single-day, single-market launch activation with a team of 4–6 staff typically runs $1,500–$5,000 in staffing costs before agency fees. Multi-city simultaneous launches are priced per market and often qualify for volume discounts through a national staffing agency."
+            }
+          }
+        ]
+      }) }}/>
 
       {/* Hero */}
       <header className="bg-gradient-to-r from-orange-600 to-red-700 text-white py-16">

@@ -39,6 +39,52 @@ export default function WhatIsExperientialMarketing() {
     <article className="pt-16 min-h-screen bg-white">
       <Breadcrumbs items={[{ label: "Blog", href: "/blog" }, { label: "What is Experiential Marketing? The Complete 2026 Guide" }]} />
       <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }} />
+      <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify({
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Experiential marketing is a strategy that creates direct, immersive interactions between a brand and its consumers — think product demos, pop-up experiences, sampling events, street teams, and live activations. Unlike traditional advertising, experiential marketing puts consumers inside the brand story, generating emotional connections and purchase intent that digital impressions cannot replicate."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How much does experiential marketing cost?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Experiential marketing budgets vary widely. A single-market brand ambassador activation can start around $2,000–$5,000 for a one-day execution. Multi-city sampling tours typically range from $20,000–$100,000+. Large-scale pop-up experiences with custom builds can run $250,000 or more. Most brands allocate 5–15% of total marketing spend to experiential activations."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What is the difference between experiential marketing and event marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Event marketing promotes an event (concert, trade show, conference) to drive attendance. Experiential marketing creates a brand experience — it can happen at an event, but also in a retail store, on a street corner, at a stadium, or anywhere the target audience gathers. The defining feature of experiential is that the consumer participates in a brand interaction rather than passively viewing an ad."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do you measure ROI in experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Key experiential marketing metrics include direct sales conversions, samples distributed, leads captured, social media impressions generated at the event, and post-activation brand lift surveys. For retail sampling programs, agencies track before/after velocity data at the sampled retail locations. Most professional experiential agencies provide post-event reports with KPIs agreed upon before the activation begins."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What brands use experiential marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Consumer packaged goods (CPG), beverage, tech, beauty, automotive, and DTC brands are the heaviest users of experiential marketing. Examples include beverage sampling at music festivals, tech product demonstrations at trade shows, beauty pop-ups in high-foot-traffic retail corridors, and automotive test drives at sporting events. Any brand that benefits from trial, demonstration, or face-to-face relationship-building is a strong candidate for experiential."
+            }
+          }
+        ]
+      }) }} />
       
       {/* Hero */}
       <header className="bg-gradient-to-r from-cyan-600 to-blue-600 text-white py-16">
