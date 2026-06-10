@@ -50,6 +50,51 @@ export default function MobileMarketingTours() {
                                       "keywords": "mobile marketing tour, brand roadshow, experiential tour, mobile activation, touring promotion"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is a mobile marketing tour?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "A mobile marketing tour is a branded experiential campaign where a vehicle — custom truck, trailer, pop-up van, or branded RV — travels to multiple cities or venues to engage consumers face-to-face. Tours allow brands to bring the activation directly to their target audience rather than waiting for consumers to visit a store or event. They are commonly used for product launches, sampling programs, and national brand awareness campaigns."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does a mobile marketing tour cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Mobile marketing tour costs vary based on tour length, vehicle type, number of markets, and staffing. A regional tour (5–10 cities) typically ranges from $50,000–$150,000. A full national tour (20+ markets) can range from $200,000–$500,000+. The main cost buckets are vehicle build or rental, staffing, permits, logistics, and on-site experiential elements. An event marketing agency can provide a detailed scope and budget."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should I plan a mobile marketing tour?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "For a multi-city mobile marketing tour, plan at least 3–6 months in advance. Vehicle design and build alone can take 8–12 weeks. Permitting for public spaces requires 4–8 weeks in most major cities. Staffing should begin at least 6 weeks out to allow time for recruitment, training, and travel logistics. Larger national tours benefit from 6–12 months of lead time."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of staff are needed for a mobile tour?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "A mobile marketing tour typically requires brand ambassadors to engage consumers and distribute samples or collateral, a tour manager to oversee daily operations and logistics, vehicle drivers (CDL if operating a large truck or trailer), and optionally, experiential specialists for interactive elements. A national brand ambassador agency can source, train, and manage staff across all tour markets."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What cities should I include in a mobile marketing tour?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "City selection for a mobile marketing tour should be driven by your target demographic concentration, existing brand penetration gaps, retail distribution, and event calendars. Top markets for mobile tours include New York, Los Angeles, Chicago, Dallas, Atlanta, Miami, Houston, and Phoenix. Tier-2 cities like Denver, Nashville, Austin, and Portland often offer lower activation costs with highly engaged audiences."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {
