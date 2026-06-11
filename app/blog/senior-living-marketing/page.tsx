@@ -85,7 +85,19 @@ export default function SeniorLivingMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Adults 65+ control significant wealth and make daily purchasing decisions. Reaching them in senior communities requires understanding their preferences and environment.</p>
+        <p>
+          Adults 65+ control significant wealth and make daily purchasing decisions. Reaching them
+          in senior communities requires understanding their preferences and environment. Whether
+          you need{' '}
+          <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">
+            brand ambassadors
+          </Link>{' '}
+          for health and wellness demos or full-scale{' '}
+          <Link href="/experiential-marketing-agency" className="text-blue-600 hover:text-blue-700">
+            experiential marketing activations
+          </Link>{' '}
+          at retirement communities, staffing the right people matters more than anywhere else.
+        </p>
         <h2>Venue Types</h2>
         <ul>
           <li><strong>Active adult (55+):</strong> Independent, active lifestyle</li>
@@ -94,7 +106,9 @@ export default function SeniorLivingMarketing() {
           <li><strong>Senior centers:</strong> Community gathering spaces</li>
         </ul>
         <h2>Product Categories</h2>
-        <p><strong>Health/wellness:</strong> Supplements, medications, medical devices.</p>
+        <p><strong>Health/wellness:</strong> Supplements, medications, medical devices — ideal for{' '}
+          <Link href="/product-sampling-agency" className="text-blue-600 hover:text-blue-700">product sampling campaigns</Link>{' '}
+          in community common areas.</p>
         <p><strong>Financial services:</strong> Insurance, estate planning, banking.</p>
         <p><strong>Travel:</strong> Tours, cruises, destinations.</p>
         <p><strong>Technology:</strong> Simplified tech, communication tools.</p>

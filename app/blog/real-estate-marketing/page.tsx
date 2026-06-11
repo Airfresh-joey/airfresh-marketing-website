@@ -85,7 +85,15 @@ export default function RealEstateMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Real estate is high-stakes. A single event can lead to a multi-million dollar transaction - or a missed opportunity. Professional event support ensures every showing presents the property at its best.</p>
+        <p>
+          Real estate is high-stakes. A single event can lead to a multi-million dollar transaction —
+          or a missed opportunity. Professional{' '}
+          <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">
+            event staffing
+          </Link>{' '}
+          ensures every showing presents the property at its best, with polished professionals who
+          reflect the quality of the listing.
+        </p>
         <h2>Real Estate Event Types</h2>
         <ul>
           <li><strong>Broker opens:</strong> Previews for real estate professionals</li>
@@ -100,7 +108,9 @@ export default function RealEstateMarketing() {
           <li>Property tour guides</li>
           <li>Refreshment service</li>
           <li>Valet coordination</li>
-          <li>Lead capture and follow-up</li>
+          <li>Lead capture and follow-up — trained{' '}
+            <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassadors</Link>{' '}
+            can qualify prospects and capture contact details on-site</li>
         </ul>
         <h2>The Luxury Standard</h2>
         <p>For high-end properties, every detail matters:</p>
