@@ -50,6 +50,36 @@ export default function StartupMarketing() {
                                       "keywords": "startup marketing, startup events, tech startup marketing, startup launch events, lean marketing"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is the best marketing strategy for a startup?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "The best marketing strategy for a startup combines high-impact, low-cost tactics: guerrilla marketing, street team activations, product sampling, and presence at relevant community events. Startups should prioritize direct consumer interaction over broad advertising spend — getting your product into people's hands and creating memorable experiences converts better per dollar than digital ads at the early stage." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How can startups afford experiential marketing on a limited budget?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Startups can afford experiential marketing by starting small and focused: a 4-hour street team activation with 2-4 brand ambassadors in a high-traffic area can cost as little as $400-800 all-in. Focus on high-footfall locations like farmers markets, festivals, or college campuses. A professional event staffing agency can help you get maximum impact from a limited budget by providing trained, flexible staff without long-term commitments." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of events work best for startup brand awareness?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "For startup brand awareness, the best events are those where your target audience already gathers: industry conferences, tech meetups, university campuses, farmers markets, pop-up markets, and local festivals. Product launch events and PR stunts can generate significant media coverage. Micro-activations in multiple locations over time build cumulative brand recognition more cost-effectively than a single large event." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Do startups need a full-time marketing team for events?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "No — startups can scale event marketing without a full-time team by partnering with an event staffing agency. This model provides trained brand ambassadors on demand without the overhead of full-time hires, benefits, or HR complexity. You can run targeted activations when you need them, then scale up as traction builds. This keeps fixed costs low while maximizing market-testing speed." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do startups measure event marketing success?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Startups should track: samples distributed or demos conducted, email sign-ups captured, social media follows gained, promo codes redeemed post-event, and direct sales. Calculate cost per lead and cost per acquisition to compare event marketing against digital channels. Use simple post-event surveys to gauge brand recall and sentiment. Even qualitative feedback from 10-20 consumers at an activation can sharpen your messaging before scaling." }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

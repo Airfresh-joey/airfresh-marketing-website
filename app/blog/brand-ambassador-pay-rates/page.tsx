@@ -50,6 +50,36 @@ export default function BrandAmbassadorPay() {
                                       "keywords": "brand ambassador pay, event staff rates, promotional model pay, ba salary, event staffing costs"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much do brand ambassadors make per hour in 2026?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Brand ambassador hourly rates in 2026 typically range from $20 to $65 per hour depending on market, experience level, and event type. Entry-level ambassadors in mid-size markets start around $20-25/hr. Experienced ambassadors in premium markets like New York, Los Angeles, or San Francisco command $45-65/hr. Specialty roles such as bilingual ambassadors, trade show specialists, or luxury brand representatives may earn $55-85/hr." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What factors affect brand ambassador pay rates?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Key factors affecting brand ambassador pay rates include: geographic market (NYC and LA rates run 20-30% higher than national average), years of experience, event type (trade shows pay more than street teams), required skills (bilingual, technical product knowledge, driving), shift length, and booking advance notice. Rush bookings under 72 hours typically carry a 15-25% premium. Volume commitments for multi-day or multi-city campaigns often unlock lower per-hour rates." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Do brand ambassadors get paid for training time?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Yes — reputable event staffing agencies compensate brand ambassadors for mandatory training time, including pre-event brand briefings, video training modules, and certification. AirFresh Marketing's training platform requires completion before activation, and ambassadors are compensated for this preparation time. This investment in training quality directly benefits brands through better on-site performance and brand representation." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Is it better to hire brand ambassadors directly or through an agency?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Hiring through a professional event staffing agency typically delivers better results for most brands. Agencies handle recruitment, vetting, training, scheduling, GPS check-in verification, backup staff, and reporting — services that would require significant internal HR infrastructure to replicate. Direct hiring makes sense only for brands with ongoing, high-volume programs that justify dedicated internal staffing teams. For project-based activations, agency partnerships are far more cost-effective." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is the brand ambassador pay rate difference between cities?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Brand ambassador pay varies significantly by city. Tier 1 markets (New York, Los Angeles, San Francisco, Chicago) average $45-65/hr. Tier 2 markets (Denver, Austin, Miami, Seattle, Boston) average $35-50/hr. Tier 3 markets (mid-size cities like Indianapolis, Kansas City, Salt Lake City) average $25-40/hr. AirFresh Marketing maintains a transparent city-by-city rate guide and sources local talent in each market to minimize travel costs." }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

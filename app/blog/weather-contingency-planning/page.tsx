@@ -50,6 +50,36 @@ export default function WeatherPlanning() {
                                       "keywords": "event weather planning, outdoor event contingency, event rain plan, weather backup plan"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is a weather contingency plan for events?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "A weather contingency plan for events is a pre-defined set of procedures for modifying, postponing, or canceling an outdoor event if weather conditions create safety risks or operational challenges. It includes clear decision thresholds (e.g., wind speeds above 30 mph trigger teardown), backup indoor venues, staff communication protocols, client notification procedures, and insurance coverage details." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should you plan weather contingencies for events?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Weather contingency planning should begin at the contract stage — before any outdoor event is confirmed. Lock in backup venue options 4-6 weeks out, brief staff on contingency protocols 1-2 weeks out, and monitor weather forecasts beginning 7-10 days before the event. Make go/no-go decisions no later than 48 hours prior when possible to minimize sunk costs and allow client communication." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What weather conditions typically cancel outdoor events?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Common thresholds for outdoor event cancellation or modification include: sustained winds above 25-30 mph (tent and structure risk), lightning within 10 miles (immediate evacuation), temperatures below 35F or above 95F without climate-controlled space, heavy rain over 0.5 inches per hour, or ice and snow accumulation. ADA safety obligations also require consideration of surface conditions for staff and attendees with mobility needs." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you keep event staff motivated during adverse weather?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Keeping event staff motivated in tough weather requires preparation and communication: provide appropriate gear (ponchos, hand warmers, sunscreen, cooling towels), schedule more frequent breaks in extreme temperatures, have hot or cold beverages on-site, and brief staff that their comfort matters. Agencies like AirFresh Marketing vet staff specifically for outdoor resilience and brief teams on weather-specific protocols before every outdoor activation." }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does event insurance cover weather cancellations?",
+                                                          "acceptedAnswer": { "@type": "Answer", "text": "Event cancellation insurance can cover weather-related losses including non-refundable deposits, vendor fees, and staff costs when an event is canceled due to extreme weather. Policies vary significantly — some cover only named perils (e.g., hurricanes), while others cover any weather preventing the event from proceeding. Purchase coverage at least 14 days before the event; most policies exclude weather already in the forecast at time of purchase." }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {
