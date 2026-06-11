@@ -84,7 +84,7 @@ export default function B2BMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>B2B events operate differently than consumer events. The goal isn't brand awareness — it's qualified meetings, relationship building, and pipeline generation. Every interaction should move toward a deal. That's why <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">professional event staffing</Link> for B2B is a fundamentally different discipline than consumer marketing.</p>
+        <p>B2B events operate differently than consumer events. The goal isn't brand awareness — it's qualified meetings, relationship building, and pipeline generation. Every interaction should move toward a deal. That's why <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">professional event staffing</Link> for B2B is a fundamentally different discipline than consumer marketing. Partnering with a full-service <Link href="/experiential-marketing-agency" className="text-blue-600 hover:text-blue-700">experiential marketing agency</Link> ensures your entire event presence — from booth design to staff selection — is optimized for pipeline results.</p>
         <h2>Trade Show Success</h2>
         <p>Keys to B2B trade show performance:</p>
         <p><strong>Pre-show outreach:</strong> Book meetings before you arrive. Top prospects shouldn't be left to chance encounters.</p>
@@ -109,7 +109,7 @@ export default function B2BMarketing() {
           <li>CRM discipline (logs every interaction properly)</li>
           <li>Professional appearance (matches buyer expectations)</li>
         </ul>
-        <p>Mix internal sales staff with trained <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassadors</Link>. Internal for serious meetings, ambassadors for qualification and crowd management.</p>
+        <p>Mix internal sales staff with trained <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">brand ambassadors</Link>. Internal for serious meetings, ambassadors for qualification and crowd management. For companies hiring at scale, our <Link href="/promotional-staffing-agency" className="text-blue-600 hover:text-blue-700">promotional staffing agency</Link> can source, vet, and train B2B-qualified event staff in any US market.</p>
         <h2>Measuring B2B Event ROI</h2>
         <p>The formula: (Leads × Close Rate × Average Deal Size) - Event Cost = Net Value</p>
         <p>Track leads through to close, even if it takes months. Attribute pipeline to events. This data justifies future budgets.</p>

@@ -153,7 +153,11 @@ export default function TradeShowMarketingStrategy() {
           That disconnect is not a trade show problem. Trade shows remain one of the best
           environments to meet qualified buyers, build relationships with prospects, and generate
           pipeline at scale. The problem is strategy — specifically, the failure to apply the
-          same rigor to trade show marketing that brands apply to their digital programs.
+          same rigor to{' '}
+          <Link href="/experiential-marketing-agency" className="text-blue-600 hover:text-blue-700">
+            trade show marketing
+          </Link>{' '}
+          that brands apply to their digital programs.
         </p>
 
         <p>
@@ -284,10 +288,10 @@ export default function TradeShowMarketingStrategy() {
           demos, answer technical questions, handle objections, and have the conversations that
           move deals forward. These are often a combination of your internal sales/technical
           team and external{' '}
-          <Link href="/services/brand-ambassadors" className="text-blue-600 hover:text-blue-700">
-            brand ambassadors
-          </Link>{' '}
-          trained specifically on your product.
+ <Link href="/brand-ambassador-agency" className="text-blue-600 hover:text-blue-700">
+   brand ambassadors
+ </Link>{' '}
+ trained specifically on your product.
         </p>
 
         <p>
@@ -529,7 +533,11 @@ export default function TradeShowMarketingStrategy() {
         </p>
 
         <p>
-          <strong>Use a trade show staffing agency for:</strong> Booth attractors and floor
+          <strong>Use a{' '}
+          <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">
+            trade show staffing agency
+          </Link>{' '}
+          for:</strong> Booth attractors and floor
           staff who generate initial interactions and qualify leads for hand-off, lead scanning
           and data capture roles, on-site logistics management, and any market where your
           internal team does not have the bandwidth to staff the booth fully.
