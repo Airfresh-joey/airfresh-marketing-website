@@ -310,6 +310,23 @@ export default async function BlogPost(
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(articleStructuredData) }}
       />
+      {/* FAQPage JSON-LD (when FAQ data present) */}
+      {post.faq && post.faq.length > 0 && (
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{
+            __html: JSON.stringify({
+              "@context": "https://schema.org",
+              "@type": "FAQPage",
+              "mainEntity": post.faq.map((item) => ({
+                "@type": "Question",
+                "name": item.question,
+                "acceptedAnswer": { "@type": "Answer", "text": item.answer },
+              })),
+            }),
+          }}
+        />
+      )}
 
       {/* Progress Bar (client component) */}
       <ReadProgressBar />
