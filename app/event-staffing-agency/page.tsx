@@ -173,7 +173,7 @@ export default function EventStaffingAgencyPage() {
     },
     {
       title: 'Trade Show Staff',
-      href: '/services/event-staffing',
+      href: '/event-staffing-agency',
       description:
         'Skilled booth professionals who generate leads, demonstrate products, and engage attendees at trade shows from CES to regional industry expos. Trained in lead capture and qualification.',
       icon: Building,
@@ -597,7 +597,7 @@ export default function EventStaffingAgencyPage() {
                 Contact our team
               </Link>{' '}
               to discuss your specific requirements. You can also explore our{' '}
-              <Link href="/services/event-staffing" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/event-staffing-agency" className="text-cyan-600 hover:underline font-medium">
                 full event staffing service page
               </Link>{' '}
               or read the comprehensive{' '}
@@ -843,7 +843,7 @@ export default function EventStaffingAgencyPage() {
                 sampling teams
               </Link>{' '}
               for in-store demos at grocery chains and retail locations. Technology companies need knowledgeable{' '}
-              <Link href="/services/event-staffing" className="text-cyan-600 hover:underline">
+              <Link href="/event-staffing-agency" className="text-cyan-600 hover:underline">
                 trade show staff
               </Link>{' '}
               who can demonstrate complex products and qualify leads at conventions like CES, SXSW, and NAB.
@@ -1101,7 +1101,7 @@ export default function EventStaffingAgencyPage() {
               <Link href="/services/brand-ambassadors" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Brand Ambassadors
               </Link>
-              <Link href="/services/event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+              <Link href="/event-staffing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Event Staffing
               </Link>
               <Link href="/services/convention-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">

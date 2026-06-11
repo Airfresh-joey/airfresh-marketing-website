@@ -80,7 +80,7 @@ export default function Blog() {
           <h2 className="text-2xl font-bold text-gray-900 mb-6 text-center">Explore Our Services</h2>
           <div className="grid grid-cols-2 md:grid-cols-4 gap-3 mb-8">
             <Link href="/services/brand-ambassadors" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Brand Ambassadors</Link>
-            <Link href="/services/event-staffing" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Event Staffing</Link>
+            <Link href="/event-staffing-agency" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Event Staffing</Link>
             <Link href="/services/street-teams" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Street Teams</Link>
             <Link href="/services/sampling" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Product Sampling</Link>
             <Link href="/services/convention-staffing" className="p-3 bg-white rounded-lg border border-gray-200 hover:border-cyan-400 text-center text-sm font-medium text-gray-700 hover:text-cyan-600 transition-colors">Convention Staffing</Link>

@@ -145,7 +145,7 @@ export default function TradeShowMarketingStrategyGuide() {
         <p>
           The brands that consistently dominate trade show floors approach every show as a
           strategic campaign with defined objectives, professional{' '}
-          <Link href="/services/event-staffing" className="text-blue-600 hover:text-blue-700">
+          <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">
             trade show staffing
           </Link>{' '}
           , a structured visitor experience, and a post-show follow-up system that actually converts

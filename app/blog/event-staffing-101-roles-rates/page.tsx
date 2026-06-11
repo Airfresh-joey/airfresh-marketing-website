@@ -137,7 +137,7 @@ export default function EventStaffing101() {
           Event staffing is one of those areas where brands consistently either overinvest in the
           wrong roles or underinvest in the right ones. The result is the same either way: a team
           that does not perform at the level the activation requires. Understanding the landscape of{' '}
-          <Link href="/services/event-staffing" className="text-blue-600 hover:text-blue-700">
+          <Link href="/event-staffing-agency" className="text-blue-600 hover:text-blue-700">
             event staffing
           </Link>{' '}
           roles — what each position actually does, what it should cost, and how different roles

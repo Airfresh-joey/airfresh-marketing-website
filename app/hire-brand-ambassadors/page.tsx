@@ -535,7 +535,7 @@ export default function HireBrandAmbassadorsPage() {
                 brand ambassador job description guide
               </Link>{' '}
               to learn what makes a great ambassador, or check out our{' '}
-              <Link href="/services/event-staffing" className="text-cyan-600 hover:underline font-medium">
+              <Link href="/event-staffing-agency" className="text-cyan-600 hover:underline font-medium">
                 event staffing services
               </Link>{' '}
               for additional staff types.
@@ -921,7 +921,7 @@ export default function HireBrandAmbassadorsPage() {
               how to initiate conversations with passing attendees, how to qualify interest and route high-value
               prospects to your sales team, and how to maintain energy and professionalism across multi-day events.
               Our{' '}
-              <Link href="/services/event-staffing" className="text-cyan-600 hover:underline">
+              <Link href="/event-staffing-agency" className="text-cyan-600 hover:underline">
                 event staffing services
               </Link>{' '}
               page provides detailed information about trade show staffing capabilities, or visit our{' '}
@@ -1193,7 +1193,7 @@ export default function HireBrandAmbassadorsPage() {
               <Link href="/services/brand-ambassadors" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Brand Ambassadors
               </Link>
-              <Link href="/services/event-staffing" className="text-white/70 hover:text-cyan-200 transition-colors">
+              <Link href="/event-staffing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
                 Event Staffing
               </Link>
               <Link href="/event-staffing-agency" className="text-white/70 hover:text-cyan-200 transition-colors">
