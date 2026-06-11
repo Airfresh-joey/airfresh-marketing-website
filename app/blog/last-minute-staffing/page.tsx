@@ -71,6 +71,51 @@ export default function LastMinuteStaffing() {
                                                           "item": "https://www.airfreshmarketing.com/blog/last-minute-staffing"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can you hire event staff with less than 24 hours notice?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes — AirFresh Marketing maintains an on-call roster of pre-vetted brand ambassadors and promotional staff in major markets for emergency and same-day bookings. While more lead time is always preferred, we routinely fill last-minute requests for events happening within hours in cities like Los Angeles, New York, Chicago, Miami, and beyond."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of events qualify for emergency staffing coverage?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Any event where a staff member cancels or where headcount needs increase unexpectedly qualifies. Common emergency scenarios include trade shows, product launches, in-store activations, pop-up events, corporate functions, and festival activations where a no-show creates a coverage gap."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Is there a premium fee for last-minute or rush event staffing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Rush requests booked within 24–48 hours may carry a premium to compensate for expedited sourcing, vetting, and dispatch. The exact fee depends on market, headcount, and role complexity. Contact AirFresh Marketing for an immediate quote — we're transparent about any rush surcharge upfront."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do I request last-minute event staff from AirFresh Marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Visit airfreshmarketing.com/get-quote or call us directly. Provide the event date, city, number of staff needed, and role description. Our team will confirm availability and pricing within the hour for most markets. For same-day requests, phone contact is fastest."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What can I do to reduce the risk of last-minute staffing needs?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Build a 10–15% overhire buffer into every event booking, confirm staff 72 hours before the event, and use an agency with a confirmed backup pool. AirFresh Marketing proactively reaches out to clients 72 hours prior to confirm all staff and has backups identified before the day-of."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

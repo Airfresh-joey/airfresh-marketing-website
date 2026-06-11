@@ -71,6 +71,51 @@ export default function LeadCapture() {
                                                           "item": "https://www.airfreshmarketing.com/blog/lead-capture-events"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is event lead capture and why does it matter?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Event lead capture is the process of collecting contact and intent data from attendees during brand activations, trade shows, or experiential events. It turns fleeting interactions into trackable pipeline, allowing brands to nurture relationships long after the event ends and measure ROI accurately."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What information should you capture at events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "At minimum, capture first name, email address, and an opt-in confirmation. Depending on your goals, also collect phone number, company name, product interest, purchase intent, and any qualifying questions. Keep forms short — 3–5 fields maximizes completion rates."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What tools do brand ambassadors use to capture leads at events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Common tools include tablet-based digital forms, badge scanners at trade shows, SMS opt-in shortcodes, QR codes linking to landing pages, and branded kiosks. The best setups sync directly to a CRM so follow-up can begin within 24 hours."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you ensure TCPA and CAN-SPAM compliance when capturing leads at events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Always obtain explicit, affirmative consent at the point of capture. Display a clear opt-in checkbox with disclosure language, explain how contact info will be used, and store a time-stamped record of each consent. Avoid pre-checked boxes and ensure your follow-up honors opt-out requests immediately."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How quickly should you follow up with event leads?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Same-day or within 24 hours is the gold standard — conversion rates drop significantly after 48 hours. Automate a thank-you email immediately post-capture and have a sales or nurture sequence ready to trigger the moment the event ends. AirFresh Marketing's staffing teams are trained to facilitate fast data handoffs."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

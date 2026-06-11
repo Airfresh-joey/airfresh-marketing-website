@@ -71,6 +71,51 @@ export default function ExperientialBudgeting() {
                                                           "item": "https://www.airfreshmarketing.com/blog/experiential-marketing-budget"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does experiential marketing cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Experiential marketing budgets vary widely depending on scale. A single-day local activation with brand ambassadors might run $2,000–$8,000, while a national multi-city tour can reach $150,000–$500,000+. Staffing typically accounts for 25–40% of an activation budget, with fabrication, permits, and logistics making up the remainder."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What percentage of a marketing budget should go to experiential?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Most brands allocate 10–25% of their total marketing budget to experiential and live activations. CPG and consumer goods brands with high trial-driven conversion often allocate more — up to 30–40% — because face-to-face sampling and demos deliver measurable purchase lift."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What are the biggest cost drivers in an experiential marketing budget?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "The top cost drivers are staffing (brand ambassadors, event managers), fabrication and build-out (displays, booths, props), permits and venue fees, logistics and shipping, and agency management fees. Staffing from a professional agency like AirFresh Marketing ensures quality without overspending on recruitment."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How can brands reduce experiential marketing costs without sacrificing quality?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Key cost-reduction strategies include booking staff through a national agency with local market depth (avoiding travel costs), reusing modular display assets across activations, securing permits early to avoid rush fees, and piggybacking on existing events like festivals or trade shows rather than producing standalone experiences."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you measure ROI on an experiential marketing budget?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Track cost-per-engagement (total budget ÷ total interactions), cost-per-sample, lead capture rate, post-event survey brand lift, sales velocity in activated markets, and social impressions generated. Compare against digital channel benchmarks to build a cross-channel ROI case. AirFresh Marketing provides post-event reporting to help clients quantify every activation."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}
