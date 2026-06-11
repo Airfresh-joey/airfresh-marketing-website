@@ -85,7 +85,7 @@ export default function ApartmentMarketing() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Apartment complexes concentrate specific demographics in defined locations. Property management relationships can unlock direct access to these communities.</p>
+        <p>Apartment complexes concentrate specific demographics in defined locations. Property management relationships can unlock direct access to these communities. A trusted <Link href="/brand-ambassador-agency" className="text-teal-700 underline font-medium">brand ambassador agency</Link> can place the right staff inside residential properties to make every touchpoint feel authentic.</p>
         <h2>Access Points</h2>
         <ul>
           <li><strong>Leasing offices:</strong> New move-in sampling</li>
@@ -114,6 +114,7 @@ export default function ApartmentMarketing() {
           <li>Respect resident privacy</li>
           <li>Coordinate timing with property events</li>
         </ul>
+        <p>Our <Link href="/promotional-staffing-agency" className="text-teal-700 underline font-medium">promotional staffing agency</Link> manages all logistics — from permit coordination to staff scheduling — so your team arrives prepared. Need more flexible coverage across multiple properties? Our <Link href="/event-staffing-agency" className="text-teal-700 underline font-medium">event staffing agency</Link> deploys nationwide teams on short notice.</p>
         <hr className="my-12" />
         <div className="not-prose">
           <div className="bg-gradient-to-r from-teal-600 to-cyan-700 text-white p-8 rounded-xl">
