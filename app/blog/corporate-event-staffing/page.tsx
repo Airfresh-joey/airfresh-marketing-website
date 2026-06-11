@@ -50,6 +50,51 @@ export default function CorporateEventStaffing() {
                                       "keywords": "corporate event staffing, corporate event staff, gala staffing, corporate function staff, meeting staff"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What types of corporate events can AirFresh Marketing staff?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh Marketing staffs galas, annual meetings, product launches, award ceremonies, executive retreats, trade show booths, and corporate holiday parties nationwide."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should I book corporate event staff?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "We recommend booking 3–4 weeks in advance for standard corporate events and 6–8 weeks for large galas or conferences. Rush bookings within 72 hours are available upon request."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What qualities should corporate event staff have?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Corporate event staff should project a polished appearance, exercise discretion around sensitive business information, remain adaptable in executive settings, and problem-solve quietly under pressure."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How many staff members do I need for a corporate gala?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "A typical 200-person corporate gala needs 8–15 staff covering registration, hosting, coat check, and guest services. AirFresh builds custom staffing plans based on your event's specific needs."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does AirFresh provide corporate event staffing outside my city?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh Marketing staffs corporate events nationwide, with boots on the ground in 50+ U.S. markets including New York, Los Angeles, Chicago, Dallas, and Miami."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

@@ -50,6 +50,51 @@ export default function B2BStaffing() {
                                       "keywords": "b2b event staffing, trade show staff, conference staffing, business event staff, professional event staff"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is B2B event staffing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "B2B event staffing refers to hiring professional event staff — brand ambassadors, demo specialists, trade show hosts — to represent your business at industry events, trade shows, and conferences targeting other businesses."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do trade show staff help generate leads?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Trained trade show staff actively engage booth visitors, qualify prospects, demonstrate products, and capture lead information — turning foot traffic into measurable pipeline for your sales team."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What roles does AirFresh fill for B2B events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh staffs trade show booth hosts, product demo specialists, lead capture agents, badge scanners, registration staff, conference greeters, and VIP hospitality coordinators for B2B events."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can event staff be briefed on complex B2B products?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh provides a thorough pre-event briefing process so staff understand your product positioning, key talking points, and qualification criteria before the event begins."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does B2B event staffing cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "B2B event staffing rates typically range from $25–$45/hr per staff member depending on the market, skill level, and event duration. Contact AirFresh for a custom quote tailored to your event."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

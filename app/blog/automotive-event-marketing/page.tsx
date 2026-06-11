@@ -49,6 +49,51 @@ export default function AutomotiveMarketing() {
                                       "keywords": "automotive event marketing, auto show marketing, ride and drive events, car launch event, automotive experiential, dealership events"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is automotive event marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Automotive event marketing uses live experiences — ride-and-drives, auto show activations, dealership events, and launch parties — to engage prospective buyers and build emotional connections with vehicle brands."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What staff roles are needed for automotive events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Automotive events typically require product specialists, brand ambassadors, ride-and-drive coordinators, registration staff, demo hosts, and VIP greeters trained in the vehicle's key features and messaging."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How does AirFresh staff auto show activations?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "AirFresh provides trained auto show staff who are knowledgeable about vehicle specs, comfortable engaging diverse audiences, and skilled at capturing qualified leads and scheduling test drives."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can AirFresh handle national automotive campaigns?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh has staffed automotive programs across 50+ U.S. markets simultaneously, providing centralized coordination with local market execution for major OEM campaigns and regional dealership groups."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What makes automotive event staff different from regular brand ambassadors?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Automotive event staff need deeper product knowledge, the ability to discuss technical specs and financing, and comfort managing high-ticket sales conversations — going beyond typical promotional ambassador roles."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

@@ -54,6 +54,51 @@ export default function WorldCupEventStaffing() {
                                       "keywords": "2026 world cup event staffing, world cup brand ambassadors, fifa world cup activations, world cup promotional staff, world cup marketing"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Which cities are hosting the 2026 FIFA World Cup in the USA?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "The 2026 FIFA World Cup USA host cities include New York/New Jersey, Los Angeles, Dallas, San Francisco Bay Area, Miami, Boston, Seattle, Kansas City, Philadelphia, Houston, and Atlanta."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What event staffing is needed for World Cup brand activations?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "World Cup activations typically require bilingual brand ambassadors, product sampling staff, fan zone hosts, merchandise crew, experiential booth staff, and social media content collectors."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How early should brands book staff for 2026 World Cup events?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Given the scale of the tournament, brands should begin staffing discussions 6–12 months in advance. AirFresh recommends locking in agreements by late 2025 to secure top talent in host cities."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does AirFresh provide bilingual staff for World Cup activations?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh has a deep bench of Spanish, Portuguese, French, and other bilingual brand ambassadors — critical for connecting with the diverse international fanbase attending the 2026 World Cup."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Can AirFresh staff activations across multiple World Cup host cities?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh has established talent networks in all 11 U.S. host cities and can coordinate a unified national staffing plan with consistent brand execution across every market."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {

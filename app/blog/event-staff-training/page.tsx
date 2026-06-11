@@ -50,6 +50,51 @@ export default function StaffTraining() {
                                       "keywords": "event staff training, brand ambassador training, promotional staff training, event training best practices"
                             },
                             {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What does event staff training include?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Event staff training covers brand messaging, product knowledge, audience engagement techniques, dress code standards, lead capture procedures, emergency protocols, and on-site reporting requirements."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How long does it take to train brand ambassadors for an event?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Most brand ambassador trainings take 2–4 hours for standard activations. Complex product demos or multi-day tours may require a full-day training session plus a written brief review prior to the event."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "Does AirFresh Marketing train the staff they provide?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Yes. AirFresh provides both general hospitality training and client-specific pre-event briefings, ensuring every staff member is aligned on brand standards, talking points, and on-site responsibilities before day one."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What are the most important skills for event staff?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Top event staff skills include clear communication, natural approachability, product knowledge retention, problem-solving under pressure, and the ability to maintain energy and enthusiasm throughout long event days."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you measure event staff performance?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Event staff performance is measured through lead capture counts, product demo totals, consumer interactions logged, supervisor evaluations, and post-event reporting against pre-set KPIs."
+                                                          }
+                                                }
+                                      ]
+                            },
+                            {
                                       "@type": "BreadcrumbList",
                                       "itemListElement": [
                                                 {
