@@ -22,6 +22,30 @@ export default function FranchiseMarketing() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "How do franchise brands maintain consistent local marketing?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Franchise brands maintain consistency by using a centralized agency like AirFresh Marketing to manage brand ambassador programs across all locations. Standardized training, uniform talking points, and branded materials ensure every franchisee location delivers the same on-brand experience." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What experiential marketing tactics work best for franchises?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Product sampling, grand opening staffing, local street team campaigns, and community event presence work well for franchise brands. AirFresh Marketing can scale these programs nationally while keeping local flavor — activating in 50+ markets simultaneously." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can a single agency handle marketing staff for franchise locations nationwide?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — AirFresh Marketing specializes in multi-market staffing for franchise brands. We coordinate brand ambassador deployments across all franchise regions from a single account team, providing unified reporting and consistent quality nationwide." }
+                    }
+                  ]
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
                   "@graph": [
                             {
                                       "@type": "Article",

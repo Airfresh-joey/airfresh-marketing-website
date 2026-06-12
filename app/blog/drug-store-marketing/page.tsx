@@ -22,6 +22,30 @@ export default function PharmacyMarketing() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What brands benefit most from drug store / pharmacy marketing?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Health and wellness brands, OTC supplement companies, beauty and skincare brands, and personal care products see the strongest results in drug store environments because consumers are already in a health-minded mindset at CVS, Walgreens, and Rite Aid." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "Can I do product sampling inside drug stores?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Yes — many major pharmacy chains allow in-store demo and sampling programs with proper brand authorization and liability insurance. AirFresh Marketing handles all logistics, staffing, and compliance documentation for drug store demo programs." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do I hire brand ambassadors for pharmacy retail demos?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Partner with a specialized event staffing agency like AirFresh Marketing that has experience in retail environments. We supply trained, health-knowledgeable brand ambassadors who understand compliance requirements for CVS, Walgreens, and Rite Aid activations." }
+                    }
+                  ]
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
                   "@graph": [
                             {
                                       "@type": "Article",

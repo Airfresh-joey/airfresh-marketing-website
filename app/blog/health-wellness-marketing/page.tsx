@@ -22,6 +22,30 @@ export default function WellnessMarketing() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What are the best venues for health and wellness brand activations?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Top venues for wellness marketing include gyms and fitness studios, yoga festivals, farmers markets, natural grocery stores, health fairs, and corporate wellness events. These environments attract health-conscious consumers who are primed to discover new wellness brands." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do I staff a wellness or supplement product demo?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Hire brand ambassadors who are knowledgeable about health and wellness, and ideally have fitness or nutrition backgrounds. AirFresh Marketing sources staff who align with wellness brand values and can authentically communicate product benefits — especially important for supplements and functional foods." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What compliance considerations matter for wellness product sampling?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Wellness and supplement brands must avoid unsubstantiated health claims during demos, ensure all sampling staff are briefed on FDA disclaimers, and follow venue-specific rules on allergen disclosure. AirFresh Marketing includes compliance training in all health/wellness staff briefings." }
+                    }
+                  ]
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
                   "@graph": [
                             {
                                       "@type": "Article",

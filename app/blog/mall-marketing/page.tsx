@@ -22,6 +22,30 @@ export default function MallMarketing() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "How do I run a mall marketing kiosk activation?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "To run a mall kiosk activation you need to lease space from mall management, meet their insurance and signage requirements, hire trained brand ambassadors for demos or sampling, and schedule activations during peak traffic windows — typically weekends and holidays." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What types of brand activations work best in malls?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Interactive experiences, product sampling, photo opportunities, and immersive pop-up events perform best in mall environments because they create immediate consumer engagement and shareable moments in high foot-traffic areas." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How much does it cost to staff a mall brand activation?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "Mall brand ambassador staffing typically ranges from $25–$45/hr per staff member depending on the market and skill set. A typical 2-day weekend activation with 2–3 staff runs $1,000–$2,500 in labor. AirFresh Marketing provides free quotes within 24 hours." }
+                    }
+                  ]
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
                   "@graph": [
                             {
                                       "@type": "Article",

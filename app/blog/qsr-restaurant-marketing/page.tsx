@@ -22,6 +22,30 @@ export default function QSRMarketing() {
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify({
                   "@context": "https://schema.org",
+                  "@type": "FAQPage",
+                  "mainEntity": [
+                    {
+                      "@type": "Question",
+                      "name": "What experiential marketing tactics work for QSR and fast food brands?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "QSR brands see strong results with drive-thru lane sampling, grand opening brand ambassador campaigns, menu launch street teams, food festival activations, and guerrilla sampling near competitor locations. Speed and simplicity are key — QSR consumers respond to quick, high-impact interactions." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "How do fast food chains handle new location grand openings?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "QSR grand opening campaigns typically deploy street teams and brand ambassadors in the surrounding area 1–2 weeks before opening and during the first week of operation. AirFresh Marketing staffs grand opening campaigns for QSR brands nationwide, driving trial, awareness, and social media content." }
+                    },
+                    {
+                      "@type": "Question",
+                      "name": "What staff skills are needed for QSR marketing campaigns?",
+                      "acceptedAnswer": { "@type": "Answer", "text": "QSR marketing staff need high energy, outgoing personalities, speed (interactions are short), and the ability to handle outdoor conditions. Experience with food service or customer-facing roles is a plus. AirFresh Marketing pre-screens all QSR campaign staff for brand fit and reliability." }
+                    }
+                  ]
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+                  "@context": "https://schema.org",
                   "@graph": [
                             {
                                       "@type": "Article",
