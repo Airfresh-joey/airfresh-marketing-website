@@ -11,17 +11,14 @@ export async function generateMetadata({ params }: LayoutProps): Promise<Metadat
   const industry = industries.find(i => i.slug === industrySlug)
   
   if (!industry) {
-    return { title: 'Industry' }
+    return { title: { absolute: 'Industries | AirFresh Marketing' } }
   }
   
   const baseTitle = `${industry.name} Marketing | Experiential & Event Services`
   const description = `Specialized experiential marketing for the ${industry.name.toLowerCase()} industry. Brand activations, event staffing, and promotional campaigns tailored to your sector.`
   
   return {
-    title: {
-      default: `${baseTitle} | AirFresh Marketing`,
-      template: `%s | AirFresh Marketing`,
-    },
+    title: { absolute: `${baseTitle} | AirFresh Marketing` },
     description,
     keywords: `${industry.name.toLowerCase()} marketing, ${industry.name.toLowerCase()} brand activations, ${industry.name.toLowerCase()} event marketing, ${industry.name.toLowerCase()} experiential`,
     openGraph: {
