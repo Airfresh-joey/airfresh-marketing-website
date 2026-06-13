@@ -6,9 +6,9 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Airport and Travel Marketing',
-  description: 'Airports offer captive audiences of travelers. Here\'s how to execute effective airport activations and travel marketing.',
-  keywords: 'airport marketing, travel marketing, airport activations, airport sampling, travel brand marketing',  alternates: {
+  title: 'Airport & Travel Marketing: Brand Activations for Captive Traveler Audiences | AirFresh',
+  description: 'Airport marketing reaches millions of high-income, captive travelers. AirFresh staffs airport activations, terminal sampling, and travel brand campaigns nationwide. Free quote.',
+  keywords: 'airport marketing, travel marketing, airport activations, airport sampling, travel brand marketing, airport brand activation staffing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/airport-travel-marketing',
   },
 

@@ -6,9 +6,9 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Event Uniforms and Dress Codes',
-  description: 'What your event staff wears matters. Here\'s how to think about uniforms, dress codes, and brand presentation.',
-  keywords: 'event uniforms, brand ambassador dress code, event staff attire, promotional uniforms',  alternates: {
+  title: 'Event Uniforms & Dress Codes: How to Dress Brand Ambassador Staff for Maximum Impact | AirFresh',
+  description: 'Event staff uniforms shape brand perception instantly. Learn how to set dress codes, source branded apparel, and manage event uniform logistics for flawless activations.',
+  keywords: 'event uniforms, brand ambassador dress code, event staff attire, promotional uniforms, event staff clothing, branded event apparel',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/event-uniforms-dress-code',
   },
 

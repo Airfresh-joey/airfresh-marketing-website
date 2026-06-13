@@ -6,9 +6,9 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'B2B Event Staffing',
-  description: 'B2B events require professional, knowledgeable staff. Here\'s how to staff trade shows, conferences, and business events.',
-  keywords: 'b2b event staffing, trade show staff, conference staffing, business event staff, professional event staff',  alternates: {
+  title: 'B2B Event Staffing: Trade Shows, Conferences & Corporate Events | AirFresh Marketing',
+  description: 'B2B event staffing done right — professional booth staff, conference specialists, and trade show teams that qualify leads and drive pipeline. Get a quote in 24 hrs.',
+  keywords: 'b2b event staffing, trade show staff, conference staffing, business event staff, professional event staff, b2b trade show staffing agency',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/b2b-event-staffing',
   },
 

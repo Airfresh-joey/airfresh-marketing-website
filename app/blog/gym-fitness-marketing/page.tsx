@@ -6,9 +6,9 @@ import { ArrowRight } from 'lucide-react';
 import BlogInternalLinks from '@/components/BlogInternalLinks';
 
 export const metadata: Metadata = {
-  title: 'Gym and Fitness Center Marketing',
-  description: 'Reach active consumers at gyms and fitness centers. Here\'s how to activate in fitness environments.',
-  keywords: 'gym marketing, fitness center marketing, fitness marketing, gym sampling, health club marketing',  alternates: {
+  title: 'Gym & Fitness Center Marketing: Brand Activations for Active Consumers in 2026 | AirFresh',
+  description: 'Gym and fitness center marketing reaches health-conscious consumers at peak engagement. AirFresh staffs fitness activations, supplement sampling, and gym brand campaigns nationwide.',
+  keywords: 'gym marketing, fitness center marketing, fitness marketing, gym sampling, health club marketing, gym brand activation, fitness event staffing',  alternates: {
     canonical: 'https://www.airfreshmarketing.com/blog/gym-fitness-marketing',
   },
 
