@@ -85,7 +85,7 @@ export default function EventPermits() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Skip the permits and you might get shut down. Skip the insurance and you're exposed to liability. Legal compliance isn't exciting, but it's essential.</p>
+        <p>Skip the permits and you might get shut down. Skip the insurance and you&apos;re exposed to liability. Legal compliance isn&apos;t exciting, but it&apos;s essential. Experienced <Link href="/event-staffing-agency" className="text-slate-700 hover:underline">event staffing agencies</Link> carry their own insurance and can guide you through permit timelines — a major advantage over freelance staff who leave compliance entirely on you.</p>
         <h2>Common Permits</h2>
         <ul>
           <li><strong>Street/sidewalk permits:</strong> Required for most public space activations</li>
@@ -95,10 +95,10 @@ export default function EventPermits() {
           <li><strong>Fire permits:</strong> For tents, large gatherings</li>
         </ul>
         <h2>Insurance Requirements</h2>
-        <p><strong>General liability:</strong> Standard requirement, usually $1-2M minimum.</p>
+        <p><strong>General liability:</strong> Standard requirement, usually $1-2M minimum. A reputable <Link href="/brand-activation-agency" className="text-slate-700 hover:underline">brand activation agency</Link> will carry this coverage and add your brand as an additional insured for the duration of the campaign.</p>
         <p><strong>Workers comp:</strong> Required for staff in most states.</p>
         <p><strong>Auto insurance:</strong> For vehicle-based activations.</p>
-        <p><strong>Product liability:</strong> For sampling programs.</p>
+        <p><strong>Product liability:</strong> For <Link href="/product-sampling-agency" className="text-slate-700 hover:underline">sampling programs</Link> — especially critical for food, beverage, and supplement brands.</p>
         <h2>Timeline</h2>
         <ul>
           <li>Major city permits: 4-8 weeks advance</li>

@@ -85,23 +85,23 @@ export default function MarketingCalendar() {
         </div>
       </header>
       <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 prose prose-lg">
-        <p>Different times of year offer different opportunities. Here's a month-by-month guide to experiential marketing timing.</p>
+        <p>Different times of year offer different opportunities. Here&apos;s a month-by-month guide to experiential marketing timing. Build your calendar around these windows and you&apos;ll spend less time chasing attention and more time capturing it — booking your <Link href="/event-staffing-agency" className="text-blue-600 hover:underline">event staffing team</Link> early is critical, since top talent gets claimed fast around major events.</p>
         <h2>Q1: January - March</h2>
         <p><strong>January:</strong> New Year resolutions (fitness, health), CES, winter sports.</p>
-        <p><strong>February:</strong> Super Bowl, Valentine's Day, trade shows resume.</p>
-        <p><strong>March:</strong> SXSW, March Madness, spring break, St. Patrick's Day.</p>
+        <p><strong>February:</strong> Super Bowl, Valentine&apos;s Day, trade shows resume.</p>
+        <p><strong>March:</strong> SXSW, March Madness, spring break, St. Patrick&apos;s Day. High-traffic events like SXSW are ideal for <Link href="/brand-activation-agency" className="text-blue-600 hover:underline">brand activations</Link> with trained ambassadors targeting a captive, engaged audience.</p>
         <h2>Q2: April - June</h2>
         <p><strong>April:</strong> Tax season ends, Easter, spring events ramp up.</p>
-        <p><strong>May:</strong> Cinco de Mayo, Mother's Day, Memorial Day, graduations.</p>
-        <p><strong>June:</strong> Pride Month, summer kicks off, Father's Day, festivals begin.</p>
+        <p><strong>May:</strong> Cinco de Mayo, Mother&apos;s Day, Memorial Day, graduations.</p>
+        <p><strong>June:</strong> Pride Month, summer kicks off, Father&apos;s Day, festivals begin. Festival season is peak time for <Link href="/experiential-marketing-agency" className="text-blue-600 hover:underline">experiential marketing</Link> — street teams, sampling, and pop-up activations all perform at their highest ROI during summer festival runs.</p>
         <h2>Q3: July - September</h2>
         <p><strong>July:</strong> July 4th, peak summer, outdoor events.</p>
-        <p><strong>August:</strong> Back to school, summer's last hurrah.</p>
+        <p><strong>August:</strong> Back to school, summer&apos;s last hurrah.</p>
         <p><strong>September:</strong> Labor Day, fall sports start, trade shows resume.</p>
         <h2>Q4: October - December</h2>
         <p><strong>October:</strong> Halloween, fall festivals, playoff season.</p>
         <p><strong>November:</strong> Veterans Day, Thanksgiving, Black Friday, holiday prep.</p>
-        <p><strong>December:</strong> Holiday season peak, New Year's Eve.</p>
+        <p><strong>December:</strong> Holiday season peak, New Year&apos;s Eve. Q4 is when <Link href="/promotional-staffing-agency" className="text-blue-600 hover:underline">promotional staffing</Link> demand spikes — agencies fill calendars 6–8 weeks out, so lock in your holiday activation teams by October.</p>
         <h2>Planning Lead Times</h2>
         <ul>
           <li>Major events: 3-6 months out</li>
