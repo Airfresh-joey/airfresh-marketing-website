@@ -71,6 +71,35 @@ export default function ConventionMarketing() {
                                                           "item": "https://www.airfreshmarketing.com/blog/convention-center-marketing"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is convention center marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Convention center marketing refers to brand activation strategies deployed inside or around large convention facilities during trade shows, expos, and major events. Tactics include staffed exhibit booths, product sampling, brand ambassador teams, promotional street teams at entry points, and sponsored experiential activations designed to engage high-volume attendee traffic."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How many brand ambassadors do I need for a convention?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "For most convention center activations, brands deploy 2–8 brand ambassadors depending on booth size, foot traffic, and campaign objectives. Larger shows with high attendee volume — like CES, NAB, or SXSW — may require 10–20+ staff across multiple zones. A professional convention staffing agency can recommend the right headcount based on your floor space and goals."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What should I look for in a convention staffing agency?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Look for an agency with a national staff network (so they can cover any convention city), experience staffing trade shows and expos, thorough staff training programs, and a track record of working with brands similar to yours. Key differentiators include on-site management, day-of logistics support, and fast staff replacement if anyone cancels."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

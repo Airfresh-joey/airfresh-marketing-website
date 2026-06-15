@@ -23,18 +23,51 @@ export const metadata: Metadata = {
 export default function CollegeMarketing() {
   const structuredData = {
     "@context": "https://schema.org",
-    "@type": "Article",
-    "headline": "College Marketing: How to Reach Students on Campus in 2026",
-    "description": "Proven campus marketing strategies including brand ambassador programs, event activations, and peer-to-peer tactics.",
-    "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
-    "publisher": {
-      "@type": "Organization",
-      "name": "Air Fresh Marketing",
-      "url": "https://www.airfreshmarketing.com"
-    },
-    "datePublished": "2025-11-28",
-    "dateModified": "2026-03-12",
-    "mainEntityOfPage": "https://www.airfreshmarketing.com/blog/college-marketing"
+    "@graph": [
+      {
+        "@type": "Article",
+        "headline": "College Marketing: How to Reach Students on Campus in 2026",
+        "description": "Proven campus marketing strategies including brand ambassador programs, event activations, and peer-to-peer tactics.",
+        "author": { "@type": "Organization", "name": "Air Fresh Marketing" },
+        "publisher": {
+          "@type": "Organization",
+          "name": "Air Fresh Marketing",
+          "url": "https://www.airfreshmarketing.com"
+        },
+        "datePublished": "2025-11-28",
+        "dateModified": "2026-03-12",
+        "mainEntityOfPage": "https://www.airfreshmarketing.com/blog/college-marketing"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "What is college campus marketing?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "College campus marketing is the practice of reaching university students through on-campus brand activations, peer-to-peer ambassador programs, sampling campaigns, sponsored events, and experiential tactics. Because Gen Z largely ignores digital ads, in-person campus marketing — including student brand ambassador programs and pop-up activations — delivers significantly higher engagement and conversion rates."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "How do brands recruit college brand ambassadors?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Brands recruit college brand ambassadors by partnering with a campus marketing agency or event staffing agency that maintains rosters of pre-screened student ambassadors at universities nationwide. Ambassadors are typically students who represent the brand at campus events, post on social media, run peer referral campaigns, and drive trial and awareness within their social circles."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "What types of campus marketing activations work best?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "The most effective campus marketing activations include product sampling tables in high-traffic areas (dining halls, quads, libraries), sponsored campus events tied to student organizations, move-in week welcome kits and pop-ups, tabling at campus job fairs and orientation, and peer ambassador referral programs. Experiential tactics that let students try the product directly outperform passive advertising."
+            }
+          }
+        ]
+      }
+    ]
   };
 
   return (
