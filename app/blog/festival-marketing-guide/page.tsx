@@ -75,6 +75,35 @@ export default function FestivalMarketingGuide() {
                                                           "item": "https://www.airfreshmarketing.com/blog/festival-marketing-guide"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does festival marketing cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Festival marketing costs vary widely by approach. Official sponsorships at major festivals like Coachella or SXSW run $100,000–$10M+. On-site brand activations typically cost $50,000–$500,000+ including build-out and brand ambassador staffing. Street-team marketing near festival perimeters (off-site sampling, product distribution) can be executed for $10,000–$50,000 and often delivers strong ROI. Staffing brand ambassadors for festival activations typically runs $25–$40/hr per ambassador plus agency management fees."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What type of brand ambassadors work best at music festivals?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "The best brand ambassadors for music festivals are high-energy, outgoing, physically capable of working outdoor events for extended hours, and genuinely relatable to the festival audience. For music festivals, look for ambassadors in the 21–30 age range who attend festivals themselves and can authentically engage attendees. They should be able to drive engagement (product trials, app downloads, email sign-ups) while managing the chaos of high-traffic environments. AirFresh Marketing specializes in recruiting festival-ready staff who match the demographic profile of each event."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you measure ROI from festival marketing?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Measuring festival marketing ROI requires building attribution into the activation design before the event. Use unique promo codes or QR codes per ambassador and per day. Track cost per consumer interaction, cost per trial, cost per email capture, and cost per conversion. Compare in-market sales lift in festival zip codes against control markets. Social impression tracking and UGC counting can supplement direct-response metrics. Set a target cost per acquisition (CPA) upfront — for most brands, a $5–$15 CPA at festivals signals a successful program."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

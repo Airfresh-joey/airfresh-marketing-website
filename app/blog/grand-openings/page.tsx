@@ -70,6 +70,35 @@ export default function GrandOpenings() {
                                                           "item": "https://www.airfreshmarketing.com/blog/grand-openings"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does grand opening event staffing cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Grand opening staffing typically costs $20–$40 per hour per brand ambassador, with a minimum of 4–6 hours per event. A typical grand opening team of 4–8 ambassadors runs $800–$3,200 for the day, plus agency management fees. Larger retail launches in multiple markets can budget $5,000–$25,000+ for a coordinated staffing program across locations. AirFresh Marketing provides fully trained, brand-briefed staff for grand openings nationally with market-by-market coordination."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What staff do you need for a retail grand opening?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "A successful retail grand opening typically needs: door greeters (first impression ambassadors), product demo specialists (who can show and explain your offering), crowd flow managers (especially for high-traffic openings), a VIP handler for press and local officials, content capture support (for BTS photos/video), and a lead manager overseeing the team. For food and beverage brands, add product sampling staff trained in health code compliance. The ratio is typically 1 manager per 6–8 ambassadors."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How far in advance should I book event staff for a grand opening?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Book your grand opening event staff at least 3–4 weeks in advance to ensure availability of experienced ambassadors who match your brand profile. For large-scale openings requiring 10+ staff, 6–8 weeks is ideal. This allows time for brand briefings, product training, and wardrobe coordination. Last-minute bookings (under 1 week) are sometimes possible but limit the pool of available talent and reduce pre-event preparation quality."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}

@@ -75,6 +75,35 @@ export default function ProductLaunchEventsGuide() {
                                                           "item": "https://www.airfreshmarketing.com/blog/product-launch-events"
                                                 }
                                       ]
+                            },
+                            {
+                                      "@type": "FAQPage",
+                                      "mainEntity": [
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How much does a product launch event cost?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Product launch event costs vary widely based on scale. A focused media launch for 50–100 journalists and influencers typically runs $15,000–$75,000 including venue, production, and brand ambassador staffing. Large consumer-facing launch activations can range from $100,000 to $500,000+. The most important budget factor is allocating for skilled brand ambassadors who can tell your product story — typically $25–$45/hr with an agency management fee."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "How do you generate buzz at a product launch event?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "Generating buzz at a product launch requires designing for amplification, not just attendance. Invite journalists, micro-influencers, and connectors who have relevant audiences. Create a single shareable moment — a visual, experience, or reveal — that compels attendees to post. Use trained brand ambassadors to give individualized demos and create personal moments rather than stage presentations. Provide exclusive content (a product, a story, a stat) that's only available in the room. Follow up immediately post-event with assets that continue the story."
+                                                          }
+                                                },
+                                                {
+                                                          "@type": "Question",
+                                                          "name": "What is the best way to staff a product launch event?",
+                                                          "acceptedAnswer": {
+                                                                    "@type": "Answer",
+                                                                    "text": "The best product launch staffing combines a core team of trained brand ambassadors (who know the product inside out and can field media questions), event logistics staff (registration, flow management, setup/strike), and optionally a production crew for AV and staging. AirFresh Marketing provides fully trained, product-briefed brand ambassadors for launch events nationally — ambassadors receive pre-event product training and talking-point scripts so every guest interaction reinforces your core message."
+                                                          }
+                                                }
+                                      ]
                             }
                   ]
         }) }}
