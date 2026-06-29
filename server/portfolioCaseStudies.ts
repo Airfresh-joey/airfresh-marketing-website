@@ -16,6 +16,7 @@ export interface CaseStudy {
   heroPosition?: string;
   images?: string[];
   videoUrl?: string;
+  videos?: string[];
 }
 
 export const portfolioCaseStudies: CaseStudy[] = [
@@ -48,7 +49,8 @@ export const portfolioCaseStudies: CaseStudy[] = [
       "/images/case-studies/gallery/skinny-mixes/skinny-mixes-6.jpg",
       "/images/case-studies/gallery/skinny-mixes/skinny-mixes-7.jpg",
       "/images/case-studies/gallery/skinny-mixes/skinny-mixes-8.jpg"
-    ]
+    ],
+    videos: ["1183200407", "1183200399", "1183200366"]
   },
   {
     id: "durex-milwaukee-activation",
