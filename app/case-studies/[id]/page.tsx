@@ -240,6 +240,31 @@ export default async function CaseStudyDetail(
                 </div>
               )}
 
+              {/* Vertical Video Reels */}
+              {caseStudy.videos && caseStudy.videos.length > 0 && (
+                <div className="mb-12">
+                  <h2 className="text-3xl font-bold mb-6">Campaign Videos</h2>
+                  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+                    {caseStudy.videos.map((videoId) => (
+                      <div
+                        key={videoId}
+                        className="relative rounded-xl overflow-hidden bg-black"
+                        style={{ paddingTop: "177.78%" }}
+                      >
+                        <iframe
+                          src={`https://player.vimeo.com/video/${videoId}?title=0&byline=0&portrait=0&badge=0&autopause=0&player_id=0&app_id=58479`}
+                          frameBorder="0"
+                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          style={{ position: "absolute", top: 0, left: 0, width: "100%", height: "100%" }}
+                          title={`${caseStudy.name} Reel ${videoId}`}
+                        />
+                      </div>
+                    ))}
+                  </div>
+                </div>
+              )}
+
               {/* Image Gallery (client component) */}
               {images.length > 0 && (
                 <CaseStudyGallery images={images} name={caseStudy.name} />
