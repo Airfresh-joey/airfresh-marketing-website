@@ -462,6 +462,9 @@ export default function ExperienceManagerApplication() {
           <p className="text-center text-sm text-gray-500 mt-4">
             By submitting, you agree to our privacy policy and consent to being contacted about this position.
           </p>
+          <p className="text-center text-sm text-gray-500 mt-2">
+            Questions? Email <a href="mailto:kimberly@airfreshmarketing.com" className="underline hover:text-gray-700">kimberly@airfreshmarketing.com</a>
+          </p>
         </form>
       </div>
     </div>
