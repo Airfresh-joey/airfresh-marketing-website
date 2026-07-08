@@ -142,15 +142,6 @@ const stats = [
 
 const openPositions = [
   {
-    title: "Technical Intern",
-    location: "Denver, CO • Remote-Friendly",
-    type: "Part-Time (20 hrs/week)",
-    salary: "$20/hour",
-    description: "Join our AI-forward team! Work on real projects with React, Next.js, TypeScript, and AI tools like Cursor and Claude. Perfect for CS students or self-taught developers.",
-    featured: true,
-    link: "/careers/technical-intern"
-  },
-  {
     title: "Experience Manager",
     location: "Denver, CO",
     type: "Full-time",
